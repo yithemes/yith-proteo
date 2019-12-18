@@ -1,0 +1,212 @@
+/**
+ * Checkout
+ */
+body.woocommerce-checkout {
+    .col-1, .col-2 {
+        max-width: initial;
+        width: 100%;
+        padding: 0;
+    }
+
+    #customer_details {
+        width: 50%;
+        display: inline-block;
+        float: left;
+    }
+
+    #order_review {
+        float: right;
+        width: 50%;
+        margin-right: 0;
+        clear: right;
+        padding-left: 30px;
+
+        #shipping_method li {
+            font-size: 1rem;
+            line-height: normal;
+
+            label {
+                font-weight: normal;
+            }
+        }
+    }
+
+    .order_review_inner {
+        border: 1px solid #313131;
+        padding: 35px 30px 50px;
+    }
+
+    table.woocommerce-checkout-review-order-table {
+        th {
+            text-align: left;
+            border: none;
+            padding: 15px 0;
+        }
+
+        tr:first-child td {
+            border: none;
+        }
+
+        td {
+            border: none;
+            padding: 15px 0;
+        }
+
+        .product-total {
+            text-align: right;
+        }
+
+        tbody tr:last-child td {
+            border-bottom: 1px solid #ebebeb;
+            padding-bottom: 35px;
+        }
+
+        tfoot tr:first-child td, tfoot tr:first-child th {
+            padding-top: 35px;
+        }
+
+        tfoot th {
+            text-align: right;
+            background: none;
+            border: none;
+        }
+
+        tfoot td {
+            text-align: right;
+        }
+
+        .order-total th {
+            color: $color__accent;
+        }
+    }
+
+    #payment {
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0 -30px 35px;
+            background: #f7f7f7;
+
+            li {
+                padding: 15px 30px 15px 30px;
+                margin-bottom: 15px;
+                position: relative;
+
+                .radiobutton {
+                    position: absolute;
+                }
+
+                label {
+                    font-weight: bold;
+                    display: block;
+                    cursor: pointer;
+                    padding-left: 30px;
+                }
+
+                &.payment_method_paypal {
+                    label {
+                        img {
+                            float: right;
+                            margin-top: -3px;
+                        }
+
+                        a {
+                            font-size: 80%;
+                            margin-left: 15px;
+                            font-weight: lighter;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        #place_order {
+            display: block;
+            width: 100%;
+            text-transform: uppercase;
+            font-size: 20px;
+            border-radius: 50px;
+            font-weight: bold;
+            padding: 22px 35px 21px;
+        }
+    }
+
+    .woocommerce-terms-and-conditions-wrapper {
+        p {
+            padding: 0;
+        }
+    }
+
+    #customer_details {
+        background: #f7f7f7;
+        padding: 35px 30px;
+    }
+
+    .checkout_coupon {
+        padding: 35px 15px 30px 30px;
+        list-style-type: none;
+        margin-bottom: 15px;
+        border-radius: 0;
+        border-width: 0;
+        border-style: solid;
+        color: #000000;
+        font-size: 1rem;
+        font-weight: 500;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
+        background-color: #ffffff;
+
+        p {
+            font-size: 1rem;
+            line-height: normal;
+            font-weight: 500;
+        }
+
+        input[type="text"] {
+            outline: none;
+        }
+    }
+}
+
+body.woocommerce-order-received {
+    .woocommerce-order {
+        margin: 0 -15px;
+
+        .woocommerce-notice {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .woocommerce-order-overview {
+            width: 100%;
+            padding: 0 15px;
+            list-style-type: none;
+            margin-bottom: 35px;
+        }
+
+        .woocommerce-order-details {
+            padding: 0 15px;
+            display: inline-block;
+            float: left;
+            width: 50%;
+            margin-bottom: 35px;
+
+            h2 {
+                margin-top: 0;
+            }
+        }
+
+        .woocommerce-customer-details {
+            padding: 0 15px;
+            display: inline-block;
+            float: right;
+            width: 50%;
+            margin-bottom: 35px;
+
+            h2 {
+                margin-top: 0;
+            }
+        }
+    }
+}

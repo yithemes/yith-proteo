@@ -1,0 +1,37 @@
+.jquery-modal.blocker {
+    background-color: rgba(7, 90, 93, 0.6);
+    z-index: 100;
+
+    .modal {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        border-radius: 0;
+
+        a.close-modal {
+            background: none;
+            display: block;
+            top: 10px;
+            right: 10px;
+            font-size: 0;
+            text-indent: 0;
+            text-decoration: none;
+            line-height: 30px;
+            text-align: center;
+
+            &:before {
+                content: "×";
+                display: block;
+                font-size: 2rem;
+                color: rgba(0, 0, 0, 0.3);
+            }
+        }
+
+        .modal-title {
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+
+        &.modal-large {
+            max-width: none;
+        }
+    }
+}

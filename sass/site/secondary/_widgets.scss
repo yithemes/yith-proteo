@@ -1,0 +1,198 @@
+.widget {
+    margin: 0 0 1.5em;
+
+    /* Make sure select elements fit in widgets. */
+    select {
+        max-width: 100%;
+    }
+
+    ul {
+        padding: 0;
+        list-style-type: none;
+    }
+}
+
+h2.widget-title, h3.widget-title {
+    font-size: 1.5rem;
+}
+
+#secondary .widget {
+    margin-bottom: 50px;
+}
+
+.widget_search {
+    input[type="submit"] {
+        cursor: pointer;
+        font-size: 1rem;
+        font-weight: bold;
+        vertical-align: middle;
+    }
+
+    form.search-form {
+        display: table;
+        width: 100%;
+    }
+
+    form.search-form > * {
+        display: table-cell;
+        vertical-align: middle;
+    }
+}
+
+#topbar, .header-sidebar {
+    .widget {
+        text-align: initial;
+        display: inline-block;
+        z-index: 10;
+        margin: 0 15px 5px;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+
+    .widget_search {
+        & > form {
+            display: none;
+        }
+
+        &:before {
+            content: "\e86f";
+            display: inline-block;
+            font-family: Linearicons-Free;
+            speak: none;
+            font-style: normal;
+            font-weight: 400;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            font-size: 1.6rem;
+            cursor: pointer;
+            margin-right: 5px;
+        }
+    }
+}
+
+/**
+Recent posts
+ */
+
+.widget_recent_entries {
+    ul {
+        li {
+            display: table;
+            width: 100%;
+            margin-bottom: 45px;
+
+            a {
+                text-decoration: none;
+                font-size: 0;
+                display: block;
+
+                &:hover {
+                    .post-info {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            .post-image, .post-info {
+                display: table-cell;
+                vertical-align: middle;
+            }
+
+            .post-image {
+                width: 40%;
+                padding-right: 25px;
+            }
+
+            .post-info {
+                font-size: 0.875rem;
+                color: #939393;
+
+                h3 {
+                    font-size: 1.125rem;
+                    line-height: normal;
+                    margin-top: 0;
+                    margin-bottom: 5px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+
+/**
+Recent Comments
+ */
+.widget_recent_comments {
+    ul#recentcomments {
+        li {
+            margin-bottom: 45px;
+
+            .comment-excerpt {
+                border: 1px solid #707070;
+                padding: 30px 20px;
+                font-size: 1rem;
+                margin-bottom: 5px;
+            }
+
+            .comment-meta {
+                font-size: 1rem;
+                text-align: right;
+                font-weight: 600;
+
+                a {
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/**
+Text widget
+ */
+
+.widget.widget_text {
+    p, input[type="text"], input[type="email"] {
+        font-weight: 500;
+        font-size: 1.125rem;
+        line-height: 1.8rem;
+    }
+}
+
+/**
+Social Icons
+ */
+
+.widget_yith_proteo_social_icons {
+
+    a {
+        display: inline-block;
+        margin: 0 15px 15px;
+        color: inherit;
+        text-decoration: none;
+
+        &:hover {
+            color: $color__accent;
+        }
+
+        span {
+            color: inherit;
+            font-size: 2rem;
+        }
+    }
+
+    &.col-lg-12 {
+        text-align: center;
+    }
+}
+

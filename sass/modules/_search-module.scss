@@ -1,0 +1,187 @@
+/**
+* Reset
+* - Prevents Themes and other Plugins from applying their own styles to our full screen search
+*/
+#full-screen-search,
+#full-screen-search button,
+#full-screen-search button.close,
+#full-screen-search form,
+#full-screen-search form div,
+#full-screen-search form div input,
+#full-screen-search form div input.search {
+    background: none;
+    border: 0 none;
+    outline: none;
+    position: static;
+    padding: 0;
+    line-height: 1;
+    transition: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    -ms-transition: none;
+}
+
+/**
+* Background
+*/
+#full-screen-search {
+    display: none;
+    position: fixed;
+    z-index: 999998;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    align-items: center;
+    justify-content: center;
+
+    &.open {
+        display: flex !important;
+    }
+
+    form {
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        > div {
+            position: absolute;
+            width: 50%;
+            height: 100px;
+            top: 50%;
+            left: 50%;
+            margin: -50px 0 0 -25%;
+
+            input {
+                width: 100%;
+                font-size: 2rem;
+                line-height: 60px;
+                background: transparent;
+                border-radius: 0;
+                border-bottom: 1px solid #707070;
+                padding: 0;
+                height: 60px;
+                font-family: inherit;
+            }
+
+            button#submit-full-screen-search, #yith-searchsubmit {
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 30px;
+                height: 60px;
+                line-height: normal;
+                color: #707070;
+                font-weight: bold;
+
+                span {
+                    font-size: 2rem;
+                    cursor: pointer;
+                }
+
+            }
+
+            #yith-searchsubmit {
+                text-indent: -99999px;
+                width: 60px;
+            }
+
+            button#submit-full-screen-search img {
+                width: 32px;
+            }
+
+            input::-webkit-input-placeholder {
+                color: #ccc;
+            }
+
+            input:-moz-placeholder {
+                color: #ccc;
+            }
+
+            input::-moz-placeholder {
+                color: #ccc;
+            }
+
+            input:-ms-input-placeholder {
+                color: #ccc;
+            }
+        }
+    }
+
+    form#yith-ajaxsearchform div {
+        padding-right: 70px;
+        width: 70vw;
+        position: static;
+        height: auto;
+        margin: 0;
+    }
+
+    form#yith-ajaxsearchform > div {
+        &:after {
+            content: "\e86f";
+            display: inline-block;
+            font-family: Linearicons-Free;
+            speak: none;
+            font-style: normal;
+            font-weight: 400;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 2;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            font-size: 2rem;
+            cursor: pointer;
+            position: absolute;
+            right: 15px;
+            top: 0;
+            pointer-events: none;
+        }
+    }
+
+    button.close {
+        position: absolute;
+        z-index: 999999;
+        top: 20px;
+        right: 20px;
+        font-size: 2rem;
+        cursor: pointer;
+        color: #707070;
+        font-weight: bold;
+    }
+
+    form#yith-ajaxsearchform .autocomplete-suggestions {
+        background: #ffffff !important;
+        padding: 15px !important;
+        border: 1px solid #ebebeb !important;
+        margin-right: -15px !important;
+    }
+
+    form#yith-ajaxsearchform .autocomplete-suggestion {
+        font-size: inherit;
+        line-height: 3em;
+        padding: 10px 0 8px !important;
+        border-bottom: 1px solid #ebebeb;
+        width: auto !important;
+        position: relative !important;
+
+        &:hover {
+            background-color: #efefef;
+        }
+
+        &:last-of-type {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        div {
+            position: relative;
+            width: auto;
+
+            &.badges {
+                position: absolute;
+            }
+        }
+    }
+}

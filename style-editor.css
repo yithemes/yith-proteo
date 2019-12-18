@@ -1,0 +1,38 @@
+/* Main column width */
+.wp-block {
+    max-width: 720px;
+}
+
+/* Width of "wide" blocks */
+.wp-block[data-align="wide"] {
+    max-width: 1080px;
+}
+
+/* Width of "full-wide" blocks */
+.wp-block[data-align="full"] {
+    max-width: none;
+}
+
+@media (min-width: 1440px) {
+    /* Main column width */
+    .wp-block {
+        max-width: 840px;
+    }
+
+    /* Width of "wide" blocks */
+    .wp-block[data-align="wide"] {
+        max-width: 1240px;
+    }
+}
+
+@media (min-width: 1600px) {
+    /* Main column width */
+    .wp-block {
+        max-width: 1240px;
+    }
+
+    /* Width of "wide" blocks */
+    .wp-block[data-align="wide"] {
+        max-width: 1500px;
+    }
+}

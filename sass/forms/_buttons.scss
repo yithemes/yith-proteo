@@ -1,0 +1,130 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.button,
+.widget a.button,
+.wishlist-submit.popup_button {
+    border: 1px solid;
+    border-color: $color__border-button;
+    border-radius: 50px;
+    background: $color__background-button;
+    color: #ffffff;
+    line-height: 1;
+    padding: 0.8em 1.5em 0.7em;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    transition: all ease 0.3s;
+    font-family: inherit;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    font-weight: 600;
+
+    &:hover {
+        border-color: $color__border-button-hover;
+    }
+}
+
+.button.alt {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+
+.comment-reply a {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $color__accent;
+    text-decoration: none;
+    font-size: 0.875rem;
+
+    &:before {
+        content: '+';
+        display: inline-block;
+        margin-right: 5px;
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.button.flat,
+.yith_wcwl_footer_additional_action .ask-an-estimate-button {
+    border-radius: 50px;
+    border: none;
+    text-align: center;
+    padding: 0.8em 1.5em 0.7em;
+    vertical-align: middle;
+    background-color: #eaeaea;
+    color: #393839;
+    transition: all ease 0.3s;
+    text-decoration: none;
+    margin-right: 15px;
+    font-weight: 600;
+
+    &:hover {
+        background-color: #4ac4aa;
+        text-decoration: none;
+    }
+}
+
+.yith_wcwl_footer_additional_action .ask-an-estimate-button {
+    display: inline-block;
+    line-height: 1;
+}
+
+.comment-respond #submit {
+    display: block;
+    margin-right: 0;
+}
+
+.button.ghost,
+.wishlist-title a.show-title-form,
+.wishlist-title a.hide-title-form,
+.submit-wishlist-changes,
+.yith_wcwl_wishlist_bulk_action input[type="submit"],
+.yith_wcwl_wishlist_footer .yith_wcwl_wishlist_update input[type="submit"],
+.wpcf7-form-control.ghost,
+.button.ywgc_apply_gift_card_button,
+.checkout_coupon button[name="apply_coupon"] {
+    margin-bottom: 15px;
+    border-radius: 50px;
+    border: 2px solid $color__accent;
+    text-align: center;
+    padding: 0.65em 1.5em 0.5em;
+    vertical-align: middle;
+    background-color: transparent;
+    color: $color__accent;
+    font-weight: 600;
+    display: inline-block;
+
+    &:hover {
+        background-color: $color__accent;
+        border-color: $color__accent;
+        color: #ffffff;
+        text-decoration: none;
+    }
+}
+
+.unstyled_button, .button.unstyled_button, table.cart tbody tr td.actions button[name=update_cart] {
+    background: none;
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    color: $color__accent;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: none;
+
+    &:hover {
+        background: none;
+        background-color: transparent;
+        border: none;
+        color: $color__accent;
+    }
+}

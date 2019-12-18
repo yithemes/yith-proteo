@@ -1,0 +1,139 @@
+/****************************
+YITH CUSTOMIZER STYLE
+****************************/
+li#accordion-panel-yith_proteo_options > h3.accordion-section-title:before,
+li#accordion-panel-yith_proteo_shop_options > h3.accordion-section-title:before,
+ul#sub-accordion-panel-yith_proteo_options > li.panel-meta span.preview-notice strong:before,
+ul#sub-accordion-panel-yith_proteo_shop_options > li.panel-meta span.preview-notice strong:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(img/panel-icons/yith_icon.png) center no-repeat;
+    background-size: cover;
+    vertical-align: bottom;
+    margin-right: 5px;
+}
+
+/* SIDEBAR MANAGEMENT */
+
+#customize-control-yith_proteo_default_sidebar_position span.customize-inside-control-row,
+#customize-control-yith_proteo_blog_page_sidebar_position span.customize-inside-control-row,
+#customize-control-yith_proteo_product_page_sidebar_position span.customize-inside-control-row {
+    margin-left: 0;
+}
+
+#_customize-input-yith_proteo_default_sidebar_position-radio-right,
+#_customize-input-yith_proteo_default_sidebar_position-radio-left,
+#_customize-input-yith_proteo_default_sidebar_position-radio-no-sidebar,
+#_customize-input-yith_proteo_blog_page_sidebar_position-radio-right,
+#_customize-input-yith_proteo_blog_page_sidebar_position-radio-left,
+#_customize-input-yith_proteo_blog_page_sidebar_position-radio-no-sidebar,
+#_customize-input-yith_proteo_product_page_sidebar_position-radio-right,
+#_customize-input-yith_proteo_product_page_sidebar_position-radio-left,
+#_customize-input-yith_proteo_product_page_sidebar_position-radio-no-sidebar {
+    display: none;
+}
+
+
+#_customize-input-yith_proteo_default_sidebar_position-radio-right + label,
+#_customize-input-yith_proteo_default_sidebar_position-radio-left + label,
+#_customize-input-yith_proteo_default_sidebar_position-radio-no-sidebar + label,
+#_customize-input-yith_proteo_blog_page_sidebar_position-radio-right + label,
+#_customize-input-yith_proteo_blog_page_sidebar_position-radio-left + label,
+#_customize-input-yith_proteo_blog_page_sidebar_position-radio-no-sidebar + label,
+#_customize-input-yith_proteo_product_page_sidebar_position-radio-right + label,
+#_customize-input-yith_proteo_product_page_sidebar_position-radio-left + label,
+#_customize-input-yith_proteo_product_page_sidebar_position-radio-no-sidebar + label {
+    line-height: 40px;
+}
+
+
+#_customize-input-yith_proteo_default_sidebar_position-radio-right + label:before,
+#_customize-input-yith_proteo_blog_page_sidebar_position-radio-right + label:before,
+#_customize-input-yith_proteo_product_page_sidebar_position-radio-right + label:before {
+    background: url(img/panel-icons/sidebar-right.png) center no-repeat;
+    content: "";
+    display: inline-block;
+    width: 54px;
+    height: 40px;
+    background-size: cover;
+    margin-right: 5px;
+    border: 2px solid #c4c4c4;
+}
+
+#_customize-input-yith_proteo_default_sidebar_position-radio-left + label:before,
+#_customize-input-yith_proteo_blog_page_sidebar_position-radio-left + label:before,
+#_customize-input-yith_proteo_product_page_sidebar_position-radio-left + label:before {
+    background: url(img/panel-icons/sidebar-left.png) center no-repeat;
+    content: "";
+    display: inline-block;
+    width: 54px;
+    height: 40px;
+    background-size: cover;
+    margin-right: 5px;
+    border: 2px solid #c4c4c4;
+}
+
+#_customize-input-yith_proteo_default_sidebar_position-radio-no-sidebar + label:before,
+#_customize-input-yith_proteo_blog_page_sidebar_position-radio-no-sidebar + label:before,
+#_customize-input-yith_proteo_product_page_sidebar_position-radio-no-sidebar + label:before {
+    background: url(img/panel-icons/sidebar-no.png) center no-repeat;
+    content: "";
+    display: inline-block;
+    width: 54px;
+    height: 40px;
+    background-size: cover;
+    margin-right: 5px;
+    border: 2px solid #c4c4c4;
+}
+
+#_customize-input-yith_proteo_default_sidebar_position-radio-right:checked + label:before,
+#_customize-input-yith_proteo_default_sidebar_position-radio-left:checked + label:before,
+#_customize-input-yith_proteo_default_sidebar_position-radio-no-sidebar:checked + label:before,
+#_customize-input-yith_proteo_default_sidebar_position-radio-right:hover + label:before,
+#_customize-input-yith_proteo_default_sidebar_position-radio-left:hover + label:before,
+#_customize-input-yith_proteo_default_sidebar_position-radio-no-sidebar:hover + label:before,
+#_customize-input-yith_proteo_blog_page_sidebar_position-radio-right:checked + label:before,
+#_customize-input-yith_proteo_blog_page_sidebar_position-radio-left:checked + label:before,
+#_customize-input-yith_proteo_blog_page_sidebar_position-radio-no-sidebar:checked + label:before,
+#_customize-input-yith_proteo_blog_page_sidebar_position-radio-right:hover + label:before,
+#_customize-input-yith_proteo_blog_page_sidebar_position-radio-left:hover + label:before,
+#_customize-input-yith_proteo_blog_page_sidebar_position-radio-no-sidebar:hover + label:before,
+#_customize-input-yith_proteo_product_page_sidebar_position-radio-right:checked + label:before,
+#_customize-input-yith_proteo_product_page_sidebar_position-radio-left:checked + label:before,
+#_customize-input-yith_proteo_product_page_sidebar_position-radio-no-sidebar:checked + label:before,
+#_customize-input-yith_proteo_product_page_sidebar_position-radio-right:hover + label:before,
+#_customize-input-yith_proteo_product_page_sidebar_position-radio-left:hover + label:before,
+#_customize-input-yith_proteo_product_page_sidebar_position-radio-no-sidebar:hover + label:before {
+    border: 2px solid #999;
+}
+
+#_customize-input-yith_proteo_default_sidebar_position-radio-right:checked + label,
+#_customize-input-yith_proteo_default_sidebar_position-radio-left:checked + label,
+#_customize-input-yith_proteo_default_sidebar_position-radio-no-sidebar:checked + label,
+#_customize-input-yith_proteo_blog_page_sidebar_position-radio-right:checked + label,
+#_customize-input-yith_proteo_blog_page_sidebar_position-radio-left:checked + label,
+#_customize-input-yith_proteo_blog_page_sidebar_position-radio-no-sidebar:checked + label,
+#_customize-input-yith_proteo_product_page_sidebar_position-radio-right:checked + label,
+#_customize-input-yith_proteo_product_page_sidebar_position-radio-left:checked + label,
+#_customize-input-yith_proteo_product_page_sidebar_position-radio-no-sidebar:checked + label {
+    font-weight: bold;
+}
+
+
+#customize-control-yith_proteo_default_sidebar_position,
+#customize-control-yith_proteo_blog_sidebar {
+    border-bottom: 1px solid #aaa;
+}
+
+#customize-control-yith_proteo_blog_sidebar {
+    padding-bottom: 1.3rem;
+}
+
+
+/* Separator between buttons style */
+#customize-control-yith_proteo_button_style_2_bg_color_1 {
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}

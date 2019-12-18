@@ -1,0 +1,28 @@
+.entry-content .ywgc_enter_code {
+    padding: 35px 15px 30px 30px;
+    list-style-type: none;
+    margin-bottom: 15px;
+    border-radius: 0;
+    border-width: 0;
+    border-style: solid;
+    color: #000000;
+    font-size: 1rem;
+    font-weight: 500;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
+    background-color: #ffffff;
+
+    p {
+        font-size: 1rem;
+        line-height: normal;
+        font-weight: 500;
+    }
+
+    input[name="gift_card_code"] {
+        outline: none;
+    }
+
+    .ywgc_apply_gift_card_button {
+        display: inline-block;
+        width: auto;
+    }
+}

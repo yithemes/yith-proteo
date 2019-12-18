@@ -1,0 +1,59 @@
+/*
+Theme Name: yith-proteo
+
+WooCommerce styles override
+*/
+
+/**
+ * WooCommerce color variables
+ */
+$woocommerce__color-error: #f44336;
+$woocommerce__color-success: #17b4a9;
+$woocommerce__color-info: #e0e0e0;
+
+/**
+ * Imports
+ */
+@import "variables-site/variables-site";
+@import "mixins/mixins-master";
+
+/**
+ * Shop tables
+ */
+@import "shop/tables";
+
+/**
+ * Products
+ */
+@import "shop/products";
+
+/**
+ * Single product
+ */
+@import "shop/single-product";
+
+/**
+ * Cart
+ */
+@import "shop/cart";
+
+
+/**
+ * Checkout
+ */
+@import "shop/checkout";
+
+/**
+ * General WooCommerce components
+ */
+@import "shop/components";
+
+/**
+ * WooCommerce widgets
+ */
+@import "shop/widgets";
+
+/**
+ * My Account
+ */
+@import "shop/myaccount";

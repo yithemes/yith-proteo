@@ -1,0 +1,249 @@
+/**
+MY ACCOUNT
+**/
+
+.woocommerce-account {
+
+    .yith-proteo-my-account-sidebar {
+        float: left;
+        width: 25%;
+        clear: both;
+    }
+
+    .yith-proteo-my-account-user-image {
+        padding: 30px 15px 15px;
+        position: relative;
+
+        &:before {
+            content: '';
+            display: block;
+            background-color: #f2f2f2;
+            position: absolute;
+            left: -50vw;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            z-index: -1;
+        }
+
+        .user-photo {
+            border-radius: 0;
+            border: none;
+            margin-right: 20px;
+            display: inline-block;
+            vertical-align: middle;
+            line-height: 0;
+
+            img {
+                max-width: 130px;
+                margin-bottom: 15px;
+            }
+        }
+
+        .user-info {
+            vertical-align: middle;
+            display: inline-block;
+
+            font-size: 1em;
+
+            p {
+                font-size: inherit;
+                font-weight: 600;
+                margin: 0;
+            }
+
+            strong, span {
+                display: block;
+            }
+
+            .user-email {
+                font-size: 0.875em;
+                color: #7b7b7b;
+            }
+
+            a {
+                text-decoration: none;
+                display: block;
+            }
+        }
+    }
+
+    .woocommerce-MyAccount-navigation {
+        position: relative;
+        padding: 30px 0 100px;
+
+        &:before {
+            content: '';
+            display: block;
+            background-color: #f9f9f9;
+            position: absolute;
+            left: -50vw;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            z-index: -1;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                display: block;
+                font-weight: 600;
+
+                a {
+                    display: block;
+                    padding: 15px;
+                    text-decoration: none;
+                    color: inherit;
+                }
+
+                &.is-active a, a:hover {
+                    color: $color__link;
+                }
+            }
+        }
+    }
+
+    .woocommerce-MyAccount-content {
+        float: left;
+        padding-left: 30px;
+        width: 75%;
+
+        .woocommerce-Address, .woocommerce-column--billing-address, .woocommerce-column--shipping-address {
+            width: 50%;
+            float: left;
+            max-width: initial;
+            padding: 0;
+            margin-bottom: 35px;
+        }
+
+        .order_details {
+            th {
+                text-align: left;
+                padding: 15px;
+            }
+
+            tfoot {
+                th {
+                    background: none;
+                    text-align: right;
+                    border-right: 1px solid #ebebeb;
+                }
+            }
+        }
+
+        .account-info-box {
+            border: 1px solid #ebebeb;
+            padding: 15px 30px 30px;
+            margin-bottom: 35px;
+
+            p {
+                font-size: inherit;
+                line-height: normal;
+
+                strong, b {
+                    font-weight: bold;
+                }
+            }
+
+            .actions {
+                text-align: right;
+            }
+
+            .button {
+                font-size: 0.875rem;
+                text-transform: uppercase;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    #customer_login.col2-set.u-columns {
+        margin: 0 -15px;
+
+        &:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .col-1, .col-2 {
+            width: 50%;
+            float: left;
+            max-width: initial;
+            position: relative;
+            p {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+            form {
+                padding: 25px 15px 15px;
+                margin-bottom: 35px;
+                border: 1px solid;
+                position: relative;
+
+                .woocommerce-form__label-for-checkbox {
+                    margin-bottom: 15px;
+                }
+
+                &.register {
+                    border: none;
+                    background: #ebebeb;
+
+                    &:before {
+                        content: '';
+                        display: block;
+                        right: -4000px;
+                        width: 4000px;
+                        top: 0;
+                        background: #ebebeb;
+                        bottom: 0;
+                        position: absolute;
+                    }
+                }
+            }
+        }
+    }
+
+
+    ul.yith_proteo_dashboard_links {
+        list-style-type: none;
+        padding: 0;
+
+        li {
+            display: inline-block;
+            margin-bottom: 30px;
+
+            & > div {
+                border: 1px solid;
+                padding: 15px;
+                text-align: center;
+
+                a {
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    color: inherit;
+                    font-size: 1.125rem;
+                    transition: all ease 0.3s;
+
+                    .yith-proteo-myaccount-icons {
+                        display: block;
+                        text-align: center;
+                        font-size: 3rem;
+                        margin-bottom: 15px;
+                        margin-top: 15px;
+                    }
+
+                    &:hover {
+                        color: $color__link;
+                    }
+                }
+            }
+        }
+    }
+}

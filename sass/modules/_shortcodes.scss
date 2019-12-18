@@ -1,0 +1,99 @@
+.yith-proteo-footer-credits-download {
+    text-align: center;
+    padding: 85px 0 120px;
+
+    .yith-proteo-theme-logo {
+        margin: 0 30px 0 0;
+        font-size: 3rem;
+        font-weight: 600;
+        line-height: normal;
+        transition: all ease 0.3s;
+        color: #404040;
+    }
+
+    .yith-proteo-theme-description p {
+        font-size: 1rem;
+        font-weight: 500;
+        color: #404040;
+        line-height: normal;
+
+        .lnr {
+            font-size: 1.5em;
+            vertical-align: text-bottom;
+        }
+    }
+
+    .download-proteo {
+        margin-bottom: 15px;
+        margin-top: 15px;
+        border-radius: 50px;
+        font-size: 1.25rem;
+        font-weight: 600;
+        text-align: center;
+        padding: 22px 60px 21px;
+        vertical-align: middle;
+        transition: all ease 0.3s;
+    }
+}
+
+.woocommerce .ywcps-wrapper {
+
+    .ywcps-slider > .row {
+        margin: 0 !important;
+    }
+
+    ul.products {
+        overflow: hidden;
+        margin: 0 auto 35px;
+
+        .owl-item li.product {
+            width: 100%;
+            padding: 0 7.5px;
+        }
+    }
+
+    #nav_prev_def_free,
+    #nav_next_def_free {
+        top: 30%;
+        bottom: auto;
+
+        span:before {
+            content: '';
+            display: block;
+            font-size: 3rem;
+            color: inherit;
+        }
+
+        span:hover {
+            color: $color__accent;
+        }
+
+        #default_prev {
+            border: none;
+            background: none;
+
+            &:before {
+                content: '‹';
+            }
+        }
+
+        #default_next {
+            border: none;
+            background: none;
+
+            &:before {
+                content: '›';
+            }
+        }
+    }
+
+    #nav_prev_def_free {
+        left: -40px;
+        opacity: 1;
+    }
+
+    #nav_next_def_free {
+        right: -40px;
+        opacity: 1;
+    }
+}
