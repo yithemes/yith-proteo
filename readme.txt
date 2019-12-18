@@ -6,7 +6,7 @@ Tags: one-column, two-columns, left-sidebar, right-sidebar, wide-blocks, accessi
 Requires at least: 4.9.6
 Tested up to: WordPress 5.3
 Requires PHP: 5.2.4
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -25,6 +25,20 @@ Proteo is a sleek, modern and “Gutenberg-friendly” e-commerce theme. Develop
 == Frequently Asked Questions ==
 
 == Changelog ==
+
+= 1.0.2 - Dec 18 2019 =
+* fix to two-cols cart layout on mobile
+* cart responsive fixes
+* fix widgets style
+* fix products page alignments
+* fix card shipping forms style
+* fix cart update link style
+* fix shipping calculator style
+* fix checkout shipping style
+* better support to gutenberg image block alignments
+* fix CF7 contact form error messages color
+* update search results page template
+
 
 = 1.0.1 - Dec 12 2019 =
 * Fix woocommerce templates text domain
