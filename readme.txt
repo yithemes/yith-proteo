@@ -6,7 +6,7 @@ Tags: one-column, two-columns, left-sidebar, right-sidebar, wide-blocks, accessi
 Requires at least: 4.9.6
 Tested up to: WordPress 5.3
 Requires PHP: 5.2.4
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -25,6 +25,10 @@ Proteo is a sleek, modern and “Gutenberg-friendly” e-commerce theme. Develop
 == Frequently Asked Questions ==
 
 == Changelog ==
+
+= 1.0.4 - Dec 20 2019 =
+* update language .pot file
+* fix order-pay screen css issue
 
 = 1.0.3 - Dec 20 2019 =
 * update localized strings

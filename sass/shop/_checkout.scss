@@ -31,6 +31,13 @@ body.woocommerce-checkout {
         }
     }
 
+    &.woocommerce-order-pay #order_review {
+        float: none;
+        margin: 0 auto;
+        padding: 0;
+        width: 70%;
+    }
+
     .order_review_inner {
         border: 1px solid #313131;
         padding: 35px 30px 50px;
