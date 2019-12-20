@@ -76,7 +76,7 @@
 					sprintf(
 						wp_kses(
 						/* translators: %s: post title */
-							__( 'Leave a Comment<span class="screen-reader-text"> on %s</span>', 'yith-proteo' ),
+							__( 'Leave a comment<span class="screen-reader-text"> on %s</span>', 'yith-proteo' ),
 							array(
 								'span' => array(
 									'class' => array(),

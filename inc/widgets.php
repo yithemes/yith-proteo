@@ -47,7 +47,7 @@ Class YITH_Proteo_Recent_Posts_Widget extends WP_Widget_Recent_Posts {
 								<?php the_title( '<h3>', '</h3>' ); ?>
 								<?php
 								if ( get_comments_number() > 0 ) {
-									printf( _nx( 'One Comment', '%1$s Comments', get_comments_number(), 'comments count on widget', 'yith-proteo' ), number_format_i18n( get_comments_number() ) );
+									printf( _nx( 'One comment', '%1$s comments', get_comments_number(), 'comments count on widget', 'yith-proteo' ), number_format_i18n( get_comments_number() ) );
 								}
 								?>
                             </div>
@@ -176,7 +176,7 @@ class YITH_Proteo_Social_Icons extends WP_Widget {
 	function __construct() {
 		parent::__construct(
 			'YITH_Proteo_Social_Icons',
-			__( 'Social Networks Profiles', 'yith-proteo' ), // Name
+			__( 'Social Networks', 'yith-proteo' ), // Name
 			array( 'description' => __( 'Links to your social profiles', 'yith-proteo' ), )
 		);
 	}
@@ -237,7 +237,7 @@ class YITH_Proteo_Social_Icons extends WP_Widget {
 		$instagram = isset( $instance['instagram'] ) ? $instance['instagram'] : '#';
 		$linkedin  = isset( $instance['linkedin'] ) ? $instance['linkedin'] : '#';
 		?>
-        <p><?php _e( 'You can hide a field by leaving it empty', 'yith-proteo' ); ?></p>
+        <p><?php _e( 'To hide a field, just leave it empty', 'yith-proteo' ); ?></p>
         <p>
             <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:', 'yith-proteo' ); ?></label>
             <input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>"
@@ -267,7 +267,7 @@ class YITH_Proteo_Social_Icons extends WP_Widget {
         </p>
 
         <p>
-            <label for="<?php echo $this->get_field_id( 'linkedin' ); ?>"><?php _e( 'Linkedin:', 'yith-proteo' ); ?></label>
+            <label for="<?php echo $this->get_field_id( 'linkedin' ); ?>"><?php _e( 'LinkedIn:', 'yith-proteo' ); ?></label>
             <input class="widefat" id="<?php echo $this->get_field_id( 'linkedin' ); ?>"
                    name="<?php echo $this->get_field_name( 'linkedin' ); ?>" type="text"
                    value="<?php echo esc_attr( $linkedin ); ?>">

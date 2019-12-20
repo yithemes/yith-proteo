@@ -48,7 +48,7 @@ ul.products, .wc-block-grid ul.wc-block-grid__products {
             position: relative;
             z-index: 1;
 
-            & + img {
+            & ~ img {
                 position: absolute;
                 top: 0;
                 opacity: 0;
@@ -62,7 +62,7 @@ ul.products, .wc-block-grid ul.wc-block-grid__products {
                 filter: brightness(1.1);
                 z-index: 0;
 
-                & + img {
+                & ~ img {
                     z-index: 1;
                     opacity: 1;
                 }
