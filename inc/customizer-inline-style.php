@@ -136,10 +136,14 @@ function yith_proteo_inline_style() {
 				.site-branding .site-title a:hover, 
 				.single-product .single-product-layout-cols .yith-wcwl-add-to-wishlist .yith-wcwl-icon, 
 				.single-product .woocommerce-tabs + .yith-wcwl-add-to-wishlist .yith-wcwl-icon,
-				table.cart tbody tr td.actions button[name=update_cart] {
+				table.cart tbody tr td.actions button[name=update_cart],
+				.woocommerce .products .add-request-quote-button.button,
+                .woocommerce .products .add-request-quote-button-addons.button {
 					color: {$main_color_shade};
 				}
 				
+				.woocommerce .products .add-request-quote-button.button:hover,
+                .woocommerce .products .add-request-quote-button-addons.button:hover,
 				a:hover, a:focus, a:active, table.cart tbody tr td.actions button[name=update_cart]:hover {
 				    color: {$general_link_hover_color};
 				}

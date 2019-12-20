@@ -1,0 +1,44 @@
+.woocommerce .products{
+
+    .add-request-quote-button.button,
+    .add-request-quote-button-addons.button{
+        background:none;
+        border:0px;
+        color:black;
+        padding:10px 0;
+        font-size: 14px;
+        color: #448a85;
+
+        &:hover{
+            background:none;
+            color: #448a85;
+        }
+    }
+
+    .yith-ywraq-add-to-quote,
+    .yith_ywraq_add_item_browse_message{
+        font-size: 14px;
+    }
+
+    .yith-ywraq-add-to-quote{
+        img{
+            width: auto;
+        }
+    }
+}
+
+
+.summary{
+    .yith-ywraq-add-to-quote{
+        margin-bottom: 30px;
+    }
+}
+#yith-ywraq-form {
+    .actions .button{
+        float: right;
+    }
+
+    .actions .wc-backward.button{
+        float: left;
+    }
+}

@@ -178,7 +178,7 @@ p.stars {
         display: block;
     }
 
-    input, select, textarea {
+    input:not([type='submit']), select, textarea {
         width: 100%;
     }
 

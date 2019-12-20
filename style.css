@@ -7809,7 +7809,7 @@ p.stars.selected a:not(.active):before {
 .form-row label {
   display: block;
 }
-.form-row input, .form-row select, .form-row textarea {
+.form-row input:not([type=submit]), .form-row select, .form-row textarea {
   width: 100%;
 }
 .form-row.form-row-first {
@@ -10154,6 +10154,39 @@ ul.products li.product a.compare:not(.button) {
 .entry-content .ywgc_enter_code .ywgc_apply_gift_card_button {
   display: inline-block;
   width: auto;
+}
+
+.woocommerce .products .add-request-quote-button.button,
+.woocommerce .products .add-request-quote-button-addons.button {
+  background: none;
+  border: 0px;
+  color: black;
+  padding: 10px 0;
+  font-size: 14px;
+  color: #448a85;
+}
+.woocommerce .products .add-request-quote-button.button:hover,
+.woocommerce .products .add-request-quote-button-addons.button:hover {
+  background: none;
+  color: #448a85;
+}
+.woocommerce .products .yith-ywraq-add-to-quote,
+.woocommerce .products .yith_ywraq_add_item_browse_message {
+  font-size: 14px;
+}
+.woocommerce .products .yith-ywraq-add-to-quote img {
+  width: auto;
+}
+
+.summary .yith-ywraq-add-to-quote {
+  margin-bottom: 30px;
+}
+
+#yith-ywraq-form .actions .button {
+  float: right;
+}
+#yith-ywraq-form .actions .wc-backward.button {
+  float: left;
 }
 
 /**
