@@ -1,22 +1,23 @@
 # Copyright (C) 2017 Automattic
 # This file is distributed under the GNU General Public License v2 or later.
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: YITH Proteo\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2019-12-23 16:08+0100\n"
+"POT-Creation-Date: 2019-12-23 16:09+0100\n"
+"PO-Revision-Date: 2019-12-23 16:09+0100\n"
+"Last-Translator: \n"
+"Language-Team: yithemes\n"
+"Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2017-MO-DA HO:MI+ZONE\n"
-"Last-Translator: \n"
-"Language-Team: yithemes\n"
 "X-Generator: Poedit 2.2.4\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
 "_n_noop:1,2;_c;_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_ex:1,2c;"
 "esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: .git\n"
 "X-Poedit-SearchPathExcluded-1: .sass-cache\n"
@@ -24,737 +25,764 @@ msgstr ""
 
 #: 404.php:19
 msgid "Oops! That page can&rsquo;t be found."
-msgstr ""
+msgstr "¡Ups! Esa página no se ha podido&rsquo; encontrar."
 
 #: 404.php:23
 msgid "It looks like nothing was found at this location. Maybe try a search?"
 msgstr ""
+"Parece que no se ha encontrado nada en esta ubicación. ¿Quizás una búsqueda?"
 
 #: comments.php:35
 #, php-format
 msgid "One thought on &ldquo;%1$s&rdquo;"
-msgstr ""
+msgstr "Uno pensamiento en &ldquo;%1$s&rdquo;"
 
 #: comments.php:41
 #, php-format
 msgctxt "comments title"
 msgid "%1$s comment"
 msgid_plural "%1$s comments"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%1$s comentario"
+msgstr[1] "%1$s"
 
 #: comments.php:67
 msgid "Comments are closed."
-msgstr ""
+msgstr "Los comentarios están cerrados."
 
 #: functions.php:50
 msgid "Primary"
-msgstr ""
+msgstr "Primario"
 
 #: header.php:21
 msgid "Skip to content"
-msgstr ""
+msgstr "Saltar el contenido"
 
 #: inc/comments-walker.php:66
 #, php-format
 msgid "%s <span class=\"screen-reader-text says\">says:</span>"
-msgstr ""
+msgstr "%s <span class=\"screen-reader-text says\">dice:</span>"
 
 #: inc/comments-walker.php:79
 #, php-format
 msgid "%1$s at %2$s"
-msgstr ""
+msgstr "%1$s a las %2$s"
 
 #: inc/comments-walker.php:86
 msgid "(Edit)"
-msgstr ""
+msgstr "(Editar)"
 
 #: inc/comments-walker.php:91
 msgid "Your comment is awaiting moderation."
-msgstr ""
+msgstr "Tu comentario está a la espera de moderación."
 
 #: inc/customizer.php:46
 msgid "Sidebars"
-msgstr ""
+msgstr "Barras laterales"
 
 #: inc/customizer.php:64
 msgid "Choose the position of the default sidebar"
-msgstr ""
+msgstr "Elige la posición para la barra lateral predeterminada"
 
 #: inc/customizer.php:66
 msgid ""
-"Select where to display the default sidebar. You can adjust the settings from "
-"the page/post edit view."
+"Select where to display the default sidebar. You can adjust the settings "
+"from the page/post edit view."
 msgstr ""
+"Selecciona donde mostrar la barra lateral predeterminada. Puedes cambiar los "
+"ajustes desde la vista de la página editar página/publicación."
 
 #: inc/customizer.php:68 inc/customizer.php:91 inc/customizer.php:133
 #: inc/customizer.php:1319
 msgid "No sidebar"
-msgstr ""
+msgstr "Sin barra lateral"
 
 #: inc/customizer.php:69 inc/customizer.php:92 inc/customizer.php:134
 #: inc/customizer.php:1320
 msgid "Right"
-msgstr ""
+msgstr "Derecha"
 
 #: inc/customizer.php:70 inc/customizer.php:93 inc/customizer.php:135
 #: inc/customizer.php:1321
 msgid "Left"
-msgstr ""
+msgstr "Izquierda"
 
 #: inc/customizer.php:87
 msgid "Choose the position of the blog page sidebar"
-msgstr ""
+msgstr "Elige la posición de la barra lateral de la página del blog"
 
 #: inc/customizer.php:89
 msgid ""
-"Select where to display the sidebar. You can pick up a specific sidebard from "
-"the page edit view."
+"Select where to display the sidebar. You can pick up a specific sidebard "
+"from the page edit view."
 msgstr ""
+"Selecciona donde mostrar la barra lateral. Puedes elegir una barra lateral "
+"específica desde la vista de la página Editar."
 
 #: inc/customizer.php:110
 msgid "Choose the blog sidebar"
-msgstr ""
+msgstr "Escoge la barra lateral del blog"
 
 #: inc/customizer.php:112
 msgid ""
 "Select the sidebar to display. You can pick a specific sidebar from the "
 "single post edit page."
 msgstr ""
+"Selecciona la barra lateral a mostrar. Puedes elegir una barra lateral "
+"específica desde la página de edición de la publicación."
 
 #: inc/customizer.php:129
 msgid "Choose the position of the sidebar on single product page"
-msgstr ""
+msgstr "Elige la posición de la barra lateral en la página de producto"
 
 #: inc/customizer.php:131
 msgid ""
-"Select where to display the sidebar. You can adjust the settings from product "
-"edit view."
+"Select where to display the sidebar. You can adjust the settings from "
+"product edit view."
 msgstr ""
+"Selecciona donde mostrar la barra lateral. Puedes cambiar los ajustes desde "
+"la vista de la página Editar producto."
 
 #: inc/customizer.php:146
 msgid "Topbar"
-msgstr ""
+msgstr "Barra superior"
 
 #: inc/customizer.php:164
 msgid "Enable topbar"
-msgstr ""
+msgstr "Activar barra superior"
 
 #: inc/customizer.php:166
 msgid "Choose whether to show the site topbar or not"
-msgstr ""
+msgstr "Elige si mostrar la barra superior del sitio o no"
 
 #: inc/customizer.php:168 inc/customizer.php:221 inc/customizer.php:1342
 msgid "Yes"
-msgstr ""
+msgstr "Sí"
 
 #: inc/customizer.php:169 inc/customizer.php:222 inc/customizer.php:1343
 msgid "No"
-msgstr ""
+msgstr "No"
 
 #: inc/customizer.php:187
 msgid "Topbar background color"
-msgstr ""
+msgstr "Color de fondo de la barra superior"
 
 #: inc/customizer.php:199
 msgid "Header"
-msgstr ""
+msgstr "Encabezado"
 
 #: inc/customizer.php:217
 msgid "Enable sticky header"
-msgstr ""
+msgstr "Activar encabezado fijo"
 
 #: inc/customizer.php:219
 msgid "Choose whether to make the header stick to the page when scrolling down"
 msgstr ""
+"Elige si hacer que el encabezado se adhiera al a página al deslizar hacia "
+"abajo"
 
 #: inc/customizer.php:240
 msgid "Header background color"
-msgstr ""
+msgstr "Color de fondo del encabezado"
 
 #: inc/customizer.php:258
 msgid "Header layout"
-msgstr ""
+msgstr "Diseño del encabezado"
 
 #: inc/customizer.php:260
 msgid "Choose the header layout"
-msgstr ""
+msgstr "Escoge el diseño del encabezado"
 
 #: inc/customizer.php:262 inc/customizer.php:1263
 msgid "Please select"
-msgstr ""
+msgstr "Por favor, selecciona"
 
 #: inc/customizer.php:263
 msgid "Logo on the left and navigation below"
-msgstr ""
+msgstr "Logo a la izquierda y navegación debajo"
 
 #: inc/customizer.php:264
 msgid "Logo on the left and navigation inline"
-msgstr ""
+msgstr "Logo a la izquierda y navegación alineada"
 
 #: inc/customizer.php:265
 msgid "Centered logo and navigation below"
-msgstr ""
+msgstr "Logo centrado y navegación debajo"
 
 #: inc/customizer.php:277
 msgid "Footer"
-msgstr ""
+msgstr "Pie de página"
 
 #: inc/customizer.php:296
 msgid "Footer background color"
-msgstr ""
+msgstr "Color de fondo del pie de página"
 
 #: inc/customizer.php:313
 msgid ""
 "Select how many widgets per row to show for Footer Sidebar 1 (new rows are "
 "automatically created)."
 msgstr ""
+"Selecciona cuántos widgets por fila mostrar en la Barra lateral de Pie de "
+"página 1 (las filas nuevas se crean automáticamente)."
 
 #: inc/customizer.php:317 inc/customizer.php:342
 msgid "One"
-msgstr ""
+msgstr "Uno"
 
 #: inc/customizer.php:318 inc/customizer.php:343
 msgid "Two"
-msgstr ""
+msgstr "Dos"
 
 #: inc/customizer.php:319 inc/customizer.php:344
 msgid "Three"
-msgstr ""
+msgstr "Tres"
 
 #: inc/customizer.php:320 inc/customizer.php:345
 msgid "Four"
-msgstr ""
+msgstr "Cuatro"
 
 #: inc/customizer.php:321 inc/customizer.php:346
 msgid "Five"
-msgstr ""
+msgstr "Cinco"
 
 #: inc/customizer.php:322 inc/customizer.php:347
 msgid "Six"
-msgstr ""
+msgstr "Seis"
 
 #: inc/customizer.php:338
 msgid ""
 "Select how many widgets per row to show for Footer Sidebar 2 (new rows are "
 "automatically created)."
 msgstr ""
+"Selecciona cuántos widgets por fila mostrar para la Barra lateral del Pie de "
+"página 2 (las filas nuevas se crean automáticamente)."
 
 #: inc/customizer.php:358
 msgid "Footer credits"
-msgstr ""
+msgstr "Créditos de pie de página"
 
 #: inc/customizer.php:374
 msgid "Enter here the content of the footer credits area"
-msgstr ""
+msgstr "Introduce aquí el contenido del área de créditos de pie de página"
 
 #: inc/customizer.php:392
 msgid "Footer credits background color"
-msgstr ""
+msgstr "Color de fondo de créditos de pie de página"
 
 #: inc/customizer.php:404
 msgid "Google Font"
-msgstr ""
+msgstr "Fuente de Google"
 
 #: inc/customizer.php:421
 msgid "Enter the URL of the Google Font you want to use."
-msgstr ""
+msgstr "Introduce la URL de la Fuente de Google que quieras usar."
 
 #: inc/customizer.php:433
 msgid "Typography"
-msgstr ""
+msgstr "Tipografía"
 
 #: inc/customizer.php:449
 msgid "Body font size (default: 16px)"
-msgstr ""
+msgstr "Tamaño de la fuente del Cuerpo (predeterminado: 16px)"
 
 #: inc/customizer.php:467
 msgid "Body font color"
-msgstr ""
+msgstr "Color de fuente de Cuerpo"
 
 #: inc/customizer.php:484
 msgid "H1 font size (default: 32px)"
-msgstr ""
+msgstr "Tamaño de fuente H1 (predeterminado: 32px)"
 
 #: inc/customizer.php:502
 msgid "H1 font color"
-msgstr ""
+msgstr "Color de fuente H1"
 
 #: inc/customizer.php:519
 msgid "H2 font size (default: 24px)"
-msgstr ""
+msgstr "Tamaño de fuente H2 (predeterminado: 24px)"
 
 #: inc/customizer.php:537
 msgid "H2 font color"
-msgstr ""
+msgstr "Color de fuente H2"
 
 #: inc/customizer.php:554
 msgid "H3 font size (default: 19px)"
-msgstr ""
+msgstr "Tamaño de fuente H3 (predeterminado: 19px)"
 
 #: inc/customizer.php:572
 msgid "H3 font color"
-msgstr ""
+msgstr "Color de fuente H3"
 
 #: inc/customizer.php:589
 msgid "H4 font size (default: 16px)"
-msgstr ""
+msgstr "Tamaño de fuente H4 (predeterminado: 16px)"
 
 #: inc/customizer.php:607
 msgid "H4 font color"
-msgstr ""
+msgstr "Color de fuente H4"
 
 #: inc/customizer.php:624
 msgid "H5 font size (default: 13px)"
-msgstr ""
+msgstr "Tamaño de fuente H5 (predeterminado: 13px)"
 
 #: inc/customizer.php:642
 msgid "H5 font color"
-msgstr ""
+msgstr "Color de fuente H5"
 
 #: inc/customizer.php:659
 msgid "H6 font size (default: 11px)"
-msgstr ""
+msgstr "Tamaño de fuente H6 (predeterminado: 11px)"
 
 #: inc/customizer.php:677
 msgid "H6 font color"
-msgstr ""
+msgstr "Color de fuente H6"
 
 #: inc/customizer.php:689
 msgid "Buttons"
-msgstr ""
+msgstr "Botones"
 
 #: inc/customizer.php:708
 msgid "Button Style 1 background color"
-msgstr ""
+msgstr "Color de fondo de Estilo de botón 1"
 
 #: inc/customizer.php:726
 msgid "Button Style 1 border color"
-msgstr ""
+msgstr "Color de borde de Estilo de botón 1"
 
 #: inc/customizer.php:744
 msgid "Button Style 1 text color"
-msgstr ""
+msgstr "Color de texto de Estilo de botón 1"
 
 #: inc/customizer.php:762
 msgid "Button Style 1 background <code>hover</code> color"
-msgstr ""
+msgstr "Color de fondo de Estilo de botón 1 <code>al pasar el cursor</code>"
 
 #: inc/customizer.php:780
 msgid "Button Style 1 border <code>hover</code> color"
-msgstr ""
+msgstr "Color de borde de Estilo de botón 1 <code>al pasar el cursor</code>"
 
 #: inc/customizer.php:798
 msgid "Button Style 1 text <code>hover</code> color"
-msgstr ""
+msgstr "Color de texto de Estilo de botón 1 <code>al pasar el cursor</code>"
 
 #: inc/customizer.php:818
 msgid "Button Style 2 background color shade 1"
-msgstr ""
+msgstr "Color de fondo de Estilo de botón 2 tono 1"
 
 #: inc/customizer.php:837
 msgid "Button Style 2 background color shade 2"
-msgstr ""
+msgstr "Color de fondo de Estilo de botón 2 tono 2"
 
 #: inc/customizer.php:855
 msgid "Button Style 2 text color"
-msgstr ""
+msgstr "Color de texto de Estilo de botón 2"
 
 #: inc/customizer.php:873
 msgid "Button Style 2 background <code>hover</code> color"
-msgstr ""
+msgstr "Color de fondo de Estilo de botón 2 <code>al pasar el cursor</code>"
 
 #: inc/customizer.php:891
 msgid "Button Style 2 text <code>hover</code> color"
-msgstr ""
+msgstr "Color de texto de Estilo de botón 2 <code>al pasar el cursor</code>"
 
 #: inc/customizer.php:904
 msgid "Color shades"
-msgstr ""
+msgstr "Todos de colores"
 
 #: inc/customizer.php:923
 msgid "Main color shade"
-msgstr ""
+msgstr "Tono de color principal"
 
 #: inc/customizer.php:925
 msgid "Save your settings and reload the page to let the magic happen"
-msgstr ""
+msgstr "Guarda tus ajustes y recarga la página para hacer que la magia ocurra"
 
 #: inc/customizer.php:943
 msgid "General link <code>hover</code> color"
-msgstr ""
+msgstr "Color de enlace General <code>al pasar el cursor</code>"
 
 #: inc/customizer.php:977
 msgid "Store notices"
-msgstr ""
+msgstr "Avisos de la tienda"
 
 #: inc/customizer.php:995
 msgid "Store notice background color"
-msgstr ""
+msgstr "Color de fondo de aviso de la tienda"
 
 #: inc/customizer.php:1013 inc/customizer.php:1080
 msgid "Store notice text color"
-msgstr ""
+msgstr "Color de texto de aviso de la tienda"
 
 #: inc/customizer.php:1030
 msgid "Store notice font size (default: 13px)"
-msgstr ""
+msgstr "Tamaño de fuente de aviso de la tienda (predeterminado:13px)"
 
 #: inc/customizer.php:1043
 msgid "Sale badge"
-msgstr ""
+msgstr "Insignia de descuento"
 
 #: inc/customizer.php:1062
 msgid "Sale badge background color"
-msgstr ""
+msgstr "Color de fondo de Insignia de descuento"
 
 #: inc/customizer.php:1096
 msgid "Sale badge font size (default: 13px)"
-msgstr ""
+msgstr "Tamaño de fuente de Insignia de descuento (predeterminado: 13px)"
 
 #: inc/customizer.php:1108
 msgid "WooCommerce messages"
-msgstr ""
+msgstr "Mensajes de WooCommerce"
 
 #: inc/customizer.php:1125
 msgid "WooCommerce messages font size (default: 16px)"
-msgstr ""
+msgstr "Tamaño de fuente de Mensajes de WooCommerce (predeterminado: 16px)"
 
 #: inc/customizer.php:1144
 msgid "Default messages: accent color"
-msgstr ""
+msgstr "Mensajes predeterminados: acentuar color"
 
 #: inc/customizer.php:1163
 msgid "Info messages: accent color"
-msgstr ""
+msgstr "Mensajes de información: acentuar color"
 
 #: inc/customizer.php:1182
 msgid "Error messages: accent color"
-msgstr ""
+msgstr "Mensajes de error: acentuar color"
 
 #: inc/customizer.php:1195
 msgid "Single product page"
-msgstr ""
+msgstr "Página de producto"
 
 #: inc/customizer.php:1212
 msgid "Max related products to show"
-msgstr ""
+msgstr "Max. de productos relacionados a mostrar"
 
 #: inc/customizer.php:1214
 msgid "Choose how many related products you want to show (default: 4)"
 msgstr ""
+"Elige cuántos productos relacionadas quieres mostrar (predeterminado: 4)"
 
 #: inc/customizer.php:1229
 msgid "Related products columns"
-msgstr ""
+msgstr "Columnas de productos relacionados"
 
 #: inc/customizer.php:1231
 msgid ""
 "Choose how many columns with related products you want to show (default: 4)"
 msgstr ""
+"Elige cuántas columnas con productos relacionados quieres mostrar "
+"(predeterminado: 4)"
 
 #: inc/customizer.php:1241
 msgid "Cart page"
-msgstr ""
+msgstr "Página del carrito"
 
 #: inc/customizer.php:1259
 msgid "Cart layout"
-msgstr ""
+msgstr "Diseño del carrito"
 
 #: inc/customizer.php:1261
 msgid "Choose the cart layout"
-msgstr ""
+msgstr "Escoge el diseño del carrito"
 
 #: inc/customizer.php:1264
 msgid "One column layout"
-msgstr ""
+msgstr "Diseño de una columna"
 
 #: inc/customizer.php:1265
 msgid "Two column layout"
-msgstr ""
+msgstr "Diseño de dos columnas"
 
 #: inc/customizer.php:1278
 msgid "Read the documentation to see how to retrieve a Google Font URL"
 msgstr ""
+"Lee la documentación para ver como recuperar una URL de Fuente de Google"
 
 #: inc/metaboxes.php:33
 msgid "Title icon"
-msgstr ""
+msgstr "Icono de título"
 
 #: inc/metaboxes.php:49
 msgid "Header slider"
-msgstr ""
+msgstr "Carrusel del encabezado"
 
 #: inc/metaboxes.php:67
 msgid "Sidebar position"
-msgstr ""
+msgstr "Posición de barra lateral"
 
 #: inc/metaboxes.php:82
 msgid "Sidebar Chooser"
-msgstr ""
+msgstr "Selector de barra lateral"
 
 #: inc/metaboxes.php:108 inc/metaboxes.php:196
 msgid "none"
-msgstr ""
+msgstr "ninguna"
 
 #: inc/sidebars.php:8
 msgid "Default Sidebar"
-msgstr ""
+msgstr "Barra lateral predeterminada"
 
 #: inc/sidebars.php:10 inc/sidebars.php:19 inc/sidebars.php:28
 #: inc/sidebars.php:37 inc/sidebars.php:46 inc/sidebars.php:55
 #: inc/sidebars.php:64 inc/sidebars.php:73
 msgid "Add widgets here."
-msgstr ""
+msgstr "Añadir widgets aquí."
 
 #: inc/sidebars.php:17
 msgid "Topbar Sidebar"
-msgstr ""
+msgstr "Barra lateral de la barra superior"
 
 #: inc/sidebars.php:26
 msgid "Header Sidebar"
-msgstr ""
+msgstr "Barra lateral del encabezado"
 
 #: inc/sidebars.php:35
 msgid "Footer Sidebar 1 (multiple columns can be configured)"
 msgstr ""
+"Barra lateral de Pie de página 1 (se pueden configurar múltiples columnas)"
 
 #: inc/sidebars.php:44
 msgid "Footer Sidebar 2 (multiple columns can be configured)"
 msgstr ""
+"Barra lateral de Pie de página 2 (se pueden configurar múltiples columnas)"
 
 #: inc/sidebars.php:53
 msgid "Sidebar 2"
-msgstr ""
+msgstr "Barra lateral 2"
 
 #: inc/sidebars.php:62
 msgid "Sidebar 3"
-msgstr ""
+msgstr "Barra lateral 3"
 
 #: inc/sidebars.php:71
 msgid "Shop sidebar"
-msgstr ""
+msgstr "Barra lateral de la tienda"
 
 #: inc/template-functions.php:215
 msgid "Search"
-msgstr ""
+msgstr "Buscar"
 
 #: inc/template-functions.php:239 inc/template-functions.php:257
 msgid "Read more"
-msgstr ""
+msgstr "Leer más"
 
 #: inc/template-tags.php:41
 #, php-format
 msgctxt "post author"
 msgid "By %s"
-msgstr ""
+msgstr "Por %s"
 
 #: inc/template-tags.php:60 template-parts/content-page.php:43
 #, php-format
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
-msgstr ""
+msgstr "Editar <span class=\"screen-reader-text\">%s</span>"
 
 #: inc/widgets.php:19
 msgid "Recent Posts"
-msgstr ""
+msgstr "Publicaciones recientes"
 
 #: inc/widgets.php:50
 #, php-format
 msgctxt "comments count on widget"
 msgid "One comment"
 msgid_plural "%1$s comments"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Un comentario"
+msgstr[1] "%1$s comentarios"
 
 #: inc/widgets.php:90
 msgid "Recent Comments"
-msgstr ""
+msgstr "Comentarios recientes"
 
 #: inc/widgets.php:141
 #, php-format
 msgctxt "widgets"
 msgid "%1$s on %2$s"
-msgstr ""
+msgstr "%1$s en %2$s"
 
 #: inc/widgets.php:179
 msgid "Social Networks"
-msgstr ""
+msgstr "Redes sociales"
 
 #: inc/widgets.php:180
 msgid "Links to your social profiles"
-msgstr ""
+msgstr "Enlaces a tus redes sociales"
 
 #: inc/widgets.php:240
 msgid "To hide a field, just leave it empty"
-msgstr ""
+msgstr "Para ocultar un campo, simplemente déjalo vacío"
 
 #: inc/widgets.php:242
 msgid "Title:"
-msgstr ""
+msgstr "Título:"
 
 #: inc/widgets.php:249
 msgid "Facebook:"
-msgstr ""
+msgstr "Facebook:"
 
 #: inc/widgets.php:256
 msgid "Twitter:"
-msgstr ""
+msgstr "Twitter:"
 
 #: inc/widgets.php:263
 msgid "Instagram:"
-msgstr ""
+msgstr "Instagram:"
 
 #: inc/widgets.php:270
 msgid "LinkedIn:"
-msgstr ""
+msgstr "LinkedIn:"
 
 #: inc/woocommerce.php:208
 msgid "View your shopping cart"
-msgstr ""
+msgstr "Ver tu carrito"
 
 #: inc/woocommerce.php:212
 #, php-format
 msgid "%d item"
 msgid_plural "%d items"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d artículo"
+msgstr[1] "%d artículos"
 
 #: inc/woocommerce.php:306
 msgid "Logout"
-msgstr ""
+msgstr "Cerrar sesión"
 
 #: inc/woocommerce.php:341
 msgid "Account info"
-msgstr ""
+msgstr "Información de la cuenta"
 
 #: inc/woocommerce.php:396
 #, php-format
 msgid "%d item in cart"
 msgid_plural "%d items in cart"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d artículo añadido al carrito"
+msgstr[1] "%d artículos añadidos al carrito"
 
 #: search.php:22
 #, php-format
 msgid "Search results for: %s"
-msgstr ""
+msgstr "Resultados de búsqueda para: %s"
 
 #: template-parts/content-none.php:14
 msgid "Nothing found"
-msgstr ""
+msgstr "No se han encontrado resultados"
 
 #: template-parts/content-none.php:24
 #, php-format
-msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
+"¿Listo para hacer tu primera publicación? <a href=\"%1$s\">Comienza aquí</a>."
 
 #: template-parts/content-none.php:37
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
 msgstr ""
+"Lo siento, pero no se han encontrado resultado para tus términos de "
+"búsqueda. Por favor, inténtalo con algunas palabras clave diferentes."
 
 #: template-parts/content-none.php:44
 msgid ""
-"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching "
-"can help."
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
 msgstr ""
+"Parece que no puedes&rsquo;encontrar lo que estás&rsquo;buscando. Quizás "
+"buscar puede ayudar."
 
 #: template-parts/content-page.php:30 template-parts/content.php:117
 msgid "Pages:"
-msgstr ""
+msgstr "Páginas:"
 
 #: template-parts/content.php:59
 msgid ", "
-msgstr ""
+msgstr ", "
 
 #: template-parts/content.php:62
 #, php-format
 msgid "Categories: %1$s"
-msgstr ""
+msgstr "Categorías: %1$s"
 
 #: template-parts/content.php:66
 msgctxt "list item separator"
 msgid ", "
-msgstr ""
+msgstr ", "
 
 #: template-parts/content.php:69
 #, php-format
 msgid "Tags: %1$s"
-msgstr ""
+msgstr "Etiquetas: %1$s"
 
 #: template-parts/content.php:79
 #, php-format
 msgid "Leave a comment<span class=\"screen-reader-text\"> on %s</span>"
-msgstr ""
+msgstr "Deja un comentario<span class=\"screen-reader-text\"> en %s</span>"
 
 #: template-parts/content.php:102
 #, php-format
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
-msgstr ""
+msgstr "Continúa leyendo<span class=\"screen-reader-text\"> \"%s\"</span>"
 
 #: woocommerce/checkout/form-checkout.php:26
 msgid "You must be logged in to proceed with the checkout."
-msgstr ""
+msgstr "Debes haber iniciado sesión para proceder con el proceso de pago."
 
 #: woocommerce/checkout/form-checkout.php:59
 msgid "Your order"
-msgstr ""
+msgstr "Tu pedido"
 
 #: woocommerce/myaccount/proteo-account-info.php:14
 msgid "Personal info"
-msgstr ""
+msgstr "Información personal"
 
 #: woocommerce/myaccount/proteo-account-info.php:16
 #: woocommerce/myaccount/proteo-account-info.php:41
 #: woocommerce/myaccount/proteo-account-info.php:78
 msgid "First name:"
-msgstr ""
+msgstr "Nombre:"
 
 #: woocommerce/myaccount/proteo-account-info.php:20
 #: woocommerce/myaccount/proteo-account-info.php:45
 #: woocommerce/myaccount/proteo-account-info.php:82
 msgid "Last name:"
-msgstr ""
+msgstr "Apellidos:"
 
 #: woocommerce/myaccount/proteo-account-info.php:24
 msgid "E-mail:"
-msgstr ""
+msgstr "Correo electrónico:"
 
 #: woocommerce/myaccount/proteo-account-info.php:28
 msgid "Password:"
-msgstr ""
+msgstr "Contraseña:"
 
 #: woocommerce/myaccount/proteo-account-info.php:33
 #: woocommerce/myaccount/proteo-account-info.php:69
 #: woocommerce/myaccount/proteo-account-info.php:106
 msgid "Edit info"
-msgstr ""
+msgstr "Editar información"
 
 #: woocommerce/myaccount/proteo-account-info.php:39
 msgid "Billing info & address"
-msgstr ""
+msgstr "Información y dirección de facturación"
 
 #: woocommerce/myaccount/proteo-account-info.php:50
 #: woocommerce/myaccount/proteo-account-info.php:87
 msgid "Company name:"
-msgstr ""
+msgstr "Nombre de la empresa:"
 
 #: woocommerce/myaccount/proteo-account-info.php:54
 #: woocommerce/myaccount/proteo-account-info.php:91
 msgid "VAT:"
-msgstr ""
+msgstr "CIF:"
 
 #: woocommerce/myaccount/proteo-account-info.php:59
 #: woocommerce/myaccount/proteo-account-info.php:96
 msgid "CIF/SSN:"
-msgstr ""
+msgstr "CIF/SSN:"
 
 #: woocommerce/myaccount/proteo-account-info.php:64
 #: woocommerce/myaccount/proteo-account-info.php:101
 msgid "Address:"
-msgstr ""
+msgstr "Dirección:"
 
 #: woocommerce/myaccount/proteo-account-info.php:76
 msgid "Shipping info & address"
-msgstr ""
+msgstr "Información y dirección de envío"
