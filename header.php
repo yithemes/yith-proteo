@@ -23,7 +23,7 @@ global $post;
 <?php
 // hide site header if meta value enabled
 $hide_header = $post ? get_post_meta( $post->ID, 'yith_proteo_remove_header_and_footer', true ) : 'off';
-if ( 'off' == $hide_header ) : ?>
+if ( 'on' != $hide_header ) : ?>
     <header id="masthead"
             class="site-header <?php echo get_theme_mod( 'yith_proteo_header_layout', 'left_logo_navigation_inline' ); ?> " <?php yith_proteo_custom_header_style(); ?>>
 		<?php

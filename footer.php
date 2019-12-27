@@ -18,7 +18,7 @@ global $post;
 	<?php
     // hide site footer if meta value enabled
 	$hide_footer = $post ? get_post_meta( $post->ID, 'yith_proteo_remove_header_and_footer', true ) : 'off';
-	if ( 'off' == $hide_footer ) : ?>
+	if ( 'on' != $hide_footer ) : ?>
         <div class="footer-sidebar-1 container">
             <div class="row"><?php dynamic_sidebar( 'footer-sidebar-1' ); ?></div>
         </div>
