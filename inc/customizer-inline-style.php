@@ -290,28 +290,30 @@ function yith_proteo_inline_style() {
                 input[type=\"reset\"], 
                 input[type=\"submit\"], 
                 .button, 
-                .widget a.button{
+                .widget a.button, 
+                .button-style-1:not(.wp-block-button), .button-style-1 a {
 					background: none;
                     background-color: {$button_1_bg_color};
 					border-color: {$button_1_border_color};
 					color: {$button_1_font_color};
                 }
                 
-                button:hover, 
-                input[type=\"button\"]:hover, 
-                input[type=\"reset\"]:hover, 
-                input[type=\"submit\"]:hover, 
-                .button:hover, 
-                .widget a.button:hover,
-                .wishlist-submit.popup_button:hover,
-                .button.flat:hover,
-				.yith_wcwl_footer_additional_action .ask-an-estimate-button:hover,
-				.widget_shopping_cart .yith-proteo-mini-cart-content .woocommerce-mini-cart__buttons a.checkout:hover {
+                 button:hover, 
+                 input[type=\"button\"]:hover, 
+                 input[type=\"reset\"]:hover, 
+                 input[type=\"submit\"]:hover, 
+                 .button:hover, 
+                 .widget a.button:hover,
+                 .wishlist-submit.popup_button:hover,
+                 .button.flat:hover,
+				 .yith_wcwl_footer_additional_action .ask-an-estimate-button:hover,
+				 .widget_shopping_cart .yith-proteo-mini-cart-content .woocommerce-mini-cart__buttons a.checkout:hover,
+				 .button-style-1:not(.wp-block-button):hover, .button-style-1 a:hover {
 					background: none;
                     background-color: {$button_1_bg_hover_color};
 					border-color: {$button_1_border_hover_color};
 					color: {$button_1_font_hover_color};
-                }
+                 }
                 
                 /* Button style 2*/
                 button.alt, 
@@ -321,7 +323,8 @@ function yith_proteo_inline_style() {
                 .button.alt, 
                 .widget-area .widget a.button.alt,
                 .wishlist-submit.popup_button,
-                .yith_wcwl_wishlist_footer input[name=\"add_all_to_cart\"]{
+                .yith_wcwl_wishlist_footer input[name=\"add_all_to_cart\"],
+                .button-style-2:not(.wp-block-button), .button-style-2 a {
                     background-color: {$button_2_bg_color_1};
                     background: linear-gradient(180deg, {$button_2_bg_color_1} 0%, {$button_2_bg_color_2} 100%);
 					color: {$button_2_font_color};
@@ -334,7 +337,8 @@ function yith_proteo_inline_style() {
                 .button.alt:hover, 
                 .widget-area .widget a.button.alt:hover,
                 .wishlist-submit.popup_button:hover,
-                .yith_wcwl_wishlist_footer input[name=\"add_all_to_cart\"]:hover{
+                .yith_wcwl_wishlist_footer input[name=\"add_all_to_cart\"]:hover,
+                .button-style-2:not(.wp-block-button):hover, .button-style-2 a:hover {
                     background-color: {$button_2_bg_hover_color};
                     background: linear-gradient(180deg, {$button_2_bg_hover_color} 0%, {$button_2_bg_hover_color} 100%);
 					color: {$button_2_font_hover_color};
