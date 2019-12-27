@@ -8,20 +8,24 @@
  *
  * @package yith-proteo
  */
-
+global $post;
 ?>
 <?php echo get_theme_mod( 'yith_proteo_default_sidebar_position', 'right' ) != 'no-sidebar' ? '</div>' : '' ?>
 </div><!-- .container -->
 </div><!-- #content -->
 
 <footer id="main-footer" class="site-footer">
-    <div class="footer-sidebar-1 container">
-        <div class="row"><?php dynamic_sidebar( 'footer-sidebar-1' ); ?></div>
-    </div>
-    <div class="footer-sidebar-2 container">
-        <div class="row"><?php dynamic_sidebar( 'footer-sidebar-2' ); ?></div>
-    </div>
-
+	<?php
+    // hide site footer if meta value enabled
+	$hide_footer = $post ? get_post_meta( $post->ID, 'yith_proteo_remove_header_and_footer', true ) : 'off';
+	if ( 'off' == $hide_footer ) : ?>
+        <div class="footer-sidebar-1 container">
+            <div class="row"><?php dynamic_sidebar( 'footer-sidebar-1' ); ?></div>
+        </div>
+        <div class="footer-sidebar-2 container">
+            <div class="row"><?php dynamic_sidebar( 'footer-sidebar-2' ); ?></div>
+        </div>
+	<?php endif; ?>
     <div class="site-info">
         <div class="container">
 			<?php

@@ -88,6 +88,42 @@ function yith_proteo_sidebar_chooser_add_meta_box() {
 
 add_action( 'add_meta_boxes', 'yith_proteo_sidebar_chooser_add_meta_box' );
 
+
+/**
+ * Remove header and footer metabox
+ */
+function yith_proteo_remove_header_and_footer_add_meta_box() {
+	add_meta_box(
+		'yith_proteo_header_footer',
+		__( 'Header and footer', 'yith-proteo' ),
+		'yith_proteo_remove_header_and_footer_html',
+		array( 'post', 'page', 'product' ),
+		'side'
+	);
+}
+
+add_action( 'add_meta_boxes', 'yith_proteo_remove_header_and_footer_add_meta_box' );
+
+/**
+ * Remove header and footer metabox
+ *
+ * @param $post
+ *
+ * @author Francesco Grasso <francgrasso@yithemes.com>
+ */
+function yith_proteo_remove_header_and_footer_html( $post ) {
+	wp_nonce_field( '_yith_proteo_remove_header_and_footer_nonce', 'yith_proteo_remove_header_and_footer_nonce' );
+	$value = get_post_meta( $post->ID, 'yith_proteo_remove_header_and_footer', true );
+	?>
+
+    <label for="yith_proteo_remove_header_and_footer">
+        <input type="checkbox" name="yith_proteo_remove_header_and_footer"
+               id="yith_proteo_remove_header_and_footer" <?php checked( 'on', $value ) ?> value="on">
+		<?php _e( 'Enable this option to hide site header and footer.', 'yith-proteo' ); ?>
+    </label>
+	<?php
+}
+
 /**
  * Title icon metabox html
  *
@@ -208,6 +244,32 @@ function yith_proteo_header_slider_html( $post ) {
 
 /**
  * Title icon meta save
+ *
+ * @param $post_id
+ *
+ * @author Francesco Grasso <francgrasso@yithemes.com>
+ */
+function yith_proteo_remove_header_and_footer_save( $post_id ) {
+	if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
+		return;
+	}
+	if ( ! isset( $_POST['yith_proteo_remove_header_and_footer_nonce'] ) || ! wp_verify_nonce( $_POST['yith_proteo_remove_header_and_footer_nonce'], '_yith_proteo_remove_header_and_footer_nonce' ) ) {
+		return;
+	}
+	if ( ! current_user_can( 'edit_post', $post_id ) ) {
+		return;
+	}
+	if ( isset( $_POST['yith_proteo_remove_header_and_footer'] ) ) {
+		update_post_meta( $post_id, 'yith_proteo_remove_header_and_footer', esc_attr( $_POST['yith_proteo_remove_header_and_footer'] ) );
+	} else {
+		update_post_meta( $post_id, 'yith_proteo_remove_header_and_footer', 'off' );
+	}
+}
+
+add_action( 'save_post', 'yith_proteo_remove_header_and_footer_save' );
+
+/**
+ * Page header footer meta save
  *
  * @param $post_id
  *
