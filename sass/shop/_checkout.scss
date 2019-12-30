@@ -102,6 +102,7 @@ body.woocommerce-checkout {
 
                 .radiobutton {
                     position: absolute;
+                    pointer-events: none;
                 }
 
                 label {

@@ -26,11 +26,15 @@ Proteo is a sleek, modern and “Gutenberg-friendly” e-commerce theme. Develop
 
 == Changelog ==
 
+= x.x.x - Xxx xx xxxx =
+* Add Dutch translation file
+* Fix css issue on radio buttons click
+
 = 1.0.5 - Dec 27 2019 =
-    * Italian translation file
-    * Spanish translation file
-    * update inline style
-    * update gutenberg cover block style
+* Italian translation file
+* Spanish translation file
+* update inline style
+* update gutenberg cover block style
 
 = 1.0.4 - Dec 20 2019 =
 * update language .pot file

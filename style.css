@@ -7573,6 +7573,7 @@ body.woocommerce-checkout #payment ul li {
 }
 body.woocommerce-checkout #payment ul li .radiobutton {
   position: absolute;
+  pointer-events: none;
 }
 body.woocommerce-checkout #payment ul li label {
   font-weight: bold;
