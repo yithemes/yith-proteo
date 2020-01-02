@@ -34,7 +34,7 @@
 							$icon = '<span class="yith-proteo-myaccount-icons lnr lnr-map-marker"></span>';
 							break;
 						default :
-						    $icon = '<span class="yith-proteo-myaccount-icons lnr lnr-star"></span>';
+						    $icon = apply_filters( 'yith_proteo_myaccount_custom_icon', '<span class="yith-proteo-myaccount-icons lnr lnr-star"></span>', $endpoint);
 							break;
 
 					endswitch;
