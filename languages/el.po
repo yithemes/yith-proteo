@@ -1,0 +1,803 @@
+# Copyright (C) 2017 Automattic
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: YITH Proteo\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
+"POT-Creation-Date: 2020-01-09 10:39+0100\n"
+"PO-Revision-Date: 2020-01-09 10:39+0100\n"
+"Last-Translator: \n"
+"Language-Team: yithemes\n"
+"Language: el\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.4\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c;_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_ex:1,2c;"
+"esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: .git\n"
+"X-Poedit-SearchPathExcluded-1: .sass-cache\n"
+"X-Poedit-SearchPathExcluded-2: bin\n"
+
+#: 404.php:19
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Ωπ! Η σελίδα δεν&rsquo; βρέθηκε."
+
+#: 404.php:23
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+"Φαίνεται να μην βρέθηκε αποτέλεσμα σε αυτή την τοποθεσία. Ίσως αν κάνατε "
+"αναζήτηση;"
+
+#: comments.php:35
+#, php-format
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr "Μια σκέψη για &ldquo;%1$s&rdquo;"
+
+#: comments.php:41
+#, php-format
+msgctxt "comments title"
+msgid "%1$s comment"
+msgid_plural "%1$s comments"
+msgstr[0] "%1$s σχόλιο"
+msgstr[1] "%1$s σχόλια"
+
+#: comments.php:67
+msgid "Comments are closed."
+msgstr "Τα σχόλια είναι απενεργοποιημένα."
+
+#: functions.php:50
+msgid "Primary"
+msgstr "Βασικό"
+
+#: header.php:21
+msgid "Skip to content"
+msgstr "Παράβλεψη προς περιεχόμενο"
+
+#: inc/comments-walker.php:66
+#, php-format
+msgid "%s <span class=\"screen-reader-text says\">says:</span>"
+msgstr "%s <span class=“screen-reader-text says”>λέει:</span>"
+
+#: inc/comments-walker.php:79
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$s στις %2$s"
+
+#: inc/comments-walker.php:86
+msgid "(Edit)"
+msgstr "(Επεξεργασία)"
+
+#: inc/comments-walker.php:91
+msgid "Your comment is awaiting moderation."
+msgstr "Το σχόλιο σας αναμένεται να ελεγχθεί."
+
+#: inc/customizer.php:46
+msgid "Sidebars"
+msgstr "Πλευρικές στήλες"
+
+#: inc/customizer.php:64
+msgid "Choose the position of the default sidebar"
+msgstr "Επιλέξτε την θέση της προεπιλεγμένης πλευρικής στήλης"
+
+#: inc/customizer.php:66
+msgid ""
+"Select where to display the default sidebar. You can adjust the settings "
+"from the page/post edit view."
+msgstr ""
+"Επιλέξτε πού θέλετε να φαίνεται η προεπιλεγμένη πλευρική στήλη. Μπορείτε να "
+"προσαρμόσετε τις ρυθμίσεις μέσω της προβολής επεξεργασίας σελίδας/άρθρου."
+
+#: inc/customizer.php:68 inc/customizer.php:91 inc/customizer.php:133
+#: inc/customizer.php:1319
+msgid "No sidebar"
+msgstr "Χωρίς πλευρική στήλη"
+
+#: inc/customizer.php:69 inc/customizer.php:92 inc/customizer.php:134
+#: inc/customizer.php:1320
+msgid "Right"
+msgstr "Δεξιά"
+
+#: inc/customizer.php:70 inc/customizer.php:93 inc/customizer.php:135
+#: inc/customizer.php:1321
+msgid "Left"
+msgstr "Αριστερά"
+
+#: inc/customizer.php:87
+msgid "Choose the position of the blog page sidebar"
+msgstr "Επιλέξτε την θέση της πλευρικής στήλης σελίδας ιστολογίου"
+
+#: inc/customizer.php:89
+msgid ""
+"Select where to display the sidebar. You can pick up a specific sidebard "
+"from the page edit view."
+msgstr ""
+"Επιλέξτε πού να φαίνεται η πλευρική στήλη. Μπορείτε να αντιγράψετε μια "
+"συγκεκριμένη πλευρική στήλη από την προβολή επεξεργασίας σελίδας."
+
+#: inc/customizer.php:110
+msgid "Choose the blog sidebar"
+msgstr "Επιλέξτε την πλευρική στήλη ιστολογίου"
+
+#: inc/customizer.php:112
+msgid ""
+"Select the sidebar to display. You can pick a specific sidebar from the "
+"single post edit page."
+msgstr ""
+"Επιλέξτε ποια πλευρική στήλη θέλετε να φαίνεται. Μπορείτε να αντιγράψετε μια "
+"συγκεκριμένη πλευρική στήλη από την σελίδα επεξεργασίας απλού άρθρου."
+
+#: inc/customizer.php:129
+msgid "Choose the position of the sidebar on single product page"
+msgstr "Επιλέξτε την θέση της πλευρικής στήλης της σελίδας απλού προϊόντος"
+
+#: inc/customizer.php:131
+msgid ""
+"Select where to display the sidebar. You can adjust the settings from "
+"product edit view."
+msgstr ""
+"Επιλέξτε πού θέλετε να φαίνεται η προεπιλεγμένη πλευρική στήλη. Μπορείτε να "
+"προσαρμόσετε τις ρυθμίσεις μέσω της προβολής επεξεργασίας προϊόντος."
+
+#: inc/customizer.php:146
+msgid "Topbar"
+msgstr "Άνω μπάρα"
+
+#: inc/customizer.php:164
+msgid "Enable topbar"
+msgstr "Ενεργοποίηση άνω μπάρας"
+
+#: inc/customizer.php:166
+msgid "Choose whether to show the site topbar or not"
+msgstr "Επιλέξτε αν θέλετε να φαίνεται η άνω μπάρα ιστοσελίδας ή όχι"
+
+#: inc/customizer.php:168 inc/customizer.php:221 inc/customizer.php:1342
+msgid "Yes"
+msgstr "Ναι"
+
+#: inc/customizer.php:169 inc/customizer.php:222 inc/customizer.php:1343
+msgid "No"
+msgstr "Όχι"
+
+#: inc/customizer.php:187
+msgid "Topbar background color"
+msgstr "Χρώμα φόντου άνω μπάρας"
+
+#: inc/customizer.php:199
+msgid "Header"
+msgstr "Επικεφαλίδα"
+
+#: inc/customizer.php:217
+msgid "Enable sticky header"
+msgstr "Ενεργοποίηση καρφιτσωμένης επικεφαλίδας"
+
+#: inc/customizer.php:219
+msgid "Choose whether to make the header stick to the page when scrolling down"
+msgstr ""
+"Επιλέξτε αν θέλετε να καρφιτσώσετε την επικεφαλίδα στην σελίδα κατά την "
+"κύλιση προς τα κάτω"
+
+#: inc/customizer.php:240
+msgid "Header background color"
+msgstr "Χρώμα φόντου επικεφαλίδας"
+
+#: inc/customizer.php:258
+msgid "Header layout"
+msgstr "Διάταξη επικεφαλίδας"
+
+#: inc/customizer.php:260
+msgid "Choose the header layout"
+msgstr "Επιλέξτε διάταξη επικεφαλίδας"
+
+#: inc/customizer.php:262 inc/customizer.php:1263
+msgid "Please select"
+msgstr "Παρακαλώ επιλέξτε"
+
+#: inc/customizer.php:263
+msgid "Logo on the left and navigation below"
+msgstr "Λογότυπο στα αριστερά και πλοήγηση κάτω"
+
+#: inc/customizer.php:264
+msgid "Logo on the left and navigation inline"
+msgstr "Λογότυπο στα αριστερά και πλοήγηση στη σειρά"
+
+#: inc/customizer.php:265
+msgid "Centered logo and navigation below"
+msgstr "Κεντρικό λογότυπο και πλοήγηση κάτω"
+
+#: inc/customizer.php:277
+msgid "Footer"
+msgstr "Υποσέλιδο"
+
+#: inc/customizer.php:296
+msgid "Footer background color"
+msgstr "Χρώμα φόντου υποσέλιδου"
+
+#: inc/customizer.php:313
+msgid ""
+"Select how many widgets per row to show for Footer Sidebar 1 (new rows are "
+"automatically created)."
+msgstr ""
+"Επιλέξτε πόσες μικροεφαρμογές ανά σειρά θέλετε να φαίνονται για το Υποσέλιδο "
+"Πλευρικής Στήλης 1 (οι νέες σειρές δημιουργούνται αυτόματα)."
+
+#: inc/customizer.php:317 inc/customizer.php:342
+msgid "One"
+msgstr "Μια"
+
+#: inc/customizer.php:318 inc/customizer.php:343
+msgid "Two"
+msgstr "Δύο"
+
+#: inc/customizer.php:319 inc/customizer.php:344
+msgid "Three"
+msgstr "Τρεις"
+
+#: inc/customizer.php:320 inc/customizer.php:345
+msgid "Four"
+msgstr "Τέσσερις"
+
+#: inc/customizer.php:321 inc/customizer.php:346
+msgid "Five"
+msgstr "Πέντε"
+
+#: inc/customizer.php:322 inc/customizer.php:347
+msgid "Six"
+msgstr "Έξι"
+
+#: inc/customizer.php:338
+msgid ""
+"Select how many widgets per row to show for Footer Sidebar 2 (new rows are "
+"automatically created)."
+msgstr ""
+"Επιλέξτε πόσες μικροεφαρμογές ανά σειρά θέλετε να φαίνονται για το Υποσέλιδο "
+"Πλευρικής Στήλης 2 (οι νέες σειρές δημιουργούνται αυτόματα)."
+
+#: inc/customizer.php:358
+msgid "Footer credits"
+msgstr "Ευχαριστίες υποσέλιδου"
+
+#: inc/customizer.php:374
+msgid "Enter here the content of the footer credits area"
+msgstr "Πληκτρολογήστε εδώ το περιεχόμενο της περιοχής ευχαριστιών υποσέλιδου"
+
+#: inc/customizer.php:392
+msgid "Footer credits background color"
+msgstr "Χρώμα φόντου ευχαριστιών υποσέλιδου"
+
+#: inc/customizer.php:404
+msgid "Google Font"
+msgstr "Γραμματοσειρά Google"
+
+#: inc/customizer.php:421
+msgid "Enter the URL of the Google Font you want to use."
+msgstr ""
+"Πληκτρολογήστε το URL της Γραμματοσειράς Google που θέλετε να "
+"χρησιμοποιήσετε."
+
+#: inc/customizer.php:433
+msgid "Typography"
+msgstr "Τυπογραφία"
+
+#: inc/customizer.php:449
+msgid "Body font size (default: 16px)"
+msgstr "Μέγεθος γραμματοσειράς σώματος (προεπιλεγμένο: 16px)"
+
+#: inc/customizer.php:467
+msgid "Body font color"
+msgstr "Χρώμα γραμματοσειράς σώματος"
+
+#: inc/customizer.php:484
+msgid "H1 font size (default: 32px)"
+msgstr "Μέγεθος γραμματοσειράς H1 (προεπιλεγμένο: 32px)"
+
+#: inc/customizer.php:502
+msgid "H1 font color"
+msgstr "Χρώμα γραμματοσειράς H1"
+
+#: inc/customizer.php:519
+msgid "H2 font size (default: 24px)"
+msgstr "Μέγεθος γραμματοσειράς H2 (προεπιλεγμένο: 24px)"
+
+#: inc/customizer.php:537
+msgid "H2 font color"
+msgstr "Χρώμα γραμματοσειράς H2"
+
+#: inc/customizer.php:554
+msgid "H3 font size (default: 19px)"
+msgstr "Μέγεθος γραμματοσειράς H3 (προεπιλεγμένο: 19px)"
+
+#: inc/customizer.php:572
+msgid "H3 font color"
+msgstr "Χρώμα γραμματοσειράς H3"
+
+#: inc/customizer.php:589
+msgid "H4 font size (default: 16px)"
+msgstr "Μέγεθος γραμματοσειράς H4 (προεπιλεγμένο: 16px)"
+
+#: inc/customizer.php:607
+msgid "H4 font color"
+msgstr "Χρώμα γραμματοσειράς H4"
+
+#: inc/customizer.php:624
+msgid "H5 font size (default: 13px)"
+msgstr "Μέγεθος γραμματοσειράς H5 (προεπιλεγμένο: 13px)"
+
+#: inc/customizer.php:642
+msgid "H5 font color"
+msgstr "Χρώμα γραμματοσειράς H5"
+
+#: inc/customizer.php:659
+msgid "H6 font size (default: 11px)"
+msgstr "Μέγεθος γραμματοσειράς H6 (προεπιλεγμένο: 11px)"
+
+#: inc/customizer.php:677
+msgid "H6 font color"
+msgstr "Χρώμα γραμματοσειράς H6"
+
+#: inc/customizer.php:689
+msgid "Buttons"
+msgstr "Κουμπιά"
+
+#: inc/customizer.php:708
+msgid "Button Style 1 background color"
+msgstr "Στυλ Κουμπιού 1 χρώμα φόντου"
+
+#: inc/customizer.php:726
+msgid "Button Style 1 border color"
+msgstr "Στυλ Κουμπιού 1 χρώμα πλαισίου"
+
+#: inc/customizer.php:744
+msgid "Button Style 1 text color"
+msgstr "Στυλ Κουμπιού 1 χρώμα κειμένου"
+
+#: inc/customizer.php:762
+msgid "Button Style 1 background <code>hover</code> color"
+msgstr "Στυλ Κουμπιού 1 χρώμα <code>αιώρησης</code> φόντου"
+
+#: inc/customizer.php:780
+msgid "Button Style 1 border <code>hover</code> color"
+msgstr "Στυλ Κουμπιού 1 χρώμα <code>αιώρησης</code> πλαισίου"
+
+#: inc/customizer.php:798
+msgid "Button Style 1 text <code>hover</code> color"
+msgstr "Στυλ Κουμπιού 1 χρώμα <code>αιώρησης</code> πλαισίου"
+
+#: inc/customizer.php:818
+msgid "Button Style 2 background color shade 1"
+msgstr "Στυλ Κουμπιού 2 χρώμα φόντου απόχρωση 1"
+
+#: inc/customizer.php:837
+msgid "Button Style 2 background color shade 2"
+msgstr "Στυλ Κουμπιού 2 χρώμα φόντου απόχρωση 2"
+
+#: inc/customizer.php:855
+msgid "Button Style 2 text color"
+msgstr "Στυλ Κουμπιού 2 χρώμα κειμένου"
+
+#: inc/customizer.php:873
+msgid "Button Style 2 background <code>hover</code> color"
+msgstr "Στυλ Κουμπιού 2 χρώμα <code>αιώρησης</code> φόντου"
+
+#: inc/customizer.php:891
+msgid "Button Style 2 text <code>hover</code> color"
+msgstr "Στυλ Κουμπιού 2 χρώμα <code>αιώρησης</code> κειμένου"
+
+#: inc/customizer.php:904
+msgid "Color shades"
+msgstr "Αποχρώσεις χρώματος"
+
+#: inc/customizer.php:923
+msgid "Main color shade"
+msgstr "Κύρια απόχρωση χρώματος"
+
+#: inc/customizer.php:925
+msgid "Save your settings and reload the page to let the magic happen"
+msgstr ""
+"Αποθηκεύστε τις ρυθμίσεις σας και φορτώστε ξανά τη σελίδα για να αφήσετε τη "
+"μαγεία να συμβεί!"
+
+#: inc/customizer.php:943
+msgid "General link <code>hover</code> color"
+msgstr "Χρώμα <code>αιώρησης</code> γενικό λινκ"
+
+#: inc/customizer.php:977
+msgid "Store notices"
+msgstr "Σημειώσεις καταστήματος"
+
+#: inc/customizer.php:995
+msgid "Store notice background color"
+msgstr "Χρώμα φόντου σημείωσης καταστήματος"
+
+#: inc/customizer.php:1013 inc/customizer.php:1080
+msgid "Store notice text color"
+msgstr "Χρώμα κειμένου σημείωσης καταστήματος"
+
+#: inc/customizer.php:1030
+msgid "Store notice font size (default: 13px)"
+msgstr "Μέγεθος γραμματοσειράς σημείωσης καταστήματος (προεπιλεγμένο: 13px)"
+
+#: inc/customizer.php:1043
+msgid "Sale badge"
+msgstr "Έμβλημα έκπτωσης"
+
+#: inc/customizer.php:1062
+msgid "Sale badge background color"
+msgstr "Χρώμα φόντου εμβλήματος έκπτωσης"
+
+#: inc/customizer.php:1096
+msgid "Sale badge font size (default: 13px)"
+msgstr "Μέγεθος γραμματοσειράς εμβλήματος έκπτωσης (προεπιλεγμένο: 13px)"
+
+#: inc/customizer.php:1108
+msgid "WooCommerce messages"
+msgstr "Μηνύματα WooCommerce"
+
+#: inc/customizer.php:1125
+msgid "WooCommerce messages font size (default: 16px)"
+msgstr "Μέγεθος γραμματοσειράς μηνυμάτων WooCommerce (προεπιλεγμένο: 16px)"
+
+#: inc/customizer.php:1144
+msgid "Default messages: accent color"
+msgstr "Προεπιλεγμένα μηνύματα: χρώμα έμφασης"
+
+#: inc/customizer.php:1163
+msgid "Info messages: accent color"
+msgstr "Μηνύματα πληροφοριών: χρώμα έμφασης"
+
+#: inc/customizer.php:1182
+msgid "Error messages: accent color"
+msgstr "Μηνύματα σφαλμάτων: χρώμα έμφασης"
+
+#: inc/customizer.php:1195
+msgid "Single product page"
+msgstr "Σελίδα απλού προϊόντος"
+
+#: inc/customizer.php:1212
+msgid "Max related products to show"
+msgstr "Μέγιστος αριθμός σχετικών προϊόντων για εμφάνιση"
+
+#: inc/customizer.php:1214
+msgid "Choose how many related products you want to show (default: 4)"
+msgstr ""
+"Επιλέξτε πόσα σχετικά προϊόντα θέλετε να εμφανίζονται (προεπιλεγμένο: 4)"
+
+#: inc/customizer.php:1229
+msgid "Related products columns"
+msgstr "Στήλες σχετικών προϊόντων"
+
+#: inc/customizer.php:1231
+msgid ""
+"Choose how many columns with related products you want to show (default: 4)"
+msgstr ""
+"Επιλέξτε πόσες στήλες με σχετικά προϊόντα θέλετε να εμφανίζονται "
+"(προεπιλεγμένο: 4)"
+
+#: inc/customizer.php:1241
+msgid "Cart page"
+msgstr "Σελίδα ταμείου"
+
+#: inc/customizer.php:1259
+msgid "Cart layout"
+msgstr "Διάταξη ταμείου"
+
+#: inc/customizer.php:1261
+msgid "Choose the cart layout"
+msgstr "Επιλέξτε την διάταξη ταμείου"
+
+#: inc/customizer.php:1264
+msgid "One column layout"
+msgstr "Διάταξη μιας στήλης"
+
+#: inc/customizer.php:1265
+msgid "Two column layout"
+msgstr "Διάταξη δύο στήλων"
+
+#: inc/customizer.php:1278
+msgid "Read the documentation to see how to retrieve a Google Font URL"
+msgstr ""
+"Διαβάστε το εγχειρίδιο χρήσης για να μάθετε πώς να ανακτήσετε ένα URL "
+"Γραμματοσειράς Google"
+
+#: inc/metaboxes.php:33
+msgid "Title icon"
+msgstr "Εικονίδιο τίτλου"
+
+#: inc/metaboxes.php:49
+msgid "Header slider"
+msgstr "Μηχανισμός κύλισης επικεφαλίδας"
+
+#: inc/metaboxes.php:67
+msgid "Sidebar position"
+msgstr "Θέση πλευρικών στηλών"
+
+#: inc/metaboxes.php:82
+msgid "Sidebar Chooser"
+msgstr "Επιλογέας Πλευρικών Στηλών"
+
+#: inc/metaboxes.php:98
+#, fuzzy
+#| msgid "Header background color"
+msgid "Header and footer"
+msgstr "Χρώμα φόντου επικεφαλίδας"
+
+#: inc/metaboxes.php:122
+msgid "Enable this option to hide site header and footer."
+msgstr ""
+
+#: inc/metaboxes.php:144 inc/metaboxes.php:232
+msgid "none"
+msgstr "κανένα"
+
+#: inc/sidebars.php:8
+msgid "Default Sidebar"
+msgstr "Προεπιλεγμένη Πλευρική Στήλη"
+
+#: inc/sidebars.php:10 inc/sidebars.php:19 inc/sidebars.php:28
+#: inc/sidebars.php:37 inc/sidebars.php:46 inc/sidebars.php:55
+#: inc/sidebars.php:64 inc/sidebars.php:73
+msgid "Add widgets here."
+msgstr "Προσθέστε μικροεφαρμογές εδώ"
+
+#: inc/sidebars.php:17
+msgid "Topbar Sidebar"
+msgstr "Πλευρική Στήλη Άνω Μπάρας"
+
+#: inc/sidebars.php:26
+msgid "Header Sidebar"
+msgstr "Πλευρική Στήλη Επικεφαλίδας"
+
+#: inc/sidebars.php:35
+msgid "Footer Sidebar 1 (multiple columns can be configured)"
+msgstr "Πλευρική Στήλη Υποσέλιδου 1 (μπορούν να διαμορφωθούν πολλαπλές στήλες)"
+
+#: inc/sidebars.php:44
+msgid "Footer Sidebar 2 (multiple columns can be configured)"
+msgstr "Πλευρική Στήλη Υποσέλιδου 2 (μπορούν να διαμορφωθούν πολλαπλές στήλες)"
+
+#: inc/sidebars.php:53
+msgid "Sidebar 2"
+msgstr "Πλευρική Στήλη 2"
+
+#: inc/sidebars.php:62
+msgid "Sidebar 3"
+msgstr "Πλευρική Στήλη 3"
+
+#: inc/sidebars.php:71
+msgid "Shop sidebar"
+msgstr "Πλευρική στήλη καταστήματος"
+
+#: inc/template-functions.php:215
+msgid "Search"
+msgstr "Αναζήτηση"
+
+#: inc/template-functions.php:239 inc/template-functions.php:257
+msgid "Read more"
+msgstr "Διαβάστε περισσότερα"
+
+#: inc/template-tags.php:41
+#, php-format
+msgctxt "post author"
+msgid "By %s"
+msgstr "Από %s"
+
+#: inc/template-tags.php:60 template-parts/content-page.php:43
+#, php-format
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr "Επεξεργασία <span class=“screen-reader-text”>%s</span>"
+
+#: inc/widgets.php:19
+msgid "Recent Posts"
+msgstr "Πρόσφατες Αναρτήσεις"
+
+#: inc/widgets.php:50
+#, php-format
+msgctxt "comments count on widget"
+msgid "One comment"
+msgid_plural "%1$s comments"
+msgstr[0] "Ένα σχόλιο"
+msgstr[1] ""
+
+#: inc/widgets.php:90
+msgid "Recent Comments"
+msgstr "Πρόσφατα Σχόλια"
+
+#: inc/widgets.php:141
+#, php-format
+msgctxt "widgets"
+msgid "%1$s on %2$s"
+msgstr "%1$s στις %2$s"
+
+#: inc/widgets.php:179
+msgid "Social Networks"
+msgstr "Κοινωνικά δίκτυα"
+
+#: inc/widgets.php:180
+msgid "Links to your social profiles"
+msgstr "Λινκ για τα κοινωνικά σας προφίλ"
+
+#: inc/widgets.php:240
+msgid "To hide a field, just leave it empty"
+msgstr "Για να αποκρύψετε ένα πεδίο, αφήστε το κενό"
+
+#: inc/widgets.php:242
+msgid "Title:"
+msgstr "Τίτλος:"
+
+#: inc/widgets.php:249
+msgid "Facebook:"
+msgstr "Facebook:"
+
+#: inc/widgets.php:256
+msgid "Twitter:"
+msgstr "Twitter:"
+
+#: inc/widgets.php:263
+msgid "Instagram:"
+msgstr "Instagram:"
+
+#: inc/widgets.php:270
+msgid "LinkedIn:"
+msgstr "LinkedIn:"
+
+#: inc/woocommerce.php:208
+msgid "View your shopping cart"
+msgstr "Δείτε το καλάθι αγορών σας"
+
+#: inc/woocommerce.php:212
+#, php-format
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] "%d αντικείμενο"
+msgstr[1] "%d αντικείμενα"
+
+#: inc/woocommerce.php:306
+msgid "Logout"
+msgstr "Αποσύνδεση"
+
+#: inc/woocommerce.php:341
+msgid "Account info"
+msgstr "Στοιχεία λογαριασμού"
+
+#: inc/woocommerce.php:396
+#, php-format
+msgid "%d item in cart"
+msgid_plural "%d items in cart"
+msgstr[0] "%d αντικείμενο στο καλάθι"
+msgstr[1] "%d αντικείμενα στο καλάθι"
+
+#: search.php:22
+#, php-format
+msgid "Search results for: %s"
+msgstr "Αναζήτηση αποτελεσμάτων για: %s"
+
+#: template-parts/content-none.php:14
+msgid "Nothing found"
+msgstr "Κανένα αποτέλεσμα"
+
+#: template-parts/content-none.php:24
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Έτοιμοι να δημοσιεύσετε την πρώτη σας ανάρτηση; <a href=“%1$s”>Ξεκινήστε "
+"εδώ</a>."
+
+#: template-parts/content-none.php:37
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Δυστυχώς δεν βρέθηκαν αποτελέσματα που να ταιριάζουν με τους όρους "
+"αναζήτησής σας. Παρακαλώ προσπαθήστε ξανά με διαφορετικούς όρους-κλειδιά."
+
+#: template-parts/content-none.php:44
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"Φαίνεται ότι δεν μπορούμε&rsquo; να βρούμε αυτό που &rsquo; ψάχνετε. Ίσως η "
+"αναζήτηση μπορεί να βοηθήσει."
+
+#: template-parts/content-page.php:30 template-parts/content.php:117
+msgid "Pages:"
+msgstr "Σελίδες:"
+
+#: template-parts/content.php:59
+msgid ", "
+msgstr ", "
+
+#: template-parts/content.php:62
+#, php-format
+msgid "Categories: %1$s"
+msgstr "Κατηγορίες: %1$s"
+
+#: template-parts/content.php:66
+msgctxt "list item separator"
+msgid ", "
+msgstr ", "
+
+#: template-parts/content.php:69
+#, php-format
+msgid "Tags: %1$s"
+msgstr "Ετικέτες: %1$s"
+
+#: template-parts/content.php:79
+#, php-format
+msgid "Leave a comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr "Αφήστε ένα σχόλιο<span class=“screen-reader-text”> στο %s</span>"
+
+#: template-parts/content.php:102
+#, php-format
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr "Συνεχίστε να διαβάζετε<span class=“screen-reader-text”> “%s”</span>"
+
+#: woocommerce/checkout/form-checkout.php:26
+msgid "You must be logged in to proceed with the checkout."
+msgstr "Χρειάζεται να είστε συνδεδεμένοι για να μεταβείτε στο ταμείο."
+
+#: woocommerce/checkout/form-checkout.php:59
+msgid "Your order"
+msgstr "Η παραγγελία σας"
+
+#: woocommerce/myaccount/proteo-account-info.php:14
+msgid "Personal info"
+msgstr "Προσωπικά στοιχεία"
+
+#: woocommerce/myaccount/proteo-account-info.php:16
+#: woocommerce/myaccount/proteo-account-info.php:41
+#: woocommerce/myaccount/proteo-account-info.php:78
+msgid "First name:"
+msgstr "Όνομα:"
+
+#: woocommerce/myaccount/proteo-account-info.php:20
+#: woocommerce/myaccount/proteo-account-info.php:45
+#: woocommerce/myaccount/proteo-account-info.php:82
+msgid "Last name:"
+msgstr "Επώνυμο:"
+
+#: woocommerce/myaccount/proteo-account-info.php:24
+msgid "E-mail:"
+msgstr "Διεύθυνση ηλεκτρονικού ταχυδρομείου:"
+
+#: woocommerce/myaccount/proteo-account-info.php:28
+msgid "Password:"
+msgstr "Κωδικός πρόσβασης:"
+
+#: woocommerce/myaccount/proteo-account-info.php:33
+#: woocommerce/myaccount/proteo-account-info.php:69
+#: woocommerce/myaccount/proteo-account-info.php:106
+msgid "Edit info"
+msgstr "Επεξεργασία στοιχείων"
+
+#: woocommerce/myaccount/proteo-account-info.php:39
+msgid "Billing info & address"
+msgstr "Στοιχεία χρέωσης και διεύθυνση"
+
+#: woocommerce/myaccount/proteo-account-info.php:50
+#: woocommerce/myaccount/proteo-account-info.php:87
+msgid "Company name:"
+msgstr "Όνομα εταιρείας:"
+
+#: woocommerce/myaccount/proteo-account-info.php:54
+#: woocommerce/myaccount/proteo-account-info.php:91
+msgid "VAT:"
+msgstr "ΦΠΑ:"
+
+#: woocommerce/myaccount/proteo-account-info.php:59
+#: woocommerce/myaccount/proteo-account-info.php:96
+msgid "CIF/SSN:"
+msgstr "CIF/SSN:"
+
+#: woocommerce/myaccount/proteo-account-info.php:64
+#: woocommerce/myaccount/proteo-account-info.php:101
+msgid "Address:"
+msgstr "Διεύθυνση:"
+
+#: woocommerce/myaccount/proteo-account-info.php:76
+msgid "Shipping info & address"
+msgstr "Στοιχεία αποστολής και διεύθυνση"
