@@ -1,4 +1,14 @@
 /**
+* Shop Page header
+*/
+header.woocommerce-products-header {
+    text-align: center;
+}
+p.woocommerce-result-count {
+    text-align: right;
+}
+
+/**
  * Header cart
  */
 .site-header-cart {
@@ -475,7 +485,8 @@ ORDERING
  */
 
 .woocommerce-ordering {
-    margin-bottom: 1.5em;
+    margin-bottom: 50px;
+    float: right;
 }
 
 /**
