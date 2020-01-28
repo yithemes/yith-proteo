@@ -280,4 +280,29 @@ body.yith_welrp_opened {
             }
         }
     }
+
+    .yith-welrp-email-suggestion {
+        position: relative;
+
+        .yith-welrp-email-suggestion-list {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            list-style: none;
+            padding: 5px;
+            margin: -1px 0 0 0;
+            border: 1px solid #e7e7e7;
+            border-top: 0;
+            background: #ffffff;
+            z-index: 10;
+
+            .yith-welrp-email-suggestion-item {
+                font-size: 0.9em;
+                font-weight: 500;
+                cursor: pointer;
+                margin-bottom: 2px;
+            }
+        }
+    }
 }

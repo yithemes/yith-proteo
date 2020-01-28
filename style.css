@@ -9201,6 +9201,28 @@ body.yith_welrp_opened {
   top: 50%;
   margin-top: -10px;
 }
+#yith-welrp .yith-welrp-email-suggestion {
+  position: relative;
+}
+#yith-welrp .yith-welrp-email-suggestion .yith-welrp-email-suggestion-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  list-style: none;
+  padding: 5px;
+  margin: -1px 0 0 0;
+  border: 1px solid #e7e7e7;
+  border-top: 0;
+  background: #ffffff;
+  z-index: 10;
+}
+#yith-welrp .yith-welrp-email-suggestion .yith-welrp-email-suggestion-list .yith-welrp-email-suggestion-item {
+  font-size: 0.9em;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 2px;
+}
 
 .wishlist_table.modern_grid li .item-details table.item-details-table td.value input[type=number],
 .wishlist_table.images_grid li .item-details table.item-details-table td.value input[type=number] {
