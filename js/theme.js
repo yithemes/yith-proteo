@@ -19,20 +19,23 @@
 
 
     // STICKY HEADER
-    if( typeof yith_proteo != 'undefined' && yith_proteo.stickyHeader == 'yes' ) {
-        var stickyOffset = $('.site-header').offset().top;
-        $(window).scroll(function () {
-            var sticky = $('.site-header'),
-                scroll = $(window).scrollTop(),
-                content = $('header + #content');
+    if (typeof yith_proteo != 'undefined' && yith_proteo.stickyHeader == 'yes') {
+        var site_header = $('.site-header'),
+            stickyOffset = typeof site_header != 'undefined' ? site_header.offset().top : false;
+        if (stickyOffset !== false) {
+            $(window).scroll(function () {
+                var sticky = site_header,
+                    scroll = $(window).scrollTop(),
+                    content = $('header + #content');
 
-            if (scroll > stickyOffset) {
-                sticky.addClass('sticky');
-                content.css("padding-top", sticky.height() + stickyOffset + 50);
-            } else {
-                sticky.removeClass('sticky');
-            }
-        });
+                if (scroll > stickyOffset) {
+                    sticky.addClass('sticky');
+                    content.css("padding-top", sticky.height() + stickyOffset + 50);
+                } else {
+                    sticky.removeClass('sticky');
+                }
+            });
+        }
     }
 
 
@@ -49,36 +52,36 @@
     }
 
     function initFields() {
-      $('input').each(function () {
-          var t = $(this),
-              type = t.attr( 'type' );
+        $('input').each(function () {
+            var t = $(this),
+                type = t.attr('type');
 
-          if(
-              type !== 'text' &&
-              type !== 'email' &&
-              type !== 'url' &&
-              type !== 'password' &&
-              type !== 'search' &&
-              type !== 'number' &&
-              type !== 'tel' &&
-              type !== 'range' &&
-              type !== 'date' &&
-              type !== 'month' &&
-              type !== 'week' &&
-              type !== 'time' &&
-              type !== 'datetime' &&
-              type !== 'datetime-local' &&
-              type !== 'color'
-          ){
-              return;
-          }
+            if (
+                type !== 'text' &&
+                type !== 'email' &&
+                type !== 'url' &&
+                type !== 'password' &&
+                type !== 'search' &&
+                type !== 'number' &&
+                type !== 'tel' &&
+                type !== 'range' &&
+                type !== 'date' &&
+                type !== 'month' &&
+                type !== 'week' &&
+                type !== 'time' &&
+                type !== 'datetime' &&
+                type !== 'datetime-local' &&
+                type !== 'color'
+            ) {
+                return;
+            }
 
-          if( t.next( '.separator' ).length ){
-              return;
-          }
+            if (t.next('.separator').length) {
+                return;
+            }
 
-          t.after( $( '<div/>', { class: 'separator' } ) );
-      });
+            t.after($('<div/>', {class: 'separator'}));
+        });
     }
 
 
