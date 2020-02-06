@@ -21,7 +21,7 @@
     // STICKY HEADER
     if (typeof yith_proteo != 'undefined' && yith_proteo.stickyHeader == 'yes') {
         var site_header = $('.site-header'),
-            stickyOffset = typeof site_header != 'undefined' ? site_header.offset().top : false;
+            stickyOffset = site_header.length ? site_header.offset().top : false;
         if (stickyOffset !== false) {
             $(window).scroll(function () {
                 var sticky = site_header,
