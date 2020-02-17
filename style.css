@@ -9657,34 +9657,34 @@ table.wishlist_table.wishlist_manage_table td.wishlist-delete a:before {
   box-shadow: -2px 0px 30px -10px rgba(0, 0, 0, 0.2);
 }
 
-.wishlist_manage_table.modern_grid li .wishlist-title-with-form {
+.wishlist_manage_table.modern_grid li .wishlist-title {
   border-bottom: 1px solid;
 }
-.wishlist_manage_table.modern_grid li .wishlist-title-with-form h3 {
+.wishlist_manage_table.modern_grid li .wishlist-title h3 {
   margin-bottom: 0;
   font-size: 1.125rem;
   font-weight: bold;
 }
-.wishlist_manage_table.modern_grid li .wishlist-title-with-form h3 a {
+.wishlist_manage_table.modern_grid li .wishlist-title h3 a {
   color: inherit;
   text-decoration: none;
 }
-.wishlist_manage_table.modern_grid li .wishlist-title-with-form h3 a:hover {
+.wishlist_manage_table.modern_grid li .wishlist-title h3 a:hover {
   text-decoration: underline;
 }
-.wishlist_manage_table.modern_grid li .wishlist-title-with-form .show-title-form {
+.wishlist_manage_table.modern_grid li .wishlist-title .show-title-form {
   padding: 0;
   border: none;
   line-height: normal;
   top: 10px;
 }
-.wishlist_manage_table.modern_grid li .wishlist-title-with-form .show-title-form .fa-pencil:before {
+.wishlist_manage_table.modern_grid li .wishlist-title .show-title-form .fa-pencil:before {
   content: "";
   display: block;
   font-family: Linearicons-Free;
   color: inherit;
 }
-.wishlist_manage_table.modern_grid li .wishlist-title-with-form .show-title-form .fa-pencil:before:hover {
+.wishlist_manage_table.modern_grid li .wishlist-title .show-title-form .fa-pencil:before:hover {
   color: #448A85;
 }
 .wishlist_manage_table.modern_grid li .item-details table.item-details-table td {
