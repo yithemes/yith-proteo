@@ -9154,6 +9154,19 @@ body.yith_welrp_opened {
 #yith-welrp .yith-welrp-popup form #g-recaptcha {
   margin-bottom: 20px;
 }
+#yith-welrp .yith-welrp-popup .yith-welrp-continue-as-guest {
+  border-top: 1px solid #e7e7e7;
+  padding: 20px 0;
+}
+#yith-welrp .yith-welrp-popup .yith-welrp-continue-as-guest p {
+  margin: 10px 0 15px;
+  font-weight: 500;
+}
+#yith-welrp .yith-welrp-popup .yith-welrp-continue-as-guest .button {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+}
 #yith-welrp .yith-welrp-popup .yith-welrp-social-sep {
   text-align: center;
   position: relative;
@@ -9215,6 +9228,7 @@ body.yith_welrp_opened {
   border: 1px solid #e7e7e7;
   border-top: 0;
   background: #ffffff;
+  box-shadow: 5px 5px 15px #f0f0f0;
   z-index: 10;
 }
 #yith-welrp .yith-welrp-email-suggestion .yith-welrp-email-suggestion-list .yith-welrp-email-suggestion-item {
