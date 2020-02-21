@@ -21,6 +21,7 @@ Class YITH_Proteo_Recent_Posts_Widget extends WP_Widget_Recent_Posts {
 		if ( empty( $instance['number'] ) || ! $number = absint( $instance['number'] ) ) {
 			$number = 10;
 		}
+		$show_date = isset( $instance['show_date'] ) ? $instance['show_date'] : false;
 
 		$posts = new WP_Query( apply_filters( 'widget_posts_args', array(
 			'posts_per_page'      => $number,
@@ -45,6 +46,9 @@ Class YITH_Proteo_Recent_Posts_Widget extends WP_Widget_Recent_Posts {
 							<?php endif; ?>
                             <div class="post-info">
 								<?php the_title( '<h3>', '</h3>' ); ?>
+	                            <?php if ( $show_date ) : ?>
+		                            <div class="post-date"><?php echo get_the_date( '', $post ); ?></div>
+	                            <?php endif; ?>
 								<?php
 								if ( get_comments_number() > 0 ) {
 									printf( _nx( 'One comment', '%1$s comments', get_comments_number(), 'comments count on widget', 'yith-proteo' ), number_format_i18n( get_comments_number() ) );
