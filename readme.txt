@@ -69,3 +69,7 @@ Proteo is a sleek, modern and “Gutenberg-friendly” e-commerce theme. Develop
 
 * Based on Underscores https://underscores.me/, (C) 2012-2019 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
 * normalize.css https://necolas.github.io/normalize.css/, (C) 2012-2016 Nicolas Gallagher and Jonathan Neal, [MIT](https://opensource.org/licenses/MIT)
+* AOS - Animate On Scroll Library https://michalsnik.github.io/aos/, (C) 2015 Michał Sajnóg, [MIT](https://opensource.org/licenses/MIT)
+* Linearicons https://linearicons.com/, (C) https://perxis.com/, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
+* Simple Line Icons - https://github.com/thesabbir/simple-line-icons, [MIT](https://opensource.org/licenses/MIT)
+* JQuery Modal https://github.com/kylefox/jquery-modal (c) 2012 Kyle Fox, [MIT](https://opensource.org/licenses/MIT)
