@@ -102,7 +102,7 @@ function yith_proteo_remove_header_and_footer_add_meta_box() {
 	);
 }
 
-add_action( 'add_meta_boxes', 'yith_proteo_remove_header_and_footer_add_meta_box' );
+//add_action( 'add_meta_boxes', 'yith_proteo_remove_header_and_footer_add_meta_box' );
 
 /**
  * Remove header and footer metabox

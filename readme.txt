@@ -6,7 +6,7 @@ Tags: one-column, two-columns, left-sidebar, right-sidebar, wide-blocks, accessi
 Requires at least: 4.9.6
 Tested up to: WordPress 5.3
 Requires PHP: 5.2.4
-Stable tag: 1.0.5
+Stable tag: 1.0.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -26,9 +26,16 @@ Proteo is a sleek, modern and “Gutenberg-friendly” e-commerce theme. Develop
 
 == Changelog ==
 
-= x.x.x - Xxx xx xxxx =
+= 1.0.6 - Feb 24 2020 =
 * Add Dutch translation file
 * Fix css issue on radio buttons click
+* Add "yith_proteo_myaccount_custom_icon" filter to change icons on my account page
+* Add Greek language files
+* Move woocommerce ordering on right side
+* Fix sticky header behavior when header element is not present
+* Add missing post date from Recent Posts widget
+* Fix missing $post variable
+* Add all third party css and js minified and unminified versions
 
 = 1.0.5 - Dec 27 2019 =
 * Italian translation file
