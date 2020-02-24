@@ -10,8 +10,8 @@ if ( ! function_exists( 'yith_proteo_scripts' ) ):
 	function yith_proteo_scripts() {
 		wp_dequeue_style( 'select2-css' );
 
-		wp_enqueue_style( 'yith-proteo-linearicons', get_template_directory_uri() . '/third-party/icon-font.min.css', array(), '1.0.0' );
-		wp_enqueue_style( 'yith-proteo-simple-line-icons', get_template_directory_uri() . '/third-party/simple-line-icons.css', array(), '2.4.1' );
+		wp_enqueue_style( 'yith-proteo-linearicons', get_template_directory_uri() . '/third-party/linearicons.min.css', array(), '1.0.0' );
+		wp_enqueue_style( 'yith-proteo-simple-line-icons', get_template_directory_uri() . '/third-party/simple-line-icons.min.css', array(), '2.4.1' );
 
 		if ( function_exists( 'WC' ) ) {
 			wp_enqueue_style( 'yith-proteo-style', get_stylesheet_uri(), array( 'select2' ), YITH_PROTEO_VERSION );
@@ -64,8 +64,8 @@ add_action( 'wp_enqueue_scripts', 'yith_proteo_scripts', 10 );
 if ( ! function_exists( 'yith_proteo_admin_scripts' ) ) :
 	function yith_proteo_admin_scripts() {
 
-		wp_enqueue_style( 'yith-proteo-linearicons', get_template_directory_uri() . '/third-party/icon-font.min.css', array(), '1.0.0' );
-		wp_enqueue_style( 'yith-proteo-simple-line-icons', get_template_directory_uri() . '/third-party/simple-line-icons.css', array(), '2.4.1' );
+		wp_enqueue_style( 'yith-proteo-linearicons', get_template_directory_uri() . '/third-party/linearicons.min.css', array(), '1.0.0' );
+		wp_enqueue_style( 'yith-proteo-simple-line-icons', get_template_directory_uri() . '/third-party/simple-line-icons.min.css', array(), '2.4.1' );
 
 		wp_enqueue_style( 'select2', get_template_directory_uri() . '/third-party/select2.min.css' );
 		wp_enqueue_script( 'selectWoo' );
