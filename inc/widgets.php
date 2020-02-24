@@ -47,7 +47,7 @@ Class YITH_Proteo_Recent_Posts_Widget extends WP_Widget_Recent_Posts {
                             <div class="post-info">
 								<?php the_title( '<h3>', '</h3>' ); ?>
 	                            <?php if ( $show_date ) : ?>
-		                            <div class="post-date"><?php echo get_the_date( '', $post ); ?></div>
+		                            <div class="post-date"><?php echo get_the_date( '', get_the_ID() ); ?></div>
 	                            <?php endif; ?>
 								<?php
 								if ( get_comments_number() > 0 ) {
