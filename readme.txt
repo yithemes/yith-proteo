@@ -73,3 +73,8 @@ Proteo is a sleek, modern and “Gutenberg-friendly” e-commerce theme. Develop
 * Linearicons https://linearicons.com/, (C) https://perxis.com/, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
 * Simple Line Icons - https://github.com/thesabbir/simple-line-icons, [MIT](https://opensource.org/licenses/MIT)
 * JQuery Modal https://github.com/kylefox/jquery-modal (c) 2012 Kyle Fox, [MIT](https://opensource.org/licenses/MIT)
+
+== Screenshot Licenses ==
+
+Screenshot image, Copyright Freepik
+Source: http://www.freepik.com
