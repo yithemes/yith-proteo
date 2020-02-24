@@ -7598,6 +7598,7 @@ body.woocommerce-checkout #payment #place_order {
   border-radius: 50px;
   font-weight: bold;
   padding: 22px 35px 21px;
+  outline: none;
 }
 body.woocommerce-checkout .woocommerce-terms-and-conditions-wrapper p {
   padding: 0;
