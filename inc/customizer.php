@@ -1274,9 +1274,14 @@ if ( function_exists( 'wc' ) ) {
 }
 
 
-add_action( 'customize_render_control_yith_proteo_google_font', function () {
-	printf( '<span class="dashicons dashicons-sos" style="vertical-align: middle;"></span> <a href="%s" target="_blank">%s</a>', 'https://docs.yithemes.com/yith-proteo', __( 'Read the documentation to see how to retrieve a Google Font URL', 'yith-proteo' ) );
-} );
+add_action( 'customize_render_control_yith_proteo_google_font', 'yith_proteo_add_gfont_documentation_link' );
+
+/**
+ * Render GFont doc guide link
+ */
+function yith_proteo_add_gfont_documentation_link() {
+	printf( '<span class="dashicons dashicons-sos" style="vertical-align: middle;"></span> <a href="%s" target="_blank" rel="noopener nofollow">%s</a>', esc_url( 'https://docs.yithemes.com/yith-proteo' ), __( 'Read the documentation to see how to retrieve a Google Font URL', 'yith-proteo' ) );
+}
 
 /**
  * Render the site title for the selective refresh partial.

@@ -5,7 +5,7 @@
 
 /**
  * Add a custom style based on customizer theme options
- * 
+ *
  * @author Francesco Grasso <francgrasso@yithemes.com>
  */
 function yith_proteo_inline_style() {
@@ -16,7 +16,7 @@ function yith_proteo_inline_style() {
 	$custom_css = "";
 
 	$font         = '';
-	$default_font = ( get_theme_mod( 'yith_proteo_google_font', 'https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap' ) ) == 'https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap' ? true : false;
+	$default_font = ( get_theme_mod( 'yith_proteo_google_font', esc_url( 'https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap' ) ) ) == 'https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap' ? true : false;
 
 	$main_color_shade         = get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' );
 	$general_link_hover_color = get_theme_mod( 'yith_proteo_general_link_hover_color', yith_proteo_adjustBrightness( get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ), - 0.3 ) );
