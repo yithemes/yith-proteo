@@ -50,6 +50,7 @@ header.entry-header {
             font-weight: bolder;
             text-transform: uppercase;
             padding: 40px 15px;
+            overflow-wrap: break-word;
         }
     }
 
@@ -108,7 +109,6 @@ article:not(.has-post-thumbnail).page header.entry-header {
 
 .has-post-thumbnail header.entry-header .date-and-thumbnail .entry-meta {
     position: absolute;
-    font-size: 1.25rem;
 }
 
 
