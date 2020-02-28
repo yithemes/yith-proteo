@@ -123,6 +123,13 @@ if ( ! function_exists( 'yith_proteo_print_page_titles' ) ) :
 	function yith_proteo_print_page_titles() {
 		global $post;
 
+		if ( $post instanceof WP_Post && ( 'post' == $post->post_type || 'page' == $post->post_type ) ) {
+			$icon = ! empty( get_post_meta( $post->ID, 'title_icon', true ) ) ? '<div class="entry-title lnr ' . get_post_meta( $post->ID, 'title_icon', true ) . '"></div>' : '';
+			if ( ! empty( $icon ) ) {
+				echo $icon; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+			}
+		}
+
 		$hide_title_if_wishlist = false;
 
 		if ( function_exists( 'yith_wcwl_is_wishlist_page' ) ) {
@@ -134,65 +141,6 @@ if ( ! function_exists( 'yith_proteo_print_page_titles' ) ) :
 
 	}
 endif;
-
-
-/**
- * Add icon to titles
- *
- * @param $title
- * @param null $id
- *
- * @return string
- *
- * @author Francesco Grasso <francgrasso@yithemes.com>
- */
-if ( ! function_exists( 'yith_proteo_show_icon_title' ) ) :
-	function yith_proteo_show_icon_title( $title, $id = null ) {
-		if ( ! is_admin() && ! is_null( $id ) ) {
-			$post = get_post( $id );
-			if ( $post instanceof WP_Post && ( 'post' == $post->post_type || 'page' == $post->post_type ) ) {
-				$icon = ! empty( get_post_meta( $post->ID, 'title_icon', true ) ) ? '<div class="lnr ' . get_post_meta( $post->ID, 'title_icon', true ) . '"></div>' : '';
-				if ( ! empty( $icon ) ) {
-					return $icon . $title;
-				}
-			}
-		}
-
-		return $title;
-	}
-endif;
-
-add_filter( 'the_title', 'yith_proteo_show_icon_title', 10, 2 );
-
-/**
- * Remove icon filter from nav menus
- *
- * @param $nav_menu
- * @param $args
- *
- * @return mixed
- *
- * @author Francesco Grasso <francgrasso@yithemes.com>
- */
-function yith_proteo_remove_title_filter_nav_menu( $nav_menu, $args ) {
-	// we are working with menu, so remove the title filter
-	remove_filter( 'the_title', 'yith_proteo_show_icon_title', 10 );
-
-	return $nav_menu;
-}
-
-// this filter fires just before the nav menu item creation process
-add_filter( 'pre_wp_nav_menu', 'yith_proteo_remove_title_filter_nav_menu', 10, 2 );
-
-function yith_proteo_add_title_filter_non_menu( $items, $args ) {
-	// we are done working with menu, so add the title filter back
-	add_filter( 'the_title', 'yith_proteo_show_icon_title', 10, 2 );
-
-	return $items;
-}
-
-// this filter fires after nav menu item creation is done
-add_filter( 'wp_nav_menu_items', 'yith_proteo_add_title_filter_non_menu', 10, 2 );
 
 
 /**

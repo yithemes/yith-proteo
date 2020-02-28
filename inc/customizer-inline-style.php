@@ -254,7 +254,8 @@ function yith_proteo_inline_style() {
 
                 h1,
                 article.page header.entry-header h1,
-                article:not(.has-post-thumbnail).page header.entry-header h1{
+                article:not(.has-post-thumbnail).page header.entry-header h1,
+                article.page header.entry-header .entry-title.lnr{
                     font-size: {$h1_font_size}px;
                     color: {$h1_font_color};
                 }

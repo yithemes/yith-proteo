@@ -49,11 +49,13 @@ global $post;
 							<?php endif; ?>
 						</h1>
 						<?php
-						$yith_proteo_description = get_bloginfo( 'description', 'display' );
-						if ( $yith_proteo_description || is_customize_preview() ) :
-							?>
-							<p class="site-description"><?php echo $yith_proteo_description; /* phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped */ ?></p>
-							<?php
+						if ( ! has_custom_logo() ) :
+							$yith_proteo_description = get_bloginfo( 'description', 'display' );
+							if ( $yith_proteo_description || is_customize_preview() ) :
+								?>
+								<p class="site-description"><?php echo $yith_proteo_description; /* phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped */ ?></p>
+								<?php
+							endif;
 						endif;
 						else :
 							if ( has_custom_logo() ) :
@@ -67,13 +69,17 @@ global $post;
 								</a>
 							</p>
 							<?php
+						endif;
+						if ( ! has_custom_logo() ) :
+								$yith_proteo_description = get_bloginfo( 'description', 'display' );
+							if ( $yith_proteo_description || is_customize_preview() ) :
+								?>
+								<p class="site-description"><?php echo $yith_proteo_description; /* phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped */ ?></p>
+								<?php
 							endif;
-						$yith_proteo_description = get_bloginfo( 'description', 'display' );
-						if ( $yith_proteo_description || is_customize_preview() ) :
-							?>
-							<p class="site-description"><?php echo $yith_proteo_description; /* phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped */ ?></p>
-						<?php endif; ?>
-					<?php endif; ?>
+						endif;
+					endif;
+						?>
 				</div><!-- .site-branding -->
 
 				<nav id="site-navigation" class="main-navigation">

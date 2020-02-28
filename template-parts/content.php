@@ -45,7 +45,7 @@
 
 		<?php
 		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
+			yith_proteo_print_page_titles();
 		else :
 			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		endif;
