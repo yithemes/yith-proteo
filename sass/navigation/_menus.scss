@@ -93,7 +93,9 @@
             }
 
             a {
-                width: 200px;
+                display: inline-block;
+                white-space: nowrap;
+                max-width: 200px;
 
                 &:empty & {
                     display: none;

@@ -5466,7 +5466,9 @@ a:hover, a:active {
   position: absolute;
 }
 .main-navigation ul ul a {
-  width: 200px;
+  display: inline-block;
+  white-space: nowrap;
+  max-width: 200px;
 }
 .main-navigation ul ul a:empty .main-navigation ul ul a {
   display: none;

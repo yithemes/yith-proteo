@@ -1,3 +1,6 @@
 /**********************
 Admin CSS goes here
 ***********************/
+.edit-post-meta-boxes-area.is-side .meta-box-sortables select {
+  max-width: 200px;
+}

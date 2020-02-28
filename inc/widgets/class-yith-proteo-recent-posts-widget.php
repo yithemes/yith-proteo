@@ -13,11 +13,11 @@ class YITH_Proteo_Recent_Posts_Widget extends WP_Widget_Recent_Posts {
 
 		$title = apply_filters( 'widget_title', empty( $instance['title'] ) ? __( 'Recent Posts', 'yith-proteo' ) : $instance['title'], $instance, $this->id_base );
 
-		if ( empty( $instance['number'] ) ) {
-			$number = 5;
-		} elseif ( absint( $instance['number'] ) == false ) {
+		$number = ( ! empty( $instance['number'] ) ) ? absint( $instance['number'] ) : 5;
+		if ( ! $number ) {
 			$number = 5;
 		}
+
 
 		$show_date = isset( $instance['show_date'] ) ? $instance['show_date'] : false;
 

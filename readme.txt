@@ -85,5 +85,9 @@ Proteo is a sleek, modern and “Gutenberg-friendly” e-commerce theme. Develop
 
 == Screenshot Licenses ==
 
-Screenshot image, Copyright Freepik
-Source: http://www.freepik.com
+https://www.pexels.com/photo/woman-smiling-while-wearing-blue-dress-3649116/ by Roberto Okaka
+https://www.pexels.com/photo/woman-wearing-yellow-sleeveless-dress-3609781/ by Charles Wundengba
+https://www.pexels.com/photo/adolescent-casual-cute-elegant-428338/ by Spencer Selover
+https://www.pexels.com/photo/woman-wearing-white-scoop-neck-long-sleeved-shirt-and-brown-pleated-skirt-1845147/ by João Victor Barboza
+https://www.pexels.com/photo/woman-wearing-white-minidress-3568546/ by Gabb Tapic
+https://stocksnap.io/photo/YLD3KP3CMU by Alex Holyoake - [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)

@@ -146,7 +146,7 @@ function yith_proteo_title_icon_html( $post ) {
 		foreach ( $icons as $key => $icon ) :
 			?>
 			<option value="<?php echo esc_attr( $key ); ?>" <?php selected( $value, $key ); ?>>
-				<?php echo esc_attr( $icon ); ?>
+				<?php echo esc_html( $icon ); ?>
 			</option>
 		<?php endforeach; ?>
 
