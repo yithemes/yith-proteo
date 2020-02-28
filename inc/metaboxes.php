@@ -171,7 +171,7 @@ function yith_proteo_sidebar_position_html( $post ) {
 			<?php esc_html_e( 'inherit', 'yith-proteo' ); ?>
 		</option>
 		<option
-			value="<?php esc_attr_e( '\'no-sidebar', 'yith-proteo' ); ?>" <?php echo ( yith_proteo_sidebar_get_meta( 'sidebar_position' ) === 'no-sidebar' ) ? 'selected' : ''; ?>>
+			value="<?php esc_attr_e( 'no-sidebar', 'yith-proteo' ); ?>" <?php echo ( yith_proteo_sidebar_get_meta( 'sidebar_position' ) === 'no-sidebar' ) ? 'selected' : ''; ?>>
 			<?php esc_html_e( 'no-sidebar', 'yith-proteo' ); ?>
 		</option>
 		<option
