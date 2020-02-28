@@ -16,8 +16,7 @@ if ( function_exists( 'wc' ) && is_shop() && get_post_meta( get_option( 'woocomm
 }
 ?>
 
-<aside id="secondary"
-       class="widget-area <?php echo '' != yith_proteo_get_sidebar_position() ? 'col-lg-3' : '' ?>">
+<aside id="secondary" class="widget-area <?php echo '' != yith_proteo_get_sidebar_position() ? 'col-lg-3' : ''; ?>">
 	<?php
 
 	$sidebar = yith_proteo_sidebar_get_meta( 'sidebar_chooser' );
@@ -30,7 +29,7 @@ if ( function_exists( 'wc' ) && is_shop() && get_post_meta( get_option( 'woocomm
 	if ( is_home() ) {
 		$sidebar = get_theme_mod( 'yith_proteo_blog_sidebar', 'sidebar-1' );
 	}
-	if ( ! empty ( $sidebar ) ) {
+	if ( ! empty( $sidebar ) ) {
 		dynamic_sidebar( $sidebar );
 	} else {
 		dynamic_sidebar( 'sidebar-1' );

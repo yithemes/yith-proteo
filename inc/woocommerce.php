@@ -16,19 +16,20 @@
  * @return void
  */
 function yith_proteo_woocommerce_setup() {
-	add_theme_support( 'woocommerce', array(
-		'gallery_thumbnail_image_width' => 150,
-		//'single_image_width'    => 300,
-
-		'product_grid' => array(
-			'default_rows'    => 3,
-			'min_rows'        => 2,
-			'max_rows'        => 8,
-			'default_columns' => 4,
-			'min_columns'     => 2,
-			'max_columns'     => 6,
-		),
-	) );
+	add_theme_support(
+		'woocommerce',
+		array(
+			'gallery_thumbnail_image_width' => 150,
+			'product_grid'                  => array(
+				'default_rows'    => 3,
+				'min_rows'        => 2,
+				'max_rows'        => 8,
+				'default_columns' => 4,
+				'min_columns'     => 2,
+				'max_columns'     => 6,
+			),
+		)
+	);
 	add_theme_support( 'wc-product-gallery-zoom' );
 	add_theme_support( 'wc-product-gallery-lightbox' );
 	add_theme_support( 'wc-product-gallery-slider' );
@@ -97,7 +98,7 @@ add_filter( 'body_class', 'yith_proteo_woocommerce_active_body_class' );
 function yith_proteo_woocommerce_related_products_args( $args ) {
 	$defaults = array(
 		'posts_per_page' => get_theme_mod( 'yith_proteo_product_page_related_max_number', 4 ),
-		'columns'        => get_theme_mod( 'yith_proteo_product_page_related_columns', 4 )
+		'columns'        => get_theme_mod( 'yith_proteo_product_page_related_columns', 4 ),
 	);
 
 	$args = wp_parse_args( $defaults, $args );
@@ -149,8 +150,8 @@ if ( ! function_exists( 'yith_proteo_woocommerce_wrapper_before' ) ) {
 	function yith_proteo_woocommerce_wrapper_before() {
 		$sidebar_display = yith_proteo_get_sidebar_position();
 		?>
-        <div id="primary" class="content-area <?php echo $sidebar_display ?>">
-        <main id="main" class="site-main" role="main">
+		<div id="primary" class="content-area <?php echo esc_attr( $sidebar_display ); ?>">
+		<main id="main" class="site-main" role="main">
 		<?php
 	}
 }
@@ -166,8 +167,8 @@ if ( ! function_exists( 'yith_proteo_woocommerce_wrapper_after' ) ) {
 	 */
 	function yith_proteo_woocommerce_wrapper_after() {
 		?>
-        </main><!-- #main -->
-        </div><!-- #primary -->
+		</main><!-- #main -->
+		</div><!-- #primary -->
 		<?php
 	}
 }
@@ -204,18 +205,17 @@ if ( ! function_exists( 'yith_proteo_woocommerce_cart_link' ) ) {
 	 */
 	function yith_proteo_woocommerce_cart_link() {
 		?>
-        <a class="cart-contents" href="<?php echo esc_url( wc_get_cart_url() ); ?>"
-           title="<?php esc_attr_e( 'View your shopping cart', 'yith-proteo' ); ?>">
+		<a class="cart-contents" href="<?php echo esc_url( wc_get_cart_url() ); ?>" title="<?php esc_attr_e( 'View your shopping cart', 'yith-proteo' ); ?>">
 			<?php
 			$item_count_text = sprintf(
-			/* translators: number of items in the mini cart. */
+				/* translators: number of items in the mini cart. */
 				_n( '%d item', '%d items', WC()->cart->get_cart_contents_count(), 'yith-proteo' ),
 				WC()->cart->get_cart_contents_count()
 			);
 			?>
-            <span class="amount"><?php echo wp_kses_data( WC()->cart->get_cart_subtotal() ); ?></span> <span
-                    class="count"><?php echo esc_html( $item_count_text ); ?></span>
-        </a>
+			<span class="amount"><?php echo wp_kses_data( WC()->cart->get_cart_subtotal() ); ?></span> <span
+				class="count"><?php echo esc_html( $item_count_text ); ?></span>
+		</a>
 		<?php
 	}
 }
@@ -233,11 +233,11 @@ if ( ! function_exists( 'yith_proteo_woocommerce_header_cart' ) ) {
 			$class = '';
 		}
 		?>
-        <ul id="site-header-cart" class="site-header-cart">
-            <li class="<?php echo esc_attr( $class ); ?>">
+		<ul id="site-header-cart" class="site-header-cart">
+			<li class="<?php echo esc_attr( $class ); ?>">
 				<?php yith_proteo_woocommerce_cart_link(); ?>
-            </li>
-            <li>
+			</li>
+			<li>
 				<?php
 				$instance = array(
 					'title' => '',
@@ -245,8 +245,8 @@ if ( ! function_exists( 'yith_proteo_woocommerce_header_cart' ) ) {
 
 				the_widget( 'WC_Widget_Cart', $instance );
 				?>
-            </li>
-        </ul>
+			</li>
+		</ul>
 		<?php
 	}
 }
@@ -272,12 +272,10 @@ if ( ! function_exists( 'yith_proteo_cart_layout' ) ) {
 			} else {
 				$classes[] = 'one-col-cart';
 			}
-
 		}
 
 		return $classes;
 	}
-
 }
 
 /**
@@ -291,23 +289,23 @@ if ( ! function_exists( 'yith_proteo_open_my_account_sidebar' ) ) :
 	function yith_proteo_open_my_account_sidebar() {
 		global $current_user;
 		?>
-        <div class="yith-proteo-my-account-sidebar">
-        <div class="yith-proteo-my-account-user-image">
+		<div class="yith-proteo-my-account-sidebar">
+		<div class="yith-proteo-my-account-user-image">
 
-            <div class="user-photo">
+			<div class="user-photo">
 				<?php echo get_avatar( $current_user->ID, 130 ); ?>
-            </div>
+			</div>
 
-            <div class="user-info">
+			<div class="user-info">
 				<?php
 				$username = $current_user->display_name;
 				echo '<p><strong class="user-name">' . esc_html( $username ) . '</strong>';
-				echo '<span class="user-email">' . antispambot( $current_user->user_email ) . '</span>';
-				echo '<a class="logout-link" href="' . wc_logout_url() . '">' . __( 'Logout', 'yith-proteo' ) . '</a></p>';
+				echo '<span class="user-email">' . esc_html( antispambot( $current_user->user_email ) ) . '</span>';
+				echo '<a class="logout-link" href="' . esc_url( wc_logout_url() ) . '">' . esc_html__( 'Logout', 'yith-proteo' ) . '</a></p>';
 				?>
-            </div>
+			</div>
 
-        </div>
+		</div>
 		<?php
 	}
 endif;
@@ -372,7 +370,7 @@ add_filter( 'woocommerce_product_additional_information_heading', '__return_null
  * @author Francesco Grasso <francgrasso@yithemes.com>
  */
 
-if ( ! function_exists( 'yith_proteo_show_additional_product_loop_image_on_hover' ) ):
+if ( ! function_exists( 'yith_proteo_show_additional_product_loop_image_on_hover' ) ) :
 
 	function yith_proteo_show_additional_product_loop_image_on_hover() {
 
@@ -391,9 +389,10 @@ add_action( 'woocommerce_before_shop_loop_item_title', 'yith_proteo_show_additio
  */
 add_action( 'woocommerce_before_mini_cart', 'yith_proteo_before_mini_cart', 10 );
 function yith_proteo_before_mini_cart() {
-	echo '<a href="' . esc_url( wc_get_cart_url() ) . '" class="proceed-to-cart-icon"><span class="lnr lnr-cart"></span><span>' . WC()->cart->get_cart_contents_count() . '</span></a><div class="yith-proteo-mini-cart-content">';
+	echo '<a href="' . esc_url( wc_get_cart_url() ) . '" class="proceed-to-cart-icon"><span class="lnr lnr-cart"></span><span>' . esc_html( WC()->cart->get_cart_contents_count() ) . '</span></a><div class="yith-proteo-mini-cart-content">';
 	if ( WC()->cart->get_cart_contents_count() > 0 ) {
-		echo '<p class="items-count">' . sprintf( _n( '%d item in cart', '%d items in cart', WC()->cart->get_cart_contents_count(), 'yith-proteo' ), WC()->cart->get_cart_contents_count() ) . '</p>';
+		/* translators: number of items in the mini cart. */
+		echo '<p class="items-count">' . esc_html( sprintf( _n( '%d item in cart', '%d items in cart', WC()->cart->get_cart_contents_count(), 'yith-proteo' ), WC()->cart->get_cart_contents_count() ) ) . '</p>';
 	}
 }
 
@@ -414,14 +413,21 @@ add_action( 'woocommerce_product_thumbnails', 'woocommerce_show_product_sale_fla
  */
 if ( class_exists( 'YITH_WCWL_Frontend_Premium' ) ) {
 	// prints wishlist pages links
-	remove_action( 'yith_wcwl_wishlist_after_wishlist_content', array(
-		YITH_WCWL_Frontend_Premium(),
-		'add_wishlist_links'
-	) );
-	add_action( 'yith_wcwl_wishlist_before_wishlist_content', array(
-		YITH_WCWL_Frontend_Premium(),
-		'add_wishlist_links'
-	), 15 );
+	remove_action(
+		'yith_wcwl_wishlist_after_wishlist_content',
+		array(
+			YITH_WCWL_Frontend_Premium(),
+			'add_wishlist_links',
+		)
+	);
+	add_action(
+		'yith_wcwl_wishlist_before_wishlist_content',
+		array(
+			YITH_WCWL_Frontend_Premium(),
+			'add_wishlist_links',
+		),
+		15
+	);
 }
 
 /**
@@ -493,6 +499,10 @@ function yith_proteo_limit_woocommerce_short_description( $post_excerpt ) {
 
 	$length = 40;
 
+	if ( is_shop() ) {
+		return $post_excerpt;
+	}
+
 	if ( is_search() ) {
 		$length = 300;
 	}
@@ -501,7 +511,7 @@ function yith_proteo_limit_woocommerce_short_description( $post_excerpt ) {
 		return $post_excerpt;
 	}
 
-	$post_excerpt = strip_tags( $post_excerpt );
+	$post_excerpt = wp_strip_all_tags( $post_excerpt );
 
 	if ( strlen( $post_excerpt ) <= $length ) {
 		return $post_excerpt;
@@ -510,7 +520,7 @@ function yith_proteo_limit_woocommerce_short_description( $post_excerpt ) {
 	$last_space   = strrpos( substr( $post_excerpt, 0, $length ), ' ' );
 	$trimmed_text = substr( $post_excerpt, 0, $last_space );
 
-	//add ellipses (...)
+	//add ellipses
 	$trimmed_text .= '...';
 
 	return $trimmed_text;

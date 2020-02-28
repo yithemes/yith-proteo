@@ -10,36 +10,38 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-    <header class="entry-header">
+	<header class="entry-header">
 		<?php
 		if ( is_single() && function_exists( 'woocommerce_breadcrumb' ) ) {
 			woocommerce_breadcrumb();
 		}
 		?>
 
-        <div class="date-and-thumbnail">
-			<?php if ( 'post' === get_post_type() ) :
+		<div class="date-and-thumbnail">
+			<?php
+			if ( 'post' === get_post_type() ) :
 				?>
-                <div class="entry-meta">
+				<div class="entry-meta">
 					<?php
 					$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
 					if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
 						$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
 					}
 
-					$time_string = sprintf( $time_string,
+					$time_string = sprintf(
+						$time_string,
 						esc_attr( get_the_date( DATE_W3C ) ),
 						esc_html( get_the_date() ),
 						esc_attr( get_the_modified_date( DATE_W3C ) ),
 						esc_html( get_the_modified_date() )
 					);
 
-					echo $time_string;
+					echo $time_string; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 					?>
-                </div><!-- .entry-meta -->
+				</div><!-- .entry-meta -->
 			<?php endif; ?>
 			<?php yith_proteo_post_thumbnail(); ?>
-        </div>
+		</div>
 
 		<?php
 		if ( is_singular() ) :
@@ -49,7 +51,7 @@
 		endif;
 		?>
 
-        <div class="entry-meta">
+		<div class="entry-meta">
 			<?php
 			yith_proteo_posted_by();
 			yith_proteo_posted_on();
@@ -59,14 +61,14 @@
 				$categories_list = get_the_category_list( esc_html__( ', ', 'yith-proteo' ) );
 				if ( $categories_list ) {
 					/* translators: 1: list of categories. */
-					printf( '<span class="cat-links">' . esc_html__( 'Categories: %1$s', 'yith-proteo' ) . '</span>', $categories_list ); // WPCS: XSS OK.
+					printf( '<span class="cat-links">' . esc_html__( 'Categories: %1$s', 'yith-proteo' ) . '</span>', $categories_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 				}
 
 				/* translators: used between list items, there is a space after the comma */
 				$tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'yith-proteo' ) );
 				if ( $tags_list ) {
 					/* translators: 1: list of tags. */
-					printf( '<span class="tags-links">' . esc_html__( 'Tags: %1$s', 'yith-proteo' ) . '</span>', $tags_list ); // WPCS: XSS OK.
+					printf( '<span class="tags-links">' . esc_html__( 'Tags: %1$s', 'yith-proteo' ) . '</span>', $tags_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 				}
 			}
 
@@ -75,7 +77,7 @@
 				comments_popup_link(
 					sprintf(
 						wp_kses(
-						/* translators: %s: post title */
+							/* translators: %s: post title */
 							__( 'Leave a comment<span class="screen-reader-text"> on %s</span>', 'yith-proteo' ),
 							array(
 								'span' => array(
@@ -89,38 +91,42 @@
 				echo '</span>';
 			}
 			?>
-        </div><!-- .entry-meta -->
-    </header><!-- .entry-header -->
+		</div><!-- .entry-meta -->
+	</header><!-- .entry-header -->
 
 
-    <div class="entry-content">
+	<div class="entry-content">
 		<?php
 		if ( is_single() ) {
-			the_content( sprintf(
-				wp_kses(
-				/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'yith-proteo' ),
-					array(
-						'span' => array(
-							'class' => array(),
-						),
-					)
-				),
-				get_the_title()
-			) );
+			the_content(
+				sprintf(
+					wp_kses(
+						/* translators: %s: Name of current post. Only visible to screen readers */
+						__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'yith-proteo' ),
+						array(
+							'span' => array(
+								'class' => array(),
+							),
+						)
+					),
+					get_the_title()
+				)
+			);
 
 		} else {
 			the_excerpt();
 		}
 
-		wp_link_pages( array(
-			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'yith-proteo' ),
-			'after'  => '</div>',
-		) );
+		wp_link_pages(
+			array(
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'yith-proteo' ),
+				'after'  => '</div>',
+			)
+		);
 		?>
-    </div><!-- .entry-content -->
+	</div><!-- .entry-content -->
 
-    <footer class="entry-footer">
+	<footer class="entry-footer">
 		<?php yith_proteo_entry_footer(); ?>
-    </footer><!-- .entry-footer -->
+	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

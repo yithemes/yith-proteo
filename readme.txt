@@ -5,7 +5,7 @@ Tags: one-column, two-columns, left-sidebar, right-sidebar, wide-blocks, accessi
 
 Requires at least: 4.9.6
 Tested up to: WordPress 5.3
-Requires PHP: 5.2.4
+Requires PHP: 5.6
 Stable tag: 1.0.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -72,14 +72,16 @@ Proteo is a sleek, modern and “Gutenberg-friendly” e-commerce theme. Develop
 = 1.0.0 - Dec 12 2019 =
 * Initial release
 
-== Credits ==
+== Resources ==
 
 * Based on Underscores https://underscores.me/, (C) 2012-2019 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
 * normalize.css https://necolas.github.io/normalize.css/, (C) 2012-2016 Nicolas Gallagher and Jonathan Neal, [MIT](https://opensource.org/licenses/MIT)
 * AOS - Animate On Scroll Library https://michalsnik.github.io/aos/, (C) 2015 Michał Sajnóg, [MIT](https://opensource.org/licenses/MIT)
 * Linearicons https://linearicons.com/, (C) https://perxis.com/, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
 * Simple Line Icons - https://github.com/thesabbir/simple-line-icons, [MIT](https://opensource.org/licenses/MIT)
-* JQuery Modal https://github.com/kylefox/jquery-modal (c) 2012 Kyle Fox, [MIT](https://opensource.org/licenses/MIT)
+* JQuery Modal https://github.com/kylefox/jquery-modal, (c) 2012 Kyle Fox, [MIT](https://opensource.org/licenses/MIT)
+* Select2 - https://github.com/select2/select2,  (c) 2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors, [MIT](https://opensource.org/licenses/MIT)
+* bootstrap-grid.scss - https://github.com/twbs/bootstrap, (c) 2011-2020 the Bootstrap Authors and Twitter, Inc. Code released under the MIT License (https://opensource.org/licenses/MIT)
 
 == Screenshot Licenses ==
 

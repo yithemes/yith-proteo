@@ -27,13 +27,13 @@ global $product;
 do_action( 'woocommerce_before_single_product' );
 
 if ( post_password_required() ) {
-	echo get_the_password_form(); // WPCS: XSS ok.
+	echo get_the_password_form(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 
 	return;
 }
 ?>
 <div id="product-<?php the_ID(); ?>" <?php wc_product_class( '', $product ); ?>>
-    <div class="single-product-layout-cols">
+	<div class="single-product-layout-cols">
 		<?php
 		/**
 		 * Hook: woocommerce_before_single_product_summary.
@@ -44,7 +44,7 @@ if ( post_password_required() ) {
 		do_action( 'woocommerce_before_single_product_summary' );
 		?>
 
-        <div class="summary entry-summary">
+		<div class="summary entry-summary">
 			<?php
 			/**
 			 * Hook: woocommerce_single_product_summary.
@@ -60,8 +60,8 @@ if ( post_password_required() ) {
 			 */
 			do_action( 'woocommerce_single_product_summary' );
 			?>
-        </div>
-    </div>
+		</div>
+	</div>
 	<?php
 	/**
 	 * Hook: woocommerce_after_single_product_summary.

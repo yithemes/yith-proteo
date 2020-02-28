@@ -11,34 +11,34 @@
 
 <ul class="yith_proteo_dashboard_links row">
 	<?php foreach ( wc_get_account_menu_items() as $endpoint => $label ) : ?>
-		<?php if ( $endpoint == 'dashboard' ) :
+		<?php
+		if ( 'dashboard' == $endpoint ) :
 			continue;
-		endif; ?>
-		<li class="col-lg-4 col-md-6 <?php echo wc_get_account_menu_item_classes( $endpoint ); ?>">
+		endif;
+		?>
+		<li class="col-lg-4 col-md-6 <?php echo esc_attr( wc_get_account_menu_item_classes( $endpoint ) ); ?>">
 			<div>
 				<a href="<?php echo esc_url( wc_get_account_endpoint_url( $endpoint ) ); ?>">
 					<?php
-
 					$icon = '';
 					switch ( $endpoint ) :
-						case 'downloads' :
+						case 'downloads':
 							$icon = '<span class="yith-proteo-myaccount-icons lnr lnr-download"></span>';
 							break;
-						case 'orders' :
+						case 'orders':
 							$icon = '<span class="yith-proteo-myaccount-icons lnr lnr-cart"></span>';
 							break;
 						case 'edit-account':
 							$icon = '<span class="yith-proteo-myaccount-icons lnr lnr-user"></span>';
 							break;
-						case 'edit-address' :
+						case 'edit-address':
 							$icon = '<span class="yith-proteo-myaccount-icons lnr lnr-map-marker"></span>';
 							break;
-						default :
-						    $icon = apply_filters( 'yith_proteo_myaccount_custom_icon', '<span class="yith-proteo-myaccount-icons lnr lnr-star"></span>', $endpoint);
+						default:
+							$icon = apply_filters( 'yith_proteo_myaccount_custom_icon', '<span class="yith-proteo-myaccount-icons lnr lnr-star"></span>', $endpoint );
 							break;
-
 					endswitch;
-					echo $icon;
+					echo $icon; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 					echo esc_html( $label );
 					?>
 				</a>

@@ -4,7 +4,7 @@
  *
  * @author Francesco Grasso <francgrasso@yithemes.com>
  */
-if ( ! function_exists( 'yith_proteo_get_icons_list' ) ):
+if ( ! function_exists( 'yith_proteo_get_icons_list' ) ) :
 	function yith_proteo_get_icons_list() {
 
 		$icons = array(
@@ -188,30 +188,30 @@ endif;
 /**
  * Increases or decreases the brightness of a color by a percentage of the current brightness.
  *
- * @param string $hexCode Supported formats: `#FFF`, `#FFFFFF`, `FFF`, `FFFFFF`
- * @param float $adjustPercent A number between -1 and 1. E.g. 0.3 = 30% lighter; -0.4 = 40% darker.
+ * @param string $hex_code Supported formats: `#FFF`, `#FFFFFF`, `FFF`, `FFFFFF`
+ * @param float $adjust_percent A number between -1 and 1. E.g. 0.3 = 30% lighter; -0.4 = 40% darker.
  *
  * @return  string
  *
  * @author Francesco Grasso <francgrasso@yithemes.com>
  */
-if ( ! function_exists( 'yith_proteo_adjustBrightness' ) ) :
-	function yith_proteo_adjustBrightness( $hexCode, $adjustPercent ) {
-		$hexCode = ltrim( $hexCode, '#' );
+if ( ! function_exists( 'yith_proteo_adjust_brightness' ) ) :
+	function yith_proteo_adjust_brightness( $hex_code, $adjust_percent ) {
+		$hex_code = ltrim( $hex_code, '#' );
 
-		if ( strlen( $hexCode ) == 3 ) {
-			$hexCode = $hexCode[0] . $hexCode[0] . $hexCode[1] . $hexCode[1] . $hexCode[2] . $hexCode[2];
+		if ( strlen( $hex_code ) == 3 ) {
+			$hex_code = $hex_code[0] . $hex_code[0] . $hex_code[1] . $hex_code[1] . $hex_code[2] . $hex_code[2];
 		}
 
-		$hexCode = array_map( 'hexdec', str_split( $hexCode, 2 ) );
+		$hex_code = array_map( 'hexdec', str_split( $hex_code, 2 ) );
 
-		foreach ( $hexCode as & $color ) {
-			$adjustableLimit = $adjustPercent < 0 ? $color : 255 - $color;
-			$adjustAmount    = ceil( $adjustableLimit * $adjustPercent );
+		foreach ( $hex_code as & $color ) {
+			$adjustable_limit = $adjust_percent < 0 ? $color : 255 - $color;
+			$adjust_amount    = ceil( $adjustable_limit * $adjust_percent );
 
-			$color = str_pad( dechex( $color + $adjustAmount ), 2, '0', STR_PAD_LEFT );
+			$color = str_pad( dechex( $color + $adjust_amount ), 2, '0', STR_PAD_LEFT );
 		}
 
-		return '#' . implode( $hexCode );
+		return '#' . implode( $hex_code );
 	}
 endif;

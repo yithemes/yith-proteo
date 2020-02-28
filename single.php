@@ -13,8 +13,8 @@ $sidebar_show    = yith_proteo_get_sidebar_position( 'sidebar-show' );
 get_header();
 ?>
 
-    <div id="primary" class="content-area <?php echo $sidebar_display ?>">
-        <main id="main" class="site-main">
+	<div id="primary" class="content-area <?php echo esc_attr( $sidebar_display ); ?>">
+		<main id="main" class="site-main">
 			<?php
 			while ( have_posts() ) :
 				the_post();
@@ -30,8 +30,8 @@ get_header();
 
 			endwhile; // End of the loop.
 			?>
-        </main><!-- #main -->
-    </div><!-- #primary -->
+		</main><!-- #main -->
+	</div><!-- #primary -->
 
 <?php
 if ( $sidebar_show ) {

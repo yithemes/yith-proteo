@@ -17,7 +17,8 @@ if ( ! function_exists( 'yith_proteo_posted_on' ) ) :
 			$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
 		}
 
-		$time_string = sprintf( $time_string,
+		$time_string = sprintf(
+			$time_string,
 			esc_attr( get_the_date( DATE_W3C ) ),
 			esc_html( get_the_date() ),
 			esc_attr( get_the_modified_date( DATE_W3C ) ),
@@ -26,7 +27,7 @@ if ( ! function_exists( 'yith_proteo_posted_on' ) ) :
 
 		$posted_on = '<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>';
 
-		echo '<span class="posted-on">' . $posted_on . '</span>'; // WPCS: XSS OK.
+		echo '<span class="posted-on">' . $posted_on . '</span>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 
 	}
 endif;
@@ -37,12 +38,12 @@ if ( ! function_exists( 'yith_proteo_posted_by' ) ) :
 	 */
 	function yith_proteo_posted_by() {
 		$byline = sprintf(
-		/* translators: %s: post author. */
+			/* translators: %s: post author. */
 			esc_html_x( 'By %s', 'post author', 'yith-proteo' ),
 			'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 		);
 
-		echo '<span class="byline"> ' . $byline . '</span>'; // WPCS: XSS OK.
+		echo '<span class="byline"> ' . $byline . '</span>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 
 	}
 endif;
@@ -56,7 +57,7 @@ if ( ! function_exists( 'yith_proteo_entry_footer' ) ) :
 		edit_post_link(
 			sprintf(
 				wp_kses(
-				/* translators: %s: Name of current post. Only visible to screen readers */
+					/* translators: %s: Name of current post. Only visible to screen readers */
 					__( 'Edit <span class="screen-reader-text">%s</span>', 'yith-proteo' ),
 					array(
 						'span' => array(
@@ -84,23 +85,28 @@ if ( ! function_exists( 'yith_proteo_post_thumbnail' ) ) :
 		if ( is_singular() ) :
 			?>
 
-            <div class="post-thumbnail">
+			<div class="post-thumbnail">
 				<?php the_post_thumbnail(); ?>
-            </div><!-- .post-thumbnail -->
+			</div><!-- .post-thumbnail -->
 
 		<?php else : ?>
 
-            <a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
+			<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
 				<?php
-				the_post_thumbnail( 'post-thumbnail', array(
-					'alt' => the_title_attribute( array(
-						'echo' => false,
-					) ),
-				) );
+				the_post_thumbnail(
+					'post-thumbnail',
+					array(
+						'alt' => the_title_attribute(
+							array(
+								'echo' => false,
+							)
+						),
+					)
+				);
 				?>
-            </a>
+			</a>
 
-		<?php
+			<?php
 		endif; // End is_singular().
 	}
 endif;

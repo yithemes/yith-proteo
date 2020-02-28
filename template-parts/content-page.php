@@ -11,35 +11,39 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php if ( ! is_front_page() ) : ?>
-        <header class="entry-header">
-			<?php if ( function_exists( 'woocommerce_breadcrumb' ) ) {
-				woocommerce_breadcrumb();
-			} ?>
+		<header class="entry-header">
 			<?php
-			    yith_proteo_print_page_titles();
+			if ( function_exists( 'woocommerce_breadcrumb' ) ) {
+				woocommerce_breadcrumb();
+			}
 			?>
-        </header><!-- .entry-header -->
+			<?php
+			yith_proteo_print_page_titles();
+			?>
+		</header><!-- .entry-header -->
 	<?php endif; ?>
 	<?php yith_proteo_post_thumbnail(); ?>
 
-    <div class="entry-content">
+	<div class="entry-content">
 		<?php
 		the_content();
 
-		wp_link_pages( array(
-			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'yith-proteo' ),
-			'after'  => '</div>',
-		) );
+		wp_link_pages(
+			array(
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'yith-proteo' ),
+				'after'  => '</div>',
+			)
+		);
 		?>
-    </div><!-- .entry-content -->
+	</div><!-- .entry-content -->
 
 	<?php if ( get_edit_post_link() ) : ?>
-        <footer class="entry-footer">
+		<footer class="entry-footer">
 			<?php
 			edit_post_link(
 				sprintf(
 					wp_kses(
-					/* translators: %s: Name of current post. Only visible to screen readers */
+						/* translators: %s: Name of current post. Only visible to screen readers */
 						__( 'Edit <span class="screen-reader-text">%s</span>', 'yith-proteo' ),
 						array(
 							'span' => array(
@@ -53,6 +57,6 @@
 				'</span>'
 			);
 			?>
-        </footer><!-- .entry-footer -->
+		</footer><!-- .entry-footer -->
 	<?php endif; ?>
 </article><!-- #post-<?php the_ID(); ?> -->

@@ -28,15 +28,15 @@ if ( ! is_a( $product, 'WC_Product' ) ) {
 <li>
 	<?php do_action( 'woocommerce_widget_product_item_start', $args ); ?>
 
-    <div class="product-image">
-        <a href="<?php echo esc_url( $product->get_permalink() ); ?>">
+	<div class="product-image">
+		<a href="<?php echo esc_url( $product->get_permalink() ); ?>">
 			<?php echo $product->get_image(); // PHPCS:Ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
-        </a>
-    </div>
-    <div class="product-info">
-        <a href="<?php echo esc_url( $product->get_permalink() ); ?>">
-            <span class="product-title"><?php echo wp_kses_post( $product->get_name() ); ?></span>
-        </a>
+		</a>
+	</div>
+	<div class="product-info">
+		<a href="<?php echo esc_url( $product->get_permalink() ); ?>">
+			<span class="product-title"><?php echo wp_kses_post( $product->get_name() ); ?></span>
+		</a>
 
 
 		<?php if ( ! empty( $show_rating ) ) : ?>
@@ -44,10 +44,10 @@ if ( ! is_a( $product, 'WC_Product' ) ) {
 		<?php endif; ?>
 
 		<?php echo $product->get_price_html(); // PHPCS:Ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
-        <div class="widget-product-short-description">
-			<?php echo apply_filters( 'woocommerce_short_description', $product->get_short_description() ); ?>
-        </div>
-    </div>
+		<div class="widget-product-short-description">
+			<?php echo apply_filters( 'woocommerce_short_description', $product->get_short_description() ); // PHPCS:Ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+		</div>
+	</div>
 
 	<?php do_action( 'woocommerce_widget_product_item_end', $args ); ?>
 </li>

@@ -10,27 +10,30 @@
 get_header();
 ?>
 
-    <div id="primary" class="content-area col-12">
-        <main id="main" class="site-main">
+	<div id="primary" class="content-area col-12">
+		<main id="main" class="site-main">
 
-            <section class="error-404 not-found">
-                <header class="page-header">
+			<section class="error-404 not-found">
+				<header class="page-header">
 
-                    <h1 class="page-title"><div class="lnr lnr-warning"></div><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'yith-proteo' ); ?></h1>
-                </header><!-- .page-header -->
+					<h1 class="page-title">
+						<div
+							class="lnr lnr-warning"></div><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'yith-proteo' ); ?>
+					</h1>
+				</header><!-- .page-header -->
 
-                <div class="page-content">
-                    <p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try a search?', 'yith-proteo' ); ?></p>
+				<div class="page-content">
+					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try a search?', 'yith-proteo' ); ?></p>
 
 					<?php
 					get_search_form();
 					?>
 
-                </div><!-- .page-content -->
-            </section><!-- .error-404 -->
+				</div><!-- .page-content -->
+			</section><!-- .error-404 -->
 
-        </main><!-- #main -->
-    </div><!-- #primary -->
+		</main><!-- #main -->
+	</div><!-- #primary -->
 
 <?php
 get_footer();

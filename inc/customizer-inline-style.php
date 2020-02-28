@@ -10,16 +10,16 @@
  */
 function yith_proteo_inline_style() {
 	// Register a dummy empty style to hook to
-	wp_register_style( 'yith-proteo-custom-style', false );
+	wp_register_style( 'yith-proteo-custom-style', false, array(), YITH_PROTEO_VERSION );
 	wp_enqueue_style( 'yith-proteo-custom-style' );
 
-	$custom_css = "";
+	$custom_css = '';
 
 	$font         = '';
 	$default_font = ( get_theme_mod( 'yith_proteo_google_font', esc_url( 'https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap' ) ) ) == 'https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap' ? true : false;
 
 	$main_color_shade         = get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' );
-	$general_link_hover_color = get_theme_mod( 'yith_proteo_general_link_hover_color', yith_proteo_adjustBrightness( get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ), - 0.3 ) );
+	$general_link_hover_color = get_theme_mod( 'yith_proteo_general_link_hover_color', yith_proteo_adjust_brightness( get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ), - 0.3 ) );
 
 	$header_bg_color         = get_theme_mod( 'yith_proteo_header_background_color', '#ffffff' );
 	$topbar_bg_color         = get_theme_mod( 'yith_proteo_topbar_background_color', '#ebebeb' );
@@ -47,16 +47,16 @@ function yith_proteo_inline_style() {
 	$button_1_bg_color           = get_theme_mod( 'yith_proteo_button_style_1_bg_color', get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ) );
 	$button_1_border_color       = get_theme_mod( 'yith_proteo_button_style_1_border_color', get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ) );
 	$button_1_font_color         = get_theme_mod( 'yith_proteo_button_style_1_text_color', '#ffffff' );
-	$button_1_bg_hover_color     = get_theme_mod( 'yith_proteo_button_style_1_bg_color_hover', yith_proteo_adjustBrightness( get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ), 0.2 ) );
-	$button_1_border_hover_color = get_theme_mod( 'yith_proteo_button_style_1_border_color_hover', yith_proteo_adjustBrightness( get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ), 0.2 ) );
+	$button_1_bg_hover_color     = get_theme_mod( 'yith_proteo_button_style_1_bg_color_hover', yith_proteo_adjust_brightness( get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ), 0.2 ) );
+	$button_1_border_hover_color = get_theme_mod( 'yith_proteo_button_style_1_border_color_hover', yith_proteo_adjust_brightness( get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ), 0.2 ) );
 	$button_1_font_hover_color   = get_theme_mod( 'yith_proteo_button_style_1_text_color_hover', '#ffffff' );
 
 	$button_2_bg_color_1       = get_theme_mod( 'yith_proteo_button_style_2_bg_color_1', get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ) );
 	$button_2_bg_color_1       = yith_proteo_hex2rgba( $button_2_bg_color_1, 1 );
-	$button_2_bg_color_2       = get_theme_mod( 'yith_proteo_button_style_2_bg_color_2', yith_proteo_adjustBrightness( get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ), 0.2 ) );
+	$button_2_bg_color_2       = get_theme_mod( 'yith_proteo_button_style_2_bg_color_2', yith_proteo_adjust_brightness( get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ), 0.2 ) );
 	$button_2_bg_color_2       = yith_proteo_hex2rgba( $button_2_bg_color_2, 1 );
 	$button_2_font_color       = get_theme_mod( 'yith_proteo_button_style_2_text_color', '#ffffff' );
-	$button_2_bg_hover_color   = get_theme_mod( 'yith_proteo_button_style_2_bg_color_hover', yith_proteo_adjustBrightness( get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ), - 0.3 ) );
+	$button_2_bg_hover_color   = get_theme_mod( 'yith_proteo_button_style_2_bg_color_hover', yith_proteo_adjust_brightness( get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ), - 0.3 ) );
 	$button_2_font_hover_color = get_theme_mod( 'yith_proteo_button_style_2_text_color_hover', '#ffffff' );
 
 	/**
@@ -81,11 +81,11 @@ function yith_proteo_inline_style() {
 
 	$custom_css = "
 				{$font}
-				
+
 				* {
 				  outline-color: {$main_color_shade};
 				}
-	
+
 				a,
 				.comment-reply a,
 				.button.ghost,
@@ -131,30 +131,30 @@ function yith_proteo_inline_style() {
 				.widget_yith-wcwl-items div.list ul li > *.mini-cart-item-info .mini-cart-wishlist-info a,
 				.widget_yith-wcwl-items div.list a.show-wishlist,
 				.single-product div.product .summary.entry-summary a.compare:not(.button):hover,
-				.single-product div.product .summary.entry-summary .price, 
-				.main-navigation a:hover, 
-				.site-branding .site-title a:hover, 
-				.single-product .single-product-layout-cols .yith-wcwl-add-to-wishlist .yith-wcwl-icon, 
+				.single-product div.product .summary.entry-summary .price,
+				.main-navigation a:hover,
+				.site-branding .site-title a:hover,
+				.single-product .single-product-layout-cols .yith-wcwl-add-to-wishlist .yith-wcwl-icon,
 				.single-product .woocommerce-tabs + .yith-wcwl-add-to-wishlist .yith-wcwl-icon,
 				table.cart tbody tr td.actions button[name=update_cart],
 				.woocommerce .products .add-request-quote-button.button,
                 .woocommerce .products .add-request-quote-button-addons.button {
 					color: {$main_color_shade};
 				}
-				
+
 				.woocommerce .products .add-request-quote-button.button:hover,
                 .woocommerce .products .add-request-quote-button-addons.button:hover,
 				a:hover, a:focus, a:active, table.cart tbody tr td.actions button[name=update_cart]:hover {
 				    color: {$general_link_hover_color};
 				}
-								
-				.select2-dropdown .select2-results__option.select2-results__option--highlighted, 
+
+				.select2-dropdown .select2-results__option.select2-results__option--highlighted,
 				.select2-dropdown .select2-results__option.select2-results__option[data-selected=true],
 				 .selectBox-dropdown-menu li.selectBox-selected a,
 				 .selectBox-dropdown-menu li.selectBox-hover a {
 				    color: {$main_color_shade} !important;
 				}
-				
+
 				button,
 				input[type=button],
 				input[type=reset],
@@ -201,7 +201,7 @@ function yith_proteo_inline_style() {
 				textarea:focus{
 					border-color: {$main_color_shade};
 				}
-				
+
 				.button.ghost:hover,
 				.wishlist-title a.show-title-form:hover,
 				.wishlist-title a.hide-title-form:hover,
@@ -215,7 +215,7 @@ function yith_proteo_inline_style() {
 				.widget_shopping_cart .yith-proteo-mini-cart-content .woocommerce-mini-cart__buttons a.checkout {
 					background-color: {$main_color_shade};
 				}
-				
+
 				button,
 				input[type=button],
 				input[type=reset],
@@ -233,7 +233,7 @@ function yith_proteo_inline_style() {
 				.with-tooltip .yith-wcwl-tooltip {
 					background: {$main_color_shade};
 				}
-					
+
                 header.site-header {
                     background-color: {$header_bg_color};
                 }
@@ -246,63 +246,63 @@ function yith_proteo_inline_style() {
                 #main-footer .site-info {
                     background-color: {$footer_credits_bg_color};
                 }
-                
+
                 body, button, input, select, optgroup, textarea {
                     font-size: {$base_font_size}px;
                     color: {$base_font_color};
                 }
-                
-                h1, 
-                article.page header.entry-header h1, 
+
+                h1,
+                article.page header.entry-header h1,
                 article:not(.has-post-thumbnail).page header.entry-header h1{
                     font-size: {$h1_font_size}px;
                     color: {$h1_font_color};
                 }
-                
+
                 h2 {
                     font-size: {$h2_font_size}px;
                     color: {$h2_font_color};
                 }
-                
+
                 h3, .widget_products .product-title {
                     font-size: {$h3_font_size}px;
                     color: {$h3_font_color};
                 }
-                
+
                 h4 {
                     font-size: {$h4_font_size}px;
                     color: {$h4_font_color};
                 }
-                
+
                 h5 {
                     font-size: {$h5_font_size}px;
                     color: {$h5_font_color};
                 }
-                
+
                 h6 {
                     font-size: {$h6_font_size}px;
                     color: {$h6_font_color};
                 }
-                
+
                 /* Button style 1*/
-                button, 
-                input[type=\"button\"], 
-                input[type=\"reset\"], 
-                input[type=\"submit\"], 
-                .button, 
-                .widget a.button, 
+                button,
+                input[type=\"button\"],
+                input[type=\"reset\"],
+                input[type=\"submit\"],
+                .button,
+                .widget a.button,
                 .button-style-1:not(.wp-block-button), .button-style-1 a {
 					background: none;
                     background-color: {$button_1_bg_color};
 					border-color: {$button_1_border_color};
 					color: {$button_1_font_color};
                 }
-                
-                 button:hover, 
-                 input[type=\"button\"]:hover, 
-                 input[type=\"reset\"]:hover, 
-                 input[type=\"submit\"]:hover, 
-                 .button:hover, 
+
+                 button:hover,
+                 input[type=\"button\"]:hover,
+                 input[type=\"reset\"]:hover,
+                 input[type=\"submit\"]:hover,
+                 .button:hover,
                  .widget a.button:hover,
                  .wishlist-submit.popup_button:hover,
                  .button.flat:hover,
@@ -314,13 +314,13 @@ function yith_proteo_inline_style() {
 					border-color: {$button_1_border_hover_color};
 					color: {$button_1_font_hover_color};
                  }
-                
+
                 /* Button style 2*/
-                button.alt, 
-                input[type=\"button\"].alt, 
-                input[type=\"reset\"].alt, 
-                input[type=\"submit\"].alt, 
-                .button.alt, 
+                button.alt,
+                input[type=\"button\"].alt,
+                input[type=\"reset\"].alt,
+                input[type=\"submit\"].alt,
+                .button.alt,
                 .widget-area .widget a.button.alt,
                 .wishlist-submit.popup_button,
                 .yith_wcwl_wishlist_footer input[name=\"add_all_to_cart\"],
@@ -330,11 +330,11 @@ function yith_proteo_inline_style() {
 					color: {$button_2_font_color};
 					border: none;
                 }
-                button.alt:hover, 
-                input[type=\"button\"].alt:hover, 
-                input[type=\"reset\"].alt:hover, 
-                input[type=\"submit\"].alt:hover, 
-                .button.alt:hover, 
+                button.alt:hover,
+                input[type=\"button\"].alt:hover,
+                input[type=\"reset\"].alt:hover,
+                input[type=\"submit\"].alt:hover,
+                .button.alt:hover,
                 .widget-area .widget a.button.alt:hover,
                 .wishlist-submit.popup_button:hover,
                 .yith_wcwl_wishlist_footer input[name=\"add_all_to_cart\"]:hover,
@@ -343,9 +343,9 @@ function yith_proteo_inline_style() {
                     background: linear-gradient(180deg, {$button_2_bg_hover_color} 0%, {$button_2_bg_hover_color} 100%);
 					color: {$button_2_font_hover_color};
                 }
-                
+
                 /* Store options */
-                
+
                 .woocommerce-store-notice.demo_store {
                     background-color: {$store_notice_bg_color};
                     color: {$store_notice_text_color};
@@ -398,7 +398,7 @@ if ( ! function_exists( 'yith_proteo_hex2rgba' ) ) :
 		}
 
 		//Sanitize $color if "#" is provided
-		if ( $color[0] == '#' ) {
+		if ( '#' == $color[0] ) {
 			$color = substr( $color, 1 );
 		}
 
@@ -419,9 +419,9 @@ if ( ! function_exists( 'yith_proteo_hex2rgba' ) ) :
 			if ( abs( $opacity ) > 1 ) {
 				$opacity = 1.0;
 			}
-			$output = 'rgba(' . implode( ",", $rgb ) . ',' . $opacity . ')';
+			$output = 'rgba(' . implode( ',', $rgb ) . ',' . $opacity . ')';
 		} else {
-			$output = 'rgb(' . implode( ",", $rgb ) . ')';
+			$output = 'rgb(' . implode( ',', $rgb ) . ')';
 		}
 
 		//Return rgb(a) color string

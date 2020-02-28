@@ -10,19 +10,19 @@
 get_header();
 ?>
 
-    <section id="primary" class="content-area col-12">
-        <main id="main" class="site-main">
+	<section id="primary" class="content-area col-12">
+		<main id="main" class="site-main">
 
 			<?php if ( have_posts() ) : ?>
 
-                <header class="page-header">
-                    <h1 class="page-title">
+				<header class="page-header">
+					<h1 class="page-title">
 						<?php
 						/* translators: %s: search query. */
 						printf( esc_html__( 'Search results for: %s', 'yith-proteo' ), '<span>' . get_search_query() . '</span>' );
 						?>
-                    </h1>
-                </header><!-- .page-header -->
+					</h1>
+				</header><!-- .page-header -->
 
 				<?php
 				/* Start the Loop */
@@ -40,15 +40,15 @@ get_header();
 
 				the_posts_navigation();
 
-			else :
+				else :
 
-				get_template_part( 'template-parts/content', 'none' );
+					get_template_part( 'template-parts/content', 'none' );
 
 			endif;
-			?>
+				?>
 
-        </main><!-- #main -->
-    </section><!-- #primary -->
+		</main><!-- #main -->
+	</section><!-- #primary -->
 
 <?php
 get_footer();

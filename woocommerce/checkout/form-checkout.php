@@ -24,6 +24,7 @@ do_action( 'woocommerce_before_checkout_form', $checkout );
 // If checkout registration is disabled and not logged in, the user cannot checkout.
 if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_required() && ! is_user_logged_in() ) {
 	echo esc_html( apply_filters( 'woocommerce_checkout_must_be_logged_in_message', __( 'You must be logged in to proceed with the checkout.', 'yith-proteo' ) ) );
+
 	return;
 }
 
@@ -54,12 +55,12 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 
 	<?php do_action( 'woocommerce_checkout_before_order_review' ); ?>
 
-    <div id="order_review" class="woocommerce-checkout-review-order">
-        <div class="order_review_inner">
-            <h3 id="order_review_heading"><?php esc_html_e( 'Your order', 'yith-proteo' ); ?></h3>
+	<div id="order_review" class="woocommerce-checkout-review-order">
+		<div class="order_review_inner">
+			<h3 id="order_review_heading"><?php esc_html_e( 'Your order', 'yith-proteo' ); ?></h3>
 			<?php do_action( 'woocommerce_checkout_order_review' ); ?>
-        </div>
-    </div>
+		</div>
+	</div>
 
 	<?php do_action( 'woocommerce_checkout_after_order_review' ); ?>
 

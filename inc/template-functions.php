@@ -14,7 +14,7 @@
  *
  * @author Francesco Grasso <francgrasso@yithemes.com>
  */
-if ( ! function_exists( 'yith_proteo_body_classes' ) ):
+if ( ! function_exists( 'yith_proteo_body_classes' ) ) :
 	function yith_proteo_body_classes( $classes ) {
 		// Adds a class of hfeed to non-singular pages.
 		if ( ! is_singular() ) {
@@ -43,7 +43,7 @@ if ( ! function_exists( 'yith_proteo_custom_header_style' ) ) :
 			$custom_header_url = get_header_image();
 			$style             = 'style=" background-image: url(' . $custom_header_url . '); "';
 		}
-		echo $style;
+		echo esc_html( $style );
 	}
 endif;
 
@@ -54,7 +54,7 @@ endif;
  *
  * @author Francesco Grasso <francgrasso@yithemes.com>
  */
-if ( ! function_exists( 'yith_proteo_get_sidebar_position' ) ):
+if ( ! function_exists( 'yith_proteo_get_sidebar_position' ) ) :
 	function yith_proteo_get_sidebar_position( $info = null ) {
 		$sidebar_display = '';
 		$sidebar_show    = true;
@@ -79,34 +79,33 @@ if ( ! function_exists( 'yith_proteo_get_sidebar_position' ) ):
 			if ( is_checkout() || is_cart() || is_account_page() ) {
 				return false;
 			}
-
 		}
 
-		if ( empty ( $local_sidebar ) || $local_sidebar == 'inherit' ) {
+		if ( empty( $local_sidebar ) || 'inherit' == $local_sidebar ) {
 
-			if ( $general_sidebar != 'no-sidebar' ) {
+			if ( 'no-sidebar' != $general_sidebar ) {
 				$sidebar_display .= 'col-lg-9';
 			}
-			if ( $general_sidebar == 'left' ) {
+			if ( 'left' == $general_sidebar ) {
 				$sidebar_display .= ' order-last ';
 			}
-			if ( $general_sidebar == 'no-sidebar' ) {
+			if ( 'no-sidebar' == $general_sidebar ) {
 				$sidebar_show = false;
 			}
 		} else {
 
-			if ( $local_sidebar != 'no-sidebar' ) {
+			if ( 'no-sidebar' != $local_sidebar ) {
 				$sidebar_display .= 'col-lg-9';
 			}
-			if ( $local_sidebar == 'left' ) {
+			if ( 'left' == $local_sidebar ) {
 				$sidebar_display .= ' order-last ';
 			}
-			if ( $local_sidebar == 'no-sidebar' ) {
+			if ( 'no-sidebar' == $local_sidebar ) {
 				$sidebar_show = false;
 			}
 		}
 
-		if ( $info == 'sidebar-show' ) {
+		if ( 'sidebar-show' == $info ) {
 			return $sidebar_show;
 		}
 
@@ -151,7 +150,7 @@ if ( ! function_exists( 'yith_proteo_show_icon_title' ) ) :
 	function yith_proteo_show_icon_title( $title, $id = null ) {
 		if ( ! is_admin() && ! is_null( $id ) ) {
 			$post = get_post( $id );
-			if ( $post instanceof WP_Post && ( $post->post_type == 'post' || $post->post_type == 'page' ) ) {
+			if ( $post instanceof WP_Post && ( 'post' == $post->post_type || 'page' == $post->post_type ) ) {
 				$icon = ! empty( get_post_meta( $post->ID, 'title_icon', true ) ) ? '<div class="lnr ' . get_post_meta( $post->ID, 'title_icon', true ) . '"></div>' : '';
 				if ( ! empty( $icon ) ) {
 					return $icon . $title;
@@ -202,25 +201,26 @@ add_filter( 'wp_nav_menu_items', 'yith_proteo_add_title_filter_non_menu', 10, 2 
 if ( ! function_exists( 'yith_proteo_output_full_screen_search' ) ) :
 	function yith_proteo_output_full_screen_search() {
 		?>
-        <div id="full-screen-search">
+		<div id="full-screen-search">
 
-			<?php if ( defined( 'YITH_WCAS_DIR' ) ):
+			<?php
+			if ( defined( 'YITH_WCAS_DIR' ) ) :
 				echo do_shortcode( '[yith_woocommerce_ajax_search]' );
 				echo '<button type="button" class="close" id="full-screen-search-close"><span class="lnr lnr-cross"></span></button>';
-			else: ?>
-                <button type="button" class="close" id="full-screen-search-close"><span class="lnr lnr-cross"></span>
-                </button>
-                <form role="search" method="get" action="<?php echo home_url( '/' ); ?>" id="full-screen-search-form">
-                    <div id="full-screen-search-container">
-                        <input type="text" name="s" placeholder="<?php _e( 'Search', 'yith-proteo' ); ?>"
-                               id="full-screen-search-input"/>
-                        <button type="submit" id="submit-full-screen-search">
-                            <span class="lnr lnr-magnifier"></span>
-                        </button>
-                    </div>
-                </form>
+			else :
+				?>
+				<button type="button" class="close" id="full-screen-search-close"><span class="lnr lnr-cross"></span>
+				</button>
+				<form role="search" method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>" id="full-screen-search-form">
+					<div id="full-screen-search-container">
+						<input type="text" name="s" placeholder="<?php esc_html_e( 'Search', 'yith-proteo' ); ?>" id="full-screen-search-input"/>
+						<button type="submit" id="submit-full-screen-search">
+							<span class="lnr lnr-magnifier"></span>
+						</button>
+					</div>
+				</form>
 			<?php endif; ?>
-        </div>
+		</div>
 		<?php
 	}
 endif;

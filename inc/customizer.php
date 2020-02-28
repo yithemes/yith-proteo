@@ -16,26 +16,35 @@ function yith_proteo_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
 
 	if ( isset( $wp_customize->selective_refresh ) ) {
-		$wp_customize->selective_refresh->add_partial( 'blogname', array(
-			'selector'        => '.site-title a',
-			'render_callback' => 'yith_proteo_customize_partial_blogname',
-		) );
-		$wp_customize->selective_refresh->add_partial( 'blogdescription', array(
-			'selector'        => '.site-description',
-			'render_callback' => 'yith_proteo_customize_partial_blogdescription',
-		) );
+		$wp_customize->selective_refresh->add_partial(
+			'blogname',
+			array(
+				'selector'        => '.site-title a',
+				'render_callback' => 'yith_proteo_customize_partial_blogname',
+			)
+		);
+		$wp_customize->selective_refresh->add_partial(
+			'blogdescription',
+			array(
+				'selector'        => '.site-description',
+				'render_callback' => 'yith_proteo_customize_partial_blogdescription',
+			)
+		);
 	}
 
 	/**
 	 * Add YITH theme management panel
 	 */
-	$wp_customize->add_panel( 'yith_proteo_options', array(
-		'priority'       => 150,
-		'capability'     => 'edit_theme_options',
-		'theme_supports' => '',
-		'title'          => 'YITH Theme Options',
-		'description'    => 'All options related to this theme',
-	) );
+	$wp_customize->add_panel(
+		'yith_proteo_options',
+		array(
+			'priority'       => 150,
+			'capability'     => 'edit_theme_options',
+			'theme_supports' => '',
+			'title'          => 'YITH Theme Options',
+			'description'    => 'All options related to this theme',
+		)
+	);
 
 	/**
 	 * Add default sidebar management
@@ -45,7 +54,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 		array(
 			'title'    => __( 'Sidebars', 'yith-proteo' ),
 			'priority' => 10,
-			'panel'    => 'yith_proteo_options'
+			'panel'    => 'yith_proteo_options',
 		)
 	);
 
@@ -67,7 +76,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 			'choices'     => array(
 				'no-sidebar' => __( 'No sidebar', 'yith-proteo' ),
 				'right'      => __( 'Right', 'yith-proteo' ),
-				'left'       => __( 'Left', 'yith-proteo' )
+				'left'       => __( 'Left', 'yith-proteo' ),
 			),
 		)
 	);
@@ -90,7 +99,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 			'choices'     => array(
 				'no-sidebar' => __( 'No sidebar', 'yith-proteo' ),
 				'right'      => __( 'Right', 'yith-proteo' ),
-				'left'       => __( 'Left', 'yith-proteo' )
+				'left'       => __( 'Left', 'yith-proteo' ),
 			),
 		)
 	);
@@ -110,7 +119,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 			'label'       => __( 'Choose the blog sidebar', 'yith-proteo' ),
 			'section'     => 'yith_proteo_sidebar_management',
 			'description' => __( 'Select the sidebar to display. You can pick a specific sidebar from the single post edit page.', 'yith-proteo' ),
-			'choices'     => wp_list_pluck( $GLOBALS['wp_registered_sidebars'], 'name' )
+			'choices'     => wp_list_pluck( $GLOBALS['wp_registered_sidebars'], 'name' ),
 		)
 	);
 
@@ -132,7 +141,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 			'choices'     => array(
 				'no-sidebar' => __( 'No sidebar', 'yith-proteo' ),
 				'right'      => __( 'Right', 'yith-proteo' ),
-				'left'       => __( 'Left', 'yith-proteo' )
+				'left'       => __( 'Left', 'yith-proteo' ),
 			),
 		)
 	);
@@ -145,7 +154,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 		array(
 			'title'    => __( 'Topbar', 'yith-proteo' ),
 			'priority' => 20,
-			'panel'    => 'yith_proteo_options'
+			'panel'    => 'yith_proteo_options',
 		)
 	);
 
@@ -166,7 +175,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 			'description' => __( 'Choose whether to show the site topbar or not', 'yith-proteo' ),
 			'choices'     => array(
 				'yes' => __( 'Yes', 'yith-proteo' ),
-				'no'  => __( 'No', 'yith-proteo' )
+				'no'  => __( 'No', 'yith-proteo' ),
 			),
 		)
 	);
@@ -176,7 +185,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 		'yith_proteo_topbar_background_color',
 		array(
 			'default'           => '#ebebeb',
-			'sanitize_callback' => 'sanitize_hex_color' //validates 3 or 6 digit HTML hex color code
+			'sanitize_callback' => 'sanitize_hex_color', //validates 3 or 6 digit HTML hex color code
 		)
 	);
 	$wp_customize->add_control(
@@ -185,7 +194,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 			'yith_proteo_topbar_background_color',
 			array(
 				'label'   => __( 'Topbar background color', 'yith-proteo' ),
-				'section' => 'yith_proteo_topbar_management'
+				'section' => 'yith_proteo_topbar_management',
 			)
 		)
 	);
@@ -198,7 +207,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 		array(
 			'title'    => __( 'Header', 'yith-proteo' ),
 			'priority' => 20,
-			'panel'    => 'yith_proteo_options'
+			'panel'    => 'yith_proteo_options',
 		)
 	);
 
@@ -219,7 +228,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 			'description' => __( 'Choose whether to make the header stick to the page when scrolling down', 'yith-proteo' ),
 			'choices'     => array(
 				'yes' => __( 'Yes', 'yith-proteo' ),
-				'no'  => __( 'No', 'yith-proteo' )
+				'no'  => __( 'No', 'yith-proteo' ),
 			),
 		)
 	);
@@ -229,7 +238,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 		'yith_proteo_header_background_color',
 		array(
 			'default'           => '#ffffff',
-			'sanitize_callback' => 'sanitize_hex_color' //validates 3 or 6 digit HTML hex color code
+			'sanitize_callback' => 'sanitize_hex_color', //validates 3 or 6 digit HTML hex color code
 		)
 	);
 	$wp_customize->add_control(
@@ -238,7 +247,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 			'yith_proteo_header_background_color',
 			array(
 				'label'   => __( 'Header background color', 'yith-proteo' ),
-				'section' => 'yith_proteo_header_management'
+				'section' => 'yith_proteo_header_management',
 			)
 		)
 	);
@@ -263,7 +272,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 				'left_logo_navigation_below'   => esc_html__( 'Logo on the left and navigation below', 'yith-proteo' ),
 				'left_logo_navigation_inline'  => esc_html__( 'Logo on the left and navigation inline', 'yith-proteo' ),
 				'center_logo_navigation_below' => esc_html__( 'Centered logo and navigation below', 'yith-proteo' ),
-			)
+			),
 		)
 	);
 
@@ -276,7 +285,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 		array(
 			'title'    => __( 'Footer', 'yith-proteo' ),
 			'priority' => 30,
-			'panel'    => 'yith_proteo_options'
+			'panel'    => 'yith_proteo_options',
 		)
 	);
 
@@ -285,7 +294,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 		'yith_proteo_footer_background_color',
 		array(
 			'default'           => '#f7f7f7',
-			'sanitize_callback' => 'sanitize_hex_color' //validates 3 or 6 digit HTML hex color code
+			'sanitize_callback' => 'sanitize_hex_color', //validates 3 or 6 digit HTML hex color code
 		)
 	);
 	$wp_customize->add_control(
@@ -294,7 +303,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 			'yith_proteo_footer_background_color',
 			array(
 				'label'   => __( 'Footer background color', 'yith-proteo' ),
-				'section' => 'yith_proteo_footer_management'
+				'section' => 'yith_proteo_footer_management',
 			)
 		)
 	);
@@ -320,7 +329,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 				4 => esc_html__( 'Four', 'yith-proteo' ),
 				5 => esc_html__( 'Five', 'yith-proteo' ),
 				6 => esc_html__( 'Six', 'yith-proteo' ),
-			)
+			),
 		)
 	);
 
@@ -345,7 +354,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 				4 => esc_html__( 'Four', 'yith-proteo' ),
 				5 => esc_html__( 'Five', 'yith-proteo' ),
 				6 => esc_html__( 'Six', 'yith-proteo' ),
-			)
+			),
 		)
 	);
 
@@ -357,7 +366,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 		array(
 			'title'    => __( 'Footer credits', 'yith-proteo' ),
 			'priority' => 40,
-			'panel'    => 'yith_proteo_options'
+			'panel'    => 'yith_proteo_options',
 		)
 	);
 
@@ -381,7 +390,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 		'yith_proteo_footer_credits_background_color',
 		array(
 			'default'           => '#f0f0f0',
-			'sanitize_callback' => 'sanitize_hex_color' //validates 3 or 6 digit HTML hex color code
+			'sanitize_callback' => 'sanitize_hex_color', //validates 3 or 6 digit HTML hex color code
 		)
 	);
 	$wp_customize->add_control(
@@ -390,7 +399,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 			'yith_proteo_footer_credits_background_color',
 			array(
 				'label'   => __( 'Footer credits background color', 'yith-proteo' ),
-				'section' => 'yith_proteo_footer_credits_management'
+				'section' => 'yith_proteo_footer_credits_management',
 			)
 		)
 	);
@@ -403,7 +412,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 		array(
 			'title'    => __( 'Google Font', 'yith-proteo' ),
 			'priority' => 50,
-			'panel'    => 'yith_proteo_options'
+			'panel'    => 'yith_proteo_options',
 		)
 	);
 
@@ -412,7 +421,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 		'yith_proteo_google_font',
 		array(
 			'sanitize_callback' => 'esc_url_raw',
-			'default'           => 'https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap'
+			'default'           => 'https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap',
 		)
 	);
 	$wp_customize->add_control(
@@ -432,7 +441,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 		array(
 			'title'    => __( 'Typography', 'yith-proteo' ),
 			'priority' => 60,
-			'panel'    => 'yith_proteo_options'
+			'panel'    => 'yith_proteo_options',
 		)
 	);
 	//Base font size options
@@ -440,7 +449,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 		'yith_proteo_base_font_size',
 		array(
 			'sanitize_callback' => 'absint',
-			'default'           => 16
+			'default'           => 16,
 		)
 	);
 	$wp_customize->add_control(
@@ -448,7 +457,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 		array(
 			'label'   => esc_html__( 'Body font size (default: 16px)', 'yith-proteo' ),
 			'section' => 'yith_proteo_typography',
-			'type'    => 'number'
+			'type'    => 'number',
 		)
 	);
 	//Base font color options
@@ -456,7 +465,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 		'yith_proteo_base_font_color',
 		array(
 			'sanitize_callback' => 'sanitize_hex_color',
-			'default'           => '#404040'
+			'default'           => '#404040',
 		)
 	);
 	$wp_customize->add_control(
@@ -465,7 +474,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 			'yith_proteo_base_font_color',
 			array(
 				'label'   => __( 'Body font color', 'yith-proteo' ),
-				'section' => 'yith_proteo_typography'
+				'section' => 'yith_proteo_typography',
 			)
 		)
 	);
@@ -475,7 +484,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 		'yith_proteo_h1_font_size',
 		array(
 			'sanitize_callback' => 'absint',
-			'default'           => 70
+			'default'           => 70,
 		)
 	);
 	$wp_customize->add_control(
@@ -483,7 +492,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 		array(
 			'label'   => esc_html__( 'H1 font size (default: 32px)', 'yith-proteo' ),
 			'section' => 'yith_proteo_typography',
-			'type'    => 'number'
+			'type'    => 'number',
 		)
 	);
 	//H1 font color options
@@ -491,7 +500,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 		'yith_proteo_h1_font_color',
 		array(
 			'sanitize_callback' => 'sanitize_hex_color',
-			'default'           => '#404040'
+			'default'           => '#404040',
 		)
 	);
 	$wp_customize->add_control(
@@ -500,7 +509,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 			'yith_proteo_h1_font_color',
 			array(
 				'label'   => __( 'H1 font color', 'yith-proteo' ),
-				'section' => 'yith_proteo_typography'
+				'section' => 'yith_proteo_typography',
 			)
 		)
 	);
@@ -510,7 +519,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 		'yith_proteo_h2_font_size',
 		array(
 			'sanitize_callback' => 'absint',
-			'default'           => 40
+			'default'           => 40,
 		)
 	);
 	$wp_customize->add_control(
@@ -518,7 +527,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 		array(
 			'label'   => esc_html__( 'H2 font size (default: 24px)', 'yith-proteo' ),
 			'section' => 'yith_proteo_typography',
-			'type'    => 'number'
+			'type'    => 'number',
 		)
 	);
 	//H2 font color options
@@ -526,7 +535,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 		'yith_proteo_h2_font_color',
 		array(
 			'sanitize_callback' => 'sanitize_hex_color',
-			'default'           => '#404040'
+			'default'           => '#404040',
 		)
 	);
 	$wp_customize->add_control(
@@ -535,7 +544,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 			'yith_proteo_h2_font_color',
 			array(
 				'label'   => __( 'H2 font color', 'yith-proteo' ),
-				'section' => 'yith_proteo_typography'
+				'section' => 'yith_proteo_typography',
 			)
 		)
 	);
@@ -545,7 +554,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 		'yith_proteo_h3_font_size',
 		array(
 			'sanitize_callback' => 'absint',
-			'default'           => 19
+			'default'           => 19,
 		)
 	);
 	$wp_customize->add_control(
@@ -553,7 +562,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 		array(
 			'label'   => esc_html__( 'H3 font size (default: 19px)', 'yith-proteo' ),
 			'section' => 'yith_proteo_typography',
-			'type'    => 'number'
+			'type'    => 'number',
 		)
 	);
 	//H3 font color options
@@ -561,7 +570,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 		'yith_proteo_h3_font_color',
 		array(
 			'sanitize_callback' => 'sanitize_hex_color',
-			'default'           => '#404040'
+			'default'           => '#404040',
 		)
 	);
 	$wp_customize->add_control(
@@ -570,7 +579,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 			'yith_proteo_h3_font_color',
 			array(
 				'label'   => __( 'H3 font color', 'yith-proteo' ),
-				'section' => 'yith_proteo_typography'
+				'section' => 'yith_proteo_typography',
 			)
 		)
 	);
@@ -580,7 +589,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 		'yith_proteo_h4_font_size',
 		array(
 			'sanitize_callback' => 'absint',
-			'default'           => 16
+			'default'           => 16,
 		)
 	);
 	$wp_customize->add_control(
@@ -588,7 +597,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 		array(
 			'label'   => esc_html__( 'H4 font size (default: 16px)', 'yith-proteo' ),
 			'section' => 'yith_proteo_typography',
-			'type'    => 'number'
+			'type'    => 'number',
 		)
 	);
 	//H4 font color options
@@ -596,7 +605,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 		'yith_proteo_h4_font_color',
 		array(
 			'sanitize_callback' => 'sanitize_hex_color',
-			'default'           => '#404040'
+			'default'           => '#404040',
 		)
 	);
 	$wp_customize->add_control(
@@ -605,7 +614,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 			'yith_proteo_h4_font_color',
 			array(
 				'label'   => __( 'H4 font color', 'yith-proteo' ),
-				'section' => 'yith_proteo_typography'
+				'section' => 'yith_proteo_typography',
 			)
 		)
 	);
@@ -615,7 +624,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 		'yith_proteo_h5_font_size',
 		array(
 			'sanitize_callback' => 'absint',
-			'default'           => 13
+			'default'           => 13,
 		)
 	);
 	$wp_customize->add_control(
@@ -623,7 +632,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 		array(
 			'label'   => esc_html__( 'H5 font size (default: 13px)', 'yith-proteo' ),
 			'section' => 'yith_proteo_typography',
-			'type'    => 'number'
+			'type'    => 'number',
 		)
 	);
 	//H5 font color options
@@ -631,7 +640,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 		'yith_proteo_h5_font_color',
 		array(
 			'sanitize_callback' => 'sanitize_hex_color',
-			'default'           => '#404040'
+			'default'           => '#404040',
 		)
 	);
 	$wp_customize->add_control(
@@ -640,7 +649,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 			'yith_proteo_h5_font_color',
 			array(
 				'label'   => __( 'H5 font color', 'yith-proteo' ),
-				'section' => 'yith_proteo_typography'
+				'section' => 'yith_proteo_typography',
 			)
 		)
 	);
@@ -650,7 +659,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 		'yith_proteo_h6_font_size',
 		array(
 			'sanitize_callback' => 'absint',
-			'default'           => 11
+			'default'           => 11,
 		)
 	);
 	$wp_customize->add_control(
@@ -658,7 +667,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 		array(
 			'label'   => esc_html__( 'H6 font size (default: 11px)', 'yith-proteo' ),
 			'section' => 'yith_proteo_typography',
-			'type'    => 'number'
+			'type'    => 'number',
 		)
 	);
 	//H6 font color options
@@ -666,7 +675,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 		'yith_proteo_h6_font_color',
 		array(
 			'sanitize_callback' => 'sanitize_hex_color',
-			'default'           => '#404040'
+			'default'           => '#404040',
 		)
 	);
 	$wp_customize->add_control(
@@ -675,7 +684,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 			'yith_proteo_h6_font_color',
 			array(
 				'label'   => __( 'H6 font color', 'yith-proteo' ),
-				'section' => 'yith_proteo_typography'
+				'section' => 'yith_proteo_typography',
 			)
 		)
 	);
@@ -688,7 +697,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 		array(
 			'title'    => __( 'Buttons', 'yith-proteo' ),
 			'priority' => 70,
-			'panel'    => 'yith_proteo_options'
+			'panel'    => 'yith_proteo_options',
 		)
 	);
 
@@ -697,7 +706,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 		'yith_proteo_button_style_1_bg_color',
 		array(
 			'sanitize_callback' => 'sanitize_hex_color',
-			'default'           => get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' )
+			'default'           => get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ),
 		)
 	);
 	$wp_customize->add_control(
@@ -706,7 +715,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 			'yith_proteo_button_style_1_bg_color',
 			array(
 				'label'   => __( 'Button Style 1 background color', 'yith-proteo' ),
-				'section' => 'yith_proteo_buttons'
+				'section' => 'yith_proteo_buttons',
 			)
 		)
 	);
@@ -715,7 +724,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 		'yith_proteo_button_style_1_border_color',
 		array(
 			'sanitize_callback' => 'sanitize_hex_color',
-			'default'           => get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' )
+			'default'           => get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ),
 		)
 	);
 	$wp_customize->add_control(
@@ -724,7 +733,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 			'yith_proteo_button_style_1_border_color',
 			array(
 				'label'   => __( 'Button Style 1 border color', 'yith-proteo' ),
-				'section' => 'yith_proteo_buttons'
+				'section' => 'yith_proteo_buttons',
 			)
 		)
 	);
@@ -733,7 +742,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 		'yith_proteo_button_style_1_text_color',
 		array(
 			'sanitize_callback' => 'sanitize_hex_color',
-			'default'           => '#ffffff'
+			'default'           => '#ffffff',
 		)
 	);
 	$wp_customize->add_control(
@@ -742,7 +751,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 			'yith_proteo_button_style_1_text_color',
 			array(
 				'label'   => __( 'Button Style 1 text color', 'yith-proteo' ),
-				'section' => 'yith_proteo_buttons'
+				'section' => 'yith_proteo_buttons',
 			)
 		)
 	);
@@ -751,7 +760,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 		'yith_proteo_button_style_1_bg_color_hover',
 		array(
 			'sanitize_callback' => 'sanitize_hex_color',
-			'default'           => yith_proteo_adjustBrightness( get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ), 0.2 )
+			'default'           => yith_proteo_adjust_brightness( get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ), 0.2 ),
 		)
 	);
 	$wp_customize->add_control(
@@ -760,7 +769,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 			'yith_proteo_button_style_1_bg_color_hover',
 			array(
 				'label'   => __( 'Button Style 1 background <code>hover</code> color', 'yith-proteo' ),
-				'section' => 'yith_proteo_buttons'
+				'section' => 'yith_proteo_buttons',
 			)
 		)
 	);
@@ -769,7 +778,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 		'yith_proteo_button_style_1_border_color_hover',
 		array(
 			'sanitize_callback' => 'sanitize_hex_color',
-			'default'           => yith_proteo_adjustBrightness( get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ), 0.2 )
+			'default'           => yith_proteo_adjust_brightness( get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ), 0.2 ),
 		)
 	);
 	$wp_customize->add_control(
@@ -778,7 +787,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 			'yith_proteo_button_style_1_border_color_hover',
 			array(
 				'label'   => __( 'Button Style 1 border <code>hover</code> color', 'yith-proteo' ),
-				'section' => 'yith_proteo_buttons'
+				'section' => 'yith_proteo_buttons',
 			)
 		)
 	);
@@ -787,7 +796,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 		'yith_proteo_button_style_1_text_color_hover',
 		array(
 			'sanitize_callback' => 'sanitize_hex_color',
-			'default'           => '#ffffff'
+			'default'           => '#ffffff',
 		)
 	);
 	$wp_customize->add_control(
@@ -796,7 +805,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 			'yith_proteo_button_style_1_text_color_hover',
 			array(
 				'label'   => __( 'Button Style 1 text <code>hover</code> color', 'yith-proteo' ),
-				'section' => 'yith_proteo_buttons'
+				'section' => 'yith_proteo_buttons',
 			)
 		)
 	);
@@ -806,8 +815,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 		'yith_proteo_button_style_2_bg_color_1',
 		array(
 			'sanitize_callback' => 'sanitize_hex_color',
-			//'default'           => '#00a79c',
-			'default'           => get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' )
+			'default'           => get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ),
 		)
 	);
 	$wp_customize->add_control(
@@ -816,7 +824,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 			'yith_proteo_button_style_2_bg_color_1',
 			array(
 				'label'   => __( 'Button Style 2 background color shade 1', 'yith-proteo' ),
-				'section' => 'yith_proteo_buttons'
+				'section' => 'yith_proteo_buttons',
 			)
 		)
 	);
@@ -825,8 +833,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 		'yith_proteo_button_style_2_bg_color_2',
 		array(
 			'sanitize_callback' => 'sanitize_hex_color',
-			//'default'           => '#01af8d'
-			'default'           => yith_proteo_adjustBrightness( get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ), 0.2 )
+			'default'           => yith_proteo_adjust_brightness( get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ), 0.2 ),
 		)
 	);
 	$wp_customize->add_control(
@@ -835,7 +842,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 			'yith_proteo_button_style_2_bg_color_2',
 			array(
 				'label'   => __( 'Button Style 2 background color shade 2', 'yith-proteo' ),
-				'section' => 'yith_proteo_buttons'
+				'section' => 'yith_proteo_buttons',
 			)
 		)
 	);
@@ -844,7 +851,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 		'yith_proteo_button_style_2_text_color',
 		array(
 			'sanitize_callback' => 'sanitize_hex_color',
-			'default'           => '#ffffff'
+			'default'           => '#ffffff',
 		)
 	);
 	$wp_customize->add_control(
@@ -853,7 +860,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 			'yith_proteo_button_style_2_text_color',
 			array(
 				'label'   => __( 'Button Style 2 text color', 'yith-proteo' ),
-				'section' => 'yith_proteo_buttons'
+				'section' => 'yith_proteo_buttons',
 			)
 		)
 	);
@@ -862,7 +869,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 		'yith_proteo_button_style_2_bg_color_hover',
 		array(
 			'sanitize_callback' => 'sanitize_hex_color',
-			'default'           => yith_proteo_adjustBrightness( get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ), - 0.3 )
+			'default'           => yith_proteo_adjust_brightness( get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ), - 0.3 ),
 		)
 	);
 	$wp_customize->add_control(
@@ -871,7 +878,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 			'yith_proteo_button_style_2_bg_color_hover',
 			array(
 				'label'   => __( 'Button Style 2 background <code>hover</code> color', 'yith-proteo' ),
-				'section' => 'yith_proteo_buttons'
+				'section' => 'yith_proteo_buttons',
 			)
 		)
 	);
@@ -880,7 +887,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 		'yith_proteo_button_style_2_text_color_hover',
 		array(
 			'sanitize_callback' => 'sanitize_hex_color',
-			'default'           => '#ffffff'
+			'default'           => '#ffffff',
 		)
 	);
 	$wp_customize->add_control(
@@ -889,7 +896,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 			'yith_proteo_button_style_2_text_color_hover',
 			array(
 				'label'   => __( 'Button Style 2 text <code>hover</code> color', 'yith-proteo' ),
-				'section' => 'yith_proteo_buttons'
+				'section' => 'yith_proteo_buttons',
 			)
 		)
 	);
@@ -903,7 +910,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 		array(
 			'title'    => __( 'Color shades', 'yith-proteo' ),
 			'priority' => 80,
-			'panel'    => 'yith_proteo_options'
+			'panel'    => 'yith_proteo_options',
 		)
 	);
 
@@ -912,7 +919,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 		'yith_proteo_main_color_shade',
 		array(
 			'sanitize_callback' => 'sanitize_hex_color',
-			'default'           => '#448a85'
+			'default'           => '#448a85',
 		)
 	);
 	$wp_customize->add_control(
@@ -932,7 +939,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 		'yith_proteo_general_link_hover_color',
 		array(
 			'sanitize_callback' => 'sanitize_hex_color',
-			'default'           => yith_proteo_adjustBrightness( get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ), - 0.3 )
+			'default'           => yith_proteo_adjust_brightness( get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ), - 0.3 ),
 		)
 	);
 	$wp_customize->add_control(
@@ -941,7 +948,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 			'yith_proteo_general_link_hover_color',
 			array(
 				'label'   => __( 'General link <code>hover</code> color', 'yith-proteo' ),
-				'section' => 'yith_proteo_color_shades'
+				'section' => 'yith_proteo_color_shades',
 			)
 		)
 	);
@@ -959,13 +966,16 @@ function yith_proteo_customize_shop_register( $wp_customize ) {
 	/**
 	 * Add YITH theme shop panel
 	 */
-	$wp_customize->add_panel( 'yith_proteo_shop_options', array(
-		'priority'       => 150,
-		'capability'     => 'edit_theme_options',
-		'theme_supports' => '',
-		'title'          => 'YITH Theme Shop Options',
-		'description'    => 'All shop related options for this theme',
-	) );
+	$wp_customize->add_panel(
+		'yith_proteo_shop_options',
+		array(
+			'priority'       => 150,
+			'capability'     => 'edit_theme_options',
+			'theme_supports' => '',
+			'title'          => 'YITH Theme Shop Options',
+			'description'    => 'All shop related options for this theme',
+		)
+	);
 
 
 	/**
@@ -976,7 +986,7 @@ function yith_proteo_customize_shop_register( $wp_customize ) {
 		array(
 			'title'    => __( 'Store notices', 'yith-proteo' ),
 			'priority' => 10,
-			'panel'    => 'yith_proteo_shop_options'
+			'panel'    => 'yith_proteo_shop_options',
 		)
 	);
 	//Store notice background color
@@ -984,7 +994,7 @@ function yith_proteo_customize_shop_register( $wp_customize ) {
 		'yith_proteo_store_notice_bg_color',
 		array(
 			'sanitize_callback' => 'sanitize_hex_color',
-			'default'           => '#607d8b'
+			'default'           => '#607d8b',
 		)
 	);
 	$wp_customize->add_control(
@@ -993,7 +1003,7 @@ function yith_proteo_customize_shop_register( $wp_customize ) {
 			'yith_proteo_store_notice_bg_color',
 			array(
 				'label'   => __( 'Store notice background color', 'yith-proteo' ),
-				'section' => 'yith_proteo_store_notice_management'
+				'section' => 'yith_proteo_store_notice_management',
 			)
 		)
 	);
@@ -1002,7 +1012,7 @@ function yith_proteo_customize_shop_register( $wp_customize ) {
 		'yith_proteo_store_notice_text_color',
 		array(
 			'sanitize_callback' => 'sanitize_hex_color',
-			'default'           => '#ffffff'
+			'default'           => '#ffffff',
 		)
 	);
 	$wp_customize->add_control(
@@ -1011,7 +1021,7 @@ function yith_proteo_customize_shop_register( $wp_customize ) {
 			'yith_proteo_store_notice_text_color',
 			array(
 				'label'   => __( 'Store notice text color', 'yith-proteo' ),
-				'section' => 'yith_proteo_store_notice_management'
+				'section' => 'yith_proteo_store_notice_management',
 			)
 		)
 	);
@@ -1021,7 +1031,7 @@ function yith_proteo_customize_shop_register( $wp_customize ) {
 		'yith_proteo_store_notice_font_size',
 		array(
 			'sanitize_callback' => 'absint',
-			'default'           => 13
+			'default'           => 13,
 		)
 	);
 	$wp_customize->add_control(
@@ -1029,7 +1039,7 @@ function yith_proteo_customize_shop_register( $wp_customize ) {
 		array(
 			'label'   => esc_html__( 'Store notice font size (default: 13px)', 'yith-proteo' ),
 			'section' => 'yith_proteo_store_notice_management',
-			'type'    => 'number'
+			'type'    => 'number',
 		)
 	);
 
@@ -1042,7 +1052,7 @@ function yith_proteo_customize_shop_register( $wp_customize ) {
 		array(
 			'title'    => __( 'Sale badge', 'yith-proteo' ),
 			'priority' => 10,
-			'panel'    => 'yith_proteo_shop_options'
+			'panel'    => 'yith_proteo_shop_options',
 		)
 	);
 
@@ -1051,7 +1061,7 @@ function yith_proteo_customize_shop_register( $wp_customize ) {
 		'yith_proteo_sale_badge_bg_color',
 		array(
 			'sanitize_callback' => 'sanitize_hex_color',
-			'default'           => get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' )
+			'default'           => get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ),
 		)
 	);
 	$wp_customize->add_control(
@@ -1060,7 +1070,7 @@ function yith_proteo_customize_shop_register( $wp_customize ) {
 			'yith_proteo_sale_badge_bg_color',
 			array(
 				'label'   => __( 'Sale badge background color', 'yith-proteo' ),
-				'section' => 'yith_proteo_sale_badge_management'
+				'section' => 'yith_proteo_sale_badge_management',
 			)
 		)
 	);
@@ -1069,7 +1079,7 @@ function yith_proteo_customize_shop_register( $wp_customize ) {
 		'yith_proteo_sale_badge_text_color',
 		array(
 			'sanitize_callback' => 'sanitize_hex_color',
-			'default'           => '#ffffff'
+			'default'           => '#ffffff',
 		)
 	);
 	$wp_customize->add_control(
@@ -1078,7 +1088,7 @@ function yith_proteo_customize_shop_register( $wp_customize ) {
 			'yith_proteo_sale_badge_text_color',
 			array(
 				'label'   => __( 'Store notice text color', 'yith-proteo' ),
-				'section' => 'yith_proteo_sale_badge_management'
+				'section' => 'yith_proteo_sale_badge_management',
 			)
 		)
 	);
@@ -1087,7 +1097,7 @@ function yith_proteo_customize_shop_register( $wp_customize ) {
 		'yith_proteo_sale_badge_font_size',
 		array(
 			'sanitize_callback' => 'absint',
-			'default'           => 13
+			'default'           => 13,
 		)
 	);
 	$wp_customize->add_control(
@@ -1095,7 +1105,7 @@ function yith_proteo_customize_shop_register( $wp_customize ) {
 		array(
 			'label'   => esc_html__( 'Sale badge font size (default: 13px)', 'yith-proteo' ),
 			'section' => 'yith_proteo_sale_badge_management',
-			'type'    => 'number'
+			'type'    => 'number',
 		)
 	);
 
@@ -1107,7 +1117,7 @@ function yith_proteo_customize_shop_register( $wp_customize ) {
 		array(
 			'title'    => __( 'WooCommerce messages', 'yith-proteo' ),
 			'priority' => 10,
-			'panel'    => 'yith_proteo_shop_options'
+			'panel'    => 'yith_proteo_shop_options',
 		)
 	);
 
@@ -1116,7 +1126,7 @@ function yith_proteo_customize_shop_register( $wp_customize ) {
 		'yith_proteo_woo_messages_font_size',
 		array(
 			'sanitize_callback' => 'absint',
-			'default'           => 14
+			'default'           => 14,
 		)
 	);
 	$wp_customize->add_control(
@@ -1124,7 +1134,7 @@ function yith_proteo_customize_shop_register( $wp_customize ) {
 		array(
 			'label'   => esc_html__( 'WooCommerce messages font size (default: 16px)', 'yith-proteo' ),
 			'section' => 'yith_proteo_woo_messages_management',
-			'type'    => 'number'
+			'type'    => 'number',
 		)
 	);
 
@@ -1133,7 +1143,7 @@ function yith_proteo_customize_shop_register( $wp_customize ) {
 		'yith_proteo_woo_default_messages_accent_color',
 		array(
 			'sanitize_callback' => 'sanitize_hex_color',
-			'default'           => '#17b4a9'
+			'default'           => '#17b4a9',
 		)
 	);
 	$wp_customize->add_control(
@@ -1142,7 +1152,7 @@ function yith_proteo_customize_shop_register( $wp_customize ) {
 			'yith_proteo_woo_default_messages_accent_color',
 			array(
 				'label'   => __( 'Default messages: accent color', 'yith-proteo' ),
-				'section' => 'yith_proteo_woo_messages_management'
+				'section' => 'yith_proteo_woo_messages_management',
 			)
 		)
 	);
@@ -1152,7 +1162,7 @@ function yith_proteo_customize_shop_register( $wp_customize ) {
 		'yith_proteo_woo_info_messages_accent_color',
 		array(
 			'sanitize_callback' => 'sanitize_hex_color',
-			'default'           => '#e0e0e0'
+			'default'           => '#e0e0e0',
 		)
 	);
 	$wp_customize->add_control(
@@ -1161,7 +1171,7 @@ function yith_proteo_customize_shop_register( $wp_customize ) {
 			'yith_proteo_woo_info_messages_accent_color',
 			array(
 				'label'   => __( 'Info messages: accent color', 'yith-proteo' ),
-				'section' => 'yith_proteo_woo_messages_management'
+				'section' => 'yith_proteo_woo_messages_management',
 			)
 		)
 	);
@@ -1171,7 +1181,7 @@ function yith_proteo_customize_shop_register( $wp_customize ) {
 		'yith_proteo_woo_error_messages_accent_color',
 		array(
 			'sanitize_callback' => 'sanitize_hex_color',
-			'default'           => '#ffab91'
+			'default'           => '#ffab91',
 		)
 	);
 	$wp_customize->add_control(
@@ -1180,7 +1190,7 @@ function yith_proteo_customize_shop_register( $wp_customize ) {
 			'yith_proteo_woo_error_messages_accent_color',
 			array(
 				'label'   => __( 'Error messages: accent color', 'yith-proteo' ),
-				'section' => 'yith_proteo_woo_messages_management'
+				'section' => 'yith_proteo_woo_messages_management',
 			)
 		)
 	);
@@ -1194,7 +1204,7 @@ function yith_proteo_customize_shop_register( $wp_customize ) {
 		array(
 			'title'    => __( 'Single product page', 'yith-proteo' ),
 			'priority' => 10,
-			'panel'    => 'yith_proteo_shop_options'
+			'panel'    => 'yith_proteo_shop_options',
 		)
 	);
 	// Single product page related products management
@@ -1202,7 +1212,7 @@ function yith_proteo_customize_shop_register( $wp_customize ) {
 		'yith_proteo_product_page_related_max_number',
 		array(
 			'sanitize_callback' => 'absint',
-			'default'           => 4
+			'default'           => 4,
 		)
 	);
 	$wp_customize->add_control(
@@ -1219,7 +1229,7 @@ function yith_proteo_customize_shop_register( $wp_customize ) {
 		'yith_proteo_product_page_related_columns',
 		array(
 			'sanitize_callback' => 'absint',
-			'default'           => 4
+			'default'           => 4,
 		)
 	);
 	$wp_customize->add_control(
@@ -1240,7 +1250,7 @@ function yith_proteo_customize_shop_register( $wp_customize ) {
 		array(
 			'title'    => __( 'Cart page', 'yith-proteo' ),
 			'priority' => 10,
-			'panel'    => 'yith_proteo_shop_options'
+			'panel'    => 'yith_proteo_shop_options',
 		)
 	);
 
@@ -1249,7 +1259,7 @@ function yith_proteo_customize_shop_register( $wp_customize ) {
 		'yith_proteo_cart_layout',
 		array(
 			'sanitize_callback' => 'yith_proteo_sanitize_select',
-			'default'           => 'one_col'
+			'default'           => 'one_col',
 		)
 	);
 	$wp_customize->add_control(
@@ -1263,7 +1273,7 @@ function yith_proteo_customize_shop_register( $wp_customize ) {
 				''         => esc_html__( 'Please select', 'yith-proteo' ),
 				'one_col'  => esc_html__( 'One column layout', 'yith-proteo' ),
 				'two_cols' => esc_html__( 'Two column layout', 'yith-proteo' ),
-			)
+			),
 		)
 	);
 
@@ -1280,7 +1290,7 @@ add_action( 'customize_render_control_yith_proteo_google_font', 'yith_proteo_add
  * Render GFont doc guide link
  */
 function yith_proteo_add_gfont_documentation_link() {
-	printf( '<span class="dashicons dashicons-sos" style="vertical-align: middle;"></span> <a href="%s" target="_blank" rel="noopener nofollow">%s</a>', esc_url( 'https://docs.yithemes.com/yith-proteo' ), __( 'Read the documentation to see how to retrieve a Google Font URL', 'yith-proteo' ) );
+	printf( '<span class="dashicons dashicons-sos" style="vertical-align: middle;"></span> <a href="%s" target="_blank" rel="noopener nofollow">%s</a>', esc_url( 'https://docs.yithemes.com/yith-proteo' ), esc_html__( 'Read the documentation to see how to retrieve a Google Font URL', 'yith-proteo' ) );
 }
 
 /**
@@ -1323,7 +1333,7 @@ if ( ! function_exists( 'yith_proteo_sanitize_sidebar_position' ) ) :
 		$valid = array(
 			'no-sidebar' => __( 'No sidebar', 'yith-proteo' ),
 			'right'      => __( 'Right', 'yith-proteo' ),
-			'left'       => __( 'Left', 'yith-proteo' )
+			'left'       => __( 'Left', 'yith-proteo' ),
 		);
 
 		if ( array_key_exists( $input, $valid ) ) {
@@ -1345,7 +1355,7 @@ if ( ! function_exists( 'yith_proteo_sanitize_yes_no' ) ) :
 	function yith_proteo_sanitize_yes_no( $input ) {
 		$valid = array(
 			'yes' => __( 'Yes', 'yith-proteo' ),
-			'no'  => __( 'No', 'yith-proteo' )
+			'no'  => __( 'No', 'yith-proteo' ),
 		);
 
 		if ( array_key_exists( $input, $valid ) ) {
@@ -1384,7 +1394,7 @@ endif;
  */
 
 function yith_proteo_customize_enqueue() {
-	wp_enqueue_style( 'customizer-css', get_stylesheet_directory_uri() . '/customizer-css.css' );
+	wp_enqueue_style( 'customizer-css', get_stylesheet_directory_uri() . '/customizer-css.css', array(), YITH_PROTEO_VERSION );
 }
 
 add_action( 'customize_controls_enqueue_scripts', 'yith_proteo_customize_enqueue' );

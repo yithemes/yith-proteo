@@ -12,19 +12,19 @@ get_header();
 
 ?>
 
-    <div id="primary" class="content-area <?php echo $sidebar_display ?>">
-        <main id="main" class="site-main">
-            <div class="container">
+	<div id="primary" class="content-area <?php echo esc_attr( $sidebar_display ); ?>">
+		<main id="main" class="site-main">
+			<div class="container">
 
 				<?php
 				if ( have_posts() ) :
 
 					if ( is_home() && ! is_front_page() ) :
 						?>
-                        <header>
-                            <h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-                        </header>
-					<?php
+						<header>
+							<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+						</header>
+						<?php
 					endif;
 
 					/* Start the Loop */
@@ -42,15 +42,15 @@ get_header();
 
 					the_posts_navigation();
 
-				else :
+					else :
 
-					get_template_part( 'template-parts/content', 'none' );
+						get_template_part( 'template-parts/content', 'none' );
 
 				endif;
-				?>
-            </div>
-        </main><!-- #main -->
-    </div><!-- #primary -->
+					?>
+			</div>
+		</main><!-- #main -->
+	</div><!-- #primary -->
 
 <?php
 if ( $sidebar_show ) {
