@@ -1,8 +1,19 @@
-.yith-cart-message .content .button{
+header.woocommerce-products-header .woocommerce-cart-notice .button,
+.yith-cart-message .content .button,
+.yith-cart-message .content .button:hover{
     margin-bottom:0;
+    border-radius: 50px;
+    font-size: 12px;
+    padding: 8px 20px;
 }
+
 header.woocommerce-products-header  .woocommerce-cart-notice,
 header.woocommerce-products-header .yith-cart-message{
     text-align: left;
 }
 
+
+.yith-cart-message {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
+    padding: 12px 15px 12px 15px;
+}
