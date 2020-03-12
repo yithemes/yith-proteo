@@ -8,6 +8,12 @@ body.woocommerce-checkout {
         padding: 0;
     }
 
+    form.woocommerce-checkout:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
     #customer_details {
         width: 50%;
         display: inline-block;
