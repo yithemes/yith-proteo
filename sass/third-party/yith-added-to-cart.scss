@@ -1,0 +1,55 @@
+#yith-wacp-popup {
+    .yith-wacp-content {
+        table.cart-list {
+            .item-name {
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .product-info {
+            .product-title {
+                a {
+                    color: inherit;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        a.button {
+            border-radius: 50px;
+        }
+
+        .cart-info > div,
+        .yith-wacp-related > h3,
+        h3.cart-list-title {
+            font-weight: 600;
+        }
+
+        .yith-wacp-related {
+            .product-title {
+                font-weight: 500;
+            }
+            .add_to_cart_inline {
+                margin: 0;
+
+                a.button, a.button:hover {
+                    background: initial;
+                    font-size: 0.875rem;
+                    padding: 5px 0;
+                    transition: all ease 0.3s;
+                    margin: 0;
+                }
+            }
+
+        }
+    }
+}
+
+#yith-wacp-mini-cart {
+    .yith-wacp-mini-cart-count {
+        background: #448a85;
+    }
+}

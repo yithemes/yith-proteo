@@ -36,7 +36,7 @@ ul.products, .wc-block-grid ul.wc-block-grid__products {
             }
         }
 
-        .add_to_cart_button, .add_to_cart_button:visited, .added_to_cart, .added_to_cart:visited {
+        .add_to_cart_button, .add_to_cart_button:visited, .added_to_cart, .added_to_cart:visited, .yith-wcqv-button.button:not(.inside-thumb) {
             font-size: 0.875rem;
             padding: 5px 0;
             transition: all ease 0.3s;

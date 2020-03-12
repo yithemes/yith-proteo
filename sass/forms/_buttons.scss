@@ -111,7 +111,7 @@ input[type="submit"],
     }
 }
 
-.unstyled_button, .button.unstyled_button, table.cart tbody tr td.actions button[name=update_cart] {
+.unstyled_button, .button.unstyled_button, table.cart tbody tr td.actions button[name=update_cart], .yith-wcqv-button.button:not(.inside-thumb){
     background: none;
     background-color: transparent;
     padding: 0;

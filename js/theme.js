@@ -102,7 +102,7 @@
         t.parent().addClass('checked');
     });
 
-    $(document).on('ready yith_wcwl_popup_opened updated_checkout yith_wcwl_fragments_loaded yith_wcwl_init_after_ajax yith_welrp_popup_template_loaded', function () {
+    $(document).on('ready yith_wcwl_popup_opened updated_checkout yith_quick_view_loaded yith_wcwl_fragments_loaded yith_wcwl_init_after_ajax yith_welrp_popup_template_loaded', function () {
 
         if (typeof $.fn.selectWoo !== 'undefined') {
             $('select').filter(':visible').selectWoo(

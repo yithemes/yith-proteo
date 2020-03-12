@@ -138,7 +138,9 @@ function yith_proteo_inline_style() {
 				.single-product .woocommerce-tabs + .yith-wcwl-add-to-wishlist .yith-wcwl-icon,
 				table.cart tbody tr td.actions button[name=update_cart],
 				.woocommerce .products .add-request-quote-button.button,
-                .woocommerce .products .add-request-quote-button-addons.button {
+                .woocommerce .products .add-request-quote-button-addons.button,
+                #yith-wacp-popup .yith-wacp-content .yith-wacp-related a.button,
+                #yith-wacp-popup .yith-wacp-content .yith-wacp-related a.button:hover {
 					color: {$main_color_shade};
 				}
 
