@@ -123,6 +123,15 @@ ul.products, .wc-block-grid ul.wc-block-grid__products {
                 background: none;
             }
         }
+
+        .select_option {
+            .yith_wccl_value {
+                min-width: 25px;
+                height: 25px;
+                line-height: 22px;
+                width: auto;
+            }
+        }
     }
 }
 

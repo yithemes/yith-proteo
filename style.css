@@ -7022,6 +7022,12 @@ ul.products li.product .price del, ul.products li.wc-block-grid__product .price 
 ul.products li.product .price ins, ul.products li.wc-block-grid__product .price ins, .wc-block-grid ul.wc-block-grid__products li.product .price ins, .wc-block-grid ul.wc-block-grid__products li.wc-block-grid__product .price ins {
   background: none;
 }
+ul.products li.product .select_option .yith_wccl_value, ul.products li.wc-block-grid__product .select_option .yith_wccl_value, .wc-block-grid ul.wc-block-grid__products li.product .select_option .yith_wccl_value, .wc-block-grid ul.wc-block-grid__products li.wc-block-grid__product .select_option .yith_wccl_value {
+  min-width: 25px;
+  height: 25px;
+  line-height: 22px;
+  width: auto;
+}
 
 @media screen and (min-width: 48em) {
   ul.products li.product {
@@ -7254,6 +7260,17 @@ ul.products li.product .price ins, ul.products li.wc-block-grid__product .price 
   position: relative;
   top: 30px;
   left: 8px;
+}
+.single-product div.product .summary.entry-summary form.variations_form table.variations tr > td .select_box:after {
+  display: none;
+}
+.single-product div.product .summary.entry-summary form.variations_form table.variations tr > td .select_box .select_option .yith_wccl_value {
+  min-width: 30px;
+  height: 30px;
+}
+.single-product div.product .summary.entry-summary form.variations_form table.variations tr > td .select_box .select_option .yith-wccl-bicolor {
+  border-bottom: 26px solid;
+  border-left: 26px solid;
 }
 .single-product div.product .summary.entry-summary .product_meta > span {
   margin-bottom: 30px;
