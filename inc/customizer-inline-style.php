@@ -75,7 +75,7 @@ function yith_proteo_inline_style() {
 	$woo_messages_error_accent_color   = get_theme_mod( 'yith_proteo_woo_error_messages_accent_color', '#ffab91' );
 
 	if ( $default_font ) {
-		$font = 'body { font-family: \'Montserrat\', sans-serif; }';
+		$font = 'body, body.yith-woocompare-popup { font-family: \'Montserrat\', sans-serif; }';
 	}
 
 
@@ -249,7 +249,7 @@ function yith_proteo_inline_style() {
                     background-color: {$footer_credits_bg_color};
                 }
 
-                body, button, input, select, optgroup, textarea {
+                body, body.yith-woocompare-popup, button, input, select, optgroup, textarea {
                     font-size: {$base_font_size}px;
                     color: {$base_font_color};
                 }

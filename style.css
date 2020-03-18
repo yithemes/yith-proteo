@@ -10230,15 +10230,6 @@ ul.products li.product .yith-wcbr-brands-logo img {
   font-size: 2em;
   vertical-align: middle;
 }
-.single-product div.product .summary.entry-summary a.compare:not(.button):after {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: 0;
-  width: 100px;
-  border-bottom: 1px solid #cccccc;
-  pointer-events: none;
-}
 .single-product div.product .summary.entry-summary a.compare:not(.button):hover {
   text-decoration: underline;
   color: #448A85;
@@ -10249,7 +10240,46 @@ ul.products li.product a.compare:not(.button) {
   padding: 5px 0;
   transition: all ease 0.3s;
   margin: 0;
+  font-weight: 600;
+}
+
+#yith-woocompare .button, #yith-woocompare a.added_to_cart, #yith-woocompare a.compare-widget, #yith-woocompare a.compare, .yith-woocompare-widget .button, .yith-woocompare-widget a.added_to_cart, .yith-woocompare-widget a.compare-widget, .yith-woocompare-widget a.compare {
+  text-transform: none;
+  border-radius: 50px;
+  font-size: 0.875rem;
+}
+#yith-woocompare .product-price, #yith-woocompare tr.price td, .yith-woocompare-widget .product-price, .yith-woocompare-widget tr.price td {
+  color: #1f1f1f;
+  font-size: 0.875rem;
+  line-height: normal;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+#yith-woocompare .product-price del, #yith-woocompare tr.price td del, .yith-woocompare-widget .product-price del, .yith-woocompare-widget tr.price td del {
+  font-size: 90%;
+  font-weight: normal;
+  margin-right: 5px;
+}
+#yith-woocompare .product-price ins, #yith-woocompare tr.price td ins, .yith-woocompare-widget .product-price ins, .yith-woocompare-widget tr.price td ins {
+  background: none;
+}
+
+#yith-woocompare-related .related-products li {
+  text-align: left;
+}
+#yith-woocompare-related .related-products li h3 {
+  font-size: 0.875rem;
   font-weight: 500;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  color: #404040;
+  text-align: left;
+  line-height: normal;
+}
+#yith-woocompare-related .related-products li span.onsale {
+  z-index: 2;
+  top: 0;
+  left: auto;
 }
 
 .entry-content .ywgc_enter_code {
