@@ -1,0 +1,23 @@
+.yith-wfbt-section {
+    .yith-wfbt-form{
+
+        .price, .total_price {
+            color: #1f1f1f;
+            font-weight: bold;
+        }
+
+        .yith-wfbt-item {
+            label {
+                padding-left: 0;
+            }
+            .price {
+                display: inline;
+            }
+            .yith-wfbt-open-modal {
+                font-size: 0.85rem;
+                padding: 10px 15px;
+                margin: 0 15px 5px;
+            }
+        }
+    }
+}

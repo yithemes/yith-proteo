@@ -9266,6 +9266,22 @@ body.yith_welrp_opened {
   margin-bottom: 2px;
 }
 
+.yith-wfbt-section .yith-wfbt-form .price, .yith-wfbt-section .yith-wfbt-form .total_price {
+  color: #1f1f1f;
+  font-weight: bold;
+}
+.yith-wfbt-section .yith-wfbt-form .yith-wfbt-item label {
+  padding-left: 0;
+}
+.yith-wfbt-section .yith-wfbt-form .yith-wfbt-item .price {
+  display: inline;
+}
+.yith-wfbt-section .yith-wfbt-form .yith-wfbt-item .yith-wfbt-open-modal {
+  font-size: 0.85rem;
+  padding: 10px 15px;
+  margin: 0 15px 5px;
+}
+
 #yith-wacp-popup .yith-wacp-content table.cart-list .item-name {
   text-decoration: none;
 }
