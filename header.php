@@ -84,7 +84,7 @@ global $post;
 
 				<nav id="site-navigation" class="main-navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
-						<span class="sr-only">Toggle navigation</span>
+						<span class="sr-only"><?php esc_html_e( 'Toggle navigation', 'yith-proteo' ); ?></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>

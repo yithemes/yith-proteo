@@ -2,11 +2,11 @@
 
 Contributors: yithemes
 Tags: one-column, two-columns, left-sidebar, right-sidebar, wide-blocks, accessibility-ready, block-styles, buddypress, custom-background, custom-colors, custom-header, custom-logo, custom-menu, editor-style, featured-images, flexible-header, footer-widgets, full-width-template, rtl-language-support, theme-options, threaded-comments, translation-ready, blog, e-commerce, education, entertainment, food-and-drink, holiday, news, photography, portfolio
-
 Requires at least: 4.9.6
 Tested up to: WordPress 5.3
 Requires PHP: 5.6
-Stable tag: 1.0.8
+Stable tag: 1.0.9
+YITH Proteo WordPress Theme, Copyright 2020 YITH
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -14,7 +14,7 @@ A starter theme called yith-proteo.
 
 == Description ==
 
-Proteo is a sleek, modern and “Gutenberg-friendly” e-commerce theme. Developed with a beautiful UI and a minimal design, is perfect for each kind of shop. Easy to manage and to customize, Proteo is the best solution if you want a complete e-commerce template and start quickly to sell your products with WooCommerce without a technical knowledge. Use it also for corporate site or a blog: there are no limits about what you can do with a beautiful and usable theme like this! Main features: Colors and Typography customization (Google font support), Logo customization, 3 different Header layouts, Advanced customizer theme options, Sidebar Management, Sidebar Chooser on each page and product, Page title icons, Top Bar Management, Easy main color shade chooser, Buttons style management (gradient buttons support), Footer management with multiple sidebars, WooCommerce support, Shop Theme Options, Custom WooCommerce messages and animated WooCommerce alert notices, Two cart page layouts, Bootstrap grid system, CSS animations, Gutenberg support, Responsive, Fullscreen search, Multilevel menus, Support to all YITH plugins, SVG icons for HiDPI screens, Translation Ready. <a href="https://proteo.yithemes.com/about-proteo/" rel="nofollow" target="_blank">Discover more ></a> | <a href="https://proteo.yithemes.com/" rel="nofollow" target="_blank">Check our live demo ></a>
+Proteo is a sleek, modern and "Gutenberg-friendly" e-commerce theme. Developed with a beautiful UI and a minimal design, is perfect for each kind of shop. Easy to manage and to customize, Proteo is the best solution if you want a complete e-commerce template and start quickly to sell your products with WooCommerce without a technical knowledge. Use it also for corporate site or a blog: there are no limits about what you can do with a beautiful and usable theme like this! Main features: Colors and Typography customization (Google font support), Logo customization, 3 different Header layouts, Advanced customizer theme options, Sidebar Management, Sidebar Chooser on each page and product, Page title icons, Top Bar Management, Easy main color shade chooser, Buttons style management (gradient buttons support), Footer management with multiple sidebars, WooCommerce support, Shop Theme Options, Custom WooCommerce messages and animated WooCommerce alert notices, Two cart page layouts, Bootstrap grid system, CSS animations, Gutenberg support, Responsive, Fullscreen search, Multilevel menus, Support to all YITH plugins, SVG icons for HiDPI screens, Translation Ready. <a href="https://proteo.yithemes.com/" rel="nofollow" target="_blank" rel="nofollow noopener">Discover more ></a>
 
 == Installation ==
 
@@ -25,6 +25,15 @@ Proteo is a sleek, modern and “Gutenberg-friendly” e-commerce theme. Develop
 == Frequently Asked Questions ==
 
 == Changelog ==
+= 1.0.9 - Mar 19 2020 =
+* New theme screenshot with credits
+* New improved support to YITH various plugins
+* Fix header backgrounds not working
+* Fix missing focus on mobile menu opener button
+* Fix untranslatable text on header template
+* Fix function name prefix in widgets.php file
+* Fix readme file structure
+
 = 1.0.8 - Feb 28 2020 =
 * Fix site description showed when custom logo is active
 * Fix missing title icon
@@ -97,9 +106,10 @@ Proteo is a sleek, modern and “Gutenberg-friendly” e-commerce theme. Develop
 
 == Screenshot Licenses ==
 
-https://www.pexels.com/photo/woman-smiling-while-wearing-blue-dress-3649116/ by Roberto Okaka
-https://www.pexels.com/photo/woman-wearing-yellow-sleeveless-dress-3609781/ by Charles Wundengba
-https://www.pexels.com/photo/adolescent-casual-cute-elegant-428338/ by Spencer Selover
-https://www.pexels.com/photo/woman-wearing-white-scoop-neck-long-sleeved-shirt-and-brown-pleated-skirt-1845147/ by João Victor Barboza
-https://www.pexels.com/photo/woman-wearing-white-minidress-3568546/ by Gabb Tapic
-https://stocksnap.io/photo/YLD3KP3CMU by Alex Holyoake - [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)
+https://stocksnap.io/photo/ZI3P3U28P8 by Kris Kemp - [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)
+https://stocksnap.io/photo/ODNPHGUMP7 by Icons8 team - [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)
+https://stocksnap.io/photo/Y33U47TZA0 by Matthew Henry - [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)
+https://stocksnap.io/photo/X6BW9YMWXV by Burst - [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)
+https://stocksnap.io/photo/XPGUG6AKFB by Nordwood Themes - [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)
+https://stocksnap.io/photo/0FMO7ARXDL by The Lazy Artist Gallery - [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)
+https://stocksnap.io/photo/A79NQ95LOI by Daria Shevtsova - [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)

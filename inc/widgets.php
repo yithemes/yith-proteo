@@ -30,8 +30,8 @@ add_action( 'widgets_init', 'yith_proteo_recent_comments_widget_registration' );
 require get_template_directory() . '/inc/widgets/class-yith-proteo-social-icons.php'; // phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
 
 // register YITH_Proteo_Social_Icons widget
-function register_yith_proteo_social_icons() {
+function yith_proteo_register_social_icons_widget() {
 	register_widget( 'YITH_Proteo_Social_Icons' );
 }
 
-add_action( 'widgets_init', 'register_yith_proteo_social_icons' );
+add_action( 'widgets_init', 'yith_proteo_register_social_icons_widget' );

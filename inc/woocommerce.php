@@ -527,3 +527,32 @@ function yith_proteo_limit_woocommerce_short_description( $post_excerpt ) {
 }
 
 add_filter( 'woocommerce_short_description', 'yith_proteo_limit_woocommerce_short_description', 10, 1 );
+
+/**
+ * Change Thank you page title
+ *
+ * @param $title
+ * @param $id
+ *
+ * @return string
+ */
+function yith_proteo_title_order_received( $title, $id ) {
+	if ( function_exists( 'is_order_received_page' ) && is_order_received_page() && get_the_ID() === $id ) {
+		$title = esc_html__( 'Thank you.', 'yith-proteo' );
+	}
+
+	return $title;
+}
+
+add_filter( 'the_title', 'yith_proteo_title_order_received', 10, 2 );
+
+
+
+function yith_proteo_remove_thank_you_breadcrumbs() {
+
+	if ( function_exists( 'is_order_received_page' ) && is_order_received_page() ) {
+		remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0 );
+	}
+}
+
+add_action( 'template_redirect', 'yith_proteo_remove_thank_you_breadcrumbs' );

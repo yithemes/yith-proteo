@@ -40,10 +40,10 @@ if ( ! function_exists( 'yith_proteo_custom_header_style' ) ) :
 	function yith_proteo_custom_header_style() {
 		$style = '';
 		if ( has_custom_header() ) {
-			$custom_header_url = get_header_image();
+			$custom_header_url = esc_url( get_header_image() );
 			$style             = 'style=" background-image: url(' . $custom_header_url . '); "';
 		}
-		echo esc_html( $style );
+		echo $style; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 	}
 endif;
 
