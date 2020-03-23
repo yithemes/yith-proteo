@@ -9273,6 +9273,46 @@ body.yith_welrp_opened {
   margin-bottom: 2px;
 }
 
+/* GENERAL */
+table.shop_table tbody tr td.product-name ._view_and_pdf_row a.button {
+  color: #fff;
+}
+
+/* CHECK IN SHORTCODE */
+.yith_wcevti_check_in #check_in_form_dialog {
+  background: #448A85;
+}
+.yith_wcevti_check_in #yith_wcevti_check_in_form > .checked_dialog_panel {
+  background: #4ac4aa;
+}
+.yith_wcevti_check_in input.search_ticket_number {
+  margin-top: 20px;
+}
+.yith_wcevti_check_in .search_ticket_button {
+  margin-top: 15px;
+  margin-right: 0;
+  padding: 0.8em 1.5em 0.7em;
+}
+.yith_wcevti_check_in .list_row_panel .status_pending_check {
+  background: #448A85;
+}
+.yith_wcevti_check_in .list_row_panel .status_checked {
+  background: #4ac4aa;
+}
+.yith_wcevti_check_in .list_row_panel .make_checkin_button,
+.yith_wcevti_check_in .list_row_panel .make_checkout_button:hover {
+  background: #9D9D9D;
+  border-color: #9D9D9D;
+}
+.yith_wcevti_check_in .list_row_panel .make_checkin_button:hover {
+  background: #448A85;
+  border-color: #448A85;
+}
+.yith_wcevti_check_in .list_row_panel .make_checkout_button {
+  background: #f44336;
+  border-color: #f44336;
+}
+
 .yith-wfbt-section .yith-wfbt-form .price, .yith-wfbt-section .yith-wfbt-form .total_price {
   color: #1f1f1f;
   font-weight: bold;

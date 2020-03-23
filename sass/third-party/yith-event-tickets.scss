@@ -1,0 +1,53 @@
+/* GENERAL */
+
+table.shop_table tbody tr td.product-name ._view_and_pdf_row a.button{
+	color: #fff;
+}
+
+/* CHECK IN SHORTCODE */
+
+.yith_wcevti_check_in{
+	#check_in_form_dialog{
+		background: $color__accent;
+	}
+
+	#yith_wcevti_check_in_form > .checked_dialog_panel{
+		background: $color__border-button-hover;
+	}
+
+	input.search_ticket_number{
+		margin-top: 20px;
+	}
+
+	.search_ticket_button{
+		margin-top: 15px;
+		margin-right: 0;
+		padding: 0.8em 1.5em 0.7em;
+	}
+
+	.list_row_panel{
+		.status_pending_check{
+			background: $color__accent;
+		}
+
+		.status_checked{
+			background: $color__border-button-hover;
+		}
+
+		.make_checkin_button,
+		.make_checkout_button:hover{
+			background: $color__border-input;
+			border-color: $color__border-input;
+		}
+
+		.make_checkin_button:hover{
+			background: $color__accent;
+			border-color: $color__accent;
+		}
+
+		.make_checkout_button{
+			background: #f44336;
+			border-color: #f44336;
+		}
+	}
+}
