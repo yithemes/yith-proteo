@@ -30,7 +30,7 @@ global $post;
 	<div class="site-info">
 		<div class="container">
 			<?php
-			echo do_shortcode( get_theme_mod( 'yith_proteo_footer_credits_content', __( 'Proteo - A free theme designed with <span class="lnr lnr-heart"></span> by <a href="https://yithemes.com" rel="nofollow">YITH</a>', 'yith-proteo' ) ) );
+			echo do_shortcode( get_theme_mod( 'yith_proteo_footer_credits_content', __( '<a href="https://proteo.yithemes.com/" target="_blank" rel="noopener">Proteo</a> - A free theme designed with <span class="lnr lnr-heart"></span> by <a href="https://yithemes.com" rel="nofollow">YITH</a>', 'yith-proteo' ) ) );
 			?>
 		</div>
 	</div><!-- .site-info -->
