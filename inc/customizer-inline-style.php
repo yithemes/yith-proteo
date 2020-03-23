@@ -204,6 +204,25 @@ function yith_proteo_inline_style() {
 					border-color: {$main_color_shade};
 				}
 
+				input[type=text]:focus,
+				input[type=email]:focus,
+				input[type=url]:focus,
+				input[type=password]:focus,
+				input[type=search]:focus,
+				input[type=number]:focus,
+				input[type=tel]:focus,
+				input[type=range]:focus,
+				input[type=date]:focus,
+				input[type=month]:focus,
+				input[type=week]:focus,
+				input[type=time]:focus,
+				input[type=datetime]:focus,
+				input[type=datetime-local]:focus,
+				input[type=color]:focus,
+				textarea:focus{
+					box-shadow: 0 0 2px {$main_color_shade};
+				}
+
 				.button.ghost:hover,
 				.wishlist-title a.show-title-form:hover,
 				.wishlist-title a.hide-title-form:hover,

@@ -61,7 +61,7 @@
                 &:hover > ul,
                 &.focus > ul {
                     pointer-events: auto;
-                    left: 100%;
+                    left: calc(100% + 15px);
                     top: -45px;
 
                     &:before {
@@ -85,8 +85,9 @@
 
                     & > a:after {
                         transform: rotate(-90deg);
-                        right: 15px;
+                        right: -25px;
                         position: absolute;
+                        top: 4px;
                     }
                 }
 
@@ -104,10 +105,16 @@
 
             :hover > a,
             .focus > a {
+                & + ul {
+                  display: block !important;
+                }
             }
 
             a:hover,
             a.focus {
+                & + ul {
+                  display: block !important;
+                }
             }
         }
 

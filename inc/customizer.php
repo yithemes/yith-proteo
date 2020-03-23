@@ -41,8 +41,8 @@ function yith_proteo_customize_register( $wp_customize ) {
 			'priority'       => 150,
 			'capability'     => 'edit_theme_options',
 			'theme_supports' => '',
-			'title'          => 'YITH Theme Options',
-			'description'    => 'All options related to this theme',
+			'title'          => esc_html__( 'YITH Theme Options', 'yith-proteo' ),
+			'description'    => esc_html__( 'All options related to this theme', 'yith-proteo' ),
 		)
 	);
 
@@ -52,7 +52,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 	$wp_customize->add_section(
 		'yith_proteo_sidebar_management',
 		array(
-			'title'    => __( 'Sidebars', 'yith-proteo' ),
+			'title'    => esc_html__( 'Sidebars', 'yith-proteo' ),
 			'priority' => 10,
 			'panel'    => 'yith_proteo_options',
 		)
@@ -70,13 +70,13 @@ function yith_proteo_customize_register( $wp_customize ) {
 		'yith_proteo_default_sidebar_position',
 		array(
 			'type'        => 'radio',
-			'label'       => __( 'Choose the position of the default sidebar', 'yith-proteo' ),
+			'label'       => esc_html__( 'Choose the position of the default sidebar', 'yith-proteo' ),
 			'section'     => 'yith_proteo_sidebar_management',
-			'description' => __( 'Select where to display the default sidebar. You can adjust the settings from the page/post edit view.', 'yith-proteo' ),
+			'description' => esc_html__( 'Select where to display the default sidebar. You can adjust the settings from the page/post edit view.', 'yith-proteo' ),
 			'choices'     => array(
-				'no-sidebar' => __( 'No sidebar', 'yith-proteo' ),
-				'right'      => __( 'Right', 'yith-proteo' ),
-				'left'       => __( 'Left', 'yith-proteo' ),
+				'no-sidebar' => esc_html__( 'No sidebar', 'yith-proteo' ),
+				'right'      => esc_html__( 'Right', 'yith-proteo' ),
+				'left'       => esc_html__( 'Left', 'yith-proteo' ),
 			),
 		)
 	);
@@ -93,13 +93,13 @@ function yith_proteo_customize_register( $wp_customize ) {
 		'yith_proteo_blog_page_sidebar_position',
 		array(
 			'type'        => 'radio',
-			'label'       => __( 'Choose the position of the blog page sidebar', 'yith-proteo' ),
+			'label'       => esc_html__( 'Choose the position of the blog page sidebar', 'yith-proteo' ),
 			'section'     => 'yith_proteo_sidebar_management',
-			'description' => __( 'Select where to display the sidebar. You can pick up a specific sidebard from the page edit view.', 'yith-proteo' ),
+			'description' => esc_html__( 'Select where to display the sidebar. You can pick up a specific sidebard from the page edit view.', 'yith-proteo' ),
 			'choices'     => array(
-				'no-sidebar' => __( 'No sidebar', 'yith-proteo' ),
-				'right'      => __( 'Right', 'yith-proteo' ),
-				'left'       => __( 'Left', 'yith-proteo' ),
+				'no-sidebar' => esc_html__( 'No sidebar', 'yith-proteo' ),
+				'right'      => esc_html__( 'Right', 'yith-proteo' ),
+				'left'       => esc_html__( 'Left', 'yith-proteo' ),
 			),
 		)
 	);
@@ -116,9 +116,9 @@ function yith_proteo_customize_register( $wp_customize ) {
 		'yith_proteo_blog_sidebar',
 		array(
 			'type'        => 'select',
-			'label'       => __( 'Choose the blog sidebar', 'yith-proteo' ),
+			'label'       => esc_html__( 'Choose the blog sidebar', 'yith-proteo' ),
 			'section'     => 'yith_proteo_sidebar_management',
-			'description' => __( 'Select the sidebar to display. You can pick a specific sidebar from the single post edit page.', 'yith-proteo' ),
+			'description' => esc_html__( 'Select the sidebar to display. You can pick a specific sidebar from the single post edit page.', 'yith-proteo' ),
 			'choices'     => wp_list_pluck( $GLOBALS['wp_registered_sidebars'], 'name' ),
 		)
 	);
@@ -135,13 +135,13 @@ function yith_proteo_customize_register( $wp_customize ) {
 		'yith_proteo_product_page_sidebar_position',
 		array(
 			'type'        => 'radio',
-			'label'       => __( 'Choose the position of the sidebar on single product page', 'yith-proteo' ),
+			'label'       => esc_html__( 'Choose the position of the sidebar on single product page', 'yith-proteo' ),
 			'section'     => 'yith_proteo_sidebar_management',
-			'description' => __( 'Select where to display the sidebar. You can adjust the settings from product edit view.', 'yith-proteo' ),
+			'description' => esc_html__( 'Select where to display the sidebar. You can adjust the settings from product edit view.', 'yith-proteo' ),
 			'choices'     => array(
-				'no-sidebar' => __( 'No sidebar', 'yith-proteo' ),
-				'right'      => __( 'Right', 'yith-proteo' ),
-				'left'       => __( 'Left', 'yith-proteo' ),
+				'no-sidebar' => esc_html__( 'No sidebar', 'yith-proteo' ),
+				'right'      => esc_html__( 'Right', 'yith-proteo' ),
+				'left'       => esc_html__( 'Left', 'yith-proteo' ),
 			),
 		)
 	);
@@ -152,7 +152,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 	$wp_customize->add_section(
 		'yith_proteo_topbar_management',
 		array(
-			'title'    => __( 'Topbar', 'yith-proteo' ),
+			'title'    => esc_html__( 'Topbar', 'yith-proteo' ),
 			'priority' => 20,
 			'panel'    => 'yith_proteo_options',
 		)
@@ -170,12 +170,12 @@ function yith_proteo_customize_register( $wp_customize ) {
 		'yith_proteo_topbar_enable',
 		array(
 			'type'        => 'radio',
-			'label'       => __( 'Enable topbar', 'yith-proteo' ),
+			'label'       => esc_html__( 'Enable topbar', 'yith-proteo' ),
 			'section'     => 'yith_proteo_topbar_management',
-			'description' => __( 'Choose whether to show the site topbar or not', 'yith-proteo' ),
+			'description' => esc_html__( 'Choose whether to show the site topbar or not', 'yith-proteo' ),
 			'choices'     => array(
-				'yes' => __( 'Yes', 'yith-proteo' ),
-				'no'  => __( 'No', 'yith-proteo' ),
+				'yes' => esc_html__( 'Yes', 'yith-proteo' ),
+				'no'  => esc_html__( 'No', 'yith-proteo' ),
 			),
 		)
 	);
@@ -193,7 +193,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 			$wp_customize,
 			'yith_proteo_topbar_background_color',
 			array(
-				'label'   => __( 'Topbar background color', 'yith-proteo' ),
+				'label'   => esc_html__( 'Topbar background color', 'yith-proteo' ),
 				'section' => 'yith_proteo_topbar_management',
 			)
 		)
@@ -205,7 +205,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 	$wp_customize->add_section(
 		'yith_proteo_header_management',
 		array(
-			'title'    => __( 'Header', 'yith-proteo' ),
+			'title'    => esc_html__( 'Header', 'yith-proteo' ),
 			'priority' => 20,
 			'panel'    => 'yith_proteo_options',
 		)
@@ -223,12 +223,12 @@ function yith_proteo_customize_register( $wp_customize ) {
 		'yith_proteo_header_sticky',
 		array(
 			'type'        => 'radio',
-			'label'       => __( 'Enable sticky header', 'yith-proteo' ),
+			'label'       => esc_html__( 'Enable sticky header', 'yith-proteo' ),
 			'section'     => 'yith_proteo_header_management',
-			'description' => __( 'Choose whether to make the header stick to the page when scrolling down', 'yith-proteo' ),
+			'description' => esc_html__( 'Choose whether to make the header stick to the page when scrolling down', 'yith-proteo' ),
 			'choices'     => array(
-				'yes' => __( 'Yes', 'yith-proteo' ),
-				'no'  => __( 'No', 'yith-proteo' ),
+				'yes' => esc_html__( 'Yes', 'yith-proteo' ),
+				'no'  => esc_html__( 'No', 'yith-proteo' ),
 			),
 		)
 	);
@@ -246,7 +246,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 			$wp_customize,
 			'yith_proteo_header_background_color',
 			array(
-				'label'   => __( 'Header background color', 'yith-proteo' ),
+				'label'   => esc_html__( 'Header background color', 'yith-proteo' ),
 				'section' => 'yith_proteo_header_management',
 			)
 		)
@@ -264,9 +264,9 @@ function yith_proteo_customize_register( $wp_customize ) {
 		'yith_proteo_header_layout',
 		array(
 			'type'        => 'select',
-			'label'       => __( 'Header layout', 'yith-proteo' ),
+			'label'       => esc_html__( 'Header layout', 'yith-proteo' ),
 			'section'     => 'yith_proteo_header_management',
-			'description' => __( 'Choose the header layout', 'yith-proteo' ),
+			'description' => esc_html__( 'Choose the header layout', 'yith-proteo' ),
 			'choices'     => array(
 				''                             => esc_html__( 'Please select', 'yith-proteo' ),
 				'left_logo_navigation_below'   => esc_html__( 'Logo on the left and navigation below', 'yith-proteo' ),
@@ -283,7 +283,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 	$wp_customize->add_section(
 		'yith_proteo_footer_management',
 		array(
-			'title'    => __( 'Footer', 'yith-proteo' ),
+			'title'    => esc_html__( 'Footer', 'yith-proteo' ),
 			'priority' => 30,
 			'panel'    => 'yith_proteo_options',
 		)
@@ -302,7 +302,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 			$wp_customize,
 			'yith_proteo_footer_background_color',
 			array(
-				'label'   => __( 'Footer background color', 'yith-proteo' ),
+				'label'   => esc_html__( 'Footer background color', 'yith-proteo' ),
 				'section' => 'yith_proteo_footer_management',
 			)
 		)
@@ -364,7 +364,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 	$wp_customize->add_section(
 		'yith_proteo_footer_credits_management',
 		array(
-			'title'    => __( 'Footer credits', 'yith-proteo' ),
+			'title'    => esc_html__( 'Footer credits', 'yith-proteo' ),
 			'priority' => 40,
 			'panel'    => 'yith_proteo_options',
 		)
@@ -380,7 +380,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 	$wp_customize->add_control(
 		'yith_proteo_footer_credits_content',
 		array(
-			'label'   => __( 'Enter here the content of the footer credits area', 'yith-proteo' ),
+			'label'   => esc_html__( 'Enter here the content of the footer credits area', 'yith-proteo' ),
 			'section' => 'yith_proteo_footer_credits_management',
 			'type'    => 'textarea',
 		)
@@ -398,7 +398,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 			$wp_customize,
 			'yith_proteo_footer_credits_background_color',
 			array(
-				'label'   => __( 'Footer credits background color', 'yith-proteo' ),
+				'label'   => esc_html__( 'Footer credits background color', 'yith-proteo' ),
 				'section' => 'yith_proteo_footer_credits_management',
 			)
 		)
@@ -410,7 +410,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 	$wp_customize->add_section(
 		'yith_proteo_google_font_management',
 		array(
-			'title'    => __( 'Google Font', 'yith-proteo' ),
+			'title'    => esc_html__( 'Google Font', 'yith-proteo' ),
 			'priority' => 50,
 			'panel'    => 'yith_proteo_options',
 		)
@@ -439,7 +439,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 	$wp_customize->add_section(
 		'yith_proteo_typography',
 		array(
-			'title'    => __( 'Typography', 'yith-proteo' ),
+			'title'    => esc_html__( 'Typography', 'yith-proteo' ),
 			'priority' => 60,
 			'panel'    => 'yith_proteo_options',
 		)
@@ -473,7 +473,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 			$wp_customize,
 			'yith_proteo_base_font_color',
 			array(
-				'label'   => __( 'Body font color', 'yith-proteo' ),
+				'label'   => esc_html__( 'Body font color', 'yith-proteo' ),
 				'section' => 'yith_proteo_typography',
 			)
 		)
@@ -508,7 +508,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 			$wp_customize,
 			'yith_proteo_h1_font_color',
 			array(
-				'label'   => __( 'H1 font color', 'yith-proteo' ),
+				'label'   => esc_html__( 'H1 font color', 'yith-proteo' ),
 				'section' => 'yith_proteo_typography',
 			)
 		)
@@ -543,7 +543,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 			$wp_customize,
 			'yith_proteo_h2_font_color',
 			array(
-				'label'   => __( 'H2 font color', 'yith-proteo' ),
+				'label'   => esc_html__( 'H2 font color', 'yith-proteo' ),
 				'section' => 'yith_proteo_typography',
 			)
 		)
@@ -578,7 +578,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 			$wp_customize,
 			'yith_proteo_h3_font_color',
 			array(
-				'label'   => __( 'H3 font color', 'yith-proteo' ),
+				'label'   => esc_html__( 'H3 font color', 'yith-proteo' ),
 				'section' => 'yith_proteo_typography',
 			)
 		)
@@ -613,7 +613,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 			$wp_customize,
 			'yith_proteo_h4_font_color',
 			array(
-				'label'   => __( 'H4 font color', 'yith-proteo' ),
+				'label'   => esc_html__( 'H4 font color', 'yith-proteo' ),
 				'section' => 'yith_proteo_typography',
 			)
 		)
@@ -648,7 +648,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 			$wp_customize,
 			'yith_proteo_h5_font_color',
 			array(
-				'label'   => __( 'H5 font color', 'yith-proteo' ),
+				'label'   => esc_html__( 'H5 font color', 'yith-proteo' ),
 				'section' => 'yith_proteo_typography',
 			)
 		)
@@ -683,7 +683,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 			$wp_customize,
 			'yith_proteo_h6_font_color',
 			array(
-				'label'   => __( 'H6 font color', 'yith-proteo' ),
+				'label'   => esc_html__( 'H6 font color', 'yith-proteo' ),
 				'section' => 'yith_proteo_typography',
 			)
 		)
@@ -695,7 +695,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 	$wp_customize->add_section(
 		'yith_proteo_buttons',
 		array(
-			'title'    => __( 'Buttons', 'yith-proteo' ),
+			'title'    => esc_html__( 'Buttons', 'yith-proteo' ),
 			'priority' => 70,
 			'panel'    => 'yith_proteo_options',
 		)
@@ -714,7 +714,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 			$wp_customize,
 			'yith_proteo_button_style_1_bg_color',
 			array(
-				'label'   => __( 'Button Style 1 background color', 'yith-proteo' ),
+				'label'   => esc_html__( 'Button Style 1 background color', 'yith-proteo' ),
 				'section' => 'yith_proteo_buttons',
 			)
 		)
@@ -732,7 +732,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 			$wp_customize,
 			'yith_proteo_button_style_1_border_color',
 			array(
-				'label'   => __( 'Button Style 1 border color', 'yith-proteo' ),
+				'label'   => esc_html__( 'Button Style 1 border color', 'yith-proteo' ),
 				'section' => 'yith_proteo_buttons',
 			)
 		)
@@ -750,7 +750,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 			$wp_customize,
 			'yith_proteo_button_style_1_text_color',
 			array(
-				'label'   => __( 'Button Style 1 text color', 'yith-proteo' ),
+				'label'   => esc_html__( 'Button Style 1 text color', 'yith-proteo' ),
 				'section' => 'yith_proteo_buttons',
 			)
 		)
@@ -768,7 +768,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 			$wp_customize,
 			'yith_proteo_button_style_1_bg_color_hover',
 			array(
-				'label'   => __( 'Button Style 1 background <code>hover</code> color', 'yith-proteo' ),
+				'label'   => esc_html__( 'Button Style 1 background :hover color', 'yith-proteo' ),
 				'section' => 'yith_proteo_buttons',
 			)
 		)
@@ -786,7 +786,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 			$wp_customize,
 			'yith_proteo_button_style_1_border_color_hover',
 			array(
-				'label'   => __( 'Button Style 1 border <code>hover</code> color', 'yith-proteo' ),
+				'label'   => esc_html__( 'Button Style 1 border :hover color', 'yith-proteo' ),
 				'section' => 'yith_proteo_buttons',
 			)
 		)
@@ -804,7 +804,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 			$wp_customize,
 			'yith_proteo_button_style_1_text_color_hover',
 			array(
-				'label'   => __( 'Button Style 1 text <code>hover</code> color', 'yith-proteo' ),
+				'label'   => esc_html__( 'Button Style 1 text :hover color', 'yith-proteo' ),
 				'section' => 'yith_proteo_buttons',
 			)
 		)
@@ -823,7 +823,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 			$wp_customize,
 			'yith_proteo_button_style_2_bg_color_1',
 			array(
-				'label'   => __( 'Button Style 2 background color shade 1', 'yith-proteo' ),
+				'label'   => esc_html__( 'Button Style 2 background color shade 1', 'yith-proteo' ),
 				'section' => 'yith_proteo_buttons',
 			)
 		)
@@ -841,7 +841,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 			$wp_customize,
 			'yith_proteo_button_style_2_bg_color_2',
 			array(
-				'label'   => __( 'Button Style 2 background color shade 2', 'yith-proteo' ),
+				'label'   => esc_html__( 'Button Style 2 background color shade 2', 'yith-proteo' ),
 				'section' => 'yith_proteo_buttons',
 			)
 		)
@@ -859,7 +859,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 			$wp_customize,
 			'yith_proteo_button_style_2_text_color',
 			array(
-				'label'   => __( 'Button Style 2 text color', 'yith-proteo' ),
+				'label'   => esc_html__( 'Button Style 2 text color', 'yith-proteo' ),
 				'section' => 'yith_proteo_buttons',
 			)
 		)
@@ -877,7 +877,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 			$wp_customize,
 			'yith_proteo_button_style_2_bg_color_hover',
 			array(
-				'label'   => __( 'Button Style 2 background <code>hover</code> color', 'yith-proteo' ),
+				'label'   => esc_html__( 'Button Style 2 background :hover color', 'yith-proteo' ),
 				'section' => 'yith_proteo_buttons',
 			)
 		)
@@ -895,7 +895,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 			$wp_customize,
 			'yith_proteo_button_style_2_text_color_hover',
 			array(
-				'label'   => __( 'Button Style 2 text <code>hover</code> color', 'yith-proteo' ),
+				'label'   => esc_html__( 'Button Style 2 text :hover color', 'yith-proteo' ),
 				'section' => 'yith_proteo_buttons',
 			)
 		)
@@ -908,7 +908,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 	$wp_customize->add_section(
 		'yith_proteo_color_shades',
 		array(
-			'title'    => __( 'Color shades', 'yith-proteo' ),
+			'title'    => esc_html__( 'Color shades', 'yith-proteo' ),
 			'priority' => 80,
 			'panel'    => 'yith_proteo_options',
 		)
@@ -927,9 +927,9 @@ function yith_proteo_customize_register( $wp_customize ) {
 			$wp_customize,
 			'yith_proteo_main_color_shade',
 			array(
-				'label'       => __( 'Main color shade', 'yith-proteo' ),
+				'label'       => esc_html__( 'Main color shade', 'yith-proteo' ),
 				'section'     => 'yith_proteo_color_shades',
-				'description' => __( 'Save your settings and reload the page to let the magic happen', 'yith-proteo' ),
+				'description' => esc_html__( 'Save your settings and reload the page to let the magic happen', 'yith-proteo' ),
 			)
 		)
 	);
@@ -947,7 +947,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 			$wp_customize,
 			'yith_proteo_general_link_hover_color',
 			array(
-				'label'   => __( 'General link <code>hover</code> color', 'yith-proteo' ),
+				'label'   => esc_html__( 'General link :hover color', 'yith-proteo' ),
 				'section' => 'yith_proteo_color_shades',
 			)
 		)
@@ -972,8 +972,8 @@ function yith_proteo_customize_shop_register( $wp_customize ) {
 			'priority'       => 150,
 			'capability'     => 'edit_theme_options',
 			'theme_supports' => '',
-			'title'          => 'YITH Theme Shop Options',
-			'description'    => 'All shop related options for this theme',
+			'title'          => esc_html__( 'YITH Theme Shop Options', 'yith-proteo' ),
+			'description'    => esc_html__( 'All shop related options for this theme', 'yith-proteo' ),
 		)
 	);
 
@@ -984,7 +984,7 @@ function yith_proteo_customize_shop_register( $wp_customize ) {
 	$wp_customize->add_section(
 		'yith_proteo_store_notice_management',
 		array(
-			'title'    => __( 'Store notices', 'yith-proteo' ),
+			'title'    => esc_html__( 'Store notices', 'yith-proteo' ),
 			'priority' => 10,
 			'panel'    => 'yith_proteo_shop_options',
 		)
@@ -1002,7 +1002,7 @@ function yith_proteo_customize_shop_register( $wp_customize ) {
 			$wp_customize,
 			'yith_proteo_store_notice_bg_color',
 			array(
-				'label'   => __( 'Store notice background color', 'yith-proteo' ),
+				'label'   => esc_html__( 'Store notice background color', 'yith-proteo' ),
 				'section' => 'yith_proteo_store_notice_management',
 			)
 		)
@@ -1020,7 +1020,7 @@ function yith_proteo_customize_shop_register( $wp_customize ) {
 			$wp_customize,
 			'yith_proteo_store_notice_text_color',
 			array(
-				'label'   => __( 'Store notice text color', 'yith-proteo' ),
+				'label'   => esc_html__( 'Store notice text color', 'yith-proteo' ),
 				'section' => 'yith_proteo_store_notice_management',
 			)
 		)
@@ -1050,7 +1050,7 @@ function yith_proteo_customize_shop_register( $wp_customize ) {
 	$wp_customize->add_section(
 		'yith_proteo_sale_badge_management',
 		array(
-			'title'    => __( 'Sale badge', 'yith-proteo' ),
+			'title'    => esc_html__( 'Sale badge', 'yith-proteo' ),
 			'priority' => 10,
 			'panel'    => 'yith_proteo_shop_options',
 		)
@@ -1069,7 +1069,7 @@ function yith_proteo_customize_shop_register( $wp_customize ) {
 			$wp_customize,
 			'yith_proteo_sale_badge_bg_color',
 			array(
-				'label'   => __( 'Sale badge background color', 'yith-proteo' ),
+				'label'   => esc_html__( 'Sale badge background color', 'yith-proteo' ),
 				'section' => 'yith_proteo_sale_badge_management',
 			)
 		)
@@ -1087,7 +1087,7 @@ function yith_proteo_customize_shop_register( $wp_customize ) {
 			$wp_customize,
 			'yith_proteo_sale_badge_text_color',
 			array(
-				'label'   => __( 'Store notice text color', 'yith-proteo' ),
+				'label'   => esc_html__( 'Store notice text color', 'yith-proteo' ),
 				'section' => 'yith_proteo_sale_badge_management',
 			)
 		)
@@ -1115,7 +1115,7 @@ function yith_proteo_customize_shop_register( $wp_customize ) {
 	$wp_customize->add_section(
 		'yith_proteo_woo_messages_management',
 		array(
-			'title'    => __( 'WooCommerce messages', 'yith-proteo' ),
+			'title'    => esc_html__( 'WooCommerce messages', 'yith-proteo' ),
 			'priority' => 10,
 			'panel'    => 'yith_proteo_shop_options',
 		)
@@ -1151,7 +1151,7 @@ function yith_proteo_customize_shop_register( $wp_customize ) {
 			$wp_customize,
 			'yith_proteo_woo_default_messages_accent_color',
 			array(
-				'label'   => __( 'Default messages: accent color', 'yith-proteo' ),
+				'label'   => esc_html__( 'Default messages: accent color', 'yith-proteo' ),
 				'section' => 'yith_proteo_woo_messages_management',
 			)
 		)
@@ -1170,7 +1170,7 @@ function yith_proteo_customize_shop_register( $wp_customize ) {
 			$wp_customize,
 			'yith_proteo_woo_info_messages_accent_color',
 			array(
-				'label'   => __( 'Info messages: accent color', 'yith-proteo' ),
+				'label'   => esc_html__( 'Info messages: accent color', 'yith-proteo' ),
 				'section' => 'yith_proteo_woo_messages_management',
 			)
 		)
@@ -1189,7 +1189,7 @@ function yith_proteo_customize_shop_register( $wp_customize ) {
 			$wp_customize,
 			'yith_proteo_woo_error_messages_accent_color',
 			array(
-				'label'   => __( 'Error messages: accent color', 'yith-proteo' ),
+				'label'   => esc_html__( 'Error messages: accent color', 'yith-proteo' ),
 				'section' => 'yith_proteo_woo_messages_management',
 			)
 		)
@@ -1202,7 +1202,7 @@ function yith_proteo_customize_shop_register( $wp_customize ) {
 	$wp_customize->add_section(
 		'yith_proteo_product_page_management',
 		array(
-			'title'    => __( 'Single product page', 'yith-proteo' ),
+			'title'    => esc_html__( 'Single product page', 'yith-proteo' ),
 			'priority' => 10,
 			'panel'    => 'yith_proteo_shop_options',
 		)
@@ -1219,9 +1219,9 @@ function yith_proteo_customize_shop_register( $wp_customize ) {
 		'yith_proteo_product_page_related_max_number',
 		array(
 			'type'        => 'number',
-			'label'       => __( 'Max related products to show', 'yith-proteo' ),
+			'label'       => esc_html__( 'Max related products to show', 'yith-proteo' ),
 			'section'     => 'yith_proteo_product_page_management',
-			'description' => __( 'Choose how many related products you want to show (default: 4)', 'yith-proteo' ),
+			'description' => esc_html__( 'Choose how many related products you want to show (default: 4)', 'yith-proteo' ),
 		)
 	);
 	// Single product page related products management
@@ -1236,9 +1236,9 @@ function yith_proteo_customize_shop_register( $wp_customize ) {
 		'yith_proteo_product_page_related_columns',
 		array(
 			'type'        => 'number',
-			'label'       => __( 'Related products columns', 'yith-proteo' ),
+			'label'       => esc_html__( 'Related products columns', 'yith-proteo' ),
 			'section'     => 'yith_proteo_product_page_management',
-			'description' => __( 'Choose how many columns with related products you want to show (default: 4)', 'yith-proteo' ),
+			'description' => esc_html__( 'Choose how many columns with related products you want to show (default: 4)', 'yith-proteo' ),
 		)
 	);
 
@@ -1248,7 +1248,7 @@ function yith_proteo_customize_shop_register( $wp_customize ) {
 	$wp_customize->add_section(
 		'yith_proteo_cart_page_management',
 		array(
-			'title'    => __( 'Cart page', 'yith-proteo' ),
+			'title'    => esc_html__( 'Cart page', 'yith-proteo' ),
 			'priority' => 10,
 			'panel'    => 'yith_proteo_shop_options',
 		)
@@ -1266,9 +1266,9 @@ function yith_proteo_customize_shop_register( $wp_customize ) {
 		'yith_proteo_cart_layout',
 		array(
 			'type'        => 'select',
-			'label'       => __( 'Cart layout', 'yith-proteo' ),
+			'label'       => esc_html__( 'Cart layout', 'yith-proteo' ),
 			'section'     => 'yith_proteo_cart_page_management',
-			'description' => __( 'Choose the cart layout', 'yith-proteo' ),
+			'description' => esc_html__( 'Choose the cart layout', 'yith-proteo' ),
 			'choices'     => array(
 				''         => esc_html__( 'Please select', 'yith-proteo' ),
 				'one_col'  => esc_html__( 'One column layout', 'yith-proteo' ),
@@ -1315,7 +1315,7 @@ function yith_proteo_customize_partial_blogdescription() {
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */
 function yith_proteo_customize_preview_js() {
-	wp_enqueue_script( 'yith-proteo-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20151215', true );
+	wp_enqueue_script( 'yith-proteo-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), YITH_PROTEO_VERSION, true );
 }
 
 add_action( 'customize_preview_init', 'yith_proteo_customize_preview_js' );
@@ -1331,9 +1331,9 @@ add_action( 'customize_preview_init', 'yith_proteo_customize_preview_js' );
 if ( ! function_exists( 'yith_proteo_sanitize_sidebar_position' ) ) :
 	function yith_proteo_sanitize_sidebar_position( $input ) {
 		$valid = array(
-			'no-sidebar' => __( 'No sidebar', 'yith-proteo' ),
-			'right'      => __( 'Right', 'yith-proteo' ),
-			'left'       => __( 'Left', 'yith-proteo' ),
+			'no-sidebar' => esc_html__( 'No sidebar', 'yith-proteo' ),
+			'right'      => esc_html__( 'Right', 'yith-proteo' ),
+			'left'       => esc_html__( 'Left', 'yith-proteo' ),
 		);
 
 		if ( array_key_exists( $input, $valid ) ) {
@@ -1354,8 +1354,8 @@ endif;
 if ( ! function_exists( 'yith_proteo_sanitize_yes_no' ) ) :
 	function yith_proteo_sanitize_yes_no( $input ) {
 		$valid = array(
-			'yes' => __( 'Yes', 'yith-proteo' ),
-			'no'  => __( 'No', 'yith-proteo' ),
+			'yes' => esc_html__( 'Yes', 'yith-proteo' ),
+			'no'  => esc_html__( 'No', 'yith-proteo' ),
 		);
 
 		if ( array_key_exists( $input, $valid ) ) {

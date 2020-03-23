@@ -1,18 +1,18 @@
-# Copyright (C) 2017 Automattic
+# Copyright (C) 2020 YITH
 # This file is distributed under the GNU General Public License v2 or later.
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: YITH Proteo\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2019-12-23 16:08+0100\n"
+"POT-Creation-Date: 2020-03-23 10:29+0100\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "PO-Revision-Date: 2017-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: yithemes\n"
-"X-Generator: Poedit 2.2.4\n"
+"X-Generator: Poedit 2.3\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
 "_n_noop:1,2;_c;_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_ex:1,2c;"
@@ -22,11 +22,11 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-1: .sass-cache\n"
 "X-Poedit-SearchPathExcluded-2: bin\n"
 
-#: 404.php:19
+#: 404.php:21
 msgid "Oops! That page can&rsquo;t be found."
 msgstr ""
 
-#: 404.php:23
+#: 404.php:26
 msgid "It looks like nothing was found at this location. Maybe try a search?"
 msgstr ""
 
@@ -35,7 +35,7 @@ msgstr ""
 msgid "One thought on &ldquo;%1$s&rdquo;"
 msgstr ""
 
-#: comments.php:41
+#: comments.php:42
 #, php-format
 msgctxt "comments title"
 msgid "%1$s comment"
@@ -43,11 +43,17 @@ msgid_plural "%1$s comments"
 msgstr[0] ""
 msgstr[1] ""
 
-#: comments.php:67
+#: comments.php:71
 msgid "Comments are closed."
 msgstr ""
 
-#: functions.php:50
+#: footer.php:33
+msgid ""
+"Proteo - A free theme designed with <span class=\"lnr lnr-heart\"></span> by "
+"<a href=\"https://yithemes.com\" rel=\"nofollow\">YITH</a>"
+msgstr ""
+
+#: functions.php:51
 msgid "Primary"
 msgstr ""
 
@@ -55,425 +61,445 @@ msgstr ""
 msgid "Skip to content"
 msgstr ""
 
-#: inc/comments-walker.php:66
+#: header.php:87
+msgid "Toggle navigation"
+msgstr ""
+
+#: inc/class-yith-proteo-walker-comment.php:66
 #, php-format
 msgid "%s <span class=\"screen-reader-text says\">says:</span>"
 msgstr ""
 
-#: inc/comments-walker.php:79
+#: inc/class-yith-proteo-walker-comment.php:79
 #, php-format
 msgid "%1$s at %2$s"
 msgstr ""
 
-#: inc/comments-walker.php:86
+#: inc/class-yith-proteo-walker-comment.php:86
 msgid "(Edit)"
 msgstr ""
 
-#: inc/comments-walker.php:91
+#: inc/class-yith-proteo-walker-comment.php:91
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
-#: inc/customizer.php:46
+#: inc/customizer.php:44
+msgid "YITH Theme Options"
+msgstr ""
+
+#: inc/customizer.php:45
+msgid "All options related to this theme"
+msgstr ""
+
+#: inc/customizer.php:55
 msgid "Sidebars"
 msgstr ""
 
-#: inc/customizer.php:64
+#: inc/customizer.php:73
 msgid "Choose the position of the default sidebar"
 msgstr ""
 
-#: inc/customizer.php:66
+#: inc/customizer.php:75
 msgid ""
 "Select where to display the default sidebar. You can adjust the settings from "
 "the page/post edit view."
 msgstr ""
 
-#: inc/customizer.php:68 inc/customizer.php:91 inc/customizer.php:133
-#: inc/customizer.php:1319
+#: inc/customizer.php:77 inc/customizer.php:100 inc/customizer.php:142
+#: inc/customizer.php:1334
 msgid "No sidebar"
 msgstr ""
 
-#: inc/customizer.php:69 inc/customizer.php:92 inc/customizer.php:134
-#: inc/customizer.php:1320
+#: inc/customizer.php:78 inc/customizer.php:101 inc/customizer.php:143
+#: inc/customizer.php:1335
 msgid "Right"
 msgstr ""
 
-#: inc/customizer.php:70 inc/customizer.php:93 inc/customizer.php:135
-#: inc/customizer.php:1321
+#: inc/customizer.php:79 inc/customizer.php:102 inc/customizer.php:144
+#: inc/customizer.php:1336
 msgid "Left"
 msgstr ""
 
-#: inc/customizer.php:87
+#: inc/customizer.php:96
 msgid "Choose the position of the blog page sidebar"
 msgstr ""
 
-#: inc/customizer.php:89
+#: inc/customizer.php:98
 msgid ""
 "Select where to display the sidebar. You can pick up a specific sidebard from "
 "the page edit view."
 msgstr ""
 
-#: inc/customizer.php:110
+#: inc/customizer.php:119
 msgid "Choose the blog sidebar"
 msgstr ""
 
-#: inc/customizer.php:112
+#: inc/customizer.php:121
 msgid ""
 "Select the sidebar to display. You can pick a specific sidebar from the "
 "single post edit page."
 msgstr ""
 
-#: inc/customizer.php:129
+#: inc/customizer.php:138
 msgid "Choose the position of the sidebar on single product page"
 msgstr ""
 
-#: inc/customizer.php:131
+#: inc/customizer.php:140
 msgid ""
 "Select where to display the sidebar. You can adjust the settings from product "
 "edit view."
 msgstr ""
 
-#: inc/customizer.php:146
+#: inc/customizer.php:155
 msgid "Topbar"
 msgstr ""
 
-#: inc/customizer.php:164
+#: inc/customizer.php:173
 msgid "Enable topbar"
 msgstr ""
 
-#: inc/customizer.php:166
+#: inc/customizer.php:175
 msgid "Choose whether to show the site topbar or not"
 msgstr ""
 
-#: inc/customizer.php:168 inc/customizer.php:221 inc/customizer.php:1342
+#: inc/customizer.php:177 inc/customizer.php:230 inc/customizer.php:1357
 msgid "Yes"
 msgstr ""
 
-#: inc/customizer.php:169 inc/customizer.php:222 inc/customizer.php:1343
+#: inc/customizer.php:178 inc/customizer.php:231 inc/customizer.php:1358
 msgid "No"
 msgstr ""
 
-#: inc/customizer.php:187
+#: inc/customizer.php:196
 msgid "Topbar background color"
 msgstr ""
 
-#: inc/customizer.php:199
+#: inc/customizer.php:208
 msgid "Header"
 msgstr ""
 
-#: inc/customizer.php:217
+#: inc/customizer.php:226
 msgid "Enable sticky header"
 msgstr ""
 
-#: inc/customizer.php:219
+#: inc/customizer.php:228
 msgid "Choose whether to make the header stick to the page when scrolling down"
 msgstr ""
 
-#: inc/customizer.php:240
+#: inc/customizer.php:249
 msgid "Header background color"
 msgstr ""
 
-#: inc/customizer.php:258
+#: inc/customizer.php:267
 msgid "Header layout"
 msgstr ""
 
-#: inc/customizer.php:260
+#: inc/customizer.php:269
 msgid "Choose the header layout"
 msgstr ""
 
-#: inc/customizer.php:262 inc/customizer.php:1263
+#: inc/customizer.php:271 inc/customizer.php:1273
 msgid "Please select"
 msgstr ""
 
-#: inc/customizer.php:263
+#: inc/customizer.php:272
 msgid "Logo on the left and navigation below"
 msgstr ""
 
-#: inc/customizer.php:264
+#: inc/customizer.php:273
 msgid "Logo on the left and navigation inline"
 msgstr ""
 
-#: inc/customizer.php:265
+#: inc/customizer.php:274
 msgid "Centered logo and navigation below"
 msgstr ""
 
-#: inc/customizer.php:277
+#: inc/customizer.php:286
 msgid "Footer"
 msgstr ""
 
-#: inc/customizer.php:296
+#: inc/customizer.php:305
 msgid "Footer background color"
 msgstr ""
 
-#: inc/customizer.php:313
+#: inc/customizer.php:322
 msgid ""
 "Select how many widgets per row to show for Footer Sidebar 1 (new rows are "
 "automatically created)."
 msgstr ""
 
-#: inc/customizer.php:317 inc/customizer.php:342
+#: inc/customizer.php:326 inc/customizer.php:351
 msgid "One"
 msgstr ""
 
-#: inc/customizer.php:318 inc/customizer.php:343
+#: inc/customizer.php:327 inc/customizer.php:352
 msgid "Two"
 msgstr ""
 
-#: inc/customizer.php:319 inc/customizer.php:344
+#: inc/customizer.php:328 inc/customizer.php:353
 msgid "Three"
 msgstr ""
 
-#: inc/customizer.php:320 inc/customizer.php:345
+#: inc/customizer.php:329 inc/customizer.php:354
 msgid "Four"
 msgstr ""
 
-#: inc/customizer.php:321 inc/customizer.php:346
+#: inc/customizer.php:330 inc/customizer.php:355
 msgid "Five"
 msgstr ""
 
-#: inc/customizer.php:322 inc/customizer.php:347
+#: inc/customizer.php:331 inc/customizer.php:356
 msgid "Six"
 msgstr ""
 
-#: inc/customizer.php:338
+#: inc/customizer.php:347
 msgid ""
 "Select how many widgets per row to show for Footer Sidebar 2 (new rows are "
 "automatically created)."
 msgstr ""
 
-#: inc/customizer.php:358
+#: inc/customizer.php:367
 msgid "Footer credits"
 msgstr ""
 
-#: inc/customizer.php:374
+#: inc/customizer.php:383
 msgid "Enter here the content of the footer credits area"
 msgstr ""
 
-#: inc/customizer.php:392
+#: inc/customizer.php:401
 msgid "Footer credits background color"
 msgstr ""
 
-#: inc/customizer.php:404
+#: inc/customizer.php:413
 msgid "Google Font"
 msgstr ""
 
-#: inc/customizer.php:421
+#: inc/customizer.php:430
 msgid "Enter the URL of the Google Font you want to use."
 msgstr ""
 
-#: inc/customizer.php:433
+#: inc/customizer.php:442
 msgid "Typography"
 msgstr ""
 
-#: inc/customizer.php:449
+#: inc/customizer.php:458
 msgid "Body font size (default: 16px)"
 msgstr ""
 
-#: inc/customizer.php:467
+#: inc/customizer.php:476
 msgid "Body font color"
 msgstr ""
 
-#: inc/customizer.php:484
+#: inc/customizer.php:493
 msgid "H1 font size (default: 32px)"
 msgstr ""
 
-#: inc/customizer.php:502
+#: inc/customizer.php:511
 msgid "H1 font color"
 msgstr ""
 
-#: inc/customizer.php:519
+#: inc/customizer.php:528
 msgid "H2 font size (default: 24px)"
 msgstr ""
 
-#: inc/customizer.php:537
+#: inc/customizer.php:546
 msgid "H2 font color"
 msgstr ""
 
-#: inc/customizer.php:554
+#: inc/customizer.php:563
 msgid "H3 font size (default: 19px)"
 msgstr ""
 
-#: inc/customizer.php:572
+#: inc/customizer.php:581
 msgid "H3 font color"
 msgstr ""
 
-#: inc/customizer.php:589
+#: inc/customizer.php:598
 msgid "H4 font size (default: 16px)"
 msgstr ""
 
-#: inc/customizer.php:607
+#: inc/customizer.php:616
 msgid "H4 font color"
 msgstr ""
 
-#: inc/customizer.php:624
+#: inc/customizer.php:633
 msgid "H5 font size (default: 13px)"
 msgstr ""
 
-#: inc/customizer.php:642
+#: inc/customizer.php:651
 msgid "H5 font color"
 msgstr ""
 
-#: inc/customizer.php:659
+#: inc/customizer.php:668
 msgid "H6 font size (default: 11px)"
 msgstr ""
 
-#: inc/customizer.php:677
+#: inc/customizer.php:686
 msgid "H6 font color"
 msgstr ""
 
-#: inc/customizer.php:689
+#: inc/customizer.php:698
 msgid "Buttons"
 msgstr ""
 
-#: inc/customizer.php:708
+#: inc/customizer.php:717
 msgid "Button Style 1 background color"
 msgstr ""
 
-#: inc/customizer.php:726
+#: inc/customizer.php:735
 msgid "Button Style 1 border color"
 msgstr ""
 
-#: inc/customizer.php:744
+#: inc/customizer.php:753
 msgid "Button Style 1 text color"
 msgstr ""
 
-#: inc/customizer.php:762
-msgid "Button Style 1 background <code>hover</code> color"
+#: inc/customizer.php:771
+msgid "Button Style 1 background :hover color"
 msgstr ""
 
-#: inc/customizer.php:780
-msgid "Button Style 1 border <code>hover</code> color"
+#: inc/customizer.php:789
+msgid "Button Style 1 border :hover color"
 msgstr ""
 
-#: inc/customizer.php:798
-msgid "Button Style 1 text <code>hover</code> color"
+#: inc/customizer.php:807
+msgid "Button Style 1 text :hover color"
 msgstr ""
 
-#: inc/customizer.php:818
+#: inc/customizer.php:826
 msgid "Button Style 2 background color shade 1"
 msgstr ""
 
-#: inc/customizer.php:837
+#: inc/customizer.php:844
 msgid "Button Style 2 background color shade 2"
 msgstr ""
 
-#: inc/customizer.php:855
+#: inc/customizer.php:862
 msgid "Button Style 2 text color"
 msgstr ""
 
-#: inc/customizer.php:873
-msgid "Button Style 2 background <code>hover</code> color"
+#: inc/customizer.php:880
+msgid "Button Style 2 background :hover color"
 msgstr ""
 
-#: inc/customizer.php:891
-msgid "Button Style 2 text <code>hover</code> color"
+#: inc/customizer.php:898
+msgid "Button Style 2 text :hover color"
 msgstr ""
 
-#: inc/customizer.php:904
+#: inc/customizer.php:911
 msgid "Color shades"
 msgstr ""
 
-#: inc/customizer.php:923
+#: inc/customizer.php:930
 msgid "Main color shade"
 msgstr ""
 
-#: inc/customizer.php:925
+#: inc/customizer.php:932
 msgid "Save your settings and reload the page to let the magic happen"
 msgstr ""
 
-#: inc/customizer.php:943
-msgid "General link <code>hover</code> color"
+#: inc/customizer.php:950
+msgid "General link :hover color"
 msgstr ""
 
-#: inc/customizer.php:977
+#: inc/customizer.php:975
+msgid "YITH Theme Shop Options"
+msgstr ""
+
+#: inc/customizer.php:976
+msgid "All shop related options for this theme"
+msgstr ""
+
+#: inc/customizer.php:987
 msgid "Store notices"
 msgstr ""
 
-#: inc/customizer.php:995
+#: inc/customizer.php:1005
 msgid "Store notice background color"
 msgstr ""
 
-#: inc/customizer.php:1013 inc/customizer.php:1080
+#: inc/customizer.php:1023 inc/customizer.php:1090
 msgid "Store notice text color"
 msgstr ""
 
-#: inc/customizer.php:1030
+#: inc/customizer.php:1040
 msgid "Store notice font size (default: 13px)"
 msgstr ""
 
-#: inc/customizer.php:1043
+#: inc/customizer.php:1053
 msgid "Sale badge"
 msgstr ""
 
-#: inc/customizer.php:1062
+#: inc/customizer.php:1072
 msgid "Sale badge background color"
 msgstr ""
 
-#: inc/customizer.php:1096
+#: inc/customizer.php:1106
 msgid "Sale badge font size (default: 13px)"
 msgstr ""
 
-#: inc/customizer.php:1108
+#: inc/customizer.php:1118
 msgid "WooCommerce messages"
 msgstr ""
 
-#: inc/customizer.php:1125
+#: inc/customizer.php:1135
 msgid "WooCommerce messages font size (default: 16px)"
 msgstr ""
 
-#: inc/customizer.php:1144
+#: inc/customizer.php:1154
 msgid "Default messages: accent color"
 msgstr ""
 
-#: inc/customizer.php:1163
+#: inc/customizer.php:1173
 msgid "Info messages: accent color"
 msgstr ""
 
-#: inc/customizer.php:1182
+#: inc/customizer.php:1192
 msgid "Error messages: accent color"
 msgstr ""
 
-#: inc/customizer.php:1195
+#: inc/customizer.php:1205
 msgid "Single product page"
 msgstr ""
 
-#: inc/customizer.php:1212
+#: inc/customizer.php:1222
 msgid "Max related products to show"
 msgstr ""
 
-#: inc/customizer.php:1214
+#: inc/customizer.php:1224
 msgid "Choose how many related products you want to show (default: 4)"
 msgstr ""
 
-#: inc/customizer.php:1229
+#: inc/customizer.php:1239
 msgid "Related products columns"
 msgstr ""
 
-#: inc/customizer.php:1231
+#: inc/customizer.php:1241
 msgid ""
 "Choose how many columns with related products you want to show (default: 4)"
 msgstr ""
 
-#: inc/customizer.php:1241
+#: inc/customizer.php:1251
 msgid "Cart page"
 msgstr ""
 
-#: inc/customizer.php:1259
+#: inc/customizer.php:1269
 msgid "Cart layout"
 msgstr ""
 
-#: inc/customizer.php:1261
+#: inc/customizer.php:1271
 msgid "Choose the cart layout"
 msgstr ""
 
-#: inc/customizer.php:1264
+#: inc/customizer.php:1274
 msgid "One column layout"
 msgstr ""
 
-#: inc/customizer.php:1265
+#: inc/customizer.php:1275
 msgid "Two column layout"
 msgstr ""
 
-#: inc/customizer.php:1278
+#: inc/customizer.php:1293
 msgid "Read the documentation to see how to retrieve a Google Font URL"
 msgstr ""
 
@@ -493,118 +519,146 @@ msgstr ""
 msgid "Sidebar Chooser"
 msgstr ""
 
-#: inc/metaboxes.php:108 inc/metaboxes.php:196
+#: inc/metaboxes.php:98
+msgid "Header and footer"
+msgstr ""
+
+#: inc/metaboxes.php:121
+msgid "Enable this option to hide site header and footer."
+msgstr ""
+
+#: inc/metaboxes.php:143 inc/metaboxes.php:240
 msgid "none"
 msgstr ""
 
-#: inc/sidebars.php:8
+#: inc/metaboxes.php:170 inc/metaboxes.php:171
+msgid "inherit"
+msgstr ""
+
+#: inc/metaboxes.php:174 inc/metaboxes.php:175
+msgid "no-sidebar"
+msgstr ""
+
+#: inc/metaboxes.php:178 inc/metaboxes.php:179
+msgid "left"
+msgstr ""
+
+#: inc/metaboxes.php:182 inc/metaboxes.php:183
+msgid "right"
+msgstr ""
+
+#: inc/metaboxes.php:186 inc/metaboxes.php:187
+msgid "bottom"
+msgstr ""
+
+#: inc/sidebars.php:9
 msgid "Default Sidebar"
 msgstr ""
 
-#: inc/sidebars.php:10 inc/sidebars.php:19 inc/sidebars.php:28
-#: inc/sidebars.php:37 inc/sidebars.php:46 inc/sidebars.php:55
-#: inc/sidebars.php:64 inc/sidebars.php:73
+#: inc/sidebars.php:11 inc/sidebars.php:22 inc/sidebars.php:33
+#: inc/sidebars.php:44 inc/sidebars.php:55 inc/sidebars.php:66
+#: inc/sidebars.php:77 inc/sidebars.php:88
 msgid "Add widgets here."
 msgstr ""
 
-#: inc/sidebars.php:17
+#: inc/sidebars.php:20
 msgid "Topbar Sidebar"
 msgstr ""
 
-#: inc/sidebars.php:26
+#: inc/sidebars.php:31
 msgid "Header Sidebar"
 msgstr ""
 
-#: inc/sidebars.php:35
+#: inc/sidebars.php:42
 msgid "Footer Sidebar 1 (multiple columns can be configured)"
 msgstr ""
 
-#: inc/sidebars.php:44
+#: inc/sidebars.php:53
 msgid "Footer Sidebar 2 (multiple columns can be configured)"
 msgstr ""
 
-#: inc/sidebars.php:53
+#: inc/sidebars.php:64
 msgid "Sidebar 2"
 msgstr ""
 
-#: inc/sidebars.php:62
+#: inc/sidebars.php:75
 msgid "Sidebar 3"
 msgstr ""
 
-#: inc/sidebars.php:71
+#: inc/sidebars.php:86
 msgid "Shop sidebar"
 msgstr ""
 
-#: inc/template-functions.php:215
+#: inc/template-functions.php:165
 msgid "Search"
 msgstr ""
 
-#: inc/template-functions.php:239 inc/template-functions.php:257
+#: inc/template-functions.php:188 inc/template-functions.php:206
 msgid "Read more"
 msgstr ""
 
-#: inc/template-tags.php:41
+#: inc/template-tags.php:42
 #, php-format
 msgctxt "post author"
 msgid "By %s"
 msgstr ""
 
-#: inc/template-tags.php:60 template-parts/content-page.php:43
+#: inc/template-tags.php:61 template-parts/content-page.php:47
 #, php-format
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr ""
 
-#: inc/widgets.php:19
-msgid "Recent Posts"
-msgstr ""
-
-#: inc/widgets.php:50
-#, php-format
-msgctxt "comments count on widget"
-msgid "One comment"
-msgid_plural "%1$s comments"
-msgstr[0] ""
-msgstr[1] ""
-
-#: inc/widgets.php:90
+#: inc/widgets/class-yith-proteo-recent-comments-widget.php:17
 msgid "Recent Comments"
 msgstr ""
 
-#: inc/widgets.php:141
+#: inc/widgets/class-yith-proteo-recent-comments-widget.php:68
 #, php-format
 msgctxt "widgets"
 msgid "%1$s on %2$s"
 msgstr ""
 
-#: inc/widgets.php:179
+#: inc/widgets/class-yith-proteo-recent-posts-widget.php:14
+msgid "Recent Posts"
+msgstr ""
+
+#: inc/widgets/class-yith-proteo-recent-posts-widget.php:61
+#, php-format
+msgctxt "comments count on widget"
+msgid "%1$s comment"
+msgid_plural "%1$s comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/widgets/class-yith-proteo-social-icons.php:14
 msgid "Social Networks"
 msgstr ""
 
-#: inc/widgets.php:180
+#: inc/widgets/class-yith-proteo-social-icons.php:16
 msgid "Links to your social profiles"
 msgstr ""
 
-#: inc/widgets.php:240
+#: inc/widgets/class-yith-proteo-social-icons.php:77
 msgid "To hide a field, just leave it empty"
 msgstr ""
 
-#: inc/widgets.php:242
+#: inc/widgets/class-yith-proteo-social-icons.php:80
 msgid "Title:"
 msgstr ""
 
-#: inc/widgets.php:249
+#: inc/widgets/class-yith-proteo-social-icons.php:89
 msgid "Facebook:"
 msgstr ""
 
-#: inc/widgets.php:256
+#: inc/widgets/class-yith-proteo-social-icons.php:98
 msgid "Twitter:"
 msgstr ""
 
-#: inc/widgets.php:263
+#: inc/widgets/class-yith-proteo-social-icons.php:107
 msgid "Instagram:"
 msgstr ""
 
-#: inc/widgets.php:270
+#: inc/widgets/class-yith-proteo-social-icons.php:116
 msgid "LinkedIn:"
 msgstr ""
 
@@ -619,20 +673,24 @@ msgid_plural "%d items"
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/woocommerce.php:306
+#: inc/woocommerce.php:304
 msgid "Logout"
 msgstr ""
 
-#: inc/woocommerce.php:341
+#: inc/woocommerce.php:339
 msgid "Account info"
 msgstr ""
 
-#: inc/woocommerce.php:396
+#: inc/woocommerce.php:395
 #, php-format
 msgid "%d item in cart"
 msgid_plural "%d items in cart"
 msgstr[0] ""
 msgstr[1] ""
+
+#: inc/woocommerce.php:541
+msgid "Thank you."
+msgstr ""
 
 #: search.php:22
 #, php-format
@@ -660,35 +718,35 @@ msgid ""
 "can help."
 msgstr ""
 
-#: template-parts/content-page.php:30 template-parts/content.php:117
+#: template-parts/content-page.php:33 template-parts/content.php:122
 msgid "Pages:"
 msgstr ""
 
-#: template-parts/content.php:59
+#: template-parts/content.php:61
 msgid ", "
 msgstr ""
 
-#: template-parts/content.php:62
+#: template-parts/content.php:64
 #, php-format
 msgid "Categories: %1$s"
 msgstr ""
 
-#: template-parts/content.php:66
+#: template-parts/content.php:68
 msgctxt "list item separator"
 msgid ", "
 msgstr ""
 
-#: template-parts/content.php:69
+#: template-parts/content.php:71
 #, php-format
 msgid "Tags: %1$s"
 msgstr ""
 
-#: template-parts/content.php:79
+#: template-parts/content.php:81
 #, php-format
 msgid "Leave a comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr ""
 
-#: template-parts/content.php:102
+#: template-parts/content.php:105
 #, php-format
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr ""
@@ -697,7 +755,7 @@ msgstr ""
 msgid "You must be logged in to proceed with the checkout."
 msgstr ""
 
-#: woocommerce/checkout/form-checkout.php:59
+#: woocommerce/checkout/form-checkout.php:60
 msgid "Your order"
 msgstr ""
 
@@ -706,14 +764,14 @@ msgid "Personal info"
 msgstr ""
 
 #: woocommerce/myaccount/proteo-account-info.php:16
-#: woocommerce/myaccount/proteo-account-info.php:41
-#: woocommerce/myaccount/proteo-account-info.php:78
+#: woocommerce/myaccount/proteo-account-info.php:42
+#: woocommerce/myaccount/proteo-account-info.php:80
 msgid "First name:"
 msgstr ""
 
 #: woocommerce/myaccount/proteo-account-info.php:20
-#: woocommerce/myaccount/proteo-account-info.php:45
-#: woocommerce/myaccount/proteo-account-info.php:82
+#: woocommerce/myaccount/proteo-account-info.php:46
+#: woocommerce/myaccount/proteo-account-info.php:84
 msgid "Last name:"
 msgstr ""
 
@@ -726,35 +784,35 @@ msgid "Password:"
 msgstr ""
 
 #: woocommerce/myaccount/proteo-account-info.php:33
-#: woocommerce/myaccount/proteo-account-info.php:69
-#: woocommerce/myaccount/proteo-account-info.php:106
+#: woocommerce/myaccount/proteo-account-info.php:70
+#: woocommerce/myaccount/proteo-account-info.php:108
 msgid "Edit info"
 msgstr ""
 
-#: woocommerce/myaccount/proteo-account-info.php:39
+#: woocommerce/myaccount/proteo-account-info.php:40
 msgid "Billing info & address"
 msgstr ""
 
-#: woocommerce/myaccount/proteo-account-info.php:50
-#: woocommerce/myaccount/proteo-account-info.php:87
+#: woocommerce/myaccount/proteo-account-info.php:51
+#: woocommerce/myaccount/proteo-account-info.php:89
 msgid "Company name:"
 msgstr ""
 
-#: woocommerce/myaccount/proteo-account-info.php:54
-#: woocommerce/myaccount/proteo-account-info.php:91
+#: woocommerce/myaccount/proteo-account-info.php:55
+#: woocommerce/myaccount/proteo-account-info.php:93
 msgid "VAT:"
 msgstr ""
 
-#: woocommerce/myaccount/proteo-account-info.php:59
-#: woocommerce/myaccount/proteo-account-info.php:96
+#: woocommerce/myaccount/proteo-account-info.php:60
+#: woocommerce/myaccount/proteo-account-info.php:98
 msgid "CIF/SSN:"
 msgstr ""
 
-#: woocommerce/myaccount/proteo-account-info.php:64
-#: woocommerce/myaccount/proteo-account-info.php:101
+#: woocommerce/myaccount/proteo-account-info.php:65
+#: woocommerce/myaccount/proteo-account-info.php:103
 msgid "Address:"
 msgstr ""
 
-#: woocommerce/myaccount/proteo-account-info.php:76
+#: woocommerce/myaccount/proteo-account-info.php:78
 msgid "Shipping info & address"
 msgstr ""

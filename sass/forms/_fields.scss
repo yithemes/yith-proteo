@@ -16,10 +16,10 @@ input[type="color"],
 textarea {
     color: $color__text-input;
     border-color: $color__border-input;
-    border-width: 0 0 1px 0;
+    border-width: 1px 1px 1px 1px;
     border-style: solid;
     border-radius: 0;
-    padding: 3px;
+    padding: 5px;
     background-color: transparent;
     font-family: inherit;
     min-height: 35px;
@@ -30,9 +30,8 @@ textarea {
         outline-color: transparent;
         color: $color__text-input-focus;
         border-color: $color__accent;
-        border-width: 0 0 2px 0;
         outline: none;
-        box-shadow: none;
+        box-shadow: 0 0 2px $color__accent;
     }
 
     & + .separator {
@@ -102,7 +101,7 @@ select {
 
 textarea {
     border-color: $color__border-input;
-    border-width: 0 0 1px 0;
+    border-width: 1px 1px 1px 1px;
     border-style: solid;
     width: 100%;
     background-color: transparent;
