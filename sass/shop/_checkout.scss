@@ -133,6 +133,12 @@ body.woocommerce-checkout {
                     }
 
                 }
+
+                .wc-payment-form {
+                    label{
+                        padding-left: 0;
+                    }
+                }
             }
         }
 

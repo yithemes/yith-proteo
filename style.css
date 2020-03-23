@@ -7624,6 +7624,9 @@ body.woocommerce-checkout #payment ul li.payment_method_paypal label a {
   margin-left: 15px;
   font-weight: lighter;
 }
+body.woocommerce-checkout #payment ul li .wc-payment-form label {
+  padding-left: 0;
+}
 body.woocommerce-checkout #payment #place_order {
   display: block;
   width: 100%;
