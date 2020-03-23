@@ -1,0 +1,9 @@
+#wc-yith-stripe-cc-form {
+	#yith-stripe-card-elements,
+	.yith-stripe-elements-field {
+		background: transparent;
+		padding: 7px 5px;
+		border-radius: 0;
+		border: 1px solid $color__border-input;
+	}
+}

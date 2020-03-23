@@ -10426,6 +10426,14 @@ header.woocommerce-products-header .yith-cart-message {
   padding: 12px 15px 12px 15px;
 }
 
+#wc-yith-stripe-cc-form #yith-stripe-card-elements,
+#wc-yith-stripe-cc-form .yith-stripe-elements-field {
+  background: transparent;
+  padding: 7px 5px;
+  border-radius: 0;
+  border: 1px solid #9D9D9D;
+}
+
 /**
 CF7
  */
