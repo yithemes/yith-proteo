@@ -5164,7 +5164,7 @@ input[type=datetime-local],
 input[type=color],
 textarea {
   color: #666;
-  border-color: #9D9D9D;
+  border-color: #cccccc;
   border-width: 1px 1px 1px 1px;
   border-style: solid;
   border-radius: 0;
@@ -5276,14 +5276,14 @@ textarea:focus + .separator {
 }
 
 select {
-  border-color: #9D9D9D;
+  border-color: #cccccc;
   border-width: 0 0 1px 0;
   border-style: solid;
   border-radius: 0;
 }
 
 textarea {
-  border-color: #9D9D9D;
+  border-color: #cccccc;
   border-width: 1px 1px 1px 1px;
   border-style: solid;
   width: 100%;
@@ -6865,11 +6865,6 @@ table.cart tbody tr td.actions .coupon label, table.cart tfoot tr td.actions .co
   margin-bottom: 15px;
 }
 table.cart tbody tr td.actions .coupon input, table.cart tfoot tr td.actions .coupon input, table.shop_table tbody tr td.actions .coupon input, table.shop_table tfoot tr td.actions .coupon input {
-  border-width: 0 0 1px 0;
-  border-radius: 0;
-  border-style: solid;
-  border-color: #cccccc;
-  padding: 5px 0;
   font-size: 0.875rem;
   font-family: inherit;
   min-width: 230px;
@@ -7900,10 +7895,6 @@ p.stars.selected a:not(.active):before {
   vertical-align: middle;
 }
 .quantity input {
-  border-width: 0 0 1px 0;
-  border-radius: 0;
-  border-color: #cccccc;
-  border-style: solid;
   text-align: center;
   max-width: 100px;
   font-size: 1rem;
@@ -9319,8 +9310,8 @@ table.shop_table tbody tr td.product-name ._view_and_pdf_row a.button {
 }
 .yith_wcevti_check_in .list_row_panel .make_checkin_button,
 .yith_wcevti_check_in .list_row_panel .make_checkout_button:hover {
-  background: #9D9D9D;
-  border-color: #9D9D9D;
+  background: #cccccc;
+  border-color: #cccccc;
 }
 .yith_wcevti_check_in .list_row_panel .make_checkin_button:hover {
   background: #448A85;
@@ -10626,7 +10617,7 @@ header.woocommerce-products-header .yith-cart-message {
   background: transparent;
   padding: 7px 5px;
   border-radius: 0;
-  border: 1px solid #9D9D9D;
+  border: 1px solid #cccccc;
 }
 
 /**
