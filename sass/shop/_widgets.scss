@@ -276,6 +276,25 @@ Mini Cart Widget
 
 }
 
+#secondary .widget_shopping_cart {
+    .widget_shopping_cart_content {
+        .proceed-to-cart-icon {
+            display: none;
+        }
+        p.items-count {
+            padding: 0;
+        }
+    }
+    .yith-proteo-mini-cart-content {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        box-shadow: none;
+        padding: 0;
+
+    }
+}
+
 /**
 Products widget
  */
