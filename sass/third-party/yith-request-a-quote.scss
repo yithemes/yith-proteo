@@ -1,44 +1,244 @@
-.woocommerce .products{
+.woocommerce .products {
 
     .add-request-quote-button.button,
-    .add-request-quote-button-addons.button{
-        background:none;
-        border:0px;
-        color:black;
-        padding:10px 0;
+    .add-request-quote-button-addons.button {
+        background: none;
+        border: 1px solid #448a85;
         font-size: 14px;
         color: #448a85;
+        text-transform: uppercase;
+        padding: 7px 14px;
+        margin-right: 0;
+        display: inline-block;
+        float: none;
 
-        &:hover{
-            background:none;
+        &:hover {
+            background: none;
             color: #448a85;
         }
     }
 
     .yith-ywraq-add-to-quote,
-    .yith_ywraq_add_item_browse_message{
+    .yith_ywraq_add_item_browse_message {
         font-size: 14px;
     }
 
-    .yith-ywraq-add-to-quote{
-        img{
+    .yith-ywraq-add-to-quote {
+        img {
             width: auto;
+        }
+    }
+
+}
+
+.yith_ywraq_add_item_product_message,
+.yith_ywraq_add_item_response_message {
+    color: #666666;
+    font-weight: 600;
+}
+
+.yith-ywraq-add-to-quote a,
+.yith_ywraq_add_item_browse_message a {
+    font-weight: 600;
+    color: #448a85;
+}
+
+.yith_ywraq_add_item_browse_message a:after {
+    content: '>';
+    margin-left: 5px;
+}
+
+/** WIDGETS **/
+.theme-yith-proteo .widget_ywraq_list_quote,
+.theme-yith-proteo .widget_ywraq_mini_list_quote {
+    .yith-ywraq-list-wrapper {
+        right: 0;
+        top: 30px;
+    }
+
+    .raq-info {
+        border: 0;
+    }
+
+    .raq-items-number,
+    .raq_label {
+        font-weight: 400;
+        text-decoration: none;
+        color: #777;
+        font-size: 16px;
+    }
+
+
+    .yith-ywraq-list-content {
+        border: 0;
+        min-width: 280px;
+        box-shadow: 3px 0 15px rgba(0, 0, 0, 0.15);
+        right: 0;
+        padding: 30px 15px 25px 15px;
+        background: #ffffff;
+        top: calc(100%);
+        transition: all ease 0.3s;
+    }
+
+    ul.yith-ywraq-list li {
+        & {
+            position: relative;
+            display: table;
+            width: 100%;
+            margin-bottom: 10px;
+            padding-left: 30px;
+            border-bottom: 0;
+        }
+
+        a {
+            font-size: 12px;
+            text-decoration: none;
+            color: #000;
+        }
+
+
+
+        a.yith-ywraq-item-remove.remove {
+            text-decoration: none;
+            background: transparent;
+            color: #9E9E9E;
+            display: inline-block;
+            font-size: 2rem;
+            font-weight: normal;
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin-top: auto;
+            margin-bottom: auto;
+            height: 2rem;
+            line-height: 1rem;
+
+            &:hover {
+                color: #000000;
+            }
+        }
+
+        small {
+            display: block;
+            line-height: 1.2em;
+            margin-top: -1em;
+            font-size: .75em;
+        }
+
+        img {
+            float: left;
+            margin-right: 10px;
+            max-width: 50px;
+            vertical-align: top;
+            width: 50px;
+        }
+
+        .quantity {
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: #777;
+        }
+    }
+
+    .yith-ywraq-list-item a {
+        text-decoration: none;
+    }
+
+    .yith-ywraq-list-wrapper .button,
+    .yith-ywraq-list-content .button {
+        text-transform: uppercase;
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        display: block;
+    }
+}
+
+.theme-yith-proteo .widget_ywraq_list_quote .yith-ywraq-list-wrapper .button {
+    width: fit-content;
+    float: left;
+    margin-bottom: 30px;
+}
+
+.summary {
+    .yith-ywraq-add-to-quote {
+        margin-bottom: 30px;
+    }
+}
+
+.ywraq-wrapper {
+    a.button.wc-backward {
+        background: none;
+        color: #448a85;
+        border: 0;
+        padding: 0;
+        margin: 20px 0 40px 0;
+
+        &:hover{
+            color:#12B995;
         }
     }
 }
 
+.ywraq-form-table-wrapper .yith-ywraq-mail-form-wrapper {
+    h3 {
+        margin: 0 15px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ccc;
+    }
 
-.summary{
-    .yith-ywraq-add-to-quote{
-        margin-bottom: 30px;
+    .raq-send-request-row {
+        text-align: right;
+    }
+
+    input.button.raq-send-request {
+        text-transform: uppercase;
+        margin-right: 0;
+        display: inline-block;
+    }
+
+    & {
+        padding-bottom: 5px !important;
+    }
+
+    .form-row label {
+        font-size: 14px;
+        color: #000;
+        font-weight: 600;
     }
 }
+
 #yith-ywraq-form {
-    .actions .button{
+    .actions .button {
         float: right;
+        margin-right: 0;
     }
 
-    .actions .wc-backward.button{
+    .actions .wc-backward.button {
         float: left;
+    }
+
+    td.product-name ul {
+        list-style: none;
+        padding: 10px 0;
+        margin-left: 0px !important;
+
+        li {
+            margin: 0;
+            padding: 0;
+        }
+
+        br{
+            display: none;
+        }
+    }
+
+}
+
+#yith-ywraq-default-form {
+    input[type=text], input[type=email], input[type=password], select, textarea {
+        background-color: #fff;
+        border: 1px solid #ccc;
     }
 }

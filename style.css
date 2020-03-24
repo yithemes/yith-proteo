@@ -10377,11 +10377,14 @@ ul.products li.product a.compare:not(.button) {
 .woocommerce .products .add-request-quote-button.button,
 .woocommerce .products .add-request-quote-button-addons.button {
   background: none;
-  border: 0px;
-  color: black;
-  padding: 10px 0;
+  border: 1px solid #448a85;
   font-size: 14px;
   color: #448a85;
+  text-transform: uppercase;
+  padding: 7px 14px;
+  margin-right: 0;
+  display: inline-block;
+  float: none;
 }
 .woocommerce .products .add-request-quote-button.button:hover,
 .woocommerce .products .add-request-quote-button-addons.button:hover {
@@ -10396,15 +10399,191 @@ ul.products li.product a.compare:not(.button) {
   width: auto;
 }
 
+.yith_ywraq_add_item_product_message,
+.yith_ywraq_add_item_response_message {
+  color: #666666;
+  font-weight: 600;
+}
+
+.yith-ywraq-add-to-quote a,
+.yith_ywraq_add_item_browse_message a {
+  font-weight: 600;
+  color: #448a85;
+}
+
+.yith_ywraq_add_item_browse_message a:after {
+  content: ">";
+  margin-left: 5px;
+}
+
+/** WIDGETS **/
+.theme-yith-proteo .widget_ywraq_list_quote .yith-ywraq-list-wrapper,
+.theme-yith-proteo .widget_ywraq_mini_list_quote .yith-ywraq-list-wrapper {
+  right: 0;
+  top: 30px;
+}
+.theme-yith-proteo .widget_ywraq_list_quote .raq-info,
+.theme-yith-proteo .widget_ywraq_mini_list_quote .raq-info {
+  border: 0;
+}
+.theme-yith-proteo .widget_ywraq_list_quote .raq-items-number,
+.theme-yith-proteo .widget_ywraq_list_quote .raq_label,
+.theme-yith-proteo .widget_ywraq_mini_list_quote .raq-items-number,
+.theme-yith-proteo .widget_ywraq_mini_list_quote .raq_label {
+  font-weight: 400;
+  text-decoration: none;
+  color: #777;
+  font-size: 16px;
+}
+.theme-yith-proteo .widget_ywraq_list_quote .yith-ywraq-list-content,
+.theme-yith-proteo .widget_ywraq_mini_list_quote .yith-ywraq-list-content {
+  border: 0;
+  min-width: 280px;
+  box-shadow: 3px 0 15px rgba(0, 0, 0, 0.15);
+  right: 0;
+  padding: 30px 15px 25px 15px;
+  background: #ffffff;
+  top: calc(100%);
+  transition: all ease 0.3s;
+}
+.theme-yith-proteo .widget_ywraq_list_quote ul.yith-ywraq-list li,
+.theme-yith-proteo .widget_ywraq_mini_list_quote ul.yith-ywraq-list li {
+  position: relative;
+  display: table;
+  width: 100%;
+  margin-bottom: 10px;
+  padding-left: 30px;
+  border-bottom: 0;
+}
+.theme-yith-proteo .widget_ywraq_list_quote ul.yith-ywraq-list li a,
+.theme-yith-proteo .widget_ywraq_mini_list_quote ul.yith-ywraq-list li a {
+  font-size: 12px;
+  text-decoration: none;
+  color: #000;
+}
+.theme-yith-proteo .widget_ywraq_list_quote ul.yith-ywraq-list li a.yith-ywraq-item-remove.remove,
+.theme-yith-proteo .widget_ywraq_mini_list_quote ul.yith-ywraq-list li a.yith-ywraq-item-remove.remove {
+  text-decoration: none;
+  background: transparent;
+  color: #9E9E9E;
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: normal;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 2rem;
+  line-height: 1rem;
+}
+.theme-yith-proteo .widget_ywraq_list_quote ul.yith-ywraq-list li a.yith-ywraq-item-remove.remove:hover,
+.theme-yith-proteo .widget_ywraq_mini_list_quote ul.yith-ywraq-list li a.yith-ywraq-item-remove.remove:hover {
+  color: #000000;
+}
+.theme-yith-proteo .widget_ywraq_list_quote ul.yith-ywraq-list li small,
+.theme-yith-proteo .widget_ywraq_mini_list_quote ul.yith-ywraq-list li small {
+  display: block;
+  line-height: 1.2em;
+  margin-top: -1em;
+  font-size: 0.75em;
+}
+.theme-yith-proteo .widget_ywraq_list_quote ul.yith-ywraq-list li img,
+.theme-yith-proteo .widget_ywraq_mini_list_quote ul.yith-ywraq-list li img {
+  float: left;
+  margin-right: 10px;
+  max-width: 50px;
+  vertical-align: top;
+  width: 50px;
+}
+.theme-yith-proteo .widget_ywraq_list_quote ul.yith-ywraq-list li .quantity,
+.theme-yith-proteo .widget_ywraq_mini_list_quote ul.yith-ywraq-list li .quantity {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #777;
+}
+.theme-yith-proteo .widget_ywraq_list_quote .yith-ywraq-list-item a,
+.theme-yith-proteo .widget_ywraq_mini_list_quote .yith-ywraq-list-item a {
+  text-decoration: none;
+}
+.theme-yith-proteo .widget_ywraq_list_quote .yith-ywraq-list-wrapper .button,
+.theme-yith-proteo .widget_ywraq_list_quote .yith-ywraq-list-content .button,
+.theme-yith-proteo .widget_ywraq_mini_list_quote .yith-ywraq-list-wrapper .button,
+.theme-yith-proteo .widget_ywraq_mini_list_quote .yith-ywraq-list-content .button {
+  text-transform: uppercase;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+}
+
+.theme-yith-proteo .widget_ywraq_list_quote .yith-ywraq-list-wrapper .button {
+  width: fit-content;
+  float: left;
+  margin-bottom: 30px;
+}
+
 .summary .yith-ywraq-add-to-quote {
   margin-bottom: 30px;
 }
 
+.ywraq-wrapper a.button.wc-backward {
+  background: none;
+  color: #448a85;
+  border: 0;
+  padding: 0;
+  margin: 20px 0 40px 0;
+}
+.ywraq-wrapper a.button.wc-backward:hover {
+  color: #12B995;
+}
+
+.ywraq-form-table-wrapper .yith-ywraq-mail-form-wrapper h3 {
+  margin: 0 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.ywraq-form-table-wrapper .yith-ywraq-mail-form-wrapper .raq-send-request-row {
+  text-align: right;
+}
+.ywraq-form-table-wrapper .yith-ywraq-mail-form-wrapper input.button.raq-send-request {
+  text-transform: uppercase;
+  margin-right: 0;
+  display: inline-block;
+}
+.ywraq-form-table-wrapper .yith-ywraq-mail-form-wrapper {
+  padding-bottom: 5px !important;
+}
+.ywraq-form-table-wrapper .yith-ywraq-mail-form-wrapper .form-row label {
+  font-size: 14px;
+  color: #000;
+  font-weight: 600;
+}
+
 #yith-ywraq-form .actions .button {
   float: right;
+  margin-right: 0;
 }
 #yith-ywraq-form .actions .wc-backward.button {
   float: left;
+}
+#yith-ywraq-form td.product-name ul {
+  list-style: none;
+  padding: 10px 0;
+  margin-left: 0px !important;
+}
+#yith-ywraq-form td.product-name ul li {
+  margin: 0;
+  padding: 0;
+}
+#yith-ywraq-form td.product-name ul br {
+  display: none;
+}
+
+#yith-ywraq-default-form input[type=text], #yith-ywraq-default-form input[type=email], #yith-ywraq-default-form input[type=password], #yith-ywraq-default-form select, #yith-ywraq-default-form textarea {
+  background-color: #fff;
+  border: 1px solid #ccc;
 }
 
 header.woocommerce-products-header .woocommerce-cart-notice .button,
@@ -10419,6 +10598,7 @@ header.woocommerce-products-header .woocommerce-cart-notice .button,
 header.woocommerce-products-header .woocommerce-cart-notice,
 header.woocommerce-products-header .yith-cart-message {
   text-align: left;
+  font-size: 14px;
 }
 
 .yith-cart-message {
