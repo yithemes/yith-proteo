@@ -10447,10 +10447,15 @@ ul.products li.product a.compare:not(.button) {
   min-width: 280px;
   box-shadow: 3px 0 15px rgba(0, 0, 0, 0.15);
   right: 0;
-  padding: 30px 15px 25px 15px;
+  padding: 15px 15px 25px 15px;
   background: #ffffff;
   top: calc(100%);
   transition: all ease 0.3s;
+}
+.theme-yith-proteo .widget_ywraq_list_quote .items-count,
+.theme-yith-proteo .widget_ywraq_mini_list_quote .items-count {
+  font-weight: 500;
+  margin-left: 35px;
 }
 .theme-yith-proteo .widget_ywraq_list_quote ul.yith-ywraq-list li,
 .theme-yith-proteo .widget_ywraq_mini_list_quote ul.yith-ywraq-list li {
@@ -10473,7 +10478,7 @@ ul.products li.product a.compare:not(.button) {
   background: transparent;
   color: #9E9E9E;
   display: inline-block;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: normal;
   position: absolute;
   left: 0;
@@ -10522,6 +10527,7 @@ ul.products li.product a.compare:not(.button) {
   margin: 0 auto;
   text-align: center;
   display: block;
+  font-size: 12px;
 }
 
 .theme-yith-proteo .widget_ywraq_list_quote .yith-ywraq-list-wrapper .button {

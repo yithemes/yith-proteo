@@ -74,12 +74,16 @@
         min-width: 280px;
         box-shadow: 3px 0 15px rgba(0, 0, 0, 0.15);
         right: 0;
-        padding: 30px 15px 25px 15px;
+        padding: 15px 15px 25px 15px;
         background: #ffffff;
         top: calc(100%);
         transition: all ease 0.3s;
     }
 
+    .items-count{
+        font-weight: 500;
+        margin-left: 35px;
+    }
     ul.yith-ywraq-list li {
         & {
             position: relative;
@@ -103,7 +107,7 @@
             background: transparent;
             color: #9E9E9E;
             display: inline-block;
-            font-size: 2rem;
+            font-size: 1.5rem;
             font-weight: normal;
             position: absolute;
             left: 0;
@@ -152,6 +156,7 @@
         margin: 0 auto;
         text-align: center;
         display: block;
+        font-size: 12px;
     }
 }
 
