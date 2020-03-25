@@ -4,6 +4,12 @@ MY ACCOUNT
 
 .woocommerce-account {
 
+    .entry-content p:not([class^=has]),
+    .entry-content li:not(.product)  {
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+
     .yith-proteo-my-account-sidebar {
         float: left;
         width: 25%;

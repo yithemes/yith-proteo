@@ -521,10 +521,10 @@ SELECT2
 .woocommerce a.selectBox.selectBox-dropdown {
     outline: none;
     margin-top: -5px;
-    background-color: #ffffff;
+    padding-left: 2px;
 
     .select2-selection__rendered {
-        line-height: 1;
+        line-height: normal;
     }
 }
 

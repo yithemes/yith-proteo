@@ -2,6 +2,13 @@
  * Checkout
  */
 body.woocommerce-checkout {
+
+    .entry-content p:not([class^=has]),
+    .entry-content li:not(.product)  {
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+
     .col-1, .col-2 {
         max-width: initial;
         width: 100%;
@@ -157,6 +164,8 @@ body.woocommerce-checkout {
     .woocommerce-terms-and-conditions-wrapper {
         p {
             padding: 0;
+            font-size: 1rem;
+            line-height: 1.8;
         }
     }
 
