@@ -252,7 +252,7 @@ p.stars {
         span {
             cursor: pointer;
             display: block;
-            padding: 5px 0;
+            padding: 3px 0;
         }
     }
 }
@@ -513,22 +513,45 @@ SELECT2
 
 .select2-container .select2-selection,
 .woocommerce a.selectBox.selectBox-dropdown {
-    border-width: 0 0 1px 0;
-    border-style: solid;
-    border-color: #707070;
-    border-radius: 0;
     outline: none;
-    background: transparent;
     margin-top: -5px;
-}
+    background-color: #ffffff;
 
-.select2-container--default .select2-selection--single .select2-selection__arrow {
-    margin-top: -5px;
+    .select2-selection__rendered {
+        line-height: 1;
+    }
 }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow b {
-    border-color: #1f1f1f transparent transparent transparent;
-    border-width: 7px 5px 0 5px;
+    border: none;
+    font-size: 0.8rem;
+    padding: 5px;
+    line-height: normal;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    display: contents;
+        &:before {
+            content: "\e874";
+            font-family: Linearicons-Free;
+            speak: none;
+            font-style: normal;
+            font-weight: 400;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+}
+
+.select2-container--default.select2-container--open {
+    .select2-selection__arrow b {
+        &:before {
+            content: "\e873";
+        }
+    }
 }
 
 .select2-dropdown, .selectBox-dropdown-menu {

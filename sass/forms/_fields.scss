@@ -13,7 +13,9 @@ input[type="time"],
 input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
-textarea {
+textarea,
+.select2-container .select2-selection,
+.woocommerce a.selectBox.selectBox-dropdown {
     color: $color__text-input;
     border-color: $color__border-input;
     border-width: 1px 1px 1px 1px;
