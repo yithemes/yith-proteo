@@ -130,7 +130,6 @@
         AOS.init({
             anchorPlacement: 'top-bottom'
         });
-
     });
 
     // Full screen search
@@ -222,6 +221,39 @@
         return false;
     });
 
+    // Quantity Inputs
+    $(document).on('click', '.quantity .product-qty-arrows span', function () {
+        var t = $(this),
+            input_selector = t.parents('.quantity').find('input[type="number"]'),
+            input_val = parseFloat(input_selector.val()),
+            min_val = input_selector.attr('min'),
+            max_val = input_selector.attr('max'),
+            step = input_selector.attr('step');
+
+        //clean step attr
+        if ( typeof step === 'undefined' || !step ) {
+            step = 1;
+        }
+        else {
+          step = parseFloat(step);
+        }
+
+
+        if (t.hasClass('product-qty-increase')) {
+            input_val = input_val + step;
+            if ( typeof max_val !== 'undefined' && parseFloat(max_val) < input_val ) {
+                return;
+            }
+            input_selector.val(input_val);
+
+        }else if (t.hasClass('product-qty-decrease')) {
+            input_val = input_val - step;
+            if ( typeof min_val !== 'undefined' && parseFloat(min_val) > input_val ) {
+                return;
+            }
+            input_selector.val(input_val);
+        }
+    })
 
 })
 (jQuery);

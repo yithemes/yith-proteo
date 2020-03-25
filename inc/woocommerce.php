@@ -547,7 +547,9 @@ function yith_proteo_title_order_received( $title, $id ) {
 add_filter( 'the_title', 'yith_proteo_title_order_received', 10, 2 );
 
 
-
+/**
+ * Remove WooCommerce Breadcrumb on thankyou page
+ */
 function yith_proteo_remove_thank_you_breadcrumbs() {
 
 	if ( function_exists( 'is_order_received_page' ) && is_order_received_page() ) {
@@ -556,3 +558,15 @@ function yith_proteo_remove_thank_you_breadcrumbs() {
 }
 
 add_action( 'template_redirect', 'yith_proteo_remove_thank_you_breadcrumbs' );
+
+
+function yith_proteo_customize_quantity_inputs() {
+	?>
+		<span class="product-qty-arrows">
+			<span class="product-qty-increase lnr lnr-chevron-up"></span>
+			<span class="product-qty-decrease lnr lnr-chevron-down"></span>
+		</span>
+	<?php
+}
+
+add_action( 'woocommerce_after_quantity_input_field', 'yith_proteo_customize_quantity_inputs' );
