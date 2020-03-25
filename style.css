@@ -10717,6 +10717,58 @@ header.woocommerce-products-header .yith-cart-message {
   border: 1px solid #cccccc;
 }
 
+.woocommerce .products .yith-wcdp-loop-add-to-cart-fields .button {
+  background: none;
+  border: 1px solid #448A85;
+  font-size: 14px;
+  color: #448A85;
+  text-transform: uppercase;
+  padding: 7px 14px;
+  margin-right: 0;
+  display: inline-block;
+  float: none;
+  margin-top: 5px;
+}
+.woocommerce .products .yith-wcdp-loop-add-to-cart-fields .button:hover {
+  background: none;
+  color: #448A85;
+}
+
+.yith-wcdp-single-add-to-cart-fields {
+  margin: 15px 0;
+}
+
+.single-product div.product .yith-wcdp-deposit-shipping {
+  margin: 15px 0;
+}
+.single-product div.product .yith-wcdp-deposit-shipping .yith-wcdp-shipping-form > table {
+  margin: 15px 0;
+}
+.single-product div.product .yith-wcdp-deposit-shipping .yith-wcdp-shipping-form > table td {
+  padding: 5px;
+}
+.single-product div.product .yith-wcdp-deposit-shipping .yith-wcdp-shipping-form #shipping_method {
+  list-style: none;
+  margin-bottom: 0;
+}
+.single-product div.product .yith-wcdp-deposit-shipping .yith-wcdp-shipping-form .shipping-calculator-form button {
+  background: none;
+  border: 1px solid #448A85;
+  font-size: 14px;
+  color: #448A85;
+  padding: 0.8em 1.5em 0.7em;
+}
+.single-product div.product .yith-wcdp-product-note {
+  margin: 15px 0;
+}
+
+.woocommerce-order-details .woocommerce-table tbody tr td.product-name a.yith-wcdp-order-actions {
+  color: #fff;
+}
+.woocommerce-order-details .woocommerce-table tbody tr td.product-name a.yith-wcdp-order-actions:hover {
+  text-decoration: none;
+}
+
 /**
 CF7
  */

@@ -1,0 +1,68 @@
+.woocommerce .products {
+
+	.yith-wcdp-loop-add-to-cart-fields .button{
+		background: none;
+		border: 1px solid $color__accent;
+		font-size: 14px;
+		color: $color__accent;
+		text-transform: uppercase;
+		padding: 7px 14px;
+		margin-right: 0;
+		display: inline-block;
+		float: none;
+		margin-top: 5px;
+
+		&:hover {
+			background: none;
+			color: $color__accent;
+		}
+	}
+
+}
+
+.yith-wcdp-single-add-to-cart-fields{
+	margin: 15px 0;
+}
+
+.single-product div.product {
+	.yith-wcdp-deposit-shipping {
+		margin: 15px 0;
+
+		.yith-wcdp-shipping-form {
+			& > table {
+				margin: 15px 0;
+
+				td {
+					padding: 5px;
+				}
+			}
+
+			#shipping_method {
+				list-style: none;
+				margin-bottom: 0;
+			}
+
+			.shipping-calculator-form button {
+				background: none;
+				border: 1px solid $color__accent;
+				font-size: 14px;
+				color: $color__accent;
+				padding: 0.8em 1.5em 0.7em;
+			}
+		}
+	}
+
+	.yith-wcdp-product-note{
+		margin: 15px 0;
+	}
+}
+
+.woocommerce-order-details .woocommerce-table{
+	tbody tr td.product-name a.yith-wcdp-order-actions{
+		color: #fff;
+
+		&:hover{
+			text-decoration: none;
+		}
+	}
+}
