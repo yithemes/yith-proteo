@@ -7733,7 +7733,8 @@ header.woocommerce-products-header {
 }
 
 p.woocommerce-result-count {
-  text-align: right;
+  display: inline-block;
+  margin-right: 30px;
 }
 
 /**
@@ -8171,7 +8172,12 @@ ORDERING
  */
 .woocommerce-ordering {
   margin-bottom: 50px;
-  float: right;
+  display: inline-block;
+  text-align: initial;
+}
+
+.yith-proteo-before-shop-loop {
+  text-align: right;
 }
 
 /**

@@ -560,6 +560,9 @@ function yith_proteo_remove_thank_you_breadcrumbs() {
 add_action( 'template_redirect', 'yith_proteo_remove_thank_you_breadcrumbs' );
 
 
+/**
+* Add arrows to quantity inputs
+ */
 function yith_proteo_customize_quantity_inputs() {
 	?>
 		<span class="product-qty-arrows">
@@ -570,3 +573,19 @@ function yith_proteo_customize_quantity_inputs() {
 }
 
 add_action( 'woocommerce_after_quantity_input_field', 'yith_proteo_customize_quantity_inputs' );
+
+
+
+add_action( 'woocommerce_before_shop_loop', 'yith_proteo_before_shop_loop_opener', 15 );
+add_action( 'woocommerce_before_shop_loop', 'yith_proteo_before_shop_loop_closer', 35 );
+
+function yith_proteo_before_shop_loop_opener() {
+	?>
+		<div class="yith-proteo-before-shop-loop">
+	<?php
+}
+function yith_proteo_before_shop_loop_closer() {
+	?>
+		</div>
+	<?php
+}
