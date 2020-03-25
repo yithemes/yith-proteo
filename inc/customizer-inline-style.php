@@ -142,7 +142,9 @@ function yith_proteo_inline_style() {
                 .woocommerce .products .add-request-quote-button-addons.button,
                 #yith-wacp-popup .yith-wacp-content .yith-wacp-related a.button,
                 #yith-wacp-popup .yith-wacp-content .yith-wacp-related a.button:hover,
-                 .ywraq-wrapper a.button.wc-backward{
+                .ywraq-wrapper a.button.wc-backward,
+                #yith-ywraq-form .actions .button,
+                .ywraq-quote-icon-icon_quote:hover:before{
 					color: {$main_color_shade};
 				}
 

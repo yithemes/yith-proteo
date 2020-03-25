@@ -10433,6 +10433,10 @@ ul.products li.product a.compare:not(.button) {
   width: auto;
 }
 
+.ywraq-quote-icon-icon_quote:hover:before {
+  color: #448a85;
+}
+
 .yith_ywraq_add_item_product_message,
 .yith_ywraq_add_item_response_message {
   color: #666666;
@@ -10542,6 +10546,11 @@ ul.products li.product a.compare:not(.button) {
   font-size: 14px;
   color: #777;
 }
+.theme-yith-proteo .widget_ywraq_list_quote ul.yith-ywraq-list li.no-product,
+.theme-yith-proteo .widget_ywraq_mini_list_quote ul.yith-ywraq-list li.no-product {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
 .theme-yith-proteo .widget_ywraq_list_quote .yith-ywraq-list-item a,
 .theme-yith-proteo .widget_ywraq_mini_list_quote .yith-ywraq-list-item a {
   text-decoration: none;
@@ -10574,6 +10583,7 @@ ul.products li.product a.compare:not(.button) {
   border: 0;
   padding: 0;
   margin: 20px 0 40px 0;
+  font-size: 16px;
 }
 .ywraq-wrapper a.button.wc-backward:hover {
   color: #12B995;
@@ -10604,6 +10614,10 @@ ul.products li.product a.compare:not(.button) {
 #yith-ywraq-form .actions .button {
   float: right;
   margin-right: 0;
+  color: #448a85;
+  background-color: transparent;
+  text-transform: uppercase;
+  border-width: 2px;
 }
 #yith-ywraq-form .actions .wc-backward.button {
   float: left;

@@ -30,7 +30,9 @@
     }
 
 }
-
+.ywraq-quote-icon-icon_quote:hover:before{
+    color: #448a85;
+}
 .yith_ywraq_add_item_product_message,
 .yith_ywraq_add_item_response_message {
     color: #666666;
@@ -100,8 +102,6 @@
             color: #000;
         }
 
-
-
         a.yith-ywraq-item-remove.remove {
             text-decoration: none;
             background: transparent;
@@ -143,6 +143,11 @@
             font-size: 14px;
             color: #777;
         }
+
+        &.no-product{
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
     }
 
     .yith-ywraq-list-item a {
@@ -179,7 +184,7 @@
         border: 0;
         padding: 0;
         margin: 20px 0 40px 0;
-
+        font-size: 16px;
         &:hover{
             color:#12B995;
         }
@@ -218,6 +223,10 @@
     .actions .button {
         float: right;
         margin-right: 0;
+        color: #448a85;
+        background-color: transparent;
+        text-transform: uppercase;
+        border-width:2px;
     }
 
     .actions .wc-backward.button {
