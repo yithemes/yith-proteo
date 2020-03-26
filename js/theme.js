@@ -102,7 +102,7 @@
         t.parent().addClass('checked');
     });
 
-    $(document).on('ready yith_wfbt_form_updated yith_wfbt_modal_opened yith_wcwl_popup_opened updated_checkout yith_quick_view_loaded yith_wcwl_fragments_loaded yith_wcwl_init_after_ajax yith_welrp_popup_template_loaded', function () {
+    $(document).on('ready yith_wfbt_form_updated yith_wfbt_modal_opened yith_wcwl_popup_opened updated_checkout yith_quick_view_loaded yith_wcwl_fragments_loaded yith_wcwl_init_after_ajax yith_welrp_popup_template_loaded yith_wcdp_updated_deposit_form', function () {
 
         if (typeof $.fn.selectWoo !== 'undefined') {
             $('select').filter(':visible').selectWoo(
