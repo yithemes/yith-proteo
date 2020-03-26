@@ -10457,8 +10457,8 @@ ul.products li.product a.compare:not(.button) {
   width: auto;
 }
 
-.woocommerce .products .add-request-quote-button.button,
-.woocommerce .products .add-request-quote-button-addons.button {
+.theme-yith-proteo.woocommerce .products .add-request-quote-button.button,
+.theme-yith-proteo.woocommerce .products .add-request-quote-button-addons.button {
   background: none;
   border: 1px solid #448a85;
   font-size: 14px;
@@ -10469,16 +10469,16 @@ ul.products li.product a.compare:not(.button) {
   display: inline-block;
   float: none;
 }
-.woocommerce .products .add-request-quote-button.button:hover,
-.woocommerce .products .add-request-quote-button-addons.button:hover {
-  background: none;
-  color: #448a85;
+.theme-yith-proteo.woocommerce .products .add-request-quote-button.button:hover,
+.theme-yith-proteo.woocommerce .products .add-request-quote-button-addons.button:hover {
+  background: #448a85;
+  color: #fff;
 }
-.woocommerce .products .yith-ywraq-add-to-quote,
-.woocommerce .products .yith_ywraq_add_item_browse_message {
+.theme-yith-proteo.woocommerce .products .yith-ywraq-add-to-quote,
+.theme-yith-proteo.woocommerce .products .yith_ywraq_add_item_browse_message {
   font-size: 14px;
 }
-.woocommerce .products .yith-ywraq-add-to-quote img {
+.theme-yith-proteo.woocommerce .products .yith-ywraq-add-to-quote img {
   width: auto;
 }
 
@@ -10667,6 +10667,10 @@ ul.products li.product a.compare:not(.button) {
   background-color: transparent;
   text-transform: uppercase;
   border-width: 2px;
+}
+#yith-ywraq-form .actions .button:hover {
+  color: #fff;
+  background-color: #448a85;
 }
 #yith-ywraq-form .actions .wc-backward.button {
   float: left;

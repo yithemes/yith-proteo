@@ -1,4 +1,4 @@
-.woocommerce .products {
+.theme-yith-proteo.woocommerce .products {
 
     .add-request-quote-button.button,
     .add-request-quote-button-addons.button {
@@ -13,8 +13,8 @@
         float: none;
 
         &:hover {
-            background: none;
-            color: #448a85;
+            background: #448a85;
+            color: #fff;
         }
     }
 
@@ -227,6 +227,10 @@
         background-color: transparent;
         text-transform: uppercase;
         border-width:2px;
+        &:hover{
+            color: #fff;
+            background-color: #448a85;
+        }
     }
 
     .actions .wc-backward.button {

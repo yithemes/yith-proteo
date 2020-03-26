@@ -148,8 +148,7 @@ function yith_proteo_inline_style() {
 					color: {$main_color_shade};
 				}
 
-				.woocommerce .products .add-request-quote-button.button:hover,
-                .woocommerce .products .add-request-quote-button-addons.button:hover,
+
                 .ywraq-wrapper a.button.wc-backward:hover,
 				a:hover, a:focus, a:active, table.cart tbody tr td.actions button[name=update_cart]:hover {
 				    color: {$general_link_hover_color};
@@ -207,6 +206,7 @@ function yith_proteo_inline_style() {
 				input[type=datetime]:focus,
 				input[type=datetime-local]:focus,
 				input[type=color]:focus,
+				.theme-yith-proteo.woocommerce .products .add-request-quote-button.button,
 				textarea:focus{
 					border-color: {$main_color_shade};
 				}
@@ -240,7 +240,9 @@ function yith_proteo_inline_style() {
 				.button.ywgc_apply_gift_card_button:hover,
 				.checkout_coupon button[name=apply_coupon]:hover,
 				table.cart tbody tr td.actions .coupon button:hover, table.cart tfoot tr td.actions .coupon button:hover, table.shop_table tbody tr td.actions .coupon button:hover, table.shop_table tfoot tr td.actions .coupon button:hover,
-				.widget_shopping_cart .yith-proteo-mini-cart-content .woocommerce-mini-cart__buttons a.checkout {
+				.widget_shopping_cart .yith-proteo-mini-cart-content .woocommerce-mini-cart__buttons a.checkout,
+				.woocommerce .products .add-request-quote-button.button:hover,
+				#yith-ywraq-form .actions .button:hover{
 					background-color: {$main_color_shade};
 				}
 
