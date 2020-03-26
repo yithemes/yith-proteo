@@ -1,0 +1,176 @@
+.yith-wcaf {
+	/* REGISTRATION FORM */
+	&.yith-wcaf-registration-form {
+		.col2-set.u-columns {
+			.col-1, .col-2 {
+				width: 50%;
+				float: left;
+				max-width: initial;
+				position: relative;
+			}
+
+			form {
+				padding: 25px 15px 15px;
+				margin-bottom: 35px;
+				border: 1px solid;
+				position: relative;
+
+				&.register {
+					border: none;
+					background: #ebebeb;
+
+					&:before {
+						content: '';
+						display: block;
+						right: -4000px;
+						width: 4000px;
+						top: 0;
+						background: #ebebeb;
+						bottom: 0;
+						position: absolute;
+					}
+				}
+			}
+		}
+	}
+
+	/* LINK GENERATOR */
+	&.yith-wcaf-link-generator {
+		.copy-trigger{
+			background: none;
+			border: 1px solid $color__accent;
+			color: $color__accent;
+			border-radius: 50px;
+			padding: 0 10px;
+			margin: 0 3px;
+			text-transform: uppercase;
+			font-size: .7rem;
+			line-height: 1.5rem;
+
+			&:hover{
+				color: #fff;
+				background: $color__accent;
+			}
+		}
+
+		.yith-wcaf-share{
+			ul {
+				margin: 0 -5px;
+
+				li {
+					padding: 0 5px;
+
+					a {
+
+						color: inherit;
+						text-decoration: none;
+
+						&:hover {
+							color: $color__accent;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	/* DASHBOARD NAVIGATION MENU */
+	.yith-wcaf-navigation-menu {
+		background: #f9f9f9;
+		padding: 25px 30px 15px;
+		position: relative;
+
+		ul.dashboard-links {
+			list-style: none;
+			padding: 0;
+
+			&:before {
+				content: '';
+				display: block;
+				right: -4000px;
+				width: 4000px;
+				top: 0;
+				background: #f9f9f9;
+				bottom: 0;
+				position: absolute;
+			}
+
+			li {
+				&.active {
+					color: $color__accent;
+				}
+
+				a {
+					display: block;
+					padding: 15px 0;
+					color: inherit;
+					font-size: 1rem;
+					font-weight: 600;
+					text-decoration: none;
+
+					&:hover {
+						color: $color__accent;
+					}
+				}
+			}
+		}
+	}
+
+	/* DASHBOARD TABLES */
+	table.shop_table{
+		thead tr {
+			th {
+				text-align: left;
+
+				a {
+					color: inherit;
+					text-decoration: none;
+
+					&:hover{
+						color: $color__accent;
+					}
+				}
+			}
+		}
+		tbody tr {
+			th {
+				text-align: left;
+			}
+
+			&:nth-child(2n+1) {
+				background: #f9f9f9;
+			}
+		}
+
+		&.stat_table{
+			tbody tr {
+				td {
+					padding: 15px
+				}
+
+				th{
+					border-bottom: 1px solid #ccc;
+				}
+
+				&:first-child{
+					td{
+						border-top: none;
+					}
+				}
+
+				&:last-child{
+					td, th{
+						border: none;
+					}
+				}
+			}
+		}
+	}
+
+	/* DASHBOARD FILTERS */
+	.filters-row{
+		.select2-selection{
+			min-width: 200px;
+		}
+	}
+}

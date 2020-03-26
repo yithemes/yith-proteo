@@ -8202,7 +8202,7 @@ SELECT2
 .woocommerce a.selectBox.selectBox-dropdown {
   outline: none;
   margin-top: -5px;
-  padding-left: 2px;
+  padding: 8px 10px 6px 2px;
 }
 .select2-container .select2-selection .select2-selection__rendered,
 .woocommerce a.selectBox.selectBox-dropdown .select2-selection__rendered {
@@ -10719,6 +10719,132 @@ header.woocommerce-products-header .yith-cart-message {
   padding: 7px 5px;
   border-radius: 0;
   border: 1px solid #cccccc;
+}
+
+.yith-wcaf {
+  /* REGISTRATION FORM */
+  /* LINK GENERATOR */
+  /* DASHBOARD NAVIGATION MENU */
+  /* DASHBOARD TABLES */
+  /* DASHBOARD FILTERS */
+}
+.yith-wcaf.yith-wcaf-registration-form .col2-set.u-columns .col-1, .yith-wcaf.yith-wcaf-registration-form .col2-set.u-columns .col-2 {
+  width: 50%;
+  float: left;
+  max-width: initial;
+  position: relative;
+}
+.yith-wcaf.yith-wcaf-registration-form .col2-set.u-columns form {
+  padding: 25px 15px 15px;
+  margin-bottom: 35px;
+  border: 1px solid;
+  position: relative;
+}
+.yith-wcaf.yith-wcaf-registration-form .col2-set.u-columns form.register {
+  border: none;
+  background: #ebebeb;
+}
+.yith-wcaf.yith-wcaf-registration-form .col2-set.u-columns form.register:before {
+  content: "";
+  display: block;
+  right: -4000px;
+  width: 4000px;
+  top: 0;
+  background: #ebebeb;
+  bottom: 0;
+  position: absolute;
+}
+.yith-wcaf.yith-wcaf-link-generator .copy-trigger {
+  background: none;
+  border: 1px solid #448A85;
+  color: #448A85;
+  border-radius: 50px;
+  padding: 0 10px;
+  margin: 0 3px;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  line-height: 1.5rem;
+}
+.yith-wcaf.yith-wcaf-link-generator .copy-trigger:hover {
+  color: #fff;
+  background: #448A85;
+}
+.yith-wcaf.yith-wcaf-link-generator .yith-wcaf-share ul {
+  margin: 0 -5px;
+}
+.yith-wcaf.yith-wcaf-link-generator .yith-wcaf-share ul li {
+  padding: 0 5px;
+}
+.yith-wcaf.yith-wcaf-link-generator .yith-wcaf-share ul li a {
+  color: inherit;
+  text-decoration: none;
+}
+.yith-wcaf.yith-wcaf-link-generator .yith-wcaf-share ul li a:hover {
+  color: #448A85;
+}
+.yith-wcaf .yith-wcaf-navigation-menu {
+  background: #f9f9f9;
+  padding: 25px 30px 15px;
+  position: relative;
+}
+.yith-wcaf .yith-wcaf-navigation-menu ul.dashboard-links {
+  list-style: none;
+  padding: 0;
+}
+.yith-wcaf .yith-wcaf-navigation-menu ul.dashboard-links:before {
+  content: "";
+  display: block;
+  right: -4000px;
+  width: 4000px;
+  top: 0;
+  background: #f9f9f9;
+  bottom: 0;
+  position: absolute;
+}
+.yith-wcaf .yith-wcaf-navigation-menu ul.dashboard-links li.active {
+  color: #448A85;
+}
+.yith-wcaf .yith-wcaf-navigation-menu ul.dashboard-links li a {
+  display: block;
+  padding: 15px 0;
+  color: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+.yith-wcaf .yith-wcaf-navigation-menu ul.dashboard-links li a:hover {
+  color: #448A85;
+}
+.yith-wcaf table.shop_table thead tr th {
+  text-align: left;
+}
+.yith-wcaf table.shop_table thead tr th a {
+  color: inherit;
+  text-decoration: none;
+}
+.yith-wcaf table.shop_table thead tr th a:hover {
+  color: #448A85;
+}
+.yith-wcaf table.shop_table tbody tr th {
+  text-align: left;
+}
+.yith-wcaf table.shop_table tbody tr:nth-child(2n+1) {
+  background: #f9f9f9;
+}
+.yith-wcaf table.shop_table.stat_table tbody tr td {
+  padding: 15px;
+}
+.yith-wcaf table.shop_table.stat_table tbody tr th {
+  border-bottom: 1px solid #ccc;
+}
+.yith-wcaf table.shop_table.stat_table tbody tr:first-child td {
+  border-top: none;
+}
+.yith-wcaf table.shop_table.stat_table tbody tr:last-child td, .yith-wcaf table.shop_table.stat_table tbody tr:last-child th {
+  border: none;
+}
+.yith-wcaf .filters-row .select2-selection {
+  min-width: 200px;
 }
 
 .woocommerce .products .yith-wcdp-loop-add-to-cart-fields .button {
