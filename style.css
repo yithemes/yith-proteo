@@ -7528,6 +7528,9 @@ body.woocommerce-cart .cart-collaterals .cart_totals table #shipping_method, bod
 body.woocommerce-cart .cart-collaterals .cart_totals table #shipping_method .amount, body.woocommerce-cart .cart-collaterals .cart_totals table .woocommerce-shipping-destination .amount {
   font-weight: normal;
 }
+body.woocommerce-cart .cart-collaterals .cart_totals table .woocommerce-shipping-destination {
+  margin: 5px 0;
+}
 body.woocommerce-cart .cart-collaterals .cart_totals table .shipping-calculator-form p {
   padding-right: 0;
   line-height: normal;

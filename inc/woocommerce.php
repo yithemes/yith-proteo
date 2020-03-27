@@ -511,6 +511,10 @@ function yith_proteo_limit_woocommerce_short_description( $post_excerpt ) {
 		return $post_excerpt;
 	}
 
+	if ( is_product_taxonomy() ) {
+		return $post_excerpt;
+	}
+
 	$post_excerpt = wp_strip_all_tags( $post_excerpt );
 
 	if ( strlen( $post_excerpt ) <= $length ) {
