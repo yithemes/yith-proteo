@@ -7192,6 +7192,7 @@ ul.products li.product .select_option .yith_wccl_value, ul.products li.wc-block-
 }
 .single-product div.product .woocommerce-product-gallery .flex-viewport {
   margin-bottom: 2.7rem;
+  height: auto !important;
 }
 .single-product div.product .woocommerce-product-gallery .flex-control-thumbs {
   margin: 0 -15px;
