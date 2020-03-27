@@ -26,6 +26,7 @@ ul.products, .wc-block-grid ul.wc-block-grid__products {
         a {
             text-decoration: none;
             display: block;
+            text-align: center;
         }
 
         .yith-wcwl-add-to-wishlist {
@@ -79,7 +80,7 @@ ul.products, .wc-block-grid ul.wc-block-grid__products {
             margin-bottom: 5px;
             margin-top: 5px;
             color: #404040;
-            text-align: left;
+            text-align: center;
 
             &:visited {
                 color: #404040;
@@ -90,7 +91,6 @@ ul.products, .wc-block-grid ul.wc-block-grid__products {
             text-transform: uppercase;
             font-size: 1.125rem;
             font-weight: normal;
-            text-align: center;
 
             mark {
                 background: none;
