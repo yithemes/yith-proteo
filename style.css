@@ -5437,6 +5437,7 @@ a:hover, a:active {
   text-transform: none;
   visibility: hidden;
   opacity: 0;
+  pointer-events: none;
 }
 .main-navigation ul ul:before {
   content: "";
@@ -5508,6 +5509,7 @@ a:hover, a:active {
   top: calc(100% + 10px);
   visibility: visible;
   opacity: 1;
+  pointer-events: auto;
 }
 .main-navigation li {
   display: inline-block;

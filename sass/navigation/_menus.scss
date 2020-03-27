@@ -30,6 +30,7 @@
             text-transform: none;
             visibility: hidden;
             opacity: 0;
+            pointer-events: none;
 
             &:before {
                 content: '';
@@ -123,6 +124,7 @@
             top: calc(100% + 10px);
             visibility: visible;
             opacity: 1;
+            pointer-events: auto;
         }
     }
 
