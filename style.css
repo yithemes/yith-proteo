@@ -5311,7 +5311,6 @@ span.checkboxbutton {
 }
 span.checkboxbutton input[type=checkbox] {
   opacity: 0;
-  top: 5px;
   position: absolute;
   left: 0;
   right: 0;
@@ -5346,8 +5345,18 @@ span.checkboxbutton.checked:before {
 /**
 Radio buttons
  */
+span.radiobutton {
+  position: relative;
+}
 span.radiobutton input[type=radio] {
-  display: none;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 23px;
+  cursor: pointer;
+  width: 23px;
 }
 span.radiobutton:before {
   content: "";
@@ -6923,6 +6932,7 @@ table.cart tbody tr.shipping ul, table.cart tfoot tr.shipping ul, table.shop_tab
 }
 table.cart tbody tr.shipping ul label, table.cart tfoot tr.shipping ul label, table.shop_table tbody tr.shipping ul label, table.shop_table tfoot tr.shipping ul label {
   font-weight: bold;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 48em) {
@@ -7512,6 +7522,8 @@ body.woocommerce-cart .cart-collaterals .cart_totals table tr.order-total td, bo
 body.woocommerce-cart .cart-collaterals .cart_totals table #shipping_method, body.woocommerce-cart .cart-collaterals .cart_totals table .woocommerce-shipping-destination {
   font-size: 0.875rem;
   line-height: normal;
+  text-align: initial;
+  padding-left: 50px;
 }
 body.woocommerce-cart .cart-collaterals .cart_totals table #shipping_method .amount, body.woocommerce-cart .cart-collaterals .cart_totals table .woocommerce-shipping-destination .amount {
   font-weight: normal;
@@ -8208,7 +8220,7 @@ SELECT2
 }
 .select2-container .select2-selection .select2-selection__rendered,
 .woocommerce a.selectBox.selectBox-dropdown .select2-selection__rendered {
-  line-height: normal;
+  line-height: 1.8;
 }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow b {

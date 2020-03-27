@@ -126,7 +126,7 @@ span.checkboxbutton {
 
     input[type="checkbox"] {
         opacity: 0;
-        top: 5px;
+        //top: 5px;
         position: absolute;
         left: 0;
         right: 0;
@@ -167,10 +167,19 @@ Radio buttons
  */
 
 span.radiobutton {
-    input[type="radio"] {
-        display: none;
+    position: relative;
 
-    }
+        input[type="radio"] {
+            opacity: 0;
+            //top: 5px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 23px;
+            cursor: pointer;
+            width: 23px;
+        }
 
     &:before {
         content: "";

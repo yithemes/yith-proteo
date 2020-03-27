@@ -89,6 +89,8 @@ body.woocommerce-cart {
                 #shipping_method, .woocommerce-shipping-destination {
                     font-size: 0.875rem;
                     line-height: normal;
+                    text-align: initial;
+                    padding-left: 50px;
 
                     .amount {
                         font-weight: normal;
