@@ -323,7 +323,8 @@ function yith_proteo_inline_style() {
                 input[type=\"submit\"],
                 .button,
                 .widget a.button,
-                .button-style-1:not(.wp-block-button), .button-style-1 a {
+                .button-style-1:not(.wp-block-button), .button-style-1 a,
+                input[type=file]::-webkit-file-upload-button {
 					background: none;
                     background-color: {$button_1_bg_color};
 					border-color: {$button_1_border_color};
@@ -340,7 +341,8 @@ function yith_proteo_inline_style() {
                  .button.flat:hover,
 				 .yith_wcwl_footer_additional_action .ask-an-estimate-button:hover,
 				 .widget_shopping_cart .yith-proteo-mini-cart-content .woocommerce-mini-cart__buttons a.checkout:hover,
-				 .button-style-1:not(.wp-block-button):hover, .button-style-1 a:hover {
+				 .button-style-1:not(.wp-block-button):hover, .button-style-1 a:hover,
+				 input[type=file]:hover::-webkit-file-upload-button{
 					background: none;
                     background-color: {$button_1_bg_hover_color};
 					border-color: {$button_1_border_hover_color};

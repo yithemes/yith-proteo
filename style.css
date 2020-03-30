@@ -5163,6 +5163,7 @@ input[type=datetime],
 input[type=datetime-local],
 input[type=color],
 textarea,
+input[type=file],
 .select2-container .select2-selection,
 .woocommerce a.selectBox.selectBox-dropdown {
   color: #666;
@@ -5194,6 +5195,7 @@ input[type=datetime]:focus,
 input[type=datetime-local]:focus,
 input[type=color]:focus,
 textarea:focus,
+input[type=file]:focus,
 .select2-container .select2-selection:focus,
 .woocommerce a.selectBox.selectBox-dropdown:focus {
   outline-color: transparent;
@@ -5218,6 +5220,7 @@ input[type=datetime] + .separator,
 input[type=datetime-local] + .separator,
 input[type=color] + .separator,
 textarea + .separator,
+input[type=file] + .separator,
 .select2-container .select2-selection + .separator,
 .woocommerce a.selectBox.selectBox-dropdown + .separator {
   height: 2px;
@@ -5245,6 +5248,7 @@ input[type=datetime]:focus + .separator,
 input[type=datetime-local]:focus + .separator,
 input[type=color]:focus + .separator,
 textarea:focus + .separator,
+input[type=file]:focus + .separator,
 .select2-container .select2-selection:focus + .separator,
 .woocommerce a.selectBox.selectBox-dropdown:focus + .separator {
   transform: scaleX(1) translateY(-2px);
@@ -5402,6 +5406,47 @@ span.radiobutton:before {
 span.radiobutton.checked:before {
   background: #448A85;
   background-clip: content-box !important;
+}
+
+/**
+File inputs
+ */
+input[type=file] {
+  padding: 2px;
+  font-size: 0.75em;
+  position: relative;
+}
+
+input[type=file]::-webkit-file-upload-button {
+  background-color: #448A85;
+  border: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all ease 0.3s;
+  font-size: 0.75em;
+  padding: 7px 10px;
+  outline: none;
+  min-height: 40px;
+  font-weight: 600;
+}
+
+input[type=file]::-ms-browse {
+  background-color: #448A85;
+  border: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all ease 0.3s;
+  font-size: 0.75em;
+  padding: 7px 10px;
+  outline: none;
+  min-height: 40px;
+  font-weight: 600;
+}
+
+input[type=file]:hover::-webkit-file-upload-button {
+  background-color: #4ac4aa;
 }
 
 /* Chrome, Safari, Edge, Opera */
