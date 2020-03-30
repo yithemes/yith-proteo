@@ -5424,7 +5424,7 @@ input[type=file]::-webkit-file-upload-button {
   text-transform: uppercase;
   cursor: pointer;
   transition: all ease 0.3s;
-  font-size: 0.75em;
+  font-size: 0.9375rem;
   padding: 7px 10px;
   outline: none;
   min-height: 40px;
@@ -5438,7 +5438,7 @@ input[type=file]::-ms-browse {
   text-transform: uppercase;
   cursor: pointer;
   transition: all ease 0.3s;
-  font-size: 0.75em;
+  font-size: 0.9375rem;
   padding: 7px 10px;
   outline: none;
   min-height: 40px;
