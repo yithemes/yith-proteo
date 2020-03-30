@@ -189,7 +189,7 @@ function yith_proteo_inline_style() {
 				.checkout_coupon button[name=apply_coupon],
 				.with-tooltip .yith-wcwl-tooltip:before,
 				.with-dropdown .with-tooltip .yith-wcwl-tooltip:before,
-				.woocommerce .products .add-request-quote-button.button, 
+				.woocommerce .products .add-request-quote-button.button,
 				.woocommerce .products .add-request-quote-button-addons.button
 				input[type=text]:focus,
 				input[type=email]:focus,
@@ -207,7 +207,8 @@ function yith_proteo_inline_style() {
 				input[type=datetime-local]:focus,
 				input[type=color]:focus,
 				.theme-yith-proteo.woocommerce .products .add-request-quote-button.button,
-				textarea:focus{
+				textarea:focus,
+				span.checkboxbutton.checked:before {
 					border-color: {$main_color_shade};
 				}
 

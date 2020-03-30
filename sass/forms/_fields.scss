@@ -171,13 +171,16 @@ span.checkboxbutton {
         cursor: pointer;
         color: $color__accent;
         margin-bottom: 5px;
-        transition: all ease 0.3s;
+        transition: background-color ease 0.3s;
     }
 
     &.checked:before {
-        content: '✔';
+        content: '';
         background: $color__accent;
+        background-image: url("img/whitecheck.svg") !important;
         color: #ffffff;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
     }
 }
 

@@ -5354,12 +5354,15 @@ span.checkboxbutton:before {
   cursor: pointer;
   color: #448A85;
   margin-bottom: 5px;
-  transition: all ease 0.3s;
+  transition: background-color ease 0.3s;
 }
 span.checkboxbutton.checked:before {
-  content: "✔";
+  content: "";
   background: #448A85;
+  background-image: url("img/whitecheck.svg") !important;
   color: #ffffff;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
 }
 
 /**
