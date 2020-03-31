@@ -5456,7 +5456,7 @@ input.hasDatepicker {
   background-image: url(img/calendar.svg);
   background-position: calc(100% - 15px) 50%;
   background-repeat: no-repeat;
-  background-size: 26px;
+  background-size: 20px;
 }
 
 #ui-datepicker-div {
