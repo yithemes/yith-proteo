@@ -144,7 +144,9 @@ function yith_proteo_inline_style() {
                 #yith-wacp-popup .yith-wacp-content .yith-wacp-related a.button:hover,
                 .ywraq-wrapper a.button.wc-backward,
                 #yith-ywraq-form .actions .button,
-                .ywraq-quote-icon-icon_quote:hover:before{
+                .ywraq-quote-icon-icon_quote:hover:before, 
+                #ui-datepicker-div .ui-datepicker-calendar tbody td a.ui-state-hover,
+                #ui-datepicker-div .ui-datepicker-calendar tbody td a.ui-state-highlight {
 					color: {$main_color_shade};
 				}
 
@@ -208,7 +210,10 @@ function yith_proteo_inline_style() {
 				input[type=color]:focus,
 				.theme-yith-proteo.woocommerce .products .add-request-quote-button.button,
 				textarea:focus,
-				span.checkboxbutton.checked:before {
+				span.checkboxbutton.checked:before, 
+				#ui-datepicker-div .ui-datepicker-calendar tbody td a.ui-state-active,
+				#ui-datepicker-div .ui-datepicker-calendar tbody td a.ui-state-hover, 
+				#ui-datepicker-div .ui-datepicker-calendar tbody td a.ui-state-highlight {
 					border-color: {$main_color_shade};
 				}
 
@@ -261,7 +266,8 @@ function yith_proteo_inline_style() {
 				.pswp__bg,
 				.widget_price_filter .ui-slider .ui-slider-handle,
 				.widget_price_filter .ui-slider .ui-slider-range,
-				.with-tooltip .yith-wcwl-tooltip {
+				.with-tooltip .yith-wcwl-tooltip,
+				#ui-datepicker-div .ui-datepicker-calendar tbody td a.ui-state-active{
 					background: {$main_color_shade};
 				}
 

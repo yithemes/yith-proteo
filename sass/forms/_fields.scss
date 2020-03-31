@@ -271,6 +271,141 @@ input[type="file"]:hover::-webkit-file-upload-button {
 	background-color: $color__border-button-hover;
 }
 
+/**
+Date fields
+ */
+input.hasDatepicker {
+	background-image: url(img/calendar.svg);
+	background-position: calc(100% - 15px) 50%;
+	background-repeat: no-repeat;
+	background-size: 26px;
+}
+
+#ui-datepicker-div {
+	background: #ffffff;
+	border-radius: 0;
+	color: inherit;
+	font-family: inherit;
+	box-shadow: 3px 0 15px rgba(0, 0, 0, 0.15);
+	border: none;
+
+	.ui-datepicker-header {
+		border: none;
+		background: none;
+		color: inherit;
+		padding: 0;
+		margin: 10px 0;
+
+		a {
+			color: inherit;
+			text-align: center;
+			opacity: 0.8;
+			top: 2px;
+
+			&.ui-state-hover, &.ui-state-focus {
+				border: none;
+				background: none;
+				opacity: 1;
+			}
+
+			&:hover {
+				color: $color__link-hover;
+				opacity: 1;
+			}
+
+			&[data-handler="prev"] {
+				left: 2px;
+
+				&:before {
+					content: "\e875";
+					font-family: Linearicons-Free;
+					font-family: Linearicons-Free;
+					speak: none;
+					font-style: normal;
+					font-variant: normal;
+					text-transform: none;
+					line-height: 1;
+					cursor: pointer;
+					font-size: 12px;
+				}
+
+				span {
+					display: none;
+
+				}
+			}
+
+			&[data-handler="next"] {
+				right: 2px;
+
+				&:before {
+					content: "\e876";
+					font-family: Linearicons-Free;
+					font-family: Linearicons-Free;
+					speak: none;
+					font-style: normal;
+					font-variant: normal;
+					text-transform: none;
+					line-height: 1;
+					cursor: pointer;
+					font-size: 12px;
+				}
+
+				span {
+					display: none;
+				}
+			}
+
+		}
+	}
+
+	.ui-datepicker-calendar {
+		tbody {
+			td {
+				a {
+					transition: all ease 0.3s;
+					background: #f7f7f7;
+					border: 1px solid #efefef;
+					color: #616161;
+					font-weight: 600;
+					font-size: 14px;
+
+					&.ui-datepicker-unselectable {
+						background: #f7f7f7;
+						border: 1px solid #efefef;
+						color: #c5c5c5;
+					}
+
+					&.ui-state-hover {
+						color: $color__accent;
+						background: #ffffff;
+						border: 1px solid $color__accent;
+					}
+
+					&.ui-state-active {
+						color: #ffffff;
+						background: $color__accent;
+						border: 1px solid $color__accent;
+						&:hover {
+							color: #ffffff;
+						}
+					}
+
+					&.ui-state-highlight {
+						color: $color__accent;
+						background: #ffffff;
+						border: 1px solid $color__accent;
+					}
+				}
+
+				&.ui-state-disabled {
+					opacity: 0.5;
+				}
+			}
+		}
+	}
+}
+
 
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,

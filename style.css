@@ -6,7 +6,7 @@ Author: YITH
 Author URI: https://yithemes.com
 Description: Proteo is a sleek, modern and “Gutenberg-friendly” e-commerce theme. Developed with a beautiful UI and a minimal design, is perfect for each kind of shop. Easy to manage and to customize, Proteo is the best solution if you want a complete e-commerce template and start quickly to sell your products with WooCommerce without a technical knowledge. Use it also for corporate site or a blog: there are no limits about what you can do with a beautiful and usable theme like this! Main features: Colors and Typography customization (Google font support), Logo customization, 3 different Header layouts, Advanced customizer theme options, Sidebar Management, Sidebar Chooser on each page and product, Page title icons, Top Bar Management, Easy main color shade chooser, Buttons style management (gradient buttons support), Footer management with multiple sidebars, WooCommerce support, Shop Theme Options, Custom WooCommerce messages and animated WooCommerce alert notices, Two cart page layouts, Bootstrap grid system, CSS animations, Gutenberg support, Responsive, Fullscreen search, Multilevel menus, Support to all YITH plugins, SVG icons for HiDPI screens, Translation Ready. <a href="https://proteo.yithemes.com/about-proteo/" rel="nofollow" target="_blank">Discover more ></a> | <a href="https://proteo.yithemes.com/" rel="nofollow" target="_blank">Check our live demo ></a>
 
-Version: 1.0.13
+Version: 1.0.14
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: yith-proteo
@@ -5447,6 +5447,117 @@ input[type=file]::-ms-browse {
 
 input[type=file]:hover::-webkit-file-upload-button {
   background-color: #4ac4aa;
+}
+
+/**
+Date fields
+ */
+input.hasDatepicker {
+  background-image: url(img/calendar.svg);
+  background-position: calc(100% - 15px) 50%;
+  background-repeat: no-repeat;
+  background-size: 26px;
+}
+
+#ui-datepicker-div {
+  background: #ffffff;
+  border-radius: 0;
+  color: inherit;
+  font-family: inherit;
+  box-shadow: 3px 0 15px rgba(0, 0, 0, 0.15);
+  border: none;
+}
+#ui-datepicker-div .ui-datepicker-header {
+  border: none;
+  background: none;
+  color: inherit;
+  padding: 0;
+  margin: 10px 0;
+}
+#ui-datepicker-div .ui-datepicker-header a {
+  color: inherit;
+  text-align: center;
+  opacity: 0.8;
+  top: 2px;
+}
+#ui-datepicker-div .ui-datepicker-header a.ui-state-hover, #ui-datepicker-div .ui-datepicker-header a.ui-state-focus {
+  border: none;
+  background: none;
+  opacity: 1;
+}
+#ui-datepicker-div .ui-datepicker-header a:hover {
+  color: #1A4E43;
+  opacity: 1;
+}
+#ui-datepicker-div .ui-datepicker-header a[data-handler=prev] {
+  left: 2px;
+}
+#ui-datepicker-div .ui-datepicker-header a[data-handler=prev]:before {
+  content: "";
+  font-family: Linearicons-Free;
+  font-family: Linearicons-Free;
+  speak: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  cursor: pointer;
+  font-size: 12px;
+}
+#ui-datepicker-div .ui-datepicker-header a[data-handler=prev] span {
+  display: none;
+}
+#ui-datepicker-div .ui-datepicker-header a[data-handler=next] {
+  right: 2px;
+}
+#ui-datepicker-div .ui-datepicker-header a[data-handler=next]:before {
+  content: "";
+  font-family: Linearicons-Free;
+  font-family: Linearicons-Free;
+  speak: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  cursor: pointer;
+  font-size: 12px;
+}
+#ui-datepicker-div .ui-datepicker-header a[data-handler=next] span {
+  display: none;
+}
+#ui-datepicker-div .ui-datepicker-calendar tbody td a {
+  transition: all ease 0.3s;
+  background: #f7f7f7;
+  border: 1px solid #efefef;
+  color: #616161;
+  font-weight: 600;
+  font-size: 14px;
+}
+#ui-datepicker-div .ui-datepicker-calendar tbody td a.ui-datepicker-unselectable {
+  background: #f7f7f7;
+  border: 1px solid #efefef;
+  color: #c5c5c5;
+}
+#ui-datepicker-div .ui-datepicker-calendar tbody td a.ui-state-hover {
+  color: #448A85;
+  background: #ffffff;
+  border: 1px solid #448A85;
+}
+#ui-datepicker-div .ui-datepicker-calendar tbody td a.ui-state-active {
+  color: #ffffff;
+  background: #448A85;
+  border: 1px solid #448A85;
+}
+#ui-datepicker-div .ui-datepicker-calendar tbody td a.ui-state-active:hover {
+  color: #ffffff;
+}
+#ui-datepicker-div .ui-datepicker-calendar tbody td a.ui-state-highlight {
+  color: #448A85;
+  background: #ffffff;
+  border: 1px solid #448A85;
+}
+#ui-datepicker-div .ui-datepicker-calendar tbody td.ui-state-disabled {
+  opacity: 0.5;
 }
 
 /* Chrome, Safari, Edge, Opera */
