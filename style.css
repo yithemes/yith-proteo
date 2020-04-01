@@ -10928,6 +10928,7 @@ header.woocommerce-products-header .yith-cart-message {
   border: 1px solid #cccccc;
 }
 
+/* SHORTCODES */
 .yith-wcaf {
   /* REGISTRATION FORM */
   /* LINK GENERATOR */
@@ -11052,6 +11053,42 @@ header.woocommerce-products-header .yith-cart-message {
 }
 .yith-wcaf .filters-row .select2-selection {
   min-width: 200px;
+}
+
+/* DATEPICKER */
+.yith-wcaf-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-title {
+  font-size: 1.2em;
+}
+.yith-wcaf-datepicker.ui-datepicker .ui-datepicker-buttonpane button {
+  background: none;
+  border: 1px solid #448A85;
+  color: #448A85;
+  border-radius: 50px;
+  padding: 0 10px;
+  margin: 0 3px;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  line-height: 1.5rem;
+}
+.yith-wcaf-datepicker.ui-datepicker .ui-datepicker-buttonpane button:hover {
+  color: #fff;
+  background: #448A85;
+}
+.yith-wcaf-datepicker.ui-datepicker .ui-datepicker-buttonpane button:last-child {
+  margin-right: 0;
+}
+.yith-wcaf-datepicker.ui-datepicker table {
+  margin: 10px 0;
+  border-spacing: 3px;
+}
+.yith-wcaf-datepicker.ui-datepicker table th {
+  padding: 7px 5px;
+}
+.yith-wcaf-datepicker.ui-datepicker table td:not(.ui-datepicker-other-month) {
+  border: none;
+}
+.yith-wcaf-datepicker.ui-datepicker table td a {
+  padding: 2px 7px;
 }
 
 .woocommerce .products .yith-wcdp-loop-add-to-cart-fields .button {
