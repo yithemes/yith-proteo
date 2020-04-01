@@ -1,11 +1,10 @@
 === yith-proteo ===
-
 Contributors: yithemes
 Tags: one-column, two-columns, left-sidebar, right-sidebar, wide-blocks, accessibility-ready, block-styles, buddypress, custom-background, custom-colors, custom-header, custom-logo, custom-menu, editor-style, featured-images, flexible-header, footer-widgets, full-width-template, rtl-language-support, theme-options, threaded-comments, translation-ready, blog, e-commerce, education, entertainment, food-and-drink, holiday, news, photography, portfolio
 Requires at least: 4.9.6
-Tested up to: WordPress 5.3
+Tested up to: WordPress 5.4
 Requires PHP: 5.6
-Stable tag: 1.0.10
+Stable tag: 1.1.0
 YITH Proteo WordPress Theme, Copyright 2020 YITH
 YITH Proteo is distributed under the terms of the GNU GPL
 License: GPLv2 or later
@@ -26,6 +25,23 @@ Proteo is a sleek, modern and "Gutenberg-friendly" e-commerce theme. Developed w
 == Frequently Asked Questions ==
 
 == Changelog ==
+= 1.1.0 - Apr 01 2020 =
+* New tested support to WordPress 5.4
+* New inline style for WooCommerce ordering and results count
+* New style for product loop infos (title, price, buttons)
+* New datepicker style when jqueryUI in use
+* New Improved support to YITH plugins
+* Update quantity form & coupon form style
+* Update select2 style
+* Fix form elements padding
+* Fix mini cart on secondary sidebars style
+* Fix menu dropdown elements style
+* Fix header non sticky z-index
+* Fix header sub menu flickering
+* Fix cart shipping methods style
+* Fix radio buttons and checkboxes click issue
+* Fix trimmed product taxonomy description
+
 = 1.0.10 - Mar 23 2020 =
 * Fix missing escape and translate functions on customizer strings
 * Fix copyright declaration
