@@ -301,6 +301,7 @@ input.hasDatepicker {
 			text-align: center;
 			opacity: 0.8;
 			top: 2px;
+			text-decoration: none;
 
 			&.ui-state-hover, &.ui-state-focus {
 				border: none;
@@ -363,6 +364,7 @@ input.hasDatepicker {
 		tbody {
 			td {
 				a {
+					text-decoration: none;
 					transition: all ease 0.3s;
 					background: #f7f7f7;
 					border: 1px solid #efefef;
@@ -386,6 +388,7 @@ input.hasDatepicker {
 						color: #ffffff;
 						background: $color__accent;
 						border: 1px solid $color__accent;
+
 						&:hover {
 							color: #ffffff;
 						}
