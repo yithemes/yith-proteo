@@ -193,6 +193,10 @@ Mini Cart Widget
                         font-weight: normal;
                         color: #9a9a9a;
                     }
+
+	                &.variation {
+		                display: none;
+	                }
                 }
             }
         }

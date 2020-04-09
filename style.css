@@ -8716,6 +8716,9 @@ Mini Cart Widget
   font-weight: normal;
   color: #9a9a9a;
 }
+.widget_shopping_cart .yith-proteo-mini-cart-content ul li > *.variation {
+  display: none;
+}
 .widget_shopping_cart .yith-proteo-mini-cart-content .woocommerce-mini-cart__total.total {
   display: none;
 }
