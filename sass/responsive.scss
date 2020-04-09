@@ -178,24 +178,27 @@ Custom media queries
         }
     }
 
-    table.shop_table_responsive tbody tr td {
-        //display: inline-block;
+    table.shop_table_responsive tbody tr td,
+    table.shop_table_responsive thead tr th {
         border: none !important;
         padding: 20px 5px;
 
-        &.product-remove {
-            padding: 0;
-            width: 25px;
-        }
 
-        &.product-thumbnail img {
-            max-width: 100%;
-        }
 
         .quantity input {
             max-width: 70px;
         }
     }
+	table.shop_table_responsive tbody tr td,
+	table.shop_table_responsive thead tr th {
+
+		&.product-remove, &.product-thumbnail {
+			display: none;
+		}
+		&.product-name {
+			text-align: initial;
+		}
+	}
     body.woocommerce-cart .cart-collaterals .cart_totals {
         width: 100%;
         float: none;
@@ -253,6 +256,10 @@ Custom media queries
             }
         }
     }
+
+	table.cart, table.shop_table {
+		font-size: 0.875rem;
+	}
 }
 
 // Extra small devices (portrait phones, less than 576px)

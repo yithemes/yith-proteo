@@ -63,9 +63,10 @@ table.shop_table_responsive {
 
 table.cart, table.shop_table {
     border-spacing: 0;
+	font-size: 1rem;
 
     th, thead th {
-        font-size: 1.125rem;
+        font-size: 1.125em;
         background: transparent;
         padding: 15px 15px;
         vertical-align: top;
@@ -102,7 +103,7 @@ table.cart, table.shop_table {
 
             td.product-name {
                 a {
-                    font-size: 1rem;
+                    font-size: 1em;
                     color: inherit;
                     text-decoration: none;
 

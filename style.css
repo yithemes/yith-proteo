@@ -4924,14 +4924,14 @@ li > ol {
 
 dt {
   font-weight: bold;
-  font-size: 0.875rem;
+  font-size: 0.875em;
 }
 
 dd, .entry-content dd {
   margin: 0 1.5em 1em;
 }
 dd p, dd p:not([class^=has]), .entry-content dd p, .entry-content dd p:not([class^=has]) {
-  font-size: 0.875rem;
+  font-size: 0.875em;
   line-height: 1.5;
   margin: 0;
 }
@@ -7028,9 +7028,10 @@ table.shop_table_responsive tr td.download-actions .button {
 
 table.cart, table.shop_table {
   border-spacing: 0;
+  font-size: 1rem;
 }
 table.cart th, table.cart thead th, table.shop_table th, table.shop_table thead th {
-  font-size: 1.125rem;
+  font-size: 1.125em;
   background: transparent;
   padding: 15px 15px;
   vertical-align: top;
@@ -7056,7 +7057,7 @@ table.cart tbody tr td.product-thumbnail img, table.cart tfoot tr td.product-thu
   max-width: 60px;
 }
 table.cart tbody tr td.product-name a, table.cart tfoot tr td.product-name a, table.shop_table tbody tr td.product-name a, table.shop_table tfoot tr td.product-name a {
-  font-size: 1rem;
+  font-size: 1em;
   color: inherit;
   text-decoration: none;
 }
@@ -8143,7 +8144,7 @@ p.stars.selected a:not(.active):before {
 }
 .quantity input {
   text-align: center;
-  font-size: 1rem;
+  font-size: 1em;
   line-height: normal;
   color: #1F1F1F;
   font-family: inherit;
@@ -11296,19 +11297,24 @@ ul.products li.wc-block-grid__product:nth-child(2n+1),
     clear: both;
   }
 
-  table.shop_table_responsive tbody tr td {
+  table.shop_table_responsive tbody tr td,
+table.shop_table_responsive thead tr th {
     border: none !important;
     padding: 20px 5px;
   }
-  table.shop_table_responsive tbody tr td.product-remove {
-    padding: 0;
-    width: 25px;
-  }
-  table.shop_table_responsive tbody tr td.product-thumbnail img {
-    max-width: 100%;
-  }
-  table.shop_table_responsive tbody tr td .quantity input {
+  table.shop_table_responsive tbody tr td .quantity input,
+table.shop_table_responsive thead tr th .quantity input {
     max-width: 70px;
+  }
+
+  table.shop_table_responsive tbody tr td.product-remove, table.shop_table_responsive tbody tr td.product-thumbnail,
+table.shop_table_responsive thead tr th.product-remove,
+table.shop_table_responsive thead tr th.product-thumbnail {
+    display: none;
+  }
+  table.shop_table_responsive tbody tr td.product-name,
+table.shop_table_responsive thead tr th.product-name {
+    text-align: initial;
   }
 
   body.woocommerce-cart .cart-collaterals .cart_totals {
@@ -11361,6 +11367,10 @@ ul.products li.wc-block-grid__product:nth-child(2n+1),
     position: fixed;
     top: 80px;
     right: 15px;
+  }
+
+  table.cart, table.shop_table {
+    font-size: 0.875rem;
   }
 }
 
