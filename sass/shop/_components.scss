@@ -233,6 +233,7 @@ p.stars {
     display: inline-block;
     vertical-align: middle;
     max-width: 70px;
+	white-space: nowrap;
 
     input {
         text-align: center;
