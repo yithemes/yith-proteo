@@ -61,6 +61,11 @@ function yith_proteo_inline_style() {
 	$buttons_border_radius     = get_theme_mod( 'yith_proteo_buttons_border_radius', 50 );
 
 	/**
+	 * Forms
+	 */
+	$forms_input_borde_radius   = get_theme_mod( 'yith_proteo_inputs_border_radius', 0 );
+
+	/**
 	 * Store options
 	 */
 	$store_notice_bg_color   = get_theme_mod( 'yith_proteo_store_notice_bg_color', '#607d8b' );
@@ -417,6 +422,11 @@ function yith_proteo_inline_style() {
 				/* Buttons Border Radius */
 				button, input[type=button], input[type=reset], input[type=submit], .button, .widget a.button, .wishlist-submit.popup_button {
 					border-radius: {$buttons_border_radius}px;
+				}
+				
+				/* Form inputs */
+				input[type=text], input[type=email], input[type=url], input[type=password], input[type=search], input[type=number], input[type=tel], input[type=range], input[type=date], input[type=month], input[type=week], input[type=time], input[type=datetime], input[type=datetime-local], input[type=color], textarea, input[type=file], .select2-container .select2-selection, .woocommerce a.selectBox.selectBox-dropdown {
+					border-radius: {$forms_input_borde_radius}px;
 				}
 				
 	";

@@ -46,4 +46,10 @@
         } );
     } );
 
+    wp.customize( 'yith_proteo_inputs_border_radius', function( value ) {
+        value.bind( function( newval ) {
+            $( 'input[type=text], input[type=email], input[type=url], input[type=password], input[type=search], input[type=number], input[type=tel], input[type=range], input[type=date], input[type=month], input[type=week], input[type=time], input[type=datetime], input[type=datetime-local], input[type=color], textarea, input[type=file], .select2-container .select2-selection, .woocommerce a.selectBox.selectBox-dropdown' ).css("border-radius", newval+'px');
+        } );
+    } );
+
 } )( jQuery );
