@@ -7,7 +7,6 @@ input[type="submit"],
 .wishlist-submit.popup_button {
     border: 1px solid;
     border-color: $color__border-button;
-    border-radius: 50px;
     background: $color__background-button;
     color: #ffffff;
     line-height: 1;
@@ -55,7 +54,6 @@ input[type="submit"],
 
 .button.flat,
 .yith_wcwl_footer_additional_action .ask-an-estimate-button {
-    border-radius: 50px;
     border: none;
     text-align: center;
     padding: 0.8em 1.5em 0.7em;
@@ -93,7 +91,6 @@ input[type="submit"],
 .button.ywgc_apply_gift_card_button,
 .checkout_coupon button[name="apply_coupon"] {
     margin-bottom: 15px;
-    border-radius: 50px;
     border: 2px solid $color__accent;
     text-align: center;
     padding: 0.65em 1.5em 0.5em;

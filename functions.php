@@ -173,6 +173,7 @@ require get_template_directory() . '/inc/class-yith-proteo-walker-comment.php';
  * Customizer additions.
  */
 require get_template_directory() . '/inc/customizer.php';
+require get_template_directory() . '/inc/class-wp-customize-range.php';
 
 /**
  * Widgets.

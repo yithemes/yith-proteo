@@ -701,6 +701,29 @@ function yith_proteo_customize_register( $wp_customize ) {
 		)
 	);
 
+	// Buttons border radius
+	$wp_customize->add_setting(
+		'yith_proteo_buttons_border_radius',
+		array(
+			'default'   => 50,
+			'transport' => 'postMessage',
+		)
+	);
+
+	$wp_customize->add_control(
+		new WP_Customize_Range(
+			$wp_customize,
+			'yith_proteo_buttons_border_radius',
+			array(
+				'label'   => esc_html__( 'Border radius (default: 50px)', 'yith-proteo' ),
+				'min'     => 0,
+				'max'     => 50,
+				'step'    => 1,
+				'section' => 'yith_proteo_buttons',
+			)
+		)
+	);
+
 	//Button Style 1
 	$wp_customize->add_setting(
 		'yith_proteo_button_style_1_bg_color',
@@ -1389,12 +1412,54 @@ if ( ! function_exists( 'yith_proteo_sanitize_select' ) ) :
 	}
 endif;
 
+
+/**
+ * Slider sanitization
+ *
+ * @param string    Slider value to be sanitized
+ *
+ * @return string    Sanitized input
+ */
+if ( ! function_exists( 'yith_proteo_range_sanitization' ) ) {
+	function yith_proteo_range_sanitization( $input, $setting ) {
+		$attrs = $setting->manager->get_control( $setting->id )->input_attrs;
+
+		$min  = ( isset( $attrs['min'] ) ? $attrs['min'] : $input );
+		$max  = ( isset( $attrs['max'] ) ? $attrs['max'] : $input );
+		$step = ( isset( $attrs['step'] ) ? $attrs['step'] : 1 );
+
+		$number = floor( $input / $attrs['step'] ) * $attrs['step'];
+
+		return yith_proteo_in_range( $number, $min, $max );
+	}
+}
+
+/**
+ * Only allow values between a certain minimum & maxmium range
+ *
+ * @param number    Input to be sanitized
+ *
+ * @return number    Sanitized input
+ */
+if ( ! function_exists( 'yith_proteo_in_range' ) ) {
+	function yith_proteo_in_range( $input, $min, $max ) {
+		if ( $input < $min ) {
+			$input = $min;
+		}
+		if ( $input > $max ) {
+			$input = $max;
+		}
+
+		return $input;
+	}
+}
+
 /**
  * Add YITH Customizer CSS
  */
 
 function yith_proteo_customize_enqueue() {
-	wp_enqueue_style( 'customizer-css', get_stylesheet_directory_uri() . '/customizer-css.css', array(), YITH_PROTEO_VERSION );
+	wp_enqueue_style( 'customizer-css', get_template_directory_uri() . '/customizer-css.css', array(), YITH_PROTEO_VERSION );
 }
 
 add_action( 'customize_controls_enqueue_scripts', 'yith_proteo_customize_enqueue' );

@@ -39,4 +39,11 @@
 			}
 		} );
 	} );
+
+    wp.customize( 'yith_proteo_buttons_border_radius', function( value ) {
+        value.bind( function( newval ) {
+            $( 'button, input[type=button], input[type=reset], input[type=submit], .button, .widget a.button, .wishlist-submit.popup_button' ).css("border-radius", newval+'px');
+        } );
+    } );
+
 } )( jQuery );

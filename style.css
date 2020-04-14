@@ -5024,7 +5024,6 @@ input[type=submit],
 .wishlist-submit.popup_button {
   border: 1px solid;
   border-color: #448A85;
-  border-radius: 50px;
   background: #448A85;
   color: #ffffff;
   line-height: 1;
@@ -5073,7 +5072,6 @@ input[type=submit]:hover,
 
 .button.flat,
 .yith_wcwl_footer_additional_action .ask-an-estimate-button {
-  border-radius: 50px;
   border: none;
   text-align: center;
   padding: 0.8em 1.5em 0.7em;
@@ -5111,7 +5109,6 @@ input[type=submit]:hover,
 .button.ywgc_apply_gift_card_button,
 .checkout_coupon button[name=apply_coupon] {
   margin-bottom: 15px;
-  border-radius: 50px;
   border: 2px solid #448A85;
   text-align: center;
   padding: 0.65em 1.5em 0.5em;
@@ -7093,7 +7090,6 @@ table.cart tbody tr td.actions .coupon input, table.cart tfoot tr td.actions .co
 }
 table.cart tbody tr td.actions .coupon button, table.cart tfoot tr td.actions .coupon button, table.shop_table tbody tr td.actions .coupon button, table.shop_table tfoot tr td.actions .coupon button {
   border: 2px solid;
-  border-radius: 50px;
   text-transform: uppercase;
   font-weight: bold;
   padding: 0.5rem 1rem;
@@ -7471,7 +7467,6 @@ ul.products li.product .select_option .yith_wccl_value, ul.products li.wc-block-
 .single-product div.product .summary.entry-summary button[type=submit] {
   margin-bottom: 15px;
   margin-right: 15px;
-  border-radius: 50px;
   text-transform: uppercase;
   font-size: 1.25rem;
   font-weight: bold;
@@ -7738,7 +7733,6 @@ body.woocommerce-cart .cart-collaterals .cart_totals .wc-proceed-to-checkout {
   text-align: center;
 }
 body.woocommerce-cart .cart-collaterals .cart_totals .wc-proceed-to-checkout a.checkout-button {
-  border-radius: 50px;
   color: #ffffff;
   text-transform: uppercase;
   font-size: 1.25rem;
@@ -7871,7 +7865,6 @@ body.woocommerce-checkout #payment #place_order {
   width: 100%;
   text-transform: uppercase;
   font-size: 20px;
-  border-radius: 50px;
   font-weight: bold;
   padding: 22px 35px 21px;
   outline: none;
@@ -8757,7 +8750,6 @@ Mini Cart Widget
 .widget_shopping_cart .yith-proteo-mini-cart-content .woocommerce-mini-cart__buttons a.checkout {
   display: block;
   margin-bottom: 15px;
-  border-radius: 50px;
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
@@ -9221,7 +9213,6 @@ object {
 .yith-proteo-footer-credits-download .download-proteo {
   margin-bottom: 15px;
   margin-top: 15px;
-  border-radius: 50px;
   font-size: 1.25rem;
   font-weight: 600;
   text-align: center;

@@ -137,3 +137,99 @@ ul#sub-accordion-panel-yith_proteo_shop_options > li.panel-meta span.preview-not
     padding-top: 10px;
     border-top: 1px solid #ddd;
 }
+
+/* RANGE INPUTS*/
+.customize-control-range input[type=range].range-slider {
+	-webkit-appearance: none;
+	width: 70%;
+	padding: 10px 10px 10px 0;
+	background: transparent;
+	box-sizing: border-box;
+	vertical-align: middle;
+}
+.customize-control-range input[type=range].range-slider + input {
+	width: 20%;
+	margin: 0;
+	box-sizing: border-box;
+	vertical-align: middle;
+}
+
+.customize-control-range input[type=range].range-slider:focus {
+	outline: none;
+}
+.customize-control-range input[type=range].range-slider::-webkit-slider-runnable-track {
+	width: 100%;
+	height: 4px;
+	cursor: pointer;
+	box-shadow: none;
+	background: #969696;
+	border: none;
+}
+.customize-control-range input[type=range].range-slider::-webkit-slider-thumb {
+	box-shadow: none;
+	border: none;
+	height: 20px;
+	width: 10px;
+	border-radius: 27px;
+	background: #6ca6f6;
+	cursor: pointer;
+	-webkit-appearance: none;
+	margin-top: -8px;
+}
+.customize-control-range input[type=range].range-slider:focus::-webkit-slider-runnable-track {
+	background: #b7b7b7;
+}
+.customize-control-range input[type=range].range-slider::-moz-range-track {
+	width: 100%;
+	height: 4px;
+	cursor: pointer;
+	box-shadow: none;
+	background: #969696;
+	border-radius: 0;
+	border: none;
+}
+.customize-control-range input[type=range].range-slider::-moz-range-thumb {
+	box-shadow: none;
+	border: none;
+	height: 20px;
+	width: 10px;
+	border-radius: 27px;
+	background: #6ca6f6;
+	cursor: pointer;
+}
+.customize-control-range input[type=range].range-slider::-ms-track {
+	width: 100%;
+	height: 4px;
+	cursor: pointer;
+	background: transparent;
+	border-color: transparent;
+	color: transparent;
+}
+.customize-control-range input[type=range].range-slider::-ms-fill-lower {
+	background: #757575;
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+}
+.customize-control-range input[type=range].range-slider::-ms-fill-upper {
+	background: #969696;
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+}
+.customize-control-range input[type=range].range-slider::-ms-thumb {
+	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
+	border: 0px solid rgba(0, 0, 0, 0);
+	height: 20px;
+	width: 10px;
+	border-radius: 27px;
+	background: #6ca6f6;
+	cursor: pointer;
+	height: 4px;
+}
+.customize-control-range input[type=range].range-slider:focus::-ms-fill-lower {
+	background: #969696;
+}
+.customize-control-range input[type=range].range-slider:focus::-ms-fill-upper {
+	background: #b7b7b7;
+}

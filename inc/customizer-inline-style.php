@@ -58,6 +58,7 @@ function yith_proteo_inline_style() {
 	$button_2_font_color       = get_theme_mod( 'yith_proteo_button_style_2_text_color', '#ffffff' );
 	$button_2_bg_hover_color   = get_theme_mod( 'yith_proteo_button_style_2_bg_color_hover', yith_proteo_adjust_brightness( get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ), - 0.3 ) );
 	$button_2_font_hover_color = get_theme_mod( 'yith_proteo_button_style_2_text_color_hover', '#ffffff' );
+	$buttons_border_radius     = get_theme_mod( 'yith_proteo_buttons_border_radius', 50 );
 
 	/**
 	 * Store options
@@ -412,6 +413,12 @@ function yith_proteo_inline_style() {
 				.woocommerce-error, div.wpcf7-validation-errors {
 					border-color: {$woo_messages_error_accent_color};
 				}
+				
+				/* Buttons Border Radius */
+				button, input[type=button], input[type=reset], input[type=submit], .button, .widget a.button, .wishlist-submit.popup_button {
+					border-radius: {$buttons_border_radius}px;
+				}
+				
 	";
 
 
