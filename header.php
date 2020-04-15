@@ -26,7 +26,7 @@ global $post;
 	if ( 'on' != $hide_header ) :
 		?>
 		<header id="masthead"
-				class="site-header <?php echo esc_attr( get_theme_mod( 'yith_proteo_header_layout', 'left_logo_navigation_inline' ) ); ?> " <?php yith_proteo_custom_header_style(); ?>>
+				class="site-header <?php echo esc_attr( get_theme_mod( 'yith_proteo_header_layout', 'left_logo_navigation_inline' ) ); ?> <?php echo esc_attr( get_theme_mod( 'yith_proteo_header_fullwidth', 'no' ) == 'yes' ? 'fullwidth-header' : '' ); ?>" <?php yith_proteo_custom_header_style(); ?>>
 			<?php
 			if ( get_theme_mod( 'yith_proteo_topbar_enable', 'no' ) == 'yes' ) {
 				get_template_part( 'template-parts/topbar' );

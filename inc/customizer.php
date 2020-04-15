@@ -276,6 +276,28 @@ function yith_proteo_customize_register( $wp_customize ) {
 		)
 	);
 
+	// Header sticky
+	$wp_customize->add_setting(
+		'yith_proteo_header_fullwidth',
+		array(
+			'default'           => 'no',
+			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+		)
+	);
+	$wp_customize->add_control(
+		'yith_proteo_header_fullwidth',
+		array(
+			'type'        => 'radio',
+			'label'       => esc_html__( 'Enable full width header', 'yith-proteo' ),
+			'section'     => 'yith_proteo_header_management',
+			'description' => esc_html__( 'Choose whether to make the header full width or not.', 'yith-proteo' ),
+			'choices'     => array(
+				'yes' => esc_html__( 'Yes', 'yith-proteo' ),
+				'no'  => esc_html__( 'No', 'yith-proteo' ),
+			),
+		)
+	);
+
 
 	/**
 	 * Add footer sidebar management
