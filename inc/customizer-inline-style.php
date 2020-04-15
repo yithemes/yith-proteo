@@ -63,7 +63,7 @@ function yith_proteo_inline_style() {
 	/**
 	 * Forms
 	 */
-	$forms_input_borde_radius   = get_theme_mod( 'yith_proteo_inputs_border_radius', 0 );
+	$forms_input_borde_radius = get_theme_mod( 'yith_proteo_inputs_border_radius', 0 );
 
 	/**
 	 * Store options

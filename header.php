@@ -22,7 +22,13 @@ global $post;
 
 	<?php
 	// hide site header if meta value enabled
-	$hide_header = $post ? get_post_meta( $post->ID, 'yith_proteo_remove_header_and_footer', true ) : 'off';
+	if ( function_exists( 'wc' ) && is_shop() ) {
+		$hide_header = get_post_meta( wc_get_page_id( 'shop' ), 'yith_proteo_remove_header_and_footer', true );
+	} elseif ( is_home() ) {
+		$hide_header = get_post_meta( get_option( 'page_for_posts' ), 'yith_proteo_remove_header_and_footer', true );
+	} else {
+		$hide_header = $post ? get_post_meta( $post->ID, 'yith_proteo_remove_header_and_footer', true ) : 'off';
+	}
 	if ( 'on' != $hide_header ) :
 		?>
 		<header id="masthead"
