@@ -151,8 +151,11 @@ function yith_proteo_inline_style() {
                 .ywraq-wrapper a.button.wc-backward,
                 #yith-ywraq-form .actions .button,
                 .ywraq-quote-icon-icon_quote:hover:before, 
-                #ui-datepicker-div .ui-datepicker-calendar tbody td a.ui-state-hover,
-                #ui-datepicker-div .ui-datepicker-calendar tbody td a.ui-state-highlight {
+                #ui-datepicker-div .ui-datepicker-calendar tbody td a.ui-state-hover:not(.ui-state-active),
+                #ui-datepicker-div .ui-datepicker-calendar tbody td a.ui-state-highlight, 
+                body.woocommerce-order-received .woocommerce-order .woocommerce-order-overview li.woocommerce-order-overview__order.order, 
+                body.woocommerce-order-received table.shop_table tfoot tr:last-of-type, 
+                body.woocommerce-order-received article.page header.entry-header .entry-title.lnr {
 					color: {$main_color_shade};
 				}
 

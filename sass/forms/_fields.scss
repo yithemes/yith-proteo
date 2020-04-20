@@ -23,12 +23,12 @@ input[type=file],
 	border-style: solid;
 	border-radius: 0;
 	padding: 10px;
-	background-color: transparent;
 	font-family: inherit;
 	min-height: 35px;
 	height: auto;
 	max-width: 100%;
 	transition: border-color ease 0.3s;
+	background-color: #ffffff;
 
 	&:focus {
 		outline-color: transparent;
@@ -128,7 +128,7 @@ textarea {
 	border-width: 1px 1px 1px 1px;
 	border-style: solid;
 	width: 100%;
-	background-color: transparent;
+	background-color: #ffffff;
 }
 
 

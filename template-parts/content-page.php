@@ -13,7 +13,7 @@
 	<?php if ( ! is_front_page() ) : ?>
 		<header class="entry-header">
 			<?php
-			if ( function_exists( 'woocommerce_breadcrumb' ) ) {
+			if ( function_exists( 'woocommerce_breadcrumb' ) && ! ( is_order_received_page() ) ) {
 				woocommerce_breadcrumb();
 			}
 			?>
