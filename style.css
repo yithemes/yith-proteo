@@ -8478,6 +8478,10 @@ SELECT2
   line-height: 1.8;
 }
 
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  top: 5px;
+}
+
 .select2-container--default .select2-selection--single .select2-selection__arrow b {
   border: none;
   font-size: 0.8rem;
