@@ -727,8 +727,9 @@ function yith_proteo_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'yith_proteo_buttons_border_radius',
 		array(
-			'default'   => 50,
-			'transport' => 'postMessage',
+			'default'           => 50,
+			'transport'         => 'postMessage',
+			'sanitize_callback' => 'absint',
 		)
 	);
 
@@ -963,8 +964,9 @@ function yith_proteo_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'yith_proteo_inputs_border_radius',
 		array(
-			'default'   => 0,
-			'transport' => 'postMessage',
+			'default'           => 0,
+			'transport'         => 'postMessage',
+			'sanitize_callback' => 'absint',
 		)
 	);
 
