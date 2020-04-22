@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YITH Proteo\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2020-03-23 10:29+0100\n"
+"POT-Creation-Date: 2020-04-22 14:01+0200\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -47,10 +47,11 @@ msgstr[1] ""
 msgid "Comments are closed."
 msgstr ""
 
-#: footer.php:33
+#: footer.php:38
 msgid ""
-"Proteo - A free theme designed with <span class=\"lnr lnr-heart\"></span> by "
-"<a href=\"https://yithemes.com\" rel=\"nofollow\">YITH</a>"
+"<a href=\"https://proteo.yithemes.com/\" target=\"_blank\" rel=\"noopener"
+"\">Proteo</a> - A free theme designed with <span class=\"lnr lnr-heart\"></"
+"span> by <a href=\"https://yithemes.com\" rel=\"nofollow\">YITH</a>"
 msgstr ""
 
 #: functions.php:51
@@ -61,7 +62,7 @@ msgstr ""
 msgid "Skip to content"
 msgstr ""
 
-#: header.php:87
+#: header.php:93
 msgid "Toggle navigation"
 msgstr ""
 
@@ -105,18 +106,18 @@ msgid ""
 "the page/post edit view."
 msgstr ""
 
-#: inc/customizer.php:77 inc/customizer.php:100 inc/customizer.php:142
-#: inc/customizer.php:1334
+#: inc/customizer.php:77 inc/customizer.php:100 inc/customizer.php:1320
+#: inc/customizer.php:1353 inc/customizer.php:1404 inc/customizer.php:1519
 msgid "No sidebar"
 msgstr ""
 
-#: inc/customizer.php:78 inc/customizer.php:101 inc/customizer.php:143
-#: inc/customizer.php:1335
+#: inc/customizer.php:78 inc/customizer.php:101 inc/customizer.php:1321
+#: inc/customizer.php:1354 inc/customizer.php:1405 inc/customizer.php:1520
 msgid "Right"
 msgstr ""
 
-#: inc/customizer.php:79 inc/customizer.php:102 inc/customizer.php:144
-#: inc/customizer.php:1336
+#: inc/customizer.php:79 inc/customizer.php:102 inc/customizer.php:1322
+#: inc/customizer.php:1355 inc/customizer.php:1406 inc/customizer.php:1521
 msgid "Left"
 msgstr ""
 
@@ -140,366 +141,420 @@ msgid ""
 "single post edit page."
 msgstr ""
 
-#: inc/customizer.php:138
-msgid "Choose the position of the sidebar on single product page"
-msgstr ""
-
-#: inc/customizer.php:140
-msgid ""
-"Select where to display the sidebar. You can adjust the settings from product "
-"edit view."
-msgstr ""
-
-#: inc/customizer.php:155
+#: inc/customizer.php:132
 msgid "Topbar"
 msgstr ""
 
-#: inc/customizer.php:173
+#: inc/customizer.php:150
 msgid "Enable topbar"
 msgstr ""
 
-#: inc/customizer.php:175
+#: inc/customizer.php:152
 msgid "Choose whether to show the site topbar or not"
 msgstr ""
 
-#: inc/customizer.php:177 inc/customizer.php:230 inc/customizer.php:1357
+#: inc/customizer.php:154 inc/customizer.php:207 inc/customizer.php:272
+#: inc/customizer.php:1542
 msgid "Yes"
 msgstr ""
 
-#: inc/customizer.php:178 inc/customizer.php:231 inc/customizer.php:1358
+#: inc/customizer.php:155 inc/customizer.php:208 inc/customizer.php:273
+#: inc/customizer.php:1543
 msgid "No"
 msgstr ""
 
-#: inc/customizer.php:196
+#: inc/customizer.php:173
 msgid "Topbar background color"
 msgstr ""
 
-#: inc/customizer.php:208
+#: inc/customizer.php:185
 msgid "Header"
 msgstr ""
 
-#: inc/customizer.php:226
+#: inc/customizer.php:203
 msgid "Enable sticky header"
 msgstr ""
 
-#: inc/customizer.php:228
+#: inc/customizer.php:205
 msgid "Choose whether to make the header stick to the page when scrolling down"
 msgstr ""
 
-#: inc/customizer.php:249
+#: inc/customizer.php:226
 msgid "Header background color"
 msgstr ""
 
-#: inc/customizer.php:267
+#: inc/customizer.php:244
 msgid "Header layout"
 msgstr ""
 
-#: inc/customizer.php:269
+#: inc/customizer.php:246
 msgid "Choose the header layout"
 msgstr ""
 
-#: inc/customizer.php:271 inc/customizer.php:1273
+#: inc/customizer.php:248 inc/customizer.php:1458
 msgid "Please select"
 msgstr ""
 
-#: inc/customizer.php:272
+#: inc/customizer.php:249
 msgid "Logo on the left and navigation below"
 msgstr ""
 
-#: inc/customizer.php:273
+#: inc/customizer.php:250
 msgid "Logo on the left and navigation inline"
 msgstr ""
 
-#: inc/customizer.php:274
+#: inc/customizer.php:251
 msgid "Centered logo and navigation below"
 msgstr ""
 
-#: inc/customizer.php:286
+#: inc/customizer.php:268
+msgid "Enable full width header"
+msgstr ""
+
+#: inc/customizer.php:270
+msgid "Choose whether to make the header full width or not."
+msgstr ""
+
+#: inc/customizer.php:285
 msgid "Footer"
 msgstr ""
 
-#: inc/customizer.php:305
+#: inc/customizer.php:304
 msgid "Footer background color"
 msgstr ""
 
-#: inc/customizer.php:322
+#: inc/customizer.php:321
 msgid ""
 "Select how many widgets per row to show for Footer Sidebar 1 (new rows are "
 "automatically created)."
 msgstr ""
 
-#: inc/customizer.php:326 inc/customizer.php:351
+#: inc/customizer.php:325 inc/customizer.php:350
 msgid "One"
 msgstr ""
 
-#: inc/customizer.php:327 inc/customizer.php:352
+#: inc/customizer.php:326 inc/customizer.php:351
 msgid "Two"
 msgstr ""
 
-#: inc/customizer.php:328 inc/customizer.php:353
+#: inc/customizer.php:327 inc/customizer.php:352
 msgid "Three"
 msgstr ""
 
-#: inc/customizer.php:329 inc/customizer.php:354
+#: inc/customizer.php:328 inc/customizer.php:353
 msgid "Four"
 msgstr ""
 
-#: inc/customizer.php:330 inc/customizer.php:355
+#: inc/customizer.php:329 inc/customizer.php:354
 msgid "Five"
 msgstr ""
 
-#: inc/customizer.php:331 inc/customizer.php:356
+#: inc/customizer.php:330 inc/customizer.php:355
 msgid "Six"
 msgstr ""
 
-#: inc/customizer.php:347
+#: inc/customizer.php:346
 msgid ""
 "Select how many widgets per row to show for Footer Sidebar 2 (new rows are "
 "automatically created)."
 msgstr ""
 
-#: inc/customizer.php:367
+#: inc/customizer.php:366
 msgid "Footer credits"
 msgstr ""
 
-#: inc/customizer.php:383
+#: inc/customizer.php:382
 msgid "Enter here the content of the footer credits area"
 msgstr ""
 
-#: inc/customizer.php:401
+#: inc/customizer.php:400
 msgid "Footer credits background color"
 msgstr ""
 
-#: inc/customizer.php:413
+#: inc/customizer.php:412
 msgid "Google Font"
 msgstr ""
 
-#: inc/customizer.php:430
+#: inc/customizer.php:429
 msgid "Enter the URL of the Google Font you want to use."
 msgstr ""
 
-#: inc/customizer.php:442
+#: inc/customizer.php:441
 msgid "Typography"
 msgstr ""
 
-#: inc/customizer.php:458
+#: inc/customizer.php:457
 msgid "Body font size (default: 16px)"
 msgstr ""
 
-#: inc/customizer.php:476
+#: inc/customizer.php:475
 msgid "Body font color"
 msgstr ""
 
-#: inc/customizer.php:493
+#: inc/customizer.php:492
 msgid "H1 font size (default: 32px)"
 msgstr ""
 
-#: inc/customizer.php:511
+#: inc/customizer.php:510
 msgid "H1 font color"
 msgstr ""
 
-#: inc/customizer.php:528
+#: inc/customizer.php:527
 msgid "H2 font size (default: 24px)"
 msgstr ""
 
-#: inc/customizer.php:546
+#: inc/customizer.php:545
 msgid "H2 font color"
 msgstr ""
 
-#: inc/customizer.php:563
+#: inc/customizer.php:562
 msgid "H3 font size (default: 19px)"
 msgstr ""
 
-#: inc/customizer.php:581
+#: inc/customizer.php:580
 msgid "H3 font color"
 msgstr ""
 
-#: inc/customizer.php:598
+#: inc/customizer.php:597
 msgid "H4 font size (default: 16px)"
 msgstr ""
 
-#: inc/customizer.php:616
+#: inc/customizer.php:615
 msgid "H4 font color"
 msgstr ""
 
-#: inc/customizer.php:633
+#: inc/customizer.php:632
 msgid "H5 font size (default: 13px)"
 msgstr ""
 
-#: inc/customizer.php:651
+#: inc/customizer.php:650
 msgid "H5 font color"
 msgstr ""
 
-#: inc/customizer.php:668
+#: inc/customizer.php:667
 msgid "H6 font size (default: 11px)"
 msgstr ""
 
-#: inc/customizer.php:686
+#: inc/customizer.php:685
 msgid "H6 font color"
 msgstr ""
 
-#: inc/customizer.php:698
+#: inc/customizer.php:697
 msgid "Buttons"
 msgstr ""
 
-#: inc/customizer.php:717
+#: inc/customizer.php:718
+msgid "Border radius (default: 50px)"
+msgstr ""
+
+#: inc/customizer.php:740
 msgid "Button Style 1 background color"
 msgstr ""
 
-#: inc/customizer.php:735
+#: inc/customizer.php:758
 msgid "Button Style 1 border color"
 msgstr ""
 
-#: inc/customizer.php:753
+#: inc/customizer.php:776
 msgid "Button Style 1 text color"
 msgstr ""
 
-#: inc/customizer.php:771
+#: inc/customizer.php:794
 msgid "Button Style 1 background :hover color"
 msgstr ""
 
-#: inc/customizer.php:789
+#: inc/customizer.php:812
 msgid "Button Style 1 border :hover color"
 msgstr ""
 
-#: inc/customizer.php:807
+#: inc/customizer.php:830
 msgid "Button Style 1 text :hover color"
 msgstr ""
 
-#: inc/customizer.php:826
+#: inc/customizer.php:849
 msgid "Button Style 2 background color shade 1"
 msgstr ""
 
-#: inc/customizer.php:844
+#: inc/customizer.php:867
 msgid "Button Style 2 background color shade 2"
 msgstr ""
 
-#: inc/customizer.php:862
+#: inc/customizer.php:885
 msgid "Button Style 2 text color"
 msgstr ""
 
-#: inc/customizer.php:880
+#: inc/customizer.php:903
 msgid "Button Style 2 background :hover color"
 msgstr ""
 
-#: inc/customizer.php:898
+#: inc/customizer.php:921
 msgid "Button Style 2 text :hover color"
 msgstr ""
 
-#: inc/customizer.php:911
+#: inc/customizer.php:934
+msgid "Forms"
+msgstr ""
+
+#: inc/customizer.php:955
+msgid "Input and textarea border radius (default: 0px)"
+msgstr ""
+
+#: inc/customizer.php:971
 msgid "Color shades"
 msgstr ""
 
-#: inc/customizer.php:930
+#: inc/customizer.php:990
 msgid "Main color shade"
 msgstr ""
 
-#: inc/customizer.php:932
+#: inc/customizer.php:992
 msgid "Save your settings and reload the page to let the magic happen"
 msgstr ""
 
-#: inc/customizer.php:950
+#: inc/customizer.php:1010
 msgid "General link :hover color"
 msgstr ""
 
-#: inc/customizer.php:975
+#: inc/customizer.php:1035
 msgid "YITH Theme Shop Options"
 msgstr ""
 
-#: inc/customizer.php:976
+#: inc/customizer.php:1036
 msgid "All shop related options for this theme"
 msgstr ""
 
-#: inc/customizer.php:987
+#: inc/customizer.php:1047
 msgid "Store notices"
 msgstr ""
 
-#: inc/customizer.php:1005
+#: inc/customizer.php:1065
 msgid "Store notice background color"
 msgstr ""
 
-#: inc/customizer.php:1023 inc/customizer.php:1090
+#: inc/customizer.php:1083 inc/customizer.php:1150
 msgid "Store notice text color"
 msgstr ""
 
-#: inc/customizer.php:1040
+#: inc/customizer.php:1100
 msgid "Store notice font size (default: 13px)"
 msgstr ""
 
-#: inc/customizer.php:1053
+#: inc/customizer.php:1113
 msgid "Sale badge"
 msgstr ""
 
-#: inc/customizer.php:1072
+#: inc/customizer.php:1132
 msgid "Sale badge background color"
 msgstr ""
 
-#: inc/customizer.php:1106
+#: inc/customizer.php:1166
 msgid "Sale badge font size (default: 13px)"
 msgstr ""
 
-#: inc/customizer.php:1118
+#: inc/customizer.php:1178
 msgid "WooCommerce messages"
 msgstr ""
 
-#: inc/customizer.php:1135
+#: inc/customizer.php:1195
 msgid "WooCommerce messages font size (default: 16px)"
 msgstr ""
 
-#: inc/customizer.php:1154
+#: inc/customizer.php:1214
 msgid "Default messages: accent color"
 msgstr ""
 
-#: inc/customizer.php:1173
+#: inc/customizer.php:1233
 msgid "Info messages: accent color"
 msgstr ""
 
-#: inc/customizer.php:1192
+#: inc/customizer.php:1252
 msgid "Error messages: accent color"
 msgstr ""
 
-#: inc/customizer.php:1205
+#: inc/customizer.php:1265
 msgid "Single product page"
 msgstr ""
 
-#: inc/customizer.php:1222
+#: inc/customizer.php:1282
 msgid "Max related products to show"
 msgstr ""
 
-#: inc/customizer.php:1224
+#: inc/customizer.php:1284
 msgid "Choose how many related products you want to show (default: 4)"
 msgstr ""
 
-#: inc/customizer.php:1239
+#: inc/customizer.php:1299
 msgid "Related products columns"
 msgstr ""
 
-#: inc/customizer.php:1241
+#: inc/customizer.php:1301
 msgid ""
 "Choose how many columns with related products you want to show (default: 4)"
 msgstr ""
 
-#: inc/customizer.php:1251
+#: inc/customizer.php:1316
+msgid "Choose the position of the sidebar on single product page"
+msgstr ""
+
+#: inc/customizer.php:1318
+msgid ""
+"Select where to display the sidebar. You can adjust the settings from product "
+"edit view."
+msgstr ""
+
+#: inc/customizer.php:1333
+msgid "Product Category page"
+msgstr ""
+
+#: inc/customizer.php:1349
+msgid "Choose the position of the sidebar on product category pages"
+msgstr ""
+
+#: inc/customizer.php:1351 inc/customizer.php:1402
+msgid "Select where to display the sidebar."
+msgstr ""
+
+#: inc/customizer.php:1371
+msgid "Choose the product category page sidebar"
+msgstr ""
+
+#: inc/customizer.php:1373 inc/customizer.php:1425
+msgid "Select the sidebar to display."
+msgstr ""
+
+#: inc/customizer.php:1384
+msgid "Product Tag page"
+msgstr ""
+
+#: inc/customizer.php:1400
+msgid "Choose the position of the sidebar on product tag pages"
+msgstr ""
+
+#: inc/customizer.php:1423
+msgid "Choose the product tag page sidebar"
+msgstr ""
+
+#: inc/customizer.php:1436
 msgid "Cart page"
 msgstr ""
 
-#: inc/customizer.php:1269
+#: inc/customizer.php:1454
 msgid "Cart layout"
 msgstr ""
 
-#: inc/customizer.php:1271
+#: inc/customizer.php:1456
 msgid "Choose the cart layout"
 msgstr ""
 
-#: inc/customizer.php:1274
+#: inc/customizer.php:1459
 msgid "One column layout"
 msgstr ""
 
-#: inc/customizer.php:1275
+#: inc/customizer.php:1460
 msgid "Two column layout"
 msgstr ""
 
-#: inc/customizer.php:1293
+#: inc/customizer.php:1478
 msgid "Read the documentation to see how to retrieve a Google Font URL"
 msgstr ""
 
@@ -589,11 +644,11 @@ msgstr ""
 msgid "Shop sidebar"
 msgstr ""
 
-#: inc/template-functions.php:165
+#: inc/template-functions.php:171
 msgid "Search"
 msgstr ""
 
-#: inc/template-functions.php:188 inc/template-functions.php:206
+#: inc/template-functions.php:194 inc/template-functions.php:212
 msgid "Read more"
 msgstr ""
 
@@ -688,7 +743,7 @@ msgid_plural "%d items in cart"
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/woocommerce.php:541
+#: inc/woocommerce.php:545
 msgid "Thank you."
 msgstr ""
 

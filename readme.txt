@@ -25,6 +25,10 @@ Proteo is a sleek, modern and "Gutenberg-friendly" e-commerce theme. Developed w
 == Frequently Asked Questions ==
 
 == Changelog ==
+= 1.2.2 - Apr 20 2020 =
+* New customizer options to set specific product category and product tag sidebars
+* Update .pot language file
+
 = 1.2.1 - Apr 20 2020 =
 * Fix Customizer settings without sanitization callback function.
 
