@@ -126,12 +126,18 @@ ul.products, .wc-block-grid ul.wc-block-grid__products {
             }
         }
 
-        .select_option {
-            .yith_wccl_value {
-                min-width: 25px;
-                height: 25px;
-                line-height: 22px;
-                width: auto;
+        .variations_form {
+            text-align: center;
+
+            .select_box {
+                display: inline-block;
+
+                .yith_wccl_value {
+                    min-width: 25px;
+                    height: 25px;
+                    line-height: 22px;
+                    width: auto;
+                }
             }
         }
     }

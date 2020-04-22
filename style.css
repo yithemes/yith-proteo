@@ -7247,7 +7247,13 @@ ul.products li.product .price del, ul.products li.wc-block-grid__product .price 
 ul.products li.product .price ins, ul.products li.wc-block-grid__product .price ins, .wc-block-grid ul.wc-block-grid__products li.product .price ins, .wc-block-grid ul.wc-block-grid__products li.wc-block-grid__product .price ins {
   background: none;
 }
-ul.products li.product .select_option .yith_wccl_value, ul.products li.wc-block-grid__product .select_option .yith_wccl_value, .wc-block-grid ul.wc-block-grid__products li.product .select_option .yith_wccl_value, .wc-block-grid ul.wc-block-grid__products li.wc-block-grid__product .select_option .yith_wccl_value {
+ul.products li.product .variations_form, ul.products li.wc-block-grid__product .variations_form, .wc-block-grid ul.wc-block-grid__products li.product .variations_form, .wc-block-grid ul.wc-block-grid__products li.wc-block-grid__product .variations_form {
+  text-align: center;
+}
+ul.products li.product .variations_form .select_box, ul.products li.wc-block-grid__product .variations_form .select_box, .wc-block-grid ul.wc-block-grid__products li.product .variations_form .select_box, .wc-block-grid ul.wc-block-grid__products li.wc-block-grid__product .variations_form .select_box {
+  display: inline-block;
+}
+ul.products li.product .variations_form .select_box .yith_wccl_value, ul.products li.wc-block-grid__product .variations_form .select_box .yith_wccl_value, .wc-block-grid ul.wc-block-grid__products li.product .variations_form .select_box .yith_wccl_value, .wc-block-grid ul.wc-block-grid__products li.wc-block-grid__product .variations_form .select_box .yith_wccl_value {
   min-width: 25px;
   height: 25px;
   line-height: 22px;
