@@ -1,20 +1,25 @@
 .woocommerce .products {
 
-	.yith-wcdp-loop-add-to-cart-fields .button{
-		background: none;
-		border: 1px solid $color__accent;
-		font-size: 14px;
-		color: $color__accent;
-		text-transform: uppercase;
-		padding: 7px 14px;
-		margin-right: 0;
-		display: inline-block;
-		float: none;
-		margin-top: 5px;
+	.yith-wcdp-loop-add-to-cart-fields {
 
-		&:hover {
+		text-align: center;
+
+		.button {
 			background: none;
+			border: 1px solid $color__accent;
+			font-size: 14px;
 			color: $color__accent;
+			text-transform: uppercase;
+			padding: 7px 14px;
+			margin-right: 0;
+			display: inline-block;
+			float: none;
+			margin-top: 5px;
+
+			&:hover {
+				background: none;
+				color: $color__accent;
+			}
 		}
 	}
 
@@ -59,10 +64,20 @@
 
 .woocommerce-order-details .woocommerce-table{
 	tbody tr td.product-name a.yith-wcdp-order-actions{
+		margin: 5px 2px;
+		padding: 8px 12px;
 		color: #fff;
 
 		&:hover{
 			text-decoration: none;
 		}
+	}
+}
+
+#yith_wcdp_deposits_details .shop_table .order-actions{
+	a.button {
+		font-size: .8em;
+		padding: 8px 12px;
+		margin: 5px 2px;
 	}
 }

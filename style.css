@@ -11161,6 +11161,9 @@ header.woocommerce-products-header .yith-cart-message {
   padding: 2px 7px;
 }
 
+.woocommerce .products .yith-wcdp-loop-add-to-cart-fields {
+  text-align: center;
+}
 .woocommerce .products .yith-wcdp-loop-add-to-cart-fields .button {
   background: none;
   border: 1px solid #448A85;
@@ -11207,10 +11210,18 @@ header.woocommerce-products-header .yith-cart-message {
 }
 
 .woocommerce-order-details .woocommerce-table tbody tr td.product-name a.yith-wcdp-order-actions {
+  margin: 5px 2px;
+  padding: 8px 12px;
   color: #fff;
 }
 .woocommerce-order-details .woocommerce-table tbody tr td.product-name a.yith-wcdp-order-actions:hover {
   text-decoration: none;
+}
+
+#yith_wcdp_deposits_details .shop_table .order-actions a.button {
+  font-size: 0.8em;
+  padding: 8px 12px;
+  margin: 5px 2px;
 }
 
 #yith-sl-gmap .gm-style .gm-style-iw, #yith-sl-gmap .gm-style .gm-style-iw p, #yith-sl-gmap .gm-style .gm-style-iw li {
