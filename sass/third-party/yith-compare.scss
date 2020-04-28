@@ -1,3 +1,10 @@
+a.compare.button {
+    background: none;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    padding: 7px 14px;
+}
+
 .single-product div.product .summary.entry-summary {
     a.compare {
 
@@ -32,20 +39,29 @@
 }
 
 ul.products li.product {
-    a.compare:not(.button) {
-        font-size: 0.875rem;
-        padding: 5px 0;
-        transition: all ease 0.3s;
-        margin: 0;
-        font-weight: 600;
+    a.compare {
+        display: inline-block;
+        margin-right: 0;
+
+        &:not(.button) {
+            font-size: 0.875rem;
+            padding: 5px 0;
+            transition: all ease 0.3s;
+            margin: 0;
+            font-weight: 600;
+        }
     }
 }
 
-#yith-woocompare, .yith-woocompare-widget{
+#yith-woocompare, .yith-woocompare-widget {
     .button, a.added_to_cart, a.compare-widget, a.compare {
-        text-transform: none;
         border-radius: 50px;
         font-size: 0.875rem;
+        text-transform: uppercase;
+        padding: 7px 14px;
+        display: inline-block;
+        margin-right: 0;
+        font-weight: 600;
     }
 
     .product-price, tr.price td {
@@ -68,20 +84,39 @@ ul.products li.product {
 #yith-woocompare-related {
     .related-products {
         li {
-            text-align: left;
+            text-align: center;
+            .product-image {
+                margin-bottom: 0;
+            }
+
             h3 {
                 font-size: 0.875rem;
                 font-weight: 500;
                 margin-bottom: 5px;
                 margin-top: 5px;
                 color: #404040;
-                text-align: left;
                 line-height: normal;
             }
             span.onsale {
                 z-index: 2;
                 top: 0;
                 left: auto;
+            }
+
+            > div {
+                margin-bottom: 5px;
+
+                .button {
+                    border: 1px solid;
+
+                    &.unstyled_button {
+                        border: none;
+                        background: none;
+                        text-transform: none;
+                        padding: 0;
+                        display: block;
+                    }
+                }
             }
         }
     }

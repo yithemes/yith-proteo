@@ -95,6 +95,7 @@ function yith_proteo_inline_style() {
 				a,
 				.comment-reply a,
 				.button.ghost,
+				.button.compare,
 				.wishlist-title a.show-title-form,
 				.wishlist-title a.hide-title-form,
 				.submit-wishlist-changes,
@@ -155,7 +156,8 @@ function yith_proteo_inline_style() {
                 #ui-datepicker-div .ui-datepicker-calendar tbody td a.ui-state-highlight, 
                 body.woocommerce-order-received .woocommerce-order .woocommerce-order-overview li.woocommerce-order-overview__order.order, 
                 body.woocommerce-order-received table.shop_table tfoot tr:last-of-type, 
-                body.woocommerce-order-received article.page header.entry-header .entry-title.lnr {
+                body.woocommerce-order-received article.page header.entry-header .entry-title.lnr,
+                #yith-woocompare-related .related-products li .button.unstyled_button {
 					color: {$main_color_shade};
 				}
 
@@ -177,6 +179,7 @@ function yith_proteo_inline_style() {
 				input[type=reset],
 				input[type=submit],
 				.button,
+				.button.compare,
 				.widget a.button,
 				.wishlist-submit.popup_button,
 				.button.ghost:hover,
@@ -246,6 +249,7 @@ function yith_proteo_inline_style() {
 				}
 
 				.button.ghost:hover,
+				.button.compare:hover,
 				.wishlist-title a.show-title-form:hover,
 				.wishlist-title a.hide-title-form:hover,
 				.submit-wishlist-changes:hover,
