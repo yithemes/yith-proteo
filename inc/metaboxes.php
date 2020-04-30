@@ -54,7 +54,7 @@ function yith_proteo_header_slider_add_meta_box() {
 }
 
 
-if ( defined( 'YITH_PROTEO_UTILS' ) ) {
+if ( defined( 'YITH_SLIDER_FOR_PAGE_BUILDERS' ) ) {
 	add_action( 'add_meta_boxes', 'yith_proteo_header_slider_add_meta_box' );
 }
 
@@ -227,7 +227,7 @@ function yith_proteo_header_slider_html( $post ) {
 	<?php
 	$args    = array(
 		'posts_per_page' => - 1,
-		'post_type'      => 'yith_proteo_slider',
+		'post_type'      => 'yith_slider',
 		'post_status'    => 'publish',
 		'fields'         => 'ids',
 	);

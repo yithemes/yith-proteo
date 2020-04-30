@@ -112,12 +112,12 @@ global $post;
 	<?php endif; ?>
 
 	<?php
-	if ( defined( 'YITH_PROTEO_UTILS' ) ) {
+	if ( defined( 'YITH_SLIDER_FOR_PAGE_BUILDERS' ) ) {
 
 		if ( $post ) {
 			$slider = get_post_meta( $post->ID, 'header_slider', true );
 			if ( $slider && '' != $slider ) {
-				echo do_shortcode( '[yith-proteo-slider slider="' . get_post_meta( $post->ID, 'header_slider', true ) . '"]' );
+				echo do_shortcode( '[yith-slider slider="' . get_post_meta( $post->ID, 'header_slider', true ) . '"]' );
 			}
 		}
 	}

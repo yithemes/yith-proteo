@@ -6,7 +6,6 @@
  *
  * @package yith-proteo
  */
-
 if ( ! is_active_sidebar( 'sidebar-1' ) || ! yith_proteo_get_sidebar_position( 'sidebar-show' ) ) {
 	return;
 }
