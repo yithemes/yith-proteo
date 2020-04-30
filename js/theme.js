@@ -9,7 +9,7 @@
         var height = $('.site-header').outerHeight(),
             new_height = (20 + height) + 'px';
         //$('header:not(.sticky) + .site-content').css('padding-top', new_height);
-        $('header + .yith-proteo-slider .yith-proteo-slider-slide').css('padding-top', height);
+        $('header + .yith-slider .yith-slider-slide').css('padding-top', height);
         $('header + #content').css('padding-top', new_height);
     }
 
