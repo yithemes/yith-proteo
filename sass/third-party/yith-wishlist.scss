@@ -581,7 +581,7 @@ table.wishlist_table.wishlist_manage_table {
 Wishlist popup
  */
 form.yith-wcwl-popup-form {
-    padding: 0 30px;
+    padding: 0 60px;
 }
 
 .yith-wcwl-popup-content {
@@ -592,14 +592,18 @@ form.yith-wcwl-popup-form {
     }
 }
 
-.wishlist-submit.popup_button {
-    display: block;
-    font-size: 1.0625rem;
-    text-transform: uppercase;
+.yith-wcwl-popup-footer {
     text-align: center;
-    font-weight: 600;
-    margin: 0 0 2rem;
-    padding: 0.875rem;
+
+    .wishlist-submit.popup_button {
+        display: inline-block;
+        font-size: 1.0625rem;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 600;
+        margin: 0 0 2rem;
+        padding: 0.875rem;
+    }
 }
 
 .yith-wcwl-popup-content .form-row {

@@ -10226,7 +10226,7 @@ table.wishlist_table.wishlist_manage_table td.wishlist-delete a:before {
 Wishlist popup
  */
 form.yith-wcwl-popup-form {
-  padding: 0 30px;
+  padding: 0 60px;
 }
 
 .yith-wcwl-popup-content a {
@@ -10234,8 +10234,11 @@ form.yith-wcwl-popup-form {
   font-weight: 600;
 }
 
-.wishlist-submit.popup_button {
-  display: block;
+.yith-wcwl-popup-footer {
+  text-align: center;
+}
+.yith-wcwl-popup-footer .wishlist-submit.popup_button {
+  display: inline-block;
   font-size: 1.0625rem;
   text-transform: uppercase;
   text-align: center;
