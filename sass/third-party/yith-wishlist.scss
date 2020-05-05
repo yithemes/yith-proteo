@@ -581,7 +581,7 @@ table.wishlist_table.wishlist_manage_table {
 Wishlist popup
  */
 form.yith-wcwl-popup-form {
-    padding: 0 60px;
+    padding: 0 45px;
 }
 
 .yith-wcwl-popup-content {
@@ -594,9 +594,10 @@ form.yith-wcwl-popup-form {
 
 .yith-wcwl-popup-footer {
     text-align: center;
+    padding: 0 15px;
 
     .wishlist-submit.popup_button {
-        display: inline-block;
+        display: block;
         font-size: 1.0625rem;
         text-transform: uppercase;
         text-align: center;
