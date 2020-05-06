@@ -224,7 +224,7 @@ table.wishlist_table.wishlist_view {
                 content: '\e811';
                 display: block;
                 font-family: Linearicons-Free;
-                font-size: 1.8rem;
+                font-size: 1.5rem;
                 padding-top: 1.5rem;
                 opacity: 0.4;
                 transition: all ease 0.3s;
@@ -437,6 +437,10 @@ table.wishlist_table.wishlist_manage_table {
     td {
         &.wishlist-name {
             padding-left: 0;
+
+            a.show-title-form:hover{
+                color: #434343;
+            }
         }
 
         &.wishlist-privacy {
@@ -473,6 +477,7 @@ table.wishlist_table.wishlist_manage_table {
             a {
                 text-decoration: none;
                 font-size: 0;
+                font-weight: 400;
                 background: none;
                 border: none;
                 color: inherit;
@@ -484,11 +489,11 @@ table.wishlist_table.wishlist_manage_table {
                 }
             }
 
-            a:before {
+            a:before    {
                 content: "\e811";
                 display: block;
                 font-family: Linearicons-Free;
-                font-size: 1.8rem;
+                font-size: 1.5rem;
             }
         }
     }
@@ -566,6 +571,12 @@ table.wishlist_table.wishlist_manage_table {
             font-family: Linearicons-Free;
             font-size: 1.5rem;
         }
+    }
+}
+
+.wishlist_manage_table .hidden-title-form {
+    .edit-title-buttons {
+        padding: 10px;
     }
 }
 

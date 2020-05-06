@@ -9932,7 +9932,7 @@ table.wishlist_table.wishlist_view td.product-remove a:before {
   content: "";
   display: block;
   font-family: Linearicons-Free;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   padding-top: 1.5rem;
   opacity: 0.4;
   transition: all ease 0.3s;
@@ -10115,6 +10115,9 @@ table.wishlist_table.wishlist_manage_table th.wishlist-name {
 table.wishlist_table.wishlist_manage_table td.wishlist-name {
   padding-left: 0;
 }
+table.wishlist_table.wishlist_manage_table td.wishlist-name a.show-title-form:hover {
+  color: #434343;
+}
 table.wishlist_table.wishlist_manage_table td.wishlist-privacy {
   text-align: center;
 }
@@ -10140,6 +10143,7 @@ table.wishlist_table.wishlist_manage_table td.wishlist-download .fa {
 table.wishlist_table.wishlist_manage_table td.wishlist-delete a {
   text-decoration: none;
   font-size: 0;
+  font-weight: 400;
   background: none;
   border: none;
   color: inherit;
@@ -10153,7 +10157,7 @@ table.wishlist_table.wishlist_manage_table td.wishlist-delete a:before {
   content: "";
   display: block;
   font-family: Linearicons-Free;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 
 .wishlist_manage_table.modern_grid li .item-wrapper {
@@ -10213,6 +10217,10 @@ table.wishlist_table.wishlist_manage_table td.wishlist-delete a:before {
   display: block;
   font-family: Linearicons-Free;
   font-size: 1.5rem;
+}
+
+.wishlist_manage_table .hidden-title-form .edit-title-buttons {
+  padding: 10px;
 }
 
 .submit-wishlist-changes {
