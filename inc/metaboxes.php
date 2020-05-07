@@ -167,23 +167,23 @@ function yith_proteo_sidebar_position_html( $post ) {
 	<select name="sidebar_position" id="sidebar_position"
 			class="components-text-control__input">
 		<option
-			value="<?php esc_attr_e( 'inherit', 'yith-proteo' ); ?>" <?php echo ( yith_proteo_sidebar_get_meta( 'sidebar_position' ) === 'inherit' ) ? 'selected' : ''; ?>>
+			value="inherit" <?php echo ( yith_proteo_sidebar_get_meta( 'sidebar_position' ) === 'inherit' ) ? 'selected' : ''; ?>>
 			<?php esc_html_e( 'inherit', 'yith-proteo' ); ?>
 		</option>
 		<option
-			value="<?php esc_attr_e( 'no-sidebar', 'yith-proteo' ); ?>" <?php echo ( yith_proteo_sidebar_get_meta( 'sidebar_position' ) === 'no-sidebar' ) ? 'selected' : ''; ?>>
+			value="no-sidebar" <?php echo ( yith_proteo_sidebar_get_meta( 'sidebar_position' ) === 'no-sidebar' ) ? 'selected' : ''; ?>>
 			<?php esc_html_e( 'no-sidebar', 'yith-proteo' ); ?>
 		</option>
 		<option
-			value="<?php esc_attr_e( 'left', 'yith-proteo' ); ?>" <?php echo ( yith_proteo_sidebar_get_meta( 'sidebar_position' ) === 'left' ) ? 'selected' : ''; ?>>
+			value="left" <?php echo ( yith_proteo_sidebar_get_meta( 'sidebar_position' ) === 'left' ) ? 'selected' : ''; ?>>
 			<?php esc_html_e( 'left', 'yith-proteo' ); ?>
 		</option>
 		<option
-			value="<?php esc_attr_e( 'right', 'yith-proteo' ); ?>" <?php echo ( yith_proteo_sidebar_get_meta( 'sidebar_position' ) === 'right' ) ? 'selected' : ''; ?>>
+			value="right" <?php echo ( yith_proteo_sidebar_get_meta( 'sidebar_position' ) === 'right' ) ? 'selected' : ''; ?>>
 			<?php esc_html_e( 'right', 'yith-proteo' ); ?>
 		</option>
 		<option
-			value="<?php esc_attr_e( 'bottom', 'yith-proteo' ); ?>" <?php echo ( yith_proteo_sidebar_get_meta( 'sidebar_position' ) === 'bottom' ) ? 'selected' : ''; ?>>
+			value="bottom" <?php echo ( yith_proteo_sidebar_get_meta( 'sidebar_position' ) === 'bottom' ) ? 'selected' : ''; ?>>
 			<?php esc_html_e( 'bottom', 'yith-proteo' ); ?>
 		</option>
 	</select>
