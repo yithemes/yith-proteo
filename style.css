@@ -9901,6 +9901,10 @@ Wishlist View Modern
   font-family: Linearicons-Free;
   font-size: 1rem;
 }
+.wishlist_table.modern_grid li .product-thumbnail .placeholder-item.empty-box,
+.wishlist_table.images_grid li .product-thumbnail .placeholder-item.empty-box {
+  min-height: 455px;
+}
 .wishlist_table.modern_grid .price-variation,
 .wishlist_table.images_grid .price-variation {
   margin-top: 5px;
@@ -10324,13 +10328,12 @@ ASK FOR AN ESTIMATE MODAL AND LINK
   font-weight: 600;
 }
 .wishlist-ask-an-estimate-popup .ask-an-estimate-button {
-  display: block;
+  width: auto;
   font-size: 1.0625rem;
-  text-transform: wishlist_manage_table;
   text-align: center;
   font-weight: 600;
   margin: 0;
-  padding: 0.875rem;
+  padding: 0.875rem 2rem;
 }
 
 .yith-wcwl-popup-content {
@@ -10568,6 +10571,11 @@ WISHLIST MOBILE LAYOUT
   color: inherit;
 }
 
+@media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  .wishlist_table.modern_grid .product-thumbnail .placeholder-item.empty-box {
+    min-height: 540px;
+  }
+}
 @media (max-width: 767.98px) {
   body .widget_yith-wcwl-items div.content.mini .list {
     display: none !important;

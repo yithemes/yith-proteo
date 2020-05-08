@@ -183,6 +183,12 @@ Wishlist View Modern
                 font-size: 1rem;
             }
         }
+
+        .product-thumbnail {
+            .placeholder-item.empty-box{
+                min-height: 455px;
+            }
+        }
     }
 
     .price-variation {
@@ -702,13 +708,12 @@ ASK FOR AN ESTIMATE MODAL AND LINK
     }
 
     .ask-an-estimate-button {
-        display: block;
+        width: auto;
         font-size: 1.0625rem;
-        text-transform: wishlist_manage_table ;
         text-align: center;
         font-weight: 600;
         margin: 0;
-        padding: 0.875rem;
+        padding: 0.875rem 2rem;
     }
 }
 
@@ -1008,6 +1013,17 @@ WISHLIST MOBILE LAYOUT
 
             &:hover{
                 color: inherit;
+            }
+        }
+    }
+}
+
+// High dpi screens
+@media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+    .wishlist_table.modern_grid{
+        .product-thumbnail {
+            .placeholder-item.empty-box{
+                min-height: 540px;
             }
         }
     }
