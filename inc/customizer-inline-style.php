@@ -158,13 +158,15 @@ function yith_proteo_inline_style() {
 				body.woocommerce-order-received .woocommerce-order .woocommerce-order-overview li.woocommerce-order-overview__order.order, 
 				body.woocommerce-order-received table.shop_table tfoot tr:last-of-type, 
 				body.woocommerce-order-received article.page header.entry-header .entry-title.lnr,
-				#yith-woocompare-related .related-products li .button.unstyled_button {
+				#yith-woocompare-related .related-products li .button.unstyled_button, 
+				.wc-block-grid ul.wc-block-grid__products li.wc-block-grid__product .add_to_cart_button {
 					color: {$main_color_shade};
 				}
 
 
 				.ywraq-wrapper a.button.wc-backward:hover,
-				a:hover, a:focus, a:active, table.cart tbody tr td.actions button[name=update_cart]:hover {
+				a:hover, a:focus, a:active, table.cart tbody tr td.actions button[name=update_cart]:hover, 
+				.wc-block-grid ul.wc-block-grid__products li.wc-block-grid__product .add_to_cart_button:hover {
 					color: {$general_link_hover_color};
 				}
 

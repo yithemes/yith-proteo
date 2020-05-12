@@ -108,7 +108,12 @@ input[type="submit"],
     }
 }
 
-.unstyled_button, .button.unstyled_button, table.cart tbody tr td.actions button[name=update_cart], .yith-wcqv-button.button:not(.inside-thumb){
+.unstyled_button, 
+.button.unstyled_button, 
+table.cart tbody tr td.actions button[name=update_cart], 
+.yith-wcqv-button.button:not(.inside-thumb), 
+.wc-block-grid ul.wc-block-grid__products li.wc-block-grid__product .add_to_cart_button, 
+.wc-block-grid ul.wc-block-grid__products li.wc-block-grid__product .add_to_cart_button:visited {
     background: none;
     background-color: transparent;
     padding: 0;
