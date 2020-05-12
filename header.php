@@ -4,6 +4,7 @@
  *
  * @package yith-proteo
  */
+
 global $post;
 ?>
 <!doctype html>
@@ -21,7 +22,7 @@ global $post;
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'yith-proteo' ); ?></a>
 
 	<?php
-	// hide site header if meta value enabled
+	// hide site header if meta value enabled.
 	if ( function_exists( 'wc' ) && is_shop() ) {
 		$hide_header = get_post_meta( wc_get_page_id( 'shop' ), 'yith_proteo_remove_header_and_footer', true );
 	} elseif ( is_home() ) {

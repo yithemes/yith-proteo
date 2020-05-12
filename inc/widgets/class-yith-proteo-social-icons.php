@@ -1,4 +1,9 @@
 <?php
+/**
+ * Social icons widget
+ *
+ * @package yith-proteo
+ */
 
 /**
  * Adds YITH_Proteo_Social_Icons widget.
@@ -11,7 +16,7 @@ class YITH_Proteo_Social_Icons extends WP_Widget {
 	public function __construct() {
 		parent::__construct(
 			'YITH_Proteo_Social_Icons',
-			__( 'Social Networks', 'yith-proteo' ), // Name
+			__( 'Social Networks', 'yith-proteo' ), // Name.
 			array(
 				'description' => __( 'Links to your social profiles', 'yith-proteo' ),
 			)
@@ -25,7 +30,6 @@ class YITH_Proteo_Social_Icons extends WP_Widget {
 	 * @param array $instance Saved values from database.
 	 *
 	 * @see WP_Widget::widget()
-	 *
 	 */
 	public function widget( $args, $instance ) {
 
@@ -36,7 +40,7 @@ class YITH_Proteo_Social_Icons extends WP_Widget {
 		$instagram = isset( $instance['instagram'] ) ? esc_url( $instance['instagram'] ) : '';
 		$linkedin  = isset( $instance['linkedin'] ) ? esc_url( $instance['linkedin'] ) : '';
 
-		// social profile link
+		// social profile link.
 		$facebook_profile  = '<a target="_blank" rel="nofollow noopener" class="facebook" title="facebook" href="' . $facebook . '"><span class="icon-social-facebook"></span></a>';
 		$twitter_profile   = '<a target="_blank" rel="nofollow noopener" class="twitter" title="twitter" href="' . $twitter . '"><span class="icon-social-twitter"></span></a>';
 		$instagram_profile = '<a target="_blank" rel="nofollow noopener" class="instagram" title="instagram" href="' . $instagram . '"><span class="icon-social-instagram"></span></a>';
@@ -64,7 +68,6 @@ class YITH_Proteo_Social_Icons extends WP_Widget {
 	 * @param array $instance Previously saved values from database.
 	 *
 	 * @see WP_Widget::form()
-	 *
 	 */
 	public function form( $instance ) {
 		$title = isset( $instance['title'] ) ? $instance['title'] : '';
@@ -131,7 +134,6 @@ class YITH_Proteo_Social_Icons extends WP_Widget {
 	 *
 	 * @return array Updated safe values to be saved.
 	 * @see WP_Widget::update()
-	 *
 	 */
 	public function update( $new_instance, $old_instance ) {
 		$instance              = array();

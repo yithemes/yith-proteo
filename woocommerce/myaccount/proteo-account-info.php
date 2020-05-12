@@ -1,6 +1,14 @@
 <?php
+/**
+ * Proteo My Account Info
+ *
+ * This template can be overridden by copying it to yourtheme/woocommerce/myaccount/proteo-account-info.php.
+ *
+ * @package yith-proteo
+ */
+
 if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly
+	exit; // Exit if accessed directly.
 }
 
 $logged_in_user = wp_get_current_user();

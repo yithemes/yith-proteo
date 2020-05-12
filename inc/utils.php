@@ -1,10 +1,16 @@
 <?php
 /**
- * Get Proteo Icons
+ * Theme utilities
  *
- * @author Francesco Grasso <francgrasso@yithemes.com>
+ * @package yith-proteo
  */
+
 if ( ! function_exists( 'yith_proteo_get_icons_list' ) ) :
+	/**
+	 * Get Proteo Icons
+	 *
+	 * @author Francesco Grasso <francgrasso@yithemes.com>
+	 */
 	function yith_proteo_get_icons_list() {
 
 		$icons = array(
@@ -185,17 +191,17 @@ if ( ! function_exists( 'yith_proteo_get_icons_list' ) ) :
 endif;
 
 
-/**
- * Increases or decreases the brightness of a color by a percentage of the current brightness.
- *
- * @param string $hex_code Supported formats: `#FFF`, `#FFFFFF`, `FFF`, `FFFFFF`
- * @param float $adjust_percent A number between -1 and 1. E.g. 0.3 = 30% lighter; -0.4 = 40% darker.
- *
- * @return  string
- *
- * @author Francesco Grasso <francgrasso@yithemes.com>
- */
 if ( ! function_exists( 'yith_proteo_adjust_brightness' ) ) :
+	/**
+	 * Increases or decreases the brightness of a color by a percentage of the current brightness.
+	 *
+	 * @param string $hex_code Supported formats: `#FFF`, `#FFFFFF`, `FFF`, `FFFFFF`.
+	 * @param float  $adjust_percent A number between -1 and 1. E.g. 0.3 = 30% lighter; -0.4 = 40% darker.
+	 *
+	 * @return  string
+	 *
+	 * @author Francesco Grasso <francgrasso@yithemes.com>
+	 */
 	function yith_proteo_adjust_brightness( $hex_code, $adjust_percent ) {
 		$hex_code = ltrim( $hex_code, '#' );
 
@@ -215,3 +221,64 @@ if ( ! function_exists( 'yith_proteo_adjust_brightness' ) ) :
 		return '#' . implode( $hex_code );
 	}
 endif;
+
+add_action( 'tgmpa_register', 'yith_proteo_register_required_plugins' );
+
+/**
+ * Register the required plugins for this theme.
+ * This function is hooked into `tgmpa_register`, which is fired on the WP `init` action on priority 10.
+ */
+function yith_proteo_register_required_plugins() {
+	/*
+	 * Array of plugin arrays. Required keys are name and slug.
+	 * If the source is NOT from the .org repo, then source is also required.
+	 */
+	$plugins = array(
+
+		array(
+			'name'        => 'YITH WooCommerce Wishlist',
+			'slug'        => 'yith-woocommerce-wishlist',
+			'required'    => false,
+			'is_callable' => 'YITH_WCWL_Premium',
+		),
+
+		array(
+			'name'        => 'YITH WooCommerce Product Slider Carousel',
+			'slug'        => 'yith-woocommerce-product-slider-carousel',
+			'required'    => false,
+			'is_callable' => 'YITH_WooCommerce_Product_Slider_Premium',
+		),
+
+		array(
+			'name'     => 'YITH Slider for page builders',
+			'slug'     => 'yith-slider-for-page-builders',
+			'required' => false,
+		),
+
+		array(
+			'name'     => 'Contact Form 7',
+			'slug'     => 'contact-form-7',
+			'required' => false,
+		),
+
+		array(
+			'name'     => 'WooCommerce',
+			'slug'     => 'woocommerce',
+			'required' => false,
+		),
+
+	);
+
+	$config = array(
+		'id'           => 'yith-proteo',                 // Unique ID for hashing notices for multiple instances of TGMPA.
+		'default_path' => '',                      // Default absolute path to bundled plugins.
+		'menu'         => 'tgmpa-install-plugins', // Menu slug.
+		'has_notices'  => true,                    // Show admin notices or not.
+		'dismissable'  => true,                    // If false, a user cannot dismiss the nag message.
+		'dismiss_msg'  => '',                      // If 'dismissable' is false, this message will be output at top of nag.
+		'is_automatic' => true,                   // Automatically activate plugins after installation or not.
+		'message'      => '',                      // Message to output right before the plugins table.
+	);
+
+	tgmpa( $plugins, $config );
+}

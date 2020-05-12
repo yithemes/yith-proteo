@@ -1,14 +1,23 @@
-<?php class YITH_Proteo_Walker_Comment extends Walker_Comment {
+<?php
+/**
+ * Extends Walker_Comment class
+ *
+ * @package yith-proteo
+ */
+
+/**
+ * Class YITH_Proteo_Walker_Comment
+ */
+class YITH_Proteo_Walker_Comment extends Walker_Comment {
 
 	/**
 	 * Outputs a comment in the HTML5 format.
 	 *
 	 * @param WP_Comment $comment Comment to display.
-	 * @param int $depth Depth of the current comment.
-	 * @param array $args An array of arguments.
+	 * @param int        $depth Depth of the current comment.
+	 * @param array      $args An array of arguments.
 	 *
 	 * @see wp_list_comments()
-	 *
 	 */
 	protected function html5_comment( $comment, $depth, $args ) {
 

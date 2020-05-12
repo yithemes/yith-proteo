@@ -1,4 +1,9 @@
 <?php
+/**
+ * Recent Posts widget
+ *
+ * @package yith-proteo
+ */
 
 /**
  * Extend Recent Posts Widget
@@ -7,6 +12,12 @@
  */
 class YITH_Proteo_Recent_Posts_Widget extends WP_Widget_Recent_Posts {
 
+	/**
+	 * Widget Frontend
+	 *
+	 * @param array $args arguments.
+	 * @param array $instance widget instance.
+	 */
 	public function widget( $args, $instance ) {
 
 		extract( $args ); // phpcs:ignore WordPress.PHP.DontExtract.extract_extract
@@ -17,7 +28,6 @@ class YITH_Proteo_Recent_Posts_Widget extends WP_Widget_Recent_Posts {
 		if ( ! $number ) {
 			$number = 5;
 		}
-
 
 		$show_date = isset( $instance['show_date'] ) ? $instance['show_date'] : false;
 

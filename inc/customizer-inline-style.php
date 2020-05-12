@@ -1,5 +1,7 @@
 <?php
 /**
+ * Proteo custom style file
+ *
  * @package yith-proteo
  */
 
@@ -9,7 +11,7 @@
  * @author Francesco Grasso <francgrasso@yithemes.com>
  */
 function yith_proteo_inline_style() {
-	// Register a dummy empty style to hook to
+	// Register a dummy empty style to hook to.
 	wp_register_style( 'yith-proteo-custom-style', false, array(), YITH_PROTEO_VERSION );
 	wp_enqueue_style( 'yith-proteo-custom-style' );
 
@@ -84,12 +86,11 @@ function yith_proteo_inline_style() {
 		$font = 'body, body.yith-woocompare-popup { font-family: \'Montserrat\', sans-serif; }';
 	}
 
-
 	$custom_css = "
 				{$font}
 
 				* {
-				  outline-color: {$main_color_shade};
+					outline-color: {$main_color_shade};
 				}
 
 				a,
@@ -146,32 +147,32 @@ function yith_proteo_inline_style() {
 				.yith-ywraq-add-to-quote a, .yith_ywraq_add_item_browse_message a,
 				table.cart tbody tr td.actions button[name=update_cart],
 				.woocommerce .products .add-request-quote-button.button,
-                .woocommerce .products .add-request-quote-button-addons.button,
-                #yith-wacp-popup .yith-wacp-content .yith-wacp-related a.button,
-                #yith-wacp-popup .yith-wacp-content .yith-wacp-related a.button:hover,
-                .ywraq-wrapper a.button.wc-backward,
-                #yith-ywraq-form .actions .button,
-                .ywraq-quote-icon-icon_quote:hover:before, 
-                #ui-datepicker-div .ui-datepicker-calendar tbody td a.ui-state-hover:not(.ui-state-active),
-                #ui-datepicker-div .ui-datepicker-calendar tbody td a.ui-state-highlight, 
-                body.woocommerce-order-received .woocommerce-order .woocommerce-order-overview li.woocommerce-order-overview__order.order, 
-                body.woocommerce-order-received table.shop_table tfoot tr:last-of-type, 
-                body.woocommerce-order-received article.page header.entry-header .entry-title.lnr,
-                #yith-woocompare-related .related-products li .button.unstyled_button {
+				.woocommerce .products .add-request-quote-button-addons.button,
+				#yith-wacp-popup .yith-wacp-content .yith-wacp-related a.button,
+				#yith-wacp-popup .yith-wacp-content .yith-wacp-related a.button:hover,
+				.ywraq-wrapper a.button.wc-backward,
+				#yith-ywraq-form .actions .button,
+				.ywraq-quote-icon-icon_quote:hover:before, 
+				#ui-datepicker-div .ui-datepicker-calendar tbody td a.ui-state-hover:not(.ui-state-active),
+				#ui-datepicker-div .ui-datepicker-calendar tbody td a.ui-state-highlight, 
+				body.woocommerce-order-received .woocommerce-order .woocommerce-order-overview li.woocommerce-order-overview__order.order, 
+				body.woocommerce-order-received table.shop_table tfoot tr:last-of-type, 
+				body.woocommerce-order-received article.page header.entry-header .entry-title.lnr,
+				#yith-woocompare-related .related-products li .button.unstyled_button {
 					color: {$main_color_shade};
 				}
 
 
-                .ywraq-wrapper a.button.wc-backward:hover,
+				.ywraq-wrapper a.button.wc-backward:hover,
 				a:hover, a:focus, a:active, table.cart tbody tr td.actions button[name=update_cart]:hover {
-				    color: {$general_link_hover_color};
+					color: {$general_link_hover_color};
 				}
 
 				.select2-dropdown .select2-results__option.select2-results__option--highlighted,
 				.select2-dropdown .select2-results__option.select2-results__option[data-selected=true],
-				 .selectBox-dropdown-menu li.selectBox-selected a,
-				 .selectBox-dropdown-menu li.selectBox-hover a {
-				    color: {$main_color_shade} !important;
+				.selectBox-dropdown-menu li.selectBox-selected a,
+				.selectBox-dropdown-menu li.selectBox-hover a {
+					color: {$main_color_shade} !important;
 				}
 
 				button,
@@ -284,137 +285,137 @@ function yith_proteo_inline_style() {
 					background: {$main_color_shade};
 				}
 
-                header.site-header {
-                    background-color: {$header_bg_color};
-                }
-                #topbar {
-                    background-color: {$topbar_bg_color};
-                }
-                #main-footer {
-                    background-color: {$footer_bg_color};
-                }
-                #main-footer .site-info {
-                    background-color: {$footer_credits_bg_color};
-                }
+				header.site-header {
+					background-color: {$header_bg_color};
+				}
+				#topbar {
+					background-color: {$topbar_bg_color};
+				}
+				#main-footer {
+					background-color: {$footer_bg_color};
+				}
+				#main-footer .site-info {
+					background-color: {$footer_credits_bg_color};
+				}
 
-                body, body.yith-woocompare-popup, button, input, select, optgroup, textarea {
-                    font-size: {$base_font_size}px;
-                    color: {$base_font_color};
-                }
+				body, body.yith-woocompare-popup, button, input, select, optgroup, textarea {
+					font-size: {$base_font_size}px;
+					color: {$base_font_color};
+				}
 
-                h1,
-                article.page header.entry-header h1,
-                article:not(.has-post-thumbnail).page header.entry-header h1,
-                article.page header.entry-header .entry-title.lnr{
-                    font-size: {$h1_font_size}px;
-                    color: {$h1_font_color};
-                }
+				h1,
+				article.page header.entry-header h1,
+				article:not(.has-post-thumbnail).page header.entry-header h1,
+				article.page header.entry-header .entry-title.lnr{
+					font-size: {$h1_font_size}px;
+					color: {$h1_font_color};
+				}
 
-                h2 {
-                    font-size: {$h2_font_size}px;
-                    color: {$h2_font_color};
-                }
+				h2 {
+					font-size: {$h2_font_size}px;
+					color: {$h2_font_color};
+				}
 
-                h3, .widget_products .product-title {
-                    font-size: {$h3_font_size}px;
-                    color: {$h3_font_color};
-                }
+				h3, .widget_products .product-title {
+					font-size: {$h3_font_size}px;
+					color: {$h3_font_color};
+				}
 
-                h4 {
-                    font-size: {$h4_font_size}px;
-                    color: {$h4_font_color};
-                }
+				h4 {
+					font-size: {$h4_font_size}px;
+					color: {$h4_font_color};
+				}
 
-                h5 {
-                    font-size: {$h5_font_size}px;
-                    color: {$h5_font_color};
-                }
+				h5 {
+					font-size: {$h5_font_size}px;
+					color: {$h5_font_color};
+				}
 
-                h6 {
-                    font-size: {$h6_font_size}px;
-                    color: {$h6_font_color};
-                }
+				h6 {
+					font-size: {$h6_font_size}px;
+					color: {$h6_font_color};
+				}
 
-                /* Button style 1*/
-                button,
-                input[type=\"button\"],
-                input[type=\"reset\"],
-                input[type=\"submit\"],
-                .button,
-                .widget a.button,
-                .button-style-1:not(.wp-block-button), .button-style-1 a,
-                input[type=file]::-webkit-file-upload-button {
+				/* Button style 1*/
+				button,
+				input[type=\"button\"],
+				input[type=\"reset\"],
+				input[type=\"submit\"],
+				.button,
+				.widget a.button,
+				.button-style-1:not(.wp-block-button), .button-style-1 a,
+				input[type=file]::-webkit-file-upload-button {
 					background: none;
-                    background-color: {$button_1_bg_color};
+					background-color: {$button_1_bg_color};
 					border-color: {$button_1_border_color};
 					color: {$button_1_font_color};
-                }
+				}
 
-                 button:hover,
-                 input[type=\"button\"]:hover,
-                 input[type=\"reset\"]:hover,
-                 input[type=\"submit\"]:hover,
-                 .button:hover,
-                 .widget a.button:hover,
-                 .wishlist-submit.popup_button:hover,
-                 .button.flat:hover,
-				 .yith_wcwl_footer_additional_action .ask-an-estimate-button:hover,
-				 .widget_shopping_cart .yith-proteo-mini-cart-content .woocommerce-mini-cart__buttons a.checkout:hover,
-				 .button-style-1:not(.wp-block-button):hover, .button-style-1 a:hover,
-				 input[type=file]:hover::-webkit-file-upload-button{
+				button:hover,
+				input[type=\"button\"]:hover,
+				input[type=\"reset\"]:hover,
+				input[type=\"submit\"]:hover,
+				.button:hover,
+				.widget a.button:hover,
+				.wishlist-submit.popup_button:hover,
+				.button.flat:hover,
+				.yith_wcwl_footer_additional_action .ask-an-estimate-button:hover,
+				.widget_shopping_cart .yith-proteo-mini-cart-content .woocommerce-mini-cart__buttons a.checkout:hover,
+				.button-style-1:not(.wp-block-button):hover, .button-style-1 a:hover,
+				input[type=file]:hover::-webkit-file-upload-button{
 					background: none;
-                    background-color: {$button_1_bg_hover_color};
+					background-color: {$button_1_bg_hover_color};
 					border-color: {$button_1_border_hover_color};
 					color: {$button_1_font_hover_color};
-                 }
+				}
 
-                /* Button style 2*/
-                button.alt,
-                input[type=\"button\"].alt,
-                input[type=\"reset\"].alt,
-                input[type=\"submit\"].alt,
-                .button.alt,
-                .widget-area .widget a.button.alt,
-                .wishlist-submit.popup_button,
-                .yith_wcwl_wishlist_footer input[name=\"add_all_to_cart\"],
-                .button-style-2:not(.wp-block-button), .button-style-2 a {
-                    background-color: {$button_2_bg_color_1};
-                    background: linear-gradient(180deg, {$button_2_bg_color_1} 0%, {$button_2_bg_color_2} 100%);
+				/* Button style 2*/
+				button.alt,
+				input[type=\"button\"].alt,
+				input[type=\"reset\"].alt,
+				input[type=\"submit\"].alt,
+				.button.alt,
+				.widget-area .widget a.button.alt,
+				.wishlist-submit.popup_button,
+				.yith_wcwl_wishlist_footer input[name=\"add_all_to_cart\"],
+				.button-style-2:not(.wp-block-button), .button-style-2 a {
+					background-color: {$button_2_bg_color_1};
+					background: linear-gradient(180deg, {$button_2_bg_color_1} 0%, {$button_2_bg_color_2} 100%);
 					color: {$button_2_font_color};
 					border: none;
-                }
-                button.alt:hover,
-                input[type=\"button\"].alt:hover,
-                input[type=\"reset\"].alt:hover,
-                input[type=\"submit\"].alt:hover,
-                .button.alt:hover,
-                .widget-area .widget a.button.alt:hover,
-                .wishlist-submit.popup_button:hover,
-                .yith_wcwl_wishlist_footer input[name=\"add_all_to_cart\"]:hover,
-                .button-style-2:not(.wp-block-button):hover, .button-style-2 a:hover {
-                    background-color: {$button_2_bg_hover_color};
-                    background: linear-gradient(180deg, {$button_2_bg_hover_color} 0%, {$button_2_bg_hover_color} 100%);
+				}
+				button.alt:hover,
+				input[type=\"button\"].alt:hover,
+				input[type=\"reset\"].alt:hover,
+				input[type=\"submit\"].alt:hover,
+				.button.alt:hover,
+				.widget-area .widget a.button.alt:hover,
+				.wishlist-submit.popup_button:hover,
+				.yith_wcwl_wishlist_footer input[name=\"add_all_to_cart\"]:hover,
+				.button-style-2:not(.wp-block-button):hover, .button-style-2 a:hover {
+					background-color: {$button_2_bg_hover_color};
+					background: linear-gradient(180deg, {$button_2_bg_hover_color} 0%, {$button_2_bg_hover_color} 100%);
 					color: {$button_2_font_hover_color};
-                }
+				}
 
-                /* Store options */
+				/* Store options */
 
-                .woocommerce-store-notice.demo_store {
-                    background-color: {$store_notice_bg_color};
-                    color: {$store_notice_text_color};
-                    font-size: {$store_notice_font_size}px;
-                }
-                .woocommerce span.onsale {
-                    background-color: {$sale_badge_bg_color};
-                    color: {$sale_badge_text_color};
-                    font-size: {$sale_badge_font_size}px;
-                }
-                .woocommerce-message,
+				.woocommerce-store-notice.demo_store {
+					background-color: {$store_notice_bg_color};
+					color: {$store_notice_text_color};
+					font-size: {$store_notice_font_size}px;
+				}
+				.woocommerce span.onsale {
+					background-color: {$sale_badge_bg_color};
+					color: {$sale_badge_text_color};
+					font-size: {$sale_badge_font_size}px;
+				}
+				.woocommerce-message,
 				.woocommerce-info,
 				.woocommerce-error,
-				 .entry-content .ywgc_enter_code p,
-				 body.woocommerce-checkout .checkout_coupon p{
-				    font-size: {$woo_messages_font_size}px;
+				.entry-content .ywgc_enter_code p,
+				body.woocommerce-checkout .checkout_coupon p{
+					font-size: {$woo_messages_font_size}px;
 				}
 				.woocommerce-message {
 					border-color: {$woo_messages_default_accent_color};
@@ -438,7 +439,6 @@ function yith_proteo_inline_style() {
 				
 	";
 
-
 	if ( ! empty( $custom_css ) ) {
 		wp_add_inline_style( 'yith-proteo-custom-style', $custom_css );
 	}
@@ -446,27 +446,30 @@ function yith_proteo_inline_style() {
 
 add_action( 'wp_enqueue_scripts', 'yith_proteo_inline_style', 10 );
 
-/**
- * Convert hexdec color string to rgb(a) string
- * @author Francesco Grasso <francgrasso@yithemes.com>
- */
-
 if ( ! function_exists( 'yith_proteo_hex2rgba' ) ) :
+	/**
+	 * Convert hexdec color string to rgb(a) string
+	 *
+	 * @param string $color Color code string.
+	 * @param bool   $opacity Opacity boolean.
+	 *
+	 * @author Francesco Grasso <francgrasso@yithemes.com>
+	 */
 	function yith_proteo_hex2rgba( $color, $opacity = false ) {
 
 		$default = 'rgb(0,0,0)';
 
-		//Return default if no color provided
+		// Return default if no color provided.
 		if ( empty( $color ) ) {
 			return $default;
 		}
 
-		//Sanitize $color if "#" is provided
+		// Sanitize $color if "#" is provided.
 		if ( '#' == $color[0] ) {
 			$color = substr( $color, 1 );
 		}
 
-		//Check if color has 6 or 3 characters and get values
+		// Check if color has 6 or 3 characters and get values.
 		if ( strlen( $color ) == 6 ) {
 			$hex = array( $color[0] . $color[1], $color[2] . $color[3], $color[4] . $color[5] );
 		} elseif ( strlen( $color ) == 3 ) {
@@ -475,10 +478,10 @@ if ( ! function_exists( 'yith_proteo_hex2rgba' ) ) :
 			return $default;
 		}
 
-		//Convert hexadec to rgb
+		// Convert hexadec to rgb.
 		$rgb = array_map( 'hexdec', $hex );
 
-		//Check if opacity is set(rgba or rgb)
+		// Check if opacity is set(rgba or rgb).
 		if ( $opacity ) {
 			if ( abs( $opacity ) > 1 ) {
 				$opacity = 1.0;
@@ -488,7 +491,7 @@ if ( ! function_exists( 'yith_proteo_hex2rgba' ) ) :
 			$output = 'rgb(' . implode( ',', $rgb ) . ')';
 		}
 
-		//Return rgb(a) color string
+		// Return rgb(a) color string.
 		return $output;
 	}
 endif;

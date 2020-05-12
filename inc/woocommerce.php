@@ -259,7 +259,7 @@ if ( ! function_exists( 'yith_proteo_cart_layout' ) ) {
 	/**
 	 * Set the cart page layout according to customizer option
 	 *
-	 * @param $classes
+	 * @param array $classes Cart layout CSS classes.
 	 *
 	 * @return array
 	 *
@@ -282,9 +282,10 @@ if ( ! function_exists( 'yith_proteo_cart_layout' ) ) {
  * Add account user photo on sidebar
  */
 add_action( 'woocommerce_before_account_navigation', 'yith_proteo_open_my_account_sidebar', 10 );
+
 if ( ! function_exists( 'yith_proteo_open_my_account_sidebar' ) ) :
 	/**
-	 * Add a user avatar on top of sidebar
+	 * Add a user avatar on top of sidebar (Opening)
 	 */
 	function yith_proteo_open_my_account_sidebar() {
 		global $current_user;
@@ -312,29 +313,36 @@ endif;
 
 add_action( 'woocommerce_after_account_navigation', 'yith_proteo_close_my_account_sidebar', 10 );
 if ( ! function_exists( 'yith_proteo_close_my_account_sidebar' ) ) :
+	/**
+	 * Add a user avatar on top of sidebar (Closing)
+	 */
 	function yith_proteo_close_my_account_sidebar() {
 		echo '</div>';
 	}
 endif;
+
+add_action( 'init', 'yith_proteo_custom_my_account_endpoint' );
+
 /**
  * Add account endpoints
  */
-add_action( 'init', 'yith_proteo_custom_my_account_endpoint' );
-
 function yith_proteo_custom_my_account_endpoint() {
 	add_rewrite_endpoint( 'account-info', EP_ROOT | EP_PAGES );
 }
 
 
+
+add_filter( 'woocommerce_account_menu_items', 'yith_proteo_arrange_my_account_links' );
 /**
  * Rearrange account endpoints
+ *
+ * @param array $menu_links My account menu items.
  */
-add_filter( 'woocommerce_account_menu_items', 'yith_proteo_arrange_my_account_links' );
 function yith_proteo_arrange_my_account_links( $menu_links ) {
 
-	unset( $menu_links['customer-logout'] ); // Remove Logout link
-	unset( $menu_links['edit-account'] ); // Remove edit account link
-	unset( $menu_links['edit-address'] ); // Remove edit address link
+	unset( $menu_links['customer-logout'] ); // Remove Logout link.
+	unset( $menu_links['edit-account'] ); // Remove edit account link.
+	unset( $menu_links['edit-address'] ); // Remove edit address link.
 
 	$menu_links['account-info'] = __( 'Account info', 'yith-proteo' );
 
@@ -342,11 +350,11 @@ function yith_proteo_arrange_my_account_links( $menu_links ) {
 
 }
 
+
+add_action( 'woocommerce_account_account-info_endpoint', 'yith_proteo_account_info_endpoint_content' );
 /**
  * Add new endpoint content
  */
-add_action( 'woocommerce_account_account-info_endpoint', 'yith_proteo_account_info_endpoint_content' );
-
 function yith_proteo_account_info_endpoint_content() {
 	wc_get_template( 'myaccount/proteo-account-info.php' );
 }
@@ -365,13 +373,15 @@ add_action( 'woocommerce_single_product_summary', 'woocommerce_breadcrumb', 0 );
 add_filter( 'woocommerce_product_description_heading', '__return_null' );
 add_filter( 'woocommerce_product_additional_information_heading', '__return_null' );
 
-/**
- * Additional product loop image on hover
- * @author Francesco Grasso <francgrasso@yithemes.com>
- */
+
 
 if ( ! function_exists( 'yith_proteo_show_additional_product_loop_image_on_hover' ) ) :
 
+	/**
+	 * Additional product loop image on hover
+	 *
+	 * @author Francesco Grasso <francgrasso@yithemes.com>
+	 */
 	function yith_proteo_show_additional_product_loop_image_on_hover() {
 
 		global $product;
@@ -384,10 +394,11 @@ endif;
 
 add_action( 'woocommerce_before_shop_loop_item_title', 'yith_proteo_show_additional_product_loop_image_on_hover', 15 );
 
-/**
- * Mini Cart item count
- */
+
 add_action( 'woocommerce_before_mini_cart', 'yith_proteo_before_mini_cart', 10 );
+/**
+ * Mini Cart item count (before)
+ */
 function yith_proteo_before_mini_cart() {
 	echo '<a href="' . esc_url( wc_get_cart_url() ) . '" class="proceed-to-cart-icon"><span class="lnr lnr-cart"></span><span>' . esc_html( WC()->cart->get_cart_contents_count() ) . '</span></a><div class="yith-proteo-mini-cart-content">';
 	if ( WC()->cart->get_cart_contents_count() > 0 ) {
@@ -397,6 +408,9 @@ function yith_proteo_before_mini_cart() {
 }
 
 add_action( 'woocommerce_after_mini_cart', 'yith_proteo_after_mini_cart', 10 );
+/**
+ * Mini Cart item count (after)
+ */
 function yith_proteo_after_mini_cart() {
 	echo '</div>';
 
@@ -408,11 +422,12 @@ function yith_proteo_after_mini_cart() {
 remove_action( 'woocommerce_before_single_product_summary', 'woocommerce_show_product_sale_flash', 10 );
 add_action( 'woocommerce_product_thumbnails', 'woocommerce_show_product_sale_flash', 5 );
 
-/**
+
+if ( class_exists( 'YITH_WCWL_Frontend_Premium' ) ) {
+	/**
  * Support to YITH WooCommerce Wishlist - Move wishlist page links from footer to head
  */
-if ( class_exists( 'YITH_WCWL_Frontend_Premium' ) ) {
-	// prints wishlist pages links
+	// prints wishlist pages links.
 	remove_action(
 		'yith_wcwl_wishlist_after_wishlist_content',
 		array(
@@ -433,7 +448,7 @@ if ( class_exists( 'YITH_WCWL_Frontend_Premium' ) ) {
 /**
  * Change yith wishlist title tag from h2 to h1
  *
- * @param $title
+ * @param string $title Wishlist page title.
  *
  * @return mixed
  *
@@ -458,8 +473,8 @@ add_filter( 'yith_wcwl_wishlist_title', 'yith_proteo_change_wishlist_title_tag' 
 /**
  * Additional CSS class on loop add to cart buttons
  *
- * @param $args
- * @param $product
+ * @param array  $args Array containing css classes.
+ * @param object $product Product object.
  *
  * @return mixed
  *
@@ -473,23 +488,20 @@ function yith_proteo_loop_add_to_cart_additional_class( $args, $product ) {
 
 add_filter( 'woocommerce_loop_add_to_cart_args', 'yith_proteo_loop_add_to_cart_additional_class', 10, 2 );
 
-
-/**
- * Add my-account dashboard grid content
- */
-
-add_action( 'woocommerce_account_dashboard', 'yith_proteo_account_dashboard', 10 );
 if ( ! function_exists( 'yith_proteo_account_dashboard' ) ) :
+	/**
+	 * Add my-account dashboard grid content
+	 */
 	function yith_proteo_account_dashboard() {
 		wc_get_template( 'myaccount/proteo-dashboard.php' );
 	}
 endif;
-
+add_action( 'woocommerce_account_dashboard', 'yith_proteo_account_dashboard', 10 );
 
 /**
  * Limit products short description when not in product single page
  *
- * @param $post_excerpt
+ * @param string $post_excerpt Post excerpt.
  *
  * @return false|string
  *
@@ -520,11 +532,11 @@ function yith_proteo_limit_woocommerce_short_description( $post_excerpt ) {
 	if ( strlen( $post_excerpt ) <= $length ) {
 		return $post_excerpt;
 	}
-	//find last space within length
+	// find last space within length.
 	$last_space   = strrpos( substr( $post_excerpt, 0, $length ), ' ' );
 	$trimmed_text = substr( $post_excerpt, 0, $last_space );
 
-	//add ellipses
+	// add ellipses.
 	$trimmed_text .= '...';
 
 	return $trimmed_text;
@@ -535,8 +547,8 @@ add_filter( 'woocommerce_short_description', 'yith_proteo_limit_woocommerce_shor
 /**
  * Change Thank you page title
  *
- * @param $title
- * @param $id
+ * @param string $title Page title.
+ * @param int    $id    Page id.
  *
  * @return string
  */
@@ -565,7 +577,7 @@ add_action( 'template_redirect', 'yith_proteo_remove_thank_you_breadcrumbs' );
 
 
 /**
-* Add arrows to quantity inputs
+ * Add arrows to quantity inputs
  */
 function yith_proteo_customize_quantity_inputs() {
 	?>
@@ -583,11 +595,18 @@ add_action( 'woocommerce_after_quantity_input_field', 'yith_proteo_customize_qua
 add_action( 'woocommerce_before_shop_loop', 'yith_proteo_before_shop_loop_opener', 15 );
 add_action( 'woocommerce_before_shop_loop', 'yith_proteo_before_shop_loop_closer', 35 );
 
+/**
+ * Opening tag before shop loop
+ */
 function yith_proteo_before_shop_loop_opener() {
 	?>
 		<div class="yith-proteo-before-shop-loop">
 	<?php
 }
+
+/**
+ * Closing tag before shop loop
+ */
 function yith_proteo_before_shop_loop_closer() {
 	?>
 		</div>

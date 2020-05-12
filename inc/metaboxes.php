@@ -1,14 +1,20 @@
 <?php
 /**
- * Function to easily retrieve sidebar position
+ * Theme metaboxes file
  *
- * @param $value
- *
- * @return bool|mixed|string
- *
- * @author Francesco Grasso <francgrasso@yithemes.com>
+ * @package yith-proteo
  */
+
 if ( ! function_exists( 'yith_proteo_sidebar_get_meta' ) ) :
+	/**
+	 * Function to easily retrieve sidebar position
+	 *
+	 * @param string $value meta value to retrieve.
+	 *
+	 * @return bool|mixed|string
+	 *
+	 * @author Francesco Grasso <francgrasso@yithemes.com>
+	 */
 	function yith_proteo_sidebar_get_meta( $value ) {
 		global $post;
 		if ( ! $post ) {
@@ -107,7 +113,7 @@ add_action( 'add_meta_boxes', 'yith_proteo_remove_header_and_footer_add_meta_box
 /**
  * Remove header and footer metabox
  *
- * @param $post
+ * @param object $post Post object.
  *
  * @author Francesco Grasso <francgrasso@yithemes.com>
  */
@@ -126,7 +132,7 @@ function yith_proteo_remove_header_and_footer_html( $post ) {
 /**
  * Title icon metabox html
  *
- * @param $post
+ * @param object $post Post object.
  *
  * @author Francesco Grasso <francgrasso@yithemes.com>
  */
@@ -157,7 +163,7 @@ function yith_proteo_title_icon_html( $post ) {
 /**
  * Sidebar position metabox html
  *
- * @param $post
+ * @param object $post Post object.
  *
  * @author Francesco Grasso <francgrasso@yithemes.com>
  */
@@ -193,7 +199,7 @@ function yith_proteo_sidebar_position_html( $post ) {
 /**
  * Sidebar chooser metabox html
  *
- * @param $post
+ * @param object $post Post object.
  *
  * @author Francesco Grasso <francgrasso@yithemes.com>
  */
@@ -215,7 +221,7 @@ function yith_proteo_sidebar_chooser_html( $post ) {
 /**
  * Header slider metabox html
  *
- * @param $post
+ * @param object $post Post object.
  *
  * @author Francesco Grasso <francgrasso@yithemes.com>
  */
@@ -254,7 +260,7 @@ function yith_proteo_header_slider_html( $post ) {
 /**
  * Title icon meta save
  *
- * @param $post_id
+ * @param int $post_id Post object ID.
  *
  * @author Francesco Grasso <francgrasso@yithemes.com>
  */
@@ -280,7 +286,7 @@ add_action( 'save_post', 'yith_proteo_remove_header_and_footer_save' );
 /**
  * Page header footer meta save
  *
- * @param $post_id
+ * @param int $post_id Post object ID.
  *
  * @author Francesco Grasso <francgrasso@yithemes.com>
  */
@@ -305,7 +311,7 @@ add_action( 'save_post', 'yith_proteo_title_icon_save' );
 /**
  * Sidebar position meta save
  *
- * @param $post_id
+ * @param int $post_id Post object ID.
  *
  * @author Francesco Grasso <francgrasso@yithemes.com>
  */
@@ -330,7 +336,7 @@ add_action( 'save_post', 'yith_proteo_sidebar_position_save' );
 /**
  * Sidebar chooser meta save
  *
- * @param $post_id
+ * @param int $post_id Post object ID.
  *
  * @author Francesco Grasso <francgrasso@yithemes.com>
  */
@@ -355,7 +361,7 @@ add_action( 'save_post', 'yith_proteo_sidebar_chooser_save' );
 /**
  * Header slider meta save
  *
- * @param $post_id
+ * @param int $post_id Post object ID.
  *
  * @author Francesco Grasso <francgrasso@yithemes.com>
  */
@@ -377,7 +383,3 @@ function yith_proteo_header_slider_save( $post_id ) {
 }
 
 add_action( 'save_post', 'yith_proteo_header_slider_save' );
-
-
-
-

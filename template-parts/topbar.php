@@ -4,6 +4,7 @@
  *
  * @package yith-proteo
  */
+
 ?>
 <div id="topbar">
 	<div class="container">

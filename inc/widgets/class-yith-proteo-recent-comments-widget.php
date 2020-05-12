@@ -1,4 +1,9 @@
 <?php
+/**
+ * Recent Comments widget
+ *
+ * @package yith-proteo
+ */
 
 /**
  * Extend Recent Comments Widget
@@ -7,6 +12,12 @@
  */
 class YITH_Proteo_Recent_Comments_Widget extends WP_Widget_Recent_Comments {
 
+	/**
+	 * Widget Frontend
+	 *
+	 * @param array $args arguments.
+	 * @param array $instance widget instance.
+	 */
 	public function widget( $args, $instance ) {
 		if ( ! isset( $args['widget_id'] ) ) {
 			$args['widget_id'] = $this->id;
@@ -34,7 +45,6 @@ class YITH_Proteo_Recent_Comments_Widget extends WP_Widget_Recent_Comments {
 		 *
 		 * @since 3.4.0
 		 * @since 4.9.0 Added the `$instance` parameter.
-		 *
 		 */
 		$comments = get_comments(
 			apply_filters(
@@ -55,7 +65,7 @@ class YITH_Proteo_Recent_Comments_Widget extends WP_Widget_Recent_Comments {
 
 		$output .= '<ul id="recentcomments">';
 		if ( is_array( $comments ) && $comments ) {
-			// Prime cache for associated posts. (Prime post term cache if we need it for permalinks.)
+			// Prime cache for associated posts. (Prime post term cache if we need it for permalinks.).
 			$post_ids = array_unique( wp_list_pluck( $comments, 'comment_post_ID' ) );
 			_prime_post_caches( $post_ids, strpos( get_option( 'permalink_structure' ), '%category%' ), false );
 

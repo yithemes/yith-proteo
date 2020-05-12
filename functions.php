@@ -1,6 +1,6 @@
 <?php
 /**
- * yith-proteo functions and definitions
+ * YITH-Proteo functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
@@ -110,14 +110,14 @@ endif;
 add_action( 'after_setup_theme', 'yith_proteo_setup' );
 
 
-/**
- * Set the content width in pixels, based on the theme's design and stylesheet.
- *
- * Priority 0 to make it available to lower priority callbacks.
- *
- * @global int $content_width
- */
 if ( ! function_exists( 'yith_proteo_content_width' ) ) :
+	/**
+	 * Set the content width in pixels, based on the theme's design and stylesheet.
+	 *
+	 * Priority 0 to make it available to lower priority callbacks.
+	 *
+	 * @global int $content_width
+	 */
 	function yith_proteo_content_width() {
 		// This variable is intended to be overruled from themes.
 		// Open WPCS issue: {@link https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/issues/1043}.
@@ -185,6 +185,11 @@ require get_template_directory() . '/inc/widgets.php';
  * Customizer inline style additions.
  */
 require get_template_directory() . '/inc/customizer-inline-style.php';
+
+/**
+ * Load TGM class
+ */
+require_once get_template_directory() . '/third-party/classes/class-tgm-plugin-activation.php';
 
 /**
  * Various functions

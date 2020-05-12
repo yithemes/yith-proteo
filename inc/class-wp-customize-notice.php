@@ -1,9 +1,26 @@
 <?php
+/**
+ * Extends WP_Customize_Control class
+ *
+ * @package yith-proteo
+ */
+
 if ( class_exists( 'WP_Customize_Control' ) ) {
+	/**
+	 * Class WP_Customize_Notice
+	 */
 	class WP_Customize_Notice extends WP_Customize_Control {
 
+		/**
+		 * Customizer control type
+		 *
+		 * @var $type Control type
+		 */
 		public $type = 'simple_notice';
 
+		/**
+		 * Render controls
+		 */
 		public function render_content() {
 			$allowed_html = array(
 				'a'      => array(

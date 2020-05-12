@@ -4,7 +4,7 @@ Tags: one-column, two-columns, left-sidebar, right-sidebar, wide-blocks, accessi
 Requires at least: 4.9.6
 Tested up to: WordPress 5.4
 Requires PHP: 5.6
-Stable tag: 1.2.5
+Stable tag: 1.2.6
 YITH Proteo WordPress Theme, Copyright 2020 YITH
 YITH Proteo is distributed under the terms of the GNU GPL
 License: GPLv2 or later
@@ -25,6 +25,12 @@ Proteo is a sleek, modern and "Gutenberg-friendly" e-commerce theme. Developed w
 == Frequently Asked Questions ==
 
 == Changelog ==
+= 1.2.6 - May 11 2020 =
+* New: Suggested plugins message
+* Fix: Merge pull request #3 from kloukas/bugfix-sidebar-metabox (Fixed a bug in Sidebar Metabox Html.)
+* Tweak: PHPCS and WPCS improved
+* Tweak: Minor improvements to Wishlist style integration
+
 = 1.2.5 - Apr 30 2020 =
 * Support to YITH Slider for page builders
 
@@ -154,6 +160,7 @@ Proteo is a sleek, modern and "Gutenberg-friendly" e-commerce theme. Developed w
 * JQuery Modal https://github.com/kylefox/jquery-modal, (c) 2012 Kyle Fox, [MIT](https://opensource.org/licenses/MIT)
 * Select2 - https://github.com/select2/select2,  (c) 2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors, [MIT](https://opensource.org/licenses/MIT)
 * bootstrap-grid.scss - https://github.com/twbs/bootstrap, (c) 2011-2020 the Bootstrap Authors and Twitter, Inc. Code released under the MIT License (https://opensource.org/licenses/MIT)
+* TGM Plugin Activation - http://tgmpluginactivation.com/
 
 == Screenshot Licenses ==
 

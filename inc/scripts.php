@@ -1,12 +1,17 @@
 <?php
 /**
- * Enqueue scripts and styles.
+ * Script inclusion file
  *
- * @author Francesco Grasso <francgrasso@yithemes.com>
+ * @package yith-proteo
  */
 
 if ( ! function_exists( 'yith_proteo_scripts' ) ) :
 
+	/**
+	 * Enqueue scripts and styles.
+	 *
+	 * @author Francesco Grasso <francgrasso@yithemes.com>
+	 */
 	function yith_proteo_scripts() {
 
 		$suffix = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
@@ -29,12 +34,11 @@ if ( ! function_exists( 'yith_proteo_scripts' ) ) :
 		wp_enqueue_style( 'yith-proteo-animations', get_template_directory_uri() . '/third-party/aos' . $suffix . '.css', array(), '2.3.1' );
 		wp_enqueue_script( 'yith-proteo-animations-js', get_template_directory_uri() . '/third-party/aos' . $suffix . '.js', array( 'jquery' ), '2.3.1', true );
 
-		// Modals
+		// Modals.
 		wp_enqueue_script( 'yith-proteo-modals-js', get_template_directory_uri() . '/third-party/jquery.modal' . $suffix . '.js', array(), '0.9.1', true );
 		wp_enqueue_style( 'yith-proteo-modals-css', get_template_directory_uri() . '/third-party/jquery.modal' . $suffix . '.css', array(), '0.9.1' );
 
-
-		$args = [ 'jquery' ];
+		$args = array( 'jquery' );
 		if ( function_exists( 'WC' ) ) {
 			$args[] = 'selectWoo';
 		}
@@ -43,17 +47,15 @@ if ( ! function_exists( 'yith_proteo_scripts' ) ) :
 		wp_localize_script(
 			'yith-proteo-themejs',
 			'yith_proteo',
-			[
+			array(
 				'stickyHeader' => apply_filters(
 					'yith_proteo_enable_sticky_header',
 					get_theme_mod( 'yith_proteo_header_sticky', 'yes' )
 				),
-			]
+			)
 		);
 
-
 		wp_enqueue_script( 'yith-proteo-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
-
 
 		if ( get_theme_mod( 'yith_proteo_google_font' ) !== '' ) {
 			wp_enqueue_style( 'yith-proteo-google-font', get_theme_mod( 'yith_proteo_google_font', 'https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap' ), array( 'yith-proteo-style' ) ); // phpcs:ignore WordPress.WP.EnqueuedResourceParameters.MissingVersion
@@ -68,12 +70,12 @@ endif;
 add_action( 'wp_enqueue_scripts', 'yith_proteo_scripts', 10 );
 
 
-/**
- * Enqueue custom admin css for slider management
- *
- * @author Francesco Grasso <francgrasso@yithemes.com>
- */
 if ( ! function_exists( 'yith_proteo_admin_scripts' ) ) :
+	/**
+	 * Enqueue custom admin css for slider management
+	 *
+	 * @author Francesco Grasso <francgrasso@yithemes.com>
+	 */
 	function yith_proteo_admin_scripts() {
 
 		$suffix = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';

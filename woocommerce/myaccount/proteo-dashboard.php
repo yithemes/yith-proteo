@@ -5,6 +5,8 @@
  * Shows the first intro screen on the account dashboard.
  *
  * This template can be overridden by copying it to yourtheme/woocommerce/myaccount/proteo-dashboard.php.
+ *
+ * @package yith-proteo
  */
 
 ?>

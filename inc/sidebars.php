@@ -1,8 +1,14 @@
 <?php
 /**
- * Register widget area.
+ * Theme sidebars file
+ *
+ * @package yith-proteo
  */
+
 if ( ! function_exists( 'yith_proteo_widgets_init' ) ) :
+	/**
+	 * Register widget area.
+	 */
 	function yith_proteo_widgets_init() {
 		register_sidebar(
 			array(

@@ -5,16 +5,16 @@
  * @package yith-proteo
  */
 
-/**
- * Adds custom classes to the array of body classes.
- *
- * @param array $classes Classes for the body element.
- *
- * @return array
- *
- * @author Francesco Grasso <francgrasso@yithemes.com>
- */
 if ( ! function_exists( 'yith_proteo_body_classes' ) ) :
+	/**
+	 * Adds custom classes to the array of body classes.
+	 *
+	 * @param array $classes Classes for the body element.
+	 *
+	 * @return array
+	 *
+	 * @author Francesco Grasso <francgrasso@yithemes.com>
+	 */
 	function yith_proteo_body_classes( $classes ) {
 		// Adds a class of hfeed to non-singular pages.
 		if ( ! is_singular() ) {
@@ -32,11 +32,12 @@ endif;
 
 add_filter( 'body_class', 'yith_proteo_body_classes' );
 
-/**
- * Set custom header as background property.
- * Additional CSS in .scss files
- */
+
 if ( ! function_exists( 'yith_proteo_custom_header_style' ) ) :
+	/**
+	 * Set custom header as background property.
+	 * Additional CSS in .scss files
+	 */
 	function yith_proteo_custom_header_style() {
 		$style = '';
 		if ( has_custom_header() ) {
@@ -47,26 +48,29 @@ if ( ! function_exists( 'yith_proteo_custom_header_style' ) ) :
 	}
 endif;
 
-/**
- * Get Sidebar position
- *
- * @return string containing css classes
- *
- * @author Francesco Grasso <francgrasso@yithemes.com>
- */
+
 if ( ! function_exists( 'yith_proteo_get_sidebar_position' ) ) :
+	/**
+	 * Get Sidebar position
+	 *
+	 * @param string $info Sidebar show.
+	 *
+	 * @return string containing css classes
+	 *
+	 * @author Francesco Grasso <francgrasso@yithemes.com>
+	 */
 	function yith_proteo_get_sidebar_position( $info = null ) {
 		$sidebar_display = '';
 		$sidebar_show    = true;
 		$local_sidebar   = yith_proteo_sidebar_get_meta( 'sidebar_position' );
 		$general_sidebar = get_theme_mod( 'yith_proteo_default_sidebar_position', 'right' );
 
-		// Check Blog page settings from customizer
+		// Check Blog page settings from customizer.
 		if ( is_home() ) {
 			$general_sidebar = get_theme_mod( 'yith_proteo_blog_page_sidebar_position', 'right' );
 		}
 
-		// Check WooCommerce Shop page settings
+		// Check WooCommerce Shop page settings.
 		if ( class_exists( 'WooCommerce' ) ) {
 			if ( is_shop() ) {
 				$general_sidebar = get_post_meta( get_option( 'woocommerce_shop_page_id' ), 'sidebar_position', true );
@@ -120,12 +124,13 @@ if ( ! function_exists( 'yith_proteo_get_sidebar_position' ) ) :
 	}
 endif;
 
-/**
- * Print page titles
- *
- * @author Francesco Grasso <francgrasso@yithemes.com>
- */
+
 if ( ! function_exists( 'yith_proteo_print_page_titles' ) ) :
+	/**
+	 * Print page titles
+	 *
+	 * @author Francesco Grasso <francgrasso@yithemes.com>
+	 */
 	function yith_proteo_print_page_titles() {
 		global $post;
 
@@ -150,10 +155,11 @@ if ( ! function_exists( 'yith_proteo_print_page_titles' ) ) :
 endif;
 
 
-/**
- * FULL SCREEN SEARCH
- */
+
 if ( ! function_exists( 'yith_proteo_output_full_screen_search' ) ) :
+	/**
+	 * FULL SCREEN SEARCH
+	 */
 	function yith_proteo_output_full_screen_search() {
 		?>
 		<div id="full-screen-search">
@@ -200,7 +206,7 @@ add_filter( 'the_content_more_link', 'yith_proteo_modify_read_more_link' );
 /**
  * Modify the_excerpt read_more text with a link
  *
- * @param $more
+ * @param string $more More string.
  *
  * @return string
  *

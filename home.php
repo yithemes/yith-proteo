@@ -34,6 +34,7 @@ get_header();
 							the_post();
 
 							echo ( 1 == $post_count ) ? '<div class="col-md-12">' : '<div class="col-lg-6">';
+
 							/*
 							 * Include the Post-Type-specific template for the content.
 							 * If you want to override this in a child theme, then include a file
