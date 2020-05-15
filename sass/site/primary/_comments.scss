@@ -1,103 +1,99 @@
 .comment-content a {
-    word-wrap: break-word;
+	word-wrap: break-word;
 }
 
 .bypostauthor {
-    display: block;
+	display: block;
 }
 
 .comment-list {
-    list-style-type: none;
-    margin: 0 0 50px;
-    padding: 0;
+	list-style-type: none;
+	margin: 0 0 50px;
+	padding: 0;
 
-    .comment-body {
+	.comment-body {
+		&:after {
+			content: "";
+			display: block;
+			clear: both;
+		}
 
-        &:after {
-            content: '';
-            display: block;
-            clear: both;
-        }
+		.comment-meta {
+			&:after {
+				content: "";
+				display: block;
+				clear: both;
+			}
 
+			img {
+				border: 1px solid #707070;
+				padding: 5px;
+			}
 
-        .comment-meta {
-            &:after {
-                content: '';
-                display: block;
-                clear: both;
-            }
+			.comment-author {
+				float: left;
+				margin-right: 15px;
 
-            img {
-                border: 1px solid #707070;
-                padding: 5px;
-            }
+				font-size: 0;
+			}
 
-            .comment-author {
-                float: left;
-                margin-right: 15px;
+			.comment-metadata {
+				padding-top: 10px;
 
-                font-size: 0;
-            }
+				& > * {
+					display: block;
+					text-decoration: none;
+					color: #1f1f1f;
+				}
 
-            .comment-metadata {
+				a.url {
+					text-decoration: inherit;
+					color: inherit;
 
-                padding-top: 10px;
+					&:hover {
+						color: var(--proteo-main_color_shade, $color__accent);
+					}
+				}
 
-                & > * {
-                    display: block;
-                    text-decoration: none;
-                    color: #1F1F1F;
-                }
+				a.comment-edit-link {
+					float: right;
+				}
+			}
+		}
 
-                a.url {
-                    text-decoration: inherit;
-                    color: inherit;
+		.comment-content {
+			border: 1px solid #707070;
+			padding: 35px 25px 15px;
+			font-size: 1rem;
+			margin-bottom: 20px;
 
-                    &:hover {
-                        color: $color__accent;
-                    }
-                }
-
-                a.comment-edit-link {
-                    float: right;
-                }
-            }
-        }
-
-        .comment-content {
-            border: 1px solid #707070;
-            padding: 35px 25px 15px;
-            font-size: 1rem;
-            margin-bottom: 20px;
-
-            p {
-                margin-top: 0;
-            }
-        }
-
-    }
+			p {
+				margin-top: 0;
+			}
+		}
+	}
 }
 
 .comment-reply {
-    float: right;
+	float: right;
 }
 
 div#respond {
-    margin-bottom: 35px;
+	margin-bottom: 35px;
 
-    #submit {
-        float: right;
-    }
+	#submit {
+		float: right;
+	}
 }
 
 #comments {
-    .comments-title {
-        font-size: 1.5rem;
-    }
+	.comments-title {
+		font-size: 1.5rem;
+	}
 }
 
 .comment-list {
-    .comment {
-        margin-bottom: 50px;
-    }
+	.comment {
+		margin-bottom: 50px;
+	}
 }

@@ -2,21 +2,21 @@
  * Checkout
  */
 body.woocommerce-checkout {
-
-	.entry-content p:not([class^=has]),
+	.entry-content p:not([class^="has"]),
 	.entry-content li:not(.product) {
 		font-size: 1rem;
 		line-height: 1.8;
 	}
 
-	.col-1, .col-2 {
+	.col-1,
+	.col-2 {
 		max-width: initial;
 		width: 100%;
 		padding: 0;
 	}
 
 	form.woocommerce-checkout:after {
-		content: '';
+		content: "";
 		display: block;
 		clear: both;
 	}
@@ -81,7 +81,8 @@ body.woocommerce-checkout {
 			padding-bottom: 35px;
 		}
 
-		tfoot tr:first-child td, tfoot tr:first-child th {
+		tfoot tr:first-child td,
+		tfoot tr:first-child th {
 			padding-top: 35px;
 		}
 
@@ -96,12 +97,11 @@ body.woocommerce-checkout {
 		}
 
 		.order-total th {
-			color: $color__accent;
+			color: var(--proteo-main_color_shade, $color__accent);
 		}
 	}
 
 	#payment {
-
 		ul {
 			list-style-type: none;
 			padding: 0;
@@ -138,7 +138,6 @@ body.woocommerce-checkout {
 							font-weight: lighter;
 						}
 					}
-
 				}
 
 				.wc-payment-form {
@@ -209,7 +208,8 @@ body.woocommerce-order-received {
 		padding-right: 0;
 		padding-left: 15px;
 	}
-	table.shop_table tfoot tr td, table.shop_table tbody tr td {
+	table.shop_table tfoot tr td,
+	table.shop_table tbody tr td {
 		border: none;
 		padding: 15px 0;
 	}
@@ -218,6 +218,7 @@ body.woocommerce-order-received {
 	}
 	table.shop_table tfoot tr:last-of-type {
 		font-weight: bold;
+		color: var(--proteo-main_color_shade, $color__accent);
 	}
 	table.shop_table tr td:last-of-type {
 		text-align: right;
@@ -239,6 +240,10 @@ body.woocommerce-order-received {
 		margin: 0 auto 50px;
 	}
 
+	header.entry-header .entry-title.lnr {
+		color: var(--proteo-main_color_shade, $color__accent);
+	}
+
 	.woocommerce-order {
 		margin: 0 -15px;
 
@@ -256,6 +261,7 @@ body.woocommerce-order-received {
 			li.woocommerce-order-overview__order.order {
 				font-weight: bold;
 				margin-bottom: 25px;
+				color: var(--proteo-main_color_shade, $color__accent);
 			}
 		}
 
@@ -283,7 +289,7 @@ body.woocommerce-order-received {
 				clear: both;
 
 				&:after {
-					content: '';
+					content: "";
 					display: block;
 					clear: both;
 				}

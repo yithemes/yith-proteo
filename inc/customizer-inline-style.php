@@ -60,7 +60,8 @@ function yith_proteo_inline_style() {
 	$button_2_font_color       = get_theme_mod( 'yith_proteo_button_style_2_text_color', '#ffffff' );
 	$button_2_bg_hover_color   = get_theme_mod( 'yith_proteo_button_style_2_bg_color_hover', yith_proteo_adjust_brightness( get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ), - 0.3 ) );
 	$button_2_font_hover_color = get_theme_mod( 'yith_proteo_button_style_2_text_color_hover', '#ffffff' );
-	$buttons_border_radius     = get_theme_mod( 'yith_proteo_buttons_border_radius', 50 );
+
+	$buttons_border_radius = get_theme_mod( 'yith_proteo_buttons_border_radius', 50 );
 
 	/**
 	 * Forms
@@ -88,357 +89,54 @@ function yith_proteo_inline_style() {
 
 	$custom_css = "
 				{$font}
-
-				* {
-					outline-color: {$main_color_shade};
+				/**
+				* Proteo Customizer CSS Variables:
+				*/
+				:root {
+					--proteo-main_color_shade: {$main_color_shade};
+					--proteo-general_link_hover_color: {$general_link_hover_color};
+					--proteo-header_bg_color: {$header_bg_color};
+					--proteo-topbar_bg_color: {$topbar_bg_color};
+					--proteo-footer_bg_color: {$footer_bg_color};
+					--proteo-footer_credits_bg_color: {$footer_credits_bg_color};
+					--proteo-base_font_size: {$base_font_size};
+					--proteo-base_font_color: {$base_font_color};
+					--proteo-h1_font_size: {$h1_font_size}px;
+					--proteo-h1_font_color: {$h1_font_color};
+					--proteo-h2_font_size: {$h2_font_size }px;
+					--proteo-h2_font_color: {$h2_font_color};
+					--proteo-h3_font_size: {$h3_font_size }px;
+					--proteo-h3_font_color: {$h3_font_color};
+					--proteo-h4_font_size: {$h4_font_size }px;
+					--proteo-h4_font_color: {$h4_font_color};
+					--proteo-h5_font_size: {$h5_font_size }px;
+					--proteo-h5_font_color: {$h5_font_color};
+					--proteo-h6_font_size: {$h6_font_size }px;
+					--proteo-h6_font_color: {$h6_font_color};
+					--proteo-button_1_bg_color: {$button_1_bg_color};
+					--proteo-button_1_border_color: {$button_1_border_color};
+					--proteo-button_1_font_color: {$button_1_font_color};
+					--proteo-button_1_bg_hover_color: {$button_1_bg_hover_color};
+					--proteo-button_1_border_hover_color: {$button_1_border_hover_color};
+					--proteo-button_1_font_hover_color: {$button_1_font_hover_color};
+					--proteo-button_2_bg_color_1: {$button_2_bg_color_1};
+					--proteo-button_2_bg_color_2: {$button_2_bg_color_2};
+					--proteo-button_2_font_color: {$button_2_font_color};
+					--proteo-button_2_bg_hover_color: {$button_2_bg_hover_color};
+					--proteo-button_2_font_hover_color: {$button_2_font_hover_color};
+					--proteo-buttons_border_radius: {$buttons_border_radius}px;
+					--proteo-forms_input_borde_radius: {$forms_input_borde_radius}px;
+					--proteo-store_notice_bg_color: {$store_notice_bg_color};
+					--proteo-store_notice_text_color: {$store_notice_text_color};
+					--proteo-store_notice_font_size: {$store_notice_font_size}px;
+					--proteo-sale_badge_bg_color: {$sale_badge_bg_color};
+					--proteo-sale_badge_text_color: {$sale_badge_text_color};
+					--proteo-sale_badge_font_size: {$sale_badge_font_size}px;
+					--proteo-woo_messages_font_size: {$woo_messages_font_size}px;
+					--proteo-woo_messages_default_accent_color: {$woo_messages_default_accent_color};
+					--proteo-woo_messages_info_accent_color: {$woo_messages_info_accent_color};
+					--proteo-woo_messages_error_accent_color: {$woo_messages_error_accent_color};
 				}
-
-				a,
-				.comment-reply a,
-				.button.ghost,
-				.button.compare,
-				.wishlist-title a.show-title-form,
-				.wishlist-title a.hide-title-form,
-				.submit-wishlist-changes,
-				.yith_wcwl_wishlist_bulk_action input[type=submit],
-				.yith_wcwl_wishlist_footer .yith_wcwl_wishlist_update input[type=submit],
-				.wpcf7-form-control.ghost,
-				.button.ywgc_apply_gift_card_button,
-				.checkout_coupon button[name=apply_coupon],
-				.unstyled_button, .button.unstyled_button,
-				.unstyled_button:hover, .button.unstyled_button:hover,
-				span.checkboxbutton:before,
-				.widget_yith_proteo_social_icons a:hover,
-				header.entry-header .entry-title a:hover,
-				header.entry-header .entry-meta a:hover,
-				.comment-list .comment-body .comment-meta .comment-metadata a.url:hover,
-				table.cart tbody tr td.actions .coupon button, table.cart tfoot tr td.actions .coupon button, table.shop_table tbody tr td.actions .coupon button, table.shop_table tfoot tr td.actions .coupon button,
-				body.woocommerce-cart .cart-collaterals .cart_totals table tr.order-total,
-				body.woocommerce-checkout table.woocommerce-checkout-review-order-table .order-total th,
-				.woocommerce-breadcrumb a:hover,
-				.widget_shopping_cart .proceed-to-cart-icon:hover span.lnr,
-				.widget_shopping_cart .yith-proteo-mini-cart-content ul li > *:hover,
-				.widget_shopping_cart .yith-proteo-mini-cart-content .woocommerce-mini-cart__buttons a.wc-forward:not(.checkout),
-				.widget_nav_menu ul li a:hover,
-				.woocommerce-account .woocommerce-MyAccount-navigation ul li.is-active a, .woocommerce-account .woocommerce-MyAccount-navigation ul li a:hover,
-				.woocommerce-account ul.yith_proteo_dashboard_links li > div a:hover,
-				.woocommerce .ywcps-wrapper #nav_prev_def_free span:hover,
-				.woocommerce .ywcps-wrapper #nav_next_def_free span:hover,
-				.wishlist_table.modern_grid li .product-remove a:hover,
-				.wishlist_table.images_grid li .product-remove a:hover,
-				.single-product .single-product-layout-cols .yith-wcwl-add-to-wishlist .yith-wcwl-add-button a:not(.button):hover,
-				.single-product .woocommerce-tabs + .yith-wcwl-add-to-wishlist .yith-wcwl-add-button a:not(.button):hover,
-				.single-product .single-product-layout-cols .yith-wcwl-add-to-wishlist a:not(.button):hover,
-				.single-product .woocommerce-tabs + .yith-wcwl-add-to-wishlist a:not(.button):hover,
-				.wishlist-page-links a:hover, .wishlist-page-links a.active,
-				table.wishlist_table.wishlist_manage_table td.wishlist-download a:hover,
-				table.wishlist_table.wishlist_manage_table td.wishlist-delete a:hover,
-				.wishlist_manage_table.modern_grid li .wishlist-title-with-form .show-title-form .fa-pencil:hover:before,
-				.wishlist_manage_table.modern_grid li .item-details table.item-details-table td.value a:hover,
-				.widget_yith-wcwl-items div.list ul li > *.mini-cart-item-info a:hover,
-				.widget_yith-wcwl-items div.list ul li > *.mini-cart-item-info .mini-cart-wishlist-info a,
-				.widget_yith-wcwl-items div.list a.show-wishlist,
-				.single-product div.product .summary.entry-summary a.compare:not(.button):hover,
-				.single-product div.product .summary.entry-summary .price,
-				.main-navigation a:hover,
-				.site-branding .site-title a:hover,
-				.single-product .single-product-layout-cols .yith-wcwl-add-to-wishlist .yith-wcwl-icon,
-				.single-product .woocommerce-tabs + .yith-wcwl-add-to-wishlist .yith-wcwl-icon,
-				.yith-ywraq-add-to-quote a, .yith_ywraq_add_item_browse_message a,
-				table.cart tbody tr td.actions button[name=update_cart],
-				.woocommerce .products .add-request-quote-button.button,
-				.woocommerce .products .add-request-quote-button-addons.button,
-				#yith-wacp-popup .yith-wacp-content .yith-wacp-related a.button,
-				#yith-wacp-popup .yith-wacp-content .yith-wacp-related a.button:hover,
-				.ywraq-wrapper a.button.wc-backward,
-				#yith-ywraq-form .actions .button,
-				.ywraq-quote-icon-icon_quote:hover:before, 
-				#ui-datepicker-div .ui-datepicker-calendar tbody td a.ui-state-hover:not(.ui-state-active),
-				#ui-datepicker-div .ui-datepicker-calendar tbody td a.ui-state-highlight, 
-				body.woocommerce-order-received .woocommerce-order .woocommerce-order-overview li.woocommerce-order-overview__order.order, 
-				body.woocommerce-order-received table.shop_table tfoot tr:last-of-type, 
-				body.woocommerce-order-received article.page header.entry-header .entry-title.lnr,
-				#yith-woocompare-related .related-products li .button.unstyled_button, 
-				.wc-block-grid ul.wc-block-grid__products li.wc-block-grid__product .add_to_cart_button {
-					color: {$main_color_shade};
-				}
-
-
-				.ywraq-wrapper a.button.wc-backward:hover,
-				a:hover, a:focus, a:active, table.cart tbody tr td.actions button[name=update_cart]:hover, 
-				.wc-block-grid ul.wc-block-grid__products li.wc-block-grid__product .add_to_cart_button:hover {
-					color: {$general_link_hover_color};
-				}
-
-				.select2-dropdown .select2-results__option.select2-results__option--highlighted,
-				.select2-dropdown .select2-results__option.select2-results__option[data-selected=true],
-				.selectBox-dropdown-menu li.selectBox-selected a,
-				.selectBox-dropdown-menu li.selectBox-hover a {
-					color: {$main_color_shade} !important;
-				}
-
-				button,
-				input[type=button],
-				input[type=reset],
-				input[type=submit],
-				.button,
-				.button.compare,
-				.widget a.button,
-				.wishlist-submit.popup_button,
-				.button.ghost:hover,
-				.wishlist-title a.show-title-form:hover,
-				.wishlist-title a.hide-title-form:hover,
-				.submit-wishlist-changes:hover,
-				.yith_wcwl_wishlist_bulk_action input[type=submit]:hover,
-				.yith_wcwl_wishlist_footer .yith_wcwl_wishlist_update input[type=submit]:hover,
-				.wpcf7-form-control.ghost:hover,
-				.button.ywgc_apply_gift_card_button:hover,
-				.checkout_coupon button[name=apply_coupon]:hover,
-				table.cart tbody tr td.actions .coupon button, table.cart tfoot tr td.actions .coupon button, table.shop_table tbody tr td.actions .coupon button, table.shop_table tfoot tr td.actions .coupon button,
-				.button.ghost,
-				.wishlist-title a.show-title-form,
-				.wishlist-title a.hide-title-form,
-				.submit-wishlist-changes,
-				.yith_wcwl_wishlist_bulk_action input[type=submit],
-				.yith_wcwl_wishlist_footer .yith_wcwl_wishlist_update input[type=submit],
-				.wpcf7-form-control.ghost,
-				.button.ywgc_apply_gift_card_button,
-				.checkout_coupon button[name=apply_coupon],
-				.with-tooltip .yith-wcwl-tooltip:before,
-				.with-dropdown .with-tooltip .yith-wcwl-tooltip:before,
-				.woocommerce .products .add-request-quote-button.button,
-				.woocommerce .products .add-request-quote-button-addons.button
-				input[type=text]:focus,
-				input[type=email]:focus,
-				input[type=url]:focus,
-				input[type=password]:focus,
-				input[type=search]:focus,
-				input[type=number]:focus,
-				input[type=tel]:focus,
-				input[type=range]:focus,
-				input[type=date]:focus,
-				input[type=month]:focus,
-				input[type=week]:focus,
-				input[type=time]:focus,
-				input[type=datetime]:focus,
-				input[type=datetime-local]:focus,
-				input[type=color]:focus,
-				.theme-yith-proteo.woocommerce .products .add-request-quote-button.button,
-				textarea:focus,
-				span.checkboxbutton.checked:before, 
-				#ui-datepicker-div .ui-datepicker-calendar tbody td a.ui-state-active,
-				#ui-datepicker-div .ui-datepicker-calendar tbody td a.ui-state-hover, 
-				#ui-datepicker-div .ui-datepicker-calendar tbody td a.ui-state-highlight {
-					border-color: {$main_color_shade};
-				}
-
-				input[type=text]:focus,
-				input[type=email]:focus,
-				input[type=url]:focus,
-				input[type=password]:focus,
-				input[type=search]:focus,
-				input[type=number]:focus,
-				input[type=tel]:focus,
-				input[type=range]:focus,
-				input[type=date]:focus,
-				input[type=month]:focus,
-				input[type=week]:focus,
-				input[type=time]:focus,
-				input[type=datetime]:focus,
-				input[type=datetime-local]:focus,
-				input[type=color]:focus,
-				textarea:focus{
-					box-shadow: 0 0 2px {$main_color_shade};
-				}
-
-				.button.ghost:hover,
-				.button.compare:hover,
-				.wishlist-title a.show-title-form:hover,
-				.wishlist-title a.hide-title-form:hover,
-				.submit-wishlist-changes:hover,
-				.yith_wcwl_wishlist_bulk_action input[type=submit]:hover,
-				.yith_wcwl_wishlist_footer .yith_wcwl_wishlist_update input[type=submit]:hover,
-				.wpcf7-form-control.ghost:hover,
-				.button.ywgc_apply_gift_card_button:hover,
-				.checkout_coupon button[name=apply_coupon]:hover,
-				table.cart tbody tr td.actions .coupon button:hover, table.cart tfoot tr td.actions .coupon button:hover, table.shop_table tbody tr td.actions .coupon button:hover, table.shop_table tfoot tr td.actions .coupon button:hover,
-				.widget_shopping_cart .yith-proteo-mini-cart-content .woocommerce-mini-cart__buttons a.checkout,
-				.woocommerce .products .add-request-quote-button.button:hover,
-				#yith-ywraq-form .actions .button:hover{
-					background-color: {$main_color_shade};
-				}
-
-				button,
-				input[type=button],
-				input[type=reset],
-				input[type=submit],
-				.button,
-				.widget a.button,
-				.wishlist-submit.popup_button,
-				span.checkboxbutton.checked:before,
-				span.radiobutton.checked:before,
-				header.entry-header .date-and-thumbnail time.published,
-				span.onsale, .wc-block-grid .wc-block-grid__products .wc-block-grid__product .wc-block-grid__product-onsale,
-				.pswp__bg,
-				.widget_price_filter .ui-slider .ui-slider-handle,
-				.widget_price_filter .ui-slider .ui-slider-range,
-				.with-tooltip .yith-wcwl-tooltip,
-				#ui-datepicker-div .ui-datepicker-calendar tbody td a.ui-state-active{
-					background: {$main_color_shade};
-				}
-
-				header.site-header {
-					background-color: {$header_bg_color};
-				}
-				#topbar {
-					background-color: {$topbar_bg_color};
-				}
-				#main-footer {
-					background-color: {$footer_bg_color};
-				}
-				#main-footer .site-info {
-					background-color: {$footer_credits_bg_color};
-				}
-
-				body, body.yith-woocompare-popup, button, input, select, optgroup, textarea {
-					font-size: {$base_font_size}px;
-					color: {$base_font_color};
-				}
-
-				h1,
-				article.page header.entry-header h1,
-				article:not(.has-post-thumbnail).page header.entry-header h1,
-				article.page header.entry-header .entry-title.lnr{
-					font-size: {$h1_font_size}px;
-					color: {$h1_font_color};
-				}
-
-				h2 {
-					font-size: {$h2_font_size}px;
-					color: {$h2_font_color};
-				}
-
-				h3, .widget_products .product-title {
-					font-size: {$h3_font_size}px;
-					color: {$h3_font_color};
-				}
-
-				h4 {
-					font-size: {$h4_font_size}px;
-					color: {$h4_font_color};
-				}
-
-				h5 {
-					font-size: {$h5_font_size}px;
-					color: {$h5_font_color};
-				}
-
-				h6 {
-					font-size: {$h6_font_size}px;
-					color: {$h6_font_color};
-				}
-
-				/* Button style 1*/
-				button,
-				input[type=\"button\"],
-				input[type=\"reset\"],
-				input[type=\"submit\"],
-				.button,
-				.widget a.button,
-				.button-style-1:not(.wp-block-button), .button-style-1 a,
-				input[type=file]::-webkit-file-upload-button {
-					background: none;
-					background-color: {$button_1_bg_color};
-					border-color: {$button_1_border_color};
-					color: {$button_1_font_color};
-				}
-
-				button:hover,
-				input[type=\"button\"]:hover,
-				input[type=\"reset\"]:hover,
-				input[type=\"submit\"]:hover,
-				.button:hover,
-				.widget a.button:hover,
-				.wishlist-submit.popup_button:hover,
-				.button.flat:hover,
-				.yith_wcwl_footer_additional_action .ask-an-estimate-button:hover,
-				.widget_shopping_cart .yith-proteo-mini-cart-content .woocommerce-mini-cart__buttons a.checkout:hover,
-				.button-style-1:not(.wp-block-button):hover, .button-style-1 a:hover,
-				input[type=file]:hover::-webkit-file-upload-button{
-					background: none;
-					background-color: {$button_1_bg_hover_color};
-					border-color: {$button_1_border_hover_color};
-					color: {$button_1_font_hover_color};
-				}
-
-				/* Button style 2*/
-				button.alt,
-				input[type=\"button\"].alt,
-				input[type=\"reset\"].alt,
-				input[type=\"submit\"].alt,
-				.button.alt,
-				.widget-area .widget a.button.alt,
-				.wishlist-submit.popup_button,
-				.yith_wcwl_wishlist_footer input[name=\"add_all_to_cart\"],
-				.button-style-2:not(.wp-block-button), .button-style-2 a {
-					background-color: {$button_2_bg_color_1};
-					background: linear-gradient(180deg, {$button_2_bg_color_1} 0%, {$button_2_bg_color_2} 100%);
-					color: {$button_2_font_color};
-					border: none;
-				}
-				button.alt:hover,
-				input[type=\"button\"].alt:hover,
-				input[type=\"reset\"].alt:hover,
-				input[type=\"submit\"].alt:hover,
-				.button.alt:hover,
-				.widget-area .widget a.button.alt:hover,
-				.wishlist-submit.popup_button:hover,
-				.yith_wcwl_wishlist_footer input[name=\"add_all_to_cart\"]:hover,
-				.button-style-2:not(.wp-block-button):hover, .button-style-2 a:hover {
-					background-color: {$button_2_bg_hover_color};
-					background: linear-gradient(180deg, {$button_2_bg_hover_color} 0%, {$button_2_bg_hover_color} 100%);
-					color: {$button_2_font_hover_color};
-				}
-
-				/* Store options */
-
-				.woocommerce-store-notice.demo_store {
-					background-color: {$store_notice_bg_color};
-					color: {$store_notice_text_color};
-					font-size: {$store_notice_font_size}px;
-				}
-				.woocommerce span.onsale {
-					background-color: {$sale_badge_bg_color};
-					color: {$sale_badge_text_color};
-					font-size: {$sale_badge_font_size}px;
-				}
-				.woocommerce-message,
-				.woocommerce-info,
-				.woocommerce-error,
-				.entry-content .ywgc_enter_code p,
-				body.woocommerce-checkout .checkout_coupon p{
-					font-size: {$woo_messages_font_size}px;
-				}
-				.woocommerce-message {
-					border-color: {$woo_messages_default_accent_color};
-				}
-				.woocommerce-info {
-					border-color: {$woo_messages_info_accent_color};
-				}
-				.woocommerce-error, div.wpcf7-validation-errors {
-					border-color: {$woo_messages_error_accent_color};
-				}
-				
-				/* Buttons Border Radius */
-				button, input[type=button], input[type=reset], input[type=submit], .button, .widget a.button, .wishlist-submit.popup_button {
-					border-radius: {$buttons_border_radius}px;
-				}
-				
-				/* Form inputs */
-				input[type=text], input[type=email], input[type=url], input[type=password], input[type=search], input[type=number], input[type=tel], input[type=range], input[type=date], input[type=month], input[type=week], input[type=time], input[type=datetime], input[type=datetime-local], input[type=color], textarea, input[type=file], .select2-container .select2-selection, .woocommerce a.selectBox.selectBox-dropdown {
-					border-radius: {$forms_input_borde_radius}px;
-				}
-				
 	";
 
 	if ( ! empty( $custom_css ) ) {

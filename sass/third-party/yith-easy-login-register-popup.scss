@@ -1,325 +1,325 @@
 html.yith_welrp_opened,
 body.yith_welrp_opened {
-    overflow: hidden;
+	overflow: hidden;
 }
 
 #yith-welrp {
-    display: none;
+	display: none;
 
-    .yith-welrp-overlay,
-    .yith-welrp-popup-wrapper {
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        z-index: 80;
-    }
+	.yith-welrp-overlay,
+	.yith-welrp-popup-wrapper {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		z-index: 80;
+	}
 
-    .yith-welrp-popup-wrapper {
-        overflow-x: hidden;
-        overflow-y: auto;
-    }
+	.yith-welrp-popup-wrapper {
+		overflow-x: hidden;
+		overflow-y: auto;
+	}
 
-    .yith-welrp-popup-wrapper-region {
-        padding: 20px;
-        z-index: 80;
-        width: 100%;
-    }
+	.yith-welrp-popup-wrapper-region {
+		padding: 20px;
+		z-index: 80;
+		width: 100%;
+	}
 
-    .yith-welrp-popup {
-        position: relative;
-        margin-left: auto;
-        margin-right: auto;
-        display: none;
+	.yith-welrp-popup {
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+		display: none;
 
-        &.additional .yith-welrp-popup-header {
-            display: none;
-        }
+		&.additional .yith-welrp-popup-header {
+			display: none;
+		}
 
-        .yith-welrp-popup-inner {
-            position: relative;
+		.yith-welrp-popup-inner {
+			position: relative;
 
-            .yith-welrp-lost-password,
-            .yith-welrp-go-back {
-                font-size: 0.875rem;
-            }
-        }
+			.yith-welrp-lost-password,
+			.yith-welrp-go-back {
+				font-size: 0.875rem;
+			}
+		}
 
-        .yith-welrp-popup-header {
-            padding: 15px 30px;
-            h4 {
-                margin: 0;
-                color: #9d9d9d;
-                text-transform: uppercase;
-                font-size: 1rem;
-            }
-        }
+		.yith-welrp-popup-header {
+			padding: 15px 30px;
+			h4 {
+				margin: 0;
+				color: #9d9d9d;
+				text-transform: uppercase;
+				font-size: 1rem;
+			}
+		}
 
-        .yith-welrp-popup-close {
-            position: absolute;
-            right: 15px;
-            top: 20px;
-            width: 12px;
-            height: 12px;
-            line-height: 1;
-            cursor: pointer;
+		.yith-welrp-popup-close {
+			position: absolute;
+			right: 15px;
+			top: 20px;
+			width: 12px;
+			height: 12px;
+			line-height: 1;
+			cursor: pointer;
 
-            &:not(.custom) {
-                background-repeat: no-repeat;
-                background-position: bottom;
-                &:hover {
-                    background-position: top;
-                }
-            }
-        }
+			&:not(.custom) {
+				background-repeat: no-repeat;
+				background-position: bottom;
+				&:hover {
+					background-position: top;
+				}
+			}
+		}
 
-        .yith-welrp-popup-content {
-            padding: 15px 30px;
+		.yith-welrp-popup-content {
+			padding: 15px 30px;
 
-            h3 {
-                margin: 10px 0 30px;
-                font-size: 1.875rem;
-                line-height: 1.3;
-            }
+			h3 {
+				margin: 10px 0 30px;
+				font-size: 1.875rem;
+				line-height: 1.3;
+			}
 
-            .yith-welrp-submit-button {
-                min-width: 40%;
-                display: block;
-                float: right;
-                margin: 0;
-                text-transform: uppercase;
-                outline: none;
-                clear: both;
-            }
+			.yith-welrp-submit-button {
+				min-width: 40%;
+				display: block;
+				float: right;
+				margin: 0;
+				text-transform: uppercase;
+				outline: none;
+				clear: both;
+			}
 
-            .yith-welrp-popup-text {
-                margin-bottom: 30px;
-            }
+			.yith-welrp-popup-text {
+				margin-bottom: 30px;
+			}
 
-            .yith-welrp-user-info {
-                margin-bottom: 30px;
-                line-height: 20px;
+			.yith-welrp-user-info {
+				margin-bottom: 30px;
+				line-height: 20px;
 
-                .yith-welrp-user-avatar {
-                    display: inline-block;
-                    vertical-align: bottom;
-                    margin-right: 10px;
-                    img {
-                        display: inline-block;
-                        vertical-align: bottom;
-                    }
-                }
+				.yith-welrp-user-avatar {
+					display: inline-block;
+					vertical-align: bottom;
+					margin-right: 10px;
+					img {
+						display: inline-block;
+						vertical-align: bottom;
+					}
+				}
 
-                .yith-welrp-user-data {
-                    display: inline-block;
-                    vertical-align: bottom;
-                    font-size: 0.8rem;
-                    span:first-child {
-                        font-weight: bold;
-                        font-size: 0.875rem;
-                    }
-                    .yith-welrp-go-back {
-                        font-size: 0.8rem;
-                    }
-                }
-            }
+				.yith-welrp-user-data {
+					display: inline-block;
+					vertical-align: bottom;
+					font-size: 0.8rem;
+					span:first-child {
+						font-weight: bold;
+						font-size: 0.875rem;
+					}
+					.yith-welrp-go-back {
+						font-size: 0.8rem;
+					}
+				}
+			}
 
-            .yith-welrp-footer-link-container {
-                text-align: center;
-            }
-        }
+			.yith-welrp-footer-link-container {
+				text-align: center;
+			}
+		}
 
-        .yith-welrp-message {
-            font-size: 0.875rem;
-            margin: -20px 0 15px;
-            position: relative;
-            color: #8fae1b;
-            clear: both;
+		.yith-welrp-message {
+			font-size: 0.875rem;
+			margin: -20px 0 15px;
+			position: relative;
+			color: #8fae1b;
+			clear: both;
 
-            &.error {
-                color: #da141d;
-            }
-        }
+			&.error {
+				color: #da141d;
+			}
+		}
 
-        form {
-            margin-bottom: 30px;
+		form {
+			margin-bottom: 30px;
 
-            &:after {
-                content: '';
-                display: table;
-                clear: both;
-            }
+			&:after {
+				content: "";
+				display: table;
+				clear: both;
+			}
 
-            .yith-welrp-form-field {
-                margin: 0 0 30px;
+			.yith-welrp-form-field {
+				margin: 0 0 30px;
 
-                input[type="text"],
-                input[type="email"],
-                input[type="password"] {
-                    width: 100%;
-                    outline: none;
-                    padding-left: 0;
-                    padding-right: 0;
-                    font-size: 0.875rem;
-                }
+				input[type="text"],
+				input[type="email"],
+				input[type="password"] {
+					width: 100%;
+					outline: none;
+					padding-left: 0;
+					padding-right: 0;
+					font-size: 0.875rem;
+				}
 
-                label {
-                    font-weight: bold;
-                    display: block;
-                    &.checkbox-label {
-                        font-weight: normal;
-                        font-size: 0.875rem;
-                        cursor: pointer;
-                        padding-left: 35px;
-                        position: relative;
-                        line-height: 1.3;
-                        .checkboxbutton {
-                            position: absolute;
-                            left: 0;
-                            top: 0;
-                        }
-                    }
-                }
+				label {
+					font-weight: bold;
+					display: block;
+					&.checkbox-label {
+						font-weight: normal;
+						font-size: 0.875rem;
+						cursor: pointer;
+						padding-left: 35px;
+						position: relative;
+						line-height: 1.3;
+						.checkboxbutton {
+							position: absolute;
+							left: 0;
+							top: 0;
+						}
+					}
+				}
 
-                &.left {
-                    float: left;
-                    width: 48%;
-                }
-                &.right {
-                    float: right;
-                    width: 48%;
-                    text-align: right;
-                }
-                &.wide {
-                    .yith-welrp-password-container {
-                        position: relative;
-                        display: block;
-                    }
-                    .yith-welrp-password-eye {
-                        width: 22px;
-                        height: 40px;
-                        display: block;
-                        position: absolute;
-                        top: 0;
-                        right: 13px;
-                        cursor: pointer;
-                        background-size: contain;
-                        background-repeat: no-repeat;
-                        background-position: center;
-                    }
-                }
-            }
+				&.left {
+					float: left;
+					width: 48%;
+				}
+				&.right {
+					float: right;
+					width: 48%;
+					text-align: right;
+				}
+				&.wide {
+					.yith-welrp-password-container {
+						position: relative;
+						display: block;
+					}
+					.yith-welrp-password-eye {
+						width: 22px;
+						height: 40px;
+						display: block;
+						position: absolute;
+						top: 0;
+						right: 13px;
+						cursor: pointer;
+						background-size: contain;
+						background-repeat: no-repeat;
+						background-position: center;
+					}
+				}
+			}
 
-            .woocommerce-password-strength {
-                text-align: left;
-                font-size: 0.875rem;
-                font-weight: normal;
-                margin-top: 5px;
-            }
-            .woocommerce-password-hint {
-                font-size: 0.7rem;
-                font-weight: normal;
-            }
+			.woocommerce-password-strength {
+				text-align: left;
+				font-size: 0.875rem;
+				font-weight: normal;
+				margin-top: 5px;
+			}
+			.woocommerce-password-hint {
+				font-size: 0.7rem;
+				font-weight: normal;
+			}
 
-            #g-recaptcha {
-                margin-bottom: 20px;
-            }
-        }
+			#g-recaptcha {
+				margin-bottom: 20px;
+			}
+		}
 
-        .yith-welrp-continue-as-guest {
-            border-top: 1px solid #e7e7e7;
-            padding: 20px 0;
+		.yith-welrp-continue-as-guest {
+			border-top: 1px solid #e7e7e7;
+			padding: 20px 0;
 
-            p {
-                margin: 10px 0 15px;
-                font-weight: 500;
-            }
+			p {
+				margin: 10px 0 15px;
+				font-weight: 500;
+			}
 
-            .button {
-                width: 100%;
-                text-align: center;
-                text-transform: uppercase;
-            }
-        }
+			.button {
+				width: 100%;
+				text-align: center;
+				text-transform: uppercase;
+			}
+		}
 
-        .yith-welrp-social-sep {
-            text-align: center;
-            position: relative;
-            margin-bottom: 30px;
-            font-weight: 500;
+		.yith-welrp-social-sep {
+			text-align: center;
+			position: relative;
+			margin-bottom: 30px;
+			font-weight: 500;
 
-            &:after {
-                content: "";
-                width: 100%;
-                background-color: transparent;
-                display: block;
-                border-top: 1px solid #e7e7e7;
-                position: absolute;
-                top: 50%;
-                margin-top: 1px;
-                z-index: 1;
-            }
+			&:after {
+				content: "";
+				width: 100%;
+				background-color: transparent;
+				display: block;
+				border-top: 1px solid #e7e7e7;
+				position: absolute;
+				top: 50%;
+				margin-top: 1px;
+				z-index: 1;
+			}
 
-            span {
-                padding: 0 30px;
-                z-index: 2;
-                position: relative;
-                text-transform: uppercase;
-            }
-        }
+			span {
+				padding: 0 30px;
+				z-index: 2;
+				position: relative;
+				text-transform: uppercase;
+			}
+		}
 
-        .yith-welrp-social-container {
-            margin-bottom: 30px;
+		.yith-welrp-social-container {
+			margin-bottom: 30px;
 
-            .yith-welrp-social > div {
-                border-width: 1px;
-                border-style: solid;
-                border-radius: 50px;
-                padding: 10px 35px;
-                text-align: center;
-                text-transform: uppercase;
-                cursor: pointer;
-                transition: all ease 0.3s;
-                font-weight: 600;
-                margin: 0 15px 15px;
-                position: relative;
+			.yith-welrp-social > div {
+				border-width: 1px;
+				border-style: solid;
+				border-radius: 50px;
+				padding: 10px 35px;
+				text-align: center;
+				text-transform: uppercase;
+				cursor: pointer;
+				transition: all ease 0.3s;
+				font-weight: 600;
+				margin: 0 15px 15px;
+				position: relative;
 
-                .icon {
-                    position: absolute;
-                    left: 16px;
-                    width: 20px;
-                    height: 20px;
-                    top: 50%;
-                    margin-top: -10px;
-                }
-            }
-        }
-    }
+				.icon {
+					position: absolute;
+					left: 16px;
+					width: 20px;
+					height: 20px;
+					top: 50%;
+					margin-top: -10px;
+				}
+			}
+		}
+	}
 
-    .yith-welrp-email-suggestion {
-        position: relative;
+	.yith-welrp-email-suggestion {
+		position: relative;
 
-        .yith-welrp-email-suggestion-list {
-            position: absolute;
-            top: 100%;
-            left: 0;
-            right: 0;
-            list-style: none;
-            padding: 5px;
-            margin: -1px 0 0 0;
-            border: 1px solid #e7e7e7;
-            border-top: 0;
-            background: #ffffff;
-            box-shadow: 5px 5px 15px #f0f0f0;
-            z-index: 10;
+		.yith-welrp-email-suggestion-list {
+			position: absolute;
+			top: 100%;
+			left: 0;
+			right: 0;
+			list-style: none;
+			padding: 5px;
+			margin: -1px 0 0 0;
+			border: 1px solid #e7e7e7;
+			border-top: 0;
+			background: #ffffff;
+			box-shadow: 5px 5px 15px #f0f0f0;
+			z-index: 10;
 
-            .yith-welrp-email-suggestion-item {
-                font-size: 0.9em;
-                font-weight: 500;
-                cursor: pointer;
-                margin-bottom: 2px;
-            }
-        }
-    }
+			.yith-welrp-email-suggestion-item {
+				font-size: 0.9em;
+				font-weight: 500;
+				cursor: pointer;
+				margin-bottom: 2px;
+			}
+		}
+	}
 }

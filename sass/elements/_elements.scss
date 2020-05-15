@@ -1,75 +1,77 @@
 html {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 *,
 *:before,
-*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
-    box-sizing: inherit;
+*:after {
+	/* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
 }
 
 * {
-    outline-color: $color__accent;
+	outline-color: var(--proteo-main_color_shade, $color__accent);
 }
 
 body {
-    background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
 
-    overflow-x: hidden;
+	overflow-x: hidden;
 
-    &.page, &.post {
-        margin: 0;
-    }
+	&.page,
+	&.post {
+		margin: 0;
+	}
 }
 
 hr {
-    background-color: $color__background-hr;
-    border: 0;
-    height: 1px;
-    margin-bottom: 1.5em;
+	background-color: $color__background-hr;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
 }
 
 @import "lists";
 
 img {
-    height: auto; /* Make sure images are scaled correctly. */
-    max-width: 100%; /* Adhere to container width. */
+	height: auto; /* Make sure images are scaled correctly. */
+	max-width: 100%; /* Adhere to container width. */
 }
 
 figure {
-    margin: 0 0 30px 0; /* Extra wide images within figure tags don't overflow the content area. */
+	margin: 0 0 30px 0; /* Extra wide images within figure tags don't overflow the content area. */
 }
 
 @import "tables";
 
 div.pp_woocommerce {
-    a.pp_close {
-        border: none;
-        box-shadow: none;
-        text-shadow: none;
-        top: 10px;
-        right: 10px;
-        background: transparent;
-        color: #C7C7C7 !important;
+	a.pp_close {
+		border: none;
+		box-shadow: none;
+		text-shadow: none;
+		top: 10px;
+		right: 10px;
+		background: transparent;
+		color: #c7c7c7 !important;
 
-        &:hover {
-            background: inherit;
-            color: #404040 !important;
-        }
+		&:hover {
+			background: inherit;
+			color: #404040 !important;
+		}
 
-        &:before {
-            font-family: inherit;
-            content: '⨯';
-        }
-    }
+		&:before {
+			font-family: inherit;
+			content: "⨯";
+		}
+	}
 
-    .pp_details {
-        padding: 0;
-    }
+	.pp_details {
+		padding: 0;
+	}
 }
 
 div.pp_overlay {
-    background: #ffffff;
+	background: #ffffff;
 }
 
 @import "modals";

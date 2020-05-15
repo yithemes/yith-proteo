@@ -14,14 +14,14 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea,
-input[type=file],
+input[type="file"],
 .select2-container .select2-selection,
 .woocommerce a.selectBox.selectBox-dropdown {
 	color: $color__text-input;
 	border-color: $color__border-input;
 	border-width: 1px 1px 1px 1px;
 	border-style: solid;
-	border-radius: 0;
+	border-radius: var(--proteo-forms_input_borde_radius, 0);
 	padding: 10px;
 	font-family: inherit;
 	min-height: 35px;
@@ -33,9 +33,9 @@ input[type=file],
 	&:focus {
 		outline-color: transparent;
 		color: $color__text-input-focus;
-		border-color: $color__accent;
+		border-color: var(--proteo-main_color_shade, $color__accent);
 		outline: none;
-		box-shadow: 0 0 2px $color__accent;
+		box-shadow: 0 0 2px var(--proteo-main_color_shade, $color__accent);
 	}
 
 	& + .separator {
@@ -46,7 +46,7 @@ input[type=file],
 		transform: scaleX(0) translateY(-2px);
 		transform-origin: 50%;
 		opacity: 0;
-		transition: all .15s ease;
+		transition: all 0.15s ease;
 	}
 
 	&:focus + .separator {
@@ -131,9 +131,9 @@ textarea {
 	background-color: #ffffff;
 }
 
-
 .comment-form-rating {
-	select, .select2 {
+	select,
+	.select2 {
 		display: none;
 	}
 }
@@ -158,7 +158,7 @@ span.checkboxbutton {
 	}
 
 	&:before {
-		content: '';
+		content: "";
 		display: inline-block;
 		width: 23px;
 		height: 23px;
@@ -170,21 +170,21 @@ span.checkboxbutton {
 		font-size: 17px;
 		vertical-align: middle;
 		cursor: pointer;
-		color: $color__accent;
+		color: var(--proteo-main_color_shade, $color__accent);
 		margin-bottom: 5px;
 		transition: background-color ease 0.3s;
 	}
 
 	&.checked:before {
-		content: '';
-		background: $color__accent;
+		content: "";
+		background: var(--proteo-main_color_shade, $color__accent);
 		background-image: url("img/whitecheck.svg") !important;
 		color: #ffffff;
 		background-repeat: no-repeat !important;
 		background-position: center !important;
+		border-color: var(--proteo-main_color_shade, $color__accent);
 	}
 }
-
 
 /**
 Radio buttons
@@ -225,7 +225,7 @@ span.radiobutton {
 	}
 
 	&.checked:before {
-		background: $color__accent;
+		background: var(--proteo-main_color_shade, $color__accent);
 		background-clip: content-box !important;
 	}
 }
@@ -240,7 +240,7 @@ input[type="file"] {
 }
 
 input[type="file"]::-webkit-file-upload-button {
-	background-color: $color__background-button;
+	background-color: var(--proteo-button_1_bg_color, $color__background-button);
 	border: none;
 	color: #ffffff;
 	text-transform: uppercase;
@@ -251,10 +251,11 @@ input[type="file"]::-webkit-file-upload-button {
 	outline: none;
 	min-height: 40px;
 	font-weight: 600;
+	margin: 0;
 }
 
 input[type="file"]::-ms-browse {
-	background-color: $color__background-button;
+	background-color: var(--proteo-button_1_bg_color, $color__background-button);
 	border: none;
 	color: #ffffff;
 	text-transform: uppercase;
@@ -265,10 +266,11 @@ input[type="file"]::-ms-browse {
 	outline: none;
 	min-height: 40px;
 	font-weight: 600;
+	margin: 0;
 }
 
 input[type="file"]:hover::-webkit-file-upload-button {
-	background-color: $color__border-button-hover;
+	background-color: var(--proteo-button_1_bg_hover_color, $color__link-hover);
 }
 
 /**
@@ -303,7 +305,8 @@ input.hasDatepicker {
 			top: 2px;
 			text-decoration: none;
 
-			&.ui-state-hover, &.ui-state-focus {
+			&.ui-state-hover,
+			&.ui-state-focus {
 				border: none;
 				background: none;
 				opacity: 1;
@@ -332,7 +335,6 @@ input.hasDatepicker {
 
 				span {
 					display: none;
-
 				}
 			}
 
@@ -356,7 +358,6 @@ input.hasDatepicker {
 					display: none;
 				}
 			}
-
 		}
 	}
 
@@ -379,15 +380,18 @@ input.hasDatepicker {
 					}
 
 					&.ui-state-hover {
-						color: $color__accent;
+						color: var(--proteo-main_color_shade, $color__accent);
 						background: #ffffff;
-						border: 1px solid $color__accent;
+						border: 1px solid var(--proteo-main_color_shade, $color__accent);
+						&:not(.ui-state-active) {
+							color: var(--proteo-main_color_shade, $color__accent);
+						}
 					}
 
 					&.ui-state-active {
 						color: #ffffff;
-						background: $color__accent;
-						border: 1px solid $color__accent;
+						background: var(--proteo-main_color_shade, $color__accent);
+						border: 1px solid var(--proteo-main_color_shade, $color__accent);
 
 						&:hover {
 							color: #ffffff;
@@ -395,9 +399,9 @@ input.hasDatepicker {
 					}
 
 					&.ui-state-highlight {
-						color: $color__accent;
+						color: var(--proteo-main_color_shade, $color__accent);
 						background: #ffffff;
-						border: 1px solid $color__accent;
+						border: 1px solid var(--proteo-main_color_shade, $color__accent);
 					}
 				}
 
@@ -409,7 +413,6 @@ input.hasDatepicker {
 	}
 }
 
-
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -418,6 +421,6 @@ input::-webkit-inner-spin-button {
 }
 
 /* Firefox */
-input[type=number] {
+input[type="number"] {
 	-moz-appearance: textfield;
 }

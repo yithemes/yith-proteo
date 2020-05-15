@@ -42,13 +42,13 @@ p.woocommerce-result-count {
 	line-height: 1.618;
 	font-size: 1em;
 	width: 5.3em;
-	font-family: 'star';
+	font-family: "star";
 	font-weight: 400;
-	color: #1F1F1F;
+	color: #1f1f1f;
 
 	&:before {
 		content: "\53\53\53\53\53";
-		opacity: .25;
+		opacity: 0.25;
 		float: left;
 		top: 0;
 		left: 0;
@@ -96,14 +96,14 @@ p.stars {
 			content: "\53";
 			color: $color__text-main;
 			text-indent: 0;
-			opacity: .25;
+			opacity: 0.25;
 		}
 
 		&:hover {
 			~ a:before {
 				content: "\53";
 				color: $color__text-main;
-				opacity: .25;
+				opacity: 0.25;
 			}
 		}
 	}
@@ -129,7 +129,7 @@ p.stars {
 			~ a:before {
 				content: "\53";
 				color: #fdc100;
-				opacity: .25;
+				opacity: 0.25;
 			}
 		}
 
@@ -173,14 +173,14 @@ p.stars {
 	padding: 0 15px;
 	margin-bottom: 35px;
 
-
 	&.woocommerce-invalid {
-		label, input {
+		label,
+		input {
 			color: $woocommerce__color-error;
 			border-color: $woocommerce__color-error;
 
-			& + .separator{
-			  background: $woocommerce__color-error;
+			& + .separator {
+				background: $woocommerce__color-error;
 			}
 		}
 	}
@@ -189,7 +189,9 @@ p.stars {
 		display: block;
 	}
 
-	input:not([type='submit']), select, textarea {
+	input:not([type="submit"]),
+	select,
+	textarea {
 		width: 100%;
 	}
 
@@ -239,7 +241,7 @@ p.stars {
 		text-align: center;
 		font-size: 1em;
 		line-height: normal;
-		color: #1F1F1F;
+		color: #1f1f1f;
 		font-family: inherit;
 		vertical-align: middle;
 		padding-right: 20px;
@@ -284,8 +286,10 @@ p.woocommerce-error,
 .entry-content p.woocommerce-Message,
 .entry-content p.woocommerce-message,
 .entry-content p.woocommerce-info,
-.entry-content p.woocommerce-error {
-	font-size: 1rem;
+.entry-content p.woocommerce-error,
+.entry-content .ywgc_enter_code p,
+body.woocommerce-checkout .checkout_coupon p {
+	font-size: var(--proteo-woo_messages_font_size, 1rem);
 }
 
 .woocommerce-message[role="alert"] {
@@ -321,15 +325,15 @@ p.no-comments {
 }
 
 .woocommerce-message {
-	border-color: $woocommerce__color-success;
+	border-color: var(--proteo-woo_messages_default_accent_color, $woocommerce__color-success);
 }
 
 .woocommerce-info {
-	border-color: $woocommerce__color-info;
+	border-color: var(--proteo-woo_messages_info_accent_color, $woocommerce__color-info);
 }
 
 .woocommerce-error {
-	border-color: $woocommerce__color-error;
+	border-color: var(--proteo-woo_messages_error_accent_color, $woocommerce__color-error);
 }
 
 .woocommerce-message,
@@ -343,7 +347,7 @@ div.wpcf7-response-output {
 	border-width: 0 10px 0 0;
 	border-style: solid;
 	color: #000000;
-	font-size: 1rem;
+	font-size: var(----proteo-woo_messages_font_size, 1rem);
 	font-weight: 500;
 
 	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
@@ -397,8 +401,10 @@ div.wpcf7-response-output {
 	right: 0;
 	margin: 0;
 	padding: 1em;
-	background-color: #607d8b;
 	z-index: 9999;
+	background-color: var(--proteo-store_notice_bg_color);
+	color: var(--proteo-store_notice_text_color);
+	font-size: var(--proteo-store_notice_font_size);
 
 	a.woocommerce-store-notice__dismiss-link {
 		float: right;
@@ -409,14 +415,12 @@ div.wpcf7-response-output {
 On Sale Badge
  */
 
-span.onsale, .wc-block-grid .wc-block-grid__products .wc-block-grid__product .wc-block-grid__product-onsale {
+span.onsale,
+.wc-block-grid .wc-block-grid__products .wc-block-grid__product .wc-block-grid__product-onsale {
 	position: absolute;
 	z-index: 10;
 	display: inline-block;
 	padding: 5px;
-	font-size: 13px;
-	background: $color__accent;
-	color: #ffffff;
 	top: 0;
 	right: 0;
 	line-height: normal;
@@ -427,6 +431,9 @@ span.onsale, .wc-block-grid .wc-block-grid__products .wc-block-grid__product .wc
 	border: none;
 	border-radius: 0;
 	margin: 0;
+	background-color: var(--proteo-sale_badge_bg_color, $color__accent);
+	color: var(--proteo-sale_badge_text_color, #ffffff);
+	font-size: var(--proteo-sale_badge_font_size, 13px);
 }
 
 .wc-block-grid .wc-block-grid__products .wc-block-grid__product .wc-block-grid__product-onsale {
@@ -485,7 +492,7 @@ BREADCRUMBS
 	text-align: left;
 	text-transform: uppercase;
 	font-size: 0.9375rem;
-	color: #9D9D9D;
+	color: #9d9d9d;
 
 	a {
 		text-decoration: none;
@@ -493,7 +500,7 @@ BREADCRUMBS
 
 		&:hover {
 			text-decoration: underline;
-			color: $color__accent;
+			color: var(--proteo-main_color_shade, $color__accent);
 		}
 	}
 }
@@ -509,7 +516,7 @@ ORDERING
 }
 
 .yith-proteo-before-shop-loop {
-  text-align: right;
+	text-align: right;
 }
 
 /**
@@ -534,7 +541,7 @@ SELECT2
 	}
 }
 
-.select2-container--default .select2-selection--single .select2-selection__arrow{
+.select2-container--default .select2-selection--single .select2-selection__arrow {
 	top: 5px;
 }
 
@@ -548,18 +555,18 @@ SELECT2
 	left: 0;
 	margin: 0;
 	display: contents;
-		&:before {
-			content: "\e874";
-			font-family: Linearicons-Free;
-			speak: none;
-			font-style: normal;
-			font-weight: 400;
-			font-variant: normal;
-			text-transform: none;
-			line-height: 1;
-			-webkit-font-smoothing: antialiased;
-			-moz-osx-font-smoothing: grayscale;
-		}
+	&:before {
+		content: "\e874";
+		font-family: Linearicons-Free;
+		speak: none;
+		font-style: normal;
+		font-weight: 400;
+		font-variant: normal;
+		text-transform: none;
+		line-height: 1;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
 }
 
 .select2-container--default.select2-container--open {
@@ -570,9 +577,10 @@ SELECT2
 	}
 }
 
-.select2-dropdown, .selectBox-dropdown-menu {
+.select2-dropdown,
+.selectBox-dropdown-menu {
 	border: none;
-	box-shadow: 0 1px 30px rgba(0, 0, 0, .25);
+	box-shadow: 0 1px 30px rgba(0, 0, 0, 0.25);
 	border-radius: 0;
 	font-size: 0.8125rem;
 
@@ -594,7 +602,6 @@ SELECT2
 	}
 
 	.select2-results__option {
-
 		&:first-child {
 			padding-top: 15px;
 		}
@@ -603,13 +610,14 @@ SELECT2
 			padding-bottom: 15px;
 		}
 
-		&.select2-results__option--highlighted, &.select2-results__option[data-selected=true] {
-			color: $color__accent !important;
+		&.select2-results__option--highlighted,
+		&.select2-results__option[data-selected="true"] {
+			color: var(--proteo-main_color_shade, $color__accent) !important;
 			background-color: #fff !important;
 			outline: none;
 		}
 
-		&.select2-results__option[data-selected=true] {
+		&.select2-results__option[data-selected="true"] {
 			font-weight: 500;
 		}
 
@@ -666,14 +674,16 @@ Photobox (image zoom on single product page)
  */
 
 .pswp__bg {
-	background: $color__accent;
+	background: var(--proteo-main_color_shade, $color__accent);
 }
 
 /**
 Prices
  */
 
-.price, .product-price .value, .min-cart-subtotal {
+.price,
+.product-price .value,
+.min-cart-subtotal {
 	color: #1f1f1f;
 	margin-bottom: 5px;
 	display: block;

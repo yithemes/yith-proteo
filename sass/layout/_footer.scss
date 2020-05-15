@@ -1,18 +1,20 @@
 #main-footer {
-    padding-top: 80px;
-    position: relative;
+	padding-top: 80px;
+	position: relative;
+	background-color: var(--proteo-footer_bg_color, #f7f7f7);
 
-    .site-info {
-        padding: 15px 0;
-    }
+	.site-info {
+		padding: 15px 0;
+		background-color: var(--prote-footer_credits_bg_color, #f0f0f0);
+	}
 
-    div[class^="footer-sidebar"] {
-        padding-bottom: 50px;
+	div[class^="footer-sidebar"] {
+		padding-bottom: 50px;
 
-        .widget {
-            h2 {
-                margin-bottom: 2rem;
-            }
-        }
-    }
+		.widget {
+			h2 {
+				margin-bottom: 2rem;
+			}
+		}
+	}
 }

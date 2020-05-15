@@ -3,215 +3,216 @@
  */
 
 table.shop_table_responsive {
-    thead {
-        //display: none;
-    }
+	thead {
+		//display: none;
+	}
 
-    tbody {
-        th {
-            //display: none;
-        }
-    }
+	tbody {
+		th {
+			//display: none;
+		}
+	}
 
-    tr {
-        td {
-            //display: block;
-            text-align: right;
-            clear: both;
+	tr {
+		td {
+			//display: block;
+			text-align: right;
+			clear: both;
 
-            &.product-remove {
-                text-align: left;
-                width: 30px;
-                padding-left: 0;
-                padding-right: 0;
+			&.product-remove {
+				text-align: left;
+				width: 30px;
+				padding-left: 0;
+				padding-right: 0;
 
-                a.remove {
-                    text-decoration: none;
-                    color: #C7C7C7;
-                    display: inline-block;
-                    vertical-align: middle;
-                    font-size: 30px;
-                    opacity: 1;
+				a.remove {
+					text-decoration: none;
+					color: #c7c7c7;
+					display: inline-block;
+					vertical-align: middle;
+					font-size: 30px;
+					opacity: 1;
 
-                    &:hover {
-                        color: #32373c;
-                    }
-                }
+					&:hover {
+						color: #32373c;
+					}
+				}
 
+				&:before {
+					display: none;
+				}
+			}
 
-                &:before {
-                    display: none;
-                }
-            }
+			&.actions,
+			&.download-actions {
+				&:before {
+					display: none;
+				}
+			}
 
-            &.actions,
-            &.download-actions {
-                &:before {
-                    display: none;
-                }
-            }
-
-            &.download-actions {
-                .button {
-                    display: block;
-                    text-align: center;
-                }
-            }
-        }
-    }
+			&.download-actions {
+				.button {
+					display: block;
+					text-align: center;
+				}
+			}
+		}
+	}
 }
 
-table.cart, table.shop_table {
-    border-spacing: 0;
+table.cart,
+table.shop_table {
+	border-spacing: 0;
 	font-size: 1rem;
 
-    th, thead th {
-        font-size: 1.125em;
-        background: transparent;
-        padding: 15px 15px;
-        vertical-align: top;
+	th,
+	thead th {
+		font-size: 1.125em;
+		background: transparent;
+		padding: 15px 15px;
+		vertical-align: top;
 
-        &.product-subtotal {
-            text-align: right;
-            padding-right: 0;
-        }
+		&.product-subtotal {
+			text-align: right;
+			padding-right: 0;
+		}
+	}
 
-    }
+	tbody,
+	tfoot {
+		tr {
+			td {
+				padding: 30px 15px;
+				border-width: 0 0 1px 0;
+				border-color: #cccccc;
+				border-style: solid;
+			}
 
-    tbody, tfoot {
-        tr {
+			td.product-thumbnail {
+				width: 60px;
 
-            td {
-                padding: 30px 15px;
-                border-width: 0 0 1px 0;
-                border-color: #cccccc;
-                border-style: solid;
-            }
+				a {
+					display: block;
+					line-height: 0;
+				}
 
-            td.product-thumbnail {
-                width: 60px;
+				img {
+					max-width: 60px;
+				}
+			}
 
-                a {
-                    display: block;
-                    line-height: 0;
-                }
+			td.product-name {
+				a {
+					font-size: 1em;
+					color: inherit;
+					text-decoration: none;
 
-                img {
-                    max-width: 60px;
-                }
-            }
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
 
-            td.product-name {
-                a {
-                    font-size: 1em;
-                    color: inherit;
-                    text-decoration: none;
+			td.product-subtotal {
+				text-align: right;
+				padding-right: 0;
+			}
 
-                    &:hover {
-                        text-decoration: underline;
-                    }
-                }
-            }
+			td.actions {
+				padding: 35px 0;
+				border-bottom: none;
 
-            td.product-subtotal {
-                text-align: right;
-                padding-right: 0;
-            }
+				.coupon {
+					float: left;
+					text-align: initial;
+					display: inline-block;
+					font-size: 0.8125rem;
 
-            td.actions {
-                padding: 35px 0;
-                border-bottom: none;
+					label {
+						display: block;
+						font-weight: bold;
+						text-transform: uppercase;
+						margin-bottom: 15px;
+					}
 
-                .coupon {
-                    float: left;
-                    text-align: initial;
-                    display: inline-block;
-                    font-size: 0.8125rem;
+					input {
+						font-size: 0.875rem;
+						font-family: inherit;
+						min-width: 230px;
+						outline: none;
+						margin-bottom: 15px;
+					}
 
-                    label {
-                        display: block;
-                        font-weight: bold;
-                        text-transform: uppercase;
-                        margin-bottom: 15px;
-                    }
+					button {
+						border: 2px solid;
+						text-transform: uppercase;
+						font-weight: bold;
+						padding: 0.5rem 1rem;
+						line-height: normal;
+						border-color: var(--proteo-main_color_shade, $color__accent);
+						color: var(--proteo-main_color_shade, $color__accent);
+						background-color: transparent;
 
-                    input {
-                      font-size: 0.875rem;
-                      font-family: inherit;
-                      min-width: 230px;
-                      outline: none;
-                      margin-bottom: 15px;
-                    }
+						&:hover {
+							background-color: var(--proteo-main_color_shade, $color__accent);
+							color: #ffffff;
+						}
+					}
+				}
 
-                    button {
-                        border: 2px solid;
-                        text-transform: uppercase;
-                        font-weight: bold;
-                        padding: 0.5rem 1rem;
-                        line-height: normal;
-                        border-color: $color__accent;
-                        color: $color__accent;
-                        background-color: transparent;
+				button[name="update_cart"] {
+					float: right;
+					margin-right: 0;
+				}
+			}
 
-                        &:hover {
-                            background-color: $color__accent;
-                            color: #ffffff;
-                        }
-                    }
-                }
+			&:first-child {
+				td {
+					border-top: 1px solid #cccccc;
+				}
+			}
 
-                button[name="update_cart"] {
-                    float: right;
-                    margin-right: 0;
-                }
-            }
+			&.shipping {
+				ul {
+					list-style-type: none;
+					padding: 0;
+					margin: 0;
 
-            &:first-child {
-                td {
-                    border-top: 1px solid #cccccc;
-                }
-            }
-
-            &.shipping {
-                ul {
-                    list-style-type: none;
-                    padding: 0;
-                    margin: 0;
-
-                    label {
-                        font-weight: bold;
-                        cursor: pointer;
-                    }
-                }
-            }
-        }
-    }
+					label {
+						font-weight: bold;
+						cursor: pointer;
+					}
+				}
+			}
+		}
+	}
 }
 
 @media screen and (min-width: 48em) {
-    table.shop_table_responsive {
-        thead {
-            display: table-header-group;
-        }
+	table.shop_table_responsive {
+		thead {
+			display: table-header-group;
+		}
 
-        tbody {
-            th {
-                display: table-cell;
-            }
-        }
+		tbody {
+			th {
+				display: table-cell;
+			}
+		}
 
-        tr {
-            th, td {
-                text-align: left;
-            }
+		tr {
+			th,
+			td {
+				text-align: left;
+			}
 
-            td {
-                display: table-cell;
+			td {
+				display: table-cell;
 
-                &:before {
-                    display: none;
-                }
-            }
-        }
-    }
+				&:before {
+					display: none;
+				}
+			}
+		}
+	}
 }

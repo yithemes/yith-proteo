@@ -1,7 +1,5 @@
 .woocommerce .products {
-
 	.yith-wcdp-loop-add-to-cart-fields {
-
 		text-align: center;
 
 		.button {
@@ -22,10 +20,9 @@
 			}
 		}
 	}
-
 }
 
-.yith-wcdp-single-add-to-cart-fields{
+.yith-wcdp-single-add-to-cart-fields {
 	margin: 15px 0;
 }
 
@@ -57,26 +54,26 @@
 		}
 	}
 
-	.yith-wcdp-product-note{
+	.yith-wcdp-product-note {
 		margin: 15px 0;
 	}
 }
 
-.woocommerce-order-details .woocommerce-table{
-	tbody tr td.product-name a.yith-wcdp-order-actions{
+.woocommerce-order-details .woocommerce-table {
+	tbody tr td.product-name a.yith-wcdp-order-actions {
 		margin: 5px 2px;
 		padding: 8px 12px;
 		color: #fff;
 
-		&:hover{
+		&:hover {
 			text-decoration: none;
 		}
 	}
 }
 
-#yith_wcdp_deposits_details .shop_table .order-actions{
+#yith_wcdp_deposits_details .shop_table .order-actions {
 	a.button {
-		font-size: .8em;
+		font-size: 0.8em;
 		padding: 8px 12px;
 		margin: 5px 2px;
 	}

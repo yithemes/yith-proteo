@@ -1,55 +1,54 @@
-.wp-block-cover-image .wp-block-cover__inner-container, 
-.wp-block-cover .wp-block-cover__inner-container, 
+.wp-block-cover-image .wp-block-cover__inner-container,
+.wp-block-cover .wp-block-cover__inner-container,
 .wp-block-group__inner-container {
 	margin-right: auto;
 	margin-left: auto;
 }
 
-
 @media (min-width: 576px) {
-	.wp-block-cover-image .wp-block-cover__inner-container, 
-	.wp-block-cover .wp-block-cover__inner-container, 
+	.wp-block-cover-image .wp-block-cover__inner-container,
+	.wp-block-cover .wp-block-cover__inner-container,
 	.wp-block-group__inner-container {
 		max-width: 540px;
 	}
 }
 
 @media (min-width: 768px) {
-	.wp-block-cover-image .wp-block-cover__inner-container, 
-	.wp-block-cover .wp-block-cover__inner-container, 
+	.wp-block-cover-image .wp-block-cover__inner-container,
+	.wp-block-cover .wp-block-cover__inner-container,
 	.wp-block-group__inner-container {
 		max-width: 720px;
 	}
 }
 
 @media (min-width: 992px) {
-	.wp-block-cover-image .wp-block-cover__inner-container, 
-	.wp-block-cover .wp-block-cover__inner-container, 
+	.wp-block-cover-image .wp-block-cover__inner-container,
+	.wp-block-cover .wp-block-cover__inner-container,
 	.wp-block-group__inner-container {
 		max-width: 960px;
 	}
 }
 
 @media (min-width: 1200px) {
-	.wp-block-cover-image .wp-block-cover__inner-container, 
-	.wp-block-cover .wp-block-cover__inner-container, 
+	.wp-block-cover-image .wp-block-cover__inner-container,
+	.wp-block-cover .wp-block-cover__inner-container,
 	.wp-block-group__inner-container {
 		max-width: 1140px;
 	}
 }
 
 @media (min-width: 1400px) {
-	.container, 
-	.wp-block-cover-image .wp-block-cover__inner-container, 
-	.wp-block-cover .wp-block-cover__inner-container, 
+	.container,
+	.wp-block-cover-image .wp-block-cover__inner-container,
+	.wp-block-cover .wp-block-cover__inner-container,
 	.wp-block-group__inner-container {
 		max-width: 1340px;
 	}
 }
 @media (min-width: 1600px) {
-	.container, 
-	.wp-block-cover-image .wp-block-cover__inner-container, 
-	.wp-block-cover .wp-block-cover__inner-container, 
+	.container,
+	.wp-block-cover-image .wp-block-cover__inner-container,
+	.wp-block-cover .wp-block-cover__inner-container,
 	.wp-block-group__inner-container {
 		max-width: 1540px;
 	}

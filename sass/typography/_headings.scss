@@ -1,19 +1,42 @@
-h1, h2, h3, h4, h5, h6 {
-    clear: both;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
 }
 
 h1 {
-    font-size: 4.375rem;
-    line-height: normal;
+	font-size: var(--proteo-h1_font_size, 4.375rem);
+	color: var(--proteo-h1_font_color, #404040);
+	line-height: normal;
 
-    .lnr {
-        text-align: center;
-        margin-bottom: 15px;
-    }
+	.lnr {
+		text-align: center;
+		margin-bottom: 15px;
+	}
 }
 
 h2 {
-    font-size: 2.5rem;
-    margin-top: 0;
-    margin-bottom: 1rem;
+	font-size: var(--proteo-h2_font_size, 2.5rem);
+	color: var(--proteo-h2_font_color, #404040);
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+h3 {
+	font-size: var(--proteo-h3_font_size, 19px);
+	color: var(--proteo-h3_font_color, #404040);
+}
+h4 {
+	font-size: var(--proteo-h4_font_size, 16px);
+	color: var(--proteo-h4_font_color, #404040);
+}
+h5 {
+	font-size: var(--proteo-h5_font_size, 13px);
+	color: var(--proteo-h5_font_color, #404040);
+}
+h6 {
+	font-size: var(--proteo-h6_font_size, 11px);
+	color: var(--proteo-h6_font_color, #404040);
 }

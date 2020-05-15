@@ -3,10 +3,11 @@ button,
 input,
 select,
 optgroup,
-textarea {
-	color: $color__text-main;
+textarea,
+body.yith-woocompare-popup {
+	color: var(--proteo-base_font_color, #404040);
 	font-family: $font__main;
-	@include font-size(1);
+	font-size: var(--proteo-base_font_size, 16);
 	line-height: $font__line-height-body;
 }
 

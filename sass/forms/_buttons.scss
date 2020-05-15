@@ -4,81 +4,108 @@ input[type="reset"],
 input[type="submit"],
 .button,
 .widget a.button,
-.wishlist-submit.popup_button {
-    border: 1px solid;
-    border-color: $color__border-button;
-    background: $color__background-button;
-    color: #ffffff;
-    line-height: 1;
-    padding: 0.8em 1.5em 0.7em;
-    text-decoration: none;
-    cursor: pointer;
-    display: inline-block;
-    transition: all ease 0.3s;
-    font-family: inherit;
-    margin-right: 15px;
-    margin-bottom: 15px;
-    font-weight: 600;
+.wishlist-submit.popup_button,
+.button-style-1:not(.wp-block-button),
+.button-style-1 a,
+input[type="file"]::-webkit-file-upload-button {
+	border: 1px solid;
+	border-color: var(--proteo-button_1_border_color, $color__border-button);
+	background: var(--proteo-button_1_bg_color, $color__background-button);
+	background-color: var(--proteo-button_1_bg_color, $color__background-button);
+	color: var(--proteo-button_1_font_color, #ffffff);
+	line-height: 1;
+	padding: 0.8em 1.5em 0.7em;
+	text-decoration: none;
+	cursor: pointer;
+	display: inline-block;
+	transition: all ease 0.3s;
+	font-family: inherit;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	font-weight: 600;
 
-    &:hover {
-        border-color: $color__border-button-hover;
-    }
+	&:hover {
+		border-color: var(--proteo-button_1_border_hover_color, $color__border-button-hover);
+		background: var(--proteo-button_1_bg_hover_color, $color__link-hover);
+		background-color: var(--proteo-button_1_bg_hover_color, $color__link-hover);
+		color: var(--proteo-button_1_font_hover_color, #ffffff);
+	}
 }
 
-.button.alt {
-    text-decoration: none;
+.button.alt,
+button.alt,
+input[type="button"].alt,
+input[type="reset"].alt,
+input[type="submit"].alt,
+.widget-area .widget a.button.alt,
+.wishlist-submit.popup_button,
+.yith_wcwl_wishlist_footer input[name="add_all_to_cart"],
+.button-style-2:not(.wp-block-button),
+.button-style-2 a {
+	text-decoration: none;
+	background-color: var(--proteo-button_2_bg_color_1);
+	background: linear-gradient(180deg, var(--proteo-button_2_bg_color_1) 0%, var(--proteo-button_2_bg_color_2) 100%);
+	color: var(--proteo-button_2_font_color);
+	border: none;
 
-    &:hover {
-        text-decoration: none;
-    }
+	&:hover {
+		text-decoration: none;
+		color: var(--proteo-button_2_font_hover_color);
+		background-color: var(--proteo-button_2_bg_hover_color);
+		background: linear-gradient(
+			180deg,
+			var(--proteo-button_2_bg_hover_color) 0%,
+			var(--proteo-button_2_bg_hover_color) 100%
+		);
+	}
 }
-
 
 .comment-reply a {
-    text-transform: uppercase;
-    font-weight: bold;
-    color: $color__accent;
-    text-decoration: none;
-    font-size: 0.875rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: var(--proteo-main_color_shade, $color__accent);
+	text-decoration: none;
+	font-size: 0.875rem;
 
-    &:before {
-        content: '+';
-        display: inline-block;
-        margin-right: 5px;
-    }
+	&:before {
+		content: "+";
+		display: inline-block;
+		margin-right: 5px;
+	}
 
-    &:hover {
-        text-decoration: underline;
-    }
+	&:hover {
+		text-decoration: underline;
+	}
 }
 
 .button.flat,
 .yith_wcwl_footer_additional_action .ask-an-estimate-button {
-    border: none;
-    text-align: center;
-    padding: 0.8em 1.5em 0.7em;
-    vertical-align: middle;
-    background-color: #eaeaea;
-    color: #393839;
-    transition: all ease 0.3s;
-    text-decoration: none;
-    margin-right: 15px;
-    font-weight: 600;
+	border: none;
+	text-align: center;
+	padding: 0.8em 1.5em 0.7em;
+	vertical-align: middle;
+	background-color: #eaeaea;
+	color: #393839;
+	transition: all ease 0.3s;
+	text-decoration: none;
+	margin-right: 15px;
+	font-weight: 600;
 
-    &:hover {
-        background-color: #4ac4aa;
-        text-decoration: none;
-    }
+	&:hover {
+		text-decoration: none;
+		background-color: var(--proteo-button_1_bg_hover_color, $color__link-hover);
+		color: var(--proteo-button_1_font_hover_color, #ffffff);
+	}
 }
 
 .yith_wcwl_footer_additional_action .ask-an-estimate-button {
-    display: inline-block;
-    line-height: 1;
+	display: inline-block;
+	line-height: 1;
 }
 
 .comment-respond #submit {
-    display: block;
-    margin-right: 0;
+	display: block;
+	margin-right: 0;
 }
 
 .button.ghost,
@@ -90,43 +117,54 @@ input[type="submit"],
 .wpcf7-form-control.ghost,
 .button.ywgc_apply_gift_card_button,
 .checkout_coupon button[name="apply_coupon"] {
-    margin-bottom: 15px;
-    border: 2px solid $color__accent;
-    text-align: center;
-    padding: 0.65em 1.5em 0.5em;
-    vertical-align: middle;
-    background-color: transparent;
-    color: $color__accent;
-    font-weight: 600;
-    display: inline-block;
+	margin-bottom: 15px;
+	border: 2px solid;
+	border-color: var(--proteo-main_color_shade, $color__accent);
+	text-align: center;
+	padding: 0.65em 1.5em 0.5em;
+	vertical-align: middle;
+	background-color: transparent;
+	color: var(--proteo-main_color_shade, $color__accent);
+	font-weight: 600;
+	display: inline-block;
 
-    &:hover {
-        background-color: $color__accent;
-        border-color: $color__accent;
-        color: #ffffff;
-        text-decoration: none;
-    }
+	&:hover {
+		background-color: var(--proteo-main_color_shade, $color__accent);
+		border-color: var(--proteo-main_color_shade, $color__accent);
+		color: #ffffff;
+		text-decoration: none;
+	}
 }
 
-.unstyled_button, 
-.button.unstyled_button, 
-table.cart tbody tr td.actions button[name=update_cart], 
-.yith-wcqv-button.button:not(.inside-thumb), 
-.wc-block-grid ul.wc-block-grid__products li.wc-block-grid__product .add_to_cart_button, 
+.unstyled_button,
+.button.unstyled_button,
+table.cart tbody tr td.actions button[name="update_cart"],
+.yith-wcqv-button.button:not(.inside-thumb),
+.wc-block-grid ul.wc-block-grid__products li.wc-block-grid__product .add_to_cart_button,
 .wc-block-grid ul.wc-block-grid__products li.wc-block-grid__product .add_to_cart_button:visited {
-    background: none;
-    background-color: transparent;
-    padding: 0;
-    border: none;
-    color: $color__accent;
-    font-weight: 600;
-    text-decoration: none;
-    text-transform: none;
+	background: none;
+	background-color: transparent;
+	padding: 0;
+	border: none;
+	color: var(--proteo-main_color_shade, $color__accent);
+	font-weight: 600;
+	text-decoration: none;
+	text-transform: none;
 
-    &:hover {
-        background: none;
-        background-color: transparent;
-        border: none;
-        color: $color__accent;
-    }
+	&:hover {
+		background: none;
+		background-color: transparent;
+		border: none;
+		color: var(--proteo-general_link_hover_color, $color__accent);
+	}
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.button,
+.widget a.button,
+.wishlist-submit.popup_button {
+	border-radius: var(--proteo-buttons_border_radius);
 }

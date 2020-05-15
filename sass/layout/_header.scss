@@ -17,7 +17,7 @@
 			color: inherit;
 
 			&:hover {
-				color: $color__accent;
+				color: var(--proteo-main_color_shade, $color__accent);
 			}
 		}
 	}
@@ -38,7 +38,7 @@
 }
 
 .site-header {
-
+	background-color: var(--proteo-header_bg_color, #ffffff);
 	background-position: center;
 	background-size: cover;
 	position: relative;
@@ -57,7 +57,6 @@
 		}
 
 		@media screen and (min-width: 992px) {
-
 			.header-contents {
 				display: table;
 			}
@@ -102,7 +101,6 @@
 		text-align: right;
 	}
 
-
 	&.sticky {
 		position: fixed;
 		width: 100%;
@@ -129,7 +127,6 @@
 			max-width: 100%;
 		}
 	}
-
 }
 
 .site-header:not(.sticky) {
@@ -143,11 +140,12 @@
 
 // #Topbar
 #topbar {
+	background-color: var(--proteo-topbar_bg_color, #ebebeb);
 	padding: 15px 0 0;
 	text-align: right;
 
 	&:after {
-		content: '';
+		content: "";
 		display: block;
 		clear: both;
 	}
