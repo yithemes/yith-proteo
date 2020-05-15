@@ -97,13 +97,21 @@ body.woocommerce-cart {
 					.amount {
 						font-weight: normal;
 					}
+					li {
+						text-align: right;
+					}
 				}
 
 				.woocommerce-shipping-destination {
 					margin: 5px 0;
 				}
 
+				form.woocommerce-shipping-calculator {
+					font-size: 0.875em;
+				}
+
 				.shipping-calculator-form {
+					padding-left: 10%;
 					p {
 						padding-right: 0;
 						line-height: normal;

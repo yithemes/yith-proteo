@@ -87,57 +87,52 @@ function yith_proteo_inline_style() {
 		$font = 'body, body.yith-woocompare-popup { font-family: \'Montserrat\', sans-serif; }';
 	}
 
-	$custom_css = "
-				{$font}
-				/**
-				* Proteo Customizer CSS Variables:
-				*/
-				:root {
-					--proteo-main_color_shade: {$main_color_shade};
-					--proteo-general_link_hover_color: {$general_link_hover_color};
-					--proteo-header_bg_color: {$header_bg_color};
-					--proteo-topbar_bg_color: {$topbar_bg_color};
-					--proteo-footer_bg_color: {$footer_bg_color};
-					--proteo-footer_credits_bg_color: {$footer_credits_bg_color};
-					--proteo-base_font_size: {$base_font_size};
-					--proteo-base_font_color: {$base_font_color};
-					--proteo-h1_font_size: {$h1_font_size}px;
-					--proteo-h1_font_color: {$h1_font_color};
-					--proteo-h2_font_size: {$h2_font_size }px;
-					--proteo-h2_font_color: {$h2_font_color};
-					--proteo-h3_font_size: {$h3_font_size }px;
-					--proteo-h3_font_color: {$h3_font_color};
-					--proteo-h4_font_size: {$h4_font_size }px;
-					--proteo-h4_font_color: {$h4_font_color};
-					--proteo-h5_font_size: {$h5_font_size }px;
-					--proteo-h5_font_color: {$h5_font_color};
-					--proteo-h6_font_size: {$h6_font_size }px;
-					--proteo-h6_font_color: {$h6_font_color};
-					--proteo-button_1_bg_color: {$button_1_bg_color};
-					--proteo-button_1_border_color: {$button_1_border_color};
-					--proteo-button_1_font_color: {$button_1_font_color};
-					--proteo-button_1_bg_hover_color: {$button_1_bg_hover_color};
-					--proteo-button_1_border_hover_color: {$button_1_border_hover_color};
-					--proteo-button_1_font_hover_color: {$button_1_font_hover_color};
-					--proteo-button_2_bg_color_1: {$button_2_bg_color_1};
-					--proteo-button_2_bg_color_2: {$button_2_bg_color_2};
-					--proteo-button_2_font_color: {$button_2_font_color};
-					--proteo-button_2_bg_hover_color: {$button_2_bg_hover_color};
-					--proteo-button_2_font_hover_color: {$button_2_font_hover_color};
-					--proteo-buttons_border_radius: {$buttons_border_radius}px;
-					--proteo-forms_input_borde_radius: {$forms_input_borde_radius}px;
-					--proteo-store_notice_bg_color: {$store_notice_bg_color};
-					--proteo-store_notice_text_color: {$store_notice_text_color};
-					--proteo-store_notice_font_size: {$store_notice_font_size}px;
-					--proteo-sale_badge_bg_color: {$sale_badge_bg_color};
-					--proteo-sale_badge_text_color: {$sale_badge_text_color};
-					--proteo-sale_badge_font_size: {$sale_badge_font_size}px;
-					--proteo-woo_messages_font_size: {$woo_messages_font_size}px;
-					--proteo-woo_messages_default_accent_color: {$woo_messages_default_accent_color};
-					--proteo-woo_messages_info_accent_color: {$woo_messages_info_accent_color};
-					--proteo-woo_messages_error_accent_color: {$woo_messages_error_accent_color};
-				}
-	";
+	$custom_css = "{$font}
+:root {
+	--proteo-main_color_shade: {$main_color_shade};
+	--proteo-general_link_hover_color: {$general_link_hover_color};
+	--proteo-header_bg_color: {$header_bg_color};
+	--proteo-topbar_bg_color: {$topbar_bg_color};
+	--proteo-footer_bg_color: {$footer_bg_color};
+	--proteo-footer_credits_bg_color: {$footer_credits_bg_color};
+	--proteo-base_font_size: {$base_font_size};
+	--proteo-base_font_color: {$base_font_color};
+	--proteo-h1_font_size: {$h1_font_size}px;
+	--proteo-h1_font_color: {$h1_font_color};
+	--proteo-h2_font_size: {$h2_font_size }px;
+	--proteo-h2_font_color: {$h2_font_color};
+	--proteo-h3_font_size: {$h3_font_size }px;
+	--proteo-h3_font_color: {$h3_font_color};
+	--proteo-h4_font_size: {$h4_font_size }px;
+	--proteo-h4_font_color: {$h4_font_color};
+	--proteo-h5_font_size: {$h5_font_size }px;
+	--proteo-h5_font_color: {$h5_font_color};
+	--proteo-h6_font_size: {$h6_font_size }px;
+	--proteo-h6_font_color: {$h6_font_color};
+	--proteo-button_1_bg_color: {$button_1_bg_color};
+	--proteo-button_1_border_color: {$button_1_border_color};
+	--proteo-button_1_font_color: {$button_1_font_color};
+	--proteo-button_1_bg_hover_color: {$button_1_bg_hover_color};
+	--proteo-button_1_border_hover_color: {$button_1_border_hover_color};
+	--proteo-button_1_font_hover_color: {$button_1_font_hover_color};
+	--proteo-button_2_bg_color_1: {$button_2_bg_color_1};
+	--proteo-button_2_bg_color_2: {$button_2_bg_color_2};
+	--proteo-button_2_font_color: {$button_2_font_color};
+	--proteo-button_2_bg_hover_color: {$button_2_bg_hover_color};
+	--proteo-button_2_font_hover_color: {$button_2_font_hover_color};
+	--proteo-buttons_border_radius: {$buttons_border_radius}px;
+	--proteo-forms_input_borde_radius: {$forms_input_borde_radius}px;
+	--proteo-store_notice_bg_color: {$store_notice_bg_color};
+	--proteo-store_notice_text_color: {$store_notice_text_color};
+	--proteo-store_notice_font_size: {$store_notice_font_size}px;
+	--proteo-sale_badge_bg_color: {$sale_badge_bg_color};
+	--proteo-sale_badge_text_color: {$sale_badge_text_color};
+	--proteo-sale_badge_font_size: {$sale_badge_font_size}px;
+	--proteo-woo_messages_font_size: {$woo_messages_font_size}px;
+	--proteo-woo_messages_default_accent_color: {$woo_messages_default_accent_color};
+	--proteo-woo_messages_info_accent_color: {$woo_messages_info_accent_color};
+	--proteo-woo_messages_error_accent_color: {$woo_messages_error_accent_color};
+}";
 
 	if ( ! empty( $custom_css ) ) {
 		wp_add_inline_style( 'yith-proteo-custom-style', $custom_css );
