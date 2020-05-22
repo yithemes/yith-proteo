@@ -30,10 +30,16 @@ global $post;
 	} else {
 		$hide_header = $post ? get_post_meta( $post->ID, 'yith_proteo_remove_header_and_footer', true ) : 'off';
 	}
+	$slider = '';
+	if ( defined( 'YITH_SLIDER_FOR_PAGE_BUILDERS' ) ) {
+		if ( $post ) {
+			$slider = get_post_meta( $post->ID, 'header_slider', true );
+		}
+	}
 	if ( 'on' != $hide_header ) :
 		?>
 		<header id="masthead"
-				class="site-header <?php echo esc_attr( get_theme_mod( 'yith_proteo_header_layout', 'left_logo_navigation_inline' ) ); ?> <?php echo esc_attr( get_theme_mod( 'yith_proteo_header_fullwidth', 'no' ) == 'yes' ? 'fullwidth-header' : '' ); ?>" <?php yith_proteo_custom_header_style(); ?>>
+				class="site-header <?php echo esc_attr( get_theme_mod( 'yith_proteo_header_layout', 'left_logo_navigation_inline' ) ); ?> <?php echo esc_attr( get_theme_mod( 'yith_proteo_header_fullwidth', 'no' ) == 'yes' ? 'fullwidth-header' : '' ); ?> <?php echo esc_attr( $slider && '' != $slider ? 'with-header-slider' : '' ); ?>" <?php yith_proteo_custom_header_style(); ?>>
 			<?php
 			if ( get_theme_mod( 'yith_proteo_topbar_enable', 'no' ) == 'yes' ) {
 				get_template_part( 'template-parts/topbar' );
@@ -99,8 +105,18 @@ global $post;
 					<?php
 					wp_nav_menu(
 						array(
-							'theme_location' => 'menu-1',
+							'theme_location' => 'mobile',
+							'menu_id'        => 'mobile-menu',
+							'container_id'   => 'mobile-nav-menu',
+						)
+					);
+					?>
+					<?php
+					wp_nav_menu(
+						array(
+							'theme_location' => 'primary',
 							'menu_id'        => 'primary-menu',
+							'container_id'   => 'primary-nav-menu',
 						)
 					);
 					?>

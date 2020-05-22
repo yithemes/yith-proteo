@@ -15,9 +15,10 @@
 			text-decoration: none;
 			display: block;
 			color: inherit;
+			transition: all ease 0.3s;
 
 			&:hover {
-				color: var(--proteo-main_color_shade, $color__accent);
+				color: var(--proteo-header_menu_hover_color, $color__accent);
 			}
 		}
 	}
@@ -130,12 +131,15 @@
 }
 
 .site-header:not(.sticky) {
-	background: transparent;
 	position: absolute;
 	left: 0;
 	right: 0;
 	width: 100vw;
 	z-index: 1000;
+
+	&.with-header-slider {
+		background: transparent;
+	}
 }
 
 // #Topbar

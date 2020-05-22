@@ -43,3 +43,15 @@ function yith_proteo_register_social_icons_widget() {
 }
 
 add_action( 'widgets_init', 'yith_proteo_register_social_icons_widget' );
+
+// Include YITH_Proteo_Account widget
+require get_template_directory() . '/inc/widgets/class-yith-proteo-account-widget.php'; // phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
+
+/**
+ * Register YITH_Proteo_Account widget
+ */
+function yith_proteo_account_widget_registration() {
+	register_widget( 'YITH_Proteo_Account_Widget' );
+}
+
+add_action( 'widgets_init', 'yith_proteo_account_widget_registration' );

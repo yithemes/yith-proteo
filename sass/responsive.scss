@@ -11,6 +11,12 @@
 	.menu-toggle {
 		display: none;
 	}
+	#primary-nav-menu, #site-navigation > #primary-menu {
+		display: block;
+	}
+	#mobile-nav-menu, #site-navigation > #mobile-menu {
+		display: none;
+	}
 	.main-navigation ul {
 		display: block;
 	}
@@ -66,6 +72,12 @@ Custom media queries
 		float: right;
 	}
 
+	#primary-nav-menu {
+		display: none;
+	}
+	#mobile-nav-menu {
+		display: block;
+	}
 	.main-navigation > div {
 		opacity: 0;
 		visibility: hidden;

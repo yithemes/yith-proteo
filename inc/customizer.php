@@ -275,6 +275,44 @@ function yith_proteo_customize_register( $wp_customize ) {
 		)
 	);
 
+	// Header menu color.
+	$wp_customize->add_setting(
+		'yith_proteo_header_main_menu_color',
+		array(
+			'default'           => get_theme_mod( 'yith_proteo_base_font_color', '#404040' ),
+			'sanitize_callback' => 'sanitize_hex_color', // validates 3 or 6 digit HTML hex color code.
+		)
+	);
+	$wp_customize->add_control(
+		new WP_Customize_Color_Control(
+			$wp_customize,
+			'yith_proteo_header_main_menu_color',
+			array(
+				'label'   => esc_html__( 'Header menu color', 'yith-proteo' ),
+				'section' => 'yith_proteo_header_management',
+			)
+		)
+	);
+
+	// Header menu color hover.
+	$wp_customize->add_setting(
+		'yith_proteo_header_main_menu_hover_color',
+		array(
+			'default'           => get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ),
+			'sanitize_callback' => 'sanitize_hex_color', // validates 3 or 6 digit HTML hex color code.
+		)
+	);
+	$wp_customize->add_control(
+		new WP_Customize_Color_Control(
+			$wp_customize,
+			'yith_proteo_header_main_menu_hover_color',
+			array(
+				'label'   => esc_html__( 'Header menu :hover color', 'yith-proteo' ),
+				'section' => 'yith_proteo_header_management',
+			)
+		)
+	);
+
 	/**
 	 * Add footer sidebar management.
 	 */

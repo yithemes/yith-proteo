@@ -138,10 +138,10 @@
 		display: block;
 		text-decoration: none;
 
-		color: inherit;
+		color: var(--proteo-header_menu_color, #404040);
 
 		&:hover {
-			color: var(--proteo-main_color_shade, $color__accent);
+			color: var(--proteo-header_menu_hover_color, $color__accent);
 		}
 	}
 
@@ -164,12 +164,10 @@
 			font-size: 0.75em;
 		}
 	}
+}
 
-	.current_page_item > a,
-	.current-menu-item > a,
-	.current_page_ancestor > a,
-	.current-menu-ancestor > a {
-	}
+#primary-nav-menu > ul > li {
+	margin-bottom: -15px;
 }
 
 /* Small menu. */

@@ -48,9 +48,21 @@ if ( ! function_exists( 'yith_proteo_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(
 			array(
-				'menu-1' => esc_html__( 'Primary', 'yith-proteo' ),
+				'primary' => esc_html__( 'Primary', 'yith-proteo' ),
+				'mobile'  => esc_html__( 'Mobile Menu', 'yith-proteo' ),
 			)
 		);
+
+		/**
+		 * Fix empty menu locations
+		 */
+		$menu_locations = get_theme_mod( 'nav_menu_locations' );
+		if ( ! isset( $menu_locations['primary'] ) && isset( $menu_locations['menu-1'] ) ) {
+			set_theme_mod( 'nav_menu_locations', array_merge( $menu_locations, array( 'primary' => $menu_locations['menu-1'] ) ) );
+		}
+		if ( ! isset( $menu_locations['mobile'] ) ) {
+			set_theme_mod( 'nav_menu_locations', array_merge( $menu_locations, array( 'mobile' => $menu_locations['primary'] ) ) );
+		}
 
 		/*
 		 * Switch default core markup for search form, comment form, and comments
@@ -189,7 +201,9 @@ require get_template_directory() . '/inc/customizer-inline-style.php';
 /**
  * Load TGM class
  */
-require_once get_template_directory() . '/third-party/classes/class-tgm-plugin-activation.php';
+if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
+	require_once get_template_directory() . '/third-party/classes/class-tgm-plugin-activation.php';
+}
 
 /**
  * Various functions

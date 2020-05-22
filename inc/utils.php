@@ -270,15 +270,29 @@ function yith_proteo_register_required_plugins() {
 	);
 
 	$config = array(
-		'id'           => 'yith-proteo',                 // Unique ID for hashing notices for multiple instances of TGMPA.
+		'id'           => 'yith-proteo',           // Unique ID for hashing notices for multiple instances of TGMPA.
 		'default_path' => '',                      // Default absolute path to bundled plugins.
 		'menu'         => 'tgmpa-install-plugins', // Menu slug.
 		'has_notices'  => true,                    // Show admin notices or not.
 		'dismissable'  => true,                    // If false, a user cannot dismiss the nag message.
 		'dismiss_msg'  => '',                      // If 'dismissable' is false, this message will be output at top of nag.
-		'is_automatic' => true,                   // Automatically activate plugins after installation or not.
+		'is_automatic' => true,                    // Automatically activate plugins after installation or not.
 		'message'      => '',                      // Message to output right before the plugins table.
 	);
 
 	tgmpa( $plugins, $config );
+}
+
+if ( ! function_exists( 'yith_proteo_get_user_username' ) ) {
+	/**
+	 * Get current user display name
+	 *
+	 * @return string
+	 */
+	function yith_proteo_get_user_username() {
+		$current_user = wp_get_current_user();
+		$username     = ( isset( $current_user->billing_first_name ) && '' != $current_user->billing_first_name ) ? $current_user->billing_first_name : $current_user->display_name;
+
+		return $username;
+	}
 }

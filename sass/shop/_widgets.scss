@@ -99,7 +99,7 @@ Mini Cart Widget
 
 		&:hover {
 			span.lnr {
-				color: var(--proteo-main_color_shade, $color__accent);
+				color: var(--proteo-header_menu_hover_color, $color__accent);
 			}
 		}
 	}

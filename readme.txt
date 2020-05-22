@@ -4,7 +4,7 @@ Tags: one-column, two-columns, left-sidebar, right-sidebar, wide-blocks, accessi
 Requires at least: 4.9.6
 Tested up to: WordPress 5.4
 Requires PHP: 5.6
-Stable tag: 1.2.6
+Stable tag: 1.2.7
 YITH Proteo WordPress Theme, Copyright 2020 YITH
 YITH Proteo is distributed under the terms of the GNU GPL
 License: GPLv2 or later
@@ -25,6 +25,17 @@ Proteo is a sleek, modern and "Gutenberg-friendly" e-commerce theme. Developed w
 == Frequently Asked Questions ==
 
 == Changelog ==
+= 1.2.7 - May 22 2020 =
+* New options for main menu color
+* New mobile menu position to use a different menu between desktop and mobile
+* New login widget
+* Move all customizer css from php file to css variables to reduce page impact, load time and increase performance
+* Fix search widget button alignment
+* Fix issue with header background color
+* Enanched support to: Group block, Cover block, WooCommerce products block
+* Improve cart shipping calculator css
+* Refactor all scss files
+
 = 1.2.6 - May 11 2020 =
 * New: Suggested plugins message
 * Fix: Merge pull request #3 from kloukas/bugfix-sidebar-metabox (Fixed a bug in Sidebar Metabox Html.)
