@@ -56,12 +56,19 @@ if ( ! function_exists( 'yith_proteo_setup' ) ) :
 		/**
 		 * Fix empty menu locations
 		 */
-		$menu_locations = get_theme_mod( 'nav_menu_locations' );
+		$menu_locations        = get_theme_mod( 'nav_menu_locations' );
+		$update_menu_locations = false;
 		if ( ! isset( $menu_locations['primary'] ) && isset( $menu_locations['menu-1'] ) ) {
-			set_theme_mod( 'nav_menu_locations', array_merge( $menu_locations, array( 'primary' => $menu_locations['menu-1'] ) ) );
+			$menu_locations        = array_merge( $menu_locations, array( 'primary' => $menu_locations['menu-1'] ) );
+			$update_menu_locations = true;
 		}
 		if ( ! isset( $menu_locations['mobile'] ) ) {
-			set_theme_mod( 'nav_menu_locations', array_merge( $menu_locations, array( 'mobile' => $menu_locations['primary'] ) ) );
+			$menu_locations        = array_merge( $menu_locations, array( 'mobile' => $menu_locations['primary'] ) );
+			$update_menu_locations = true;
+		}
+
+		if ( $update_menu_locations ) {
+			set_theme_mod( 'nav_menu_locations', $menu_locations );
 		}
 
 		/*
