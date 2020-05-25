@@ -62,7 +62,7 @@ if ( ! function_exists( 'yith_proteo_setup' ) ) :
 			$menu_locations        = array_merge( $menu_locations, array( 'primary' => $menu_locations['menu-1'] ) );
 			$update_menu_locations = true;
 		}
-		if ( ! isset( $menu_locations['mobile'] ) ) {
+		if ( ! isset( $menu_locations['mobile'] ) && isset( $menu_locations['primary'] ) ) {
 			$menu_locations        = array_merge( $menu_locations, array( 'mobile' => $menu_locations['primary'] ) );
 			$update_menu_locations = true;
 		}
