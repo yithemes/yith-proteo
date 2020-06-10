@@ -998,6 +998,100 @@ function yith_proteo_customize_register( $wp_customize ) {
 	);
 
 	/**
+	 * Blog options management
+	 */
+	$wp_customize->add_section(
+		'yith_proteo_blog_management',
+		array(
+			'title'    => esc_html__( 'Blog', 'yith-proteo' ),
+			'priority' => 80,
+			'panel'    => 'yith_proteo_options',
+		)
+	);
+
+	// Single post layout.
+	$wp_customize->add_setting(
+		'yith_proteo_single_post_layout',
+		array(
+			'default'           => 'standard',
+			'sanitize_callback' => 'yith_proteo_sanitize_radio',
+		)
+	);
+	$wp_customize->add_control(
+		'yith_proteo_single_post_layout',
+		array(
+			'type'        => 'radio',
+			'label'       => esc_html__( 'Choose the single post layout', 'yith-proteo' ),
+			'section'     => 'yith_proteo_blog_management',
+			'description' => esc_html__( 'Select where to display the default sidebar. You can adjust the settings from the page/post edit view.', 'yith-proteo' ),
+			'choices'     => array(
+				'standard'           => esc_html__( 'Standard', 'yith-proteo' ),
+				'background_picture' => esc_html__( 'Background picture', 'yith-proteo' ),
+			),
+		)
+	);
+	// Single post thumbnail background color.
+	$wp_customize->add_setting(
+		'yith_proteo_single_post_background_color',
+		array(
+			'sanitize_callback' => 'sanitize_hex_color',
+			'default'           => '#448a85',
+		)
+	);
+	$wp_customize->add_control(
+		new WP_Customize_Color_Control(
+			$wp_customize,
+			'yith_proteo_single_post_background_color',
+			array(
+				'label'   => esc_html__( 'Post thumbnail background overlay', 'yith-proteo' ),
+				'section' => 'yith_proteo_blog_management',
+			)
+		)
+	);
+	// Single post thumbnail background color opacity.
+	$wp_customize->add_setting(
+		'yith_proteo_single_post_bg_alpha',
+		array(
+			'default'           => 70,
+			'transport'         => 'postMessage',
+			'sanitize_callback' => 'absint',
+		)
+	);
+
+	$wp_customize->add_control(
+		new WP_Customize_Range(
+			$wp_customize,
+			'yith_proteo_single_post_bg_alpha',
+			array(
+				'label'   => esc_html__( 'Overlay color opacity % (default: 70%)', 'yith-proteo' ),
+				'min'     => 0,
+				'max'     => 100,
+				'step'    => 1,
+				'section' => 'yith_proteo_blog_management',
+			)
+		)
+	);
+
+	// Single post thumbnail text color.
+	$wp_customize->add_setting(
+		'yith_proteo_single_post_thumbnail_text_color',
+		array(
+			'sanitize_callback' => 'sanitize_hex_color',
+			'default'           => '#ffffff',
+		)
+	);
+	$wp_customize->add_control(
+		new WP_Customize_Color_Control(
+			$wp_customize,
+			'yith_proteo_single_post_thumbnail_text_color',
+			array(
+				'label'   => esc_html__( 'Post thumbnail text color', 'yith-proteo' ),
+				'section' => 'yith_proteo_blog_management',
+			)
+		)
+	);
+
+	/**
 	 * Color shades management
 	 */
 	$wp_customize->add_section(
@@ -1097,6 +1191,84 @@ function yith_proteo_customize_register( $wp_customize ) {
 				'label'       => esc_html__( 'Child theme', 'yith-proteo' ),
 				'description' => sprintf( '%1s <a href="https://docs.yithemes.com/yith-proteo/" target="_blank" rel="noopener nofollow">%2s</a>', esc_html__( 'Download child theme', 'yith-proteo' ), esc_html__( 'here', 'yith-proteo' ) ),
 				'section'     => 'yith_proteo_documentation',
+			)
+		)
+	);
+
+	// Site title font size.
+	$wp_customize->add_setting(
+		'yith_proteo_site_title_font_size',
+		array(
+			'sanitize_callback' => 'absint',
+			'default'           => 48,
+			'priority'          => 10,
+		)
+	);
+
+	$wp_customize->add_control(
+		'yith_proteo_site_title_font_size',
+		array(
+			'label'   => esc_html__( 'Site Title font size', 'yith-proteo' ),
+			'section' => 'title_tagline',
+			'type'    => 'number',
+		)
+	);
+	// Site title color.
+	$wp_customize->add_setting(
+		'yith_proteo_site_title_color',
+		array(
+			'default'           => '#404040',
+			'priority'          => 10,
+			'sanitize_callback' => 'sanitize_hex_color',
+		)
+	);
+
+	$wp_customize->add_control(
+		new WP_Customize_Color_Control(
+			$wp_customize,
+			'yith_proteo_site_title_color',
+			array(
+				'label'   => esc_html__( 'Site Title color', 'yith-proteo' ),
+				'section' => 'title_tagline',
+			)
+		)
+	);
+
+	// Tagline font size.
+	$wp_customize->add_setting(
+		'yith_proteo_tagline_font_size',
+		array(
+			'sanitize_callback' => 'absint',
+			'default'           => 14,
+			'priority'          => 10,
+		)
+	);
+
+	$wp_customize->add_control(
+		'yith_proteo_tagline_font_size',
+		array(
+			'label'   => esc_html__( 'Tagline font size', 'yith-proteo' ),
+			'section' => 'title_tagline',
+			'type'    => 'number',
+		)
+	);
+	// Tagline color.
+	$wp_customize->add_setting(
+		'yith_proteo_tagline_color',
+		array(
+			'default'           => '#404040',
+			'priority'          => 10,
+			'sanitize_callback' => 'sanitize_hex_color',
+		)
+	);
+
+	$wp_customize->add_control(
+		new WP_Customize_Color_Control(
+			$wp_customize,
+			'yith_proteo_tagline_color',
+			array(
+				'label'   => esc_html__( 'Tagline color', 'yith-proteo' ),
+				'section' => 'title_tagline',
 			)
 		)
 	);
@@ -1581,15 +1753,6 @@ function yith_proteo_customize_partial_blogdescription() {
 	bloginfo( 'description' );
 }
 
-/**
- * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
- */
-function yith_proteo_customize_preview_js() {
-	wp_enqueue_script( 'yith-proteo-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), YITH_PROTEO_VERSION, true );
-}
-
-add_action( 'customize_preview_init', 'yith_proteo_customize_preview_js' );
-
 
 if ( ! function_exists( 'yith_proteo_sanitize_sidebar_position' ) ) :
 	/**
@@ -1660,7 +1823,29 @@ if ( ! function_exists( 'yith_proteo_sanitize_select' ) ) :
 	}
 endif;
 
+if ( ! function_exists( 'yith_proteo_sanitize_radio' ) ) :
+	/**
+	 * Radio sanitization function
+	 *
+	 * @param string $input input must be a slug: lowercase alphanumeric characters, dashes and underscores are allowed only.
+	 *
+	 * @param array  $setting select value to check.
+	 *
+	 * @return string
+	 */
+	function yith_proteo_sanitize_radio( $input, $setting ) {
 
+		// input must be a slug: lowercase alphanumeric characters, dashes and underscores are allowed only.
+		$input = sanitize_key( $input );
+
+		// get the list of possible radio box options.
+		$choices = $setting->manager->get_control( $setting->id )->choices;
+
+		// return input if valid or return default option.
+		return ( array_key_exists( $input, $choices ) ? $input : $setting->default );
+
+	}
+endif;
 
 if ( ! function_exists( 'yith_proteo_range_sanitization' ) ) {
 	/**

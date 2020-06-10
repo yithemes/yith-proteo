@@ -68,31 +68,75 @@ header.entry-header {
 		}
 	}
 
-	.entry-meta {
-		text-align: initial;
-		font-size: 0.875rem;
-		color: #939393;
-		font-weight: 500;
+}
 
-		& > span {
-			border-left: 1px solid;
-			margin-left: 10px;
-			padding-left: 10px;
+header .entry-meta {
+	text-align: initial;
+	font-size: 0.875rem;
+	color: #939393;
+	font-weight: 500;
 
-			&:first-child {
-				border-left: none;
-				margin-left: 0;
-				padding-left: 0;
+	& > span {
+		border-left: 1px solid;
+		margin-left: 10px;
+		padding-left: 10px;
+
+		&:first-child {
+			border-left: none;
+			margin-left: 0;
+			padding-left: 0;
+		}
+	}
+
+	a {
+		color: inherit;
+		text-decoration: none;
+
+		&:hover {
+			color: var(--proteo-main_color_shade, $color__accent);
+		}
+	}
+}
+
+article.proteo_post_layout_background_picture {
+	header.alignfull {
+		background-color: var(--proteo-post_thumbnail_background_color, $color__accent);
+		min-height: 560px;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+		margin-top: -135px;
+
+		&:before {
+			position: absolute;
+			content: "";
+			display: block;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			opacity: var(--proteo-post_thumbnail_background_color_opacity, 0.7);
+			pointer-events: none;
+			background-color: var(--proteo-post_thumbnail_background_color, $color__accent);
+		}
+
+		.single-post-header-content {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			text-align: center;
+			left: 0;
+			right: 0;
+			color: var(--proteo-post_thumbnail_text_color, #ffffff);
+
+			.entry-title, .entry-meta {
+				color: var(--proteo-post_thumbnail_text_color, #ffffff);
 			}
 		}
 
-		a {
-			color: inherit;
-			text-decoration: none;
-
-			&:hover {
-				color: var(--proteo-main_color_shade, $color__accent);
-			}
+		.entry-meta {
+			text-align: center;
 		}
 	}
 }

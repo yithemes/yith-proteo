@@ -6,20 +6,17 @@
 		display: block;
 		margin: 0 30px 0 0;
 		vertical-align: middle;
-		font-size: 3em;
+		font-size: var(--proteo-site_title_font_size, 48);
 		font-weight: 600;
 		line-height: normal;
 		transition: all ease 0.3s;
+		color: var(--proteo-site_title_color, #404040);
 
 		a {
 			text-decoration: none;
 			display: block;
 			color: inherit;
 			transition: all ease 0.3s;
-
-			&:hover {
-				color: var(--proteo-header_menu_hover_color, $color__accent);
-			}
 		}
 	}
 
@@ -34,7 +31,7 @@
 	.site-description {
 		display: block;
 		margin: 0;
-		font-size: 0.675em;
+		font-size: 0.9em;
 	}
 }
 

@@ -31,6 +31,11 @@ function yith_proteo_inline_style() {
 	$header_menu_color       = get_theme_mod( 'yith_proteo_header_main_menu_color', '#404040' );
 	$header_menu_hover_color = get_theme_mod( 'yith_proteo_header_main_menu_hover_color', '#448a85' );
 
+	$site_title_font_size = get_theme_mod( 'yith_proteo_site_title_font_size', 48 );
+	$site_title_color     = get_theme_mod( 'yith_proteo_site_title_color', '#404040' );
+	$tagline_font_size    = get_theme_mod( 'yith_proteo_tagline_font_size', 14 );
+	$tagline_color        = get_theme_mod( 'yith_proteo_tagline_color', '#404040' );
+
 	$base_font_size  = get_theme_mod( 'yith_proteo_base_font_size', 16 );
 	$base_font_color = get_theme_mod( 'yith_proteo_base_font_color', '#404040' );
 	$h1_font_size    = get_theme_mod( 'yith_proteo_h1_font_size', 70 );
@@ -67,6 +72,13 @@ function yith_proteo_inline_style() {
 	$buttons_border_radius = get_theme_mod( 'yith_proteo_buttons_border_radius', 50 );
 
 	/**
+	 * Blog
+	 */
+	$post_thumbnail_background_color         = get_theme_mod( 'yith_proteo_single_post_background_color', '#448a85' );
+	$post_thumbnail_background_color_opacity = get_theme_mod( 'yith_proteo_single_post_bg_alpha', 70 ) / 100;
+	$post_thumbnail_text_color               = get_theme_mod( 'yith_proteo_single_post_thumbnail_text_color', '#ffffff' );
+
+	/**
 	 * Forms
 	 */
 	$forms_input_borde_radius = get_theme_mod( 'yith_proteo_inputs_border_radius', 0 );
@@ -97,10 +109,14 @@ function yith_proteo_inline_style() {
 	--proteo-header_bg_color: {$header_bg_color};
 	--proteo-header_menu_color: {$header_menu_color};
 	--proteo-header_menu_hover_color: {$header_menu_hover_color};
+	--proteo-site_title_font_size: {$site_title_font_size}px;
+	--proteo-site_title_color: {$site_title_color};
+	--proteo-tagline_font_size: {$tagline_font_size}px;
+	--proteo-tagline_color: {$tagline_color};
 	--proteo-topbar_bg_color: {$topbar_bg_color};
 	--proteo-footer_bg_color: {$footer_bg_color};
 	--proteo-footer_credits_bg_color: {$footer_credits_bg_color};
-	--proteo-base_font_size: {$base_font_size};
+	--proteo-base_font_size: {$base_font_size}px;
 	--proteo-base_font_color: {$base_font_color};
 	--proteo-h1_font_size: {$h1_font_size}px;
 	--proteo-h1_font_color: {$h1_font_color};
@@ -126,6 +142,9 @@ function yith_proteo_inline_style() {
 	--proteo-button_2_bg_hover_color: {$button_2_bg_hover_color};
 	--proteo-button_2_font_hover_color: {$button_2_font_hover_color};
 	--proteo-buttons_border_radius: {$buttons_border_radius}px;
+	--proteo-post_thumbnail_background_color: {$post_thumbnail_background_color};
+	--proteo-post_thumbnail_background_color_opacity: {$post_thumbnail_background_color_opacity};
+	--proteo-post_thumbnail_text_color: {$post_thumbnail_text_color};
 	--proteo-forms_input_borde_radius: {$forms_input_borde_radius}px;
 	--proteo-store_notice_bg_color: {$store_notice_bg_color};
 	--proteo-store_notice_text_color: {$store_notice_text_color};
