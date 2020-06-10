@@ -39,12 +39,14 @@ class YITH_Proteo_Social_Icons extends WP_Widget {
 		$twitter   = isset( $instance['twitter'] ) ? esc_url( $instance['twitter'] ) : '';
 		$instagram = isset( $instance['instagram'] ) ? esc_url( $instance['instagram'] ) : '';
 		$linkedin  = isset( $instance['linkedin'] ) ? esc_url( $instance['linkedin'] ) : '';
+		$youtube   = isset( $instance['youtube'] ) ? esc_url( $instance['youtube'] ) : '';
 
 		// social profile link.
 		$facebook_profile  = '<a target="_blank" rel="nofollow noopener" class="facebook" title="facebook" href="' . $facebook . '"><span class="icon-social-facebook"></span></a>';
 		$twitter_profile   = '<a target="_blank" rel="nofollow noopener" class="twitter" title="twitter" href="' . $twitter . '"><span class="icon-social-twitter"></span></a>';
 		$instagram_profile = '<a target="_blank" rel="nofollow noopener" class="instagram" title="instagram" href="' . $instagram . '"><span class="icon-social-instagram"></span></a>';
 		$linkedin_profile  = '<a target="_blank" rel="nofollow noopener" class="linkedin" title="linkedin" href="' . $linkedin . '"><span class="icon-social-linkedin"></span></a>';
+		$youtube_profile   = '<a target="_blank" rel="nofollow noopener" class="youtube" title="youtube" href="' . $youtube . '"><span class="icon-social-youtube"></span></a>';
 
 		echo $args['before_widget']; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 
@@ -57,6 +59,7 @@ class YITH_Proteo_Social_Icons extends WP_Widget {
 		echo ( ! empty( $twitter ) ) ? $twitter_profile : null; // phpcs:ignore WordPress.Security.EscapeOutput
 		echo ( ! empty( $instagram ) ) ? $instagram_profile : null; // phpcs:ignore WordPress.Security.EscapeOutput
 		echo ( ! empty( $linkedin ) ) ? $linkedin_profile : null; // phpcs:ignore WordPress.Security.EscapeOutput
+		echo ( ! empty( $youtube ) ) ? $youtube_profile : null; // phpcs:ignore WordPress.Security.EscapeOutput
 		echo '</div>';
 
 		echo $args['after_widget']; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
@@ -76,6 +79,7 @@ class YITH_Proteo_Social_Icons extends WP_Widget {
 		$twitter   = isset( $instance['twitter'] ) ? esc_url( $instance['twitter'] ) : '#';
 		$instagram = isset( $instance['instagram'] ) ? esc_url( $instance['instagram'] ) : '#';
 		$linkedin  = isset( $instance['linkedin'] ) ? esc_url( $instance['linkedin'] ) : '#';
+		$linkedin  = isset( $instance['youtube'] ) ? esc_url( $instance['youtube'] ) : '#';
 		?>
 		<p><?php esc_html_e( 'To hide a field, just leave it empty', 'yith-proteo' ); ?></p>
 		<p>
@@ -123,6 +127,15 @@ class YITH_Proteo_Social_Icons extends WP_Widget {
 				value="<?php echo esc_attr( $linkedin ); ?>">
 		</p>
 
+		<p>
+			<label
+				for="<?php echo esc_attr( $this->get_field_id( 'youtube' ) ); ?>"><?php esc_html_e( 'Youtube:', 'yith-proteo' ); ?></label>
+			<input
+				class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'youtube' ) ); ?>"
+				name="<?php echo esc_attr( $this->get_field_name( 'youtube' ) ); ?>" type="text"
+				value="<?php echo esc_attr( $youtube ); ?>">
+		</p>
+
 		<?php
 	}
 
@@ -142,6 +155,7 @@ class YITH_Proteo_Social_Icons extends WP_Widget {
 		$instance['twitter']   = ( ! empty( $new_instance['twitter'] ) ) ? wp_strip_all_tags( $new_instance['twitter'] ) : '';
 		$instance['instagram'] = ( ! empty( $new_instance['instagram'] ) ) ? wp_strip_all_tags( $new_instance['instagram'] ) : '';
 		$instance['linkedin']  = ( ! empty( $new_instance['linkedin'] ) ) ? wp_strip_all_tags( $new_instance['linkedin'] ) : '';
+		$instance['youtube']   = ( ! empty( $new_instance['youtube'] ) ) ? wp_strip_all_tags( $new_instance['youtube'] ) : '';
 
 		return $instance;
 	}
