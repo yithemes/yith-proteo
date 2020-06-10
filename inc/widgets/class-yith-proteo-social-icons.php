@@ -79,7 +79,7 @@ class YITH_Proteo_Social_Icons extends WP_Widget {
 		$twitter   = isset( $instance['twitter'] ) ? esc_url( $instance['twitter'] ) : '#';
 		$instagram = isset( $instance['instagram'] ) ? esc_url( $instance['instagram'] ) : '#';
 		$linkedin  = isset( $instance['linkedin'] ) ? esc_url( $instance['linkedin'] ) : '#';
-		$linkedin  = isset( $instance['youtube'] ) ? esc_url( $instance['youtube'] ) : '#';
+		$youtube   = isset( $instance['youtube'] ) ? esc_url( $instance['youtube'] ) : '#';
 		?>
 		<p><?php esc_html_e( 'To hide a field, just leave it empty', 'yith-proteo' ); ?></p>
 		<p>
