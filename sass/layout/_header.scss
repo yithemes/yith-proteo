@@ -101,7 +101,7 @@
 
 	&.sticky {
 		position: fixed;
-		width: 100%;
+		width: 100vw;
 		-webkit-box-shadow: -2px 2px 81px -27px rgba(0, 0, 0, 0.29);
 		box-shadow: -2px 2px 81px -27px rgba(0, 0, 0, 0.29);
 		z-index: 100;
