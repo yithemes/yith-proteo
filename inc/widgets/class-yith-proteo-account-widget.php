@@ -39,13 +39,15 @@ class YITH_Proteo_Account_Widget extends WP_Widget {
 			$url = ! is_user_logged_in() ? $instance['login-url'] : get_admin_url();
 		}
 		$icon = $instance['custom-icon'];
-		if ( get_template_directory_uri() . '/img/user.svg' !== $icon || ! $icon ) {
-			$icon = wp_get_attachment_image_src( $icon, 'full' );
-			$icon = $icon[0];
-		}
 		if ( ! $icon ) {
 			$icon = get_template_directory_uri() . '/img/user.svg';
 		}
+
+		if ( get_template_directory_uri() . '/img/user.svg' !== $icon ) {
+			$icon = wp_get_attachment_image_src( $icon, 'full' );
+			$icon = $icon[0];
+		}
+
 		$output  = '';
 		$output .= $args['before_widget'];
 
