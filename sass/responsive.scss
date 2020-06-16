@@ -71,6 +71,9 @@ Custom media queries
 	#site-navigation {
 		float: right;
 	}
+	.site-header.center_logo_navigation_below .header-sidebar {
+		text-align: initial;
+	}
 
 	#primary-nav-menu {
 		display: none;
@@ -78,11 +81,13 @@ Custom media queries
 	#mobile-nav-menu {
 		display: block;
 	}
+	body.admin-bar #site-navigation.toggled .menu-toggle {
+		right: 30px;
+	}
 	.main-navigation > div {
 		opacity: 0;
 		visibility: hidden;
 		position: fixed;
-		//top: 0;
 		left: -100px;
 		height: 100vh;
 		background: #ffffff;
@@ -90,7 +95,6 @@ Custom media queries
 		padding: 50px 30px;
 		z-index: 100;
 		overflow-y: scroll;
-		transition: all ease 0.3s;
 		margin-top: -15px;
 	}
 
@@ -247,14 +251,14 @@ Custom media queries
 	#site-navigation {
 		.menu-toggle {
 			position: absolute;
-			top: 30px;
+			right: 30px;
 		}
 
 		&.toggled {
 			.menu-toggle {
-				position: fixed;
-				top: 80px;
-				right: 15px;
+				//position: fixed;
+				//top: 80px;
+				//right: 15px;
 			}
 		}
 	}

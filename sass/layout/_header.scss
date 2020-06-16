@@ -74,10 +74,12 @@
 		.site-branding,
 		.main-navigation {
 			text-align: center;
+			float: none;
 		}
 
 		.site-branding {
 			padding: 15px 0;
+			margin-bottom: 30px;
 
 			.site-title {
 				margin-right: 0;

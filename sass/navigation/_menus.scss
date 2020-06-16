@@ -4,6 +4,10 @@
 	float: left;
 	//width: 100%;
 
+	& > div {
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
 	ul {
 		display: none;
 		list-style: none;
@@ -193,6 +197,7 @@
 	right: 30px;
 	//top: 30px;
 	z-index: 101;
+	transition: none;
 
 	&:hover {
 		background: none;
