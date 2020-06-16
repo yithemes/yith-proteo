@@ -174,7 +174,7 @@ if ( ! function_exists( 'yith_proteo_output_full_screen_search' ) ) :
 				</button>
 				<form role="search" method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>" id="full-screen-search-form">
 					<div id="full-screen-search-container">
-						<input type="text" name="s" placeholder="<?php esc_html_e( 'Search', 'yith-proteo' ); ?>" id="full-screen-search-input"/>
+						<input type="text" name="s" placeholder="<?php esc_attr_e( 'Search', 'yith-proteo' ); ?>" id="full-screen-search-input"/>
 						<button type="submit" id="submit-full-screen-search">
 							<span class="lnr lnr-magnifier"></span>
 						</button>
@@ -219,3 +219,13 @@ function yith_proteo_modify_excerpt_more( $more ) {
 }
 
 add_filter( 'excerpt_more', 'yith_proteo_modify_excerpt_more' );
+
+
+if ( ! function_exists( 'wp_body_open' ) ) {
+	/**
+	 * Backward compatibility for wp_body_open action hook
+	 */
+	function wp_body_open() {
+		do_action( 'wp_body_open' );
+	}
+}

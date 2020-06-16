@@ -111,6 +111,6 @@ add_action( 'customize_preview_init', 'yith_proteo_customize_preview_js', 100 );
  * Load dynamic logic for the customizer controls area.
  */
 function yith_proteo_customize_controls_js() {
-	wp_enqueue_script( 'yith-proteo-customizer-controls', get_template_directory_uri() . '/js/customizer-controls.js', array('jquery'), YITH_PROTEO_VERSION, true );
+	wp_enqueue_script( 'yith-proteo-customizer-controls', get_template_directory_uri() . '/js/customizer-controls.js', array( 'jquery' ), YITH_PROTEO_VERSION, true );
 }
 add_action( 'customize_controls_enqueue_scripts', 'yith_proteo_customize_controls_js' );
