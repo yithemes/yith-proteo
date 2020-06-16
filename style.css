@@ -10209,10 +10209,10 @@ table.shop_table tbody tr td.product-name ._view_and_pdf_row a.button {
 }
 
 /* CHECK IN SHORTCODE */
-.yith_wcevti_check_in #check_in_form_dialog {
+.yith_wcevti_check_in .check_in_panel.dialog_panel {
   background: #448a85;
 }
-.yith_wcevti_check_in #yith_wcevti_check_in_form > .checked_dialog_panel {
+.yith_wcevti_check_in form > .checked_dialog_panel {
   background: #4ac4aa;
 }
 .yith_wcevti_check_in input.search_ticket_number {
@@ -10222,6 +10222,9 @@ table.shop_table tbody tr td.product-name ._view_and_pdf_row a.button {
   margin-top: 15px;
   margin-right: 0;
   padding: 0.8em 1.5em 0.7em;
+}
+.yith_wcevti_check_in .search_ticket_button:before {
+  font-family: "FontAwesome";
 }
 .yith_wcevti_check_in .list_row_panel .status_pending_check {
   background: #448a85;

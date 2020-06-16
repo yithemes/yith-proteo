@@ -7,11 +7,11 @@ table.shop_table tbody tr td.product-name ._view_and_pdf_row a.button {
 /* CHECK IN SHORTCODE */
 
 .yith_wcevti_check_in {
-	#check_in_form_dialog {
+	.check_in_panel.dialog_panel {
 		background: $color__accent;
 	}
 
-	#yith_wcevti_check_in_form > .checked_dialog_panel {
+	form > .checked_dialog_panel {
 		background: $color__border-button-hover;
 	}
 
@@ -23,6 +23,10 @@ table.shop_table tbody tr td.product-name ._view_and_pdf_row a.button {
 		margin-top: 15px;
 		margin-right: 0;
 		padding: 0.8em 1.5em 0.7em;
+
+		&:before{
+			font-family: 'FontAwesome';
+		}
 	}
 
 	.list_row_panel {
