@@ -26,6 +26,11 @@ if ( function_exists( 'wc' ) && is_product_tag() && get_theme_mod( 'yith_proteo_
 	return;
 }
 
+// WooCommerce taxonomy page support.
+if ( function_exists( 'wc' ) && is_product_taxonomy() && get_theme_mod( 'yith_proteo_product_tax_page_sidebar_position', 'no-sidebar' ) == 'no-sidebar' ) {
+	return;
+}
+
 ?>
 
 <aside id="secondary" class="widget-area <?php echo '' != yith_proteo_get_sidebar_position() ? 'col-lg-3' : ''; ?>">
