@@ -11,7 +11,9 @@
 
 global $post;
 ?>
-<?php echo get_theme_mod( 'yith_proteo_default_sidebar_position', 'right' ) != 'no-sidebar' ? '</div>' : ''; ?>
+<?php if ( get_theme_mod( 'yith_proteo_default_sidebar_position', 'right' ) != 'no-sidebar' ) : ?>
+	</div>
+<?php endif; ?>
 </div><!-- .container -->
 </div><!-- #content -->
 <?php

@@ -135,7 +135,7 @@ class YITH_Proteo_Account_Widget extends WP_Widget {
 				'label'   => esc_html__( 'My account url', 'yith-proteo' ),
 				'id'      => 'myaccount-url',
 				'type'    => 'url',
-				'default' => get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) ? get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) : get_site_url( null, '/my-account/' ),
+				'default' => get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) ? get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) : get_home_url( null, '/my-account/' ),
 			);
 		}
 		$output = '';
@@ -209,7 +209,7 @@ class YITH_Proteo_Account_Widget extends WP_Widget {
 				'label'   => esc_html__( 'My account url', 'yith-proteo' ),
 				'id'      => 'myaccount-url',
 				'type'    => 'url',
-				'default' => get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) ? get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) : get_site_url( null, '/my-account/' ),
+				'default' => get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) ? get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) : get_home_url( null, '/my-account/' ),
 			);
 		}
 		$instance = array();
