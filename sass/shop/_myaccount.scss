@@ -96,19 +96,23 @@ MY ACCOUNT
 			margin: 0;
 
 			li {
-				display: block;
-				font-weight: 600;
 
-				a {
+				& > a {
 					display: block;
 					padding: 15px;
 					text-decoration: none;
 					color: inherit;
+					display: block;
+					font-weight: 600;
 				}
 
-				&.is-active a,
-				a:hover {
+				&.is-active > a,
+				& > a:hover {
 					color: var(--proteo-main_color_shade, $color__accent);
+				}
+
+				.woocommerce-MyAccount-content {
+					padding: 10px;
 				}
 			}
 		}

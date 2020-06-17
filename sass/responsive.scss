@@ -11,10 +11,12 @@
 	.menu-toggle {
 		display: none;
 	}
-	#primary-nav-menu, #site-navigation > #primary-menu {
+	#primary-nav-menu,
+	#site-navigation > #primary-menu {
 		display: block;
 	}
-	#mobile-nav-menu, #site-navigation > #mobile-menu {
+	#mobile-nav-menu,
+	#site-navigation > #mobile-menu {
 		display: none;
 	}
 	.main-navigation ul {
@@ -160,10 +162,54 @@ Custom media queries
 			padding: 0;
 		}
 	}
+
+	.woocommerce-account {
+		.yith-proteo-my-account-sidebar,
+		.woocommerce-MyAccount-content {
+			float: none;
+			width: 100%;
+			padding: 0;
+		}
+		.yith-proteo-my-account-user-image {
+			margin-bottom: 10px;
+		}
+		.yith-proteo-my-account-user-image:before,
+		.woocommerce-MyAccount-navigation:before {
+			left: 0;
+		}
+		.woocommerce-MyAccount-navigation {
+			padding: 0;
+			margin-bottom: 35px;
+			&:before {
+				display: none;
+			}
+		}
+		.woocommerce-MyAccount-navigation-link {
+			margin-bottom: 10px;
+
+			& > a {
+				background-color: #f9f9f9;
+			}
+			&:not(.is-active) > a:after {
+				content: "\e876";
+				font-family: Linearicons-Free;
+				speak: none;
+				font-style: normal;
+				font-variant: normal;
+				text-transform: none;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+				float: right;
+			}
+		}
+	}
 }
 
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) {
+	.site-branding img.custom-logo {
+		max-width: 90%;
+	}
 	.single-product div.product .woocommerce-product-gallery,
 	.single-product div.product .summary.entry-summary {
 		float: none;

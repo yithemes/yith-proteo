@@ -22,6 +22,7 @@
 
 	img.custom-logo {
 		display: block;
+		max-width: 375px;
 	}
 
 	.custom-logo-link {
@@ -47,6 +48,7 @@
 	&.left_logo_navigation_inline {
 		.site-branding {
 			display: inline-block;
+			padding-bottom: 0;
 		}
 
 		.main-navigation {
@@ -95,6 +97,7 @@
 		padding-top: 15px;
 		padding-bottom: 15px;
 		position: relative;
+		transition: all ease 0.3s;
 	}
 
 	.header-sidebar {
@@ -115,7 +118,7 @@
 		}
 
 		.site-branding {
-			padding-bottom: 0;
+			//padding-bottom: 0;
 
 			.site-title {
 				font-size: 2.3em;
