@@ -4,7 +4,7 @@ Tags: one-column, two-columns, left-sidebar, right-sidebar, wide-blocks, accessi
 Requires at least: 4.9.6
 Tested up to: WordPress 5.4
 Requires PHP: 5.6
-Stable tag: 1.2.8
+Stable tag: 1.2.9
 YITH Proteo WordPress Theme, Copyright 2020 YITH
 YITH Proteo is distributed under the terms of the GNU GPL
 License: GPLv2 or later
@@ -25,6 +25,21 @@ Proteo is a sleek, modern and "Gutenberg-friendly" e-commerce theme. Developed w
 == Frequently Asked Questions ==
 
 == Changelog ==
+
+= 1.2.9 - June 17 2020 =
+* New product taxonomy sidebar management (like YITH Brands)
+* New my-account responsive toggle structure
+* New wp_body_open hook for developers
+* New Tagline color and font size options added to customizer
+* New YITH WooCommerce Subscription plugin integration
+* New Site Title color and font size options added to customizer
+* New Youtube profile link to social profiles widget
+* New Blog Single post layout
+* Tweak: minor improvments to YITH Event Ticket integration
+* Fix mobile menu toggle positioning
+* Fix "centered logo" header layout style
+* Fix sticky header unwanted side movement when revealing
+
 
 = 1.2.8 - May 25 2020 =
 * Fix "Undefined index" on menu location

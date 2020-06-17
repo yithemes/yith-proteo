@@ -1023,7 +1023,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 			'type'        => 'radio',
 			'label'       => esc_html__( 'Choose the single post layout', 'yith-proteo' ),
 			'section'     => 'yith_proteo_blog_management',
-			'description' => esc_html__( 'Select where to display the default sidebar. You can adjust the settings from the page/post edit view.', 'yith-proteo' ),
+			'description' => esc_html__( 'Disable sidebars if you want to use Background picture layout.', 'yith-proteo' ),
 			'choices'     => array(
 				'standard'           => esc_html__( 'Standard', 'yith-proteo' ),
 				'background_picture' => esc_html__( 'Background picture', 'yith-proteo' ),
