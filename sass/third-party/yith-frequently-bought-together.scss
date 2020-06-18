@@ -15,9 +15,41 @@
 			}
 			.yith-wfbt-open-modal {
 				font-size: 0.85rem;
-				padding: 10px 15px;
 				margin: 0 15px 5px;
+				text-decoration: none;
+				font-weight: 600;
 			}
+		}
+	}
+}
+
+#yith-wfbt-modal {
+	.product-image {
+		margin-bottom: 10px;
+	}
+	.product-name {
+		margin: 0;
+		text-align: center;
+		font-weight: 600;
+		font-size: 0.9rem;
+	}
+
+	table.variations {
+		td.label label,
+		a.reset_variations {
+			text-transform: uppercase;
+			font-size: 0.9375rem;
+			font-weight: 500;
+		}
+
+		.select2-container {
+			width: 100% !important;
+		}
+
+		a.reset_variations {
+			position: relative;
+			top: 10px;
+			left: 8px;
 		}
 	}
 }
