@@ -170,40 +170,46 @@
 			}
 
 			form.variations_form {
-				table.variations tr > td {
-					padding-bottom: 45px;
-					text-transform: uppercase;
-					font-size: 0.9375rem;
-					font-weight: 500;
+				table.variations {
+					margin-bottom: 40px;
 
-					&.label {
-						width: 1px;
-						padding-right: 35px;
-					}
-
-					.select2-container {
-						width: 100% !important;
-					}
-
-					a.reset_variations {
+					tr > td {
+						padding-bottom: 45px;
+						text-transform: uppercase;
+						font-size: 0.9375rem;
+						font-weight: 500;
 						position: relative;
-						top: 30px;
-						left: 8px;
-					}
 
-					.select_box {
-						&:after {
-							display: none;
+						&.label {
+							width: 1px;
+							padding-right: 35px;
 						}
 
-						.select_option {
-							.yith_wccl_value {
-								min-width: 30px;
-								height: 30px;
+						.select2-container {
+							width: 100% !important;
+						}
+
+						a.reset_variations {
+							position: absolute;
+							bottom: 5px;
+							left: 0;
+						}
+
+						.select_box {
+							&:after {
+								display: none;
 							}
-							.yith-wccl-bicolor {
-								border-bottom: 26px solid;
-								border-left: 26px solid;
+
+							.select_option {
+								.yith_wccl_value {
+									min-width: 30px;
+									height: 30px;
+								}
+
+								.yith-wccl-bicolor {
+									border-bottom: 26px solid;
+									border-left: 26px solid;
+								}
 							}
 						}
 					}

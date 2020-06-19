@@ -23,7 +23,29 @@
 	}
 }
 
+// override theme price style in product summary
+.single-product {
+	div.product {
+		.summary.entry-summary {
+			.yith-wfbt-item {
+				.price {
+					color: #1f1f1f;
+					font-size: 1rem;
+				}
+			}
+		}
+	}
+}
+
 #yith-wfbt-modal {
+
+	.yith-wfbt-single-product-right {
+		padding-top: 20px;
+	}
+
+	.popup-title {
+		font-size: 2rem;
+	}
 	.product-image {
 		margin-bottom: 10px;
 	}
@@ -35,21 +57,31 @@
 	}
 
 	table.variations {
-		td.label label,
-		a.reset_variations {
+		margin-bottom: 40px;
+
+		tr > td {
+			padding-bottom: 45px;
 			text-transform: uppercase;
 			font-size: 0.9375rem;
 			font-weight: 500;
+			position: relative;
+
+			&.label {
+				width: 1px;
+				padding-right: 35px;
+			}
+
+			a.reset_variations {
+				position: absolute;
+				bottom: 5px;
+				left: 0;
+			}
 		}
 
 		.select2-container {
 			width: 100% !important;
 		}
 
-		a.reset_variations {
-			position: relative;
-			top: 10px;
-			left: 8px;
-		}
+
 	}
 }

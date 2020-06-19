@@ -7973,11 +7973,15 @@ ul.products li.wc-block-grid__product .variations_form .select_box .yith_wccl_va
   padding: 0.9375rem 2.8125rem;
   vertical-align: middle;
 }
+.single-product div.product .summary.entry-summary form.variations_form table.variations {
+  margin-bottom: 40px;
+}
 .single-product div.product .summary.entry-summary form.variations_form table.variations tr > td {
   padding-bottom: 45px;
   text-transform: uppercase;
   font-size: 0.9375rem;
   font-weight: 500;
+  position: relative;
 }
 .single-product div.product .summary.entry-summary form.variations_form table.variations tr > td.label {
   width: 1px;
@@ -7987,9 +7991,9 @@ ul.products li.wc-block-grid__product .variations_form .select_box .yith_wccl_va
   width: 100% !important;
 }
 .single-product div.product .summary.entry-summary form.variations_form table.variations tr > td a.reset_variations {
-  position: relative;
-  top: 30px;
-  left: 8px;
+  position: absolute;
+  bottom: 5px;
+  left: 0;
 }
 .single-product div.product .summary.entry-summary form.variations_form table.variations tr > td .select_box:after {
   display: none;
@@ -10264,6 +10268,17 @@ table.shop_table tbody tr td.product-name ._view_and_pdf_row a.button {
   font-weight: 600;
 }
 
+.single-product div.product .summary.entry-summary .yith-wfbt-item .price {
+  color: #1f1f1f;
+  font-size: 1rem;
+}
+
+#yith-wfbt-modal .yith-wfbt-single-product-right {
+  padding-top: 20px;
+}
+#yith-wfbt-modal .popup-title {
+  font-size: 2rem;
+}
 #yith-wfbt-modal .product-image {
   margin-bottom: 10px;
 }
@@ -10273,19 +10288,27 @@ table.shop_table tbody tr td.product-name ._view_and_pdf_row a.button {
   font-weight: 600;
   font-size: 0.9rem;
 }
-#yith-wfbt-modal table.variations td.label label,
-#yith-wfbt-modal table.variations a.reset_variations {
+#yith-wfbt-modal table.variations {
+  margin-bottom: 40px;
+}
+#yith-wfbt-modal table.variations tr > td {
+  padding-bottom: 45px;
   text-transform: uppercase;
   font-size: 0.9375rem;
   font-weight: 500;
+  position: relative;
+}
+#yith-wfbt-modal table.variations tr > td.label {
+  width: 1px;
+  padding-right: 35px;
+}
+#yith-wfbt-modal table.variations tr > td a.reset_variations {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
 }
 #yith-wfbt-modal table.variations .select2-container {
   width: 100% !important;
-}
-#yith-wfbt-modal table.variations a.reset_variations {
-  position: relative;
-  top: 10px;
-  left: 8px;
 }
 
 #yith-wacp-popup .yith-wacp-content table.cart-list .item-name {
