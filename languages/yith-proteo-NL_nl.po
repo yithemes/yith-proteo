@@ -4,15 +4,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YITH Proteo\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2020-03-23 10:26+0100\n"
-"PO-Revision-Date: 2020-03-23 10:26+0100\n"
+"POT-Creation-Date: 2020-06-23 15:31+0200\n"
+"PO-Revision-Date: 2020-06-23 15:31+0200\n"
 "Last-Translator: \n"
 "Language-Team: yithemes\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.3\n"
+"X-Generator: Poedit 2.3.1\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
 "_n_noop:1,2;_c;_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_ex:1,2c;"
@@ -50,39 +50,44 @@ msgstr[1] "%1$s reacties"
 msgid "Comments are closed."
 msgstr "Reacties zijn gesloten"
 
-#: footer.php:33
+#: footer.php:41
 msgid ""
-"Proteo - A free theme designed with <span class=\"lnr lnr-heart\"></span> by "
-"<a href=\"https://yithemes.com\" rel=\"nofollow\">YITH</a>"
+"<a href=\"https://proteo.yithemes.com/\" target=\"_blank\" rel=\"noopener"
+"\">Proteo</a> - A free theme designed with <span class=\"lnr lnr-heart\"></"
+"span> by <a href=\"https://yithemes.com\" rel=\"nofollow\">YITH</a>"
 msgstr ""
 
 #: functions.php:51
 msgid "Primary"
 msgstr "Eerst"
 
-#: header.php:21
+#: functions.php:52
+msgid "Mobile Menu"
+msgstr ""
+
+#: header.php:23
 msgid "Skip to content"
 msgstr "Doorgaan naar inhoud"
 
-#: header.php:87
+#: header.php:101
 msgid "Toggle navigation"
 msgstr ""
 
-#: inc/class-yith-proteo-walker-comment.php:66
+#: inc/class-yith-proteo-walker-comment.php:75
 #, php-format
 msgid "%s <span class=\"screen-reader-text says\">says:</span>"
 msgstr "%s <span class=\"screen-reader-text says\">zegt:</span>"
 
-#: inc/class-yith-proteo-walker-comment.php:79
+#: inc/class-yith-proteo-walker-comment.php:88
 #, php-format
 msgid "%1$s at %2$s"
 msgstr "%1$s op %2$s"
 
-#: inc/class-yith-proteo-walker-comment.php:86
+#: inc/class-yith-proteo-walker-comment.php:95
 msgid "(Edit)"
 msgstr "(Bewerk)"
 
-#: inc/class-yith-proteo-walker-comment.php:91
+#: inc/class-yith-proteo-walker-comment.php:100
 msgid "Your comment is awaiting moderation."
 msgstr "Je reactie wacht op goedkeuring."
 
@@ -110,18 +115,21 @@ msgstr ""
 "Selecteer waar je de standaard zijbalk wilt weergeven. Je kunt de "
 "instellingen aanpassen vanaf de pagina/post bewerkingsweergave."
 
-#: inc/customizer.php:77 inc/customizer.php:100 inc/customizer.php:142
-#: inc/customizer.php:1334
+#: inc/customizer.php:77 inc/customizer.php:100 inc/customizer.php:1577
+#: inc/customizer.php:1610 inc/customizer.php:1661 inc/customizer.php:1713
+#: inc/customizer.php:1819
 msgid "No sidebar"
 msgstr "Geen zijbalk"
 
-#: inc/customizer.php:78 inc/customizer.php:101 inc/customizer.php:143
-#: inc/customizer.php:1335
+#: inc/customizer.php:78 inc/customizer.php:101 inc/customizer.php:1578
+#: inc/customizer.php:1611 inc/customizer.php:1662 inc/customizer.php:1714
+#: inc/customizer.php:1820
 msgid "Right"
 msgstr "Rechts"
 
-#: inc/customizer.php:79 inc/customizer.php:102 inc/customizer.php:144
-#: inc/customizer.php:1336
+#: inc/customizer.php:79 inc/customizer.php:102 inc/customizer.php:1579
+#: inc/customizer.php:1612 inc/customizer.php:1663 inc/customizer.php:1715
+#: inc/customizer.php:1821
 msgid "Left"
 msgstr "Links"
 
@@ -149,92 +157,106 @@ msgstr ""
 "Selecteer een zijbalk om weer te geven. Je kunt een specifieke zijbalk "
 "kiezen vanaf de single post bewerkingspagina."
 
-#: inc/customizer.php:138
-msgid "Choose the position of the sidebar on single product page"
-msgstr "Bepaal de positie van de zijbalk in de single product pagina"
-
-#: inc/customizer.php:140
-msgid ""
-"Select where to display the sidebar. You can adjust the settings from "
-"product edit view."
-msgstr ""
-"Bepaal waar je de zijbalk wilt weergeven. Je kunt de instellingen aanpassen "
-"vanaf de product bewerkingsweergave."
-
-#: inc/customizer.php:155
+#: inc/customizer.php:132
 msgid "Topbar"
 msgstr "Topbar"
 
-#: inc/customizer.php:173
+#: inc/customizer.php:150
 msgid "Enable topbar"
 msgstr "Topbar inschakelen"
 
-#: inc/customizer.php:175
+#: inc/customizer.php:152
 msgid "Choose whether to show the site topbar or not"
 msgstr "Bepaal of je de topbar wilt weergeven of niet"
 
-#: inc/customizer.php:177 inc/customizer.php:230 inc/customizer.php:1357
+#: inc/customizer.php:154 inc/customizer.php:207 inc/customizer.php:272
+#: inc/customizer.php:1842
 msgid "Yes"
 msgstr "Ja"
 
-#: inc/customizer.php:178 inc/customizer.php:231 inc/customizer.php:1358
+#: inc/customizer.php:155 inc/customizer.php:208 inc/customizer.php:273
+#: inc/customizer.php:1843
 msgid "No"
 msgstr "Nee"
 
-#: inc/customizer.php:196
+#: inc/customizer.php:173
 msgid "Topbar background color"
 msgstr "Achtergrondkleur topbar"
 
-#: inc/customizer.php:208
+#: inc/customizer.php:185
 msgid "Header"
 msgstr "Header"
 
-#: inc/customizer.php:226
+#: inc/customizer.php:203
 msgid "Enable sticky header"
 msgstr "Sticky header inschakelen"
 
-#: inc/customizer.php:228
+#: inc/customizer.php:205
 msgid "Choose whether to make the header stick to the page when scrolling down"
 msgstr ""
 "Bepaal of je de header wilt laten plakken op de pagina, bij omlaag scrollen"
 
-#: inc/customizer.php:249
+#: inc/customizer.php:226
 msgid "Header background color"
 msgstr "Achtergrondkleur header"
 
-#: inc/customizer.php:267
+#: inc/customizer.php:244
 msgid "Header layout"
 msgstr "Lay-out header"
 
-#: inc/customizer.php:269
+#: inc/customizer.php:246
 msgid "Choose the header layout"
 msgstr "Kies de header lay-out"
 
-#: inc/customizer.php:271 inc/customizer.php:1273
+#: inc/customizer.php:248 inc/customizer.php:1767
 msgid "Please select"
 msgstr "Selecteer alsjeblieft"
 
-#: inc/customizer.php:272
+#: inc/customizer.php:249
 msgid "Logo on the left and navigation below"
 msgstr "Logo aan de linkerkant en navigatie onder"
 
-#: inc/customizer.php:273
+#: inc/customizer.php:250
 msgid "Logo on the left and navigation inline"
 msgstr "Logo aan de linkerkant en navigatie inline"
 
-#: inc/customizer.php:274
+#: inc/customizer.php:251
 msgid "Centered logo and navigation below"
 msgstr "Logo gecentreerd en navigatie onder"
 
-#: inc/customizer.php:286
+#: inc/customizer.php:268
+#, fuzzy
+#| msgid "Enable sticky header"
+msgid "Enable full width header"
+msgstr "Sticky header inschakelen"
+
+#: inc/customizer.php:270
+#, fuzzy
+#| msgid "Choose whether to show the site topbar or not"
+msgid "Choose whether to make the header full width or not."
+msgstr "Bepaal of je de topbar wilt weergeven of niet"
+
+#: inc/customizer.php:291
+#, fuzzy
+#| msgid "Header background color"
+msgid "Header menu color"
+msgstr "Achtergrondkleur header"
+
+#: inc/customizer.php:310
+#, fuzzy
+#| msgid "General link <code>hover</code> color"
+msgid "Header menu :hover color"
+msgstr "Algemene link <code>zweven</code> kleur"
+
+#: inc/customizer.php:322
 msgid "Footer"
 msgstr "Footer"
 
-#: inc/customizer.php:305
+#: inc/customizer.php:341
 msgid "Footer background color"
 msgstr "Achtergrondkleur footer"
 
-#: inc/customizer.php:322
+#: inc/customizer.php:358
 msgid ""
 "Select how many widgets per row to show for Footer Sidebar 1 (new rows are "
 "automatically created)."
@@ -242,31 +264,31 @@ msgstr ""
 "Bepaal het aantal widgets dat je wilt weergeven per rij in footer zijbalk 1 "
 "(nieuwe rijen worden automatisch gecreëerd)."
 
-#: inc/customizer.php:326 inc/customizer.php:351
+#: inc/customizer.php:362 inc/customizer.php:387
 msgid "One"
 msgstr "Een"
 
-#: inc/customizer.php:327 inc/customizer.php:352
+#: inc/customizer.php:363 inc/customizer.php:388
 msgid "Two"
 msgstr "Twee"
 
-#: inc/customizer.php:328 inc/customizer.php:353
+#: inc/customizer.php:364 inc/customizer.php:389
 msgid "Three"
 msgstr "Drie"
 
-#: inc/customizer.php:329 inc/customizer.php:354
+#: inc/customizer.php:365 inc/customizer.php:390
 msgid "Four"
 msgstr "Vier"
 
-#: inc/customizer.php:330 inc/customizer.php:355
+#: inc/customizer.php:366 inc/customizer.php:391
 msgid "Five"
 msgstr "Vijf"
 
-#: inc/customizer.php:331 inc/customizer.php:356
+#: inc/customizer.php:367 inc/customizer.php:392
 msgid "Six"
 msgstr "Zes"
 
-#: inc/customizer.php:347
+#: inc/customizer.php:383
 msgid ""
 "Select how many widgets per row to show for Footer Sidebar 2 (new rows are "
 "automatically created)."
@@ -274,364 +296,530 @@ msgstr ""
 "Bepaal het aantal widgets dat je wilt weergeven per rij in footer zijbalk 2 "
 "(nieuwe rijen worden automatisch gecreëerd)."
 
-#: inc/customizer.php:367
+#: inc/customizer.php:403
 msgid "Footer credits"
 msgstr "Footer credits"
 
-#: inc/customizer.php:383
+#: inc/customizer.php:419
 msgid "Enter here the content of the footer credits area"
 msgstr "De inhoud van de footer credits sectie hier invoeren"
 
-#: inc/customizer.php:401
+#: inc/customizer.php:437
 msgid "Footer credits background color"
 msgstr "Achtergrondkleur footer credits"
 
-#: inc/customizer.php:413
+#: inc/customizer.php:449
 msgid "Google Font"
 msgstr "Google Font"
 
-#: inc/customizer.php:430
+#: inc/customizer.php:466
 msgid "Enter the URL of the Google Font you want to use."
 msgstr "URL van de Google Font dat je wilt gebruiken invoeren."
 
-#: inc/customizer.php:442
+#: inc/customizer.php:478
 msgid "Typography"
 msgstr "Typografie"
 
-#: inc/customizer.php:458
+#: inc/customizer.php:494
 msgid "Body font size (default: 16px)"
 msgstr "Lettertypegrootte hoofdtekst (standaard: 16px)"
 
-#: inc/customizer.php:476
+#: inc/customizer.php:512
 msgid "Body font color"
 msgstr "Lettertypekleur hoofdtekst"
 
-#: inc/customizer.php:493
+#: inc/customizer.php:529
 msgid "H1 font size (default: 32px)"
 msgstr "H1 lettertypegrootte (standaard: 32px)"
 
-#: inc/customizer.php:511
+#: inc/customizer.php:547
 msgid "H1 font color"
 msgstr "H1 lettertypekleur"
 
-#: inc/customizer.php:528
+#: inc/customizer.php:564
 msgid "H2 font size (default: 24px)"
 msgstr "H2 lettertypegrootte (standaard: 24px)"
 
-#: inc/customizer.php:546
+#: inc/customizer.php:582
 msgid "H2 font color"
 msgstr "H2 lettertypekleur"
 
-#: inc/customizer.php:563
+#: inc/customizer.php:599
 msgid "H3 font size (default: 19px)"
 msgstr "H3 lettertypegrootte (standaard: 19px)"
 
-#: inc/customizer.php:581
+#: inc/customizer.php:617
 msgid "H3 font color"
 msgstr "H3 lettertypekleur"
 
-#: inc/customizer.php:598
+#: inc/customizer.php:634
 msgid "H4 font size (default: 16px)"
 msgstr "H4 lettertypegrootte (standaard: 16px)"
 
-#: inc/customizer.php:616
+#: inc/customizer.php:652
 msgid "H4 font color"
 msgstr "H4 lettertypekleur"
 
-#: inc/customizer.php:633
+#: inc/customizer.php:669
 msgid "H5 font size (default: 13px)"
 msgstr "H5 lettertypegrootte (standaard: 13px)"
 
-#: inc/customizer.php:651
+#: inc/customizer.php:687
 msgid "H5 font color"
 msgstr "H5 lettertypekleur"
 
-#: inc/customizer.php:668
+#: inc/customizer.php:704
 msgid "H6 font size (default: 11px)"
 msgstr "H6 lettertypegrootte (standaard: 11px)"
 
-#: inc/customizer.php:686
+#: inc/customizer.php:722
 msgid "H6 font color"
 msgstr "H6 lettertypekleur"
 
-#: inc/customizer.php:698
+#: inc/customizer.php:734
 msgid "Buttons"
 msgstr "Knoppen"
 
-#: inc/customizer.php:717
+#: inc/customizer.php:755
+#, fuzzy
+#| msgid "Body font size (default: 16px)"
+msgid "Border radius (default: 50px)"
+msgstr "Lettertypegrootte hoofdtekst (standaard: 16px)"
+
+#: inc/customizer.php:777
 msgid "Button Style 1 background color"
 msgstr "Achtergrondkleur knopstijl 1"
 
-#: inc/customizer.php:735
+#: inc/customizer.php:795
 msgid "Button Style 1 border color"
 msgstr "Randkleur knopstijl 1"
 
-#: inc/customizer.php:753
+#: inc/customizer.php:813
 msgid "Button Style 1 text color"
 msgstr "Tekst kleur knopstijl 1"
 
-#: inc/customizer.php:771
+#: inc/customizer.php:831
 #, fuzzy
 #| msgid "Button Style 1 background color"
 msgid "Button Style 1 background :hover color"
 msgstr "Achtergrondkleur knopstijl 1"
 
-#: inc/customizer.php:789
+#: inc/customizer.php:849
 #, fuzzy
 #| msgid "Button Style 1 border color"
 msgid "Button Style 1 border :hover color"
 msgstr "Randkleur knopstijl 1"
 
-#: inc/customizer.php:807
+#: inc/customizer.php:867
 #, fuzzy
 #| msgid "Button Style 1 text color"
 msgid "Button Style 1 text :hover color"
 msgstr "Tekst kleur knopstijl 1"
 
-#: inc/customizer.php:826
+#: inc/customizer.php:886
 msgid "Button Style 2 background color shade 1"
 msgstr "Knopstijl 2 achtergrondkleur schaduw 1"
 
-#: inc/customizer.php:844
+#: inc/customizer.php:904
 msgid "Button Style 2 background color shade 2"
 msgstr "Knopstijl 2 achtergrondkleur schaduw 2"
 
-#: inc/customizer.php:862
+#: inc/customizer.php:922
 msgid "Button Style 2 text color"
 msgstr "Knopstijl 2 tekst kleur"
 
-#: inc/customizer.php:880
+#: inc/customizer.php:940
 #, fuzzy
 #| msgid "Button Style 1 background color"
 msgid "Button Style 2 background :hover color"
 msgstr "Achtergrondkleur knopstijl 1"
 
-#: inc/customizer.php:898
+#: inc/customizer.php:958
 #, fuzzy
 #| msgid "Button Style 2 text color"
 msgid "Button Style 2 text :hover color"
 msgstr "Knopstijl 2 tekst kleur"
 
-#: inc/customizer.php:911
+#: inc/customizer.php:970
+msgid "Forms"
+msgstr ""
+
+#: inc/customizer.php:991
+msgid "Input and textarea border radius (default: 0px)"
+msgstr ""
+
+#: inc/customizer.php:1006
+msgid "Blog"
+msgstr ""
+
+#: inc/customizer.php:1024
+#, fuzzy
+#| msgid "Choose the cart layout"
+msgid "Choose the single post layout"
+msgstr "Bepaal de winkelwagen lay-out"
+
+#: inc/customizer.php:1026
+msgid "Disable sidebars if you want to use Background picture layout."
+msgstr ""
+
+#: inc/customizer.php:1028
+msgid "Standard"
+msgstr ""
+
+#: inc/customizer.php:1029
+msgid "Background picture"
+msgstr ""
+
+#: inc/customizer.php:1046
+#, fuzzy
+#| msgid "Topbar background color"
+msgid "Post thumbnail background overlay"
+msgstr "Achtergrondkleur topbar"
+
+#: inc/customizer.php:1066
+msgid "Overlay color opacity % (default: 70%)"
+msgstr ""
+
+#: inc/customizer.php:1088
+#, fuzzy
+#| msgid "Store notice text color"
+msgid "Post thumbnail text color"
+msgstr "Tekst kleur bericht winkel"
+
+#: inc/customizer.php:1100
 msgid "Color shades"
 msgstr "Schaduw kleuren"
 
-#: inc/customizer.php:930
+#: inc/customizer.php:1119
 msgid "Main color shade"
 msgstr "Schaduw hoofd kleur"
 
-#: inc/customizer.php:932
+#: inc/customizer.php:1121
 msgid "Save your settings and reload the page to let the magic happen"
 msgstr ""
 "Sla de instellingen op en herlaad te pagina om de magie te laten gebeuren"
 
-#: inc/customizer.php:950
+#: inc/customizer.php:1139
 #, fuzzy
 #| msgid "General link <code>hover</code> color"
 msgid "General link :hover color"
 msgstr "Algemene link <code>zweven</code> kleur"
 
-#: inc/customizer.php:975
+#: inc/customizer.php:1151
+msgid "Theme documentation & more"
+msgstr ""
+
+#: inc/customizer.php:1171
+msgid "Theme documentation"
+msgstr ""
+
+#: inc/customizer.php:1172
+msgid "Read theme documentation"
+msgstr ""
+
+#: inc/customizer.php:1172 inc/customizer.php:1192
+msgid "here"
+msgstr ""
+
+#: inc/customizer.php:1191
+msgid "Child theme"
+msgstr ""
+
+#: inc/customizer.php:1192
+msgid "Download child theme"
+msgstr ""
+
+#: inc/customizer.php:1211
+msgid "Site Title font size"
+msgstr ""
+
+#: inc/customizer.php:1231
+#, fuzzy
+#| msgid "Store notice text color"
+msgid "Site Title color"
+msgstr "Tekst kleur bericht winkel"
+
+#: inc/customizer.php:1250
+msgid "Tagline font size"
+msgstr ""
+
+#: inc/customizer.php:1270
+#, fuzzy
+#| msgid "Main color shade"
+msgid "Tagline color"
+msgstr "Schaduw hoofd kleur"
+
+#: inc/customizer.php:1295
 msgid "YITH Theme Shop Options"
 msgstr ""
 
-#: inc/customizer.php:976
+#: inc/customizer.php:1296
 msgid "All shop related options for this theme"
 msgstr ""
 
-#: inc/customizer.php:987
+#: inc/customizer.php:1306
 msgid "Store notices"
 msgstr "Berichten winkel"
 
-#: inc/customizer.php:1005
+#: inc/customizer.php:1324
 msgid "Store notice background color"
 msgstr "Achtergrondkleur bericht winkel"
 
-#: inc/customizer.php:1023 inc/customizer.php:1090
+#: inc/customizer.php:1342 inc/customizer.php:1408
 msgid "Store notice text color"
 msgstr "Tekst kleur bericht winkel"
 
-#: inc/customizer.php:1040
+#: inc/customizer.php:1359
 msgid "Store notice font size (default: 13px)"
 msgstr "Lettertype grootte bericht winkel (standaard: 13px)"
 
-#: inc/customizer.php:1053
+#: inc/customizer.php:1371
 msgid "Sale badge"
 msgstr "Uitverkoop badge"
 
-#: inc/customizer.php:1072
+#: inc/customizer.php:1390
 msgid "Sale badge background color"
 msgstr "Achtergrondkleur uitverkoop badge"
 
-#: inc/customizer.php:1106
+#: inc/customizer.php:1424
 msgid "Sale badge font size (default: 13px)"
 msgstr "Lettertype grootte uitverkoop badge (standaard: 13px)"
 
-#: inc/customizer.php:1118
+#: inc/customizer.php:1436
 msgid "WooCommerce messages"
 msgstr "WooCommerce berichten"
 
-#: inc/customizer.php:1135
+#: inc/customizer.php:1453
 msgid "WooCommerce messages font size (default: 16px)"
 msgstr "Lettertype grootte WooCommerce berichten (standaard: 16px)"
 
-#: inc/customizer.php:1154
+#: inc/customizer.php:1472
 msgid "Default messages: accent color"
 msgstr "Standaard berichten: nadruk kleur"
 
-#: inc/customizer.php:1173
+#: inc/customizer.php:1491
 msgid "Info messages: accent color"
 msgstr "Informatie berichten: nadruk kleur"
 
-#: inc/customizer.php:1192
+#: inc/customizer.php:1510
 msgid "Error messages: accent color"
 msgstr "Foutmelding : nadruk kleur"
 
-#: inc/customizer.php:1205
+#: inc/customizer.php:1522
 msgid "Single product page"
 msgstr "Single product pagina"
 
-#: inc/customizer.php:1222
+#: inc/customizer.php:1539
 msgid "Max related products to show"
 msgstr "Max aantal gerelateerde producten om weer te geven"
 
-#: inc/customizer.php:1224
+#: inc/customizer.php:1541
 msgid "Choose how many related products you want to show (default: 4)"
 msgstr ""
 "Bepaal het aantal gerelateerde producten dat je wilt weergeven (standaard: 4)"
 
-#: inc/customizer.php:1239
+#: inc/customizer.php:1556
 msgid "Related products columns"
 msgstr "Gerelateerde producten kolommen"
 
-#: inc/customizer.php:1241
+#: inc/customizer.php:1558
 msgid ""
 "Choose how many columns with related products you want to show (default: 4)"
 msgstr ""
 "Bepaal het aantal kolommen met gerelateerde producten dat je wilt weergeven "
 "(standaard: 4)"
 
-#: inc/customizer.php:1251
+#: inc/customizer.php:1573
+msgid "Choose the position of the sidebar on single product page"
+msgstr "Bepaal de positie van de zijbalk in de single product pagina"
+
+#: inc/customizer.php:1575
+msgid ""
+"Select where to display the sidebar. You can adjust the settings from "
+"product edit view."
+msgstr ""
+"Bepaal waar je de zijbalk wilt weergeven. Je kunt de instellingen aanpassen "
+"vanaf de product bewerkingsweergave."
+
+#: inc/customizer.php:1590
+msgid "Product Category page"
+msgstr ""
+
+#: inc/customizer.php:1606
+#, fuzzy
+#| msgid "Choose the position of the sidebar on single product page"
+msgid "Choose the position of the sidebar on product category pages"
+msgstr "Bepaal de positie van de zijbalk in de single product pagina"
+
+#: inc/customizer.php:1608 inc/customizer.php:1659 inc/customizer.php:1711
+msgid "Select where to display the sidebar."
+msgstr ""
+
+#: inc/customizer.php:1628
+#, fuzzy
+#| msgid "Choose the position of the blog page sidebar"
+msgid "Choose the product category page sidebar"
+msgstr "Bepaal de positie van de blog pagina zijbalk"
+
+#: inc/customizer.php:1630 inc/customizer.php:1682 inc/customizer.php:1734
+msgid "Select the sidebar to display."
+msgstr ""
+
+#: inc/customizer.php:1641
+#, fuzzy
+#| msgid "Single product page"
+msgid "Product Tag page"
+msgstr "Single product pagina"
+
+#: inc/customizer.php:1657
+#, fuzzy
+#| msgid "Choose the position of the sidebar on single product page"
+msgid "Choose the position of the sidebar on product tag pages"
+msgstr "Bepaal de positie van de zijbalk in de single product pagina"
+
+#: inc/customizer.php:1680
+#, fuzzy
+#| msgid "Choose the position of the blog page sidebar"
+msgid "Choose the product tag page sidebar"
+msgstr "Bepaal de positie van de blog pagina zijbalk"
+
+#: inc/customizer.php:1693
+msgid "Product Taxonomy page"
+msgstr ""
+
+#: inc/customizer.php:1709
+#, fuzzy
+#| msgid "Choose the position of the sidebar on single product page"
+msgid "Choose the position of the sidebar on product taxonomy pages"
+msgstr "Bepaal de positie van de zijbalk in de single product pagina"
+
+#: inc/customizer.php:1732
+#, fuzzy
+#| msgid "Choose the position of the blog page sidebar"
+msgid "Choose the product taxonomy page sidebar"
+msgstr "Bepaal de positie van de blog pagina zijbalk"
+
+#: inc/customizer.php:1745
 msgid "Cart page"
 msgstr "Winkelwagen pagina"
 
-#: inc/customizer.php:1269
+#: inc/customizer.php:1763
 msgid "Cart layout"
 msgstr "Winkelwagen lay-out"
 
-#: inc/customizer.php:1271
+#: inc/customizer.php:1765
 msgid "Choose the cart layout"
 msgstr "Bepaal de winkelwagen lay-out"
 
-#: inc/customizer.php:1274
+#: inc/customizer.php:1768
 msgid "One column layout"
 msgstr "Een kolom lay-out"
 
-#: inc/customizer.php:1275
+#: inc/customizer.php:1769
 msgid "Two column layout"
 msgstr "Twee kolommen lay-out"
 
-#: inc/customizer.php:1293
+#: inc/customizer.php:1787
 msgid "Read the documentation to see how to retrieve a Google Font URL"
 msgstr "Lees de documentatie en zie hoe je een Google Font URL kunt verkrijgen"
 
-#: inc/metaboxes.php:33
+#: inc/metaboxes.php:39
 msgid "Title icon"
 msgstr "Titel icoon"
 
-#: inc/metaboxes.php:49
+#: inc/metaboxes.php:55
 msgid "Header slider"
 msgstr "Header slider"
 
-#: inc/metaboxes.php:67
+#: inc/metaboxes.php:73
 msgid "Sidebar position"
 msgstr "Zijbalk positie"
 
-#: inc/metaboxes.php:82
+#: inc/metaboxes.php:88
 msgid "Sidebar Chooser"
 msgstr "Zijbalk kiezer"
 
-#: inc/metaboxes.php:98
+#: inc/metaboxes.php:104
 #, fuzzy
 #| msgid "Header background color"
 msgid "Header and footer"
 msgstr "Achtergrondkleur header"
 
-#: inc/metaboxes.php:121
+#: inc/metaboxes.php:127
 msgid "Enable this option to hide site header and footer."
 msgstr ""
 
-#: inc/metaboxes.php:143 inc/metaboxes.php:240
+#: inc/metaboxes.php:149 inc/metaboxes.php:246
 msgid "none"
 msgstr "geen"
 
-#: inc/metaboxes.php:170 inc/metaboxes.php:171
+#: inc/metaboxes.php:177
 msgid "inherit"
 msgstr ""
 
-#: inc/metaboxes.php:174 inc/metaboxes.php:175
+#: inc/metaboxes.php:181
 #, fuzzy
 #| msgid "No sidebar"
 msgid "no-sidebar"
 msgstr "Geen zijbalk"
 
-#: inc/metaboxes.php:178 inc/metaboxes.php:179
+#: inc/metaboxes.php:185
 msgid "left"
 msgstr ""
 
-#: inc/metaboxes.php:182 inc/metaboxes.php:183
+#: inc/metaboxes.php:189
 #, fuzzy
 #| msgid "Right"
 msgid "right"
 msgstr "Rechts"
 
-#: inc/metaboxes.php:186 inc/metaboxes.php:187
+#: inc/metaboxes.php:193
 msgid "bottom"
 msgstr ""
 
-#: inc/sidebars.php:9
+#: inc/sidebars.php:15
 msgid "Default Sidebar"
 msgstr "Standaard zijbalk"
 
-#: inc/sidebars.php:11 inc/sidebars.php:22 inc/sidebars.php:33
-#: inc/sidebars.php:44 inc/sidebars.php:55 inc/sidebars.php:66
-#: inc/sidebars.php:77 inc/sidebars.php:88
+#: inc/sidebars.php:17 inc/sidebars.php:28 inc/sidebars.php:39
+#: inc/sidebars.php:50 inc/sidebars.php:61 inc/sidebars.php:72
+#: inc/sidebars.php:83 inc/sidebars.php:94
 msgid "Add widgets here."
 msgstr "Widgets hier toevoegen."
 
-#: inc/sidebars.php:20
+#: inc/sidebars.php:26
 msgid "Topbar Sidebar"
 msgstr "Topbar zijbalk"
 
-#: inc/sidebars.php:31
+#: inc/sidebars.php:37
 msgid "Header Sidebar"
 msgstr "Header zijbalk"
 
-#: inc/sidebars.php:42
+#: inc/sidebars.php:48
 msgid "Footer Sidebar 1 (multiple columns can be configured)"
 msgstr "Footer zijbalk 1 (meerdere kolommen kunnen worden geconfigureerd)"
 
-#: inc/sidebars.php:53
+#: inc/sidebars.php:59
 msgid "Footer Sidebar 2 (multiple columns can be configured)"
 msgstr "Footer zijbalk 2 (meerdere kolommen kunnen worden geconfigureerd)"
 
-#: inc/sidebars.php:64
+#: inc/sidebars.php:70
 msgid "Sidebar 2"
 msgstr "Zijbalk 2"
 
-#: inc/sidebars.php:75
+#: inc/sidebars.php:81
 msgid "Sidebar 3"
 msgstr "Zijbalk 3"
 
-#: inc/sidebars.php:86
+#: inc/sidebars.php:92
 msgid "Shop sidebar"
 msgstr "Winkel zijbalk"
 
-#: inc/template-functions.php:165
+#: inc/template-functions.php:177
 msgid "Search"
 msgstr "Zoeken"
 
-#: inc/template-functions.php:188 inc/template-functions.php:206
+#: inc/template-functions.php:200 inc/template-functions.php:218
 msgid "Read more"
 msgstr "Lees meer"
 
@@ -646,21 +834,57 @@ msgstr "Door %s"
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr "Bewerk <span class=\"screen-reader-text\">%s</span>"
 
-#: inc/widgets/class-yith-proteo-recent-comments-widget.php:17
+#: inc/widgets/class-yith-proteo-account-widget.php:19
+msgid "YITH Proteo Account Widget"
+msgstr ""
+
+#: inc/widgets/class-yith-proteo-account-widget.php:20
+msgid "A shortcut to site login page"
+msgstr ""
+
+#: inc/widgets/class-yith-proteo-account-widget.php:60
+#, php-format
+msgid "Hello %s"
+msgstr ""
+
+#: inc/widgets/class-yith-proteo-account-widget.php:121
+#: inc/widgets/class-yith-proteo-account-widget.php:195
+msgid "Custom icon"
+msgstr ""
+
+#: inc/widgets/class-yith-proteo-account-widget.php:127
+#: inc/widgets/class-yith-proteo-account-widget.php:201
+msgid "Login url"
+msgstr ""
+
+#: inc/widgets/class-yith-proteo-account-widget.php:135
+#: inc/widgets/class-yith-proteo-account-widget.php:209
+msgid "My account url"
+msgstr ""
+
+#: inc/widgets/class-yith-proteo-account-widget.php:161
+msgid "Add Media"
+msgstr ""
+
+#: inc/widgets/class-yith-proteo-account-widget.php:162
+msgid "Clear"
+msgstr ""
+
+#: inc/widgets/class-yith-proteo-recent-comments-widget.php:28
 msgid "Recent Comments"
 msgstr "Recente reacties"
 
-#: inc/widgets/class-yith-proteo-recent-comments-widget.php:68
+#: inc/widgets/class-yith-proteo-recent-comments-widget.php:78
 #, php-format
 msgctxt "widgets"
 msgid "%1$s on %2$s"
 msgstr "%1$s op %2$s"
 
-#: inc/widgets/class-yith-proteo-recent-posts-widget.php:14
+#: inc/widgets/class-yith-proteo-recent-posts-widget.php:25
 msgid "Recent Posts"
 msgstr "Recente posts"
 
-#: inc/widgets/class-yith-proteo-recent-posts-widget.php:61
+#: inc/widgets/class-yith-proteo-recent-posts-widget.php:71
 #, fuzzy, php-format
 #| msgctxt "comments title"
 #| msgid "%1$s comment"
@@ -671,37 +895,41 @@ msgid_plural "%1$s comments"
 msgstr[0] "%1$s comment"
 msgstr[1] "%1$s reacties"
 
-#: inc/widgets/class-yith-proteo-social-icons.php:14
+#: inc/widgets/class-yith-proteo-social-icons.php:19
 msgid "Social Networks"
 msgstr "Sociale netwerken"
 
-#: inc/widgets/class-yith-proteo-social-icons.php:16
+#: inc/widgets/class-yith-proteo-social-icons.php:21
 msgid "Links to your social profiles"
 msgstr "Links naar je sociale profielen"
 
-#: inc/widgets/class-yith-proteo-social-icons.php:77
+#: inc/widgets/class-yith-proteo-social-icons.php:84
 msgid "To hide a field, just leave it empty"
 msgstr "Om het veld te verbergen, laat het leeg"
 
-#: inc/widgets/class-yith-proteo-social-icons.php:80
+#: inc/widgets/class-yith-proteo-social-icons.php:87
 msgid "Title:"
 msgstr "Titel:"
 
-#: inc/widgets/class-yith-proteo-social-icons.php:89
+#: inc/widgets/class-yith-proteo-social-icons.php:96
 msgid "Facebook:"
 msgstr "Facebook:"
 
-#: inc/widgets/class-yith-proteo-social-icons.php:98
+#: inc/widgets/class-yith-proteo-social-icons.php:105
 msgid "Twitter:"
 msgstr "Twitter:"
 
-#: inc/widgets/class-yith-proteo-social-icons.php:107
+#: inc/widgets/class-yith-proteo-social-icons.php:114
 msgid "Instagram:"
 msgstr "Instagram:"
 
-#: inc/widgets/class-yith-proteo-social-icons.php:116
+#: inc/widgets/class-yith-proteo-social-icons.php:123
 msgid "LinkedIn:"
 msgstr "LinkedIn:"
+
+#: inc/widgets/class-yith-proteo-social-icons.php:132
+msgid "Youtube:"
+msgstr ""
 
 #: inc/woocommerce.php:208
 msgid "View your shopping cart"
@@ -714,22 +942,22 @@ msgid_plural "%d items"
 msgstr[0] "%d item"
 msgstr[1] "%d items"
 
-#: inc/woocommerce.php:304
+#: inc/woocommerce.php:305
 msgid "Logout"
 msgstr "Uitloggen"
 
-#: inc/woocommerce.php:339
+#: inc/woocommerce.php:347
 msgid "Account info"
 msgstr "Account informatie"
 
-#: inc/woocommerce.php:395
+#: inc/woocommerce.php:406
 #, php-format
 msgid "%d item in cart"
 msgid_plural "%d items in cart"
 msgstr[0] "%d item in winkelwagen"
 msgstr[1] "%d items in winkelwagen"
 
-#: inc/woocommerce.php:541
+#: inc/woocommerce.php:557
 msgid "Thank you."
 msgstr ""
 
@@ -766,39 +994,477 @@ msgstr ""
 "Het lijkt erop dat we niet hebben kunnen vinden wat je zocht. Probeer de "
 "zoekfunctie."
 
-#: template-parts/content-page.php:33 template-parts/content.php:122
+#: template-parts/content-page.php:33 template-parts/content-single.php:166
+#: template-parts/content.php:122
 msgid "Pages:"
 msgstr "Pagina's:"
 
+#: template-parts/content-single.php:59 template-parts/content-single.php:108
 #: template-parts/content.php:61
 msgid ", "
 msgstr ", "
 
+#: template-parts/content-single.php:62 template-parts/content-single.php:111
 #: template-parts/content.php:64
 #, php-format
 msgid "Categories: %1$s"
 msgstr "Categorieën: %1$s"
 
+#: template-parts/content-single.php:66 template-parts/content-single.php:115
 #: template-parts/content.php:68
 msgctxt "list item separator"
 msgid ", "
 msgstr ", "
 
+#: template-parts/content-single.php:69 template-parts/content-single.php:118
 #: template-parts/content.php:71
 #, php-format
 msgid "Tags: %1$s"
 msgstr "Tags: %1$s"
 
+#: template-parts/content-single.php:79 template-parts/content-single.php:128
 #: template-parts/content.php:81
 #, php-format
 msgid "Leave a comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr ""
 "Laat een reactie achter<span class=\"screen-reader-text\"> op %s</span>"
 
-#: template-parts/content.php:105
+#: template-parts/content-single.php:153 template-parts/content.php:105
 #, php-format
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr "Verder lezen<span class=\"screen-reader-text\"> \"%s\"</span>"
+
+#: third-party/classes/class-tgm-plugin-activation.php:327
+msgid "Install Required Plugins"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:328
+msgid "Install Plugins"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:330
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:332
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:333
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:336
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:342
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:348
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:354
+#, php-format
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:360
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:366
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:371
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:376
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:381
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:385
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:386
+#: third-party/classes/class-tgm-plugin-activation.php:827
+#: third-party/classes/class-tgm-plugin-activation.php:2533
+#: third-party/classes/class-tgm-plugin-activation.php:3580
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:387
+#: third-party/classes/class-tgm-plugin-activation.php:3159
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:388
+#: third-party/classes/class-tgm-plugin-activation.php:2952
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:390
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:392
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:394
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:395
+msgid "Dismiss this notice"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:396
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:397
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:522
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:523
+msgid "Update Required"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:934
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:934
+#: third-party/classes/class-tgm-plugin-activation.php:937
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:937
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:1121
+#: third-party/classes/class-tgm-plugin-activation.php:2948
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:1982
+#, php-format
+msgid "TGMPA v%s"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:2273
+msgid "Required"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:2276
+#, fuzzy
+#| msgctxt "comments count on widget"
+#| msgid "One comment"
+#| msgid_plural "%1$s comments"
+msgid "Recommended"
+msgstr "Een reactie"
+
+#: third-party/classes/class-tgm-plugin-activation.php:2292
+msgid "WordPress Repository"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:2295
+msgid "External Source"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:2298
+msgid "Pre-Packaged"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:2315
+msgid "Not Installed"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:2319
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:2321
+msgid "Active"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:2327
+msgid "Required Update not Available"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:2330
+msgid "Requires Update"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:2333
+msgid "Update recommended"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:2342
+#, fuzzy, php-format
+#| msgid "%1$s at %2$s"
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr "%1$s op %2$s"
+
+#: third-party/classes/class-tgm-plugin-activation.php:2388
+#, fuzzy, php-format
+#| msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] "Bewerk <span class=\"screen-reader-text\">%s</span>"
+msgstr[1] "Bewerk <span class=\"screen-reader-text\">%s</span>"
+
+#: third-party/classes/class-tgm-plugin-activation.php:2392
+#, fuzzy, php-format
+#| msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] "Bewerk <span class=\"screen-reader-text\">%s</span>"
+msgstr[1] "Bewerk <span class=\"screen-reader-text\">%s</span>"
+
+#: third-party/classes/class-tgm-plugin-activation.php:2396
+#, fuzzy, php-format
+#| msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] "Bewerk <span class=\"screen-reader-text\">%s</span>"
+msgstr[1] "Bewerk <span class=\"screen-reader-text\">%s</span>"
+
+#: third-party/classes/class-tgm-plugin-activation.php:2400
+#, fuzzy, php-format
+#| msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] "Bewerk <span class=\"screen-reader-text\">%s</span>"
+msgstr[1] "Bewerk <span class=\"screen-reader-text\">%s</span>"
+
+#: third-party/classes/class-tgm-plugin-activation.php:2482
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:2490
+msgid "Installed version:"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:2498
+msgid "Minimum required version:"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:2510
+msgid "Available version:"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:2533
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:2547
+msgid "Plugin"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:2548
+msgid "Source"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:2549
+msgid "Type"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:2553
+msgid "Version"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:2554
+msgid "Status"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:2603
+#, php-format
+msgid "Install %2$s"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:2608
+#, fuzzy, php-format
+#| msgid "%1$s at %2$s"
+msgid "Update %2$s"
+msgstr "%1$s op %2$s"
+
+#: third-party/classes/class-tgm-plugin-activation.php:2614
+#, php-format
+msgid "Activate %2$s"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:2684
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:2717
+msgid "Install"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:2723
+msgid "Update"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:2726
+msgid "Activate"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:2757
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:2759
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:2800
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:2802
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:2908
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:2934
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:3158
+msgid "Plugin activation failed."
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:3498
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:3501
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:3503
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:3507
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:3509
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:3509
+#: third-party/classes/class-tgm-plugin-activation.php:3517
+msgid "Show Details"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:3509
+#: third-party/classes/class-tgm-plugin-activation.php:3517
+msgid "Hide Details"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:3510
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:3512
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:3515
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:3517
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:3518
+msgid "All installations have been completed."
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:3520
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
 
 #: woocommerce/checkout/form-checkout.php:26
 msgid "You must be logged in to proceed with the checkout."
@@ -808,61 +1474,61 @@ msgstr "Je moet ingelogd zijn om door te gaan met afrekenen."
 msgid "Your order"
 msgstr "Je bestelling"
 
-#: woocommerce/myaccount/proteo-account-info.php:14
+#: woocommerce/myaccount/proteo-account-info.php:22
 msgid "Personal info"
 msgstr "Persoonlijke informatie"
 
-#: woocommerce/myaccount/proteo-account-info.php:16
-#: woocommerce/myaccount/proteo-account-info.php:42
-#: woocommerce/myaccount/proteo-account-info.php:80
+#: woocommerce/myaccount/proteo-account-info.php:24
+#: woocommerce/myaccount/proteo-account-info.php:50
+#: woocommerce/myaccount/proteo-account-info.php:88
 msgid "First name:"
 msgstr "Voornaam:"
 
-#: woocommerce/myaccount/proteo-account-info.php:20
-#: woocommerce/myaccount/proteo-account-info.php:46
-#: woocommerce/myaccount/proteo-account-info.php:84
+#: woocommerce/myaccount/proteo-account-info.php:28
+#: woocommerce/myaccount/proteo-account-info.php:54
+#: woocommerce/myaccount/proteo-account-info.php:92
 msgid "Last name:"
 msgstr "Achternaam:"
 
-#: woocommerce/myaccount/proteo-account-info.php:24
+#: woocommerce/myaccount/proteo-account-info.php:32
 msgid "E-mail:"
 msgstr "E-mail:"
 
-#: woocommerce/myaccount/proteo-account-info.php:28
+#: woocommerce/myaccount/proteo-account-info.php:36
 msgid "Password:"
 msgstr "Wachtwoord:"
 
-#: woocommerce/myaccount/proteo-account-info.php:33
-#: woocommerce/myaccount/proteo-account-info.php:70
-#: woocommerce/myaccount/proteo-account-info.php:108
+#: woocommerce/myaccount/proteo-account-info.php:41
+#: woocommerce/myaccount/proteo-account-info.php:78
+#: woocommerce/myaccount/proteo-account-info.php:116
 msgid "Edit info"
 msgstr "Bewerk informatie"
 
-#: woocommerce/myaccount/proteo-account-info.php:40
+#: woocommerce/myaccount/proteo-account-info.php:48
 msgid "Billing info & address"
 msgstr "Factuurinformatie & adres"
 
-#: woocommerce/myaccount/proteo-account-info.php:51
-#: woocommerce/myaccount/proteo-account-info.php:89
+#: woocommerce/myaccount/proteo-account-info.php:59
+#: woocommerce/myaccount/proteo-account-info.php:97
 msgid "Company name:"
 msgstr "Bedrijfsnaam:"
 
-#: woocommerce/myaccount/proteo-account-info.php:55
-#: woocommerce/myaccount/proteo-account-info.php:93
+#: woocommerce/myaccount/proteo-account-info.php:63
+#: woocommerce/myaccount/proteo-account-info.php:101
 msgid "VAT:"
 msgstr "BTW:"
 
-#: woocommerce/myaccount/proteo-account-info.php:60
-#: woocommerce/myaccount/proteo-account-info.php:98
+#: woocommerce/myaccount/proteo-account-info.php:68
+#: woocommerce/myaccount/proteo-account-info.php:106
 msgid "CIF/SSN:"
 msgstr "CIF/SSN:"
 
-#: woocommerce/myaccount/proteo-account-info.php:65
-#: woocommerce/myaccount/proteo-account-info.php:103
+#: woocommerce/myaccount/proteo-account-info.php:73
+#: woocommerce/myaccount/proteo-account-info.php:111
 msgid "Address:"
 msgstr "Adres:"
 
-#: woocommerce/myaccount/proteo-account-info.php:78
+#: woocommerce/myaccount/proteo-account-info.php:86
 msgid "Shipping info & address"
 msgstr "Factuurinformatie & adres"
 
@@ -880,10 +1546,3 @@ msgstr "Factuurinformatie & adres"
 
 #~ msgid "Button Style 2 text <code>hover</code> color"
 #~ msgstr "Knopstijl 2 tekstkleur <code>zweven</code>"
-
-#, php-format
-#~ msgctxt "comments count on widget"
-#~ msgid "One comment"
-#~ msgid_plural "%1$s comments"
-#~ msgstr[0] "Een reactie"
-#~ msgstr[1] "%1$s reacties"

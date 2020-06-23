@@ -1,98 +1,791 @@
-# Copyright (C) 2020 YITH
-# This file is distributed under the GNU General Public License v2 or later.
+# Translation of Themes - YITH Proteo in Greek
+# This file is distributed under the same license as the Themes - YITH Proteo package.
 msgid ""
 msgstr ""
-"Project-Id-Version: YITH Proteo\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2020-03-23 10:26+0100\n"
-"PO-Revision-Date: 2020-03-23 10:26+0100\n"
-"Last-Translator: \n"
-"Language-Team: yithemes\n"
-"Language: el\n"
+"PO-Revision-Date: 2020-04-25 14:19:52+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.3\n"
-"X-Poedit-Basepath: ..\n"
-"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
-"_n_noop:1,2;_c;_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_ex:1,2c;"
-"esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Poedit-SearchPath-0: .\n"
-"X-Poedit-SearchPathExcluded-0: .git\n"
-"X-Poedit-SearchPathExcluded-1: .sass-cache\n"
-"X-Poedit-SearchPathExcluded-2: bin\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/3.0.0-alpha\n"
+"Language: el_GR\n"
+"Project-Id-Version: Themes - YITH Proteo\n"
 
-#: 404.php:21
-msgid "Oops! That page can&rsquo;t be found."
-msgstr "Ωπ! Η σελίδα δεν&rsquo; βρέθηκε."
+#. Theme Name of the theme
+msgid "YITH Proteo"
+msgstr "YITH Proteo"
 
-#: 404.php:26
-msgid "It looks like nothing was found at this location. Maybe try a search?"
+#. Description of the theme
+msgid "Proteo is a sleek, modern and “Gutenberg-friendly” e-commerce theme. Developed with a beautiful UI and a minimal design, is perfect for each kind of shop. Easy to manage and to customize, Proteo is the best solution if you want a complete e-commerce template and start quickly to sell your products with WooCommerce without a technical knowledge. Use it also for corporate site or a blog: there are no limits about what you can do with a beautiful and usable theme like this! Main features: Colors and Typography customization (Google font support), Logo customization, 3 different Header layouts, Advanced customizer theme options, Sidebar Management, Sidebar Chooser on each page and product, Page title icons, Top Bar Management, Easy main color shade chooser, Buttons style management (gradient buttons support), Footer management with multiple sidebars, WooCommerce support, Shop Theme Options, Custom WooCommerce messages and animated WooCommerce alert notices, Two cart page layouts, Bootstrap grid system, CSS animations, Gutenberg support, Responsive, Fullscreen search, Multilevel menus, Support to all YITH plugins, SVG icons for HiDPI screens, Translation Ready. <a href=\"https://proteo.yithemes.com/about-proteo/\" rel=\"nofollow\" target=\"_blank\">Discover more ></a> | <a href=\"https://proteo.yithemes.com/\" rel=\"nofollow\" target=\"_blank\">Check our live demo ></a>"
+msgstr "Το Proteo είναι ένα κομψό, μοντέρνο και συμβατό με το Gutenberg θέμα. Έχει προγραμματιστεί χαρίζοντας μια όμορφη Διεπαφή Χρήστη και ένα απλό σχέδιο, και είναι ιδανικό για κάθε τύπο καταστήματος. Το Proteo είναι η καλύτερη λύση εάν ψάχνετε ένα ολοκληρωμένο πρότυπο e-commerce για να ξεκινήσετε την πώληση των προϊόντων σας με το WooCommerce γρήγορα και χωρίς τεχνικές γνώσεις καθώς είναι εύκολο στη διαχείριση και προσαρμογή. Μπορείτε να το χρησιμοποιήσετε επίσης για οποιοδήποτε εταιρικό ιστότοπο ή ιστολόγιο. Δεν υπάρχουν όρια στο τι μπορείτε να δημιουργήσετε με ένα τόσο λειτουργικό θέμα! Βασικά χαρακτηριστικά: Προσαρμογή Χρωμάτων και Τυπογραφίας (υποστήριξη γραμματοσειράς Google), Προσαρμογή Λογότυπου, 3 διαφορετικές διατάξεις Επικεφαλίδας, Προηγμένες επιλογές προσαρμογέα θέματος, Διαχείριση Πλευρικών Στήλων, Επιλογέας Πλευρικών Στήλων σε κάθε σελίδα και προϊόν, Εικονίδια τίτλου σελίδας, Διαχείριση Μπάρας Κορυφής, Επιλογέας βασικού χρώματος σκιάς, Διαχείριση στυλ κουμπιών (υποστήριξη κουμπιών διαβάθμισης), Διαχείριση υποσέλιδου με πολλαπλές πλευρικές στήλες, υποστήριξη WooCommerce, Επιλογές Θέματος Καταστήματος, Προσαρμοσμένα μηνύματα WooCommerce και ειδοποιήσεις συναγερμών WooCommerce, Δυο διατάξεις σελίδας καλαθιού, Σύστημα πλέγματος Bootstrap, CSS animations, υποστήριξη Gutenberg, Προσαρμοζόμενo στις κινητές συσκευές, Αναζήτηση Πλήρους Οθόνης, Πολυεπίπεδα μενού, Υποστήριξη για όλα τα πρόσθετα YITH, Εικονίδια SVG για οθόνες HiDPI, Έτοιμη μετάφραση. <a href=\"https://proteo.yithemes.com/about-proteo/\" rel=\"nofollow\" target=\"_blank\">Discover more ></a> | <a href=\"https://proteo.yithemes.com/\" rel=\"nofollow\" target=\"_blank\">Check our live demo ></a>"
+
+#: inc/widgets/class-yith-proteo-social-icons.php:132
+msgid "Youtube:"
 msgstr ""
-"Φαίνεται να μην βρέθηκε αποτέλεσμα σε αυτή την τοποθεσία. Ίσως αν κάνατε "
-"αναζήτηση;"
 
-#: comments.php:35
-#, php-format
-msgid "One thought on &ldquo;%1$s&rdquo;"
-msgstr "Μια σκέψη για &ldquo;%1$s&rdquo;"
-
-#: comments.php:42
-#, php-format
-msgctxt "comments title"
-msgid "%1$s comment"
-msgid_plural "%1$s comments"
-msgstr[0] "%1$s σχόλιο"
-msgstr[1] "%1$s σχόλια"
-
-#: comments.php:71
-msgid "Comments are closed."
-msgstr "Τα σχόλια είναι απενεργοποιημένα."
-
-#: footer.php:33
-msgid ""
-"Proteo - A free theme designed with <span class=\"lnr lnr-heart\"></span> by "
-"<a href=\"https://yithemes.com\" rel=\"nofollow\">YITH</a>"
+#: inc/customizer.php:1732
+msgid "Choose the product taxonomy page sidebar"
 msgstr ""
+
+#: inc/customizer.php:1709
+msgid "Choose the position of the sidebar on product taxonomy pages"
+msgstr ""
+
+#: inc/customizer.php:1693
+msgid "Product Taxonomy page"
+msgstr ""
+
+#: inc/customizer.php:1270
+msgid "Tagline color"
+msgstr ""
+
+#: inc/customizer.php:1250
+msgid "Tagline font size"
+msgstr ""
+
+#: inc/customizer.php:1231
+msgid "Site Title color"
+msgstr ""
+
+#: inc/customizer.php:1211
+msgid "Site Title font size"
+msgstr ""
+
+#: inc/customizer.php:1088
+msgid "Post thumbnail text color"
+msgstr ""
+
+#: inc/customizer.php:1066
+msgid "Overlay color opacity % (default: 70%)"
+msgstr ""
+
+#: inc/customizer.php:1046
+msgid "Post thumbnail background overlay"
+msgstr ""
+
+#: inc/customizer.php:1029
+msgid "Background picture"
+msgstr ""
+
+#: inc/customizer.php:1028
+msgid "Standard"
+msgstr ""
+
+#: inc/customizer.php:1026
+msgid "Disable sidebars if you want to use Background picture layout."
+msgstr ""
+
+#: inc/customizer.php:1024
+msgid "Choose the single post layout"
+msgstr ""
+
+#: inc/customizer.php:1006
+msgid "Blog"
+msgstr ""
+
+#: functions.php:52
+msgid "Mobile Menu"
+msgstr ""
+
+#: inc/widgets/class-yith-proteo-account-widget.php:162
+msgid "Clear"
+msgstr ""
+
+#: inc/widgets/class-yith-proteo-account-widget.php:161
+msgid "Add Media"
+msgstr ""
+
+#: inc/widgets/class-yith-proteo-account-widget.php:135
+#: inc/widgets/class-yith-proteo-account-widget.php:209
+msgid "My account url"
+msgstr ""
+
+#: inc/widgets/class-yith-proteo-account-widget.php:127
+#: inc/widgets/class-yith-proteo-account-widget.php:201
+msgid "Login url"
+msgstr ""
+
+#: inc/widgets/class-yith-proteo-account-widget.php:121
+#: inc/widgets/class-yith-proteo-account-widget.php:195
+msgid "Custom icon"
+msgstr ""
+
+#. translators: %s: user name.
+#: inc/widgets/class-yith-proteo-account-widget.php:60
+msgid "Hello %s"
+msgstr ""
+
+#: inc/widgets/class-yith-proteo-account-widget.php:20
+msgid "A shortcut to site login page"
+msgstr ""
+
+#: inc/widgets/class-yith-proteo-account-widget.php:19
+msgid "YITH Proteo Account Widget"
+msgstr ""
+
+#: inc/customizer.php:310
+msgid "Header menu :hover color"
+msgstr ""
+
+#: inc/customizer.php:291
+msgid "Header menu color"
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: third-party/classes/class-tgm-plugin-activation.php:3520
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:3518
+msgid "All installations have been completed."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: third-party/classes/class-tgm-plugin-activation.php:3517
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:3515
+msgid "The installation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: third-party/classes/class-tgm-plugin-activation.php:3512
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:3510
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: third-party/classes/class-tgm-plugin-activation.php:3509
+#: third-party/classes/class-tgm-plugin-activation.php:3517
+msgid "Hide Details"
+msgstr ""
+
+#. translators: 1: plugin name.
+#: third-party/classes/class-tgm-plugin-activation.php:3509
+#: third-party/classes/class-tgm-plugin-activation.php:3517
+msgid "Show Details"
+msgstr ""
+
+#. translators: 1: plugin name.
+#: third-party/classes/class-tgm-plugin-activation.php:3509
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:3507
+msgid "The installation and activation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: third-party/classes/class-tgm-plugin-activation.php:3503
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: error message.
+#: third-party/classes/class-tgm-plugin-activation.php:3501
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: third-party/classes/class-tgm-plugin-activation.php:3498
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:3158
+msgid "Plugin activation failed."
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:2934
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:2908
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:2802
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:2800
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:2759
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:2757
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:2726
+msgid "Activate"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:2723
+msgid "Update"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:2717
+msgid "Install"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:2684
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: third-party/classes/class-tgm-plugin-activation.php:2614
+msgid "Activate %2$s"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: third-party/classes/class-tgm-plugin-activation.php:2608
+msgid "Update %2$s"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: third-party/classes/class-tgm-plugin-activation.php:2603
+msgid "Install %2$s"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:2554
+msgid "Status"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:2553
+msgid "Version"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:2549
+msgid "Type"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:2548
+msgid "Source"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:2547
+msgid "Plugin"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:2533
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:2510
+msgid "Available version:"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:2498
+msgid "Minimum required version:"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:2490
+msgid "Installed version:"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:2482
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr ""
+
+#. translators: 1: number of plugins.
+#: third-party/classes/class-tgm-plugin-activation.php:2400
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: third-party/classes/class-tgm-plugin-activation.php:2396
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: third-party/classes/class-tgm-plugin-activation.php:2392
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: third-party/classes/class-tgm-plugin-activation.php:2388
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: install status, 2: update status
+#: third-party/classes/class-tgm-plugin-activation.php:2342
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:2333
+msgid "Update recommended"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:2330
+msgid "Requires Update"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:2327
+msgid "Required Update not Available"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:2321
+msgid "Active"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:2319
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:2315
+msgid "Not Installed"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:2298
+msgid "Pre-Packaged"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:2295
+msgid "External Source"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:2292
+msgid "WordPress Repository"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:2276
+msgid "Recommended"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:2273
+msgid "Required"
+msgstr ""
+
+#. translators: %s: version number
+#: third-party/classes/class-tgm-plugin-activation.php:1982
+msgid "TGMPA v%s"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:1121
+#: third-party/classes/class-tgm-plugin-activation.php:2948
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:937
+msgid "The remote plugin package consists of more than one file, but the files are not packaged in a folder."
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:934
+#: third-party/classes/class-tgm-plugin-activation.php:937
+msgid "Please contact the plugin provider and ask them to package their plugin according to the WordPress guidelines."
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:934
+msgid "The remote plugin package does not contain a folder with the desired slug and renaming did not work."
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:523
+msgid "Update Required"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:522
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:397
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:396
+msgid "There are one or more required or recommended plugins to install, update or activate."
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:395
+msgid "Dismiss this notice"
+msgstr ""
+
+#. translators: 1: dashboard link.
+#: third-party/classes/class-tgm-plugin-activation.php:394
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#. translators: 1: plugin name.
+#: third-party/classes/class-tgm-plugin-activation.php:392
+msgid "Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: third-party/classes/class-tgm-plugin-activation.php:390
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:388
+#: third-party/classes/class-tgm-plugin-activation.php:2952
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:387
+#: third-party/classes/class-tgm-plugin-activation.php:3159
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:386
+#: third-party/classes/class-tgm-plugin-activation.php:827
+#: third-party/classes/class-tgm-plugin-activation.php:2533
+#: third-party/classes/class-tgm-plugin-activation.php:3580
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:385
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:380
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:375
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:370
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: third-party/classes/class-tgm-plugin-activation.php:364
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: third-party/classes/class-tgm-plugin-activation.php:358
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: third-party/classes/class-tgm-plugin-activation.php:352
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: third-party/classes/class-tgm-plugin-activation.php:346
+msgid "The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s."
+msgid_plural "The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: third-party/classes/class-tgm-plugin-activation.php:340
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: third-party/classes/class-tgm-plugin-activation.php:334
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:333
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#. translators: %s: plugin name.
+#: third-party/classes/class-tgm-plugin-activation.php:332
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: third-party/classes/class-tgm-plugin-activation.php:330
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:328
+msgid "Install Plugins"
+msgstr ""
+
+#: third-party/classes/class-tgm-plugin-activation.php:327
+msgid "Install Required Plugins"
+msgstr ""
+
+#: inc/customizer.php:1192
+msgid "Download child theme"
+msgstr "Κατέβασμα θυγατρικού θέματος"
+
+#: inc/customizer.php:1191
+msgid "Child theme"
+msgstr "Θυγατρικό θέμα"
+
+#: inc/customizer.php:1172 inc/customizer.php:1192
+msgid "here"
+msgstr "εδώ"
+
+#: inc/customizer.php:1172
+msgid "Read theme documentation"
+msgstr "Διαβάστε το εγχειρίδιο χρήσης θέματος"
+
+#: inc/customizer.php:1171
+msgid "Theme documentation"
+msgstr "Εγχειρίδιο χρήσης θέματος"
+
+#: inc/customizer.php:1151
+msgid "Theme documentation & more"
+msgstr "Εγχειρίδιο χρήσης θέματος & περισσότερα"
+
+#: inc/customizer.php:1680
+msgid "Choose the product tag page sidebar"
+msgstr "Επιλέξτε την πλευρική στήλη της σελίδας ετικέτας προϊόντος"
+
+#: inc/customizer.php:1657
+msgid "Choose the position of the sidebar on product tag pages"
+msgstr "Επιλέξτε την τοποθεσία των πλευρικών στηλών στις σελίδες ετικέτας προϊόντος"
+
+#: inc/customizer.php:1641
+msgid "Product Tag page"
+msgstr "Σελίδα Ετικέτας Προϊόντος"
+
+#: inc/customizer.php:1630 inc/customizer.php:1682 inc/customizer.php:1734
+msgid "Select the sidebar to display."
+msgstr "Επιλέξτε την πλευρική στήλη προς εμφάνιση."
+
+#: inc/customizer.php:1628
+msgid "Choose the product category page sidebar"
+msgstr "Επιλέξτε την πλευρική στήλη της σελίδας κατηγορίας προϊόντος "
+
+#: inc/customizer.php:1608 inc/customizer.php:1659 inc/customizer.php:1711
+msgid "Select where to display the sidebar."
+msgstr "Επιλέξτε πού να εμφανίζεται η πλευρική στήλη."
+
+#: inc/customizer.php:1606
+msgid "Choose the position of the sidebar on product category pages"
+msgstr "Επιλέξτε την θέση της πλευρικής στήλης στις σελίδες κατηγορίας προϊόντος"
+
+#: inc/customizer.php:1590
+msgid "Product Category page"
+msgstr "Σελίδα Κατηγορίας Προϊόντος"
+
+#: inc/customizer.php:991
+msgid "Input and textarea border radius (default: 0px)"
+msgstr "Ακτίνα πλαισίου εισαγωγής και περιοχής κειμένου (προεπιλεγμένο: 0px)"
+
+#: inc/customizer.php:970
+msgid "Forms"
+msgstr "Φόρμες"
+
+#: inc/customizer.php:755
+msgid "Border radius (default: 50px)"
+msgstr "Ακτίνα πλαισίου (προεπιλεγμένο: 50px)"
+
+#: inc/customizer.php:270
+msgid "Choose whether to make the header full width or not."
+msgstr "Επιλέξτε αν θέλετε η επικεφαλίδα να έχει πλήρες πλάτος ή όχι. "
+
+#: inc/customizer.php:268
+msgid "Enable full width header"
+msgstr "Ενεργοποίηση επικεφαλίδας πλήρους πλάτους"
+
+#: footer.php:41
+msgid "<a href=\"https://proteo.yithemes.com/\" target=\"_blank\" rel=\"noopener\">Proteo</a> - A free theme designed with <span class=\"lnr lnr-heart\"></span> by <a href=\"https://yithemes.com\" rel=\"nofollow\">YITH</a>"
+msgstr "<a href=\"https://proteo.yithemes.com/\" target=\"_blank\" rel=\"noopener\">Proteo</a> - Ένα δωρεάν θέμα σχεδιασμένο με <span class=\"lnr lnr-heart\"></span> από το <a href=\"https://yithemes.com\" rel=\"nofollow\">YITH</a>"
 
 #: functions.php:51
 msgid "Primary"
 msgstr "Βασικό"
 
-#: header.php:21
+#: 404.php:26
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr "Φαίνεται να μην βρέθηκε αποτέλεσμα σε αυτή την τοποθεσία. Ίσως αν κάνατε αναζήτηση;"
+
+#: 404.php:21
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Ωπ! Η σελίδα δεν&rsquo; βρέθηκε."
+
+#: header.php:23
 msgid "Skip to content"
-msgstr "Παράβλεψη προς περιεχόμενο"
+msgstr "Παράλειψη σε περιεχόμενο"
 
-#: header.php:87
+#: template-parts/content-page.php:33 template-parts/content.php:122
+#: template-parts/content-single.php:166
+msgid "Pages:"
+msgstr "Σελίδες:"
+
+#: header.php:101
 msgid "Toggle navigation"
-msgstr ""
+msgstr "Πλοήγηση εναλλαγής"
 
-#: inc/class-yith-proteo-walker-comment.php:66
-#, php-format
-msgid "%s <span class=\"screen-reader-text says\">says:</span>"
-msgstr "%s <span class=“screen-reader-text says”>λέει:</span>"
+#. translators: %s: Name of current post. Only visible to screen readers
+#: template-parts/content-page.php:47 inc/template-tags.php:61
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr "Επεξεργασία <span class=“screen-reader-text”>%s</span>"
 
-#: inc/class-yith-proteo-walker-comment.php:79
-#, php-format
-msgid "%1$s at %2$s"
-msgstr "%1$s στις %2$s"
+#. translators: used between list items, there is a space after the comma
+#: template-parts/content.php:61 template-parts/content-single.php:59
+#: template-parts/content-single.php:108
+msgid ", "
+msgstr ", "
 
-#: inc/class-yith-proteo-walker-comment.php:86
-msgid "(Edit)"
-msgstr "(Επεξεργασία)"
+#. translators: 1: list of categories.
+#: template-parts/content.php:64 template-parts/content-single.php:62
+#: template-parts/content-single.php:111
+msgid "Categories: %1$s"
+msgstr "Κατηγορίες: %1$s"
 
-#: inc/class-yith-proteo-walker-comment.php:91
-msgid "Your comment is awaiting moderation."
-msgstr "Το σχόλιο σας αναμένεται να ελεγχθεί."
+#. translators: used between list items, there is a space after the comma
+#: template-parts/content.php:68 template-parts/content-single.php:66
+#: template-parts/content-single.php:115
+msgctxt "list item separator"
+msgid ", "
+msgstr ", "
+
+#. translators: 1: list of tags.
+#: template-parts/content.php:71 template-parts/content-single.php:69
+#: template-parts/content-single.php:118
+msgid "Tags: %1$s"
+msgstr "Ετικέτες: %1$s"
+
+#. translators: %s: post title
+#: template-parts/content.php:81 template-parts/content-single.php:79
+#: template-parts/content-single.php:128
+msgid "Leave a comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr "Αφήστε ένα σχόλιο<span class=\"screen-reader-text\"> στο %s</span>"
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: template-parts/content.php:105 template-parts/content-single.php:153
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr "Συνεχίστε να διαβάζετε<span class=\"screen-reader-text\"> \"%s\"</span>"
+
+#: template-parts/content-none.php:14
+msgid "Nothing found"
+msgstr "Κανένα αποτέλεσμα"
+
+#. translators: 1: link to WP admin new post page.
+#: template-parts/content-none.php:24
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Έτοιμοι να δημοσιεύσετε την πρώτη σας ανάρτηση; <a href=\"%1$s\">Get started here</a>."
+
+#: template-parts/content-none.php:37
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "Δυστυχώς δεν βρέθηκαν αποτελέσματα που να ταιριάζουν με τους όρους αναζήτησής σας. Παρακαλώ προσπαθήστε ξανά με διαφορετικούς όρους-κλειδιά."
+
+#: template-parts/content-none.php:44
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Φαίνεται ότι δεν μπορούμε&rsquo; να βρούμε αυτό που&rsquo; ψάχνετε. Ίσως η αναζήτηση μπορεί να βοηθήσει. "
+
+#. translators: %s: search query.
+#: search.php:22
+msgid "Search results for: %s"
+msgstr "Αναζήτηση αποτελεσμάτων για: %s"
+
+#: inc/woocommerce.php:208
+msgid "View your shopping cart"
+msgstr "Δείτε το καλάθι αγορών σας"
+
+#. translators: number of items in the mini cart.
+#: inc/woocommerce.php:212
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] "%d αντικείμενο"
+msgstr[1] "%d αντικείμενα"
+
+#: inc/woocommerce.php:305
+msgid "Logout"
+msgstr "Αποσύνδεση"
+
+#. translators: number of items in the mini cart.
+#: inc/woocommerce.php:406
+msgid "%d item in cart"
+msgid_plural "%d items in cart"
+msgstr[0] "%d αντικείμενο στο καλάθι"
+msgstr[1] "%d αντικείμενα στο καλάθι"
+
+#: inc/woocommerce.php:347
+msgid "Account info"
+msgstr "Στοιχεία λογαριασμού"
+
+#: inc/sidebars.php:15
+msgid "Default Sidebar"
+msgstr "Προεπιλεγμένη Πλευρική Στήλη"
+
+#: inc/woocommerce.php:557
+msgid "Thank you."
+msgstr "Ευχαριστούμε."
+
+#: inc/sidebars.php:17 inc/sidebars.php:28 inc/sidebars.php:39
+#: inc/sidebars.php:50 inc/sidebars.php:61 inc/sidebars.php:72
+#: inc/sidebars.php:83 inc/sidebars.php:94
+msgid "Add widgets here."
+msgstr "Προσθέστε μικροεφαρμογές εδώ."
+
+#: inc/sidebars.php:26
+msgid "Topbar Sidebar"
+msgstr "Πλευρική Στήλη Άνω Μπάρας"
+
+#: inc/sidebars.php:37
+msgid "Header Sidebar"
+msgstr "Πλευρική Στήλη Επικεφαλίδας"
+
+#: inc/sidebars.php:48
+msgid "Footer Sidebar 1 (multiple columns can be configured)"
+msgstr "Πλευρική Στήλη Υποσέλιδου 1 (μπορούν να διαμορφωθούν πολλαπλές στήλες)"
+
+#: inc/sidebars.php:59
+msgid "Footer Sidebar 2 (multiple columns can be configured)"
+msgstr "Πλευρική Στήλη Υποσέλιδου 2 (μπορούν να διαμορφωθούν πολλαπλές στήλες)"
+
+#: inc/sidebars.php:70
+msgid "Sidebar 2"
+msgstr "Πλευρική Στήλη 2"
+
+#: inc/sidebars.php:81
+msgid "Sidebar 3"
+msgstr "Πλευρική Στήλη 3"
+
+#: inc/sidebars.php:92
+msgid "Shop sidebar"
+msgstr "Πλευρική στήλη καταστήματος"
+
+#. translators: %s: post author.
+#: inc/template-tags.php:42
+msgctxt "post author"
+msgid "By %s"
+msgstr "Από %s"
 
 #: inc/customizer.php:44
 msgid "YITH Theme Options"
-msgstr ""
+msgstr "Επιλογές Θέματος YITH"
 
 #: inc/customizer.php:45
 msgid "All options related to this theme"
-msgstr ""
+msgstr "Όλες οι επιλογές σχετικά με το θέμα"
 
 #: inc/customizer.php:55
 msgid "Sidebars"
@@ -103,707 +796,603 @@ msgid "Choose the position of the default sidebar"
 msgstr "Επιλέξτε την θέση της προεπιλεγμένης πλευρικής στήλης"
 
 #: inc/customizer.php:75
-msgid ""
-"Select where to display the default sidebar. You can adjust the settings "
-"from the page/post edit view."
-msgstr ""
-"Επιλέξτε πού θέλετε να φαίνεται η προεπιλεγμένη πλευρική στήλη. Μπορείτε να "
-"προσαρμόσετε τις ρυθμίσεις μέσω της προβολής επεξεργασίας σελίδας/άρθρου."
+msgid "Select where to display the default sidebar. You can adjust the settings from the page/post edit view."
+msgstr "Επιλέξτε πού θέλετε να φαίνεται η προεπιλεγμένη πλευρική στήλη. Μπορείτε να προσαρμόσετε τις ρυθμίσεις μέσω της προβολής επεξεργασίας σελίδας/άρθρου."
 
-#: inc/customizer.php:77 inc/customizer.php:100 inc/customizer.php:142
-#: inc/customizer.php:1334
+#: inc/customizer.php:77 inc/customizer.php:100 inc/customizer.php:1577
+#: inc/customizer.php:1610 inc/customizer.php:1661 inc/customizer.php:1713
+#: inc/customizer.php:1819
 msgid "No sidebar"
 msgstr "Χωρίς πλευρική στήλη"
 
-#: inc/customizer.php:78 inc/customizer.php:101 inc/customizer.php:143
-#: inc/customizer.php:1335
+#: inc/customizer.php:78 inc/customizer.php:101 inc/customizer.php:1578
+#: inc/customizer.php:1611 inc/customizer.php:1662 inc/customizer.php:1714
+#: inc/customizer.php:1820
 msgid "Right"
 msgstr "Δεξιά"
 
-#: inc/customizer.php:79 inc/customizer.php:102 inc/customizer.php:144
-#: inc/customizer.php:1336
+#: inc/customizer.php:79 inc/customizer.php:102 inc/customizer.php:1579
+#: inc/customizer.php:1612 inc/customizer.php:1663 inc/customizer.php:1715
+#: inc/customizer.php:1821
 msgid "Left"
 msgstr "Αριστερά"
 
 #: inc/customizer.php:96
 msgid "Choose the position of the blog page sidebar"
-msgstr "Επιλέξτε την θέση της πλευρικής στήλης σελίδας ιστολογίου"
+msgstr "Επιλέξτε την θέση της πλευρικής στήλης της σελίδας ιστολογίου"
 
 #: inc/customizer.php:98
-msgid ""
-"Select where to display the sidebar. You can pick up a specific sidebard "
-"from the page edit view."
-msgstr ""
-"Επιλέξτε πού να φαίνεται η πλευρική στήλη. Μπορείτε να αντιγράψετε μια "
-"συγκεκριμένη πλευρική στήλη από την προβολή επεξεργασίας σελίδας."
+msgid "Select where to display the sidebar. You can pick up a specific sidebard from the page edit view."
+msgstr "Επιλέξτε πού να φαίνεται η πλευρική στήλη. Μπορείτε να αντιγράψετε μια συγκεκριμένη πλευρική στήλη από την προβολή επεξεργασίας σελίδας."
 
 #: inc/customizer.php:119
 msgid "Choose the blog sidebar"
 msgstr "Επιλέξτε την πλευρική στήλη ιστολογίου"
 
 #: inc/customizer.php:121
-msgid ""
-"Select the sidebar to display. You can pick a specific sidebar from the "
-"single post edit page."
-msgstr ""
-"Επιλέξτε ποια πλευρική στήλη θέλετε να φαίνεται. Μπορείτε να αντιγράψετε μια "
-"συγκεκριμένη πλευρική στήλη από την σελίδα επεξεργασίας απλού άρθρου."
+msgid "Select the sidebar to display. You can pick a specific sidebar from the single post edit page."
+msgstr "Επιλέξτε ποια πλευρική στήλη θέλετε να φαίνεται. Μπορείτε να αντιγράψετε μια συγκεκριμένη πλευρική στήλη από την σελίδα επεξεργασίας απλού άρθρου."
 
-#: inc/customizer.php:138
+#: inc/customizer.php:1573
 msgid "Choose the position of the sidebar on single product page"
-msgstr "Επιλέξτε την θέση της πλευρικής στήλης της σελίδας απλού προϊόντος"
+msgstr "Επιλέξτε την θέση της πλευρικής στήλης στη σελίδα απλού προϊόντος"
 
-#: inc/customizer.php:140
-msgid ""
-"Select where to display the sidebar. You can adjust the settings from "
-"product edit view."
-msgstr ""
-"Επιλέξτε πού θέλετε να φαίνεται η προεπιλεγμένη πλευρική στήλη. Μπορείτε να "
-"προσαρμόσετε τις ρυθμίσεις μέσω της προβολής επεξεργασίας προϊόντος."
+#: inc/customizer.php:1575
+msgid "Select where to display the sidebar. You can adjust the settings from product edit view."
+msgstr "Επιλέξτε πού θέλετε να φαίνεται η πλευρική στήλη. Μπορείτε να προσαρμόσετε τις ρυθμίσεις μέσω της προβολής επεξεργασίας προϊόντος."
 
-#: inc/customizer.php:155
+#: inc/customizer.php:132
 msgid "Topbar"
 msgstr "Άνω μπάρα"
 
-#: inc/customizer.php:173
+#: inc/customizer.php:150
 msgid "Enable topbar"
 msgstr "Ενεργοποίηση άνω μπάρας"
 
-#: inc/customizer.php:175
+#: inc/customizer.php:152
 msgid "Choose whether to show the site topbar or not"
-msgstr "Επιλέξτε αν θέλετε να φαίνεται η άνω μπάρα ιστοσελίδας ή όχι"
+msgstr "Επιλέξτε αν θέλετε να φαίνεται η άνω μπάρα ιστότοπου ή όχι"
 
-#: inc/customizer.php:177 inc/customizer.php:230 inc/customizer.php:1357
+#: inc/customizer.php:154 inc/customizer.php:207 inc/customizer.php:272
+#: inc/customizer.php:1842
 msgid "Yes"
 msgstr "Ναι"
 
-#: inc/customizer.php:178 inc/customizer.php:231 inc/customizer.php:1358
+#: inc/customizer.php:155 inc/customizer.php:208 inc/customizer.php:273
+#: inc/customizer.php:1843
 msgid "No"
 msgstr "Όχι"
 
-#: inc/customizer.php:196
+#: inc/customizer.php:173
 msgid "Topbar background color"
 msgstr "Χρώμα φόντου άνω μπάρας"
 
-#: inc/customizer.php:208
+#: inc/customizer.php:185
 msgid "Header"
 msgstr "Επικεφαλίδα"
 
-#: inc/customizer.php:226
+#: inc/customizer.php:203
 msgid "Enable sticky header"
 msgstr "Ενεργοποίηση καρφιτσωμένης επικεφαλίδας"
 
-#: inc/customizer.php:228
+#: inc/customizer.php:205
 msgid "Choose whether to make the header stick to the page when scrolling down"
-msgstr ""
-"Επιλέξτε αν θέλετε να καρφιτσώσετε την επικεφαλίδα στην σελίδα κατά την "
-"κύλιση προς τα κάτω"
+msgstr "Επιλέξτε αν θέλετε να καρφιτσώσετε την επικεφαλίδα στην σελίδα κατά την κύλιση προς τα κάτω"
 
-#: inc/customizer.php:249
+#: inc/customizer.php:226
 msgid "Header background color"
 msgstr "Χρώμα φόντου επικεφαλίδας"
 
-#: inc/customizer.php:267
+#: inc/customizer.php:244
 msgid "Header layout"
 msgstr "Διάταξη επικεφαλίδας"
 
-#: inc/customizer.php:269
+#: inc/customizer.php:246
 msgid "Choose the header layout"
-msgstr "Επιλέξτε διάταξη επικεφαλίδας"
+msgstr "Επιλέξτε την διάταξη επικεφαλίδας"
 
-#: inc/customizer.php:271 inc/customizer.php:1273
+#: inc/customizer.php:248 inc/customizer.php:1767
 msgid "Please select"
 msgstr "Παρακαλώ επιλέξτε"
 
-#: inc/customizer.php:272
+#: inc/customizer.php:249
 msgid "Logo on the left and navigation below"
-msgstr "Λογότυπο στα αριστερά και πλοήγηση κάτω"
+msgstr "Λογότυπο στα αριστερά και πλοήγηση προς τα κάτω"
 
-#: inc/customizer.php:273
+#: inc/customizer.php:250
 msgid "Logo on the left and navigation inline"
 msgstr "Λογότυπο στα αριστερά και πλοήγηση στη σειρά"
 
-#: inc/customizer.php:274
+#: inc/customizer.php:251
 msgid "Centered logo and navigation below"
-msgstr "Κεντρικό λογότυπο και πλοήγηση κάτω"
+msgstr "Κεντρικό λογότυπο και πλοήγηση προς τα κάτω"
 
-#: inc/customizer.php:286
+#: inc/customizer.php:322
 msgid "Footer"
 msgstr "Υποσέλιδο"
 
-#: inc/customizer.php:305
+#: inc/customizer.php:341
 msgid "Footer background color"
 msgstr "Χρώμα φόντου υποσέλιδου"
 
-#: inc/customizer.php:322
-msgid ""
-"Select how many widgets per row to show for Footer Sidebar 1 (new rows are "
-"automatically created)."
-msgstr ""
-"Επιλέξτε πόσες μικροεφαρμογές ανά σειρά θέλετε να φαίνονται για το Υποσέλιδο "
-"Πλευρικής Στήλης 1 (οι νέες σειρές δημιουργούνται αυτόματα)."
+#: inc/customizer.php:358
+msgid "Select how many widgets per row to show for Footer Sidebar 1 (new rows are automatically created)."
+msgstr "Επιλέξτε πόσες μικροεφαρμογές ανά γραμμή θέλετε να φαίνονται για το Υποσέλιδο Πλευρικής Στήλης 1 (οι νέες γραμμές δημιουργούνται αυτόματα)."
 
-#: inc/customizer.php:326 inc/customizer.php:351
+#: inc/customizer.php:362 inc/customizer.php:387
 msgid "One"
 msgstr "Μια"
 
-#: inc/customizer.php:327 inc/customizer.php:352
+#: inc/customizer.php:363 inc/customizer.php:388
 msgid "Two"
 msgstr "Δύο"
 
-#: inc/customizer.php:328 inc/customizer.php:353
+#: inc/customizer.php:364 inc/customizer.php:389
 msgid "Three"
 msgstr "Τρεις"
 
-#: inc/customizer.php:329 inc/customizer.php:354
+#: inc/customizer.php:365 inc/customizer.php:390
 msgid "Four"
 msgstr "Τέσσερις"
 
-#: inc/customizer.php:330 inc/customizer.php:355
+#: inc/customizer.php:366 inc/customizer.php:391
 msgid "Five"
 msgstr "Πέντε"
 
-#: inc/customizer.php:331 inc/customizer.php:356
+#: inc/customizer.php:367 inc/customizer.php:392
 msgid "Six"
 msgstr "Έξι"
 
-#: inc/customizer.php:347
-msgid ""
-"Select how many widgets per row to show for Footer Sidebar 2 (new rows are "
-"automatically created)."
-msgstr ""
-"Επιλέξτε πόσες μικροεφαρμογές ανά σειρά θέλετε να φαίνονται για το Υποσέλιδο "
-"Πλευρικής Στήλης 2 (οι νέες σειρές δημιουργούνται αυτόματα)."
+#: inc/customizer.php:383
+msgid "Select how many widgets per row to show for Footer Sidebar 2 (new rows are automatically created)."
+msgstr "Επιλέξτε πόσες μικροεφαρμογές ανά γραμμή θέλετε να φαίνονται για το Υποσέλιδο Πλευρικής Στήλης 2 (οι νέες γραμμές δημιουργούνται αυτόματα)."
 
-#: inc/customizer.php:367
+#: inc/customizer.php:403
 msgid "Footer credits"
 msgstr "Ευχαριστίες υποσέλιδου"
 
-#: inc/customizer.php:383
+#: inc/customizer.php:419
 msgid "Enter here the content of the footer credits area"
 msgstr "Πληκτρολογήστε εδώ το περιεχόμενο της περιοχής ευχαριστιών υποσέλιδου"
 
-#: inc/customizer.php:401
+#: inc/customizer.php:437
 msgid "Footer credits background color"
 msgstr "Χρώμα φόντου ευχαριστιών υποσέλιδου"
 
-#: inc/customizer.php:413
+#: inc/customizer.php:449
 msgid "Google Font"
 msgstr "Γραμματοσειρά Google"
 
-#: inc/customizer.php:430
+#: inc/customizer.php:466
 msgid "Enter the URL of the Google Font you want to use."
-msgstr ""
-"Πληκτρολογήστε το URL της Γραμματοσειράς Google που θέλετε να "
-"χρησιμοποιήσετε."
+msgstr "Πληκτρολογήστε το URL της Γραμματοσειράς Google που θέλετε να χρησιμοποιήσετε."
 
-#: inc/customizer.php:442
+#: inc/customizer.php:478
 msgid "Typography"
 msgstr "Τυπογραφία"
 
-#: inc/customizer.php:458
+#: inc/customizer.php:494
 msgid "Body font size (default: 16px)"
 msgstr "Μέγεθος γραμματοσειράς σώματος (προεπιλεγμένο: 16px)"
 
-#: inc/customizer.php:476
+#: inc/customizer.php:512
 msgid "Body font color"
 msgstr "Χρώμα γραμματοσειράς σώματος"
 
-#: inc/customizer.php:493
+#: inc/customizer.php:529
 msgid "H1 font size (default: 32px)"
 msgstr "Μέγεθος γραμματοσειράς H1 (προεπιλεγμένο: 32px)"
 
-#: inc/customizer.php:511
+#: inc/customizer.php:547
 msgid "H1 font color"
 msgstr "Χρώμα γραμματοσειράς H1"
 
-#: inc/customizer.php:528
+#: inc/customizer.php:564
 msgid "H2 font size (default: 24px)"
 msgstr "Μέγεθος γραμματοσειράς H2 (προεπιλεγμένο: 24px)"
 
-#: inc/customizer.php:546
+#: inc/customizer.php:582
 msgid "H2 font color"
 msgstr "Χρώμα γραμματοσειράς H2"
 
-#: inc/customizer.php:563
+#: inc/customizer.php:599
 msgid "H3 font size (default: 19px)"
 msgstr "Μέγεθος γραμματοσειράς H3 (προεπιλεγμένο: 19px)"
 
-#: inc/customizer.php:581
+#: inc/customizer.php:617
 msgid "H3 font color"
 msgstr "Χρώμα γραμματοσειράς H3"
 
-#: inc/customizer.php:598
+#: inc/customizer.php:634
 msgid "H4 font size (default: 16px)"
 msgstr "Μέγεθος γραμματοσειράς H4 (προεπιλεγμένο: 16px)"
 
-#: inc/customizer.php:616
+#: inc/customizer.php:652
 msgid "H4 font color"
 msgstr "Χρώμα γραμματοσειράς H4"
 
-#: inc/customizer.php:633
+#: inc/customizer.php:669
 msgid "H5 font size (default: 13px)"
 msgstr "Μέγεθος γραμματοσειράς H5 (προεπιλεγμένο: 13px)"
 
-#: inc/customizer.php:651
+#: inc/customizer.php:687
 msgid "H5 font color"
 msgstr "Χρώμα γραμματοσειράς H5"
 
-#: inc/customizer.php:668
+#: inc/customizer.php:704
 msgid "H6 font size (default: 11px)"
 msgstr "Μέγεθος γραμματοσειράς H6 (προεπιλεγμένο: 11px)"
 
-#: inc/customizer.php:686
+#: inc/customizer.php:722
 msgid "H6 font color"
 msgstr "Χρώμα γραμματοσειράς H6"
 
-#: inc/customizer.php:698
+#: inc/customizer.php:734
 msgid "Buttons"
 msgstr "Κουμπιά"
 
-#: inc/customizer.php:717
+#: inc/customizer.php:777
 msgid "Button Style 1 background color"
 msgstr "Στυλ Κουμπιού 1 χρώμα φόντου"
 
-#: inc/customizer.php:735
+#: inc/customizer.php:795
 msgid "Button Style 1 border color"
 msgstr "Στυλ Κουμπιού 1 χρώμα πλαισίου"
 
-#: inc/customizer.php:753
+#: inc/customizer.php:813
 msgid "Button Style 1 text color"
 msgstr "Στυλ Κουμπιού 1 χρώμα κειμένου"
 
-#: inc/customizer.php:771
-#, fuzzy
-#| msgid "Button Style 1 background color"
+#: inc/customizer.php:831
 msgid "Button Style 1 background :hover color"
-msgstr "Στυλ Κουμπιού 1 χρώμα φόντου"
+msgstr "Στυλ Κουμπιού 1 φόντο :χρώμα αιώρησης"
 
-#: inc/customizer.php:789
-#, fuzzy
-#| msgid "Button Style 1 border color"
+#: inc/customizer.php:849
 msgid "Button Style 1 border :hover color"
-msgstr "Στυλ Κουμπιού 1 χρώμα πλαισίου"
+msgstr "Στυλ Κουμπιού 1 πλαίσιο :χρώμα αιώρησης"
 
-#: inc/customizer.php:807
-#, fuzzy
-#| msgid "Button Style 1 text color"
+#: inc/customizer.php:867
 msgid "Button Style 1 text :hover color"
-msgstr "Στυλ Κουμπιού 1 χρώμα κειμένου"
+msgstr "Στυλ Κουμπιού 1 κείμενο :χρώμα αιώρησης"
 
-#: inc/customizer.php:826
+#: inc/customizer.php:886
 msgid "Button Style 2 background color shade 1"
 msgstr "Στυλ Κουμπιού 2 χρώμα φόντου απόχρωση 1"
 
-#: inc/customizer.php:844
+#: inc/customizer.php:904
 msgid "Button Style 2 background color shade 2"
 msgstr "Στυλ Κουμπιού 2 χρώμα φόντου απόχρωση 2"
 
-#: inc/customizer.php:862
+#: inc/customizer.php:922
 msgid "Button Style 2 text color"
 msgstr "Στυλ Κουμπιού 2 χρώμα κειμένου"
 
-#: inc/customizer.php:880
-#, fuzzy
-#| msgid "Button Style 1 background color"
+#: inc/customizer.php:940
 msgid "Button Style 2 background :hover color"
-msgstr "Στυλ Κουμπιού 1 χρώμα φόντου"
+msgstr "Στυλ Κουμπιού 2 φόντο :χρώμα αιώρησης"
 
-#: inc/customizer.php:898
-#, fuzzy
-#| msgid "Button Style 2 text color"
+#: inc/customizer.php:958
 msgid "Button Style 2 text :hover color"
-msgstr "Στυλ Κουμπιού 2 χρώμα κειμένου"
+msgstr "Στυλ Κουμπιού 2 κείμενο :χρώμα αιώρησης"
 
-#: inc/customizer.php:911
+#: inc/customizer.php:1100
 msgid "Color shades"
 msgstr "Αποχρώσεις χρώματος"
 
-#: inc/customizer.php:930
+#: inc/customizer.php:1119
 msgid "Main color shade"
 msgstr "Κύρια απόχρωση χρώματος"
 
-#: inc/customizer.php:932
+#: inc/customizer.php:1121
 msgid "Save your settings and reload the page to let the magic happen"
-msgstr ""
-"Αποθηκεύστε τις ρυθμίσεις σας και φορτώστε ξανά τη σελίδα για να αφήσετε τη "
-"μαγεία να συμβεί!"
+msgstr "Αποθηκεύστε τις ρυθμίσεις σας και φορτώστε ξανά τη σελίδα για να αφήσετε τη μαγεία να συμβεί!"
 
-#: inc/customizer.php:950
-#, fuzzy
-#| msgid "General link <code>hover</code> color"
+#: inc/customizer.php:1139
 msgid "General link :hover color"
-msgstr "Χρώμα <code>αιώρησης</code> γενικό λινκ"
+msgstr "Γενικός σύνδεσμος :χρώμα αιώρησης "
 
-#: inc/customizer.php:975
+#: inc/customizer.php:1295
 msgid "YITH Theme Shop Options"
-msgstr ""
+msgstr "Επιλογές Καταστήματος Θέματος YITH"
 
-#: inc/customizer.php:976
+#: inc/customizer.php:1296
 msgid "All shop related options for this theme"
-msgstr ""
+msgstr "Όλες οι επιλογές σχετικά με το κατάστημα για το θέμα"
 
-#: inc/customizer.php:987
+#: inc/customizer.php:1306
 msgid "Store notices"
 msgstr "Σημειώσεις καταστήματος"
 
-#: inc/customizer.php:1005
+#: inc/customizer.php:1324
 msgid "Store notice background color"
 msgstr "Χρώμα φόντου σημείωσης καταστήματος"
 
-#: inc/customizer.php:1023 inc/customizer.php:1090
+#: inc/customizer.php:1342 inc/customizer.php:1408
 msgid "Store notice text color"
 msgstr "Χρώμα κειμένου σημείωσης καταστήματος"
 
-#: inc/customizer.php:1040
+#: inc/customizer.php:1359
 msgid "Store notice font size (default: 13px)"
 msgstr "Μέγεθος γραμματοσειράς σημείωσης καταστήματος (προεπιλεγμένο: 13px)"
 
-#: inc/customizer.php:1053
+#: inc/customizer.php:1371
 msgid "Sale badge"
 msgstr "Έμβλημα έκπτωσης"
 
-#: inc/customizer.php:1072
+#: inc/customizer.php:1390
 msgid "Sale badge background color"
 msgstr "Χρώμα φόντου εμβλήματος έκπτωσης"
 
-#: inc/customizer.php:1106
+#: inc/customizer.php:1424
 msgid "Sale badge font size (default: 13px)"
 msgstr "Μέγεθος γραμματοσειράς εμβλήματος έκπτωσης (προεπιλεγμένο: 13px)"
 
-#: inc/customizer.php:1118
+#: inc/customizer.php:1436
 msgid "WooCommerce messages"
 msgstr "Μηνύματα WooCommerce"
 
-#: inc/customizer.php:1135
+#: inc/customizer.php:1453
 msgid "WooCommerce messages font size (default: 16px)"
 msgstr "Μέγεθος γραμματοσειράς μηνυμάτων WooCommerce (προεπιλεγμένο: 16px)"
 
-#: inc/customizer.php:1154
+#: inc/customizer.php:1472
 msgid "Default messages: accent color"
 msgstr "Προεπιλεγμένα μηνύματα: χρώμα έμφασης"
 
-#: inc/customizer.php:1173
+#: inc/customizer.php:1491
 msgid "Info messages: accent color"
 msgstr "Μηνύματα πληροφοριών: χρώμα έμφασης"
 
-#: inc/customizer.php:1192
+#: inc/customizer.php:1510
 msgid "Error messages: accent color"
 msgstr "Μηνύματα σφαλμάτων: χρώμα έμφασης"
 
-#: inc/customizer.php:1205
+#: inc/customizer.php:1522
 msgid "Single product page"
 msgstr "Σελίδα απλού προϊόντος"
 
-#: inc/customizer.php:1222
+#: inc/customizer.php:1539
 msgid "Max related products to show"
-msgstr "Μέγιστος αριθμός σχετικών προϊόντων για εμφάνιση"
+msgstr "Μέγιστος αριθμός σχετικών προϊόντων προς εμφάνιση"
 
-#: inc/customizer.php:1224
+#: inc/customizer.php:1541
 msgid "Choose how many related products you want to show (default: 4)"
-msgstr ""
-"Επιλέξτε πόσα σχετικά προϊόντα θέλετε να εμφανίζονται (προεπιλεγμένο: 4)"
+msgstr "Επιλέξτε πόσα σχετικά προϊόντα θέλετε να εμφανίζονται (προεπιλεγμένο: 4)"
 
-#: inc/customizer.php:1239
+#: inc/customizer.php:1556
 msgid "Related products columns"
 msgstr "Στήλες σχετικών προϊόντων"
 
-#: inc/customizer.php:1241
-msgid ""
-"Choose how many columns with related products you want to show (default: 4)"
-msgstr ""
-"Επιλέξτε πόσες στήλες με σχετικά προϊόντα θέλετε να εμφανίζονται "
-"(προεπιλεγμένο: 4)"
+#: inc/customizer.php:1558
+msgid "Choose how many columns with related products you want to show (default: 4)"
+msgstr "Επιλέξτε πόσες στήλες με σχετικά προϊόντα θέλετε να εμφανίζονται (προεπιλεγμένο: 4)"
 
-#: inc/customizer.php:1251
+#: inc/customizer.php:1745
 msgid "Cart page"
 msgstr "Σελίδα ταμείου"
 
-#: inc/customizer.php:1269
+#: inc/customizer.php:1763
 msgid "Cart layout"
 msgstr "Διάταξη ταμείου"
 
-#: inc/customizer.php:1271
+#: inc/customizer.php:1765
 msgid "Choose the cart layout"
 msgstr "Επιλέξτε την διάταξη ταμείου"
 
-#: inc/customizer.php:1274
+#: inc/customizer.php:1768
 msgid "One column layout"
 msgstr "Διάταξη μιας στήλης"
 
-#: inc/customizer.php:1275
+#: inc/customizer.php:1769
 msgid "Two column layout"
-msgstr "Διάταξη δύο στήλων"
+msgstr "Διάταξη δύο στηλών"
 
-#: inc/customizer.php:1293
+#: inc/customizer.php:1787
 msgid "Read the documentation to see how to retrieve a Google Font URL"
-msgstr ""
-"Διαβάστε το εγχειρίδιο χρήσης για να μάθετε πώς να ανακτήσετε ένα URL "
-"Γραμματοσειράς Google"
+msgstr "Διαβάστε το εγχειρίδιο χρήσης για να μάθετε πώς να ανακτήσετε ένα URL Γραμματοσειράς Google"
 
-#: inc/metaboxes.php:33
+#: inc/metaboxes.php:39
 msgid "Title icon"
 msgstr "Εικονίδιο τίτλου"
 
-#: inc/metaboxes.php:49
+#: inc/metaboxes.php:55
 msgid "Header slider"
 msgstr "Μηχανισμός κύλισης επικεφαλίδας"
 
-#: inc/metaboxes.php:67
-msgid "Sidebar position"
-msgstr "Θέση πλευρικών στηλών"
-
-#: inc/metaboxes.php:82
+#: inc/metaboxes.php:88
 msgid "Sidebar Chooser"
 msgstr "Επιλογέας Πλευρικών Στηλών"
 
-#: inc/metaboxes.php:98
-#, fuzzy
-#| msgid "Header background color"
-msgid "Header and footer"
-msgstr "Χρώμα φόντου επικεφαλίδας"
+#: inc/metaboxes.php:73
+msgid "Sidebar position"
+msgstr "Θέση πλευρικών στηλών"
 
-#: inc/metaboxes.php:121
+#: inc/metaboxes.php:127
 msgid "Enable this option to hide site header and footer."
-msgstr ""
+msgstr "Ενεργοποίηση για απόκρυψη της επικεφαλίδας ιστότοπου και του υποσέλιδου."
 
-#: inc/metaboxes.php:143 inc/metaboxes.php:240
+#: inc/metaboxes.php:104
+msgid "Header and footer"
+msgstr "Επικεφαλίδα και υποσέλιδο"
+
+#: inc/metaboxes.php:149 inc/metaboxes.php:246
 msgid "none"
 msgstr "κανένα"
 
-#: inc/metaboxes.php:170 inc/metaboxes.php:171
+#: inc/metaboxes.php:177
 msgid "inherit"
-msgstr ""
+msgstr "κληρονόμηση"
 
-#: inc/metaboxes.php:174 inc/metaboxes.php:175
-#, fuzzy
-#| msgid "No sidebar"
-msgid "no-sidebar"
-msgstr "Χωρίς πλευρική στήλη"
-
-#: inc/metaboxes.php:178 inc/metaboxes.php:179
+#: inc/metaboxes.php:185
 msgid "left"
-msgstr ""
+msgstr "αριστερά"
 
-#: inc/metaboxes.php:182 inc/metaboxes.php:183
-#, fuzzy
-#| msgid "Right"
+#: inc/metaboxes.php:181
+msgid "no-sidebar"
+msgstr "χωρίς πλευρική στήλη"
+
+#: inc/metaboxes.php:189
 msgid "right"
-msgstr "Δεξιά"
+msgstr "δεξιά"
 
-#: inc/metaboxes.php:186 inc/metaboxes.php:187
+#. translators: %s: comment author link
+#: inc/class-yith-proteo-walker-comment.php:75
+msgid "%s <span class=\"screen-reader-text says\">says:</span>"
+msgstr "%s <span class=“screen-reader-text says”>λέει:</span>"
+
+#: inc/metaboxes.php:193
 msgid "bottom"
-msgstr ""
+msgstr "κάτω"
 
-#: inc/sidebars.php:9
-msgid "Default Sidebar"
-msgstr "Προεπιλεγμένη Πλευρική Στήλη"
+#. translators: 1: comment date, 2: comment time
+#: inc/class-yith-proteo-walker-comment.php:88
+msgid "%1$s at %2$s"
+msgstr "%1$s στις %2$s"
 
-#: inc/sidebars.php:11 inc/sidebars.php:22 inc/sidebars.php:33
-#: inc/sidebars.php:44 inc/sidebars.php:55 inc/sidebars.php:66
-#: inc/sidebars.php:77 inc/sidebars.php:88
-msgid "Add widgets here."
-msgstr "Προσθέστε μικροεφαρμογές εδώ"
+#: inc/class-yith-proteo-walker-comment.php:100
+msgid "Your comment is awaiting moderation."
+msgstr "Το σχόλιο σας αναμένεται να ελεγχθεί."
 
-#: inc/sidebars.php:20
-msgid "Topbar Sidebar"
-msgstr "Πλευρική Στήλη Άνω Μπάρας"
+#: inc/class-yith-proteo-walker-comment.php:95
+msgid "(Edit)"
+msgstr "(Επεξεργασία)"
 
-#: inc/sidebars.php:31
-msgid "Header Sidebar"
-msgstr "Πλευρική Στήλη Επικεφαλίδας"
-
-#: inc/sidebars.php:42
-msgid "Footer Sidebar 1 (multiple columns can be configured)"
-msgstr "Πλευρική Στήλη Υποσέλιδου 1 (μπορούν να διαμορφωθούν πολλαπλές στήλες)"
-
-#: inc/sidebars.php:53
-msgid "Footer Sidebar 2 (multiple columns can be configured)"
-msgstr "Πλευρική Στήλη Υποσέλιδου 2 (μπορούν να διαμορφωθούν πολλαπλές στήλες)"
-
-#: inc/sidebars.php:64
-msgid "Sidebar 2"
-msgstr "Πλευρική Στήλη 2"
-
-#: inc/sidebars.php:75
-msgid "Sidebar 3"
-msgstr "Πλευρική Στήλη 3"
-
-#: inc/sidebars.php:86
-msgid "Shop sidebar"
-msgstr "Πλευρική στήλη καταστήματος"
-
-#: inc/template-functions.php:165
-msgid "Search"
-msgstr "Αναζήτηση"
-
-#: inc/template-functions.php:188 inc/template-functions.php:206
-msgid "Read more"
-msgstr "Διαβάστε περισσότερα"
-
-#: inc/template-tags.php:42
-#, php-format
-msgctxt "post author"
-msgid "By %s"
-msgstr "Από %s"
-
-#: inc/template-tags.php:61 template-parts/content-page.php:47
-#, php-format
-msgid "Edit <span class=\"screen-reader-text\">%s</span>"
-msgstr "Επεξεργασία <span class=“screen-reader-text”>%s</span>"
-
-#: inc/widgets/class-yith-proteo-recent-comments-widget.php:17
+#: inc/widgets/class-yith-proteo-recent-comments-widget.php:28
 msgid "Recent Comments"
 msgstr "Πρόσφατα Σχόλια"
 
-#: inc/widgets/class-yith-proteo-recent-comments-widget.php:68
-#, php-format
+#. translators: comments widget: 1: comment author, 2: post link
+#: inc/widgets/class-yith-proteo-recent-comments-widget.php:78
 msgctxt "widgets"
 msgid "%1$s on %2$s"
 msgstr "%1$s στις %2$s"
 
-#: inc/widgets/class-yith-proteo-recent-posts-widget.php:14
+#: inc/widgets/class-yith-proteo-recent-posts-widget.php:25
 msgid "Recent Posts"
 msgstr "Πρόσφατες Αναρτήσεις"
 
-#: inc/widgets/class-yith-proteo-recent-posts-widget.php:61
-#, fuzzy, php-format
-#| msgctxt "comments title"
-#| msgid "%1$s comment"
-#| msgid_plural "%1$s comments"
+#. translators: comments widget: 1: comments count on widget
+#: inc/widgets/class-yith-proteo-recent-posts-widget.php:71
 msgctxt "comments count on widget"
 msgid "%1$s comment"
 msgid_plural "%1$s comments"
 msgstr[0] "%1$s σχόλιο"
 msgstr[1] "%1$s σχόλια"
 
-#: inc/widgets/class-yith-proteo-social-icons.php:14
+#: inc/widgets/class-yith-proteo-social-icons.php:19
 msgid "Social Networks"
-msgstr "Κοινωνικά δίκτυα"
+msgstr "Κοινωνικά Δίκτυα"
 
-#: inc/widgets/class-yith-proteo-social-icons.php:16
+#: inc/widgets/class-yith-proteo-social-icons.php:21
 msgid "Links to your social profiles"
-msgstr "Λινκ για τα κοινωνικά σας προφίλ"
+msgstr "Σύνδεσμοι για τα κοινωνικά σας προφίλ"
 
-#: inc/widgets/class-yith-proteo-social-icons.php:77
+#: inc/widgets/class-yith-proteo-social-icons.php:84
 msgid "To hide a field, just leave it empty"
-msgstr "Για να αποκρύψετε ένα πεδίο, αφήστε το κενό"
+msgstr "Για να αποκρύψετε ένα πεδίο, απλά αφήστε το κενό"
 
-#: inc/widgets/class-yith-proteo-social-icons.php:80
+#: inc/widgets/class-yith-proteo-social-icons.php:87
 msgid "Title:"
 msgstr "Τίτλος:"
 
-#: inc/widgets/class-yith-proteo-social-icons.php:89
+#: inc/widgets/class-yith-proteo-social-icons.php:96
 msgid "Facebook:"
 msgstr "Facebook:"
 
-#: inc/widgets/class-yith-proteo-social-icons.php:98
+#: inc/widgets/class-yith-proteo-social-icons.php:105
 msgid "Twitter:"
 msgstr "Twitter:"
 
-#: inc/widgets/class-yith-proteo-social-icons.php:107
+#: inc/widgets/class-yith-proteo-social-icons.php:114
 msgid "Instagram:"
 msgstr "Instagram:"
 
-#: inc/widgets/class-yith-proteo-social-icons.php:116
+#: inc/widgets/class-yith-proteo-social-icons.php:123
 msgid "LinkedIn:"
 msgstr "LinkedIn:"
 
-#: inc/woocommerce.php:208
-msgid "View your shopping cart"
-msgstr "Δείτε το καλάθι αγορών σας"
+#: inc/template-functions.php:177
+msgid "Search"
+msgstr "Αναζήτηση"
 
-#: inc/woocommerce.php:212
-#, php-format
-msgid "%d item"
-msgid_plural "%d items"
-msgstr[0] "%d αντικείμενο"
-msgstr[1] "%d αντικείμενα"
+#: inc/template-functions.php:200 inc/template-functions.php:218
+msgid "Read more"
+msgstr "Διαβάστε περισσότερα"
 
-#: inc/woocommerce.php:304
-msgid "Logout"
-msgstr "Αποσύνδεση"
+#. translators: 1: title.
+#: comments.php:35
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr "Μια σκέψη για &ldquo;%1$s&rdquo;"
 
-#: inc/woocommerce.php:339
-msgid "Account info"
-msgstr "Στοιχεία λογαριασμού"
+#: comments.php:71
+msgid "Comments are closed."
+msgstr "Τα σχόλια είναι απενεργοποιημένα."
 
-#: inc/woocommerce.php:395
-#, php-format
-msgid "%d item in cart"
-msgid_plural "%d items in cart"
-msgstr[0] "%d αντικείμενο στο καλάθι"
-msgstr[1] "%d αντικείμενα στο καλάθι"
+#. translators: 1: comment count number, 2: title.
+#: comments.php:42
+msgctxt "comments title"
+msgid "%1$s comment"
+msgid_plural "%1$s comments"
+msgstr[0] "%1$s σχόλιο"
+msgstr[1] "%1$s σχόλια"
 
-#: inc/woocommerce.php:541
-msgid "Thank you."
-msgstr ""
+#: woocommerce/myaccount/proteo-account-info.php:28
+#: woocommerce/myaccount/proteo-account-info.php:54
+#: woocommerce/myaccount/proteo-account-info.php:92
+msgid "Last name:"
+msgstr "Επώνυμο:"
 
-#: search.php:22
-#, php-format
-msgid "Search results for: %s"
-msgstr "Αναζήτηση αποτελεσμάτων για: %s"
+#: woocommerce/myaccount/proteo-account-info.php:24
+#: woocommerce/myaccount/proteo-account-info.php:50
+#: woocommerce/myaccount/proteo-account-info.php:88
+msgid "First name:"
+msgstr "Όνομα:"
 
-#: template-parts/content-none.php:14
-msgid "Nothing found"
-msgstr "Κανένα αποτέλεσμα"
+#: woocommerce/myaccount/proteo-account-info.php:22
+msgid "Personal info"
+msgstr "Προσωπικά στοιχεία"
 
-#: template-parts/content-none.php:24
-#, php-format
-msgid ""
-"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr ""
-"Έτοιμοι να δημοσιεύσετε την πρώτη σας ανάρτηση; <a href=“%1$s”>Ξεκινήστε "
-"εδώ</a>."
+#: woocommerce/myaccount/proteo-account-info.php:32
+msgid "E-mail:"
+msgstr "E-mail:"
 
-#: template-parts/content-none.php:37
-msgid ""
-"Sorry, but nothing matched your search terms. Please try again with some "
-"different keywords."
-msgstr ""
-"Δυστυχώς δεν βρέθηκαν αποτελέσματα που να ταιριάζουν με τους όρους "
-"αναζήτησής σας. Παρακαλώ προσπαθήστε ξανά με διαφορετικούς όρους-κλειδιά."
+#: woocommerce/myaccount/proteo-account-info.php:36
+msgid "Password:"
+msgstr "Κωδικός πρόσβασης:"
 
-#: template-parts/content-none.php:44
-msgid ""
-"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
-"searching can help."
-msgstr ""
-"Φαίνεται ότι δεν μπορούμε&rsquo; να βρούμε αυτό που &rsquo; ψάχνετε. Ίσως η "
-"αναζήτηση μπορεί να βοηθήσει."
+#: woocommerce/myaccount/proteo-account-info.php:41
+#: woocommerce/myaccount/proteo-account-info.php:78
+#: woocommerce/myaccount/proteo-account-info.php:116
+msgid "Edit info"
+msgstr "Επεξεργασία στοιχείων"
 
-#: template-parts/content-page.php:33 template-parts/content.php:122
-msgid "Pages:"
-msgstr "Σελίδες:"
+#: woocommerce/myaccount/proteo-account-info.php:48
+msgid "Billing info & address"
+msgstr "Στοιχεία χρέωσης και διεύθυνση"
 
-#: template-parts/content.php:61
-msgid ", "
-msgstr ", "
+#: woocommerce/myaccount/proteo-account-info.php:63
+#: woocommerce/myaccount/proteo-account-info.php:101
+msgid "VAT:"
+msgstr "ΦΠΑ:"
 
-#: template-parts/content.php:64
-#, php-format
-msgid "Categories: %1$s"
-msgstr "Κατηγορίες: %1$s"
+#: woocommerce/myaccount/proteo-account-info.php:59
+#: woocommerce/myaccount/proteo-account-info.php:97
+msgid "Company name:"
+msgstr "Όνομα εταιρείας:"
 
-#: template-parts/content.php:68
-msgctxt "list item separator"
-msgid ", "
-msgstr ", "
+#: woocommerce/myaccount/proteo-account-info.php:68
+#: woocommerce/myaccount/proteo-account-info.php:106
+msgid "CIF/SSN:"
+msgstr "CIF/SSN:"
 
-#: template-parts/content.php:71
-#, php-format
-msgid "Tags: %1$s"
-msgstr "Ετικέτες: %1$s"
+#: woocommerce/myaccount/proteo-account-info.php:73
+#: woocommerce/myaccount/proteo-account-info.php:111
+msgid "Address:"
+msgstr "Διεύθυνση:"
 
-#: template-parts/content.php:81
-#, php-format
-msgid "Leave a comment<span class=\"screen-reader-text\"> on %s</span>"
-msgstr "Αφήστε ένα σχόλιο<span class=“screen-reader-text”> στο %s</span>"
-
-#: template-parts/content.php:105
-#, php-format
-msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
-msgstr "Συνεχίστε να διαβάζετε<span class=“screen-reader-text”> “%s”</span>"
+#: woocommerce/myaccount/proteo-account-info.php:86
+msgid "Shipping info & address"
+msgstr "Στοιχεία αποστολής και διεύθυνση"
 
 #: woocommerce/checkout/form-checkout.php:26
 msgid "You must be logged in to proceed with the checkout."
@@ -813,82 +1402,14 @@ msgstr "Χρειάζεται να είστε συνδεδεμένοι για ν�
 msgid "Your order"
 msgstr "Η παραγγελία σας"
 
-#: woocommerce/myaccount/proteo-account-info.php:14
-msgid "Personal info"
-msgstr "Προσωπικά στοιχεία"
+#. Theme URI of the theme
+msgid "https://proteo.yithemes.com/"
+msgstr "https://proteo.yithemes.com/"
 
-#: woocommerce/myaccount/proteo-account-info.php:16
-#: woocommerce/myaccount/proteo-account-info.php:42
-#: woocommerce/myaccount/proteo-account-info.php:80
-msgid "First name:"
-msgstr "Όνομα:"
+#. Author URI of the theme
+msgid "https://yithemes.com"
+msgstr "https://yithemes.com"
 
-#: woocommerce/myaccount/proteo-account-info.php:20
-#: woocommerce/myaccount/proteo-account-info.php:46
-#: woocommerce/myaccount/proteo-account-info.php:84
-msgid "Last name:"
-msgstr "Επώνυμο:"
-
-#: woocommerce/myaccount/proteo-account-info.php:24
-msgid "E-mail:"
-msgstr "Διεύθυνση ηλεκτρονικού ταχυδρομείου:"
-
-#: woocommerce/myaccount/proteo-account-info.php:28
-msgid "Password:"
-msgstr "Κωδικός πρόσβασης:"
-
-#: woocommerce/myaccount/proteo-account-info.php:33
-#: woocommerce/myaccount/proteo-account-info.php:70
-#: woocommerce/myaccount/proteo-account-info.php:108
-msgid "Edit info"
-msgstr "Επεξεργασία στοιχείων"
-
-#: woocommerce/myaccount/proteo-account-info.php:40
-msgid "Billing info & address"
-msgstr "Στοιχεία χρέωσης και διεύθυνση"
-
-#: woocommerce/myaccount/proteo-account-info.php:51
-#: woocommerce/myaccount/proteo-account-info.php:89
-msgid "Company name:"
-msgstr "Όνομα εταιρείας:"
-
-#: woocommerce/myaccount/proteo-account-info.php:55
-#: woocommerce/myaccount/proteo-account-info.php:93
-msgid "VAT:"
-msgstr "ΦΠΑ:"
-
-#: woocommerce/myaccount/proteo-account-info.php:60
-#: woocommerce/myaccount/proteo-account-info.php:98
-msgid "CIF/SSN:"
-msgstr "CIF/SSN:"
-
-#: woocommerce/myaccount/proteo-account-info.php:65
-#: woocommerce/myaccount/proteo-account-info.php:103
-msgid "Address:"
-msgstr "Διεύθυνση:"
-
-#: woocommerce/myaccount/proteo-account-info.php:78
-msgid "Shipping info & address"
-msgstr "Στοιχεία αποστολής και διεύθυνση"
-
-#~ msgid "Button Style 1 background <code>hover</code> color"
-#~ msgstr "Στυλ Κουμπιού 1 χρώμα <code>αιώρησης</code> φόντου"
-
-#~ msgid "Button Style 1 border <code>hover</code> color"
-#~ msgstr "Στυλ Κουμπιού 1 χρώμα <code>αιώρησης</code> πλαισίου"
-
-#~ msgid "Button Style 1 text <code>hover</code> color"
-#~ msgstr "Στυλ Κουμπιού 1 χρώμα <code>αιώρησης</code> πλαισίου"
-
-#~ msgid "Button Style 2 background <code>hover</code> color"
-#~ msgstr "Στυλ Κουμπιού 2 χρώμα <code>αιώρησης</code> φόντου"
-
-#~ msgid "Button Style 2 text <code>hover</code> color"
-#~ msgstr "Στυλ Κουμπιού 2 χρώμα <code>αιώρησης</code> κειμένου"
-
-#, php-format
-#~ msgctxt "comments count on widget"
-#~ msgid "One comment"
-#~ msgid_plural "%1$s comments"
-#~ msgstr[0] "Ένα σχόλιο"
-#~ msgstr[1] ""
+#. Author of the theme
+msgid "YITH"
+msgstr "YITH"
