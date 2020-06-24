@@ -230,3 +230,8 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
+
+/**
+ * One Click Demo Import predefined demo configurations file
+ */
+require get_template_directory() . '/inc/one-click-demo-import.php';
