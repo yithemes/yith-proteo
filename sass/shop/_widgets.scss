@@ -110,7 +110,7 @@ Mini Cart Widget
 		box-shadow: 3px 0 15px rgba(0, 0, 0, 0.15);
 		right: 0;
 		padding: 15px;
-		background: #ffffff;
+		background: var(--proteo-header_bg_color, #ffffff);
 		border-radius: 5px;
 		top: calc(100%);
 		opacity: 0;
