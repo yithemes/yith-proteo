@@ -11985,11 +11985,6 @@ span.ywsbs-trial-period {
   display: block;
   font-size: 11px;
 }
-.woocommerce-cart-form .ywsbs-trial-price,
-.woocommerce-cart-form .ywsbs-fee-price,
-.woocommerce-cart-form .ywsbs-price {
-  text-align: center;
-}
 
 #order_review .ywsbs-price {
   font-weight: 600;
