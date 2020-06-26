@@ -74,19 +74,15 @@ if ( ! function_exists( 'yith_proteo_get_sidebar_position' ) ) :
 		if ( class_exists( 'WooCommerce' ) ) {
 			if ( is_shop() ) {
 				$general_sidebar = get_post_meta( get_option( 'woocommerce_shop_page_id' ), 'sidebar_position', true );
-			}
-			if ( is_product_category() ) {
+			} elseif ( is_product_category() ) {
 				$general_sidebar = get_theme_mod( 'yith_proteo_product_category_page_sidebar_position', 'no-sidebar' );
-			}
-			if ( is_product_tag() ) {
+			} elseif ( is_product_tag() ) {
 				$general_sidebar = get_theme_mod( 'yith_proteo_product_tag_page_sidebar_position', 'no-sidebar' );
-			}
-
-			if ( is_product() ) {
+			} elseif ( is_product_taxonomy() ) {
+				$general_sidebar = get_theme_mod( 'yith_proteo_product_tax_page_sidebar_position', 'no-sidebar' );
+			} elseif ( is_product() ) {
 				$general_sidebar = get_theme_mod( 'yith_proteo_product_page_sidebar_position', 'no-sidebar' );
-			}
-
-			if ( is_checkout() || is_cart() || is_account_page() ) {
+			} elseif ( is_checkout() || is_cart() || is_account_page() ) {
 				return false;
 			}
 		}
