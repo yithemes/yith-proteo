@@ -4,7 +4,7 @@ Tags: one-column, two-columns, left-sidebar, right-sidebar, wide-blocks, accessi
 Requires at least: 4.9.6
 Tested up to: WordPress 5.4
 Requires PHP: 5.6
-Stable tag: 1.2.11
+Stable tag: 1.2.12
 YITH Proteo WordPress Theme, Copyright 2020 YITH
 YITH Proteo is distributed under the terms of the GNU GPL
 License: GPLv2 or later
@@ -25,6 +25,14 @@ Proteo is a sleek, modern and "Gutenberg-friendly" e-commerce theme. Developed w
 == Frequently Asked Questions ==
 
 == Changelog ==
+= 1.2.12 - June 30 2020 =
+* New option to set the default sidebar
+* New cross sell products management options
+* Improve style for: Filter by rating widget, Recent Product reviews widget, Product categories widget, Products by rating widget, Product search widget
+* Fix related products management
+* Fix wrong conditions for sidebar display
+
+
 = 1.2.11 - June 26 2020 =
 * Fix shop pages sidebar position management
 
