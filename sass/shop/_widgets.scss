@@ -301,7 +301,8 @@ Mini Cart Widget
 Products widget
  */
 
-.widget_products, .widget_top_rated_products {
+.widget_products,
+.widget_top_rated_products {
 	ul.product_list_widget {
 		li {
 			display: table;
@@ -394,7 +395,7 @@ Products widget
 			}
 
 			&:after {
-				content: '';
+				content: "";
 				display: block;
 				clear: both;
 			}
@@ -462,5 +463,27 @@ PRODUCT CATEGORIES
 	}
 	.select2-container {
 		width: 100% !important;
+	}
+}
+
+/**
+FILTER BY RATING
+**/
+
+li.wc-layered-nav-rating {
+	margin-bottom: 5px;
+	a {
+		display: block;
+		text-decoration: none;
+		span.star-rating {
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 15px;
+		}
+	}
+	&:after {
+		content: "";
+		display: block;
+		clear: both;
 	}
 }
