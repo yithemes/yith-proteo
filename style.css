@@ -6,7 +6,7 @@ Author: YITH
 Author URI: https://yithemes.com
 Description: Proteo is a sleek, modern and “Gutenberg-friendly” e-commerce theme. Developed with a beautiful UI and a minimal design, is perfect for each kind of shop. Easy to manage and to customize, Proteo is the best solution if you want a complete e-commerce template and start quickly to sell your products with WooCommerce without a technical knowledge. Use it also for corporate site or a blog: there are no limits about what you can do with a beautiful and usable theme like this! Main features: Colors and Typography customization (Google font support), Logo customization, 3 different Header layouts, Advanced customizer theme options, Sidebar Management, Sidebar Chooser on each page and product, Page title icons, Top Bar Management, Easy main color shade chooser, Buttons style management (gradient buttons support), Footer management with multiple sidebars, WooCommerce support, Shop Theme Options, Custom WooCommerce messages and animated WooCommerce alert notices, Two cart page layouts, Bootstrap grid system, CSS animations, Gutenberg support, Responsive, Fullscreen search, Multilevel menus, Support to all YITH plugins, SVG icons for HiDPI screens, Translation Ready. <a href="https://proteo.yithemes.com/about-proteo/" rel="nofollow" target="_blank">Discover more ></a> | <a href="https://proteo.yithemes.com/" rel="nofollow" target="_blank">Check our live demo ></a>
 
-Version: 1.2.11
+Version: 1.2.11.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: yith-proteo
@@ -6686,21 +6686,21 @@ h3.widget-title {
   margin-bottom: 50px;
 }
 
-.widget_search input[type=submit] {
+.widget_search input[type=submit], .widget_product_search input[type=submit] {
   cursor: pointer;
   font-size: 1rem;
   font-weight: bold;
   vertical-align: middle;
 }
-.widget_search input[type=search] {
+.widget_search input[type=search], .widget_product_search input[type=search] {
   margin-right: 15px;
   margin-bottom: 15px;
 }
-.widget_search form.search-form {
+.widget_search form.search-form, .widget_product_search form.search-form {
   display: table;
   width: 100%;
 }
-.widget_search form.search-form > * {
+.widget_search form.search-form > *, .widget_product_search form.search-form > * {
   display: table-cell;
   vertical-align: middle;
 }
@@ -9440,28 +9440,31 @@ Mini Cart Widget
 /**
 Products widget
  */
-.widget_products ul.product_list_widget li {
+.widget_products ul.product_list_widget li, .widget_top_rated_products ul.product_list_widget li {
   display: table;
   width: 100%;
   margin-bottom: 40px;
 }
 .widget_products ul.product_list_widget li .product-image,
-.widget_products ul.product_list_widget li .product-info {
+.widget_products ul.product_list_widget li .product-info, .widget_top_rated_products ul.product_list_widget li .product-image,
+.widget_top_rated_products ul.product_list_widget li .product-info {
   display: table-cell;
   vertical-align: middle;
 }
-.widget_products ul.product_list_widget li .product-image {
+.widget_products ul.product_list_widget li .product-image, .widget_top_rated_products ul.product_list_widget li .product-image {
   width: 40%;
   padding-right: 25px;
+  vertical-align: middle;
 }
-.widget_products ul.product_list_widget li .product-image a {
+.widget_products ul.product_list_widget li .product-image a, .widget_top_rated_products ul.product_list_widget li .product-image a {
   font-size: 0;
-  display: block;
+  display: inline-block;
+  vertical-align: middle;
 }
-.widget_products ul.product_list_widget li a {
+.widget_products ul.product_list_widget li a, .widget_top_rated_products ul.product_list_widget li a {
   text-decoration: none;
 }
-.widget_products ul.product_list_widget li .product-info .product-title {
+.widget_products ul.product_list_widget li .product-info .product-title, .widget_top_rated_products ul.product_list_widget li .product-info .product-title {
   display: block;
   font-size: 1.125rem;
   line-height: normal;
@@ -9469,24 +9472,50 @@ Products widget
   margin-bottom: 5px;
   font-weight: 500;
 }
-.widget_products ul.product_list_widget li .product-info .amount {
+.widget_products ul.product_list_widget li .product-info .amount, .widget_top_rated_products ul.product_list_widget li .product-info .amount {
   font-size: 1.125rem;
   font-weight: 600;
   opacity: 0.7;
 }
-.widget_products ul.product_list_widget li .product-info del .amount {
+.widget_products ul.product_list_widget li .product-info del .amount, .widget_top_rated_products ul.product_list_widget li .product-info del .amount {
   font-size: 1rem;
   margin-right: 5px;
 }
-.widget_products ul.product_list_widget li .product-info ins {
+.widget_products ul.product_list_widget li .product-info ins, .widget_top_rated_products ul.product_list_widget li .product-info ins {
   background: none;
 }
-.widget_products ul.product_list_widget li .product-info .star-rating {
+.widget_products ul.product_list_widget li .product-info .star-rating, .widget_top_rated_products ul.product_list_widget li .product-info .star-rating {
   margin-bottom: 5px;
 }
-.widget_products ul.product_list_widget li .product-info .widget-product-short-description {
+.widget_products ul.product_list_widget li .product-info .widget-product-short-description, .widget_top_rated_products ul.product_list_widget li .product-info .widget-product-short-description {
   margin-top: 10px;
   font-size: 0.875rem;
+}
+
+.widget_recent_reviews ul.product_list_widget li {
+  margin-bottom: 15px;
+}
+.widget_recent_reviews ul.product_list_widget li img {
+  float: left;
+  max-width: 40%;
+  margin: 0 25px 25px 0;
+}
+.widget_recent_reviews ul.product_list_widget li .product-title {
+  line-height: normal;
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+.widget_recent_reviews ul.product_list_widget li .star-rating {
+  margin-bottom: 5px;
+}
+.widget_recent_reviews ul.product_list_widget li .reviewer {
+  font-size: 0.875rem;
+}
+.widget_recent_reviews ul.product_list_widget li:after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 /**
@@ -9519,6 +9548,22 @@ Menus
 .widget_nav_menu ul.sub-menu {
   margin-left: 15px;
   margin-top: 10px;
+}
+
+/**
+PRODUCT CATEGORIES
+**/
+.widget_product_categories ul.product-categories li.cat-item {
+  padding: 5px 0;
+}
+.widget_product_categories ul.product-categories .count {
+  float: right;
+}
+.widget_product_categories ul.product-categories ul.children {
+  padding-left: 15px;
+}
+.widget_product_categories .select2-container {
+  width: 100% !important;
 }
 
 /**

@@ -301,7 +301,7 @@ Mini Cart Widget
 Products widget
  */
 
-.widget_products {
+.widget_products, .widget_top_rated_products {
 	ul.product_list_widget {
 		li {
 			display: table;
@@ -317,10 +317,12 @@ Products widget
 			.product-image {
 				width: 40%;
 				padding-right: 25px;
+				vertical-align: middle;
 
 				a {
 					font-size: 0;
-					display: block;
+					display: inline-block;
+					vertical-align: middle;
 				}
 			}
 
@@ -366,6 +368,40 @@ Products widget
 	}
 }
 
+.widget_recent_reviews {
+	ul.product_list_widget {
+		li {
+			margin-bottom: 15px;
+
+			img {
+				float: left;
+				max-width: 40%;
+				margin: 0 25px 25px 0;
+			}
+
+			.product-title {
+				line-height: normal;
+				margin-top: 0;
+				margin-bottom: 5px;
+				font-weight: 500;
+			}
+
+			.star-rating {
+				margin-bottom: 5px;
+			}
+			.reviewer {
+				font-size: 0.875rem;
+			}
+
+			&:after {
+				content: '';
+				display: block;
+				clear: both;
+			}
+		}
+	}
+}
+
 /**
 GUTENBERG BLOCKS
  */
@@ -406,5 +442,25 @@ Menus
 			margin-left: 15px;
 			margin-top: 10px;
 		}
+	}
+}
+
+/**
+PRODUCT CATEGORIES
+**/
+.widget_product_categories {
+	ul.product-categories {
+		li.cat-item {
+			padding: 5px 0;
+		}
+		.count {
+			float: right;
+		}
+		ul.children {
+			padding-left: 15px;
+		}
+	}
+	.select2-container {
+		width: 100% !important;
 	}
 }
