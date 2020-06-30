@@ -1771,6 +1771,41 @@ function yith_proteo_customize_shop_register( $wp_customize ) {
 		)
 	);
 
+	// Cart page cross sell products management.
+	$wp_customize->add_setting(
+		'yith_proteo_cross_sell_max_number',
+		array(
+			'sanitize_callback' => 'absint',
+			'default'           => 4,
+		)
+	);
+	$wp_customize->add_control(
+		'yith_proteo_cross_sell_max_number',
+		array(
+			'type'        => 'number',
+			'label'       => esc_html__( 'Max cross sell products to show', 'yith-proteo' ),
+			'section'     => 'yith_proteo_cart_page_management',
+			'description' => esc_html__( 'Choose how many cross sell products you want to show (default: 4)', 'yith-proteo' ),
+		)
+	);
+	// Cart page cross sell products columns management.
+	$wp_customize->add_setting(
+		'yith_proteo_cross_sell_columns',
+		array(
+			'sanitize_callback' => 'absint',
+			'default'           => 4,
+		)
+	);
+	$wp_customize->add_control(
+		'yith_proteo_cross_sell_columns',
+		array(
+			'type'        => 'number',
+			'label'       => esc_html__( 'Cross sell columns', 'yith-proteo' ),
+			'section'     => 'yith_proteo_cart_page_management',
+			'description' => esc_html__( 'Choose how many columns with cross sell products you want to show (default: 4)', 'yith-proteo' ),
+		)
+	);
+
 }
 
 if ( function_exists( 'wc' ) ) {

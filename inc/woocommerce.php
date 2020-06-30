@@ -96,13 +96,8 @@ add_filter( 'body_class', 'yith_proteo_woocommerce_active_body_class' );
  * @author Francesco Grasso <francgrasso@yithemes.com>
  */
 function yith_proteo_woocommerce_related_products_args( $args ) {
-	$defaults = array(
-		'posts_per_page' => get_theme_mod( 'yith_proteo_product_page_related_max_number', 4 ),
-		'columns'        => get_theme_mod( 'yith_proteo_product_page_related_columns', 4 ),
-	);
-
-	$args = wp_parse_args( $defaults, $args );
-
+	$args['posts_per_page'] = get_theme_mod( 'yith_proteo_product_page_related_max_number', 4 );
+	$args['columns']        = get_theme_mod( 'yith_proteo_product_page_related_columns', 4 );
 	return $args;
 }
 
@@ -612,3 +607,32 @@ function yith_proteo_before_shop_loop_closer() {
 		</div>
 	<?php
 }
+
+/**
+ * Move cross sells position
+ */
+remove_action( 'woocommerce_cart_collaterals', 'woocommerce_cross_sell_display' );
+add_action( 'woocommerce_after_cart', 'woocommerce_cross_sell_display' );
+
+/**
+ * Set cross sell products columns number
+ *
+ * @param int $columns Columns number.
+ * @return int
+ */
+function yith_proteo_cross_sell_columns( $columns ) {
+	return get_theme_mod( 'yith_proteo_cross_sell_columns', 4 );
+}
+add_filter( 'woocommerce_cross_sells_columns', 'yith_proteo_cross_sell_columns' );
+
+
+/**
+ * Set cross sell products number
+ *
+ * @param int $total Max products count.
+ * @return int
+ */
+function yith_proteo_cross_sell_max_number( $total ) {
+	return get_theme_mod( 'yith_proteo_cross_sell_max_number', 4 );
+}
+add_filter( 'woocommerce_cross_sells_total', 'yith_proteo_cross_sell_max_number' );
