@@ -80,6 +80,24 @@ function yith_proteo_customize_register( $wp_customize ) {
 			),
 		)
 	);
+	// Default Sidebar Chooser.
+	$wp_customize->add_setting(
+		'yith_proteo_default_sidebar',
+		array(
+			'default'           => 'sidebar-1',
+			'sanitize_callback' => 'yith_proteo_sanitize_select',
+		)
+	);
+	$wp_customize->add_control(
+		'yith_proteo_default_sidebar',
+		array(
+			'type'        => 'select',
+			'label'       => esc_html__( 'Choose the default sidebar', 'yith-proteo' ),
+			'section'     => 'yith_proteo_sidebar_management',
+			'description' => esc_html__( 'Select the sidebar to display. It will be used for archive pages too.', 'yith-proteo' ),
+			'choices'     => wp_list_pluck( $GLOBALS['wp_registered_sidebars'], 'name' ),
+		)
+	);
 
 	// Blog Sidebar Management options.
 	$wp_customize->add_setting(

@@ -46,7 +46,7 @@ if ( function_exists( 'wc' ) && is_shop() && get_post_meta( get_option( 'woocomm
 	if ( ! empty( $sidebar ) ) {
 		dynamic_sidebar( $sidebar );
 	} else {
-		dynamic_sidebar( 'sidebar-1' );
+		dynamic_sidebar( get_theme_mod( 'yith_proteo_default_sidebar', 'sidebar-1' ) );
 	}
 	?>
 </aside><!-- #secondary -->
