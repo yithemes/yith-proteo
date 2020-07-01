@@ -7581,6 +7581,12 @@ ul.products li.wc-block-grid__product a,
   display: block;
   text-align: center;
 }
+ul.products li.product a.woocommerce-loop-product__link,
+ul.products li.wc-block-grid__product a.woocommerce-loop-product__link,
+.wc-block-grid ul.wc-block-grid__products li.product a.woocommerce-loop-product__link,
+.wc-block-grid ul.wc-block-grid__products li.wc-block-grid__product a.woocommerce-loop-product__link {
+  position: relative;
+}
 ul.products li.product .yith-wcwl-add-to-wishlist,
 ul.products li.wc-block-grid__product .yith-wcwl-add-to-wishlist,
 .wc-block-grid ul.wc-block-grid__products li.product .yith-wcwl-add-to-wishlist,
@@ -10298,6 +10304,64 @@ body.yith_welrp_opened {
   margin-bottom: 2px;
 }
 
+.yith-similar-products {
+  padding-top: 50px;
+}
+.yith-similar-products:not(.in-page) {
+  overflow: visible;
+}
+.yith-similar-products h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.yith-similar-products h2 a {
+  font-size: 60%;
+}
+.yith-similar-products .products.slick-slider {
+  border-top: 0;
+  padding: 0;
+  margin: 0 auto 35px;
+}
+.yith-similar-products .products.slick-slider .slick-list {
+  margin: 0;
+  overflow: hidden;
+}
+.yith-similar-products .products.slick-slider .slick-arrow {
+  top: 35%;
+  bottom: auto;
+  border: none;
+  margin: 0;
+  opacity: 0.3;
+}
+.yith-similar-products .products.slick-slider .slick-arrow.slick-prev {
+  left: -30px;
+}
+.yith-similar-products .products.slick-slider .slick-arrow.slick-next {
+  right: -30px;
+}
+.yith-similar-products .products.slick-slider .slick-arrow:hover {
+  opacity: 1;
+  transition: all ease 0.3s;
+}
+.yith-similar-products .remove-product {
+  font-size: 0.875rem;
+  padding: 5px 0;
+  transition: all ease 0.3s;
+  margin: 0;
+}
+
+.yith-wrvp-filters-cat .filter-cat {
+  padding: 5px 10px;
+}
+.yith-wrvp-filters-cat .filter-cat a {
+  text-decoration: none;
+}
+
+@media (max-width: 480px) {
+  .yith-similar-products .slick-slider .slick-arrow {
+    display: none !important;
+  }
+}
 /* GENERAL */
 table.shop_table tbody tr td.product-name ._view_and_pdf_row a.button {
   color: #fff;

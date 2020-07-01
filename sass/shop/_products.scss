@@ -30,6 +30,10 @@ ul.products,
 			text-decoration: none;
 			display: block;
 			text-align: center;
+
+			&.woocommerce-loop-product__link {
+				position: relative;
+			}
 		}
 
 		.yith-wcwl-add-to-wishlist {
