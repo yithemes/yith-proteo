@@ -233,11 +233,11 @@ function yith_proteo_customize_register( $wp_customize ) {
 		'yith_proteo_header_background_color',
 		array(
 			'default'           => '#ffffff',
-			'sanitize_callback' => 'sanitize_hex_color', // validates 3 or 6 digit HTML hex color code.
+			'sanitize_callback' => 'yith_proteo_sanitize_alpha_colors',
 		)
 	);
 	$wp_customize->add_control(
-		new WP_Customize_Color_Control(
+		new Customizer_Alpha_Color_Control(
 			$wp_customize,
 			'yith_proteo_header_background_color',
 			array(
@@ -1995,6 +1995,30 @@ if ( ! function_exists( 'yith_proteo_in_range' ) ) {
 		}
 
 		return $input;
+	}
+}
+
+if ( ! function_exists( 'yith_proteo_sanitize_alpha_colors' ) ) {
+	/**
+	 * Sanitize alpha color picker values when arriving as string
+	 *
+	 * @param string $value color code.
+	 */
+	function yith_proteo_sanitize_alpha_colors( $value ) {
+		// This pattern will check and match 3/6/8-character hex, rgb, rgba, hsl, & hsla colors.
+		$pattern = '/^(\#[\da-f]{3}|\#[\da-f]{6}|\#[\da-f]{8}|rgba\(((\d{1,2}|1\d\d|2([0-4]\d|5[0-5]))\s*,\s*){2}((\d{1,2}|1\d\d|2([0-4]\d|5[0-5]))\s*)(,\s*(0\.\d+|1))\)|hsla\(\s*((\d{1,2}|[1-2]\d{2}|3([0-5]\d|60)))\s*,\s*((\d{1,2}|100)\s*%)\s*,\s*((\d{1,2}|100)\s*%)(,\s*(0\.\d+|1))\)|rgb\(((\d{1,2}|1\d\d|2([0-4]\d|5[0-5]))\s*,\s*){2}((\d{1,2}|1\d\d|2([0-4]\d|5[0-5]))\s*)|hsl\(\s*((\d{1,2}|[1-2]\d{2}|3([0-5]\d|60)))\s*,\s*((\d{1,2}|100)\s*%)\s*,\s*((\d{1,2}|100)\s*%)\))$/';
+		\preg_match( $pattern, $value, $matches );
+		// Return the 1st match found.
+		if ( isset( $matches[0] ) ) {
+			if ( is_string( $matches[0] ) ) {
+				return $matches[0];
+			}
+			if ( is_array( $matches[0] ) && isset( $matches[0][0] ) ) {
+				return $matches[0][0];
+			}
+		}
+		// If no match was found, return an empty string.
+		return '';
 	}
 }
 

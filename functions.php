@@ -191,9 +191,10 @@ require get_template_directory() . '/inc/class-yith-proteo-walker-comment.php';
 /**
  * Customizer additions.
  */
-require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/class-wp-customize-range.php';
 require get_template_directory() . '/inc/class-wp-customize-notice.php';
+require get_template_directory() . '/inc/class-customizer-alpha-color-control.php';
+require get_template_directory() . '/inc/customizer.php';
 
 /**
  * Widgets.
