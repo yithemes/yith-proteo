@@ -89,6 +89,28 @@ if ( ! function_exists( 'yith_proteo_widgets_init' ) ) :
 		);
 		register_sidebar(
 			array(
+				'name'          => esc_html__( 'Sidebar 4', 'yith-proteo' ),
+				'id'            => 'sidebar-4',
+				'description'   => esc_html__( 'Add widgets here.', 'yith-proteo' ),
+				'before_widget' => '<section id="%1$s" class="widget %2$s">',
+				'after_widget'  => '</section>',
+				'before_title'  => '<h2 class="widget-title">',
+				'after_title'   => '</h2>',
+			)
+		);
+		register_sidebar(
+			array(
+				'name'          => esc_html__( 'Sidebar 5', 'yith-proteo' ),
+				'id'            => 'sidebar-5',
+				'description'   => esc_html__( 'Add widgets here.', 'yith-proteo' ),
+				'before_widget' => '<section id="%1$s" class="widget %2$s">',
+				'after_widget'  => '</section>',
+				'before_title'  => '<h2 class="widget-title">',
+				'after_title'   => '</h2>',
+			)
+		);
+		register_sidebar(
+			array(
 				'name'          => esc_html__( 'Shop sidebar', 'yith-proteo' ),
 				'id'            => 'shop-sidebar',
 				'description'   => esc_html__( 'Add widgets here.', 'yith-proteo' ),

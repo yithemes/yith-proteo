@@ -1599,6 +1599,44 @@ function yith_proteo_customize_shop_register( $wp_customize ) {
 		)
 	);
 
+	// Force all products to use the same sidebar.
+	$wp_customize->add_setting(
+		'yith_proteo_product_page_sidebar_force',
+		array(
+			'default'           => 'no',
+			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+		)
+	);
+	$wp_customize->add_control(
+		'yith_proteo_product_page_sidebar_force',
+		array(
+			'type'    => 'radio',
+			'label'   => esc_html__( 'Force all product to use the same sidebar.', 'yith-proteo' ),
+			'section' => 'yith_proteo_product_page_management',
+			'choices' => array(
+				'yes' => esc_html__( 'Yes', 'yith-proteo' ),
+				'no'  => esc_html__( 'No', 'yith-proteo' ),
+			),
+		)
+	);
+	// Single Product default Sidebar Chooser.
+	$wp_customize->add_setting(
+		'yith_proteo_single_product_default_sidebar',
+		array(
+			'default'           => 'shop-sidebar',
+			'sanitize_callback' => 'yith_proteo_sanitize_select',
+		)
+	);
+	$wp_customize->add_control(
+		'yith_proteo_single_product_default_sidebar',
+		array(
+			'type'    => 'select',
+			'label'   => esc_html__( 'Choose the sidebar to use for all products', 'yith-proteo' ),
+			'section' => 'yith_proteo_product_page_management',
+			'choices' => wp_list_pluck( $GLOBALS['wp_registered_sidebars'], 'name' ),
+		)
+	);
+
 	/**
 	 * Product Category page management
 	 */
