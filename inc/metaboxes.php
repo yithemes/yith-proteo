@@ -208,6 +208,10 @@ function yith_proteo_sidebar_chooser_html( $post ) {
 	?>
 
 	<select name="sidebar_chooser" id="sidebar_chooser" class="components-text-control__input">
+		<option
+			value="inherit" <?php echo ( yith_proteo_sidebar_get_meta( 'sidebar_position' ) === 'inherit' ) ? 'selected' : ''; ?>>
+			<?php esc_html_e( 'inherit', 'yith-proteo' ); ?>
+		</option>
 		<?php foreach ( $GLOBALS['wp_registered_sidebars'] as $sidebar ) { ?>
 			<option
 				value="<?php echo esc_attr( ucwords( $sidebar['id'] ) ); ?>" <?php echo ( yith_proteo_sidebar_get_meta( 'sidebar_chooser' ) === esc_attr( ucwords( $sidebar['id'] ) ) ) ? 'selected' : ''; ?>>
