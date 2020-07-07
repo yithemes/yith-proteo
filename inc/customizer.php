@@ -180,11 +180,11 @@ function yith_proteo_customize_register( $wp_customize ) {
 		'yith_proteo_topbar_background_color',
 		array(
 			'default'           => '#ebebeb',
-			'sanitize_callback' => 'sanitize_hex_color', // validates 3 or 6 digit HTML hex color code.
+			'sanitize_callback' => 'yith_proteo_sanitize_alpha_colors', // validates 3 or 6 digit HTML hex color code.
 		)
 	);
 	$wp_customize->add_control(
-		new WP_Customize_Color_Control(
+		new Customizer_Alpha_Color_Control(
 			$wp_customize,
 			'yith_proteo_topbar_background_color',
 			array(
@@ -1821,6 +1821,38 @@ function yith_proteo_customize_shop_register( $wp_customize ) {
 			'label'       => esc_html__( 'Cross sell columns', 'yith-proteo' ),
 			'section'     => 'yith_proteo_cart_page_management',
 			'description' => esc_html__( 'Choose how many columns with cross sell products you want to show (default: 4)', 'yith-proteo' ),
+		)
+	);
+
+	/**
+	 * Experimental management
+	 */
+	$wp_customize->add_section(
+		'yith_proteo_experimental_management',
+		array(
+			'title'    => esc_html__( 'Experimental', 'yith-proteo' ),
+			'priority' => 10,
+			'panel'    => 'yith_proteo_shop_options',
+		)
+	);
+
+	$wp_customize->add_setting(
+		'yith_proteo_products_image_lazy_load',
+		array(
+			'default'           => 'no',
+			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+		)
+	);
+	$wp_customize->add_control(
+		'yith_proteo_products_image_lazy_load',
+		array(
+			'type'    => 'radio',
+			'label'   => esc_html__( 'Use lazy load for product loop images to improve performance and reduce loading time.', 'yith-proteo' ),
+			'section' => 'yith_proteo_experimental_management',
+			'choices' => array(
+				'yes' => esc_html__( 'Yes', 'yith-proteo' ),
+				'no'  => esc_html__( 'No', 'yith-proteo' ),
+			),
 		)
 	);
 

@@ -52,7 +52,7 @@ class YITH_Proteo_Account_Widget extends WP_Widget {
 		$output .= $args['before_widget'];
 
 		$output .= '<a class="yith-proteo-user-welcome-message" href="' . esc_url( $url ) . '">';
-		$output .= '<img src="' . esc_url( $icon ) . '" width="25">';
+		$output .= '<img src="' . esc_url( $icon ) . '" width="25" loading="lazy">';
 
 		if ( is_user_logged_in() ) {
 			$name = yith_proteo_get_user_username();
