@@ -8799,6 +8799,9 @@ p.stars.selected a:not(.active):before {
   right: 0;
   visibility: hidden;
 }
+.woocommerce-notices-wrapper *[role=alert]:empty {
+  display: none;
+}
 
 p.woocommerce-Message,
 p.woocommerce-message,

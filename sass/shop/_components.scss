@@ -286,6 +286,10 @@ p.stars {
 		z-index: 1000;
 		right: 0;
 		visibility: hidden;
+
+		&:empty {
+			display: none;
+		}
 	}
 }
 
