@@ -76,6 +76,10 @@ class Customizer_Alpha_Color_Control extends WP_Customize_Control {
 	 * Render the control.
 	 */
 	public function render_content() {
+		// Output the label and description if they were passed in.
+		if ( isset( $this->label ) && '' !== $this->label ) {
+			echo '<span class="customize-control-title">' . esc_html( sanitize_text_field( $this->label ) ) . '</span>';
+		}
 		// Process the palette.
 		if ( is_array( $this->palette ) ) {
 			$palette = implode( '|', $this->palette );
@@ -88,10 +92,6 @@ class Customizer_Alpha_Color_Control extends WP_Customize_Control {
 		// Begin the output. ?>
 		<label>
 			<?php
-			// Output the label and description if they were passed in.
-			if ( isset( $this->label ) && '' !== $this->label ) {
-				echo '<span class="customize-control-title">' . esc_html( sanitize_text_field( $this->label ) ) . '</span>';
-			}
 			if ( isset( $this->description ) && '' !== $this->description ) {
 				echo '<span class="description customize-control-description">' . esc_html( sanitize_text_field( $this->description ) ) . '</span>';
 			}

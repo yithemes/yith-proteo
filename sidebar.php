@@ -48,6 +48,10 @@ if ( function_exists( 'wc' ) && is_shop() && get_post_meta( get_option( 'woocomm
 		dynamic_sidebar( get_theme_mod( 'yith_proteo_single_product_default_sidebar', 'shop-sidebar' ) );
 	} elseif ( ( is_single() || is_page() ) && 'inherit' === $sidebar ) {
 		dynamic_sidebar( get_theme_mod( 'yith_proteo_default_sidebar', 'sidebar-1' ) );
+	} elseif ( is_category() ) {
+		dynamic_sidebar( get_theme_mod( 'yith_proteo_blog_category_sidebar', 'sidebar-1' ) );
+	} elseif ( is_tag() ) {
+		dynamic_sidebar( get_theme_mod( 'yith_proteo_blog_tag_sidebar', 'sidebar-1' ) );
 	} elseif ( ! empty( $sidebar ) ) {
 		dynamic_sidebar( $sidebar );
 	} else {

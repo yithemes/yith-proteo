@@ -68,6 +68,10 @@ if ( ! function_exists( 'yith_proteo_get_sidebar_position' ) ) :
 		// Check Blog page settings from customizer.
 		if ( is_home() ) {
 			$general_sidebar = get_theme_mod( 'yith_proteo_blog_page_sidebar_position', 'right' );
+		} elseif ( is_category() ) {
+			$general_sidebar = get_theme_mod( 'yith_proteo_blog_category_sidebar_position', 'right' );
+		} elseif ( is_tag() ) {
+			$general_sidebar = get_theme_mod( 'yith_proteo_blog_tag_sidebar_position', 'right' );
 		}
 
 		// Check WooCommerce Shop page settings.
