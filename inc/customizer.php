@@ -381,11 +381,11 @@ function yith_proteo_customize_register( $wp_customize ) {
 		'yith_proteo_header_main_menu_color',
 		array(
 			'default'           => get_theme_mod( 'yith_proteo_base_font_color', '#404040' ),
-			'sanitize_callback' => 'sanitize_hex_color', // validates 3 or 6 digit HTML hex color code.
+			'sanitize_callback' => 'yith_proteo_sanitize_alpha_colors',
 		)
 	);
 	$wp_customize->add_control(
-		new WP_Customize_Color_Control(
+		new Customizer_Alpha_Color_Control(
 			$wp_customize,
 			'yith_proteo_header_main_menu_color',
 			array(
@@ -400,11 +400,11 @@ function yith_proteo_customize_register( $wp_customize ) {
 		'yith_proteo_header_main_menu_hover_color',
 		array(
 			'default'           => get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ),
-			'sanitize_callback' => 'sanitize_hex_color', // validates 3 or 6 digit HTML hex color code.
+			'sanitize_callback' => 'yith_proteo_sanitize_alpha_colors',
 		)
 	);
 	$wp_customize->add_control(
-		new WP_Customize_Color_Control(
+		new Customizer_Alpha_Color_Control(
 			$wp_customize,
 			'yith_proteo_header_main_menu_hover_color',
 			array(
@@ -431,11 +431,11 @@ function yith_proteo_customize_register( $wp_customize ) {
 		'yith_proteo_footer_background_color',
 		array(
 			'default'           => '#f7f7f7',
-			'sanitize_callback' => 'sanitize_hex_color', // validates 3 or 6 digit HTML hex color code.
+			'sanitize_callback' => 'yith_proteo_sanitize_alpha_colors',
 		)
 	);
 	$wp_customize->add_control(
-		new WP_Customize_Color_Control(
+		new Customizer_Alpha_Color_Control(
 			$wp_customize,
 			'yith_proteo_footer_background_color',
 			array(
@@ -527,11 +527,11 @@ function yith_proteo_customize_register( $wp_customize ) {
 		'yith_proteo_footer_credits_background_color',
 		array(
 			'default'           => '#f0f0f0',
-			'sanitize_callback' => 'sanitize_hex_color', // validates 3 or 6 digit HTML hex color code.
+			'sanitize_callback' => 'yith_proteo_sanitize_alpha_colors',
 		)
 	);
 	$wp_customize->add_control(
-		new WP_Customize_Color_Control(
+		new Customizer_Alpha_Color_Control(
 			$wp_customize,
 			'yith_proteo_footer_credits_background_color',
 			array(
@@ -601,12 +601,12 @@ function yith_proteo_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'yith_proteo_base_font_color',
 		array(
-			'sanitize_callback' => 'sanitize_hex_color',
+			'sanitize_callback' => 'yith_proteo_sanitize_alpha_colors',
 			'default'           => '#404040',
 		)
 	);
 	$wp_customize->add_control(
-		new WP_Customize_Color_Control(
+		new Customizer_Alpha_Color_Control(
 			$wp_customize,
 			'yith_proteo_base_font_color',
 			array(
@@ -636,12 +636,12 @@ function yith_proteo_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'yith_proteo_h1_font_color',
 		array(
-			'sanitize_callback' => 'sanitize_hex_color',
+			'sanitize_callback' => 'yith_proteo_sanitize_alpha_colors',
 			'default'           => '#404040',
 		)
 	);
 	$wp_customize->add_control(
-		new WP_Customize_Color_Control(
+		new Customizer_Alpha_Color_Control(
 			$wp_customize,
 			'yith_proteo_h1_font_color',
 			array(
@@ -671,12 +671,12 @@ function yith_proteo_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'yith_proteo_h2_font_color',
 		array(
-			'sanitize_callback' => 'sanitize_hex_color',
+			'sanitize_callback' => 'yith_proteo_sanitize_alpha_colors',
 			'default'           => '#404040',
 		)
 	);
 	$wp_customize->add_control(
-		new WP_Customize_Color_Control(
+		new Customizer_Alpha_Color_Control(
 			$wp_customize,
 			'yith_proteo_h2_font_color',
 			array(
@@ -706,12 +706,12 @@ function yith_proteo_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'yith_proteo_h3_font_color',
 		array(
-			'sanitize_callback' => 'sanitize_hex_color',
+			'sanitize_callback' => 'yith_proteo_sanitize_alpha_colors',
 			'default'           => '#404040',
 		)
 	);
 	$wp_customize->add_control(
-		new WP_Customize_Color_Control(
+		new Customizer_Alpha_Color_Control(
 			$wp_customize,
 			'yith_proteo_h3_font_color',
 			array(
@@ -741,12 +741,12 @@ function yith_proteo_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'yith_proteo_h4_font_color',
 		array(
-			'sanitize_callback' => 'sanitize_hex_color',
+			'sanitize_callback' => 'yith_proteo_sanitize_alpha_colors',
 			'default'           => '#404040',
 		)
 	);
 	$wp_customize->add_control(
-		new WP_Customize_Color_Control(
+		new Customizer_Alpha_Color_Control(
 			$wp_customize,
 			'yith_proteo_h4_font_color',
 			array(
@@ -776,12 +776,12 @@ function yith_proteo_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'yith_proteo_h5_font_color',
 		array(
-			'sanitize_callback' => 'sanitize_hex_color',
+			'sanitize_callback' => 'yith_proteo_sanitize_alpha_colors',
 			'default'           => '#404040',
 		)
 	);
 	$wp_customize->add_control(
-		new WP_Customize_Color_Control(
+		new Customizer_Alpha_Color_Control(
 			$wp_customize,
 			'yith_proteo_h5_font_color',
 			array(
@@ -811,12 +811,12 @@ function yith_proteo_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'yith_proteo_h6_font_color',
 		array(
-			'sanitize_callback' => 'sanitize_hex_color',
+			'sanitize_callback' => 'yith_proteo_sanitize_alpha_colors',
 			'default'           => '#404040',
 		)
 	);
 	$wp_customize->add_control(
-		new WP_Customize_Color_Control(
+		new Customizer_Alpha_Color_Control(
 			$wp_customize,
 			'yith_proteo_h6_font_color',
 			array(
@@ -866,12 +866,12 @@ function yith_proteo_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'yith_proteo_button_style_1_bg_color',
 		array(
-			'sanitize_callback' => 'sanitize_hex_color',
+			'sanitize_callback' => 'yith_proteo_sanitize_alpha_colors',
 			'default'           => get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ),
 		)
 	);
 	$wp_customize->add_control(
-		new WP_Customize_Color_Control(
+		new Customizer_Alpha_Color_Control(
 			$wp_customize,
 			'yith_proteo_button_style_1_bg_color',
 			array(
@@ -884,12 +884,12 @@ function yith_proteo_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'yith_proteo_button_style_1_border_color',
 		array(
-			'sanitize_callback' => 'sanitize_hex_color',
+			'sanitize_callback' => 'yith_proteo_sanitize_alpha_colors',
 			'default'           => get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ),
 		)
 	);
 	$wp_customize->add_control(
-		new WP_Customize_Color_Control(
+		new Customizer_Alpha_Color_Control(
 			$wp_customize,
 			'yith_proteo_button_style_1_border_color',
 			array(
@@ -902,12 +902,12 @@ function yith_proteo_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'yith_proteo_button_style_1_text_color',
 		array(
-			'sanitize_callback' => 'sanitize_hex_color',
+			'sanitize_callback' => 'yith_proteo_sanitize_alpha_colors',
 			'default'           => '#ffffff',
 		)
 	);
 	$wp_customize->add_control(
-		new WP_Customize_Color_Control(
+		new Customizer_Alpha_Color_Control(
 			$wp_customize,
 			'yith_proteo_button_style_1_text_color',
 			array(
@@ -920,12 +920,12 @@ function yith_proteo_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'yith_proteo_button_style_1_bg_color_hover',
 		array(
-			'sanitize_callback' => 'sanitize_hex_color',
+			'sanitize_callback' => 'yith_proteo_sanitize_alpha_colors',
 			'default'           => yith_proteo_adjust_brightness( get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ), 0.2 ),
 		)
 	);
 	$wp_customize->add_control(
-		new WP_Customize_Color_Control(
+		new Customizer_Alpha_Color_Control(
 			$wp_customize,
 			'yith_proteo_button_style_1_bg_color_hover',
 			array(
@@ -938,12 +938,12 @@ function yith_proteo_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'yith_proteo_button_style_1_border_color_hover',
 		array(
-			'sanitize_callback' => 'sanitize_hex_color',
+			'sanitize_callback' => 'yith_proteo_sanitize_alpha_colors',
 			'default'           => yith_proteo_adjust_brightness( get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ), 0.2 ),
 		)
 	);
 	$wp_customize->add_control(
-		new WP_Customize_Color_Control(
+		new Customizer_Alpha_Color_Control(
 			$wp_customize,
 			'yith_proteo_button_style_1_border_color_hover',
 			array(
@@ -956,12 +956,12 @@ function yith_proteo_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'yith_proteo_button_style_1_text_color_hover',
 		array(
-			'sanitize_callback' => 'sanitize_hex_color',
+			'sanitize_callback' => 'yith_proteo_sanitize_alpha_colors',
 			'default'           => '#ffffff',
 		)
 	);
 	$wp_customize->add_control(
-		new WP_Customize_Color_Control(
+		new Customizer_Alpha_Color_Control(
 			$wp_customize,
 			'yith_proteo_button_style_1_text_color_hover',
 			array(
@@ -975,12 +975,12 @@ function yith_proteo_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'yith_proteo_button_style_2_bg_color_1',
 		array(
-			'sanitize_callback' => 'sanitize_hex_color',
+			'sanitize_callback' => 'yith_proteo_sanitize_alpha_colors',
 			'default'           => get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ),
 		)
 	);
 	$wp_customize->add_control(
-		new WP_Customize_Color_Control(
+		new Customizer_Alpha_Color_Control(
 			$wp_customize,
 			'yith_proteo_button_style_2_bg_color_1',
 			array(
@@ -993,12 +993,12 @@ function yith_proteo_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'yith_proteo_button_style_2_bg_color_2',
 		array(
-			'sanitize_callback' => 'sanitize_hex_color',
+			'sanitize_callback' => 'yith_proteo_sanitize_alpha_colors',
 			'default'           => yith_proteo_adjust_brightness( get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ), 0.2 ),
 		)
 	);
 	$wp_customize->add_control(
-		new WP_Customize_Color_Control(
+		new Customizer_Alpha_Color_Control(
 			$wp_customize,
 			'yith_proteo_button_style_2_bg_color_2',
 			array(
@@ -1011,12 +1011,12 @@ function yith_proteo_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'yith_proteo_button_style_2_text_color',
 		array(
-			'sanitize_callback' => 'sanitize_hex_color',
+			'sanitize_callback' => 'yith_proteo_sanitize_alpha_colors',
 			'default'           => '#ffffff',
 		)
 	);
 	$wp_customize->add_control(
-		new WP_Customize_Color_Control(
+		new Customizer_Alpha_Color_Control(
 			$wp_customize,
 			'yith_proteo_button_style_2_text_color',
 			array(
@@ -1029,12 +1029,12 @@ function yith_proteo_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'yith_proteo_button_style_2_bg_color_hover',
 		array(
-			'sanitize_callback' => 'sanitize_hex_color',
+			'sanitize_callback' => 'yith_proteo_sanitize_alpha_colors',
 			'default'           => yith_proteo_adjust_brightness( get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ), - 0.3 ),
 		)
 	);
 	$wp_customize->add_control(
-		new WP_Customize_Color_Control(
+		new Customizer_Alpha_Color_Control(
 			$wp_customize,
 			'yith_proteo_button_style_2_bg_color_hover',
 			array(
@@ -1047,12 +1047,12 @@ function yith_proteo_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'yith_proteo_button_style_2_text_color_hover',
 		array(
-			'sanitize_callback' => 'sanitize_hex_color',
+			'sanitize_callback' => 'yith_proteo_sanitize_alpha_colors',
 			'default'           => '#ffffff',
 		)
 	);
 	$wp_customize->add_control(
-		new WP_Customize_Color_Control(
+		new Customizer_Alpha_Color_Control(
 			$wp_customize,
 			'yith_proteo_button_style_2_text_color_hover',
 			array(
@@ -1135,12 +1135,12 @@ function yith_proteo_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'yith_proteo_single_post_background_color',
 		array(
-			'sanitize_callback' => 'sanitize_hex_color',
+			'sanitize_callback' => 'yith_proteo_sanitize_alpha_colors',
 			'default'           => '#448a85',
 		)
 	);
 	$wp_customize->add_control(
-		new WP_Customize_Color_Control(
+		new Customizer_Alpha_Color_Control(
 			$wp_customize,
 			'yith_proteo_single_post_background_color',
 			array(
@@ -1177,12 +1177,12 @@ function yith_proteo_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'yith_proteo_single_post_thumbnail_text_color',
 		array(
-			'sanitize_callback' => 'sanitize_hex_color',
+			'sanitize_callback' => 'yith_proteo_sanitize_alpha_colors',
 			'default'           => '#ffffff',
 		)
 	);
 	$wp_customize->add_control(
-		new WP_Customize_Color_Control(
+		new Customizer_Alpha_Color_Control(
 			$wp_customize,
 			'yith_proteo_single_post_thumbnail_text_color',
 			array(
@@ -1208,12 +1208,12 @@ function yith_proteo_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'yith_proteo_main_color_shade',
 		array(
-			'sanitize_callback' => 'sanitize_hex_color',
+			'sanitize_callback' => 'yith_proteo_sanitize_alpha_colors',
 			'default'           => '#448a85',
 		)
 	);
 	$wp_customize->add_control(
-		new WP_Customize_Color_Control(
+		new Customizer_Alpha_Color_Control(
 			$wp_customize,
 			'yith_proteo_main_color_shade',
 			array(
@@ -1228,12 +1228,12 @@ function yith_proteo_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'yith_proteo_general_link_hover_color',
 		array(
-			'sanitize_callback' => 'sanitize_hex_color',
+			'sanitize_callback' => 'yith_proteo_sanitize_alpha_colors',
 			'default'           => yith_proteo_adjust_brightness( get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ), - 0.3 ),
 		)
 	);
 	$wp_customize->add_control(
-		new WP_Customize_Color_Control(
+		new Customizer_Alpha_Color_Control(
 			$wp_customize,
 			'yith_proteo_general_link_hover_color',
 			array(
@@ -1320,12 +1320,12 @@ function yith_proteo_customize_register( $wp_customize ) {
 		array(
 			'default'           => '#404040',
 			'priority'          => 10,
-			'sanitize_callback' => 'sanitize_hex_color',
+			'sanitize_callback' => 'yith_proteo_sanitize_alpha_colors',
 		)
 	);
 
 	$wp_customize->add_control(
-		new WP_Customize_Color_Control(
+		new Customizer_Alpha_Color_Control(
 			$wp_customize,
 			'yith_proteo_site_title_color',
 			array(
@@ -1359,12 +1359,12 @@ function yith_proteo_customize_register( $wp_customize ) {
 		array(
 			'default'           => '#404040',
 			'priority'          => 10,
-			'sanitize_callback' => 'sanitize_hex_color',
+			'sanitize_callback' => 'yith_proteo_sanitize_alpha_colors',
 		)
 	);
 
 	$wp_customize->add_control(
-		new WP_Customize_Color_Control(
+		new Customizer_Alpha_Color_Control(
 			$wp_customize,
 			'yith_proteo_tagline_color',
 			array(
@@ -1413,12 +1413,12 @@ function yith_proteo_customize_shop_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'yith_proteo_store_notice_bg_color',
 		array(
-			'sanitize_callback' => 'sanitize_hex_color',
+			'sanitize_callback' => 'yith_proteo_sanitize_alpha_colors',
 			'default'           => '#607d8b',
 		)
 	);
 	$wp_customize->add_control(
-		new WP_Customize_Color_Control(
+		new Customizer_Alpha_Color_Control(
 			$wp_customize,
 			'yith_proteo_store_notice_bg_color',
 			array(
@@ -1431,12 +1431,12 @@ function yith_proteo_customize_shop_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'yith_proteo_store_notice_text_color',
 		array(
-			'sanitize_callback' => 'sanitize_hex_color',
+			'sanitize_callback' => 'yith_proteo_sanitize_alpha_colors',
 			'default'           => '#ffffff',
 		)
 	);
 	$wp_customize->add_control(
-		new WP_Customize_Color_Control(
+		new Customizer_Alpha_Color_Control(
 			$wp_customize,
 			'yith_proteo_store_notice_text_color',
 			array(
@@ -1479,12 +1479,12 @@ function yith_proteo_customize_shop_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'yith_proteo_sale_badge_bg_color',
 		array(
-			'sanitize_callback' => 'sanitize_hex_color',
+			'sanitize_callback' => 'yith_proteo_sanitize_alpha_colors',
 			'default'           => get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ),
 		)
 	);
 	$wp_customize->add_control(
-		new WP_Customize_Color_Control(
+		new Customizer_Alpha_Color_Control(
 			$wp_customize,
 			'yith_proteo_sale_badge_bg_color',
 			array(
@@ -1497,12 +1497,12 @@ function yith_proteo_customize_shop_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'yith_proteo_sale_badge_text_color',
 		array(
-			'sanitize_callback' => 'sanitize_hex_color',
+			'sanitize_callback' => 'yith_proteo_sanitize_alpha_colors',
 			'default'           => '#ffffff',
 		)
 	);
 	$wp_customize->add_control(
-		new WP_Customize_Color_Control(
+		new Customizer_Alpha_Color_Control(
 			$wp_customize,
 			'yith_proteo_sale_badge_text_color',
 			array(
@@ -1561,12 +1561,12 @@ function yith_proteo_customize_shop_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'yith_proteo_woo_default_messages_accent_color',
 		array(
-			'sanitize_callback' => 'sanitize_hex_color',
+			'sanitize_callback' => 'yith_proteo_sanitize_alpha_colors',
 			'default'           => '#17b4a9',
 		)
 	);
 	$wp_customize->add_control(
-		new WP_Customize_Color_Control(
+		new Customizer_Alpha_Color_Control(
 			$wp_customize,
 			'yith_proteo_woo_default_messages_accent_color',
 			array(
@@ -1580,12 +1580,12 @@ function yith_proteo_customize_shop_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'yith_proteo_woo_info_messages_accent_color',
 		array(
-			'sanitize_callback' => 'sanitize_hex_color',
+			'sanitize_callback' => 'yith_proteo_sanitize_alpha_colors',
 			'default'           => '#e0e0e0',
 		)
 	);
 	$wp_customize->add_control(
-		new WP_Customize_Color_Control(
+		new Customizer_Alpha_Color_Control(
 			$wp_customize,
 			'yith_proteo_woo_info_messages_accent_color',
 			array(
@@ -1599,12 +1599,12 @@ function yith_proteo_customize_shop_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'yith_proteo_woo_error_messages_accent_color',
 		array(
-			'sanitize_callback' => 'sanitize_hex_color',
+			'sanitize_callback' => 'yith_proteo_sanitize_alpha_colors',
 			'default'           => '#ffab91',
 		)
 	);
 	$wp_customize->add_control(
-		new WP_Customize_Color_Control(
+		new Customizer_Alpha_Color_Control(
 			$wp_customize,
 			'yith_proteo_woo_error_messages_accent_color',
 			array(
