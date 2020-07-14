@@ -50,9 +50,14 @@ ul.products,
 		.added_to_cart:visited,
 		.yith-wcqv-button.button:not(.inside-thumb) {
 			font-size: 0.875rem;
-			padding: 5px 0;
 			transition: all ease 0.3s;
 			margin: 0;
+			display: inline-block;
+
+			&.unstyled_button {
+				padding: 5px 0;
+				display: block;
+			}
 		}
 
 		img {
@@ -90,7 +95,7 @@ ul.products,
 			font-size: 0.875rem;
 			font-weight: 500;
 			margin-bottom: 5px;
-			margin-top: 5px;
+			margin-top: 15px;
 			color: #404040;
 			text-align: center;
 
@@ -125,7 +130,7 @@ ul.products,
 			color: #1f1f1f;
 			font-size: 0.875rem;
 			font-weight: bold;
-			margin-bottom: 5px;
+			margin-bottom: 10px;
 			display: block;
 
 			del {

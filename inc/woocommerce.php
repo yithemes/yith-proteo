@@ -476,7 +476,9 @@ add_filter( 'yith_wcwl_wishlist_title', 'yith_proteo_change_wishlist_title_tag' 
  * @author Francesco Grasso <francgrasso@yithemes.com>
  */
 function yith_proteo_loop_add_to_cart_additional_class( $args, $product ) {
-	$args['class'] .= ' unstyled_button ';
+
+	$button_class   = get_theme_mod( 'yith_proteo_products_loop_add_to_cart_style', 'unstyled_button' );
+	$args['class'] .= ' ' . $button_class;
 
 	return $args;
 }
