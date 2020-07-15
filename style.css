@@ -6319,9 +6319,6 @@ a:hover, a:active {
   padding-top: 8px;
   padding-bottom: 8px;
 }
-.site-header.sticky .site-branding .site-title {
-  font-size: 2.3em;
-}
 .site-header.fullwidth-header .header-contents {
   max-width: 100%;
 }
@@ -7644,6 +7641,16 @@ ul.products li.wc-block-grid__product .yith-wcqv-button.button:not(.inside-thumb
 .wc-block-grid ul.wc-block-grid__products li.wc-block-grid__product .added_to_cart:visited.unstyled_button,
 .wc-block-grid ul.wc-block-grid__products li.wc-block-grid__product .yith-wcqv-button.button:not(.inside-thumb).unstyled_button {
   padding: 5px 0;
+  display: block;
+}
+ul.products li.product .added_to_cart, ul.products li.product .wc-forward,
+ul.products li.wc-block-grid__product .added_to_cart,
+ul.products li.wc-block-grid__product .wc-forward,
+.wc-block-grid ul.wc-block-grid__products li.product .added_to_cart,
+.wc-block-grid ul.wc-block-grid__products li.product .wc-forward,
+.wc-block-grid ul.wc-block-grid__products li.wc-block-grid__product .added_to_cart,
+.wc-block-grid ul.wc-block-grid__products li.wc-block-grid__product .wc-forward {
+  margin-top: 5px;
   display: block;
 }
 ul.products li.product img,

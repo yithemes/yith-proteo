@@ -59,6 +59,10 @@ ul.products,
 				display: block;
 			}
 		}
+		.added_to_cart, .wc-forward {
+			margin-top: 5px;
+			display: block;
+		}
 
 		img {
 			transition: all ease 0.3s;
