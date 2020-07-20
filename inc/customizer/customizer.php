@@ -2202,7 +2202,7 @@ if ( ! function_exists( 'yith_proteo_sanitize_alpha_colors' ) ) {
  * Add YITH Customizer CSS
  */
 function yith_proteo_customize_enqueue() {
-	wp_enqueue_style( 'customizer-css', get_template_directory_uri() . '/customizer-css.css', array(), YITH_PROTEO_VERSION );
+	wp_enqueue_style( 'customizer-css', get_template_directory_uri() . '/inc/customizer/customizer-css.css', array(), YITH_PROTEO_VERSION );
 }
 
 add_action( 'customize_controls_enqueue_scripts', 'yith_proteo_customize_enqueue' );

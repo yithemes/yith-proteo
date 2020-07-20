@@ -9,7 +9,7 @@ ul#sub-accordion-panel-yith_proteo_shop_options > li.panel-meta span.preview-not
     display: inline-block;
     width: 20px;
     height: 20px;
-    background: url(img/panel-icons/yith_icon.png) center no-repeat;
+    background: url(../../img/panel-icons/yith_icon.png) center no-repeat;
     background-size: cover;
     vertical-align: bottom;
     margin-right: 5px;
@@ -92,7 +92,7 @@ ul#sub-accordion-panel-yith_proteo_shop_options > li.panel-meta span.preview-not
 #_customize-input-yith_proteo_product_category_page_sidebar_position-radio-right + label:before,
 #_customize-input-yith_proteo_product_tag_page_sidebar_position-radio-right + label:before,
 #_customize-input-yith_proteo_product_tax_page_sidebar_position-radio-right + label:before {
-    background: url(img/panel-icons/sidebar-right.png) center no-repeat;
+    background: url(../../img/panel-icons/sidebar-right.png) center no-repeat;
     content: "";
     display: inline-block;
     width: 54px;
@@ -111,7 +111,7 @@ ul#sub-accordion-panel-yith_proteo_shop_options > li.panel-meta span.preview-not
 #_customize-input-yith_proteo_product_category_page_sidebar_position-radio-left + label:before,
 #_customize-input-yith_proteo_product_tag_page_sidebar_position-radio-left + label:before,
 #_customize-input-yith_proteo_product_tax_page_sidebar_position-radio-left + label:before {
-    background: url(img/panel-icons/sidebar-left.png) center no-repeat;
+    background: url(../../img/panel-icons/sidebar-left.png) center no-repeat;
     content: "";
     display: inline-block;
     width: 54px;
@@ -130,7 +130,7 @@ ul#sub-accordion-panel-yith_proteo_shop_options > li.panel-meta span.preview-not
 #_customize-input-yith_proteo_product_category_page_sidebar_position-radio-no-sidebar + label:before,
 #_customize-input-yith_proteo_product_tag_page_sidebar_position-radio-no-sidebar + label:before,
 #_customize-input-yith_proteo_product_tax_page_sidebar_position-radio-no-sidebar + label:before {
-    background: url(img/panel-icons/sidebar-no.png) center no-repeat;
+    background: url(../../img/panel-icons/sidebar-no.png) center no-repeat;
     content: "";
     display: inline-block;
     width: 54px;

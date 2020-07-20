@@ -191,10 +191,10 @@ require get_template_directory() . '/inc/class-yith-proteo-walker-comment.php';
 /**
  * Customizer additions.
  */
-require get_template_directory() . '/inc/class-wp-customize-range.php';
-require get_template_directory() . '/inc/class-wp-customize-notice.php';
-require get_template_directory() . '/inc/class-customizer-alpha-color-control.php';
-require get_template_directory() . '/inc/customizer.php';
+require get_template_directory() . '/inc/customizer/custom-controls/class-wp-customize-range.php';
+require get_template_directory() . '/inc/customizer/custom-controls/class-wp-customize-notice.php';
+require get_template_directory() . '/inc/customizer/custom-controls/class-customizer-alpha-color-control.php';
+require get_template_directory() . '/inc/customizer/customizer.php';
 
 /**
  * Widgets.
@@ -204,7 +204,7 @@ require get_template_directory() . '/inc/widgets.php';
 /**
  * Customizer inline style additions.
  */
-require get_template_directory() . '/inc/customizer-inline-style.php';
+require get_template_directory() . '/inc/customizer/customizer-inline-style.php';
 
 /**
  * Load TGM class
