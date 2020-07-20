@@ -41,7 +41,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 			'priority'       => 150,
 			'capability'     => 'edit_theme_options',
 			'theme_supports' => '',
-			'title'          => esc_html__( 'YITH Theme Options', 'yith-proteo' ),
+			'title'          => esc_html__( 'Theme Options', 'yith-proteo' ),
 			'description'    => esc_html__( 'All options related to this theme', 'yith-proteo' ),
 		)
 	);
@@ -1393,7 +1393,7 @@ function yith_proteo_customize_shop_register( $wp_customize ) {
 			'priority'       => 150,
 			'capability'     => 'edit_theme_options',
 			'theme_supports' => '',
-			'title'          => esc_html__( 'YITH Theme Shop Options', 'yith-proteo' ),
+			'title'          => esc_html__( 'Shop Options', 'yith-proteo' ),
 			'description'    => esc_html__( 'All shop related options for this theme', 'yith-proteo' ),
 		)
 	);

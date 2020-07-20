@@ -1,19 +1,6 @@
 /****************************
 YITH CUSTOMIZER STYLE
 ****************************/
-li#accordion-panel-yith_proteo_options > h3.accordion-section-title:before,
-li#accordion-panel-yith_proteo_shop_options > h3.accordion-section-title:before,
-ul#sub-accordion-panel-yith_proteo_options > li.panel-meta span.preview-notice strong:before,
-ul#sub-accordion-panel-yith_proteo_shop_options > li.panel-meta span.preview-notice strong:before {
-    content: "";
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background: url(../../img/panel-icons/yith_icon.png) center no-repeat;
-    background-size: cover;
-    vertical-align: bottom;
-    margin-right: 5px;
-}
 
 /* SIDEBAR MANAGEMENT */
 
