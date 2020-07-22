@@ -234,6 +234,11 @@ function yith_proteo_register_required_plugins() {
 	 * If the source is NOT from the .org repo, then source is also required.
 	 */
 	$plugins = array(
+		array(
+			'name'     => 'YITH Proteo Toolkit',
+			'slug'     => 'yith-proteo-toolkit',
+			'required' => true,
+		),
 
 		array(
 			'name'        => 'YITH WooCommerce Wishlist',
@@ -265,11 +270,6 @@ function yith_proteo_register_required_plugins() {
 			'name'     => 'WooCommerce',
 			'slug'     => 'woocommerce',
 			'required' => false,
-		),
-		array(
-			'name'     => 'YITH Proteo Toolkit',
-			'slug'     => 'yith-proteo-toolkit',
-			'required' => true,
 		),
 
 	);

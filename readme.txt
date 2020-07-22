@@ -4,7 +4,7 @@ Tags: one-column, two-columns, left-sidebar, right-sidebar, wide-blocks, accessi
 Requires at least: 4.9.6
 Tested up to: WordPress 5.4
 Requires PHP: 5.6
-Stable tag: 1.2.14
+Stable tag: 1.2.15
 YITH Proteo WordPress Theme, Copyright 2020 YITH
 YITH Proteo is distributed under the terms of the GNU GPL
 License: GPLv2 or later
@@ -25,6 +25,16 @@ Proteo is a sleek, modern and "Gutenberg-friendly" e-commerce theme. Developed w
 == Frequently Asked Questions ==
 
 == Changelog ==
+= 1.2.15 - July 22 2020 =
+* Suggest YITH Proteo Toolkit plugin for a better onboardin experience
+* New loop add to cart button style (unstyled | style 1 | style 2)
+* Extend alpha color picker to all customizer options
+* Remove branding from customizer panels
+* Remove text logo zoom effect on page scroll
+* Move customizer files to dedicated folders
+* Updated Dutch language file (100%)
+
+
 = 1.2.14 - July 08 2020 =
 * Fix  `Call to undefined function is_product() in /wp-content/themes/yith-proteo/sidebar.php:45`
 
