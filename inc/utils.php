@@ -266,11 +266,10 @@ function yith_proteo_register_required_plugins() {
 			'slug'     => 'woocommerce',
 			'required' => false,
 		),
-
 		array(
-			'name'     => 'One Click Demo Import',
-			'slug'     => 'one-click-demo-import',
-			'required' => false,
+			'name'     => 'YITH Proteo Toolkit',
+			'slug'     => 'yith-proteo-toolkit',
+			'required' => true,
 		),
 
 	);
