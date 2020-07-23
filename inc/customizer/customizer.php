@@ -310,7 +310,43 @@ function yith_proteo_customize_register( $wp_customize ) {
 			)
 		)
 	);
-	// Header Layout options.
+	// Topbar link color options.
+	$wp_customize->add_setting(
+		'yith_proteo_topbar_link_color',
+		array(
+			'sanitize_callback' => 'yith_proteo_sanitize_alpha_colors',
+			'default'           => '#448a85',
+		)
+	);
+	$wp_customize->add_control(
+		new Customizer_Alpha_Color_Control(
+			$wp_customize,
+			'yith_proteo_topbar_link_color',
+			array(
+				'label'   => esc_html__( 'Hyperlink color', 'yith-proteo' ),
+				'section' => 'yith_proteo_topbar_management',
+			)
+		)
+	);
+	// Topbar link :hover color options.
+	$wp_customize->add_setting(
+		'yith_proteo_topbar_link_hover_color',
+		array(
+			'sanitize_callback' => 'yith_proteo_sanitize_alpha_colors',
+			'default'           => yith_proteo_adjust_brightness( get_theme_mod( 'yith_proteo_topbar_link_color', '#448a85' ), - 0.3 ),
+		)
+	);
+	$wp_customize->add_control(
+		new Customizer_Alpha_Color_Control(
+			$wp_customize,
+			'yith_proteo_topbar_link_hover_color',
+			array(
+				'label'   => esc_html__( 'Hyperlink :hover color', 'yith-proteo' ),
+				'section' => 'yith_proteo_topbar_management',
+			)
+		)
+	);
+	// Topbar alignment.
 	$wp_customize->add_setting(
 		'yith_proteo_topbar_align',
 		array(

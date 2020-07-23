@@ -156,6 +156,16 @@
 		clear: both;
 	}
 
+	a {
+		color: var(--proteo-topbar_link_color, #448a85);
+		&:hover {
+			color: var(--proteo-topbar_link_hover_color, $color__link-hover);
+		}
+	}
+	.widget_shopping_cart .proceed-to-cart-icon:hover span.lnr {
+		color: var(--proteo-topbar_link_hover_color, $color__link-hover);
+	}
+
 	.widget_nav_menu {
 		margin-bottom: 0;
 	}

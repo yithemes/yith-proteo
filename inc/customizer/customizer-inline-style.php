@@ -25,10 +25,12 @@ function yith_proteo_inline_style() {
 
 	$header_bg_color = get_theme_mod( 'yith_proteo_header_background_color', '#ffffff' );
 
-	$topbar_bg_color   = get_theme_mod( 'yith_proteo_topbar_background_color', '#ebebeb' );
-	$topbar_font_size  = get_theme_mod( 'yith_proteo_topbar_font_size', 16 );
-	$topbar_font_color = get_theme_mod( 'yith_proteo_topbar_font_color', '#404040' );
-	$topbar_align      = get_theme_mod( 'yith_proteo_topbar_align', 'right' );
+	$topbar_bg_color         = get_theme_mod( 'yith_proteo_topbar_background_color', '#ebebeb' );
+	$topbar_font_size        = get_theme_mod( 'yith_proteo_topbar_font_size', 16 );
+	$topbar_font_color       = get_theme_mod( 'yith_proteo_topbar_font_color', '#404040' );
+	$topbar_align            = get_theme_mod( 'yith_proteo_topbar_align', 'right' );
+	$topbar_link_color       = get_theme_mod( 'yith_proteo_topbar_link_color', '#448a85' );
+	$topbar_link_hover_color = get_theme_mod( 'yith_proteo_topbar_link_hover_color', yith_proteo_adjust_brightness( get_theme_mod( 'yith_proteo_topbar_link_color', '#448a85' ), - 0.3 ) );
 
 	$footer_bg_color         = get_theme_mod( 'yith_proteo_footer_background_color', '#f7f7f7' );
 	$footer_credits_bg_color = get_theme_mod( 'yith_proteo_footer_credits_background_color', '#f0f0f0' );
@@ -122,6 +124,8 @@ function yith_proteo_inline_style() {
 	--proteo-topbar_font_size: {$topbar_font_size}px;
 	--proteo-topbar_font_color: {$topbar_font_color};
 	--proteo-topbar_align: {$topbar_align};
+	--proteo-topbar_link_color: {$topbar_link_color};
+	--proteo-topbar_link_hover_color: {$topbar_link_hover_color};
 	--proteo-footer_bg_color: {$footer_bg_color};
 	--proteo-footer_credits_bg_color: {$footer_credits_bg_color};
 	--proteo-base_font_size: {$base_font_size}px;
