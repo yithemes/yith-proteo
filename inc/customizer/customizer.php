@@ -276,6 +276,61 @@ function yith_proteo_customize_register( $wp_customize ) {
 			)
 		)
 	);
+	// Topbar font size options.
+	$wp_customize->add_setting(
+		'yith_proteo_topbar_font_size',
+		array(
+			'sanitize_callback' => 'absint',
+			'default'           => 16,
+		)
+	);
+	$wp_customize->add_control(
+		'yith_proteo_topbar_font_size',
+		array(
+			'label'   => esc_html__( 'Font size (default: 16px)', 'yith-proteo' ),
+			'section' => 'yith_proteo_topbar_management',
+			'type'    => 'number',
+		)
+	);
+	// Topbar font color options.
+	$wp_customize->add_setting(
+		'yith_proteo_topbar_font_color',
+		array(
+			'sanitize_callback' => 'yith_proteo_sanitize_alpha_colors',
+			'default'           => '#404040',
+		)
+	);
+	$wp_customize->add_control(
+		new Customizer_Alpha_Color_Control(
+			$wp_customize,
+			'yith_proteo_topbar_font_color',
+			array(
+				'label'   => esc_html__( 'Font color', 'yith-proteo' ),
+				'section' => 'yith_proteo_topbar_management',
+			)
+		)
+	);
+	// Header Layout options.
+	$wp_customize->add_setting(
+		'yith_proteo_topbar_align',
+		array(
+			'default'           => 'right',
+			'sanitize_callback' => 'yith_proteo_sanitize_radio',
+		)
+	);
+	$wp_customize->add_control(
+		'yith_proteo_topbar_align',
+		array(
+			'type'    => 'radio',
+			'label'   => esc_html__( 'Elements alignment', 'yith-proteo' ),
+			'section' => 'yith_proteo_topbar_management',
+			'choices' => array(
+				'left'   => esc_html__( 'Left', 'yith-proteo' ),
+				'right'  => esc_html__( 'Right', 'yith-proteo' ),
+				'center' => esc_html__( 'Center', 'yith-proteo' ),
+			),
+		)
+	);
 
 	/**
 	 * Add Header management.

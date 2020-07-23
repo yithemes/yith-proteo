@@ -145,8 +145,10 @@
 // #Topbar
 #topbar {
 	background-color: var(--proteo-topbar_bg_color, #ebebeb);
+	color: var(--proteo-topbar_font_color, #404040);
+	font-size: var(--proteo-topbar_font_size, 16px);
 	padding: 15px 0 0;
-	text-align: right;
+	text-align: var(--proteo-topbar_align, right);
 
 	&:after {
 		content: "";
@@ -171,5 +173,10 @@
 			text-transform: uppercase;
 			font-weight: normal;
 		}
+	}
+	.widget.widget_text p {
+		font-size: inherit;
+		line-height: normal;
+		font-weight: initial;
 	}
 }
