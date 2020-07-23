@@ -158,6 +158,7 @@
 
 	a {
 		color: var(--proteo-topbar_link_color, #448a85);
+		text-decoration: none;
 		&:hover {
 			color: var(--proteo-topbar_link_hover_color, $color__link-hover);
 		}
