@@ -2,10 +2,34 @@
 	padding-top: 80px;
 	position: relative;
 	background-color: var(--proteo-footer_bg_color, #f7f7f7);
+	color: var(--proteo-footer_font_color, #404040);
+	font-size: var(--proteo-footer_font_size, 16px);
+	text-align: var(--proteo-footer_align, left);
+
+	a {
+		color: var(--proteo-footer_link_color, #448a85);
+		text-decoration: none;
+		&:hover {
+			color: var(--proteo-footer_link_hover_color, $color__link-hover);
+			text-decoration: underline;
+		}
+	}
 
 	.site-info {
 		padding: 15px 0;
 		background-color: var(--proteo-footer_credits_bg_color, #f0f0f0);
+		color: var(--proteo-footer_credits_font_color, #404040);
+		font-size: var(--proteo-footer_credits_font_size, 16px);
+		text-align: var(--proteo-footer_credits_align, left);
+
+		a {
+			color: var(--proteo-footer_credits_link_color, #448a85);
+			text-decoration: none;
+			&:hover {
+				color: var(--proteo-footer_credits_link_hover_color, $color__link-hover);
+				text-decoration: underline;
+			}
+		}
 	}
 
 	div[class^="footer-sidebar"] {

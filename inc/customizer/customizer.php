@@ -556,7 +556,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 		'yith_proteo_footer_font_color',
 		array(
 			'sanitize_callback' => 'yith_proteo_sanitize_alpha_colors',
-			'default'           => '#ffffff',
+			'default'           => '#404040',
 		)
 	);
 	$wp_customize->add_control(
@@ -574,7 +574,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 		'yith_proteo_footer_link_color',
 		array(
 			'sanitize_callback' => 'yith_proteo_sanitize_alpha_colors',
-			'default'           => '#ffffff',
+			'default'           => '#448a85',
 		)
 	);
 	$wp_customize->add_control(
@@ -592,7 +592,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 		'yith_proteo_footer_link_hover_color',
 		array(
 			'sanitize_callback' => 'yith_proteo_sanitize_alpha_colors',
-			'default'           => yith_proteo_adjust_brightness( get_theme_mod( 'yith_proteo_footer_link_color', '#ffffff' ), - 0.3 ),
+			'default'           => yith_proteo_adjust_brightness( get_theme_mod( 'yith_proteo_footer_link_color', '#448a85' ), - 0.3 ),
 		)
 	);
 	$wp_customize->add_control(
@@ -609,7 +609,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'yith_proteo_footer_align',
 		array(
-			'default'           => 'right',
+			'default'           => 'left',
 			'sanitize_callback' => 'yith_proteo_sanitize_radio',
 		)
 	);
@@ -743,7 +743,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 		'yith_proteo_footer_credits_font_color',
 		array(
 			'sanitize_callback' => 'yith_proteo_sanitize_alpha_colors',
-			'default'           => '#ffffff',
+			'default'           => '#404040',
 		)
 	);
 	$wp_customize->add_control(
@@ -761,7 +761,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 		'yith_proteo_footer_credits_link_color',
 		array(
 			'sanitize_callback' => 'yith_proteo_sanitize_alpha_colors',
-			'default'           => '#ffffff',
+			'default'           => '#448a85',
 		)
 	);
 	$wp_customize->add_control(
@@ -779,7 +779,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 		'yith_proteo_footer_credits_link_hover_color',
 		array(
 			'sanitize_callback' => 'yith_proteo_sanitize_alpha_colors',
-			'default'           => yith_proteo_adjust_brightness( get_theme_mod( 'yith_proteo_footer_credits_link_color', '#ffffff' ), - 0.3 ),
+			'default'           => yith_proteo_adjust_brightness( get_theme_mod( 'yith_proteo_footer_credits_link_color', '#448a85' ), - 0.3 ),
 		)
 	);
 	$wp_customize->add_control(
@@ -796,7 +796,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'yith_proteo_footer_credits_align',
 		array(
-			'default'           => 'right',
+			'default'           => 'left',
 			'sanitize_callback' => 'yith_proteo_sanitize_radio',
 		)
 	);
