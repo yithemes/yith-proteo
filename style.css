@@ -10240,8 +10240,6 @@ body.yith_welrp_opened {
 #yith-welrp .yith-welrp-popup form .yith-welrp-form-field input[type=password] {
   width: 100%;
   outline: none;
-  padding-left: 0;
-  padding-right: 0;
   font-size: 0.875rem;
 }
 #yith-welrp .yith-welrp-popup form .yith-welrp-form-field label {
@@ -10370,10 +10368,10 @@ body.yith_welrp_opened {
   list-style: none;
   padding: 5px;
   margin: -1px 0 0 0;
-  border: 1px solid #e7e7e7;
+  border: 1px solid #cccccc;
   border-top: 0;
   background: #ffffff;
-  box-shadow: 5px 5px 15px #f0f0f0;
+  box-shadow: 0 5px 5px #f0f0f0;
   z-index: 10;
 }
 #yith-welrp .yith-welrp-email-suggestion .yith-welrp-email-suggestion-list .yith-welrp-email-suggestion-item {
