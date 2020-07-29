@@ -238,6 +238,9 @@
 			step = parseFloat(step);
 		}
 
+		if ( isNaN( input_val ) ) {
+			input_val = parseFloat( min_val - step );
+		}
 
 		if (t.hasClass('product-qty-increase')) {
 			input_val = input_val + step;
