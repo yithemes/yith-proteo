@@ -638,28 +638,3 @@ function yith_proteo_cross_sell_max_number( $total ) {
 	return get_theme_mod( 'yith_proteo_cross_sell_max_number', 4 );
 }
 add_filter( 'woocommerce_cross_sells_total', 'yith_proteo_cross_sell_max_number' );
-
-
-if ( get_theme_mod( 'yith_proteo_products_image_lazy_load', 'no' ) === 'yes' ) :
-	if ( ! function_exists( 'woocommerce_get_product_thumbnail' ) ) {
-		/**
-		 * Get the product thumbnail or the placeholder if not set
-		 *
-		 * @param string $size image size.
-		 * @return string
-		 */
-		function woocommerce_get_product_thumbnail( $size = 'shop_catalog' ) {
-			global $post, $woocommerce;
-			$output = '';
-
-			if ( has_post_thumbnail() ) {
-				$src     = get_the_post_thumbnail_url( $post->ID, $size );
-				$output .= '<img class="lazy" src="' . wc_placeholder_img_src( $size ) . '" data-src="' . $src . '" data-srcset="' . $src . '" alt="Lazy loading image">';
-			} else {
-				$output .= wc_placeholder_img( $size );
-			}
-
-			return $output;
-		}
-	}
-endif;
