@@ -44,7 +44,7 @@ if ( function_exists( 'wc' ) && is_shop() && get_post_meta( get_option( 'woocomm
 		}
 	}
 	if ( is_home() ) {
-		$sidebar = get_theme_mod( 'yith_proteo_blog_sidebar', 'sidebar-1' );
+		dynamic_sidebar( get_theme_mod( 'yith_proteo_blog_sidebar', 'sidebar-1' ) );
 	} elseif ( ( is_single() || is_page() ) && 'inherit' === $sidebar ) {
 		dynamic_sidebar( get_theme_mod( 'yith_proteo_default_sidebar', 'sidebar-1' ) );
 	} elseif ( is_category() ) {
