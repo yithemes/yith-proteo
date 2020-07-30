@@ -12,8 +12,8 @@
 		'yith_proteo_buttons',
 		array(
 			'title'    => esc_html__( 'Buttons', 'yith-proteo' ),
-			'priority' => 70,
-			//'panel'    => 'yith_proteo_options',
+			'priority' => 30,
+			'panel'    => 'yith_proteo_extra',
 		)
 	);
 

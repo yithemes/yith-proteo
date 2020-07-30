@@ -11,9 +11,8 @@
 	$wp_customize->add_section(
 		'yith_proteo_documentation',
 		array(
-			'title'    => esc_html__( 'Theme documentation & more', 'yith-proteo' ),
-			'priority' => 80,
-			//'panel'    => 'yith_proteo_options',
+			'title'    => esc_html__( 'Theme documentation & tools', 'yith-proteo' ),
+			'priority' => 1000,
 		)
 	);
 

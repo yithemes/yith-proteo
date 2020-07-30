@@ -13,7 +13,7 @@
 		array(
 			'title'    => esc_html__( 'Topbar', 'yith-proteo' ),
 			'priority' => 20,
-			//'panel'    => 'yith_proteo_options',
+			'panel'    => 'yith_proteo_header_and_topbar_management',
 		)
 	);
 

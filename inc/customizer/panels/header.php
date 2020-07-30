@@ -11,9 +11,9 @@
 	$wp_customize->add_section(
 		'yith_proteo_header_management',
 		array(
-			'title'    => esc_html__( 'Header', 'yith-proteo' ),
-			'priority' => 20,
-			//'panel'    => 'yith_proteo_options',
+			'title'    => esc_html__( 'Header layout and style', 'yith-proteo' ),
+			'priority' => 10,
+			'panel'    => 'yith_proteo_header_and_topbar_management',
 		)
 	);
 

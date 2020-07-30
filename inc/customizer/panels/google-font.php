@@ -12,8 +12,7 @@
 		'yith_proteo_google_font_management',
 		array(
 			'title'    => esc_html__( 'Google Font', 'yith-proteo' ),
-			'priority' => 50,
-			//'panel'    => 'yith_proteo_options',
+			'priority' => 35,
 		)
 	);
 

@@ -12,8 +12,8 @@
 		'yith_proteo_forms',
 		array(
 			'title'    => esc_html__( 'Forms', 'yith-proteo' ),
-			'priority' => 70,
-			//'panel'    => 'yith_proteo_options',
+			'priority' => 40,
+			'panel'    => 'yith_proteo_extra',
 		)
 	);
 

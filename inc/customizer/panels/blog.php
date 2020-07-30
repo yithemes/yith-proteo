@@ -13,7 +13,6 @@
 		array(
 			'title'    => esc_html__( 'Blog', 'yith-proteo' ),
 			'priority' => 80,
-			//'panel'    => 'yith_proteo_options',
 		)
 	);
 

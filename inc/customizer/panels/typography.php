@@ -12,8 +12,7 @@
 		'yith_proteo_typography',
 		array(
 			'title'    => esc_html__( 'Typography', 'yith-proteo' ),
-			'priority' => 60,
-			//'panel'    => 'yith_proteo_options',
+			'priority' => 30,
 		)
 	);
 	// Base font size options.

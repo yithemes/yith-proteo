@@ -19,26 +19,6 @@
 		});
 	});
 
-	// Header text color.
-	wp.customize('header_textcolor', function (value) {
-		value.bind(function (to) {
-			if ('blank' === to) {
-				$('.site-title, .site-description').css({
-					'clip': 'rect(1px, 1px, 1px, 1px)',
-					'position': 'absolute'
-				});
-			} else {
-				$('.site-title, .site-description').css({
-					'clip': 'auto',
-					'position': 'relative'
-				});
-				$('.site-title a, .site-description').css({
-					'color': to
-				});
-			}
-		});
-	});
-
 	wp.customize('yith_proteo_buttons_border_radius', function (value) {
 		value.bind(function (newval) {
 			$('button, input[type=button], input[type=reset], input[type=submit], .button, .widget a.button, .wishlist-submit.popup_button').css("border-radius", newval + 'px');

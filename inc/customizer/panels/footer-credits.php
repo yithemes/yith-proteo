@@ -11,9 +11,9 @@
 	$wp_customize->add_section(
 		'yith_proteo_footer_credits_management',
 		array(
-			'title'    => esc_html__( 'Footer credits', 'yith-proteo' ),
-			'priority' => 40,
-			//'panel'    => 'yith_proteo_options',
+			'title'    => esc_html__( 'Footer credits management', 'yith-proteo' ),
+			'priority' => 20,
+			'panel'    => 'yith_proteo_footer_and_credits',
 		)
 	);
 

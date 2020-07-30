@@ -12,8 +12,8 @@
 		'yith_proteo_color_shades',
 		array(
 			'title'    => esc_html__( 'Color shades', 'yith-proteo' ),
-			'priority' => 80,
-			//'panel'    => 'yith_proteo_options',
+			'priority' => 10,
+			'panel'    => 'yith_proteo_extra',
 		)
 	);
 

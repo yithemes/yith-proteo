@@ -11,9 +11,9 @@
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
 function yith_proteo_customize_register( $wp_customize ) {
-	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
-	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
-	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
+	$wp_customize->get_setting( 'blogname' )->transport        = 'postMessage';
+	$wp_customize->get_setting( 'blogdescription' )->transport = 'postMessage';
+	$wp_customize->remove_control( 'header_textcolor' );
 
 	if ( isset( $wp_customize->selective_refresh ) ) {
 		$wp_customize->selective_refresh->add_partial(
@@ -31,6 +31,65 @@ function yith_proteo_customize_register( $wp_customize ) {
 			)
 		);
 	}
+
+	$wp_customize->add_panel(
+		'yith_proteo_header_and_topbar_management',
+		array(
+			'title'    => esc_html__( 'Header and Topbar', 'yith-proteo' ),
+			'priority' => 30,
+		)
+	);
+
+	$wp_customize->add_section(
+		'header_image',
+		array(
+			'title'    => esc_html__( 'Header background image', 'yith-proteo' ),
+			'priority' => 5,
+			'panel'    => 'yith_proteo_header_and_topbar_management',
+		)
+	);
+
+	$wp_customize->add_panel(
+		'yith_proteo_footer_and_credits',
+		array(
+			'title'    => esc_html__( 'Footer and Credits', 'yith-proteo' ),
+			'priority' => 60,
+		)
+	);
+
+	$wp_customize->add_panel(
+		'yith_proteo_extra',
+		array(
+			'title'    => esc_html__( 'Extra', 'yith-proteo' ),
+			'priority' => 70,
+		)
+	);
+
+	$wp_customize->add_section(
+		'colors',
+		array(
+			'title'    => esc_html__( 'Site background color', 'yith-proteo' ),
+			'priority' => 5,
+			'panel'    => 'yith_proteo_extra',
+		)
+	);
+
+	$wp_customize->add_section(
+		'background_image',
+		array(
+			'title'    => esc_html__( 'Site background image', 'yith-proteo' ),
+			'priority' => 10,
+			'panel'    => 'yith_proteo_extra',
+		)
+	);
+
+	$wp_customize->add_panel(
+		'woocommerce',
+		array(
+			'title'    => esc_html__( 'WooCommerce', 'yith-proteo' ),
+			'priority' => 100,
+		)
+	);
 
 	require get_template_directory() . '/inc/customizer/panels/sidebars.php';
 

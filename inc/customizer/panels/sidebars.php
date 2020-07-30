@@ -12,7 +12,7 @@
 		'yith_proteo_sidebar_management',
 		array(
 			'title'    => esc_html__( 'Sidebars', 'yith-proteo' ),
-			'priority' => 10,
+			'priority' => 35,
 		)
 	);
 
