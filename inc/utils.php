@@ -224,69 +224,71 @@ endif;
 
 add_action( 'tgmpa_register', 'yith_proteo_register_required_plugins' );
 
-/**
- * Register the required plugins for this theme.
- * This function is hooked into `tgmpa_register`, which is fired on the WP `init` action on priority 10.
- */
-function yith_proteo_register_required_plugins() {
-	/*
-	 * Array of plugin arrays. Required keys are name and slug.
-	 * If the source is NOT from the .org repo, then source is also required.
+if ( ! function_exists( 'yith_proteo_register_required_plugins' ) ) :
+	/**
+	 * Register the required plugins for this theme.
+	 * This function is hooked into `tgmpa_register`, which is fired on the WP `init` action on priority 10.
 	 */
-	$plugins = array(
-		array(
-			'name'     => 'YITH Proteo Toolkit',
-			'slug'     => 'yith-proteo-toolkit',
-			'required' => true,
-		),
+	function yith_proteo_register_required_plugins() {
+		/*
+		* Array of plugin arrays. Required keys are name and slug.
+		* If the source is NOT from the .org repo, then source is also required.
+		*/
+		$plugins = array(
+			array(
+				'name'     => 'YITH Proteo Toolkit',
+				'slug'     => 'yith-proteo-toolkit',
+				'required' => true,
+			),
 
-		array(
-			'name'        => 'YITH WooCommerce Wishlist',
-			'slug'        => 'yith-woocommerce-wishlist',
-			'required'    => false,
-			'is_callable' => 'YITH_WCWL_Premium',
-		),
+			array(
+				'name'        => 'YITH WooCommerce Wishlist',
+				'slug'        => 'yith-woocommerce-wishlist',
+				'required'    => false,
+				'is_callable' => 'YITH_WCWL_Premium',
+			),
 
-		array(
-			'name'        => 'YITH WooCommerce Product Slider Carousel',
-			'slug'        => 'yith-woocommerce-product-slider-carousel',
-			'required'    => false,
-			'is_callable' => 'YITH_WooCommerce_Product_Slider_Premium',
-		),
+			array(
+				'name'        => 'YITH WooCommerce Product Slider Carousel',
+				'slug'        => 'yith-woocommerce-product-slider-carousel',
+				'required'    => false,
+				'is_callable' => 'YITH_WooCommerce_Product_Slider_Premium',
+			),
 
-		array(
-			'name'     => 'YITH Slider for page builders',
-			'slug'     => 'yith-slider-for-page-builders',
-			'required' => false,
-		),
+			array(
+				'name'     => 'YITH Slider for page builders',
+				'slug'     => 'yith-slider-for-page-builders',
+				'required' => false,
+			),
 
-		array(
-			'name'     => 'Contact Form 7',
-			'slug'     => 'contact-form-7',
-			'required' => false,
-		),
+			array(
+				'name'     => 'Contact Form 7',
+				'slug'     => 'contact-form-7',
+				'required' => false,
+			),
 
-		array(
-			'name'     => 'WooCommerce',
-			'slug'     => 'woocommerce',
-			'required' => false,
-		),
+			array(
+				'name'     => 'WooCommerce',
+				'slug'     => 'woocommerce',
+				'required' => false,
+			),
 
-	);
+		);
 
-	$config = array(
-		'id'           => 'yith-proteo',           // Unique ID for hashing notices for multiple instances of TGMPA.
-		'default_path' => '',                      // Default absolute path to bundled plugins.
-		'menu'         => 'tgmpa-install-plugins', // Menu slug.
-		'has_notices'  => true,                    // Show admin notices or not.
-		'dismissable'  => true,                    // If false, a user cannot dismiss the nag message.
-		'dismiss_msg'  => '',                      // If 'dismissable' is false, this message will be output at top of nag.
-		'is_automatic' => true,                    // Automatically activate plugins after installation or not.
-		'message'      => '',                      // Message to output right before the plugins table.
-	);
+		$config = array(
+			'id'           => 'yith-proteo',           // Unique ID for hashing notices for multiple instances of TGMPA.
+			'default_path' => '',                      // Default absolute path to bundled plugins.
+			'menu'         => 'tgmpa-install-plugins', // Menu slug.
+			'has_notices'  => true,                    // Show admin notices or not.
+			'dismissable'  => true,                    // If false, a user cannot dismiss the nag message.
+			'dismiss_msg'  => '',                      // If 'dismissable' is false, this message will be output at top of nag.
+			'is_automatic' => true,                    // Automatically activate plugins after installation or not.
+			'message'      => '',                      // Message to output right before the plugins table.
+		);
 
-	tgmpa( $plugins, $config );
-}
+		tgmpa( $plugins, $config );
+	}
+endif;
 
 if ( ! function_exists( 'yith_proteo_get_user_username' ) ) {
 	/**
