@@ -16,6 +16,8 @@ global $post;
 <?php endif; ?>
 </div><!-- .container -->
 </div><!-- #content -->
+</div><!-- #page -->
+
 <?php
 // hide site footer if meta value enabled.
 if ( function_exists( 'wc' ) && is_shop() ) {
@@ -44,7 +46,6 @@ if ( 'on' != $hide_footer ) :
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 <?php endif; ?>
-</div><!-- #page -->
 
 <?php wp_footer(); ?>
 

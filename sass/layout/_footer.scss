@@ -54,5 +54,8 @@ body {
 }
 
 div#page {
-	flex: 1;
+	flex: 1 0 auto;
+}
+footer#main-footer {
+	flex-shrink: 0;
 }
