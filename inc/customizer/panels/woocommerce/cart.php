@@ -74,3 +74,24 @@
 			'description' => esc_html__( 'Choose how many columns with cross sell products you want to show (default: 4)', 'yith-proteo' ),
 		)
 	);
+
+	// Update cart button style.
+	$wp_customize->add_setting(
+		'yith_proteo_update_cart_button_style',
+		array(
+			'sanitize_callback' => 'yith_proteo_sanitize_select',
+			'default'           => 'textual',
+		)
+	);
+	$wp_customize->add_control(
+		'yith_proteo_update_cart_button_style',
+		array(
+			'type'    => 'radio',
+			'label'   => esc_html__( 'Update cart button style', 'yith-proteo' ),
+			'section' => 'yith_proteo_cart_page_management',
+			'choices' => array(
+				'textual' => esc_html__( 'Textual', 'yith-proteo' ),
+				'button'  => esc_html__( 'Button', 'yith-proteo' ),
+			),
+		)
+	);

@@ -141,6 +141,7 @@ table.shop_table {
 						min-width: 230px;
 						outline: none;
 						margin-bottom: 15px;
+						margin-right: 15px;
 					}
 
 					button {
@@ -186,6 +187,9 @@ table.shop_table {
 			}
 		}
 	}
+}
+body.update-cart-button-style table.cart tbody tr td.actions button[name=update_cart] {
+	margin-right: 0;
 }
 
 @media screen and (min-width: 48em) {

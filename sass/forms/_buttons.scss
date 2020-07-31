@@ -7,7 +7,8 @@ input[type="submit"],
 .wishlist-submit.popup_button,
 .button-style-1:not(.wp-block-button),
 .button-style-1 a,
-input[type="file"]::-webkit-file-upload-button {
+input[type="file"]::-webkit-file-upload-button,
+body.update-cart-button-style table.cart tbody tr td.actions button[name="update_cart"] {
 	border: 1px solid;
 	border-color: var(--proteo-button_1_border_color, $color__border-button);
 	background: var(--proteo-button_1_bg_color, $color__background-button);
@@ -138,7 +139,7 @@ input[type="submit"].alt,
 
 .unstyled_button,
 .button.unstyled_button,
-table.cart tbody tr td.actions button[name="update_cart"],
+body:not(.update-cart-button-style) table.cart tbody tr td.actions button[name="update_cart"],
 .yith-wcqv-button.button:not(.inside-thumb),
 .wc-block-grid ul.wc-block-grid__products li.wc-block-grid__product .add_to_cart_button,
 .wc-block-grid ul.wc-block-grid__products li.wc-block-grid__product .add_to_cart_button:visited {
@@ -165,6 +166,7 @@ input[type="reset"],
 input[type="submit"],
 .button,
 .widget a.button,
-.wishlist-submit.popup_button {
+.wishlist-submit.popup_button,
+body.update-cart-button-style table.cart tbody tr td.actions button[name="update_cart"] {
 	border-radius: var(--proteo-buttons_border_radius);
 }

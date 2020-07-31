@@ -262,10 +262,13 @@ if ( ! function_exists( 'yith_proteo_cart_layout' ) ) {
 	 */
 	function yith_proteo_cart_layout( $classes ) {
 		if ( is_cart() ) {
-			if ( get_theme_mod( 'yith_proteo_cart_layout', 'one_col' ) == 'two_cols' ) {
+			if ( get_theme_mod( 'yith_proteo_cart_layout', 'one_col' ) === 'two_cols' ) {
 				$classes[] = 'two-cols-cart';
 			} else {
 				$classes[] = 'one-col-cart';
+			}
+			if ( get_theme_mod( 'yith_proteo_update_cart_button_style', 'textual' ) === 'button' ) {
+				$classes[] = 'update-cart-button-style';
 			}
 		}
 

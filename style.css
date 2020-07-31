@@ -6,7 +6,7 @@ Author: YITH
 Author URI: https://yithemes.com
 Description: Proteo is a sleek, modern and “Gutenberg-friendly” e-commerce theme. Developed with a beautiful UI and a minimal design, is perfect for each kind of shop. Easy to manage and to customize, Proteo is the best solution if you want a complete e-commerce template and start quickly to sell your products with WooCommerce without a technical knowledge. Use it also for corporate site or a blog: there are no limits about what you can do with a beautiful and usable theme like this! Main features: Colors and Typography customization (Google font support), Logo customization, 3 different Header layouts, Advanced customizer theme options, Sidebar Management, Sidebar Chooser on each page and product, Page title icons, Top Bar Management, Easy main color shade chooser, Buttons style management (gradient buttons support), Footer management with multiple sidebars, WooCommerce support, Shop Theme Options, Custom WooCommerce messages and animated WooCommerce alert notices, Two cart page layouts, Bootstrap grid system, CSS animations, Gutenberg support, Responsive, Fullscreen search, Multilevel menus, Support to all YITH plugins, SVG icons for HiDPI screens, Translation Ready. <a href="https://proteo.yithemes.com/about-proteo/" rel="nofollow" target="_blank">Discover more ></a> | <a href="https://proteo.yithemes.com/" rel="nofollow" target="_blank">Check our live demo ></a>
 
-Version: 1.2.15.8
+Version: 1.2.15.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: yith-proteo
@@ -5170,7 +5170,8 @@ input[type=submit],
 .wishlist-submit.popup_button,
 .button-style-1:not(.wp-block-button),
 .button-style-1 a,
-input[type=file]::-webkit-file-upload-button {
+input[type=file]::-webkit-file-upload-button,
+body.update-cart-button-style table.cart tbody tr td.actions button[name=update_cart] {
   border: 1px solid;
   border-color: var(--proteo-button_1_border_color, #448a85);
   background: var(--proteo-button_1_bg_color, #448a85);
@@ -5196,7 +5197,8 @@ input[type=submit]:hover,
 .wishlist-submit.popup_button:hover,
 .button-style-1:not(.wp-block-button):hover,
 .button-style-1 a:hover,
-input[type=file]::-webkit-file-upload-button:hover {
+input[type=file]::-webkit-file-upload-button:hover,
+body.update-cart-button-style table.cart tbody tr td.actions button[name=update_cart]:hover {
   border-color: var(--proteo-button_1_border_hover_color, #4ac4aa);
   background: var(--proteo-button_1_bg_hover_color, #1a4e43);
   background-color: var(--proteo-button_1_bg_hover_color, #1a4e43);
@@ -5318,7 +5320,7 @@ input[type=submit].alt:hover,
 
 .unstyled_button,
 .button.unstyled_button,
-table.cart tbody tr td.actions button[name=update_cart],
+body:not(.update-cart-button-style) table.cart tbody tr td.actions button[name=update_cart],
 .yith-wcqv-button.button:not(.inside-thumb),
 .wc-block-grid ul.wc-block-grid__products li.wc-block-grid__product .add_to_cart_button,
 .wc-block-grid ul.wc-block-grid__products li.wc-block-grid__product .add_to_cart_button:visited {
@@ -5333,7 +5335,7 @@ table.cart tbody tr td.actions button[name=update_cart],
 }
 .unstyled_button:hover,
 .button.unstyled_button:hover,
-table.cart tbody tr td.actions button[name=update_cart]:hover,
+body:not(.update-cart-button-style) table.cart tbody tr td.actions button[name=update_cart]:hover,
 .yith-wcqv-button.button:not(.inside-thumb):hover,
 .wc-block-grid ul.wc-block-grid__products li.wc-block-grid__product .add_to_cart_button:hover,
 .wc-block-grid ul.wc-block-grid__products li.wc-block-grid__product .add_to_cart_button:visited:hover {
@@ -5349,7 +5351,8 @@ input[type=reset],
 input[type=submit],
 .button,
 .widget a.button,
-.wishlist-submit.popup_button {
+.wishlist-submit.popup_button,
+body.update-cart-button-style table.cart tbody tr td.actions button[name=update_cart] {
   border-radius: var(--proteo-buttons_border_radius);
 }
 
@@ -7510,6 +7513,7 @@ table.shop_table tfoot tr td.actions .coupon input {
   min-width: 230px;
   outline: none;
   margin-bottom: 15px;
+  margin-right: 15px;
 }
 table.cart tbody tr td.actions .coupon button,
 table.cart tfoot tr td.actions .coupon button,
@@ -7558,6 +7562,10 @@ table.shop_table tbody tr.shipping ul label,
 table.shop_table tfoot tr.shipping ul label {
   font-weight: bold;
   cursor: pointer;
+}
+
+body.update-cart-button-style table.cart tbody tr td.actions button[name=update_cart] {
+  margin-right: 0;
 }
 
 @media screen and (min-width: 48em) {
