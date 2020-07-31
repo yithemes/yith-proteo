@@ -44,7 +44,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 		'header_image',
 		array(
 			'title'    => esc_html__( 'Header background image', 'yith-proteo' ),
-			'priority' => 5,
+			'priority' => 30,
 			'panel'    => 'yith_proteo_header_and_topbar_management',
 		)
 	);
@@ -100,8 +100,6 @@ function yith_proteo_customize_register( $wp_customize ) {
 	require get_template_directory() . '/inc/customizer/panels/footer.php';
 
 	require get_template_directory() . '/inc/customizer/panels/footer-credits.php';
-
-	require get_template_directory() . '/inc/customizer/panels/google-font.php';
 
 	require get_template_directory() . '/inc/customizer/panels/typography.php';
 

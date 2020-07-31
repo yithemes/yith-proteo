@@ -12,30 +12,8 @@
 		'yith_proteo_header_management',
 		array(
 			'title'    => esc_html__( 'Header layout and style', 'yith-proteo' ),
-			'priority' => 10,
+			'priority' => 20,
 			'panel'    => 'yith_proteo_header_and_topbar_management',
-		)
-	);
-
-	// Header sticky.
-	$wp_customize->add_setting(
-		'yith_proteo_header_sticky',
-		array(
-			'default'           => 'yes',
-			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
-		)
-	);
-	$wp_customize->add_control(
-		'yith_proteo_header_sticky',
-		array(
-			'type'        => 'radio',
-			'label'       => esc_html__( 'Enable sticky header', 'yith-proteo' ),
-			'section'     => 'yith_proteo_header_management',
-			'description' => esc_html__( 'Choose whether to make the header stick to the page when scrolling down', 'yith-proteo' ),
-			'choices'     => array(
-				'yes' => esc_html__( 'Yes', 'yith-proteo' ),
-				'no'  => esc_html__( 'No', 'yith-proteo' ),
-			),
 		)
 	);
 
@@ -82,7 +60,7 @@
 		)
 	);
 
-	// Header sticky.
+	// Header fullwidth.
 	$wp_customize->add_setting(
 		'yith_proteo_header_fullwidth',
 		array(
@@ -97,6 +75,50 @@
 			'label'       => esc_html__( 'Enable full width header', 'yith-proteo' ),
 			'section'     => 'yith_proteo_header_management',
 			'description' => esc_html__( 'Choose whether to make the header full width or not.', 'yith-proteo' ),
+			'choices'     => array(
+				'yes' => esc_html__( 'Yes', 'yith-proteo' ),
+				'no'  => esc_html__( 'No', 'yith-proteo' ),
+			),
+		)
+	);
+
+	// Header sticky.
+	$wp_customize->add_setting(
+		'yith_proteo_header_sticky',
+		array(
+			'default'           => 'yes',
+			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+		)
+	);
+	$wp_customize->add_control(
+		'yith_proteo_header_sticky',
+		array(
+			'type'        => 'radio',
+			'label'       => esc_html__( 'Enable sticky header', 'yith-proteo' ),
+			'section'     => 'yith_proteo_header_management',
+			'description' => esc_html__( 'Choose whether to make the header stick to the page when scrolling down', 'yith-proteo' ),
+			'choices'     => array(
+				'yes' => esc_html__( 'Yes', 'yith-proteo' ),
+				'no'  => esc_html__( 'No', 'yith-proteo' ),
+			),
+		)
+	);
+
+	// Header show sidebar.
+	$wp_customize->add_setting(
+		'yith_proteo_show_header_sidebar',
+		array(
+			'default'           => 'yes',
+			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+		)
+	);
+	$wp_customize->add_control(
+		'yith_proteo_show_header_sidebar',
+		array(
+			'type'        => 'radio',
+			'label'       => esc_html__( 'Show header sidebar', 'yith-proteo' ),
+			'section'     => 'yith_proteo_header_management',
+			'description' => esc_html__( 'Choose whether to show or not the header widget area', 'yith-proteo' ),
 			'choices'     => array(
 				'yes' => esc_html__( 'Yes', 'yith-proteo' ),
 				'no'  => esc_html__( 'No', 'yith-proteo' ),

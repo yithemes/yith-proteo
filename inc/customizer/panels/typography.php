@@ -6,7 +6,7 @@
  */
 
 	/**
-	 * Add Google Font management
+	 * Add Typography management
 	 */
 	$wp_customize->add_section(
 		'yith_proteo_typography',
@@ -15,6 +15,24 @@
 			'priority' => 30,
 		)
 	);
+
+	// Google Font.
+	$wp_customize->add_setting(
+		'yith_proteo_google_font',
+		array(
+			'sanitize_callback' => 'esc_url_raw',
+			'default'           => 'https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap',
+		)
+	);
+	$wp_customize->add_control(
+		'yith_proteo_google_font',
+		array(
+			'label'   => esc_html__( 'Enter the URL of the Google Font you want to use.', 'yith-proteo' ),
+			'section' => 'yith_proteo_typography',
+			'type'    => 'textarea',
+		)
+	);
+
 	// Base font size options.
 	$wp_customize->add_setting(
 		'yith_proteo_base_font_size',
