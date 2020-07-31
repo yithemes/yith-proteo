@@ -205,7 +205,7 @@ if ( ! function_exists( 'yith_proteo_adjust_brightness' ) ) :
 	function yith_proteo_adjust_brightness( $hex_code, $adjust_percent ) {
 		$hex_code = ltrim( $hex_code, '#' );
 
-		if ( strlen( $hex_code ) == 3 ) {
+		if ( strlen( $hex_code ) === 3 ) {
 			$hex_code = $hex_code[0] . $hex_code[0] . $hex_code[1] . $hex_code[1] . $hex_code[2] . $hex_code[2];
 		}
 
@@ -298,7 +298,7 @@ if ( ! function_exists( 'yith_proteo_get_user_username' ) ) {
 	 */
 	function yith_proteo_get_user_username() {
 		$current_user = wp_get_current_user();
-		$username     = ( isset( $current_user->billing_first_name ) && '' != $current_user->billing_first_name ) ? $current_user->billing_first_name : $current_user->display_name;
+		$username     = ( isset( $current_user->billing_first_name ) && '' !== $current_user->billing_first_name ) ? $current_user->billing_first_name : $current_user->display_name;
 
 		return $username;
 	}

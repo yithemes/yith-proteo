@@ -56,3 +56,26 @@
 			)
 		)
 	);
+
+	if ( defined( 'YITH_PROTEO_TOOLKIT' ) ) {
+		// Setup Wizard Link.
+		$wp_customize->add_setting(
+			'yith_proteo_wizard_link',
+			array(
+				'default'           => '',
+				'transport'         => 'postMessage',
+				'sanitize_callback' => 'wp_kses_post',
+			)
+		);
+		$wp_customize->add_control(
+			new WP_Customize_Notice(
+				$wp_customize,
+				'yith_proteo_wizard_link',
+				array(
+					'label'       => esc_html__( 'Setup Wizard', 'yith-proteo' ),
+					'description' => sprintf( '%1s <a href="' . esc_url( admin_url( 'themes.php?page=setup-wizard' ) ) . '" target="_blank" rel="noopener nofollow">%2s</a>', esc_html__( 'Install demo content and suggested plugins', 'yith-proteo' ), esc_html__( 'here', 'yith-proteo' ) ),
+					'section'     => 'yith_proteo_documentation',
+				)
+			)
+		);
+	}

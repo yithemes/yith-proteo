@@ -33,7 +33,7 @@ get_header();
 							$post_count ++;
 							the_post();
 
-							echo ( 1 == $post_count ) ? '<div class="col-md-12">' : '<div class="col-lg-6">';
+							echo ( 1 === $post_count ) ? '<div class="col-md-12">' : '<div class="col-lg-6">';
 
 							/*
 							 * Include the Post-Type-specific template for the content.

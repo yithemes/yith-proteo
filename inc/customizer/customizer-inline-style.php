@@ -18,7 +18,7 @@ function yith_proteo_inline_style() {
 	$custom_css = '';
 
 	$font         = '';
-	$default_font = ( get_theme_mod( 'yith_proteo_google_font', esc_url_raw( 'https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap' ) ) ) == 'https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap' ? true : false;
+	$default_font = ( get_theme_mod( 'yith_proteo_google_font', esc_url_raw( 'https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap' ) ) ) === 'https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap' ? true : false;
 
 	$main_color_shade         = get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' );
 	$general_link_color       = get_theme_mod( 'yith_proteo_general_link_color', get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ) );
@@ -221,14 +221,14 @@ if ( ! function_exists( 'yith_proteo_hex2rgba' ) ) :
 		}
 
 		// Sanitize $color if "#" is provided.
-		if ( '#' == $color[0] ) {
+		if ( '#' === $color[0] ) {
 			$color = substr( $color, 1 );
 		}
 
 		// Check if color has 6 or 3 characters and get values.
-		if ( strlen( $color ) == 6 ) {
+		if ( strlen( $color ) === 6 ) {
 			$hex = array( $color[0] . $color[1], $color[2] . $color[3], $color[4] . $color[5] );
-		} elseif ( strlen( $color ) == 3 ) {
+		} elseif ( strlen( $color ) === 3 ) {
 			$hex = array( $color[0] . $color[0], $color[1] . $color[1], $color[2] . $color[2] );
 		} else {
 			return $default;

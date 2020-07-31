@@ -39,7 +39,7 @@ class YITH_Proteo_Walker_Comment extends Walker_Comment {
 					$comment_author_url  = get_comment_author_url( $comment );
 					$comment_author      = get_comment_author( $comment );
 					$avatar              = get_avatar( $comment, $args['avatar_size'] );
-					if ( 0 != $args['avatar_size'] ) {
+					if ( 0 !== $args['avatar_size'] ) {
 						if ( empty( $comment_author_url ) ) {
 							echo $avatar; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 						} else {
@@ -96,7 +96,7 @@ class YITH_Proteo_Walker_Comment extends Walker_Comment {
 					?>
 				</div><!-- .comment-metadata -->
 
-				<?php if ( '0' == $comment->comment_approved ) : ?>
+				<?php if ( 0 === $comment->comment_approved ) : ?>
 					<p class="comment-awaiting-moderation"><?php esc_html_e( 'Your comment is awaiting moderation.', 'yith-proteo' ); ?></p>
 				<?php endif; ?>
 			</footer><!-- .comment-meta -->

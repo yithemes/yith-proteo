@@ -11,7 +11,7 @@
 
 global $post;
 ?>
-<?php if ( get_theme_mod( 'yith_proteo_default_sidebar_position', 'right' ) != 'no-sidebar' ) : ?>
+<?php if ( get_theme_mod( 'yith_proteo_default_sidebar_position', 'right' ) !== 'no-sidebar' ) : ?>
 	</div>
 <?php endif; ?>
 </div><!-- .container -->
@@ -28,7 +28,7 @@ if ( function_exists( 'wc' ) && is_shop() ) {
 	$hide_footer = $post ? get_post_meta( $post->ID, 'yith_proteo_remove_header_and_footer', true ) : 'off';
 }
 
-if ( 'on' != $hide_footer ) :
+if ( 'on' !== $hide_footer ) :
 	?>
 	<footer id="main-footer" class="site-footer">
 		<div class="footer-sidebar-1 container">

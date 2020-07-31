@@ -14,7 +14,7 @@
 <ul class="yith_proteo_dashboard_links row">
 	<?php foreach ( wc_get_account_menu_items() as $endpoint => $label ) : ?>
 		<?php
-		if ( 'dashboard' == $endpoint ) :
+		if ( 'dashboard' === $endpoint ) :
 			continue;
 		endif;
 		?>

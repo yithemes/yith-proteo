@@ -91,29 +91,29 @@ function yith_proteo_customize_register( $wp_customize ) {
 		)
 	);
 
-	require get_template_directory() . '/inc/customizer/panels/sidebars.php';
+	include_once get_template_directory() . '/inc/customizer/panels/sidebars.php'; // phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
 
-	require get_template_directory() . '/inc/customizer/panels/topbar.php';
+	include_once get_template_directory() . '/inc/customizer/panels/topbar.php'; // phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
 
-	require get_template_directory() . '/inc/customizer/panels/header.php';
+	include_once get_template_directory() . '/inc/customizer/panels/header.php'; // phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
 
-	require get_template_directory() . '/inc/customizer/panels/footer.php';
+	include_once get_template_directory() . '/inc/customizer/panels/footer.php'; // phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
 
-	require get_template_directory() . '/inc/customizer/panels/footer-credits.php';
+	include_once get_template_directory() . '/inc/customizer/panels/footer-credits.php'; // phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
 
-	require get_template_directory() . '/inc/customizer/panels/typography.php';
+	include_once get_template_directory() . '/inc/customizer/panels/typography.php'; // phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
 
-	require get_template_directory() . '/inc/customizer/panels/buttons.php';
+	include_once get_template_directory() . '/inc/customizer/panels/buttons.php'; // phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
 
-	require get_template_directory() . '/inc/customizer/panels/forms.php';
+	include_once get_template_directory() . '/inc/customizer/panels/forms.php'; // phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
 
-	require get_template_directory() . '/inc/customizer/panels/blog.php';
+	include_once get_template_directory() . '/inc/customizer/panels/blog.php'; // phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
 
-	require get_template_directory() . '/inc/customizer/panels/color-shades.php';
+	include_once get_template_directory() . '/inc/customizer/panels/color-shades.php'; // phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
 
-	require get_template_directory() . '/inc/customizer/panels/documentation.php';
+	include_once get_template_directory() . '/inc/customizer/panels/documentation.php'; // phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
 
-	require get_template_directory() . '/inc/customizer/panels/site-identity.php';
+	include_once get_template_directory() . '/inc/customizer/panels/site-identity.php'; // phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
 }
 
 add_action( 'customize_register', 'yith_proteo_customize_register' );
@@ -126,23 +126,23 @@ add_action( 'customize_register', 'yith_proteo_customize_register' );
  */
 function yith_proteo_customize_shop_register( $wp_customize ) {
 
-	require get_template_directory() . '/inc/customizer/panels/woocommerce/store-notice.php';
+	include_once get_template_directory() . '/inc/customizer/panels/woocommerce/store-notice.php'; // phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
 
-	require get_template_directory() . '/inc/customizer/panels/woocommerce/sale-badge.php';
+	include_once get_template_directory() . '/inc/customizer/panels/woocommerce/sale-badge.php'; // phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
 
-	require get_template_directory() . '/inc/customizer/panels/woocommerce/messages.php';
+	include_once get_template_directory() . '/inc/customizer/panels/woocommerce/messages.php'; // phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
 
-	require get_template_directory() . '/inc/customizer/panels/woocommerce/single-product.php';
+	include_once get_template_directory() . '/inc/customizer/panels/woocommerce/single-product.php'; // phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
 
-	require get_template_directory() . '/inc/customizer/panels/woocommerce/product-category.php';
+	include_once get_template_directory() . '/inc/customizer/panels/woocommerce/product-category.php'; // phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
 
-	require get_template_directory() . '/inc/customizer/panels/woocommerce/product-tag.php';
+	include_once get_template_directory() . '/inc/customizer/panels/woocommerce/product-tag.php'; // phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
 
-	require get_template_directory() . '/inc/customizer/panels/woocommerce/product-tax.php';
+	include_once get_template_directory() . '/inc/customizer/panels/woocommerce/product-tax.php'; // phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
 
-	require get_template_directory() . '/inc/customizer/panels/woocommerce/cart.php';
+	include_once get_template_directory() . '/inc/customizer/panels/woocommerce/cart.php'; // phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
 
-	require get_template_directory() . '/inc/customizer/panels/woocommerce/product-catalog.php';
+	include_once get_template_directory() . '/inc/customizer/panels/woocommerce/product-catalog.php'; // phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
 
 }
 

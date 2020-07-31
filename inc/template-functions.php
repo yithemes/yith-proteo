@@ -91,31 +91,31 @@ if ( ! function_exists( 'yith_proteo_get_sidebar_position' ) ) :
 			}
 		}
 
-		if ( empty( $local_sidebar ) || 'inherit' == $local_sidebar ) {
+		if ( empty( $local_sidebar ) || 'inherit' === $local_sidebar ) {
 
-			if ( 'no-sidebar' != $general_sidebar ) {
+			if ( 'no-sidebar' !== $general_sidebar ) {
 				$sidebar_display .= 'col-lg-9';
 			}
-			if ( 'left' == $general_sidebar ) {
+			if ( 'left' === $general_sidebar ) {
 				$sidebar_display .= ' order-last ';
 			}
-			if ( 'no-sidebar' == $general_sidebar ) {
+			if ( 'no-sidebar' === $general_sidebar ) {
 				$sidebar_show = false;
 			}
 		} else {
 
-			if ( 'no-sidebar' != $local_sidebar ) {
+			if ( 'no-sidebar' !== $local_sidebar ) {
 				$sidebar_display .= 'col-lg-9';
 			}
-			if ( 'left' == $local_sidebar ) {
+			if ( 'left' === $local_sidebar ) {
 				$sidebar_display .= ' order-last ';
 			}
-			if ( 'no-sidebar' == $local_sidebar ) {
+			if ( 'no-sidebar' === $local_sidebar ) {
 				$sidebar_show = false;
 			}
 		}
 
-		if ( 'sidebar-show' == $info ) {
+		if ( 'sidebar-show' === $info ) {
 			return $sidebar_show;
 		}
 

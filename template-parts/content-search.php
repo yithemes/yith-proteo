@@ -13,7 +13,7 @@
 
 	<?php
 
-	if ( 'product' == get_post_type() ) :
+	if ( 'product' === get_post_type() ) :
 
 		$product = wc_get_product( get_the_ID() );
 		?>
