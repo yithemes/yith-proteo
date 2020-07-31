@@ -157,7 +157,7 @@ Mini Cart Widget
 					}
 
 					&:hover {
-						color: var(--proteo-main_color_shade, $color__accent);
+						color: var(--proteo-general_link_color, $color__accent);
 					}
 
 					&.remove {
@@ -216,7 +216,7 @@ Mini Cart Widget
 				font-size: 0.75em;
 				margin-right: 0;
 				background: none;
-				color: var(--proteo-main_color_shade, $color__accent);
+				color: var(--proteo-general_link_color, $color__accent);
 
 				&:after {
 					content: "\e876";
@@ -433,7 +433,7 @@ Menus
 				font-weight: 500;
 
 				&:hover {
-					color: var(--proteo-main_color_shade, $color__accent);
+					color: var(--proteo-general_link_color, $color__accent);
 					text-decoration: underline;
 				}
 			}

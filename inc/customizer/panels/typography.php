@@ -27,9 +27,10 @@
 	$wp_customize->add_control(
 		'yith_proteo_google_font',
 		array(
-			'label'   => esc_html__( 'Enter the URL of the Google Font you want to use.', 'yith-proteo' ),
-			'section' => 'yith_proteo_typography',
-			'type'    => 'textarea',
+			'label'       => esc_html__( 'Google Font', 'yith-proteo' ),
+			'description' => esc_html__( 'Enter the URL of the Google Font you want to use.', 'yith-proteo' ),
+			'section'     => 'yith_proteo_typography',
+			'type'        => 'textarea',
 		)
 	);
 
@@ -63,6 +64,44 @@
 			'yith_proteo_base_font_color',
 			array(
 				'label'   => esc_html__( 'Body font color', 'yith-proteo' ),
+				'section' => 'yith_proteo_typography',
+			)
+		)
+	);
+
+	// General link color.
+	$wp_customize->add_setting(
+		'yith_proteo_general_link_color',
+		array(
+			'sanitize_callback' => 'yith_proteo_sanitize_alpha_colors',
+			'default'           => get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ),
+		)
+	);
+	$wp_customize->add_control(
+		new Customizer_Alpha_Color_Control(
+			$wp_customize,
+			'yith_proteo_general_link_color',
+			array(
+				'label'   => esc_html__( 'General link color', 'yith-proteo' ),
+				'section' => 'yith_proteo_typography',
+			)
+		)
+	);
+
+	// General link hover color.
+	$wp_customize->add_setting(
+		'yith_proteo_general_link_hover_color',
+		array(
+			'sanitize_callback' => 'yith_proteo_sanitize_alpha_colors',
+			'default'           => yith_proteo_adjust_brightness( get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ), - 0.3 ),
+		)
+	);
+	$wp_customize->add_control(
+		new Customizer_Alpha_Color_Control(
+			$wp_customize,
+			'yith_proteo_general_link_hover_color',
+			array(
+				'label'   => esc_html__( 'General link :hover color', 'yith-proteo' ),
 				'section' => 'yith_proteo_typography',
 			)
 		)

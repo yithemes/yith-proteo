@@ -189,7 +189,7 @@ Social Icons
 		text-decoration: none;
 
 		&:hover {
-			color: var(--proteo-main_color_shade, $color__accent);
+			color: var(--proteo-general_link_color, $color__accent);
 		}
 
 		span {

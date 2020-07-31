@@ -3,7 +3,7 @@ a.compare.button {
 	font-size: 0.875rem;
 	text-transform: uppercase;
 	padding: 7px 14px;
-	color: var(--proteo-main_color_shade, $color__accent);
+	color: var(--proteo-general_link_color, $color__accent);
 }
 
 .single-product div.product .summary.entry-summary {
@@ -32,7 +32,7 @@ a.compare.button {
 
 			&:hover {
 				text-decoration: underline;
-				color: var(--proteo-main_color_shade, $color__accent);
+				color: var(--proteo-general_link_color, $color__accent);
 			}
 		}
 	}
@@ -120,7 +120,7 @@ ul.products li.product {
 						text-transform: none;
 						padding: 0;
 						display: block;
-						color: var(--proteo-main_color_shade, $color__accent);
+						color: var(--proteo-general_link_color, $color__accent);
 					}
 				}
 			}

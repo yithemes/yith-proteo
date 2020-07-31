@@ -21,6 +21,7 @@ function yith_proteo_inline_style() {
 	$default_font = ( get_theme_mod( 'yith_proteo_google_font', esc_url_raw( 'https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap' ) ) ) == 'https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap' ? true : false;
 
 	$main_color_shade         = get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' );
+	$general_link_color       = get_theme_mod( 'yith_proteo_general_link_color', get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ) );
 	$general_link_hover_color = get_theme_mod( 'yith_proteo_general_link_hover_color', yith_proteo_adjust_brightness( get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ), - 0.3 ) );
 
 	$header_bg_color = get_theme_mod( 'yith_proteo_header_background_color', '#ffffff' );
@@ -124,6 +125,7 @@ function yith_proteo_inline_style() {
 	$custom_css = "{$font}
 :root {
 	--proteo-main_color_shade: {$main_color_shade};
+	--proteo-general_link_color: {$general_link_color};
 	--proteo-general_link_hover_color: {$general_link_hover_color};
 	--proteo-header_bg_color: {$header_bg_color};
 	--proteo-header_menu_color: {$header_menu_color};

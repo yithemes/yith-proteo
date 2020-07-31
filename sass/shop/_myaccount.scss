@@ -108,7 +108,7 @@ MY ACCOUNT
 
 				&.is-active > a,
 				& > a:hover {
-					color: var(--proteo-main_color_shade, $color__accent);
+					color: var(--proteo-general_link_color, $color__accent);
 				}
 
 				.woocommerce-MyAccount-content {
@@ -254,7 +254,7 @@ MY ACCOUNT
 					}
 
 					&:hover {
-						color: var(--proteo-main_color_shade, $color__accent);
+						color: var(--proteo-general_link_color, $color__accent);
 					}
 				}
 			}

@@ -68,7 +68,7 @@ function yith_proteo_customize_register( $wp_customize ) {
 	$wp_customize->add_section(
 		'colors',
 		array(
-			'title'    => esc_html__( 'Site background color', 'yith-proteo' ),
+			'title'    => esc_html__( 'Site colors', 'yith-proteo' ),
 			'priority' => 5,
 			'panel'    => 'yith_proteo_extra',
 		)
@@ -151,13 +151,13 @@ if ( function_exists( 'wc' ) ) {
 }
 
 
-add_action( 'customize_render_control_yith_proteo_google_font', 'yith_proteo_add_gfont_documentation_link' );
+add_action( 'customize_render_control_yith_proteo_base_font_size', 'yith_proteo_add_gfont_documentation_link' );
 
 /**
  * Render GFont doc guide link
  */
 function yith_proteo_add_gfont_documentation_link() {
-	printf( '<span class="dashicons dashicons-sos" style="vertical-align: middle;"></span> <a href="%s" target="_blank" rel="noopener nofollow">%s</a>', esc_url( 'https://docs.yithemes.com/yith-proteo/customization/how-to-use-google-fonts/' ), esc_html__( 'Read the documentation to see how to retrieve a Google Font URL', 'yith-proteo' ) );
+	printf( '<div class="gfont-tooltip" style="margin-bottom: 25px;"><a href="%s" target="_blank" rel="noopener nofollow">%s</a></div>', esc_url( 'https://docs.yithemes.com/yith-proteo/customization/how-to-use-google-fonts/' ), esc_html__( 'Read how to retrieve a Google font url', 'yith-proteo' ) );
 }
 
 /**

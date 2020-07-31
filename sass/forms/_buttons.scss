@@ -63,7 +63,7 @@ input[type="submit"].alt,
 .comment-reply a {
 	text-transform: uppercase;
 	font-weight: bold;
-	color: var(--proteo-main_color_shade, $color__accent);
+	color: var(--proteo-general_link_color, $color__accent);
 	text-decoration: none;
 	font-size: 0.875rem;
 
@@ -146,7 +146,7 @@ table.cart tbody tr td.actions button[name="update_cart"],
 	background-color: transparent;
 	padding: 0;
 	border: none;
-	color: var(--proteo-main_color_shade, $color__accent);
+	color: var(--proteo-general_link_color, $color__accent);
 	font-weight: 600;
 	text-decoration: none;
 	text-transform: none;

@@ -172,7 +172,7 @@ Wishlist View Modern
 				color: inherit;
 
 				&:hover {
-					color: var(--proteo-main_color_shade, $color__accent);
+					color: var(--proteo-general_link_color, $color__accent);
 				}
 			}
 
@@ -320,7 +320,7 @@ Single product page wishlist style
 				margin: 0;
 
 				&:hover {
-					color: var(--proteo-main_color_shade, $color__accent);
+					color: var(--proteo-general_link_color, $color__accent);
 				}
 			}
 		}
@@ -420,7 +420,7 @@ Wishlist page links
 
 		&:hover,
 		&.active {
-			color: var(--proteo-main_color_shade, $color__accent);
+			color: var(--proteo-general_link_color, $color__accent);
 			font-weight: 600;
 		}
 	}
@@ -462,7 +462,7 @@ table.wishlist_table.wishlist_manage_table {
 				color: inherit;
 
 				&:hover {
-					color: var(--proteo-main_color_shade, $color__accent);
+					color: var(--proteo-general_link_color, $color__accent);
 				}
 			}
 
@@ -490,7 +490,7 @@ table.wishlist_table.wishlist_manage_table {
 				padding: 0;
 
 				&:hover {
-					color: var(--proteo-main_color_shade, $color__accent);
+					color: var(--proteo-general_link_color, $color__accent);
 				}
 			}
 
@@ -557,7 +557,7 @@ table.wishlist_table.wishlist_manage_table {
 				text-decoration: none;
 
 				&:hover {
-					color: var(--proteo-main_color_shade, $color__accent);
+					color: var(--proteo-general_link_color, $color__accent);
 				}
 			}
 		}
@@ -869,7 +869,7 @@ Widgets
 						}
 
 						.mini-cart-wishlist-info a {
-							color: var(--proteo-main_color_shade, $color__accent);
+							color: var(--proteo-general_link_color, $color__accent);
 
 							&:hover {
 								text-decoration: underline;
@@ -892,7 +892,7 @@ Widgets
 			font-size: 0.75em;
 			margin-right: 0;
 			background: none;
-			color: var(--proteo-main_color_shade, $color__accent);
+			color: var(--proteo-general_link_color, $color__accent);
 			text-decoration: none;
 
 			&:hover {
