@@ -5,6 +5,49 @@
  * @package yith-proteo
  */
 
+// Custom logo max width.
+$wp_customize->add_setting(
+	'yith_proteo_custom_logo_max_width',
+	array(
+		'default'           => 375,
+		'transport'         => 'postMessage',
+		'sanitize_callback' => 'absint',
+		'priority'          => 5,
+	)
+);
+
+$wp_customize->add_control(
+	new WP_Customize_Range(
+		$wp_customize,
+		'yith_proteo_custom_logo_max_width',
+		array(
+			'label'   => esc_html__( 'Logo image max width (px)', 'yith-proteo' ),
+			'min'     => 40,
+			'max'     => 500,
+			'step'    => 1,
+			'section' => 'title_tagline',
+		)
+	)
+);
+
+$wp_customize->add_setting(
+	'blogname',
+	array(
+		'default'    => get_option( 'blogname' ),
+		'type'       => 'option',
+		'capability' => 'manage_options',
+		'priority'   => 10,
+	)
+);
+
+$wp_customize->add_control(
+	'blogname',
+	array(
+		'label'   => esc_html__( 'Site Title', 'yith-proteo' ),
+		'section' => 'title_tagline',
+	)
+);
+
 // Site title font size.
 $wp_customize->add_setting(
 	'yith_proteo_site_title_font_size',
@@ -41,6 +84,24 @@ $wp_customize->add_control(
 			'label'   => esc_html__( 'Site Title color', 'yith-proteo' ),
 			'section' => 'title_tagline',
 		)
+	)
+);
+
+$wp_customize->add_setting(
+	'blogdescription',
+	array(
+		'default'    => get_option( 'blogdescription' ),
+		'type'       => 'option',
+		'capability' => 'manage_options',
+		'priority'   => 100,
+	)
+);
+
+$wp_customize->add_control(
+	'blogdescription',
+	array(
+		'label'   => esc_html__( 'Tagline', 'yith-proteo' ),
+		'section' => 'title_tagline',
 	)
 );
 

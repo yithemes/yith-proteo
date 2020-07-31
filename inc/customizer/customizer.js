@@ -33,7 +33,13 @@
 
 	wp.customize('yith_proteo_single_post_bg_alpha', function (value) {
 		value.bind(function (newval) {
-			$("<style>article.proteo_post_layout_background_picture header.alignfull:before { opacity: " + newval / 100 + "; }</style>").appendTo("head")
+			$("<style>article.proteo_post_layout_background_picture header.alignfull:before { opacity: " + newval / 100 + "; }</style>").appendTo("head");
+		});
+	});
+
+	wp.customize('yith_proteo_custom_logo_max_width', function (value) {
+		value.bind(function (newval) {
+			$('.custom-logo-link').css("max-width", newval + 'px');
 		});
 	});
 

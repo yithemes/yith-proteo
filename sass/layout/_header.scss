@@ -22,11 +22,12 @@
 
 	img.custom-logo {
 		display: inline-block;
-		max-width: 375px;
+		max-width: inherit;
 	}
 
 	.custom-logo-link {
 		font-size: 0;
+		max-width: var(--proteo-site_custom_logo_max_width, 375);
 	}
 
 	.site-description {
