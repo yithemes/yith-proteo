@@ -481,6 +481,7 @@ add_filter( 'yith_wcwl_wishlist_title', 'yith_proteo_change_wishlist_title_tag' 
 function yith_proteo_loop_add_to_cart_additional_class( $args, $product ) {
 
 	$button_class   = get_theme_mod( 'yith_proteo_products_loop_add_to_cart_style', 'unstyled_button' );
+	$button_class   = str_replace( '_', '-', $button_class );
 	$args['class'] .= ' ' . $button_class;
 
 	return $args;
