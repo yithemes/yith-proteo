@@ -33,7 +33,9 @@ global $post;
 	}
 	$slider = '';
 	if ( defined( 'YITH_SLIDER_FOR_PAGE_BUILDERS' ) ) {
-		if ( is_home() ) {
+		if ( function_exists( 'wc' ) && is_shop() ) {
+			$slider = get_post_meta( wc_get_page_id( 'shop' ), 'header_slider', true );
+		} elseif ( is_home() ) {
 			$slider = get_post_meta( get_option( 'page_for_posts' ), 'header_slider', true );
 		} elseif ( $post ) {
 			$slider = get_post_meta( $post->ID, 'header_slider', true );
