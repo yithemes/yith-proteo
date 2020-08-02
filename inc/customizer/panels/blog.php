@@ -97,3 +97,25 @@
 			)
 		)
 	);
+
+	// Date hover image enable.
+	$wp_customize->add_setting(
+		'yith_proteo_blog_date_on_image_enable',
+		array(
+			'default'           => 'yes',
+			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+		)
+	);
+	$wp_customize->add_control(
+		'yith_proteo_blog_date_on_image_enable',
+		array(
+			'type'        => 'radio',
+			'label'       => esc_html__( 'Show date badge', 'yith-proteo' ),
+			'section'     => 'yith_proteo_blog_management',
+			'description' => esc_html__( 'Choose whether to show the post date badge or not.', 'yith-proteo' ),
+			'choices'     => array(
+				'yes' => esc_html__( 'Yes', 'yith-proteo' ),
+				'no'  => esc_html__( 'No', 'yith-proteo' ),
+			),
+		)
+	);

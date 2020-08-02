@@ -7030,9 +7030,9 @@ article:not(.has-post-thumbnail) header.entry-header .date-and-thumbnail,
 article:not(.has-post-thumbnail) header.entry-header .entry-title {
   display: inline-block;
 }
-article:not(.has-post-thumbnail) header.entry-header .date-and-thumbnail {
-  margin-bottom: 25px;
+article:not(.has-post-thumbnail) header.entry-header .date-and-thumbnail .entry-meta {
   margin-right: 15px;
+  margin-bottom: 25px;
 }
 
 .entry-content p:not([class^=has]),

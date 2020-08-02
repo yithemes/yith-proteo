@@ -174,8 +174,10 @@ article:not(.has-post-thumbnail) {
 		}
 
 		.date-and-thumbnail {
-			margin-bottom: 25px;
-			margin-right: 15px;
+			.entry-meta {
+				margin-right: 15px;
+				margin-bottom: 25px;
+			}
 		}
 	}
 }

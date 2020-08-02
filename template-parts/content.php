@@ -19,7 +19,7 @@
 
 		<div class="date-and-thumbnail">
 			<?php
-			if ( 'post' === get_post_type() ) :
+			if ( 'post' === get_post_type() && ( 'yes' === get_theme_mod( 'yith_proteo_blog_date_on_image_enable', 'yes' ) ) ) :
 				?>
 				<div class="entry-meta">
 					<?php
