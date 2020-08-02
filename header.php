@@ -33,7 +33,9 @@ global $post;
 	}
 	$slider = '';
 	if ( defined( 'YITH_SLIDER_FOR_PAGE_BUILDERS' ) ) {
-		if ( $post ) {
+		if ( is_home() ) {
+			$slider = get_post_meta( get_option( 'page_for_posts' ), 'header_slider', true );
+		} elseif ( $post ) {
 			$slider = get_post_meta( $post->ID, 'header_slider', true );
 		}
 	}
@@ -131,12 +133,8 @@ global $post;
 
 	<?php
 	if ( defined( 'YITH_SLIDER_FOR_PAGE_BUILDERS' ) ) {
-
-		if ( $post ) {
-			$slider = get_post_meta( $post->ID, 'header_slider', true );
-			if ( $slider && '' !== $slider ) {
-				echo do_shortcode( '[yith-slider slider="' . get_post_meta( $post->ID, 'header_slider', true ) . '"]' );
-			}
+		if ( $slider && '' !== $slider ) {
+			echo do_shortcode( '[yith-slider slider="' . $slider . '"]' );
 		}
 	}
 	?>
