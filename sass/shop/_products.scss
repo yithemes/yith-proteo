@@ -34,6 +34,9 @@ ul.products,
 			&.woocommerce-loop-product__link {
 				position: relative;
 			}
+			&.button {
+				display: inline-block;
+			}
 		}
 
 		.yith-wcwl-add-to-wishlist {
