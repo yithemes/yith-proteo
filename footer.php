@@ -11,7 +11,7 @@
 
 global $post;
 ?>
-<?php echo ! yith_proteo_get_sidebar_position() ? '</div>' : ''; ?>
+<?php echo yith_proteo_get_sidebar_position() ? '</div>' : ''; ?>
 </div><!-- .container -->
 </div><!-- #content -->
 </div><!-- #page -->
