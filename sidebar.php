@@ -24,7 +24,7 @@ if ( function_exists( 'wc' ) && is_shop() && get_post_meta( get_option( 'woocomm
 
 ?>
 
-<aside id="secondary" class="widget-area <?php echo '' !== yith_proteo_get_sidebar_position() ? 'col-lg-3' : ''; ?>">
+<aside id="secondary" class="widget-area <?php echo yith_proteo_get_sidebar_position() ? 'col-lg-3' : ''; ?>">
 	<?php
 
 	$sidebar = yith_proteo_sidebar_get_meta( 'sidebar_chooser' );

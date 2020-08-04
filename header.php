@@ -144,4 +144,4 @@ global $post;
 	<div id="content" class="site-content">
 		<?php do_action( 'yith_proteo_before_page_content' ); ?>
 		<div class="container">
-			<?php echo '' !== yith_proteo_get_sidebar_position() ? '<div class="row">' : ''; ?>
+			<?php echo yith_proteo_get_sidebar_position() ? '<div class="row">' : ''; ?>
