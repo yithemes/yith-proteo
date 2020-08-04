@@ -11484,6 +11484,13 @@ WISHLIST MOBILE LAYOUT
     margin-right: 0;
   }
 }
+#payment ul li #yith_wcauthnet_credit_card_form .woocommerce-SavedPaymentMethods-saveNew {
+  padding: 0;
+}
+#payment ul li #yith_wcauthnet_credit_card_form .woocommerce-SavedPaymentMethods-saveNew label {
+  padding-left: 0;
+}
+
 ul.products li.product .yith-wcbr-brands a,
 ul.products li.product .yith-wcbr-brands-logo a {
   display: inline-block;
