@@ -33,10 +33,11 @@ $wp_customize->add_control(
 $wp_customize->add_setting(
 	'blogname',
 	array(
-		'default'    => get_option( 'blogname' ),
-		'type'       => 'option',
-		'capability' => 'manage_options',
-		'priority'   => 10,
+		'default'           => get_option( 'blogname' ),
+		'type'              => 'option',
+		'capability'        => 'manage_options',
+		'priority'          => 10,
+		'sanitize_callback' => 'wp_filter_nohtml_kses',
 	)
 );
 
@@ -90,10 +91,11 @@ $wp_customize->add_control(
 $wp_customize->add_setting(
 	'blogdescription',
 	array(
-		'default'    => get_option( 'blogdescription' ),
-		'type'       => 'option',
-		'capability' => 'manage_options',
-		'priority'   => 100,
+		'default'           => get_option( 'blogdescription' ),
+		'type'              => 'option',
+		'capability'        => 'manage_options',
+		'priority'          => 100,
+		'sanitize_callback' => 'wp_filter_nohtml_kses',
 	)
 );
 
