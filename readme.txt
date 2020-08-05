@@ -4,7 +4,7 @@ Tags: one-column, two-columns, left-sidebar, right-sidebar, wide-blocks, accessi
 Requires at least: 4.9.6
 Tested up to: WordPress 5.4
 Requires PHP: 5.6
-Stable tag: 1.2.15
+Stable tag: 1.3.0
 YITH Proteo WordPress Theme, Copyright 2020 YITH
 YITH Proteo is distributed under the terms of the GNU GPL
 License: GPLv2 or later
@@ -25,6 +25,35 @@ Proteo is a sleek, modern and "Gutenberg-friendly" e-commerce theme. Developed w
 == Frequently Asked Questions ==
 
 == Changelog ==
+
+= 1.3.0 - August 05 2020 =
+* Rearrange Customizer panels and sections
+* New option to hide or show "date badge" on blog pages
+* New options for footer font size, color, link and alignment management
+* New options for footer credits font size, color, link and alignment management
+* New topbar font-color, font-size, alignment options
+* New topbar links color options
+* New option for "update cart" button (textual|button)
+* New options for link colors
+* New custom logo max width option
+* Fix blog sidebar display
+* Fix input quantity behaviour when value is empty
+* Fix display button when product has no price in product loops
+* Fix unstyled button style
+* Fix header slider not working on blog page
+* Fix yith_proteo_products_loop_add_to_cart_style option not working as expected
+* Fix minicart product image issue with hidden visibility products
+* Improved style for various YITH plugins
+* Refactoring of all scss files
+* Support to 'YITH Slider for page builders' on shop page
+* Improved WordPress-Core and WordPress-Extra PHPCS
+* Improved sticky footer behaviour
+* Merge pull request #8 from mklasen/preventTermsExcerpt
+* Remove Experimental Lazy Loading options
+* Make required plugins function pluggable
+* Avoid text decoration from topbar links
+
+
 = 1.2.15 - July 22 2020 =
 * Suggest YITH Proteo Toolkit plugin for a better onboardin experience
 * New loop add to cart button style (unstyled | style 1 | style 2)

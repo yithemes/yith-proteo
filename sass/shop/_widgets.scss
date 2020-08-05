@@ -142,7 +142,11 @@ Mini Cart Widget
 				& > a:not(.remove) {
 					min-height: 60px;
 				}
-
+				img {
+					max-width: 50px;
+					vertical-align: top;
+					margin-right: 10px;
+				}
 				& > * {
 					display: inline-block;
 					font-size: 0.9375rem;
@@ -150,11 +154,7 @@ Mini Cart Widget
 					color: #1f1f1f;
 					text-decoration: none;
 
-					img {
-						max-width: 50px;
-						vertical-align: top;
-						margin-right: 10px;
-					}
+					
 
 					&:hover {
 						color: var(--proteo-general_link_color, $color__accent);
