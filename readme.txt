@@ -26,6 +26,10 @@ Proteo is a sleek, modern and "Gutenberg-friendly" e-commerce theme. Developed w
 
 == Changelog ==
 
+= 1.3.1 - August 07 2020 =
+* Fix in-page anchor links behavior on mobile menu
+* Fix Show header sidebar option not working
+
 = 1.3.0 - August 05 2020 =
 * Rearrange Customizer panels and sections
 * New option to hide or show "date badge" on blog pages
