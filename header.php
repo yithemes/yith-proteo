@@ -126,9 +126,11 @@ global $post;
 					);
 					?>
 				</nav><!-- #site-navigation -->
+				<?php if ( 'yes' === get_theme_mod( 'yith_proteo_show_header_sidebar', 'yes' ) ) : ?>
 				<div class="header-sidebar">
 					<?php dynamic_sidebar( 'header-sidebar' ); ?>
 				</div>
+				<?php endif; ?>
 			</div>
 		</header><!-- #masthead -->
 	<?php endif; ?>
