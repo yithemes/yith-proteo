@@ -310,5 +310,13 @@
 		window.addEventListener("orientationchange", lazyLoad);
 	});
 
+	$('#mobile-menu li:not(.menu-item-has-children) > a').on('click', function(){
+		var t = $(this),
+			mobile_menu_container = $('nav#site-navigation');
+			if ( mobile_menu_container.hasClass('toggled') ) {
+				mobile_menu_container.removeClass('toggled');
+			}
+	});
+
 })
 	(jQuery);
