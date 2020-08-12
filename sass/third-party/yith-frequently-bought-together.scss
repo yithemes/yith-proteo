@@ -4,6 +4,14 @@
 		.total_price {
 			color: #1f1f1f;
 			font-weight: bold;
+
+			del {
+				font-weight: normal;
+			}
+
+			ins {
+				background: none;
+			}
 		}
 
 		.yith-wfbt-images {

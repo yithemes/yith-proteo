@@ -10508,6 +10508,14 @@ table.shop_table tbody tr td.product-name ._view_and_pdf_row a.button {
   color: #1f1f1f;
   font-weight: bold;
 }
+.yith-wfbt-section .yith-wfbt-form .price del,
+.yith-wfbt-section .yith-wfbt-form .total_price del {
+  font-weight: normal;
+}
+.yith-wfbt-section .yith-wfbt-form .price ins,
+.yith-wfbt-section .yith-wfbt-form .total_price ins {
+  background: none;
+}
 .yith-wfbt-section .yith-wfbt-form .yith-wfbt-images {
   margin-top: 0;
 }
