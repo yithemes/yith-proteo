@@ -16,6 +16,70 @@
 			'panel'    => 'woocommerce',
 		)
 	);
+
+	// Enable image zoom.
+	$wp_customize->add_setting(
+		'yith_proteo_product_page_image_zoom',
+		array(
+			'default'           => 'yes',
+			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+		)
+	);
+	$wp_customize->add_control(
+		'yith_proteo_product_page_image_zoom',
+		array(
+			'type'    => 'radio',
+			'label'   => esc_html__( 'Enable featured image zoom', 'yith-proteo' ),
+			'section' => 'yith_proteo_product_page_management',
+			'choices' => array(
+				'yes' => esc_html__( 'Yes', 'yith-proteo' ),
+				'no'  => esc_html__( 'No', 'yith-proteo' ),
+			),
+		)
+	);
+
+	// Enable image lightbox.
+	$wp_customize->add_setting(
+		'yith_proteo_product_page_image_lightbox',
+		array(
+			'default'           => 'yes',
+			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+		)
+	);
+	$wp_customize->add_control(
+		'yith_proteo_product_page_image_lightbox',
+		array(
+			'type'    => 'radio',
+			'label'   => esc_html__( 'Enable featured image lightbox', 'yith-proteo' ),
+			'section' => 'yith_proteo_product_page_management',
+			'choices' => array(
+				'yes' => esc_html__( 'Yes', 'yith-proteo' ),
+				'no'  => esc_html__( 'No', 'yith-proteo' ),
+			),
+		)
+	);
+
+	// Enable gallery slider.
+	$wp_customize->add_setting(
+		'yith_proteo_product_page_gallery_slider',
+		array(
+			'default'           => 'yes',
+			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+		)
+	);
+	$wp_customize->add_control(
+		'yith_proteo_product_page_gallery_slider',
+		array(
+			'type'    => 'radio',
+			'label'   => esc_html__( 'Enable additional images slider', 'yith-proteo' ),
+			'section' => 'yith_proteo_product_page_management',
+			'choices' => array(
+				'yes' => esc_html__( 'Yes', 'yith-proteo' ),
+				'no'  => esc_html__( 'No', 'yith-proteo' ),
+			),
+		)
+	);
+
 	// Single product page related products management.
 	$wp_customize->add_setting(
 		'yith_proteo_product_page_related_max_number',

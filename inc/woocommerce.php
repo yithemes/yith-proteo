@@ -646,3 +646,19 @@ function yith_proteo_cross_sell_max_number( $total ) {
 	return get_theme_mod( 'yith_proteo_cross_sell_max_number', 4 );
 }
 add_filter( 'woocommerce_cross_sells_total', 'yith_proteo_cross_sell_max_number' );
+
+/**
+ * Handle single product page featured image features
+ */
+function yith_proteo_manage_single_product_image_features() {
+	if ( 'no' === get_theme_mod( 'yith_proteo_product_page_image_zoom', 'yes' ) ) {
+		remove_theme_support( 'wc-product-gallery-zoom' );
+	}
+	if ( 'no' === get_theme_mod( 'yith_proteo_product_page_image_lightbox', 'yes' ) ) {
+		remove_theme_support( 'wc-product-gallery-lightbox' );
+	}
+	if ( 'no' === get_theme_mod( 'yith_proteo_product_page_gallery_slider', 'yes' ) ) {
+		remove_theme_support( 'wc-product-gallery-slider' );
+	}
+}
+add_action( 'wp', 'yith_proteo_manage_single_product_image_features', 99 );

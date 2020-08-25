@@ -322,7 +322,7 @@ Custom media queries
 		display: block;
 		border-bottom: 1px solid #c5c5c5;
 
-		&:last-child {
+		&:last-of-type {
 			border-bottom: none;
 		}
 
@@ -347,6 +347,12 @@ Custom media queries
 				right: 0;
 				top: 0;
 				padding: 0;
+			}
+			&.product-subtotal {
+				padding-right: 5px;
+			}
+			.quantity {
+				margin-right: 10px;
 			}
 		}
 		td[data-title]::before {

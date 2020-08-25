@@ -9400,6 +9400,17 @@ Mini Cart Widget
   list-style-type: none;
   padding: 0;
   margin: 0 0 20px;
+  max-height: 30vh;
+  overflow-y: scroll;
+}
+.widget_shopping_cart .yith-proteo-mini-cart-content ul::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+.widget_shopping_cart .yith-proteo-mini-cart-content ul::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 1px rgba(255, 255, 255, 0.4);
 }
 .widget_shopping_cart .yith-proteo-mini-cart-content ul li {
   position: relative;
@@ -12584,7 +12595,7 @@ table.shop_table {
     display: block;
     border-bottom: 1px solid #c5c5c5;
   }
-  table.shop_table_responsive tbody tr:last-child {
+  table.shop_table_responsive tbody tr:last-of-type {
     border-bottom: none;
   }
   table.shop_table_responsive tbody tr td {
@@ -12607,6 +12618,12 @@ table.shop_table {
     right: 0;
     top: 0;
     padding: 0;
+  }
+  table.shop_table_responsive tbody tr td.product-subtotal {
+    padding-right: 5px;
+  }
+  table.shop_table_responsive tbody tr td .quantity {
+    margin-right: 10px;
   }
   table.shop_table_responsive tbody tr td[data-title]::before {
     content: attr(data-title) ": ";

@@ -131,6 +131,19 @@ Mini Cart Widget
 			list-style-type: none;
 			padding: 0;
 			margin: 0 0 20px;
+			max-height: 30vh;
+			overflow-y: scroll;
+			
+			&::-webkit-scrollbar {
+				-webkit-appearance: none;
+				width: 7px;
+			}
+
+			&::-webkit-scrollbar-thumb {
+				border-radius: 4px;
+				background-color: rgba(0, 0, 0, .4);
+				box-shadow: 0 0 1px rgba(255, 255, 255, .4);
+			}
 
 			li {
 				position: relative;
