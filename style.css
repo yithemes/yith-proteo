@@ -6,7 +6,7 @@ Author: YITH
 Author URI: https://yithemes.com
 Description: Proteo is a sleek, modern and “Gutenberg-friendly” e-commerce theme. Developed with a beautiful UI and a minimal design, is perfect for each kind of shop. Easy to manage and to customize, Proteo is the best solution if you want a complete e-commerce template and start quickly to sell your products with WooCommerce without a technical knowledge. Use it also for corporate site or a blog: there are no limits about what you can do with a beautiful and usable theme like this! Main features: Colors and Typography customization (Google font support), Logo customization, 3 different Header layouts, Advanced customizer theme options, Sidebar Management, Sidebar Chooser on each page and product, Page title icons, Top Bar Management, Easy main color shade chooser, Buttons style management (gradient buttons support), Footer management with multiple sidebars, WooCommerce support, Shop Theme Options, Custom WooCommerce messages and animated WooCommerce alert notices, Two cart page layouts, Bootstrap grid system, CSS animations, Gutenberg support, Responsive, Fullscreen search, Multilevel menus, Support to all YITH plugins, SVG icons for HiDPI screens, Translation Ready. <a href="https://proteo.yithemes.com/about-proteo/" rel="nofollow" target="_blank">Discover more ></a> | <a href="https://proteo.yithemes.com/" rel="nofollow" target="_blank">Check our live demo ></a>
 
-Version: 1.3.1.1
+Version: 1.3.1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: yith-proteo
@@ -12573,6 +12573,46 @@ table.shop_table_responsive thead tr th.product-name {
   table.cart,
 table.shop_table {
     font-size: 0.875rem;
+  }
+
+  table.shop_table_responsive thead {
+    display: none;
+  }
+
+  table.shop_table_responsive tbody tr {
+    position: relative;
+    display: block;
+    border-bottom: 1px solid #c5c5c5;
+  }
+  table.shop_table_responsive tbody tr:last-child {
+    border-bottom: none;
+  }
+  table.shop_table_responsive tbody tr td {
+    display: block;
+    text-align: right;
+    clear: both;
+    padding: 15px 5px;
+  }
+  table.shop_table_responsive tbody tr td.product-name {
+    text-align: right;
+  }
+  table.shop_table_responsive tbody tr td.product-remove, table.shop_table_responsive tbody tr td.product-thumbnail {
+    display: initial;
+  }
+  table.shop_table_responsive tbody tr td.product-thumbnail {
+    text-align: center;
+  }
+  table.shop_table_responsive tbody tr td.product-remove {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0;
+  }
+  table.shop_table_responsive tbody tr td[data-title]::before {
+    content: attr(data-title) ": ";
+    font-weight: 600;
+    float: left;
+    display: table;
   }
 }
 

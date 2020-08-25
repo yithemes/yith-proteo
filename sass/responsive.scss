@@ -313,6 +313,49 @@ Custom media queries
 	table.shop_table {
 		font-size: 0.875rem;
 	}
+	table.shop_table_responsive thead {
+		display: none;
+	}
+
+	table.shop_table_responsive tbody tr {
+		position: relative;
+		display: block;
+		border-bottom: 1px solid #c5c5c5;
+
+		&:last-child {
+			border-bottom: none;
+		}
+
+		td {
+			display: block;
+			text-align: right;
+			clear: both;
+			padding: 15px 5px;
+
+			&.product-name {
+				text-align: right;
+			}
+			&.product-remove,
+			&.product-thumbnail {
+				display: initial;
+			}
+			&.product-thumbnail {
+				text-align: center;
+			}
+			&.product-remove {
+				position: absolute;
+				right: 0;
+				top: 0;
+				padding: 0;
+			}
+		}
+		td[data-title]::before {
+			content: attr(data-title) ": ";
+			font-weight: 600;
+			float: left;
+			display: table;
+		}
+	}
 }
 
 // Extra small devices (portrait phones, less than 576px)

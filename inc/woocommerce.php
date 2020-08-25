@@ -559,7 +559,7 @@ add_filter( 'woocommerce_short_description', 'yith_proteo_limit_woocommerce_shor
  */
 function yith_proteo_title_order_received( $title, $id ) {
 	if ( function_exists( 'is_order_received_page' ) && is_order_received_page() && get_the_ID() === $id ) {
-		$title = esc_html__( 'Thank you', 'yith-proteo' );
+		$title = esc_html__( 'Thank you.', 'yith-proteo' );
 	}
 
 	return $title;
