@@ -164,6 +164,15 @@ table.shop_table {
 				button[name="update_cart"] {
 					float: right;
 					margin-right: 0;
+
+					&:before {
+						font: normal 1.2em Linearicons-Free;
+						content: "\e862";
+						top: 3px;
+						position: relative;
+						margin-right: 5px;
+						line-height: 0;
+					}
 				}
 			}
 
