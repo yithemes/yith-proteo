@@ -124,6 +124,17 @@ if ( ! function_exists( 'yith_proteo_setup' ) ) :
 		 */
 		add_theme_support( 'editor-styles' );
 
+		/**
+		 * Responsive embedded content
+		 */
+		add_theme_support( 'responsive-embeds' );
+
+		/**
+		 * Gutenberg experimental functions
+		 */
+		add_theme_support( 'custom-units' );
+		add_theme_support( 'custom-line-height' );
+		add_theme_support( 'experimental-custom-spacing' );
 	}
 endif;
 add_action( 'after_setup_theme', 'yith_proteo_setup' );
