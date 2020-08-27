@@ -92,6 +92,7 @@ $wp_customize->add_control(
 	)
 );
 
+
 // Site title font size.
 $wp_customize->add_setting(
 	'yith_proteo_site_title_font_size',
@@ -227,6 +228,27 @@ $wp_customize->add_control(
 		array(
 			'label'   => esc_html__( 'Tagline color', 'yith-proteo' ),
 			'section' => 'title_tagline',
+		)
+	)
+);
+$wp_customize->add_setting(
+	'yith_proteo_blogname_font2',
+	array(
+		'sanitize_callback' => 'yith_proteo_google_font_sanitization',
+	),
+);
+$wp_customize->add_control(
+	new Google_Font_Select_Custom_Control(
+		$wp_customize,
+		'yith_proteo_blogname_font2',
+		array(
+			'label'       => __( 'Google Font Control' ),
+			'description' => esc_html__( 'Sample custom control description' ),
+			'section'     => 'title_tagline',
+			'input_attrs' => array(
+				'font_count' => 'all',
+				'orderby'    => 'alpha',
+			),
 		)
 	)
 );

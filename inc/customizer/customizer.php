@@ -342,6 +342,28 @@ if ( ! function_exists( 'yith_proteo_sanitize_alpha_colors' ) ) {
 	}
 }
 
+
+if ( ! function_exists( 'yith_proteo_google_font_sanitization' ) ) {
+	/**
+	 * Google Font sanitization
+	 *
+	 * @param  string $input JSON string to be sanitized.
+	 * @return string   Sanitized input
+	 */
+	function yith_proteo_google_font_sanitization( $input ) {
+		$val = json_decode( $input, true );
+		if ( is_array( $val ) ) {
+			foreach ( $val as $key => $value ) {
+				$val[ $key ] = sanitize_text_field( $value );
+			}
+			$input = wp_json_encode( $val );
+		} else {
+			$input = wp_json_encode( sanitize_text_field( $val ) );
+		}
+		return $input;
+	}
+}
+
 /**
  * Add YITH Customizer CSS
  */
