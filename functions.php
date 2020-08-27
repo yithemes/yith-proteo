@@ -201,11 +201,18 @@ require get_template_directory() . '/inc/class-yith-proteo-walker-comment.php';
 
 /**
  * Customizer additions.
+ *
+ * @param object $wp_customize Instance of WP_Customize_Manager class.
  */
-require get_template_directory() . '/inc/customizer/custom-controls/class-wp-customize-range.php';
-require get_template_directory() . '/inc/customizer/custom-controls/class-wp-customize-notice.php';
-require get_template_directory() . '/inc/customizer/custom-controls/class-customizer-alpha-color-control.php';
-require get_template_directory() . '/inc/customizer/customizer.php';
+function yith_proteo_load_customize_classes( $wp_customize ) {
+	require get_template_directory() . '/inc/customizer/custom-controls/class-wp-customize-range.php';
+	require get_template_directory() . '/inc/customizer/custom-controls/class-wp-customize-notice.php';
+	require get_template_directory() . '/inc/customizer/custom-controls/class-customizer-alpha-color-control.php';
+	require get_template_directory() . '/inc/customizer/custom-controls/class-wp-font-selector.php';
+	require get_template_directory() . '/inc/customizer/customizer.php';
+}
+add_action( 'customize_register', 'yith_proteo_load_customize_classes', 0 );
+require get_template_directory() . '/inc/customizer/custom-controls/google-fonts.php';
 
 /**
  * Widgets.

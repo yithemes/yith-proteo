@@ -317,6 +317,10 @@ input.hasDatepicker {
 				opacity: 1;
 			}
 
+			&.ui-state-disabled {
+				display: none;
+			}
+
 			&[data-handler="prev"] {
 				left: 2px;
 
