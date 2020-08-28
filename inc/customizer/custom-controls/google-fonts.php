@@ -8,53 +8,6 @@
 define( 'YITH_PROTEO_GFONT_VERSION', '1.0.0' );
 
 /**
- * Enqueues a Google Font
- *
- * @param string $font Font to enqueue.
- * @param string $weight Font weight to enqueue.
- *
- * @since 1.1.38
- */
-function yith_proteo_font_selector_enqueue_google_font( $handle_prefix, $font, $weight ) {
-
-	// Sanitize handle.
-	$handle = trim( $font );
-	$handle = strtolower( $handle );
-	$handle = str_replace( ' ', '-', $handle );
-
-	// Sanitize font name.
-	$font = trim( $font );
-
-	$base_url = '//fonts.googleapis.com/css';
-
-	// Edit this to add more subsets.
-	$subsets = apply_filters( 'font_subsets', array( 'latin' ) );
-	if ( ! empty( $subsets ) ) {
-		$font_subsets = array();
-		foreach ( $subsets as $get_subset ) {
-			$font_subsets[] = $get_subset;
-		}
-		$subsets = implode( ',', $font_subsets );
-	}
-
-	// Add weights to URL.
-	if ( ! empty( $weight ) ) {
-		$font .= ':' . $weight;
-	}
-
-	$query_args = array(
-		'family' => rawurlencode( $font ),
-	);
-	if ( ! empty( $subsets ) ) {
-		$query_args['subset'] = rawurlencode( $subsets );
-	}
-	$url = add_query_arg( $query_args, $base_url );
-
-	// Enqueue style.
-	wp_enqueue_style( 'yith-proteo-google-font-' . $handle_prefix . '_' . $handle, $url, array(), YITH_PROTEO_GFONT_VERSION );
-}
-
-/**
  * Get the font family
  *
  * @param object $font Json containing the font.
@@ -166,7 +119,7 @@ function yith_proteo_massive_google_font_enqueue() {
 	}
 
 	// Enqueue font.
-	$url = yith_proteo_enqueue_google_fonts_unique_url( $unique_fonts );
+	$url = yith_proteo_enqueue_google_fonts_unique_url( $unique_fonts ) . '&display=swap';
 
 	if ( ! empty( $url ) ) {
 		wp_enqueue_style( 'yith-proteo-custom-google-fonts', $url, array(), YITH_PROTEO_GFONT_VERSION );
@@ -178,7 +131,9 @@ function yith_proteo_massive_google_font_enqueue() {
 }
 
 /**
+ * Get the font category
  *
+ * @param array $fonts Objects array with all fonts.
  */
 function yith_proteo_enqueue_google_fonts_unique_url( $fonts ) {
 
