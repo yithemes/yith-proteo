@@ -54,6 +54,7 @@ class Google_Font_Select_Custom_Control extends WP_Customize_Control {
 	public function enqueue() {
 		wp_enqueue_script( 'yith-proteo-gfont-select-script', get_template_directory_uri() . '/inc/customizer/custom-controls/font-selector-assets/js/select.js', array( 'jquery' ), '4.0.13', true );
 		wp_enqueue_style( 'yith-proteo-gfont-select-style', get_template_directory_uri() . '/inc/customizer/custom-controls/font-selector-assets/css/select.css', array(), '4.0.13', 'all' );
+		wp_enqueue_style( 'yith-proteo-gfont-typography', get_template_directory_uri() . '/inc/customizer/custom-controls/font-selector-assets/css/typography.css', null, YITH_PROTEO_GFONT_VERSION );
 	}
 	/**
 	 * Export our List of Google Fonts to JavaScript
@@ -112,6 +113,7 @@ class Google_Font_Select_Custom_Control extends WP_Customize_Control {
 							?>
 						</select>
 					</div>
+					<input type="hidden" class="google-fonts-category" value="<?php echo esc_attr( $this->font_values->category ); ?>">
 				<?php
 		}
 	}

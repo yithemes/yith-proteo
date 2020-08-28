@@ -212,7 +212,6 @@ function yith_proteo_load_customize_classes( $wp_customize ) {
 	require get_template_directory() . '/inc/customizer/customizer.php';
 }
 add_action( 'customize_register', 'yith_proteo_load_customize_classes', 0 );
-require get_template_directory() . '/inc/customizer/custom-controls/google-fonts.php';
 
 /**
  * Widgets.
@@ -223,6 +222,7 @@ require get_template_directory() . '/inc/widgets.php';
  * Customizer inline style additions.
  */
 require get_template_directory() . '/inc/customizer/customizer-inline-style.php';
+require get_template_directory() . '/inc/customizer/custom-controls/google-fonts.php';
 
 /**
  * Load TGM class

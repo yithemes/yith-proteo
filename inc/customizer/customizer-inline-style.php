@@ -122,28 +122,13 @@ function yith_proteo_inline_style() {
 		$font = 'body, body.yith-woocompare-popup { font-family: \'Montserrat\', sans-serif; }';
 	}
 
-	$sitetitle_font        = get_theme_mod( 'blogname_font', 'Montserrat' );
-	$sitetitle_font_weight = get_theme_mod( 'blogname_font_weight', 'Montserrat' );
-	$tagline_font          = get_theme_mod( 'blogdescription_font', 'Montserrat' );
-	$tagline_font_weight   = get_theme_mod( 'blogdescription_font_weight', 'Montserrat' );
-
-	// Enqueue font.
-	yith_proteo_font_selector_enqueue_google_font( $sitetitle_font );
-	yith_proteo_font_selector_enqueue_google_font( $tagline_font );
+	yith_proteo_massive_google_font_enqueue();
 
 	$custom_css = "{$font}
-	.site-branding .site-title {
-		font-family: {$sitetitle_font};
-		font-weight: {$sitetitle_font_weight};
-	}
-	.site-branding .site-description {
-		font-family: {$tagline_font};
-		font-weight: {$tagline_font_weight};
-	}
 	:root {
 		--proteo-main_color_shade: {$main_color_shade};
 		--proteo-general_link_color: {$general_link_color};
-		--proteo-general_link_hover_color: {$general_link_hover_color};
+		--proteo-general_link_hover_color: {$general_link_hover_color}'
 		--proteo-header_bg_color: {$header_bg_color};
 		--proteo-header_menu_color: {$header_menu_color};
 		--proteo-header_menu_hover_color: {$header_menu_hover_color};
