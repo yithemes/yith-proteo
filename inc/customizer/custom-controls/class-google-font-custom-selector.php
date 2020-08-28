@@ -85,7 +85,7 @@ class Google_Font_Select_Custom_Control extends WP_Customize_Control {
 						<?php
 						foreach ( $this->font_list as $key => $value ) {
 							$font_counter++;
-							$font_list_str .= '<option value="' . $value->family . '" ' . selected( $this->font_values->font, $value->family, false ) . '>' . $value->family . '</option>';
+							$font_list_str .= '<option value="' . esc_attr( $value->family ) . '" ' . selected( $this->font_values->font, $value->family, false ) . '>' . esc_html( $value->family ) . '</option>';
 							if ( $this->font_values->font === $value->family ) {
 								$is_font_in_list = true;
 							}
@@ -98,11 +98,11 @@ class Google_Font_Select_Custom_Control extends WP_Customize_Control {
 							$font_list_str = '<option value="' . $this->font_list[ $this->font_list_index ]->family . '" ' . selected( $this->font_values->font, $this->font_list[ $this->font_list_index ]->family, false ) . '>' . $this->font_list[ $this->font_list_index ]->family . ' (default)</option>' . $font_list_str;
 						}
 							// Display our list of font options.
-							echo $font_list_str;
+							echo $font_list_str; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 						?>
 						</select>
 					</div>
-					<div class="customize-control-description"><?php esc_html_e( 'Select weight & style for regular text', 'yith-proteo' ); ?></div>
+					<div class="customize-control-description"><?php esc_html_e( 'Select font weight & style', 'yith-proteo' ); ?></div>
 					<div class="weight-style">
 						<select class="google-fonts-regularweight-style">
 							<?php
@@ -112,45 +112,6 @@ class Google_Font_Select_Custom_Control extends WP_Customize_Control {
 							?>
 						</select>
 					</div>
-					<div class="customize-control-description"><?php esc_html_e( 'Select weight for', 'yith-proteo' ); ?> <italic><?php esc_html_e( 'italic text', 'yith-proteo' ); ?></italic></div>
-					<div class="weight-style">
-						<select class="google-fonts-italicweight-style" <?php disabled( in_array( 'italic', $this->font_list[ $this->font_list_index ]->variants, true ), false ); ?>>
-							<?php
-							$option_count = 0;
-							foreach ( $this->font_list[ $this->font_list_index ]->variants as $key => $value ) {
-								// Only add options that are italic.
-								if ( strpos( $value, 'italic' ) !== false ) {
-									echo '<option value="' . esc_attr( $value ) . '" ' . selected( $this->font_values->italicweight, $value, false ) . '>' . esc_attr( $value ) . '</option>';
-									$option_count++;
-								}
-							}
-							if ( 0 === $option_count ) {
-								echo '<option value="">Not Available for this font</option>';
-							}
-							?>
-						</select>
-					</div>
-					<div class="customize-control-description"><?php esc_html_e( 'Select weight for', 'yith-proteo' ); ?> <strong><?php esc_html_e( 'bold text', 'yith-proteo' ); ?></strong></div>
-					<div class="weight-style">
-						<select class="google-fonts-boldweight-style">
-							<?php
-							$option_count = 0;
-							foreach ( $this->font_list[ $this->font_list_index ]->variants as $key => $value ) {
-								// Only add options that aren't italic.
-								if ( strpos( $value, 'italic' ) === false ) {
-									echo '<option value="' . esc_attr( $value ) . '" ' . selected( $this->font_values->boldweight, $value, false ) . '>' . esc_attr( $value ) . '</option>';
-									$option_count++;
-								}
-							}
-							// This should never evaluate as there'll always be at least a 'regular' weight.
-							if ( 0 === $option_count ) {
-								echo '<option value="">Not Available for this font</option>';
-							}
-							?>
-						</select>
-					</div>
-					<input type="hidden" class="google-fonts-category" value="<?php echo esc_attr( $this->font_values->category ); ?>">
-				</div>
 				<?php
 		}
 	}

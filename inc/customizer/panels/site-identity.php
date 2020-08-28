@@ -50,45 +50,24 @@ $wp_customize->add_control(
 );
 
 $wp_customize->add_setting(
-	'blogname_font',
+	'site_title_font',
 	array(
-		'type'              => 'theme_mod',
-		'sanitize_callback' => 'sanitize_text_field',
-		'default'           => 'Montserrat',
+		'sanitize_callback' => 'yith_proteo_google_font_sanitization',
+		'default'           => '{"font":"Montserrat","regularweight":"regular","category":"sans-serif"}',
 	)
 );
 $wp_customize->add_control(
-	new WP_Font_Selector(
+	new Google_Font_Select_Custom_Control(
 		$wp_customize,
-		'blogname_font',
+		'site_title_font',
 		array(
-			'label'    => esc_html__( 'Site Title font family', 'yith-proteo' ),
-			'section'  => 'title_tagline',
-			'priority' => 10,
-			'type'     => 'select',
+			'label'       => __( 'Site title font' ),
+			'section'     => 'title_tagline',
+			'input_attrs' => array(
+				'font_count' => 'all',
+				'orderby'    => 'alpha',
+			),
 		)
-	)
-);
-
-$wp_customize->add_setting(
-	'blogname_font_weight',
-	array(
-		'default'           => 400,
-		'sanitize_callback' => 'yith_proteo_sanitize_select',
-	)
-);
-$wp_customize->add_control(
-	'blogname_font_weight',
-	array(
-		'label'   => esc_html__( 'Site Title font weight', 'yith-proteo' ),
-		'section' => 'title_tagline',
-		'type'    => 'select',
-		'choices' => array(
-			300 => esc_html__( 'Light - 300', 'yith-proteo' ),
-			400 => esc_html__( 'Regular - 400', 'yith-proteo' ),
-			500 => esc_html__( 'Light Bold - 500', 'yith-proteo' ),
-			700 => esc_html__( 'Bold - 700', 'yith-proteo' ),
-		),
 	)
 );
 
@@ -152,46 +131,27 @@ $wp_customize->add_control(
 );
 
 $wp_customize->add_setting(
-	'blogdescription_font',
+	'tagline_font',
 	array(
-		'type'              => 'theme_mod',
-		'sanitize_callback' => 'sanitize_text_field',
-		'default'           => 'Montserrat',
+		'sanitize_callback' => 'yith_proteo_google_font_sanitization',
+		'default'           => '{"font":"Montserrat","regularweight":"regular","category":"sans-serif"}',
 	)
 );
 $wp_customize->add_control(
-	new WP_Font_Selector(
+	new Google_Font_Select_Custom_Control(
 		$wp_customize,
-		'blogdescription_font',
+		'tagline_font',
 		array(
-			'label'   => esc_html__( 'Tagline font family', 'yith-proteo' ),
-			'section' => 'title_tagline',
-			'type'    => 'select',
+			'label'       => __( 'Tagline font' ),
+			'section'     => 'title_tagline',
+			'input_attrs' => array(
+				'font_count' => 'all',
+				'orderby'    => 'alpha',
+			),
 		)
 	)
 );
 
-$wp_customize->add_setting(
-	'blogdescription_font_weight',
-	array(
-		'default'           => 400,
-		'sanitize_callback' => 'yith_proteo_sanitize_select',
-	)
-);
-$wp_customize->add_control(
-	'blogdescription_font_weight',
-	array(
-		'label'   => esc_html__( 'Tagline font weight', 'yith-proteo' ),
-		'section' => 'title_tagline',
-		'type'    => 'select',
-		'choices' => array(
-			300 => esc_html__( 'Light - 300', 'yith-proteo' ),
-			400 => esc_html__( 'Regular - 400', 'yith-proteo' ),
-			500 => esc_html__( 'Light Bold - 500', 'yith-proteo' ),
-			700 => esc_html__( 'Bold - 700', 'yith-proteo' ),
-		),
-	)
-);
 
 // Tagline font size.
 $wp_customize->add_setting(
@@ -228,27 +188,6 @@ $wp_customize->add_control(
 		array(
 			'label'   => esc_html__( 'Tagline color', 'yith-proteo' ),
 			'section' => 'title_tagline',
-		)
-	)
-);
-$wp_customize->add_setting(
-	'yith_proteo_blogname_font2',
-	array(
-		'sanitize_callback' => 'yith_proteo_google_font_sanitization',
-	),
-);
-$wp_customize->add_control(
-	new Google_Font_Select_Custom_Control(
-		$wp_customize,
-		'yith_proteo_blogname_font2',
-		array(
-			'label'       => __( 'Google Font Control' ),
-			'description' => esc_html__( 'Sample custom control description' ),
-			'section'     => 'title_tagline',
-			'input_attrs' => array(
-				'font_count' => 'all',
-				'orderby'    => 'alpha',
-			),
 		)
 	)
 );
