@@ -1,34 +1,60 @@
 <?php
 /**
  * Google Font Select Custom Control
+ *
+ * @package customizer-controls
+ */
+
+if ( ! class_exists( 'WP_Customize_Control' ) ) {
+	return null;
+}
+/**
+ * Google Font Select Custom Control
  */
 class Google_Font_Select_Custom_Control extends WP_Customize_Control {
 	/**
 	 * The type of control being rendered
+	 *
+	 * @var string $type The type of control being rendered.
 	 */
 	public $type = 'google_fonts';
 	/**
 	 * The list of Google Fonts
+	 *
+	 * @var bool|array $font_list List of Google Fonts.
 	 */
 	private $font_list = false;
 	/**
 	 * The saved font values decoded from json
+	 *
+	 * @var array $font_values The saved font values decoded from json.
 	 */
 	private $font_values = array();
 	/**
 	 * The index of the saved font within the list of Google fonts
+	 *
+	 * @var int $font_list_index index of the saved font.
 	 */
 	private $font_list_index = 0;
 	/**
 	 * The number of fonts to display from the json file. Either positive integer or 'all'. Default = 'all'
+	 *
+	 * @var int|string $font_count The number of fonts to display.
 	 */
 	private $font_count = 'all';
 	/**
 	 * The font list sort order. Either 'alpha' or 'popular'. Default = 'alpha'
+	 *
+	 * @var string $font_order_by alpha|popular
 	 */
 	private $font_order_by = 'alpha';
 	/**
 	 * Get our list of fonts from the json file
+	 *
+	 * @param mixed $manager Option manager.
+	 * @param int   $id Option id.
+	 * @param array $args Args array.
+	 * @param array $options Options array.
 	 */
 	public function __construct( $manager, $id, $args = array(), $options = array() ) {
 		parent::__construct( $manager, $id, $args );
@@ -54,7 +80,6 @@ class Google_Font_Select_Custom_Control extends WP_Customize_Control {
 	public function enqueue() {
 		wp_enqueue_script( 'yith-proteo-gfont-select-script', get_template_directory_uri() . '/inc/customizer/custom-controls/font-selector-assets/js/select.js', array( 'jquery' ), '4.0.13', true );
 		wp_enqueue_style( 'yith-proteo-gfont-select-style', get_template_directory_uri() . '/inc/customizer/custom-controls/font-selector-assets/css/select.css', array(), '4.0.13', 'all' );
-		wp_enqueue_style( 'yith-proteo-gfont-typography', get_template_directory_uri() . '/inc/customizer/custom-controls/font-selector-assets/css/typography.css', null, YITH_PROTEO_GFONT_VERSION );
 	}
 	/**
 	 * Export our List of Google Fonts to JavaScript
@@ -120,6 +145,9 @@ class Google_Font_Select_Custom_Control extends WP_Customize_Control {
 
 	/**
 	 * Find the index of the saved font in our multidimensional array of Google Fonts
+	 *
+	 * @param array  $haystack Array with fonts.
+	 * @param string $needle Font family to search.
 	 */
 	public function getFontIndex( $haystack, $needle ) {
 		foreach ( $haystack as $key => $value ) {

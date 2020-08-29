@@ -53,7 +53,7 @@ $wp_customize->add_setting(
 	'site_title_font',
 	array(
 		'sanitize_callback' => 'yith_proteo_google_font_sanitization',
-		'default'           => '{"font":"Montserrat","regularweight":"regular","category":"sans-serif"}',
+		'default'           => '{"font":"Jost","regularweight":"600","category":"sans-serif"}',
 	)
 );
 $wp_customize->add_control(
@@ -61,7 +61,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'site_title_font',
 		array(
-			'label'       => __( 'Site title font' ),
+			'label'       => __( 'Site title font', 'yith-proteo' ),
 			'section'     => 'title_tagline',
 			'input_attrs' => array(
 				'font_count' => 'all',
@@ -134,7 +134,7 @@ $wp_customize->add_setting(
 	'tagline_font',
 	array(
 		'sanitize_callback' => 'yith_proteo_google_font_sanitization',
-		'default'           => '{"font":"Montserrat","regularweight":"regular","category":"sans-serif"}',
+		'default'           => '{"font":"Jost","regularweight":"regular","category":"sans-serif"}',
 	)
 );
 $wp_customize->add_control(
@@ -142,7 +142,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'tagline_font',
 		array(
-			'label'       => __( 'Tagline font' ),
+			'label'       => __( 'Tagline font', 'yith-proteo' ),
 			'section'     => 'title_tagline',
 			'input_attrs' => array(
 				'font_count' => 'all',
