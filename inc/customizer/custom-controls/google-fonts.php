@@ -87,27 +87,27 @@ function yith_proteo_read_all_font_options() {
 			'selector' => 'body, body.yith-woocompare-popup',
 		),
 		'yith_proteo_h1_font'   => array(
-			'default'  => '{"font":"Montserrat","regularweight":"regular","category":"sans-serif"}',
+			'default'  => '{"font":"Montserrat","regularweight":"700","category":"sans-serif"}',
 			'selector' => 'h1, article.page header.entry-header h1,	article:not(.has-post-thumbnail).page header.entry-header h1',
 		),
 		'yith_proteo_h2_font'   => array(
-			'default'  => '{"font":"Montserrat","regularweight":"regular","category":"sans-serif"}',
+			'default'  => '{"font":"Montserrat","regularweight":"700","category":"sans-serif"}',
 			'selector' => 'h2',
 		),
 		'yith_proteo_h3_font'   => array(
-			'default'  => '{"font":"Montserrat","regularweight":"regular","category":"sans-serif"}',
+			'default'  => '{"font":"Montserrat","regularweight":"700","category":"sans-serif"}',
 			'selector' => 'h3',
 		),
 		'yith_proteo_h4_font'   => array(
-			'default'  => '{"font":"Montserrat","regularweight":"regular","category":"sans-serif"}',
+			'default'  => '{"font":"Montserrat","regularweight":"700","category":"sans-serif"}',
 			'selector' => 'h4',
 		),
 		'yith_proteo_h5_font'   => array(
-			'default'  => '{"font":"Montserrat","regularweight":"regular","category":"sans-serif"}',
+			'default'  => '{"font":"Montserrat","regularweight":"700","category":"sans-serif"}',
 			'selector' => 'h5',
 		),
 		'yith_proteo_h6_font'   => array(
-			'default'  => '{"font":"Montserrat","regularweight":"regular","category":"sans-serif"}',
+			'default'  => '{"font":"Montserrat","regularweight":"700","category":"sans-serif"}',
 			'selector' => 'h6',
 		),
 
