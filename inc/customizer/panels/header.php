@@ -126,6 +126,44 @@
 		)
 	);
 
+	$wp_customize->add_setting(
+		'yith_proteo_header_main_menu_font',
+		array(
+			'sanitize_callback' => 'yith_proteo_google_font_sanitization',
+			'default'           => '{"font":"Montserrat","regularweight":"regular","category":"sans-serif"}',
+		)
+	);
+	$wp_customize->add_control(
+		new Google_Font_Select_Custom_Control(
+			$wp_customize,
+			'yith_proteo_header_main_menu_font',
+			array(
+				'label'       => __( 'Header menu font', 'yith-proteo' ),
+				'section'     => 'yith_proteo_header_management',
+				'input_attrs' => array(
+					'font_count' => 'all',
+					'orderby'    => 'alpha',
+				),
+			)
+		)
+	);
+	// H6 font size options.
+	$wp_customize->add_setting(
+		'yith_proteo_header_main_menu_font_size',
+		array(
+			'sanitize_callback' => 'absint',
+			'default'           => 14,
+		)
+	);
+	$wp_customize->add_control(
+		'yith_proteo_header_main_menu_font_size',
+		array(
+			'label'   => esc_html__( 'Main menu font size (default: 14px)', 'yith-proteo' ),
+			'section' => 'yith_proteo_header_management',
+			'type'    => 'number',
+		)
+	);
+
 	// Header menu color.
 	$wp_customize->add_setting(
 		'yith_proteo_header_main_menu_color',

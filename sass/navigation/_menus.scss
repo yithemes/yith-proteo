@@ -13,14 +13,13 @@
 		list-style: none;
 		margin: 0 0 -15px;
 		padding-left: 0;
-		font-size: 0.9em;
+		font-size: var(--proteo-header_menu_font_size, 14);
 		text-transform: uppercase;
 		letter-spacing: 2px;
 		font-weight: 500;
 
 		ul {
 			letter-spacing: 1px;
-			font-size: 0.875rem;
 			padding: 45px 45px 30px;
 			box-shadow: 3px 0 15px rgba(0, 0, 0, 0.15);
 			float: left;
