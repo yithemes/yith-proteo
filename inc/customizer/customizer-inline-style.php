@@ -17,9 +17,6 @@ function yith_proteo_inline_style() {
 
 	$custom_css = '';
 
-	$font         = '';
-	$default_font = ( get_theme_mod( 'yith_proteo_google_font', esc_url_raw( 'https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap' ) ) ) === 'https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap' ? true : false;
-
 	$main_color_shade         = get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' );
 	$general_link_color       = get_theme_mod( 'yith_proteo_general_link_color', get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ) );
 	$general_link_hover_color = get_theme_mod( 'yith_proteo_general_link_hover_color', yith_proteo_adjust_brightness( get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ), - 0.3 ) );
@@ -118,13 +115,9 @@ function yith_proteo_inline_style() {
 	$woo_messages_info_accent_color    = get_theme_mod( 'yith_proteo_woo_info_messages_accent_color', '#e0e0e0' );
 	$woo_messages_error_accent_color   = get_theme_mod( 'yith_proteo_woo_error_messages_accent_color', '#ffab91' );
 
-	if ( $default_font ) {
-		$font = 'body, body.yith-woocompare-popup { font-family: \'Montserrat\', sans-serif; }';
-	}
-
 	yith_proteo_massive_google_font_enqueue();
 
-	$custom_css = "{$font}
+	$custom_css = "
 	:root {
 		--proteo-main_color_shade: {$main_color_shade};
 		--proteo-general_link_color: {$general_link_color};

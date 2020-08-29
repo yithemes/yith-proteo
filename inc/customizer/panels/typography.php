@@ -27,10 +27,33 @@
 	$wp_customize->add_control(
 		'yith_proteo_google_font',
 		array(
-			'label'       => esc_html__( 'Google Font', 'yith-proteo' ),
-			'description' => esc_html__( 'Enter the URL of the Google Font you want to use.', 'yith-proteo' ),
+			'label'       => esc_html__( 'Additional Google Font', 'yith-proteo' ),
+			'description' => esc_html__( 'Enter the URL of a Google Font you want to use within the theme.', 'yith-proteo' ),
 			'section'     => 'yith_proteo_typography',
 			'type'        => 'textarea',
+		)
+	);
+
+	// Body font.
+	$wp_customize->add_setting(
+		'yith_proteo_body_font',
+		array(
+			'sanitize_callback' => 'yith_proteo_google_font_sanitization',
+			'default'           => '{"font":"Montserrat","regularweight":"regular","category":"sans-serif"}',
+		)
+	);
+	$wp_customize->add_control(
+		new Google_Font_Select_Custom_Control(
+			$wp_customize,
+			'yith_proteo_body_font',
+			array(
+				'label'       => __( 'Body font', 'yith-proteo' ),
+				'section'     => 'yith_proteo_typography',
+				'input_attrs' => array(
+					'font_count' => 'all',
+					'orderby'    => 'alpha',
+				),
+			)
 		)
 	);
 
@@ -107,6 +130,28 @@
 		)
 	);
 
+	// H1 font.
+	$wp_customize->add_setting(
+		'yith_proteo_h1_font',
+		array(
+			'sanitize_callback' => 'yith_proteo_google_font_sanitization',
+			'default'           => '{"font":"Montserrat","regularweight":"700","category":"sans-serif"}',
+		)
+	);
+	$wp_customize->add_control(
+		new Google_Font_Select_Custom_Control(
+			$wp_customize,
+			'yith_proteo_h1_font',
+			array(
+				'label'       => __( 'H1 font', 'yith-proteo' ),
+				'section'     => 'yith_proteo_typography',
+				'input_attrs' => array(
+					'font_count' => 'all',
+					'orderby'    => 'alpha',
+				),
+			)
+		)
+	);
 	// H1 font size options.
 	$wp_customize->add_setting(
 		'yith_proteo_h1_font_size',
@@ -142,6 +187,28 @@
 		)
 	);
 
+	// H2 font.
+	$wp_customize->add_setting(
+		'yith_proteo_h2_font',
+		array(
+			'sanitize_callback' => 'yith_proteo_google_font_sanitization',
+			'default'           => '{"font":"Montserrat","regularweight":"700","category":"sans-serif"}',
+		)
+	);
+	$wp_customize->add_control(
+		new Google_Font_Select_Custom_Control(
+			$wp_customize,
+			'yith_proteo_h2_font',
+			array(
+				'label'       => __( 'H2 font', 'yith-proteo' ),
+				'section'     => 'yith_proteo_typography',
+				'input_attrs' => array(
+					'font_count' => 'all',
+					'orderby'    => 'alpha',
+				),
+			)
+		)
+	);
 	// H2 font size options.
 	$wp_customize->add_setting(
 		'yith_proteo_h2_font_size',
@@ -177,6 +244,28 @@
 		)
 	);
 
+	// H3 font.
+	$wp_customize->add_setting(
+		'yith_proteo_h3_font',
+		array(
+			'sanitize_callback' => 'yith_proteo_google_font_sanitization',
+			'default'           => '{"font":"Montserrat","regularweight":"700","category":"sans-serif"}',
+		)
+	);
+	$wp_customize->add_control(
+		new Google_Font_Select_Custom_Control(
+			$wp_customize,
+			'yith_proteo_h3_font',
+			array(
+				'label'       => __( 'H3 font', 'yith-proteo' ),
+				'section'     => 'yith_proteo_typography',
+				'input_attrs' => array(
+					'font_count' => 'all',
+					'orderby'    => 'alpha',
+				),
+			)
+		)
+	);
 	// H3 font size options.
 	$wp_customize->add_setting(
 		'yith_proteo_h3_font_size',
@@ -212,6 +301,28 @@
 		)
 	);
 
+	// H4 font.
+	$wp_customize->add_setting(
+		'yith_proteo_h4_font',
+		array(
+			'sanitize_callback' => 'yith_proteo_google_font_sanitization',
+			'default'           => '{"font":"Montserrat","regularweight":"700","category":"sans-serif"}',
+		)
+	);
+	$wp_customize->add_control(
+		new Google_Font_Select_Custom_Control(
+			$wp_customize,
+			'yith_proteo_h4_font',
+			array(
+				'label'       => __( 'H4 font', 'yith-proteo' ),
+				'section'     => 'yith_proteo_typography',
+				'input_attrs' => array(
+					'font_count' => 'all',
+					'orderby'    => 'alpha',
+				),
+			)
+		)
+	);
 	// H4 font size options.
 	$wp_customize->add_setting(
 		'yith_proteo_h4_font_size',
@@ -247,6 +358,28 @@
 		)
 	);
 
+	// H5 font.
+	$wp_customize->add_setting(
+		'yith_proteo_h5_font',
+		array(
+			'sanitize_callback' => 'yith_proteo_google_font_sanitization',
+			'default'           => '{"font":"Montserrat","regularweight":"700","category":"sans-serif"}',
+		)
+	);
+	$wp_customize->add_control(
+		new Google_Font_Select_Custom_Control(
+			$wp_customize,
+			'yith_proteo_h5_font',
+			array(
+				'label'       => __( 'H5 font', 'yith-proteo' ),
+				'section'     => 'yith_proteo_typography',
+				'input_attrs' => array(
+					'font_count' => 'all',
+					'orderby'    => 'alpha',
+				),
+			)
+		)
+	);
 	// H5 font size options.
 	$wp_customize->add_setting(
 		'yith_proteo_h5_font_size',
@@ -282,6 +415,28 @@
 		)
 	);
 
+	// H6 font.
+	$wp_customize->add_setting(
+		'yith_proteo_h6_font',
+		array(
+			'sanitize_callback' => 'yith_proteo_google_font_sanitization',
+			'default'           => '{"font":"Montserrat","regularweight":"700","category":"sans-serif"}',
+		)
+	);
+	$wp_customize->add_control(
+		new Google_Font_Select_Custom_Control(
+			$wp_customize,
+			'yith_proteo_h6_font',
+			array(
+				'label'       => __( 'H6 font', 'yith-proteo' ),
+				'section'     => 'yith_proteo_typography',
+				'input_attrs' => array(
+					'font_count' => 'all',
+					'orderby'    => 'alpha',
+				),
+			)
+		)
+	);
 	// H6 font size options.
 	$wp_customize->add_setting(
 		'yith_proteo_h6_font_size',

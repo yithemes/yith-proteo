@@ -151,7 +151,7 @@ if ( function_exists( 'wc' ) ) {
 }
 
 
-add_action( 'customize_render_control_yith_proteo_base_font_size', 'yith_proteo_add_gfont_documentation_link' );
+add_action( 'customize_render_control_yith_proteo_body_font', 'yith_proteo_add_gfont_documentation_link' );
 
 /**
  * Render GFont doc guide link
