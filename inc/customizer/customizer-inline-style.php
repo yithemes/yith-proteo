@@ -116,10 +116,7 @@ function yith_proteo_inline_style() {
 	$woo_messages_info_accent_color    = get_theme_mod( 'yith_proteo_woo_info_messages_accent_color', '#e0e0e0' );
 	$woo_messages_error_accent_color   = get_theme_mod( 'yith_proteo_woo_error_messages_accent_color', '#ffab91' );
 
-	yith_proteo_massive_google_font_enqueue();
-
-	$custom_css = "
-	:root {
+	$custom_css = ":root {
 		--proteo-main_color_shade: {$main_color_shade};
 		--proteo-general_link_color: {$general_link_color};
 		--proteo-general_link_hover_color: {$general_link_hover_color}'
@@ -195,6 +192,8 @@ function yith_proteo_inline_style() {
 	if ( ! empty( $custom_css ) ) {
 		wp_add_inline_style( 'yith-proteo-custom-style', $custom_css );
 	}
+
+	yith_proteo_massive_google_font_enqueue();
 }
 
 add_action( 'wp_enqueue_scripts', 'yith_proteo_inline_style', 10 );
