@@ -2,9 +2,9 @@
 Contributors: yithemes
 Tags: one-column, two-columns, left-sidebar, right-sidebar, wide-blocks, accessibility-ready, block-styles, buddypress, custom-background, custom-colors, custom-header, custom-logo, custom-menu, editor-style, featured-images, flexible-header, footer-widgets, full-width-template, rtl-language-support, theme-options, threaded-comments, translation-ready, blog, e-commerce, education, entertainment, food-and-drink, holiday, news, photography, portfolio
 Requires at least: 4.9.6
-Tested up to: WordPress 5.4
+Tested up to: WordPress 5.5
 Requires PHP: 5.6
-Stable tag: 1.3.1
+Stable tag: 1.3.2
 YITH Proteo WordPress Theme, Copyright 2020 YITH
 YITH Proteo is distributed under the terms of the GNU GPL
 License: GPLv2 or later
@@ -25,6 +25,17 @@ Proteo is a sleek, modern and "Gutenberg-friendly" e-commerce theme. Developed w
 == Frequently Asked Questions ==
 
 == Changelog ==
+= 1.3.2 - August 31 2020 =
+* New Google Font customizer control
+* New typography options for body and headings
+* New typography options for main menu
+* New icon for the "update cart" link in cart page
+* New options to manage single product page featured image (zoom, lightbox, slider)
+* New scroll in minicart widget
+* New woocommerce tables layout for mobile devices to fix issue with cart and order pages
+* Add support to Gutenberg features: 'responsive-embeds', 'custom-units', 'custom-line-height','experimental-custom-spacing'
+* Fix thank you page title typo
+* Fix overlapping menu issues
 
 = 1.3.1 - August 07 2020 =
 * Fix in-page anchor links behavior on mobile menu
