@@ -44,19 +44,19 @@ input[type="submit"].alt,
 .button-style-2:not(.wp-block-button),
 .button-style-2 a {
 	text-decoration: none;
-	background-color: var(--proteo-button_2_bg_color_1);
-	background: linear-gradient(180deg, var(--proteo-button_2_bg_color_1) 0%, var(--proteo-button_2_bg_color_2) 100%);
-	color: var(--proteo-button_2_font_color);
+	background-color: var(--proteo-button_2_bg_color_1, #00a79c);
+	background: linear-gradient(180deg, var(--proteo-button_2_bg_color_1, #00a79c) 0%, var(--proteo-button_2_bg_color_2,, #01af8d ) 100%);
+	color: var(--proteo-button_2_font_color, #ffffff);
 	border: none;
 
 	&:hover {
 		text-decoration: none;
-		color: var(--proteo-button_2_font_hover_color);
-		background-color: var(--proteo-button_2_bg_hover_color);
+		color: var(--proteo-button_2_font_hover_color, #ffffff);
+		background-color: var(--proteo-button_2_bg_hover_color, #30615e);
 		background: linear-gradient(
 			180deg,
-			var(--proteo-button_2_bg_hover_color) 0%,
-			var(--proteo-button_2_bg_hover_color) 100%
+			var(--proteo-button_2_bg_hover_color, #30615e) 0%,
+			var(--proteo-button_2_bg_hover_color, #30615e) 100%
 		);
 	}
 }
