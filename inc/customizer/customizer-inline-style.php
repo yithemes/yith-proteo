@@ -119,7 +119,7 @@ function yith_proteo_inline_style() {
 	$custom_css = ":root {
 		--proteo-main_color_shade: {$main_color_shade};
 		--proteo-general_link_color: {$general_link_color};
-		--proteo-general_link_hover_color: {$general_link_hover_color}'
+		--proteo-general_link_hover_color: {$general_link_hover_color};
 		--proteo-header_bg_color: {$header_bg_color};
 		--proteo-header_menu_font_size : {$header_menu_font_size}px;
 		--proteo-header_menu_color: {$header_menu_color};
