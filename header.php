@@ -51,6 +51,7 @@ global $post;
 			}
 			?>
 			<div class="container header-contents">
+				<?php if ( display_header_text() ) : ?>
 				<div class="site-branding">
 					<?php
 					if ( is_front_page() && is_home() ) :
@@ -99,6 +100,7 @@ global $post;
 					endif;
 						?>
 				</div><!-- .site-branding -->
+				<?php endif; ?>
 
 				<nav id="site-navigation" class="main-navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
