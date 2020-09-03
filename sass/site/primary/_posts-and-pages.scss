@@ -185,10 +185,10 @@ article:not(.has-post-thumbnail) {
 .entry-content {
 	p:not([class^="has"]),
 	li:not(.product):not(.wc-block-grid__product) {
-		font-size: 1.25rem;
-		line-height: 2.375rem;
+		line-height: 1.8;
 	}
 }
+
 
 article.post .entry-content {
 	&:before {
