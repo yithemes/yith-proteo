@@ -21,7 +21,8 @@ function yith_proteo_inline_style() {
 	$general_link_color       = get_theme_mod( 'yith_proteo_general_link_color', get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ) );
 	$general_link_hover_color = get_theme_mod( 'yith_proteo_general_link_hover_color', yith_proteo_adjust_brightness( get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ), - 0.3 ) );
 
-	$header_bg_color = get_theme_mod( 'yith_proteo_header_background_color', '#ffffff' );
+	$header_bg_color        = get_theme_mod( 'yith_proteo_header_background_color', '#ffffff' );
+	$sticky_header_bg_color = get_theme_mod( 'yith_proteo_sticky_header_background_color', get_theme_mod( 'yith_proteo_header_background_color', '#ffffff' ) );
 
 	$topbar_bg_color         = get_theme_mod( 'yith_proteo_topbar_background_color', '#ebebeb' );
 	$topbar_font_size        = get_theme_mod( 'yith_proteo_topbar_font_size', 16 );
@@ -44,9 +45,14 @@ function yith_proteo_inline_style() {
 	$footer_credits_link_color       = get_theme_mod( 'yith_proteo_footer_credits_link_color', '#448a85' );
 	$footer_credits_link_hover_color = get_theme_mod( 'yith_proteo_footer_credits_link_hover_color', yith_proteo_adjust_brightness( get_theme_mod( 'yith_proteo_topbar_link_color', '#448a85' ), - 0.3 ) );
 
-	$header_menu_font_size   = get_theme_mod( 'yith_proteo_header_main_menu_font_size', 14 );
-	$header_menu_color       = get_theme_mod( 'yith_proteo_header_main_menu_color', '#404040' );
-	$header_menu_hover_color = get_theme_mod( 'yith_proteo_header_main_menu_hover_color', '#448a85' );
+	$header_menu_font_size          = get_theme_mod( 'yith_proteo_header_main_menu_font_size', 14 );
+	$header_menu_color              = get_theme_mod( 'yith_proteo_header_main_menu_color', '#404040' );
+	$header_menu_hover_color        = get_theme_mod( 'yith_proteo_header_main_menu_hover_color', '#448a85' );
+	$sticky_header_menu_color       = get_theme_mod( 'yith_proteo_sticky_header_main_menu_color', get_theme_mod( 'yith_proteo_header_main_menu_color', '#404040' ) );
+	$sticky_header_menu_hover_color = get_theme_mod( 'yith_proteo_sticky_header_main_menu_hover_color', get_theme_mod( 'yith_proteo_header_main_menu_hover_color', '#448a85' ) );
+	$mobile_menu_bg_color           = get_theme_mod( 'yith_proteo_mobile_menu_background_color', get_theme_mod( 'yith_proteo_header_background_color', '#ffffff' ) );
+	$mobile_menu_color              = get_theme_mod( 'yith_proteo_mobile_menu_color', get_theme_mod( 'yith_proteo_header_main_menu_color', '#404040' ) );
+	$mobile_menu_hover_color        = get_theme_mod( 'yith_proteo_mobile_menu_hover_color', get_theme_mod( 'yith_proteo_header_main_menu_hover_color', '#448a85' ) );
 
 	$site_custom_logo_max_width = get_theme_mod( 'yith_proteo_custom_logo_max_width', 375 );
 	$site_title_font_size       = get_theme_mod( 'yith_proteo_site_title_font_size', 48 );
@@ -102,6 +108,23 @@ function yith_proteo_inline_style() {
 	$forms_input_borde_radius = get_theme_mod( 'yith_proteo_inputs_border_radius', 0 );
 
 	/**
+	 * Mobile typography
+	 */
+	$mobile_site_title_font_size     = get_theme_mod( 'yith_proteo_mobile_site_title_font_size', 38 );
+	$mobile_tagline_font_size        = get_theme_mod( 'yith_proteo_mobile_tagline_font_size', 11 );
+	$mobile_base_font_size           = get_theme_mod( 'yith_proteo_mobile_base_font_size', 13 );
+	$mobile_topbar_font_size         = get_theme_mod( 'yith_proteo_mobile_topbar_font_size', 13 );
+	$mobile_menu_font_size           = get_theme_mod( 'yith_proteo_mobile_menu_font_size', 16 );
+	$mobile_h1_font_size             = get_theme_mod( 'yith_proteo_mobile_h1_font_size', 56 );
+	$mobile_h2_font_size             = get_theme_mod( 'yith_proteo_mobile_h2_font_size', 32 );
+	$mobile_h3_font_size             = get_theme_mod( 'yith_proteo_mobile_h3_font_size', 15 );
+	$mobile_h4_font_size             = get_theme_mod( 'yith_proteo_mobile_h4_font_size', 13 );
+	$mobile_h5_font_size             = get_theme_mod( 'yith_proteo_mobile_h5_font_size', 10 );
+	$mobile_h6_font_size             = get_theme_mod( 'yith_proteo_mobile_h6_font_size', 9 );
+	$mobile_footer_font_size         = get_theme_mod( 'yith_proteo_mobile_footer_font_size', 13 );
+	$mobile_footer_credits_font_size = get_theme_mod( 'yith_proteo_mobile_footer_credits_font_size', 13 );
+
+	/**
 	 * Store options
 	 */
 	$store_notice_bg_color   = get_theme_mod( 'yith_proteo_store_notice_bg_color', '#607d8b' );
@@ -121,9 +144,15 @@ function yith_proteo_inline_style() {
 		--proteo-general_link_color: {$general_link_color};
 		--proteo-general_link_hover_color: {$general_link_hover_color};
 		--proteo-header_bg_color: {$header_bg_color};
-		--proteo-header_menu_font_size : {$header_menu_font_size}px;
+		--proteo-sticky_header_bg_color: {$sticky_header_bg_color};
+		--proteo-header_menu_font_size: {$header_menu_font_size}px;
 		--proteo-header_menu_color: {$header_menu_color};
 		--proteo-header_menu_hover_color: {$header_menu_hover_color};
+		--proteo-sticky_header_menu_color: {$sticky_header_menu_color};
+		--proteo-sticky_header_menu_hover_color: {$sticky_header_menu_hover_color};
+		--proteo-mobile_menu_bg_color: {$mobile_menu_bg_color};
+		--proteo-mobile_menu_color: {$mobile_menu_color};
+		--proteo-mobile_menu_hover_color: {$mobile_menu_hover_color};
 		--proteo-site_custom_logo_max_width: {$site_custom_logo_max_width}px;
 		--proteo-site_title_font_size: {$site_title_font_size}px;
 		--proteo-site_title_color: {$site_title_color};
@@ -161,6 +190,19 @@ function yith_proteo_inline_style() {
 		--proteo-h5_font_color: {$h5_font_color};
 		--proteo-h6_font_size: {$h6_font_size }px;
 		--proteo-h6_font_color: {$h6_font_color};
+		--proteo-mobile_site_title_font_size:{$mobile_site_title_font_size }px;
+		--proteo-mobile_tagline_font_size:{$mobile_tagline_font_size}px;
+		--proteo-mobile_base_font_size:{$mobile_base_font_size}px;
+		--proteo-mobile_topbar_font_size:{$mobile_topbar_font_size}px;
+		--proteo-mobile_menu_font_size:{$mobile_menu_font_size}px;
+		--proteo-mobile_h1_font_size:{$mobile_h1_font_size}px;
+		--proteo-mobile_h2_font_size:{$mobile_h2_font_size}px;
+		--proteo-mobile_h3_font_size:{$mobile_h3_font_size}px;
+		--proteo-mobile_h4_font_size:{$mobile_h4_font_size}px;
+		--proteo-mobile_h5_font_size:{$mobile_h5_font_size}px;
+		--proteo-mobile_h6_font_size:{$mobile_h6_font_size}px;
+		--proteo-mobile_footer_font_size:{$mobile_footer_font_size}px;
+		--proteo-mobile_footer_credits_font_size:{$mobile_footer_credits_font_size}px;
 		--proteo-button_1_bg_color: {$button_1_bg_color};
 		--proteo-button_1_border_color: {$button_1_border_color};
 		--proteo-button_1_font_color: {$button_1_font_color};

@@ -5,8 +5,8 @@
 	//width: 100%;
 
 	& > div {
-        transition: opacity 0.3s ease, visibility 0.3s ease;
-    }
+		transition: opacity 0.3s ease, visibility 0.3s ease;
+	}
 
 	ul {
 		display: none;
@@ -169,6 +169,15 @@
 	}
 }
 
+header.sticky {
+	.main-navigation a {
+		color: var(--proteo-sticky_header_menu_color, #404040);
+	}
+	.main-navigation a:hover {
+		color: var(--proteo-sticky_header_menu_hover_color, #448a85);
+	}
+}
+
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
@@ -190,7 +199,7 @@
 	font-size: 1.5rem;
 	position: fixed;
 	right: 30px;
-	//top: 30px;
+	margin-top: 15px;
 	z-index: 101;
 	transition: none;
 
@@ -266,9 +275,9 @@
 	& > div {
 		position: fixed;
 		height: 100vh;
-		background: var(--proteo-header_bg_color, #ffffff);
+		background: var(--proteo-mobile_menu_bg_color, var(--proteo-header_bg_color, #ffffff));
 		width: 100vw;
-		padding: 100px 30px;
+		padding: 140px 30px 30px;
 		z-index: 100;
 		overflow-y: scroll;
 		left: 0;
@@ -308,6 +317,16 @@
 			a {
 				width: auto;
 			}
+		}
+		&.mobile-menu-align-left li {
+			margin-right: auto;
+		}
+		&.mobile-menu-align-right li {
+			margin-left: auto;
+		}
+		&.mobile-menu-align-center li {
+			margin-left: auto;
+			margin-right: auto;
 		}
 	}
 }

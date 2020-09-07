@@ -113,10 +113,12 @@
 		-webkit-box-shadow: -2px 2px 81px -27px rgba(0, 0, 0, 0.29);
 		box-shadow: -2px 2px 81px -27px rgba(0, 0, 0, 0.29);
 		z-index: 100;
+		background-color: var(--proteo-sticky_header_bg_color, var(--proteo-header_bg_color));
 
 		.header-contents {
 			padding-top: 8px;
 			padding-bottom: 8px;
+			color: var(--proteo-sticky_header_menu_color, #404040);
 		}
 
 		.site-branding {

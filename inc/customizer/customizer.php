@@ -114,6 +114,8 @@ function yith_proteo_customize_register( $wp_customize ) {
 	include_once get_template_directory() . '/inc/customizer/panels/documentation.php'; // phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
 
 	include_once get_template_directory() . '/inc/customizer/panels/site-identity.php'; // phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
+
+	include_once get_template_directory() . '/inc/customizer/panels/mobile.php'; // phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
 }
 
 add_action( 'customize_register', 'yith_proteo_customize_register' );

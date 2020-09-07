@@ -50,7 +50,7 @@ global $post;
 				get_template_part( 'template-parts/topbar' );
 			}
 			?>
-			<div class="container header-contents">
+			<div class="container header-contents <?php echo esc_attr( get_theme_mod( 'yith_proteo_mobile_menu_opener_position', 'right' ) === 'left' ? 'left-toggle' : 'right-toggle' ); ?>">
 				<?php if ( display_header_text() ) : ?>
 				<div class="site-branding">
 					<?php
@@ -110,11 +110,13 @@ global $post;
 						<span class="icon-bar"></span>
 					</button>
 					<?php
+					$mobile_menu_align = get_theme_mod( 'yith_proteo_mobile_menu_align', 'left' );
 					wp_nav_menu(
 						array(
 							'theme_location' => 'mobile',
 							'menu_id'        => 'mobile-menu',
 							'container_id'   => 'mobile-nav-menu',
+							'menu_class'     => 'menu mobile-menu-align-' . $mobile_menu_align,
 						)
 					);
 					?>
@@ -129,7 +131,7 @@ global $post;
 					?>
 				</nav><!-- #site-navigation -->
 				<?php if ( 'yes' === get_theme_mod( 'yith_proteo_show_header_sidebar', 'yes' ) ) : ?>
-				<div class="header-sidebar">
+				<div class="header-sidebar <?php echo get_theme_mod( 'yith_proteo_show_mobile_header_sidebar', 'yes' ) === 'no' ? 'hidden-xs' : ''; ?>">
 					<?php dynamic_sidebar( 'header-sidebar' ); ?>
 				</div>
 				<?php endif; ?>

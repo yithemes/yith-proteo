@@ -3,7 +3,7 @@
 }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media (min-width: 768px) {
+@media (min-width: 768.1px) {
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -68,6 +68,13 @@ Custom media queries
 	}
 }
 
+/* Iphone X Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+	.hidden-xs {
+		display: none;
+	}
+}
+
 // Medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) {
 	#site-navigation {
@@ -117,8 +124,25 @@ Custom media queries
 			}
 		}
 	}
+	.main-navigation a {
+		color: var(--proteo-mobile_menu_color, var(--proteo-header_menu_color, #404040));
+	}
+	.main-navigation a:hover {
+		color: var(--proteo-mobile_menu_hover_color, var(--proteo-header_menu_hover_color, #448a85));
+	}
 
-	body h1,
+	.header-contents {
+		&.left-toggle {
+			.site-branding {
+				margin-left: 45px;
+			}
+			.menu-toggle {
+				left: 30px;
+			}
+		}
+	}
+
+	h1,
 	body article.page header.entry-header h1,
 	body article:not(.has-post-thumbnail).page header.entry-header h1 {
 		font-size: 3rem;
@@ -127,7 +151,7 @@ Custom media queries
 		font-size: 1.125rem;
 		margin-right: 15px;
 	}
-	body h2 {
+	h2 {
 		font-size: 1.8rem;
 	}
 	.entry-content p,
@@ -206,7 +230,16 @@ Custom media queries
 }
 
 // Small devices (landscape phones, less than 768px)
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
+	.hidden-xs {
+		display: none;
+	}
+
+	.container {
+		padding-right: 30px;
+		padding-left: 30px;
+	}
+
 	.site-branding img.custom-logo {
 		max-width: 90%;
 	}
@@ -287,6 +320,60 @@ Custom media queries
 	.widget_shopping_cart .yith-proteo-mini-cart-content {
 		display: none !important;
 	}
+
+	// Mobile typography
+	.site-branding .site-title {
+		font-size: var(--proteo-mobile_site_title_font_size, 38px);
+	}
+	.site-branding .site-description {
+		font-size: var(--proteo-mobile_tagline_font_size, 11px);
+	}
+	body,
+	button,
+	input,
+	select,
+	optgroup,
+	textarea,
+	body.yith-woocompare-popup {
+		font-size: var(--proteo-mobile_base_font_size, 13px);
+	}
+	#topbar {
+		font-size: var(--proteo-mobile_topbar_font_size, 16px);
+	}
+	.main-navigation ul {
+		font-size: var(--proteo-mobile_menu_font_size, 16px);
+	}
+	h1,
+	article.page header.entry-header h1,
+	article:not(.has-post-thumbnail).page header.entry-header h1 {
+		font-size: var(--proteo-mobile_h1_font_size, 56px);
+	}
+	h2 {
+		font-size: var(--proteo-mobile_h2_font_size, 32px);
+	}
+	h3 {
+		font-size: var(--proteo-mobile_h3_font_size, 15px);
+	}
+	h4 {
+		font-size: var(--proteo-mobile_h4_font_size, 13px);
+	}
+	h5 {
+		font-size: var(--proteo-mobile_h5_font_size, 10px);
+	}
+	h6 {
+		font-size: var(--proteo-mobile_h6_font_size, 9px);
+	}
+	#main-footer {
+		font-size: var(--proteo-mobile_footer_font_size, 13px);
+	}
+	#main-footer .site-info {
+		font-size: var(--proteo-mobile_footer_credits_font_size, 13px);
+	}
+	.single-product div.product .summary.entry-summary .woocommerce-product-details__short-description p,
+	.single-product .woocommerce-tabs .panel,
+	.single-product .woocommerce-tabs ul.tabs li a {
+		font-size: 1rem;
+	}
 }
 
 @media (max-width: 600px) {
@@ -297,14 +384,11 @@ Custom media queries
 	#site-navigation {
 		.menu-toggle {
 			position: absolute;
-			right: 30px;
 		}
 
 		&.toggled {
 			.menu-toggle {
-				//position: fixed;
-				//top: 80px;
-				//right: 15px;
+				position: fixed;
 			}
 		}
 	}
