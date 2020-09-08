@@ -10,6 +10,7 @@ if ( ! function_exists( 'yith_proteo_widgets_init' ) ) :
 	 * Register widget area.
 	 */
 	function yith_proteo_widgets_init() {
+		$show_on_mobile = get_theme_mod( 'yith_proteo_show_mobile_header_sidebar', 'yes' ) === 'no' ? 'hidden-xs' : '';
 		register_sidebar(
 			array(
 				'name'          => esc_html__( 'Default Sidebar', 'yith-proteo' ),
@@ -37,7 +38,7 @@ if ( ! function_exists( 'yith_proteo_widgets_init' ) ) :
 				'name'          => esc_html__( 'Header Sidebar', 'yith-proteo' ),
 				'id'            => 'header-sidebar',
 				'description'   => esc_html__( 'Add widgets here.', 'yith-proteo' ),
-				'before_widget' => '<section id="%1$s" class="widget %2$s">',
+				'before_widget' => '<section id="%1$s" class="widget ' . $show_on_mobile . ' %2$s">',
 				'after_widget'  => '</section>',
 				'before_title'  => '<h2 class="widget-title">',
 				'after_title'   => '</h2>',

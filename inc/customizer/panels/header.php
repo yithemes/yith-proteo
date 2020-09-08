@@ -82,6 +82,69 @@
 		)
 	);
 
+	// Header search widget.
+	$wp_customize->add_setting(
+		'yith_proteo_header_search_widget',
+		array(
+			'default'           => 'no',
+			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+		)
+	);
+	$wp_customize->add_control(
+		'yith_proteo_header_search_widget',
+		array(
+			'type'    => 'radio',
+			'label'   => esc_html__( 'Show search icon', 'yith-proteo' ),
+			'section' => 'yith_proteo_header_management',
+			'choices' => array(
+				'yes' => esc_html__( 'Yes', 'yith-proteo' ),
+				'no'  => esc_html__( 'No', 'yith-proteo' ),
+			),
+		)
+	);
+
+	// Header cart widget.
+	$wp_customize->add_setting(
+		'yith_proteo_header_cart_widget',
+		array(
+			'default'           => 'no',
+			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+		)
+	);
+	$wp_customize->add_control(
+		'yith_proteo_header_cart_widget',
+		array(
+			'type'    => 'radio',
+			'label'   => esc_html__( 'Show cart icon', 'yith-proteo' ),
+			'section' => 'yith_proteo_header_management',
+			'choices' => array(
+				'yes' => esc_html__( 'Yes', 'yith-proteo' ),
+				'no'  => esc_html__( 'No', 'yith-proteo' ),
+			),
+		)
+	);
+
+	// Header account widget.
+	$wp_customize->add_setting(
+		'yith_proteo_header_account_widget',
+		array(
+			'default'           => 'no',
+			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+		)
+	);
+	$wp_customize->add_control(
+		'yith_proteo_header_account_widget',
+		array(
+			'type'    => 'radio',
+			'label'   => esc_html__( 'Show account icon', 'yith-proteo' ),
+			'section' => 'yith_proteo_header_management',
+			'choices' => array(
+				'yes' => esc_html__( 'Yes', 'yith-proteo' ),
+				'no'  => esc_html__( 'No', 'yith-proteo' ),
+			),
+		)
+	);
+
 	// Header show sidebar.
 	$wp_customize->add_setting(
 		'yith_proteo_show_header_sidebar',
