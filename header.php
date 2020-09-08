@@ -130,7 +130,7 @@ global $post;
 					);
 					?>
 				</nav><!-- #site-navigation -->
-				<div class="header-sidebar <?php echo get_theme_mod( 'yith_proteo_show_mobile_header_sidebar', 'yes' ) === 'no' ? 'hidden-xs' : ''; ?>">
+				<div class="header-sidebar <?php echo esc_attr( get_theme_mod( 'yith_proteo_show_mobile_header_sidebar', 'yes' ) === 'no' ? 'hidden-xs' : '' ); ?>">
 					<?php
 					the_widget(
 						'WP_Widget_Search',

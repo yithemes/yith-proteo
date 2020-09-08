@@ -4,7 +4,7 @@ Tags: one-column, two-columns, left-sidebar, right-sidebar, wide-blocks, accessi
 Requires at least: 4.9.6
 Tested up to: WordPress 5.5
 Requires PHP: 5.6
-Stable tag: 1.3.3
+Stable tag: 1.3.4
 YITH Proteo WordPress Theme, Copyright 2020 YITH
 YITH Proteo is distributed under the terms of the GNU GPL
 License: GPLv2 or later
@@ -25,6 +25,14 @@ Proteo is a sleek, modern and "Gutenberg-friendly" e-commerce theme. Developed w
 == Frequently Asked Questions ==
 
 == Changelog ==
+= 1.3.4 - September 08 2020 =
+* New customizer options header and mobile layout
+* Add support to display_header_text() WordPress template function
+* New options to handle header sidebar and header icons on desktop and mobile
+* Fix scrolling windows when mobile menu is opened
+* Fix "alignwide blocks" image alignments to match new Gutenberg styles
+* Fix the <p> tag font size to match customizer and gutenberg settings
+
 = 1.3.3 - September 01 2020 =
 * Fix typo in customizer inline style
 * Fix typo in buttons.scss

@@ -248,6 +248,10 @@ header.sticky {
 	}
 }
 
+body.static-header .menu-toggle {
+	position: absolute;
+}
+
 .main-navigation.toggled {
 	.menu-toggle .icon-bar {
 		&:nth-child(2) {
@@ -328,6 +332,18 @@ header.sticky {
 			margin-left: auto;
 			margin-right: auto;
 		}
+	}
+}
+
+header.left_logo_navigation_below {
+	.menu-toggle {
+		top: 60px;
+	}
+}
+
+header.center_logo_navigation_below {
+	.menu-toggle {
+		top: 60px;
 	}
 }
 

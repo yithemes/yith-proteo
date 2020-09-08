@@ -37,6 +37,9 @@
 			});
 		}
 	}
+	else {
+		$('body').addClass('static-header');
+	}
 
 
 	function initCheckbox() {
