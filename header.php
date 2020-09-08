@@ -143,18 +143,6 @@ global $post;
 					?>
 					<?php
 					the_widget(
-						'WC_Widget_Cart',
-						array(
-							'title' => '',
-						),
-						array(
-							'before_widget' => '<section class="widget %1$s ' . ( get_theme_mod( 'yith_proteo_mobile_cart_widget', 'no' ) === 'no' ? 'hidden-xs' : '' ) . '">',
-							'after_widget'  => '</section>',
-						)
-					);
-					?>
-					<?php
-					the_widget(
 						'YITH_Proteo_Account_Widget',
 						array(
 							'custom-icon'   => get_template_directory_uri() . '/img/user.svg',
@@ -163,6 +151,18 @@ global $post;
 						),
 						array(
 							'before_widget' => '<section class="widget %1$s ' . ( get_theme_mod( 'yith_proteo_mobile_account_widget', 'no' ) === 'no' ? 'hidden-xs' : '' ) . '">',
+							'after_widget'  => '</section>',
+						)
+					);
+					?>
+					<?php
+					the_widget(
+						'WC_Widget_Cart',
+						array(
+							'title' => '',
+						),
+						array(
+							'before_widget' => '<section class="widget %1$s ' . ( get_theme_mod( 'yith_proteo_mobile_cart_widget', 'no' ) === 'no' ? 'hidden-xs' : '' ) . '">',
 							'after_widget'  => '</section>',
 						)
 					);
