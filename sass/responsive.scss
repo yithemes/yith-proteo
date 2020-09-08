@@ -77,13 +77,20 @@ Custom media queries
 
 // Medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) {
+	.mobile-menu-opened {
+		margin: 0;
+		height: 100%;
+		overflow: hidden;
+	}
 	#site-navigation {
 		float: right;
 	}
 	.site-header.center_logo_navigation_below .header-sidebar {
 		text-align: initial;
 	}
-
+	.site-header .header-sidebar {
+		margin-top: 30px;
+	}
 	#primary-nav-menu {
 		display: none;
 	}
@@ -134,7 +141,7 @@ Custom media queries
 	.header-contents {
 		&.left-toggle {
 			.site-branding {
-				margin-left: 45px;
+				margin-left: 60px;
 			}
 			.menu-toggle {
 				left: 30px;
