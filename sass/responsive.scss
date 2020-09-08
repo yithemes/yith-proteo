@@ -347,7 +347,7 @@ Custom media queries
 	#topbar {
 		font-size: var(--proteo-mobile_topbar_font_size, 16px);
 	}
-	.main-navigation ul {
+	.main-navigation.toggled ul.nav-menu {
 		font-size: var(--proteo-mobile_menu_font_size, 16px);
 	}
 	h1,
