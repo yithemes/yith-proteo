@@ -12,7 +12,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php
-		if ( is_single() && function_exists( 'woocommerce_breadcrumb' ) ) {
+		if ( is_single() && function_exists( 'woocommerce_breadcrumb' ) && ( 'yes' === get_theme_mod( 'yith_proteo_breadcrumb_enable', 'yes' ) ) ) {
 			woocommerce_breadcrumb();
 		}
 		?>

@@ -569,16 +569,23 @@ add_filter( 'the_title', 'yith_proteo_title_order_received', 10, 2 );
 
 
 /**
- * Remove WooCommerce Breadcrumb on thankyou page
+ * Remove WooCommerce Breadcrumbs
  */
-function yith_proteo_remove_thank_you_breadcrumbs() {
+function yith_proteo_remove_breadcrumbs() {
 
+	// Remove WooCommerce Breadcrumb on all Woo pages.
+	if ( 'no' === get_theme_mod( 'yith_proteo_breadcrumb_enable', 'yes' ) ) {
+		remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0 );
+		remove_action( 'woocommerce_single_product_summary', 'woocommerce_breadcrumb', 0 );
+	}
+
+	// Remove WooCommerce Breadcrumb on thankyou page.
 	if ( function_exists( 'is_order_received_page' ) && is_order_received_page() ) {
 		remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0 );
 	}
 }
 
-add_action( 'template_redirect', 'yith_proteo_remove_thank_you_breadcrumbs' );
+add_action( 'template_redirect', 'yith_proteo_remove_breadcrumbs' );
 
 
 /**

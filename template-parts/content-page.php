@@ -13,7 +13,7 @@
 	<?php if ( ! is_front_page() ) : ?>
 		<header class="entry-header">
 			<?php
-			if ( function_exists( 'woocommerce_breadcrumb' ) && ! ( is_order_received_page() ) ) {
+			if ( function_exists( 'woocommerce_breadcrumb' ) && ! ( is_order_received_page() ) && ( 'yes' === get_theme_mod( 'yith_proteo_breadcrumb_enable', 'yes' ) ) ) {
 				woocommerce_breadcrumb();
 			}
 			?>

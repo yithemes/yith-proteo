@@ -146,6 +146,8 @@ function yith_proteo_customize_shop_register( $wp_customize ) {
 
 	include_once get_template_directory() . '/inc/customizer/panels/woocommerce/product-catalog.php'; // phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
 
+	include_once get_template_directory() . '/inc/customizer/panels/woocommerce/breadcrumbs.php'; // phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
+
 }
 
 if ( function_exists( 'wc' ) ) {
