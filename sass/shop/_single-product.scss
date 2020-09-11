@@ -119,8 +119,8 @@
 			}
 
 			.price {
-				font-size: 2.1875rem;
-				color: var(--proteo-main_color_shade, $color__accent);
+				font-size: var(--proteo-single_product_price_font_size, 2.1875rem);
+				color: var(--proteo-single_product_price_color, var(--proteo-main_color_shade, $color__accent));
 				margin: 0 0 30px;
 
 				del {
@@ -149,7 +149,7 @@
 					max-width: 100px;
 
 					input {
-						font-size: 2.5rem;
+						font-size: var(--proteo-single_product_quantity_input_font_size, 2.5rem);
 					}
 
 					span.product-qty-arrows span {
@@ -162,7 +162,7 @@
 				margin-bottom: 15px;
 				margin-right: 15px;
 				text-transform: uppercase;
-				font-size: 1.25rem;
+				font-size: var(--proteo-single_product_add_to_cart_button_font_size, 1.25rem);
 				font-weight: bold;
 				text-align: center;
 				padding: 0.9375rem 2.8125rem;

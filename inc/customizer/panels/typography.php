@@ -21,7 +21,7 @@
 		'yith_proteo_google_font',
 		array(
 			'sanitize_callback' => 'esc_url_raw',
-			'default'           => 'https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap',
+			'default'           => '',
 		)
 	);
 	$wp_customize->add_control(

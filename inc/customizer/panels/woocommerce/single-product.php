@@ -80,6 +80,75 @@
 		)
 	);
 
+	// Price font size options.
+	$wp_customize->add_setting(
+		'yith_proteo_product_page_price_font_size',
+		array(
+			'sanitize_callback' => 'absint',
+			'default'           => 35,
+		)
+	);
+	$wp_customize->add_control(
+		'yith_proteo_product_page_price_font_size',
+		array(
+			'label'   => esc_html__( 'Product price font size (default: 35px)', 'yith-proteo' ),
+			'section' => 'yith_proteo_product_page_management',
+			'type'    => 'number',
+		)
+	);
+	// Price font color options.
+	$wp_customize->add_setting(
+		'yith_proteo_product_page_price_color',
+		array(
+			'sanitize_callback' => 'yith_proteo_sanitize_alpha_colors',
+			'default'           => get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ),
+		)
+	);
+	$wp_customize->add_control(
+		new Customizer_Alpha_Color_Control(
+			$wp_customize,
+			'yith_proteo_product_page_price_color',
+			array(
+				'label'   => esc_html__( 'Product price font color', 'yith-proteo' ),
+				'section' => 'yith_proteo_product_page_management',
+			)
+		)
+	);
+
+	// Quantity font size options.
+	$wp_customize->add_setting(
+		'yith_proteo_product_page_quantity_font_size',
+		array(
+			'sanitize_callback' => 'absint',
+			'default'           => 40,
+		)
+	);
+	$wp_customize->add_control(
+		'yith_proteo_product_page_quantity_font_size',
+		array(
+			'label'   => esc_html__( 'Product quantity font size (default: 40px)', 'yith-proteo' ),
+			'section' => 'yith_proteo_product_page_management',
+			'type'    => 'number',
+		)
+	);
+
+	// Add to cart button font size options.
+	$wp_customize->add_setting(
+		'yith_proteo_product_page_add_to_cart_font_size',
+		array(
+			'sanitize_callback' => 'absint',
+			'default'           => 20,
+		)
+	);
+	$wp_customize->add_control(
+		'yith_proteo_product_page_add_to_cart_font_size',
+		array(
+			'label'   => esc_html__( 'Add to cart button font size (default: 20px)', 'yith-proteo' ),
+			'section' => 'yith_proteo_product_page_management',
+			'type'    => 'number',
+		)
+	);
+
 	// Single product page related products management.
 	$wp_customize->add_setting(
 		'yith_proteo_product_page_related_max_number',
