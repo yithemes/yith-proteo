@@ -52,17 +52,18 @@ ul.products,
 		.added_to_cart,
 		.added_to_cart:visited,
 		.yith-wcqv-button.button:not(.inside-thumb) {
-			font-size: 0.875rem;
 			transition: all ease 0.3s;
 			margin: 0;
 			display: inline-block;
+			font-size: var(--proteo-catalog_product_add_to_cart_font_size, 0.875rem);
 
 			&.unstyled_button {
 				padding: 5px 0;
 				display: block;
 			}
 		}
-		.added_to_cart, .wc-forward {
+		.added_to_cart,
+		.wc-forward {
 			margin-top: 5px;
 			display: block;
 		}
@@ -99,15 +100,15 @@ ul.products,
 
 		.woocommerce-loop-product__title,
 		.wc-block-grid__product-title {
-			font-size: 0.875rem;
+			font-size: var(--proteo-catalog_product_title_font_size, 0.875rem);
 			font-weight: 500;
 			margin-bottom: 5px;
 			margin-top: 15px;
-			color: #404040;
+			color: var(--proteo-catalog_product_title_color, #404040);
 			text-align: center;
 
 			&:visited {
-				color: #404040;
+				color: var(--proteo-catalog_product_title_color, #404040);
 			}
 		}
 
@@ -134,8 +135,8 @@ ul.products,
 		}
 
 		.price {
-			color: #1f1f1f;
-			font-size: 0.875rem;
+			color: var(--proteo-catalog_product_price_color, #1f1f1f);
+			font-size: var(--proteo-catalog_product_price_font_size, 0.875rem);
 			font-weight: bold;
 			margin-bottom: 10px;
 			display: block;

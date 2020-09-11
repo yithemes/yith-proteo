@@ -347,7 +347,8 @@ Products widget
 			.product-info {
 				.product-title {
 					display: block;
-					font-size: 1.125rem;
+					font-size: var(--proteo-catalog_product_title_font_size, 0.875rem);
+					color: var(--proteo-catalog_product_title_color, #404040);
 					line-height: normal;
 					margin-top: 0;
 					margin-bottom: 5px;
@@ -355,9 +356,9 @@ Products widget
 				}
 
 				.amount {
-					font-size: 1.125rem;
+					color: var(--proteo-catalog_product_price_color, #1f1f1f);
+					font-size: var(--proteo-catalog_product_price_font_size, 0.875rem);
 					font-weight: 600;
-					opacity: 0.7;
 				}
 
 				del .amount {

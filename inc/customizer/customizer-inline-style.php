@@ -144,6 +144,12 @@ function yith_proteo_inline_style() {
 	$single_product_quantity_input_font_size     = get_theme_mod( 'yith_proteo_product_page_quantity_font_size', 40 );
 	$single_product_add_to_cart_button_font_size = get_theme_mod( 'yith_proteo_product_page_add_to_cart_font_size', 20 );
 
+	$catalog_product_title_font_size       = get_theme_mod( 'yith_proteo_product_catalog_title_font_size', 14 );
+	$catalog_product_title_color           = get_theme_mod( 'yith_proteo_product_catalog_title_color', '#404040' );
+	$catalog_product_price_font_size       = get_theme_mod( 'yith_proteo_product_catalog_price_font_size', 14 );
+	$catalog_product_price_color           = get_theme_mod( 'yith_proteo_product_catalog_price_color', '#1f1f1f' );
+	$catalog_product_add_to_cart_font_size = get_theme_mod( 'yith_proteo_product_catalog_add_to_cart_font_size', 14 );
+
 	$custom_css = ":root {
 		--proteo-main_color_shade: {$main_color_shade};
 		--proteo-general_link_color: {$general_link_color};
@@ -238,6 +244,11 @@ function yith_proteo_inline_style() {
 		--proteo-single_product_price_color: {$single_product_price_color};
 		--proteo-single_product_quantity_input_font_size: {$single_product_quantity_input_font_size}px;
 		--proteo-single_product_add_to_cart_button_font_size: {$single_product_add_to_cart_button_font_size}px;
+		--proteo-catalog_product_title_font_size: {$catalog_product_title_font_size}px;
+		--proteo-catalog_product_title_color: {$catalog_product_title_color};
+		--proteo-catalog_product_price_font_size: {$catalog_product_price_font_size}px;
+		--proteo-catalog_product_price_color: {$catalog_product_price_color};
+		--proteo-catalog_product_add_to_cart_font_size: {$catalog_product_add_to_cart_font_size}px;
 	}";
 
 	if ( ! empty( $custom_css ) ) {
