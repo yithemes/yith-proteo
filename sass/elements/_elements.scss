@@ -74,4 +74,10 @@ div.pp_overlay {
 	background: #ffffff;
 }
 
+.mobile-menu-opened {
+	margin: 0;
+	height: 100%;
+	overflow: hidden;
+}
+
 @import "modals";

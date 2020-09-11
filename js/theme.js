@@ -144,7 +144,7 @@
 		$('#full-screen-search').fadeIn('fast', function () {
 			$(this).addClass('open');
 		});
-
+		$('html').add('body').addClass('mobile-menu-opened');
 		// Focus on the Full Screen Search Input Field
 		$('#full-screen-search input').focus();
 	});
@@ -155,6 +155,7 @@
 		$('#full-screen-search').fadeOut('fast', function () {
 			$(this).removeClass('open');
 		});
+		$('html').add('body').removeClass('mobile-menu-opened');
 	}
 
 	// Hide the Full Screen search when the user clicks the close button
