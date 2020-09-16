@@ -5,12 +5,32 @@
  * @package yith-proteo
  */
 
+
 if ( ! function_exists( 'yith_proteo_widgets_init' ) ) :
 	/**
 	 * Register widget area.
 	 */
 	function yith_proteo_widgets_init() {
 		$show_on_mobile = get_theme_mod( 'yith_proteo_show_mobile_header_sidebar', 'yes' ) === 'no' ? 'hidden-xs' : '';
+
+		/**
+		 * Fix column class in case of 5 elements per row
+		 */
+		if ( 5 === get_theme_mod( 'yith_proteo_footer_sidebar_1_widget_per_row', 3 ) ) {
+			$yith_proteo_footer_sidebar_1_widget_per_row = 20;
+		} else {
+			$yith_proteo_footer_sidebar_1_widget_per_row = 12 / get_theme_mod( 'yith_proteo_footer_sidebar_1_widget_per_row', 3 );
+		}
+
+		/**
+		 * Fix column class in case of 5 elements per row
+		 */
+		if ( 5 === get_theme_mod( 'yith_proteo_footer_sidebar_2_widget_per_row', 3 ) ) {
+			$yith_proteo_footer_sidebar_2_widget_per_row = 20;
+		} else {
+			$yith_proteo_footer_sidebar_2_widget_per_row = 12 / get_theme_mod( 'yith_proteo_footer_sidebar_2_widget_per_row', 3 );
+		}
+
 		register_sidebar(
 			array(
 				'name'          => esc_html__( 'Default Sidebar', 'yith-proteo' ),
@@ -49,7 +69,7 @@ if ( ! function_exists( 'yith_proteo_widgets_init' ) ) :
 				'name'          => esc_html__( 'Footer Sidebar 1 (multiple columns can be configured)', 'yith-proteo' ),
 				'id'            => 'footer-sidebar-1',
 				'description'   => esc_html__( 'Add widgets here.', 'yith-proteo' ),
-				'before_widget' => '<section id="%1$s" class="widget %2$s col-lg-' . ( 12 / get_theme_mod( 'yith_proteo_footer_sidebar_1_widget_per_row', 3 ) ) . '">',
+				'before_widget' => '<section id="%1$s" class="widget %2$s col-lg-' . $yith_proteo_footer_sidebar_1_widget_per_row . '">',
 				'after_widget'  => '</section>',
 				'before_title'  => '<h2 class="widget-title">',
 				'after_title'   => '</h2>',
@@ -60,7 +80,7 @@ if ( ! function_exists( 'yith_proteo_widgets_init' ) ) :
 				'name'          => esc_html__( 'Footer Sidebar 2 (multiple columns can be configured)', 'yith-proteo' ),
 				'id'            => 'footer-sidebar-2',
 				'description'   => esc_html__( 'Add widgets here.', 'yith-proteo' ),
-				'before_widget' => '<section id="%1$s" class="widget %2$s col-lg-' . ( 12 / get_theme_mod( 'yith_proteo_footer_sidebar_2_widget_per_row', 3 ) ) . '">',
+				'before_widget' => '<section id="%1$s" class="widget %2$s col-lg-' . $yith_proteo_footer_sidebar_2_widget_per_row . '">',
 				'after_widget'  => '</section>',
 				'before_title'  => '<h2 class="widget-title">',
 				'after_title'   => '</h2>',

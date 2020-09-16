@@ -197,7 +197,7 @@ add_action( 'wp_footer', 'yith_proteo_output_full_screen_search' );
  * @author Francesco Grasso <francgrasso@yithemes.com>
  */
 function yith_proteo_modify_read_more_link() {
-	return '<a class="more-link" href="' . get_permalink() . '">' . __( 'Read more', 'yith-proteo' ) . ' &xrarr; </a>';
+	return '<a class="more-link" href="' . get_permalink() . '">' . __( 'Read more', 'yith-proteo' ) . ' &#10230; </a>';
 }
 
 add_filter( 'the_content_more_link', 'yith_proteo_modify_read_more_link' );
@@ -215,7 +215,7 @@ add_filter( 'the_content_more_link', 'yith_proteo_modify_read_more_link' );
 function yith_proteo_modify_excerpt_more( $more ) {
 	global $post;
 
-	return '<a class="more-link" href="' . get_permalink( $post->ID ) . '">' . __( 'Read more', 'yith-proteo' ) . ' &xrarr; </a>';
+	return '<a class="more-link" href="' . get_permalink( $post->ID ) . '">' . __( 'Read more', 'yith-proteo' ) . ' &#10230; </a>';
 }
 
 add_filter( 'excerpt_more', 'yith_proteo_modify_excerpt_more' );

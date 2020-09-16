@@ -132,23 +132,21 @@
 		'yith_proteo_footer_sidebar_1_widget_per_row',
 		array(
 			'default'           => 4,
-			'sanitize_callback' => 'yith_proteo_sanitize_select',
+			'sanitize_callback' => 'absint',
+			'transport'         => 'postMessage',
 		)
 	);
 	$wp_customize->add_control(
-		'yith_proteo_footer_sidebar_1_widget_per_row',
-		array(
-			'label'   => esc_html__( 'Select how many widgets per row to show for Footer Sidebar 1 (new rows are automatically created).', 'yith-proteo' ),
-			'section' => 'yith_proteo_footer_management',
-			'type'    => 'select',
-			'choices' => array(
-				1 => esc_html__( 'One', 'yith-proteo' ),
-				2 => esc_html__( 'Two', 'yith-proteo' ),
-				3 => esc_html__( 'Three', 'yith-proteo' ),
-				4 => esc_html__( 'Four', 'yith-proteo' ),
-				5 => esc_html__( 'Five', 'yith-proteo' ),
-				6 => esc_html__( 'Six', 'yith-proteo' ),
-			),
+		new WP_Customize_Range(
+			$wp_customize,
+			'yith_proteo_footer_sidebar_1_widget_per_row',
+			array(
+				'label'   => esc_html__( 'Select how many widgets per row to show for Footer Sidebar 1 (new rows are automatically created).', 'yith-proteo' ),
+				'min'     => 1,
+				'max'     => 6,
+				'step'    => 1,
+				'section' => 'yith_proteo_footer_management',
+			)
 		)
 	);
 
@@ -157,22 +155,20 @@
 		'yith_proteo_footer_sidebar_2_widget_per_row',
 		array(
 			'default'           => 1,
-			'sanitize_callback' => 'yith_proteo_sanitize_select',
+			'sanitize_callback' => 'absint',
+			'transport'         => 'postMessage',
 		)
 	);
 	$wp_customize->add_control(
-		'yith_proteo_footer_sidebar_2_widget_per_row',
-		array(
-			'label'   => esc_html__( 'Select how many widgets per row to show for Footer Sidebar 2 (new rows are automatically created).', 'yith-proteo' ),
-			'section' => 'yith_proteo_footer_management',
-			'type'    => 'select',
-			'choices' => array(
-				1 => esc_html__( 'One', 'yith-proteo' ),
-				2 => esc_html__( 'Two', 'yith-proteo' ),
-				3 => esc_html__( 'Three', 'yith-proteo' ),
-				4 => esc_html__( 'Four', 'yith-proteo' ),
-				5 => esc_html__( 'Five', 'yith-proteo' ),
-				6 => esc_html__( 'Six', 'yith-proteo' ),
-			),
+		new WP_Customize_Range(
+			$wp_customize,
+			'yith_proteo_footer_sidebar_2_widget_per_row',
+			array(
+				'label'   => esc_html__( 'Select how many widgets per row to show for Footer Sidebar 2 (new rows are automatically created).', 'yith-proteo' ),
+				'min'     => 1,
+				'max'     => 6,
+				'step'    => 1,
+				'section' => 'yith_proteo_footer_management',
+			)
 		)
 	);

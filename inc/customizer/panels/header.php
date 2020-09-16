@@ -52,7 +52,6 @@
 			'section'     => 'yith_proteo_header_management',
 			'description' => esc_html__( 'Choose the header layout', 'yith-proteo' ),
 			'choices'     => array(
-				''                             => esc_html__( 'Please select', 'yith-proteo' ),
 				'left_logo_navigation_below'   => esc_html__( 'Logo on the left and navigation below', 'yith-proteo' ),
 				'left_logo_navigation_inline'  => esc_html__( 'Logo on the left and navigation inline', 'yith-proteo' ),
 				'center_logo_navigation_below' => esc_html__( 'Centered logo and navigation below', 'yith-proteo' ),

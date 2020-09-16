@@ -59,7 +59,7 @@ if ( ! function_exists( 'yith_proteo_scripts' ) ) :
 		wp_enqueue_script( 'yith-proteo-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 		if ( get_theme_mod( 'yith_proteo_google_font' ) !== '' ) {
-			wp_enqueue_style( 'yith-proteo-google-font', get_theme_mod( 'yith_proteo_google_font', 'https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap' ), array( 'yith-proteo-style' ) ); // phpcs:ignore WordPress.WP.EnqueuedResourceParameters.MissingVersion
+			wp_enqueue_style( 'yith-proteo-google-font', get_theme_mod( 'yith_proteo_google_font' ), array( 'yith-proteo-style' ) ); // phpcs:ignore WordPress.WP.EnqueuedResourceParameters.MissingVersion
 		}
 
 		if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

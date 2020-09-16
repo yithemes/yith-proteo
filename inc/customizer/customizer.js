@@ -43,4 +43,18 @@
 		});
 	});
 
+	wp.customize('yith_proteo_footer_sidebar_1_widget_per_row', function (value) {
+		value.bind(function (newval) {
+			if ( parseInt( newval ) === 5) {
+				var newClass = 20;
+			}
+			else {
+				var newClass = (12 / newval);
+			}
+			$(".footer-sidebar-1 section[class*='col-lg']").removeClass(function (index, css) {
+				return (css.match(/(^|\s)col-lg\S+/g) || []).join(' ');
+			}).addClass('col-lg-' + newClass);
+		});
+	});
+
 })(jQuery);
