@@ -32,6 +32,7 @@ function yith_proteo_inline_style() {
 	$topbar_link_hover_color = get_theme_mod( 'yith_proteo_topbar_link_hover_color', yith_proteo_adjust_brightness( get_theme_mod( 'yith_proteo_topbar_link_color', '#448a85' ), - 0.3 ) );
 
 	$footer_bg_color         = get_theme_mod( 'yith_proteo_footer_background_color', '#f7f7f7' );
+	$footer_bg_image         = get_theme_mod( 'yith_proteo_footer_background_image' );
 	$footer_font_size        = get_theme_mod( 'yith_proteo_footer_font_size', 16 );
 	$footer_font_color       = get_theme_mod( 'yith_proteo_footer_font_color', '#404040' );
 	$footer_align            = get_theme_mod( 'yith_proteo_footer_align', 'left' );
@@ -176,6 +177,7 @@ function yith_proteo_inline_style() {
 		--proteo-topbar_link_color: {$topbar_link_color};
 		--proteo-topbar_link_hover_color: {$topbar_link_hover_color};
 		--proteo-footer_bg_color: {$footer_bg_color};
+		--proteo-footer_bg_image: url({$footer_bg_image});
 		--proteo-footer_font_size: {$footer_font_size}px;
 		--proteo-footer_font_color: {$footer_font_color};
 		--proteo-footer_align: {$footer_align};

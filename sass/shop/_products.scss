@@ -53,9 +53,10 @@ ul.products,
 		.added_to_cart:visited,
 		.yith-wcqv-button.button:not(.inside-thumb) {
 			transition: all ease 0.3s;
-			margin: 0;
-			display: inline-block;
 			font-size: var(--proteo-catalog_product_add_to_cart_font_size, 0.875rem);
+			margin: 0 auto 15px;
+			display: table;
+			width: auto;
 
 			&.unstyled_button {
 				padding: 5px 0;

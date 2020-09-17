@@ -11,24 +11,26 @@ if ( ! function_exists( 'yith_proteo_widgets_init' ) ) :
 	 * Register widget area.
 	 */
 	function yith_proteo_widgets_init() {
-		$show_on_mobile = get_theme_mod( 'yith_proteo_show_mobile_header_sidebar', 'yes' ) === 'no' ? 'hidden-xs' : '';
+		$show_on_mobile                              = get_theme_mod( 'yith_proteo_show_mobile_header_sidebar', 'yes' ) === 'no' ? 'hidden-xs' : '';
+		$yith_proteo_footer_sidebar_1_widget_per_row = get_theme_mod( 'yith_proteo_footer_sidebar_1_widget_per_row', 3 );
+		$yith_proteo_footer_sidebar_2_widget_per_row = get_theme_mod( 'yith_proteo_footer_sidebar_2_widget_per_row', 3 );
 
 		/**
 		 * Fix column class in case of 5 elements per row
 		 */
-		if ( 5 === get_theme_mod( 'yith_proteo_footer_sidebar_1_widget_per_row', 3 ) ) {
+		if ( 5 === $yith_proteo_footer_sidebar_1_widget_per_row ) {
 			$yith_proteo_footer_sidebar_1_widget_per_row = 20;
 		} else {
-			$yith_proteo_footer_sidebar_1_widget_per_row = 12 / get_theme_mod( 'yith_proteo_footer_sidebar_1_widget_per_row', 3 );
+			$yith_proteo_footer_sidebar_1_widget_per_row = 12 / $yith_proteo_footer_sidebar_1_widget_per_row;
 		}
 
 		/**
 		 * Fix column class in case of 5 elements per row
 		 */
-		if ( 5 === get_theme_mod( 'yith_proteo_footer_sidebar_2_widget_per_row', 3 ) ) {
+		if ( 5 === $yith_proteo_footer_sidebar_2_widget_per_row ) {
 			$yith_proteo_footer_sidebar_2_widget_per_row = 20;
 		} else {
-			$yith_proteo_footer_sidebar_2_widget_per_row = 12 / get_theme_mod( 'yith_proteo_footer_sidebar_2_widget_per_row', 3 );
+			$yith_proteo_footer_sidebar_2_widget_per_row = 12 / $yith_proteo_footer_sidebar_2_widget_per_row;
 		}
 
 		register_sidebar(

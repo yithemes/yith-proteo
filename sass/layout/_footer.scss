@@ -5,6 +5,9 @@
 	color: var(--proteo-footer_font_color, #404040);
 	font-size: var(--proteo-footer_font_size, 16px);
 	text-align: var(--proteo-footer_align, left);
+	background-image: var(--proteo-footer_bg_image);
+	background-position: center;
+    background-size: cover;
 
 	a {
 		color: var(--proteo-footer_link_color, #448a85);

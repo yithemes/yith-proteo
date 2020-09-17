@@ -35,6 +35,26 @@
 			)
 		)
 	);
+
+	// Footer background image.
+	$wp_customize->add_setting(
+		'yith_proteo_footer_background_image',
+		array(
+			'sanitize_callback' => 'esc_url_raw',
+		)
+	);
+
+	$wp_customize->add_control(
+		new WP_Customize_Image_Control(
+			$wp_customize,
+			'yith_proteo_footer_background_image',
+			array(
+				'label'   => __( 'Footer background image', 'yith-proteo' ),
+				'section' => 'yith_proteo_footer_management',
+			)
+		)
+	);
+
 	// Footer font size options.
 	$wp_customize->add_setting(
 		'yith_proteo_footer_font_size',
@@ -51,6 +71,7 @@
 			'type'    => 'number',
 		)
 	);
+
 	// Footer font color options.
 	$wp_customize->add_setting(
 		'yith_proteo_footer_font_color',
