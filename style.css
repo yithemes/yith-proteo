@@ -7387,6 +7387,21 @@ div#respond #submit {
 #main-footer div[class^=footer-sidebar] .widget h2 {
   margin-bottom: 2rem;
 }
+#main-footer .footer-sidebar-1 {
+  width: var(--proteo-footer_sidebar_1_width, 100%);
+}
+#main-footer .footer-sidebar-2 {
+  width: var(--proteo-footer_sidebar_2_width, 100%);
+}
+#main-footer .side-by-side-sidebars div[class^=footer-sidebar] {
+  display: inline-block;
+}
+#main-footer .side-by-side-sidebars .footer-sidebar-1 {
+  padding-right: 30px;
+}
+#main-footer .side-by-side-sidebars .footer-sidebar-2 {
+  width: calc( var(--proteo-footer_sidebar_2_width) - 30px);
+}
 
 /**
 Sticky Footer

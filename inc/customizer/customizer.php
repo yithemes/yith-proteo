@@ -368,6 +368,48 @@ if ( ! function_exists( 'yith_proteo_google_font_sanitization' ) ) {
 	}
 }
 
+if ( ! function_exists( 'yith_proteo_is_footer_sidebar_one_enabled' ) ) {
+	/**
+	 * Callback function to enable Footer Sidebar #1 options
+	 *
+	 * @return bool
+	 */
+	function yith_proteo_is_footer_sidebar_one_enabled() {
+		return 'yes' === get_theme_mod( 'yith_proteo_footer_sidebar_1_enable', 'yes' );
+	}
+}
+
+if ( ! function_exists( 'yith_proteo_is_footer_sidebar_two_enabled' ) ) {
+	/**
+	 * Callback function to enable Footer Sidebar #2 options
+	 *
+	 * @return bool
+	 */
+	function yith_proteo_is_footer_sidebar_two_enabled() {
+		return 'yes' === get_theme_mod( 'yith_proteo_footer_sidebar_2_enable', 'yes' );
+	}
+}
+
+if ( ! function_exists( 'yith_proteo_is_footer_sidebars_side_by_side_available' ) ) {
+	/**
+	 * Callback function to enable Footer Sidebars side by side positioning
+	 *
+	 * @return bool
+	 */
+	function yith_proteo_is_footer_sidebars_side_by_side_available() {
+		$sidebar_1_enabled = yith_proteo_is_footer_sidebar_one_enabled();
+		$sidebar_2_enabled = yith_proteo_is_footer_sidebar_two_enabled();
+		$sidebar_1_width   = get_theme_mod( 'yith_proteo_footer_sidebar_1_width', 100 );
+		$sidebar_2_width   = get_theme_mod( 'yith_proteo_footer_sidebar_2_width', 100 );
+
+		$enable = false;
+		if ( $sidebar_1_enabled && $sidebar_2_enabled && ( $sidebar_1_width + $sidebar_2_width <= 100 ) ) {
+			$enable = true;
+		}
+		return $enable;
+	}
+}
+
 /**
  * Add YITH Customizer CSS
  */

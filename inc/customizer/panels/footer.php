@@ -148,7 +148,52 @@
 		)
 	);
 
-	// Footer sidebar 1 options.
+	// Footer sidebar 1 enabler.
+	$wp_customize->add_setting(
+		'yith_proteo_footer_sidebar_1_enable',
+		array(
+			'default'           => 'yes',
+			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+		)
+	);
+	$wp_customize->add_control(
+		'yith_proteo_footer_sidebar_1_enable',
+		array(
+			'type'    => 'radio',
+			'label'   => esc_html__( 'Enable footer widget area #1', 'yith-proteo' ),
+			'section' => 'yith_proteo_footer_management',
+			'choices' => array(
+				'yes' => esc_html__( 'Yes', 'yith-proteo' ),
+				'no'  => esc_html__( 'No', 'yith-proteo' ),
+			),
+		)
+	);
+
+	// Footer sidebar 1 width.
+	$wp_customize->add_setting(
+		'yith_proteo_footer_sidebar_1_width',
+		array(
+			'default'           => 100,
+			'sanitize_callback' => 'absint',
+			'transport'         => 'postMessage',
+		)
+	);
+	$wp_customize->add_control(
+		new WP_Customize_Range(
+			$wp_customize,
+			'yith_proteo_footer_sidebar_1_width',
+			array(
+				'label'           => esc_html__( 'Footer widget area #1 width (%).', 'yith-proteo' ),
+				'min'             => 20,
+				'max'             => 100,
+				'step'            => 5,
+				'section'         => 'yith_proteo_footer_management',
+				'active_callback' => 'yith_proteo_is_footer_sidebar_one_enabled',
+			)
+		)
+	);
+
+	// Footer sidebar 1 columns.
 	$wp_customize->add_setting(
 		'yith_proteo_footer_sidebar_1_widget_per_row',
 		array(
@@ -162,11 +207,59 @@
 			$wp_customize,
 			'yith_proteo_footer_sidebar_1_widget_per_row',
 			array(
-				'label'   => esc_html__( 'Select how many widgets per row to show for Footer Sidebar 1 (new rows are automatically created).', 'yith-proteo' ),
-				'min'     => 1,
-				'max'     => 6,
-				'step'    => 1,
-				'section' => 'yith_proteo_footer_management',
+				'label'           => esc_html__( 'Columns in footer widget area #1.', 'yith-proteo' ),
+				'min'             => 1,
+				'max'             => 6,
+				'step'            => 1,
+				'section'         => 'yith_proteo_footer_management',
+				'active_callback' => 'yith_proteo_is_footer_sidebar_one_enabled',
+			)
+		)
+	);
+
+
+
+	// Footer sidebar 2 enabler.
+	$wp_customize->add_setting(
+		'yith_proteo_footer_sidebar_2_enable',
+		array(
+			'default'           => 'yes',
+			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+		)
+	);
+	$wp_customize->add_control(
+		'yith_proteo_footer_sidebar_2_enable',
+		array(
+			'type'    => 'radio',
+			'label'   => esc_html__( 'Enable footer widget area #2', 'yith-proteo' ),
+			'section' => 'yith_proteo_footer_management',
+			'choices' => array(
+				'yes' => esc_html__( 'Yes', 'yith-proteo' ),
+				'no'  => esc_html__( 'No', 'yith-proteo' ),
+			),
+		)
+	);
+
+	// Footer sidebar 2 width.
+	$wp_customize->add_setting(
+		'yith_proteo_footer_sidebar_2_width',
+		array(
+			'default'           => 100,
+			'sanitize_callback' => 'absint',
+			'transport'         => 'postMessage',
+		)
+	);
+	$wp_customize->add_control(
+		new WP_Customize_Range(
+			$wp_customize,
+			'yith_proteo_footer_sidebar_2_width',
+			array(
+				'label'           => esc_html__( 'Footer widget area #2 width (%).', 'yith-proteo' ),
+				'min'             => 20,
+				'max'             => 100,
+				'step'            => 5,
+				'section'         => 'yith_proteo_footer_management',
+				'active_callback' => 'yith_proteo_is_footer_sidebar_two_enabled',
 			)
 		)
 	);
@@ -185,11 +278,34 @@
 			$wp_customize,
 			'yith_proteo_footer_sidebar_2_widget_per_row',
 			array(
-				'label'   => esc_html__( 'Select how many widgets per row to show for Footer Sidebar 2 (new rows are automatically created).', 'yith-proteo' ),
-				'min'     => 1,
-				'max'     => 6,
-				'step'    => 1,
-				'section' => 'yith_proteo_footer_management',
+				'label'           => esc_html__( 'Columns in footer widget area #2', 'yith-proteo' ),
+				'min'             => 1,
+				'max'             => 6,
+				'step'            => 1,
+				'section'         => 'yith_proteo_footer_management',
+				'active_callback' => 'yith_proteo_is_footer_sidebar_two_enabled',
 			)
+		)
+	);
+
+	// Footer sidebars side by side.
+	$wp_customize->add_setting(
+		'yith_proteo_footer_sidebars_side_by_side',
+		array(
+			'default'           => 'no',
+			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+		)
+	);
+	$wp_customize->add_control(
+		'yith_proteo_footer_sidebars_side_by_side',
+		array(
+			'type'            => 'radio',
+			'label'           => esc_html__( 'Put the two widget areas side by side', 'yith-proteo' ),
+			'section'         => 'yith_proteo_footer_management',
+			'choices'         => array(
+				'yes' => esc_html__( 'Yes', 'yith-proteo' ),
+				'no'  => esc_html__( 'No', 'yith-proteo' ),
+			),
+			'active_callback' => 'yith_proteo_is_footer_sidebars_side_by_side_available',
 		)
 	);

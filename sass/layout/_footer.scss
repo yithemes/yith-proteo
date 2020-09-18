@@ -44,6 +44,25 @@
 			}
 		}
 	}
+
+	.footer-sidebar-1 {
+		width: var(--proteo-footer_sidebar_1_width, 100%);
+	}
+	.footer-sidebar-2 {
+		width: var(--proteo-footer_sidebar_2_width, 100%);
+	}
+
+	.side-by-side-sidebars {
+		div[class^="footer-sidebar"] {
+			display: inline-block;
+		}
+		.footer-sidebar-1 {
+			padding-right: 30px;
+		}
+		.footer-sidebar-2 {
+			width: calc( var(--proteo-footer_sidebar_2_width) - 30px);
+		}
+	}
 }
 
 /**

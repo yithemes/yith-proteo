@@ -46,6 +46,9 @@ function yith_proteo_inline_style() {
 	$footer_credits_link_color       = get_theme_mod( 'yith_proteo_footer_credits_link_color', '#448a85' );
 	$footer_credits_link_hover_color = get_theme_mod( 'yith_proteo_footer_credits_link_hover_color', yith_proteo_adjust_brightness( get_theme_mod( 'yith_proteo_topbar_link_color', '#448a85' ), - 0.3 ) );
 
+	$footer_sidebar_1_width = get_theme_mod( 'yith_proteo_footer_sidebar_1_width', 100 );
+	$footer_sidebar_2_width = get_theme_mod( 'yith_proteo_footer_sidebar_2_width', 100 );
+
 	$header_menu_font_size          = get_theme_mod( 'yith_proteo_header_main_menu_font_size', 14 );
 	$header_menu_color              = get_theme_mod( 'yith_proteo_header_main_menu_color', '#404040' );
 	$header_menu_hover_color        = get_theme_mod( 'yith_proteo_header_main_menu_hover_color', '#448a85' );
@@ -189,6 +192,8 @@ function yith_proteo_inline_style() {
 		--proteo-footer_credits_align: {$footer_credits_align};
 		--proteo-footer_credits_link_color: {$footer_credits_link_color};
 		--proteo-footer_credits_link_hover_color: {$footer_credits_link_hover_color};
+		--proteo-footer_sidebar_1_width: {$footer_sidebar_1_width}%;
+		--proteo-footer_sidebar_2_width: {$footer_sidebar_2_width}%;
 		--proteo-base_font_size: {$base_font_size}px;
 		--proteo-base_font_color: {$base_font_color};
 		--proteo-h1_font_size: {$h1_font_size}px;

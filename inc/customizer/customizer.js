@@ -57,4 +57,25 @@
 		});
 	});
 
+	wp.customize('yith_proteo_footer_sidebar_2_widget_per_row', function (value) {
+		value.bind(function (newval) {
+			if ( parseInt( newval ) === 5) {
+				var newClass = 20;
+			}
+			else {
+				var newClass = (12 / newval);
+			}
+			$(".footer-sidebar-2 section[class*='col-lg']").removeClass(function (index, css) {
+				return (css.match(/(^|\s)col-lg\S+/g) || []).join(' ');
+			}).addClass('col-lg-' + newClass);
+		});
+	});
+
+	wp.customize('yith_proteo_footer_sidebar_2_width', function (value) {
+		value.bind(function (newval) {
+			$('.footer-sidebar-2').css("width", newval + '%');
+		});
+	});
+
+
 })(jQuery);
