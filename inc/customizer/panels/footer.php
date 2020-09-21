@@ -105,7 +105,7 @@
 	$wp_customize->add_setting(
 		'yith_proteo_footer_background_position',
 		array(
-			'default'           => 'center center',
+			'default'           => 'center-center',
 			'sanitize_callback' => 'yith_proteo_sanitize_select',
 		)
 	);
@@ -116,15 +116,15 @@
 			'label'           => esc_html__( 'Background position', 'yith-proteo' ),
 			'section'         => 'yith_proteo_footer_management',
 			'choices'         => array(
-				'left top'      => esc_html__( 'Left top', 'yith-proteo' ),
-				'left center'   => esc_html__( 'Left center', 'yith-proteo' ),
-				'left bottom'   => esc_html__( 'Left bottom', 'yith-proteo' ),
-				'right top'     => esc_html__( 'Right top', 'yith-proteo' ),
-				'right center'  => esc_html__( 'Right center', 'yith-proteo' ),
-				'right bottom'  => esc_html__( 'Right bottom', 'yith-proteo' ),
-				'center top'    => esc_html__( 'Center top', 'yith-proteo' ),
-				'center center' => esc_html__( 'Center', 'yith-proteo' ),
-				'center bottom' => esc_html__( 'Center bottom', 'yith-proteo' ),
+				'left-top'      => esc_html__( 'Left top', 'yith-proteo' ),
+				'left-center'   => esc_html__( 'Left center', 'yith-proteo' ),
+				'left-bottom'   => esc_html__( 'Left bottom', 'yith-proteo' ),
+				'right-top'     => esc_html__( 'Right top', 'yith-proteo' ),
+				'right-center'  => esc_html__( 'Right center', 'yith-proteo' ),
+				'right-bottom'  => esc_html__( 'Right bottom', 'yith-proteo' ),
+				'center-top'    => esc_html__( 'Center top', 'yith-proteo' ),
+				'center-center' => esc_html__( 'Center', 'yith-proteo' ),
+				'center-bottom' => esc_html__( 'Center bottom', 'yith-proteo' ),
 			),
 			'active_callback' => 'yith_proteo_footer_has_custom_background',
 		)

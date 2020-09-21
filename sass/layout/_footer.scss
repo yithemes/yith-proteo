@@ -6,8 +6,9 @@
 	font-size: var(--proteo-footer_font_size, 16px);
 	text-align: var(--proteo-footer_align, left);
 	background-image: var(--proteo-footer_bg_image);
-	background-position: center;
-    background-size: cover;
+	background-size: var(--proteo-footer_bg_image_size, initial);
+	background-position: var(--proteo-footer_bg_image_position, center center);
+	background-repeat: var(--proteo-footer_bg_image_repeat, no-repeat);
 
 	a {
 		color: var(--proteo-footer_link_color, #448a85);
@@ -60,7 +61,7 @@
 			padding-right: 30px;
 		}
 		.footer-sidebar-2 {
-			width: calc( var(--proteo-footer_sidebar_2_width) - 30px);
+			width: calc(var(--proteo-footer_sidebar_2_width) - 30px);
 		}
 	}
 }
