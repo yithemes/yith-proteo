@@ -55,6 +55,81 @@
 		)
 	);
 
+	// Footer background image background_size.
+	$wp_customize->add_setting(
+		'yith_proteo_footer_background_size_full',
+		array(
+			'default'           => 'yes',
+			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+		)
+	);
+	$wp_customize->add_control(
+		'yith_proteo_footer_background_size_full',
+		array(
+			'type'            => 'radio',
+			'label'           => esc_html__( 'Full width background image', 'yith-proteo' ),
+			'section'         => 'yith_proteo_footer_management',
+			'choices'         => array(
+				'yes' => esc_html__( 'Yes', 'yith-proteo' ),
+				'no'  => esc_html__( 'No', 'yith-proteo' ),
+			),
+			'active_callback' => 'yith_proteo_footer_has_custom_background',
+		)
+	);
+
+	// Footer background image background_repeat.
+	$wp_customize->add_setting(
+		'yith_proteo_footer_background_repeat',
+		array(
+			'default'           => 'repeat',
+			'sanitize_callback' => 'yith_proteo_sanitize_select',
+		)
+	);
+	$wp_customize->add_control(
+		'yith_proteo_footer_background_repeat',
+		array(
+			'type'            => 'select',
+			'label'           => esc_html__( 'Background repeat', 'yith-proteo' ),
+			'section'         => 'yith_proteo_footer_management',
+			'choices'         => array(
+				'no-repeat' => esc_html__( 'Don\'t repeat', 'yith-proteo' ),
+				'repeat'    => esc_html__( 'Repeat horizontally and vertically', 'yith-proteo' ),
+				'repeat-x'  => esc_html__( 'Repeat horizontally', 'yith-proteo' ),
+				'repeat-y'  => esc_html__( 'Repeat vertically', 'yith-proteo' ),
+			),
+			'active_callback' => 'yith_proteo_footer_background_not_is_full_width',
+		)
+	);
+
+	// Footer background position.
+	$wp_customize->add_setting(
+		'yith_proteo_footer_background_position',
+		array(
+			'default'           => 'center center',
+			'sanitize_callback' => 'yith_proteo_sanitize_select',
+		)
+	);
+	$wp_customize->add_control(
+		'yith_proteo_footer_background_position',
+		array(
+			'type'            => 'select',
+			'label'           => esc_html__( 'Background position', 'yith-proteo' ),
+			'section'         => 'yith_proteo_footer_management',
+			'choices'         => array(
+				'left top'      => esc_html__( 'Left top', 'yith-proteo' ),
+				'left center'   => esc_html__( 'Left center', 'yith-proteo' ),
+				'left bottom'   => esc_html__( 'Left bottom', 'yith-proteo' ),
+				'right top'     => esc_html__( 'Right top', 'yith-proteo' ),
+				'right center'  => esc_html__( 'Right center', 'yith-proteo' ),
+				'right bottom'  => esc_html__( 'Right bottom', 'yith-proteo' ),
+				'center top'    => esc_html__( 'Center top', 'yith-proteo' ),
+				'center center' => esc_html__( 'Center', 'yith-proteo' ),
+				'center bottom' => esc_html__( 'Center bottom', 'yith-proteo' ),
+			),
+			'active_callback' => 'yith_proteo_footer_has_custom_background',
+		)
+	);
+
 	// Footer font size options.
 	$wp_customize->add_setting(
 		'yith_proteo_footer_font_size',

@@ -410,6 +410,32 @@ if ( ! function_exists( 'yith_proteo_is_footer_sidebars_side_by_side_available' 
 	}
 }
 
+if ( ! function_exists( 'yith_proteo_footer_has_custom_background' ) ) {
+	/**
+	 * Callback function to enable Footer background additional settings
+	 *
+	 * @return bool
+	 */
+	function yith_proteo_footer_has_custom_background() {
+		return ! empty( get_theme_mod( 'yith_proteo_footer_background_image' ) );
+	}
+}
+
+if ( ! function_exists( 'yith_proteo_footer_background_is_full_width' ) ) {
+	/**
+	 * Callback function to check state of Footer background full width
+	 *
+	 * @return bool
+	 */
+	function yith_proteo_footer_background_not_is_full_width() {
+		if ( ! yith_proteo_footer_has_custom_background() ) {
+			return false;
+		} else {
+			return 'no' === get_theme_mod( 'yith_proteo_footer_background_size_full', 'yes' );
+		}
+	}
+}
+
 /**
  * Add YITH Customizer CSS
  */
