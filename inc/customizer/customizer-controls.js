@@ -132,6 +132,106 @@
 			$element.find('.customize-control-google-font-selection').val(JSON.stringify(selectedFont)).trigger('change');
 		}
 
+		// PRODUCT IMAGE MANAGEMENT
+		yith_proteo_toggle_product_image_section_controls_list();
+		
+		$( '#customize-control-yith_proteo_product_page_image_group_title' ).addClass('section-closed').on( 'click', yith_proteo_toggle_product_image_controls );
+
+		function yith_proteo_toggle_product_image_controls() {
+			var section_title = $( '#customize-control-yith_proteo_product_page_image_group_title' ),
+			collapsed = section_title.hasClass( 'section-closed' );
+			section_title.toggleClass('section-closed');
+			wp.customize.control('yith_proteo_product_page_image_zoom' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_product_page_image_lightbox' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_product_page_gallery_slider' ).toggle( collapsed );
+		}
+
+		function yith_proteo_toggle_product_image_section_controls_list() {
+			wp.customize.control('yith_proteo_product_page_image_zoom' ).toggle( false );
+			wp.customize.control('yith_proteo_product_page_image_lightbox' ).toggle( false );
+			wp.customize.control('yith_proteo_product_page_gallery_slider' ).toggle( false );
+		}
+
+		// PRODUCT PRICE AND ADD TO CART MANAGEMENT
+		yith_proteo_toggle_product_price_add_to_cart_section_controls_list();
+		
+		$( '#customize-control-yith_proteo_product_page_price_and_add_to_cart_group_title' ).addClass('section-closed').on( 'click', yith_proteo_toggle_product_price_add_to_cart_controls );
+
+		function yith_proteo_toggle_product_price_add_to_cart_controls() {
+			var section_title = $( '#customize-control-yith_proteo_product_page_price_and_add_to_cart_group_title' ),
+			collapsed = section_title.hasClass( 'section-closed' );
+			section_title.toggleClass('section-closed');
+			wp.customize.control('yith_proteo_product_page_price_font_size' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_product_page_price_color' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_product_page_quantity_font_size' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_product_page_add_to_cart_font_size' ).toggle( collapsed );
+		}
+
+		function yith_proteo_toggle_product_price_add_to_cart_section_controls_list() {
+			wp.customize.control('yith_proteo_product_page_price_font_size' ).toggle( false );
+			wp.customize.control('yith_proteo_product_page_price_color' ).toggle( false );
+			wp.customize.control('yith_proteo_product_page_quantity_font_size' ).toggle( false );
+			wp.customize.control('yith_proteo_product_page_add_to_cart_font_size' ).toggle( false );
+		}
+
+		// RELATED PRODUCTS
+		yith_proteo_toggle_related_products_section_controls_list();
+		
+		$( '#customize-control-yith_proteo_product_related_products_group_title' ).addClass('section-closed').on( 'click', yith_proteo_toggle_related_products_controls );
+
+		function yith_proteo_toggle_related_products_controls() {
+			var section_title = $( '#customize-control-yith_proteo_product_related_products_group_title' ),
+			collapsed = section_title.hasClass( 'section-closed' );
+			section_title.toggleClass('section-closed');
+			wp.customize.control('yith_proteo_product_page_related_max_number' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_product_page_related_columns' ).toggle( collapsed );
+		}
+
+		function yith_proteo_toggle_related_products_section_controls_list() {
+			wp.customize.control('yith_proteo_product_page_related_max_number' ).toggle( false );
+			wp.customize.control('yith_proteo_product_page_related_columns' ).toggle( false );
+		}
+
+		// PRODUCT SIDEBAR MANAGEMENT
+		yith_proteo_toggle_sidebar_section_controls_list();
+		
+		$( '#customize-control-yith_proteo_product_sidebar_group_title' ).addClass('section-closed').on( 'click', yith_proteo_toggle_sidebar_controls );
+
+		function yith_proteo_toggle_sidebar_controls() {
+			var section_title = $( '#customize-control-yith_proteo_product_sidebar_group_title' ),
+			collapsed = section_title.hasClass( 'section-closed' );
+			section_title.toggleClass('section-closed');
+			wp.customize.control('yith_proteo_product_page_sidebar_position' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_single_product_default_sidebar' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_product_page_sidebar_force' ).toggle( collapsed );
+		}
+
+		function yith_proteo_toggle_sidebar_section_controls_list() {
+			wp.customize.control('yith_proteo_product_page_sidebar_position' ).toggle( false );
+			wp.customize.control('yith_proteo_single_product_default_sidebar' ).toggle( false );
+			wp.customize.control('yith_proteo_product_page_sidebar_force' ).toggle( false );
+		}
+		
+		// PRODUCT TABS MANAGEMENT
+		yith_proteo_toggle_product_tabs_controls_list();
+		
+		$( '#customize-control-yith_proteo_product_tabs_group_title' ).addClass('section-closed').on( 'click', yith_proteo_toggle_product_tabs_controls );
+
+		function yith_proteo_toggle_product_tabs_controls() {
+			var section_title = $( '#customize-control-yith_proteo_product_tabs_group_title' ),
+			collapsed = section_title.hasClass( 'section-closed' );
+			section_title.toggleClass('section-closed');
+			wp.customize.control('yith_proteo_product_tabs_title_font_size' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_product_tabs_title_font_color' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_product_tabs_content_font_size' ).toggle( collapsed );
+		}
+
+		function yith_proteo_toggle_product_tabs_controls_list() {
+			wp.customize.control('yith_proteo_product_tabs_title_font_size' ).toggle( false );
+			wp.customize.control('yith_proteo_product_tabs_title_font_color' ).toggle( false );
+			wp.customize.control('yith_proteo_product_tabs_content_font_size' ).toggle( false );
+		}
+
 	});
 
 })(jQuery);

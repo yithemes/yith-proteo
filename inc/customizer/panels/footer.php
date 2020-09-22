@@ -67,7 +67,7 @@
 		'yith_proteo_footer_background_size_full',
 		array(
 			'type'            => 'radio',
-			'label'           => esc_html__( 'Full width background image', 'yith-proteo' ),
+			'label'           => esc_html__( '100% background image', 'yith-proteo' ),
 			'section'         => 'yith_proteo_footer_management',
 			'choices'         => array(
 				'yes' => esc_html__( 'Yes', 'yith-proteo' ),

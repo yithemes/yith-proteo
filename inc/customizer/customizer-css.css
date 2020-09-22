@@ -12,7 +12,7 @@ YITH CUSTOMIZER STYLE
 #customize-control-yith_proteo_product_category_page_sidebar_position span.customize-inside-control-row,
 #customize-control-yith_proteo_product_tag_page_sidebar_position span.customize-inside-control-row,
 #customize-control-yith_proteo_product_tax_page_sidebar_position span.customize-inside-control-row {
-    margin-left: 0;
+	margin-left: 0;
 }
 
 #_customize-input-yith_proteo_default_sidebar_position-radio-right,
@@ -39,9 +39,8 @@ YITH CUSTOMIZER STYLE
 #_customize-input-yith_proteo_product_tax_page_sidebar_position-radio-right,
 #_customize-input-yith_proteo_product_tax_page_sidebar_position-radio-left,
 #_customize-input-yith_proteo_product_tax_page_sidebar_position-radio-no-sidebar {
-    display: none;
+	display: none;
 }
-
 
 #_customize-input-yith_proteo_default_sidebar_position-radio-right + label,
 #_customize-input-yith_proteo_default_sidebar_position-radio-left + label,
@@ -63,13 +62,14 @@ YITH CUSTOMIZER STYLE
 #_customize-input-yith_proteo_product_category_page_sidebar_position-radio-no-sidebar + label,
 #_customize-input-yith_proteo_product_tag_page_sidebar_position-radio-right + label,
 #_customize-input-yith_proteo_product_tag_page_sidebar_position-radio-left + label,
-#_customize-input-yith_proteo_product_tag_page_sidebar_position-radio-no-sidebar + label
-#_customize-input-yith_proteo_product_tax_page_sidebar_position-radio-right + label,
+#_customize-input-yith_proteo_product_tag_page_sidebar_position-radio-no-sidebar
+	+ label
+	#_customize-input-yith_proteo_product_tax_page_sidebar_position-radio-right
+	+ label,
 #_customize-input-yith_proteo_product_tax_page_sidebar_position-radio-left + label,
 #_customize-input-yith_proteo_product_tax_page_sidebar_position-radio-no-sidebar + label {
-    line-height: 40px;
+	line-height: 40px;
 }
-
 
 #_customize-input-yith_proteo_default_sidebar_position-radio-right + label:before,
 #_customize-input-yith_proteo_blog_page_sidebar_position-radio-right + label:before,
@@ -79,13 +79,13 @@ YITH CUSTOMIZER STYLE
 #_customize-input-yith_proteo_product_category_page_sidebar_position-radio-right + label:before,
 #_customize-input-yith_proteo_product_tag_page_sidebar_position-radio-right + label:before,
 #_customize-input-yith_proteo_product_tax_page_sidebar_position-radio-right + label:before {
-    background: url(../../img/panel-icons/sidebar-right.png) center no-repeat;
-    content: "";
-    display: inline-block;
-    width: 54px;
-    height: 40px;
-    background-size: cover;
-    margin-right: 5px;
+	background: url(../../img/panel-icons/sidebar-right.png) center no-repeat;
+	content: "";
+	display: inline-block;
+	width: 54px;
+	height: 40px;
+	background-size: cover;
+	margin-right: 5px;
 	border: 2px solid #c4c4c4;
 	vertical-align: middle;
 }
@@ -98,13 +98,13 @@ YITH CUSTOMIZER STYLE
 #_customize-input-yith_proteo_product_category_page_sidebar_position-radio-left + label:before,
 #_customize-input-yith_proteo_product_tag_page_sidebar_position-radio-left + label:before,
 #_customize-input-yith_proteo_product_tax_page_sidebar_position-radio-left + label:before {
-    background: url(../../img/panel-icons/sidebar-left.png) center no-repeat;
-    content: "";
-    display: inline-block;
-    width: 54px;
-    height: 40px;
-    background-size: cover;
-    margin-right: 5px;
+	background: url(../../img/panel-icons/sidebar-left.png) center no-repeat;
+	content: "";
+	display: inline-block;
+	width: 54px;
+	height: 40px;
+	background-size: cover;
+	margin-right: 5px;
 	border: 2px solid #c4c4c4;
 	vertical-align: middle;
 }
@@ -117,13 +117,13 @@ YITH CUSTOMIZER STYLE
 #_customize-input-yith_proteo_product_category_page_sidebar_position-radio-no-sidebar + label:before,
 #_customize-input-yith_proteo_product_tag_page_sidebar_position-radio-no-sidebar + label:before,
 #_customize-input-yith_proteo_product_tax_page_sidebar_position-radio-no-sidebar + label:before {
-    background: url(../../img/panel-icons/sidebar-no.png) center no-repeat;
-    content: "";
-    display: inline-block;
-    width: 54px;
-    height: 40px;
-    background-size: cover;
-    margin-right: 5px;
+	background: url(../../img/panel-icons/sidebar-no.png) center no-repeat;
+	content: "";
+	display: inline-block;
+	width: 54px;
+	height: 40px;
+	background-size: cover;
+	margin-right: 5px;
 	border: 2px solid #c4c4c4;
 	vertical-align: middle;
 }
@@ -176,7 +176,7 @@ YITH CUSTOMIZER STYLE
 #_customize-input-yith_proteo_product_tax_page_sidebar_position-radio-right:hover + label:before,
 #_customize-input-yith_proteo_product_tax_page_sidebar_position-radio-left:hover + label:before,
 #_customize-input-yith_proteo_product_tax_page_sidebar_position-radio-no-sidebar:hover + label:before {
-    border: 2px solid #999;
+	border: 2px solid #999;
 }
 
 #_customize-input-yith_proteo_default_sidebar_position-radio-right:checked + label,
@@ -203,28 +203,26 @@ YITH CUSTOMIZER STYLE
 #_customize-input-yith_proteo_product_tax_page_sidebar_position-radio-right:checked + label,
 #_customize-input-yith_proteo_product_tax_page_sidebar_position-radio-left:checked + label,
 #_customize-input-yith_proteo_product_tax_page_sidebar_position-radio-no-sidebar:checked + label {
-    font-weight: bold;
+	font-weight: bold;
 }
-
 
 #customize-control-yith_proteo_default_sidebar,
 #customize-control-yith_proteo_blog_sidebar {
-    border-bottom: 1px solid #aaa;
+	border-bottom: 1px solid #aaa;
 }
 
 #customize-control-yith_proteo_blog_sidebar {
-    padding-bottom: 1.3rem;
+	padding-bottom: 1.3rem;
 }
-
 
 /* Separator between buttons style */
 #customize-control-yith_proteo_button_style_2_bg_color_1 {
-    padding-top: 10px;
-    border-top: 1px solid #ddd;
+	padding-top: 10px;
+	border-top: 1px solid #ddd;
 }
 
 /* RANGE INPUTS*/
-.customize-control-range input[type=range].range-slider {
+.customize-control-range input[type="range"].range-slider {
 	-webkit-appearance: none;
 	width: 70%;
 	padding: 10px 10px 10px 0;
@@ -232,17 +230,17 @@ YITH CUSTOMIZER STYLE
 	box-sizing: border-box;
 	vertical-align: middle;
 }
-.customize-control-range input[type=range].range-slider + input {
+.customize-control-range input[type="range"].range-slider + input {
 	width: 20%;
 	margin: 0;
 	box-sizing: border-box;
 	vertical-align: middle;
 }
 
-.customize-control-range input[type=range].range-slider:focus {
+.customize-control-range input[type="range"].range-slider:focus {
 	outline: none;
 }
-.customize-control-range input[type=range].range-slider::-webkit-slider-runnable-track {
+.customize-control-range input[type="range"].range-slider::-webkit-slider-runnable-track {
 	width: 100%;
 	height: 4px;
 	cursor: pointer;
@@ -250,7 +248,7 @@ YITH CUSTOMIZER STYLE
 	background: #969696;
 	border: none;
 }
-.customize-control-range input[type=range].range-slider::-webkit-slider-thumb {
+.customize-control-range input[type="range"].range-slider::-webkit-slider-thumb {
 	box-shadow: none;
 	border: none;
 	height: 20px;
@@ -261,10 +259,10 @@ YITH CUSTOMIZER STYLE
 	-webkit-appearance: none;
 	margin-top: -8px;
 }
-.customize-control-range input[type=range].range-slider:focus::-webkit-slider-runnable-track {
+.customize-control-range input[type="range"].range-slider:focus::-webkit-slider-runnable-track {
 	background: #b7b7b7;
 }
-.customize-control-range input[type=range].range-slider::-moz-range-track {
+.customize-control-range input[type="range"].range-slider::-moz-range-track {
 	width: 100%;
 	height: 4px;
 	cursor: pointer;
@@ -273,7 +271,7 @@ YITH CUSTOMIZER STYLE
 	border-radius: 0;
 	border: none;
 }
-.customize-control-range input[type=range].range-slider::-moz-range-thumb {
+.customize-control-range input[type="range"].range-slider::-moz-range-thumb {
 	box-shadow: none;
 	border: none;
 	height: 20px;
@@ -282,7 +280,7 @@ YITH CUSTOMIZER STYLE
 	background: #6ca6f6;
 	cursor: pointer;
 }
-.customize-control-range input[type=range].range-slider::-ms-track {
+.customize-control-range input[type="range"].range-slider::-ms-track {
 	width: 100%;
 	height: 4px;
 	cursor: pointer;
@@ -290,19 +288,19 @@ YITH CUSTOMIZER STYLE
 	border-color: transparent;
 	color: transparent;
 }
-.customize-control-range input[type=range].range-slider::-ms-fill-lower {
+.customize-control-range input[type="range"].range-slider::-ms-fill-lower {
 	background: #757575;
 	border: none;
 	border-radius: 0;
 	box-shadow: none;
 }
-.customize-control-range input[type=range].range-slider::-ms-fill-upper {
+.customize-control-range input[type="range"].range-slider::-ms-fill-upper {
 	background: #969696;
 	border: none;
 	border-radius: 0;
 	box-shadow: none;
 }
-.customize-control-range input[type=range].range-slider::-ms-thumb {
+.customize-control-range input[type="range"].range-slider::-ms-thumb {
 	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
 	border: 0px solid rgba(0, 0, 0, 0);
 	height: 20px;
@@ -312,34 +310,99 @@ YITH CUSTOMIZER STYLE
 	cursor: pointer;
 	height: 4px;
 }
-.customize-control-range input[type=range].range-slider:focus::-ms-fill-lower {
+.customize-control-range input[type="range"].range-slider:focus::-ms-fill-lower {
 	background: #969696;
 }
-.customize-control-range input[type=range].range-slider:focus::-ms-fill-upper {
+.customize-control-range input[type="range"].range-slider:focus::-ms-fill-upper {
 	background: #b7b7b7;
 }
 /* Fix Select2 */
-body .select2-container { z-index: 99999999; max-width: 100%; margin-bottom: 10px;}
-body .customize-control-select .select2-container { z-index: 1; }
-body .select2-container .select2-selection--single { height: 33px; }
-body .select2-container--default .select2-selection--single, 
-.customize-control select, 
-.customize-control input[type=date],
-.customize-control input[type=email],
-.customize-control input[type=number],
-.customize-control input[type=text],
-.customize-control input[type=url],
-.customize-control textarea { height: 33px; border-color: #ddd; border-radius: 0; }
+body .select2-container {
+	z-index: 99999999;
+	max-width: 100%;
+	margin-bottom: 10px;
+}
+body .customize-control-select .select2-container {
+	z-index: 1;
+}
+body .select2-container .select2-selection--single {
+	height: 33px;
+}
+body .select2-container--default .select2-selection--single,
+.customize-control select,
+.customize-control input[type="date"],
+.customize-control input[type="email"],
+.customize-control input[type="number"],
+.customize-control input[type="text"],
+.customize-control input[type="url"],
+.customize-control textarea {
+	height: 33px;
+	border-color: #ddd;
+	border-radius: 0;
+}
 body .customize-control textarea {
 	height: auto;
 	line-height: normal;
 }
-body .select2-container--default .select2-selection--single .select2-selection__rendered, 
-.customize-control select, 
-.customize-control input[type=date],
-.customize-control input[type=email],
-.customize-control input[type=number],
-.customize-control input[type=text],
-.customize-control input[type=url],
-.customize-control textarea { color: #32373c; line-height: 33px; }
-body .select2-container--default .select2-selection--single .select2-selection__arrow { height: 30px; }
+body .select2-container--default .select2-selection--single .select2-selection__rendered,
+.customize-control select,
+.customize-control input[type="date"],
+.customize-control input[type="email"],
+.customize-control input[type="number"],
+.customize-control input[type="text"],
+.customize-control input[type="url"],
+.customize-control textarea {
+	color: #32373c;
+	line-height: 33px;
+}
+body .select2-container--default .select2-selection--single .select2-selection__arrow {
+	height: 30px;
+}
+
+/* GROUP SECTION MANAGEMENT */
+li[id*="group_title"] {
+	box-sizing: border-box;
+    cursor: pointer;
+    position: relative;
+    margin-left: -12px;
+    margin-right: -12px;
+    margin-top: -12px;
+    width: calc(100% + 24px);
+    color: #0073aa;
+    background: #f3f3f5;
+    border-bottom: 1px solid #ddd;
+    transition: .15s color ease-in-out,.15s background-color ease-in-out,.15s border-color ease-in-out;
+    padding: 10px 10px 11px 14px;
+    line-height: 1.55;
+    background: #fff;
+	font-size: 14px;
+	border-left: 4px solid #fff;
+}
+li[id*="group_title"].section-closed {
+	background-color: #ffffff;
+	color: #555d66;
+}
+li[id*="group_title"]:hover {
+	color: #0073aa;
+	background: #f3f3f5;
+	border-left-color: #0073aa;
+}
+li[id*="group_title"]:hover::after {
+	color: #0073aa;
+}
+li[id*="group_title"]:after {
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: 14px;
+    font-weight: bold;
+    font-size: 1.2em;
+    content: "\f345";
+    color: #0073aa;
+	font: normal 20px/1 dashicons;
+	transform: rotate(-90deg);
+}
+li[id*="group_title"].section-closed:after {
+	transform: rotate(90deg);
+	color: #555d66;
+}

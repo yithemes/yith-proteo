@@ -17,6 +17,26 @@
 		)
 	);
 
+	// Product image management.
+	$wp_customize->add_setting(
+		'yith_proteo_product_page_image_group_title',
+		array(
+			'default'           => '',
+			'transport'         => 'postMessage',
+			'sanitize_callback' => 'wp_kses_post',
+		)
+	);
+	$wp_customize->add_control(
+		new WP_Customize_Notice(
+			$wp_customize,
+			'yith_proteo_product_page_image_group_title',
+			array(
+				'label'   => esc_html__( 'Product image', 'yith-proteo' ),
+				'section' => 'yith_proteo_product_page_management',
+			)
+		)
+	);
+
 	// Enable image zoom.
 	$wp_customize->add_setting(
 		'yith_proteo_product_page_image_zoom',
@@ -77,6 +97,26 @@
 				'yes' => esc_html__( 'Yes', 'yith-proteo' ),
 				'no'  => esc_html__( 'No', 'yith-proteo' ),
 			),
+		)
+	);
+
+	// Price and add to cart management.
+	$wp_customize->add_setting(
+		'yith_proteo_product_page_price_and_add_to_cart_group_title',
+		array(
+			'default'           => '',
+			'transport'         => 'postMessage',
+			'sanitize_callback' => 'wp_kses_post',
+		)
+	);
+	$wp_customize->add_control(
+		new WP_Customize_Notice(
+			$wp_customize,
+			'yith_proteo_product_page_price_and_add_to_cart_group_title',
+			array(
+				'label'   => esc_html__( 'Product price and Add to cart', 'yith-proteo' ),
+				'section' => 'yith_proteo_product_page_management',
+			)
 		)
 	);
 
@@ -149,6 +189,26 @@
 		)
 	);
 
+	// Related products management.
+	$wp_customize->add_setting(
+		'yith_proteo_product_related_products_group_title',
+		array(
+			'default'           => '',
+			'transport'         => 'postMessage',
+			'sanitize_callback' => 'wp_kses_post',
+		)
+	);
+	$wp_customize->add_control(
+		new WP_Customize_Notice(
+			$wp_customize,
+			'yith_proteo_product_related_products_group_title',
+			array(
+				'label'   => esc_html__( 'Related products', 'yith-proteo' ),
+				'section' => 'yith_proteo_product_page_management',
+			)
+		)
+	);
+
 	// Single product page related products management.
 	$wp_customize->add_setting(
 		'yith_proteo_product_page_related_max_number',
@@ -183,6 +243,27 @@
 			'description' => esc_html__( 'Choose how many columns with related products you want to show (default: 4)', 'yith-proteo' ),
 		)
 	);
+
+	// Sidebar management.
+	$wp_customize->add_setting(
+		'yith_proteo_product_sidebar_group_title',
+		array(
+			'default'           => '',
+			'transport'         => 'postMessage',
+			'sanitize_callback' => 'wp_kses_post',
+		)
+	);
+	$wp_customize->add_control(
+		new WP_Customize_Notice(
+			$wp_customize,
+			'yith_proteo_product_sidebar_group_title',
+			array(
+				'label'   => esc_html__( 'Sidebar management', 'yith-proteo' ),
+				'section' => 'yith_proteo_product_page_management',
+			)
+		)
+	);
+
 	// Single Product Sidebar Management options.
 	$wp_customize->add_setting(
 		'yith_proteo_product_page_sidebar_position',
@@ -242,5 +323,78 @@
 				'yes' => esc_html__( 'Yes', 'yith-proteo' ),
 				'no'  => esc_html__( 'No', 'yith-proteo' ),
 			),
+		)
+	);
+
+	// Tabs management.
+	$wp_customize->add_setting(
+		'yith_proteo_product_tabs_group_title',
+		array(
+			'default'           => '',
+			'transport'         => 'postMessage',
+			'sanitize_callback' => 'wp_kses_post',
+		)
+	);
+	$wp_customize->add_control(
+		new WP_Customize_Notice(
+			$wp_customize,
+			'yith_proteo_product_tabs_group_title',
+			array(
+				'label'   => esc_html__( 'Tabs management', 'yith-proteo' ),
+				'section' => 'yith_proteo_product_page_management',
+			)
+		)
+	);
+
+	// Tabs title font size options.
+	$wp_customize->add_setting(
+		'yith_proteo_product_tabs_title_font_size',
+		array(
+			'sanitize_callback' => 'absint',
+			'default'           => 30,
+		)
+	);
+	$wp_customize->add_control(
+		'yith_proteo_product_tabs_title_font_size',
+		array(
+			'label'   => esc_html__( 'Tab title font size (default: 30px)', 'yith-proteo' ),
+			'section' => 'yith_proteo_product_page_management',
+			'type'    => 'number',
+		)
+	);
+
+	// Tabs title font color options.
+	$wp_customize->add_setting(
+		'yith_proteo_product_tabs_title_font_color',
+		array(
+			'sanitize_callback' => 'yith_proteo_sanitize_alpha_colors',
+			'default'           => '#1f1f1f',
+		)
+	);
+	$wp_customize->add_control(
+		new Customizer_Alpha_Color_Control(
+			$wp_customize,
+			'yith_proteo_product_tabs_title_font_color',
+			array(
+				'label'   => esc_html__( 'Tab title font color', 'yith-proteo' ),
+				'section' => 'yith_proteo_product_page_management',
+			)
+		)
+	);
+
+	// Tabs content font size options.
+	$wp_customize->add_setting(
+		'yith_proteo_product_tabs_content_font_size',
+		array(
+			'sanitize_callback' => 'absint',
+			'default'           => 16,
+		)
+	);
+	$wp_customize->add_control(
+		'yith_proteo_product_tabs_content_font_size',
+		array(
+			'label'   => esc_html__( 'Tab content font size (default: 16px)', 'yith-proteo' ),
+			'section' => 'yith_proteo_product_page_management',
+			'type'    => 'number',
 		)
 	);

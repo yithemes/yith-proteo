@@ -257,24 +257,26 @@
 				margin: 0;
 				position: relative;
 				white-space: nowrap;
-				color: #9d9d9d;
+				color: var(--proteo-single_product_tabs_title_color, #1f1f1f);
 
 				a {
 					padding: 0.9375rem 0;
 					display: block;
-					font-size: 1.875rem;
+					font-size: var( --proteo-single_product_tabs_title_font_size, 30px );
 					font-weight: bold;
 					text-decoration: none;
 					margin-right: 45px;
 					color: inherit;
 					margin-bottom: -4px;
 					border-bottom: 4px solid transparent;
+					opacity: 0.5;
 				}
 
 				&.active {
 					a {
-						color: #1f1f1f;
-						border-bottom: 4px solid #1f1f1f;
+						color: inherit;
+						opacity: 1;
+						border-bottom: 4px solid var(--proteo-single_product_tabs_title_color, #1f1f1f);
 					}
 				}
 			}
@@ -285,8 +287,7 @@
 			margin: 0;
 			padding: 35px 0 50px;
 			border-bottom: 4px solid #f2f2f2;
-
-			font-size: 1.25rem;
+			font-size: var( --proteo-single_product_tabs_content_font_size , 16px);
 			line-height: 1.8;
 
 			h2:first-of-type {
