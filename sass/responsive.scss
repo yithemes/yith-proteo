@@ -2,6 +2,16 @@
 @media (min-width: 576px) {
 }
 
+@media (min-width: 600px) {
+	.wp-block-latest-posts.is-grid li {
+		margin: 0 50px 50px 0;
+	}
+
+	.wp-block-latest-posts.columns-2 li {
+		width: calc(50% - 50px);
+	}
+}
+
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768.1px) {
 }
@@ -456,6 +466,7 @@ Custom media queries
 	.wp-block-column {
 		margin-bottom: 35px;
 	}
+	
 }
 
 // Extra small devices (portrait phones, less than 576px)
