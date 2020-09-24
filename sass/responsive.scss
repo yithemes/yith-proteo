@@ -229,6 +229,11 @@ Custom media queries
 			}
 		}
 	}
+
+	#main-footer .side-by-side-sidebars div[class^=footer-sidebar] {
+		display: block;
+		width: 100%;
+	}
 }
 
 // Small devices (landscape phones, less than 768px)
@@ -447,6 +452,9 @@ Custom media queries
 			float: left;
 			display: table;
 		}
+	}
+	.wp-block-column {
+		margin-bottom: 35px;
 	}
 }
 
