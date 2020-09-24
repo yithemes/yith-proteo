@@ -5,6 +5,28 @@
  * @package yith-proteo
  */
 
+// Header Layout options.
+$wp_customize->add_setting(
+	'yith_proteo_product_catalog_hover_effect',
+	array(
+		'default'           => 'glow',
+		'sanitize_callback' => 'yith_proteo_sanitize_select',
+	)
+);
+$wp_customize->add_control(
+	'yith_proteo_product_catalog_hover_effect',
+	array(
+		'type'    => 'select',
+		'label'   => esc_html__( 'Product hover effect', 'yith-proteo' ),
+		'section' => 'woocommerce_product_catalog',
+		'choices' => array(
+			'none' => esc_html__( 'None', 'yith-proteo' ),
+			'glow' => esc_html__( 'Glow', 'yith-proteo' ),
+			'zoom' => esc_html__( 'Zoom', 'yith-proteo' ),
+		),
+	)
+);
+
 // Product title font size options.
 $wp_customize->add_setting(
 	'yith_proteo_product_catalog_title_font_size',

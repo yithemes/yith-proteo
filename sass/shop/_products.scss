@@ -84,7 +84,6 @@ ul.products,
 
 		&:hover {
 			img {
-				filter: brightness(1.1);
 				z-index: 0;
 
 				& ~ img {
@@ -166,6 +165,26 @@ ul.products,
 					width: auto;
 				}
 			}
+		}
+	}
+}
+
+body {
+	&.yith-proteo-products-hover-glow {
+		ul.products li.product:hover img, 
+		ul.products li.wc-block-grid__product:hover img, 
+		.wc-block-grid ul.wc-block-grid__products li.product:hover img, 
+		.wc-block-grid ul.wc-block-grid__products li.wc-block-grid__product:hover img {
+			filter: brightness(1.1);
+		}
+	}
+	
+	&.yith-proteo-products-hover-zoom {
+		ul.products li.product:hover img, 
+		ul.products li.wc-block-grid__product:hover img, 
+		.wc-block-grid ul.wc-block-grid__products li.product:hover img, 
+		.wc-block-grid ul.wc-block-grid__products li.wc-block-grid__product:hover img {
+			transform: scale(1.05);
 		}
 	}
 }

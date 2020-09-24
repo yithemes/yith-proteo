@@ -669,3 +669,24 @@ function yith_proteo_manage_single_product_image_features() {
 	}
 }
 add_action( 'wp', 'yith_proteo_manage_single_product_image_features', 99 );
+
+
+if ( ! function_exists( 'yith_proteo_product_hover_effect' ) ) {
+
+	add_filter( 'body_class', 'yith_proteo_product_hover_effect' );
+
+	/**
+	 * Set the products hover effect according to customizer option
+	 *
+	 * @param array $classes body CSS classes.
+	 *
+	 * @return array
+	 *
+	 * @author Francesco Grasso <francgrasso@yithemes.com>
+	 */
+	function yith_proteo_product_hover_effect( $classes ) {
+		$hover_effect = get_theme_mod( 'yith_proteo_product_catalog_hover_effect', 'glow' );
+		$classes[]    = 'yith-proteo-products-hover-' . esc_attr( $hover_effect );
+		return $classes;
+	}
+}
