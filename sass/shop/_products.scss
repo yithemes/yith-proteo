@@ -83,15 +83,6 @@ ul.products,
 		}
 
 		&:hover {
-			img {
-				z-index: 0;
-
-				& ~ img {
-					z-index: 1;
-					opacity: 1;
-				}
-			}
-
 			.button,
 			.add_to_cart_button {
 				bottom: 0;
@@ -171,20 +162,50 @@ ul.products,
 
 body {
 	&.yith-proteo-products-hover-glow {
-		ul.products li.product:hover img, 
-		ul.products li.wc-block-grid__product:hover img, 
-		.wc-block-grid ul.wc-block-grid__products li.product:hover img, 
+		ul.products li.product:hover img,
+		ul.products li.wc-block-grid__product:hover img,
+		.wc-block-grid ul.wc-block-grid__products li.product:hover img,
 		.wc-block-grid ul.wc-block-grid__products li.wc-block-grid__product:hover img {
 			filter: brightness(1.1);
 		}
 	}
-	
+
 	&.yith-proteo-products-hover-zoom {
-		ul.products li.product:hover img, 
-		ul.products li.wc-block-grid__product:hover img, 
-		.wc-block-grid ul.wc-block-grid__products li.product:hover img, 
+		ul.products li.product:hover img,
+		ul.products li.wc-block-grid__product:hover img,
+		.wc-block-grid ul.wc-block-grid__products li.product:hover img,
 		.wc-block-grid ul.wc-block-grid__products li.wc-block-grid__product:hover img {
 			transform: scale(1.05);
+		}
+	}
+
+	&.yith-proteo-products-hover-alt-image {
+		ul.products li.product:hover img,
+		ul.products li.wc-block-grid__product:hover img,
+		.wc-block-grid ul.wc-block-grid__products li.product:hover img,
+		.wc-block-grid ul.wc-block-grid__products li.wc-block-grid__product:hover img {
+			z-index: 0;
+
+			& ~ img {
+				z-index: 1;
+				opacity: 1;
+			}
+		}
+	}
+
+	&.yith-proteo-products-hover-glow-alt-image {
+		ul.products li.product:hover img,
+		ul.products li.wc-block-grid__product:hover img,
+		.wc-block-grid ul.wc-block-grid__products li.product:hover img,
+		.wc-block-grid ul.wc-block-grid__products li.wc-block-grid__product:hover img {
+			filter: brightness(1.1);
+
+			z-index: 0;
+
+			& ~ img {
+				z-index: 1;
+				opacity: 1;
+			}
 		}
 	}
 }

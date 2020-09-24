@@ -20,9 +20,11 @@ $wp_customize->add_control(
 		'label'   => esc_html__( 'Product hover effect', 'yith-proteo' ),
 		'section' => 'woocommerce_product_catalog',
 		'choices' => array(
-			'none' => esc_html__( 'None', 'yith-proteo' ),
-			'glow' => esc_html__( 'Glow', 'yith-proteo' ),
-			'zoom' => esc_html__( 'Zoom', 'yith-proteo' ),
+			'none'           => esc_html__( 'None', 'yith-proteo' ),
+			'glow'           => esc_html__( 'Glow', 'yith-proteo' ),
+			'zoom'           => esc_html__( 'Zoom', 'yith-proteo' ),
+			'alt-image'      => esc_html__( 'Alternative image', 'yith-proteo' ),
+			'glow-alt-image' => esc_html__( 'Glow + alternative image', 'yith-proteo' ),
 		),
 	)
 );
