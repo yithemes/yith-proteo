@@ -67,7 +67,6 @@ header.entry-header {
 			}
 		}
 	}
-
 }
 
 header .entry-meta {
@@ -130,7 +129,8 @@ article.proteo_post_layout_background_picture {
 			right: 0;
 			color: var(--proteo-post_thumbnail_text_color, #ffffff);
 
-			.entry-title, .entry-meta {
+			.entry-title,
+			.entry-meta {
 				color: var(--proteo-post_thumbnail_text_color, #ffffff);
 			}
 		}
@@ -188,7 +188,6 @@ article:not(.has-post-thumbnail) {
 		line-height: 1.8;
 	}
 }
-
 
 article.post .entry-content {
 	&:before {
@@ -400,5 +399,23 @@ body.search-results {
 		header.entry-header {
 			text-align: initial;
 		}
+	}
+}
+
+.wp-block-latest-posts li > a {
+	display: block;
+}
+
+.wp-block-latest-posts__post-author,
+.wp-block-latest-posts__post-date {
+	display: inline-block;
+}
+
+.wp-block-latest-posts__post-author + .wp-block-latest-posts__post-date {
+	margin-left: 5px;
+
+	&:before {
+		content: "|";
+		margin-right: 5px;
 	}
 }
