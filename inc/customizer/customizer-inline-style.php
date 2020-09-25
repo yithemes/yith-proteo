@@ -20,6 +20,7 @@ function yith_proteo_inline_style() {
 	$main_color_shade         = get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' );
 	$general_link_color       = get_theme_mod( 'yith_proteo_general_link_color', get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ) );
 	$general_link_hover_color = get_theme_mod( 'yith_proteo_general_link_hover_color', yith_proteo_adjust_brightness( get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ), - 0.3 ) );
+	$general_link_decoration  = 'yes' === get_theme_mod( 'yith_proteo_general_link_decoration', 'yes' ) ? 'underline' : 'none';
 
 	$header_bg_color        = get_theme_mod( 'yith_proteo_header_background_color', '#ffffff' );
 	$sticky_header_bg_color = get_theme_mod( 'yith_proteo_sticky_header_background_color', get_theme_mod( 'yith_proteo_header_background_color', '#ffffff' ) );
@@ -165,6 +166,7 @@ function yith_proteo_inline_style() {
 		--proteo-main_color_shade: {$main_color_shade};
 		--proteo-general_link_color: {$general_link_color};
 		--proteo-general_link_hover_color: {$general_link_hover_color};
+		--proteo-general_link_decoration: {$general_link_decoration};
 		--proteo-header_bg_color: {$header_bg_color};
 		--proteo-sticky_header_bg_color: {$sticky_header_bg_color};
 		--proteo-header_menu_font_size: {$header_menu_font_size}px;

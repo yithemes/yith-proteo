@@ -25,6 +25,25 @@ Proteo is a sleek, modern and "Gutenberg-friendly" e-commerce theme. Developed w
 == Frequently Asked Questions ==
 
 == Changelog ==
+
+= 1.3.7 - September XX 2020 =
+* New Professionally designed demo: Food Shop
+* New Single product page options
+* New Single product page options arrangement
+* New option for Product hover effect: Alternative image - Glow + Alternative image
+* New option for Product hover effect: None - Glow - Zoom
+* New footer background options
+* New Footer sidebar options to manage width and position (with live preview)
+* Improved integration with YITH Quick View
+* Update Footer widget options with range controls instead of dropdowns
+* Better spacing for Post Grid block
+* Gutenberg buttons use same hover of button-style-1
+* Fix cover block appearance with latest version of Gutenberg plugin
+* Fix read more arrow
+* Fix Loop add to cart button styling
+* Fix columns block mobile spacing
+
+
 = 1.3.6 - September 11 2020 =
 * New options for products in archives: title font size, title font color, price font size, price font color, add to cart font size
 * New options for single product page: price color, price font size, quantity input font size, add to cart button font size

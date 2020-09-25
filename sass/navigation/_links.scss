@@ -1,5 +1,6 @@
 a {
 	color: var(--proteo-general_link_color, $color__link);
+	text-decoration: var(--proteo-general_link_decoration, underline);
 
 	&:hover,
 	&:focus,

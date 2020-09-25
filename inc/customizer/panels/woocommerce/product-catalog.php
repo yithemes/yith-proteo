@@ -9,7 +9,7 @@
 $wp_customize->add_setting(
 	'yith_proteo_product_catalog_hover_effect',
 	array(
-		'default'           => 'glow',
+		'default'           => 'glow-alt-image',
 		'sanitize_callback' => 'yith_proteo_sanitize_select',
 	)
 );
