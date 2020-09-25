@@ -197,7 +197,7 @@
 
 	& > .container {
 		border-bottom: var(--proteo-topbar_bottom_border, 1px solid);
-		border-bottom-width: var(--proteo-topbar_bottom_border_width, 1px);
+		border-bottom-width: var(--proteo-topbar_bottom_border_width, 2px);
 		border-bottom-color: var(--proteo-topbar_bottom_border_color, #000000);
 	}
 }

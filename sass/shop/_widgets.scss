@@ -116,6 +116,7 @@ Mini Cart Widget
 		opacity: 0;
 		visibility: hidden;
 		transition: all ease 0.3s;
+		font-size: 16px;
 
 		&:before {
 			content: "";
@@ -178,7 +179,7 @@ Mini Cart Widget
 						background: transparent;
 						color: #9e9e9e;
 						display: inline-block;
-						font-size: 2rem;
+						font-size: 24px;
 						font-weight: normal;
 						position: absolute;
 						left: 0;
