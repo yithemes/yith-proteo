@@ -148,3 +148,68 @@
 			),
 		)
 	);
+
+	// Topbar bottom border.
+	$wp_customize->add_setting(
+		'yith_proteo_topbar_bottom_border',
+		array(
+			'default'           => 'no',
+			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+		)
+	);
+	$wp_customize->add_control(
+		'yith_proteo_topbar_bottom_border',
+		array(
+			'type'    => 'radio',
+			'label'   => esc_html__( 'Show bottom border', 'yith-proteo' ),
+			'section' => 'yith_proteo_topbar_management',
+			'choices' => array(
+				'yes' => esc_html__( 'Yes', 'yith-proteo' ),
+				'no'  => esc_html__( 'No', 'yith-proteo' ),
+			),
+		)
+	);
+
+	// Topbar bottom border.
+	$wp_customize->add_setting(
+		'yith_proteo_topbar_bottom_border_color',
+		array(
+			'sanitize_callback' => 'yith_proteo_sanitize_alpha_colors',
+			'default'           => '#000000',
+		)
+	);
+	$wp_customize->add_control(
+		new Customizer_Alpha_Color_Control(
+			$wp_customize,
+			'yith_proteo_topbar_bottom_border_color',
+			array(
+				'label'           => esc_html__( 'Border color', 'yith-proteo' ),
+				'section'         => 'yith_proteo_topbar_management',
+				'active_callback' => 'yith_proteo_topbar_has_bottom_border',
+			)
+		)
+	);
+
+	// Topbar bottom border width.
+	$wp_customize->add_setting(
+		'yith_proteo_topbar_bottom_border_width',
+		array(
+			'default'           => 2,
+			'sanitize_callback' => 'absint',
+		)
+	);
+
+	$wp_customize->add_control(
+		new WP_Customize_Range(
+			$wp_customize,
+			'yith_proteo_topbar_bottom_border_width',
+			array(
+				'label'           => esc_html__( 'Input and textarea border radius (default: 0px)', 'yith-proteo' ),
+				'min'             => 1,
+				'max'             => 50,
+				'step'            => 1,
+				'section'         => 'yith_proteo_topbar_management',
+				'active_callback' => 'yith_proteo_topbar_has_bottom_border',
+			)
+		)
+	);
