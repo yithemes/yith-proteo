@@ -33,14 +33,23 @@ get_header();
 							$post_count ++;
 							the_post();
 
-							echo ( 1 === $post_count ) ? '<div class="col-md-12">' : '<div class="col-lg-6">';
-
-							/*
-							 * Include the Post-Type-specific template for the content.
-							 * If you want to override this in a child theme, then include a file
-							 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-							 */
-							get_template_part( 'template-parts/content', get_post_type() );
+							if ( 1 === $post_count ) {
+								echo '<div class="col-md-12">';
+								/**
+								* Include the Post-Type-specific template for the content.
+								* If you want to override this in a child theme, then include a file
+								* called content-___.php (where ___ is the Post Type name) and that will be used instead.
+								*/
+								get_template_part( 'template-parts/content', 'sticky' );
+							} else {
+								echo '<div class="col-lg-6">';
+								/**
+								* Include the Post-Type-specific template for the content.
+								* If you want to override this in a child theme, then include a file
+								* called content-___.php (where ___ is the Post Type name) and that will be used instead.
+								*/
+								get_template_part( 'template-parts/content', get_post_type() );
+							}
 
 							echo '</div>';
 

@@ -77,9 +77,13 @@ if ( ! function_exists( 'yith_proteo_post_thumbnail' ) ) :
 	/**
 	 * Displays an optional post thumbnail.
 	 */
-	function yith_proteo_post_thumbnail() {
+	function yith_proteo_post_thumbnail( $size = null ) {
 		if ( post_password_required() || is_attachment() || ! has_post_thumbnail() ) {
 			return;
+		}
+
+		if ( null === $size ) {
+			$size = 'proteo-blog-loop-image';
 		}
 
 		if ( is_singular() ) :
@@ -94,7 +98,7 @@ if ( ! function_exists( 'yith_proteo_post_thumbnail' ) ) :
 			<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
 				<?php
 				the_post_thumbnail(
-					'post-thumbnail',
+					$size,
 					array(
 						'alt' => the_title_attribute(
 							array(

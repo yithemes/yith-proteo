@@ -115,6 +115,12 @@ if ( ! function_exists( 'yith_proteo_setup' ) ) :
 		);
 
 		/**
+		 * Register additional image size
+		 */
+		add_image_size( 'proteo-blog-loop-image', 725, 358, true );
+		add_image_size( 'proteo-blog-loop-image-wide', 1480, 745, true );
+
+		/**
 		 * Gutenberg box aligning options
 		 */
 		add_theme_support( 'align-wide' );
