@@ -7,7 +7,11 @@ CF7
 }
 span.wpcf7-not-valid-tip {
 	font-size: 0.875rem;
+	margin-top: 5px;
 }
 .wpcf7-form-control {
 	width: 100%;
+}
+body .wpcf7-not-valid {
+	border-color: #dc3232;
 }
