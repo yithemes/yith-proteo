@@ -153,6 +153,7 @@ table.shop_table {
 						border-color: var(--proteo-main_color_shade, $color__accent);
 						color: var(--proteo-main_color_shade, $color__accent);
 						background-color: transparent;
+						font-size: 0.875rem;
 
 						&:hover {
 							background-color: var(--proteo-main_color_shade, $color__accent);
