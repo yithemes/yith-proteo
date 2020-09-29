@@ -123,6 +123,12 @@ select {
 	border-radius: 0;
 }
 
+body .select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple, 
+body .select2-container--default.select2-container--open.select2-container--below .select2-selection--single {
+    border-bottom-left-radius: var(--proteo-forms_input_borde_radius, 0);
+    border-bottom-right-radius: var(--proteo-forms_input_borde_radius, 0);
+}
+
 textarea {
 	border-color: $color__border-input;
 	border-width: 1px 1px 1px 1px;
