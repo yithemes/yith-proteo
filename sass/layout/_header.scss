@@ -202,8 +202,12 @@
 	}
 }
 
-body .yith-slider .yith-slider-dots li.slick-active button, 
-body .yith-slider .yith-slider-dots li:hover button {
+body .yith-slider .yith-slider-dots.style-1 li.slick-active button, 
+body .yith-slider .yith-slider-dots.style-1 li:hover button,
+body .yith-slider .yith-slider-dots.style-2 li.slick-active button, 
+body .yith-slider .yith-slider-dots.style-2 li:hover button,
+body .yith-slider .yith-slider-dots.style-3 li.slick-active button, 
+body .yith-slider .yith-slider-dots.style-3 li:hover button {
     background: var(--proteo-main_color_shade, #404040);
     background-color: var(--proteo-main_color_shade, #404040);
 }
