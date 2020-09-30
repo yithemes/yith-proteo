@@ -4,7 +4,7 @@ Tags: one-column, two-columns, left-sidebar, right-sidebar, wide-blocks, accessi
 Requires at least: 4.9.6
 Tested up to: WordPress 5.5
 Requires PHP: 5.6
-Stable tag: 1.3.6
+Stable tag: 1.3.7
 YITH Proteo WordPress Theme, Copyright 2020 YITH
 YITH Proteo is distributed under the terms of the GNU GPL
 License: GPLv2 or later
@@ -26,22 +26,36 @@ Proteo is a sleek, modern and "Gutenberg-friendly" e-commerce theme. Developed w
 
 == Changelog ==
 
-= 1.3.7 - September XX 2020 =
+= 1.3.7 - September 30 2020 =
 * New Professionally designed demo: Food Shop
-* New Single product page options
-* New Single product page options arrangement
+* New single product page options
+* New single product page options arrangement
 * New option for Product hover effect: Alternative image - Glow + Alternative image
 * New option for Product hover effect: None - Glow - Zoom
 * New footer background options
-* New Footer sidebar options to manage width and position (with live preview)
+* New footer sidebar options to manage width and position (with live preview)
+* New option to style links decoration (none, underline)
+* New topbar options for bottom border
+* Add new blog post image size
+* Add red border to CF7 controls with warning
+* Add top margin to main product image area to match product summary area
+* Add minimum width to production variation selector
+* Improve appearance of latest posts block
+* Improve pagination styling
+* Improved css colors for slider dots
 * Improved integration with YITH Quick View
-* Update Footer widget options with range controls instead of dropdowns
+* Extending gutenberg button style
+* Update footer widget options with range controls instead of dropdowns
 * Better spacing for Post Grid block
 * Gutenberg buttons use same hover of button-style-1
 * Fix cover block appearance with latest version of Gutenberg plugin
 * Fix read more arrow
 * Fix Loop add to cart button styling
 * Fix columns block mobile spacing
+* Fix variable product selection
+* Fix "apply coupon" font size on cart page
+* Fix minicart typography style fix
+* Fix footer and widgets wrong fixed font weight
 
 
 = 1.3.6 - September 11 2020 =

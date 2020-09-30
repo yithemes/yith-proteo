@@ -273,6 +273,12 @@ if ( ! function_exists( 'yith_proteo_register_required_plugins' ) ) :
 				'required' => false,
 			),
 
+			array(
+				'name'     => 'EditorsKit',
+				'slug'     => 'block-options',
+				'required' => false,
+			),
+
 		);
 
 		$config = array(
