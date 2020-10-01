@@ -119,3 +119,20 @@
 			),
 		)
 	);
+
+	// Read more text.
+	$wp_customize->add_setting(
+		'yith_proteo_blog_read_more_text',
+		array(
+			'default'           => esc_html__( 'Read more  &#10230;', 'yith-proteo' ),
+			'sanitize_callback' => 'sanitize_text_field',
+		)
+	);
+	$wp_customize->add_control(
+		'yith_proteo_blog_read_more_text',
+		array(
+			'type'    => 'text',
+			'section' => 'yith_proteo_blog_management',
+			'label'   => esc_html__( 'Read more text', 'yith-proteo' ),
+		)
+	);
