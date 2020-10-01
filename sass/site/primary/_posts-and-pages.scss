@@ -145,6 +145,9 @@ article.post.proteo_post_layout_fullwidth_cover_image {
 	background-color: var(--proteo-site_background_color, #ffffff);
 	position: relative;
 	z-index: 1;
+	max-width: 70%;
+	margin: 0 auto 3.125rem;
+
 	.post-thumbnail {
 		margin-left: calc(50% - 50vw);
 		margin-right: calc(50% - 50vw);
@@ -152,6 +155,10 @@ article.post.proteo_post_layout_fullwidth_cover_image {
 		max-width: 1000%;
 		position: relative;
 		z-index: 2;
+
+		img {
+			width: 100%;
+		}
 	}
 	header.entry-header {
 		.date-and-thumbnail {
