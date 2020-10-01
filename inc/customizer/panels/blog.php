@@ -32,8 +32,9 @@
 			'section'     => 'yith_proteo_blog_management',
 			'description' => esc_html__( 'Disable sidebars if you want to use Background picture layout.', 'yith-proteo' ),
 			'choices'     => array(
-				'standard'           => esc_html__( 'Standard', 'yith-proteo' ),
-				'background_picture' => esc_html__( 'Background picture', 'yith-proteo' ),
+				'standard'              => esc_html__( 'Standard', 'yith-proteo' ),
+				'background_picture'    => esc_html__( 'Background picture', 'yith-proteo' ),
+				'fullwidth_cover_image' => esc_html__( 'Fullwidth cover image', 'yith-proteo' ),
 			),
 		)
 	);

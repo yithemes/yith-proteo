@@ -466,6 +466,14 @@ Custom media queries
 	.wp-block-column {
 		margin-bottom: 35px;
 	}
+
+	article.post.proteo_post_layout_fullwidth_cover_image header.entry-header .date-and-thumbnail {
+		margin-bottom: 0;
+
+		&:after {
+			display: none;
+		}
+	}
 	
 }
 

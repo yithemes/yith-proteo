@@ -11,7 +11,7 @@ $post_layout        = get_theme_mod( 'yith_proteo_single_post_layout', 'standard
 $post_thumbnail_url = get_the_post_thumbnail_url( $post->ID, 'full' );
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'proteo_post_layout_' . $post_layout ); ?>>
-	<?php if ( 'standard' === $post_layout ) : ?>
+	<?php if ( 'standard' === $post_layout || 'fullwidth_cover_image' === $post_layout ) : ?>
 		<header class="entry-header">
 			<?php
 			if ( is_single() && function_exists( 'woocommerce_breadcrumb' ) && ( 'yes' === get_theme_mod( 'yith_proteo_breadcrumb_enable', 'yes' ) ) ) {

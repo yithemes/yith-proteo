@@ -136,6 +136,11 @@ function yith_proteo_inline_style() {
 	$mobile_footer_credits_font_size = get_theme_mod( 'yith_proteo_mobile_footer_credits_font_size', 13 );
 
 	/**
+	 * Other options
+	 */
+	$site_background_color = get_theme_mod( 'background_color', 'ffffff' );
+
+	/**
 	 * Store options
 	 */
 	$store_notice_bg_color   = get_theme_mod( 'yith_proteo_store_notice_bg_color', '#607d8b' );
@@ -255,6 +260,7 @@ function yith_proteo_inline_style() {
 		--proteo-post_thumbnail_background_color_opacity: {$post_thumbnail_background_color_opacity};
 		--proteo-post_thumbnail_text_color: {$post_thumbnail_text_color};
 		--proteo-forms_input_borde_radius: {$forms_input_borde_radius}px;
+		--proteo-site_background_color: #{$site_background_color};
 		--proteo-store_notice_bg_color: {$store_notice_bg_color};
 		--proteo-store_notice_text_color: {$store_notice_text_color};
 		--proteo-store_notice_font_size: {$store_notice_font_size}px;

@@ -141,6 +141,49 @@ article.proteo_post_layout_background_picture {
 	}
 }
 
+article.post.proteo_post_layout_fullwidth_cover_image {
+	background-color: var(--proteo-site_background_color, #ffffff);
+	position: relative;
+	z-index: 1;
+	.post-thumbnail {
+		margin-left: calc(50% - 50vw);
+		margin-right: calc(50% - 50vw);
+		width: auto;
+		max-width: 1000%;
+		position: relative;
+		z-index: 2;
+	}
+	header.entry-header {
+		.date-and-thumbnail {
+			margin-bottom: -180px;
+			z-index: -1;
+	
+			&:after {
+				content: "";
+				display: block;
+				left: -50px;
+				right: -50px;
+				bottom: 0;
+				height: 200px;
+				position: absolute;
+				background: var(--proteo-site_background_color, #ffffff);
+				z-index: 2;
+			}
+		}
+
+		.entry-title,
+		.entry-meta {
+			text-align: center;
+		}
+		.entry-meta {
+			margin-bottom: 100px;
+		}
+	}
+	.entry-content:before {
+		display: none;
+	}
+}
+
 article.page header.entry-header,
 article:not(.has-post-thumbnail).page header.entry-header {
 	text-align: center;
