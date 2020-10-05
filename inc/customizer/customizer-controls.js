@@ -132,6 +132,26 @@
 			$element.find('.customize-control-google-font-selection').val(JSON.stringify(selectedFont)).trigger('change');
 		}
 
+		// PRODUCT TITLE MANAGEMENT
+		yith_proteo_toggle_product_page_title_section_controls_list();
+
+		$( '#customize-control-yith_proteo_product_page_title_group_title' ).addClass('section-closed').on( 'click', yith_proteo_toggle_product_page_title_controls );
+
+		function yith_proteo_toggle_product_page_title_controls() {
+			var section_title = $( '#customize-control-yith_proteo_product_page_title_group_title' ),
+			collapsed = section_title.hasClass( 'section-closed' );
+			section_title.toggleClass('section-closed');
+			wp.customize.control('yith_proteo_product_page_title_font' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_product_page_title_font_size' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_product_page_title_font_color' ).toggle( collapsed );
+		}
+
+		function yith_proteo_toggle_product_page_title_section_controls_list() {
+			wp.customize.control('yith_proteo_product_page_title_font' ).toggle( false );
+			wp.customize.control('yith_proteo_product_page_title_font_size' ).toggle( false );
+			wp.customize.control('yith_proteo_product_page_title_font_color' ).toggle( false );
+		}
+
 		// PRODUCT IMAGE MANAGEMENT
 		yith_proteo_toggle_product_image_section_controls_list();
 		

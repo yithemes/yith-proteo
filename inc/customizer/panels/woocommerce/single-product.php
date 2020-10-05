@@ -49,7 +49,7 @@
 			$wp_customize,
 			'yith_proteo_product_page_title_font',
 			array(
-				'label'       => __( 'Title font', 'yith-proteo' ),
+				'label'       => __( 'Font family', 'yith-proteo' ),
 				'section'     => 'yith_proteo_product_page_management',
 				'input_attrs' => array(
 					'font_count' => 'all',
