@@ -42,7 +42,15 @@ $post_thumbnail_url = get_the_post_thumbnail_url( $post->ID, 'full' );
 						?>
 					</div><!-- .entry-meta -->
 				<?php endif; ?>
-				<?php yith_proteo_post_thumbnail(); ?>
+				<?php
+				if ( 'fullwidth_cover_image' === $post_layout ) {
+					echo '<div class="post-thumbnail">';
+					the_post_thumbnail( 'proteo_blog_cropped_cover_image_' . get_theme_mod( 'yith_proteo_single_post_fullwidth_cover_cropping_custom_height', 400 ) );
+					echo '</div>';
+				} else {
+					yith_proteo_post_thumbnail();
+				}
+				?>
 			</div>
 
 			<?php

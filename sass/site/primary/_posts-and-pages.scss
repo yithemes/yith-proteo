@@ -155,9 +155,10 @@ article.post.proteo_post_layout_fullwidth_cover_image {
 		max-width: 1000%;
 		position: relative;
 		z-index: 2;
+		text-align: center;
 
 		img {
-			width: 100%;
+			max-width: 100vw;
 		}
 	}
 	header.entry-header {

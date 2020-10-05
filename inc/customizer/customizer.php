@@ -447,6 +447,17 @@ if ( ! function_exists( 'yith_proteo_topbar_has_bottom_border' ) ) {
 	}
 }
 
+if ( ! function_exists( 'yith_proteo_blog_layout_is_fullwidth_image' ) ) {
+	/**
+	 * Callback function to check state of Blog layout
+	 *
+	 * @return bool
+	 */
+	function yith_proteo_blog_layout_is_fullwidth_image() {
+		return 'fullwidth_cover_image' === get_theme_mod( 'yith_proteo_single_post_layout', 'standard' );
+	}
+}
+
 /**
  * Add YITH Customizer CSS
  */

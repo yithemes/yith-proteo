@@ -38,6 +38,31 @@
 			),
 		)
 	);
+
+	$wp_customize->add_setting(
+		'yith_proteo_single_post_fullwidth_cover_cropping_custom_height',
+		array(
+			'default'              => 400,
+			'sanitize_callback'    => 'absint',
+			'sanitize_js_callback' => 'absint',
+		)
+	);
+
+	$wp_customize->add_control(
+		new WP_Customize_Range(
+			$wp_customize,
+			'yith_proteo_single_post_fullwidth_cover_cropping_custom_height',
+			array(
+				'label'           => esc_html__( 'Post featured image height', 'yith-proteo' ),
+				'min'             => 180,
+				'max'             => 1000,
+				'step'            => 10,
+				'section'         => 'yith_proteo_blog_management',
+				'active_callback' => 'yith_proteo_blog_layout_is_fullwidth_image',
+			)
+		)
+	);
+
 	// Single post thumbnail background color.
 	$wp_customize->add_setting(
 		'yith_proteo_single_post_background_color',
