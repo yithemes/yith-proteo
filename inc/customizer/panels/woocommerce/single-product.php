@@ -17,6 +17,83 @@
 		)
 	);
 
+	// Product title management.
+	$wp_customize->add_setting(
+		'yith_proteo_product_page_title_group_title',
+		array(
+			'default'           => '',
+			'transport'         => 'postMessage',
+			'sanitize_callback' => 'wp_kses_post',
+		)
+	);
+	$wp_customize->add_control(
+		new WP_Customize_Notice(
+			$wp_customize,
+			'yith_proteo_product_page_title_group_title',
+			array(
+				'label'   => esc_html__( 'Product title', 'yith-proteo' ),
+				'section' => 'yith_proteo_product_page_management',
+			)
+		)
+	);
+	// Product title font family options.
+	$wp_customize->add_setting(
+		'yith_proteo_product_page_title_font',
+		array(
+			'sanitize_callback' => 'yith_proteo_google_font_sanitization',
+			'default'           => '{"font":"Montserrat","regularweight":"700","category":"sans-serif"}',
+		)
+	);
+	$wp_customize->add_control(
+		new Google_Font_Select_Custom_Control(
+			$wp_customize,
+			'yith_proteo_product_page_title_font',
+			array(
+				'label'       => __( 'Title font', 'yith-proteo' ),
+				'section'     => 'yith_proteo_product_page_management',
+				'input_attrs' => array(
+					'font_count' => 'all',
+					'orderby'    => 'alpha',
+				),
+			)
+		)
+	);
+	// product_page_title font size options.
+	$wp_customize->add_setting(
+		'yith_proteo_product_page_title_font_size',
+		array(
+			'sanitize_callback' => 'absint',
+			'default'           => 70,
+		)
+	);
+	$wp_customize->add_control(
+		'yith_proteo_product_page_title_font_size',
+		array(
+			'label'   => esc_html__( 'Font size (default: 32px)', 'yith-proteo' ),
+			'section' => 'yith_proteo_product_page_management',
+			'type'    => 'number',
+		)
+	);
+	// product_page_title font color options.
+	$wp_customize->add_setting(
+		'yith_proteo_product_page_title_font_color',
+		array(
+			'sanitize_callback' => 'yith_proteo_sanitize_alpha_colors',
+			'default'           => '#404040',
+		)
+	);
+	$wp_customize->add_control(
+		new Customizer_Alpha_Color_Control(
+			$wp_customize,
+			'yith_proteo_product_page_title_font_color',
+			array(
+				'label'   => esc_html__( 'Font color', 'yith-proteo' ),
+				'section' => 'yith_proteo_product_page_management',
+			)
+		)
+	);
+
+
 	// Product image management.
 	$wp_customize->add_setting(
 		'yith_proteo_product_page_image_group_title',

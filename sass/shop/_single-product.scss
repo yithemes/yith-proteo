@@ -106,6 +106,8 @@
 
 			.product_title {
 				margin-bottom: 0.4em;
+				font-size: var(--proteo-single_product_title_font_size, 70px);
+				color: var(--proteo-single_product_title_font_color, #404040);
 			}
 
 			.woocommerce-product-rating {

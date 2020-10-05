@@ -159,6 +159,8 @@ function yith_proteo_inline_style() {
 	$single_product_price_color                  = get_theme_mod( 'yith_proteo_product_page_price_color', get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ) );
 	$single_product_quantity_input_font_size     = get_theme_mod( 'yith_proteo_product_page_quantity_font_size', 40 );
 	$single_product_add_to_cart_button_font_size = get_theme_mod( 'yith_proteo_product_page_add_to_cart_font_size', 20 );
+	$single_product_title_font_size              = get_theme_mod( 'yith_proteo_product_page_title_font_size', 70 );
+	$single_product_title_font_color             = get_theme_mod( 'yith_proteo_product_page_title_font_color', '#404040' );
 
 	$single_product_tabs_title_font_size   = get_theme_mod( 'yith_proteo_product_tabs_title_font_size', 30 );
 	$single_product_tabs_title_color       = get_theme_mod( 'yith_proteo_product_tabs_title_font_color', '#1f1f1f' );
@@ -278,6 +280,8 @@ function yith_proteo_inline_style() {
 		--proteo-single_product_tabs_title_font_size: {$single_product_tabs_title_font_size}px;
 		--proteo-single_product_tabs_title_color: {$single_product_tabs_title_color};
 		--proteo-single_product_tabs_content_font_size: {$single_product_tabs_content_font_size}px;
+		--proteo-single_product_title_font_size: {$single_product_title_font_size}px;
+		--proteo-single_product_title_font_color: {$single_product_title_font_color};
 		--proteo-catalog_product_title_font_size: {$catalog_product_title_font_size}px;
 		--proteo-catalog_product_title_color: {$catalog_product_title_color};
 		--proteo-catalog_product_price_font_size: {$catalog_product_price_font_size}px;
