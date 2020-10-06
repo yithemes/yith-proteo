@@ -252,6 +252,27 @@
 			wp.customize.control('yith_proteo_product_tabs_content_font_size' ).toggle( false );
 		}
 
+		// PRODUCT CATEGORIES AND SKU MANAGEMENT
+		yith_proteo_toggle_product_cats_and_sku_controls_list();
+		
+		$( '#customize-control-yith_proteo_product_page_category_and_sku_group_title' ).addClass('section-closed').on( 'click', yith_proteo_toggle_product_cats_and_sku_controls );
+
+		function yith_proteo_toggle_product_cats_and_sku_controls() {
+			var section_title = $( '#customize-control-yith_proteo_product_page_category_and_sku_group_title' ),
+			collapsed = section_title.hasClass( 'section-closed' );
+			section_title.toggleClass('section-closed');
+			wp.customize.control('yith_proteo_product_page_show_categories' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_product_page_show_tags' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_product_page_show_sku' ).toggle( collapsed );
+		}
+
+		function yith_proteo_toggle_product_cats_and_sku_controls_list() {
+			wp.customize.control('yith_proteo_product_page_show_categories' ).toggle( false );
+			wp.customize.control('yith_proteo_product_page_show_tags' ).toggle( false );
+			wp.customize.control('yith_proteo_product_page_show_sku' ).toggle( false );
+		}
+
+
 	});
 
 })(jQuery);

@@ -475,3 +475,83 @@
 			'type'    => 'number',
 		)
 	);
+
+	// Product Cat and SKU management.
+	$wp_customize->add_setting(
+		'yith_proteo_product_page_category_and_sku_group_title',
+		array(
+			'default'           => '',
+			'transport'         => 'postMessage',
+			'sanitize_callback' => 'wp_kses_post',
+		)
+	);
+	$wp_customize->add_control(
+		new WP_Customize_Notice(
+			$wp_customize,
+			'yith_proteo_product_page_category_and_sku_group_title',
+			array(
+				'label'   => esc_html__( 'Product categories, tags and SKU', 'yith-proteo' ),
+				'section' => 'yith_proteo_product_page_management',
+			)
+		)
+	);
+
+	$wp_customize->add_setting(
+		'yith_proteo_product_page_show_categories',
+		array(
+			'default'           => 'yes',
+			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+		)
+	);
+	$wp_customize->add_control(
+		'yith_proteo_product_page_show_categories',
+		array(
+			'type'    => 'radio',
+			'label'   => esc_html__( 'Show product categories', 'yith-proteo' ),
+			'section' => 'yith_proteo_product_page_management',
+			'choices' => array(
+				'yes' => esc_html__( 'Yes', 'yith-proteo' ),
+				'no'  => esc_html__( 'No', 'yith-proteo' ),
+			),
+		)
+	);
+
+	$wp_customize->add_setting(
+		'yith_proteo_product_page_show_tags',
+		array(
+			'default'           => 'yes',
+			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+		)
+	);
+	$wp_customize->add_control(
+		'yith_proteo_product_page_show_tags',
+		array(
+			'type'    => 'radio',
+			'label'   => esc_html__( 'Show product tags', 'yith-proteo' ),
+			'section' => 'yith_proteo_product_page_management',
+			'choices' => array(
+				'yes' => esc_html__( 'Yes', 'yith-proteo' ),
+				'no'  => esc_html__( 'No', 'yith-proteo' ),
+			),
+		)
+	);
+
+	$wp_customize->add_setting(
+		'yith_proteo_product_page_show_sku',
+		array(
+			'default'           => 'yes',
+			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+		)
+	);
+	$wp_customize->add_control(
+		'yith_proteo_product_page_show_sku',
+		array(
+			'type'    => 'radio',
+			'label'   => esc_html__( 'Show product SKU', 'yith-proteo' ),
+			'section' => 'yith_proteo_product_page_management',
+			'choices' => array(
+				'yes' => esc_html__( 'Yes', 'yith-proteo' ),
+				'no'  => esc_html__( 'No', 'yith-proteo' ),
+			),
+		)
+	);
