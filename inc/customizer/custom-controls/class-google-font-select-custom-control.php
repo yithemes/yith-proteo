@@ -150,6 +150,9 @@ class Google_Font_Select_Custom_Control extends WP_Customize_Control {
 	 * @param string $needle Font family to search.
 	 */
 	public function getFontIndex( $haystack, $needle ) {
+		if ( ! is_array( $haystack ) ) {
+			return false;
+		}
 		foreach ( $haystack as $key => $value ) {
 			if ( $value->family === $needle ) {
 				return $key;
