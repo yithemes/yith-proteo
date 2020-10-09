@@ -87,6 +87,10 @@ Custom media queries
 
 // Medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) {
+	.site-header.sticky {
+        position: absolute;
+	}
+	
 	#site-navigation {
 		float: right;
 	}
@@ -244,6 +248,10 @@ Custom media queries
 		display: block;
 		width: 100%;
 	}
+
+	.col-lg-20 {
+		width: 100%;
+	}
 }
 
 // Small devices (landscape phones, less than 768px)
@@ -394,10 +402,6 @@ Custom media queries
 }
 
 @media (max-width: 600px) {
-	.site-header.sticky {
-		position: absolute;
-	}
-
 	#site-navigation {
 		.menu-toggle {
 			position: absolute;
