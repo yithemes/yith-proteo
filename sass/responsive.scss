@@ -88,9 +88,9 @@ Custom media queries
 // Medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) {
 	.site-header.sticky {
-        position: absolute;
+		position: absolute;
 	}
-	
+
 	#site-navigation {
 		float: right;
 	}
@@ -156,6 +156,11 @@ Custom media queries
 				left: 30px;
 			}
 		}
+	}
+
+	.site-header .header-sidebar {
+		white-space: normal;
+		text-align: initial;
 	}
 
 	h1,
@@ -244,7 +249,7 @@ Custom media queries
 		}
 	}
 
-	#main-footer .side-by-side-sidebars div[class^=footer-sidebar] {
+	#main-footer .side-by-side-sidebars div[class^="footer-sidebar"] {
 		display: block;
 		width: 100%;
 	}
@@ -480,7 +485,6 @@ Custom media queries
 			display: none;
 		}
 	}
-	
 }
 
 // Extra small devices (portrait phones, less than 576px)
