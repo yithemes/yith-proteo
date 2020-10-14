@@ -25,20 +25,20 @@ global $product;
 	<?php do_action( 'woocommerce_product_meta_start' ); ?>
 
 	<?php if ( 'yes' === get_theme_mod( 'yith_proteo_product_page_show_sku', 'yes' ) && wc_product_sku_enabled() && ( $product->get_sku() || $product->is_type( 'variable' ) ) ) : ?>
-
-		<span class="sku_wrapper"><?php esc_html_e( 'SKU:', 'woocommerce' ); ?> <span class="sku"><?php echo ( $sku = $product->get_sku() ) ? $sku : esc_html__( 'N/A', 'woocommerce' ); // phpcs:ignore WordPress.Security.EscapeOutput ?></span></span>
+		<?php $sku = $product->get_sku(); ?>
+		<span class="sku_wrapper"><?php esc_html_e( 'SKU:', 'yith-proteo' ); ?> <span class="sku"><?php echo $sku ? esc_html( $sku ) : esc_html__( 'N/A', 'yith-proteo' ); // phpcs:ignore Squiz.PHP.DisallowMultipleAssignments.Found ?></span></span>
 
 	<?php endif; ?>
 
 	<?php if ( 'yes' === get_theme_mod( 'yith_proteo_product_page_show_categories', 'yes' ) ) : ?>
 
-		<?php echo wc_get_product_category_list( $product->get_id(), ', ', '<span class="posted_in">' . _n( 'Category:', 'Categories:', count( $product->get_category_ids() ), 'woocommerce' ) . ' ', '</span>' ); // phpcs:ignore WordPress.Security.EscapeOutput ?>
+		<?php echo wc_get_product_category_list( $product->get_id(), ', ', '<span class="posted_in">' . _n( 'Category:', 'Categories:', count( $product->get_category_ids() ), 'yith-proteo' ) . ' ', '</span>' ); // phpcs:ignore WordPress.Security.EscapeOutput ?>
 
 	<?php endif; ?>
 
 	<?php if ( 'yes' === get_theme_mod( 'yith_proteo_product_page_show_tags', 'yes' ) ) : ?>
 
-		<?php echo wc_get_product_tag_list( $product->get_id(), ', ', '<span class="tagged_as">' . _n( 'Tag:', 'Tags:', count( $product->get_tag_ids() ), 'woocommerce' ) . ' ', '</span>' ); // phpcs:ignore WordPress.Security.EscapeOutput ?>
+		<?php echo wc_get_product_tag_list( $product->get_id(), ', ', '<span class="tagged_as">' . _n( 'Tag:', 'Tags:', count( $product->get_tag_ids() ), 'yith-proteo' ) . ' ', '</span>' ); // phpcs:ignore WordPress.Security.EscapeOutput ?>
 
 	<?php endif; ?>
 
