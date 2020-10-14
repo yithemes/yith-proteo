@@ -150,8 +150,8 @@
 	$wp_customize->add_setting(
 		'yith_proteo_blog_read_more_text',
 		array(
-			'default'           => esc_html__( 'Read more  &#10230;', 'yith-proteo' ),
 			'sanitize_callback' => 'sanitize_text_field',
+			'default'           => esc_html__( 'Read more  &#10230;', 'yith-proteo' ),
 		)
 	);
 	$wp_customize->add_control(

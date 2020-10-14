@@ -2,6 +2,9 @@
  * Cart
  */
 body.woocommerce-cart {
+	.site-content {
+		overflow-x: hidden;
+	}
 	&.two-cols-cart {
 		form.woocommerce-cart-form {
 			width: 60%;
