@@ -25,26 +25,56 @@
 		return;
 	}
 
+	menu.setAttribute( 'aria-expanded', 'false' );
+	if ( -1 === menu.className.indexOf( 'nav-menu' ) ) {
+		menu.className += ' nav-menu';
+	}
+
 	button.onclick = function() {
 
 		if ( -1 !== container.className.indexOf( 'toggled' ) ) {
 			container.className = container.className.replace( ' toggled', '' );
 			jQuery('html').add('body').removeClass('mobile-menu-opened');
 			button.setAttribute( 'aria-expanded', 'false' );
+			menu.setAttribute( 'aria-expanded', 'false' );
 
 		} else {
 			container.className += ' toggled';
 			jQuery('html').add('body').addClass('mobile-menu-opened');
 			button.setAttribute( 'aria-expanded', 'true' );
+			menu.setAttribute( 'aria-expanded', 'true' );
 		}
 	};
 
-	jQuery('#primary-nav-menu > ul').attr('role',"navigation");
-	jQuery(".menu-item-has-children > a").attr({
-	'aria-label':'sub menu',
-	'aria-haspopup':'true',
-	'aria-expanded':'true'
-	});
-	
+	// Get all the link elements within the menu.
+	links    = menu.getElementsByTagName( 'a' );
+
+	// Each time a menu link is focused or blurred, toggle focus.
+	for ( i = 0, len = links.length; i < len; i++ ) {
+		links[i].addEventListener( 'focus', toggleFocus, true );
+		links[i].addEventListener( 'blur', toggleFocus, true );
+	}
+
+	/**
+	 * Sets or removes .focus class on an element.
+	 */
+	function toggleFocus() {
+		var self = this;
+
+		// Move up through the ancestors of the current link until we hit .nav-menu.
+		while ( -1 === self.className.indexOf( 'nav-menu' ) ) {
+
+			// On li elements toggle the class .focus.
+			if ( 'li' === self.tagName.toLowerCase() ) {
+				if ( -1 !== self.className.indexOf( 'focus' ) ) {
+					self.className = self.className.replace( ' focus', '' );
+				} else {
+					self.className += ' focus';
+				}
+			}
+
+			self = self.parentElement;
+		}
+	}
 
 } )();
