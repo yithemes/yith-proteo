@@ -205,17 +205,23 @@
 		}).resize();
 	});
 
-	$('.menu-item-has-children > a').click(function (ev) {
-		var t = $(this);
-		if (t.hasClass('submenu-opened')) {
-			return true;
-		} else {
-			ev.preventDefault();
-			$('.menu-item-has-children > a').removeClass('submenu-opened');
-			$(this).addClass('submenu-opened');
-		}
-
-	});
+	if(window.matchMedia("(pointer: coarse)").matches) {
+		// touchscreen
+		$('.menu-item-has-children > a').click(function (ev) {
+			var t = $(this);
+			if (t.hasClass('submenu-opened')) {
+				return true;
+			} else {
+				ev.preventDefault();
+				$('.menu-item-has-children > a').removeClass('submenu-opened');
+				$(this).addClass('submenu-opened');
+			}
+	
+		});
+	} else {
+		// is desktop
+	}
+	
 
 	// Modals
 	$('a.open-modal').click(function (ev) {
