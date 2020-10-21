@@ -53,10 +53,8 @@ if ( ! function_exists( 'yith_proteo_scripts' ) ) :
 					'yith_proteo_enable_sticky_header',
 					get_theme_mod( 'yith_proteo_header_sticky', 'yes' )
 				),
-				'select2minimumResultsForSearch' => apply_filters(
-					apply_filter( 'yith_proteo_select2_minimum_results_for_search', 7 )
-				),
-			)
+				'select2minimumResultsForSearch' => apply_filters( 'yith_proteo_select2_minimum_results_for_search', 7 ),
+			),
 		);
 
 		wp_enqueue_script( 'yith-proteo-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
