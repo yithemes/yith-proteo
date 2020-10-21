@@ -56,6 +56,7 @@
 	.side-by-side-sidebars {
 		div[class^="footer-sidebar"] {
 			display: inline-block;
+			vertical-align: top;
 		}
 		.footer-sidebar-1 {
 			padding-right: 30px;
