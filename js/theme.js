@@ -110,7 +110,7 @@
 		if (typeof $.fn.selectWoo !== 'undefined') {
 			$('select').filter(':visible').selectWoo(
 				{
-					'minimumResultsForSearch': 7
+					'minimumResultsForSearch': yith_proteo.select2minimumResultsForSearch
 				}
 			);
 		}
