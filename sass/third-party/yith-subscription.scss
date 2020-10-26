@@ -4,6 +4,14 @@ span.ywsbs-trial-period {
 }
 
 .summary{
+
+    span.ywsbs-delivery-info,
+    span.ywsbs-synch-info {
+        font-size: 0.85rem;
+        color: var(--proteo-h1_font_color);
+        margin-top: 5px;
+    }
+
     .ywsbs-price-detail{
         span.ywsbs-signup-fee {
             font-size: 20px;
@@ -25,6 +33,7 @@ span.ywsbs-trial-period {
             font-size: 12px;
         }
     }
+
 }
 .woocommerce-cart-form{
     .ywsbs-max-lenght,
