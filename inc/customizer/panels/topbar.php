@@ -18,26 +18,27 @@
 	);
 
 	// Topbar enable.
-	$wp_customize->add_setting(
-		'yith_proteo_topbar_enable',
-		array(
-			'default'           => 'no',
-			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
-		)
-	);
-	$wp_customize->add_control(
-		'yith_proteo_topbar_enable',
-		array(
-			'type'        => 'radio',
-			'label'       => esc_html__( 'Enable topbar', 'yith-proteo' ),
-			'section'     => 'yith_proteo_topbar_management',
-			'description' => esc_html__( 'Choose whether to show the site topbar or not', 'yith-proteo' ),
-			'choices'     => array(
-				'yes' => esc_html__( 'Yes', 'yith-proteo' ),
-				'no'  => esc_html__( 'No', 'yith-proteo' ),
-			),
-		)
-	);
+	if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
+		$wp_customize->add_setting(
+			'yith_proteo_topbar_enable',
+			array(
+				'default'           => 'no',
+				'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+			)
+		);
+
+		$wp_customize->add_control(
+			new Customizer_Control_Yes_No(
+				$wp_customize,
+				'yith_proteo_topbar_enable',
+				array(
+					'label'       => esc_html__( 'Enable topbar', 'yith-proteo' ),
+					'section'     => 'yith_proteo_topbar_management',
+					'description' => esc_html__( 'Choose whether to show the site topbar or not', 'yith-proteo' ),
+				)
+			)
+		);
+	}
 
 	// Topbar background color.
 	$wp_customize->add_setting(
@@ -150,25 +151,26 @@
 	);
 
 	// Topbar bottom border.
-	$wp_customize->add_setting(
-		'yith_proteo_topbar_bottom_border',
-		array(
-			'default'           => 'no',
-			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
-		)
-	);
-	$wp_customize->add_control(
-		'yith_proteo_topbar_bottom_border',
-		array(
-			'type'    => 'radio',
-			'label'   => esc_html__( 'Show bottom border', 'yith-proteo' ),
-			'section' => 'yith_proteo_topbar_management',
-			'choices' => array(
-				'yes' => esc_html__( 'Yes', 'yith-proteo' ),
-				'no'  => esc_html__( 'No', 'yith-proteo' ),
-			),
-		)
-	);
+	if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
+		$wp_customize->add_setting(
+			'yith_proteo_topbar_bottom_border',
+			array(
+				'default'           => 'no',
+				'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+			)
+		);
+
+		$wp_customize->add_control(
+			new Customizer_Control_Yes_No(
+				$wp_customize,
+				'yith_proteo_topbar_bottom_border',
+				array(
+					'label'   => esc_html__( 'Show bottom border', 'yith-proteo' ),
+					'section' => 'yith_proteo_topbar_management',
+				)
+			)
+		);
+	}
 
 	// Topbar bottom border.
 	$wp_customize->add_setting(

@@ -5,6 +5,8 @@ YITH CUSTOMIZER STYLE
 #customize-controls {
 	--yith-proteo-customizer-main-color: #009b9d;
 	background: #fff;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 #customize-controls .control-section .accordion-section-title:focus, 
@@ -13,8 +15,8 @@ YITH CUSTOMIZER STYLE
 #customize-controls .control-section:hover>.accordion-section-title,
 .customize-panel-back:focus, .customize-panel-back:hover, 
 .customize-section-back:focus, .customize-section-back:hover {
-    color: var(--yith-proteo-customizer-main-color);
-    border-left-color: var(--yith-proteo-customizer-main-color);
+	color: var(--yith-proteo-customizer-main-color);
+	border-left-color: var(--yith-proteo-customizer-main-color);
 }
 #customize-outer-theme-controls .control-section .accordion-section-title:focus:after, 
 #customize-outer-theme-controls .control-section .accordion-section-title:hover:after, 
@@ -32,6 +34,12 @@ YITH CUSTOMIZER STYLE
 .wp-core-ui #customize-controls  .button-secondary {
 	color: var(--yith-proteo-customizer-main-color);
 	border-color: var(--yith-proteo-customizer-main-color);
+}
+
+#customize-outer-theme-controls .accordion-section-content, 
+#customize-theme-controls .accordion-section-content,
+#customize-controls .description {
+	color: #000;
 }
 
 #customize-control-yith_proteo_default_sidebar,
@@ -188,19 +196,19 @@ body .select2-container--default .select2-selection--single .select2-selection__
 /* GROUP SECTION MANAGEMENT */
 li[id*="group_title"] {
 	box-sizing: border-box;
-    cursor: pointer;
-    position: relative;
-    margin-left: -12px;
-    margin-right: -12px;
-    margin-top: -12px;
-    width: calc(100% + 24px);
-    color: #0073aa;
-    background: #f3f3f5;
-    border-bottom: 1px solid #ddd;
-    transition: .15s color ease-in-out,.15s background-color ease-in-out,.15s border-color ease-in-out;
-    padding: 10px 10px 11px 14px;
-    line-height: 1.55;
-    background: #fff;
+	cursor: pointer;
+	position: relative;
+	margin-left: -12px;
+	margin-right: -12px;
+	margin-top: -12px;
+	width: calc(100% + 24px);
+	color: #0073aa;
+	background: #f3f3f5;
+	border-bottom: 1px solid #ddd;
+	transition: .15s color ease-in-out,.15s background-color ease-in-out,.15s border-color ease-in-out;
+	padding: 10px 10px 11px 14px;
+	line-height: 1.55;
+	background: #fff;
 	font-size: 14px;
 	border-left: 4px solid #fff;
 }
@@ -217,14 +225,14 @@ li[id*="group_title"]:hover::after {
 	color: #0073aa;
 }
 li[id*="group_title"]:after {
-    display: block;
-    position: absolute;
-    right: 5px;
-    top: 14px;
-    font-weight: bold;
-    font-size: 1.2em;
-    content: "\f345";
-    color: #0073aa;
+	display: block;
+	position: absolute;
+	right: 5px;
+	top: 14px;
+	font-weight: bold;
+	font-size: 1.2em;
+	content: "\f345";
+	color: #0073aa;
 	font: normal 20px/1 dashicons;
 	transform: rotate(-90deg);
 }
@@ -279,8 +287,8 @@ li[id*="group_title"].section-closed:after {
 
 .customize-control-radio-image img { 
 	border: 2px solid #ddd;
-    padding: 7px;
-    border-radius: 5px;
+	padding: 7px;
+	border-radius: 5px;
 }
 
 .customize-control-radio-image .ui-state-active img {
@@ -291,4 +299,32 @@ li[id*="group_title"].section-closed:after {
 .customize-control-radio-image .ui-state-active .image-description {
 	color: var( --yith-proteo-customizer-main-color );
 	font-weight: 500;
+}
+
+/* YES NO */
+.customize-control-radio-yes-no label{
+	background-color: #e7e7e7;
+	color: #949494;
+	font-weight: 500;
+	text-transform: uppercase;
+	padding: 6px 15px;
+	display: inline-block;
+	font-size: 0.7rem;
+}
+
+.customize-control-radio-yes-no .ui-buttonset {
+	font-size: 0;
+}
+
+.customize-control-radio-yes-no label.ui-corner-left {
+	border-radius: 5px 0 0 5px;
+}
+
+.customize-control-radio-yes-no label.ui-corner-right {
+	border-radius: 0 5px 5px 0;
+}
+
+.customize-control-radio-yes-no label.ui-state-active {
+	background-color: var( --yith-proteo-customizer-main-color );
+	color: #ffffff;
 }
