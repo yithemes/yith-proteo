@@ -35,15 +35,15 @@
 					'description' => esc_html__( 'Select where to display the default sidebar. You can adjust the settings from the page/post edit view.', 'yith-proteo' ),
 					'choices'     => array(
 						'no-sidebar' => array(
-							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/sidebar-no.png',
+							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/sidebar-no.svg',
 							'label' => esc_html__( 'No sidebar', 'yith-proteo' ),
 						),
 						'left'       => array(
-							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/sidebar-left.png',
+							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/sidebar-left.svg',
 							'label' => esc_html__( 'Left', 'yith-proteo' ),
 						),
 						'right'      => array(
-							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/sidebar-right.png',
+							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/sidebar-right.svg',
 							'label' => esc_html__( 'Right', 'yith-proteo' ),
 						),
 					),
@@ -91,15 +91,15 @@
 					'description' => esc_html__( 'Select where to display the sidebar. You can pick up a specific sidebard from the page edit view.', 'yith-proteo' ),
 					'choices'     => array(
 						'no-sidebar' => array(
-							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/sidebar-no.png',
+							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/sidebar-no.svg',
 							'label' => esc_html__( 'No sidebar', 'yith-proteo' ),
 						),
 						'left'       => array(
-							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/sidebar-left.png',
+							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/sidebar-left.svg',
 							'label' => esc_html__( 'Left', 'yith-proteo' ),
 						),
 						'right'      => array(
-							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/sidebar-right.png',
+							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/sidebar-right.svg',
 							'label' => esc_html__( 'Right', 'yith-proteo' ),
 						),
 					),
@@ -146,15 +146,15 @@
 					'description' => esc_html__( 'Select where to display the sidebar.', 'yith-proteo' ),
 					'choices'     => array(
 						'no-sidebar' => array(
-							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/sidebar-no.png',
+							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/sidebar-no.svg',
 							'label' => esc_html__( 'No sidebar', 'yith-proteo' ),
 						),
 						'left'       => array(
-							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/sidebar-left.png',
+							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/sidebar-left.svg',
 							'label' => esc_html__( 'Left', 'yith-proteo' ),
 						),
 						'right'      => array(
-							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/sidebar-right.png',
+							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/sidebar-right.svg',
 							'label' => esc_html__( 'Right', 'yith-proteo' ),
 						),
 					),
@@ -201,15 +201,15 @@
 					'description' => esc_html__( 'Select where to display the sidebar.', 'yith-proteo' ),
 					'choices'     => array(
 						'no-sidebar' => array(
-							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/sidebar-no.png',
+							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/sidebar-no.svg',
 							'label' => esc_html__( 'No sidebar', 'yith-proteo' ),
 						),
 						'left'       => array(
-							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/sidebar-left.png',
+							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/sidebar-left.svg',
 							'label' => esc_html__( 'Left', 'yith-proteo' ),
 						),
 						'right'      => array(
-							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/sidebar-right.png',
+							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/sidebar-right.svg',
 							'label' => esc_html__( 'Right', 'yith-proteo' ),
 						),
 					),

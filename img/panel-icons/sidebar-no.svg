@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="47px" viewBox="0 0 50 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Rectangle</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Filter-presets" transform="translate(-24.000000, -388.000000)" fill="#E9E9E9" stroke="#CBCBCB">
+            <g id="Group-2" transform="translate(13.000000, 378.000000)">
+                <rect id="Rectangle" x="12" y="11" width="48" height="45" rx="6"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

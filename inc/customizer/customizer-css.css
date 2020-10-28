@@ -2,12 +2,42 @@
 YITH CUSTOMIZER STYLE
 ****************************/
 
-#customize-control-yith_proteo_default_sidebar,
-#customize-control-yith_proteo_blog_sidebar {
-	border-bottom: 1px solid #aaa;
+#customize-controls {
+	--yith-proteo-customizer-main-color: #009b9d;
+	background: #fff;
 }
 
-#customize-control-yith_proteo_blog_sidebar {
+#customize-controls .control-section .accordion-section-title:focus, 
+#customize-controls .control-section .accordion-section-title:hover, 
+#customize-controls .control-section.open .accordion-section-title, 
+#customize-controls .control-section:hover>.accordion-section-title,
+.customize-panel-back:focus, .customize-panel-back:hover, 
+.customize-section-back:focus, .customize-section-back:hover {
+    color: var(--yith-proteo-customizer-main-color);
+    border-left-color: var(--yith-proteo-customizer-main-color);
+}
+#customize-outer-theme-controls .control-section .accordion-section-title:focus:after, 
+#customize-outer-theme-controls .control-section .accordion-section-title:hover:after, 
+#customize-outer-theme-controls .control-section.open .accordion-section-title:after, 
+#customize-outer-theme-controls .control-section:hover>.accordion-section-title:after, 
+#customize-theme-controls .control-section .accordion-section-title:focus:after, 
+#customize-theme-controls .control-section .accordion-section-title:hover:after, 
+#customize-theme-controls .control-section.open .accordion-section-title:after, 
+#customize-theme-controls .control-section:hover>.accordion-section-title:after, 
+#customize-controls a {
+	color: var(--yith-proteo-customizer-main-color);
+}
+
+.wp-core-ui #customize-controls  .button,
+.wp-core-ui #customize-controls  .button-secondary {
+	color: var(--yith-proteo-customizer-main-color);
+	border-color: var(--yith-proteo-customizer-main-color);
+}
+
+#customize-control-yith_proteo_default_sidebar,
+#customize-control-yith_proteo_blog_sidebar,
+#customize-control-yith_proteo_blog_category_sidebar {
+	border-bottom: 1px solid #ddd;
 	padding-bottom: 1.3rem;
 }
 
@@ -50,7 +80,7 @@ YITH CUSTOMIZER STYLE
 	height: 20px;
 	width: 10px;
 	border-radius: 27px;
-	background: #6ca6f6;
+	background: var(--yith-proteo-customizer-main-color);
 	cursor: pointer;
 	-webkit-appearance: none;
 	margin-top: -8px;
@@ -73,7 +103,7 @@ YITH CUSTOMIZER STYLE
 	height: 20px;
 	width: 10px;
 	border-radius: 27px;
-	background: #6ca6f6;
+	background: var(--yith-proteo-customizer-main-color);
 	cursor: pointer;
 }
 .customize-control-range input[type="range"].range-slider::-ms-track {
@@ -102,7 +132,7 @@ YITH CUSTOMIZER STYLE
 	height: 20px;
 	width: 10px;
 	border-radius: 27px;
-	background: #6ca6f6;
+	background: var(--yith-proteo-customizer-main-color);
 	cursor: pointer;
 	height: 4px;
 }
@@ -201,4 +231,64 @@ li[id*="group_title"]:after {
 li[id*="group_title"].section-closed:after {
 	transform: rotate(90deg);
 	color: #555d66;
+}
+
+
+/* RADIO IMAGE */
+.customize-control-radio-image label {
+	display: inline-block;
+	max-width: 33.3%;
+	font-size: inherit;
+	line-height: inherit;
+	height: auto;
+	cursor: pointer;
+	border-width: 0;
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	white-space: nowrap;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	color: inherit;
+	background: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	vertical-align: inherit;
+	margin: 5px 10px 5px 0;
+}
+.customize-control-radio-image label .image-description {
+	display: block;
+	font-size: 0.9em;
+}
+.customize-control-radio-image label:hover {
+	background: none;
+	border-color: inherit;
+	color: inherit;
+}
+
+.customize-control-radio-image label:active {
+	background: none;
+	border-color: inherit;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	-webkit-transform: none;
+	-ms-transform: none;
+	transform: none;
+}
+
+.customize-control-radio-image img { 
+	border: 2px solid #ddd;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.customize-control-radio-image .ui-state-active img {
+	border-color: #5b9dd9;
+	border-color: var(--yith-proteo-customizer-main-color);
+}
+
+.customize-control-radio-image .ui-state-active .image-description {
+	color: var( --yith-proteo-customizer-main-color );
+	font-weight: 500;
 }
