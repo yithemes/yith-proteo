@@ -131,25 +131,26 @@
 	);
 
 	// General link decoration.
-	$wp_customize->add_setting(
-		'yith_proteo_general_link_decoration',
-		array(
-			'default'           => 'yes',
-			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
-		)
-	);
-	$wp_customize->add_control(
-		'yith_proteo_general_link_decoration',
-		array(
-			'type'    => 'radio',
-			'label'   => esc_html__( 'Show underlined links', 'yith-proteo' ),
-			'section' => 'yith_proteo_typography',
-			'choices' => array(
-				'yes' => esc_html__( 'Yes', 'yith-proteo' ),
-				'no'  => esc_html__( 'No', 'yith-proteo' ),
-			),
-		)
-	);
+	if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
+		$wp_customize->add_setting(
+			'yith_proteo_general_link_decoration',
+			array(
+				'default'           => 'yes',
+				'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+			)
+		);
+
+		$wp_customize->add_control(
+			new Customizer_Control_Yes_No(
+				$wp_customize,
+				'yith_proteo_general_link_decoration',
+				array(
+					'label'   => esc_html__( 'Show underlined links', 'yith-proteo' ),
+					'section' => 'yith_proteo_typography',
+				)
+			)
+		);
+	}
 
 	// H1 font.
 	$wp_customize->add_setting(

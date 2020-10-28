@@ -60,111 +60,116 @@
 	);
 
 	// Header fullwidth.
-	$wp_customize->add_setting(
-		'yith_proteo_header_fullwidth',
-		array(
-			'default'           => 'no',
-			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
-		)
-	);
-	$wp_customize->add_control(
-		'yith_proteo_header_fullwidth',
-		array(
-			'type'        => 'radio',
-			'label'       => esc_html__( 'Enable full width header', 'yith-proteo' ),
-			'section'     => 'yith_proteo_header_management',
-			'description' => esc_html__( 'Choose whether to make the header full width or not.', 'yith-proteo' ),
-			'choices'     => array(
-				'yes' => esc_html__( 'Yes', 'yith-proteo' ),
-				'no'  => esc_html__( 'No', 'yith-proteo' ),
-			),
-		)
-	);
+	if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
+		$wp_customize->add_setting(
+			'yith_proteo_header_fullwidth',
+			array(
+				'default'           => 'no',
+				'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+			)
+		);
+
+		$wp_customize->add_control(
+			new Customizer_Control_Yes_No(
+				$wp_customize,
+				'yith_proteo_header_fullwidth',
+				array(
+					'label'       => esc_html__( 'Enable full width header', 'yith-proteo' ),
+					'description' => esc_html__( 'Choose whether to make the header full width or not.', 'yith-proteo' ),
+					'section'     => 'yith_proteo_header_management',
+				)
+			)
+		);
+	}
 
 	// Header search widget.
-	$wp_customize->add_setting(
-		'yith_proteo_header_search_widget',
-		array(
-			'default'           => 'no',
-			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
-		)
-	);
-	$wp_customize->add_control(
-		'yith_proteo_header_search_widget',
-		array(
-			'type'    => 'radio',
-			'label'   => esc_html__( 'Show search icon', 'yith-proteo' ),
-			'section' => 'yith_proteo_header_management',
-			'choices' => array(
-				'yes' => esc_html__( 'Yes', 'yith-proteo' ),
-				'no'  => esc_html__( 'No', 'yith-proteo' ),
-			),
-		)
-	);
+	if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
+		$wp_customize->add_setting(
+			'yith_proteo_header_search_widget',
+			array(
+				'default'           => 'no',
+				'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+			)
+		);
+
+		$wp_customize->add_control(
+			new Customizer_Control_Yes_No(
+				$wp_customize,
+				'yith_proteo_header_search_widget',
+				array(
+					'label'   => esc_html__( 'Show search icon', 'yith-proteo' ),
+					'section' => 'yith_proteo_header_management',
+				)
+			)
+		);
+	}
 
 	// Header cart widget.
-	$wp_customize->add_setting(
-		'yith_proteo_header_cart_widget',
-		array(
-			'default'           => 'no',
-			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
-		)
-	);
-	$wp_customize->add_control(
-		'yith_proteo_header_cart_widget',
-		array(
-			'type'    => 'radio',
-			'label'   => esc_html__( 'Show cart icon', 'yith-proteo' ),
-			'section' => 'yith_proteo_header_management',
-			'choices' => array(
-				'yes' => esc_html__( 'Yes', 'yith-proteo' ),
-				'no'  => esc_html__( 'No', 'yith-proteo' ),
-			),
-		)
-	);
+	if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
+		$wp_customize->add_setting(
+			'yith_proteo_header_cart_widget',
+			array(
+				'default'           => 'no',
+				'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+			)
+		);
+
+		$wp_customize->add_control(
+			new Customizer_Control_Yes_No(
+				$wp_customize,
+				'yith_proteo_header_cart_widget',
+				array(
+					'label'   => esc_html__( 'Show cart icon', 'yith-proteo' ),
+					'section' => 'yith_proteo_header_management',
+				)
+			)
+		);
+	}
 
 	// Header account widget.
-	$wp_customize->add_setting(
-		'yith_proteo_header_account_widget',
-		array(
-			'default'           => 'no',
-			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
-		)
-	);
-	$wp_customize->add_control(
-		'yith_proteo_header_account_widget',
-		array(
-			'type'    => 'radio',
-			'label'   => esc_html__( 'Show account icon', 'yith-proteo' ),
-			'section' => 'yith_proteo_header_management',
-			'choices' => array(
-				'yes' => esc_html__( 'Yes', 'yith-proteo' ),
-				'no'  => esc_html__( 'No', 'yith-proteo' ),
-			),
-		)
-	);
+	if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
+		$wp_customize->add_setting(
+			'yith_proteo_header_account_widget',
+			array(
+				'default'           => 'no',
+				'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+			)
+		);
+
+		$wp_customize->add_control(
+			new Customizer_Control_Yes_No(
+				$wp_customize,
+				'yith_proteo_header_account_widget',
+				array(
+					'label'   => esc_html__( 'Show account icon', 'yith-proteo' ),
+					'section' => 'yith_proteo_header_management',
+				)
+			)
+		);
+	}
 
 	// Header show sidebar.
-	$wp_customize->add_setting(
-		'yith_proteo_show_header_sidebar',
-		array(
-			'default'           => 'yes',
-			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
-		)
-	);
-	$wp_customize->add_control(
-		'yith_proteo_show_header_sidebar',
-		array(
-			'type'        => 'radio',
-			'label'       => esc_html__( 'Show header sidebar', 'yith-proteo' ),
-			'section'     => 'yith_proteo_header_management',
-			'description' => esc_html__( 'Choose whether to show or not the header widget area', 'yith-proteo' ),
-			'choices'     => array(
-				'yes' => esc_html__( 'Yes', 'yith-proteo' ),
-				'no'  => esc_html__( 'No', 'yith-proteo' ),
-			),
-		)
-	);
+	if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
+		$wp_customize->add_setting(
+			'yith_proteo_show_header_sidebar',
+			array(
+				'default'           => 'yes',
+				'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+			)
+		);
+
+		$wp_customize->add_control(
+			new Customizer_Control_Yes_No(
+				$wp_customize,
+				'yith_proteo_show_header_sidebar',
+				array(
+					'label'       => esc_html__( 'Show header sidebar', 'yith-proteo' ),
+					'section'     => 'yith_proteo_header_management',
+					'description' => esc_html__( 'Choose whether to show or not the header widget area', 'yith-proteo' ),
+				)
+			)
+		);
+	}
 
 	$wp_customize->add_setting(
 		'yith_proteo_header_main_menu_font',
@@ -243,26 +248,27 @@
 	);
 
 	// Header sticky.
-	$wp_customize->add_setting(
-		'yith_proteo_header_sticky',
-		array(
-			'default'           => 'yes',
-			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
-		)
-	);
-	$wp_customize->add_control(
-		'yith_proteo_header_sticky',
-		array(
-			'type'        => 'radio',
-			'label'       => esc_html__( 'Enable sticky header', 'yith-proteo' ),
-			'section'     => 'yith_proteo_header_management',
-			'description' => esc_html__( 'Choose whether to make the header stick to the page when scrolling down', 'yith-proteo' ),
-			'choices'     => array(
-				'yes' => esc_html__( 'Yes', 'yith-proteo' ),
-				'no'  => esc_html__( 'No', 'yith-proteo' ),
-			),
-		)
-	);
+	if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
+		$wp_customize->add_setting(
+			'yith_proteo_header_sticky',
+			array(
+				'default'           => 'no',
+				'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+			)
+		);
+
+		$wp_customize->add_control(
+			new Customizer_Control_Yes_No(
+				$wp_customize,
+				'yith_proteo_header_sticky',
+				array(
+					'label'       => esc_html__( 'Enable sticky header', 'yith-proteo' ),
+					'section'     => 'yith_proteo_header_management',
+					'description' => esc_html__( 'Choose whether to make the header stick to the page when scrolling down', 'yith-proteo' ),
+				)
+			)
+		);
+	}
 
 	// Sticky header background color.
 	$wp_customize->add_setting(
