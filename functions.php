@@ -216,6 +216,7 @@ function yith_proteo_load_customize_classes( $wp_customize ) {
 	require get_template_directory() . '/inc/customizer/custom-controls/class-wp-customize-notice.php';
 	require get_template_directory() . '/inc/customizer/custom-controls/class-customizer-alpha-color-control.php';
 	require get_template_directory() . '/inc/customizer/custom-controls/class-google-font-select-custom-control.php';
+	require get_template_directory() . '/inc/customizer/custom-controls/class-customizer-control-radio-image.php';
 	require get_template_directory() . '/inc/customizer/customizer.php';
 }
 add_action( 'customize_register', 'yith_proteo_load_customize_classes', 0 );

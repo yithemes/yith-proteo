@@ -2,7 +2,7 @@
 /**
  * Fonts functions
  *
- * @package customizer-controls
+ * @package yith-proteo
  */
 
 define( 'YITH_PROTEO_GFONT_VERSION', '1.0.0' );

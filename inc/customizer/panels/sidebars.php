@@ -17,27 +17,42 @@
 	);
 
 	// Default Sidebar Management options.
-	$wp_customize->add_setting(
-		'yith_proteo_default_sidebar_position',
-		array(
-			'default'           => 'right',
-			'sanitize_callback' => 'yith_proteo_sanitize_sidebar_position',
-		)
-	);
-	$wp_customize->add_control(
-		'yith_proteo_default_sidebar_position',
-		array(
-			'type'        => 'radio',
-			'label'       => esc_html__( 'Choose the position of the default sidebar', 'yith-proteo' ),
-			'section'     => 'yith_proteo_sidebar_management',
-			'description' => esc_html__( 'Select where to display the default sidebar. You can adjust the settings from the page/post edit view.', 'yith-proteo' ),
-			'choices'     => array(
-				'no-sidebar' => esc_html__( 'No sidebar', 'yith-proteo' ),
-				'right'      => esc_html__( 'Right', 'yith-proteo' ),
-				'left'       => esc_html__( 'Left', 'yith-proteo' ),
-			),
-		)
-	);
+	if ( class_exists( 'Customizer_Control_Radio_Image' ) ) {
+		$wp_customize->add_setting(
+			'yith_proteo_default_sidebar_position',
+			array(
+				'default' => 'right',
+			)
+		);
+
+		$wp_customize->add_control(
+			new Customizer_Control_Radio_Image(
+				$wp_customize,
+				'yith_proteo_default_sidebar_position',
+				array(
+					'label'       => esc_html__( 'Choose the position of the default sidebar', 'yith-proteo' ),
+					'section'     => 'yith_proteo_sidebar_management',
+					'description' => esc_html__( 'Select where to display the default sidebar. You can adjust the settings from the page/post edit view.', 'yith-proteo' ),
+					'choices'     => array(
+						'no-sidebar' => array(
+							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/sidebar-no.png',
+							'label' => esc_html__( 'No sidebar', 'yith-proteo' ),
+						),
+						'left'       => array(
+							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/sidebar-left.png',
+							'label' => esc_html__( 'Left', 'yith-proteo' ),
+						),
+						'right'      => array(
+							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/sidebar-right.png',
+							'label' => esc_html__( 'Right', 'yith-proteo' ),
+						),
+					),
+				)
+			)
+		);
+	}
+
+
 	// Default Sidebar Chooser.
 	$wp_customize->add_setting(
 		'yith_proteo_default_sidebar',
@@ -58,27 +73,40 @@
 	);
 
 	// Blog Sidebar Management options.
-	$wp_customize->add_setting(
-		'yith_proteo_blog_page_sidebar_position',
-		array(
-			'default'           => 'right',
-			'sanitize_callback' => 'yith_proteo_sanitize_sidebar_position',
-		)
-	);
-	$wp_customize->add_control(
-		'yith_proteo_blog_page_sidebar_position',
-		array(
-			'type'        => 'radio',
-			'label'       => esc_html__( 'Choose the position of the blog page sidebar', 'yith-proteo' ),
-			'section'     => 'yith_proteo_sidebar_management',
-			'description' => esc_html__( 'Select where to display the sidebar. You can pick up a specific sidebard from the page edit view.', 'yith-proteo' ),
-			'choices'     => array(
-				'no-sidebar' => esc_html__( 'No sidebar', 'yith-proteo' ),
-				'right'      => esc_html__( 'Right', 'yith-proteo' ),
-				'left'       => esc_html__( 'Left', 'yith-proteo' ),
-			),
-		)
-	);
+	if ( class_exists( 'Customizer_Control_Radio_Image' ) ) {
+		$wp_customize->add_setting(
+			'yith_proteo_blog_page_sidebar_position',
+			array(
+				'default' => 'right',
+			)
+		);
+
+		$wp_customize->add_control(
+			new Customizer_Control_Radio_Image(
+				$wp_customize,
+				'yith_proteo_blog_page_sidebar_position',
+				array(
+					'label'       => esc_html__( 'Choose the position of the blog page sidebar', 'yith-proteo' ),
+					'section'     => 'yith_proteo_sidebar_management',
+					'description' => esc_html__( 'Select where to display the sidebar. You can pick up a specific sidebard from the page edit view.', 'yith-proteo' ),
+					'choices'     => array(
+						'no-sidebar' => array(
+							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/sidebar-no.png',
+							'label' => esc_html__( 'No sidebar', 'yith-proteo' ),
+						),
+						'left'       => array(
+							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/sidebar-left.png',
+							'label' => esc_html__( 'Left', 'yith-proteo' ),
+						),
+						'right'      => array(
+							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/sidebar-right.png',
+							'label' => esc_html__( 'Right', 'yith-proteo' ),
+						),
+					),
+				)
+			)
+		);
+	}
 
 	// Blog Sidebar Chooser.
 	$wp_customize->add_setting(
@@ -100,27 +128,40 @@
 	);
 
 	// Blog Category Sidebar Management options.
-	$wp_customize->add_setting(
-		'yith_proteo_blog_category_sidebar_position',
-		array(
-			'default'           => 'right',
-			'sanitize_callback' => 'yith_proteo_sanitize_sidebar_position',
-		)
-	);
-	$wp_customize->add_control(
-		'yith_proteo_blog_category_sidebar_position',
-		array(
-			'type'        => 'radio',
-			'label'       => esc_html__( 'Choose the position of blog category pages sidebar', 'yith-proteo' ),
-			'section'     => 'yith_proteo_sidebar_management',
-			'description' => esc_html__( 'Select where to display the sidebar.', 'yith-proteo' ),
-			'choices'     => array(
-				'no-sidebar' => esc_html__( 'No sidebar', 'yith-proteo' ),
-				'right'      => esc_html__( 'Right', 'yith-proteo' ),
-				'left'       => esc_html__( 'Left', 'yith-proteo' ),
-			),
-		)
-	);
+	if ( class_exists( 'Customizer_Control_Radio_Image' ) ) {
+		$wp_customize->add_setting(
+			'yith_proteo_blog_category_sidebar_position',
+			array(
+				'default' => 'right',
+			)
+		);
+
+		$wp_customize->add_control(
+			new Customizer_Control_Radio_Image(
+				$wp_customize,
+				'yith_proteo_blog_category_sidebar_position',
+				array(
+					'label'       => esc_html__( 'Choose the position of blog category pages sidebar', 'yith-proteo' ),
+					'section'     => 'yith_proteo_sidebar_management',
+					'description' => esc_html__( 'Select where to display the sidebar.', 'yith-proteo' ),
+					'choices'     => array(
+						'no-sidebar' => array(
+							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/sidebar-no.png',
+							'label' => esc_html__( 'No sidebar', 'yith-proteo' ),
+						),
+						'left'       => array(
+							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/sidebar-left.png',
+							'label' => esc_html__( 'Left', 'yith-proteo' ),
+						),
+						'right'      => array(
+							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/sidebar-right.png',
+							'label' => esc_html__( 'Right', 'yith-proteo' ),
+						),
+					),
+				)
+			)
+		);
+	}
 
 	// Blog Category Sidebar Chooser.
 	$wp_customize->add_setting(
@@ -142,27 +183,40 @@
 	);
 
 	// Blog Tag Sidebar Management options.
-	$wp_customize->add_setting(
-		'yith_proteo_blog_tag_sidebar_position',
-		array(
-			'default'           => 'right',
-			'sanitize_callback' => 'yith_proteo_sanitize_sidebar_position',
-		)
-	);
-	$wp_customize->add_control(
-		'yith_proteo_blog_tag_sidebar_position',
-		array(
-			'type'        => 'radio',
-			'label'       => esc_html__( 'Choose the position of blog tag pages sidebar', 'yith-proteo' ),
-			'section'     => 'yith_proteo_sidebar_management',
-			'description' => esc_html__( 'Select where to display the sidebar.', 'yith-proteo' ),
-			'choices'     => array(
-				'no-sidebar' => esc_html__( 'No sidebar', 'yith-proteo' ),
-				'right'      => esc_html__( 'Right', 'yith-proteo' ),
-				'left'       => esc_html__( 'Left', 'yith-proteo' ),
-			),
-		)
-	);
+	if ( class_exists( 'Customizer_Control_Radio_Image' ) ) {
+		$wp_customize->add_setting(
+			'yith_proteo_blog_tag_sidebar_position',
+			array(
+				'default' => 'right',
+			)
+		);
+
+		$wp_customize->add_control(
+			new Customizer_Control_Radio_Image(
+				$wp_customize,
+				'yith_proteo_blog_tag_sidebar_position',
+				array(
+					'label'       => esc_html__( 'Choose the position of blog tag pages sidebar', 'yith-proteo' ),
+					'section'     => 'yith_proteo_sidebar_management',
+					'description' => esc_html__( 'Select where to display the sidebar.', 'yith-proteo' ),
+					'choices'     => array(
+						'no-sidebar' => array(
+							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/sidebar-no.png',
+							'label' => esc_html__( 'No sidebar', 'yith-proteo' ),
+						),
+						'left'       => array(
+							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/sidebar-left.png',
+							'label' => esc_html__( 'Left', 'yith-proteo' ),
+						),
+						'right'      => array(
+							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/sidebar-right.png',
+							'label' => esc_html__( 'Right', 'yith-proteo' ),
+						),
+					),
+				)
+			)
+		);
+	}
 
 	// Blog Tag Sidebar Chooser.
 	$wp_customize->add_setting(

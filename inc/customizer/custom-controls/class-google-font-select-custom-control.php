@@ -2,7 +2,7 @@
 /**
  * Google Font Select Custom Control
  *
- * @package customizer-controls
+ * @package yith-proteo
  */
 
 if ( ! class_exists( 'WP_Customize_Control' ) ) {
