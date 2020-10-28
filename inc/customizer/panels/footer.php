@@ -56,26 +56,27 @@
 	);
 
 	// Footer background image background_size.
-	$wp_customize->add_setting(
-		'yith_proteo_footer_background_size_full',
-		array(
-			'default'           => 'yes',
-			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
-		)
-	);
-	$wp_customize->add_control(
-		'yith_proteo_footer_background_size_full',
-		array(
-			'type'            => 'radio',
-			'label'           => esc_html__( '100% background image', 'yith-proteo' ),
-			'section'         => 'yith_proteo_footer_management',
-			'choices'         => array(
-				'yes' => esc_html__( 'Yes', 'yith-proteo' ),
-				'no'  => esc_html__( 'No', 'yith-proteo' ),
-			),
-			'active_callback' => 'yith_proteo_footer_has_custom_background',
-		)
-	);
+	if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
+		$wp_customize->add_setting(
+			'yith_proteo_footer_background_size_full',
+			array(
+				'default'           => 'yes',
+				'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+			)
+		);
+
+		$wp_customize->add_control(
+			new Customizer_Control_Yes_No(
+				$wp_customize,
+				'yith_proteo_footer_background_size_full',
+				array(
+					'label'           => esc_html__( '100% background image', 'yith-proteo' ),
+					'section'         => 'yith_proteo_footer_management',
+					'active_callback' => 'yith_proteo_footer_has_custom_background',
+				)
+			)
+		);
+	}
 
 	// Footer background image background_repeat.
 	$wp_customize->add_setting(
@@ -224,25 +225,26 @@
 	);
 
 	// Footer sidebar 1 enabler.
-	$wp_customize->add_setting(
-		'yith_proteo_footer_sidebar_1_enable',
-		array(
-			'default'           => 'yes',
-			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
-		)
-	);
-	$wp_customize->add_control(
-		'yith_proteo_footer_sidebar_1_enable',
-		array(
-			'type'    => 'radio',
-			'label'   => esc_html__( 'Enable footer widget area #1', 'yith-proteo' ),
-			'section' => 'yith_proteo_footer_management',
-			'choices' => array(
-				'yes' => esc_html__( 'Yes', 'yith-proteo' ),
-				'no'  => esc_html__( 'No', 'yith-proteo' ),
-			),
-		)
-	);
+	if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
+		$wp_customize->add_setting(
+			'yith_proteo_footer_sidebar_1_enable',
+			array(
+				'default'           => 'yes',
+				'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+			)
+		);
+
+		$wp_customize->add_control(
+			new Customizer_Control_Yes_No(
+				$wp_customize,
+				'yith_proteo_footer_sidebar_1_enable',
+				array(
+					'label'   => esc_html__( 'Enable footer widget area #1', 'yith-proteo' ),
+					'section' => 'yith_proteo_footer_management',
+				)
+			)
+		);
+	}
 
 	// Footer sidebar 1 width.
 	$wp_customize->add_setting(
@@ -295,25 +297,26 @@
 
 
 	// Footer sidebar 2 enabler.
-	$wp_customize->add_setting(
-		'yith_proteo_footer_sidebar_2_enable',
-		array(
-			'default'           => 'yes',
-			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
-		)
-	);
-	$wp_customize->add_control(
-		'yith_proteo_footer_sidebar_2_enable',
-		array(
-			'type'    => 'radio',
-			'label'   => esc_html__( 'Enable footer widget area #2', 'yith-proteo' ),
-			'section' => 'yith_proteo_footer_management',
-			'choices' => array(
-				'yes' => esc_html__( 'Yes', 'yith-proteo' ),
-				'no'  => esc_html__( 'No', 'yith-proteo' ),
-			),
-		)
-	);
+	if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
+		$wp_customize->add_setting(
+			'yith_proteo_footer_sidebar_2_enable',
+			array(
+				'default'           => 'yes',
+				'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+			)
+		);
+
+		$wp_customize->add_control(
+			new Customizer_Control_Yes_No(
+				$wp_customize,
+				'yith_proteo_footer_sidebar_2_enable',
+				array(
+					'label'   => esc_html__( 'Enable footer widget area #2', 'yith-proteo' ),
+					'section' => 'yith_proteo_footer_management',
+				)
+			)
+		);
+	}
 
 	// Footer sidebar 2 width.
 	$wp_customize->add_setting(
@@ -364,23 +367,24 @@
 	);
 
 	// Footer sidebars side by side.
-	$wp_customize->add_setting(
-		'yith_proteo_footer_sidebars_side_by_side',
-		array(
-			'default'           => 'no',
-			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
-		)
-	);
-	$wp_customize->add_control(
-		'yith_proteo_footer_sidebars_side_by_side',
-		array(
-			'type'            => 'radio',
-			'label'           => esc_html__( 'Put the two widget areas side by side', 'yith-proteo' ),
-			'section'         => 'yith_proteo_footer_management',
-			'choices'         => array(
-				'yes' => esc_html__( 'Yes', 'yith-proteo' ),
-				'no'  => esc_html__( 'No', 'yith-proteo' ),
-			),
-			'active_callback' => 'yith_proteo_is_footer_sidebars_side_by_side_available',
-		)
-	);
+	if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
+		$wp_customize->add_setting(
+			'yith_proteo_footer_sidebars_side_by_side',
+			array(
+				'default'           => 'no',
+				'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+			)
+		);
+
+		$wp_customize->add_control(
+			new Customizer_Control_Yes_No(
+				$wp_customize,
+				'yith_proteo_footer_sidebars_side_by_side',
+				array(
+					'label'           => esc_html__( 'Put the two widget areas side by side', 'yith-proteo' ),
+					'section'         => 'yith_proteo_footer_management',
+					'active_callback' => 'yith_proteo_is_footer_sidebars_side_by_side_available',
+				)
+			)
+		);
+	}
