@@ -115,67 +115,70 @@
 	);
 
 	// Enable image zoom.
-	$wp_customize->add_setting(
-		'yith_proteo_product_page_image_zoom',
-		array(
-			'default'           => 'yes',
-			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
-		)
-	);
-	$wp_customize->add_control(
-		'yith_proteo_product_page_image_zoom',
-		array(
-			'type'    => 'radio',
-			'label'   => esc_html__( 'Enable featured image zoom', 'yith-proteo' ),
-			'section' => 'yith_proteo_product_page_management',
-			'choices' => array(
-				'yes' => esc_html__( 'Yes', 'yith-proteo' ),
-				'no'  => esc_html__( 'No', 'yith-proteo' ),
-			),
-		)
-	);
+	if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
+		$wp_customize->add_setting(
+			'yith_proteo_product_page_image_zoom',
+			array(
+				'default'           => 'yes',
+				'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+			)
+		);
+
+		$wp_customize->add_control(
+			new Customizer_Control_Yes_No(
+				$wp_customize,
+				'yith_proteo_product_page_image_zoom',
+				array(
+					'label'   => esc_html__( 'Enable featured image zoom', 'yith-proteo' ),
+					'section' => 'yith_proteo_product_page_management',
+				)
+			)
+		);
+	}
 
 	// Enable image lightbox.
-	$wp_customize->add_setting(
-		'yith_proteo_product_page_image_lightbox',
-		array(
-			'default'           => 'yes',
-			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
-		)
-	);
-	$wp_customize->add_control(
-		'yith_proteo_product_page_image_lightbox',
-		array(
-			'type'    => 'radio',
-			'label'   => esc_html__( 'Enable featured image lightbox', 'yith-proteo' ),
-			'section' => 'yith_proteo_product_page_management',
-			'choices' => array(
-				'yes' => esc_html__( 'Yes', 'yith-proteo' ),
-				'no'  => esc_html__( 'No', 'yith-proteo' ),
-			),
-		)
-	);
+	if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
+		$wp_customize->add_setting(
+			'yith_proteo_product_page_image_lightbox',
+			array(
+				'default'           => 'yes',
+				'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+			)
+		);
+
+		$wp_customize->add_control(
+			new Customizer_Control_Yes_No(
+				$wp_customize,
+				'yith_proteo_product_page_image_lightbox',
+				array(
+					'label'   => esc_html__( 'Enable featured image lightbox', 'yith-proteo' ),
+					'section' => 'yith_proteo_product_page_management',
+				)
+			)
+		);
+	}
 
 	// Enable gallery slider.
-	$wp_customize->add_setting(
-		'yith_proteo_product_page_gallery_slider',
-		array(
-			'default'           => 'yes',
-			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
-		)
-	);
-	$wp_customize->add_control(
-		'yith_proteo_product_page_gallery_slider',
-		array(
-			'type'    => 'radio',
-			'label'   => esc_html__( 'Enable additional images slider', 'yith-proteo' ),
-			'section' => 'yith_proteo_product_page_management',
-			'choices' => array(
-				'yes' => esc_html__( 'Yes', 'yith-proteo' ),
-				'no'  => esc_html__( 'No', 'yith-proteo' ),
-			),
-		)
-	);
+	if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
+		$wp_customize->add_setting(
+			'yith_proteo_product_page_gallery_slider',
+			array(
+				'default'           => 'yes',
+				'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+			)
+		);
+
+		$wp_customize->add_control(
+			new Customizer_Control_Yes_No(
+				$wp_customize,
+				'yith_proteo_product_page_gallery_slider',
+				array(
+					'label'   => esc_html__( 'Enable additional images slider', 'yith-proteo' ),
+					'section' => 'yith_proteo_product_page_management',
+				)
+			)
+		);
+	}
 
 	// Price and add to cart management.
 	$wp_customize->add_setting(
@@ -396,25 +399,26 @@
 		)
 	);
 	// Force all products to use the same sidebar.
-	$wp_customize->add_setting(
-		'yith_proteo_product_page_sidebar_force',
-		array(
-			'default'           => 'no',
-			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
-		)
-	);
-	$wp_customize->add_control(
-		'yith_proteo_product_page_sidebar_force',
-		array(
-			'type'    => 'radio',
-			'label'   => esc_html__( 'Force all product to use the same sidebar.', 'yith-proteo' ),
-			'section' => 'yith_proteo_product_page_management',
-			'choices' => array(
-				'yes' => esc_html__( 'Yes', 'yith-proteo' ),
-				'no'  => esc_html__( 'No', 'yith-proteo' ),
-			),
-		)
-	);
+	if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
+		$wp_customize->add_setting(
+			'yith_proteo_product_page_sidebar_force',
+			array(
+				'default'           => 'no',
+				'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+			)
+		);
+
+		$wp_customize->add_control(
+			new Customizer_Control_Yes_No(
+				$wp_customize,
+				'yith_proteo_product_page_sidebar_force',
+				array(
+					'label'   => esc_html__( 'Force all product to use the same sidebar.', 'yith-proteo' ),
+					'section' => 'yith_proteo_product_page_management',
+				)
+			)
+		);
+	}
 
 	// Tabs management.
 	$wp_customize->add_setting(
@@ -509,62 +513,65 @@
 		)
 	);
 
-	$wp_customize->add_setting(
-		'yith_proteo_product_page_show_categories',
-		array(
-			'default'           => 'yes',
-			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
-		)
-	);
-	$wp_customize->add_control(
-		'yith_proteo_product_page_show_categories',
-		array(
-			'type'    => 'radio',
-			'label'   => esc_html__( 'Show product categories', 'yith-proteo' ),
-			'section' => 'yith_proteo_product_page_management',
-			'choices' => array(
-				'yes' => esc_html__( 'Yes', 'yith-proteo' ),
-				'no'  => esc_html__( 'No', 'yith-proteo' ),
-			),
-		)
-	);
+	if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
+		$wp_customize->add_setting(
+			'yith_proteo_product_page_show_categories',
+			array(
+				'default'           => 'yes',
+				'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+			)
+		);
 
-	$wp_customize->add_setting(
-		'yith_proteo_product_page_show_tags',
-		array(
-			'default'           => 'yes',
-			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
-		)
-	);
-	$wp_customize->add_control(
-		'yith_proteo_product_page_show_tags',
-		array(
-			'type'    => 'radio',
-			'label'   => esc_html__( 'Show product tags', 'yith-proteo' ),
-			'section' => 'yith_proteo_product_page_management',
-			'choices' => array(
-				'yes' => esc_html__( 'Yes', 'yith-proteo' ),
-				'no'  => esc_html__( 'No', 'yith-proteo' ),
-			),
-		)
-	);
+		$wp_customize->add_control(
+			new Customizer_Control_Yes_No(
+				$wp_customize,
+				'yith_proteo_product_page_show_categories',
+				array(
+					'label'   => esc_html__( 'Show product categories', 'yith-proteo' ),
+					'section' => 'yith_proteo_product_page_management',
+				)
+			)
+		);
+	}
 
-	$wp_customize->add_setting(
-		'yith_proteo_product_page_show_sku',
-		array(
-			'default'           => 'yes',
-			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
-		)
-	);
-	$wp_customize->add_control(
-		'yith_proteo_product_page_show_sku',
-		array(
-			'type'    => 'radio',
-			'label'   => esc_html__( 'Show product SKU', 'yith-proteo' ),
-			'section' => 'yith_proteo_product_page_management',
-			'choices' => array(
-				'yes' => esc_html__( 'Yes', 'yith-proteo' ),
-				'no'  => esc_html__( 'No', 'yith-proteo' ),
-			),
-		)
-	);
+	if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
+		$wp_customize->add_setting(
+			'yith_proteo_product_page_show_tags',
+			array(
+				'default'           => 'yes',
+				'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+			)
+		);
+
+		$wp_customize->add_control(
+			new Customizer_Control_Yes_No(
+				$wp_customize,
+				'yith_proteo_product_page_show_tags',
+				array(
+					'label'   => esc_html__( 'Show product tags', 'yith-proteo' ),
+					'section' => 'yith_proteo_product_page_management',
+				)
+			)
+		);
+	}
+
+	if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
+		$wp_customize->add_setting(
+			'yith_proteo_product_page_show_sku',
+			array(
+				'default'           => 'yes',
+				'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+			)
+		);
+
+		$wp_customize->add_control(
+			new Customizer_Control_Yes_No(
+				$wp_customize,
+				'yith_proteo_product_page_show_sku',
+				array(
+					'label'   => esc_html__( 'Show product SKU', 'yith-proteo' ),
+					'section' => 'yith_proteo_product_page_management',
+				)
+			)
+		);
+	}
