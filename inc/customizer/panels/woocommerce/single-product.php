@@ -349,7 +349,8 @@
 		$wp_customize->add_setting(
 			'yith_proteo_product_page_sidebar_position',
 			array(
-				'default' => 'no-sidebar',
+				'default'           => 'no-sidebar',
+				'sanitize_callback' => 'yith_proteo_sanitize_sidebar_position',
 			)
 		);
 

@@ -21,7 +21,8 @@
 		$wp_customize->add_setting(
 			'yith_proteo_default_sidebar_position',
 			array(
-				'default' => 'right',
+				'default'           => 'right',
+				'sanitize_callback' => 'yith_proteo_sanitize_sidebar_position',
 			)
 		);
 
@@ -77,7 +78,8 @@
 		$wp_customize->add_setting(
 			'yith_proteo_blog_page_sidebar_position',
 			array(
-				'default' => 'right',
+				'default'           => 'right',
+				'sanitize_callback' => 'yith_proteo_sanitize_sidebar_position',
 			)
 		);
 
@@ -132,7 +134,8 @@
 		$wp_customize->add_setting(
 			'yith_proteo_blog_category_sidebar_position',
 			array(
-				'default' => 'right',
+				'default'           => 'right',
+				'sanitize_callback' => 'yith_proteo_sanitize_sidebar_position',
 			)
 		);
 
@@ -187,7 +190,8 @@
 		$wp_customize->add_setting(
 			'yith_proteo_blog_tag_sidebar_position',
 			array(
-				'default' => 'right',
+				'default'           => 'right',
+				'sanitize_callback' => 'yith_proteo_sanitize_sidebar_position',
 			)
 		);
 

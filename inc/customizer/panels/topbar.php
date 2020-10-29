@@ -133,7 +133,8 @@
 		$wp_customize->add_setting(
 			'yith_proteo_topbar_align',
 			array(
-				'default' => 'right',
+				'default'           => 'right',
+				'sanitize_callback' => 'yith_proteo_sanitize_radio',
 			)
 		);
 
