@@ -60,7 +60,7 @@
 	);
 
 	// Header fullwidth.
-	if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
+	if ( class_exists( 'Customizer_Control_On_Off' ) ) {
 		$wp_customize->add_setting(
 			'yith_proteo_header_fullwidth',
 			array(
@@ -70,11 +70,11 @@
 		);
 
 		$wp_customize->add_control(
-			new Customizer_Control_Yes_No(
+			new Customizer_Control_On_Off(
 				$wp_customize,
 				'yith_proteo_header_fullwidth',
 				array(
-					'label'       => esc_html__( 'Enable full width header', 'yith-proteo' ),
+					'label'       => esc_html__( 'Full width header', 'yith-proteo' ),
 					'description' => esc_html__( 'Choose whether to make the header full width or not.', 'yith-proteo' ),
 					'section'     => 'yith_proteo_header_management',
 				)

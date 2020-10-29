@@ -8,7 +8,9 @@ YITH CUSTOMIZER STYLE
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-
+#customize-controls .customize-control {
+	margin-bottom: 25px;
+}
 #customize-controls .control-section .accordion-section-title:focus, 
 #customize-controls .control-section .accordion-section-title:hover, 
 #customize-controls .control-section.open .accordion-section-title, 
@@ -34,6 +36,12 @@ YITH CUSTOMIZER STYLE
 .wp-core-ui #customize-controls  .button-secondary {
 	color: var(--yith-proteo-customizer-main-color);
 	border-color: var(--yith-proteo-customizer-main-color);
+}
+
+.wp-core-ui #customize-controls .button-primary {
+	background: var(--yith-proteo-customizer-main-color);
+	border-color: var(--yith-proteo-customizer-main-color);
+	color: #fff;
 }
 
 #customize-outer-theme-controls .accordion-section-content, 
@@ -327,4 +335,81 @@ li[id*="group_title"].section-closed:after {
 .customize-control-radio-yes-no label.ui-state-active {
 	background-color: var( --yith-proteo-customizer-main-color );
 	color: #ffffff;
+}
+
+/* ON OFF */
+.customize-control-radio-on-off label {
+	background-color: #fff;
+	color: #949494;
+	font-weight: 500;
+	text-transform: uppercase;
+	padding: 6px 30px;
+	display: inline-block;
+	margin: 0 5px 0 0;
+	border: 1px solid #949494;
+	border-radius: 25px;
+	position: relative;
+}
+.customize-control-radio-on-off label[for*="-no"] {
+	padding-right: 15px;
+}
+.customize-control-radio-on-off label[for*="-yes"] {
+	padding-left: 15px;
+}
+.customize-control-radio-on-off label[for*="-yes"]:after {
+	content: '';
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	font-size: 0;
+	border-radius: 20px;
+	background-color: var( --yith-proteo-customizer-main-color );
+	top: calc(50% - 7px);
+	position: absolute;
+	right: 10px;
+}
+
+.customize-control-radio-on-off label[for*="-yes"]:before {
+	display: none;
+}
+
+.customize-control-radio-on-off label[for*="-no"]:before {
+	content: '';
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	font-size: 0;
+	border-radius: 20px;
+	background-color: #949494;
+	top: calc(50% - 7px);
+	position: absolute;
+	left: 10px;
+}
+
+.customize-control-radio-on-off label[for*="-no"]:after {
+	display: none;
+}
+
+.customize-control-radio-on-off label[for*="-yes"] {
+	color: var( --yith-proteo-customizer-main-color );
+	border-color:var( --yith-proteo-customizer-main-color );
+}
+
+.customize-control-radio-on-off .ui-buttonset {
+	height: 32px;
+	position: relative;
+}
+
+.customize-control-radio-on-off .ui-buttonset label{
+	position: absolute;
+	z-index: 0;
+}
+
+.customize-control-radio-on-off .ui-buttonset label:not(.ui-state-active) {
+	z-index: 2;
+	opacity: 0;
+}
+.customize-control-radio-on-off .ui-buttonset label.ui-state-active {
+	z-index: 1;
+	opacity: 1;
 }
