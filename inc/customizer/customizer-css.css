@@ -9,7 +9,17 @@ YITH CUSTOMIZER STYLE
 	-moz-osx-font-smoothing: grayscale;
 }
 #customize-controls .customize-control {
-	margin-bottom: 25px;
+	margin-bottom: 15px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eeeeee;
+}
+#customize-controls .control-section .customize-control:last-of-type {
+	margin-bottom: 0;
+    padding-bottom: 20px;
+    border-bottom: none;
+}
+#customize-theme-controls .customize-pane-child.accordion-section-content {
+	border-bottom: none;
 }
 #customize-controls .control-section .accordion-section-title:focus, 
 #customize-controls .control-section .accordion-section-title:hover, 
@@ -46,7 +56,11 @@ YITH CUSTOMIZER STYLE
 
 #customize-outer-theme-controls .accordion-section-content, 
 #customize-theme-controls .accordion-section-content,
-#customize-controls .description {
+#customize-controls .description,
+#customize-outer-theme-controls .accordion-section-title, 
+#customize-theme-controls .accordion-section-title,
+#customize-theme-controls .control-panel-themes > .accordion-section-title, 
+#customize-theme-controls .control-panel-themes > .accordion-section-title:hover {
 	color: #000;
 }
 
@@ -202,7 +216,7 @@ body .select2-container--default .select2-selection--single .select2-selection__
 }
 
 /* GROUP SECTION MANAGEMENT */
-li[id*="group_title"] {
+#customize-controls .customize-control[id*="group_title"] {
 	box-sizing: border-box;
 	cursor: pointer;
 	position: relative;
@@ -210,29 +224,29 @@ li[id*="group_title"] {
 	margin-right: -12px;
 	margin-top: -12px;
 	width: calc(100% + 24px);
-	color: #0073aa;
+	color: var(--yith-proteo-customizer-main-color);
 	background: #f3f3f5;
 	border-bottom: 1px solid #ddd;
 	transition: .15s color ease-in-out,.15s background-color ease-in-out,.15s border-color ease-in-out;
-	padding: 10px 10px 11px 14px;
+	padding: 8px 10px 7px 14px;
 	line-height: 1.55;
 	background: #fff;
 	font-size: 14px;
 	border-left: 4px solid #fff;
 }
-li[id*="group_title"].section-closed {
+#customize-controls .customize-control[id*="group_title"].section-closed {
 	background-color: #ffffff;
 	color: #555d66;
 }
-li[id*="group_title"]:hover {
-	color: #0073aa;
+#customize-controls .customize-control[id*="group_title"]:hover {
+	color: var(--yith-proteo-customizer-main-color);
 	background: #f3f3f5;
-	border-left-color: #0073aa;
+	border-left-color: var(--yith-proteo-customizer-main-color);
 }
-li[id*="group_title"]:hover::after {
-	color: #0073aa;
+#customize-controls .customize-control[id*="group_title"]:hover::after {
+	color: var(--yith-proteo-customizer-main-color);
 }
-li[id*="group_title"]:after {
+#customize-controls .customize-control[id*="group_title"]:after {
 	display: block;
 	position: absolute;
 	right: 5px;
@@ -240,11 +254,11 @@ li[id*="group_title"]:after {
 	font-weight: bold;
 	font-size: 1.2em;
 	content: "\f345";
-	color: #0073aa;
+	color: var(--yith-proteo-customizer-main-color);
 	font: normal 20px/1 dashicons;
 	transform: rotate(-90deg);
 }
-li[id*="group_title"].section-closed:after {
+#customize-controls .customize-control[id*="group_title"].section-closed:after {
 	transform: rotate(90deg);
 	color: #555d66;
 }
