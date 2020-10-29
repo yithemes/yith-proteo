@@ -235,26 +235,40 @@ $wp_customize->add_control(
 );
 
 // Mobile menu alighment.
-$wp_customize->add_setting(
-	'yith_proteo_mobile_menu_align',
-	array(
-		'default'           => 'left',
-		'sanitize_callback' => 'yith_proteo_sanitize_radio',
-	)
-);
-$wp_customize->add_control(
-	'yith_proteo_mobile_menu_align',
-	array(
-		'type'    => 'radio',
-		'label'   => esc_html__( 'Mobile menu alignment', 'yith-proteo' ),
-		'section' => 'yith_proteo_mobile_menu_management',
-		'choices' => array(
-			'left'   => esc_html__( 'Left', 'yith-proteo' ),
-			'right'  => esc_html__( 'Right', 'yith-proteo' ),
-			'center' => esc_html__( 'Center', 'yith-proteo' ),
-		),
-	)
-);
+if ( class_exists( 'Customizer_Control_Radio_Image' ) ) {
+	$wp_customize->add_setting(
+		'yith_proteo_mobile_menu_align',
+		array(
+			'default'           => 'left',
+			'sanitize_callback' => 'yith_proteo_sanitize_radio',
+		)
+	);
+
+	$wp_customize->add_control(
+		new Customizer_Control_Radio_Image(
+			$wp_customize,
+			'yith_proteo_mobile_menu_align',
+			array(
+				'label'   => esc_html__( 'Mobile menu alignment', 'yith-proteo' ),
+				'section' => 'yith_proteo_mobile_menu_management',
+				'choices' => array(
+					'left'   => array(
+						'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/align-left.svg',
+						'label' => esc_html__( 'Left', 'yith-proteo' ),
+					),
+					'center' => array(
+						'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/align-center.svg',
+						'label' => esc_html__( 'Center', 'yith-proteo' ),
+					),
+					'right'  => array(
+						'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/align-right.svg',
+						'label' => esc_html__( 'Right', 'yith-proteo' ),
+					),
+				),
+			)
+		)
+	);
+}
 
 // Mobile typography managament.
 $wp_customize->add_section(
