@@ -26,25 +26,26 @@ $wp_customize->add_section(
 );
 
 // Mobile Topbar show.
-$wp_customize->add_setting(
-	'yith_proteo_mobile_topbar_show',
-	array(
-		'default'           => 'yes',
-		'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
-	)
-);
-$wp_customize->add_control(
-	'yith_proteo_mobile_topbar_show',
-	array(
-		'type'    => 'radio',
-		'label'   => esc_html__( 'Show topbar in mobile', 'yith-proteo' ),
-		'section' => 'yith_proteo_mobile_topbar_management',
-		'choices' => array(
-			'yes' => esc_html__( 'Yes', 'yith-proteo' ),
-			'no'  => esc_html__( 'No', 'yith-proteo' ),
-		),
-	)
-);
+if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
+	$wp_customize->add_setting(
+		'yith_proteo_mobile_topbar_show',
+		array(
+			'default'           => 'yes',
+			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+		)
+	);
+
+	$wp_customize->add_control(
+		new Customizer_Control_Yes_No(
+			$wp_customize,
+			'yith_proteo_mobile_topbar_show',
+			array(
+				'label'   => esc_html__( 'Show topbar in mobile', 'yith-proteo' ),
+				'section' => 'yith_proteo_mobile_topbar_management',
+			)
+		)
+	);
+}
 
 $wp_customize->add_section(
 	'yith_proteo_mobile_header_management',
@@ -78,89 +79,93 @@ $wp_customize->add_control(
 );
 
 // Mobile Header show sidebar.
-$wp_customize->add_setting(
-	'yith_proteo_show_mobile_header_sidebar',
-	array(
-		'default'           => 'yes',
-		'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
-	)
-);
-$wp_customize->add_control(
-	'yith_proteo_show_mobile_header_sidebar',
-	array(
-		'type'        => 'radio',
-		'label'       => esc_html__( 'Show header sidebar', 'yith-proteo' ),
-		'section'     => 'yith_proteo_mobile_header_management',
-		'description' => esc_html__( 'Choose whether to show or not the header widget area', 'yith-proteo' ),
-		'choices'     => array(
-			'yes' => esc_html__( 'Yes', 'yith-proteo' ),
-			'no'  => esc_html__( 'No', 'yith-proteo' ),
-		),
-	)
-);
+if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
+	$wp_customize->add_setting(
+		'yith_proteo_show_mobile_header_sidebar',
+		array(
+			'default'           => 'yes',
+			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+		)
+	);
+
+	$wp_customize->add_control(
+		new Customizer_Control_Yes_No(
+			$wp_customize,
+			'yith_proteo_show_mobile_header_sidebar',
+			array(
+				'label'       => esc_html__( 'Show header sidebar', 'yith-proteo' ),
+				'section'     => 'yith_proteo_mobile_header_management',
+				'description' => esc_html__( 'Choose whether to show or not the header widget area', 'yith-proteo' ),
+			)
+		)
+	);
+}
 
 // Mobile header search widget.
-$wp_customize->add_setting(
-	'yith_proteo_mobile_search_widget',
-	array(
-		'default'           => 'no',
-		'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
-	)
-);
-$wp_customize->add_control(
-	'yith_proteo_mobile_search_widget',
-	array(
-		'type'    => 'radio',
-		'label'   => esc_html__( 'Show search icon in mobile', 'yith-proteo' ),
-		'section' => 'yith_proteo_mobile_header_management',
-		'choices' => array(
-			'yes' => esc_html__( 'Yes', 'yith-proteo' ),
-			'no'  => esc_html__( 'No', 'yith-proteo' ),
-		),
-	)
-);
+if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
+	$wp_customize->add_setting(
+		'yith_proteo_mobile_search_widget',
+		array(
+			'default'           => 'no',
+			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+		)
+	);
+
+	$wp_customize->add_control(
+		new Customizer_Control_Yes_No(
+			$wp_customize,
+			'yith_proteo_mobile_search_widget',
+			array(
+				'label'   => esc_html__( 'Show search icon in mobile', 'yith-proteo' ),
+				'section' => 'yith_proteo_mobile_header_management',
+			)
+		)
+	);
+}
 
 // Mobile header cart widget.
-$wp_customize->add_setting(
-	'yith_proteo_mobile_cart_widget',
-	array(
-		'default'           => 'no',
-		'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
-	)
-);
-$wp_customize->add_control(
-	'yith_proteo_mobile_cart_widget',
-	array(
-		'type'    => 'radio',
-		'label'   => esc_html__( 'Show cart icon in mobile', 'yith-proteo' ),
-		'section' => 'yith_proteo_mobile_header_management',
-		'choices' => array(
-			'yes' => esc_html__( 'Yes', 'yith-proteo' ),
-			'no'  => esc_html__( 'No', 'yith-proteo' ),
-		),
-	)
-);
+if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
+	$wp_customize->add_setting(
+		'yith_proteo_mobile_cart_widget',
+		array(
+			'default'           => 'no',
+			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+		)
+	);
+
+	$wp_customize->add_control(
+		new Customizer_Control_Yes_No(
+			$wp_customize,
+			'yith_proteo_mobile_cart_widget',
+			array(
+				'label'   => esc_html__( 'Show cart icon in mobile', 'yith-proteo' ),
+				'section' => 'yith_proteo_mobile_header_management',
+			)
+		)
+	);
+}
 
 // Mobile header account widget.
-$wp_customize->add_setting(
-	'yith_proteo_mobile_account_widget',
-	array(
-		'default'           => 'no',
-		'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
-	)
-);
-$wp_customize->add_control(
-	'yith_proteo_mobile_account_widget',
-	array(
-		'type'    => 'radio',
-		'label'   => esc_html__( 'Show account icon in mobile', 'yith-proteo' ),
-		'section' => 'yith_proteo_mobile_header_management',
-		'choices' => array(
-			'yes' => esc_html__( 'Yes', 'yith-proteo' ),
-			'no'  => esc_html__( 'No', 'yith-proteo' ),
-		),
-	)
-);
+if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
+	$wp_customize->add_setting(
+		'yith_proteo_mobile_account_widget',
+		array(
+			'default'           => 'no',
+			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+		)
+	);
+
+	$wp_customize->add_control(
+		new Customizer_Control_Yes_No(
+			$wp_customize,
+			'yith_proteo_mobile_account_widget',
+			array(
+				'label'   => esc_html__( 'Show account icon in mobile', 'yith-proteo' ),
+				'section' => 'yith_proteo_mobile_header_management',
+			)
+		)
+	);
+}
 
 // Mobile menu managament.
 $wp_customize->add_section(
