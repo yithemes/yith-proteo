@@ -40,3 +40,25 @@
 			)
 		)
 	);
+
+	// Select2 enabler.
+	if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
+		$wp_customize->add_setting(
+			'yith_proteo_use_enanched_selects',
+			array(
+				'default'           => 'yes',
+				'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+			)
+		);
+
+		$wp_customize->add_control(
+			new Customizer_Control_Yes_No(
+				$wp_customize,
+				'yith_proteo_use_enanched_selects',
+				array(
+					'label'   => esc_html__( 'Use enanched select elements', 'yith-proteo' ),
+					'section' => 'yith_proteo_forms',
+				)
+			)
+		);
+	}

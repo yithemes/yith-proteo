@@ -49,11 +49,13 @@ if ( ! function_exists( 'yith_proteo_scripts' ) ) :
 			'yith-proteo-themejs',
 			'yith_proteo',
 			array(
-				'stickyHeader'                   => apply_filters(
+				'stickyHeader'                     => apply_filters(
 					'yith_proteo_enable_sticky_header',
 					get_theme_mod( 'yith_proteo_header_sticky', 'yes' )
 				),
-				'select2minimumResultsForSearch' => apply_filters( 'yith_proteo_select2_minimum_results_for_search', 7 ),
+				'select2minimumResultsForSearch'   => apply_filters( 'yith_proteo_select2_minimum_results_for_search', 7 ),
+				'yith_proteo_use_enanched_selects' => get_theme_mod( 'yith_proteo_use_enanched_selects', 'yes' ),
+				'yith_proteo_has_woocommerce'      => function_exists( 'WC' ),
 			)
 		);
 
@@ -114,5 +116,12 @@ add_action( 'customize_preview_init', 'yith_proteo_customize_preview_js', 100 );
  */
 function yith_proteo_customize_controls_js() {
 	wp_enqueue_script( 'yith-proteo-customizer-controls', get_template_directory_uri() . '/inc/customizer/customizer-controls.js', array( 'jquery' ), YITH_PROTEO_VERSION, true );
+	wp_localize_script(
+		'yith-proteo-customizer-controls',
+		'yith_proteo_customizer_controls',
+		array(
+			'yith_proteo_customizer_has_woocommerce' => function_exists( 'WC' ),
+		)
+	);
 }
 add_action( 'customize_controls_enqueue_scripts', 'yith_proteo_customize_controls_js' );
