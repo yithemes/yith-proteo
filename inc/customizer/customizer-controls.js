@@ -274,6 +274,12 @@
 			}
 		}
 
+		/* Description toggle */
+		$('span.description.customize-control-description').on('click', function(){
+			var t = $(this);
+			t.toggleClass('customizer-control-description-expanded');
+		});
+
 
 	});
 

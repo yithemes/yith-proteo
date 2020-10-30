@@ -16,24 +16,6 @@
 		)
 	);
 
-	// Google Font.
-	$wp_customize->add_setting(
-		'yith_proteo_google_font',
-		array(
-			'sanitize_callback' => 'esc_url_raw',
-			'default'           => '',
-		)
-	);
-	$wp_customize->add_control(
-		'yith_proteo_google_font',
-		array(
-			'label'       => esc_html__( 'Additional Google Font', 'yith-proteo' ),
-			'description' => esc_html__( 'Enter the URL of a Google Font you want to use within the theme.', 'yith-proteo' ),
-			'section'     => 'yith_proteo_typography',
-			'type'        => 'textarea',
-		)
-	);
-
 	// Body font.
 	$wp_customize->add_setting(
 		'yith_proteo_body_font',
@@ -491,5 +473,23 @@
 				'label'   => esc_html__( 'H6 font color', 'yith-proteo' ),
 				'section' => 'yith_proteo_typography',
 			)
+		)
+	);
+
+	// Google Font.
+	$wp_customize->add_setting(
+		'yith_proteo_google_font',
+		array(
+			'sanitize_callback' => 'esc_url_raw',
+			'default'           => '',
+		)
+	);
+	$wp_customize->add_control(
+		'yith_proteo_google_font',
+		array(
+			'label'       => esc_html__( 'Additional Google Font', 'yith-proteo' ),
+			'description' => esc_html__( 'Enter the URL of a Google Font you want to use within the theme.', 'yith-proteo' ) . ' ' . sprintf( '<a href="%s" target="_blank" rel="noopener nofollow">%s</a>', esc_url( 'https://docs.yithemes.com/yith-proteo/theme-options/typography/' ), esc_html__( 'Read how to retrieve a Google font url', 'yith-proteo' ) ),
+			'section'     => 'yith_proteo_typography',
+			'type'        => 'textarea',
 		)
 	);

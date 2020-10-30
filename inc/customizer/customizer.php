@@ -154,16 +154,6 @@ if ( function_exists( 'wc' ) ) {
 	add_action( 'customize_register', 'yith_proteo_customize_shop_register' );
 }
 
-
-add_action( 'customize_render_control_yith_proteo_body_font', 'yith_proteo_add_gfont_documentation_link' );
-
-/**
- * Render GFont doc guide link
- */
-function yith_proteo_add_gfont_documentation_link() {
-	printf( '<div class="gfont-tooltip" style="margin-bottom: 25px;"><a href="%s" target="_blank" rel="noopener nofollow">%s</a></div>', esc_url( 'https://docs.yithemes.com/yith-proteo/customization/how-to-use-google-fonts/' ), esc_html__( 'Read how to retrieve a Google font url', 'yith-proteo' ) );
-}
-
 /**
  * Render the site title for the selective refresh partial.
  *

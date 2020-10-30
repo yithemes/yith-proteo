@@ -10,13 +10,14 @@ YITH CUSTOMIZER STYLE
 }
 #customize-controls .customize-control {
 	margin-bottom: 15px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #eeeeee;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #eeeeee;
+	position: relative;
 }
 #customize-controls .control-section .customize-control:last-of-type {
 	margin-bottom: 0;
-    padding-bottom: 20px;
-    border-bottom: none;
+	padding-bottom: 20px;
+	border-bottom: none;
 }
 #customize-theme-controls .customize-pane-child.accordion-section-content {
 	border-bottom: none;
@@ -75,6 +76,31 @@ YITH CUSTOMIZER STYLE
 #customize-control-yith_proteo_button_style_2_bg_color_1 {
 	padding-top: 10px;
 	border-top: 1px solid #ddd;
+}
+
+/* Control description */
+span.description.customize-control-description:not(.customizer-control-description-expanded) {
+	font-size: 0;
+}
+span.description.customize-control-description:before {
+	content: '?';
+	display: block;
+	border: 1px solid #dddddd;
+	color: #000;
+	border-radius: 10px;
+	padding: 0;
+	text-align: center;
+	width: 12px;
+	height: 12px;
+	background: #ffffff;
+	line-height: 12px;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: 700;
+	position: absolute;
+	right: 0;
+	top: 5px;
+	cursor: pointer;
 }
 
 /* RANGE INPUTS*/
