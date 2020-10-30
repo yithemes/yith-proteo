@@ -312,10 +312,12 @@ body .select2-container--default .select2-selection--single .select2-selection__
 	box-shadow: none;
 	vertical-align: inherit;
 	margin: 5px 10px 5px 0;
+	vertical-align: top;
 }
 .customize-control-radio-image label .image-description {
 	display: block;
 	font-size: 0.9em;
+	white-space: initial;
 }
 .customize-control-radio-image label:hover {
 	background: none;
