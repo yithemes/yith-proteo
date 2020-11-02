@@ -79,7 +79,7 @@
 		 * Googe Font Select Custom Control
 		 */
 
-		$('.google-fonts-list').each(function (i, obj) {
+		$('select').each(function (i, obj) {
 			if (!$(obj).hasClass('select2-hidden-accessible')) {
 				$(obj).select2();
 			}
