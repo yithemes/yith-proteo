@@ -102,6 +102,9 @@ span.description.customize-control-description:before {
 	top: 5px;
 	cursor: pointer;
 }
+#customize-control-site_icon span.description.customize-control-description:before {
+	display: none;
+}
 
 /* RANGE INPUTS*/
 .customize-control-range input[type="range"].range-slider {
