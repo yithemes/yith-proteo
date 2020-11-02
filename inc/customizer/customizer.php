@@ -426,14 +426,29 @@ if ( ! function_exists( 'yith_proteo_footer_background_not_is_full_width' ) ) {
 	}
 }
 
+if ( ! function_exists( 'yith_proteo_topbar_is_enabled' ) ) {
+	/**
+	 * Callback function to check if topbar bottom border is enabled
+	 *
+	 * @return bool
+	 */
+	function yith_proteo_topbar_is_enabled() {
+		return 'yes' === get_theme_mod( 'yith_proteo_topbar_enable', 'no' );
+	}
+}
+
 if ( ! function_exists( 'yith_proteo_topbar_has_bottom_border' ) ) {
 	/**
-	 * Callback function to check state of Footer background full width
+	 * Callback function to check if topbar bottom border is enabled
 	 *
 	 * @return bool
 	 */
 	function yith_proteo_topbar_has_bottom_border() {
-		return 'yes' === get_theme_mod( 'yith_proteo_topbar_bottom_border', 'no' );
+		if ( yith_proteo_topbar_is_enabled() ) {
+			return 'yes' === get_theme_mod( 'yith_proteo_topbar_bottom_border', 'no' );
+		} else {
+			return false;
+		}
 	}
 }
 

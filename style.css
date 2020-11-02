@@ -12687,24 +12687,9 @@ Custom media queries
     text-align: initial;
   }
 
-  h1,
-body article.page header.entry-header h1,
-body article:not(.has-post-thumbnail).page header.entry-header h1 {
-    font-size: 3rem;
-  }
-
   .single-product .woocommerce-tabs ul.tabs li a {
     font-size: 1.125rem;
     margin-right: 15px;
-  }
-
-  h2 {
-    font-size: 1.8rem;
-  }
-
-  .entry-content p,
-.entry-content li:not(.product) {
-    font-size: 1rem;
   }
 
   .single-product div.product .summary.entry-summary {

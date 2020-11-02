@@ -53,8 +53,9 @@
 			$wp_customize,
 			'yith_proteo_topbar_background_color',
 			array(
-				'label'   => esc_html__( 'Topbar background color', 'yith-proteo' ),
-				'section' => 'yith_proteo_topbar_management',
+				'label'           => esc_html__( 'Topbar background color', 'yith-proteo' ),
+				'section'         => 'yith_proteo_topbar_management',
+				'active_callback' => 'yith_proteo_topbar_is_enabled',
 			)
 		)
 	);
@@ -69,9 +70,10 @@
 	$wp_customize->add_control(
 		'yith_proteo_topbar_font_size',
 		array(
-			'label'   => esc_html__( 'Font size (default: 16px)', 'yith-proteo' ),
-			'section' => 'yith_proteo_topbar_management',
-			'type'    => 'number',
+			'label'           => esc_html__( 'Font size (default: 16px)', 'yith-proteo' ),
+			'section'         => 'yith_proteo_topbar_management',
+			'type'            => 'number',
+			'active_callback' => 'yith_proteo_topbar_is_enabled',
 		)
 	);
 	// Topbar font color options.
@@ -87,8 +89,9 @@
 			$wp_customize,
 			'yith_proteo_topbar_font_color',
 			array(
-				'label'   => esc_html__( 'Font color', 'yith-proteo' ),
-				'section' => 'yith_proteo_topbar_management',
+				'label'           => esc_html__( 'Font color', 'yith-proteo' ),
+				'section'         => 'yith_proteo_topbar_management',
+				'active_callback' => 'yith_proteo_topbar_is_enabled',
 			)
 		)
 	);
@@ -105,8 +108,9 @@
 			$wp_customize,
 			'yith_proteo_topbar_link_color',
 			array(
-				'label'   => esc_html__( 'Hyperlink color', 'yith-proteo' ),
-				'section' => 'yith_proteo_topbar_management',
+				'label'           => esc_html__( 'Hyperlink color', 'yith-proteo' ),
+				'section'         => 'yith_proteo_topbar_management',
+				'active_callback' => 'yith_proteo_topbar_is_enabled',
 			)
 		)
 	);
@@ -123,8 +127,9 @@
 			$wp_customize,
 			'yith_proteo_topbar_link_hover_color',
 			array(
-				'label'   => esc_html__( 'Hyperlink :hover color', 'yith-proteo' ),
-				'section' => 'yith_proteo_topbar_management',
+				'label'           => esc_html__( 'Hyperlink :hover color', 'yith-proteo' ),
+				'section'         => 'yith_proteo_topbar_management',
+				'active_callback' => 'yith_proteo_topbar_is_enabled',
 			)
 		)
 	);
@@ -143,9 +148,10 @@
 				$wp_customize,
 				'yith_proteo_topbar_align',
 				array(
-					'label'   => esc_html__( 'Elements alignment', 'yith-proteo' ),
-					'section' => 'yith_proteo_topbar_management',
-					'choices' => array(
+					'label'           => esc_html__( 'Elements alignment', 'yith-proteo' ),
+					'section'         => 'yith_proteo_topbar_management',
+					'active_callback' => 'yith_proteo_topbar_is_enabled',
+					'choices'         => array(
 						'left'   => array(
 							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/align-left.svg',
 							'label' => esc_html__( 'Left', 'yith-proteo' ),
@@ -179,8 +185,9 @@
 				$wp_customize,
 				'yith_proteo_topbar_bottom_border',
 				array(
-					'label'   => esc_html__( 'Show bottom border', 'yith-proteo' ),
-					'section' => 'yith_proteo_topbar_management',
+					'label'           => esc_html__( 'Show bottom border', 'yith-proteo' ),
+					'section'         => 'yith_proteo_topbar_management',
+					'active_callback' => 'yith_proteo_topbar_is_enabled',
 				)
 			)
 		);
