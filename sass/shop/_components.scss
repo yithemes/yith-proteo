@@ -503,7 +503,7 @@ BREADCRUMBS
  */
 
 .woocommerce-breadcrumb {
-	text-align: left;
+	text-align: center;
 	text-transform: uppercase;
 	font-size: 0.9375rem;
 	color: #9d9d9d;
@@ -517,6 +517,10 @@ BREADCRUMBS
 			color: var(--proteo-general_link_hover_color, $color__accent);
 		}
 	}
+}
+
+nav.woocommerce-breadcrumb + header h1 {
+    margin-top: 0;
 }
 
 /**

@@ -357,13 +357,6 @@ function yith_proteo_account_info_endpoint_content() {
 	wc_get_template( 'myaccount/proteo-account-info.php' );
 }
 
-
-/**
- * Move breadcrumb on single product page
- */
-remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20 );
-add_action( 'woocommerce_single_product_summary', 'woocommerce_breadcrumb', 0 );
-
 /**
  * Manage WooCommerce Tabs headings
  */
@@ -572,6 +565,11 @@ add_filter( 'the_title', 'yith_proteo_title_order_received', 10, 2 );
  * Remove WooCommerce Breadcrumbs
  */
 function yith_proteo_remove_breadcrumbs() {
+
+	if ( is_product() ) {
+		remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20 );
+		add_action( 'woocommerce_single_product_summary', 'woocommerce_breadcrumb', 0 );
+	}
 
 	// Remove WooCommerce Breadcrumb on all Woo pages.
 	if ( 'no' === get_theme_mod( 'yith_proteo_breadcrumb_enable', 'yes' ) ) {
