@@ -160,7 +160,7 @@ if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
 			$wp_customize,
 			'yith_proteo_mobile_account_widget',
 			array(
-				'label'   => esc_html__( 'Show account icon in mobile', 'yith-proteo' ),
+				'label'   => esc_html__( 'Show user account icon in mobile', 'yith-proteo' ),
 				'section' => 'yith_proteo_mobile_header_management',
 			)
 		)

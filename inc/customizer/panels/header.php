@@ -141,7 +141,7 @@
 				$wp_customize,
 				'yith_proteo_header_account_widget',
 				array(
-					'label'   => esc_html__( 'Show account icon', 'yith-proteo' ),
+					'label'   => esc_html__( 'Show user account icon', 'yith-proteo' ),
 					'section' => 'yith_proteo_header_management',
 				)
 			)
@@ -283,8 +283,9 @@
 			$wp_customize,
 			'yith_proteo_sticky_header_background_color',
 			array(
-				'label'   => esc_html__( 'Sticky header background color', 'yith-proteo' ),
-				'section' => 'yith_proteo_header_management',
+				'label'           => esc_html__( 'Sticky header background color', 'yith-proteo' ),
+				'section'         => 'yith_proteo_header_management',
+				'active_callback' => 'yith_proteo_sticky_header_is_enabled',
 			)
 		)
 	);
@@ -302,8 +303,9 @@
 			$wp_customize,
 			'yith_proteo_sticky_header_main_menu_color',
 			array(
-				'label'   => esc_html__( 'Sticky header menu color', 'yith-proteo' ),
-				'section' => 'yith_proteo_header_management',
+				'label'           => esc_html__( 'Sticky header menu color', 'yith-proteo' ),
+				'section'         => 'yith_proteo_header_management',
+				'active_callback' => 'yith_proteo_sticky_header_is_enabled',
 			)
 		)
 	);
@@ -321,8 +323,9 @@
 			$wp_customize,
 			'yith_proteo_sticky_header_main_menu_hover_color',
 			array(
-				'label'   => esc_html__( 'Sticky header menu :hover color', 'yith-proteo' ),
-				'section' => 'yith_proteo_header_management',
+				'label'           => esc_html__( 'Sticky header menu :hover color', 'yith-proteo' ),
+				'section'         => 'yith_proteo_header_management',
+				'active_callback' => 'yith_proteo_sticky_header_is_enabled',
 			)
 		)
 	);

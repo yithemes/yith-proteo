@@ -463,6 +463,17 @@ if ( ! function_exists( 'yith_proteo_blog_layout_is_fullwidth_image' ) ) {
 	}
 }
 
+if ( ! function_exists( 'yith_proteo_sticky_header_is_enabled' ) ) {
+	/**
+	 * Callback function to check if sticky header is enabled
+	 *
+	 * @return bool
+	 */
+	function yith_proteo_sticky_header_is_enabled() {
+		return 'yes' === get_theme_mod( 'yith_proteo_header_sticky', 'no' );
+	}
+}
+
 /**
  * Add YITH Customizer CSS
  */

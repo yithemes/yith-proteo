@@ -18,8 +18,9 @@
 			$wp_customize,
 			'yith_proteo_store_notice_bg_color',
 			array(
-				'label'   => esc_html__( 'Store notice background color', 'yith-proteo' ),
-				'section' => 'woocommerce_store_notice',
+				'label'           => esc_html__( 'Store notice background color', 'yith-proteo' ),
+				'section'         => 'woocommerce_store_notice',
+				'active_callback' => 'is_store_notice_showing',
 			)
 		)
 	);
@@ -36,8 +37,9 @@
 			$wp_customize,
 			'yith_proteo_store_notice_text_color',
 			array(
-				'label'   => esc_html__( 'Store notice text color', 'yith-proteo' ),
-				'section' => 'woocommerce_store_notice',
+				'label'           => esc_html__( 'Store notice text color', 'yith-proteo' ),
+				'section'         => 'woocommerce_store_notice',
+				'active_callback' => 'is_store_notice_showing',
 			)
 		)
 	);
@@ -53,8 +55,9 @@
 	$wp_customize->add_control(
 		'yith_proteo_store_notice_font_size',
 		array(
-			'label'   => esc_html__( 'Store notice font size (default: 13px)', 'yith-proteo' ),
-			'section' => 'woocommerce_store_notice',
-			'type'    => 'number',
+			'label'           => esc_html__( 'Store notice font size (default: 13px)', 'yith-proteo' ),
+			'section'         => 'woocommerce_store_notice',
+			'type'            => 'number',
+			'active_callback' => 'is_store_notice_showing',
 		)
 	);
