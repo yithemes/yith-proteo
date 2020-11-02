@@ -26,6 +26,20 @@ Proteo is a modern, fast and fully customizable WooCommerce theme. Designed and 
 
 == Changelog ==
 
+= 1.4.0 - November 2 2020 =
+* New customizer style
+* New image radio control
+* New yes/no control
+* New on/off control
+* New elements align options
+* New help message on complex theme options
+* New option to disable enhanced SELECT elements
+* Migrate all sidebar controls to new radio control
+* Remove unused customizer css
+* Move "Additional Google Font" option to the bottom of typography panel
+* Fix missing breadcrumb on product categories, tags and taxonomies
+* Fix "Read how to retrieve a Google font url" broken link
+
 = 1.3.10 - October 21 2020 =
 * Added filter 'yith_proteo_select2_minimum_results_for_search'
 * Updated theme description
