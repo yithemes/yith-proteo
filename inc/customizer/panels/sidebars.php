@@ -31,7 +31,7 @@
 				$wp_customize,
 				'yith_proteo_default_sidebar_position',
 				array(
-					'label'       => esc_html__( 'Choose the position of the default sidebar', 'yith-proteo' ),
+					'label'       => esc_html__( 'Choose the sidebar position for posts and pages', 'yith-proteo' ),
 					'section'     => 'yith_proteo_sidebar_management',
 					'description' => esc_html__( 'Select where to display the default sidebar. You can adjust the settings from the page/post edit view.', 'yith-proteo' ),
 					'choices'     => array(
@@ -65,11 +65,12 @@
 	$wp_customize->add_control(
 		'yith_proteo_default_sidebar',
 		array(
-			'type'        => 'select',
-			'label'       => esc_html__( 'Choose the default sidebar', 'yith-proteo' ),
-			'section'     => 'yith_proteo_sidebar_management',
-			'description' => esc_html__( 'Select the sidebar to display. It will be used for archive pages too.', 'yith-proteo' ),
-			'choices'     => wp_list_pluck( $GLOBALS['wp_registered_sidebars'], 'name' ),
+			'type'            => 'select',
+			'label'           => esc_html__( 'Choose the default sidebar for posts and pages', 'yith-proteo' ),
+			'section'         => 'yith_proteo_sidebar_management',
+			'description'     => esc_html__( 'Select the sidebar to display. It will be used for archive pages too.', 'yith-proteo' ),
+			'choices'         => wp_list_pluck( $GLOBALS['wp_registered_sidebars'], 'name' ),
+			'active_callback' => 'yith_proteo_default_sidebar_is_enabled',
 		)
 	);
 
@@ -121,11 +122,12 @@
 	$wp_customize->add_control(
 		'yith_proteo_blog_sidebar',
 		array(
-			'type'        => 'select',
-			'label'       => esc_html__( 'Choose the blog sidebar', 'yith-proteo' ),
-			'section'     => 'yith_proteo_sidebar_management',
-			'description' => esc_html__( 'Select the sidebar to display. You can pick a specific sidebar from the single post edit page.', 'yith-proteo' ),
-			'choices'     => wp_list_pluck( $GLOBALS['wp_registered_sidebars'], 'name' ),
+			'type'            => 'select',
+			'label'           => esc_html__( 'Choose the blog sidebar', 'yith-proteo' ),
+			'section'         => 'yith_proteo_sidebar_management',
+			'description'     => esc_html__( 'Select the sidebar to display. You can pick a specific sidebar from the single post edit page.', 'yith-proteo' ),
+			'choices'         => wp_list_pluck( $GLOBALS['wp_registered_sidebars'], 'name' ),
+			'active_callback' => 'yith_proteo_blog_page_sidebar_is_enabled',
 		)
 	);
 
@@ -177,11 +179,12 @@
 	$wp_customize->add_control(
 		'yith_proteo_blog_category_sidebar',
 		array(
-			'type'        => 'select',
-			'label'       => esc_html__( 'Choose blog category pages sidebar', 'yith-proteo' ),
-			'section'     => 'yith_proteo_sidebar_management',
-			'description' => esc_html__( 'Select the sidebar to display.', 'yith-proteo' ),
-			'choices'     => wp_list_pluck( $GLOBALS['wp_registered_sidebars'], 'name' ),
+			'type'            => 'select',
+			'label'           => esc_html__( 'Choose blog category pages sidebar', 'yith-proteo' ),
+			'section'         => 'yith_proteo_sidebar_management',
+			'description'     => esc_html__( 'Select the sidebar to display.', 'yith-proteo' ),
+			'choices'         => wp_list_pluck( $GLOBALS['wp_registered_sidebars'], 'name' ),
+			'active_callback' => 'yith_proteo_blog_category_sidebar_is_enabled',
 		)
 	);
 
@@ -233,10 +236,11 @@
 	$wp_customize->add_control(
 		'yith_proteo_blog_tag_sidebar',
 		array(
-			'type'        => 'select',
-			'label'       => esc_html__( 'Choose blog tag pages sidebar', 'yith-proteo' ),
-			'section'     => 'yith_proteo_sidebar_management',
-			'description' => esc_html__( 'Select the sidebar to display.', 'yith-proteo' ),
-			'choices'     => wp_list_pluck( $GLOBALS['wp_registered_sidebars'], 'name' ),
+			'type'            => 'select',
+			'label'           => esc_html__( 'Choose blog tag pages sidebar', 'yith-proteo' ),
+			'section'         => 'yith_proteo_sidebar_management',
+			'description'     => esc_html__( 'Select the sidebar to display.', 'yith-proteo' ),
+			'choices'         => wp_list_pluck( $GLOBALS['wp_registered_sidebars'], 'name' ),
+			'active_callback' => 'yith_proteo_blog_tag_sidebar_is_enabled',
 		)
 	);

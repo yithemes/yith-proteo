@@ -474,6 +474,94 @@ if ( ! function_exists( 'yith_proteo_sticky_header_is_enabled' ) ) {
 	}
 }
 
+if ( ! function_exists( 'yith_proteo_default_sidebar_is_enabled' ) ) {
+	/**
+	 * Callback function to check if default sidebar is enabled
+	 *
+	 * @return bool
+	 */
+	function yith_proteo_default_sidebar_is_enabled() {
+		return 'no-sidebar' !== get_theme_mod( 'yith_proteo_default_sidebar_position', 'right' );
+	}
+}
+
+if ( ! function_exists( 'yith_proteo_blog_page_sidebar_is_enabled' ) ) {
+	/**
+	 * Callback function to check if blog sidebar is enabled
+	 *
+	 * @return bool
+	 */
+	function yith_proteo_blog_page_sidebar_is_enabled() {
+		return 'no-sidebar' !== get_theme_mod( 'yith_proteo_blog_page_sidebar_position', 'right' );
+	}
+}
+
+if ( ! function_exists( 'yith_proteo_blog_category_sidebar_is_enabled' ) ) {
+	/**
+	 * Callback function to check if blog category page sidebar is enabled
+	 *
+	 * @return bool
+	 */
+	function yith_proteo_blog_category_sidebar_is_enabled() {
+		return 'no-sidebar' !== get_theme_mod( 'yith_proteo_blog_category_sidebar_position', 'right' );
+	}
+}
+
+if ( ! function_exists( 'yith_proteo_blog_tag_sidebar_is_enabled' ) ) {
+	/**
+	 * Callback function to check if blog tag page sidebar is enabled
+	 *
+	 * @return bool
+	 */
+	function yith_proteo_blog_tag_sidebar_is_enabled() {
+		return 'no-sidebar' !== get_theme_mod( 'yith_proteo_blog_tag_sidebar_position', 'right' );
+	}
+}
+
+if ( ! function_exists( 'yith_proteo_product_page_sidebar_is_enabled' ) ) {
+	/**
+	 * Callback function to check if product page sidebar is enabled
+	 *
+	 * @return bool
+	 */
+	function yith_proteo_product_page_sidebar_is_enabled() {
+		return 'no-sidebar' !== get_theme_mod( 'yith_proteo_product_page_sidebar_position', 'no-sidebar' );
+	}
+}
+
+if ( ! function_exists( 'yith_proteo_product_category_page_sidebar_is_enabled' ) ) {
+	/**
+	 * Callback function to check if product category page sidebar is enabled
+	 *
+	 * @return bool
+	 */
+	function yith_proteo_product_category_page_sidebar_is_enabled() {
+		return 'no-sidebar' !== get_theme_mod( 'yith_proteo_product_category_page_sidebar_position', 'no-sidebar' );
+	}
+}
+
+if ( ! function_exists( 'yith_proteo_product_tag_page_sidebar_is_enabled' ) ) {
+	/**
+	 * Callback function to check if product tag page sidebar is enabled
+	 *
+	 * @return bool
+	 */
+	function yith_proteo_product_tag_page_sidebar_is_enabled() {
+		return 'no-sidebar' !== get_theme_mod( 'yith_proteo_product_tag_page_sidebar_position', 'no-sidebar' );
+	}
+}
+
+if ( ! function_exists( 'yith_proteo_product_tax_page_sidebar_is_enabled' ) ) {
+	/**
+	 * Callback function to check if product tax page sidebar is enabled
+	 *
+	 * @return bool
+	 */
+	function yith_proteo_product_tax_page_sidebar_is_enabled() {
+		return 'no-sidebar' !== get_theme_mod( 'yith_proteo_product_tax_page_sidebar_position', 'no-sidebar' );
+	}
+}
+
 /**
  * Add YITH Customizer CSS
  */

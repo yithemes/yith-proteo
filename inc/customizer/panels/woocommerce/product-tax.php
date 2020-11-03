@@ -64,10 +64,11 @@
 	$wp_customize->add_control(
 		'yith_proteo_product_tax_page_sidebar',
 		array(
-			'type'        => 'select',
-			'label'       => esc_html__( 'Choose the product taxonomy page sidebar', 'yith-proteo' ),
-			'section'     => 'yith_proteo_product_tax_page_management',
-			'description' => esc_html__( 'Select the sidebar to display.', 'yith-proteo' ),
-			'choices'     => wp_list_pluck( $GLOBALS['wp_registered_sidebars'], 'name' ),
+			'type'            => 'select',
+			'label'           => esc_html__( 'Choose the product taxonomy page sidebar', 'yith-proteo' ),
+			'section'         => 'yith_proteo_product_tax_page_management',
+			'description'     => esc_html__( 'Select the sidebar to display.', 'yith-proteo' ),
+			'choices'         => wp_list_pluck( $GLOBALS['wp_registered_sidebars'], 'name' ),
+			'active_callback' => 'yith_proteo_product_tax_page_sidebar_is_enabled',
 		)
 	);
