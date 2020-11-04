@@ -258,7 +258,7 @@ body .select2-container--default .select2-selection--single .select2-selection__
 	position: relative;
 	margin-left: -12px;
 	margin-right: -12px;
-	margin-top: -12px;
+	margin-top: -14px;
 	width: calc(100% + 24px);
 	color: var(--yith-proteo-customizer-main-color);
 	background: #f3f3f5;
@@ -266,12 +266,12 @@ body .select2-container--default .select2-selection--single .select2-selection__
 	transition: .15s color ease-in-out,.15s background-color ease-in-out,.15s border-color ease-in-out;
 	padding: 8px 10px 7px 14px;
 	line-height: 1.55;
-	background: #fff;
+	background: #f3f3f5;
 	font-size: 14px;
 	border-left: 4px solid #fff;
 }
 #customize-controls .customize-control[id*="group_title"].section-closed {
-	background-color: #ffffff;
+	background-color: #f3f3f5;
 	color: #555d66;
 }
 #customize-controls .customize-control[id*="group_title"]:hover {

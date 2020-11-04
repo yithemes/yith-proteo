@@ -16,6 +16,26 @@
 		)
 	);
 
+	// Default Sidebar Group options.
+	$wp_customize->add_setting(
+		'yith_proteo_default_sidebar_group_title',
+		array(
+			'default'           => '',
+			'transport'         => 'postMessage',
+			'sanitize_callback' => 'wp_kses_post',
+		)
+	);
+	$wp_customize->add_control(
+		new WP_Customize_Notice(
+			$wp_customize,
+			'yith_proteo_default_sidebar_group_title',
+			array(
+				'label'   => esc_html__( 'Posts and pages sidebar', 'yith-proteo' ),
+				'section' => 'yith_proteo_sidebar_management',
+			)
+		)
+	);
+
 	// Default Sidebar Management options.
 	if ( class_exists( 'Customizer_Control_Radio_Image' ) ) {
 		$wp_customize->add_setting(
@@ -71,6 +91,26 @@
 			'description'     => esc_html__( 'Select the sidebar to display. It will be used for archive pages too.', 'yith-proteo' ),
 			'choices'         => wp_list_pluck( $GLOBALS['wp_registered_sidebars'], 'name' ),
 			'active_callback' => 'yith_proteo_default_sidebar_is_enabled',
+		)
+	);
+
+	// Blog page Sidebar Group options.
+	$wp_customize->add_setting(
+		'yith_proteo_blog_page_sidebar_group_title',
+		array(
+			'default'           => '',
+			'transport'         => 'postMessage',
+			'sanitize_callback' => 'wp_kses_post',
+		)
+	);
+	$wp_customize->add_control(
+		new WP_Customize_Notice(
+			$wp_customize,
+			'yith_proteo_blog_page_sidebar_group_title',
+			array(
+				'label'   => esc_html__( 'Blog page sidebar', 'yith-proteo' ),
+				'section' => 'yith_proteo_sidebar_management',
+			)
 		)
 	);
 
@@ -131,6 +171,26 @@
 		)
 	);
 
+	// Blog Category Sidebar Group options.
+	$wp_customize->add_setting(
+		'yith_proteo_blog_category_sidebar_group_title',
+		array(
+			'default'           => '',
+			'transport'         => 'postMessage',
+			'sanitize_callback' => 'wp_kses_post',
+		)
+	);
+	$wp_customize->add_control(
+		new WP_Customize_Notice(
+			$wp_customize,
+			'yith_proteo_blog_category_sidebar_group_title',
+			array(
+				'label'   => esc_html__( 'Blog categories sidebar', 'yith-proteo' ),
+				'section' => 'yith_proteo_sidebar_management',
+			)
+		)
+	);
+
 	// Blog Category Sidebar Management options.
 	if ( class_exists( 'Customizer_Control_Radio_Image' ) ) {
 		$wp_customize->add_setting(
@@ -185,6 +245,26 @@
 			'description'     => esc_html__( 'Select the sidebar to display.', 'yith-proteo' ),
 			'choices'         => wp_list_pluck( $GLOBALS['wp_registered_sidebars'], 'name' ),
 			'active_callback' => 'yith_proteo_blog_category_sidebar_is_enabled',
+		)
+	);
+
+	// Blog Tag Sidebar Group options.
+	$wp_customize->add_setting(
+		'yith_proteo_blog_tag_sidebar_group_title',
+		array(
+			'default'           => '',
+			'transport'         => 'postMessage',
+			'sanitize_callback' => 'wp_kses_post',
+		)
+	);
+	$wp_customize->add_control(
+		new WP_Customize_Notice(
+			$wp_customize,
+			'yith_proteo_blog_tag_sidebar_group_title',
+			array(
+				'label'   => esc_html__( 'Blog tags sidebar', 'yith-proteo' ),
+				'section' => 'yith_proteo_sidebar_management',
+			)
 		)
 	);
 
