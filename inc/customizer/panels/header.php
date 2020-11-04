@@ -37,27 +37,40 @@
 	);
 
 	// Header Layout options.
-	$wp_customize->add_setting(
-		'yith_proteo_header_layout',
-		array(
-			'default'           => 'left_logo_navigation_inline',
-			'sanitize_callback' => 'yith_proteo_sanitize_select',
-		)
-	);
-	$wp_customize->add_control(
-		'yith_proteo_header_layout',
-		array(
-			'type'        => 'select',
-			'label'       => esc_html__( 'Header layout', 'yith-proteo' ),
-			'section'     => 'yith_proteo_header_management',
-			'description' => esc_html__( 'Choose the header layout', 'yith-proteo' ),
-			'choices'     => array(
-				'left_logo_navigation_below'   => esc_html__( 'Logo on the left and navigation below', 'yith-proteo' ),
-				'left_logo_navigation_inline'  => esc_html__( 'Logo on the left and navigation inline', 'yith-proteo' ),
-				'center_logo_navigation_below' => esc_html__( 'Centered logo and navigation below', 'yith-proteo' ),
-			),
-		)
-	);
+	if ( class_exists( 'Customizer_Control_Radio_Image' ) ) {
+		$wp_customize->add_setting(
+			'yith_proteo_header_layout',
+			array(
+				'default'           => 'left_logo_navigation_inline',
+				'sanitize_callback' => 'yith_proteo_sanitize_radio',
+			)
+		);
+
+		$wp_customize->add_control(
+			new Customizer_Control_Radio_Image(
+				$wp_customize,
+				'yith_proteo_header_layout',
+				array(
+					'label'   => esc_html__( 'Header layout', 'yith-proteo' ),
+					'section' => 'yith_proteo_header_management',
+					'choices' => array(
+						'left_logo_navigation_below'   => array(
+							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/left-logo.svg',
+							'label' => esc_html__( 'Logo on the left and navigation below', 'yith-proteo' ),
+						),
+						'left_logo_navigation_inline' => array(
+							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/left-logo-inline.svg',
+							'label' => esc_html__( 'Logo on the left and navigation inline', 'yith-proteo' ),
+						),
+						'center_logo_navigation_below'  => array(
+							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/center-logo.svg',
+							'label' => esc_html__( 'Centered logo and navigation below', 'yith-proteo' ),
+						),
+					),
+				)
+			)
+		);
+	}
 
 	// Header fullwidth.
 	if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
