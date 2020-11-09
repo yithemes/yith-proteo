@@ -56,7 +56,7 @@
 				$wp_customize,
 				'yith_proteo_use_enanched_selects',
 				array(
-					'label'   => esc_html__( 'Use enanched select elements', 'yith-proteo' ),
+					'label'   => esc_html__( 'Use enhanced select elements', 'yith-proteo' ),
 					'section' => 'yith_proteo_forms',
 				)
 			)
