@@ -11,7 +11,7 @@
 $wp_customize->add_panel(
 	'yith_proteo_mobile_options',
 	array(
-		'title'    => esc_html__( 'Mobile options', 'yith-proteo' ),
+		'title'    => esc_html__( 'Mobile & Responsive', 'yith-proteo' ),
 		'priority' => 75,
 	)
 );

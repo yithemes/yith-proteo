@@ -134,6 +134,8 @@ function yith_proteo_customize_shop_register( $wp_customize ) {
 
 	include_once get_template_directory() . '/inc/customizer/panels/woocommerce/messages.php'; // phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
 
+	include_once get_template_directory() . '/inc/customizer/panels/woocommerce/shop-page.php'; // phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
+
 	include_once get_template_directory() . '/inc/customizer/panels/woocommerce/single-product.php'; // phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
 
 	include_once get_template_directory() . '/inc/customizer/panels/woocommerce/product-category.php'; // phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
@@ -526,6 +528,17 @@ if ( ! function_exists( 'yith_proteo_product_page_sidebar_is_enabled' ) ) {
 	 */
 	function yith_proteo_product_page_sidebar_is_enabled() {
 		return 'no-sidebar' !== get_theme_mod( 'yith_proteo_product_page_sidebar_position', 'no-sidebar' );
+	}
+}
+
+if ( ! function_exists( 'yith_proteo_shop_page_sidebar_is_enabled' ) ) {
+	/**
+	 * Callback function to check if shop page sidebar is enabled
+	 *
+	 * @return bool
+	 */
+	function yith_proteo_shop_page_sidebar_is_enabled() {
+		return 'no-sidebar' !== get_theme_mod( 'yith_proteo_shop_page_sidebar_position', 'no-sidebar' );
 	}
 }
 

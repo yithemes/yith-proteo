@@ -387,3 +387,32 @@ function yith_proteo_header_slider_save( $post_id ) {
 }
 
 add_action( 'save_post', 'yith_proteo_header_slider_save' );
+
+
+/**
+ * Remove metabox from blog page and shop page
+ *
+ * @return void
+ */
+function yith_proteo_remove_page_meta_boxes() {
+	// Array of pages when sidebars should not appear.
+	$no_sidebar_pages = array(
+		get_option( 'page_for_posts' ),
+		get_option( 'woocommerce_shop_page_id' ),
+	);
+
+	if ( isset( $_GET['post'] ) && in_array( $_GET['post'], $no_sidebar_pages, true ) ) { // phpcs:ignore WordPress.Security.NonceVerification.Recommended
+		remove_meta_box(
+			'sidebar_position',
+			array( 'post', 'page', 'product' ),
+			'side'
+		);
+		remove_meta_box(
+			'sidebar_chooser',
+			array( 'post', 'page', 'product' ),
+			'side'
+		);
+	}
+}
+
+add_action( 'add_meta_boxes', 'yith_proteo_remove_page_meta_boxes' );

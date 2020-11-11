@@ -58,11 +58,11 @@
 							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/left-logo.svg',
 							'label' => esc_html__( 'Logo on the left and navigation below', 'yith-proteo' ),
 						),
-						'left_logo_navigation_inline' => array(
+						'left_logo_navigation_inline'  => array(
 							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/left-logo-inline.svg',
 							'label' => esc_html__( 'Logo on the left and navigation inline', 'yith-proteo' ),
 						),
-						'center_logo_navigation_below'  => array(
+						'center_logo_navigation_below' => array(
 							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/center-logo.svg',
 							'label' => esc_html__( 'Centered logo and navigation below', 'yith-proteo' ),
 						),
