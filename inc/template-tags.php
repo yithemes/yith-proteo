@@ -76,6 +76,9 @@ endif;
 if ( ! function_exists( 'yith_proteo_post_thumbnail' ) ) :
 	/**
 	 * Displays an optional post thumbnail.
+	 *
+	 * @param mixed $size image size requested.
+	 * @return void
 	 */
 	function yith_proteo_post_thumbnail( $size = null ) {
 		if ( post_password_required() || is_attachment() || ! has_post_thumbnail() ) {

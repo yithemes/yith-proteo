@@ -39,7 +39,7 @@ class YITH_Proteo_Account_Widget extends WP_Widget {
 			$url = ! is_user_logged_in() ? $instance['login-url'] : get_admin_url();
 		}
 
-		// Let's filter widget link url
+		// Let's filter widget link url.
 		$url = apply_filters( 'yith_proteo_account_widget_url', $url, $instance );
 
 		$icon = $instance['custom-icon'];

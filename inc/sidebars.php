@@ -5,7 +5,6 @@
  * @package yith-proteo
  */
 
-
 if ( ! function_exists( 'yith_proteo_widgets_init' ) ) :
 	/**
 	 * Register widget area.
