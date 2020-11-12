@@ -118,7 +118,7 @@ $wp_customize->add_setting(
 		'type'              => 'option',
 		'capability'        => 'manage_options',
 		'priority'          => 100,
-		'sanitize_callback' => 'wp_filter_nohtml_kses',
+		'sanitize_callback' => 'sanitize_text_field',
 	)
 );
 
