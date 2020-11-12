@@ -78,12 +78,6 @@ YITH CUSTOMIZER STYLE
 	padding-bottom: 1.3rem;
 }
 
-/* Separator between buttons style */
-#customize-control-yith_proteo_button_style_2_bg_color_1 {
-	padding-top: 10px;
-	border-top: 1px solid #ddd;
-}
-
 /* Control description */
 span.description.customize-control-description:not(.customizer-control-description-expanded) {
 	font-size: 0;
@@ -210,7 +204,7 @@ span.description.customize-control-description:before {
 /* Fix Select2 */
 body .select2-container {
 	z-index: 99999999;
-	max-width: 100%;
+	width: 100% !important;
 	margin-bottom: 10px;
 }
 body .customize-control-select .select2-container {
