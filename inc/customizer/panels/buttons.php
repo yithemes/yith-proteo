@@ -17,6 +17,26 @@
 		)
 	);
 
+	// Buttons general options group title.
+	$wp_customize->add_setting(
+		'yith_proteo_buttons_general_options_group_title',
+		array(
+			'default'           => '',
+			'transport'         => 'postMessage',
+			'sanitize_callback' => 'wp_kses_post',
+		)
+	);
+	$wp_customize->add_control(
+		new WP_Customize_Notice(
+			$wp_customize,
+			'yith_proteo_buttons_general_options_group_title',
+			array(
+				'label'   => esc_html__( 'General options', 'yith-proteo' ),
+				'section' => 'yith_proteo_buttons',
+			)
+		)
+	);
+
 	// Buttons border radius.
 	$wp_customize->add_setting(
 		'yith_proteo_buttons_border_radius',
@@ -41,6 +61,26 @@
 		)
 	);
 
+	// Buttons style 1 options group title.
+	$wp_customize->add_setting(
+		'yith_proteo_button_style_1_group_title',
+		array(
+			'default'           => '',
+			'transport'         => 'postMessage',
+			'sanitize_callback' => 'wp_kses_post',
+		)
+	);
+	$wp_customize->add_control(
+		new WP_Customize_Notice(
+			$wp_customize,
+			'yith_proteo_button_style_1_group_title',
+			array(
+				'label'   => esc_html__( 'Button style 1', 'yith-proteo' ),
+				'section' => 'yith_proteo_buttons',
+			)
+		)
+	);
+
 	// Button Style 1.
 	$wp_customize->add_setting(
 		'yith_proteo_button_style_1_bg_color',
@@ -54,7 +94,7 @@
 			$wp_customize,
 			'yith_proteo_button_style_1_bg_color',
 			array(
-				'label'   => esc_html__( 'Button Style 1 background color', 'yith-proteo' ),
+				'label'   => esc_html__( 'Background color', 'yith-proteo' ),
 				'section' => 'yith_proteo_buttons',
 			)
 		)
@@ -72,7 +112,7 @@
 			$wp_customize,
 			'yith_proteo_button_style_1_border_color',
 			array(
-				'label'   => esc_html__( 'Button Style 1 border color', 'yith-proteo' ),
+				'label'   => esc_html__( 'Border color', 'yith-proteo' ),
 				'section' => 'yith_proteo_buttons',
 			)
 		)
@@ -90,7 +130,7 @@
 			$wp_customize,
 			'yith_proteo_button_style_1_text_color',
 			array(
-				'label'   => esc_html__( 'Button Style 1 text color', 'yith-proteo' ),
+				'label'   => esc_html__( 'Text color', 'yith-proteo' ),
 				'section' => 'yith_proteo_buttons',
 			)
 		)
@@ -108,7 +148,7 @@
 			$wp_customize,
 			'yith_proteo_button_style_1_bg_color_hover',
 			array(
-				'label'   => esc_html__( 'Button Style 1 background :hover color', 'yith-proteo' ),
+				'label'   => esc_html__( 'Background :hover color', 'yith-proteo' ),
 				'section' => 'yith_proteo_buttons',
 			)
 		)
@@ -126,7 +166,7 @@
 			$wp_customize,
 			'yith_proteo_button_style_1_border_color_hover',
 			array(
-				'label'   => esc_html__( 'Button Style 1 border :hover color', 'yith-proteo' ),
+				'label'   => esc_html__( 'Border :hover color', 'yith-proteo' ),
 				'section' => 'yith_proteo_buttons',
 			)
 		)
@@ -144,7 +184,27 @@
 			$wp_customize,
 			'yith_proteo_button_style_1_text_color_hover',
 			array(
-				'label'   => esc_html__( 'Button Style 1 text :hover color', 'yith-proteo' ),
+				'label'   => esc_html__( 'Text :hover color', 'yith-proteo' ),
+				'section' => 'yith_proteo_buttons',
+			)
+		)
+	);
+
+	// Buttons style 2 options group title.
+	$wp_customize->add_setting(
+		'yith_proteo_button_style_2_group_title',
+		array(
+			'default'           => '',
+			'transport'         => 'postMessage',
+			'sanitize_callback' => 'wp_kses_post',
+		)
+	);
+	$wp_customize->add_control(
+		new WP_Customize_Notice(
+			$wp_customize,
+			'yith_proteo_button_style_2_group_title',
+			array(
+				'label'   => esc_html__( 'Button style 2', 'yith-proteo' ),
 				'section' => 'yith_proteo_buttons',
 			)
 		)
@@ -163,7 +223,7 @@
 			$wp_customize,
 			'yith_proteo_button_style_2_bg_color_1',
 			array(
-				'label'   => esc_html__( 'Button Style 2 background color shade 1', 'yith-proteo' ),
+				'label'   => esc_html__( 'Background color shade 1', 'yith-proteo' ),
 				'section' => 'yith_proteo_buttons',
 			)
 		)
@@ -181,7 +241,7 @@
 			$wp_customize,
 			'yith_proteo_button_style_2_bg_color_2',
 			array(
-				'label'   => esc_html__( 'Button Style 2 background color shade 2', 'yith-proteo' ),
+				'label'   => esc_html__( 'Background color shade 2', 'yith-proteo' ),
 				'section' => 'yith_proteo_buttons',
 			)
 		)
@@ -199,7 +259,7 @@
 			$wp_customize,
 			'yith_proteo_button_style_2_text_color',
 			array(
-				'label'   => esc_html__( 'Button Style 2 text color', 'yith-proteo' ),
+				'label'   => esc_html__( 'Text color', 'yith-proteo' ),
 				'section' => 'yith_proteo_buttons',
 			)
 		)
@@ -217,7 +277,7 @@
 			$wp_customize,
 			'yith_proteo_button_style_2_bg_color_hover',
 			array(
-				'label'   => esc_html__( 'Button Style 2 background :hover color', 'yith-proteo' ),
+				'label'   => esc_html__( 'Background :hover color', 'yith-proteo' ),
 				'section' => 'yith_proteo_buttons',
 			)
 		)
@@ -235,7 +295,7 @@
 			$wp_customize,
 			'yith_proteo_button_style_2_text_color_hover',
 			array(
-				'label'   => esc_html__( 'Button Style 2 text :hover color', 'yith-proteo' ),
+				'label'   => esc_html__( 'Text :hover color', 'yith-proteo' ),
 				'section' => 'yith_proteo_buttons',
 			)
 		)
