@@ -19,10 +19,12 @@ $wp_customize->add_section(
 
 // Shop page Sidebar Management options.
 if ( class_exists( 'Customizer_Control_Radio_Image' ) ) {
+	$shop_page_sidebar_position_meta    = get_post_meta( get_option( 'woocommerce_shop_page_id' ), 'sidebar_position', true );
+	$default_shop_page_sidebar_position = in_array( $shop_page_sidebar_position_meta, array( '', 'inherit' ), true ) ? $shop_page_sidebar_position_meta : get_theme_mod( 'yith_proteo_default_sidebar_position', 'right' );
 	$wp_customize->add_setting(
 		'yith_proteo_shop_page_sidebar_position',
 		array(
-			'default'           => '' !== ( get_post_meta( get_option( 'woocommerce_shop_page_id' ), 'sidebar_position', true ) ) ? get_post_meta( get_option( 'woocommerce_shop_page_id' ), 'sidebar_position', true ) : 'no-sidebar',
+			'default'           => $default_shop_page_sidebar_position,
 			'sanitize_callback' => 'yith_proteo_sanitize_sidebar_position',
 		)
 	);
@@ -54,10 +56,13 @@ if ( class_exists( 'Customizer_Control_Radio_Image' ) ) {
 }
 
 // Shop page default Sidebar Chooser.
+$shop_page_sidebar_chooser_meta    = get_post_meta( get_option( 'woocommerce_shop_page_id' ), 'sidebar_chooser', true );
+$default_shop_page_sidebar_chooser = in_array( $shop_page_sidebar_chooser_meta, array( '', 'inherit' ), true ) ? $shop_page_sidebar_chooser_meta : get_theme_mod( 'yith_proteo_default_sidebar', 'sidebar-1' );
+
 $wp_customize->add_setting(
 	'yith_proteo_shop_page_default_sidebar',
 	array(
-		'default'           => '' !== ( get_post_meta( get_option( 'woocommerce_shop_page_id' ), 'sidebar_chooser', true ) ) ? get_post_meta( get_option( 'woocommerce_shop_page_id' ), 'sidebar_chooser', true ) : 'shop-sidebar',
+		'default'           => $default_shop_page_sidebar_chooser,
 		'sanitize_callback' => 'yith_proteo_sanitize_select',
 	)
 );
