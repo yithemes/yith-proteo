@@ -1,0 +1,38 @@
+<?php
+/**
+ * Extends WP_Customize_Control class
+ *
+ * @package yith-proteo
+ */
+
+if ( class_exists( 'WP_Customize_Control' ) ) {
+	/**
+	 * Class WP_Customize_Notice
+	 */
+	class Customizer_Button_Preview extends WP_Customize_Control {
+
+		/**
+		 * Customizer control type
+		 *
+		 * @var $type Control type
+		 */
+		public $type = 'button_preview';
+
+		/**
+		 * Render controls
+		 */
+		public function render_content() {
+			$label       = ! empty( $this->label ) ? $this->label : 'button';
+			$button_type = sanitize_title( $label );
+			?>
+			<style>
+
+			</style>
+			<div class="button-preview-custom-control">
+				<span class="customize-control-title"><?php esc_html_e( 'Preview', 'yith-proteo' ); ?></span>
+				<span class="yith-proteo-button-preview <?php echo esc_attr( $button_type ); ?>"><?php echo esc_html( $this->label ); ?></span>
+			</div>
+			<?php
+		}
+	}
+}

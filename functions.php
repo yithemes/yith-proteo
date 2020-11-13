@@ -214,6 +214,7 @@ require get_template_directory() . '/inc/class-yith-proteo-walker-comment.php';
 function yith_proteo_load_customize_classes( $wp_customize ) {
 	require get_template_directory() . '/inc/customizer/custom-controls/class-wp-customize-range.php';
 	require get_template_directory() . '/inc/customizer/custom-controls/class-wp-customize-notice.php';
+	require get_template_directory() . '/inc/customizer/custom-controls/class-customizer-button-preview.php';
 	require get_template_directory() . '/inc/customizer/custom-controls/class-customizer-alpha-color-control.php';
 	require get_template_directory() . '/inc/customizer/custom-controls/class-google-font-select-custom-control.php';
 	require get_template_directory() . '/inc/customizer/custom-controls/class-customizer-control-radio-image.php';

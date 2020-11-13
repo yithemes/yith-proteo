@@ -77,7 +77,7 @@ if ( ! function_exists( 'yith_proteo_get_sidebar_position' ) ) :
 		// Check WooCommerce Shop page settings.
 		if ( class_exists( 'WooCommerce' ) ) {
 			$shop_page_sidebar_position_meta    = get_post_meta( get_option( 'woocommerce_shop_page_id' ), 'sidebar_position', true );
-			$default_shop_page_sidebar_position = in_array( $shop_page_sidebar_position_meta, array( '', 'inherit' ), true ) ? $shop_page_sidebar_position_meta : get_theme_mod( 'yith_proteo_default_sidebar_position', 'right' );	
+			$default_shop_page_sidebar_position = in_array( $shop_page_sidebar_position_meta, array( '', 'inherit' ), true ) ? $shop_page_sidebar_position_meta : get_theme_mod( 'yith_proteo_default_sidebar_position', 'right' );
 			if ( is_shop() ) {
 				$local_sidebar   = get_theme_mod( 'yith_proteo_shop_page_sidebar_position', $default_shop_page_sidebar_position );
 				$general_sidebar = $local_sidebar;

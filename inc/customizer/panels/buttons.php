@@ -83,6 +83,25 @@
 
 	// Button Style 1.
 	$wp_customize->add_setting(
+		'yith_proteo_buttons_style_1_preview',
+		array(
+			'default'           => '',
+			'transport'         => 'postMessage',
+			'sanitize_callback' => 'wp_kses_post',
+		)
+	);
+	$wp_customize->add_control(
+		new Customizer_Button_Preview(
+			$wp_customize,
+			'yith_proteo_buttons_style_1_preview',
+			array(
+				'label'   => esc_html__( 'Button style 1', 'yith-proteo' ),
+				'section' => 'yith_proteo_buttons',
+			)
+		)
+	);
+
+	$wp_customize->add_setting(
 		'yith_proteo_button_style_1_bg_color',
 		array(
 			'sanitize_callback' => 'yith_proteo_sanitize_alpha_colors',
@@ -211,6 +230,25 @@
 	);
 
 	// Button Style 2.
+	$wp_customize->add_setting(
+		'yith_proteo_buttons_style_2_preview',
+		array(
+			'default'           => '',
+			'transport'         => 'postMessage',
+			'sanitize_callback' => 'wp_kses_post',
+		)
+	);
+	$wp_customize->add_control(
+		new Customizer_Button_Preview(
+			$wp_customize,
+			'yith_proteo_buttons_style_2_preview',
+			array(
+				'label'   => esc_html__( 'Button style 2', 'yith-proteo' ),
+				'section' => 'yith_proteo_buttons',
+			)
+		)
+	);
+
 	$wp_customize->add_setting(
 		'yith_proteo_button_style_2_bg_color_1',
 		array(

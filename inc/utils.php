@@ -240,56 +240,17 @@ if ( ! function_exists( 'yith_proteo_register_required_plugins' ) ) :
 				'slug'     => 'yith-proteo-toolkit',
 				'required' => true,
 			),
-
-			array(
-				'name'        => 'YITH WooCommerce Wishlist',
-				'slug'        => 'yith-woocommerce-wishlist',
-				'required'    => false,
-				'is_callable' => 'YITH_WCWL_Premium',
-			),
-
-			array(
-				'name'        => 'YITH WooCommerce Product Slider Carousel',
-				'slug'        => 'yith-woocommerce-product-slider-carousel',
-				'required'    => false,
-				'is_callable' => 'YITH_WooCommerce_Product_Slider_Premium',
-			),
-
-			array(
-				'name'     => 'YITH Slider for page builders',
-				'slug'     => 'yith-slider-for-page-builders',
-				'required' => false,
-			),
-
-			array(
-				'name'     => 'Contact Form 7',
-				'slug'     => 'contact-form-7',
-				'required' => false,
-			),
-
-			array(
-				'name'     => 'WooCommerce',
-				'slug'     => 'woocommerce',
-				'required' => false,
-			),
-
-			array(
-				'name'     => 'EditorsKit',
-				'slug'     => 'block-options',
-				'required' => false,
-			),
-
 		);
 
 		$config = array(
 			'id'           => 'yith-proteo',           // Unique ID for hashing notices for multiple instances of TGMPA.
 			'default_path' => '',                      // Default absolute path to bundled plugins.
-			'menu'         => 'tgmpa-install-plugins', // Menu slug.
+			'menu'         => 'yith-proteo-install-required-plugins', // Menu slug.
 			'has_notices'  => true,                    // Show admin notices or not.
 			'dismissable'  => true,                    // If false, a user cannot dismiss the nag message.
 			'dismiss_msg'  => '',                      // If 'dismissable' is false, this message will be output at top of nag.
 			'is_automatic' => true,                    // Automatically activate plugins after installation or not.
-			'message'      => '',                      // Message to output right before the plugins table.
+			'message'      => '<div>' . esc_html__( 'The following modules are usefull to improve your YITH Proteo experience', 'yith-proteo' ) . '</div>',                      // Message to output right before the plugins table.
 		);
 
 		tgmpa( $plugins, $config );

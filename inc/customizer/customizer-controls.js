@@ -74,17 +74,18 @@
 			});
 		});
 
-
 		/**
-		 * Googe Font Select Custom Control
+		 * Select2 for all select controls
 		 */
-
 		$('select').each(function (i, obj) {
 			if (!$(obj).hasClass('select2-hidden-accessible')) {
 				$(obj).select2();
 			}
 		});
 
+		/**
+		 * Googe Font Select Custom Control
+		 */
 		$('.google-fonts-list').on('change', function() {
 			var elementRegularWeight = $(this).parent().parent().find('.google-fonts-regularweight-style');
 			var selectedFont = $(this).val();
@@ -377,6 +378,7 @@
 			var section_title = $( '#customize-control-yith_proteo_button_style_1_group_title' ),
 			collapsed = section_title.hasClass( 'section-closed' );
 			section_title.toggleClass('section-closed');
+			wp.customize.control('yith_proteo_buttons_style_1_preview' ).toggle( collapsed );
 			wp.customize.control('yith_proteo_button_style_1_bg_color' ).toggle( collapsed );
 			wp.customize.control('yith_proteo_button_style_1_border_color' ).toggle( collapsed );
 			wp.customize.control('yith_proteo_button_style_1_text_color' ).toggle( collapsed );
@@ -386,6 +388,7 @@
 		}
 
 		function yith_proteo_toggle_button_style_1_controls_list() {
+			wp.customize.control('yith_proteo_buttons_style_1_preview' ).toggle( false );
 			wp.customize.control('yith_proteo_button_style_1_bg_color' ).toggle( false );
 			wp.customize.control('yith_proteo_button_style_1_border_color' ).toggle( false );
 			wp.customize.control('yith_proteo_button_style_1_text_color' ).toggle( false );
@@ -403,6 +406,7 @@
 			var section_title = $( '#customize-control-yith_proteo_button_style_2_group_title' ),
 			collapsed = section_title.hasClass( 'section-closed' );
 			section_title.toggleClass('section-closed');
+			wp.customize.control('yith_proteo_buttons_style_2_preview' ).toggle( collapsed );
 			wp.customize.control('yith_proteo_button_style_2_bg_color_1' ).toggle( collapsed );
 			wp.customize.control('yith_proteo_button_style_2_bg_color_2' ).toggle( collapsed );
 			wp.customize.control('yith_proteo_button_style_2_text_color' ).toggle( collapsed );
@@ -411,6 +415,7 @@
 		}
 
 		function yith_proteo_toggle_button_style_2_controls_list() {
+			wp.customize.control('yith_proteo_buttons_style_2_preview' ).toggle( false );
 			wp.customize.control('yith_proteo_button_style_2_bg_color_1' ).toggle( false );
 			wp.customize.control('yith_proteo_button_style_2_bg_color_2' ).toggle( false );
 			wp.customize.control('yith_proteo_button_style_2_text_color' ).toggle( false );

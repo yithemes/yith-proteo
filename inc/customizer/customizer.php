@@ -583,3 +583,49 @@ function yith_proteo_customize_enqueue() {
 }
 
 add_action( 'customize_controls_enqueue_scripts', 'yith_proteo_customize_enqueue' );
+
+/**
+ * Add YITH Customizer Buttons preview CSS
+ */
+function yith_proteo_customizer_buttons_preview_style() {
+	/**
+	 * Buttons
+	 */
+	$button_1_bg_color           = get_theme_mod( 'yith_proteo_button_style_1_bg_color', get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ) );
+	$button_1_border_color       = get_theme_mod( 'yith_proteo_button_style_1_border_color', get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ) );
+	$button_1_font_color         = get_theme_mod( 'yith_proteo_button_style_1_text_color', '#ffffff' );
+	$button_1_bg_hover_color     = get_theme_mod( 'yith_proteo_button_style_1_bg_color_hover', yith_proteo_adjust_brightness( get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ), 0.2 ) );
+	$button_1_border_hover_color = get_theme_mod( 'yith_proteo_button_style_1_border_color_hover', yith_proteo_adjust_brightness( get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ), 0.2 ) );
+	$button_1_font_hover_color   = get_theme_mod( 'yith_proteo_button_style_1_text_color_hover', '#ffffff' );
+
+	$button_2_bg_color_1       = get_theme_mod( 'yith_proteo_button_style_2_bg_color_1', get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ) );
+	$button_2_bg_color_1       = yith_proteo_hex2rgba( $button_2_bg_color_1, 1 );
+	$button_2_bg_color_2       = get_theme_mod( 'yith_proteo_button_style_2_bg_color_2', yith_proteo_adjust_brightness( get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ), 0.2 ) );
+	$button_2_bg_color_2       = yith_proteo_hex2rgba( $button_2_bg_color_2, 1 );
+	$button_2_font_color       = get_theme_mod( 'yith_proteo_button_style_2_text_color', '#ffffff' );
+	$button_2_bg_hover_color   = get_theme_mod( 'yith_proteo_button_style_2_bg_color_hover', yith_proteo_adjust_brightness( get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ), - 0.3 ) );
+	$button_2_font_hover_color = get_theme_mod( 'yith_proteo_button_style_2_text_color_hover', '#ffffff' );
+
+	$buttons_border_radius = get_theme_mod( 'yith_proteo_buttons_border_radius', 50 );
+
+	$custom_css = "
+	.button-preview-custom-control {
+		--proteo-button_1_bg_color: {$button_1_bg_color};
+		--proteo-button_1_border_color: {$button_1_border_color};
+		--proteo-button_1_font_color: {$button_1_font_color};
+		--proteo-button_1_bg_hover_color: {$button_1_bg_hover_color};
+		--proteo-button_1_border_hover_color: {$button_1_border_hover_color};
+		--proteo-button_1_font_hover_color: {$button_1_font_hover_color};
+		--proteo-button_2_bg_color_1: {$button_2_bg_color_1};
+		--proteo-button_2_bg_color_2: {$button_2_bg_color_2};
+		--proteo-button_2_font_color: {$button_2_font_color};
+		--proteo-button_2_bg_hover_color: {$button_2_bg_hover_color};
+		--proteo-button_2_font_hover_color: {$button_2_font_hover_color};
+		--proteo-buttons_border_radius: {$buttons_border_radius}px;
+	}";
+	if ( ! empty( $custom_css ) ) {
+		wp_add_inline_style( 'customizer-css', $custom_css );
+	}
+}
+
+add_action( 'customize_controls_enqueue_scripts', 'yith_proteo_customizer_buttons_preview_style' );

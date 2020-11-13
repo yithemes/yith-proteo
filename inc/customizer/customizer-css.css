@@ -459,3 +459,40 @@ body .select2-container--default .select2-selection--single .select2-selection__
 	z-index: 1;
 	opacity: 1;
 }
+
+/**********
+BUTTONS
+**********/
+.yith-proteo-button-preview {
+	border: 1px solid;
+    line-height: normal;
+    padding: 0.7em 1.5em 0.8em;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    transition: all ease 0.3s;
+    font-family: inherit;
+	font-weight: 600;
+	border-radius: var(--proteo-buttons_border_radius, 50px);
+}
+.button-style-1 {
+    border-color: var(--proteo-button_1_border_color, #448a85);
+    background: var(--proteo-button_1_bg_color, #448a85);
+    background-color: var(--proteo-button_1_bg_color, #448a85);
+    color: var(--proteo-button_1_font_color, #ffffff);
+}
+.button-style-1:hover {
+    border-color: var(--proteo-button_1_border_hover_color, #4ac4aa);
+    background: var(--proteo-button_1_bg_hover_color, #1a4e43);
+    background-color: var(--proteo-button_1_bg_hover_color, #1a4e43);
+    color: var(--proteo-button_1_font_hover_color, #ffffff);
+}
+.button-style-2 {
+	background: linear-gradient(180deg, var(--proteo-button_2_bg_color_1, #00a79c) 0%, var(--proteo-button_2_bg_color_2, #01af8d) 100%);
+    color: var(--proteo-button_2_font_color, #ffffff);
+    border: none;
+}
+.button-style-2:hover {
+	color: var(--proteo-button_2_font_hover_color, #ffffff);
+    background: linear-gradient(180deg, var(--proteo-button_2_bg_hover_color, #30615e) 0%, var(--proteo-button_2_bg_hover_color, #30615e) 100%);
+}
