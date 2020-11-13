@@ -30,7 +30,7 @@ if ( function_exists( 'wc' ) && is_shop() && get_post_meta( get_option( 'woocomm
 	$sidebar = yith_proteo_sidebar_get_meta( 'sidebar_chooser' );
 	if ( class_exists( 'WooCommerce' ) ) {
 		if ( is_shop() ) {
-			$sidebar = get_theme_mod( 'yith_proteo_shop_page_default_sidebar', '' !== ( get_post_meta( get_option( 'woocommerce_shop_page_id' ), 'sidebar_chooser', true ) ) ? get_post_meta( get_option( 'woocommerce_shop_page_id' ), 'sidebar_chooser', true ) : 'shop-sidebar' );
+			$sidebar = get_theme_mod( 'yith_proteo_shop_page_default_sidebar', '' ) !== get_post_meta( get_option( 'woocommerce_shop_page_id' ), 'sidebar_chooser', true ) ? get_post_meta( get_option( 'woocommerce_shop_page_id' ), 'sidebar_chooser', true ) : 'shop-sidebar';
 		} elseif ( is_product_category() ) {
 			$sidebar = get_theme_mod( 'yith_proteo_product_category_page_sidebar', 'shop-sidebar' );
 		} elseif ( is_product_tag() ) {
