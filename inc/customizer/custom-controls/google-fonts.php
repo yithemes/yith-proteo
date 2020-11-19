@@ -123,48 +123,51 @@ function yith_proteo_read_all_font_options() {
 	return $options;
 }
 
-/**
- * Handle fonts
- */
-function yith_proteo_massive_google_font_enqueue() {
-	$options      = yith_proteo_read_all_font_options();
-	$css          = '';
-	$unique_fonts = array();
 
-	foreach ( $options as $option => $value ) {
-		$option_font_typography = get_theme_mod( $option, $value['default'] );
-		$option_font            = yith_proteo_get_font_family( $option_font_typography );
-		$option_font_weight_raw = yith_proteo_get_font_weight_raw( $option_font_typography );
-		$option_font_weight     = yith_proteo_get_font_weight( $option_font_typography );
-		$option_font_style      = yith_proteo_get_font_style( $option_font_typography );
-		$option_font_category   = yith_proteo_get_font_category( $option_font_typography );
+if ( ! function_exists( 'yith_proteo_massive_google_font_enqueue' ) ) :
+	/**
+	 * Handle fonts
+	 */
+	function yith_proteo_massive_google_font_enqueue() {
+		$options      = yith_proteo_read_all_font_options();
+		$css          = '';
+		$unique_fonts = array();
 
-		if ( ! isset( $unique_fonts[ $option_font ] ) ) {
-			$unique_fonts[ $option_font ] = array( $option_font_weight_raw );
-		} elseif ( ! in_array( $option_font_weight_raw, $unique_fonts[ $option_font ], true ) ) {
-			$unique_fonts[ $option_font ][] = $option_font_weight_raw;
+		foreach ( $options as $option => $value ) {
+			$option_font_typography = get_theme_mod( $option, $value['default'] );
+			$option_font            = yith_proteo_get_font_family( $option_font_typography );
+			$option_font_weight_raw = yith_proteo_get_font_weight_raw( $option_font_typography );
+			$option_font_weight     = yith_proteo_get_font_weight( $option_font_typography );
+			$option_font_style      = yith_proteo_get_font_style( $option_font_typography );
+			$option_font_category   = yith_proteo_get_font_category( $option_font_typography );
+
+			if ( ! isset( $unique_fonts[ $option_font ] ) ) {
+				$unique_fonts[ $option_font ] = array( $option_font_weight_raw );
+			} elseif ( ! in_array( $option_font_weight_raw, $unique_fonts[ $option_font ], true ) ) {
+				$unique_fonts[ $option_font ][] = $option_font_weight_raw;
+			}
+
+			$css .= "
+			{$value['selector']} {
+				font-family: {$option_font}, {$option_font_category};
+				font-weight: {$option_font_weight};
+				font-style: {$option_font_style};
+			}
+			";
 		}
 
-		$css .= "
-		{$value['selector']} {
-			font-family: {$option_font}, {$option_font_category};
-			font-weight: {$option_font_weight};
-			font-style: {$option_font_style};
+		// Enqueue font.
+		$url = yith_proteo_enqueue_google_fonts_unique_url( $unique_fonts ) . '&display=swap';
+
+		if ( ! empty( $url ) ) {
+			wp_enqueue_style( 'yith-proteo-custom-google-fonts', $url, array(), YITH_PROTEO_GFONT_VERSION );
 		}
-		";
-	}
 
-	// Enqueue font.
-	$url = yith_proteo_enqueue_google_fonts_unique_url( $unique_fonts ) . '&display=swap';
-
-	if ( ! empty( $url ) ) {
-		wp_enqueue_style( 'yith-proteo-custom-google-fonts', $url, array(), YITH_PROTEO_GFONT_VERSION );
+		if ( ! empty( $css ) ) {
+			wp_add_inline_style( 'yith-proteo-custom-style', $css );
+		}
 	}
-
-	if ( ! empty( $css ) ) {
-		wp_add_inline_style( 'yith-proteo-custom-style', $css );
-	}
-}
+endif;
 
 /**
  * Get the font category
