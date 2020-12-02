@@ -222,41 +222,6 @@ if ( ! function_exists( 'yith_proteo_adjust_brightness' ) ) :
 	}
 endif;
 
-add_action( 'tgmpa_register', 'yith_proteo_register_required_plugins' );
-
-if ( ! function_exists( 'yith_proteo_register_required_plugins' ) ) :
-	/**
-	 * Register the required plugins for this theme.
-	 * This function is hooked into `tgmpa_register`, which is fired on the WP `init` action on priority 10.
-	 */
-	function yith_proteo_register_required_plugins() {
-		/*
-		* Array of plugin arrays. Required keys are name and slug.
-		* If the source is NOT from the .org repo, then source is also required.
-		*/
-		$plugins = array(
-			array(
-				'name'     => 'YITH Proteo Toolkit',
-				'slug'     => 'yith-proteo-toolkit',
-				'required' => true,
-			),
-		);
-
-		$config = array(
-			'id'           => 'yith-proteo',           // Unique ID for hashing notices for multiple instances of TGMPA.
-			'default_path' => '',                      // Default absolute path to bundled plugins.
-			'menu'         => 'yith-proteo-install-required-plugins', // Menu slug.
-			'has_notices'  => true,                    // Show admin notices or not.
-			'dismissable'  => true,                    // If false, a user cannot dismiss the nag message.
-			'dismiss_msg'  => '',                      // If 'dismissable' is false, this message will be output at top of nag.
-			'is_automatic' => true,                    // Automatically activate plugins after installation or not.
-			'message'      => '<div>' . esc_html__( 'The following modules are usefull to improve your YITH Proteo experience', 'yith-proteo' ) . '</div>',                      // Message to output right before the plugins table.
-		);
-
-		tgmpa( $plugins, $config );
-	}
-endif;
-
 if ( ! function_exists( 'yith_proteo_get_user_username' ) ) {
 	/**
 	 * Get current user display name
