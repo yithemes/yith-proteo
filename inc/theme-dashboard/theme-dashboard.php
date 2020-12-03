@@ -70,12 +70,8 @@ $is_proteo_toolkit_active    = defined( 'YITH_PROTEO_TOOLKIT' );
 	font-size: 10px;
 	border-radius: 5px;
 	padding: 1px 5px;
-	vertical-align: super;
 	margin-left: 5px;
-}
-#header .tagline {
-	font-weight: 600;
-	font-size: 11px;
+	position: absolute;
 }
 .two-cols-set {
 	display: -ms-flexbox;
@@ -294,6 +290,14 @@ $is_proteo_toolkit_active    = defined( 'YITH_PROTEO_TOOLKIT' );
 	z-index: 0;
 	top: -4px;
 }
+#useful-link-list li {
+	margin-bottom: 10px;
+}
+#useful-link-list li img {
+	display: inline-block;
+	margin-right: 5px;
+	vertical-align: text-bottom;
+}
 .plugin-status-actions:not(.yith-proteo-installed-recommended-plugin) {
 	cursor: pointer;
 }
@@ -310,13 +314,27 @@ $is_proteo_toolkit_active    = defined( 'YITH_PROTEO_TOOLKIT' );
 	0% { transform: rotate(0deg); }
 	100% { transform: rotate(360deg); }
 }
+
+@media (max-width: 960px) {
+	#main-content, #aside {
+		flex: 0 0 100%;
+		max-width: 100%;
+		margin-bottom: 30px;
+	}
+}
+@media (max-width: 600px) {
+	.three-cols-set .col {
+		-ms-flex: 0 0 50%;
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+}
 </style>
 <div id="yith-proteo-dashboard-panel">
 	<div class="wrapper">
 		<div id="header">
 			<div class="content">
-				<h1>Proteo<span class="theme-version-badge"><?php echo esc_html( YITH_PROTEO_VERSION ); ?></span></h1>
-				<div class="tagline"><?php esc_html_e( 'A Free WooCommerce Theme made by YITH', 'yith-proteo' ); ?></div>
+				<h1><img src="<?php echo esc_url( get_template_directory_uri() ) . '/img/proteo-logo.png'; ?>"><span class="theme-version-badge"><?php echo esc_html( YITH_PROTEO_VERSION ); ?></span></h1>
 			</div>
 		</div><!-- #header close -->
 		<div class="two-cols-set">
@@ -393,10 +411,11 @@ $is_proteo_toolkit_active    = defined( 'YITH_PROTEO_TOOLKIT' );
 					</ul>
 				</div>
 				<div class="content">
-					<h3><?php esc_html_e( 'Documentation & Help', 'yith-proteo' ); ?></h3>
-					<ul class="useful-link-list">
-						<li><span class="dashicons dashicons-media-text"></span> <?php echo sprintf( '%1s <a href="https://docs.yithemes.com/yith-proteo/" target="_blank" rel="noopener nofollow">%2s ></a>', esc_html__( 'Read the', 'yith-proteo' ), esc_html__( 'theme documentation', 'yith-proteo' ) ); ?></li>
-						<li><span class="dashicons dashicons-networking"></span> <?php echo sprintf( '%1s <a href="https://wordpress.org/support/theme/yith-proteo/" target="_blank" rel="noopener nofollow">%2s ></a>', esc_html__( 'Ask help in the', 'yith-proteo' ), esc_html__( 'support forum', 'yith-proteo' ) ); ?></li>
+					<h3><?php esc_html_e( 'How to start', 'yith-proteo' ); ?></h3>
+					<ul id="useful-link-list">
+						<li><img src="<?php echo esc_url( get_template_directory_uri() . '/img/theme-documentation-icon.svg' ); ?>" alt="<?php esc_html_e( 'Read theme documentation', 'yith-proteo' ); ?>"><?php echo sprintf( '%1s <a href="https://docs.yithemes.com/yith-proteo/" target="_blank" rel="noopener nofollow">%2s ></a>', esc_html__( 'Read the', 'yith-proteo' ), esc_html__( 'theme documentation', 'yith-proteo' ) ); ?></li>
+						<li><img src="<?php echo esc_url( get_template_directory_uri() . '/img/ask-help-icon.svg' ); ?>" alt="<?php esc_html_e( 'Visit theme forum', 'yith-proteo' ); ?>"><?php echo sprintf( '%1s <a href="https://wordpress.org/support/theme/yith-proteo/" target="_blank" rel="noopener nofollow">%2s ></a>', esc_html__( 'Ask help in the', 'yith-proteo' ), esc_html__( 'support forum', 'yith-proteo' ) ); ?></li>
+						<li><img src="<?php echo esc_url( get_template_directory_uri() . '/img/start-customize-icon.svg' ); ?>" alt="<?php esc_html_e( 'Use theme customizer', 'yith-proteo' ); ?>"><?php echo sprintf( '%1s <a href="https://wordpress.org/support/theme/yith-proteo/" target="_blank" rel="noopener nofollow">%2s ></a>', esc_html__( 'Start to customize with the', 'yith-proteo' ), esc_html__( 'live customizer', 'yith-proteo' ) ); ?></li>
 					</ul>
 				</div>
 			</div><!-- #aside close -->
