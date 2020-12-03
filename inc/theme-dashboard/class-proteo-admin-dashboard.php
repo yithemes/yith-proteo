@@ -137,7 +137,7 @@ if ( ! class_exists( 'Proteo_Admin_Dashboard' ) ) {
 					return;
 				}
 
-				wp_register_script( 'yith-proteo-admin-dashboard', get_template_directory() . '/js/proteo-admin-dashboard.js', array( 'jquery', 'wp-util', 'updates' ), YITH_PROTEO_VERSION, false );
+				wp_register_script( 'yith-proteo-admin-dashboard', get_stylesheet_directory_uri() . '/js/proteo-admin-dashboard.js', array( 'jquery', 'wp-util', 'updates' ), YITH_PROTEO_VERSION, false );
 
 				$localize = array(
 					'ajaxUrl'                            => admin_url( 'admin-ajax.php' ),
