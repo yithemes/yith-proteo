@@ -11,8 +11,11 @@ if ( ! yith_proteo_get_sidebar_position( 'sidebar-show' ) ) {
 	return;
 }
 if ( function_exists( 'wc' ) ) {
-	$shop_page_sidebar_position_meta    = get_post_meta( get_option( 'woocommerce_shop_page_id' ), 'sidebar_position', true );
-	$default_shop_page_sidebar_position = in_array( $shop_page_sidebar_position_meta, array( '', 'inherit' ), true ) ? $shop_page_sidebar_position_meta : get_theme_mod( 'yith_proteo_default_sidebar_position', 'right' );
+	$shop_page_id                       = get_option( 'woocommerce_shop_page_id' );
+	$shop_page_sidebar_position_meta    = get_post_meta( $shop_page_id, 'sidebar_position', true );
+	$default_shop_page_sidebar_position = in_array( $shop_page_sidebar_position_meta, array( '', 'inherit' ), true ) ? get_theme_mod( 'yith_proteo_shop_page_sidebar_position', 'right' ) : $shop_page_sidebar_position_meta;
+	$shop_page_sidebar_chooser_meta     = get_post_meta( $shop_page_id, 'sidebar_chooser', true );
+	$default_shop_page_sidebar_chooser  = in_array( $shop_page_sidebar_chooser_meta, array( '', 'inherit' ), true ) ? get_theme_mod( 'yith_proteo_shop_page_default_sidebar', 'sidebar-1' ) : $shop_page_sidebar_chooser_meta;
 }
 
 // WooCommerce shop page support.
@@ -33,8 +36,6 @@ if ( function_exists( 'wc' ) && is_shop() && get_theme_mod( 'yith_proteo_shop_pa
 
 	$sidebar = yith_proteo_sidebar_get_meta( 'sidebar_chooser' );
 	if ( class_exists( 'WooCommerce' ) ) {
-		$shop_page_sidebar_chooser_meta    = get_post_meta( get_option( 'woocommerce_shop_page_id' ), 'sidebar_chooser', true );
-		$default_shop_page_sidebar_chooser = in_array( $shop_page_sidebar_chooser_meta, array( '', 'inherit' ), true ) ? $shop_page_sidebar_chooser_meta : get_theme_mod( 'yith_proteo_default_sidebar', 'sidebar-1' );
 		if ( is_shop() ) {
 			$sidebar = get_theme_mod( 'yith_proteo_shop_page_default_sidebar', $default_shop_page_sidebar_chooser );
 		} elseif ( is_product_category() ) {
