@@ -188,10 +188,6 @@ function yith_proteo_sidebar_position_html( $post ) {
 			value="right" <?php echo ( yith_proteo_sidebar_get_meta( 'sidebar_position' ) === 'right' ) ? 'selected' : ''; ?>>
 			<?php esc_html_e( 'right', 'yith-proteo' ); ?>
 		</option>
-		<option
-			value="bottom" <?php echo ( yith_proteo_sidebar_get_meta( 'sidebar_position' ) === 'bottom' ) ? 'selected' : ''; ?>>
-			<?php esc_html_e( 'bottom', 'yith-proteo' ); ?>
-		</option>
 	</select>
 	<?php
 }
