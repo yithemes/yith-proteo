@@ -236,3 +236,25 @@ if ( ! function_exists( 'wp_body_open' ) ) {
 		do_action( 'wp_body_open' );
 	}
 }
+
+
+if ( ! function_exists( 'yith_proteo_site_layout_body_class' ) ) {
+
+	add_filter( 'body_class', 'yith_proteo_site_layout_body_class' );
+
+	/**
+	 * Set the site layout to customizer option
+	 *
+	 * @param array $classes body CSS classes.
+	 *
+	 * @return array
+	 *
+	 * @author Francesco Grasso <francgrasso@yithemes.com>
+	 */
+	function yith_proteo_site_layout_body_class( $classes ) {
+		$site_full_width_layout = get_theme_mod( 'yith_proteo_layout_full_width', 'no' );
+		$site_full_width_layout = ( 'yes' === $site_full_width_layout ) ? 'proteo-full-width-layout' : '';
+		$classes[]              = $site_full_width_layout;
+		return $classes;
+	}
+}

@@ -60,3 +60,12 @@
 		max-width: 1540px;
 	}
 }
+
+body.proteo-full-width-layout {
+	.container,
+	.wp-block-cover-image .wp-block-cover__inner-container,
+	.wp-block-cover .wp-block-cover__inner-container,
+	.wp-block-group__inner-container {
+		max-width: 100%;
+	}
+}
