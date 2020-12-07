@@ -165,6 +165,12 @@ if ( ! function_exists( 'yith_proteo_content_width' ) ) :
 	add_action( 'after_setup_theme', 'yith_proteo_content_width', 0 );
 endif;
 
+/**
+ * Proteo admin dashboard class
+ */
+if ( is_admin() ) {
+	require get_template_directory() . '/inc/theme-dashboard/class-proteo-admin-dashboard.php';
+}
 
 /**
  * Sidebars handling
@@ -265,24 +271,3 @@ if ( class_exists( 'WooCommerce' ) ) {
  * One Click Demo Import predefined demo configurations file
  */
 require get_template_directory() . '/inc/one-click-demo-import.php';
-
-/**
- * Proteo admin dashboard class
- */
-if ( is_admin() ) {
-	require get_template_directory() . '/inc/theme-dashboard/class-proteo-admin-dashboard.php';
-}
-
-
-/* Redirect on theme activation */
-add_action( 'admin_init', 'tarex_theme_activation_redirect' );
-
-/**
- * Redirect to "Install Plugins" page on activation
- */
-function tarex_theme_activation_redirect() {
-	global $pagenow;
-	if ( 'themes.php' === $pagenow && is_admin() && isset( $_GET['activated'] ) ) { // phpcs:ignore
-		wp_safe_redirect( esc_url_raw( add_query_arg( 'page', 'yith-proteo-dashboard', admin_url( 'themes.php' ) ) ) );
-	}
-}

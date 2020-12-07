@@ -1,27 +1,19 @@
-# Copyright (C) 2020 YITH
-# This file is distributed under the GNU General Public License v2 or later.
+# Translation of Themes - YITH Proteo in Dutch
+# This file is distributed under the same license as the Themes - YITH Proteo package.
 msgid ""
 msgstr ""
-"Project-Id-Version: YITH Proteo\n"
+"Project-Id-Version: Themes - YITH Proteo\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2020-09-04 14:59+0200\n"
-"PO-Revision-Date: 2020-09-04 15:00+0200\n"
+"POT-Creation-Date: 2020-12-07 14:02+0100\n"
+"PO-Revision-Date: 2020-12-07 14:06+0100\n"
 "Last-Translator: \n"
-"Language-Team: yithemes\n"
+"Language-Team: \n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.3.1\n"
-"X-Poedit-Basepath: ..\n"
-"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
-"_n_noop:1,2;_c;_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_ex:1,2c;"
-"esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Poedit-SearchPath-0: .\n"
-"X-Poedit-SearchPathExcluded-0: .git\n"
-"X-Poedit-SearchPathExcluded-1: .sass-cache\n"
-"X-Poedit-SearchPathExcluded-2: bin\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 2.4.1\n"
 
 #: 404.php:21
 msgid "Oops! That page can&rsquo;t be found."
@@ -50,7 +42,7 @@ msgstr[1] "%1$s reacties"
 msgid "Comments are closed."
 msgstr "Reacties zijn gesloten"
 
-#: footer.php:41
+#: footer.php:47
 msgid ""
 "<a href=\"https://proteo.yithemes.com/\" target=\"_blank\" rel=\"noopener"
 "\">Proteo</a> - A free theme designed with <span class=\"lnr lnr-heart\"></"
@@ -94,115 +86,103 @@ msgstr "(Bewerk)"
 msgid "Your comment is awaiting moderation."
 msgstr "Je reactie wacht op goedkeuring."
 
-#: inc/customizer/custom-controls/class-google-font-select-custom-control.php:131
-msgid "Select font weight & style"
+#: inc/customizer/custom-controls/class-customizer-button-preview.php:32
+#: inc/theme-dashboard/theme-dashboard.php:360
+#: inc/theme-dashboard/theme-dashboard.php:370
+msgid "Preview"
 msgstr ""
 
-#: inc/customizer/customizer.php:38
-#, fuzzy
-#| msgid "Header and footer"
-msgid "Header and Topbar"
-msgstr "Header en footer"
+#: inc/customizer/custom-controls/class-customizer-control-on-off.php:30
+msgid "On"
+msgstr "Aan"
 
-#: inc/customizer/customizer.php:46
-#, fuzzy
-#| msgid "Header background color"
-msgid "Header background image"
-msgstr "Achtergrondkleur header"
+#: inc/customizer/custom-controls/class-customizer-control-on-off.php:33
+msgid "Off"
+msgstr "Uit"
 
-#: inc/customizer/customizer.php:55
-#, fuzzy
-#| msgid "Footer credits"
-msgid "Footer and Credits"
-msgstr "Footer credits"
-
-#: inc/customizer/customizer.php:63
-msgid "Extra"
-msgstr ""
-
-#: inc/customizer/customizer.php:71
-#, fuzzy
-#| msgid "Site Title color"
-msgid "Site colors"
-msgstr "Kleur site titel"
-
-#: inc/customizer/customizer.php:80
-#, fuzzy
-#| msgid "Footer background color"
-msgid "Site background image"
-msgstr "Achtergrondkleur footer"
-
-#: inc/customizer/customizer.php:89
-#, fuzzy
-#| msgid "WooCommerce messages"
-msgid "WooCommerce"
-msgstr "WooCommerce berichten"
-
-#: inc/customizer/customizer.php:162
-#, fuzzy
-#| msgid "Read the documentation to see how to retrieve a Google Font URL"
-msgid "Read how to retrieve a Google font url"
-msgstr "Lees de documentatie en zie hoe je een Google Font URL kunt verkrijgen"
-
-#: inc/customizer/customizer.php:194 inc/customizer/panels/sidebars.php:35
-#: inc/customizer/panels/sidebars.php:76 inc/customizer/panels/sidebars.php:118
-#: inc/customizer/panels/sidebars.php:160
-#: inc/customizer/panels/woocommerce/product-category.php:34
-#: inc/customizer/panels/woocommerce/product-tag.php:34
-#: inc/customizer/panels/woocommerce/product-tax.php:34
-#: inc/customizer/panels/woocommerce/single-product.php:133
-msgid "No sidebar"
-msgstr "Geen zijbalk"
-
-#: inc/customizer/customizer.php:195
-#: inc/customizer/panels/footer-credits.php:139
-#: inc/customizer/panels/footer.php:124 inc/customizer/panels/mobile.php:45
-#: inc/customizer/panels/sidebars.php:36 inc/customizer/panels/sidebars.php:77
-#: inc/customizer/panels/sidebars.php:119
-#: inc/customizer/panels/sidebars.php:161 inc/customizer/panels/topbar.php:146
-#: inc/customizer/panels/woocommerce/product-category.php:35
-#: inc/customizer/panels/woocommerce/product-tag.php:35
-#: inc/customizer/panels/woocommerce/product-tax.php:35
-#: inc/customizer/panels/woocommerce/single-product.php:134
-msgid "Right"
-msgstr "Rechts"
-
-#: inc/customizer/customizer.php:196
-#: inc/customizer/panels/footer-credits.php:138
-#: inc/customizer/panels/footer.php:123 inc/customizer/panels/mobile.php:44
-#: inc/customizer/panels/sidebars.php:37 inc/customizer/panels/sidebars.php:78
-#: inc/customizer/panels/sidebars.php:120
-#: inc/customizer/panels/sidebars.php:162 inc/customizer/panels/topbar.php:145
-#: inc/customizer/panels/woocommerce/product-category.php:36
-#: inc/customizer/panels/woocommerce/product-tag.php:36
-#: inc/customizer/panels/woocommerce/product-tax.php:36
-#: inc/customizer/panels/woocommerce/single-product.php:135
-msgid "Left"
-msgstr "Links"
-
-#: inc/customizer/customizer.php:217 inc/customizer/panels/blog.php:117
-#: inc/customizer/panels/header.php:79 inc/customizer/panels/header.php:101
-#: inc/customizer/panels/header.php:123 inc/customizer/panels/mobile.php:65
-#: inc/customizer/panels/mobile.php:86 inc/customizer/panels/mobile.php:107
-#: inc/customizer/panels/topbar.php:36
-#: inc/customizer/panels/woocommerce/single-product.php:35
-#: inc/customizer/panels/woocommerce/single-product.php:56
-#: inc/customizer/panels/woocommerce/single-product.php:77
-#: inc/customizer/panels/woocommerce/single-product.php:173
+#: inc/customizer/custom-controls/class-customizer-control-yes-no.php:30
+#: inc/customizer/customizer.php:213
 msgid "Yes"
 msgstr "Ja"
 
-#: inc/customizer/customizer.php:218 inc/customizer/panels/blog.php:118
-#: inc/customizer/panels/header.php:80 inc/customizer/panels/header.php:102
-#: inc/customizer/panels/header.php:124 inc/customizer/panels/mobile.php:66
-#: inc/customizer/panels/mobile.php:87 inc/customizer/panels/mobile.php:108
-#: inc/customizer/panels/topbar.php:37
-#: inc/customizer/panels/woocommerce/single-product.php:36
-#: inc/customizer/panels/woocommerce/single-product.php:57
-#: inc/customizer/panels/woocommerce/single-product.php:78
-#: inc/customizer/panels/woocommerce/single-product.php:174
+#: inc/customizer/custom-controls/class-customizer-control-yes-no.php:33
+#: inc/customizer/customizer.php:214
 msgid "No"
 msgstr "Nee"
+
+#: inc/customizer/custom-controls/class-google-font-select-custom-control.php:131
+msgid "Select font weight & style"
+msgstr "Selecteer de lettertype zwaarte & stijl"
+
+#: inc/customizer/customizer.php:38
+msgid "Header and Topbar"
+msgstr "Header en topbar"
+
+#: inc/customizer/customizer.php:46
+msgid "Header background image"
+msgstr "Header en achtergrondafbeelding"
+
+#: inc/customizer/customizer.php:55
+msgid "Footer and Credits"
+msgstr "Footer en credits"
+
+#: inc/customizer/customizer.php:63
+msgid "Extra"
+msgstr "Extra"
+
+#: inc/customizer/customizer.php:71
+msgid "Site colors"
+msgstr "Site kleuren"
+
+#: inc/customizer/customizer.php:80
+msgid "Site background image"
+msgstr "Achtergrondafbeelding site"
+
+#: inc/customizer/customizer.php:89
+msgid "WooCommerce"
+msgstr "WooCommerce"
+
+#: inc/customizer/customizer.php:190 inc/customizer/panels/sidebars.php:60
+#: inc/customizer/panels/sidebars.php:138
+#: inc/customizer/panels/sidebars.php:215
+#: inc/customizer/panels/sidebars.php:292
+#: inc/customizer/panels/woocommerce/product-category.php:39
+#: inc/customizer/panels/woocommerce/product-tag.php:40
+#: inc/customizer/panels/woocommerce/product-tax.php:40
+#: inc/customizer/panels/woocommerce/shop-page.php:42
+#: inc/customizer/panels/woocommerce/single-product.php:368
+msgid "No sidebar"
+msgstr "Geen zijbalk"
+
+#: inc/customizer/customizer.php:191
+#: inc/customizer/panels/footer-credits.php:151
+#: inc/customizer/panels/footer.php:233 inc/customizer/panels/mobile.php:76
+#: inc/customizer/panels/mobile.php:265 inc/customizer/panels/sidebars.php:68
+#: inc/customizer/panels/sidebars.php:146
+#: inc/customizer/panels/sidebars.php:223
+#: inc/customizer/panels/sidebars.php:300 inc/customizer/panels/topbar.php:165
+#: inc/customizer/panels/woocommerce/product-category.php:47
+#: inc/customizer/panels/woocommerce/product-tag.php:48
+#: inc/customizer/panels/woocommerce/product-tax.php:48
+#: inc/customizer/panels/woocommerce/shop-page.php:50
+#: inc/customizer/panels/woocommerce/single-product.php:376
+msgid "Right"
+msgstr "Rechts"
+
+#: inc/customizer/customizer.php:192
+#: inc/customizer/panels/footer-credits.php:143
+#: inc/customizer/panels/footer.php:225 inc/customizer/panels/mobile.php:75
+#: inc/customizer/panels/mobile.php:257 inc/customizer/panels/sidebars.php:64
+#: inc/customizer/panels/sidebars.php:142
+#: inc/customizer/panels/sidebars.php:219
+#: inc/customizer/panels/sidebars.php:296 inc/customizer/panels/topbar.php:157
+#: inc/customizer/panels/woocommerce/product-category.php:43
+#: inc/customizer/panels/woocommerce/product-tag.php:44
+#: inc/customizer/panels/woocommerce/product-tax.php:44
+#: inc/customizer/panels/woocommerce/shop-page.php:46
+#: inc/customizer/panels/woocommerce/single-product.php:372
+msgid "Left"
+msgstr "Links"
 
 #: inc/customizer/panels/blog.php:14
 msgid "Blog"
@@ -225,81 +205,111 @@ msgstr "Standaard"
 msgid "Background picture"
 msgstr "Achtergrondfoto"
 
-#: inc/customizer/panels/blog.php:53
+#: inc/customizer/panels/blog.php:37
+msgid "Fullwidth cover image"
+msgstr "Omslagafbeelding volledige breedte"
+
+#: inc/customizer/panels/blog.php:56
+msgid "Post featured image height"
+msgstr "Hoogte uitgelichte afbeelding van een bericht."
+
+#: inc/customizer/panels/blog.php:79
 msgid "Post thumbnail background overlay"
 msgstr "Post thumbnail achtergrond overlay"
 
-#: inc/customizer/panels/blog.php:73
+#: inc/customizer/panels/blog.php:99
 msgid "Overlay color opacity % (default: 70%)"
 msgstr "Doorzichtigheidspercentage kleur overlay (standaard: 70%)"
 
-#: inc/customizer/panels/blog.php:95
+#: inc/customizer/panels/blog.php:121
 msgid "Post thumbnail text color"
 msgstr "Post thumbnail tekstkleur"
 
-#: inc/customizer/panels/blog.php:113
-#, fuzzy
-#| msgid "Sale badge"
+#: inc/customizer/panels/blog.php:142
 msgid "Show date badge"
-msgstr "Uitverkoop badge"
+msgstr "Toon datum badge"
 
-#: inc/customizer/panels/blog.php:115
-#, fuzzy
-#| msgid "Choose whether to show the site topbar or not"
+#: inc/customizer/panels/blog.php:144
 msgid "Choose whether to show the post date badge or not."
-msgstr "Bepaal of je de topbar wilt weergeven of niet"
+msgstr "Bepaal of je de bericht datum badge wilt tonen of niet."
+
+#: inc/customizer/panels/blog.php:155
+msgid "Read more  &#10230;"
+msgstr "Lees meer &#10230;"
+
+#: inc/customizer/panels/blog.php:163
+msgid "Read more text"
+msgstr "Lees meer tekst"
 
 #: inc/customizer/panels/buttons.php:14
 msgid "Buttons"
 msgstr "Knoppen"
 
-#: inc/customizer/panels/buttons.php:35
+#: inc/customizer/panels/buttons.php:34
+#, fuzzy
+#| msgid "Footer options"
+msgid "General options"
+msgstr "Footer opties"
+
+#: inc/customizer/panels/buttons.php:55
 msgid "Border radius (default: 50px)"
 msgstr "Randradius (standaard: 50px)"
 
-#: inc/customizer/panels/buttons.php:57
-msgid "Button Style 1 background color"
-msgstr "Achtergrondkleur knopstijl 1"
+#: inc/customizer/panels/buttons.php:78 inc/customizer/panels/buttons.php:98
+#: inc/customizer/panels/woocommerce/product-catalog.php:119
+msgid "Button style 1"
+msgstr "Knopstijl 1"
 
-#: inc/customizer/panels/buttons.php:75
-msgid "Button Style 1 border color"
-msgstr "Randkleur knopstijl 1"
+#: inc/customizer/panels/buttons.php:116
+#, fuzzy
+#| msgid "Footer background color"
+msgid "Background color"
+msgstr "Achtergrondkleur footer"
 
-#: inc/customizer/panels/buttons.php:93
-msgid "Button Style 1 text color"
-msgstr "Tekst kleur knopstijl 1"
+#: inc/customizer/panels/buttons.php:134 inc/customizer/panels/topbar.php:209
+msgid "Border color"
+msgstr "Randkleur"
 
-#: inc/customizer/panels/buttons.php:111
-msgid "Button Style 1 background :hover color"
-msgstr "Knopstijl 1 achtergrond :hoveren kleur"
+#: inc/customizer/panels/buttons.php:152 inc/customizer/panels/buttons.php:300
+#, fuzzy
+#| msgid "Font color"
+msgid "Text color"
+msgstr "Lettertypekleur"
 
-#: inc/customizer/panels/buttons.php:129
-msgid "Button Style 1 border :hover color"
-msgstr "Knopstijl 1 rand :hoveren kleur"
-
-#: inc/customizer/panels/buttons.php:147
-msgid "Button Style 1 text :hover color"
-msgstr "Knopstijl 1 tekst: hoveren kleur"
-
-#: inc/customizer/panels/buttons.php:166
-msgid "Button Style 2 background color shade 1"
-msgstr "Knopstijl 2 achtergrondkleur schaduw 1"
-
-#: inc/customizer/panels/buttons.php:184
-msgid "Button Style 2 background color shade 2"
-msgstr "Knopstijl 2 achtergrondkleur schaduw 2"
-
-#: inc/customizer/panels/buttons.php:202
-msgid "Button Style 2 text color"
-msgstr "Knopstijl 2 tekst kleur"
-
-#: inc/customizer/panels/buttons.php:220
-msgid "Button Style 2 background :hover color"
+#: inc/customizer/panels/buttons.php:170 inc/customizer/panels/buttons.php:318
+#, fuzzy
+#| msgid "Button Style 2 background :hover color"
+msgid "Background :hover color"
 msgstr "Knopstijl 2 achtergrond :hoveren kleur"
 
-#: inc/customizer/panels/buttons.php:238
-msgid "Button Style 2 text :hover color"
-msgstr "Knopstijl 2 tekst: hoveren kleur"
+#: inc/customizer/panels/buttons.php:188
+#, fuzzy
+#| msgid "Border color"
+msgid "Border :hover color"
+msgstr "Randkleur"
+
+#: inc/customizer/panels/buttons.php:206 inc/customizer/panels/buttons.php:336
+#, fuzzy
+#| msgid "Hyperlink :hover color"
+msgid "Text :hover color"
+msgstr "Hyperlink: hoveren kleur"
+
+#: inc/customizer/panels/buttons.php:226 inc/customizer/panels/buttons.php:246
+#: inc/customizer/panels/woocommerce/product-catalog.php:120
+msgid "Button style 2"
+msgstr "Knopstijl 2"
+
+#: inc/customizer/panels/buttons.php:264
+#, fuzzy
+#| msgid "Button Style 2 background color shade 1"
+msgid "Background color shade 1"
+msgstr "Knopstijl 2 achtergrondkleur schaduw 1"
+
+#: inc/customizer/panels/buttons.php:282
+#, fuzzy
+#| msgid "Button Style 2 background color shade 2"
+msgid "Background color shade 2"
+msgstr "Knopstijl 2 achtergrondkleur schaduw 2"
 
 #: inc/customizer/panels/color-shades.php:21
 msgid "Main color shade"
@@ -311,16 +321,15 @@ msgstr ""
 "Sla de instellingen op en herlaad te pagina om de magie te laten gebeuren"
 
 #: inc/customizer/panels/documentation.php:14
-#, fuzzy
-#| msgid "Theme documentation & more"
 msgid "Theme documentation & tools"
-msgstr "Thema documentatie & meer"
+msgstr "Thema documentatie & gereedschap"
 
 #: inc/customizer/panels/documentation.php:33
 msgid "Theme documentation"
 msgstr "Thema documentatie"
 
 #: inc/customizer/panels/documentation.php:34
+#: inc/theme-dashboard/theme-dashboard.php:416
 msgid "Read theme documentation"
 msgstr "Lees de thema documentatie"
 
@@ -340,11 +349,11 @@ msgstr "Download kinder thema"
 
 #: inc/customizer/panels/documentation.php:75
 msgid "Setup Wizard"
-msgstr ""
+msgstr "Installatie wizard"
 
 #: inc/customizer/panels/documentation.php:76
 msgid "Install demo content and suggested plugins"
-msgstr ""
+msgstr "Demo inhoud en voorgestelde plugins installeren"
 
 #: inc/customizer/panels/footer-credits.php:14
 msgid "Footer credits"
@@ -359,234 +368,381 @@ msgid "Footer credits background color"
 msgstr "Achtergrondkleur footer credits"
 
 #: inc/customizer/panels/footer-credits.php:64
-#: inc/customizer/panels/footer.php:49 inc/customizer/panels/topbar.php:71
-#, fuzzy
-#| msgid "H4 font size (default: 16px)"
+#: inc/customizer/panels/footer.php:145 inc/customizer/panels/topbar.php:73
 msgid "Font size (default: 16px)"
-msgstr "H4 lettertypegrootte (standaard: 16px)"
+msgstr "Lettertypegrootte (standaard: 16px)"
 
 #: inc/customizer/panels/footer-credits.php:82
-#: inc/customizer/panels/footer.php:67 inc/customizer/panels/topbar.php:89
-#, fuzzy
-#| msgid "H1 font color"
+#: inc/customizer/panels/footer.php:164 inc/customizer/panels/topbar.php:92
+#: inc/customizer/panels/woocommerce/single-product.php:90
 msgid "Font color"
-msgstr "H1 lettertypekleur"
+msgstr "Lettertypekleur"
 
 #: inc/customizer/panels/footer-credits.php:100
-#: inc/customizer/panels/footer.php:85 inc/customizer/panels/topbar.php:107
-#, fuzzy
-#| msgid "Tagline color"
+#: inc/customizer/panels/footer.php:182 inc/customizer/panels/topbar.php:111
 msgid "Hyperlink color"
-msgstr "Kleur slogan"
+msgstr "Kleur hyperlink"
 
 #: inc/customizer/panels/footer-credits.php:118
-#: inc/customizer/panels/footer.php:103 inc/customizer/panels/topbar.php:125
-#, fuzzy
-#| msgid "General link :hover color"
+#: inc/customizer/panels/footer.php:200 inc/customizer/panels/topbar.php:130
 msgid "Hyperlink :hover color"
-msgstr "Algemene link :hoveren kleur"
+msgstr "Hyperlink: hoveren kleur"
 
-#: inc/customizer/panels/footer-credits.php:135
-#: inc/customizer/panels/footer.php:120 inc/customizer/panels/topbar.php:142
+#: inc/customizer/panels/footer-credits.php:138
+#: inc/customizer/panels/footer.php:220 inc/customizer/panels/topbar.php:151
 msgid "Elements alignment"
-msgstr ""
+msgstr "Uitlijning elementen"
 
-#: inc/customizer/panels/footer-credits.php:140
-#: inc/customizer/panels/footer.php:125 inc/customizer/panels/topbar.php:147
+#: inc/customizer/panels/footer-credits.php:147
+#: inc/customizer/panels/footer.php:127 inc/customizer/panels/footer.php:229
+#: inc/customizer/panels/mobile.php:261 inc/customizer/panels/topbar.php:161
 msgid "Center"
-msgstr ""
+msgstr "Midden"
 
 #: inc/customizer/panels/footer.php:14
-#, fuzzy
-#| msgid "Footer credits"
 msgid "Footer options"
-msgstr "Footer credits"
+msgstr "Footer opties"
 
 #: inc/customizer/panels/footer.php:33
 msgid "Footer background color"
 msgstr "Achtergrondkleur footer"
 
-#: inc/customizer/panels/footer.php:141
-msgid ""
-"Select how many widgets per row to show for Footer Sidebar 1 (new rows are "
-"automatically created)."
-msgstr ""
-"Bepaal het aantal widgets dat je wilt weergeven per rij in footer zijbalk 1 "
-"(nieuwe rijen worden automatisch gecreëerd)."
+#: inc/customizer/panels/footer.php:52
+msgid "Footer background image"
+msgstr "Achtergrondafbeelding footer"
 
-#: inc/customizer/panels/footer.php:145 inc/customizer/panels/footer.php:170
-msgid "One"
-msgstr "Een"
+#: inc/customizer/panels/footer.php:73
+#, fuzzy, php-format
+#| msgid "100% background image"
+msgid "100% background image"
+msgstr "100% achtergrondafbeelding"
 
-#: inc/customizer/panels/footer.php:146 inc/customizer/panels/footer.php:171
-msgid "Two"
-msgstr "Twee"
+#: inc/customizer/panels/footer.php:93
+msgid "Background repeat"
+msgstr "Achtergrond herhalen"
 
-#: inc/customizer/panels/footer.php:147 inc/customizer/panels/footer.php:172
-msgid "Three"
-msgstr "Drie"
+#: inc/customizer/panels/footer.php:96
+msgid "Don't repeat"
+msgstr "Niet herhalen"
 
-#: inc/customizer/panels/footer.php:148 inc/customizer/panels/footer.php:173
-msgid "Four"
-msgstr "Vier"
+#: inc/customizer/panels/footer.php:97
+msgid "Repeat horizontally and vertically"
+msgstr "Horizontaal en verticaal herhalen"
 
-#: inc/customizer/panels/footer.php:149 inc/customizer/panels/footer.php:174
-msgid "Five"
-msgstr "Vijf"
+#: inc/customizer/panels/footer.php:98
+msgid "Repeat horizontally"
+msgstr "Horizontaal herhalen"
 
-#: inc/customizer/panels/footer.php:150 inc/customizer/panels/footer.php:175
-msgid "Six"
-msgstr "Zes"
+#: inc/customizer/panels/footer.php:99
+msgid "Repeat vertically"
+msgstr "Verticaal herhalen"
 
-#: inc/customizer/panels/footer.php:166
-msgid ""
-"Select how many widgets per row to show for Footer Sidebar 2 (new rows are "
-"automatically created)."
-msgstr ""
-"Bepaal het aantal widgets dat je wilt weergeven per rij in footer zijbalk 2 "
-"(nieuwe rijen worden automatisch gecreëerd)."
+#: inc/customizer/panels/footer.php:117
+msgid "Background position"
+msgstr "Achtergrond positie"
+
+#: inc/customizer/panels/footer.php:120
+msgid "Left top"
+msgstr "Links boven"
+
+#: inc/customizer/panels/footer.php:121
+msgid "Left center"
+msgstr "Links midden"
+
+#: inc/customizer/panels/footer.php:122
+msgid "Left bottom"
+msgstr "Links onder"
+
+#: inc/customizer/panels/footer.php:123
+msgid "Right top"
+msgstr "Rechts boven"
+
+#: inc/customizer/panels/footer.php:124
+msgid "Right center"
+msgstr "Rechts midden"
+
+#: inc/customizer/panels/footer.php:125
+msgid "Right bottom"
+msgstr "Rechts onder"
+
+#: inc/customizer/panels/footer.php:126
+msgid "Center top"
+msgstr "midden boven"
+
+#: inc/customizer/panels/footer.php:128
+msgid "Center bottom"
+msgstr "midden onder"
+
+#: inc/customizer/panels/footer.php:256
+msgid "Enable footer widget area #1"
+msgstr "Footer widget area #1 inschakelen"
+
+#: inc/customizer/panels/footer.php:277
+msgid "Footer widget area #1 width (%)."
+msgstr "Footer widget gebied #1 breedte (%)."
+
+#: inc/customizer/panels/footer.php:301
+msgid "Columns in footer widget area #1."
+msgstr "Kolommen in footer widget gebied #1."
+
+#: inc/customizer/panels/footer.php:328
+msgid "Enable footer widget area #2"
+msgstr "Footer widget gebied #2 inschakelen"
+
+#: inc/customizer/panels/footer.php:349
+msgid "Footer widget area #2 width (%)."
+msgstr "Footer widget gebied #2 breedte (%)"
+
+#: inc/customizer/panels/footer.php:373
+msgid "Columns in footer widget area #2"
+msgstr "Kolommen in footer widget gebied #2"
+
+#: inc/customizer/panels/footer.php:398
+msgid "Put the two widget areas side by side"
+msgstr "Plaats twee widget gebieden naast elkaar"
 
 #: inc/customizer/panels/forms.php:14
 msgid "Forms"
 msgstr "Formulieren"
 
-#: inc/customizer/panels/forms.php:35
+#: inc/customizer/panels/forms.php:35 inc/customizer/panels/topbar.php:230
 msgid "Input and textarea border radius (default: 0px)"
 msgstr "Input en tekst gebied rand radius (standaard: 0px)"
 
-#: inc/customizer/panels/header.php:14
+#: inc/customizer/panels/forms.php:59
 #, fuzzy
-#| msgid "Header layout"
+#| msgid "Use enanched select elements"
+msgid "Use enhanced select elements"
+msgstr "Gebruikt verbeterde elementen selector"
+
+#: inc/customizer/panels/header.php:14
 msgid "Header layout and style"
-msgstr "Lay-out header"
+msgstr "Lay-out en stijl header"
 
 #: inc/customizer/panels/header.php:33
 msgid "Header background color"
 msgstr "Achtergrondkleur header"
 
-#: inc/customizer/panels/header.php:51
+#: inc/customizer/panels/header.php:54
 msgid "Header layout"
 msgstr "Lay-out header"
 
-#: inc/customizer/panels/header.php:53
-msgid "Choose the header layout"
-msgstr "Kies de header lay-out"
-
-#: inc/customizer/panels/header.php:55
-#: inc/customizer/panels/woocommerce/cart.php:36
-msgid "Please select"
-msgstr "Selecteer alsjeblieft"
-
-#: inc/customizer/panels/header.php:56
+#: inc/customizer/panels/header.php:59
 msgid "Logo on the left and navigation below"
 msgstr "Logo aan de linkerkant en navigatie onder"
 
-#: inc/customizer/panels/header.php:57
+#: inc/customizer/panels/header.php:63
 msgid "Logo on the left and navigation inline"
 msgstr "Logo aan de linkerkant en navigatie inline"
 
-#: inc/customizer/panels/header.php:58
+#: inc/customizer/panels/header.php:67
 msgid "Centered logo and navigation below"
 msgstr "Logo gecentreerd en navigatie onder"
 
-#: inc/customizer/panels/header.php:75
+#: inc/customizer/panels/header.php:90
 msgid "Enable full width header"
 msgstr "Header van volledige breedte inschakelen"
 
-#: inc/customizer/panels/header.php:77
+#: inc/customizer/panels/header.php:91
 msgid "Choose whether to make the header full width or not."
 msgstr "Bepaal of je de header in volledige breedte wilt weergeven of niet."
 
-#: inc/customizer/panels/header.php:97
+#: inc/customizer/panels/header.php:113
+msgid "Show search icon"
+msgstr "Toon zoeken pictogram"
+
+#: inc/customizer/panels/header.php:135
+msgid "Show cart icon"
+msgstr "Toon winkelwagen pictogram"
+
+#: inc/customizer/panels/header.php:157
+msgid "Show user account icon"
+msgstr "Toon gebruikers account pictogram"
+
+#: inc/customizer/panels/header.php:179 inc/customizer/panels/mobile.php:96
+msgid "Show header sidebar"
+msgstr "Toon zijbalk header"
+
+#: inc/customizer/panels/header.php:181 inc/customizer/panels/mobile.php:98
+msgid "Choose whether to show or not the header widget area"
+msgstr "Bepaal of je het header widget gebied wilt tonen of niet"
+
+#: inc/customizer/panels/header.php:199
+msgid "Header menu font"
+msgstr "Lettertype header menu"
+
+#: inc/customizer/panels/header.php:219
+msgid "Main menu font size (default: 14px)"
+msgstr "Lettertypegrootte hoofdmenu (standaard: 14px)"
+
+#: inc/customizer/panels/header.php:238
+msgid "Header menu color"
+msgstr "Achtergrondkleur header menu"
+
+#: inc/customizer/panels/header.php:257
+msgid "Header menu :hover color"
+msgstr "Header menu :hoveren kleur"
+
+#: inc/customizer/panels/header.php:278
 msgid "Enable sticky header"
 msgstr "Sticky header inschakelen"
 
-#: inc/customizer/panels/header.php:99
+#: inc/customizer/panels/header.php:280
 msgid "Choose whether to make the header stick to the page when scrolling down"
 msgstr ""
 "Bepaal of je de header wilt laten plakken op de pagina, bij omlaag scrollen"
 
-#: inc/customizer/panels/header.php:119
-#, fuzzy
-#| msgid "Header Sidebar"
-msgid "Show header sidebar"
-msgstr "Header zijbalk"
+#: inc/customizer/panels/header.php:299
+msgid "Sticky header background color"
+msgstr "Achtergrondkleur sticky header"
 
-#: inc/customizer/panels/header.php:121
+#: inc/customizer/panels/header.php:319
+msgid "Sticky header menu color"
+msgstr "Kleur sticky header menu"
+
+#: inc/customizer/panels/header.php:339
+msgid "Sticky header menu :hover color"
+msgstr "Sticky header menu: hoveren kleur"
+
+#: inc/customizer/panels/layout.php:14
+msgid "Layout"
+msgstr ""
+
+#: inc/customizer/panels/layout.php:35
+msgid "Make website layout full width"
+msgstr ""
+
+#: inc/customizer/panels/layout.php:37
 #, fuzzy
 #| msgid "Choose whether to make the header full width or not."
-msgid "Choose whether to show or not the header widget area"
+msgid ""
+"Choose whether to make your site layout full width. No matter which "
+"resolution your screen has."
 msgstr "Bepaal of je de header in volledige breedte wilt weergeven of niet."
-
-#: inc/customizer/panels/header.php:141
-#, fuzzy
-#| msgid "Header menu color"
-msgid "Header menu font"
-msgstr "Achtergrondkleur header menu"
-
-#: inc/customizer/panels/header.php:161
-#, fuzzy
-#| msgid "H2 font size (default: 24px)"
-msgid "Main menu font size (default: 14px)"
-msgstr "H2 lettertypegrootte (standaard: 24px)"
-
-#: inc/customizer/panels/header.php:180
-msgid "Header menu color"
-msgstr "Achtergrondkleur header menu"
-
-#: inc/customizer/panels/header.php:199
-msgid "Header menu :hover color"
-msgstr "Header menu :hoveren kleur"
 
 #: inc/customizer/panels/mobile.php:14
 #, fuzzy
-#| msgid "Mobile Menu"
-msgid "Mobile Options"
-msgstr "Mobiel menu"
+#| msgid "Mobile options"
+msgid "Mobile & Responsive"
+msgstr "Opties mobiel"
 
-#: inc/customizer/panels/mobile.php:22 inc/customizer/panels/mobile.php:136
-#, fuzzy
-#| msgid "Mobile Menu"
+#: inc/customizer/panels/mobile.php:22
+msgid "Mobile topbar"
+msgstr "Topbar mobiel"
+
+#: inc/customizer/panels/mobile.php:43
+msgid "Show topbar in mobile"
+msgstr "Topbar tonen in mobiel"
+
+#: inc/customizer/panels/mobile.php:53
 msgid "Mobile header"
+msgstr "Header mobiel"
+
+#: inc/customizer/panels/mobile.php:72
+msgid "Mobile menu opener position"
+msgstr "Positie mobiel menu opener"
+
+#: inc/customizer/panels/mobile.php:119
+msgid "Show search icon in mobile"
+msgstr "Toon zoeken pictogram op mobiel"
+
+#: inc/customizer/panels/mobile.php:141
+msgid "Show cart icon in mobile"
+msgstr "Toon winkelwagen pictogram op mobiel"
+
+#: inc/customizer/panels/mobile.php:163
+msgid "Show user account icon in mobile"
+msgstr "Toon gebruiker account pictogram op mobiel"
+
+#: inc/customizer/panels/mobile.php:174
+msgid "Mobile menu"
 msgstr "Mobiel menu"
 
-#: inc/customizer/panels/mobile.php:41
-msgid "Mobile menu opener position"
-msgstr ""
-
-#: inc/customizer/panels/mobile.php:62
-msgid "Show search widget in mobile"
-msgstr ""
-
-#: inc/customizer/panels/mobile.php:83
-msgid "Show cart widget in mobile"
-msgstr ""
-
-#: inc/customizer/panels/mobile.php:104
-msgid "Show account widget in mobile"
-msgstr ""
-
-#: inc/customizer/panels/mobile.php:126
-#, fuzzy
-#| msgid "Header background color"
-msgid "Mobile header background color"
-msgstr "Achtergrondkleur header"
-
-#: inc/customizer/panels/mobile.php:155
-#, fuzzy
-#| msgid "Sale badge background color"
+#: inc/customizer/panels/mobile.php:193
 msgid "Mobile menu background color"
-msgstr "Achtergrondkleur uitverkoop badge"
+msgstr "Achtergrondkleur mobiel menu"
+
+#: inc/customizer/panels/mobile.php:212
+msgid "Mobile menu color"
+msgstr "Kleur mobiel menu"
+
+#: inc/customizer/panels/mobile.php:231
+msgid "Mobile menu :hover color"
+msgstr "Mobiel menu: hoveren kleur"
+
+#: inc/customizer/panels/mobile.php:252
+msgid "Mobile menu alignment"
+msgstr "Uitlijning mobiel menu"
+
+#: inc/customizer/panels/mobile.php:277
+msgid "Mobile typography"
+msgstr "Lettertype mobiel"
+
+#: inc/customizer/panels/mobile.php:294
+msgid "Site Title font size (default: 38px)"
+msgstr "Lettertype grootte site titel (standaard: 38px)"
+
+#: inc/customizer/panels/mobile.php:311
+msgid "Tagline font size (default: 11px)"
+msgstr "Lettertype grootte slogan (standaard: 11px)"
+
+#: inc/customizer/panels/mobile.php:329
+msgid "Body font size (default: 13px)"
+msgstr "Lettertype hoofdtekst (standaard: 13px)"
+
+#: inc/customizer/panels/mobile.php:346
+msgid "Topbar font size (default: 13px)"
+msgstr "Lettertype grootte topbar (standaard: 31px)"
+
+#: inc/customizer/panels/mobile.php:363
+msgid "Mobile menu font size (default: 16px)"
+msgstr "Lettertype grootte mobiel menu (standaard: 16px)"
+
+#: inc/customizer/panels/mobile.php:380
+msgid "H1 font size (default: 56px)"
+msgstr "H1 lettertype grootte (standaard: 56px)"
+
+#: inc/customizer/panels/mobile.php:397
+msgid "H2 font size (default: 32px)"
+msgstr "H2 lettertype grootte (standaard: 32px)"
+
+#: inc/customizer/panels/mobile.php:413
+msgid "H3 font size (default: 15px)"
+msgstr "H3 lettertype grootte (standaard: 15px)"
+
+#: inc/customizer/panels/mobile.php:430
+msgid "H4 font size (default: 13px)"
+msgstr "H4 lettertype grootte (standaard: 13px)"
+
+#: inc/customizer/panels/mobile.php:447
+msgid "H5 font size (default: 10px)"
+msgstr "H5 lettertype grootte (standaard: 10px)"
+
+#: inc/customizer/panels/mobile.php:464
+msgid "H6 font size (default: 9px)"
+msgstr "H6 lettertype grootte (standaard: 9px)"
+
+#: inc/customizer/panels/mobile.php:481
+msgid "Footer font size (default: 13px)"
+msgstr "Lettertype grootte (standaard: 13px)"
+
+#: inc/customizer/panels/mobile.php:498
+msgid "Footer credits font size (default: 13px)"
+msgstr "Lettertype grootte footer credits (standaard: 13px)"
 
 #: inc/customizer/panels/sidebars.php:14
 msgid "Sidebars"
 msgstr "Zijbalken"
 
-#: inc/customizer/panels/sidebars.php:31
-msgid "Choose the position of the default sidebar"
-msgstr "Bepaal de positie van de standaard zijbalk"
-
 #: inc/customizer/panels/sidebars.php:33
+msgid "Posts and pages sidebar"
+msgstr "Berichten en pagina's zijbalk"
+
+#: inc/customizer/panels/sidebars.php:54
+msgid "Choose the sidebar position for posts and pages"
+msgstr "Kies de zijbalk positie voor berichten en pagina's"
+
+#: inc/customizer/panels/sidebars.php:56
 msgid ""
 "Select where to display the default sidebar. You can adjust the settings "
 "from the page/post edit view."
@@ -594,21 +750,25 @@ msgstr ""
 "Selecteer waar je de standaard zijbalk wilt weergeven. Je kunt de "
 "instellingen aanpassen vanaf de pagina/post bewerkingsweergave."
 
-#: inc/customizer/panels/sidebars.php:53
-msgid "Choose the default sidebar"
-msgstr "Kies de standaard zijbalk"
+#: inc/customizer/panels/sidebars.php:89
+msgid "Choose the default sidebar for posts and pages"
+msgstr "Kies de standaard zijbalk voor berichten en pagina's"
 
-#: inc/customizer/panels/sidebars.php:55
+#: inc/customizer/panels/sidebars.php:91
 msgid "Select the sidebar to display. It will be used for archive pages too."
 msgstr ""
 "Selecteer de zijbalk om weer te geven. Deze zal ook worden gebruikt in "
 "archief pagina's."
 
-#: inc/customizer/panels/sidebars.php:72
+#: inc/customizer/panels/sidebars.php:111
+msgid "Blog page sidebar"
+msgstr "Blog pagina zijbalk"
+
+#: inc/customizer/panels/sidebars.php:132
 msgid "Choose the position of the blog page sidebar"
 msgstr "Bepaal de positie van de blog pagina zijbalk"
 
-#: inc/customizer/panels/sidebars.php:74
+#: inc/customizer/panels/sidebars.php:134
 msgid ""
 "Select where to display the sidebar. You can pick up a specific sidebard "
 "from the page edit view."
@@ -616,11 +776,11 @@ msgstr ""
 "Bepaal waar je de zijbalk wilt weergeven. Je kunt een specifieke zijbalk "
 "kiezen vanaf de pagina bewerkingsweergave."
 
-#: inc/customizer/panels/sidebars.php:95
+#: inc/customizer/panels/sidebars.php:166
 msgid "Choose the blog sidebar"
 msgstr "Kies de blog zijbalk"
 
-#: inc/customizer/panels/sidebars.php:97
+#: inc/customizer/panels/sidebars.php:168
 msgid ""
 "Select the sidebar to display. You can pick a specific sidebar from the "
 "single post edit page."
@@ -628,53 +788,57 @@ msgstr ""
 "Selecteer een zijbalk om weer te geven. Je kunt een specifieke zijbalk "
 "kiezen vanaf de single post bewerkingspagina."
 
-#: inc/customizer/panels/sidebars.php:114
+#: inc/customizer/panels/sidebars.php:188
+msgid "Blog categories sidebar"
+msgstr "Blog categorieën zijbalk"
+
+#: inc/customizer/panels/sidebars.php:209
 msgid "Choose the position of blog category pages sidebar"
 msgstr "Bepaal de positie van de 'blog categorie pagina's' zijbalk"
 
-#: inc/customizer/panels/sidebars.php:116
-#: inc/customizer/panels/sidebars.php:158
-#: inc/customizer/panels/woocommerce/product-category.php:32
-#: inc/customizer/panels/woocommerce/product-tag.php:32
-#: inc/customizer/panels/woocommerce/product-tax.php:32
+#: inc/customizer/panels/sidebars.php:211
+#: inc/customizer/panels/sidebars.php:288
+#: inc/customizer/panels/woocommerce/product-category.php:35
+#: inc/customizer/panels/woocommerce/product-tag.php:36
+#: inc/customizer/panels/woocommerce/product-tax.php:36
 msgid "Select where to display the sidebar."
 msgstr "Selecteer waar je de zijbalk wilt weergeven."
 
-#: inc/customizer/panels/sidebars.php:137
+#: inc/customizer/panels/sidebars.php:243
 msgid "Choose blog category pages sidebar"
 msgstr "Kies blog categorie pagina's zijbalk"
 
-#: inc/customizer/panels/sidebars.php:139
-#: inc/customizer/panels/sidebars.php:181
-#: inc/customizer/panels/woocommerce/product-category.php:54
-#: inc/customizer/panels/woocommerce/product-tag.php:55
-#: inc/customizer/panels/woocommerce/product-tax.php:55
+#: inc/customizer/panels/sidebars.php:245
+#: inc/customizer/panels/sidebars.php:322
+#: inc/customizer/panels/woocommerce/product-category.php:69
+#: inc/customizer/panels/woocommerce/product-tag.php:70
+#: inc/customizer/panels/woocommerce/product-tax.php:70
 msgid "Select the sidebar to display."
 msgstr "Selecteer de zijbalk om weer te geven."
 
-#: inc/customizer/panels/sidebars.php:156
+#: inc/customizer/panels/sidebars.php:265
+msgid "Blog tags sidebar"
+msgstr "Blog tags zijbalk"
+
+#: inc/customizer/panels/sidebars.php:286
 msgid "Choose the position of blog tag pages sidebar"
 msgstr "Bepaal de positie van de 'blog tag pagina's' zijbalk"
 
-#: inc/customizer/panels/sidebars.php:179
+#: inc/customizer/panels/sidebars.php:320
 msgid "Choose blog tag pages sidebar"
 msgstr "Kies blog tag pagina's zijbalk"
 
 #: inc/customizer/panels/site-identity.php:24
 msgid "Logo image max width (px)"
-msgstr ""
+msgstr "Maximale breedte (px) logo afbeelding"
 
 #: inc/customizer/panels/site-identity.php:47
-#, fuzzy
-#| msgid "Site Title color"
 msgid "Site Title"
-msgstr "Kleur site titel"
+msgstr "Site titel"
 
 #: inc/customizer/panels/site-identity.php:64
-#, fuzzy
-#| msgid "Site Title font size"
 msgid "Site title font"
-msgstr "Lettertype grootte site titel"
+msgstr "Lettertype site titel"
 
 #: inc/customizer/panels/site-identity.php:88
 msgid "Site Title font size"
@@ -685,16 +849,12 @@ msgid "Site Title color"
 msgstr "Kleur site titel"
 
 #: inc/customizer/panels/site-identity.php:128
-#, fuzzy
-#| msgid "Tagline color"
 msgid "Tagline"
-msgstr "Kleur slogan"
+msgstr "Slogan"
 
 #: inc/customizer/panels/site-identity.php:145
-#, fuzzy
-#| msgid "Tagline font size"
 msgid "Tagline font"
-msgstr "Lettertype grootte slogan"
+msgstr "Lettertype slogan"
 
 #: inc/customizer/panels/site-identity.php:169
 msgid "Tagline font size"
@@ -708,141 +868,147 @@ msgstr "Kleur slogan"
 msgid "Topbar"
 msgstr "Topbar"
 
-#: inc/customizer/panels/topbar.php:32
+#: inc/customizer/panels/topbar.php:35
 msgid "Enable topbar"
 msgstr "Topbar inschakelen"
 
-#: inc/customizer/panels/topbar.php:34
+#: inc/customizer/panels/topbar.php:37
 msgid "Choose whether to show the site topbar or not"
 msgstr "Bepaal of je de topbar wilt weergeven of niet"
 
-#: inc/customizer/panels/topbar.php:55
+#: inc/customizer/panels/topbar.php:56
 msgid "Topbar background color"
 msgstr "Achtergrondkleur topbar"
+
+#: inc/customizer/panels/topbar.php:188
+msgid "Show bottom border"
+msgstr "Toon onderste rand"
 
 #: inc/customizer/panels/typography.php:14
 msgid "Typography"
 msgstr "Typografie"
 
-#: inc/customizer/panels/typography.php:30
-#, fuzzy
-#| msgid "Google Font"
-msgid "Additional Google Font"
-msgstr "Google Font"
-
-#: inc/customizer/panels/typography.php:31
-#, fuzzy
-#| msgid "Enter the URL of the Google Font you want to use."
-msgid "Enter the URL of a Google Font you want to use within the theme."
-msgstr "URL van de Google Font dat je wilt gebruiken invoeren."
-
-#: inc/customizer/panels/typography.php:50
-#, fuzzy
-#| msgid "Body font color"
+#: inc/customizer/panels/typography.php:32
 msgid "Body font"
-msgstr "Lettertypekleur hoofdtekst"
+msgstr "Lettertype hoofdtekst"
 
-#: inc/customizer/panels/typography.php:71
+#: inc/customizer/panels/typography.php:53
 msgid "Body font size (default: 16px)"
 msgstr "Lettertypegrootte hoofdtekst (standaard: 16px)"
 
-#: inc/customizer/panels/typography.php:89
+#: inc/customizer/panels/typography.php:71
 msgid "Body font color"
 msgstr "Lettertypekleur hoofdtekst"
 
-#: inc/customizer/panels/typography.php:108
-#, fuzzy
-#| msgid "General link :hover color"
+#: inc/customizer/panels/typography.php:90
 msgid "General link color"
-msgstr "Algemene link :hoveren kleur"
+msgstr "Algemene link kleur"
 
-#: inc/customizer/panels/typography.php:127
+#: inc/customizer/panels/typography.php:109
 msgid "General link :hover color"
 msgstr "Algemene link :hoveren kleur"
 
-#: inc/customizer/panels/typography.php:146
-#, fuzzy
-#| msgid "H1 font color"
-msgid "H1 font"
-msgstr "H1 lettertypekleur"
+#: inc/customizer/panels/typography.php:130
+msgid "Show underlined links"
+msgstr "Toon onderstreepte links"
 
-#: inc/customizer/panels/typography.php:166
+#: inc/customizer/panels/typography.php:150
+msgid "H1 font"
+msgstr "H1 lettertype"
+
+#: inc/customizer/panels/typography.php:170
 msgid "H1 font size (default: 32px)"
 msgstr "H1 lettertypegrootte (standaard: 32px)"
 
-#: inc/customizer/panels/typography.php:184
+#: inc/customizer/panels/typography.php:188
 msgid "H1 font color"
 msgstr "H1 lettertypekleur"
 
-#: inc/customizer/panels/typography.php:203
-#, fuzzy
-#| msgid "H2 font color"
+#: inc/customizer/panels/typography.php:207
 msgid "H2 font"
-msgstr "H2 lettertypekleur"
+msgstr "H2 lettertype"
 
-#: inc/customizer/panels/typography.php:223
+#: inc/customizer/panels/typography.php:227
 msgid "H2 font size (default: 24px)"
 msgstr "H2 lettertypegrootte (standaard: 24px)"
 
-#: inc/customizer/panels/typography.php:241
+#: inc/customizer/panels/typography.php:245
 msgid "H2 font color"
 msgstr "H2 lettertypekleur"
 
-#: inc/customizer/panels/typography.php:260
-#, fuzzy
-#| msgid "H3 font color"
+#: inc/customizer/panels/typography.php:264
 msgid "H3 font"
-msgstr "H3 lettertypekleur"
+msgstr "H3 lettertype"
 
-#: inc/customizer/panels/typography.php:280
+#: inc/customizer/panels/typography.php:284
 msgid "H3 font size (default: 19px)"
 msgstr "H3 lettertypegrootte (standaard: 19px)"
 
-#: inc/customizer/panels/typography.php:298
+#: inc/customizer/panels/typography.php:302
 msgid "H3 font color"
 msgstr "H3 lettertypekleur"
 
-#: inc/customizer/panels/typography.php:317
-#, fuzzy
-#| msgid "H4 font color"
+#: inc/customizer/panels/typography.php:321
 msgid "H4 font"
-msgstr "H4 lettertypekleur"
+msgstr "H4 lettertype"
 
-#: inc/customizer/panels/typography.php:337
+#: inc/customizer/panels/typography.php:341
 msgid "H4 font size (default: 16px)"
 msgstr "H4 lettertypegrootte (standaard: 16px)"
 
-#: inc/customizer/panels/typography.php:355
+#: inc/customizer/panels/typography.php:359
 msgid "H4 font color"
 msgstr "H4 lettertypekleur"
 
-#: inc/customizer/panels/typography.php:374
-#, fuzzy
-#| msgid "H5 font color"
+#: inc/customizer/panels/typography.php:378
 msgid "H5 font"
-msgstr "H5 lettertypekleur"
+msgstr "H5 lettertype"
 
-#: inc/customizer/panels/typography.php:394
+#: inc/customizer/panels/typography.php:398
 msgid "H5 font size (default: 13px)"
 msgstr "H5 lettertypegrootte (standaard: 13px)"
 
-#: inc/customizer/panels/typography.php:412
+#: inc/customizer/panels/typography.php:416
 msgid "H5 font color"
 msgstr "H5 lettertypekleur"
 
-#: inc/customizer/panels/typography.php:431
-#, fuzzy
-#| msgid "H6 font color"
+#: inc/customizer/panels/typography.php:435
 msgid "H6 font"
-msgstr "H6 lettertypekleur"
+msgstr "H6 lettertype"
 
-#: inc/customizer/panels/typography.php:451
+#: inc/customizer/panels/typography.php:455
 msgid "H6 font size (default: 11px)"
 msgstr "H6 lettertypegrootte (standaard: 11px)"
 
-#: inc/customizer/panels/typography.php:469
+#: inc/customizer/panels/typography.php:473
 msgid "H6 font color"
 msgstr "H6 lettertypekleur"
+
+#: inc/customizer/panels/typography.php:490
+msgid "Additional Google Font"
+msgstr "Aanvullende Google Font"
+
+#: inc/customizer/panels/typography.php:491
+msgid "Enter the URL of a Google Font you want to use within the theme."
+msgstr ""
+"URL van de Google Font die je wilt gebruiken binnen het thema invoeren."
+
+#: inc/customizer/panels/typography.php:491
+msgid "Read how to retrieve a Google font url"
+msgstr "Lees en zie hoe je een Google Font URL kunt verkrijgen"
+
+#: inc/customizer/panels/woocommerce/breadcrumbs.php:14
+msgid "Breadcrumbs"
+msgstr "Kruimelpad"
+
+#: inc/customizer/panels/woocommerce/breadcrumbs.php:35
+msgid "Show breadcrumbs"
+msgstr "Toon kruimelpad"
+
+#: inc/customizer/panels/woocommerce/breadcrumbs.php:37
+msgid "Choose whether to show breadcrumbs on pages, posts and products."
+msgstr ""
+"Bepaal of je een kruimelpad wilt tonen op pagina's, posts en producten."
 
 #: inc/customizer/panels/woocommerce/cart.php:14
 msgid "Cart page"
@@ -855,6 +1021,10 @@ msgstr "Winkelwagen lay-out"
 #: inc/customizer/panels/woocommerce/cart.php:34
 msgid "Choose the cart layout"
 msgstr "Bepaal de winkelwagen lay-out"
+
+#: inc/customizer/panels/woocommerce/cart.php:36
+msgid "Please select"
+msgstr "Selecteer alsjeblieft"
 
 #: inc/customizer/panels/woocommerce/cart.php:37
 msgid "One column layout"
@@ -884,26 +1054,20 @@ msgstr ""
 "Bepaal hoeveel kolommen met cross-sell producten je wilt tonen (standaard: 4)"
 
 #: inc/customizer/panels/woocommerce/cart.php:90
-#, fuzzy
-#| msgid "Add to cart style"
 msgid "Update cart button style"
-msgstr "Toevoegen aan winkelwagen stijl"
+msgstr "Update winkelwagen knop stijl"
 
 #: inc/customizer/panels/woocommerce/cart.php:93
-#, fuzzy
-#| msgid "Textual link"
 msgid "Textual"
-msgstr "Tekstuele link"
+msgstr "Tekstuele"
 
 #: inc/customizer/panels/woocommerce/cart.php:94
-#, fuzzy
-#| msgid "Buttons"
 msgid "Button"
-msgstr "Knoppen"
+msgstr "Knop"
 
 #: inc/customizer/panels/woocommerce/messages.php:14
 msgid "Messages"
-msgstr ""
+msgstr "Berichten"
 
 #: inc/customizer/panels/woocommerce/messages.php:31
 msgid "WooCommerce messages font size (default: 16px)"
@@ -922,37 +1086,74 @@ msgid "Error messages: accent color"
 msgstr "Foutmelding : nadruk kleur"
 
 #: inc/customizer/panels/woocommerce/product-catalog.php:20
+msgid "Product hover effect"
+msgstr "Product hoveren effect"
+
+#: inc/customizer/panels/woocommerce/product-catalog.php:23
+msgid "None"
+msgstr "Geen"
+
+#: inc/customizer/panels/woocommerce/product-catalog.php:24
+msgid "Glow"
+msgstr "Glow"
+
+#: inc/customizer/panels/woocommerce/product-catalog.php:25
+msgid "Zoom"
+msgstr "Zoom"
+
+#: inc/customizer/panels/woocommerce/product-catalog.php:26
+msgid "Alternative image"
+msgstr "Alternatieve afbeelding"
+
+#: inc/customizer/panels/woocommerce/product-catalog.php:27
+msgid "Glow + alternative image"
+msgstr "Glow + alternatieve afbeelding"
+
+#: inc/customizer/panels/woocommerce/product-catalog.php:43
+msgid "Product title font size (default: 14px)"
+msgstr "Product titel lettertypegrootte (standaard: 14px)"
+
+#: inc/customizer/panels/woocommerce/product-catalog.php:61
+msgid "Product title font color"
+msgstr "Product titel lettertype kleur"
+
+#: inc/customizer/panels/woocommerce/product-catalog.php:78
+msgid "Product price font size (default: 14px)"
+msgstr "Productprijs lettertypegrootte (standaard: 14px)"
+
+#: inc/customizer/panels/woocommerce/product-catalog.php:96
+#: inc/customizer/panels/woocommerce/single-product.php:232
+msgid "Product price font color"
+msgstr "Productprijs lettertype kleur"
+
+#: inc/customizer/panels/woocommerce/product-catalog.php:114
 msgid "Add to cart style"
 msgstr "Toevoegen aan winkelwagen stijl"
 
-#: inc/customizer/panels/woocommerce/product-catalog.php:22
+#: inc/customizer/panels/woocommerce/product-catalog.php:116
 msgid ""
 "How should the add to cart button be displayed in product catalog pages?"
 msgstr ""
 "Hoe moet de toevoegen aan winkelwagen kop worden weergegeven in product "
 "catalogus pagina's?"
 
-#: inc/customizer/panels/woocommerce/product-catalog.php:24
+#: inc/customizer/panels/woocommerce/product-catalog.php:118
 msgid "Textual link"
 msgstr "Tekstuele link"
 
-#: inc/customizer/panels/woocommerce/product-catalog.php:25
-msgid "Button style 1"
-msgstr "Knopstijl 1"
-
-#: inc/customizer/panels/woocommerce/product-catalog.php:26
-msgid "Button style 2"
-msgstr "Knopstijl 2"
+#: inc/customizer/panels/woocommerce/product-catalog.php:136
+msgid "Add to cart font size (default: 14px)"
+msgstr "Toevoegen aan winkelwagen lettertypegrootte (standaard: 14px)"
 
 #: inc/customizer/panels/woocommerce/product-category.php:14
 msgid "Product Category page"
 msgstr "Product categorie pagina"
 
-#: inc/customizer/panels/woocommerce/product-category.php:30
+#: inc/customizer/panels/woocommerce/product-category.php:33
 msgid "Choose the position of the sidebar on product category pages"
 msgstr "Bepaal de positie van de zijbalk in de product categorie pagina's"
 
-#: inc/customizer/panels/woocommerce/product-category.php:52
+#: inc/customizer/panels/woocommerce/product-category.php:67
 msgid "Choose the product category page sidebar"
 msgstr "Kies de product categorie pagina zijbalk"
 
@@ -960,11 +1161,11 @@ msgstr "Kies de product categorie pagina zijbalk"
 msgid "Product Tag page"
 msgstr "Product tag pagina"
 
-#: inc/customizer/panels/woocommerce/product-tag.php:30
+#: inc/customizer/panels/woocommerce/product-tag.php:34
 msgid "Choose the position of the sidebar on product tag pages"
 msgstr "Bepaal de positie van de zijbalk in de product tag pagina's"
 
-#: inc/customizer/panels/woocommerce/product-tag.php:53
+#: inc/customizer/panels/woocommerce/product-tag.php:68
 msgid "Choose the product tag page sidebar"
 msgstr "Kies de product tag pagina zijbalk"
 
@@ -972,11 +1173,11 @@ msgstr "Kies de product tag pagina zijbalk"
 msgid "Product Taxonomy page"
 msgstr "Product taxonomy pagina"
 
-#: inc/customizer/panels/woocommerce/product-tax.php:30
+#: inc/customizer/panels/woocommerce/product-tax.php:34
 msgid "Choose the position of the sidebar on product taxonomy pages"
 msgstr "Bepaal de positie van de zijbalk in de product taxonomie pagina's"
 
-#: inc/customizer/panels/woocommerce/product-tax.php:53
+#: inc/customizer/panels/woocommerce/product-tax.php:68
 msgid "Choose the product taxonomy page sidebar"
 msgstr "Kies de product taxonomie pagina zijbalk"
 
@@ -989,7 +1190,7 @@ msgid "Sale badge background color"
 msgstr "Achtergrondkleur uitverkoop badge"
 
 #: inc/customizer/panels/woocommerce/sale-badge.php:51
-#: inc/customizer/panels/woocommerce/store-notice.php:39
+#: inc/customizer/panels/woocommerce/store-notice.php:40
 msgid "Store notice text color"
 msgstr "Tekst kleur bericht winkel"
 
@@ -997,47 +1198,103 @@ msgstr "Tekst kleur bericht winkel"
 msgid "Sale badge font size (default: 13px)"
 msgstr "Lettertype grootte uitverkoop badge (standaard: 13px)"
 
+#: inc/customizer/panels/woocommerce/shop-page.php:14
+msgid "Shop page"
+msgstr ""
+
+#: inc/customizer/panels/woocommerce/shop-page.php:37
+#, fuzzy
+#| msgid "Choose the position of the blog page sidebar"
+msgid "Choose the position of the shop page sidebar"
+msgstr "Bepaal de positie van de blog pagina zijbalk"
+
+#: inc/customizer/panels/woocommerce/shop-page.php:73
+#, fuzzy
+#| msgid "Choose the blog sidebar"
+msgid "Choose the shop page sidebar"
+msgstr "Kies de blog zijbalk"
+
 #: inc/customizer/panels/woocommerce/single-product.php:14
 msgid "Single product page"
 msgstr "Single product pagina"
 
-#: inc/customizer/panels/woocommerce/single-product.php:32
+#: inc/customizer/panels/woocommerce/single-product.php:34
+msgid "Product title"
+msgstr "Product titel"
+
+#: inc/customizer/panels/woocommerce/single-product.php:52
+msgid "Font family"
+msgstr "Lettertype familie"
+
+#: inc/customizer/panels/woocommerce/single-product.php:72
+msgid "Font size (default: 32px)"
+msgstr "Lettertype grootte (standaard: 32px)"
+
+#: inc/customizer/panels/woocommerce/single-product.php:111
+msgid "Product image"
+msgstr "Product afbeelding"
+
+#: inc/customizer/panels/woocommerce/single-product.php:132
 msgid "Enable featured image zoom"
-msgstr ""
+msgstr "Uitgelichte afbeelding zoom inschakelen"
 
-#: inc/customizer/panels/woocommerce/single-product.php:53
+#: inc/customizer/panels/woocommerce/single-product.php:154
 msgid "Enable featured image lightbox"
-msgstr ""
+msgstr "Uitgelichte afbeelding lightbox inschakelen"
 
-#: inc/customizer/panels/woocommerce/single-product.php:74
+#: inc/customizer/panels/woocommerce/single-product.php:176
 msgid "Enable additional images slider"
-msgstr ""
+msgstr "Aanvullende afbeeldingen slider inschakelen"
 
-#: inc/customizer/panels/woocommerce/single-product.php:95
+#: inc/customizer/panels/woocommerce/single-product.php:197
+msgid "Product price and Add to cart"
+msgstr "Productprijs en toevoegen aan winkelwagen"
+
+#: inc/customizer/panels/woocommerce/single-product.php:214
+msgid "Product price font size (default: 35px)"
+msgstr "Productprijs lettertypegrootte (standaard: 35px)"
+
+#: inc/customizer/panels/woocommerce/single-product.php:249
+msgid "Product quantity font size (default: 40px)"
+msgstr "Product hoeveelheid lettertypegrootte (standaard: 40px)"
+
+#: inc/customizer/panels/woocommerce/single-product.php:266
+msgid "Add to cart button font size (default: 20px)"
+msgstr "Toevoegen aan winkelwagen knop lettertypegrootte (standaard: 20px)"
+
+#: inc/customizer/panels/woocommerce/single-product.php:286
+msgid "Related products"
+msgstr "Gerelateerde producten"
+
+#: inc/customizer/panels/woocommerce/single-product.php:304
 msgid "Max related products to show"
 msgstr "Max aantal gerelateerde producten om weer te geven"
 
-#: inc/customizer/panels/woocommerce/single-product.php:97
+#: inc/customizer/panels/woocommerce/single-product.php:306
 msgid "Choose how many related products you want to show (default: 4)"
 msgstr ""
 "Bepaal het aantal gerelateerde producten dat je wilt weergeven (standaard: 4)"
 
-#: inc/customizer/panels/woocommerce/single-product.php:112
+#: inc/customizer/panels/woocommerce/single-product.php:321
 msgid "Related products columns"
 msgstr "Gerelateerde producten kolommen"
 
-#: inc/customizer/panels/woocommerce/single-product.php:114
+#: inc/customizer/panels/woocommerce/single-product.php:323
 msgid ""
 "Choose how many columns with related products you want to show (default: 4)"
 msgstr ""
 "Bepaal het aantal kolommen met gerelateerde producten dat je wilt weergeven "
 "(standaard: 4)"
 
-#: inc/customizer/panels/woocommerce/single-product.php:129
+#: inc/customizer/panels/woocommerce/single-product.php:341
+msgid "Sidebar management"
+msgstr "Zijbalk management"
+
+#: inc/customizer/panels/woocommerce/single-product.php:362
 msgid "Choose the position of the sidebar on single product page"
 msgstr "Bepaal de positie van de zijbalk in de single product pagina"
 
-#: inc/customizer/panels/woocommerce/single-product.php:131
+#: inc/customizer/panels/woocommerce/single-product.php:364
 msgid ""
 "Select where to display the sidebar. You can adjust the settings from "
 "product edit view."
@@ -1045,23 +1302,55 @@ msgstr ""
 "Bepaal waar je de zijbalk wilt weergeven. Je kunt de instellingen aanpassen "
 "vanaf de product bewerkingsweergave."
 
-#: inc/customizer/panels/woocommerce/single-product.php:152
+#: inc/customizer/panels/woocommerce/single-product.php:396
 msgid "Choose the sidebar to use on single product page"
 msgstr "Kies de zijbalk die je wilt gebruiken op de enkele product pagina"
 
-#: inc/customizer/panels/woocommerce/single-product.php:154
+#: inc/customizer/panels/woocommerce/single-product.php:398
 msgid "You can adjust the settings from product edit view."
 msgstr "Je kunt de instellingen aanpassen vanaf de product bewerkingsweergave."
 
-#: inc/customizer/panels/woocommerce/single-product.php:170
+#: inc/customizer/panels/woocommerce/single-product.php:418
 msgid "Force all product to use the same sidebar."
 msgstr "Forceer dezelfde zijbalk voor alle producten."
+
+#: inc/customizer/panels/woocommerce/single-product.php:440
+msgid "Tabs management"
+msgstr "Tabblad management"
+
+#: inc/customizer/panels/woocommerce/single-product.php:457
+msgid "Tab title font size (default: 30px)"
+msgstr "Tabblad titel lettertypegrootte (standaard: 30px)"
+
+#: inc/customizer/panels/woocommerce/single-product.php:476
+msgid "Tab title font color"
+msgstr "Tabblad titel lettertype kleur"
+
+#: inc/customizer/panels/woocommerce/single-product.php:493
+msgid "Tab content font size (default: 16px)"
+msgstr "Tabblad inhoud lettertypegrootte (standaard: 16px)"
+
+#: inc/customizer/panels/woocommerce/single-product.php:513
+msgid "Product categories, tags and SKU"
+msgstr "Product categorieën, tags en SKU"
+
+#: inc/customizer/panels/woocommerce/single-product.php:533
+msgid "Show product categories"
+msgstr "Product categorieën tonen"
+
+#: inc/customizer/panels/woocommerce/single-product.php:554
+msgid "Show product tags"
+msgstr "Product tags tonen"
+
+#: inc/customizer/panels/woocommerce/single-product.php:575
+msgid "Show product SKU"
+msgstr "Product SKU tonen"
 
 #: inc/customizer/panels/woocommerce/store-notice.php:21
 msgid "Store notice background color"
 msgstr "Achtergrondkleur bericht winkel"
 
-#: inc/customizer/panels/woocommerce/store-notice.php:56
+#: inc/customizer/panels/woocommerce/store-notice.php:58
 msgid "Store notice font size (default: 13px)"
 msgstr "Lettertype grootte bericht winkel (standaard: 13px)"
 
@@ -1089,11 +1378,11 @@ msgstr "Header en footer"
 msgid "Enable this option to hide site header and footer."
 msgstr "Deze optie inschakelen om header en footer van site te verbergen."
 
-#: inc/metaboxes.php:149 inc/metaboxes.php:250
+#: inc/metaboxes.php:149 inc/metaboxes.php:246
 msgid "none"
 msgstr "geen"
 
-#: inc/metaboxes.php:177 inc/metaboxes.php:213
+#: inc/metaboxes.php:177 inc/metaboxes.php:209
 msgid "inherit"
 msgstr "samengevoegd"
 
@@ -1109,10 +1398,6 @@ msgstr "links"
 msgid "right"
 msgstr "rechts"
 
-#: inc/metaboxes.php:193
-msgid "bottom"
-msgstr "onder"
-
 #: inc/one-click-demo-import.php:20 inc/one-click-demo-import.php:30
 msgid ""
 "After you import this demo, check WooCommerce settings to get the best from "
@@ -1121,68 +1406,64 @@ msgstr ""
 "Na het importeren van deze demo, check de WooCommerce instellingen om het "
 "beste voor je winkel te verkrijgen"
 
-#: inc/sidebars.php:15
+#: inc/sidebars.php:37
 msgid "Default Sidebar"
 msgstr "Standaard zijbalk"
 
-#: inc/sidebars.php:17 inc/sidebars.php:28 inc/sidebars.php:39
-#: inc/sidebars.php:50 inc/sidebars.php:61 inc/sidebars.php:72
-#: inc/sidebars.php:83 inc/sidebars.php:94 inc/sidebars.php:105
-#: inc/sidebars.php:116 inc/sidebars.php:127 inc/sidebars.php:138
+#: inc/sidebars.php:39 inc/sidebars.php:50 inc/sidebars.php:61
+#: inc/sidebars.php:72 inc/sidebars.php:83 inc/sidebars.php:94
+#: inc/sidebars.php:105 inc/sidebars.php:116 inc/sidebars.php:127
+#: inc/sidebars.php:138 inc/sidebars.php:149 inc/sidebars.php:160
 msgid "Add widgets here."
 msgstr "Widgets hier toevoegen."
 
-#: inc/sidebars.php:26
+#: inc/sidebars.php:48
 msgid "Topbar Sidebar"
 msgstr "Topbar zijbalk"
 
-#: inc/sidebars.php:37
+#: inc/sidebars.php:59
 msgid "Header Sidebar"
 msgstr "Header zijbalk"
 
-#: inc/sidebars.php:48
+#: inc/sidebars.php:70
 msgid "Footer Sidebar 1 (multiple columns can be configured)"
 msgstr "Footer zijbalk 1 (meerdere kolommen kunnen worden geconfigureerd)"
 
-#: inc/sidebars.php:59
+#: inc/sidebars.php:81
 msgid "Footer Sidebar 2 (multiple columns can be configured)"
 msgstr "Footer zijbalk 2 (meerdere kolommen kunnen worden geconfigureerd)"
 
-#: inc/sidebars.php:70
+#: inc/sidebars.php:92
 msgid "Sidebar 2"
 msgstr "Zijbalk 2"
 
-#: inc/sidebars.php:81
+#: inc/sidebars.php:103
 msgid "Sidebar 3"
 msgstr "Zijbalk 3"
 
-#: inc/sidebars.php:92
+#: inc/sidebars.php:114
 msgid "Sidebar 4"
 msgstr "Zijbalk 4"
 
-#: inc/sidebars.php:103
+#: inc/sidebars.php:125
 msgid "Sidebar 5"
 msgstr "Zijbalk 5"
 
-#: inc/sidebars.php:114
+#: inc/sidebars.php:136
 msgid "Shop sidebar"
 msgstr "Winkel zijbalk"
 
-#: inc/sidebars.php:125
+#: inc/sidebars.php:147
 msgid "Blog category sidebar"
 msgstr "Blog categorie zijbalk"
 
-#: inc/sidebars.php:136
+#: inc/sidebars.php:158
 msgid "Blog tag sidebar"
 msgstr "Blog tag zijbalk"
 
-#: inc/template-functions.php:177
+#: inc/template-functions.php:184
 msgid "Search"
 msgstr "Zoeken"
-
-#: inc/template-functions.php:200 inc/template-functions.php:218
-msgid "Read more"
-msgstr "Lees meer"
 
 #: inc/template-tags.php:42
 #, php-format
@@ -1195,6 +1476,135 @@ msgstr "Door %s"
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr "Bewerk <span class=\"screen-reader-text\">%s</span>"
 
+#: inc/theme-dashboard/class-proteo-admin-dashboard.php:104
+msgid "WordPress Nonce not validated."
+msgstr ""
+
+#: inc/theme-dashboard/class-proteo-admin-dashboard.php:111
+msgid "No plugin specified"
+msgstr ""
+
+#: inc/theme-dashboard/class-proteo-admin-dashboard.php:133
+#, fuzzy
+#| msgid "Plugin activated successfully."
+msgid "Plugin Successfully Activated"
+msgstr "Plugin succesvol geactiveerd."
+
+#: inc/theme-dashboard/class-proteo-admin-dashboard.php:157
+#, fuzzy
+#| msgid "Begin activating plugin"
+#| msgid_plural "Begin activating plugins"
+msgid "Activating Importer Plugin "
+msgstr "Start met activeren plugin"
+
+#: inc/theme-dashboard/class-proteo-admin-dashboard.php:159
+#, fuzzy
+#| msgid "Activate"
+msgid "Activating"
+msgstr "Activeren"
+
+#: inc/theme-dashboard/class-proteo-admin-dashboard.php:160
+#, fuzzy
+#| msgid "Begin activating plugin"
+#| msgid_plural "Begin activating plugins"
+msgid "Deactivating"
+msgstr "Start met activeren plugin"
+
+#: inc/theme-dashboard/class-proteo-admin-dashboard.php:161
+#: inc/theme-dashboard/theme-dashboard.php:400
+msgid "Activate"
+msgstr "Activeren"
+
+#: inc/theme-dashboard/class-proteo-admin-dashboard.php:162
+#, fuzzy
+#| msgid "Activate"
+msgid "Deactivate"
+msgstr "Activeren"
+
+#: inc/theme-dashboard/class-proteo-admin-dashboard.php:163
+msgid "Settings"
+msgstr ""
+
+#: inc/theme-dashboard/theme-dashboard.php:344
+msgid "Import a demo site"
+msgstr ""
+
+#: inc/theme-dashboard/theme-dashboard.php:346
+msgid "Import any of the demo site below."
+msgstr ""
+
+#: inc/theme-dashboard/theme-dashboard.php:349
+msgid ""
+"Once done, your site will have the exact same look and content as the demo "
+"preview."
+msgstr ""
+
+#: inc/theme-dashboard/theme-dashboard.php:352
+msgid "We are working very hard to add new demo sites, stay updated!"
+msgstr ""
+
+#: inc/theme-dashboard/theme-dashboard.php:364
+#: inc/theme-dashboard/theme-dashboard.php:366
+#: inc/theme-dashboard/theme-dashboard.php:368
+msgid "Import"
+msgstr ""
+
+#: inc/theme-dashboard/theme-dashboard.php:372
+msgid "Coming soon"
+msgstr ""
+
+#: inc/theme-dashboard/theme-dashboard.php:389
+#, fuzzy
+#| msgid "Install demo content and suggested plugins"
+msgid "Free suggested plugins"
+msgstr "Demo inhoud en voorgestelde plugins installeren"
+
+#: inc/theme-dashboard/theme-dashboard.php:403
+#, fuzzy
+#| msgid "Installed But Not Activated"
+msgid "Install & Activate"
+msgstr "Geïnstalleerd maar niet geactiveerd"
+
+#: inc/theme-dashboard/theme-dashboard.php:414
+msgid "How to start"
+msgstr ""
+
+#: inc/theme-dashboard/theme-dashboard.php:416
+#, fuzzy
+#| msgid "Read more text"
+msgid "Read the"
+msgstr "Lees meer tekst"
+
+#: inc/theme-dashboard/theme-dashboard.php:416
+#, fuzzy
+#| msgid "Theme documentation"
+msgid "theme documentation"
+msgstr "Thema documentatie"
+
+#: inc/theme-dashboard/theme-dashboard.php:417
+msgid "Visit theme forum"
+msgstr ""
+
+#: inc/theme-dashboard/theme-dashboard.php:417
+msgid "Ask help in the"
+msgstr ""
+
+#: inc/theme-dashboard/theme-dashboard.php:417
+msgid "support forum"
+msgstr ""
+
+#: inc/theme-dashboard/theme-dashboard.php:418
+msgid "Use theme customizer"
+msgstr ""
+
+#: inc/theme-dashboard/theme-dashboard.php:418
+msgid "Start to customize with the"
+msgstr ""
+
+#: inc/theme-dashboard/theme-dashboard.php:418
+msgid "live customizer"
+msgstr ""
+
 #: inc/widgets/class-yith-proteo-account-widget.php:19
 msgid "YITH Proteo Account Widget"
 msgstr "YITH Proteo Account Widget"
@@ -1203,31 +1613,31 @@ msgstr "YITH Proteo Account Widget"
 msgid "A shortcut to site login page"
 msgstr "Een shortcut naar de login pagina van de site"
 
-#: inc/widgets/class-yith-proteo-account-widget.php:60
+#: inc/widgets/class-yith-proteo-account-widget.php:64
 #, php-format
 msgid "Hello %s"
 msgstr "Hallo %s"
 
-#: inc/widgets/class-yith-proteo-account-widget.php:121
-#: inc/widgets/class-yith-proteo-account-widget.php:195
+#: inc/widgets/class-yith-proteo-account-widget.php:125
+#: inc/widgets/class-yith-proteo-account-widget.php:199
 msgid "Custom icon"
 msgstr "Aangepast icoon"
 
-#: inc/widgets/class-yith-proteo-account-widget.php:127
-#: inc/widgets/class-yith-proteo-account-widget.php:201
+#: inc/widgets/class-yith-proteo-account-widget.php:131
+#: inc/widgets/class-yith-proteo-account-widget.php:205
 msgid "Login url"
 msgstr "Login url"
 
-#: inc/widgets/class-yith-proteo-account-widget.php:135
-#: inc/widgets/class-yith-proteo-account-widget.php:209
+#: inc/widgets/class-yith-proteo-account-widget.php:139
+#: inc/widgets/class-yith-proteo-account-widget.php:213
 msgid "My account url"
 msgstr "Mijn account url"
 
-#: inc/widgets/class-yith-proteo-account-widget.php:161
+#: inc/widgets/class-yith-proteo-account-widget.php:165
 msgid "Add Media"
 msgstr "Media toevoegen"
 
-#: inc/widgets/class-yith-proteo-account-widget.php:162
+#: inc/widgets/class-yith-proteo-account-widget.php:166
 msgid "Clear"
 msgstr "Wissen"
 
@@ -1308,18 +1718,16 @@ msgstr "Uitloggen"
 msgid "Account info"
 msgstr "Account informatie"
 
-#: inc/woocommerce.php:404
+#: inc/woocommerce.php:397
 #, php-format
 msgid "%d item in cart"
 msgid_plural "%d items in cart"
 msgstr[0] "%d item in winkelwagen"
 msgstr[1] "%d items in winkelwagen"
 
-#: inc/woocommerce.php:562
-#, fuzzy
-#| msgid "Thank you"
+#: inc/woocommerce.php:555
 msgid "Thank you."
-msgstr "Dankjewel"
+msgstr "Dankjewel."
 
 #: search.php:22
 #, php-format
@@ -1354,490 +1762,46 @@ msgstr ""
 "Het lijkt erop dat we niet hebben kunnen vinden wat je zocht. Probeer de "
 "zoekfunctie."
 
-#: template-parts/content-page.php:33 template-parts/content-single.php:166
-#: template-parts/content.php:122
+#: template-parts/content-page.php:33 template-parts/content-single.php:174
+#: template-parts/content-sticky.php:122 template-parts/content.php:122
 msgid "Pages:"
 msgstr "Pagina's:"
 
-#: template-parts/content-single.php:59 template-parts/content-single.php:108
-#: template-parts/content.php:61
+#: template-parts/content-single.php:67 template-parts/content-single.php:116
+#: template-parts/content-sticky.php:61 template-parts/content.php:61
 msgid ", "
 msgstr ", "
 
-#: template-parts/content-single.php:62 template-parts/content-single.php:111
-#: template-parts/content.php:64
+#: template-parts/content-single.php:70 template-parts/content-single.php:119
+#: template-parts/content-sticky.php:64 template-parts/content.php:64
 #, php-format
 msgid "Categories: %1$s"
 msgstr "Categorieën: %1$s"
 
-#: template-parts/content-single.php:66 template-parts/content-single.php:115
-#: template-parts/content.php:68
+#: template-parts/content-single.php:74 template-parts/content-single.php:123
+#: template-parts/content-sticky.php:68 template-parts/content.php:68
 msgctxt "list item separator"
 msgid ", "
 msgstr ", "
 
-#: template-parts/content-single.php:69 template-parts/content-single.php:118
-#: template-parts/content.php:71
+#: template-parts/content-single.php:77 template-parts/content-single.php:126
+#: template-parts/content-sticky.php:71 template-parts/content.php:71
 #, php-format
 msgid "Tags: %1$s"
 msgstr "Tags: %1$s"
 
-#: template-parts/content-single.php:79 template-parts/content-single.php:128
-#: template-parts/content.php:81
+#: template-parts/content-single.php:87 template-parts/content-single.php:136
+#: template-parts/content-sticky.php:81 template-parts/content.php:81
 #, php-format
 msgid "Leave a comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr ""
 "Laat een reactie achter<span class=\"screen-reader-text\"> op %s</span>"
 
-#: template-parts/content-single.php:153 template-parts/content.php:105
+#: template-parts/content-single.php:161 template-parts/content-sticky.php:105
+#: template-parts/content.php:105
 #, php-format
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr "Verder lezen<span class=\"screen-reader-text\"> \"%s\"</span>"
-
-#: third-party/classes/class-tgm-plugin-activation.php:327
-msgid "Install Required Plugins"
-msgstr "Installeer noodzakelijke plugins"
-
-#: third-party/classes/class-tgm-plugin-activation.php:328
-msgid "Install Plugins"
-msgstr "Installeer plugins"
-
-#: third-party/classes/class-tgm-plugin-activation.php:330
-#, php-format
-msgid "Installing Plugin: %s"
-msgstr "Plugin installeren: %s"
-
-#: third-party/classes/class-tgm-plugin-activation.php:332
-#, php-format
-msgid "Updating Plugin: %s"
-msgstr "Plugin bijwerken: %s"
-
-#: third-party/classes/class-tgm-plugin-activation.php:333
-msgid "Something went wrong with the plugin API."
-msgstr "Er is iets misgegaan met de plugin API>"
-
-#: third-party/classes/class-tgm-plugin-activation.php:336
-#, php-format
-msgid "This theme requires the following plugin: %1$s."
-msgid_plural "This theme requires the following plugins: %1$s."
-msgstr[0] "Dit thema heeft de volgende plugin nodig: %1$s."
-msgstr[1] "Dit thema heeft de volgende plugins nodig: %1$s."
-
-#: third-party/classes/class-tgm-plugin-activation.php:342
-#, php-format
-msgid "This theme recommends the following plugin: %1$s."
-msgid_plural "This theme recommends the following plugins: %1$s."
-msgstr[0] "Dit thema raad de volgende plugin aan: %1$s."
-msgstr[1] "Dit thema raad de volgende plugins aan: %1$s."
-
-#: third-party/classes/class-tgm-plugin-activation.php:348
-#, php-format
-msgid ""
-"The following plugin needs to be updated to its latest version to ensure "
-"maximum compatibility with this theme: %1$s."
-msgid_plural ""
-"The following plugins need to be updated to their latest version to ensure "
-"maximum compatibility with this theme: %1$s."
-msgstr[0] ""
-"De volgende plugin moet worden bijgewerkt tot de laatste versie om zeker te "
-"zijn van maximale compatibiliteit met dit thema: %1$s."
-msgstr[1] ""
-"De volgende plugins moeten worden bijgewerkt tot de laatste versie om zeker "
-"te zijn van maximale compatibiliteit met dit thema: %1$s."
-
-#: third-party/classes/class-tgm-plugin-activation.php:354
-#, php-format
-msgid "There is an update available for: %1$s."
-msgid_plural "There are updates available for the following plugins: %1$s."
-msgstr[0] "Er is een update beschikbaar voor: %1$s."
-msgstr[1] "Er zijn updates beschikbaar voor de volgende plugins: %1$s."
-
-#: third-party/classes/class-tgm-plugin-activation.php:360
-#, php-format
-msgid "The following required plugin is currently inactive: %1$s."
-msgid_plural "The following required plugins are currently inactive: %1$s."
-msgstr[0] "De volgende plugin is momenteel niet actief: %1$s."
-msgstr[1] "De volgende plugins zijn momenteel niet actief: %1$s."
-
-#: third-party/classes/class-tgm-plugin-activation.php:366
-#, php-format
-msgid "The following recommended plugin is currently inactive: %1$s."
-msgid_plural "The following recommended plugins are currently inactive: %1$s."
-msgstr[0] "De volgende aanbevolen plugin is momenteel niet actief: %1$s."
-msgstr[1] "De volgende aanbevolen plugins zijn momenteel niet actief: %1$s."
-
-#: third-party/classes/class-tgm-plugin-activation.php:371
-msgid "Begin installing plugin"
-msgid_plural "Begin installing plugins"
-msgstr[0] "Start met installeren plugin"
-msgstr[1] "Start met installeren plugins"
-
-#: third-party/classes/class-tgm-plugin-activation.php:376
-msgid "Begin updating plugin"
-msgid_plural "Begin updating plugins"
-msgstr[0] "Start met bijwerken plugin"
-msgstr[1] "Start met bijwerken plugins"
-
-#: third-party/classes/class-tgm-plugin-activation.php:381
-msgid "Begin activating plugin"
-msgid_plural "Begin activating plugins"
-msgstr[0] "Start met activeren plugin"
-msgstr[1] "Start met activeren plugins"
-
-#: third-party/classes/class-tgm-plugin-activation.php:385
-msgid "Return to Required Plugins Installer"
-msgstr "Terugkeren naar noodzakelijke plugins installateur"
-
-#: third-party/classes/class-tgm-plugin-activation.php:386
-#: third-party/classes/class-tgm-plugin-activation.php:827
-#: third-party/classes/class-tgm-plugin-activation.php:2533
-#: third-party/classes/class-tgm-plugin-activation.php:3580
-msgid "Return to the Dashboard"
-msgstr "Terugkeren naar dashboard"
-
-#: third-party/classes/class-tgm-plugin-activation.php:387
-#: third-party/classes/class-tgm-plugin-activation.php:3159
-msgid "Plugin activated successfully."
-msgstr "Plugin succesvol geactiveerd."
-
-#: third-party/classes/class-tgm-plugin-activation.php:388
-#: third-party/classes/class-tgm-plugin-activation.php:2952
-msgid "The following plugin was activated successfully:"
-msgid_plural "The following plugins were activated successfully:"
-msgstr[0] "De volgende plugin is succesvol geactiveerd."
-msgstr[1] "De volgende plugins zijn succesvol geactiveerd."
-
-#: third-party/classes/class-tgm-plugin-activation.php:390
-#, php-format
-msgid "No action taken. Plugin %1$s was already active."
-msgstr "Geen actie ondernomen. Plugin %1$s was al actief."
-
-#: third-party/classes/class-tgm-plugin-activation.php:392
-#, php-format
-msgid ""
-"Plugin not activated. A higher version of %s is needed for this theme. "
-"Please update the plugin."
-msgstr ""
-"Plugin niet geactiveerd. Een hogere versie van %s is noodzakelijk voor dit "
-"thema. Werk de plugin bij aub."
-
-#: third-party/classes/class-tgm-plugin-activation.php:394
-#, php-format
-msgid "All plugins installed and activated successfully. %1$s"
-msgstr "Alle plugins zijn succesvol geïnstalleerd en geactiveerd. %1$s"
-
-#: third-party/classes/class-tgm-plugin-activation.php:395
-msgid "Dismiss this notice"
-msgstr "Melding afwijzen"
-
-#: third-party/classes/class-tgm-plugin-activation.php:396
-msgid ""
-"There are one or more required or recommended plugins to install, update or "
-"activate."
-msgstr ""
-"Er is een/er zijn meerdere noodzakelijke of aanbevolen plugins om te "
-"installeren, bijwerken of activeren."
-
-#: third-party/classes/class-tgm-plugin-activation.php:397
-msgid "Please contact the administrator of this site for help."
-msgstr "Neem a.u.b. contact op met de beheerder van de site voor hulp."
-
-#: third-party/classes/class-tgm-plugin-activation.php:522
-msgid "This plugin needs to be updated to be compatible with your theme."
-msgstr "Deze plugin moet worden bijgewerkt om compatibel te zijn met je thema."
-
-#: third-party/classes/class-tgm-plugin-activation.php:523
-msgid "Update Required"
-msgstr "Bijwerken noodzakelijk"
-
-#: third-party/classes/class-tgm-plugin-activation.php:934
-msgid ""
-"The remote plugin package does not contain a folder with the desired slug "
-"and renaming did not work."
-msgstr ""
-"Het externe plugin pakket bevat geen map met de gewenste slug en hernoemen "
-"heeft niet gewerkt."
-
-#: third-party/classes/class-tgm-plugin-activation.php:934
-#: third-party/classes/class-tgm-plugin-activation.php:937
-msgid ""
-"Please contact the plugin provider and ask them to package their plugin "
-"according to the WordPress guidelines."
-msgstr ""
-"Neem a.u.b. contact op met de plugin provider en vraag ze of de plugin werkt "
-"volgens de WordPress richtlijnen."
-
-#: third-party/classes/class-tgm-plugin-activation.php:937
-msgid ""
-"The remote plugin package consists of more than one file, but the files are "
-"not packaged in a folder."
-msgstr ""
-"Het externe plugin pakket bestaat uit een of meer bestanden, maar de "
-"bestanden zijn niet verpakt in een map."
-
-#: third-party/classes/class-tgm-plugin-activation.php:1121
-#: third-party/classes/class-tgm-plugin-activation.php:2948
-msgctxt "plugin A *and* plugin B"
-msgid "and"
-msgstr "en"
-
-#: third-party/classes/class-tgm-plugin-activation.php:1982
-#, php-format
-msgid "TGMPA v%s"
-msgstr "TGMPA v%s"
-
-#: third-party/classes/class-tgm-plugin-activation.php:2273
-msgid "Required"
-msgstr "Verplicht"
-
-#: third-party/classes/class-tgm-plugin-activation.php:2276
-msgid "Recommended"
-msgstr "Aanbevolen"
-
-#: third-party/classes/class-tgm-plugin-activation.php:2292
-msgid "WordPress Repository"
-msgstr "WordPress Repository"
-
-#: third-party/classes/class-tgm-plugin-activation.php:2295
-msgid "External Source"
-msgstr "Externe bron"
-
-#: third-party/classes/class-tgm-plugin-activation.php:2298
-msgid "Pre-Packaged"
-msgstr "Voorverpakt"
-
-#: third-party/classes/class-tgm-plugin-activation.php:2315
-msgid "Not Installed"
-msgstr "Niet geïnstalleerd"
-
-#: third-party/classes/class-tgm-plugin-activation.php:2319
-msgid "Installed But Not Activated"
-msgstr "Geïnstalleerd maar niet geactiveerd"
-
-#: third-party/classes/class-tgm-plugin-activation.php:2321
-msgid "Active"
-msgstr "Actief"
-
-#: third-party/classes/class-tgm-plugin-activation.php:2327
-msgid "Required Update not Available"
-msgstr "Verplichte update is niet beschikbaar"
-
-#: third-party/classes/class-tgm-plugin-activation.php:2330
-msgid "Requires Update"
-msgstr "Update noodzakelijk"
-
-#: third-party/classes/class-tgm-plugin-activation.php:2333
-msgid "Update recommended"
-msgstr "Update aanbevolen"
-
-#: third-party/classes/class-tgm-plugin-activation.php:2342
-#, php-format
-msgctxt "Install/Update Status"
-msgid "%1$s, %2$s"
-msgstr "%1$s, %2$s"
-
-#: third-party/classes/class-tgm-plugin-activation.php:2388
-#, php-format
-msgctxt "plugins"
-msgid "All <span class=\"count\">(%s)</span>"
-msgid_plural "All <span class=\"count\">(%s)</span>"
-msgstr[0] "Alle <span class=\"count\">(%s)</span>"
-msgstr[1] "Alle <span class=\"count\">(%s)</span>"
-
-#: third-party/classes/class-tgm-plugin-activation.php:2392
-#, php-format
-msgid "To Install <span class=\"count\">(%s)</span>"
-msgid_plural "To Install <span class=\"count\">(%s)</span>"
-msgstr[0] "Te installeren <span class=\"count\">(%s)</span>"
-msgstr[1] "Te installeren <span class=\"count\">(%s)</span>"
-
-#: third-party/classes/class-tgm-plugin-activation.php:2396
-#, php-format
-msgid "Update Available <span class=\"count\">(%s)</span>"
-msgid_plural "Update Available <span class=\"count\">(%s)</span>"
-msgstr[0] "Update beschikbaar <span class=\"count\">(%s)</span>"
-msgstr[1] "Update beschikbaar <span class=\"count\">(%s)</span>"
-
-#: third-party/classes/class-tgm-plugin-activation.php:2400
-#, php-format
-msgid "To Activate <span class=\"count\">(%s)</span>"
-msgid_plural "To Activate <span class=\"count\">(%s)</span>"
-msgstr[0] "Te activeren <span class=\"count\">(%s)</span>"
-msgstr[1] "Te activeren <span class=\"count\">(%s)</span>"
-
-#: third-party/classes/class-tgm-plugin-activation.php:2482
-msgctxt "as in: \"version nr unknown\""
-msgid "unknown"
-msgstr "onbekend"
-
-#: third-party/classes/class-tgm-plugin-activation.php:2490
-msgid "Installed version:"
-msgstr "Geïnstalleerde versie:"
-
-#: third-party/classes/class-tgm-plugin-activation.php:2498
-msgid "Minimum required version:"
-msgstr "Minimum noodzakelijke versie:"
-
-#: third-party/classes/class-tgm-plugin-activation.php:2510
-msgid "Available version:"
-msgstr "Beschikbare versie:"
-
-#: third-party/classes/class-tgm-plugin-activation.php:2533
-msgid "No plugins to install, update or activate."
-msgstr "Geen plugin om te installeren, bijwerken of activeren."
-
-#: third-party/classes/class-tgm-plugin-activation.php:2547
-msgid "Plugin"
-msgstr "Plugin"
-
-#: third-party/classes/class-tgm-plugin-activation.php:2548
-msgid "Source"
-msgstr "Bron"
-
-#: third-party/classes/class-tgm-plugin-activation.php:2549
-msgid "Type"
-msgstr "Type"
-
-#: third-party/classes/class-tgm-plugin-activation.php:2553
-msgid "Version"
-msgstr "Versie"
-
-#: third-party/classes/class-tgm-plugin-activation.php:2554
-msgid "Status"
-msgstr "Status"
-
-#: third-party/classes/class-tgm-plugin-activation.php:2603
-#, php-format
-msgid "Install %2$s"
-msgstr "Installeren %2$s"
-
-#: third-party/classes/class-tgm-plugin-activation.php:2608
-#, php-format
-msgid "Update %2$s"
-msgstr "Bijwerken %2$s"
-
-#: third-party/classes/class-tgm-plugin-activation.php:2614
-#, php-format
-msgid "Activate %2$s"
-msgstr "Activeren %2$s"
-
-#: third-party/classes/class-tgm-plugin-activation.php:2684
-msgid "Upgrade message from the plugin author:"
-msgstr "Bericht upgraden van de plugin auteur:"
-
-#: third-party/classes/class-tgm-plugin-activation.php:2717
-msgid "Install"
-msgstr "Installeren"
-
-#: third-party/classes/class-tgm-plugin-activation.php:2723
-msgid "Update"
-msgstr "Bijwerken"
-
-#: third-party/classes/class-tgm-plugin-activation.php:2726
-msgid "Activate"
-msgstr "Activeren"
-
-#: third-party/classes/class-tgm-plugin-activation.php:2757
-msgid "No plugins were selected to be installed. No action taken."
-msgstr ""
-"Er zijn geen plugins geselecteerd om te installeren. Geen actie ondernomen. "
-
-#: third-party/classes/class-tgm-plugin-activation.php:2759
-msgid "No plugins were selected to be updated. No action taken."
-msgstr ""
-"Er zijn geen plugins geselecteerd om bij te werken. Geen actie ondernomen."
-
-#: third-party/classes/class-tgm-plugin-activation.php:2800
-msgid "No plugins are available to be installed at this time."
-msgstr "Er zijn momenteel geen plugins beschikbaar om te installeren."
-
-#: third-party/classes/class-tgm-plugin-activation.php:2802
-msgid "No plugins are available to be updated at this time."
-msgstr "Er zijn momenteel geen plugins beschikbaar om bij te werken."
-
-#: third-party/classes/class-tgm-plugin-activation.php:2908
-msgid "No plugins were selected to be activated. No action taken."
-msgstr ""
-"Er zijn geen plugins geselecteerd om te activeren. Geen actie ondernomen."
-
-#: third-party/classes/class-tgm-plugin-activation.php:2934
-msgid "No plugins are available to be activated at this time."
-msgstr "Er zijn momenteel geen plugins beschikbaar om te activeren."
-
-#: third-party/classes/class-tgm-plugin-activation.php:3158
-msgid "Plugin activation failed."
-msgstr "Activeren plugin mislukt."
-
-#: third-party/classes/class-tgm-plugin-activation.php:3498
-#, php-format
-msgid "Updating Plugin %1$s (%2$d/%3$d)"
-msgstr "Bijwerken plugin %1$s (%2$d/%3$d)"
-
-#: third-party/classes/class-tgm-plugin-activation.php:3501
-#, php-format
-msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
-msgstr ""
-"Er is een fout opgetreden tijdens het installeren %1$s: <strong>%2$s</"
-"strong>."
-
-#: third-party/classes/class-tgm-plugin-activation.php:3503
-#, php-format
-msgid "The installation of %1$s failed."
-msgstr "De installatie van %1$s is mislukt."
-
-#: third-party/classes/class-tgm-plugin-activation.php:3507
-msgid ""
-"The installation and activation process is starting. This process may take a "
-"while on some hosts, so please be patient."
-msgstr ""
-"Het installatie- en activeringsproces gaat starten. Dit proces kan even "
-"duren op sommige hosts, dus heb geduld a.u.b."
-
-#: third-party/classes/class-tgm-plugin-activation.php:3509
-#, php-format
-msgid "%1$s installed and activated successfully."
-msgstr "%1$s succesvol geïnstalleerd en geactiveerd."
-
-#: third-party/classes/class-tgm-plugin-activation.php:3509
-#: third-party/classes/class-tgm-plugin-activation.php:3517
-msgid "Show Details"
-msgstr "Details tonen"
-
-#: third-party/classes/class-tgm-plugin-activation.php:3509
-#: third-party/classes/class-tgm-plugin-activation.php:3517
-msgid "Hide Details"
-msgstr "Details verbergen"
-
-#: third-party/classes/class-tgm-plugin-activation.php:3510
-msgid "All installations and activations have been completed."
-msgstr "Alle installaties en activeringen zijn afgerond."
-
-#: third-party/classes/class-tgm-plugin-activation.php:3512
-#, php-format
-msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
-msgstr "Installeren en activeren plugin %1$s (%2$d/%3$d)"
-
-#: third-party/classes/class-tgm-plugin-activation.php:3515
-msgid ""
-"The installation process is starting. This process may take a while on some "
-"hosts, so please be patient."
-msgstr ""
-"Het installatieproces is gestart. Dit proces kan even duren op sommige "
-"hosts, dus heb geduld a.u.b."
-
-#: third-party/classes/class-tgm-plugin-activation.php:3517
-#, php-format
-msgid "%1$s installed successfully."
-msgstr "%1$s succesvol geïnstalleerd."
-
-#: third-party/classes/class-tgm-plugin-activation.php:3518
-msgid "All installations have been completed."
-msgstr "Alle installaties zijn afgerond."
-
-#: third-party/classes/class-tgm-plugin-activation.php:3520
-#, php-format
-msgid "Installing Plugin %1$s (%2$d/%3$d)"
-msgstr "Installeren plugin %1$s (%2$d/%3$d)"
 
 #: woocommerce/checkout/form-checkout.php:26
 msgid "You must be logged in to proceed with the checkout."
@@ -1905,51 +1869,413 @@ msgstr "Adres:"
 msgid "Shipping info & address"
 msgstr "Factuurinformatie & adres"
 
-#~ msgid "YITH Theme Options"
-#~ msgstr "YITH Theme Opties"
+#: woocommerce/single-product/meta.php:29
+msgid "SKU:"
+msgstr "SKU:"
 
-#~ msgid "All options related to this theme"
-#~ msgstr "Alle opties gerelateerd aan dit thema"
+#: woocommerce/single-product/meta.php:29
+msgid "N/A"
+msgstr "N.V.T."
 
-#~ msgid "Header"
-#~ msgstr "Header"
+#: woocommerce/single-product/meta.php:35
+msgid "Category:"
+msgid_plural "Categories:"
+msgstr[0] "Categorie:"
+msgstr[1] "Categorieën:"
 
-#~ msgid "Footer"
-#~ msgstr "Footer"
-
-#~ msgid "Color shades"
-#~ msgstr "Schaduw kleuren"
-
-#~ msgid "YITH Theme Shop Options"
-#~ msgstr "YITH Theme Shop Opties"
-
-#~ msgid "All shop related options for this theme"
-#~ msgstr "Alle winkel-gerelateerde opties voor dit thema"
-
-#~ msgid "Store notices"
-#~ msgstr "Berichten winkel"
-
-#~ msgid "Experimental"
-#~ msgstr "Expirimenteel"
+#: woocommerce/single-product/meta.php:41
+msgid "Tag:"
+msgid_plural "Tags:"
+msgstr[0] "Tag:"
+msgstr[1] "Tags:"
 
 #~ msgid ""
-#~ "Use lazy load for product loop images to improve performance and reduce "
-#~ "loading time."
+#~ "Proteo is a modern, fast and fully customizable WooCommerce theme. "
+#~ "Designed and developed by YITH - a team of top developers of premium "
+#~ "themes -  with a beautiful UI, a minimal design and an optimized code, is "
+#~ "perfect for each kind of site or shop. With the Proteo Wizard you can "
+#~ "import our demo content with just a few clicks - in less than 2 minutes! "
+#~ "-  and easily customize it using the advanced front-end customizer. "
+#~ "Proteo is the best solution if you want a complete WooCommerce theme that "
+#~ "works perfectly also in mobile devices and start quickly to sell your "
+#~ "products with WooCommerce without technical knowledge. Works perfectly "
+#~ "with page builders like Elementor, Gutenberg & Visual composer. Key "
+#~ "features: # WooCommerce Ready # Responsive with a perfect mobile design # "
+#~ "Compatible with Elementor, Gutenberg, Visual Composer and others page "
+#~ "builders # Translation Ready # Frontend customizer with hundred of "
+#~ "options to customize header, footer, pages, typography, style, ecc.  # "
+#~ "Google fonts support # Regularly updated and improved with new demos and "
+#~ "advanced features # Support to all YITH plugins. Check all our Proteo "
+#~ "demos: https://proteo.yithemes.com/"
 #~ msgstr ""
-#~ "Gebruik lazy load voor product loop afbeeldingen om de uitvoering te "
-#~ "verbeteren en laad tijd te verlagen."
+#~ "Proteo is een modern, snel een compleet aanpasbaar WooCommerce thema. "
+#~ "Gemaakt en ontworpen door YITH - een team van top ontwikkelaars van "
+#~ "premium thema's - met een mooie UI, een minimaal design en "
+#~ "geoptimaliseerde code, perfect for elk type winkel of site. Met de Proteo "
+#~ "Wizard kun je onze demo inhoud importeren in enkele klikken - in minder "
+#~ "dan 2 minuten! - en deze makkelijk aanpassen door gebruik van de "
+#~ "geavanceerde front-end customizer. Proteo is de beste oplossing als je "
+#~ "een compleet WooCommerce thema wilt die ook perfect werkt op mobiele "
+#~ "apparatuur en als je snel wilt starten met het verkopen van je producten "
+#~ "met WooCommerce en zonder technische kennis. Werkt perfect met pagina "
+#~ "bouwers zoals Elementor, Gutenberg & Visual composer. Belangrijkste "
+#~ "kenmerken #Responsive met een perfect mobiel design # Compatibel met "
+#~ "Elementor, Gutenberg, Visual Composer en andere pagina bouwers # Frontent "
+#~ "customizer met honderden opties om de header, footer, pagina's, "
+#~ "lettertype, stijl etc. aan te passen # Google Fonts ondersteuning # "
+#~ "Regelmatig bijgwerkt en verbeterd met nieuwe demo's en geavanceerde "
+#~ "poties # Ondersteunt alle YITH plugins. Bekijk al onze Proteo demos: "
+#~ "https://proteo.yithemes.com/"
 
-#~ msgid "Button Style 1 background <code>hover</code> color"
-#~ msgstr "Knopstijl 1 achtergrondkleur <code>zweven</code>"
+#~ msgid "YITH Proteo"
+#~ msgstr "YITH Proteo"
 
-#~ msgid "Button Style 1 border <code>hover</code> color"
-#~ msgstr "Knopstijl 1 randkleur <code>zweven</code> "
+#~ msgid "Installing Plugin %1$s (%2$d/%3$d)"
+#~ msgstr "Installeren plugin %1$s (%2$d/%3$d)"
 
-#~ msgid "Button Style 1 text <code>hover</code> color"
-#~ msgstr "Knopstijl 1 tekst kleur <code>zweven</code>"
+#~ msgid "All installations have been completed."
+#~ msgstr "Alle installaties zijn afgerond."
 
-#~ msgid "Button Style 2 background <code>hover</code> color"
-#~ msgstr "Knopstijl 2 achtergrondkleur <code>zweven</code>"
+#~ msgid "%1$s installed successfully."
+#~ msgstr "%1$s succesvol geïnstalleerd."
 
-#~ msgid "Button Style 2 text <code>hover</code> color"
-#~ msgstr "Knopstijl 2 tekstkleur <code>zweven</code>"
+#~ msgid ""
+#~ "The installation process is starting. This process may take a while on "
+#~ "some hosts, so please be patient."
+#~ msgstr ""
+#~ "Het installatieproces is gestart. Dit proces kan even duren op sommige "
+#~ "hosts, dus heb geduld a.u.b."
+
+#~ msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+#~ msgstr "Installeren en activeren plugin %1$s (%2$d/%3$d)"
+
+#~ msgid "All installations and activations have been completed."
+#~ msgstr "Alle installaties en activeringen zijn afgerond."
+
+#~ msgid "Hide Details"
+#~ msgstr "Details verbergen"
+
+#~ msgid "Show Details"
+#~ msgstr "Details tonen"
+
+#~ msgid "%1$s installed and activated successfully."
+#~ msgstr "%1$s succesvol geïnstalleerd en geactiveerd."
+
+#~ msgid ""
+#~ "The installation and activation process is starting. This process may "
+#~ "take a while on some hosts, so please be patient."
+#~ msgstr ""
+#~ "Het installatie- en activeringsproces gaat starten. Dit proces kan even "
+#~ "duren op sommige hosts, dus heb geduld a.u.b."
+
+#~ msgid "The installation of %1$s failed."
+#~ msgstr "De installatie van %1$s is mislukt."
+
+#~ msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+#~ msgstr ""
+#~ "Er is een fout opgetreden tijdens het installeren %1$s: <strong>%2$s</"
+#~ "strong>."
+
+#~ msgid "Updating Plugin %1$s (%2$d/%3$d)"
+#~ msgstr "Bijwerken plugin %1$s (%2$d/%3$d)"
+
+#~ msgid "Plugin activation failed."
+#~ msgstr "Activeren plugin mislukt."
+
+#~ msgid "No plugins are available to be activated at this time."
+#~ msgstr "Er zijn momenteel geen plugins beschikbaar om te activeren."
+
+#~ msgid "No plugins were selected to be activated. No action taken."
+#~ msgstr ""
+#~ "Er zijn geen plugins geselecteerd om te activeren. Geen actie ondernomen."
+
+#~ msgid "No plugins are available to be updated at this time."
+#~ msgstr "Er zijn momenteel geen plugins beschikbaar om bij te werken."
+
+#~ msgid "No plugins are available to be installed at this time."
+#~ msgstr "Er zijn momenteel geen plugins beschikbaar om te installeren."
+
+#~ msgid "No plugins were selected to be updated. No action taken."
+#~ msgstr ""
+#~ "Er zijn geen plugins geselecteerd om bij te werken. Geen actie ondernomen."
+
+#~ msgid "No plugins were selected to be installed. No action taken."
+#~ msgstr ""
+#~ "Er zijn geen plugins geselecteerd om te installeren. Geen actie "
+#~ "ondernomen. "
+
+#~ msgid "Update"
+#~ msgstr "Bijwerken"
+
+#~ msgid "Install"
+#~ msgstr "Installeren"
+
+#~ msgid "Upgrade message from the plugin author:"
+#~ msgstr "Bericht upgraden van de plugin auteur:"
+
+#~ msgid "Activate %2$s"
+#~ msgstr "Activeren %2$s"
+
+#~ msgid "Update %2$s"
+#~ msgstr "Bijwerken %2$s"
+
+#~ msgid "Install %2$s"
+#~ msgstr "Installeren %2$s"
+
+#~ msgid "Status"
+#~ msgstr "Status"
+
+#~ msgid "Version"
+#~ msgstr "Versie"
+
+#~ msgid "Type"
+#~ msgstr "Type"
+
+#~ msgid "Source"
+#~ msgstr "Bron"
+
+#~ msgid "Plugin"
+#~ msgstr "Plugin"
+
+#~ msgid "No plugins to install, update or activate."
+#~ msgstr "Geen plugin om te installeren, bijwerken of activeren."
+
+#~ msgid "Available version:"
+#~ msgstr "Beschikbare versie:"
+
+#~ msgid "Minimum required version:"
+#~ msgstr "Minimum noodzakelijke versie:"
+
+#~ msgid "Installed version:"
+#~ msgstr "Geïnstalleerde versie:"
+
+#~ msgctxt "as in: \"version nr unknown\""
+#~ msgid "unknown"
+#~ msgstr "onbekend"
+
+#~ msgid "To Activate <span class=\"count\">(%s)</span>"
+#~ msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+#~ msgstr[0] "Te activeren <span class=\"count\">(%s)</span>"
+#~ msgstr[1] "Te activeren <span class=\"count\">(%s)</span>"
+
+#~ msgid "Update Available <span class=\"count\">(%s)</span>"
+#~ msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+#~ msgstr[0] "Update beschikbaar <span class=\"count\">(%s)</span>"
+#~ msgstr[1] "Update beschikbaar <span class=\"count\">(%s)</span>"
+
+#~ msgid "To Install <span class=\"count\">(%s)</span>"
+#~ msgid_plural "To Install <span class=\"count\">(%s)</span>"
+#~ msgstr[0] "Te installeren <span class=\"count\">(%s)</span>"
+#~ msgstr[1] "Te installeren <span class=\"count\">(%s)</span>"
+
+#~ msgctxt "plugins"
+#~ msgid "All <span class=\"count\">(%s)</span>"
+#~ msgid_plural "All <span class=\"count\">(%s)</span>"
+#~ msgstr[0] "Alle <span class=\"count\">(%s)</span>"
+#~ msgstr[1] "Alle <span class=\"count\">(%s)</span>"
+
+#~ msgctxt "Install/Update Status"
+#~ msgid "%1$s, %2$s"
+#~ msgstr "%1$s, %2$s"
+
+#~ msgid "Update recommended"
+#~ msgstr "Update aanbevolen"
+
+#~ msgid "Requires Update"
+#~ msgstr "Update noodzakelijk"
+
+#~ msgid "Required Update not Available"
+#~ msgstr "Verplichte update is niet beschikbaar"
+
+#~ msgid "Active"
+#~ msgstr "Actief"
+
+#~ msgid "Not Installed"
+#~ msgstr "Niet geïnstalleerd"
+
+#~ msgid "Pre-Packaged"
+#~ msgstr "Voorverpakt"
+
+#~ msgid "External Source"
+#~ msgstr "Externe bron"
+
+#~ msgid "WordPress Repository"
+#~ msgstr "WordPress Repository"
+
+#~ msgid "Recommended"
+#~ msgstr "Aanbevolen"
+
+#~ msgid "Required"
+#~ msgstr "Verplicht"
+
+#~ msgid "TGMPA v%s"
+#~ msgstr "TGMPA v%s"
+
+#~ msgctxt "plugin A *and* plugin B"
+#~ msgid "and"
+#~ msgstr "en"
+
+#~ msgid ""
+#~ "The remote plugin package consists of more than one file, but the files "
+#~ "are not packaged in a folder."
+#~ msgstr ""
+#~ "Het externe plugin pakket bestaat uit een of meer bestanden, maar de "
+#~ "bestanden zijn niet verpakt in een map."
+
+#~ msgid ""
+#~ "Please contact the plugin provider and ask them to package their plugin "
+#~ "according to the WordPress guidelines."
+#~ msgstr ""
+#~ "Neem a.u.b. contact op met de plugin provider en vraag ze of de plugin "
+#~ "werkt volgens de WordPress richtlijnen."
+
+#~ msgid ""
+#~ "The remote plugin package does not contain a folder with the desired slug "
+#~ "and renaming did not work."
+#~ msgstr ""
+#~ "Het externe plugin pakket bevat geen map met de gewenste slug en "
+#~ "hernoemen heeft niet gewerkt."
+
+#~ msgid "Update Required"
+#~ msgstr "Bijwerken noodzakelijk"
+
+#~ msgid "This plugin needs to be updated to be compatible with your theme."
+#~ msgstr ""
+#~ "Deze plugin moet worden bijgewerkt om compatibel te zijn met je thema."
+
+#~ msgid "Please contact the administrator of this site for help."
+#~ msgstr "Neem a.u.b. contact op met de beheerder van de site voor hulp."
+
+#~ msgid ""
+#~ "There are one or more required or recommended plugins to install, update "
+#~ "or activate."
+#~ msgstr ""
+#~ "Er is een/er zijn meerdere noodzakelijke of aanbevolen plugins om te "
+#~ "installeren, bijwerken of activeren."
+
+#~ msgid "Dismiss this notice"
+#~ msgstr "Melding afwijzen"
+
+#~ msgid "All plugins installed and activated successfully. %1$s"
+#~ msgstr "Alle plugins zijn succesvol geïnstalleerd en geactiveerd. %1$s"
+
+#~ msgid ""
+#~ "Plugin not activated. A higher version of %s is needed for this theme. "
+#~ "Please update the plugin."
+#~ msgstr ""
+#~ "Plugin niet geactiveerd. Een hogere versie van %s is noodzakelijk voor "
+#~ "dit thema. Werk de plugin bij aub."
+
+#~ msgid "No action taken. Plugin %1$s was already active."
+#~ msgstr "Geen actie ondernomen. Plugin %1$s was al actief."
+
+#~ msgid "The following plugin was activated successfully:"
+#~ msgid_plural "The following plugins were activated successfully:"
+#~ msgstr[0] "De volgende plugin is succesvol geactiveerd."
+#~ msgstr[1] "De volgende plugins zijn succesvol geactiveerd."
+
+#~ msgid "Return to the Dashboard"
+#~ msgstr "Terugkeren naar dashboard"
+
+#~ msgid "Return to Required Plugins Installer"
+#~ msgstr "Terugkeren naar noodzakelijke plugins installateur"
+
+#~ msgid "Begin updating plugin"
+#~ msgid_plural "Begin updating plugins"
+#~ msgstr[0] "Start met bijwerken plugin"
+#~ msgstr[1] "Start met bijwerken plugins"
+
+#~ msgid "Begin installing plugin"
+#~ msgid_plural "Begin installing plugins"
+#~ msgstr[0] "Start met installeren plugin"
+#~ msgstr[1] "Start met installeren plugins"
+
+#~ msgid "The following recommended plugin is currently inactive: %1$s."
+#~ msgid_plural ""
+#~ "The following recommended plugins are currently inactive: %1$s."
+#~ msgstr[0] "De volgende aanbevolen plugin is momenteel niet actief: %1$s."
+#~ msgstr[1] "De volgende aanbevolen plugins zijn momenteel niet actief: %1$s."
+
+#~ msgid "The following required plugin is currently inactive: %1$s."
+#~ msgid_plural "The following required plugins are currently inactive: %1$s."
+#~ msgstr[0] "De volgende plugin is momenteel niet actief: %1$s."
+#~ msgstr[1] "De volgende plugins zijn momenteel niet actief: %1$s."
+
+#~ msgid "There is an update available for: %1$s."
+#~ msgid_plural "There are updates available for the following plugins: %1$s."
+#~ msgstr[0] "Er is een update beschikbaar voor: %1$s."
+#~ msgstr[1] "Er zijn updates beschikbaar voor de volgende plugins: %1$s."
+
+#~ msgid ""
+#~ "The following plugin needs to be updated to its latest version to ensure "
+#~ "maximum compatibility with this theme: %1$s."
+#~ msgid_plural ""
+#~ "The following plugins need to be updated to their latest version to "
+#~ "ensure maximum compatibility with this theme: %1$s."
+#~ msgstr[0] ""
+#~ "De volgende plugin moet worden bijgewerkt tot de laatste versie om zeker "
+#~ "te zijn van maximale compatibiliteit met dit thema: %1$s."
+#~ msgstr[1] ""
+#~ "De volgende plugins moeten worden bijgewerkt tot de laatste versie om "
+#~ "zeker te zijn van maximale compatibiliteit met dit thema: %1$s."
+
+#~ msgid "This theme recommends the following plugin: %1$s."
+#~ msgid_plural "This theme recommends the following plugins: %1$s."
+#~ msgstr[0] "Dit thema raad de volgende plugin aan: %1$s."
+#~ msgstr[1] "Dit thema raad de volgende plugins aan: %1$s."
+
+#~ msgid "This theme requires the following plugin: %1$s."
+#~ msgid_plural "This theme requires the following plugins: %1$s."
+#~ msgstr[0] "Dit thema heeft de volgende plugin nodig: %1$s."
+#~ msgstr[1] "Dit thema heeft de volgende plugins nodig: %1$s."
+
+#~ msgid "Something went wrong with the plugin API."
+#~ msgstr "Er is iets misgegaan met de plugin API>"
+
+#~ msgid "Updating Plugin: %s"
+#~ msgstr "Plugin bijwerken: %s"
+
+#~ msgid "Installing Plugin: %s"
+#~ msgstr "Plugin installeren: %s"
+
+#~ msgid "Install Plugins"
+#~ msgstr "Installeer plugins"
+
+#~ msgid "Install Required Plugins"
+#~ msgstr "Installeer noodzakelijke plugins"
+
+#~ msgid "bottom"
+#~ msgstr "onder"
+
+#~ msgid "Button Style 2 text :hover color"
+#~ msgstr "Knopstijl 2 tekst: hoveren kleur"
+
+#~ msgid "Button Style 2 text color"
+#~ msgstr "Knopstijl 2 tekst kleur"
+
+#~ msgid "Button Style 1 text :hover color"
+#~ msgstr "Knopstijl 1 tekst: hoveren kleur"
+
+#~ msgid "Button Style 1 border :hover color"
+#~ msgstr "Knopstijl 1 rand :hoveren kleur"
+
+#~ msgid "Button Style 1 background :hover color"
+#~ msgstr "Knopstijl 1 achtergrond :hoveren kleur"
+
+#~ msgid "Button Style 1 text color"
+#~ msgstr "Tekst kleur knopstijl 1"
+
+#~ msgid "Button Style 1 border color"
+#~ msgstr "Randkleur knopstijl 1"
+
+#~ msgid "Button Style 1 background color"
+#~ msgstr "Achtergrondkleur knopstijl 1"
+
+#~ msgid "https://yithemes.com"
+#~ msgstr "https://yithemes.com"
+
+#~ msgid "YITH"
+#~ msgstr "YITH"
+
+#~ msgid "https://proteo.yithemes.com/"
+#~ msgstr "https://proteo.yithemes.com/"

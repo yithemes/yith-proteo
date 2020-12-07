@@ -34,6 +34,19 @@ if ( ! class_exists( 'Proteo_Admin_Dashboard' ) ) {
 			}
 
 			add_action( 'after_setup_theme', __CLASS__ . '::init_proteo_admin_dashboard', 99 );
+
+			/* Redirect on theme activation */
+			add_action( 'admin_init', __CLASS__ . '::theme_activation_redirect' );
+		}
+
+		/**
+		 * Redirect to "Install Plugins" page on activation
+		 */
+		public static function theme_activation_redirect() {
+			global $pagenow;
+			if ( 'themes.php' === $pagenow && is_admin() && isset( $_GET['activated'] ) ) { // phpcs:ignore
+				wp_safe_redirect( esc_url_raw( add_query_arg( 'page', 'yith-proteo-dashboard', admin_url( 'themes.php' ) ) ) );
+			}
 		}
 
 		/**
