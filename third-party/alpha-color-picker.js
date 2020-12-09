@@ -98,8 +98,7 @@ function acp_update_alpha_value_on_alpha_slider( alpha, $alphaSlider ) {
 /**
  * Initialization trigger.
  */
-jQuery( document ).ready(
-	function( $ ) {
+jQuery( function( $ ) {
 
 			// Loop over each control and transform it into our color picker.
 			$( '.alpha-color-control' ).each(

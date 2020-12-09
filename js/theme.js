@@ -196,7 +196,7 @@
 
 
 	// Product gallery image height
-	$(document).ready(function () {
+	jQuery( function( $ ) {
 		$(window).on('resize', function () {
 			// If there are multiple elements with the same class, "main"
 			$('.single-product div.product .woocommerce-product-gallery .flex-control-thumbs li').each(function () {

@@ -57,7 +57,7 @@ class Customizer_Control_Yes_No extends WP_Customize_Control {
 		</div><!-- .image -->
 
 		<script type="text/javascript">
-			jQuery( document ).ready( function() {
+			jQuery( function( $ ) {
 				jQuery( '#<?php echo esc_attr( "input_{$this->id}" ); ?>' ).buttonset();
 			} );
 		</script>

@@ -74,7 +74,7 @@ if ( ! class_exists( 'Proteo_Admin_Dashboard' ) ) {
 		}
 
 		/**
-		 * Undocumented function
+		 * Callback to load a template to display theme dashboard
 		 *
 		 * @return void
 		 */

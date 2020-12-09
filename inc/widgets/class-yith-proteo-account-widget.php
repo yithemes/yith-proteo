@@ -78,7 +78,7 @@ class YITH_Proteo_Account_Widget extends WP_Widget {
 	 */
 	public function media_fields() {
 		?><script>
-			jQuery(document).ready(function($){
+			jQuery( function( $ ){
 				if ( typeof wp.media !== 'undefined' ) {
 					var _custom_media = true,
 					_orig_send_attachment = wp.media.editor.send.attachment;
