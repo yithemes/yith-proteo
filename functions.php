@@ -266,3 +266,8 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
+
+/**
+ * Block editor colors
+ */
+require get_template_directory() . '/inc/colors-palette.php';

@@ -141,6 +141,18 @@ function yith_proteo_inline_style() {
 	$site_background_color = get_theme_mod( 'background_color', 'ffffff' );
 
 	/**
+	 * Block editor custom colors
+	 */
+	$yith_proteo_editor_custom_color_1 = get_theme_mod( 'yith_proteo_block_editor_color_1', '#01af8d' );
+	$yith_proteo_editor_custom_color_2 = get_theme_mod( 'yith_proteo_block_editor_color_2', '#ffffff' );
+	$yith_proteo_editor_custom_color_3 = get_theme_mod( 'yith_proteo_block_editor_color_3', '#107774' );
+	$yith_proteo_editor_custom_color_4 = get_theme_mod( 'yith_proteo_block_editor_color_4', '#404040' );
+	$yith_proteo_editor_custom_color_5 = get_theme_mod( 'yith_proteo_block_editor_color_5', '#dd9933' );
+	$yith_proteo_editor_custom_color_6 = get_theme_mod( 'yith_proteo_block_editor_color_6', '#000000' );
+	$yith_proteo_editor_custom_color_7 = get_theme_mod( 'yith_proteo_block_editor_color_7', '#1e73be' );
+	$yith_proteo_editor_custom_color_8 = get_theme_mod( 'yith_proteo_block_editor_color_8', '#dd3333' );
+
+	/**
 	 * Store options
 	 */
 	$store_notice_bg_color   = get_theme_mod( 'yith_proteo_store_notice_bg_color', '#607d8b' );
@@ -263,6 +275,14 @@ function yith_proteo_inline_style() {
 		--proteo-post_thumbnail_text_color: {$post_thumbnail_text_color};
 		--proteo-forms_input_borde_radius: {$forms_input_borde_radius}px;
 		--proteo-site_background_color: #{$site_background_color};
+		--proteo-yith_proteo_editor_custom_color_1: {$yith_proteo_editor_custom_color_1};
+		--proteo-yith_proteo_editor_custom_color_2: {$yith_proteo_editor_custom_color_2};
+		--proteo-yith_proteo_editor_custom_color_3: {$yith_proteo_editor_custom_color_3};
+		--proteo-yith_proteo_editor_custom_color_4: {$yith_proteo_editor_custom_color_4};
+		--proteo-yith_proteo_editor_custom_color_5: {$yith_proteo_editor_custom_color_5};
+		--proteo-yith_proteo_editor_custom_color_6: {$yith_proteo_editor_custom_color_6};
+		--proteo-yith_proteo_editor_custom_color_7: {$yith_proteo_editor_custom_color_7};
+		--proteo-yith_proteo_editor_custom_color_8: {$yith_proteo_editor_custom_color_8};
 		--proteo-store_notice_bg_color: {$store_notice_bg_color};
 		--proteo-store_notice_text_color: {$store_notice_text_color};
 		--proteo-store_notice_font_size: {$store_notice_font_size}px;
