@@ -10884,13 +10884,28 @@ table.shop_table tbody tr td.product-name ._view_and_pdf_row a.button {
 }
 
 .wishlist-title {
-  display: block;
+  display: inline-block;
   position: relative;
 }
-.wishlist-title a.show-title-form {
+
+.wishlist-title-container {
+  text-align: center;
+}
+.wishlist-title-container .wishlist-title a.show-title-form {
   position: absolute;
-  right: 0;
+  left: calc(100% + 50px);
   top: -30px;
+  min-width: 160px;
+}
+.wishlist-title-container .hidden-title-form {
+  margin-top: -5px;
+  margin-bottom: 40px;
+  max-width: 450px;
+}
+.wishlist-title-container .hidden-title-form input {
+  font-weight: 700;
+  font-size: var(--proteo-h1_font_size, 4.375rem);
+  color: var(--proteo-h1_font_color, #404040);
 }
 
 /**
@@ -11352,10 +11367,6 @@ table.wishlist_table.wishlist_manage_table td.wishlist-delete a:before {
   display: block;
   font-family: Linearicons-Free;
   font-size: 1.5rem;
-}
-
-.wishlist_manage_table .hidden-title-form .edit-title-buttons {
-  padding: 10px;
 }
 
 .submit-wishlist-changes {

@@ -26,13 +26,30 @@
 }
 
 .wishlist-title {
-	display: block;
+	display: inline-block;
 	position: relative;
+}
 
-	a.show-title-form {
+.wishlist-title-container {
+	text-align: center;
+
+	.wishlist-title a.show-title-form {
 		position: absolute;
-		right: 0;
+		left: calc(100% + 50px);
 		top: -30px;
+		min-width: 160px;
+	}
+
+	.hidden-title-form {
+		margin-top: -5px;
+		margin-bottom: 40px;
+		max-width: 450px;
+
+		input {
+			font-weight: 700;
+			font-size: var(--proteo-h1_font_size, 4.375rem);
+			color: var(--proteo-h1_font_color, #404040);
+		}
 	}
 }
 
@@ -575,12 +592,6 @@ table.wishlist_table.wishlist_manage_table {
 			font-family: Linearicons-Free;
 			font-size: 1.5rem;
 		}
-	}
-}
-
-.wishlist_manage_table .hidden-title-form {
-	.edit-title-buttons {
-		padding: 10px;
 	}
 }
 
