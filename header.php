@@ -23,6 +23,8 @@ global $post;
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'yith-proteo' ); ?></a>
 
 	<?php
+	// get the tagline.
+	$yith_proteo_description = get_bloginfo( 'description' );
 	// hide site header if meta value enabled.
 	if ( function_exists( 'wc' ) && is_shop() ) {
 		$hide_header = get_post_meta( wc_get_page_id( 'shop' ), 'yith_proteo_remove_header_and_footer', true );
@@ -68,19 +70,16 @@ global $post;
 							<?php endif; ?>
 						</h1>
 						<?php
-						if ( ! has_custom_logo() ) :
-							$yith_proteo_description = get_bloginfo( 'description', 'display' );
-							if ( $yith_proteo_description || is_customize_preview() ) :
-								?>
-								<p class="site-description"><?php echo $yith_proteo_description; /* phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped */ ?></p>
-								<?php
-							endif;
+						if ( $yith_proteo_description || is_customize_preview() ) :
+							?>
+							<p class="site-description"><?php echo $yith_proteo_description; /* phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped */ ?></p>
+							<?php
 						endif;
-						else :
-							if ( has_custom_logo() ) :
-								?>
-							<p class="site-title"><?php the_custom_logo(); ?></p>
 
+					else :
+						if ( has_custom_logo() ) :
+							?>
+						<p class="site-title"><?php the_custom_logo(); ?></p>
 						<?php else : ?>
 							<p class="site-title">
 								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
@@ -89,16 +88,13 @@ global $post;
 							</p>
 							<?php
 						endif;
-						if ( ! has_custom_logo() ) :
-								$yith_proteo_description = get_bloginfo( 'description', 'display' );
-							if ( $yith_proteo_description || is_customize_preview() ) :
-								?>
-								<p class="site-description"><?php echo $yith_proteo_description; /* phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped */ ?></p>
-								<?php
-							endif;
+						if ( $yith_proteo_description || is_customize_preview() ) :
+							?>
+							<p class="site-description"><?php echo $yith_proteo_description; /* phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped */ ?></p>
+							<?php
 						endif;
 					endif;
-						?>
+					?>
 				</div><!-- .site-branding -->
 				<?php endif; ?>
 
