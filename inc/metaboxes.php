@@ -395,6 +395,9 @@ function yith_proteo_remove_page_meta_boxes() {
 	$no_sidebar_pages = array(
 		get_option( 'page_for_posts' ),
 		get_option( 'woocommerce_shop_page_id' ),
+		get_option( 'woocommerce_cart_page_id' ),
+		get_option( 'woocommerce_checkout_page_id' ),
+		get_option( 'woocommerce_myaccount_page_id' ),
 	);
 
 	if ( isset( $_GET['post'] ) && in_array( $_GET['post'], $no_sidebar_pages, true ) ) { // phpcs:ignore WordPress.Security.NonceVerification.Recommended
