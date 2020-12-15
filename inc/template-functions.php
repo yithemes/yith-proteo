@@ -258,3 +258,12 @@ if ( ! function_exists( 'yith_proteo_site_layout_body_class' ) ) {
 		return $classes;
 	}
 }
+
+if ( ! function_exists( 'yith_proteo_display_header_text' ) ) {
+	/**
+	 * Return option value for theme_mod yith_proteo_display_header_text
+	 */
+	function yith_proteo_display_header_text() {
+		return get_theme_mod( 'yith_proteo_display_header_text' ) === 'yes' ? true : false;
+	}
+}

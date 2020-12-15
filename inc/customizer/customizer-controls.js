@@ -44,7 +44,46 @@
 
 			//  Show control 'yith_proteo_single_post_thumbnail_text_color' if control 'yith_proteo_single_post_layout' value has 'background_picture'.
 			wp.customize.control('yith_proteo_single_post_thumbnail_text_color', showControlIfhasValues(setting, ['background_picture']));
+
 		});
+
+		/**
+		 * Control Dependency
+		 */
+		wp.customize('yith_proteo_display_header_text', function (setting) {
+
+			//  Show control 'custom_logo' if control 'yith_proteo_display_header_text' value has 'yes'.
+			wp.customize.control('custom_logo', showControlIfhasValues(setting, ['yes']));
+
+			//  Show control 'yith_proteo_custom_logo_max_width' if control 'yith_proteo_display_header_text' value has 'yes'.
+			wp.customize.control('yith_proteo_custom_logo_max_width', showControlIfhasValues(setting, ['yes']));
+
+			//  Show control 'blogname' if control 'yith_proteo_display_header_text' value has 'yes'.
+			wp.customize.control('blogname', showControlIfhasValues(setting, ['yes']));
+
+			//  Show control 'site_title_font' if control 'yith_proteo_display_header_text' value has 'yes'.
+			wp.customize.control('site_title_font', showControlIfhasValues(setting, ['yes']));
+
+			//  Show control 'yith_proteo_site_title_font_size' if control 'yith_proteo_display_header_text' value has 'yes'.
+			wp.customize.control('yith_proteo_site_title_font_size', showControlIfhasValues(setting, ['yes']));
+
+			//  Show control 'yith_proteo_site_title_color' if control 'yith_proteo_display_header_text' value has 'yes'.
+			wp.customize.control('yith_proteo_site_title_color', showControlIfhasValues(setting, ['yes']));
+
+			//  Show control 'blogdescription' if control 'yith_proteo_display_header_text' value has 'yes'.
+			wp.customize.control('blogdescription', showControlIfhasValues(setting, ['yes']));
+
+			//  Show control 'tagline_font' if control 'yith_proteo_display_header_text' value has 'yes'.
+			wp.customize.control('tagline_font', showControlIfhasValues(setting, ['yes']));
+
+			//  Show control 'yith_proteo_tagline_font_size' if control 'yith_proteo_display_header_text' value has 'yes'.
+			wp.customize.control('yith_proteo_tagline_font_size', showControlIfhasValues(setting, ['yes']));
+
+			//  Show control 'yith_proteo_tagline_color' if control 'yith_proteo_display_header_text' value has 'yes'.
+			wp.customize.control('yith_proteo_tagline_color', showControlIfhasValues(setting, ['yes']));
+
+		});
+
 
 		wp.customize('yith_proteo_footer_sidebar_1_width', function (value) {
 			value.bind( function ( newval ) {

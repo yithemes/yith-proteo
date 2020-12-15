@@ -5,6 +5,31 @@
  * @package yith-proteo
  */
 
+// Move defailt display site title option on top.
+
+if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
+	$wp_customize->add_setting(
+		'yith_proteo_display_header_text',
+		array(
+			'default'           => 'yes',
+			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+		)
+	);
+
+	$wp_customize->add_control(
+		new Customizer_Control_Yes_No(
+			$wp_customize,
+			'yith_proteo_display_header_text',
+			array(
+				'label'       => esc_html__( 'Display Site Title and Tagline', 'yith-proteo' ),
+				'section'     => 'title_tagline',
+				'description' => esc_html__( 'Choose whether to show the site title and tagline or not.', 'yith-proteo' ),
+				'priority'    => 5,
+			)
+		)
+	);
+}
+
 // Custom logo max width.
 $wp_customize->add_setting(
 	'yith_proteo_custom_logo_max_width',
