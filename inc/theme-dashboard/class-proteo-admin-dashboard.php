@@ -144,6 +144,8 @@ if ( ! class_exists( 'Proteo_Admin_Dashboard' ) ) {
 		 */
 		public static function register_scripts( $hook ) {
 
+			global $pagenow;
+
 			if ( ! is_customize_preview() ) {
 
 				if ( ! current_user_can( 'manage_options' ) ) {
@@ -170,7 +172,9 @@ if ( ! class_exists( 'Proteo_Admin_Dashboard' ) ) {
 				wp_localize_script( 'yith-proteo-admin-dashboard', 'yith_proteo', $localize );
 
 				// Enqueue script.
-				wp_enqueue_script( 'yith-proteo-admin-dashboard' );
+				if ( 'themes.php' === $pagenow ) {
+					wp_enqueue_script( 'yith-proteo-admin-dashboard' );
+				}
 			}
 		}
 	}
