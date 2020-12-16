@@ -688,3 +688,20 @@ if ( ! function_exists( 'yith_proteo_product_hover_effect' ) ) {
 		return $classes;
 	}
 }
+
+if ( ! function_exists( 'yith_proteo_show_product_page_clear_variations_link' ) ) {
+	/**
+	 * Show or hide the clear variations link on product page according to theme option
+	 *
+	 * @param [type] $link Clear link.
+	 * @return mixed
+	 */
+	function yith_proteo_show_product_page_clear_variations_link( $link ) {
+		if ( 'no' === get_theme_mod( 'yith_proteo_product_page_show_clear_variations_link', 'yes' ) ) {
+			return '';
+		} else {
+			return $link;
+		}
+	}
+	add_filter( 'woocommerce_reset_variations_link', 'yith_proteo_show_product_page_clear_variations_link' );
+}

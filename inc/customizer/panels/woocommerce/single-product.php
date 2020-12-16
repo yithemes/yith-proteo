@@ -269,6 +269,28 @@
 		)
 	);
 
+	// Show clear button for variation.
+	if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
+		$wp_customize->add_setting(
+			'yith_proteo_product_page_show_clear_variations_link',
+			array(
+				'default'           => 'yes',
+				'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+			)
+		);
+
+		$wp_customize->add_control(
+			new Customizer_Control_Yes_No(
+				$wp_customize,
+				'yith_proteo_product_page_show_clear_variations_link',
+				array(
+					'label'   => esc_html__( 'Show a reset variations link (only for variable products).', 'yith-proteo' ),
+					'section' => 'yith_proteo_product_page_management',
+				)
+			)
+		);
+	}
+
 	// Related products management.
 	$wp_customize->add_setting(
 		'yith_proteo_product_related_products_group_title',
