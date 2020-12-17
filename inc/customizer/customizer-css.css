@@ -28,6 +28,11 @@ YITH CUSTOMIZER STYLE
 #customize-theme-controls .customize-pane-child.accordion-section-content {
 	border-bottom: none;
 }
+#customize-controls #menu-to-edit .customize-control:not(.customize-control-nav_menu_name) {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none;
+}
 #customize-controls .control-section .accordion-section-title:focus, 
 #customize-controls .control-section .accordion-section-title:hover, 
 #customize-controls .control-section.open .accordion-section-title, 
