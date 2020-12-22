@@ -76,9 +76,9 @@ global $post;
 							<?php
 						endif;
 
-					else :
-						if ( has_custom_logo() ) :
-							?>
+						else :
+							if ( has_custom_logo() ) :
+								?>
 						<p class="site-title"><?php the_custom_logo(); ?></p>
 						<?php else : ?>
 							<p class="site-title">
@@ -86,7 +86,7 @@ global $post;
 									<?php bloginfo( 'name' ); ?>
 								</a>
 							</p>
-							<?php
+								<?php
 						endif;
 						if ( $yith_proteo_description || is_customize_preview() ) :
 							?>
@@ -94,7 +94,7 @@ global $post;
 							<?php
 						endif;
 					endif;
-					?>
+						?>
 				</div><!-- .site-branding -->
 				<?php endif; ?>
 

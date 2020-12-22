@@ -271,8 +271,3 @@ if ( class_exists( 'WooCommerce' ) ) {
  * Block editor colors
  */
 require get_template_directory() . '/inc/colors-palette.php';
-
-/**
- * Block editor patterns
- */
-require get_template_directory() . '/block-patterns/block-patterns.php';
