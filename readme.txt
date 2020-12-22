@@ -26,6 +26,22 @@ Proteo is a modern, fast and fully customizable WooCommerce theme. Designed and 
 
 == Changelog ==
 
+= 1.4.4 - December 22 2020 =
+* Support to YITH Proteo Toolkit block patterns
+* New Block editor color palette options
+* New control to display or hide site descriptions
+* New dependency controls for site identity panel
+* New js trigger yith_proteo_inizialize_html_elements
+* Remove unused sidebar metabox from cart, checkout and my-account pages
+* Improved style for Edit Title form in wishlist page
+* Better support for YITH WooCommerce Composite Product
+* Add option to hide the clear variations link on product page
+* Add found_variation to selectWoo triggers
+* Fix centered header layout logo positioning issue
+* Fix design and spacing of customizer menu panels
+* Fix issue about group actions on admin panels
+* Fix tagline not displayed when custom logo in use
+
 = 1.4.3 - December 9 2020 =
 * Removed deprecated .ready method from scripts
 * Update language files
