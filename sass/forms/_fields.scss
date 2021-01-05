@@ -144,10 +144,16 @@ textarea {
 	}
 }
 
-/**
-Checkboxes
- */
+/* default checkbox when enhanced are disabled */
+label.checkbox input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+    margin-right: 5px;
+}
 
+/**
+Enanched Checkboxes
+ */
 span.checkboxbutton {
 	position: relative;
 
@@ -192,10 +198,16 @@ span.checkboxbutton {
 	}
 }
 
+/* Default radio buttons */
+input[type="radio"] {
+    margin-top: 6px;
+}
+.methods input[type=radio] {
+    position: absolute;
+}
 /**
 Radio buttons
  */
-
 span.radiobutton {
 	position: relative;
 
