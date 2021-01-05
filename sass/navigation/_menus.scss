@@ -322,6 +322,7 @@ body.static-header .menu-toggle {
 				width: auto;
 			}
 		}
+
 		&.mobile-menu-align-left li {
 			margin-right: auto;
 		}
@@ -329,6 +330,24 @@ body.static-header .menu-toggle {
 			margin-left: auto;
 		}
 		&.mobile-menu-align-center li {
+			margin-left: auto;
+			margin-right: auto;
+		}
+		
+	}
+
+	div[class^="mobile-menu-sidebar"] {
+		section.widget {
+			width: auto;
+			display: table;
+		}
+		&.mobile-menu-sidebar-align-left section.widget {
+			margin-right: auto;
+		}
+		&.mobile-menu-sidebar-align-right section.widget {
+			margin-left: auto;
+		}
+		&.mobile-menu-sidebar-align-center section.widget {
 			margin-left: auto;
 			margin-right: auto;
 		}

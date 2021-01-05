@@ -105,17 +105,20 @@ global $post;
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<?php
-					$mobile_menu_align = get_theme_mod( 'yith_proteo_mobile_menu_align', 'left' );
-					wp_nav_menu(
-						array(
-							'theme_location' => 'mobile',
-							'menu_id'        => 'mobile-menu',
-							'container_id'   => 'mobile-nav-menu',
-							'menu_class'     => 'menu mobile-menu-align-' . $mobile_menu_align,
-						)
-					);
-					?>
+					<div id="yith-proteo-mobile-menu">
+						<?php
+						dynamic_sidebar( 'mobile-menu-sidebar' );
+						$mobile_menu_align = get_theme_mod( 'yith_proteo_mobile_menu_align', 'left' );
+						wp_nav_menu(
+							array(
+								'theme_location' => 'mobile',
+								'menu_id'        => 'mobile-menu',
+								'container_id'   => 'mobile-nav-menu',
+								'menu_class'     => 'menu mobile-menu-align-' . $mobile_menu_align,
+							)
+						);
+						?>
+					</div>
 					<?php
 					wp_nav_menu(
 						array(

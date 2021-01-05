@@ -139,6 +139,17 @@ Custom media queries
 				display: block;
 			}
 		}
+
+		&.mobile-menu-align-left li {
+			margin-right: auto;
+		}
+		&.mobile-menu-align-right li {
+			margin-left: auto;
+		}
+		&.mobile-menu-align-center li {
+			margin-left: auto;
+			margin-right: auto;
+		}
 	}
 	.main-navigation a {
 		color: var(--proteo-mobile_menu_color, var(--proteo-header_menu_color, #404040));
