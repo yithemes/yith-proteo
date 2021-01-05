@@ -63,7 +63,7 @@ if ( ! class_exists( 'YITH_Proteo_Account_Widget' ) ) {
 				$name = yith_proteo_get_user_username();
 				/* translators: %s: user name. */
 				$message = sprintf( esc_html__( 'Hello %s', 'yith-proteo' ), '<br>' . $name );
-				$output .= '<span>' . $message . '</span>';
+				$output .= '<span>' . apply_filters( 'yith_proteo_account_widget_text', $message ) . '</span>';
 			}
 
 			$output .= '</a>';
