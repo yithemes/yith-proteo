@@ -12752,7 +12752,8 @@ body .wpcf7-not-valid {
   }
 
   #mobile-nav-menu,
-#site-navigation > #mobile-menu {
+#site-navigation > #mobile-menu,
+div#mobile-menu-sidebar {
     display: none;
   }
 
