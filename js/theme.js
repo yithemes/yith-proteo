@@ -88,23 +88,25 @@
 	}
 
 
-	$(document).on('change', 'input[type="radio"], input[type="checkbox"]', function () {
-		var t = $(this),
-			tname = t.attr('name'),
-			tform = t.closest('form'),
-			type = t.attr('type');
-
-		if (!t.is(':checked')) {
-			t.parent().removeClass('checked');
-			return;
-		}
-
-		if (type === 'radio') {
-			tform.find('input[name="' + tname + '"]').parent().removeClass('checked');
-		}
-		t.parent().addClass('checked');
-	});
-
+	if (yith_proteo.yith_proteo_use_enhanced_checkbox_and_radio === 'yes') {
+		$(document).on('change', 'input[type="radio"], input[type="checkbox"]', function () {
+			var t = $(this),
+				tname = t.attr('name'),
+				tform = t.closest('form'),
+				type = t.attr('type');
+	
+			if (!t.is(':checked')) {
+				t.parent().removeClass('checked');
+				return;
+			}
+	
+			if (type === 'radio') {
+				tform.find('input[name="' + tname + '"]').parent().removeClass('checked');
+			}
+			t.parent().addClass('checked');
+		});	
+	}
+	
 	$(yith_proteo_inizialize_html_elements);
 
 	$(document).on('yith_proteo_inizialize_html_elements found_variation ywcp_inizialized yith_wfbt_form_updated yith_wfbt_modal_opened yith_wcwl_popup_opened updated_checkout updated_cart_totals yith_quick_view_loaded yith_wcwl_fragments_loaded yith_wcwl_init_after_ajax yith_welrp_popup_template_loaded yith_wcdp_updated_deposit_form yith-wcan-ajax-filtered yith_wcan_dropdown_updated', yith_proteo_inizialize_html_elements);
@@ -118,7 +120,9 @@
 			);
 		}
 
-		initCheckbox();
+		if (yith_proteo.yith_proteo_use_enhanced_checkbox_and_radio === 'yes') {
+			initCheckbox();
+		}
 		//initFields();
 
 		$('[class*="animate-"]').each(function () {

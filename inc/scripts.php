@@ -55,6 +55,7 @@ if ( ! function_exists( 'yith_proteo_scripts' ) ) :
 				),
 				'select2minimumResultsForSearch'   => apply_filters( 'yith_proteo_select2_minimum_results_for_search', 7 ),
 				'yith_proteo_use_enanched_selects' => get_theme_mod( 'yith_proteo_use_enanched_selects', 'yes' ),
+				'yith_proteo_use_enhanced_checkbox_and_radio' => get_theme_mod( 'yith_proteo_use_enhanced_checkbox_and_radio', 'yes' ),
 				'yith_proteo_has_woocommerce'      => function_exists( 'WC' ),
 			)
 		);
