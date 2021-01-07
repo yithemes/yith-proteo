@@ -220,7 +220,7 @@
 				return true;
 			} else {
 				ev.preventDefault();
-				$('.menu-item-has-children > a').removeClass('submenu-opened');
+				//$('.menu-item-has-children > a').removeClass('submenu-opened');
 				$(this).addClass('submenu-opened');
 			}
 	
