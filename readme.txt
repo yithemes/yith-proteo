@@ -4,7 +4,7 @@ Tags: one-column, two-columns, left-sidebar, right-sidebar, wide-blocks, accessi
 Requires at least: 4.9.6
 Tested up to: WordPress 5.6
 Requires PHP: 5.6
-Stable tag: 1.4.4
+Stable tag: 1.4.5
 YITH Proteo WordPress Theme, Copyright 2020 YITH
 YITH Proteo is distributed under the terms of the GNU GPL
 License: GPLv2 or later
@@ -25,6 +25,16 @@ Proteo is a modern, fast and fully customizable WooCommerce theme. Designed and 
 == Frequently Asked Questions ==
 
 == Changelog ==
+
+= 1.4.5 - January 08 2021 =
+* New support for WooCommerce 4.9
+* New support to Revolution Slider. Now you can set a Revolution Slider as page header.
+* New mobile menu sidebar widget area
+* New filter yith_proteo_account_widget_text to override account widget greeting text
+* New filter yith_proteo_account_widget_image_url to override account widget icon
+* New options to enable/disable enhanced checkbox and radio buttons
+* Make class YITH_Proteo_Account_Widget pluggable
+* Fix mobile menu second and nested levels not opening
 
 = 1.4.4 - December 22 2020 =
 * Support to YITH Proteo Toolkit block patterns
