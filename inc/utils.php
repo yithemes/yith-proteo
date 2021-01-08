@@ -235,3 +235,16 @@ if ( ! function_exists( 'yith_proteo_get_user_username' ) ) {
 		return $username;
 	}
 }
+
+if ( class_exists( 'RevSlider' ) && ! function_exists( 'yith_proteo_get_all_revolution_slider_alias' ) ) {
+	/**
+	 * Retrieve list of all registered Revolution Sliders
+	 *
+	 * @return array
+	 */
+	function yith_proteo_get_all_revolution_slider_alias() {
+		$rev_sliders     = new RevSlider();
+		$rev_sliders_obj = $rev_sliders->get_sliders();
+		return wp_list_pluck( $rev_sliders_obj, 'alias' );
+	}
+}

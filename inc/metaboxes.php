@@ -238,6 +238,7 @@ function yith_proteo_header_slider_html( $post ) {
 		'fields'         => 'ids',
 	);
 	$sliders = get_posts( $args );
+
 	?>
 
 	<select name="header_slider" id="header_slider"
@@ -253,6 +254,18 @@ function yith_proteo_header_slider_html( $post ) {
 			</option>
 		<?php endforeach; ?>
 
+		<?php
+		if ( class_exists( 'RevSlider' ) ) {
+			$rev_sliders = yith_proteo_get_all_revolution_slider_alias();
+			foreach ( $rev_sliders as $rev_slider_alias ) {
+				?>
+				<option value="<?php echo esc_attr( $rev_slider_alias ); ?>" <?php selected( $value, $rev_slider_alias ); ?>>
+					<?php echo esc_html__( 'Slider Revolution: ', 'yith-proteo' ) . esc_html( $rev_slider_alias ); ?>
+				</option>
+				<?php
+			}
+		}
+		?>
 	</select>
 	<?php
 }

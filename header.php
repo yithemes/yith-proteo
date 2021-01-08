@@ -182,7 +182,10 @@ global $post;
 	<?php endif; ?>
 
 	<?php
-	if ( defined( 'YITH_SLIDER_FOR_PAGE_BUILDERS' ) ) {
+
+	if ( class_exists( 'RevSliderSlider' ) && $slider && '' !== $slider && in_array( $slider, yith_proteo_get_all_revolution_slider_alias(), true ) ) {
+			echo do_shortcode( '[rev_slider alias="' . $slider . '"][/rev_slider]' );
+	} elseif ( defined( 'YITH_SLIDER_FOR_PAGE_BUILDERS' ) ) {
 		if ( $slider && '' !== $slider ) {
 			echo do_shortcode( '[yith-slider slider="' . $slider . '"]' );
 		}
