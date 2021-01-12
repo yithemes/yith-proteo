@@ -205,7 +205,29 @@
 			)
 		)
 	);
-	// main menu font size options.
+	// Main menu text transformation.
+	$wp_customize->add_setting(
+		'yith_proteo_header_main_menu_text_transform',
+		array(
+			'default'           => 'uppercase',
+			'sanitize_callback' => 'yith_proteo_sanitize_select',
+		)
+	);
+	$wp_customize->add_control(
+		'yith_proteo_header_main_menu_text_transform',
+		array(
+			'type'    => 'select',
+			'label'   => esc_html__( 'Header menu text transform', 'yith-proteo' ),
+			'section' => 'yith_proteo_header_management',
+			'choices' => array(
+				'none'       => esc_html__( 'None', 'yith-proteo' ),
+				'uppercase'  => esc_html__( 'Uppercase', 'yith-proteo' ),
+				'lowercase'  => esc_html__( 'Lowercase', 'yith-proteo' ),
+				'capitalize' => esc_html__( 'Capitalize', 'yith-proteo' ),
+			),
+		)
+	);
+	// Header menu font size options.
 	$wp_customize->add_setting(
 		'yith_proteo_header_main_menu_font_size',
 		array(
@@ -216,9 +238,33 @@
 	$wp_customize->add_control(
 		'yith_proteo_header_main_menu_font_size',
 		array(
-			'label'   => esc_html__( 'Main menu font size (default: 14px)', 'yith-proteo' ),
+			'label'   => esc_html__( 'Header menu font size (default: 14px)', 'yith-proteo' ),
 			'section' => 'yith_proteo_header_management',
 			'type'    => 'number',
+		)
+	);
+
+	// Header menu letter spacing.
+	$wp_customize->add_setting(
+		'yith_proteo_header_main_menu_letter_spacing',
+		array(
+			'default'           => 2,
+			//'transport'         => 'postMessage',
+			'sanitize_callback' => 'absint',
+		)
+	);
+
+	$wp_customize->add_control(
+		new WP_Customize_Range(
+			$wp_customize,
+			'yith_proteo_header_main_menu_letter_spacing',
+			array(
+				'label'   => esc_html__( 'Header menu letter spacing (px)', 'yith-proteo' ),
+				'min'     => -2,
+				'max'     => 30,
+				'step'    => 1,
+				'section' => 'yith_proteo_header_management',
+			)
 		)
 	);
 

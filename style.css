@@ -5947,10 +5947,9 @@ a:hover, a:active {
   list-style: none;
   margin: 0 0 -15px;
   padding-left: 0;
-  font-size: var(--proteo-header_menu_font_size, 14);
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: 500;
+  font-size: var(--proteo-header_menu_font_size, 14px);
+  text-transform: var(--proteo-header_menu_text_transform, uppercase);
+  letter-spacing: var(--proteo-header_menu_letter_spacing, 2px);
 }
 .main-navigation ul ul {
   letter-spacing: 1px;
