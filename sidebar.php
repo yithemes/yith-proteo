@@ -45,9 +45,9 @@ if ( function_exists( 'wc' ) && is_shop() && get_theme_mod( 'yith_proteo_shop_pa
 		} elseif ( is_product_taxonomy() ) {
 			$sidebar = get_theme_mod( 'yith_proteo_product_tax_page_sidebar', 'shop-sidebar' );
 		} elseif ( is_product() && 'yes' === get_theme_mod( 'yith_proteo_product_page_sidebar_force', 'no' ) ) {
-			dynamic_sidebar( get_theme_mod( 'yith_proteo_single_product_default_sidebar', 'shop-sidebar' ) );
+			$sidebar = get_theme_mod( 'yith_proteo_single_product_default_sidebar', 'shop-sidebar' );
 		} elseif ( is_product() && 'inherit' === $sidebar ) {
-			dynamic_sidebar( get_theme_mod( 'yith_proteo_single_product_default_sidebar', 'shop-sidebar' ) );
+			$sidebar = get_theme_mod( 'yith_proteo_single_product_default_sidebar', 'shop-sidebar' );
 		}
 	}
 	if ( is_home() ) {
