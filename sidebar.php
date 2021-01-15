@@ -21,7 +21,7 @@ if ( function_exists( 'wc' ) ) {
 // WooCommerce shop page support.
 if ( function_exists( 'wc' ) && is_shop() && get_theme_mod( 'yith_proteo_shop_page_sidebar_position', $default_shop_page_sidebar_position ) === 'no-sidebar' ) {
 	return;
-} elseif ( function_exists( 'wc' ) && is_product_category() && ! is_product_taxonomy() && get_theme_mod( 'yith_proteo_product_category_page_sidebar_position', 'no-sidebar' ) === 'no-sidebar' ) {
+} elseif ( function_exists( 'wc' ) && is_product_category() && get_theme_mod( 'yith_proteo_product_category_page_sidebar_position', 'no-sidebar' ) === 'no-sidebar' ) {
 	return;
 } elseif ( function_exists( 'wc' ) && is_product_tag() && get_theme_mod( 'yith_proteo_product_tag_page_sidebar_position', 'no-sidebar' ) === 'no-sidebar' ) {
 	return;
