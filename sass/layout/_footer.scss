@@ -40,8 +40,9 @@
 		padding-bottom: 50px;
 
 		.widget {
-			h2 {
+			h2, h3 {
 				margin-bottom: 2rem;
+				color: var(--proteo-footer_widgets_title_color, var(--proteo-h2_font_color, #404040));
 			}
 		}
 	}

@@ -202,6 +202,25 @@
 			)
 		)
 	);
+	// Footer widget title color options.
+	$wp_customize->add_setting(
+		'yith_proteo_footer_widgets_title_color',
+		array(
+			'sanitize_callback' => 'yith_proteo_sanitize_alpha_colors',
+			'default'           => get_theme_mod( 'yith_proteo_h2_font_color', '#404040' ),
+		)
+	);
+	$wp_customize->add_control(
+		new Customizer_Alpha_Color_Control(
+			$wp_customize,
+			'yith_proteo_footer_widgets_title_color',
+			array(
+				'label'   => esc_html__( 'Widgets title color', 'yith-proteo' ),
+				'section' => 'yith_proteo_footer_management',
+			)
+		)
+	);
+
 	// Footer alignment.
 	if ( class_exists( 'Customizer_Control_Radio_Image' ) ) {
 		$wp_customize->add_setting(

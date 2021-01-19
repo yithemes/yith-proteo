@@ -7586,8 +7586,9 @@ div#respond #submit {
 #main-footer div[class^=footer-sidebar] {
   padding-bottom: 50px;
 }
-#main-footer div[class^=footer-sidebar] .widget h2 {
+#main-footer div[class^=footer-sidebar] .widget h2, #main-footer div[class^=footer-sidebar] .widget h3 {
   margin-bottom: 2rem;
+  color: var(--proteo-footer_widgets_title_color, var(--proteo-h2_font_color, #404040));
 }
 #main-footer .footer-sidebar-1 {
   width: var(--proteo-footer_sidebar_1_width, 100%);

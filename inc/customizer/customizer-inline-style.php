@@ -35,16 +35,17 @@ function yith_proteo_inline_style() {
 	$topbar_bottom_border_color = get_theme_mod( 'yith_proteo_topbar_bottom_border_color', '#000000' );
 	$topbar_bottom_border_width = get_theme_mod( 'yith_proteo_topbar_bottom_border_width', 1 );
 
-	$footer_bg_color          = get_theme_mod( 'yith_proteo_footer_background_color', '#f7f7f7' );
-	$footer_bg_image          = get_theme_mod( 'yith_proteo_footer_background_image' );
-	$footer_bg_image_size     = 'yes' === get_theme_mod( 'yith_proteo_footer_background_size_full', 'yes' ) ? 'cover' : 'initial';
-	$footer_bg_image_repeat   = get_theme_mod( 'yith_proteo_footer_background_repeat', 'repeat' );
-	$footer_bg_image_position = str_replace( '-', ' ', get_theme_mod( 'yith_proteo_footer_background_position', 'center center' ) );
-	$footer_font_size         = get_theme_mod( 'yith_proteo_footer_font_size', 16 );
-	$footer_font_color        = get_theme_mod( 'yith_proteo_footer_font_color', '#404040' );
-	$footer_align             = get_theme_mod( 'yith_proteo_footer_align', 'left' );
-	$footer_link_color        = get_theme_mod( 'yith_proteo_footer_link_color', '#448a85' );
-	$footer_link_hover_color  = get_theme_mod( 'yith_proteo_footer_link_hover_color', yith_proteo_adjust_brightness( get_theme_mod( 'yith_proteo_topbar_link_color', '#448a85' ), - 0.3 ) );
+	$footer_bg_color            = get_theme_mod( 'yith_proteo_footer_background_color', '#f7f7f7' );
+	$footer_bg_image            = get_theme_mod( 'yith_proteo_footer_background_image' );
+	$footer_bg_image_size       = 'yes' === get_theme_mod( 'yith_proteo_footer_background_size_full', 'yes' ) ? 'cover' : 'initial';
+	$footer_bg_image_repeat     = get_theme_mod( 'yith_proteo_footer_background_repeat', 'repeat' );
+	$footer_bg_image_position   = str_replace( '-', ' ', get_theme_mod( 'yith_proteo_footer_background_position', 'center center' ) );
+	$footer_font_size           = get_theme_mod( 'yith_proteo_footer_font_size', 16 );
+	$footer_font_color          = get_theme_mod( 'yith_proteo_footer_font_color', '#404040' );
+	$footer_align               = get_theme_mod( 'yith_proteo_footer_align', 'left' );
+	$footer_link_color          = get_theme_mod( 'yith_proteo_footer_link_color', '#448a85' );
+	$footer_link_hover_color    = get_theme_mod( 'yith_proteo_footer_link_hover_color', yith_proteo_adjust_brightness( get_theme_mod( 'yith_proteo_topbar_link_color', '#448a85' ), - 0.3 ) );
+	$footer_widgets_title_color = get_theme_mod( 'yith_proteo_footer_widgets_title_color', get_theme_mod( 'yith_proteo_h2_font_color', '#404040' ) );
 
 	$footer_credits_bg_color         = get_theme_mod( 'yith_proteo_footer_credits_background_color', '#f0f0f0' );
 	$footer_credits_font_size        = get_theme_mod( 'yith_proteo_footer_credits_font_size', 16 );
@@ -227,6 +228,7 @@ function yith_proteo_inline_style() {
 		--proteo-footer_align: {$footer_align};
 		--proteo-footer_link_color: {$footer_link_color};
 		--proteo-footer_link_hover_color: {$footer_link_hover_color};
+		--proteo-footer_widgets_title_color: {$footer_widgets_title_color};
 		--proteo-footer_credits_bg_color: {$footer_credits_bg_color};
 		--proteo-footer_credits_font_size: {$footer_credits_font_size}px;
 		--proteo-footer_credits_font_color: {$footer_credits_font_color};
