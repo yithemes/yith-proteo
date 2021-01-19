@@ -202,6 +202,22 @@
 			)
 		)
 	);
+	// Footer widget title font size options.
+	$wp_customize->add_setting(
+		'yith_proteo_footer_widgets_title_font_size',
+		array(
+			'sanitize_callback' => 'absint',
+			'default'           => ( get_theme_mod( 'yith_proteo_base_font_size', 16 ) * 1.5 ),
+		)
+	);
+	$wp_customize->add_control(
+		'yith_proteo_footer_widgets_title_font_size',
+		array(
+			'label'   => esc_html__( 'Widgets title font size', 'yith-proteo' ),
+			'section' => 'yith_proteo_footer_management',
+			'type'    => 'number',
+		)
+	);
 	// Footer widget title color options.
 	$wp_customize->add_setting(
 		'yith_proteo_footer_widgets_title_color',
