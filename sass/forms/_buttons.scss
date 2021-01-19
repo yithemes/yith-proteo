@@ -8,7 +8,8 @@ input[type="submit"],
 .button-style-1:not(.wp-block-button),
 .button-style-1 a,
 input[type="file"]::-webkit-file-upload-button,
-body.update-cart-button-style table.cart tbody tr td.actions button[name="update_cart"] {
+body.update-cart-button-style table.cart tbody tr td.actions button[name="update_cart"],
+body.yith-proteo-add-to-cart-style-button_style_1 .wc-block-grid__product .add_to_cart_button {
 	border: 1px solid;
 	border-color: var(--proteo-button_1_border_color, $color__border-button);
 	background: var(--proteo-button_1_bg_color, $color__background-button);
@@ -52,7 +53,8 @@ input[type="submit"].alt,
 .wishlist-submit.popup_button,
 .yith_wcwl_wishlist_footer input[name="add_all_to_cart"],
 .button-style-2:not(.wp-block-button),
-.button-style-2 a {
+.button-style-2 a,
+body.yith-proteo-add-to-cart-style-button_style_2 .wc-block-grid__product .add_to_cart_button {
 	text-decoration: none;
 	background-color: var(--proteo-button_2_bg_color_1, #00a79c);
 	background: linear-gradient(180deg, var(--proteo-button_2_bg_color_1, #00a79c) 0%, var(--proteo-button_2_bg_color_2, #01af8d ) 100%);
@@ -151,8 +153,7 @@ input[type="submit"].alt,
 .unstyled-button,
 .button.unstyled_button,
 body:not(.update-cart-button-style) table.cart tbody tr td.actions button[name="update_cart"],
-.wc-block-grid ul.wc-block-grid__products li.wc-block-grid__product .add_to_cart_button,
-.wc-block-grid ul.wc-block-grid__products li.wc-block-grid__product .add_to_cart_button:visited {
+body.yith-proteo-add-to-cart-style-unstyled_button .wc-block-grid__product .add_to_cart_button {
 	background: none;
 	background-color: transparent;
 	padding: 0;
@@ -177,6 +178,7 @@ input[type="submit"],
 .button,
 .widget a.button,
 .wishlist-submit.popup_button,
-body.update-cart-button-style table.cart tbody tr td.actions button[name="update_cart"] {
+body.update-cart-button-style table.cart tbody tr td.actions button[name="update_cart"],
+.wc-block-grid__product .add_to_cart_button {
 	border-radius: var(--proteo-buttons_border_radius);
 }

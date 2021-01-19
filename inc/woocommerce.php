@@ -689,6 +689,26 @@ if ( ! function_exists( 'yith_proteo_product_hover_effect' ) ) {
 	}
 }
 
+if ( ! function_exists( 'yith_proteo_products_loop_add_to_cart_style' ) ) {
+
+	add_filter( 'body_class', 'yith_proteo_products_loop_add_to_cart_style' );
+
+	/**
+	 * Set the products hover effect according to customizer option
+	 *
+	 * @param array $classes body CSS classes.
+	 *
+	 * @return array
+	 *
+	 * @author Francesco Grasso <francgrasso@yithemes.com>
+	 */
+	function yith_proteo_products_loop_add_to_cart_style( $classes ) {
+		$add_to_cart_style = get_theme_mod( 'yith_proteo_products_loop_add_to_cart_style', 'unstyled_button' );
+		$classes[]         = 'yith-proteo-add-to-cart-style-' . $add_to_cart_style;
+		return $classes;
+	}
+}
+
 if ( ! function_exists( 'yith_proteo_show_product_page_clear_variations_link' ) ) {
 	/**
 	 * Show or hide the clear variations link on product page according to theme option
