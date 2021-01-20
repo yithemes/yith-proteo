@@ -216,3 +216,23 @@ $wp_customize->add_control(
 		)
 	)
 );
+// Tagline position.
+$wp_customize->add_setting(
+	'yith_proteo_tagline_position',
+	array(
+		'default'           => 'below',
+		'sanitize_callback' => 'yith_proteo_sanitize_select',
+	)
+);
+$wp_customize->add_control(
+	'yith_proteo_tagline_position',
+	array(
+		'type'    => 'select',
+		'label'   => esc_html__( 'Tagline position', 'yith-proteo' ),
+		'section' => 'title_tagline',
+		'choices' => array(
+			'below' => esc_html__( 'Below the site title', 'yith-proteo' ),
+			'right' => esc_html__( 'Next to the site title', 'yith-proteo' ),
+		),
+	)
+);

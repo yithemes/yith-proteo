@@ -82,6 +82,9 @@
 			//  Show control 'yith_proteo_tagline_color' if control 'yith_proteo_display_header_text' value has 'yes'.
 			wp.customize.control('yith_proteo_tagline_color', showControlIfhasValues(setting, ['yes']));
 
+			//  Show control 'yith_proteo_tagline_position' if control 'yith_proteo_display_header_text' value has 'yes'.
+			wp.customize.control('yith_proteo_tagline_position', showControlIfhasValues(setting, ['yes']));
+
 		});
 
 

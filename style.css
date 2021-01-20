@@ -6418,6 +6418,11 @@ header.center_logo_navigation_below .menu-toggle {
   font-size: var(--proteo-tagline_font_size, 14);
   color: var(--proteo-tagline_color, #404040);
 }
+.site-branding.tagline-position-right .site-title,
+.site-branding.tagline-position-right .site-description {
+  display: inline-block;
+  vertical-align: middle;
+}
 
 .site-header {
   background-color: var(--proteo-header_bg_color, #ffffff);

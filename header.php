@@ -25,6 +25,8 @@ global $post;
 	<?php
 	// get the tagline.
 	$yith_proteo_description = get_bloginfo( 'description' );
+	// get the tagline position.
+	$yith_proteo_tagline_position = 'tagline-position-' . get_theme_mod( 'yith_proteo_tagline_position', 'below' );
 	// hide site header if meta value enabled.
 	if ( function_exists( 'wc' ) && is_shop() ) {
 		$hide_header = get_post_meta( wc_get_page_id( 'shop' ), 'yith_proteo_remove_header_and_footer', true );
@@ -54,7 +56,7 @@ global $post;
 			?>
 			<div class="container header-contents <?php echo esc_attr( get_theme_mod( 'yith_proteo_mobile_menu_opener_position', 'right' ) === 'left' ? 'left-toggle' : 'right-toggle' ); ?>">
 				<?php if ( yith_proteo_display_header_text() ) : ?>
-				<div class="site-branding">
+				<div class="site-branding <?php echo esc_attr( $yith_proteo_tagline_position ); ?>">
 					<?php
 					if ( is_front_page() && is_home() ) :
 						?>
