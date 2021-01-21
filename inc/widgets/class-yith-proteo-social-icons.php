@@ -16,7 +16,7 @@ class YITH_Proteo_Social_Icons extends WP_Widget {
 	public function __construct() {
 		parent::__construct(
 			'YITH_Proteo_Social_Icons',
-			__( 'Social Networks', 'yith-proteo' ), // Name.
+			__( 'YITH Proteo Social Networks', 'yith-proteo' ), // Name.
 			array(
 				'description' => __( 'Links to your social profiles', 'yith-proteo' ),
 			)
