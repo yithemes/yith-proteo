@@ -758,6 +758,9 @@ if ( ! function_exists( 'yith_proteo_loop_product_image_wrap_end' ) ) {
 if ( 'hover' === get_theme_mod( 'yith_proteo_products_loop_add_to_cart_position', 'classic' ) ) {
 	remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10 );
 	add_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_add_to_cart', 50 );
+
+	remove_action( 'woocommerce_before_shop_loop_item', 'woocommerce_template_loop_product_link_open', 10 );
+	add_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_product_link_open', 110 );
 }
 
 add_filter( 'body_class', 'yith_proteo_products_loop_add_to_cart_position_css_class' );
