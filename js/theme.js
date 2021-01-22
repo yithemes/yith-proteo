@@ -335,5 +335,17 @@
 			}
 	});
 
+	// Loop add to cart :hover position
+	if (typeof yith_proteo != 'undefined' && yith_proteo.yith_proteo_products_loop_add_to_cart_position == 'hover') {
+		$('.wc-block-grid__product').each(function() {
+			var t = $(this),
+			product_link_tag_opener = t.find('.wc-block-grid__product-link'),
+			product_image_tag = t.find('.wc-block-grid__product-image'),
+			product_add_to_cart_tag = t.find('.wc-block-grid__product-add-to-cart');
+			product_image_tag.insertBefore(product_link_tag_opener);
+			product_add_to_cart_tag.appendTo(product_image_tag);
+		});
+	}
+
 })
 	(jQuery);

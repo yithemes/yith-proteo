@@ -57,6 +57,7 @@ if ( ! function_exists( 'yith_proteo_scripts' ) ) :
 				'yith_proteo_use_enanched_selects' => get_theme_mod( 'yith_proteo_use_enanched_selects', 'yes' ),
 				'yith_proteo_use_enhanced_checkbox_and_radio' => get_theme_mod( 'yith_proteo_use_enhanced_checkbox_and_radio', 'yes' ),
 				'yith_proteo_has_woocommerce'      => function_exists( 'WC' ),
+				'yith_proteo_products_loop_add_to_cart_position' => get_theme_mod( 'yith_proteo_products_loop_add_to_cart_position', 'classic' ),
 			)
 		);
 

@@ -211,7 +211,8 @@ body {
 	}
 
 	&.yith-proteo-product-loop-add-to-cart-position-hover {
-		ul.products li.product .yith-proteo-product-loop-image {
+		ul.products li.product .yith-proteo-product-loop-image,
+		ul.wc-block-grid__products li.wc-block-grid__product .wc-block-grid__product-image {
 			position: relative;
 			display: flex;
 			align-items: center;
@@ -235,14 +236,20 @@ body {
 				opacity: 1;
 			}
 
-			a:not(.woocommerce-loop-product__link){
+			a:not(.woocommerce-loop-product__link),
+			.wc-block-grid__product-add-to-cart {
 				position: absolute;
 				z-index: 101;
 				opacity: 0;
 				bottom: initial;
 			}
 
-			&:hover a:not(.woocommerce-loop-product__link){
+			.wc-block-grid__product-add-to-cart a {
+				position: initial;
+			}
+
+			&:hover a:not(.woocommerce-loop-product__link),
+			&:hover .wc-block-grid__product-add-to-cart {
 				opacity: 1;
 				bottom: initial;
 			}
