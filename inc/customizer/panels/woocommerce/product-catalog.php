@@ -138,3 +138,25 @@ $wp_customize->add_control(
 		'type'    => 'number',
 	)
 );
+
+// Add to cart position.
+$wp_customize->add_setting(
+	'yith_proteo_products_loop_add_to_cart_position',
+	array(
+		'default'           => 'classic',
+		'sanitize_callback' => 'yith_proteo_sanitize_radio',
+	)
+);
+$wp_customize->add_control(
+	'yith_proteo_products_loop_add_to_cart_position',
+	array(
+		'type'        => 'radio',
+		'label'       => esc_html__( 'Add to cart position', 'yith-proteo' ),
+		'section'     => 'woocommerce_product_catalog',
+		'description' => esc_html__( 'Choose where the add to cart button is displayed in product catalog pages.', 'yith-proteo' ),
+		'choices'     => array(
+			'classic' => esc_html__( 'Classic', 'yith-proteo' ),
+			'hover'   => esc_html__( 'On image hover', 'yith-proteo' ),
+		),
+	)
+);

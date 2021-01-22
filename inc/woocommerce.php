@@ -714,7 +714,10 @@ if ( ! function_exists( 'yith_proteo_show_product_page_clear_variations_link' ) 
 	 * Show or hide the clear variations link on product page according to theme option
 	 *
 	 * @param [type] $link Clear link.
+	 *
 	 * @return mixed
+	 *
+	 * @author Francesco Grasso <francgrasso@yithemes.com>
 	 */
 	function yith_proteo_show_product_page_clear_variations_link( $link ) {
 		if ( 'no' === get_theme_mod( 'yith_proteo_product_page_show_clear_variations_link', 'yes' ) ) {
@@ -724,4 +727,51 @@ if ( ! function_exists( 'yith_proteo_show_product_page_clear_variations_link' ) 
 		}
 	}
 	add_filter( 'woocommerce_reset_variations_link', 'yith_proteo_show_product_page_clear_variations_link' );
+}
+
+/**
+ * Wrap loop product image in a container
+ */
+add_action( 'woocommerce_before_shop_loop_item_title', 'yith_proteo_loop_product_image_wrap_start', 5 );
+add_action( 'woocommerce_before_shop_loop_item_title', 'yith_proteo_loop_product_image_wrap_end', 100 );
+
+if ( ! function_exists( 'yith_proteo_loop_product_image_wrap_start' ) ) {
+	/**
+	 * Wrap loop product image in a container. Opening tag.
+	 */
+	function yith_proteo_loop_product_image_wrap_start() {
+		echo '<div class="yith-proteo-product-loop-image">';
+	}
+}
+if ( ! function_exists( 'yith_proteo_loop_product_image_wrap_end' ) ) {
+	/**
+	 * Wrap loop product image in a container. Opening tag.
+	 */
+	function yith_proteo_loop_product_image_wrap_end() {
+		echo '</div>';
+	}
+}
+
+/**
+ * Move loop add to cart inside the new .yith-proteo-product-loop-image container
+ */
+if ( 'hover' === get_theme_mod( 'yith_proteo_products_loop_add_to_cart_position', 'classic' ) ) {
+	remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10 );
+	add_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_add_to_cart', 50 );
+}
+
+add_filter( 'body_class', 'yith_proteo_products_loop_add_to_cart_position_css_class' );
+/**
+ * Set the products add to cart body class according to customizer option
+ *
+ * @param array $classes body CSS classes.
+ *
+ * @return array
+ *
+ * @author Francesco Grasso <francgrasso@yithemes.com>
+ */
+function yith_proteo_products_loop_add_to_cart_position_css_class( $classes ) {
+	$add_to_cart_style = get_theme_mod( 'yith_proteo_products_loop_add_to_cart_position', 'classic' );
+	$classes[]         = 'yith-proteo-product-loop-add-to-cart-position-' . esc_attr( $add_to_cart_style );
+	return $classes;
 }

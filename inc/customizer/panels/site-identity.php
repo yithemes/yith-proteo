@@ -231,8 +231,8 @@ $wp_customize->add_control(
 		'label'   => esc_html__( 'Tagline position', 'yith-proteo' ),
 		'section' => 'title_tagline',
 		'choices' => array(
-			'below' => esc_html__( 'Below the site title', 'yith-proteo' ),
-			'right' => esc_html__( 'Next to the site title', 'yith-proteo' ),
+			'below' => esc_html__( 'Below the title', 'yith-proteo' ),
+			'right' => esc_html__( 'Inline with the title', 'yith-proteo' ),
 		),
 	)
 );
