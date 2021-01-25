@@ -466,6 +466,7 @@
 			wp.customize.control('yith_proteo_button_style_2_bg_color_hover' ).toggle( false );
 			wp.customize.control('yith_proteo_button_style_2_text_color_hover' ).toggle( false );
 		}
+	
 
 	});
 

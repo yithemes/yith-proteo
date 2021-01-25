@@ -273,6 +273,23 @@ if ( ! function_exists( 'yith_proteo_sanitize_radio' ) ) :
 	}
 endif;
 
+if ( ! function_exists( 'yith_proteo_sanitize_int_array' ) ) :
+	/**
+	 * Int Array sanitization function
+	 *
+	 * @param string $input input must be a slug: lowercase alphanumeric characters, dashes and underscores are allowed only.
+	 *
+	 * @param array  $setting select value to check.
+	 *
+	 * @return string
+	 */
+	function yith_proteo_sanitize_int_array( $input, $setting ) {
+
+		// return input if valid or return default option.
+		return ( array_map( 'intval', $input ) );
+	}
+endif;
+
 if ( ! function_exists( 'yith_proteo_range_sanitization' ) ) {
 	/**
 	 * Slider sanitization

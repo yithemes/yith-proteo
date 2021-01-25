@@ -249,7 +249,6 @@
 		'yith_proteo_header_main_menu_letter_spacing',
 		array(
 			'default'           => 2,
-			//'transport'         => 'postMessage',
 			'sanitize_callback' => 'absint',
 		)
 	);
