@@ -146,7 +146,9 @@ if ( ! function_exists( 'yith_proteo_print_page_titles' ) ) :
 			$hide_title_if_wishlist = yith_wcwl_is_wishlist_page();
 		}
 
-		if ( ! $hide_title_if_wishlist ) :
+		$yith_proteo_hide_page_title = 'on' === get_post_meta( $post->ID, 'yith_proteo_hide_page_title', true ) ? true : false;
+
+		if ( ! $hide_title_if_wishlist && ! $yith_proteo_hide_page_title ) :
 
 			if ( $post instanceof WP_Post && ( 'post' === $post->post_type || 'page' === $post->post_type ) ) {
 				$icon = ! empty( get_post_meta( $post->ID, 'title_icon', true ) ) ? '<div class="entry-title lnr ' . get_post_meta( $post->ID, 'title_icon', true ) . '"></div>' : '';

@@ -111,6 +111,42 @@ function yith_proteo_remove_header_and_footer_add_meta_box() {
 add_action( 'add_meta_boxes', 'yith_proteo_remove_header_and_footer_add_meta_box' );
 
 /**
+ * Hide page title metabox
+ */
+function yith_proteo_hide_page_title_add_meta_box() {
+	add_meta_box(
+		'yith_proteo_hide_page_title',
+		__( 'Hide page title', 'yith-proteo' ),
+		'yith_proteo_hide_page_title_html',
+		array( 'post', 'page' ),
+		'side',
+		'high'
+	);
+}
+if ( true || ! class_exists( 'EditorsKit' ) ) {
+	add_action( 'add_meta_boxes', 'yith_proteo_hide_page_title_add_meta_box' );
+}
+
+/**
+ * Hide page title metabox
+ *
+ * @param object $post Post object.
+ *
+ * @author Francesco Grasso <francgrasso@yithemes.com>
+ */
+function yith_proteo_hide_page_title_html( $post ) {
+	wp_nonce_field( '_yith_proteo_hide_page_title_nonce', 'yith_proteo_hide_page_title_nonce' );
+	$value = get_post_meta( $post->ID, 'yith_proteo_hide_page_title', true );
+	?>
+
+	<label for="yith_proteo_hide_page_title">
+		<input type="checkbox" name="yith_proteo_hide_page_title" id="yith_proteo_hide_page_title" <?php checked( 'on', $value ); ?> value="on">
+		<?php esc_html_e( 'Enable this option to hide page title.', 'yith-proteo' ); ?>
+	</label>
+	<?php
+}
+
+/**
  * Remove header and footer metabox
  *
  * @param object $post Post object.
@@ -295,6 +331,32 @@ function yith_proteo_remove_header_and_footer_save( $post_id ) {
 }
 
 add_action( 'save_post', 'yith_proteo_remove_header_and_footer_save' );
+
+/**
+ * Hide page title meta save
+ *
+ * @param int $post_id Post object ID.
+ *
+ * @author Francesco Grasso <francgrasso@yithemes.com>
+ */
+function yith_proteo_hide_page_title_save( $post_id ) {
+	if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
+		return;
+	}
+	if ( ! isset( $_POST['yith_proteo_hide_page_title_nonce'] ) || ! wp_verify_nonce( sanitize_text_field( wp_unslash( $_POST['yith_proteo_hide_page_title_nonce'] ) ), '_yith_proteo_hide_page_title_nonce' ) ) {
+		return;
+	}
+	if ( ! current_user_can( 'edit_post', $post_id ) ) {
+		return;
+	}
+	if ( isset( $_POST['yith_proteo_hide_page_title'] ) ) {
+		update_post_meta( $post_id, 'yith_proteo_hide_page_title', sanitize_text_field( wp_unslash( $_POST['yith_proteo_hide_page_title'] ) ) );
+	} else {
+		update_post_meta( $post_id, 'yith_proteo_hide_page_title', 'off' );
+	}
+}
+
+add_action( 'save_post', 'yith_proteo_hide_page_title_save' );
 
 /**
  * Page header footer meta save
