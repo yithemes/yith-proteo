@@ -32,7 +32,7 @@
 				$wp_customize,
 				'yith_proteo_topbar_enable',
 				array(
-					'label'       => esc_html__( 'Enable topbar', 'yith-proteo' ),
+					'label'       => esc_html__( 'Show topbar', 'yith-proteo' ),
 					'section'     => 'yith_proteo_topbar_management',
 					'description' => esc_html__( 'Choose whether to show the site topbar or not', 'yith-proteo' ),
 				)
@@ -53,7 +53,7 @@
 			$wp_customize,
 			'yith_proteo_topbar_background_color',
 			array(
-				'label'           => esc_html__( 'Topbar background color', 'yith-proteo' ),
+				'label'           => esc_html__( 'Background color', 'yith-proteo' ),
 				'section'         => 'yith_proteo_topbar_management',
 				'active_callback' => 'yith_proteo_topbar_is_enabled',
 			)
@@ -78,7 +78,7 @@
 			$wp_customize,
 			'yith_proteo_topbar_spacing',
 			array(
-				'label'   => __( 'Topbar spacing (px)', 'yith-proteo' ),
+				'label'   => __( 'Spacing (px)', 'yith-proteo' ),
 				'section' => 'yith_proteo_topbar_management',
 				'choices' => array(
 					'top'    => array(

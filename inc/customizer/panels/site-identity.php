@@ -30,6 +30,26 @@ if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
 	);
 }
 
+// Site logo and title managment.
+$wp_customize->add_setting(
+	'yith_proteo_site_title_group_title',
+	array(
+		'default'           => '',
+		'transport'         => 'postMessage',
+		'sanitize_callback' => 'wp_kses_post',
+	)
+);
+$wp_customize->add_control(
+	new WP_Customize_Notice(
+		$wp_customize,
+		'yith_proteo_site_title_group_title',
+		array(
+			'label'    => esc_html__( 'Logo and title', 'yith-proteo' ),
+			'section'  => 'title_tagline',
+			'priority' => 5,
+		)
+	)
+);
 // Custom logo max width.
 $wp_customize->add_setting(
 	'yith_proteo_custom_logo_max_width',
@@ -46,7 +66,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_custom_logo_max_width',
 		array(
-			'label'   => esc_html__( 'Logo image max width (px)', 'yith-proteo' ),
+			'label'   => esc_html__( 'Logo max width (px)', 'yith-proteo' ),
 			'min'     => 40,
 			'max'     => 500,
 			'step'    => 1,
@@ -86,7 +106,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'site_title_font',
 		array(
-			'label'       => __( 'Site title font', 'yith-proteo' ),
+			'label'       => __( 'Font', 'yith-proteo' ),
 			'section'     => 'title_tagline',
 			'input_attrs' => array(
 				'font_count' => 'all',
@@ -110,7 +130,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
 	'yith_proteo_site_title_font_size',
 	array(
-		'label'   => esc_html__( 'Site Title font size', 'yith-proteo' ),
+		'label'   => esc_html__( 'Font size', 'yith-proteo' ),
 		'section' => 'title_tagline',
 		'type'    => 'number',
 	)
@@ -130,7 +150,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_site_title_color',
 		array(
-			'label'   => esc_html__( 'Site Title color', 'yith-proteo' ),
+			'label'   => esc_html__( 'Color', 'yith-proteo' ),
 			'section' => 'title_tagline',
 		)
 	)
@@ -174,6 +194,25 @@ $wp_customize->add_control(
 	)
 );
 
+// Tagline managment.
+$wp_customize->add_setting(
+	'yith_proteo_tagline_group_title',
+	array(
+		'default'           => '',
+		'transport'         => 'postMessage',
+		'sanitize_callback' => 'wp_kses_post',
+	)
+);
+$wp_customize->add_control(
+	new WP_Customize_Notice(
+		$wp_customize,
+		'yith_proteo_tagline_group_title',
+		array(
+			'label'   => esc_html__( 'Tagline', 'yith-proteo' ),
+			'section' => 'title_tagline',
+		)
+	)
+);
 $wp_customize->add_setting(
 	'blogdescription',
 	array(
@@ -205,7 +244,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'tagline_font',
 		array(
-			'label'       => __( 'Tagline font', 'yith-proteo' ),
+			'label'       => __( 'Font', 'yith-proteo' ),
 			'section'     => 'title_tagline',
 			'input_attrs' => array(
 				'font_count' => 'all',
@@ -229,7 +268,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
 	'yith_proteo_tagline_font_size',
 	array(
-		'label'   => esc_html__( 'Tagline font size', 'yith-proteo' ),
+		'label'   => esc_html__( 'Font size', 'yith-proteo' ),
 		'section' => 'title_tagline',
 		'type'    => 'number',
 	)
@@ -249,7 +288,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_tagline_color',
 		array(
-			'label'   => esc_html__( 'Tagline color', 'yith-proteo' ),
+			'label'   => esc_html__( 'Color', 'yith-proteo' ),
 			'section' => 'title_tagline',
 		)
 	)
@@ -305,11 +344,31 @@ $wp_customize->add_control(
 	'yith_proteo_tagline_position',
 	array(
 		'type'    => 'select',
-		'label'   => esc_html__( 'Tagline position', 'yith-proteo' ),
+		'label'   => esc_html__( 'Position', 'yith-proteo' ),
 		'section' => 'title_tagline',
 		'choices' => array(
 			'below' => esc_html__( 'Below the title', 'yith-proteo' ),
 			'right' => esc_html__( 'Inline with the title', 'yith-proteo' ),
 		),
+	)
+);
+
+// Site Icon managment.
+$wp_customize->add_setting(
+	'yith_proteo_favicon_group_title',
+	array(
+		'default'           => '',
+		'transport'         => 'postMessage',
+		'sanitize_callback' => 'wp_kses_post',
+	)
+);
+$wp_customize->add_control(
+	new WP_Customize_Notice(
+		$wp_customize,
+		'yith_proteo_favicon_group_title',
+		array(
+			'label'   => esc_html__( 'Site icon', 'yith-proteo' ),
+			'section' => 'title_tagline',
+		)
 	)
 );
