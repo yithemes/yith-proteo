@@ -6517,7 +6517,7 @@ header.center_logo_navigation_below .menu-toggle {
   background-color: var(--proteo-topbar_bg_color, #ebebeb);
   color: var(--proteo-topbar_font_color, #404040);
   font-size: var(--proteo-topbar_font_size, 16px);
-  padding: 15px 0 0;
+  padding: var(--proteo-topbar_spacing);
   text-align: var(--proteo-topbar_align, right);
 }
 #topbar:after {
@@ -6555,6 +6555,7 @@ header.center_logo_navigation_below .menu-toggle {
   font-size: inherit;
   line-height: normal;
   font-weight: initial;
+  margin: 0;
 }
 #topbar > .container {
   border-bottom: var(--proteo-topbar_bottom_border, 1px solid);

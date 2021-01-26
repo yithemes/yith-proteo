@@ -164,7 +164,7 @@
 	background-color: var(--proteo-topbar_bg_color, #ebebeb);
 	color: var(--proteo-topbar_font_color, #404040);
 	font-size: var(--proteo-topbar_font_size, 16px);
-	padding: 15px 0 0;
+	padding: var(--proteo-topbar_spacing);
 	text-align: var(--proteo-topbar_align, right);
 
 	&:after {
@@ -206,6 +206,7 @@
 		font-size: inherit;
 		line-height: normal;
 		font-weight: initial;
+		margin: 0;
 	}
 
 	& > .container {

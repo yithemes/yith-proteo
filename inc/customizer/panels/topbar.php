@@ -59,6 +59,45 @@
 			)
 		)
 	);
+
+	// Topbar spacing control.
+	$wp_customize->add_setting(
+		'yith_proteo_topbar_spacing',
+		array(
+			'default'           => array(
+				'top'    => 15,
+				'right'  => 0,
+				'bottom' => 0,
+				'left'   => 0,
+			),
+			'sanitize_callback' => 'yith_proteo_sanitize_int_array',
+		)
+	);
+	$wp_customize->add_control(
+		new Customizer_Control_Spacing(
+			$wp_customize,
+			'yith_proteo_topbar_spacing',
+			array(
+				'label'   => __( 'Topbar spacing (px)', 'yith-proteo' ),
+				'section' => 'yith_proteo_topbar_management',
+				'choices' => array(
+					'top'    => array(
+						'name' => esc_html__( 'Top', 'yith-proteo' ),
+					),
+					'right'  => array(
+						'name' => esc_html__( 'Right', 'yith-proteo' ),
+					),
+					'bottom' => array(
+						'name' => esc_html__( 'Bottom', 'yith-proteo' ),
+					),
+					'left'   => array(
+						'name' => esc_html__( 'Left', 'yith-proteo' ),
+					),
+				),
+			)
+		)
+	);
+
 	// Topbar font size options.
 	$wp_customize->add_setting(
 		'yith_proteo_topbar_font_size',
