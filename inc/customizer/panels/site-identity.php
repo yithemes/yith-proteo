@@ -136,6 +136,44 @@ $wp_customize->add_control(
 	)
 );
 
+// Site title spacing control.
+$wp_customize->add_setting(
+	'yith_proteo_site_title_spacing',
+	array(
+		'default'           => array(
+			'top'    => 0,
+			'right'  => 30,
+			'bottom' => 0,
+			'left'   => 0,
+		),
+		'sanitize_callback' => 'yith_proteo_sanitize_int_array',
+	)
+);
+$wp_customize->add_control(
+	new Customizer_Control_Spacing(
+		$wp_customize,
+		'yith_proteo_site_title_spacing',
+		array(
+			'label'   => __( 'Spacing (px)', 'yith-proteo' ),
+			'section' => 'title_tagline',
+			'choices' => array(
+				'top'    => array(
+					'name' => esc_html__( 'Top', 'yith-proteo' ),
+				),
+				'right'  => array(
+					'name' => esc_html__( 'Right', 'yith-proteo' ),
+				),
+				'bottom' => array(
+					'name' => esc_html__( 'Bottom', 'yith-proteo' ),
+				),
+				'left'   => array(
+					'name' => esc_html__( 'Left', 'yith-proteo' ),
+				),
+			),
+		)
+	)
+);
+
 $wp_customize->add_setting(
 	'blogdescription',
 	array(
@@ -216,6 +254,45 @@ $wp_customize->add_control(
 		)
 	)
 );
+
+// Tagline spacing control.
+$wp_customize->add_setting(
+	'yith_proteo_tagline_spacing',
+	array(
+		'default'           => array(
+			'top'    => 10,
+			'right'  => 30,
+			'bottom' => 0,
+			'left'   => 0,
+		),
+		'sanitize_callback' => 'yith_proteo_sanitize_int_array',
+	)
+);
+$wp_customize->add_control(
+	new Customizer_Control_Spacing(
+		$wp_customize,
+		'yith_proteo_tagline_spacing',
+		array(
+			'label'   => __( 'Spacing (px)', 'yith-proteo' ),
+			'section' => 'title_tagline',
+			'choices' => array(
+				'top'    => array(
+					'name' => esc_html__( 'Top', 'yith-proteo' ),
+				),
+				'right'  => array(
+					'name' => esc_html__( 'Right', 'yith-proteo' ),
+				),
+				'bottom' => array(
+					'name' => esc_html__( 'Bottom', 'yith-proteo' ),
+				),
+				'left'   => array(
+					'name' => esc_html__( 'Left', 'yith-proteo' ),
+				),
+			),
+		)
+	)
+);
+
 // Tagline position.
 $wp_customize->add_setting(
 	'yith_proteo_tagline_position',

@@ -533,3 +533,11 @@ SPACING CONTROLS
 	text-align: left;
 }
 
+/************************
+GFONT CONTOLS
+*************************/
+#customize-controls .customize-control.customize-control-google_fonts {
+    padding-bottom: 0;
+    border-bottom: none;
+    margin-bottom: 0;
+}

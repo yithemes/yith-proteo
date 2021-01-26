@@ -4,7 +4,7 @@
 
 	.site-title {
 		display: block;
-		margin: 0 30px 0 0;
+		margin: var(--proteo-site_title_spacing);
 		vertical-align: middle;
 		font-size: var(--proteo-site_title_font_size, 48);
 		font-weight: 600;
@@ -32,7 +32,7 @@
 
 	.site-description {
 		display: block;
-		margin: 10px 30px 0 0;
+		margin: var(--proteo-tagline_spacing);
 		font-size: var(--proteo-tagline_font_size, 14);
 		color: var(--proteo-tagline_color, #404040);
 	}

@@ -188,6 +188,34 @@ function yith_proteo_inline_style() {
 	$catalog_product_price_color           = get_theme_mod( 'yith_proteo_product_catalog_price_color', '#1f1f1f' );
 	$catalog_product_add_to_cart_font_size = get_theme_mod( 'yith_proteo_product_catalog_add_to_cart_font_size', 14 );
 
+	/*
+	 * Spacing options
+	 */
+	$site_title_spacing = implode(
+		'px ',
+		get_theme_mod(
+			'yith_proteo_site_title_spacing',
+			array(
+				'top'    => 0,
+				'right'  => 30,
+				'bottom' => 0,
+				'left'   => 0,
+			)
+		)
+	) . 'px';
+	$tagline_spacing    = implode(
+		'px ',
+		get_theme_mod(
+			'yith_proteo_tagline_spacing',
+			array(
+				'top'    => 10,
+				'right'  => 30,
+				'bottom' => 0,
+				'left'   => 0,
+			)
+		)
+	) . 'px';
+
 	$custom_css = ":root {
 		--proteo-main_color_shade: {$main_color_shade};
 		--proteo-general_link_color: {$general_link_color};
@@ -315,6 +343,8 @@ function yith_proteo_inline_style() {
 		--proteo-catalog_product_price_font_size: {$catalog_product_price_font_size}px;
 		--proteo-catalog_product_price_color: {$catalog_product_price_color};
 		--proteo-catalog_product_add_to_cart_font_size: {$catalog_product_add_to_cart_font_size}px;
+		--proteo-site_title_spacing: {$site_title_spacing};
+		--proteo-tagline_spacing: {$tagline_spacing};
 	}";
 
 	if ( ! empty( $custom_css ) ) {
