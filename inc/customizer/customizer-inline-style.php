@@ -222,7 +222,7 @@ function yith_proteo_inline_style() {
 			array(
 				'top'    => 15,
 				'right'  => 0,
-				'bottom' => 0,
+				'bottom' => 15,
 				'left'   => 0,
 			)
 		)

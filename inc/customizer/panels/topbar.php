@@ -67,7 +67,7 @@
 			'default'           => array(
 				'top'    => 15,
 				'right'  => 0,
-				'bottom' => 0,
+				'bottom' => 15,
 				'left'   => 0,
 			),
 			'sanitize_callback' => 'yith_proteo_sanitize_int_array',
