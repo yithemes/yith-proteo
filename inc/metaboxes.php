@@ -123,7 +123,7 @@ function yith_proteo_hide_page_title_add_meta_box() {
 		'high'
 	);
 }
-if ( true || ! class_exists( 'EditorsKit' ) ) {
+if ( ! class_exists( 'EditorsKit' ) ) {
 	add_action( 'add_meta_boxes', 'yith_proteo_hide_page_title_add_meta_box' );
 }
 
