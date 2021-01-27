@@ -7091,7 +7091,7 @@ header.entry-header {
   text-align: center;
 }
 header.entry-header .woocommerce-breadcrumb {
-  text-align: center;
+  text-align: inherit;
   margin-bottom: 35px;
 }
 header.entry-header .date-and-thumbnail {
@@ -7240,7 +7240,7 @@ article.post.proteo_post_layout_fullwidth_cover_image .entry-content:before {
 
 body.page header.entry-header,
 article:not(.has-post-thumbnail).page header.entry-header {
-  text-align: center;
+  text-align: var(--proteo-page_title_align, center);
   display: block;
 }
 body.page header.entry-header h1,
@@ -7249,7 +7249,7 @@ article:not(.has-post-thumbnail).page header.entry-header h1 {
   color: var(--proteo-h1_font_color, #404040);
   margin-top: 0;
   display: block;
-  text-align: center;
+  text-align: var(--proteo-page_title_align, center);
 }
 body.page header.entry-header .lnr,
 article:not(.has-post-thumbnail).page header.entry-header .lnr {

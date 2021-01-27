@@ -91,6 +91,11 @@ function yith_proteo_inline_style() {
 	$h6_font_color   = get_theme_mod( 'yith_proteo_h6_font_color', '#404040' );
 
 	/**
+	 * Page title
+	 */
+	$page_title_align = get_theme_mod( 'yith_proteo_page_title_align', 'center' );
+
+	/**
 	 * Buttons
 	 */
 	$button_1_bg_color           = get_theme_mod( 'yith_proteo_button_style_1_bg_color', get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ) );
@@ -306,6 +311,7 @@ function yith_proteo_inline_style() {
 		--proteo-mobile_h6_font_size:{$mobile_h6_font_size}px;
 		--proteo-mobile_footer_font_size:{$mobile_footer_font_size}px;
 		--proteo-mobile_footer_credits_font_size:{$mobile_footer_credits_font_size}px;
+		--proteo-page_title_align: {$page_title_align};
 		--proteo-button_1_bg_color: {$button_1_bg_color};
 		--proteo-button_1_border_color: {$button_1_border_color};
 		--proteo-button_1_font_color: {$button_1_font_color};

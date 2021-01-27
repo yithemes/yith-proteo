@@ -21,7 +21,7 @@ header.entry-header {
 	text-align: center;
 
 	.woocommerce-breadcrumb {
-		text-align: center;
+		text-align: inherit;
 		margin-bottom: 35px;
 	}
 
@@ -194,7 +194,7 @@ article.post.proteo_post_layout_fullwidth_cover_image {
 
 body.page header.entry-header,
 article:not(.has-post-thumbnail).page header.entry-header {
-	text-align: center;
+	text-align: var(--proteo-page_title_align, center);
 	display: block;
 
 	h1 {
@@ -202,7 +202,7 @@ article:not(.has-post-thumbnail).page header.entry-header {
 		color: var(--proteo-h1_font_color, #404040);
 		margin-top: 0;
 		display: block;
-		text-align: center;
+		text-align: var(--proteo-page_title_align, center);
 	}
 
 	.lnr {
