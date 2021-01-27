@@ -7238,12 +7238,12 @@ article.post.proteo_post_layout_fullwidth_cover_image .entry-content:before {
   display: none;
 }
 
-article.page header.entry-header,
+body.page header.entry-header,
 article:not(.has-post-thumbnail).page header.entry-header {
   text-align: center;
   display: block;
 }
-article.page header.entry-header h1,
+body.page header.entry-header h1,
 article:not(.has-post-thumbnail).page header.entry-header h1 {
   font-size: var(--proteo-h1_font_size, 4.375rem);
   color: var(--proteo-h1_font_color, #404040);
@@ -7251,7 +7251,7 @@ article:not(.has-post-thumbnail).page header.entry-header h1 {
   display: block;
   text-align: center;
 }
-article.page header.entry-header .lnr,
+body.page header.entry-header .lnr,
 article:not(.has-post-thumbnail).page header.entry-header .lnr {
   font-size: var(--proteo-h1_font_size, 4.375rem);
   color: var(--proteo-h1_font_color, #404040);

@@ -39,3 +39,35 @@ if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
 		)
 	);
 }
+
+// Page title layout options.
+if ( class_exists( 'Customizer_Control_Radio_Image' ) ) {
+	$wp_customize->add_setting(
+		'yith_proteo_page_title_layout',
+		array(
+			'default'           => 'inside',
+			'sanitize_callback' => 'yith_proteo_sanitize_radio',
+		)
+	);
+
+	$wp_customize->add_control(
+		new Customizer_Control_Radio_Image(
+			$wp_customize,
+			'yith_proteo_page_title_layout',
+			array(
+				'label'   => esc_html__( 'Title layout', 'yith-proteo' ),
+				'section' => 'yith_proteo_layout_management',
+				'choices' => array(
+					'inside'  => array(
+						'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/title-layout-inside.svg',
+						'label' => esc_html__( 'Inside page content', 'yith-proteo' ),
+					),
+					'outside' => array(
+						'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/title-layout-outside.svg',
+						'label' => esc_html__( 'Outside page content', 'yith-proteo' ),
+					),
+				),
+			)
+		)
+	);
+}

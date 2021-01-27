@@ -88,7 +88,7 @@ function yith_proteo_read_all_font_options() {
 		),
 		'yith_proteo_h1_font'                 => array(
 			'default'  => '{"font":"Montserrat","regularweight":"700","category":"sans-serif"}',
-			'selector' => 'h1, article.page header.entry-header h1,	article:not(.has-post-thumbnail).page header.entry-header h1',
+			'selector' => 'h1, body.page header.entry-header h1, article:not(.has-post-thumbnail).page header.entry-header h1',
 		),
 		'yith_proteo_h2_font'                 => array(
 			'default'  => '{"font":"Montserrat","regularweight":"700","category":"sans-serif"}',

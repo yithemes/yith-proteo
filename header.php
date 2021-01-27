@@ -197,4 +197,16 @@ global $post;
 	<div id="content" class="site-content">
 		<?php do_action( 'yith_proteo_before_page_content' ); ?>
 		<div class="container">
+			<?php if ( is_page() && ! is_front_page() && 'outside' === get_theme_mod( 'yith_proteo_page_title_layout', 'inside' ) ) : ?>
+				<header class="entry-header">
+					<?php
+					if ( function_exists( 'woocommerce_breadcrumb' ) && ! ( is_order_received_page() ) && ( 'yes' === get_theme_mod( 'yith_proteo_breadcrumb_enable', 'yes' ) ) ) {
+						woocommerce_breadcrumb();
+					}
+					?>
+					<?php
+					yith_proteo_print_page_titles();
+					?>
+				</header><!-- .entry-header -->
+			<?php endif; ?>
 			<?php echo yith_proteo_get_sidebar_position() ? '<div class="row">' : ''; ?>
