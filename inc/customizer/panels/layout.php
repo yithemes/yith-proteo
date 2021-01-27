@@ -17,6 +17,26 @@ $wp_customize->add_section(
 	)
 );
 
+// General layout options.
+$wp_customize->add_setting(
+	'yith_proteo_global_layout_group_title',
+	array(
+		'default'           => '',
+		'transport'         => 'postMessage',
+		'sanitize_callback' => 'wp_kses_post',
+	)
+);
+$wp_customize->add_control(
+	new WP_Customize_Notice(
+		$wp_customize,
+		'yith_proteo_global_layout_group_title',
+		array(
+			'label'   => esc_html__( 'Global layout options', 'yith-proteo' ),
+			'section' => 'yith_proteo_layout_management',
+		)
+	)
+);
+
 // Fullwidth enable.
 if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
 	$wp_customize->add_setting(
@@ -41,6 +61,26 @@ if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
 }
 
 // Page title layout options.
+$wp_customize->add_setting(
+	'yith_proteo_page_title_layout_group_title',
+	array(
+		'default'           => '',
+		'transport'         => 'postMessage',
+		'sanitize_callback' => 'wp_kses_post',
+	)
+);
+$wp_customize->add_control(
+	new WP_Customize_Notice(
+		$wp_customize,
+		'yith_proteo_page_title_layout_group_title',
+		array(
+			'label'   => esc_html__( 'Page title options', 'yith-proteo' ),
+			'section' => 'yith_proteo_layout_management',
+		)
+	)
+);
+
+// Page title layout options.
 if ( class_exists( 'Customizer_Control_Radio_Image' ) ) {
 	$wp_customize->add_setting(
 		'yith_proteo_page_title_layout',
@@ -55,7 +95,7 @@ if ( class_exists( 'Customizer_Control_Radio_Image' ) ) {
 			$wp_customize,
 			'yith_proteo_page_title_layout',
 			array(
-				'label'   => esc_html__( 'Title layout', 'yith-proteo' ),
+				'label'   => esc_html__( 'Layout', 'yith-proteo' ),
 				'section' => 'yith_proteo_layout_management',
 				'choices' => array(
 					'inside'  => array(

@@ -537,6 +537,40 @@
 			wp.customize.control('site_icon' ).toggle( false );
 		}
 
+		/* Global layout options grouping */
+		yith_proteo_toggle_global_layout_options_controls_list();
+
+		$( '#customize-control-yith_proteo_global_layout_group_title' ).addClass('section-closed').on( 'click', yith_proteo_toggle_global_layout_options_controls );
+
+		function yith_proteo_toggle_global_layout_options_controls() {
+			var section_title = $( '#customize-control-yith_proteo_global_layout_group_title' ),
+			collapsed = section_title.hasClass( 'section-closed' );
+			section_title.toggleClass('section-closed');
+			wp.customize.control('yith_proteo_layout_full_width' ).toggle( collapsed );
+		}
+
+		function yith_proteo_toggle_global_layout_options_controls_list() {
+			wp.customize.control('yith_proteo_layout_full_width' ).toggle( false );
+		}
+
+		/* Page title layout options grouping */
+		yith_proteo_toggle_page_title_layout_options_controls_list();
+
+		$( '#customize-control-yith_proteo_page_title_layout_group_title' ).addClass('section-closed').on( 'click', yith_proteo_toggle_page_title_layout_options_controls );
+
+		function yith_proteo_toggle_page_title_layout_options_controls() {
+			var section_title = $( '#customize-control-yith_proteo_page_title_layout_group_title' ),
+			collapsed = section_title.hasClass( 'section-closed' );
+			section_title.toggleClass('section-closed');
+			wp.customize.control('yith_proteo_page_title_layout' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_page_title_align' ).toggle( collapsed );
+		}
+
+		function yith_proteo_toggle_page_title_layout_options_controls_list() {
+			wp.customize.control('yith_proteo_page_title_layout' ).toggle( false );
+			wp.customize.control('yith_proteo_page_title_align' ).toggle( false );
+		}
+
 	});
 
 })(jQuery);
