@@ -17,6 +17,25 @@
 		)
 	);
 
+	// Footer background option groupo title.
+	$wp_customize->add_setting(
+		'yith_proteo_footer_background_group_title',
+		array(
+			'default'           => '',
+			'sanitize_callback' => 'wp_kses_post',
+		)
+	);
+	$wp_customize->add_control(
+		new WP_Customize_Notice(
+			$wp_customize,
+			'yith_proteo_footer_background_group_title',
+			array(
+				'label'   => esc_html__( 'Footer background', 'yith-proteo' ),
+				'section' => 'yith_proteo_footer_management',
+			)
+		)
+	);
+
 	// Footer background color.
 	$wp_customize->add_setting(
 		'yith_proteo_footer_background_color',
@@ -30,7 +49,7 @@
 			$wp_customize,
 			'yith_proteo_footer_background_color',
 			array(
-				'label'   => esc_html__( 'Footer background color', 'yith-proteo' ),
+				'label'   => esc_html__( 'Background color', 'yith-proteo' ),
 				'section' => 'yith_proteo_footer_management',
 			)
 		)
@@ -49,7 +68,7 @@
 			$wp_customize,
 			'yith_proteo_footer_background_image',
 			array(
-				'label'   => __( 'Footer background image', 'yith-proteo' ),
+				'label'   => __( 'Background image', 'yith-proteo' ),
 				'section' => 'yith_proteo_footer_management',
 			)
 		)
@@ -128,6 +147,25 @@
 				'center-bottom' => esc_html__( 'Center bottom', 'yith-proteo' ),
 			),
 			'active_callback' => 'yith_proteo_footer_has_custom_background',
+		)
+	);
+
+	// Footer typography option groupo title.
+	$wp_customize->add_setting(
+		'yith_proteo_footer_typography_group_title',
+		array(
+			'default'           => '',
+			'sanitize_callback' => 'wp_kses_post',
+		)
+	);
+	$wp_customize->add_control(
+		new WP_Customize_Notice(
+			$wp_customize,
+			'yith_proteo_footer_typography_group_title',
+			array(
+				'label'   => esc_html__( 'Footer typography', 'yith-proteo' ),
+				'section' => 'yith_proteo_footer_management',
+			)
 		)
 	);
 
@@ -272,6 +310,25 @@
 			)
 		);
 	}
+
+	// Footer widgets option groupo title.
+	$wp_customize->add_setting(
+		'yith_proteo_footer_widgets_group_title',
+		array(
+			'default'           => '',
+			'sanitize_callback' => 'wp_kses_post',
+		)
+	);
+	$wp_customize->add_control(
+		new WP_Customize_Notice(
+			$wp_customize,
+			'yith_proteo_footer_widgets_group_title',
+			array(
+				'label'   => esc_html__( 'Footer widgets', 'yith-proteo' ),
+				'section' => 'yith_proteo_footer_management',
+			)
+		)
+	);
 
 	// Footer sidebar 1 enabler.
 	if ( class_exists( 'Customizer_Control_Yes_No' ) ) {

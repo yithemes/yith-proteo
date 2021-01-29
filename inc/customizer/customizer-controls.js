@@ -837,6 +837,86 @@
 			wp.customize.control('yith_proteo_sticky_header_main_menu_hover_color' ).toggle( false );
 		}
 
+		/* Footer background option grouping */
+		yith_proteo_footer_background_controls_list();
+
+		$( '#customize-control-yith_proteo_footer_background_group_title' ).addClass('section-closed').on( 'click', yith_proteo_footer_background_controls );
+
+		function yith_proteo_footer_background_controls() {
+			var section_title = $( '#customize-control-yith_proteo_footer_background_group_title' ),
+			collapsed = section_title.hasClass( 'section-closed' );
+			section_title.toggleClass('section-closed');
+			wp.customize.control('yith_proteo_footer_background_color' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_footer_background_image' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_footer_background_size_full' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_footer_background_repeat' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_footer_background_position' ).toggle( collapsed );
+		}
+
+		function yith_proteo_footer_background_controls_list() {
+			wp.customize.control('yith_proteo_footer_background_color' ).toggle( false );
+			wp.customize.control('yith_proteo_footer_background_image' ).toggle( false );
+			wp.customize.control('yith_proteo_footer_background_size_full' ).toggle( false );
+			wp.customize.control('yith_proteo_footer_background_repeat' ).toggle( false );
+			wp.customize.control('yith_proteo_footer_background_position' ).toggle( false );
+		}
+
+		/* Footer typography option grouping */
+		yith_proteo_footer_typography_controls_list();
+
+		$( '#customize-control-yith_proteo_footer_typography_group_title' ).addClass('section-closed').on( 'click', yith_proteo_footer_typography_controls );
+
+		function yith_proteo_footer_typography_controls() {
+			var section_title = $( '#customize-control-yith_proteo_footer_typography_group_title' ),
+			collapsed = section_title.hasClass( 'section-closed' );
+			section_title.toggleClass('section-closed');
+			wp.customize.control('yith_proteo_footer_font_size' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_footer_font_color' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_footer_link_color' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_footer_link_hover_color' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_footer_widgets_title_font_size' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_footer_widgets_title_color' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_footer_align' ).toggle( collapsed );
+		}
+
+		function yith_proteo_footer_typography_controls_list() {
+			wp.customize.control('yith_proteo_footer_font_size' ).toggle( false );
+			wp.customize.control('yith_proteo_footer_font_color' ).toggle( false );
+			wp.customize.control('yith_proteo_footer_link_color' ).toggle( false );
+			wp.customize.control('yith_proteo_footer_link_hover_color' ).toggle( false );
+			wp.customize.control('yith_proteo_footer_widgets_title_font_size' ).toggle( false );
+			wp.customize.control('yith_proteo_footer_widgets_title_color' ).toggle( false );
+			wp.customize.control('yith_proteo_footer_align' ).toggle( false );
+		}
+
+		/* Footer widgets option grouping */
+		yith_proteo_footer_widgets_controls_list();
+
+		$( '#customize-control-yith_proteo_footer_widgets_group_title' ).addClass('section-closed').on( 'click', yith_proteo_footer_widgets_controls );
+
+		function yith_proteo_footer_widgets_controls() {
+			var section_title = $( '#customize-control-yith_proteo_footer_widgets_group_title' ),
+			collapsed = section_title.hasClass( 'section-closed' );
+			section_title.toggleClass('section-closed');
+			wp.customize.control('yith_proteo_footer_sidebar_1_enable' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_footer_sidebar_1_width' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_footer_sidebar_1_widget_per_row' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_footer_sidebar_2_enable' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_footer_sidebar_2_width' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_footer_sidebar_2_widget_per_row' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_footer_sidebars_side_by_side' ).toggle( collapsed );
+		}
+
+		function yith_proteo_footer_widgets_controls_list() {
+			wp.customize.control('yith_proteo_footer_sidebar_1_enable' ).toggle( false );
+			wp.customize.control('yith_proteo_footer_sidebar_1_width' ).toggle( false );
+			wp.customize.control('yith_proteo_footer_sidebar_1_widget_per_row' ).toggle( false );
+			wp.customize.control('yith_proteo_footer_sidebar_2_enable' ).toggle( false );
+			wp.customize.control('yith_proteo_footer_sidebar_2_width' ).toggle( false );
+			wp.customize.control('yith_proteo_footer_sidebar_2_widget_per_row' ).toggle( false );
+			wp.customize.control('yith_proteo_footer_sidebars_side_by_side' ).toggle( false );
+		}
+
 	});
 
 })(jQuery);
