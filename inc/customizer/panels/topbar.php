@@ -78,9 +78,10 @@
 			$wp_customize,
 			'yith_proteo_topbar_spacing',
 			array(
-				'label'   => __( 'Spacing (px)', 'yith-proteo' ),
-				'section' => 'yith_proteo_topbar_management',
-				'choices' => array(
+				'label'           => __( 'Spacing (px)', 'yith-proteo' ),
+				'section'         => 'yith_proteo_topbar_management',
+				'active_callback' => 'yith_proteo_topbar_is_enabled',
+				'choices'         => array(
 					'top'    => array(
 						'name' => esc_html__( 'Top', 'yith-proteo' ),
 					),

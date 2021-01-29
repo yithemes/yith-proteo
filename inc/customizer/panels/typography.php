@@ -88,7 +88,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_base_font_color',
 		array(
-			'label'   => esc_html__( 'Color', 'yith-proteo' ),
+			'label'   => esc_html__( 'Text color', 'yith-proteo' ),
 			'section' => 'yith_proteo_typography',
 		)
 	)

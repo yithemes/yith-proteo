@@ -541,3 +541,12 @@ GFONT CONTOLS
     border-bottom: none;
     margin-bottom: 0;
 }
+
+/*****************************
+Remove borders where needed
+*****************************/
+#customize-controls .customize-control-google_fonts + .customize-control-number {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+}

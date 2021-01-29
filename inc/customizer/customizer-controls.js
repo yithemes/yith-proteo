@@ -521,6 +521,22 @@
 			wp.customize.control('yith_proteo_tagline_position' ).toggle( false );
 		}
 
+		/* Display site title and tagline group */
+		yith_proteo_toggle_display_site_title_group_title_controls_list();
+
+		$( '#customize-control-yith_proteo_display_site_title_group_title' ).addClass('section-closed').on( 'click', yith_proteo_toggle_display_site_title_group_title_controls );
+
+		function yith_proteo_toggle_display_site_title_group_title_controls() {
+			var section_title = $( '#customize-control-yith_proteo_display_site_title_group_title' ),
+			collapsed = section_title.hasClass( 'section-closed' );
+			section_title.toggleClass('section-closed');
+			wp.customize.control('yith_proteo_display_header_text' ).toggle( collapsed );
+		}
+
+		function yith_proteo_toggle_display_site_title_group_title_controls_list() {
+			wp.customize.control('yith_proteo_display_header_text' ).toggle( false );
+		}
+
 		/* Site icon */
 		yith_proteo_toggle_favicon_options_controls_list();
 

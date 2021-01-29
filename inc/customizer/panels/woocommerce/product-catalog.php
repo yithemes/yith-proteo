@@ -145,6 +145,7 @@ $wp_customize->add_setting(
 	array(
 		'default'           => 'classic',
 		'sanitize_callback' => 'yith_proteo_sanitize_radio',
+		'transport'         => 'refresh',
 	)
 );
 $wp_customize->add_control(

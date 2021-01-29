@@ -5,8 +5,28 @@
  * @package yith-proteo
  */
 
-// Move defailt display site title option on top.
+// Site Icon managment.
+$wp_customize->add_setting(
+	'yith_proteo_display_site_title_group_title',
+	array(
+		'default'           => '',
+		'transport'         => 'postMessage',
+		'sanitize_callback' => 'wp_kses_post',
+	)
+);
+$wp_customize->add_control(
+	new WP_Customize_Notice(
+		$wp_customize,
+		'yith_proteo_display_site_title_group_title',
+		array(
+			'label'    => esc_html__( 'Display Site Title and Tagline', 'yith-proteo' ),
+			'section'  => 'title_tagline',
+			'priority' => 5,
+		)
+	)
+);
 
+// Move default display site title option on top.
 if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
 	$wp_customize->add_setting(
 		'yith_proteo_display_header_text',
@@ -367,7 +387,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_favicon_group_title',
 		array(
-			'label'   => esc_html__( 'Site icon', 'yith-proteo' ),
+			'label'   => esc_html__( 'Site favicon', 'yith-proteo' ),
 			'section' => 'title_tagline',
 		)
 	)
