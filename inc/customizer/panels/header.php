@@ -234,13 +234,29 @@
 			$wp_customize,
 			'yith_proteo_header_main_menu_font',
 			array(
-				'label'       => __( 'Header menu font', 'yith-proteo' ),
+				'label'       => __( 'Font', 'yith-proteo' ),
 				'section'     => 'yith_proteo_header_management',
 				'input_attrs' => array(
 					'font_count' => 'all',
 					'orderby'    => 'alpha',
 				),
 			)
+		)
+	);
+	// Header menu font size options.
+	$wp_customize->add_setting(
+		'yith_proteo_header_main_menu_font_size',
+		array(
+			'sanitize_callback' => 'absint',
+			'default'           => 14,
+		)
+	);
+	$wp_customize->add_control(
+		'yith_proteo_header_main_menu_font_size',
+		array(
+			'label'   => esc_html__( 'Font size (default: 14px)', 'yith-proteo' ),
+			'section' => 'yith_proteo_header_management',
+			'type'    => 'number',
 		)
 	);
 	// Main menu text transformation.
@@ -255,7 +271,7 @@
 		'yith_proteo_header_main_menu_text_transform',
 		array(
 			'type'    => 'select',
-			'label'   => esc_html__( 'Header menu text transform', 'yith-proteo' ),
+			'label'   => esc_html__( 'Text transform', 'yith-proteo' ),
 			'section' => 'yith_proteo_header_management',
 			'choices' => array(
 				'none'       => esc_html__( 'None', 'yith-proteo' ),
@@ -263,22 +279,6 @@
 				'lowercase'  => esc_html__( 'Lowercase', 'yith-proteo' ),
 				'capitalize' => esc_html__( 'Capitalize', 'yith-proteo' ),
 			),
-		)
-	);
-	// Header menu font size options.
-	$wp_customize->add_setting(
-		'yith_proteo_header_main_menu_font_size',
-		array(
-			'sanitize_callback' => 'absint',
-			'default'           => 14,
-		)
-	);
-	$wp_customize->add_control(
-		'yith_proteo_header_main_menu_font_size',
-		array(
-			'label'   => esc_html__( 'Header menu font size (default: 14px)', 'yith-proteo' ),
-			'section' => 'yith_proteo_header_management',
-			'type'    => 'number',
 		)
 	);
 
@@ -296,7 +296,7 @@
 			$wp_customize,
 			'yith_proteo_header_main_menu_letter_spacing',
 			array(
-				'label'   => esc_html__( 'Header menu letter spacing (px)', 'yith-proteo' ),
+				'label'   => esc_html__( 'Letter spacing (px)', 'yith-proteo' ),
 				'min'     => -2,
 				'max'     => 30,
 				'step'    => 1,
@@ -318,7 +318,7 @@
 			$wp_customize,
 			'yith_proteo_header_main_menu_color',
 			array(
-				'label'   => esc_html__( 'Header menu color', 'yith-proteo' ),
+				'label'   => esc_html__( 'Color', 'yith-proteo' ),
 				'section' => 'yith_proteo_header_management',
 			)
 		)
@@ -337,7 +337,7 @@
 			$wp_customize,
 			'yith_proteo_header_main_menu_hover_color',
 			array(
-				'label'   => esc_html__( 'Header menu :hover color', 'yith-proteo' ),
+				'label'   => esc_html__( 'Hover color', 'yith-proteo' ),
 				'section' => 'yith_proteo_header_management',
 			)
 		)
@@ -398,7 +398,7 @@
 			$wp_customize,
 			'yith_proteo_sticky_header_background_color',
 			array(
-				'label'           => esc_html__( 'Sticky header background color', 'yith-proteo' ),
+				'label'           => esc_html__( 'Background color', 'yith-proteo' ),
 				'section'         => 'yith_proteo_header_management',
 				'active_callback' => 'yith_proteo_sticky_header_is_enabled',
 			)
@@ -418,7 +418,7 @@
 			$wp_customize,
 			'yith_proteo_sticky_header_main_menu_color',
 			array(
-				'label'           => esc_html__( 'Sticky header menu color', 'yith-proteo' ),
+				'label'           => esc_html__( 'Menu color', 'yith-proteo' ),
 				'section'         => 'yith_proteo_header_management',
 				'active_callback' => 'yith_proteo_sticky_header_is_enabled',
 			)
@@ -438,7 +438,7 @@
 			$wp_customize,
 			'yith_proteo_sticky_header_main_menu_hover_color',
 			array(
-				'label'           => esc_html__( 'Sticky header menu :hover color', 'yith-proteo' ),
+				'label'           => esc_html__( 'Hover color', 'yith-proteo' ),
 				'section'         => 'yith_proteo_header_management',
 				'active_callback' => 'yith_proteo_sticky_header_is_enabled',
 			)
