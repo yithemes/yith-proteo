@@ -44,9 +44,28 @@ function yith_proteo_customize_register( $wp_customize ) {
 	$wp_customize->add_section(
 		'header_image',
 		array(
-			'title'    => esc_html__( 'Header background image', 'yith-proteo' ),
+			'title'    => esc_html__( 'Header background', 'yith-proteo' ),
 			'priority' => 30,
 			'panel'    => 'yith_proteo_header_and_topbar_management',
+		)
+	);
+
+	// Header background color.
+	$wp_customize->add_setting(
+		'yith_proteo_header_background_color',
+		array(
+			'default'           => '#ffffff',
+			'sanitize_callback' => 'yith_proteo_sanitize_alpha_colors',
+		)
+	);
+	$wp_customize->add_control(
+		new Customizer_Alpha_Color_Control(
+			$wp_customize,
+			'yith_proteo_header_background_color',
+			array(
+				'label'   => esc_html__( 'Background color', 'yith-proteo' ),
+				'section' => 'header_image',
+			)
 		)
 	);
 

@@ -17,20 +17,20 @@
 		)
 	);
 
-	// Header background color.
+	// General layout options.
 	$wp_customize->add_setting(
-		'yith_proteo_header_background_color',
+		'yith_proteo_header_layout_group_title',
 		array(
-			'default'           => '#ffffff',
-			'sanitize_callback' => 'yith_proteo_sanitize_alpha_colors',
+			'default'           => '',
+			'sanitize_callback' => 'wp_kses_post',
 		)
 	);
 	$wp_customize->add_control(
-		new Customizer_Alpha_Color_Control(
+		new WP_Customize_Notice(
 			$wp_customize,
-			'yith_proteo_header_background_color',
+			'yith_proteo_header_layout_group_title',
 			array(
-				'label'   => esc_html__( 'Header background color', 'yith-proteo' ),
+				'label'   => esc_html__( 'Header layout', 'yith-proteo' ),
 				'section' => 'yith_proteo_header_management',
 			)
 		)
@@ -94,6 +94,25 @@
 			)
 		);
 	}
+
+	// Header elements group.
+	$wp_customize->add_setting(
+		'yith_proteo_header_elements_group_title',
+		array(
+			'default'           => '',
+			'sanitize_callback' => 'wp_kses_post',
+		)
+	);
+	$wp_customize->add_control(
+		new WP_Customize_Notice(
+			$wp_customize,
+			'yith_proteo_header_elements_group_title',
+			array(
+				'label'   => esc_html__( 'Header elements', 'yith-proteo' ),
+				'section' => 'yith_proteo_header_management',
+			)
+		)
+	);
 
 	// Header search widget.
 	if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
@@ -183,6 +202,25 @@
 			)
 		);
 	}
+
+	// Header menu typography group.
+	$wp_customize->add_setting(
+		'yith_proteo_header_menu_group_title',
+		array(
+			'default'           => '',
+			'sanitize_callback' => 'wp_kses_post',
+		)
+	);
+	$wp_customize->add_control(
+		new WP_Customize_Notice(
+			$wp_customize,
+			'yith_proteo_header_menu_group_title',
+			array(
+				'label'   => esc_html__( 'Header menu typography', 'yith-proteo' ),
+				'section' => 'yith_proteo_header_management',
+			)
+		)
+	);
 
 	$wp_customize->add_setting(
 		'yith_proteo_header_main_menu_font',
@@ -300,6 +338,25 @@
 			'yith_proteo_header_main_menu_hover_color',
 			array(
 				'label'   => esc_html__( 'Header menu :hover color', 'yith-proteo' ),
+				'section' => 'yith_proteo_header_management',
+			)
+		)
+	);
+
+	// Header menu typography group.
+	$wp_customize->add_setting(
+		'yith_proteo_sticky_header_group_title',
+		array(
+			'default'           => '',
+			'sanitize_callback' => 'wp_kses_post',
+		)
+	);
+	$wp_customize->add_control(
+		new WP_Customize_Notice(
+			$wp_customize,
+			'yith_proteo_sticky_header_group_title',
+			array(
+				'label'   => esc_html__( 'Sticky header', 'yith-proteo' ),
 				'section' => 'yith_proteo_header_management',
 			)
 		)
