@@ -12,9 +12,6 @@ YITH CUSTOMIZER STYLE
 	z-index: 2;
 }
 #customize-controls .customize-control {
-	margin-bottom: 15px;
-	padding-bottom: 20px;
-	border-bottom: 1px solid #eeeeee;
 	position: relative;
 }
 #customize-controls .customize-control .customize-control-title {
@@ -32,6 +29,10 @@ YITH CUSTOMIZER STYLE
 	padding-bottom: 0;
 	margin-bottom: 0;
 	border: none;
+}
+
+.customize-section-description-container {
+	margin-bottom: 0;
 }
 #customize-controls .control-section .accordion-section-title:focus, 
 #customize-controls .control-section .accordion-section-title:hover, 
@@ -257,21 +258,22 @@ body .select2-container--default .select2-selection--single .select2-selection__
 	position: relative;
 	margin-left: -12px;
 	margin-right: -12px;
-	margin-top: -14px;
 	width: calc(100% + 24px);
 	color: var(--yith-proteo-customizer-main-color);
 	background: #f3f3f5;
-	border-bottom: 1px solid #ddd;
+	border-top: 1px solid #ddd;
 	transition: .15s color ease-in-out,.15s background-color ease-in-out,.15s border-color ease-in-out;
 	padding: 8px 10px 7px 14px;
 	line-height: 1.55;
 	background: #f3f3f5;
 	font-size: 14px;
 	border-left: 4px solid #fff;
+	border-bottom: 1px solid #eeeeee;
 }
 #customize-controls .customize-control[id*="group_title"].section-closed {
 	background-color: #f3f3f5;
 	color: #555d66;
+	margin-bottom: 0;
 }
 #customize-controls .customize-control[id*="group_title"]:hover {
 	color: var(--yith-proteo-customizer-main-color);
@@ -537,16 +539,16 @@ SPACING CONTROLS
 GFONT CONTOLS
 *************************/
 #customize-controls .customize-control.customize-control-google_fonts {
-    padding-bottom: 0;
-    border-bottom: none;
-    margin-bottom: 0;
+	padding-bottom: 0;
+	border-bottom: none;
+	margin-bottom: 0;
 }
 
 /*****************************
 Remove borders where needed
 *****************************/
 #customize-controls .customize-control-google_fonts + .customize-control-number {
-    border-bottom: none;
-    margin-bottom: 0;
-    padding-bottom: 10px;
+	border-bottom: none;
+	margin-bottom: 0;
+	padding-bottom: 10px;
 }
