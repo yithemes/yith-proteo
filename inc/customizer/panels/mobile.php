@@ -190,7 +190,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_mobile_menu_background_color',
 		array(
-			'label'   => esc_html__( 'Mobile menu background color', 'yith-proteo' ),
+			'label'   => esc_html__( 'Background color', 'yith-proteo' ),
 			'section' => 'yith_proteo_mobile_menu_management',
 		)
 	)
@@ -209,7 +209,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_mobile_menu_color',
 		array(
-			'label'   => esc_html__( 'Mobile menu color', 'yith-proteo' ),
+			'label'   => esc_html__( 'Menu color', 'yith-proteo' ),
 			'section' => 'yith_proteo_mobile_menu_management',
 		)
 	)
@@ -228,7 +228,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_mobile_menu_hover_color',
 		array(
-			'label'   => esc_html__( 'Mobile menu :hover color', 'yith-proteo' ),
+			'label'   => esc_html__( 'Hover color', 'yith-proteo' ),
 			'section' => 'yith_proteo_mobile_menu_management',
 		)
 	)
@@ -249,7 +249,7 @@ if ( class_exists( 'Customizer_Control_Radio_Image' ) ) {
 			$wp_customize,
 			'yith_proteo_mobile_menu_align',
 			array(
-				'label'   => esc_html__( 'Mobile menu alignment', 'yith-proteo' ),
+				'label'   => esc_html__( 'Alignment', 'yith-proteo' ),
 				'section' => 'yith_proteo_mobile_menu_management',
 				'choices' => array(
 					'left'   => array(
