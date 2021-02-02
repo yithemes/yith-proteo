@@ -127,3 +127,18 @@ function yith_proteo_customize_controls_js() {
 	);
 }
 add_action( 'customize_controls_enqueue_scripts', 'yith_proteo_customize_controls_js' );
+
+
+
+
+if ( ! function_exists( 'yith_proteo_third_party_plugins_script_handling' ) ) {
+	/**
+	 * Third party plugin script utilities
+	 */
+	function yith_proteo_third_party_plugins_script_handling() {
+		if ( defined( 'YWCPS_FREE_INIT' ) ) {
+			wp_dequeue_style( 'yith-animate' );
+		}
+	}
+	add_action( 'wp_enqueue_scripts', 'yith_proteo_third_party_plugins_script_handling' );
+}
