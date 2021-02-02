@@ -140,6 +140,10 @@
 		AOS.init({
 			anchorPlacement: 'top-bottom'
 		});
+
+		$(document).on('scroll',function(e){
+            AOS.refresh(true);
+        });
 	}
 
 	// Full screen search
