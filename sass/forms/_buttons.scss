@@ -129,7 +129,8 @@ body.yith-proteo-add-to-cart-style-button_style_2 .wc-block-grid__product .add_t
 .yith_wcwl_wishlist_footer .yith_wcwl_wishlist_update input[type="submit"],
 .wpcf7-form-control.ghost,
 .button.ywgc_apply_gift_card_button,
-.checkout_coupon button[name="apply_coupon"] {
+.checkout_coupon button[name="apply_coupon"],
+.wc-block-grid__products .wc-block-grid__product-image a.button.ghost {
 	margin-bottom: 15px;
 	border: 2px solid;
 	border-color: var(--proteo-main_color_shade, $color__accent);

@@ -58,6 +58,9 @@ if ( ! function_exists( 'yith_proteo_scripts' ) ) :
 				'yith_proteo_use_enhanced_checkbox_and_radio' => get_theme_mod( 'yith_proteo_use_enhanced_checkbox_and_radio', 'yes' ),
 				'yith_proteo_has_woocommerce'      => function_exists( 'WC' ),
 				'yith_proteo_products_loop_add_to_cart_position' => get_theme_mod( 'yith_proteo_products_loop_add_to_cart_position', 'classic' ),
+				'yith_proteo_product_loop_view_details_enable' => get_theme_mod( 'yith_proteo_product_loop_view_details_enable', 'no' ),
+				'yith_proteo_product_loop_view_details_style' => 'view-details button ' . get_theme_mod( 'yith_proteo_products_loop_view_details_style', 'ghost' ),
+				'yith_proteo_loop_product_view_details_text' => apply_filters( 'yith_proteo_loop_product_view_details_text', __( 'View details', 'yith-proteo' ) ),
 			)
 		);
 
