@@ -115,6 +115,16 @@
 			wp.customize.control('yith_proteo_blog_tag_sidebar', showControlIfhasValues(setting, ['left', 'right']));
 		});
 
+		/**
+		 * Control Dependency
+		 */
+		wp.customize('yith_proteo_product_loop_view_details_enable', function (setting) {
+			wp.customize.control('yith_proteo_products_loop_view_details_style', showControlIfhasValues(setting, ['yes']));
+		});
+
+		/**
+		 * Footer sidebar width calc
+		 */
 		wp.customize('yith_proteo_footer_sidebar_1_width', function (value) {
 			value.bind( function ( newval ) {
 				$('.footer-sidebar-1').css("width", newval + '%');

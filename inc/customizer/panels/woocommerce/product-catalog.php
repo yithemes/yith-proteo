@@ -105,6 +105,7 @@ $wp_customize->add_setting(
 	array(
 		'default'           => 'unstyled_button',
 		'sanitize_callback' => 'yith_proteo_sanitize_radio',
+		'transport'         => 'refresh',
 	)
 );
 $wp_customize->add_control(
@@ -158,6 +159,53 @@ $wp_customize->add_control(
 		'choices'     => array(
 			'classic' => esc_html__( 'Classic', 'yith-proteo' ),
 			'hover'   => esc_html__( 'On image hover', 'yith-proteo' ),
+		),
+	)
+);
+
+// View details enable.
+if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
+	$wp_customize->add_setting(
+		'yith_proteo_product_loop_view_details_enable',
+		array(
+			'default'           => 'no',
+			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+			'transport'         => 'refresh',
+		)
+	);
+
+	$wp_customize->add_control(
+		new Customizer_Control_Yes_No(
+			$wp_customize,
+			'yith_proteo_product_loop_view_details_enable',
+			array(
+				'label'       => esc_html__( 'Show "View details" link', 'yith-proteo' ),
+				'section'     => 'woocommerce_product_catalog',
+				'description' => esc_html__( 'Choose whether to show a "view details" link in product catalog pages.', 'yith-proteo' ),
+			)
+		)
+	);
+}
+
+// "View details" loop style.
+$wp_customize->add_setting(
+	'yith_proteo_products_loop_view_details_style',
+	array(
+		'default'           => 'ghost',
+		'sanitize_callback' => 'yith_proteo_sanitize_radio',
+		'transport'         => 'refresh',
+	)
+);
+$wp_customize->add_control(
+	'yith_proteo_products_loop_view_details_style',
+	array(
+		'type'        => 'radio',
+		'label'       => esc_html__( '"View details" style', 'yith-proteo' ),
+		'section'     => 'woocommerce_product_catalog',
+		'description' => esc_html__( 'How should the add to cart button be displayed in product catalog pages?', 'yith-proteo' ),
+		'choices'     => array(
+			'unstyled_button' => esc_html__( 'Textual link', 'yith-proteo' ),
+			'ghost'           => esc_html__( 'Ghost button', 'yith-proteo' ),
 		),
 	)
 );

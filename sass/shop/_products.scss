@@ -35,7 +35,7 @@ ul.products,
 				position: relative;
 			}
 			&.button {
-				display: inline-block;
+				display: table;
 			}
 		}
 
@@ -52,7 +52,8 @@ ul.products,
 		.added_to_cart,
 		.added_to_cart:visited,
 		.yith-wcqv-button.button:not(.inside-thumb),
-		.add_to_cart_button {
+		.add_to_cart_button,
+		.view-details {
 			transition: all ease 0.3s;
 			font-size: var(--proteo-catalog_product_add_to_cart_font_size, 0.875rem);
 			margin: 0 auto 15px;
@@ -237,11 +238,28 @@ body {
 			}
 
 			a:not(.woocommerce-loop-product__link),
-			.wc-block-grid__product-add-to-cart {
+			.wc-block-grid__product-add-to-cart,
+			.view-details {
 				position: absolute;
 				z-index: 101;
 				opacity: 0;
 				bottom: initial;
+			}
+
+			.view-details {
+				margin-top: 100px;
+
+				color: #ffffff;
+				border-color: #ffffff;
+
+				&:hover {
+					color: var(--proteo-main_color_shade, $color__accent);
+					background-color: #ffffff;
+				}
+
+				&.unstyled_button:hover {
+					background-color: transparent;
+				}
 			}
 
 			.wc-block-grid__product-add-to-cart a {
@@ -249,7 +267,8 @@ body {
 			}
 
 			&:hover a:not(.woocommerce-loop-product__link),
-			&:hover .wc-block-grid__product-add-to-cart {
+			&:hover .wc-block-grid__product-add-to-cart,
+			&:hover .view-details {
 				opacity: 1;
 				bottom: initial;
 			}

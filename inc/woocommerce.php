@@ -764,17 +764,41 @@ if ( 'hover' === get_theme_mod( 'yith_proteo_products_loop_add_to_cart_position'
 }
 
 add_filter( 'body_class', 'yith_proteo_products_loop_add_to_cart_position_css_class' );
-/**
- * Set the products add to cart body class according to customizer option
- *
- * @param array $classes body CSS classes.
- *
- * @return array
- *
- * @author Francesco Grasso <francgrasso@yithemes.com>
- */
-function yith_proteo_products_loop_add_to_cart_position_css_class( $classes ) {
-	$add_to_cart_style = get_theme_mod( 'yith_proteo_products_loop_add_to_cart_position', 'classic' );
-	$classes[]         = 'yith-proteo-product-loop-add-to-cart-position-' . esc_attr( $add_to_cart_style );
-	return $classes;
+
+if ( ! function_exists( 'yith_proteo_products_loop_add_to_cart_position_css_class' ) ) {
+	/**
+	 * Set the products add to cart body class according to customizer option
+	 *
+	 * @param array $classes body CSS classes.
+	 *
+	 * @return array
+	 *
+	 * @author Francesco Grasso <francgrasso@yithemes.com>
+	 */
+	function yith_proteo_products_loop_add_to_cart_position_css_class( $classes ) {
+		$add_to_cart_style = get_theme_mod( 'yith_proteo_products_loop_add_to_cart_position', 'classic' );
+		$classes[]         = 'yith-proteo-product-loop-add-to-cart-position-' . esc_attr( $add_to_cart_style );
+		return $classes;
+	}
+}
+
+if ( 'yes' === get_theme_mod( 'yith_proteo_product_loop_view_details_enable', 'no' ) ) {
+	add_action( 'woocommerce_after_shop_loop_item', 'yith_proteo_add_view_product_button', 10 );
+
+	if ( 'hover' === get_theme_mod( 'yith_proteo_products_loop_add_to_cart_position', 'classic' ) ) {
+		remove_action( 'woocommerce_after_shop_loop_item', 'yith_proteo_add_view_product_button', 10 );
+		add_action( 'woocommerce_before_shop_loop_item_title', 'yith_proteo_add_view_product_button', 60 );
+	}
+}
+
+if ( ! function_exists( 'yith_proteo_add_view_product_button' ) ) {
+	/**
+	 * Add "View details" button on product loops
+	 */
+	function yith_proteo_add_view_product_button() {
+		global $product;
+		$link        = $product->get_permalink();
+		$button_type = 'button ' . get_theme_mod( 'yith_proteo_products_loop_view_details_style', 'ghost' );
+		echo '<a href="' . esc_url( $link ) . '" class="' . esc_attr( $button_type ) . ' view-details woocommerce-LoopProduct-link woocommerce-loop-product__link">' . esc_html( apply_filters( 'yith_proteo_loop_product_view_details_text', __( 'View details', 'yith-proteo' ) ) ) . '</a>';
+	}
 }
