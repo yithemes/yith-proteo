@@ -2,7 +2,7 @@
 * Shop Page header
 */
 header.woocommerce-products-header {
-	text-align: center;
+	text-align: var(--proteo-page_title_align);
 }
 p.woocommerce-result-count {
 	display: inline-block;
@@ -517,6 +517,10 @@ BREADCRUMBS
 			color: var(--proteo-general_link_hover_color, $color__accent);
 		}
 	}
+}
+
+.woocommerce-page.archive .woocommerce-breadcrumb {
+	text-align: var(--proteo-page_title_align);
 }
 
 nav.woocommerce-breadcrumb + header h1 {

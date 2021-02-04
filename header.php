@@ -27,6 +27,10 @@ global $post;
 	$yith_proteo_description = get_bloginfo( 'description' );
 	// get the tagline position.
 	$yith_proteo_tagline_position = 'tagline-position-' . get_theme_mod( 'yith_proteo_tagline_position', 'below' );
+	// get page/post title layout.
+	$yith_proteo_page_title_layout = get_theme_mod( 'yith_proteo_page_title_layout', 'inside' );
+	// get single post layout.
+	$yith_proteo_single_post_layout = get_theme_mod( 'yith_proteo_single_post_layout', 'standard' );
 	// hide site header if meta value enabled.
 	if ( function_exists( 'wc' ) && is_shop() ) {
 		$hide_header = get_post_meta( wc_get_page_id( 'shop' ), 'yith_proteo_remove_header_and_footer', true );
@@ -197,11 +201,21 @@ global $post;
 	<div id="content" class="site-content">
 		<?php do_action( 'yith_proteo_before_page_content' ); ?>
 		<div class="container">
-			<?php if ( is_page() && ! is_front_page() && 'outside' === get_theme_mod( 'yith_proteo_page_title_layout', 'inside' ) ) : ?>
+			<?php if ( is_page() && ! is_front_page() && 'outside' === $yith_proteo_page_title_layout ) : ?>
 				<header class="entry-header">
 					<?php
 					yith_proteo_print_page_titles();
 					?>
 				</header><!-- .entry-header -->
+			<?php elseif ( is_singular( 'post' ) && 'outside' === $yith_proteo_page_title_layout ) : ?>
+				<?php
+					// single post header template.
+					get_template_part( 'template-parts/title', 'post-single' );
+				?>
+			<?php elseif ( is_singular( 'post' ) && ( 'inside' === $yith_proteo_page_title_layout ) && ( 'standard' !== $yith_proteo_single_post_layout ) ) : ?>
+				<?php
+					// single post header template.
+					get_template_part( 'template-parts/title', 'post-single' );
+				?>
 			<?php endif; ?>
 			<?php echo yith_proteo_get_sidebar_position() ? '<div class="row">' : ''; ?>

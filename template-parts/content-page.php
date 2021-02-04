@@ -13,11 +13,6 @@
 	<?php if ( ! is_front_page() && 'inside' === get_theme_mod( 'yith_proteo_page_title_layout', 'inside' ) ) : ?>
 		<header class="entry-header">
 			<?php
-			if ( function_exists( 'woocommerce_breadcrumb' ) && ! ( is_order_received_page() ) && ( 'yes' === get_theme_mod( 'yith_proteo_breadcrumb_enable', 'yes' ) ) ) {
-				woocommerce_breadcrumb();
-			}
-			?>
-			<?php
 			yith_proteo_print_page_titles();
 			?>
 		</header><!-- .entry-header -->

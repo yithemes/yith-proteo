@@ -476,15 +476,6 @@ Custom media queries
 		margin-bottom: 35px;
 	}
 
-	article.post.proteo_post_layout_fullwidth_cover_image header.entry-header .date-and-thumbnail {
-		margin-bottom: 0;
-		max-width: 100%;
-		margin: 0 0 3.125rem;
-
-		&:after {
-			display: none;
-		}
-	}
 }
 
 // Extra small devices (portrait phones, less than 576px)

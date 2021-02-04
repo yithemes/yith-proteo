@@ -13,12 +13,14 @@
 
 .page-content,
 .entry-content,
-.entry-summary {
+.entry-summary,
+aside#secondary,
+#primary main {
 	margin: 1.5em 0 0;
 }
 
 header.entry-header {
-	text-align: center;
+	text-align: inital;
 
 	.woocommerce-breadcrumb {
 		text-align: inherit;
@@ -97,7 +99,24 @@ header .entry-meta {
 	}
 }
 
-article.proteo_post_layout_background_picture {
+body.single-post {
+	header.entry-header {
+		text-align: var( --proteo-page_title_align );
+	}
+
+	header .entry-meta {
+		text-align: var( --proteo-page_title_align );
+	}
+	header .entry-title {
+		text-align: var( --proteo-page_title_align );
+	}
+}
+
+.post-has-thumbnail .entry-meta {
+	position: absolute;
+}
+
+body.single-post.proteo_post_layout_background_picture {
 	header.alignfull {
 		background-color: var(--proteo-post_thumbnail_background_color, $color__accent);
 		min-height: 560px;
@@ -105,7 +124,7 @@ article.proteo_post_layout_background_picture {
 		background-repeat: no-repeat;
 		background-size: cover;
 		position: relative;
-		margin-top: -135px;
+		margin-top: -50px;
 
 		&:before {
 			position: absolute;
@@ -124,7 +143,7 @@ article.proteo_post_layout_background_picture {
 			position: absolute;
 			top: 50%;
 			transform: translateY(-50%);
-			text-align: center;
+			text-align: var(--proteo-page_title_align);
 			left: 0;
 			right: 0;
 			color: var(--proteo-post_thumbnail_text_color, #ffffff);
@@ -132,37 +151,23 @@ article.proteo_post_layout_background_picture {
 			.entry-title,
 			.entry-meta {
 				color: var(--proteo-post_thumbnail_text_color, #ffffff);
+				text-align: inherit;
 			}
-		}
-
-		.entry-meta {
-			text-align: center;
 		}
 	}
 }
 
-article.post.proteo_post_layout_fullwidth_cover_image {
-	background-color: var(--proteo-site_background_color, #ffffff);
-	position: relative;
-	z-index: 1;
-	max-width: 70%;
-	margin: 0 auto 3.125rem;
+body.single-post.proteo_post_layout_fullwidth_cover_image {
 
-	.post-thumbnail {
-		margin-left: calc(50% - 50vw);
-		margin-right: calc(50% - 50vw);
-		width: auto;
-		max-width: 1000%;
-		position: relative;
-		z-index: 2;
+	header.entry-header {
+		margin-bottom: 80px;
 		text-align: center;
 
-		img {
-			max-width: 100vw;
-		}
-	}
-	header.entry-header {
 		.date-and-thumbnail {
+			position: relative;
+			z-index: 1;
+			max-width: 70%;
+			margin: 0 auto 3.125rem;
 			margin-bottom: -180px;
 			z-index: -1;
 	
@@ -177,19 +182,44 @@ article.post.proteo_post_layout_fullwidth_cover_image {
 				background: var(--proteo-site_background_color, #ffffff);
 				z-index: 2;
 			}
+
+			.post-thumbnail {
+				margin-left: calc(50% - 50vw);
+				margin-right: calc(50% - 50vw);
+				width: auto;
+				max-width: 1000%;
+				position: relative;
+				z-index: 2;
+				text-align: center;
+		
+				img {
+					max-width: 100vw;
+				}
+			}
 		}
 
+		.woocommerce-breadcrumb,
 		.entry-title,
 		.entry-meta {
-			text-align: center;
+			max-width: 70%;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: inherit;
 		}
-		.entry-meta {
-			margin-bottom: 100px;
+
+		& + .row {
+			max-width: 70%;
+			margin-left: auto;
+			margin-right: auto;
 		}
+
 	}
 	.entry-content:before {
 		display: none;
 	}
+
+	
+	
 }
 
 body.page header.entry-header,
@@ -217,7 +247,6 @@ article:not(.has-post-thumbnail).page header.entry-header {
 
 article:not(.has-post-thumbnail) {
 	header.entry-header {
-		text-align: initial;
 
 		.date-and-thumbnail,
 		.entry-title {
@@ -233,6 +262,8 @@ article:not(.has-post-thumbnail) {
 	}
 }
 
+
+
 .entry-content {
 	p:not([class^="has"]),
 	li:not(.product):not(.wc-block-grid__product) {
@@ -240,6 +271,7 @@ article:not(.has-post-thumbnail) {
 	}
 }
 
+/*
 article.post .entry-content {
 	&:before {
 		content: "";
@@ -249,6 +281,7 @@ article.post .entry-content {
 		border-top: 1px solid #707070;
 	}
 }
+*/
 
 .site-content {
 	padding-top: 50px;
@@ -327,6 +360,7 @@ body.error404 {
 				flex-direction: column;
 				-webkit-flex-direction: column;
 				width: 70%;
+				padding: 0 15px 15px;
 
 				input.search-field {
 					width: 100%;

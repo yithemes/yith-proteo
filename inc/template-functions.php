@@ -26,6 +26,10 @@ if ( ! function_exists( 'yith_proteo_body_classes' ) ) :
 			$classes[] = 'no-sidebar';
 		}
 
+		// get single post layout.
+		$yith_proteo_single_post_layout = get_theme_mod( 'yith_proteo_single_post_layout', 'standard' );
+		$classes[]                      = 'proteo_post_layout_' . $yith_proteo_single_post_layout;
+
 		return $classes;
 	}
 endif;
