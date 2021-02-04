@@ -92,7 +92,6 @@ if ( 'standard' === $post_layout || 'fullwidth_cover_image' === $post_layout ) :
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 <?php elseif ( 'background_picture' === $post_layout ) : ?>
-	<?php echo 'here2'; ?>
 	<header class="alignfull entry-header" style="background-image: url(<?php echo esc_url( $post_thumbnail_url ); ?>)">
 		<div class="single-post-header-content">
 			<div class="container">
