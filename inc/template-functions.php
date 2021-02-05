@@ -158,6 +158,10 @@ if ( ! function_exists( 'yith_proteo_print_page_titles' ) ) :
 			$yith_proteo_hide_page_title = get_post_meta( $post->ID, '_editorskit_title_hidden', true );
 		}
 
+		if ( $yith_proteo_is_blog_page ) {
+			$yith_proteo_hide_page_title = 'on' === get_post_meta( get_option( 'page_for_posts' ), 'yith_proteo_hide_page_title', true ) ? true : false;
+		}
+
 		if ( ! $is_wishlist_page && ! $yith_proteo_hide_page_title ) :
 
 			// Print breadcrumbs.

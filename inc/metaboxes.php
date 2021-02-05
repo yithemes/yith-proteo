@@ -114,18 +114,21 @@ add_action( 'add_meta_boxes', 'yith_proteo_remove_header_and_footer_add_meta_box
  * Hide page title metabox
  */
 function yith_proteo_hide_page_title_add_meta_box() {
-	add_meta_box(
-		'yith_proteo_hide_page_title',
-		__( 'Hide page title', 'yith-proteo' ),
-		'yith_proteo_hide_page_title_html',
-		array( 'post', 'page' ),
-		'side',
-		'high'
-	);
+	global $post;
+	if ( ! class_exists( 'EditorsKit' ) || ( get_option( 'page_for_posts' ) === $post->ID ) ) {
+
+		add_meta_box(
+			'yith_proteo_hide_page_title',
+			__( 'Hide page title', 'yith-proteo' ),
+			'yith_proteo_hide_page_title_html',
+			array( 'post', 'page' ),
+			'side',
+			'high'
+		);
+	}
 }
-if ( ! class_exists( 'EditorsKit' ) ) {
-	add_action( 'add_meta_boxes', 'yith_proteo_hide_page_title_add_meta_box' );
-}
+add_action( 'add_meta_boxes', 'yith_proteo_hide_page_title_add_meta_box' );
+
 
 /**
  * Hide page title metabox
