@@ -281,6 +281,16 @@ body {
 	}
 }
 
+body.yith-proteo-product-loop-add-to-cart-position-hover {
+	ul.wc-block-grid__products li.wc-block-grid__product .wc-block-grid__product-image {
+		a:not(.woocommerce-loop-product__link),
+		.wc-block-grid__product-add-to-cart,
+		.view-details {
+			min-width: 70%;
+		}
+	}
+}
+
 @media screen and (min-width: 48em) {
 	ul.products {
 		li.product {
