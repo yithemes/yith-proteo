@@ -150,6 +150,8 @@ if ( ! function_exists( 'yith_proteo_print_page_titles' ) ) :
 			$is_wishlist_page = yith_wcwl_is_wishlist_page();
 		}
 
+		$yith_proteo_is_blog_page = is_home();
+
 		$yith_proteo_hide_page_title = 'on' === get_post_meta( $post->ID, 'yith_proteo_hide_page_title', true ) ? true : false;
 
 		if ( class_exists( 'EditorsKit' ) ) {
@@ -170,7 +172,14 @@ if ( ! function_exists( 'yith_proteo_print_page_titles' ) ) :
 				}
 			}
 
-			the_title( '<h1 class="entry-title">', '</h1>' );
+			if ( $yith_proteo_is_blog_page ) {
+				?>
+				<h1 class="page-title"><?php echo esc_html( get_the_title( get_option( 'page_for_posts' ) ) ); ?></h1>
+				<?php
+			}
+			else {
+				the_title( '<h1 class="entry-title">', '</h1>' );
+			}
 		endif;
 
 	}

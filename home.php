@@ -15,17 +15,18 @@ get_header();
 	<div id="primary" class="content-area <?php echo esc_attr( $sidebar_display ); ?>">
 		<main id="main" class="site-main">
 			<div class="container">
+			<?php if ( 'inside' === get_theme_mod( 'yith_proteo_page_title_layout', 'inside' ) ) : ?>
+				<header class="entry-header">
+					<?php
+					yith_proteo_print_page_titles();
+					?>
+				</header><!-- .entry-header -->
+			<?php endif; ?>
 				<?php
 				if ( have_posts() ) :
 
 					$post_count = 0;
-					if ( is_home() && ! is_front_page() ) :
-						?>
-						<header>
-							<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-						</header>
-
-					<?php endif; ?>
+					?>
 					<div class="row">
 						<?php
 						/* Start the Loop */

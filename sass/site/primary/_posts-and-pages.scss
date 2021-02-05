@@ -20,7 +20,7 @@ aside#secondary,
 }
 
 header.entry-header {
-	text-align: inital;
+	text-align: initial;
 
 	.woocommerce-breadcrumb {
 		text-align: inherit;
@@ -68,6 +68,12 @@ header.entry-header {
 				color: var(--proteo-general_link_color, $color__accent);
 			}
 		}
+	}
+}
+
+body.blog {
+	header.page-header {
+		text-align: var( --proteo-page_title_align );
 	}
 }
 
