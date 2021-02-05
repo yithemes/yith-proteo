@@ -56,7 +56,7 @@
 			yith_proteo_posted_by();
 			yith_proteo_posted_on();
 
-			if ( 'post' === get_post_type() ) {
+			if ( 'post' === get_post_type() && ( 'yes' === get_theme_mod( 'yith_proteo_blog_show_post_categories_and_tags', 'yes' ) ) ) {
 				/* translators: used between list items, there is a space after the comma */
 				$categories_list = get_the_category_list( esc_html__( ', ', 'yith-proteo' ) );
 				if ( $categories_list ) {

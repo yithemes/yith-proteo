@@ -34,13 +34,14 @@ $yith_proteo_single_post_layout = get_theme_mod( 'yith_proteo_single_post_layout
 					get_the_title()
 				)
 			);
-
-			wp_link_pages(
-				array(
-					'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'yith-proteo' ),
-					'after'  => '</div>',
-				)
-			);
+			if ( 'yes' === get_theme_mod( 'yith_proteo_blog_show_post_navigation', 'yes' ) ) {
+				wp_link_pages(
+					array(
+						'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'yith-proteo' ),
+						'after'  => '</div>',
+					)
+				);
+			}
 			?>
 	</div><!-- .entry-content -->
 
