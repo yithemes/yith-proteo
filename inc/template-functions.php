@@ -180,8 +180,7 @@ if ( ! function_exists( 'yith_proteo_print_page_titles' ) ) :
 				?>
 				<h1 class="page-title"><?php echo esc_html( get_the_title( get_option( 'page_for_posts' ) ) ); ?></h1>
 				<?php
-			}
-			else {
+			} else {
 				the_title( '<h1 class="entry-title">', '</h1>' );
 			}
 		endif;
