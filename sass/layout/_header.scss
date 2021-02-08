@@ -134,16 +134,16 @@
 			padding-bottom: 8px;
 			color: var(--proteo-sticky_header_menu_color, #404040);
 		}
-
-		.site-branding {
-			//padding-bottom: 0;
-		}
 	}
 
 	&.fullwidth-header {
 		.header-contents {
 			max-width: 100%;
 		}
+	}
+
+	.main-navigation {
+		padding: var(--proteo-header_manu_menu_spacing);
 	}
 }
 

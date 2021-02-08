@@ -841,6 +841,7 @@
 			wp.customize.control('yith_proteo_header_main_menu_letter_spacing' ).toggle( collapsed );
 			wp.customize.control('yith_proteo_header_main_menu_color' ).toggle( collapsed );
 			wp.customize.control('yith_proteo_header_main_menu_hover_color' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_header_main_menu_spacing' ).toggle( collapsed );
 		}
 
 		function yith_proteo_toggle_header_menu_controls_list() {
@@ -850,6 +851,7 @@
 			wp.customize.control('yith_proteo_header_main_menu_letter_spacing' ).toggle( false );
 			wp.customize.control('yith_proteo_header_main_menu_color' ).toggle( false );
 			wp.customize.control('yith_proteo_header_main_menu_hover_color' ).toggle( false );
+			wp.customize.control('yith_proteo_header_main_menu_spacing' ).toggle( false );
 		}
 
 		/* Sticky option grouping */
