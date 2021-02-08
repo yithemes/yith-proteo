@@ -869,6 +869,7 @@
 			wp.customize.control('yith_proteo_sticky_header_background_color' ).toggle( collapsed );
 			wp.customize.control('yith_proteo_sticky_header_main_menu_color' ).toggle( collapsed );
 			wp.customize.control('yith_proteo_sticky_header_main_menu_hover_color' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_sticky_header_spacing' ).toggle( collapsed );
 		}
 
 		function yith_proteo_toggle_sticky_header_controls_list() {
@@ -876,6 +877,7 @@
 			wp.customize.control('yith_proteo_sticky_header_background_color' ).toggle( false );
 			wp.customize.control('yith_proteo_sticky_header_main_menu_color' ).toggle( false );
 			wp.customize.control('yith_proteo_sticky_header_main_menu_hover_color' ).toggle( false );
+			wp.customize.control('yith_proteo_sticky_header_spacing' ).toggle( false );
 		}
 
 		/* Footer background option grouping */
