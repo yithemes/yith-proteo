@@ -11141,8 +11141,14 @@ table.shop_table tbody tr td.product-name ._view_and_pdf_row a.button {
 #yith-wacp-popup .yith-wacp-content h3.cart-list-title {
   font-weight: 600;
 }
+#yith-wacp-popup .yith-wacp-content .yith-wacp-related {
+  text-align: center;
+}
 #yith-wacp-popup .yith-wacp-content .yith-wacp-related .product-title {
   font-weight: 500;
+}
+#yith-wacp-popup .yith-wacp-content .yith-wacp-related .product-price {
+  text-align: center;
 }
 #yith-wacp-popup .yith-wacp-content .yith-wacp-related .add_to_cart_inline {
   margin: 0;
@@ -11153,7 +11159,7 @@ table.shop_table tbody tr td.product-name ._view_and_pdf_row a.button {
   font-size: 0.875rem;
   padding: 5px 0;
   transition: all ease 0.3s;
-  margin: 0;
+  margin: 0 auto;
   color: var(--proteo-general_link_color, #448a85);
 }
 

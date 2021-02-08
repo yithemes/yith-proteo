@@ -29,8 +29,12 @@
 		}
 
 		.yith-wacp-related {
+			text-align: center;
 			.product-title {
 				font-weight: 500;
+			}
+			.product-price {
+				text-align: center;
 			}
 			.add_to_cart_inline {
 				margin: 0;
@@ -41,7 +45,7 @@
 					font-size: 0.875rem;
 					padding: 5px 0;
 					transition: all ease 0.3s;
-					margin: 0;
+					margin: 0 auto;
 					color: var(--proteo-general_link_color, $color__accent);
 				}
 			}
