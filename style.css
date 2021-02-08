@@ -12284,7 +12284,20 @@ ul.products li.product a.compare:not(.button) {
 .yith-ywraq-add-to-quote a,
 .yith_ywraq_add_item_browse_message a {
   font-weight: 600;
+  margin: 0 auto;
+  font-size: 0.875rem;
   color: var(--proteo-main_color_shade, #448a85);
+}
+
+.yith_ywraq_add_item_response_message a,
+.yith_ywraq_add_item_response_message {
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+
+.yith-ywraq-add-button img {
+  width: 20px !important;
+  margin: 10px auto;
 }
 
 .yith_ywraq_add_item_browse_message a:after {
