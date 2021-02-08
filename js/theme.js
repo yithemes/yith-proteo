@@ -5,23 +5,21 @@
  */
 (function ($) {
 
-	function headerheighfix() {
-		var height = $('.site-header').outerHeight(),
-			new_height = (20 + height) + 'px';
-		//$('header:not(.sticky) + .site-content').css('padding-top', new_height);
+	function headerheightfix() {
+		var height = $('.site-header').outerHeight();
 		$('header + .yith-slider .yith-slider-slide').css('padding-top', height);
-		$('header + #content').css('padding-top', new_height);
 	}
 
-	$(window).resize(headerheighfix);
+	$(window).resize(headerheightfix);
 
-	headerheighfix();
+	headerheightfix();
 
 
 	// STICKY HEADER
 	if (typeof yith_proteo != 'undefined' && yith_proteo.stickyHeader == 'yes') {
 		var site_header = $('.site-header'),
 			stickyOffset = site_header.length ? site_header.offset().top : false;
+			stickyOffset = 0;
 		if (stickyOffset !== false) {
 			$(window).scroll(function () {
 				var sticky = site_header,
@@ -30,9 +28,10 @@
 
 				if (scroll > stickyOffset) {
 					sticky.addClass('sticky');
-					content.css("padding-top", sticky.height() + stickyOffset + 50);
+					content.css("padding-top", sticky.height() + 50);
 				} else {
 					sticky.removeClass('sticky');
+					content.css("padding-top", 50);
 				}
 			});
 		}

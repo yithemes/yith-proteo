@@ -129,8 +129,8 @@
 		background-color: var(--proteo-sticky_header_bg_color, var(--proteo-header_bg_color));
 
 		.header-contents {
-			padding-top: 8px;
-			padding-bottom: 8px;
+			//padding-top: 8px;
+			// padding-bottom: 8px;
 			color: var(--proteo-sticky_header_menu_color, #404040);
 		}
 	}
@@ -147,7 +147,7 @@
 }
 
 .site-header:not(.sticky) {
-	position: absolute;
+	//position: absolute;
 	left: 0;
 	right: 0;
 	width: 100vw;
@@ -155,6 +155,13 @@
 
 	&.with-header-slider {
 		background: transparent;
+		position: absolute;
+	}
+}
+
+body.static-header {
+	.site-header {
+		position: static;
 	}
 }
 

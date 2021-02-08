@@ -126,8 +126,8 @@
 				'yith_proteo_header_fullwidth',
 				array(
 					'label'       => esc_html__( 'Enable full width header', 'yith-proteo' ),
-					'description' => esc_html__( 'Choose whether to make the header full width or not.', 'yith-proteo' ),
 					'section'     => 'yith_proteo_header_management',
+					'description' => esc_html__( 'Choose whether to make the header full width or not.', 'yith-proteo' ),
 				)
 			)
 		);
