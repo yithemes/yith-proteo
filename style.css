@@ -10077,6 +10077,7 @@ Mini Cart Widget
 Products widget
  */
 .widget_products ul.product_list_widget li,
+.widget_recently_viewed_products ul.product_list_widget li,
 .widget_top_rated_products ul.product_list_widget li {
   display: table;
   width: 100%;
@@ -10084,28 +10085,34 @@ Products widget
 }
 .widget_products ul.product_list_widget li .product-image,
 .widget_products ul.product_list_widget li .product-info,
+.widget_recently_viewed_products ul.product_list_widget li .product-image,
+.widget_recently_viewed_products ul.product_list_widget li .product-info,
 .widget_top_rated_products ul.product_list_widget li .product-image,
 .widget_top_rated_products ul.product_list_widget li .product-info {
   display: table-cell;
   vertical-align: middle;
 }
 .widget_products ul.product_list_widget li .product-image,
+.widget_recently_viewed_products ul.product_list_widget li .product-image,
 .widget_top_rated_products ul.product_list_widget li .product-image {
   width: 30%;
   padding-right: 25px;
   vertical-align: middle;
 }
 .widget_products ul.product_list_widget li .product-image a,
+.widget_recently_viewed_products ul.product_list_widget li .product-image a,
 .widget_top_rated_products ul.product_list_widget li .product-image a {
   font-size: 0;
   display: inline-block;
   vertical-align: middle;
 }
 .widget_products ul.product_list_widget li a,
+.widget_recently_viewed_products ul.product_list_widget li a,
 .widget_top_rated_products ul.product_list_widget li a {
   text-decoration: none;
 }
 .widget_products ul.product_list_widget li .product-info .product-title,
+.widget_recently_viewed_products ul.product_list_widget li .product-info .product-title,
 .widget_top_rated_products ul.product_list_widget li .product-info .product-title {
   display: block;
   font-size: var(--proteo-catalog_product_title_font_size, 0.875rem);
@@ -10116,25 +10123,30 @@ Products widget
   font-weight: 500;
 }
 .widget_products ul.product_list_widget li .product-info .amount,
+.widget_recently_viewed_products ul.product_list_widget li .product-info .amount,
 .widget_top_rated_products ul.product_list_widget li .product-info .amount {
   color: var(--proteo-catalog_product_price_color, #1f1f1f);
   font-size: var(--proteo-catalog_product_price_font_size, 0.875rem);
   font-weight: 600;
 }
 .widget_products ul.product_list_widget li .product-info del .amount,
+.widget_recently_viewed_products ul.product_list_widget li .product-info del .amount,
 .widget_top_rated_products ul.product_list_widget li .product-info del .amount {
   font-size: 1rem;
   margin-right: 5px;
 }
 .widget_products ul.product_list_widget li .product-info ins,
+.widget_recently_viewed_products ul.product_list_widget li .product-info ins,
 .widget_top_rated_products ul.product_list_widget li .product-info ins {
   background: none;
 }
 .widget_products ul.product_list_widget li .product-info .star-rating,
+.widget_recently_viewed_products ul.product_list_widget li .product-info .star-rating,
 .widget_top_rated_products ul.product_list_widget li .product-info .star-rating {
   margin-bottom: 5px;
 }
 .widget_products ul.product_list_widget li .product-info .widget-product-short-description,
+.widget_recently_viewed_products ul.product_list_widget li .product-info .widget-product-short-description,
 .widget_top_rated_products ul.product_list_widget li .product-info .widget-product-short-description {
   margin-top: 10px;
   font-size: 0.875rem;
