@@ -244,6 +244,18 @@ function yith_proteo_inline_style() {
 			)
 		)
 	) . 'px';
+	$header_spacing           = implode(
+		'px ',
+		get_theme_mod(
+			'yith_proteo_header_spacing',
+			array(
+				'top'    => 15,
+				'right'  => 15,
+				'bottom' => 15,
+				'left'   => 15,
+			)
+		)
+	) . 'px';
 
 	$custom_css = ":root {
 		--proteo-main_color_shade: {$main_color_shade};
@@ -377,6 +389,7 @@ function yith_proteo_inline_style() {
 		--proteo-tagline_spacing: {$tagline_spacing};
 		--proteo-topbar_spacing: {$topbar_spacing};
 		--proteo-header_manu_menu_spacing: {$header_manu_menu_spacing};
+		--proteo-header_spacing: {$header_spacing};
 	}";
 
 	if ( ! empty( $custom_css ) ) {

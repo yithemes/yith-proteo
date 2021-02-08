@@ -796,11 +796,13 @@
 			collapsed = section_title.hasClass( 'section-closed' );
 			section_title.toggleClass('section-closed');
 			wp.customize.control('yith_proteo_header_layout' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_header_spacing' ).toggle( collapsed );
 			wp.customize.control('yith_proteo_header_fullwidth' ).toggle( collapsed );
 		}
 
 		function yith_proteo_toggle_header_layout_controls_list() {
 			wp.customize.control('yith_proteo_header_layout' ).toggle( false );
+			wp.customize.control('yith_proteo_header_spacing' ).toggle( false );
 			wp.customize.control('yith_proteo_header_fullwidth' ).toggle( false );
 		}
 
