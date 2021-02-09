@@ -6581,6 +6581,9 @@ body .yith-slider .yith-slider-dots.style-3 li:hover button {
   background-color: var(--proteo-main_color_shade, #404040);
 }
 
+.site-header + .yith-slider {
+  margin-bottom: 0;
+}
 .site-header + .yith-slider .slide-container {
   display: table;
 }
@@ -7084,21 +7087,8 @@ a.yith-proteo-user-welcome-message span {
   display: block;
 }
 
-.post,
-.page {
-  margin: 0 0 3.125rem;
-}
-
 .updated:not(.published) {
   display: none;
-}
-
-.page-content,
-.entry-content,
-.entry-summary,
-aside#secondary,
-#primary main {
-  margin: 1.5em 0 0;
 }
 
 header.entry-header {
@@ -7324,7 +7314,7 @@ article.post .entry-content {
 }
 */
 .site-content {
-  padding-top: 50px;
+  padding: var(--proteo-site_content_spacing);
 }
 
 .page-links {
@@ -7596,7 +7586,6 @@ div#respond #submit {
 # Footer
 --------------------------------------------------------------*/
 #main-footer {
-  padding-top: 80px;
   position: relative;
   background-color: var(--proteo-footer_bg_color, #f7f7f7);
   color: var(--proteo-footer_font_color, #404040);
@@ -7614,6 +7603,12 @@ div#respond #submit {
 #main-footer a:hover {
   color: var(--proteo-footer_link_hover_color, #1a4e43);
   text-decoration: underline;
+}
+#main-footer .footer-sidebars {
+  padding-top: 80px;
+}
+#main-footer .footer-sidebars:empty {
+  display: none;
 }
 #main-footer .site-info {
   padding: 15px 0;

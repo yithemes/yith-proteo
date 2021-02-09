@@ -1,5 +1,4 @@
 #main-footer {
-	padding-top: 80px;
 	position: relative;
 	background-color: var(--proteo-footer_bg_color, #f7f7f7);
 	color: var(--proteo-footer_font_color, #404040);
@@ -17,6 +16,13 @@
 			color: var(--proteo-footer_link_hover_color, $color__link-hover);
 			text-decoration: underline;
 		}
+	}
+
+	.footer-sidebars {
+		padding-top: 80px;
+	}
+	.footer-sidebars:empty {
+		display: none;
 	}
 
 	.site-info {

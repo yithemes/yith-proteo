@@ -599,10 +599,12 @@
 			var section_title = $( '#customize-control-yith_proteo_global_layout_group_title' ),
 			collapsed = section_title.hasClass( 'section-closed' );
 			section_title.toggleClass('section-closed');
+			wp.customize.control('yith_proteo_site_content_spacing' ).toggle( collapsed );
 			wp.customize.control('yith_proteo_layout_full_width' ).toggle( collapsed );
 		}
 
 		function yith_proteo_toggle_global_layout_options_controls_list() {
+			wp.customize.control('yith_proteo_site_content_spacing' ).toggle( false );
 			wp.customize.control('yith_proteo_layout_full_width' ).toggle( false );
 		}
 

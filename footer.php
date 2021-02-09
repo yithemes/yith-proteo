@@ -29,18 +29,15 @@ if ( function_exists( 'wc' ) && is_shop() ) {
 if ( 'on' !== $hide_footer ) :
 	?>
 	<footer id="main-footer" class="site-footer">
-		<div class="container footer-sidebars <?php echo ( ( 'yes' === get_theme_mod( 'yith_proteo_footer_sidebars_side_by_side', 'no' ) ) ) ? 'side-by-side-sidebars' : ''; ?>">
-			<?php if ( 'yes' === get_theme_mod( 'yith_proteo_footer_sidebar_1_enable', 'yes' ) ) : ?>
+		<div class="container footer-sidebars <?php echo ( ( 'yes' === get_theme_mod( 'yith_proteo_footer_sidebars_side_by_side', 'no' ) ) ) ? 'side-by-side-sidebars' : ''; ?>"><?php if ( 'yes' === get_theme_mod( 'yith_proteo_footer_sidebar_1_enable', 'yes' ) ) : ?>
 			<div class="footer-sidebar-1">
 				<div class="row"><?php dynamic_sidebar( 'footer-sidebar-1' ); ?></div>
 			</div>
-			<?php endif; ?>
-			<?php if ( 'yes' === get_theme_mod( 'yith_proteo_footer_sidebar_2_enable', 'yes' ) ) : ?>
+			<?php endif; ?><?php if ( 'yes' === get_theme_mod( 'yith_proteo_footer_sidebar_2_enable', 'yes' ) ) : ?>
 			<div class="footer-sidebar-2">
 				<div class="row"><?php dynamic_sidebar( 'footer-sidebar-2' ); ?></div>
 			</div>
-			<?php endif; ?>
-		</div>
+			<?php endif; ?></div>
 		<div class="site-info">
 			<div class="container">
 				<?php

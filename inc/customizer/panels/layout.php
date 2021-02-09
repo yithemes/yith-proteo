@@ -37,6 +37,44 @@ $wp_customize->add_control(
 	)
 );
 
+// Site content spacing control.
+$wp_customize->add_setting(
+	'yith_proteo_site_content_spacing',
+	array(
+		'default'           => array(
+			'top'    => 50,
+			'right'  => 0,
+			'bottom' => 50,
+			'left'   => 0,
+		),
+		'sanitize_callback' => 'yith_proteo_sanitize_int_array',
+	)
+);
+$wp_customize->add_control(
+	new Customizer_Control_Spacing(
+		$wp_customize,
+		'yith_proteo_site_content_spacing',
+		array(
+			'label'   => __( 'Site content spacing (px)', 'yith-proteo' ),
+			'section' => 'yith_proteo_layout_management',
+			'choices' => array(
+				'top'    => array(
+					'name' => esc_html__( 'Top', 'yith-proteo' ),
+				),
+				'right'  => array(
+					'name' => esc_html__( 'Right', 'yith-proteo' ),
+				),
+				'bottom' => array(
+					'name' => esc_html__( 'Bottom', 'yith-proteo' ),
+				),
+				'left'   => array(
+					'name' => esc_html__( 'Left', 'yith-proteo' ),
+				),
+			),
+		)
+	)
+);
+
 // Fullwidth enable.
 if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
 	$wp_customize->add_setting(

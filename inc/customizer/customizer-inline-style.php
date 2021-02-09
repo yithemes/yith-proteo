@@ -268,6 +268,18 @@ function yith_proteo_inline_style() {
 			)
 		)
 	) . 'px';
+	$site_content_spacing     = implode(
+		'px ',
+		get_theme_mod(
+			'yith_proteo_site_content_spacing',
+			array(
+				'top'    => 50,
+				'right'  => 0,
+				'bottom' => 50,
+				'left'   => 0,
+			)
+		)
+	) . 'px';
 
 	$custom_css = ":root {
 		--proteo-main_color_shade: {$main_color_shade};
@@ -403,6 +415,7 @@ function yith_proteo_inline_style() {
 		--proteo-header_manu_menu_spacing: {$header_manu_menu_spacing};
 		--proteo-header_spacing: {$header_spacing};
 		--proteo-sticky_header_spacing: {$sticky_header_spacing};
+		--proteo-site_content_spacing: {$site_content_spacing};
 	}";
 
 	if ( ! empty( $custom_css ) ) {
