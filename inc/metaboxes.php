@@ -65,35 +65,18 @@ if ( defined( 'YITH_SLIDER_FOR_PAGE_BUILDERS' ) ) {
 }
 
 /**
- * Sidebar position metabox add
+ * Sidebar management metabox
  */
-function yith_proteo_sidebar_position_add_meta_box() {
+function yith_proteo_sidebar_management_add_meta_box() {
 	add_meta_box(
-		'sidebar_position',
-		__( 'Sidebar position', 'yith-proteo' ),
-		'yith_proteo_sidebar_position_html',
+		'yith_proteo_sidebar_management',
+		__( 'Sidebar management', 'yith-proteo' ),
+		'yith_proteo_sidebar_management_html',
 		array( 'post', 'page', 'product' ),
 		'side'
 	);
 }
-
-add_action( 'add_meta_boxes', 'yith_proteo_sidebar_position_add_meta_box' );
-
-/**
- * Sidebar chooser metabox
- */
-function yith_proteo_sidebar_chooser_add_meta_box() {
-	add_meta_box(
-		'sidebar_chooser',
-		__( 'Sidebar Chooser', 'yith-proteo' ),
-		'yith_proteo_sidebar_chooser_html',
-		array( 'post', 'page', 'product' ),
-		'side'
-	);
-}
-
-add_action( 'add_meta_boxes', 'yith_proteo_sidebar_chooser_add_meta_box' );
-
+add_action( 'add_meta_boxes', 'yith_proteo_sidebar_management_add_meta_box' );
 
 /**
  * Remove header and footer metabox
@@ -254,6 +237,59 @@ function yith_proteo_sidebar_chooser_html( $post ) {
 			</option>
 		<?php } ?>
 	</select>
+	<?php
+}
+
+/**
+ * Sidebar management metabox html
+ *
+ * @param object $post Post object.
+ *
+ * @author Francesco Grasso <francgrasso@yithemes.com>
+ */
+function yith_proteo_sidebar_management_html( $post ) {
+	wp_nonce_field( '_sidebar_position_nonce', 'sidebar_position_nonce' );
+	?>
+	<p class="components-base-control__field ">
+		<label class="components-base-control__label" for="sidebar_position" style="display: block; margin-bottom: 5px;"><?php echo esc_html_x( 'Position:', 'yith-proteo', 'metabox description label' ); ?></label>
+		<select name="sidebar_position" id="sidebar_position"
+				class="components-text-control__input">
+			<option
+				value="inherit" <?php echo ( yith_proteo_sidebar_get_meta( 'sidebar_position' ) === 'inherit' ) ? 'selected' : ''; ?>>
+				<?php esc_html_e( 'Inherit', 'yith-proteo' ); ?>
+			</option>
+			<option
+				value="no-sidebar" <?php echo ( yith_proteo_sidebar_get_meta( 'sidebar_position' ) === 'no-sidebar' ) ? 'selected' : ''; ?>>
+				<?php esc_html_e( 'No sidebar', 'yith-proteo' ); ?>
+			</option>
+			<option
+				value="left" <?php echo ( yith_proteo_sidebar_get_meta( 'sidebar_position' ) === 'left' ) ? 'selected' : ''; ?>>
+				<?php esc_html_e( 'Left', 'yith-proteo' ); ?>
+			</option>
+			<option
+				value="right" <?php echo ( yith_proteo_sidebar_get_meta( 'sidebar_position' ) === 'right' ) ? 'selected' : ''; ?>>
+				<?php esc_html_e( 'Right', 'yith-proteo' ); ?>
+			</option>
+		</select>
+	</p>
+	<?php
+		wp_nonce_field( '_sidebar_chooser_nonce', 'sidebar_chooser_nonce' );
+	?>
+	<p class="components-base-control__field ">
+		<label class="components-base-control__label" for="sidebar_chooser" style="display: block; margin-bottom: 5px;"><?php echo esc_html_x( 'Sidebar:', 'yith-proteo', 'metabox description label' ); ?></label>
+		<select name="sidebar_chooser" id="sidebar_chooser" class="components-text-control__input">
+			<option
+				value="inherit" <?php echo ( yith_proteo_sidebar_get_meta( 'sidebar_position' ) === 'inherit' ) ? 'selected' : ''; ?>>
+				<?php esc_html_e( 'Inherit', 'yith-proteo' ); ?>
+			</option>
+			<?php foreach ( $GLOBALS['wp_registered_sidebars'] as $sidebar ) { ?>
+				<option
+					value="<?php echo esc_attr( ucwords( $sidebar['id'] ) ); ?>" <?php echo ( yith_proteo_sidebar_get_meta( 'sidebar_chooser' ) === esc_attr( ucwords( $sidebar['id'] ) ) ) ? 'selected' : ''; ?>>
+					<?php echo esc_html( ucwords( $sidebar['name'] ) ); ?>
+				</option>
+			<?php } ?>
+		</select>
+	</p>
 	<?php
 }
 
