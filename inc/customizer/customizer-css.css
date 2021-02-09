@@ -304,7 +304,7 @@ body .select2-container--default .select2-selection--single .select2-selection__
 /* RADIO IMAGE */
 .customize-control-radio-image label {
 	display: inline-block;
-	max-width: 33.3%;
+	max-width: 28%;
 	font-size: inherit;
 	line-height: inherit;
 	height: auto;

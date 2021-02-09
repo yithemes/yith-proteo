@@ -230,3 +230,9 @@ body .yith-slider .yith-slider-dots.style-3 li:hover button {
     background: var(--proteo-main_color_shade, #404040);
     background-color: var(--proteo-main_color_shade, #404040);
 }
+
+.site-header + .yith-slider {
+	.slide-container {
+		display: table;
+	}
+}

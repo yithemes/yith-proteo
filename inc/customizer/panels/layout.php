@@ -52,9 +52,9 @@ if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
 			$wp_customize,
 			'yith_proteo_layout_full_width',
 			array(
-				'label'       => esc_html__( 'Make website layout full width', 'yith-proteo' ),
+				'label'       => esc_html__( 'Use full width layout', 'yith-proteo' ),
 				'section'     => 'yith_proteo_layout_management',
-				'description' => esc_html__( 'Choose whether to make your site layout full width. No matter which resolution your screen has.', 'yith-proteo' ),
+				'description' => esc_html__( 'Choose whether to use a full width layout. No matter which resolution your screen has.', 'yith-proteo' ),
 			)
 		)
 	);
