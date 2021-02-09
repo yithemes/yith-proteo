@@ -18,7 +18,8 @@
 	// STICKY HEADER
 	if (typeof yith_proteo != 'undefined' && yith_proteo.stickyHeader == 'yes') {
 		var site_header = $('.site-header'),
-			stickyOffset = site_header.length ? site_header.offset().top : false;
+			stickyOffset = site_header.length ? site_header.offset().top : false,
+			site_content_top_spacing = yith_proteo.yith_proteo_site_content_top_spacing;
 			stickyOffset = 0;
 		if (stickyOffset !== false) {
 			$(window).scroll(function () {
@@ -28,10 +29,10 @@
 
 				if (scroll > stickyOffset) {
 					sticky.addClass('sticky');
-					content.css("padding-top", sticky.height() + 50);
+					content.css("padding-top", sticky.height() + site_content_top_spacing);
 				} else {
 					sticky.removeClass('sticky');
-					content.css("padding-top", 50);
+					content.css("padding-top", site_content_top_spacing);
 				}
 			});
 		}

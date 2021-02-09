@@ -61,6 +61,15 @@ if ( ! function_exists( 'yith_proteo_scripts' ) ) :
 				'yith_proteo_product_loop_view_details_enable' => get_theme_mod( 'yith_proteo_product_loop_view_details_enable', 'no' ),
 				'yith_proteo_product_loop_view_details_style' => 'view-details button ' . get_theme_mod( 'yith_proteo_products_loop_view_details_style', 'ghost' ),
 				'yith_proteo_loop_product_view_details_text' => apply_filters( 'yith_proteo_loop_product_view_details_text', __( 'View details', 'yith-proteo' ) ),
+				'yith_proteo_site_content_top_spacing' => get_theme_mod(
+					'yith_proteo_site_content_spacing',
+					array(
+						'top'    => 50,
+						'right'  => 0,
+						'bottom' => 50,
+						'left'   => 0,
+					)
+				)['top'],
 			)
 		);
 
