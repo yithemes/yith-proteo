@@ -94,6 +94,22 @@ function yith_proteo_remove_header_and_footer_add_meta_box() {
 add_action( 'add_meta_boxes', 'yith_proteo_remove_header_and_footer_add_meta_box' );
 
 /**
+ * Manage page content spacing metabox
+ */
+function yith_proteo_manage_page_content_spacing_add_meta_box() {
+	add_meta_box(
+		'yith_proteo_header_footer',
+		__( 'Page content', 'yith-proteo' ),
+		'yith_proteo_manage_page_content_spacing_html',
+		array( 'page' ),
+		'side'
+	);
+}
+
+add_action( 'add_meta_boxes', 'yith_proteo_manage_page_content_spacing_add_meta_box' );
+
+
+/**
  * Hide page title metabox
  */
 function yith_proteo_hide_page_title_add_meta_box() {
@@ -251,7 +267,7 @@ function yith_proteo_sidebar_management_html( $post ) {
 	wp_nonce_field( '_sidebar_position_nonce', 'sidebar_position_nonce' );
 	?>
 	<p class="components-base-control__field ">
-		<label class="components-base-control__label" for="sidebar_position" style="display: block; margin-bottom: 5px;"><?php echo esc_html_x( 'Position:', 'yith-proteo', 'metabox description label' ); ?></label>
+		<label class="components-base-control__label" for="sidebar_position" style="display: block; margin-bottom: 5px;"><?php echo esc_html_x( 'Position:', 'metabox description label', 'yith-proteo' ); ?></label>
 		<select name="sidebar_position" id="sidebar_position"
 				class="components-text-control__input">
 			<option
@@ -276,7 +292,7 @@ function yith_proteo_sidebar_management_html( $post ) {
 		wp_nonce_field( '_sidebar_chooser_nonce', 'sidebar_chooser_nonce' );
 	?>
 	<p class="components-base-control__field ">
-		<label class="components-base-control__label" for="sidebar_chooser" style="display: block; margin-bottom: 5px;"><?php echo esc_html_x( 'Sidebar:', 'yith-proteo', 'metabox description label' ); ?></label>
+		<label class="components-base-control__label" for="sidebar_chooser" style="display: block; margin-bottom: 5px;"><?php echo esc_html_x( 'Sidebar:', 'metabox description label', 'yith-proteo' ); ?></label>
 		<select name="sidebar_chooser" id="sidebar_chooser" class="components-text-control__input">
 			<option
 				value="inherit" <?php echo ( yith_proteo_sidebar_get_meta( 'sidebar_position' ) === 'inherit' ) ? 'selected' : ''; ?>>
@@ -344,6 +360,118 @@ function yith_proteo_header_slider_html( $post ) {
 	</select>
 	<?php
 }
+
+/**
+ * Manage page content spacing metabox html
+ *
+ * @param object $post Post object.
+ *
+ * @author Francesco Grasso <francgrasso@yithemes.com>
+ */
+function yith_proteo_manage_page_content_spacing_html( $post ) {
+	wp_nonce_field( '_yith_proteo_custom_page_content_spacing_nonce', 'yith_proteo_custom_page_content_spacing_nonce' );
+	$spacing_enabler = get_post_meta( $post->ID, 'yith_proteo_custom_page_content_spacing_enabler', true );
+	$spacing         = get_post_meta( $post->ID, 'yith_proteo_custom_page_content_spacing', true );
+	?>
+	<style>
+		.yith-proteo-page-content-spacing-container {
+			position: relative;
+			display: flex;
+		}
+		.yith-proteo-page-content-spacing-container li {
+			display: inline-block;
+			text-align: center;
+			-webkit-box-flex: 1;
+			-ms-flex: auto;
+			flex: auto;
+			margin-right: 5px;
+		}
+		.yith-proteo-page-content-spacing-container li:last-of-type {
+			margin-right: 0;
+		}
+		.yith-proteo-page-content-spacing-container li span {
+			display: block;
+			font-size: 0.75em;
+			text-align: left;
+			text-transform: uppercase;
+			padding-bottom: 2px;
+			font-weight: 500;
+		}
+		.yith-proteo-page-content-spacing-container li input {
+			width: 100%;
+			margin: 0;
+		}
+
+		body .edit-post-meta-boxes-area .metabox-location-side .postbox .yith-proteo-custom-spacing-control-enabler {
+			background: #fff;
+			border-color: #757575;
+		}
+
+		body .edit-post-meta-boxes-area .metabox-location-side .postbox .yith-proteo-custom-spacing-control-enabler:checked {
+			background: #007cba;
+			background: var(--wp-admin-theme-color);
+			border-color: #007cba;
+			border-color: var(--wp-admin-theme-color);
+		}
+
+		.yith-proteo-custom-spacing-control-enabler ~ svg {
+			display: none;
+			fill: #fff;
+			cursor: pointer;
+			position: absolute;
+			left: 14px;
+			width: 20px;
+			height: 20px;
+			-webkit-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+			pointer-events: none;
+		}
+
+		.yith-proteo-custom-spacing-control-enabler ~ .yith-proteo-page-content-spacing-container {
+			display: none;
+		}
+		.yith-proteo-custom-spacing-control-enabler:checked ~ .yith-proteo-page-content-spacing-container {
+			display: flex;
+		}
+		.yith-proteo-custom-spacing-control-enabler:checked ~ svg {
+			display: inline;
+		}
+
+	</style>
+	<h3><?php echo esc_html_x( 'Spacing (px)', 'Page edit metabox label', 'yith-proteo' ); ?></h3>
+	<input type="checkbox" class="components-checkbox-control__input yith-proteo-custom-spacing-control-enabler" name="yith_proteo_custom_page_content_spacing_enabler" <?php checked( 'on', $spacing_enabler ); ?> value="on">
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" role="img" aria-hidden="true" focusable="false"><path d="M18.3 5.6L9.9 16.9l-4.6-3.4-.9 1.2 5.8 4.3 9.3-12.6z"></path></svg>
+	<label class="components-checkbox-control__label" for="yith_proteo_custom_page_content_spacing_enabler"><?php echo esc_html_x( 'Set custom content spacing', 'Page edit metabox label', 'yith-proteo' ); ?></label>
+	<ul class="yith-proteo-page-content-spacing-container spacing-wrapper">
+		<li>
+			<label class="control-spacing-label">
+				<span><?php esc_html_e( 'Top', 'yith-proteo' ); ?></span>
+				<input type="number" name="yith_proteo_custom_page_content_spacing[top]" value="<?php echo isset( $spacing['top'] ) ? esc_attr( $spacing['top'] ) : 0; ?>" class="spacing-input">
+			</label>
+		</li>
+		<li>
+			<label class="control-spacing-label">
+				<span><?php esc_html_e( 'Right', 'yith-proteo' ); ?></span>
+				<input type="number" name="yith_proteo_custom_page_content_spacing[right]" value="<?php echo isset( $spacing['right'] ) ? esc_attr( $spacing['right'] ) : 0; ?>" class="spacing-input">
+			</label>
+		</li>
+		<li>
+			<label class="control-spacing-label">
+				<span><?php esc_html_e( 'Bottom', 'yith-proteo' ); ?></span>
+				<input type="number" name="yith_proteo_custom_page_content_spacing[bottom]" value="<?php echo isset( $spacing['bottom'] ) ? esc_attr( $spacing['bottom'] ) : 0; ?>" class="spacing-input">
+			</label>
+		</li>
+		<li>
+			<label class="control-spacing-label">
+				<span><?php esc_html_e( 'Left', 'yith-proteo' ); ?></span>
+				<input type="number" name="yith_proteo_custom_page_content_spacing[left]" value="<?php echo isset( $spacing['left'] ) ? esc_attr( $spacing['left'] ) : 0; ?>" class="spacing-input">
+			</label>
+		</li>
+	</ul>
+	<?php
+}
+
 
 /**
  * Title icon meta save
@@ -497,6 +625,39 @@ function yith_proteo_header_slider_save( $post_id ) {
 }
 
 add_action( 'save_post', 'yith_proteo_header_slider_save' );
+
+
+/**
+ * Custom page spacing save
+ *
+ * @param int $post_id Post object ID.
+ *
+ * @author Francesco Grasso <francgrasso@yithemes.com>
+ */
+function yith_proteo_custom_page_content_spacing_save( $post_id ) {
+
+	if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
+		return;
+	}
+	if ( ! isset( $_POST['yith_proteo_custom_page_content_spacing_nonce'] ) || ! wp_verify_nonce( sanitize_text_field( wp_unslash( $_POST['yith_proteo_custom_page_content_spacing_nonce'] ) ), '_yith_proteo_custom_page_content_spacing_nonce' ) ) {
+		return;
+	}
+	if ( ! current_user_can( 'edit_post', $post_id ) ) {
+		return;
+	}
+
+	if ( isset( $_POST['yith_proteo_custom_page_content_spacing_enabler'] ) ) {
+		update_post_meta( $post_id, 'yith_proteo_custom_page_content_spacing_enabler', sanitize_text_field( wp_unslash( $_POST['yith_proteo_custom_page_content_spacing_enabler'] ) ) );
+	} else {
+		update_post_meta( $post_id, 'yith_proteo_custom_page_content_spacing_enabler', 'off' );
+	}
+
+	if ( isset( $_POST['yith_proteo_custom_page_content_spacing'] ) && is_array( $_POST['yith_proteo_custom_page_content_spacing'] ) ) {
+		update_post_meta( $post_id, 'yith_proteo_custom_page_content_spacing', array_map( 'intval', $_POST['yith_proteo_custom_page_content_spacing'] ) );
+	}
+}
+
+add_action( 'save_post', 'yith_proteo_custom_page_content_spacing_save' );
 
 
 /**

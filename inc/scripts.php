@@ -49,14 +49,14 @@ if ( ! function_exists( 'yith_proteo_scripts' ) ) :
 			'yith-proteo-themejs',
 			'yith_proteo',
 			array(
-				'stickyHeader'                     => apply_filters(
+				'stickyHeader'                         => apply_filters(
 					'yith_proteo_enable_sticky_header',
 					get_theme_mod( 'yith_proteo_header_sticky', 'yes' )
 				),
-				'select2minimumResultsForSearch'   => apply_filters( 'yith_proteo_select2_minimum_results_for_search', 7 ),
-				'yith_proteo_use_enanched_selects' => get_theme_mod( 'yith_proteo_use_enanched_selects', 'yes' ),
+				'select2minimumResultsForSearch'       => apply_filters( 'yith_proteo_select2_minimum_results_for_search', 7 ),
+				'yith_proteo_use_enanched_selects'     => get_theme_mod( 'yith_proteo_use_enanched_selects', 'yes' ),
 				'yith_proteo_use_enhanced_checkbox_and_radio' => get_theme_mod( 'yith_proteo_use_enhanced_checkbox_and_radio', 'yes' ),
-				'yith_proteo_has_woocommerce'      => function_exists( 'WC' ),
+				'yith_proteo_has_woocommerce'          => function_exists( 'WC' ),
 				'yith_proteo_products_loop_add_to_cart_position' => get_theme_mod( 'yith_proteo_products_loop_add_to_cart_position', 'classic' ),
 				'yith_proteo_product_loop_view_details_enable' => get_theme_mod( 'yith_proteo_product_loop_view_details_enable', 'no' ),
 				'yith_proteo_product_loop_view_details_style' => 'view-details button ' . get_theme_mod( 'yith_proteo_products_loop_view_details_style', 'ghost' ),
