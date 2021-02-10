@@ -121,6 +121,8 @@ global $post;
 								'menu_id'        => 'mobile-menu',
 								'container_id'   => 'mobile-nav-menu',
 								'menu_class'     => 'menu mobile-menu-align-' . $mobile_menu_align,
+								'menu'           => 'mobile',
+								'fallback_cb'    => false,
 							)
 						);
 						?>
@@ -131,6 +133,8 @@ global $post;
 							'theme_location' => 'primary',
 							'menu_id'        => 'primary-menu',
 							'container_id'   => 'primary-nav-menu',
+							'menu'           => 'primary',
+							'fallback_cb'    => false,
 						)
 					);
 					?>
