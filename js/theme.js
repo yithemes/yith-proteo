@@ -19,14 +19,13 @@
 	if (typeof yith_proteo != 'undefined' && yith_proteo.stickyHeader == 'yes') {
 		var site_header = $('.site-header'),
 			stickyOffset = site_header.length ? site_header.offset().top : false,
-			site_content_top_spacing = yith_proteo.yith_proteo_site_content_top_spacing;
+			site_content_top_spacing = parseInt( yith_proteo.yith_proteo_site_content_top_spacing );
 			stickyOffset = 0;
 		if (stickyOffset !== false) {
 			$(window).scroll(function () {
 				var sticky = site_header,
 					scroll = $(window).scrollTop(),
 					content = $('header + #content');
-
 				if (scroll > stickyOffset) {
 					sticky.addClass('sticky');
 					content.css("padding-top", sticky.height() + site_content_top_spacing);
