@@ -819,6 +819,7 @@
 			section_title.toggleClass('section-closed');
 			wp.customize.control('yith_proteo_header_search_widget' ).toggle( collapsed );
 			wp.customize.control('yith_proteo_header_cart_widget' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_header_cart_widget_custom_image_control' ).toggle( collapsed );
 			wp.customize.control('yith_proteo_header_account_widget' ).toggle( collapsed );
 			wp.customize.control('yith_proteo_show_header_sidebar' ).toggle( collapsed );
 		}
@@ -826,6 +827,7 @@
 		function yith_proteo_toggle_header_elements_controls_list() {
 			wp.customize.control('yith_proteo_header_search_widget' ).toggle( false );
 			wp.customize.control('yith_proteo_header_cart_widget' ).toggle( false );
+			wp.customize.control('yith_proteo_header_cart_widget_custom_image_control' ).toggle( false );
 			wp.customize.control('yith_proteo_header_account_widget' ).toggle( false );
 			wp.customize.control('yith_proteo_show_header_sidebar' ).toggle( false );
 		}

@@ -9906,6 +9906,14 @@ Mini Cart Widget
 .widget_shopping_cart .proceed-to-cart-icon:hover span.lnr {
   color: var(--proteo-header_menu_hover_color, #448a85);
 }
+.widget_shopping_cart .proceed-to-cart-icon img.custom-cart-icon {
+  display: inline;
+  vertical-align: middle;
+}
+.widget_shopping_cart .proceed-to-cart-icon img.custom-cart-icon + span {
+  margin-left: 5px;
+  vertical-align: middle;
+}
 .widget_shopping_cart .yith-proteo-mini-cart-content {
   position: absolute;
   min-width: 280px;

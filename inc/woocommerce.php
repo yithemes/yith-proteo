@@ -391,7 +391,13 @@ add_action( 'woocommerce_before_mini_cart', 'yith_proteo_before_mini_cart', 10 )
  * Mini Cart item count (before)
  */
 function yith_proteo_before_mini_cart() {
-	echo '<a href="' . esc_url( wc_get_cart_url() ) . '" class="proceed-to-cart-icon"><span class="lnr lnr-cart"></span><span>' . esc_html( WC()->cart->get_cart_contents_count() ) . '</span></a><div class="yith-proteo-mini-cart-content">';
+	$cart_icon = get_theme_mod( 'yith_proteo_header_cart_widget_custom_icon', false );
+	if ( '' === $cart_icon || strpos( $cart_icon, '/img/proteo-cart-icon.png' ) !== false ) {
+		$cart_icon = '<span class="lnr lnr-cart"></span>';
+	} else {
+		$cart_icon = '<img class="custom-cart-icon" src="' . esc_url( $cart_icon ) . '">';
+	}
+	echo '<a href="' . esc_url( wc_get_cart_url() ) . '" class="proceed-to-cart-icon">' . $cart_icon . '<span>' . esc_html( WC()->cart->get_cart_contents_count() ) . '</span></a><div class="yith-proteo-mini-cart-content">';
 	if ( WC()->cart->get_cart_contents_count() > 0 ) {
 		/* translators: number of items in the mini cart. */
 		echo '<p class="items-count">' . esc_html( sprintf( _n( '%d item in cart', '%d items in cart', WC()->cart->get_cart_contents_count(), 'yith-proteo' ), WC()->cart->get_cart_contents_count() ) ) . '</p>';

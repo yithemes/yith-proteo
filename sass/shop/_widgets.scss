@@ -102,6 +102,14 @@ Mini Cart Widget
 				color: var(--proteo-header_menu_hover_color, $color__accent);
 			}
 		}
+		img.custom-cart-icon {
+			display: inline;
+			vertical-align: middle;
+		}
+		img.custom-cart-icon + span {
+			margin-left: 5px;
+			vertical-align: middle;
+		}
 	}
 
 	.yith-proteo-mini-cart-content {

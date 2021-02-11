@@ -196,6 +196,32 @@
 		);
 	}
 
+	$wp_customize->add_setting(
+		'yith_proteo_header_cart_widget_custom_icon',
+		array(
+			'default'           => esc_url( get_template_directory_uri() . '/img/proteo-cart-icon.png' ),
+			'sanitize_callback' => 'esc_url_raw',
+		)
+	);
+
+	$wp_customize->add_control(
+		new WP_Customize_Image_Control(
+			$wp_customize,
+			'yith_proteo_header_cart_widget_custom_image_control',
+			array(
+				'label'         => esc_html__( 'Cart icon', 'yith-proteo' ),
+				'section'       => 'yith_proteo_header_management',
+				'settings'      => 'yith_proteo_header_cart_widget_custom_icon',
+				'description'   => esc_html__( 'Use this option to upload your cart icon', 'yith-proteo' ),
+				'button_labels' => array(
+					'select' => esc_html__( 'Select icon', 'yith-proteo' ),
+					'remove' => esc_html__( 'Use default icon', 'yith-proteo' ),
+					'change' => esc_html__( 'Change icon', 'yith-proteo' ),
+				),
+			)
+		)
+	);
+
 	// Header account widget.
 	if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
 		$wp_customize->add_setting(

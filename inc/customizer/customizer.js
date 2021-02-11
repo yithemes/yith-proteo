@@ -77,5 +77,13 @@
 		});
 	});
 
+	/**
+	 * Minicart icon change and cart fragments refresh
+	 */
+
+	wp.customize('yith_proteo_header_cart_widget_custom_icon', function (value) {
+		$( document.body ).trigger( 'wc_fragment_refresh');
+	});
+
 
 })(jQuery);
