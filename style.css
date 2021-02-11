@@ -12909,15 +12909,16 @@ body .wpcf7-not-valid {
 /*-------------------------------------------------------------
 # Skins
 -------------------------------------------------------------*/
-.yith-proteo-desire-overlapped-column {
-  margin-left: -100px;
-  margin-top: 70px;
-}
+@media (min-width: 768px) {
+  .yith-proteo-desire-overlapped-column {
+    margin-left: -100px;
+    margin-top: 70px;
+  }
 
-.yith-proteo-desire-top-negative-90-px {
-  margin-top: -90px;
+  .yith-proteo-desire-top-negative-90-px {
+    margin-top: -90px;
+  }
 }
-
 .proteo-desire-glow-hover {
   transition: all ease 0.3s;
   position: relative;
