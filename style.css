@@ -6666,29 +6666,20 @@ body .wp-block-image .alignright {
   margin-left: 30px;
 }
 
-@media only screen and (min-width: 768px) {
-  .alignfull {
-    margin-left: calc(50% - 50vw);
-    margin-right: calc(50% - 50vw);
-    width: auto;
-    max-width: 1000%;
-  }
-
-  .alignwide {
-    margin-left: calc(25% - 25vw);
-    margin-right: calc(25% - 25vw);
-    width: auto;
-    max-width: 1000%;
-  }
-
-  /*
-  .alignwide img,
-  .alignfull img {
-  	display: block;
-  	margin: 0 auto;
-  }
-  */
+.alignfull {
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  width: auto;
+  max-width: 1000%;
 }
+
+.alignwide {
+  margin-left: calc(25% - 25vw);
+  margin-right: calc(25% - 25vw);
+  width: auto;
+  max-width: 1000%;
+}
+
 /*--------------------------------------------------------------
 # Clearings
 --------------------------------------------------------------*/
@@ -13083,10 +13074,10 @@ Custom media queries
   }
 
   .header-contents.left-toggle .site-branding {
-    margin-left: 60px;
+    margin-left: 45px;
   }
   .header-contents.left-toggle .menu-toggle {
-    left: 30px;
+    left: 15px;
   }
 
   .site-header .header-sidebar {
@@ -13269,8 +13260,10 @@ table.shop_table_responsive thead tr th.product-name {
     font-size: var(--proteo-mobile_site_title_font_size, 38px);
   }
 
-  .site-branding .site-description {
+  .site-branding .site-description,
+.site-branding.tagline-position-right .site-description {
     font-size: var(--proteo-mobile_tagline_font_size, 11px);
+    display: block;
   }
 
   body,

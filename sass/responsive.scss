@@ -162,10 +162,10 @@ Custom media queries
 	.header-contents {
 		&.left-toggle {
 			.site-branding {
-				margin-left: 60px;
+				margin-left: 45px;
 			}
 			.menu-toggle {
-				left: 30px;
+				left: 15px;
 			}
 		}
 	}
@@ -355,8 +355,10 @@ Custom media queries
 	.site-branding .site-title {
 		font-size: var(--proteo-mobile_site_title_font_size, 38px);
 	}
-	.site-branding .site-description {
+	.site-branding .site-description, 
+	.site-branding.tagline-position-right .site-description {
 		font-size: var(--proteo-mobile_tagline_font_size, 11px);
+		display: block;
 	}
 	body,
 	button,
