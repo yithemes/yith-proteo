@@ -34,7 +34,7 @@ if ( class_exists( 'WP_Customize_Control' ) ) {
 				<?php foreach ( $this->choices as $key => $value ) { ?>
 					<li>
 						<label class="control-spacing-label">
-							<span><?php echo esc_attr( $value['name'] ); ?></span>
+							<span><?php echo esc_html( $value['name'] ); ?></span>
 							<input type="number" value="<?php echo esc_attr( $spacing_values[ $key ] ); ?>" data-id="<?php echo esc_attr( $key ); ?>" class="spacing-input"/>
 						</label>
 					</li>
