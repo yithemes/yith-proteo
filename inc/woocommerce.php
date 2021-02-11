@@ -397,7 +397,7 @@ function yith_proteo_before_mini_cart() {
 	} else {
 		$cart_icon = '<img class="custom-cart-icon" src="' . esc_url( $cart_icon ) . '">';
 	}
-	echo '<a href="' . esc_url( wc_get_cart_url() ) . '" class="proceed-to-cart-icon">' . $cart_icon . '<span>' . esc_html( WC()->cart->get_cart_contents_count() ) . '</span></a><div class="yith-proteo-mini-cart-content">';
+	echo '<a href="' . esc_url( wc_get_cart_url() ) . '" class="proceed-to-cart-icon">' . $cart_icon . '<span>' . esc_html( WC()->cart->get_cart_contents_count() ) . '</span></a><div class="yith-proteo-mini-cart-content">'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 	if ( WC()->cart->get_cart_contents_count() > 0 ) {
 		/* translators: number of items in the mini cart. */
 		echo '<p class="items-count">' . esc_html( sprintf( _n( '%d item in cart', '%d items in cart', WC()->cart->get_cart_contents_count(), 'yith-proteo' ), WC()->cart->get_cart_contents_count() ) ) . '</p>';
