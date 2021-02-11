@@ -4,7 +4,7 @@ Tags: one-column, two-columns, left-sidebar, right-sidebar, wide-blocks, accessi
 Requires at least: 4.9.6
 Tested up to: WordPress 5.6
 Requires PHP: 5.6
-Stable tag: 1.4.5.1
+Stable tag: 1.5.0
 YITH Proteo WordPress Theme, Copyright 2020 YITH
 YITH Proteo is distributed under the terms of the GNU GPL
 License: GPLv2 or later
@@ -25,6 +25,53 @@ Proteo is a modern, fast and fully customizable WooCommerce theme. Designed and 
 == Frequently Asked Questions ==
 
 == Changelog ==
+
+= 1.5.0 - February 11 2021 =
+* New options to customize cart icon
+* New option to manage site content spacing
+* New metabox to manage page content spacing individually 
+* New option to manage header spacing (top, right, bottom, left)
+* New option to manage sticky header spacing (top, right, bottom, left)
+* New option to manage main menu spacing (top, right, bottom, left)
+* New option to manage topbar spacing (top, right, bottom, left)
+* New options to manage site title and tagline spacing (top, right, bottom, left)
+* New options to display/hide posts navigation, author, categories, tags and date
+* New option to display a "view detail" link on products loop
+* New option to manage page title alignment
+* New option to manage page title layout
+* New option to hide page/post title
+* New option to display and hide blog page title
+* New option to manage footer widget titles font size
+* New option to manage footer widget titles color
+* New option to manage header menu text transform property
+* New option to manage header menu letter spacing property
+* New option to for add to cart layout on loop
+* New option to manage tagline position
+* New css classes for Desire skin
+* Improve sticky header calculations
+* Improve display for sidebar metaboxes
+* Improve loop add to cart style
+* Improve products widget style
+* Improve sidebar assignment for products
+* Improve options naming and grouping
+* Improve YITH WooCommerce Added to Cart Popup style
+* Improve YITH WooCommerce Request a quote style
+* Improve YITH WooCommerce Recently Viewed Products style
+* Fix double menu displayed on clean installs
+* Fix loop add to cart style for out of stock products
+* Fix footer area empty spaces when no widget area is enabled
+* Fix wrong customizer link in proteo dashboard
+* Fix missing page title in blog page
+* Fix minicart widget link colors issue with dark backgrounds
+* Fix social widget title style issues
+* Fix AOS animations delay
+* Refactoring and grouping "footer" options
+* Refactoring and grouping "header layout and style" options
+* Refactoring and grouping "typography" options
+* Refactoring and grouping "Site Identity" options
+* Remove borders from customizer controls
+* Remove white background from products
+* Supporto to WooCommerce 5
 
 = 1.4.5.1 - January 11 2021 =
 * Fix missing default value on show site title option
