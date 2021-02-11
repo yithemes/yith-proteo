@@ -82,7 +82,7 @@ Custom media queries
 /* Iphone X Landscape */
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
 	.hidden-xs {
-		display: none;
+		display: none !important;
 	}
 }
 
@@ -262,7 +262,7 @@ Custom media queries
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 768px) {
 	.hidden-xs {
-		display: none;
+		display: none !important;
 	}
 
 	.container {

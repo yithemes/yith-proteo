@@ -139,7 +139,7 @@ global $post;
 					);
 					?>
 				</nav><!-- #site-navigation -->
-				<div class="header-sidebar <?php echo esc_attr( get_theme_mod( 'yith_proteo_show_mobile_header_sidebar', 'yes' ) === 'no' ? 'hidden-xs' : '' ); ?>">
+				<div class="header-sidebar">
 					<?php
 					if ( get_theme_mod( 'yith_proteo_header_search_widget', 'no' ) === 'yes' ) :
 						the_widget(
