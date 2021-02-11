@@ -163,9 +163,15 @@ Custom media queries
 		&.left-toggle {
 			.site-branding {
 				margin-left: 45px;
+				max-width: 60%;
 			}
 			.menu-toggle {
 				left: 15px;
+			}
+			.header-sidebar {
+				float: right;
+				margin-right: 15px;
+				margin-top: 10px;
 			}
 		}
 	}
