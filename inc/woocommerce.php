@@ -392,7 +392,7 @@ add_action( 'woocommerce_before_mini_cart', 'yith_proteo_before_mini_cart', 10 )
  */
 function yith_proteo_before_mini_cart() {
 	$cart_icon = get_theme_mod( 'yith_proteo_header_cart_widget_custom_icon', false );
-	if ( '' === $cart_icon || strpos( $cart_icon, '/img/proteo-cart-icon.png' ) !== false ) {
+	if ( '' === $cart_icon || strpos( $cart_icon, '/img/proteo-cart-icon.png' ) !== false || ! $cart_icon ) {
 		$cart_icon = '<span class="lnr lnr-cart"></span>';
 	} else {
 		$cart_icon = '<img class="custom-cart-icon" src="' . esc_url( $cart_icon ) . '">';

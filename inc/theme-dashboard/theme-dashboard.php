@@ -21,8 +21,8 @@ $demos = array(
 	array(
 		'demo_name'              => 'Desire',
 		'demo_preview_image_url' => 'https://update.yithemes.com/proteo-demo-content/desire/desire.jpg',
-		'demo_preview_url'       => '',
-		'demo_state'             => 'coming-soon',
+		'demo_preview_url'       => 'https://proteo.yithemes.com/desire/',
+		'demo_state'             => 'live',
 	),
 );
 
