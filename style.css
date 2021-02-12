@@ -10921,6 +10921,9 @@ body.yith_welrp_opened {
   margin: 0 15px 15px;
   position: relative;
 }
+#yith-welrp .yith-welrp-popup .yith-welrp-social-container .yith-welrp-social > div span {
+  pointer-events: none;
+}
 #yith-welrp .yith-welrp-popup .yith-welrp-social-container .yith-welrp-social > div .icon {
   position: absolute;
   left: 16px;

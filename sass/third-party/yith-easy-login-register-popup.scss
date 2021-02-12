@@ -283,6 +283,10 @@ body.yith_welrp_opened {
 				margin: 0 15px 15px;
 				position: relative;
 
+				span {
+					pointer-events: none;
+				}
+
 				.icon {
 					position: absolute;
 					left: 16px;
