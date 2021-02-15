@@ -16,17 +16,17 @@ if ( function_exists( 'wc' ) ) {
 	$default_shop_page_sidebar_position = in_array( $shop_page_sidebar_position_meta, array( '', 'inherit' ), true ) ? get_theme_mod( 'yith_proteo_shop_page_sidebar_position', 'right' ) : $shop_page_sidebar_position_meta;
 	$shop_page_sidebar_chooser_meta     = get_post_meta( $shop_page_id, 'sidebar_chooser', true );
 	$default_shop_page_sidebar_chooser  = in_array( $shop_page_sidebar_chooser_meta, array( '', 'inherit' ), true ) ? get_theme_mod( 'yith_proteo_shop_page_default_sidebar', 'sidebar-1' ) : $shop_page_sidebar_chooser_meta;
-}
 
-// WooCommerce shop page support.
-if ( function_exists( 'wc' ) && is_shop() && get_theme_mod( 'yith_proteo_shop_page_sidebar_position', $default_shop_page_sidebar_position ) === 'no-sidebar' ) {
-	return;
-} elseif ( function_exists( 'wc' ) && is_product_category() && get_theme_mod( 'yith_proteo_product_category_page_sidebar_position', 'no-sidebar' ) === 'no-sidebar' ) {
-	return;
-} elseif ( function_exists( 'wc' ) && is_product_tag() && get_theme_mod( 'yith_proteo_product_tag_page_sidebar_position', 'no-sidebar' ) === 'no-sidebar' ) {
-	return;
-} elseif ( function_exists( 'wc' ) && is_product_taxonomy() && ! is_product_category() && get_theme_mod( 'yith_proteo_product_tax_page_sidebar_position', 'no-sidebar' ) === 'no-sidebar' ) {
-	return;
+	// WooCommerce shop page support.
+	if ( is_product_category() && ! yith_proteo_is_shop_filterd() && get_theme_mod( 'yith_proteo_product_category_page_sidebar_position', 'no-sidebar' ) === 'no-sidebar' ) {
+		return;
+	} elseif ( is_product_tag() && ! yith_proteo_is_shop_filterd() && get_theme_mod( 'yith_proteo_product_tag_page_sidebar_position', 'no-sidebar' ) === 'no-sidebar' ) {
+		return;
+	} elseif ( is_product_taxonomy() && ! is_product_category() && ! yith_proteo_is_shop_filterd() && get_theme_mod( 'yith_proteo_product_tax_page_sidebar_position', 'no-sidebar' ) === 'no-sidebar' ) {
+		return;
+	} elseif ( is_shop() && get_theme_mod( 'yith_proteo_shop_page_sidebar_position', $default_shop_page_sidebar_position ) === 'no-sidebar' ) {
+		return;
+	}
 }
 
 ?>

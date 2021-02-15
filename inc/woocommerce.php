@@ -808,3 +808,14 @@ if ( ! function_exists( 'yith_proteo_add_view_product_button' ) ) {
 		echo '<a href="' . esc_url( $link ) . '" class="' . esc_attr( $button_type ) . ' view-details woocommerce-LoopProduct-link woocommerce-loop-product__link">' . esc_html( apply_filters( 'yith_proteo_loop_product_view_details_text', __( 'View details', 'yith-proteo' ) ) ) . '</a>';
 	}
 }
+
+if ( ! function_exists( 'yith_proteo_is_shop_filterd' ) ) {
+	/**
+	 * Checks whether is filtered shop
+	 *
+	 * @return bool
+	 */
+	function yith_proteo_is_shop_filterd() {
+		return is_shop() && ! ! WC_Query::get_layered_nav_chosen_attributes();
+	}
+}
