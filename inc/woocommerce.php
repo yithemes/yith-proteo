@@ -816,6 +816,16 @@ if ( ! function_exists( 'yith_proteo_is_shop_filterd' ) ) {
 	 * @return bool
 	 */
 	function yith_proteo_is_shop_filterd() {
-		return is_shop() && ! ! WC_Query::get_layered_nav_chosen_attributes();
+		$is_filtered = ! ! WC_Query::get_layered_nav_chosen_attributes();
+
+		/**
+		 * YITH WooCommerce Ajax Product filter compatibility.
+		 */
+		if ( defined( 'YITH_WCAN' ) ) {
+			$is_filtered = $is_filtered || YITH_WCAN_Query()->should_filter();
+		}
+
+		return apply_filters( 'yith_proteo_is_shop_filterd', is_shop() && $is_filtered );
 	}
 }
+
