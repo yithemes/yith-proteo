@@ -158,6 +158,10 @@
 				.quantity {
 					max-width: 100px;
 
+					&.hidden {
+						display: none;
+					}
+
 					input {
 						font-size: var(--proteo-single_product_quantity_input_font_size, 2.5rem);
 					}

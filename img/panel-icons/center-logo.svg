@@ -1,17 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="62px" height="53px" viewBox="0 0 62 53" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>Group 8</title>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Filter-presets" transform="translate(-110.000000, -592.000000)">
-            <g id="Group-8" transform="translate(111.000000, 592.000000)">
-                <rect id="Rectangle" fill="#8E8E8E" x="18" y="0" width="20" height="11" rx="2"></rect>
-                <rect id="Rectangle" stroke="#CBCBCB" fill="#E9E9E9" x="0" y="27" width="60" height="25" rx="2"></rect>
-                <rect id="Rectangle" stroke="#8E8E8E" fill="#E9E9E9" x="8" y="18" width="6" height="1" rx="0.5"></rect>
-                <rect id="Rectangle" stroke="#8E8E8E" fill="#E9E9E9" x="18" y="18" width="6" height="1" rx="0.5"></rect>
-                <rect id="Rectangle" stroke="#8E8E8E" fill="#E9E9E9" x="28" y="18" width="6" height="1" rx="0.5"></rect>
-                <rect id="Rectangle" stroke="#8E8E8E" fill="#E9E9E9" x="38" y="18" width="6" height="1" rx="0.5"></rect>
-                <rect id="Rectangle" stroke="#8E8E8E" fill="#E9E9E9" x="48" y="18" width="6" height="1" rx="0.5"></rect>
-            </g>
-        </g>
-    </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="62" height="53"  fill-rule="evenodd" xmlns:v="https://vecta.io/nano"><rect fill="#8e8e8e" x="19" width="20" height="11" rx="2"/><g fill="#e9e9e9"><rect stroke="#cbcbcb" x="1" y="27" width="60" height="25" rx="2"/><g stroke="#8e8e8e"><rect x="9" y="18" width="6" height="1" rx=".5"/><rect x="19" y="18" width="6" height="1" rx=".5"/><rect x="29" y="18" width="6" height="1" rx=".5"/><rect x="39" y="18" width="6" height="1" rx=".5"/><rect x="49" y="18" width="6" height="1" rx=".5"/></g></g></svg>
