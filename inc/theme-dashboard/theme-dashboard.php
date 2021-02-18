@@ -33,6 +33,12 @@ $requested_plugins = array(
 		'required' => true,
 		'init'     => 'yith-proteo-toolkit/yith-proteo-toolkit.php',
 	),
+	array(
+		'name'     => 'YITH Slider for page builders',
+		'slug'     => 'yith-slider-for-page-builders',
+		'required' => false,
+		'init'     => 'yith-slider-for-page-builders/yith-slider-for-page-builders.php',
+	),
 );
 
 $is_proteo_toolkit_installed = file_exists( WP_PLUGIN_DIR . '/yith-proteo-toolkit/yith-proteo-toolkit.php' );
