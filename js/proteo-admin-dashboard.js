@@ -3,8 +3,6 @@
  */
 
 (function($){
-	console.log();
-
 	ProteoAdminDashboard = {
 
 		init: function()
