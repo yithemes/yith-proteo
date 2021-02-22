@@ -964,6 +964,102 @@
 			wp.customize.control('yith_proteo_footer_sidebars_side_by_side' ).toggle( false );
 		}
 
+
+		/**
+		 * Button style 1 live preview
+		 */
+		wp.customize('yith_proteo_button_style_1_bg_color', function (value) {
+			value.bind( function ( newval ) {
+				var style = $('<style>.yith-proteo-button-preview.button-style-1:not(:hover) { background-color: ' + newval + '; }</style>');
+				$('html > head').append(style);
+			});
+		});
+		wp.customize('yith_proteo_button_style_1_border_color', function (value) {
+			value.bind( function ( newval ) {
+				var style = $('<style>.yith-proteo-button-preview.button-style-1:not(:hover) { border-color: ' + newval + '; }</style>');
+				$('html > head').append(style);
+			});
+		});
+		wp.customize('yith_proteo_button_style_1_text_color', function (value) {
+			value.bind( function ( newval ) {
+				var style = $('<style>.yith-proteo-button-preview.button-style-1:not(:hover) { color: ' + newval + '; }</style>');
+				$('html > head').append(style);
+			});
+		});
+		wp.customize('yith_proteo_button_style_1_bg_color_hover', function (value) {
+			value.bind( function ( newval ) {
+				var style = $('<style>.yith-proteo-button-preview.button-style-1:hover { background-color: ' + newval + '; }</style>');
+				$('html > head').append(style);
+			});
+		});
+		wp.customize('yith_proteo_button_style_1_border_color_hover', function (value) {
+			value.bind( function ( newval ) {
+				var style = $('<style>.yith-proteo-button-preview.button-style-1:hover { border-color: ' + newval + '; }</style>');
+				$('html > head').append(style);
+			});
+		});
+		wp.customize('yith_proteo_button_style_1_text_color_hover', function (value) {
+			value.bind( function ( newval ) {
+				var style = $('<style>.yith-proteo-button-preview.button-style-1:hover { color: ' + newval + '; }</style>');
+				$('html > head').append(style);
+			});
+		});
+
+		/**
+		 * Button style 2 live preview
+		 */
+		wp.customize('yith_proteo_button_style_2_bg_color_1', function (value) {
+			value.bind( function ( newval ) {
+				var secondVal = wp.customize('yith_proteo_button_style_2_bg_color_2').get();
+				var style = $('<style>.yith-proteo-button-preview.button-style-2:not(:hover) { background: linear-gradient( 180deg , ' + newval + ' 0%, '+ secondVal +' 100%); }</style>');
+				$('html > head').append(style);
+			});
+		});
+		wp.customize('yith_proteo_button_style_2_bg_color_2', function (value) {
+			value.bind( function ( newval ) {
+				var firstVal = wp.customize('yith_proteo_button_style_2_bg_color_1').get();
+				var style = $('<style>.yith-proteo-button-preview.button-style-2:not(:hover) { background: linear-gradient( 180deg , ' + firstVal + ' 0%, '+ newval +' 100%); }</style>');
+				$('html > head').append(style);
+			});
+		});
+		wp.customize('yith_proteo_button_style_2_border_color', function (value) {
+			value.bind( function ( newval ) {
+				var style = $('<style>.yith-proteo-button-preview.button-style-2:not(:hover) { border-color: ' + newval + '; }</style>');
+				$('html > head').append(style);
+			});
+		});
+		wp.customize('yith_proteo_button_style_2_text_color', function (value) {
+			value.bind( function ( newval ) {
+				var style = $('<style>.yith-proteo-button-preview.button-style-2:not(:hover) { color: ' + newval + '; }</style>');
+				$('html > head').append(style);
+			});
+		});
+		wp.customize('yith_proteo_button_style_2_bg_color_hover', function (value) {
+			value.bind( function ( newval ) {
+				var style = $('<style>.yith-proteo-button-preview.button-style-2:hover { background: ' + newval + '; }</style>');
+				$('html > head').append(style);
+			});
+		});
+		wp.customize('yith_proteo_button_style_2_border_color_hover', function (value) {
+			value.bind( function ( newval ) {
+				var style = $('<style>.yith-proteo-button-preview.button-style-2:hover { border-color: ' + newval + '; }</style>');
+				$('html > head').append(style);
+			});
+		});
+		wp.customize('yith_proteo_button_style_2_text_color_hover', function (value) {
+			value.bind( function ( newval ) {
+				var style = $('<style>.yith-proteo-button-preview.button-style-2:hover { color: ' + newval + '; }</style>');
+				$('html > head').append(style);
+			});
+		});
+
+		wp.customize('yith_proteo_buttons_border_radius', function (value) {
+			value.bind( function ( newval ) {
+				var style = $('<style>.yith-proteo-button-preview.button-style-1, .yith-proteo-button-preview.button-style-1 { border-radius: ' + newval + 'px; }</style>');
+				$('html > head').append(style);
+			});
+		});
+
 	});
 
 })(jQuery);
