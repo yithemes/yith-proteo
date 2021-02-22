@@ -4,7 +4,7 @@ Tags: one-column, two-columns, left-sidebar, right-sidebar, wide-blocks, accessi
 Requires at least: 4.9.6
 Tested up to: WordPress 5.6
 Requires PHP: 5.6
-Stable tag: 1.5.0
+Stable tag: 1.5.1
 YITH Proteo WordPress Theme, Copyright 2020 YITH
 YITH Proteo is distributed under the terms of the GNU GPL
 License: GPLv2 or later
@@ -25,6 +25,15 @@ Proteo is a modern, fast and fully customizable WooCommerce theme. Designed and 
 == Frequently Asked Questions ==
 
 == Changelog ==
+
+= 1.5.1 - February 11 2021 =
+* Optimize all bundled images
+* Improve performance minifying main theme.js script
+* Improve display of out of stock products
+* Fix customizer buttons preview
+* Fix new spacing options for mobile layouts
+* Fix sidebar handling for filtered shop
+* Dev: added yith_proteo_woocommmerce_pages_title_layout trigger to manually fix page title layout
 
 = 1.5.0 - February 11 2021 =
 * New options to customize cart icon
