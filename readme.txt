@@ -26,7 +26,7 @@ Proteo is a modern, fast and fully customizable WooCommerce theme. Designed and 
 
 == Changelog ==
 
-= 1.5.1 - February 11 2021 =
+= 1.5.1 - February 22 2021 =
 * Optimize all bundled images
 * Improve performance minifying main theme.js script
 * Improve display of out of stock products

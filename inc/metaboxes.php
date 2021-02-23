@@ -98,7 +98,7 @@ add_action( 'add_meta_boxes', 'yith_proteo_remove_header_and_footer_add_meta_box
  */
 function yith_proteo_manage_page_content_spacing_add_meta_box() {
 	add_meta_box(
-		'yith_proteo_header_footer',
+		'yith_proteo_content_spacing',
 		__( 'Page content', 'yith-proteo' ),
 		'yith_proteo_manage_page_content_spacing_html',
 		array( 'page' ),
