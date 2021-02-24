@@ -5257,7 +5257,8 @@ input[type=submit],
 .button-style-1 a,
 input[type=file]::-webkit-file-upload-button,
 body.update-cart-button-style table.cart tbody tr td.actions button[name=update_cart],
-body.yith-proteo-add-to-cart-style-button_style_1 .wc-block-grid__product .add_to_cart_button {
+body.yith-proteo-add-to-cart-style-button_style_1 .wc-block-grid__product .add_to_cart_button,
+body.yith-proteo-add-to-cart-style-button_style_1 .added_to_cart.wc-forward {
   border: 1px solid;
   border-color: var(--proteo-button_1_border_color, #448a85);
   background: var(--proteo-button_1_bg_color, #448a85);
@@ -5285,7 +5286,8 @@ input[type=submit]:hover,
 .button-style-1 a:hover,
 input[type=file]::-webkit-file-upload-button:hover,
 body.update-cart-button-style table.cart tbody tr td.actions button[name=update_cart]:hover,
-body.yith-proteo-add-to-cart-style-button_style_1 .wc-block-grid__product .add_to_cart_button:hover {
+body.yith-proteo-add-to-cart-style-button_style_1 .wc-block-grid__product .add_to_cart_button:hover,
+body.yith-proteo-add-to-cart-style-button_style_1 .added_to_cart.wc-forward:hover {
   border-color: var(--proteo-button_1_border_hover_color, #4ac4aa);
   background: var(--proteo-button_1_bg_hover_color, #1a4e43);
   background-color: var(--proteo-button_1_bg_hover_color, #1a4e43);
@@ -8310,13 +8312,25 @@ body.yith-proteo-product-loop-add-to-cart-position-hover ul.wc-block-grid__produ
 body.yith-proteo-product-loop-add-to-cart-position-hover ul.products li.product .yith-proteo-product-loop-image a:not(.woocommerce-loop-product__link),
 body.yith-proteo-product-loop-add-to-cart-position-hover ul.products li.product .yith-proteo-product-loop-image .wc-block-grid__product-add-to-cart,
 body.yith-proteo-product-loop-add-to-cart-position-hover ul.products li.product .yith-proteo-product-loop-image .view-details,
+body.yith-proteo-product-loop-add-to-cart-position-hover ul.products li.product .yith-proteo-product-loop-image .added_to_cart.wc-forward,
 body.yith-proteo-product-loop-add-to-cart-position-hover ul.wc-block-grid__products li.wc-block-grid__product .wc-block-grid__product-image a:not(.woocommerce-loop-product__link),
 body.yith-proteo-product-loop-add-to-cart-position-hover ul.wc-block-grid__products li.wc-block-grid__product .wc-block-grid__product-image .wc-block-grid__product-add-to-cart,
-body.yith-proteo-product-loop-add-to-cart-position-hover ul.wc-block-grid__products li.wc-block-grid__product .wc-block-grid__product-image .view-details {
+body.yith-proteo-product-loop-add-to-cart-position-hover ul.wc-block-grid__products li.wc-block-grid__product .wc-block-grid__product-image .view-details,
+body.yith-proteo-product-loop-add-to-cart-position-hover ul.wc-block-grid__products li.wc-block-grid__product .wc-block-grid__product-image .added_to_cart.wc-forward {
   position: absolute;
   z-index: 101;
   opacity: 0;
   bottom: initial;
+}
+body.yith-proteo-product-loop-add-to-cart-position-hover ul.products li.product .yith-proteo-product-loop-image a:not(.woocommerce-loop-product__link).added,
+body.yith-proteo-product-loop-add-to-cart-position-hover ul.products li.product .yith-proteo-product-loop-image .wc-block-grid__product-add-to-cart.added,
+body.yith-proteo-product-loop-add-to-cart-position-hover ul.products li.product .yith-proteo-product-loop-image .view-details.added,
+body.yith-proteo-product-loop-add-to-cart-position-hover ul.products li.product .yith-proteo-product-loop-image .added_to_cart.wc-forward.added,
+body.yith-proteo-product-loop-add-to-cart-position-hover ul.wc-block-grid__products li.wc-block-grid__product .wc-block-grid__product-image a:not(.woocommerce-loop-product__link).added,
+body.yith-proteo-product-loop-add-to-cart-position-hover ul.wc-block-grid__products li.wc-block-grid__product .wc-block-grid__product-image .wc-block-grid__product-add-to-cart.added,
+body.yith-proteo-product-loop-add-to-cart-position-hover ul.wc-block-grid__products li.wc-block-grid__product .wc-block-grid__product-image .view-details.added,
+body.yith-proteo-product-loop-add-to-cart-position-hover ul.wc-block-grid__products li.wc-block-grid__product .wc-block-grid__product-image .added_to_cart.wc-forward.added {
+  display: none;
 }
 body.yith-proteo-product-loop-add-to-cart-position-hover ul.products li.product .yith-proteo-product-loop-image .view-details,
 body.yith-proteo-product-loop-add-to-cart-position-hover ul.wc-block-grid__products li.wc-block-grid__product .wc-block-grid__product-image .view-details {

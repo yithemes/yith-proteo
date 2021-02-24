@@ -241,11 +241,16 @@ body {
 
 			a:not(.woocommerce-loop-product__link),
 			.wc-block-grid__product-add-to-cart,
-			.view-details {
+			.view-details, 
+			.added_to_cart.wc-forward {
 				position: absolute;
 				z-index: 101;
 				opacity: 0;
 				bottom: initial;
+
+				&.added {
+					display: none;
+				}
 			}
 
 			.view-details {
