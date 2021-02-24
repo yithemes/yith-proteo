@@ -112,7 +112,7 @@
 
 	function yith_proteo_inizialize_html_elements(){
 		if (typeof $.fn.selectWoo !== 'undefined' && yith_proteo.yith_proteo_use_enanched_selects === 'yes') {
-			$('select').filter(':visible').selectWoo(
+			$('select:not(.yith-proteo-standard-select)').filter(':visible').selectWoo(
 				{
 					'minimumResultsForSearch': yith_proteo.select2minimumResultsForSearch
 				}
