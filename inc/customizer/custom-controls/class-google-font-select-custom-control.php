@@ -78,7 +78,8 @@ class Google_Font_Select_Custom_Control extends WP_Customize_Control {
 	 * Enqueue our scripts and styles
 	 */
 	public function enqueue() {
-		wp_enqueue_script( 'yith-proteo-gfont-select-script', get_template_directory_uri() . '/inc/customizer/custom-controls/font-selector-assets/js/select.js', array( 'jquery' ), '4.0.13', true );
+		$suffix = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
+		wp_enqueue_script( 'yith-proteo-gfont-select-script', get_template_directory_uri() . '/inc/customizer/custom-controls/font-selector-assets/js/select' . $suffix . '.js', array( 'jquery' ), '4.0.13', true );
 		wp_enqueue_style( 'yith-proteo-gfont-select-style', get_template_directory_uri() . '/inc/customizer/custom-controls/font-selector-assets/css/select.css', array(), '4.0.13', 'all' );
 	}
 	/**
