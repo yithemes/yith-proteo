@@ -10,7 +10,7 @@
 		$('header + .yith-slider .yith-slider-slide').css('padding-top', height);
 	}
 
-	$(window).resize(headerheightfix);
+	$(window).on( 'resize', headerheightfix );
 
 	headerheightfix();
 
@@ -22,7 +22,7 @@
 			site_content_top_spacing = parseInt( yith_proteo.yith_proteo_site_content_top_spacing );
 			stickyOffset = 0;
 		if (stickyOffset !== false) {
-			$(window).scroll(function () {
+			$(window).on( 'scroll', function () {
 				var sticky = site_header,
 					scroll = $(window).scrollTop(),
 					content = $('header + #content');
@@ -156,7 +156,7 @@
 		});
 		$('html').add('body').addClass('mobile-menu-opened');
 		// Focus on the Full Screen Search Input Field
-		$('#full-screen-search input').focus();
+		$('#full-screen-search input').trigger('focus');
 	});
 
 	// function to close full screen search
@@ -184,7 +184,7 @@
 
 
 	// Hide the Full Screen search when the user presses the escape key
-	$(document).keydown(function (event) {
+	$(document).on( 'keydown', function (event) {
 		// Don't do anything if the Full Screen Search is not displayed
 		if (!$('#full-screen-search').hasClass('open')) {
 			return;
@@ -212,7 +212,7 @@
 			$('.single-product div.product .woocommerce-product-gallery .flex-control-thumbs li').each(function () {
 				$(this).height($(this).width());
 			});
-		}).resize();
+		}).trigger('resize');
 	});
 
 	if(window.matchMedia("(pointer: coarse)").matches) {
@@ -234,7 +234,7 @@
 	
 
 	// Modals
-	$('a.open-modal').click(function (ev) {
+	$('a.open-modal').on( 'click',function (ev) {
 		$(this).modal({
 			fadeDuration: 250
 		});
@@ -287,7 +287,7 @@
 		} else {
 			$('.yith-proteo-my-account-sidebar').after($('.woocommerce-MyAccount-content'));
 		}
-	}).resize();
+	}).trigger('resize');
 
 
 	// Lazy loading images
