@@ -48,7 +48,7 @@
 			$wp_customize,
 			'yith_proteo_sale_badge_text_color',
 			array(
-				'label'   => esc_html__( 'Store notice text color', 'yith-proteo' ),
+				'label'   => esc_html__( 'Sale badge text color', 'yith-proteo' ),
 				'section' => 'yith_proteo_sale_badge_management',
 			)
 		)
