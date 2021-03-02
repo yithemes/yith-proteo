@@ -763,11 +763,31 @@ if ( ! function_exists( 'yith_proteo_loop_product_image_wrap_end' ) ) {
  */
 if ( 'hover' === get_theme_mod( 'yith_proteo_products_loop_add_to_cart_position', 'classic' ) ) {
 	remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10 );
-	add_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_add_to_cart', 50 );
+	add_action( 'woocommerce_before_shop_loop_item_title', 'yith_proteo_products_loop_add_to_cart_hover_position', 50 );
 
 	remove_action( 'woocommerce_before_shop_loop_item', 'woocommerce_template_loop_product_link_open', 10 );
 	add_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_product_link_open', 110 );
 }
+
+if( ! function_exists( 'yith_proteo_products_loop_add_to_cart_hover_position' ) ) {
+	/**
+	 * Template for products loop add to cart when position is on hover
+	 *
+ 	 * @author Francesco Licandro
+	 * @return void
+	 */
+	function yith_proteo_products_loop_add_to_cart_hover_position() {
+		// Open wrapper.
+		echo '<div class="yith-proteo-product-loop-actions wp-block-button wc-block-grid__product-add-to-cart">';
+		// Default WooCommerce add to cart.
+		woocommerce_template_loop_add_to_cart();
+		// Let's third party add actions.
+		do_action( 'yith_proteo_products_loop_add_to_cart_actions' );
+		// Close wrapper.
+		echo '</div>';
+	}
+}
+
 
 add_filter( 'body_class', 'yith_proteo_products_loop_add_to_cart_position_css_class' );
 
@@ -789,11 +809,10 @@ if ( ! function_exists( 'yith_proteo_products_loop_add_to_cart_position_css_clas
 }
 
 if ( 'yes' === get_theme_mod( 'yith_proteo_product_loop_view_details_enable', 'no' ) ) {
-	add_action( 'woocommerce_after_shop_loop_item', 'yith_proteo_add_view_product_button', 10 );
-
 	if ( 'hover' === get_theme_mod( 'yith_proteo_products_loop_add_to_cart_position', 'classic' ) ) {
-		remove_action( 'woocommerce_after_shop_loop_item', 'yith_proteo_add_view_product_button', 10 );
-		add_action( 'woocommerce_before_shop_loop_item_title', 'yith_proteo_add_view_product_button', 60 );
+		add_action( 'yith_proteo_products_loop_add_to_cart_actions', 'yith_proteo_add_view_product_button', 60 );
+	} else {
+		add_action( 'woocommerce_after_shop_loop_item', 'yith_proteo_add_view_product_button', 10 );
 	}
 }
 
