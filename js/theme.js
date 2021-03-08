@@ -217,7 +217,7 @@
 
 	if(window.matchMedia("(pointer: coarse)").matches) {
 		// touchscreen
-		$('.menu-item-has-children > a').click(function (ev) {
+		$('.menu-item-has-children > a').on( 'click',function (ev) {
 			var t = $(this);
 			if (t.hasClass('submenu-opened')) {
 				return true;
