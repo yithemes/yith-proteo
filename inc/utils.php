@@ -248,3 +248,20 @@ if ( class_exists( 'RevSlider' ) && ! function_exists( 'yith_proteo_get_all_revo
 		return wp_list_pluck( $rev_sliders_obj, 'alias' );
 	}
 }
+
+if ( ! function_exists( 'yith_proteo_show_site_title_default_value' ) ) {
+	/**
+	 * Calculate default value for show site title option
+	 *
+	 * @return string
+	 */
+	function yith_proteo_show_site_title_default_value() {
+		$old_option_value = get_theme_mod( 'yith_proteo_display_header_text', 'yes' );
+		$has_logo_image   = has_custom_logo();
+		if ( ! $has_logo_image && 'yes' === $old_option_value ) {
+			return 'yes';
+		} else {
+			return 'no';
+		}
+	}
+}
