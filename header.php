@@ -66,9 +66,10 @@ global $post;
 						?>
 						<h1 class="site-title">
 							<?php
-							if ( has_custom_logo() ) {
+							if ( has_custom_logo() && 'yes' === get_theme_mod( 'yith_proteo_display_site_logo', get_theme_mod( 'yith_proteo_display_header_text', 'yes' ) ) ) {
 								the_custom_logo();
-							} else {
+							}
+							if ( 'yes' === get_theme_mod( 'yith_proteo_display_site_title', yith_proteo_show_site_title_default_value() ) ) {
 								?>
 								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 									<?php bloginfo( 'name' ); ?>
@@ -76,16 +77,19 @@ global $post;
 							<?php } ?>
 						</h1>
 						<?php
-						if ( $yith_proteo_description || is_customize_preview() ) {
+						if ( $yith_proteo_description && 'yes' === get_theme_mod( 'yith_proteo_display_tagline', get_theme_mod( 'yith_proteo_display_header_text', 'yes' ) ) ) {
 							?>
 							<p class="site-description"><?php echo $yith_proteo_description; /* phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped */ ?></p>
 							<?php
 						}
 					} else {
-						if ( has_custom_logo() ) {
+						if ( has_custom_logo() && 'yes' === get_theme_mod( 'yith_proteo_display_site_logo', get_theme_mod( 'yith_proteo_display_header_text', 'yes' ) ) ) {
 							?>
 							<p class="site-title"><?php the_custom_logo(); ?></p>
-						<?php } else { ?>
+							<?php
+						}
+						if ( 'yes' === get_theme_mod( 'yith_proteo_display_site_title', yith_proteo_show_site_title_default_value() ) ) { 
+							?>
 							<p class="site-title">
 								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 									<?php bloginfo( 'name' ); ?>
@@ -93,7 +97,7 @@ global $post;
 							</p>
 								<?php
 						}
-						if ( $yith_proteo_description || is_customize_preview() ) {
+						if ( $yith_proteo_description && 'yes' === get_theme_mod( 'yith_proteo_display_tagline', get_theme_mod( 'yith_proteo_display_header_text', 'yes' ) ) ) {
 							?>
 							<p class="site-description"><?php echo $yith_proteo_description; /* phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped */ ?></p>
 							<?php

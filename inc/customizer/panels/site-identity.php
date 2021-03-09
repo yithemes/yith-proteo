@@ -5,9 +5,9 @@
  * @package yith-proteo
  */
 
-// Site Icon managment.
+// Site logo managment.
 $wp_customize->add_setting(
-	'yith_proteo_display_site_title_group_title',
+	'yith_proteo_site_logo_group_title',
 	array(
 		'default'           => '',
 		'transport'         => 'postMessage',
@@ -17,21 +17,21 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
 	new WP_Customize_Notice(
 		$wp_customize,
-		'yith_proteo_display_site_title_group_title',
+		'yith_proteo_site_logo_group_title',
 		array(
-			'label'    => esc_html__( 'Display Site Title and Tagline', 'yith-proteo' ),
+			'label'    => esc_html__( 'Site logo', 'yith-proteo' ),
 			'section'  => 'title_tagline',
 			'priority' => 5,
 		)
 	)
 );
 
-// Move default display site title option on top.
+// Display Site logo.
 if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
 	$wp_customize->add_setting(
-		'yith_proteo_display_header_text',
+		'yith_proteo_display_site_logo',
 		array(
-			'default'           => 'yes',
+			'default'           => get_theme_mod( 'yith_proteo_display_header_text', 'yes' ),
 			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
 		)
 	);
@@ -39,37 +39,17 @@ if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
 	$wp_customize->add_control(
 		new Customizer_Control_Yes_No(
 			$wp_customize,
-			'yith_proteo_display_header_text',
+			'yith_proteo_display_site_logo',
 			array(
-				'label'       => esc_html__( 'Display Site Title and Tagline', 'yith-proteo' ),
+				'label'       => esc_html__( 'Display logo', 'yith-proteo' ),
 				'section'     => 'title_tagline',
-				'description' => esc_html__( 'Choose whether to show the site title and tagline or not.', 'yith-proteo' ),
+				'description' => esc_html__( 'Choose whether to show the site logo.', 'yith-proteo' ),
 				'priority'    => 5,
 			)
 		)
 	);
 }
 
-// Site logo and title managment.
-$wp_customize->add_setting(
-	'yith_proteo_site_title_group_title',
-	array(
-		'default'           => '',
-		'transport'         => 'postMessage',
-		'sanitize_callback' => 'wp_kses_post',
-	)
-);
-$wp_customize->add_control(
-	new WP_Customize_Notice(
-		$wp_customize,
-		'yith_proteo_site_title_group_title',
-		array(
-			'label'    => esc_html__( 'Logo and title', 'yith-proteo' ),
-			'section'  => 'title_tagline',
-			'priority' => 5,
-		)
-	)
-);
 // Custom logo max width.
 $wp_customize->add_setting(
 	'yith_proteo_custom_logo_max_width',
@@ -94,6 +74,49 @@ $wp_customize->add_control(
 		)
 	)
 );
+
+// Site title managment.
+$wp_customize->add_setting(
+	'yith_proteo_site_title_group_title',
+	array(
+		'default'           => '',
+		'transport'         => 'postMessage',
+		'sanitize_callback' => 'wp_kses_post',
+	)
+);
+$wp_customize->add_control(
+	new WP_Customize_Notice(
+		$wp_customize,
+		'yith_proteo_site_title_group_title',
+		array(
+			'label'   => esc_html__( 'Site title', 'yith-proteo' ),
+			'section' => 'title_tagline',
+		)
+	)
+);
+
+// Display Site title.
+if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
+	$wp_customize->add_setting(
+		'yith_proteo_display_site_title',
+		array(
+			'default'           => yith_proteo_show_site_title_default_value(),
+			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+		)
+	);
+
+	$wp_customize->add_control(
+		new Customizer_Control_Yes_No(
+			$wp_customize,
+			'yith_proteo_display_site_title',
+			array(
+				'label'       => esc_html__( 'Display site title', 'yith-proteo' ),
+				'section'     => 'title_tagline',
+				'description' => esc_html__( 'Choose whether to show the site title.', 'yith-proteo' ),
+			)
+		)
+	);
+}
 
 $wp_customize->add_setting(
 	'blogname',
@@ -233,6 +256,30 @@ $wp_customize->add_control(
 		)
 	)
 );
+
+// Display Tagline.
+if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
+	$wp_customize->add_setting(
+		'yith_proteo_display_tagline',
+		array(
+			'default'           => get_theme_mod( 'yith_proteo_display_header_text', 'yes' ),
+			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+		)
+	);
+
+	$wp_customize->add_control(
+		new Customizer_Control_Yes_No(
+			$wp_customize,
+			'yith_proteo_display_tagline',
+			array(
+				'label'       => esc_html__( 'Display Tagline', 'yith-proteo' ),
+				'section'     => 'title_tagline',
+				'description' => esc_html__( 'Choose whether to show the tagline.', 'yith-proteo' ),
+			)
+		)
+	);
+}
+
 $wp_customize->add_setting(
 	'blogdescription',
 	array(
@@ -387,7 +434,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_favicon_group_title',
 		array(
-			'label'   => esc_html__( 'Site favicon', 'yith-proteo' ),
+			'label'   => esc_html__( 'Favicon', 'yith-proteo' ),
 			'section' => 'title_tagline',
 		)
 	)
