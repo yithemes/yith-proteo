@@ -49,7 +49,7 @@ global $post;
 			$slider = get_post_meta( $post->ID, 'header_slider', true );
 		}
 	}
-	if ( 'on' !== $hide_header ) :
+	if ( 'on' !== $hide_header ) {
 		?>
 		<header id="masthead"
 				class="site-header <?php echo esc_attr( get_theme_mod( 'yith_proteo_header_layout', 'left_logo_navigation_inline' ) ); ?> <?php echo esc_attr( get_theme_mod( 'yith_proteo_header_fullwidth', 'no' ) === 'yes' ? 'fullwidth-header' : '' ); ?> <?php echo esc_attr( $slider && '' !== $slider ? 'with-header-slider' : '' ); ?>" <?php yith_proteo_custom_header_style(); ?>>
@@ -59,50 +59,49 @@ global $post;
 			}
 			?>
 			<div class="container header-contents <?php echo esc_attr( get_theme_mod( 'yith_proteo_mobile_menu_opener_position', 'right' ) === 'left' ? 'left-toggle' : 'right-toggle' ); ?>">
-				<?php if ( yith_proteo_display_header_text() ) : ?>
+				<?php if ( yith_proteo_display_header_text() ) { ?>
 				<div class="site-branding <?php echo esc_attr( $yith_proteo_tagline_position ); ?>">
 					<?php
-					if ( is_front_page() && is_home() ) :
+					if ( is_front_page() && is_home() ) {
 						?>
 						<h1 class="site-title">
 							<?php
-							if ( has_custom_logo() ) :
+							if ( has_custom_logo() ) {
 								the_custom_logo();
-							else :
+							} else {
 								?>
 								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 									<?php bloginfo( 'name' ); ?>
 								</a>
-							<?php endif; ?>
+							<?php } ?>
 						</h1>
 						<?php
-						if ( $yith_proteo_description || is_customize_preview() ) :
+						if ( $yith_proteo_description || is_customize_preview() ) {
 							?>
 							<p class="site-description"><?php echo $yith_proteo_description; /* phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped */ ?></p>
 							<?php
-						endif;
-
-						else :
-							if ( has_custom_logo() ) :
-								?>
-						<p class="site-title"><?php the_custom_logo(); ?></p>
-						<?php else : ?>
+						}
+					} else {
+						if ( has_custom_logo() ) {
+							?>
+							<p class="site-title"><?php the_custom_logo(); ?></p>
+						<?php } else { ?>
 							<p class="site-title">
 								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 									<?php bloginfo( 'name' ); ?>
 								</a>
 							</p>
 								<?php
-						endif;
-						if ( $yith_proteo_description || is_customize_preview() ) :
+						}
+						if ( $yith_proteo_description || is_customize_preview() ) {
 							?>
 							<p class="site-description"><?php echo $yith_proteo_description; /* phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped */ ?></p>
 							<?php
-						endif;
-					endif;
-						?>
+						}
+					}
+					?>
 				</div><!-- .site-branding -->
-				<?php endif; ?>
+				<?php } ?>
 
 				<nav id="site-navigation" class="main-navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
@@ -141,7 +140,7 @@ global $post;
 				</nav><!-- #site-navigation -->
 				<div class="header-sidebar">
 					<?php
-					if ( get_theme_mod( 'yith_proteo_header_search_widget', 'no' ) === 'yes' ) :
+					if ( get_theme_mod( 'yith_proteo_header_search_widget', 'no' ) === 'yes' ) {
 						the_widget(
 							'WP_Widget_Search',
 							array(),
@@ -150,10 +149,10 @@ global $post;
 								'after_widget'  => '</section>',
 							)
 						);
-					endif;
+					}
 					?>
 					<?php
-					if ( get_theme_mod( 'yith_proteo_header_account_widget', 'no' ) === 'yes' ) :
+					if ( get_theme_mod( 'yith_proteo_header_account_widget', 'no' ) === 'yes' ) {
 						the_widget(
 							'YITH_Proteo_Account_Widget',
 							array(
@@ -166,10 +165,10 @@ global $post;
 								'after_widget'  => '</section>',
 							)
 						);
-					endif;
+					}
 					?>
 					<?php
-					if ( class_exists( 'woocommerce' ) && get_theme_mod( 'yith_proteo_header_cart_widget', 'no' ) === 'yes' ) :
+					if ( class_exists( 'woocommerce' ) && get_theme_mod( 'yith_proteo_header_cart_widget', 'no' ) === 'yes' ) {
 						the_widget(
 							'WC_Widget_Cart',
 							array(
@@ -180,19 +179,17 @@ global $post;
 								'after_widget'  => '</section>',
 							)
 						);
-					endif;
+					}
 					?>
-				<?php if ( 'yes' === get_theme_mod( 'yith_proteo_show_header_sidebar', 'yes' ) ) : ?>
+				<?php if ( 'yes' === get_theme_mod( 'yith_proteo_show_header_sidebar', 'yes' ) ) { ?>
 					<?php dynamic_sidebar( 'header-sidebar' ); ?>
-				<?php endif; ?>
+				<?php } ?>
 
 				</div>
 			</div>
 		</header><!-- #masthead -->
-	<?php endif; ?>
-
+	<?php } ?>
 	<?php
-
 	if ( class_exists( 'RevSliderSlider' ) && $slider && '' !== $slider && in_array( $slider, yith_proteo_get_all_revolution_slider_alias(), true ) ) {
 			echo do_shortcode( '[rev_slider alias="' . $slider . '"][/rev_slider]' );
 	} elseif ( defined( 'YITH_SLIDER_FOR_PAGE_BUILDERS' ) ) {
@@ -209,25 +206,24 @@ global $post;
 		) . 'px"';
 	}
 	?>
-
 	<div id="content" class="site-content" <?php echo $custom_spacing ? $custom_spacing : ''; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>>
 		<?php do_action( 'yith_proteo_before_page_content' ); ?>
 		<div class="container">
-			<?php if ( ( is_page() || is_home() ) && ! is_front_page() && 'outside' === $yith_proteo_page_title_layout ) : ?>
+			<?php if ( ( is_page() || is_home() ) && ! is_front_page() && 'outside' === $yith_proteo_page_title_layout ) { ?>
 				<header class="entry-header page-header">
 					<?php
 					yith_proteo_print_page_titles();
 					?>
 				</header><!-- .entry-header -->
-			<?php elseif ( is_singular( 'post' ) && 'outside' === $yith_proteo_page_title_layout ) : ?>
+			<?php } elseif ( is_singular( 'post' ) && 'outside' === $yith_proteo_page_title_layout ) { ?>
 				<?php
 					// single post header template.
 					get_template_part( 'template-parts/title', 'post-single' );
 				?>
-			<?php elseif ( is_singular( 'post' ) && ( 'inside' === $yith_proteo_page_title_layout ) && ( 'standard' !== $yith_proteo_single_post_layout ) ) : ?>
+			<?php } elseif ( is_singular( 'post' ) && ( 'inside' === $yith_proteo_page_title_layout ) && ( 'standard' !== $yith_proteo_single_post_layout ) ) { ?>
 				<?php
 					// single post header template.
 					get_template_part( 'template-parts/title', 'post-single' );
 				?>
-			<?php endif; ?>
+			<?php } ?>
 			<?php echo yith_proteo_get_sidebar_position() ? '<div class="row">' : ''; ?>
