@@ -34,7 +34,7 @@ if ( class_exists( 'Customizer_Control_Radio_Image' ) ) {
 			$wp_customize,
 			'yith_proteo_shop_page_sidebar_position',
 			array(
-				'label'   => esc_html_x( 'Choose the position of the shop page sidebar', 'Customizer option name', 'yith-proteo' ),
+				'label'   => esc_html_x( 'Sidebar position for the shop page', 'Customizer option name', 'yith-proteo' ),
 				'section' => 'yith_proteo_shop_page_management',
 				'choices' => array(
 					'no-sidebar' => array(
@@ -70,7 +70,7 @@ $wp_customize->add_control(
 	'yith_proteo_shop_page_default_sidebar',
 	array(
 		'type'            => 'select',
-		'label'           => esc_html_x( 'Choose the shop page sidebar', 'Customizer option name', 'yith-proteo' ),
+		'label'           => esc_html_x( 'Shop page sidebar', 'Customizer option name', 'yith-proteo' ),
 		'section'         => 'yith_proteo_shop_page_management',
 		'choices'         => wp_list_pluck( $GLOBALS['wp_registered_sidebars'], 'name' ),
 		'active_callback' => 'yith_proteo_shop_page_sidebar_is_enabled',

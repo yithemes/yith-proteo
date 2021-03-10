@@ -28,7 +28,7 @@ $wp_customize->add_control(
 	'yith_proteo_single_post_layout',
 	array(
 		'type'        => 'radio',
-		'label'       => esc_html_x( 'Choose the single post layout', 'Customizer option name', 'yith-proteo' ),
+		'label'       => esc_html_x( 'Single post layout', 'Customizer option name', 'yith-proteo' ),
 		'section'     => 'yith_proteo_blog_management',
 		'description' => esc_html_x( 'Disable sidebars if you want to use Background picture layout.', 'Customizer option description', 'yith-proteo' ),
 		'choices'     => array(

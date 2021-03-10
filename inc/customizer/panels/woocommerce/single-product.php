@@ -381,7 +381,7 @@
 				$wp_customize,
 				'yith_proteo_product_page_sidebar_position',
 				array(
-					'label'       => esc_html_x( 'Choose the position of the sidebar on single product page', 'Customizer option name', 'yith-proteo' ),
+					'label'       => esc_html_x( 'Sidebar position for single product pages', 'Customizer option name', 'yith-proteo' ),
 					'section'     => 'yith_proteo_product_page_management',
 					'description' => esc_html_x( 'Select where to display the sidebar. You can adjust the settings from product edit view.', 'Customizer option description', 'yith-proteo' ),
 					'choices'     => array(
@@ -415,7 +415,7 @@
 		'yith_proteo_single_product_default_sidebar',
 		array(
 			'type'            => 'select',
-			'label'           => esc_html_x( 'Choose the sidebar to use on single product page', 'Customizer option name', 'yith-proteo' ),
+			'label'           => esc_html_x( 'Sidebar to use on single product pages', 'Customizer option name', 'yith-proteo' ),
 			'section'         => 'yith_proteo_product_page_management',
 			'description'     => esc_html_x( 'You can adjust the settings from product edit view.', 'Customizer option description', 'yith-proteo' ),
 			'choices'         => wp_list_pluck( $GLOBALS['wp_registered_sidebars'], 'name' ),

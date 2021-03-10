@@ -164,7 +164,7 @@ if ( ! class_exists( 'YITH_Proteo_Account_Widget' ) ) {
 						$output .= '<input style="display:none;" class="widefat" id="' . esc_attr( $this->get_field_id( $widget_field['id'] ) ) . '" name="' . esc_attr( $this->get_field_name( $widget_field['id'] ) ) . '" type="' . $widget_field['type'] . '" value="' . $widget_value . '">';
 						$output .= '<span id="preview' . esc_attr( $this->get_field_id( $widget_field['id'] ) ) . '" style="padding:5px;margin-right:10px;border:2px solid #eee;display:inline-block;width: 100px;min-height:50px;height:auto;vertical-align:middle;background:url(' . $media_url . ') content-box;background-size:contain;background-repeat:no-repeat;background-position:center;"></span>';
 						$output .= '<button id="' . $this->get_field_id( $widget_field['id'] ) . '" class="button select-media custommedia">' . esc_html_x( 'Add Media', 'Widget option', 'yith-proteo' ) . '</button>';
-						$output .= '<input style="width: 19%; margin-left: 5px;" class="button remove-media" id="buttonremove" name="buttonremove" type="button" value="' . esc_html_x( 'Clear', 'Widget option', 'yith-proteo' ) . '" />';
+						$output .= '<input style="width: 19%; margin-left: 5px;" class="button remove-media" id="buttonremove" name="buttonremove" type="button" value="' . esc_html_x( 'Reset', 'Widget option', 'yith-proteo' ) . '" />';
 						$output .= '</p>';
 						break;
 					default:

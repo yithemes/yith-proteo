@@ -31,7 +31,7 @@
 				$wp_customize,
 				'yith_proteo_product_tag_page_sidebar_position',
 				array(
-					'label'       => esc_html_x( 'Choose the position of the sidebar on product tag pages', 'Customizer option name', 'yith-proteo' ),
+					'label'       => esc_html_x( 'Sidebar position for product tag pages', 'Customizer option name', 'yith-proteo' ),
 					'section'     => 'yith_proteo_product_tag_page_management',
 					'description' => esc_html_x( 'Select where to display the sidebar.', 'Customizer option description', 'yith-proteo' ),
 					'choices'     => array(
@@ -65,7 +65,7 @@
 		'yith_proteo_product_tag_page_sidebar',
 		array(
 			'type'            => 'select',
-			'label'           => esc_html_x( 'Choose the product tag page sidebar', 'Customizer option name', 'yith-proteo' ),
+			'label'           => esc_html_x( 'Product tag page sidebar', 'Customizer option name', 'yith-proteo' ),
 			'section'         => 'yith_proteo_product_tag_page_management',
 			'description'     => esc_html_x( 'Select the sidebar to display.', 'Customizer option description', 'yith-proteo' ),
 			'choices'         => wp_list_pluck( $GLOBALS['wp_registered_sidebars'], 'name' ),

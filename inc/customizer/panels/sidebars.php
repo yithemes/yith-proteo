@@ -51,7 +51,7 @@
 				$wp_customize,
 				'yith_proteo_default_sidebar_position',
 				array(
-					'label'       => esc_html_x( 'Choose the sidebar position for posts and pages', 'Customizer option name', 'yith-proteo' ),
+					'label'       => esc_html_x( 'Sidebar position for posts and pages', 'Customizer option name', 'yith-proteo' ),
 					'section'     => 'yith_proteo_sidebar_management',
 					'description' => esc_html_x( 'Select where to display the default sidebar. You can adjust the settings from the page/post edit view.', 'Customizer option description', 'yith-proteo' ),
 					'choices'     => array(
@@ -86,7 +86,7 @@
 		'yith_proteo_default_sidebar',
 		array(
 			'type'            => 'select',
-			'label'           => esc_html_x( 'Choose the default sidebar for posts and pages', 'Customizer option name', 'yith-proteo' ),
+			'label'           => esc_html_x( 'Default sidebar for posts and pages', 'Customizer option name', 'yith-proteo' ),
 			'section'         => 'yith_proteo_sidebar_management',
 			'description'     => esc_html_x( 'Select the sidebar to display. It will be used for archive pages too.', 'Customizer option description', 'yith-proteo' ),
 			'choices'         => wp_list_pluck( $GLOBALS['wp_registered_sidebars'], 'name' ),
@@ -129,9 +129,9 @@
 				$wp_customize,
 				'yith_proteo_blog_page_sidebar_position',
 				array(
-					'label'       => esc_html_x( 'Choose the position of the blog page sidebar', 'Customizer option name', 'yith-proteo' ),
+					'label'       => esc_html_x( 'Sidebar position for the blog page', 'Customizer option name', 'yith-proteo' ),
 					'section'     => 'yith_proteo_sidebar_management',
-					'description' => esc_html_x( 'Select where to display the sidebar. You can pick up a specific sidebard from the page edit view.', 'Customizer option description', 'yith-proteo' ),
+					'description' => esc_html_x( 'Select where to display the sidebar. You can pick a specific sidebar from the page edit view.', 'Customizer option description', 'yith-proteo' ),
 					'choices'     => array(
 						'no-sidebar' => array(
 							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/sidebar-no.svg',
@@ -163,7 +163,7 @@
 		'yith_proteo_blog_sidebar',
 		array(
 			'type'            => 'select',
-			'label'           => esc_html_x( 'Choose the blog sidebar', 'Customizer option name', 'yith-proteo' ),
+			'label'           => esc_html_x( 'Blog page sidebar', 'Customizer option name', 'yith-proteo' ),
 			'section'         => 'yith_proteo_sidebar_management',
 			'description'     => esc_html_x( 'Select the sidebar to display. You can pick a specific sidebar from the single post edit page.', 'Customizer option description', 'yith-proteo' ),
 			'choices'         => wp_list_pluck( $GLOBALS['wp_registered_sidebars'], 'name' ),
@@ -206,7 +206,7 @@
 				$wp_customize,
 				'yith_proteo_blog_category_sidebar_position',
 				array(
-					'label'       => esc_html_x( 'Choose the position of blog category pages sidebar', 'Customizer option name', 'yith-proteo' ),
+					'label'       => esc_html_x( 'Sidebar position for blog category pages', 'Customizer option name', 'yith-proteo' ),
 					'section'     => 'yith_proteo_sidebar_management',
 					'description' => esc_html_x( 'Select where to display the sidebar.', 'Customizer option description', 'yith-proteo' ),
 					'choices'     => array(
@@ -240,7 +240,7 @@
 		'yith_proteo_blog_category_sidebar',
 		array(
 			'type'            => 'select',
-			'label'           => esc_html_x( 'Choose blog category pages sidebar', 'Customizer option name', 'yith-proteo' ),
+			'label'           => esc_html_x( 'Blog category pages sidebar', 'Customizer option name', 'yith-proteo' ),
 			'section'         => 'yith_proteo_sidebar_management',
 			'description'     => esc_html_x( 'Select the sidebar to display.', 'Customizer option description', 'yith-proteo' ),
 			'choices'         => wp_list_pluck( $GLOBALS['wp_registered_sidebars'], 'name' ),
@@ -283,7 +283,7 @@
 				$wp_customize,
 				'yith_proteo_blog_tag_sidebar_position',
 				array(
-					'label'       => esc_html_x( 'Choose the position of blog tag pages sidebar', 'Customizer option name', 'yith-proteo' ),
+					'label'       => esc_html_x( 'Sidebar position for blog tag pages', 'Customizer option name', 'yith-proteo' ),
 					'section'     => 'yith_proteo_sidebar_management',
 					'description' => esc_html_x( 'Select where to display the sidebar.', 'Customizer option description', 'yith-proteo' ),
 					'choices'     => array(
@@ -317,7 +317,7 @@
 		'yith_proteo_blog_tag_sidebar',
 		array(
 			'type'            => 'select',
-			'label'           => esc_html_x( 'Choose blog tag pages sidebar', 'Customizer option name', 'yith-proteo' ),
+			'label'           => esc_html_x( 'Blog tag pages sidebar', 'Customizer option name', 'yith-proteo' ),
 			'section'         => 'yith_proteo_sidebar_management',
 			'description'     => esc_html_x( 'Select the sidebar to display.', 'Customizer option description', 'yith-proteo' ),
 			'choices'         => wp_list_pluck( $GLOBALS['wp_registered_sidebars'], 'name' ),

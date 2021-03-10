@@ -28,11 +28,10 @@
 	$wp_customize->add_control(
 		'yith_proteo_cart_layout',
 		array(
-			'type'        => 'select',
-			'label'       => esc_html_x( 'Cart layout', 'Customizer option name', 'yith-proteo' ),
-			'section'     => 'yith_proteo_cart_page_management',
-			'description' => esc_html_x( 'Choose the cart layout', 'Customizer option description', 'yith-proteo' ),
-			'choices'     => array(
+			'type'    => 'select',
+			'label'   => esc_html_x( 'Cart layout', 'Customizer option name', 'yith-proteo' ),
+			'section' => 'yith_proteo_cart_page_management',
+			'choices' => array(
 				''         => esc_html_x( 'Please select', 'Customizer option value', 'yith-proteo' ),
 				'one_col'  => esc_html_x( 'One column layout', 'Customizer option value', 'yith-proteo' ),
 				'two_cols' => esc_html_x( 'Two column layout', 'Customizer option value', 'yith-proteo' ),

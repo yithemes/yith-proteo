@@ -93,7 +93,7 @@ if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
 			$wp_customize,
 			'yith_proteo_show_mobile_header_sidebar',
 			array(
-				'label'       => esc_html_x( 'Show header sidebar', 'Customizer option name', 'yith-proteo' ),
+				'label'       => esc_html_x( 'Show header widget area', 'Customizer option name', 'yith-proteo' ),
 				'section'     => 'yith_proteo_mobile_header_management',
 				'description' => esc_html_x( 'Choose whether to show or not the header widget area', 'Customizer option description', 'yith-proteo' ),
 			)

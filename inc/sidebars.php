@@ -46,7 +46,7 @@ if ( ! function_exists( 'yith_proteo_widgets_init' ) ) :
 		);
 		register_sidebar(
 			array(
-				'name'          => esc_html_x( 'Topbar sidebar', 'Sidebar name', 'yith-proteo' ),
+				'name'          => esc_html_x( 'Topbar widget area', 'Sidebar name', 'yith-proteo' ),
 				'id'            => 'topbar-sidebar',
 				'description'   => esc_html_x( 'Add widgets here.', 'Sidebar description', 'yith-proteo' ),
 				'before_widget' => '<section id="%1$s" class="widget %2$s">',
@@ -57,7 +57,7 @@ if ( ! function_exists( 'yith_proteo_widgets_init' ) ) :
 		);
 		register_sidebar(
 			array(
-				'name'          => esc_html_x( 'Header sidebar', 'Sidebar name', 'yith-proteo' ),
+				'name'          => esc_html_x( 'Header widget area', 'Sidebar name', 'yith-proteo' ),
 				'id'            => 'header-sidebar',
 				'description'   => esc_html_x( 'Add widgets here.', 'Sidebar description', 'yith-proteo' ),
 				'before_widget' => '<section id="%1$s" class="widget ' . $show_on_mobile . ' %2$s">',
@@ -68,7 +68,7 @@ if ( ! function_exists( 'yith_proteo_widgets_init' ) ) :
 		);
 		register_sidebar(
 			array(
-				'name'          => esc_html_x( 'Footer sidebar 1', 'Sidebar name', 'yith-proteo' ),
+				'name'          => esc_html_x( 'Footer widget area 1', 'Sidebar name', 'yith-proteo' ),
 				'id'            => 'footer-sidebar-1',
 				'description'   => esc_html_x( 'Add widgets here. Multiple columns can be configured.', 'Sidebar description', 'yith-proteo' ),
 				'before_widget' => '<section id="%1$s" class="widget %2$s col-lg-' . $yith_proteo_footer_sidebar_1_widget_per_row . '">',
@@ -79,7 +79,7 @@ if ( ! function_exists( 'yith_proteo_widgets_init' ) ) :
 		);
 		register_sidebar(
 			array(
-				'name'          => esc_html_x( 'Footer sidebar 2', 'Sidebar name', 'yith-proteo' ),
+				'name'          => esc_html_x( 'Footer widget area 2', 'Sidebar name', 'yith-proteo' ),
 				'id'            => 'footer-sidebar-2',
 				'description'   => esc_html_x( 'Add widgets here. Multiple columns can be configured.', 'Sidebar description', 'yith-proteo' ),
 				'before_widget' => '<section id="%1$s" class="widget %2$s col-lg-' . $yith_proteo_footer_sidebar_2_widget_per_row . '">',
@@ -167,7 +167,7 @@ if ( ! function_exists( 'yith_proteo_widgets_init' ) ) :
 		);
 		register_sidebar(
 			array(
-				'name'           => esc_html_x( 'Mobile menu sidebar', 'Sidebar name', 'yith-proteo' ),
+				'name'           => esc_html_x( 'Mobile menu widget area', 'Sidebar name', 'yith-proteo' ),
 				'id'             => 'mobile-menu-sidebar',
 				'description'    => esc_html_x( 'Add widgets here.', 'Sidebar description', 'yith-proteo' ),
 				'before_widget'  => '<section id="%1$s" class="widget %2$s">',
