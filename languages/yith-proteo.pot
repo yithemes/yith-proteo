@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YITH Proteo\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2021-03-10 12:57+0100\n"
+"POT-Creation-Date: 2021-03-10 13:28+0100\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -2045,7 +2045,7 @@ msgstr ""
 
 #: inc/sidebars.php:38
 msgctxt "Sidebar name"
-msgid "Default Sidebar"
+msgid "Default sidebar"
 msgstr ""
 
 #: inc/sidebars.php:40 inc/sidebars.php:51 inc/sidebars.php:62
@@ -2058,17 +2058,17 @@ msgstr ""
 
 #: inc/sidebars.php:49
 msgctxt "Sidebar name"
-msgid "Topbar Sidebar"
+msgid "Topbar sidebar"
 msgstr ""
 
 #: inc/sidebars.php:60
 msgctxt "Sidebar name"
-msgid "Header Sidebar"
+msgid "Header sidebar"
 msgstr ""
 
 #: inc/sidebars.php:71
 msgctxt "Sidebar name"
-msgid "Footer Sidebar 1"
+msgid "Footer sidebar 1"
 msgstr ""
 
 #: inc/sidebars.php:73 inc/sidebars.php:84
@@ -2078,7 +2078,7 @@ msgstr ""
 
 #: inc/sidebars.php:82
 msgctxt "Sidebar name"
-msgid "Footer Sidebar 2"
+msgid "Footer sidebar 2"
 msgstr ""
 
 #: inc/sidebars.php:93
@@ -2148,12 +2148,12 @@ msgstr ""
 
 #: inc/theme-dashboard/class-proteo-admin-dashboard.php:133
 msgctxt "Proteo dashboard debug message"
-msgid "Plugin Successfully Activated"
+msgid "Plugin successfully activated"
 msgstr ""
 
 #: inc/theme-dashboard/class-proteo-admin-dashboard.php:159
 msgctxt "Proteo dashboard"
-msgid "Activating Importer Plugin "
+msgid "Activating importer plugin "
 msgstr ""
 
 #: inc/theme-dashboard/class-proteo-admin-dashboard.php:161

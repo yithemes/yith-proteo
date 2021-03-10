@@ -130,7 +130,7 @@ if ( ! class_exists( 'Proteo_Admin_Dashboard' ) ) {
 			wp_send_json_success(
 				array(
 					'success'               => true,
-					'message'               => esc_html_x( 'Plugin Successfully Activated', 'Proteo dashboard debug message', 'yith-proteo' ),
+					'message'               => esc_html_x( 'Plugin successfully activated', 'Proteo dashboard debug message', 'yith-proteo' ),
 					'starter_template_slug' => self::$proteo_dashboard_slug,
 				)
 			);
@@ -156,7 +156,7 @@ if ( ! class_exists( 'Proteo_Admin_Dashboard' ) ) {
 
 				$localize = array(
 					'ajaxUrl'                            => admin_url( 'admin-ajax.php' ),
-					'btnActivating'                      => esc_html_x( 'Activating Importer Plugin ', 'Proteo dashboard', 'yith-proteo' ) . '&hellip;',
+					'btnActivating'                      => esc_html_x( 'Activating importer plugin ', 'Proteo dashboard', 'yith-proteo' ) . '&hellip;',
 					'proteoDashboarLink'                 => admin_url( 'themes.php?page=' ),
 					'recommendedPluiginActivatingText'   => esc_html_x( 'Activating', 'Proteo dashboard', 'yith-proteo' ) . '&hellip;',
 					'recommendedPluiginDeactivatingText' => esc_html_x( 'Deactivating', 'Proteo dashboard', 'yith-proteo' ) . '&hellip;',
