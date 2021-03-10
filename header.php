@@ -20,7 +20,7 @@ global $post;
 <body <?php body_class( 'animatedParent' ); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'yith-proteo' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html_x( 'Skip to content', 'Screen reader text', 'yith-proteo' ); ?></a>
 
 	<?php
 	// get the tagline.
@@ -109,7 +109,7 @@ global $post;
 
 				<nav id="site-navigation" class="main-navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
-						<span class="sr-only"><?php esc_html_e( 'Toggle navigation', 'yith-proteo' ); ?></span>
+						<span class="sr-only"><?php echo esc_html_x( 'Toggle navigation', 'Screen reader text', 'yith-proteo' ); ?></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
