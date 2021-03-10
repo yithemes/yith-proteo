@@ -11,7 +11,7 @@
 $wp_customize->add_panel(
 	'yith_proteo_mobile_options',
 	array(
-		'title'    => esc_html__( 'Mobile & Responsive', 'yith-proteo' ),
+		'title'    => esc_html_x( 'Mobile & Responsive', 'Customizer panel name', 'yith-proteo' ),
 		'priority' => 75,
 	)
 );
@@ -19,7 +19,7 @@ $wp_customize->add_panel(
 $wp_customize->add_section(
 	'yith_proteo_mobile_topbar_management',
 	array(
-		'title'    => esc_html__( 'Mobile topbar', 'yith-proteo' ),
+		'title'    => esc_html_x( 'Mobile topbar', 'Customizer section title', 'yith-proteo' ),
 		'priority' => 5,
 		'panel'    => 'yith_proteo_mobile_options',
 	)
@@ -40,7 +40,7 @@ if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
 			$wp_customize,
 			'yith_proteo_mobile_topbar_show',
 			array(
-				'label'   => esc_html__( 'Show topbar in mobile', 'yith-proteo' ),
+				'label'   => esc_html_x( 'Show topbar in mobile', 'Customizer option name', 'yith-proteo' ),
 				'section' => 'yith_proteo_mobile_topbar_management',
 			)
 		)
@@ -50,7 +50,7 @@ if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
 $wp_customize->add_section(
 	'yith_proteo_mobile_header_management',
 	array(
-		'title'    => esc_html__( 'Mobile header', 'yith-proteo' ),
+		'title'    => esc_html_x( 'Mobile header', 'Customizer section title', 'yith-proteo' ),
 		'priority' => 10,
 		'panel'    => 'yith_proteo_mobile_options',
 	)
@@ -69,11 +69,11 @@ $wp_customize->add_control(
 	'yith_proteo_mobile_menu_opener_position',
 	array(
 		'type'    => 'radio',
-		'label'   => esc_html__( 'Mobile menu opener position', 'yith-proteo' ),
+		'label'   => esc_html_x( 'Mobile menu opener position', 'Customizer option name', 'yith-proteo' ),
 		'section' => 'yith_proteo_mobile_header_management',
 		'choices' => array(
-			'left'  => esc_html__( 'Left', 'yith-proteo' ),
-			'right' => esc_html__( 'Right', 'yith-proteo' ),
+			'left'  => esc_html_x( 'Left', 'Customizer option value', 'yith-proteo' ),
+			'right' => esc_html_x( 'Right', 'Customizer option value', 'yith-proteo' ),
 		),
 	)
 );
@@ -93,9 +93,9 @@ if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
 			$wp_customize,
 			'yith_proteo_show_mobile_header_sidebar',
 			array(
-				'label'       => esc_html__( 'Show header sidebar', 'yith-proteo' ),
+				'label'       => esc_html_x( 'Show header sidebar', 'Customizer option name', 'yith-proteo' ),
 				'section'     => 'yith_proteo_mobile_header_management',
-				'description' => esc_html__( 'Choose whether to show or not the header widget area', 'yith-proteo' ),
+				'description' => esc_html_x( 'Choose whether to show or not the header widget area', 'Customizer option description', 'yith-proteo' ),
 			)
 		)
 	);
@@ -116,7 +116,7 @@ if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
 			$wp_customize,
 			'yith_proteo_mobile_search_widget',
 			array(
-				'label'   => esc_html__( 'Show search icon in mobile', 'yith-proteo' ),
+				'label'   => esc_html_x( 'Show search icon in mobile', 'Customizer option name', 'yith-proteo' ),
 				'section' => 'yith_proteo_mobile_header_management',
 			)
 		)
@@ -138,7 +138,7 @@ if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
 			$wp_customize,
 			'yith_proteo_mobile_cart_widget',
 			array(
-				'label'   => esc_html__( 'Show cart icon in mobile', 'yith-proteo' ),
+				'label'   => esc_html_x( 'Show cart icon in mobile', 'Customizer option name', 'yith-proteo' ),
 				'section' => 'yith_proteo_mobile_header_management',
 			)
 		)
@@ -160,7 +160,7 @@ if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
 			$wp_customize,
 			'yith_proteo_mobile_account_widget',
 			array(
-				'label'   => esc_html__( 'Show user account icon in mobile', 'yith-proteo' ),
+				'label'   => esc_html_x( 'Show user account icon in mobile', 'Customizer option name', 'yith-proteo' ),
 				'section' => 'yith_proteo_mobile_header_management',
 			)
 		)
@@ -171,7 +171,7 @@ if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
 $wp_customize->add_section(
 	'yith_proteo_mobile_menu_management',
 	array(
-		'title'    => esc_html__( 'Mobile menu', 'yith-proteo' ),
+		'title'    => esc_html_x( 'Mobile menu', 'Customizer section title', 'yith-proteo' ),
 		'priority' => 20,
 		'panel'    => 'yith_proteo_mobile_options',
 	)
@@ -190,7 +190,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_mobile_menu_background_color',
 		array(
-			'label'   => esc_html__( 'Background color', 'yith-proteo' ),
+			'label'   => esc_html_x( 'Background color', 'Customizer option name', 'yith-proteo' ),
 			'section' => 'yith_proteo_mobile_menu_management',
 		)
 	)
@@ -209,7 +209,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_mobile_menu_color',
 		array(
-			'label'   => esc_html__( 'Menu color', 'yith-proteo' ),
+			'label'   => esc_html_x( 'Menu color', 'Customizer option name', 'yith-proteo' ),
 			'section' => 'yith_proteo_mobile_menu_management',
 		)
 	)
@@ -228,7 +228,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_mobile_menu_hover_color',
 		array(
-			'label'   => esc_html__( 'Hover color', 'yith-proteo' ),
+			'label'   => esc_html_x( 'Hover color', 'Customizer option name', 'yith-proteo' ),
 			'section' => 'yith_proteo_mobile_menu_management',
 		)
 	)
@@ -249,20 +249,20 @@ if ( class_exists( 'Customizer_Control_Radio_Image' ) ) {
 			$wp_customize,
 			'yith_proteo_mobile_menu_align',
 			array(
-				'label'   => esc_html__( 'Alignment', 'yith-proteo' ),
+				'label'   => esc_html_x( 'Alignment', 'Customizer option name', 'yith-proteo' ),
 				'section' => 'yith_proteo_mobile_menu_management',
 				'choices' => array(
 					'left'   => array(
 						'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/align-left.svg',
-						'label' => esc_html__( 'Left', 'yith-proteo' ),
+						'label' => esc_html_x( 'Left', 'Customizer option value', 'yith-proteo' ),
 					),
 					'center' => array(
 						'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/align-center.svg',
-						'label' => esc_html__( 'Center', 'yith-proteo' ),
+						'label' => esc_html_x( 'Center', 'Customizer option value', 'yith-proteo' ),
 					),
 					'right'  => array(
 						'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/align-right.svg',
-						'label' => esc_html__( 'Right', 'yith-proteo' ),
+						'label' => esc_html_x( 'Right', 'Customizer option value', 'yith-proteo' ),
 					),
 				),
 			)
@@ -274,7 +274,7 @@ if ( class_exists( 'Customizer_Control_Radio_Image' ) ) {
 $wp_customize->add_section(
 	'yith_proteo_mobile_typography_management',
 	array(
-		'title'    => esc_html__( 'Mobile typography', 'yith-proteo' ),
+		'title'    => esc_html_x( 'Mobile typography', 'Customizer section title', 'yith-proteo' ),
 		'priority' => 30,
 		'panel'    => 'yith_proteo_mobile_options',
 	)
@@ -291,7 +291,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
 	'yith_proteo_mobile_site_title_font_size',
 	array(
-		'label'   => esc_html__( 'Site Title font size (default: 38px)', 'yith-proteo' ),
+		'label'   => esc_html_x( 'Site Title font size (default: 38px)', 'Customizer option name', 'yith-proteo' ),
 		'section' => 'yith_proteo_mobile_typography_management',
 		'type'    => 'number',
 	)
@@ -308,7 +308,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
 	'yith_proteo_mobile_tagline_font_size',
 	array(
-		'label'   => esc_html__( 'Tagline font size (default: 11px)', 'yith-proteo' ),
+		'label'   => esc_html_x( 'Tagline font size (default: 11px)', 'Customizer option name', 'yith-proteo' ),
 		'section' => 'yith_proteo_mobile_typography_management',
 		'type'    => 'number',
 	)
@@ -326,7 +326,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
 	'yith_proteo_mobile_base_font_size',
 	array(
-		'label'   => esc_html__( 'Body font size (default: 13px)', 'yith-proteo' ),
+		'label'   => esc_html_x( 'Body font size (default: 13px)', 'Customizer option name', 'yith-proteo' ),
 		'section' => 'yith_proteo_mobile_typography_management',
 		'type'    => 'number',
 	)
@@ -343,7 +343,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
 	'yith_proteo_mobile_topbar_font_size',
 	array(
-		'label'   => esc_html__( 'Topbar font size (default: 13px)', 'yith-proteo' ),
+		'label'   => esc_html_x( 'Topbar font size (default: 13px)', 'Customizer option name', 'yith-proteo' ),
 		'section' => 'yith_proteo_mobile_typography_management',
 		'type'    => 'number',
 	)
@@ -360,7 +360,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
 	'yith_proteo_mobile_menu_font_size',
 	array(
-		'label'   => esc_html__( 'Mobile menu font size (default: 16px)', 'yith-proteo' ),
+		'label'   => esc_html_x( 'Mobile menu font size (default: 16px)', 'Customizer option name', 'yith-proteo' ),
 		'section' => 'yith_proteo_mobile_typography_management',
 		'type'    => 'number',
 	)
@@ -377,7 +377,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
 	'yith_proteo_mobile_h1_font_size',
 	array(
-		'label'   => esc_html__( 'H1 font size (default: 56px)', 'yith-proteo' ),
+		'label'   => esc_html_x( 'H1 font size (default: 56px)', 'Customizer option name', 'yith-proteo' ),
 		'section' => 'yith_proteo_mobile_typography_management',
 		'type'    => 'number',
 	)
@@ -394,7 +394,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
 	'yith_proteo_mobile_h2_font_size',
 	array(
-		'label'   => esc_html__( 'H2 font size (default: 32px)', 'yith-proteo' ),
+		'label'   => esc_html_x( 'H2 font size (default: 32px)', 'Customizer option name', 'yith-proteo' ),
 		'section' => 'yith_proteo_mobile_typography_management',
 		'type'    => 'number',
 	)
@@ -410,7 +410,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
 	'yith_proteo_mobile_h3_font_size',
 	array(
-		'label'   => esc_html__( 'H3 font size (default: 15px)', 'yith-proteo' ),
+		'label'   => esc_html_x( 'H3 font size (default: 15px)', 'Customizer option name', 'yith-proteo' ),
 		'section' => 'yith_proteo_mobile_typography_management',
 		'type'    => 'number',
 	)
@@ -427,7 +427,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
 	'yith_proteo_mobile_h4_font_size',
 	array(
-		'label'   => esc_html__( 'H4 font size (default: 13px)', 'yith-proteo' ),
+		'label'   => esc_html_x( 'H4 font size (default: 13px)', 'Customizer option name', 'yith-proteo' ),
 		'section' => 'yith_proteo_mobile_typography_management',
 		'type'    => 'number',
 	)
@@ -444,7 +444,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
 	'yith_proteo_mobile_h5_font_size',
 	array(
-		'label'   => esc_html__( 'H5 font size (default: 10px)', 'yith-proteo' ),
+		'label'   => esc_html_x( 'H5 font size (default: 10px)', 'Customizer option name', 'yith-proteo' ),
 		'section' => 'yith_proteo_mobile_typography_management',
 		'type'    => 'number',
 	)
@@ -461,7 +461,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
 	'yith_proteo_mobile_h6_font_size',
 	array(
-		'label'   => esc_html__( 'H6 font size (default: 9px)', 'yith-proteo' ),
+		'label'   => esc_html_x( 'H6 font size (default: 9px)', 'Customizer option name', 'yith-proteo' ),
 		'section' => 'yith_proteo_mobile_typography_management',
 		'type'    => 'number',
 	)
@@ -478,7 +478,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
 	'yith_proteo_mobile_footer_font_size',
 	array(
-		'label'   => esc_html__( 'Footer font size (default: 13px)', 'yith-proteo' ),
+		'label'   => esc_html_x( 'Footer font size (default: 13px)', 'Customizer option name', 'yith-proteo' ),
 		'section' => 'yith_proteo_mobile_typography_management',
 		'type'    => 'number',
 	)
@@ -495,7 +495,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
 	'yith_proteo_mobile_footer_credits_font_size',
 	array(
-		'label'   => esc_html__( 'Footer credits font size (default: 13px)', 'yith-proteo' ),
+		'label'   => esc_html_x( 'Footer credits font size (default: 13px)', 'Customizer option name', 'yith-proteo' ),
 		'section' => 'yith_proteo_mobile_typography_management',
 		'type'    => 'number',
 	)

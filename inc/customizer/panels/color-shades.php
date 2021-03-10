@@ -18,9 +18,9 @@
 			$wp_customize,
 			'yith_proteo_main_color_shade',
 			array(
-				'label'       => esc_html__( 'Main color shade', 'yith-proteo' ),
+				'label'       => esc_html_x( 'Main color shade', 'Customizer option name', 'yith-proteo' ),
 				'section'     => 'colors',
-				'description' => esc_html__( 'Save your settings and reload the page to let the magic happen', 'yith-proteo' ),
+				'description' => esc_html_x( 'Save your settings and reload the page to let the magic happen', 'Customizer option description', 'yith-proteo' ),
 			)
 		)
 	);

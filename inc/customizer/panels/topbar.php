@@ -11,7 +11,7 @@
 	$wp_customize->add_section(
 		'yith_proteo_topbar_management',
 		array(
-			'title'    => esc_html__( 'Topbar', 'yith-proteo' ),
+			'title'    => esc_html_x( 'Topbar', 'Customizer section title', 'yith-proteo' ),
 			'priority' => 10,
 			'panel'    => 'yith_proteo_header_and_topbar_management',
 		)
@@ -32,9 +32,9 @@
 				$wp_customize,
 				'yith_proteo_topbar_enable',
 				array(
-					'label'       => esc_html__( 'Show topbar', 'yith-proteo' ),
+					'label'       => esc_html_x( 'Show topbar', 'Customizer option name', 'yith-proteo' ),
 					'section'     => 'yith_proteo_topbar_management',
-					'description' => esc_html__( 'Choose whether to show the site topbar or not', 'yith-proteo' ),
+					'description' => esc_html_x( 'Choose whether to show the site topbar or not', 'Customizer option description', 'yith-proteo' ),
 				)
 			)
 		);
@@ -53,7 +53,7 @@
 			$wp_customize,
 			'yith_proteo_topbar_background_color',
 			array(
-				'label'           => esc_html__( 'Background color', 'yith-proteo' ),
+				'label'           => esc_html_x( 'Background color', 'Customizer option name', 'yith-proteo' ),
 				'section'         => 'yith_proteo_topbar_management',
 				'active_callback' => 'yith_proteo_topbar_is_enabled',
 			)
@@ -78,21 +78,21 @@
 			$wp_customize,
 			'yith_proteo_topbar_spacing',
 			array(
-				'label'           => __( 'Spacing (px)', 'yith-proteo' ),
+				'label'           => esc_html_x( 'Spacing (px)', 'Customizer option name', 'yith-proteo' ),
 				'section'         => 'yith_proteo_topbar_management',
 				'active_callback' => 'yith_proteo_topbar_is_enabled',
 				'choices'         => array(
 					'top'    => array(
-						'name' => esc_html__( 'Top', 'yith-proteo' ),
+						'name' => esc_html_x( 'Top', 'Customizer option value', 'yith-proteo' ),
 					),
 					'right'  => array(
-						'name' => esc_html__( 'Right', 'yith-proteo' ),
+						'name' => esc_html_x( 'Right', 'Customizer option value', 'yith-proteo' ),
 					),
 					'bottom' => array(
-						'name' => esc_html__( 'Bottom', 'yith-proteo' ),
+						'name' => esc_html_x( 'Bottom', 'Customizer option value', 'yith-proteo' ),
 					),
 					'left'   => array(
-						'name' => esc_html__( 'Left', 'yith-proteo' ),
+						'name' => esc_html_x( 'Left', 'Customizer option value', 'yith-proteo' ),
 					),
 				),
 			)
@@ -110,7 +110,7 @@
 	$wp_customize->add_control(
 		'yith_proteo_topbar_font_size',
 		array(
-			'label'           => esc_html__( 'Font size (default: 16px)', 'yith-proteo' ),
+			'label'           => esc_html_x( 'Font size (default: 16px)', 'Customizer option name', 'yith-proteo' ),
 			'section'         => 'yith_proteo_topbar_management',
 			'type'            => 'number',
 			'active_callback' => 'yith_proteo_topbar_is_enabled',
@@ -129,7 +129,7 @@
 			$wp_customize,
 			'yith_proteo_topbar_font_color',
 			array(
-				'label'           => esc_html__( 'Font color', 'yith-proteo' ),
+				'label'           => esc_html_x( 'Font color', 'Customizer option name', 'yith-proteo' ),
 				'section'         => 'yith_proteo_topbar_management',
 				'active_callback' => 'yith_proteo_topbar_is_enabled',
 			)
@@ -148,7 +148,7 @@
 			$wp_customize,
 			'yith_proteo_topbar_link_color',
 			array(
-				'label'           => esc_html__( 'Hyperlink color', 'yith-proteo' ),
+				'label'           => esc_html_x( 'Hyperlink color', 'Customizer option name', 'yith-proteo' ),
 				'section'         => 'yith_proteo_topbar_management',
 				'active_callback' => 'yith_proteo_topbar_is_enabled',
 			)
@@ -167,7 +167,7 @@
 			$wp_customize,
 			'yith_proteo_topbar_link_hover_color',
 			array(
-				'label'           => esc_html__( 'Hyperlink :hover color', 'yith-proteo' ),
+				'label'           => esc_html_x( 'Hyperlink :hover color', 'Customizer option name', 'yith-proteo' ),
 				'section'         => 'yith_proteo_topbar_management',
 				'active_callback' => 'yith_proteo_topbar_is_enabled',
 			)
@@ -188,21 +188,21 @@
 				$wp_customize,
 				'yith_proteo_topbar_align',
 				array(
-					'label'           => esc_html__( 'Elements alignment', 'yith-proteo' ),
+					'label'           => esc_html_x( 'Elements alignment', 'Customizer option name', 'yith-proteo' ),
 					'section'         => 'yith_proteo_topbar_management',
 					'active_callback' => 'yith_proteo_topbar_is_enabled',
 					'choices'         => array(
 						'left'   => array(
 							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/align-left.svg',
-							'label' => esc_html__( 'Left', 'yith-proteo' ),
+							'label' => esc_html_x( 'Left', 'Customizer option value', 'yith-proteo' ),
 						),
 						'center' => array(
 							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/align-center.svg',
-							'label' => esc_html__( 'Center', 'yith-proteo' ),
+							'label' => esc_html_x( 'Center', 'Customizer option value', 'yith-proteo' ),
 						),
 						'right'  => array(
 							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/align-right.svg',
-							'label' => esc_html__( 'Right', 'yith-proteo' ),
+							'label' => esc_html_x( 'Right', 'Customizer option value', 'yith-proteo' ),
 						),
 					),
 				)
@@ -225,7 +225,7 @@
 				$wp_customize,
 				'yith_proteo_topbar_bottom_border',
 				array(
-					'label'           => esc_html__( 'Show bottom border', 'yith-proteo' ),
+					'label'           => esc_html_x( 'Show bottom border', 'Customizer option name', 'yith-proteo' ),
 					'section'         => 'yith_proteo_topbar_management',
 					'active_callback' => 'yith_proteo_topbar_is_enabled',
 				)
@@ -246,7 +246,7 @@
 			$wp_customize,
 			'yith_proteo_topbar_bottom_border_color',
 			array(
-				'label'           => esc_html__( 'Border color', 'yith-proteo' ),
+				'label'           => esc_html_x( 'Border color', 'Customizer option name', 'yith-proteo' ),
 				'section'         => 'yith_proteo_topbar_management',
 				'active_callback' => 'yith_proteo_topbar_has_bottom_border',
 			)
@@ -267,7 +267,7 @@
 			$wp_customize,
 			'yith_proteo_topbar_bottom_border_width',
 			array(
-				'label'           => esc_html__( 'Input and textarea border radius (default: 0px)', 'yith-proteo' ),
+				'label'           => esc_html_x( 'Input and textarea border radius (default: 0px)', 'Customizer option name', 'yith-proteo' ),
 				'min'             => 1,
 				'max'             => 50,
 				'step'            => 1,

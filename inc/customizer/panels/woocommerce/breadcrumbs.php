@@ -11,7 +11,7 @@
 	$wp_customize->add_section(
 		'yith_proteo_breadcrumb_management',
 		array(
-			'title'    => esc_html__( 'Breadcrumbs', 'yith-proteo' ),
+			'title'    => esc_html_x( 'Breadcrumbs', 'Customizer section title', 'yith-proteo' ),
 			'priority' => 50,
 			'panel'    => 'yith_proteo_extra',
 		)
@@ -32,9 +32,9 @@
 				$wp_customize,
 				'yith_proteo_breadcrumb_enable',
 				array(
-					'label'       => esc_html__( 'Show breadcrumbs', 'yith-proteo' ),
+					'label'       => esc_html_x( 'Show breadcrumbs', 'Customizer option name', 'yith-proteo' ),
 					'section'     => 'yith_proteo_breadcrumb_management',
-					'description' => esc_html__( 'Choose whether to show breadcrumbs on pages, posts and products.', 'yith-proteo' ),
+					'description' => esc_html_x( 'Choose whether to show breadcrumbs on pages, posts and products.', 'Customizer option description', 'yith-proteo' ),
 				)
 			)
 		);

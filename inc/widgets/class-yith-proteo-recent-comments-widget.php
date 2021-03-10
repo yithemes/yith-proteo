@@ -25,7 +25,7 @@ class YITH_Proteo_Recent_Comments_Widget extends WP_Widget_Recent_Comments {
 
 		$output = '';
 
-		$title = ( ! empty( $instance['title'] ) ) ? $instance['title'] : __( 'Recent Comments', 'yith-proteo' );
+		$title = ( ! empty( $instance['title'] ) ) ? $instance['title'] : esc_html_x( 'Recent Comments', 'Widget title', 'yith-proteo' );
 
 		/** This filter is documented in wp-includes/widgets/class-wp-widget-pages.php */
 		$title = apply_filters( 'widget_title', $title, $instance, $this->id_base );

@@ -36,7 +36,7 @@ endif;
 function yith_proteo_title_icon_add_meta_box() {
 	add_meta_box(
 		'title_icon_meta',
-		__( 'Title icon', 'yith-proteo' ),
+		esc_html_x( 'Title icon', 'page option name', 'yith-proteo' ),
 		'yith_proteo_title_icon_html',
 		array( 'post', 'page' ),
 		'side'
@@ -52,7 +52,7 @@ add_action( 'add_meta_boxes', 'yith_proteo_title_icon_add_meta_box' );
 function yith_proteo_header_slider_add_meta_box() {
 	add_meta_box(
 		'header_slider',
-		__( 'Header slider', 'yith-proteo' ),
+		esc_html_x( 'Header slider', 'page option name', 'yith-proteo' ),
 		'yith_proteo_header_slider_html',
 		array( 'page' ),
 		'side'
@@ -70,7 +70,7 @@ if ( defined( 'YITH_SLIDER_FOR_PAGE_BUILDERS' ) ) {
 function yith_proteo_sidebar_management_add_meta_box() {
 	add_meta_box(
 		'yith_proteo_sidebar_management',
-		__( 'Sidebar management', 'yith-proteo' ),
+		esc_html_x( 'Sidebar management', 'page option name', 'yith-proteo' ),
 		'yith_proteo_sidebar_management_html',
 		array( 'post', 'page', 'product' ),
 		'side'
@@ -84,7 +84,7 @@ add_action( 'add_meta_boxes', 'yith_proteo_sidebar_management_add_meta_box' );
 function yith_proteo_remove_header_and_footer_add_meta_box() {
 	add_meta_box(
 		'yith_proteo_header_footer',
-		__( 'Header and footer', 'yith-proteo' ),
+		esc_html_x( 'Header and footer', 'page option name', 'yith-proteo' ),
 		'yith_proteo_remove_header_and_footer_html',
 		array( 'post', 'page', 'product' ),
 		'side'
@@ -99,7 +99,7 @@ add_action( 'add_meta_boxes', 'yith_proteo_remove_header_and_footer_add_meta_box
 function yith_proteo_manage_page_content_spacing_add_meta_box() {
 	add_meta_box(
 		'yith_proteo_content_spacing',
-		__( 'Page content', 'yith-proteo' ),
+		esc_html_x( 'Page content', 'page option name', 'yith-proteo' ),
 		'yith_proteo_manage_page_content_spacing_html',
 		array( 'page' ),
 		'side'
@@ -118,7 +118,7 @@ function yith_proteo_hide_page_title_add_meta_box() {
 
 		add_meta_box(
 			'yith_proteo_hide_page_title',
-			__( 'Hide page title', 'yith-proteo' ),
+			esc_html_x( 'Hide page title', 'page option name', 'yith-proteo' ),
 			'yith_proteo_hide_page_title_html',
 			array( 'post', 'page' ),
 			'side',
@@ -143,7 +143,7 @@ function yith_proteo_hide_page_title_html( $post ) {
 
 	<label for="yith_proteo_hide_page_title">
 		<input type="checkbox" name="yith_proteo_hide_page_title" id="yith_proteo_hide_page_title" <?php checked( 'on', $value ); ?> value="on">
-		<?php esc_html_e( 'Enable this option to hide page title.', 'yith-proteo' ); ?>
+		<?php echo esc_html_x( 'Enable this option to hide page title.', 'page option description', 'yith-proteo' ); ?>
 	</label>
 	<?php
 }
@@ -162,7 +162,7 @@ function yith_proteo_remove_header_and_footer_html( $post ) {
 
 	<label for="yith_proteo_remove_header_and_footer">
 		<input type="checkbox" name="yith_proteo_remove_header_and_footer" id="yith_proteo_remove_header_and_footer" <?php checked( 'on', $value ); ?> value="on">
-		<?php esc_html_e( 'Enable this option to hide site header and footer.', 'yith-proteo' ); ?>
+		<?php echo esc_html_x( 'Enable this option to hide site header and footer.', 'page option description', 'yith-proteo' ); ?>
 	</label>
 	<?php
 }
@@ -184,7 +184,7 @@ function yith_proteo_title_icon_html( $post ) {
 	<select name="title_icon" id="title_icon"
 			class="components-text-control__input" style="width: 100%">
 		<option value="" <?php selected( $value, '' ); ?>>
-			<?php esc_html_e( 'none', 'yith-proteo' ); ?>
+			<?php echo esc_html_x( 'none', 'page option value', 'yith-proteo' ); ?>
 		</option>
 		<?php
 		foreach ( $icons as $key => $icon ) :
@@ -212,19 +212,19 @@ function yith_proteo_sidebar_position_html( $post ) {
 			class="components-text-control__input">
 		<option
 			value="inherit" <?php echo ( yith_proteo_sidebar_get_meta( 'sidebar_position' ) === 'inherit' ) ? 'selected' : ''; ?>>
-			<?php esc_html_e( 'inherit', 'yith-proteo' ); ?>
+			<?php echo esc_html_x( 'inherit', 'page option value', 'yith-proteo' ); ?>
 		</option>
 		<option
 			value="no-sidebar" <?php echo ( yith_proteo_sidebar_get_meta( 'sidebar_position' ) === 'no-sidebar' ) ? 'selected' : ''; ?>>
-			<?php esc_html_e( 'no-sidebar', 'yith-proteo' ); ?>
+			<?php echo esc_html_x( 'no-sidebar', 'page option value', 'yith-proteo' ); ?>
 		</option>
 		<option
 			value="left" <?php echo ( yith_proteo_sidebar_get_meta( 'sidebar_position' ) === 'left' ) ? 'selected' : ''; ?>>
-			<?php esc_html_e( 'left', 'yith-proteo' ); ?>
+			<?php echo esc_html_x( 'left', 'page option value', 'yith-proteo' ); ?>
 		</option>
 		<option
 			value="right" <?php echo ( yith_proteo_sidebar_get_meta( 'sidebar_position' ) === 'right' ) ? 'selected' : ''; ?>>
-			<?php esc_html_e( 'right', 'yith-proteo' ); ?>
+			<?php echo esc_html_x( 'right', 'page option value', 'yith-proteo' ); ?>
 		</option>
 	</select>
 	<?php
@@ -244,7 +244,7 @@ function yith_proteo_sidebar_chooser_html( $post ) {
 	<select name="sidebar_chooser" id="sidebar_chooser" class="components-text-control__input">
 		<option
 			value="inherit" <?php echo ( yith_proteo_sidebar_get_meta( 'sidebar_position' ) === 'inherit' ) ? 'selected' : ''; ?>>
-			<?php esc_html_e( 'inherit', 'yith-proteo' ); ?>
+			<?php echo esc_html_x( 'inherit', 'page option value', 'yith-proteo' ); ?>
 		</option>
 		<?php foreach ( $GLOBALS['wp_registered_sidebars'] as $sidebar ) { ?>
 			<option
@@ -272,19 +272,19 @@ function yith_proteo_sidebar_management_html( $post ) {
 				class="components-text-control__input">
 			<option
 				value="inherit" <?php echo ( yith_proteo_sidebar_get_meta( 'sidebar_position' ) === 'inherit' ) ? 'selected' : ''; ?>>
-				<?php esc_html_e( 'Inherit', 'yith-proteo' ); ?>
+				<?php echo esc_html_x( 'Inherit', 'page option value', 'yith-proteo' ); ?>
 			</option>
 			<option
 				value="no-sidebar" <?php echo ( yith_proteo_sidebar_get_meta( 'sidebar_position' ) === 'no-sidebar' ) ? 'selected' : ''; ?>>
-				<?php esc_html_e( 'No sidebar', 'yith-proteo' ); ?>
+				<?php echo esc_html_x( 'No sidebar', 'page option value', 'yith-proteo' ); ?>
 			</option>
 			<option
 				value="left" <?php echo ( yith_proteo_sidebar_get_meta( 'sidebar_position' ) === 'left' ) ? 'selected' : ''; ?>>
-				<?php esc_html_e( 'Left', 'yith-proteo' ); ?>
+				<?php echo esc_html_x( 'Left', 'page option value', 'yith-proteo' ); ?>
 			</option>
 			<option
 				value="right" <?php echo ( yith_proteo_sidebar_get_meta( 'sidebar_position' ) === 'right' ) ? 'selected' : ''; ?>>
-				<?php esc_html_e( 'Right', 'yith-proteo' ); ?>
+				<?php echo esc_html_x( 'Right', 'page option value', 'yith-proteo' ); ?>
 			</option>
 		</select>
 	</p>
@@ -296,7 +296,7 @@ function yith_proteo_sidebar_management_html( $post ) {
 		<select name="sidebar_chooser" id="sidebar_chooser" class="components-text-control__input">
 			<option
 				value="inherit" <?php echo ( yith_proteo_sidebar_get_meta( 'sidebar_position' ) === 'inherit' ) ? 'selected' : ''; ?>>
-				<?php esc_html_e( 'Inherit', 'yith-proteo' ); ?>
+				<?php echo esc_html_x( 'Inherit', 'page option value', 'yith-proteo' ); ?>
 			</option>
 			<?php foreach ( $GLOBALS['wp_registered_sidebars'] as $sidebar ) { ?>
 				<option
@@ -335,7 +335,7 @@ function yith_proteo_header_slider_html( $post ) {
 	<select name="header_slider" id="header_slider"
 			class="components-text-control__input">
 		<option value="" <?php selected( $value, '' ); ?>>
-			<?php esc_html_e( 'none', 'yith-proteo' ); ?>
+			<?php echo esc_html_x( 'none', 'page option value', 'yith-proteo' ); ?>
 		</option>
 		<?php
 		foreach ( $sliders as $slider ) :
@@ -351,7 +351,7 @@ function yith_proteo_header_slider_html( $post ) {
 			foreach ( $rev_sliders as $rev_slider_alias ) {
 				?>
 				<option value="<?php echo esc_attr( $rev_slider_alias ); ?>" <?php selected( $value, $rev_slider_alias ); ?>>
-					<?php echo esc_html__( 'Slider Revolution: ', 'yith-proteo' ) . esc_html( $rev_slider_alias ); ?>
+					<?php echo esc_html_x( 'Slider Revolution: ', 'page option value', 'yith-proteo' ) . esc_html( $rev_slider_alias ); ?>
 				</option>
 				<?php
 			}
@@ -446,25 +446,25 @@ function yith_proteo_manage_page_content_spacing_html( $post ) {
 	<ul class="yith-proteo-page-content-spacing-container spacing-wrapper">
 		<li>
 			<label class="control-spacing-label">
-				<span><?php esc_html_e( 'Top', 'yith-proteo' ); ?></span>
+				<span><?php echo esc_html_x( 'Top', 'page option value', 'yith-proteo' ); ?></span>
 				<input type="number" name="yith_proteo_custom_page_content_spacing[top]" value="<?php echo isset( $spacing['top'] ) ? esc_attr( $spacing['top'] ) : 0; ?>" class="spacing-input">
 			</label>
 		</li>
 		<li>
 			<label class="control-spacing-label">
-				<span><?php esc_html_e( 'Right', 'yith-proteo' ); ?></span>
+				<span><?php echo esc_html_x( 'Right', 'page option value', 'yith-proteo' ); ?></span>
 				<input type="number" name="yith_proteo_custom_page_content_spacing[right]" value="<?php echo isset( $spacing['right'] ) ? esc_attr( $spacing['right'] ) : 0; ?>" class="spacing-input">
 			</label>
 		</li>
 		<li>
 			<label class="control-spacing-label">
-				<span><?php esc_html_e( 'Bottom', 'yith-proteo' ); ?></span>
+				<span><?php echo esc_html_x( 'Bottom', 'page option value', 'yith-proteo' ); ?></span>
 				<input type="number" name="yith_proteo_custom_page_content_spacing[bottom]" value="<?php echo isset( $spacing['bottom'] ) ? esc_attr( $spacing['bottom'] ) : 0; ?>" class="spacing-input">
 			</label>
 		</li>
 		<li>
 			<label class="control-spacing-label">
-				<span><?php esc_html_e( 'Left', 'yith-proteo' ); ?></span>
+				<span><?php echo esc_html_x( 'Left', 'page option value', 'yith-proteo' ); ?></span>
 				<input type="number" name="yith_proteo_custom_page_content_spacing[left]" value="<?php echo isset( $spacing['left'] ) ? esc_attr( $spacing['left'] ) : 0; ?>" class="spacing-input">
 			</label>
 		</li>

@@ -11,7 +11,7 @@
 	$wp_customize->add_section(
 		'yith_proteo_footer_management',
 		array(
-			'title'    => esc_html__( 'Footer options', 'yith-proteo' ),
+			'title'    => esc_html_x( 'Footer options', 'Customizer section title', 'yith-proteo' ),
 			'priority' => 10,
 			'panel'    => 'yith_proteo_footer_and_credits',
 		)
@@ -30,7 +30,7 @@
 			$wp_customize,
 			'yith_proteo_footer_background_group_title',
 			array(
-				'label'   => esc_html__( 'Footer background', 'yith-proteo' ),
+				'label'   => esc_html_x( 'Footer background', 'Customizer options group title', 'yith-proteo' ),
 				'section' => 'yith_proteo_footer_management',
 			)
 		)
@@ -49,7 +49,7 @@
 			$wp_customize,
 			'yith_proteo_footer_background_color',
 			array(
-				'label'   => esc_html__( 'Background color', 'yith-proteo' ),
+				'label'   => esc_html_x( 'Background color', 'Customizer option name', 'yith-proteo' ),
 				'section' => 'yith_proteo_footer_management',
 			)
 		)
@@ -68,7 +68,7 @@
 			$wp_customize,
 			'yith_proteo_footer_background_image',
 			array(
-				'label'   => __( 'Background image', 'yith-proteo' ),
+				'label'   => esc_html_x( 'Background image', 'Customizer option name', 'yith-proteo' ),
 				'section' => 'yith_proteo_footer_management',
 			)
 		)
@@ -89,7 +89,7 @@
 				$wp_customize,
 				'yith_proteo_footer_background_size_full',
 				array(
-					'label'           => esc_html__( '100% background image', 'yith-proteo' ),
+					'label'           => esc_html_x( '100% background image', 'Customizer option name', 'yith-proteo' ),
 					'section'         => 'yith_proteo_footer_management',
 					'active_callback' => 'yith_proteo_footer_has_custom_background',
 				)
@@ -109,13 +109,13 @@
 		'yith_proteo_footer_background_repeat',
 		array(
 			'type'            => 'select',
-			'label'           => esc_html__( 'Background repeat', 'yith-proteo' ),
+			'label'           => esc_html_x( 'Background repeat', 'Customizer option name', 'yith-proteo' ),
 			'section'         => 'yith_proteo_footer_management',
 			'choices'         => array(
-				'no-repeat' => esc_html__( 'Don\'t repeat', 'yith-proteo' ),
-				'repeat'    => esc_html__( 'Repeat horizontally and vertically', 'yith-proteo' ),
-				'repeat-x'  => esc_html__( 'Repeat horizontally', 'yith-proteo' ),
-				'repeat-y'  => esc_html__( 'Repeat vertically', 'yith-proteo' ),
+				'no-repeat' => esc_html_x( 'Don\'t repeat', 'Customizer option value', 'yith-proteo' ),
+				'repeat'    => esc_html_x( 'Repeat horizontally and vertically', 'Customizer option value', 'yith-proteo' ),
+				'repeat-x'  => esc_html_x( 'Repeat horizontally', 'Customizer option value', 'yith-proteo' ),
+				'repeat-y'  => esc_html_x( 'Repeat vertically', 'Customizer option value', 'yith-proteo' ),
 			),
 			'active_callback' => 'yith_proteo_footer_background_not_is_full_width',
 		)
@@ -133,18 +133,18 @@
 		'yith_proteo_footer_background_position',
 		array(
 			'type'            => 'select',
-			'label'           => esc_html__( 'Background position', 'yith-proteo' ),
+			'label'           => esc_html_x( 'Background position', 'Customizer option name', 'yith-proteo' ),
 			'section'         => 'yith_proteo_footer_management',
 			'choices'         => array(
-				'left-top'      => esc_html__( 'Left top', 'yith-proteo' ),
-				'left-center'   => esc_html__( 'Left center', 'yith-proteo' ),
-				'left-bottom'   => esc_html__( 'Left bottom', 'yith-proteo' ),
-				'right-top'     => esc_html__( 'Right top', 'yith-proteo' ),
-				'right-center'  => esc_html__( 'Right center', 'yith-proteo' ),
-				'right-bottom'  => esc_html__( 'Right bottom', 'yith-proteo' ),
-				'center-top'    => esc_html__( 'Center top', 'yith-proteo' ),
-				'center-center' => esc_html__( 'Center', 'yith-proteo' ),
-				'center-bottom' => esc_html__( 'Center bottom', 'yith-proteo' ),
+				'left-top'      => esc_html_x( 'Left top', 'Customizer option value', 'yith-proteo' ),
+				'left-center'   => esc_html_x( 'Left center', 'Customizer option value', 'yith-proteo' ),
+				'left-bottom'   => esc_html_x( 'Left bottom', 'Customizer option value', 'yith-proteo' ),
+				'right-top'     => esc_html_x( 'Right top', 'Customizer option value', 'yith-proteo' ),
+				'right-center'  => esc_html_x( 'Right center', 'Customizer option value', 'yith-proteo' ),
+				'right-bottom'  => esc_html_x( 'Right bottom', 'Customizer option value', 'yith-proteo' ),
+				'center-top'    => esc_html_x( 'Center top', 'Customizer option value', 'yith-proteo' ),
+				'center-center' => esc_html_x( 'Center', 'Customizer option value', 'yith-proteo' ),
+				'center-bottom' => esc_html_x( 'Center bottom', 'Customizer option value', 'yith-proteo' ),
 			),
 			'active_callback' => 'yith_proteo_footer_has_custom_background',
 		)
@@ -163,7 +163,7 @@
 			$wp_customize,
 			'yith_proteo_footer_typography_group_title',
 			array(
-				'label'   => esc_html__( 'Footer typography', 'yith-proteo' ),
+				'label'   => esc_html_x( 'Footer typography', 'Customizer options group title', 'yith-proteo' ),
 				'section' => 'yith_proteo_footer_management',
 			)
 		)
@@ -180,7 +180,7 @@
 	$wp_customize->add_control(
 		'yith_proteo_footer_font_size',
 		array(
-			'label'   => esc_html__( 'Font size (default: 16px)', 'yith-proteo' ),
+			'label'   => esc_html_x( 'Font size (default: 16px)', 'Customizer option name', 'yith-proteo' ),
 			'section' => 'yith_proteo_footer_management',
 			'type'    => 'number',
 		)
@@ -199,7 +199,7 @@
 			$wp_customize,
 			'yith_proteo_footer_font_color',
 			array(
-				'label'   => esc_html__( 'Font color', 'yith-proteo' ),
+				'label'   => esc_html_x( 'Font color', 'Customizer option name', 'yith-proteo' ),
 				'section' => 'yith_proteo_footer_management',
 			)
 		)
@@ -217,7 +217,7 @@
 			$wp_customize,
 			'yith_proteo_footer_link_color',
 			array(
-				'label'   => esc_html__( 'Hyperlink color', 'yith-proteo' ),
+				'label'   => esc_html_x( 'Hyperlink color', 'Customizer option name', 'yith-proteo' ),
 				'section' => 'yith_proteo_footer_management',
 			)
 		)
@@ -235,7 +235,7 @@
 			$wp_customize,
 			'yith_proteo_footer_link_hover_color',
 			array(
-				'label'   => esc_html__( 'Hyperlink :hover color', 'yith-proteo' ),
+				'label'   => esc_html_x( 'Hyperlink :hover color', 'Customizer option name', 'yith-proteo' ),
 				'section' => 'yith_proteo_footer_management',
 			)
 		)
@@ -251,7 +251,7 @@
 	$wp_customize->add_control(
 		'yith_proteo_footer_widgets_title_font_size',
 		array(
-			'label'   => esc_html__( 'Widgets title font size', 'yith-proteo' ),
+			'label'   => esc_html_x( 'Widgets title font size', 'Customizer option name', 'yith-proteo' ),
 			'section' => 'yith_proteo_footer_management',
 			'type'    => 'number',
 		)
@@ -269,7 +269,7 @@
 			$wp_customize,
 			'yith_proteo_footer_widgets_title_color',
 			array(
-				'label'   => esc_html__( 'Widgets title color', 'yith-proteo' ),
+				'label'   => esc_html_x( 'Widgets title color', 'Customizer option name', 'yith-proteo' ),
 				'section' => 'yith_proteo_footer_management',
 			)
 		)
@@ -290,20 +290,20 @@
 				$wp_customize,
 				'yith_proteo_footer_align',
 				array(
-					'label'   => esc_html__( 'Elements alignment', 'yith-proteo' ),
+					'label'   => esc_html_x( 'Elements alignment', 'Customizer option name', 'yith-proteo' ),
 					'section' => 'yith_proteo_footer_management',
 					'choices' => array(
 						'left'   => array(
 							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/align-left.svg',
-							'label' => esc_html__( 'Left', 'yith-proteo' ),
+							'label' => esc_html_x( 'Left', 'Customizer option value', 'yith-proteo' ),
 						),
 						'center' => array(
 							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/align-center.svg',
-							'label' => esc_html__( 'Center', 'yith-proteo' ),
+							'label' => esc_html_x( 'Center', 'Customizer option value', 'yith-proteo' ),
 						),
 						'right'  => array(
 							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/align-right.svg',
-							'label' => esc_html__( 'Right', 'yith-proteo' ),
+							'label' => esc_html_x( 'Right', 'Customizer option value', 'yith-proteo' ),
 						),
 					),
 				)
@@ -324,7 +324,7 @@
 			$wp_customize,
 			'yith_proteo_footer_widgets_group_title',
 			array(
-				'label'   => esc_html__( 'Footer widgets', 'yith-proteo' ),
+				'label'   => esc_html_x( 'Footer widgets', 'Customizer options group title', 'yith-proteo' ),
 				'section' => 'yith_proteo_footer_management',
 			)
 		)
@@ -345,7 +345,7 @@
 				$wp_customize,
 				'yith_proteo_footer_sidebar_1_enable',
 				array(
-					'label'   => esc_html__( 'Enable footer widget area #1', 'yith-proteo' ),
+					'label'   => esc_html_x( 'Enable footer widget area #1', 'Customizer option name', 'yith-proteo' ),
 					'section' => 'yith_proteo_footer_management',
 				)
 			)
@@ -366,7 +366,7 @@
 			$wp_customize,
 			'yith_proteo_footer_sidebar_1_width',
 			array(
-				'label'           => esc_html__( 'Footer widget area #1 width (%).', 'yith-proteo' ),
+				'label'           => esc_html_x( 'Footer widget area #1 width (%).', 'Customizer option name', 'yith-proteo' ),
 				'min'             => 20,
 				'max'             => 100,
 				'step'            => 5,
@@ -390,7 +390,7 @@
 			$wp_customize,
 			'yith_proteo_footer_sidebar_1_widget_per_row',
 			array(
-				'label'           => esc_html__( 'Columns in footer widget area #1.', 'yith-proteo' ),
+				'label'           => esc_html_x( 'Columns in footer widget area #1.', 'Customizer option name', 'yith-proteo' ),
 				'min'             => 1,
 				'max'             => 6,
 				'step'            => 1,
@@ -417,7 +417,7 @@
 				$wp_customize,
 				'yith_proteo_footer_sidebar_2_enable',
 				array(
-					'label'   => esc_html__( 'Enable footer widget area #2', 'yith-proteo' ),
+					'label'   => esc_html_x( 'Enable footer widget area #2', 'Customizer option name', 'yith-proteo' ),
 					'section' => 'yith_proteo_footer_management',
 				)
 			)
@@ -438,7 +438,7 @@
 			$wp_customize,
 			'yith_proteo_footer_sidebar_2_width',
 			array(
-				'label'           => esc_html__( 'Footer widget area #2 width (%).', 'yith-proteo' ),
+				'label'           => esc_html_x( 'Footer widget area #2 width (%).', 'Customizer option name', 'yith-proteo' ),
 				'min'             => 20,
 				'max'             => 100,
 				'step'            => 5,
@@ -462,7 +462,7 @@
 			$wp_customize,
 			'yith_proteo_footer_sidebar_2_widget_per_row',
 			array(
-				'label'           => esc_html__( 'Columns in footer widget area #2', 'yith-proteo' ),
+				'label'           => esc_html_x( 'Columns in footer widget area #2', 'Customizer option name', 'yith-proteo' ),
 				'min'             => 1,
 				'max'             => 6,
 				'step'            => 1,
@@ -487,7 +487,7 @@
 				$wp_customize,
 				'yith_proteo_footer_sidebars_side_by_side',
 				array(
-					'label'           => esc_html__( 'Put the two widget areas side by side', 'yith-proteo' ),
+					'label'           => esc_html_x( 'Put the two widget areas side by side', 'Customizer option name', 'yith-proteo' ),
 					'section'         => 'yith_proteo_footer_management',
 					'active_callback' => 'yith_proteo_is_footer_sidebars_side_by_side_available',
 				)

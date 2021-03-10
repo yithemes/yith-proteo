@@ -27,10 +27,10 @@ class Customizer_Control_On_Off extends WP_Customize_Control {
 	public function render_content() {
 		$choices = array(
 			'yes' => array(
-				'label' => esc_html__( 'On', 'yith-proteo' ),
+				'label' => esc_html_x( 'On', 'Customizer option value', 'yith-proteo' ),
 			),
 			'no'  => array(
-				'label' => esc_html__( 'Off', 'yith-proteo' ),
+				'label' => esc_html_x( 'Off', 'Customizer option value', 'yith-proteo' ),
 			),
 		); ?>
 

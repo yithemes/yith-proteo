@@ -17,8 +17,8 @@ if ( ! class_exists( 'YITH_Proteo_Account_Widget' ) ) {
 		public function __construct() {
 			parent::__construct(
 				'yith_proteo_account_widget',
-				esc_html__( 'YITH Proteo Account Widget', 'yith-proteo' ),
-				array( 'description' => esc_html__( 'A shortcut to site login page', 'yith-proteo' ) )
+				esc_html_x( 'YITH Proteo Account Widget', 'Widget title', 'yith-proteo' ),
+				array( 'description' => esc_html_x( 'A shortcut to site login page', 'Widget description', 'yith-proteo' ) )
 			);
 			add_action( 'admin_footer', array( $this, 'media_fields' ) );
 			add_action( 'customize_controls_print_footer_scripts', array( $this, 'media_fields' ) );
@@ -62,7 +62,7 @@ if ( ! class_exists( 'YITH_Proteo_Account_Widget' ) ) {
 			if ( is_user_logged_in() ) {
 				$name = yith_proteo_get_user_username();
 				/* translators: %s: user name. */
-				$message = sprintf( esc_html__( 'Hello %s', 'yith-proteo' ), '<br>' . $name );
+				$message = sprintf( esc_html_x( 'Hello %s', 'YITH_Proteo_Account_Widget greeting message', 'yith-proteo' ), '<br>' . $name );
 				$output .= '<span>' . apply_filters( 'yith_proteo_account_widget_text', $message ) . '</span>';
 			}
 
@@ -123,13 +123,13 @@ if ( ! class_exists( 'YITH_Proteo_Account_Widget' ) ) {
 		public function field_generator( $instance ) {
 			$widget_fields = array(
 				array(
-					'label'   => esc_html__( 'Custom icon', 'yith-proteo' ),
+					'label'   => esc_html_x( 'Custom icon', 'Widget option', 'yith-proteo' ),
 					'id'      => 'custom-icon',
 					'type'    => 'media',
 					'default' => get_template_directory_uri() . '/img/user.svg',
 				),
 				array(
-					'label'   => esc_html__( 'Login url', 'yith-proteo' ),
+					'label'   => esc_html_x( 'Login url', 'Widget option', 'yith-proteo' ),
 					'id'      => 'login-url',
 					'type'    => 'url',
 					'default' => wp_login_url(),
@@ -137,7 +137,7 @@ if ( ! class_exists( 'YITH_Proteo_Account_Widget' ) ) {
 			);
 			if ( class_exists( 'woocommerce' ) ) {
 				$widget_fields[] = array(
-					'label'   => esc_html__( 'My account url', 'yith-proteo' ),
+					'label'   => esc_html_x( 'My account url', 'Widget option', 'yith-proteo' ),
 					'id'      => 'myaccount-url',
 					'type'    => 'url',
 					'default' => get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) ? get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) : get_home_url( null, '/my-account/' ),
@@ -163,8 +163,8 @@ if ( ! class_exists( 'YITH_Proteo_Account_Widget' ) ) {
 						$output .= '<label style="display:block;" for="' . esc_attr( $this->get_field_id( $widget_field['id'] ) ) . '">' . esc_attr( $widget_field['label'] ) . ':</label> ';
 						$output .= '<input style="display:none;" class="widefat" id="' . esc_attr( $this->get_field_id( $widget_field['id'] ) ) . '" name="' . esc_attr( $this->get_field_name( $widget_field['id'] ) ) . '" type="' . $widget_field['type'] . '" value="' . $widget_value . '">';
 						$output .= '<span id="preview' . esc_attr( $this->get_field_id( $widget_field['id'] ) ) . '" style="padding:5px;margin-right:10px;border:2px solid #eee;display:inline-block;width: 100px;min-height:50px;height:auto;vertical-align:middle;background:url(' . $media_url . ') content-box;background-size:contain;background-repeat:no-repeat;background-position:center;"></span>';
-						$output .= '<button id="' . $this->get_field_id( $widget_field['id'] ) . '" class="button select-media custommedia">' . esc_html__( 'Add Media', 'yith-proteo' ) . '</button>';
-						$output .= '<input style="width: 19%; margin-left: 5px;" class="button remove-media" id="buttonremove" name="buttonremove" type="button" value="' . esc_html__( 'Clear', 'yith-proteo' ) . '" />';
+						$output .= '<button id="' . $this->get_field_id( $widget_field['id'] ) . '" class="button select-media custommedia">' . esc_html_x( 'Add Media', 'Widget option', 'yith-proteo' ) . '</button>';
+						$output .= '<input style="width: 19%; margin-left: 5px;" class="button remove-media" id="buttonremove" name="buttonremove" type="button" value="' . esc_html_x( 'Clear', 'Widget option', 'yith-proteo' ) . '" />';
 						$output .= '</p>';
 						break;
 					default:
@@ -197,13 +197,13 @@ if ( ! class_exists( 'YITH_Proteo_Account_Widget' ) ) {
 		public function update( $new_instance, $old_instance ) {
 			$widget_fields = array(
 				array(
-					'label'   => esc_html__( 'Custom icon', 'yith-proteo' ),
+					'label'   => esc_html_x( 'Custom icon', 'Widget option', 'yith-proteo' ),
 					'id'      => 'custom-icon',
 					'type'    => 'media',
 					'default' => '',
 				),
 				array(
-					'label'   => esc_html__( 'Login url', 'yith-proteo' ),
+					'label'   => esc_html_x( 'Login url', 'Widget option', 'yith-proteo' ),
 					'id'      => 'login-url',
 					'type'    => 'url',
 					'default' => wp_login_url(),
@@ -211,7 +211,7 @@ if ( ! class_exists( 'YITH_Proteo_Account_Widget' ) ) {
 			);
 			if ( class_exists( 'woocommerce' ) ) {
 				$widget_fields[] = array(
-					'label'   => esc_html__( 'My account url', 'yith-proteo' ),
+					'label'   => esc_html_x( 'My account url', 'Widget option', 'yith-proteo' ),
 					'id'      => 'myaccount-url',
 					'type'    => 'url',
 					'default' => get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) ? get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) : get_home_url( null, '/my-account/' ),

@@ -11,7 +11,7 @@
 $wp_customize->add_section(
 	'yith_proteo_blog_management',
 	array(
-		'title'    => esc_html__( 'Blog', 'yith-proteo' ),
+		'title'    => esc_html_x( 'Blog', 'Customizer section title', 'yith-proteo' ),
 		'priority' => 80,
 	)
 );
@@ -28,13 +28,13 @@ $wp_customize->add_control(
 	'yith_proteo_single_post_layout',
 	array(
 		'type'        => 'radio',
-		'label'       => esc_html__( 'Choose the single post layout', 'yith-proteo' ),
+		'label'       => esc_html_x( 'Choose the single post layout', 'Customizer option name', 'yith-proteo' ),
 		'section'     => 'yith_proteo_blog_management',
-		'description' => esc_html__( 'Disable sidebars if you want to use Background picture layout.', 'yith-proteo' ),
+		'description' => esc_html_x( 'Disable sidebars if you want to use Background picture layout.', 'Customizer option description', 'yith-proteo' ),
 		'choices'     => array(
-			'standard'              => esc_html__( 'Standard', 'yith-proteo' ),
-			'background_picture'    => esc_html__( 'Background picture', 'yith-proteo' ),
-			'fullwidth_cover_image' => esc_html__( 'Fullwidth cover image', 'yith-proteo' ),
+			'standard'              => esc_html_x( 'Standard', 'Customizer option value', 'yith-proteo' ),
+			'background_picture'    => esc_html_x( 'Background picture', 'Customizer option value', 'yith-proteo' ),
+			'fullwidth_cover_image' => esc_html_x( 'Fullwidth cover image', 'Customizer option value', 'yith-proteo' ),
 		),
 	)
 );
@@ -53,7 +53,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_single_post_fullwidth_cover_cropping_custom_height',
 		array(
-			'label'           => esc_html__( 'Post featured image height', 'yith-proteo' ),
+			'label'           => esc_html_x( 'Post featured image height', 'Customizer option name', 'yith-proteo' ),
 			'min'             => 180,
 			'max'             => 1000,
 			'step'            => 10,
@@ -76,7 +76,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_single_post_background_color',
 		array(
-			'label'   => esc_html__( 'Post thumbnail background overlay', 'yith-proteo' ),
+			'label'   => esc_html_x( 'Post thumbnail background overlay', 'Customizer option name', 'yith-proteo' ),
 			'section' => 'yith_proteo_blog_management',
 		)
 	)
@@ -96,7 +96,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_single_post_bg_alpha',
 		array(
-			'label'   => esc_html__( 'Overlay color opacity % (default: 70%)', 'yith-proteo' ),
+			'label'   => esc_html_x( 'Overlay color opacity % (default: 70%)', 'Customizer option name', 'yith-proteo' ),
 			'min'     => 0,
 			'max'     => 100,
 			'step'    => 1,
@@ -118,7 +118,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_single_post_thumbnail_text_color',
 		array(
-			'label'   => esc_html__( 'Post thumbnail text color', 'yith-proteo' ),
+			'label'   => esc_html_x( 'Post thumbnail text color', 'Customizer option name', 'yith-proteo' ),
 			'section' => 'yith_proteo_blog_management',
 		)
 	)
@@ -139,9 +139,9 @@ if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
 			$wp_customize,
 			'yith_proteo_blog_date_on_image_enable',
 			array(
-				'label'       => esc_html__( 'Show date badge', 'yith-proteo' ),
+				'label'       => esc_html_x( 'Show date badge', 'Customizer option name', 'yith-proteo' ),
 				'section'     => 'yith_proteo_blog_management',
-				'description' => esc_html__( 'Choose whether to show the post date badge or not.', 'yith-proteo' ),
+				'description' => esc_html_x( 'Choose whether to show the post date badge or not.', 'Customizer option description', 'yith-proteo' ),
 			)
 		)
 	);
@@ -152,7 +152,7 @@ $wp_customize->add_setting(
 	'yith_proteo_blog_read_more_text',
 	array(
 		'sanitize_callback' => 'sanitize_text_field',
-		'default'           => esc_html__( 'Read more  &#10230;', 'yith-proteo' ),
+		'default'           => esc_html_x( 'Read more  &#10230;', 'Customizer option default value', 'yith-proteo' ),
 	)
 );
 $wp_customize->add_control(
@@ -160,7 +160,7 @@ $wp_customize->add_control(
 	array(
 		'type'    => 'text',
 		'section' => 'yith_proteo_blog_management',
-		'label'   => esc_html__( 'Read more text', 'yith-proteo' ),
+		'label'   => esc_html_x( 'Read more text', 'Customizer option name', 'yith-proteo' ),
 	)
 );
 
@@ -179,7 +179,7 @@ if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
 			$wp_customize,
 			'yith_proteo_blog_show_post_navigation',
 			array(
-				'label'   => esc_html__( 'Show navigation links', 'yith-proteo' ),
+				'label'   => esc_html_x( 'Show navigation links', 'Customizer option name', 'yith-proteo' ),
 				'section' => 'yith_proteo_blog_management',
 			)
 		)
@@ -201,7 +201,7 @@ if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
 			$wp_customize,
 			'yith_proteo_blog_show_post_author',
 			array(
-				'label'   => esc_html__( 'Show post author', 'yith-proteo' ),
+				'label'   => esc_html_x( 'Show post author', 'Customizer option name', 'yith-proteo' ),
 				'section' => 'yith_proteo_blog_management',
 			)
 		)
@@ -223,7 +223,7 @@ if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
 			$wp_customize,
 			'yith_proteo_blog_show_post_categories_and_tags',
 			array(
-				'label'   => esc_html__( 'Show post categories and tags', 'yith-proteo' ),
+				'label'   => esc_html_x( 'Show post categories and tags', 'Customizer option name', 'yith-proteo' ),
 				'section' => 'yith_proteo_blog_management',
 			)
 		)
@@ -245,7 +245,7 @@ if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
 			$wp_customize,
 			'yith_proteo_blog_show_post_date',
 			array(
-				'label'   => esc_html__( 'Show post date', 'yith-proteo' ),
+				'label'   => esc_html_x( 'Show post date', 'Customizer option name', 'yith-proteo' ),
 				'section' => 'yith_proteo_blog_management',
 			)
 		)

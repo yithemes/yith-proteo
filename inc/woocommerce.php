@@ -300,7 +300,7 @@ if ( ! function_exists( 'yith_proteo_open_my_account_sidebar' ) ) :
 				$username = $current_user->display_name;
 				echo '<p><strong class="user-name">' . esc_html( $username ) . '</strong>';
 				echo '<span class="user-email">' . esc_html( antispambot( $current_user->user_email ) ) . '</span>';
-				echo '<a class="logout-link" href="' . esc_url( wc_logout_url() ) . '">' . esc_html__( 'Logout', 'yith-proteo' ) . '</a></p>';
+				echo '<a class="logout-link" href="' . esc_url( wc_logout_url() ) . '">' . esc_html_x( 'Logout', 'Account logout link', 'yith-proteo' ) . '</a></p>';
 				?>
 			</div>
 
@@ -342,7 +342,7 @@ function yith_proteo_arrange_my_account_links( $menu_links ) {
 	unset( $menu_links['edit-account'] ); // Remove edit account link.
 	unset( $menu_links['edit-address'] ); // Remove edit address link.
 
-	$menu_links['account-info'] = __( 'Account info', 'yith-proteo' );
+	$menu_links['account-info'] = esc_html_x( 'Account info', 'Account menu item', 'yith-proteo' );
 
 	return $menu_links;
 
@@ -558,7 +558,7 @@ add_filter( 'woocommerce_short_description', 'yith_proteo_limit_woocommerce_shor
  */
 function yith_proteo_title_order_received( $title, $id ) {
 	if ( function_exists( 'is_order_received_page' ) && is_order_received_page() && get_the_ID() === $id ) {
-		$title = esc_html__( 'Thank you.', 'yith-proteo' );
+		$title = esc_html_x( 'Thank you.', 'Thank you page title', 'yith-proteo' );
 	}
 
 	return $title;
@@ -824,7 +824,7 @@ if ( ! function_exists( 'yith_proteo_add_view_product_button' ) ) {
 		global $product;
 		$link        = $product->get_permalink();
 		$button_type = 'button ' . get_theme_mod( 'yith_proteo_products_loop_view_details_style', 'ghost' );
-		echo '<a href="' . esc_url( $link ) . '" class="' . esc_attr( $button_type ) . ' view-details woocommerce-LoopProduct-link woocommerce-loop-product__link">' . esc_html( apply_filters( 'yith_proteo_loop_product_view_details_text', __( 'View details', 'yith-proteo' ) ) ) . '</a>';
+		echo '<a href="' . esc_url( $link ) . '" class="' . esc_attr( $button_type ) . ' view-details woocommerce-LoopProduct-link woocommerce-loop-product__link">' . esc_html( apply_filters( 'yith_proteo_loop_product_view_details_text', esc_html_x( 'View details', 'Customizer option value', 'yith-proteo' ) ) ) . '</a>';
 	}
 }
 

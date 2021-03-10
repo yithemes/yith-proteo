@@ -11,7 +11,7 @@
 $wp_customize->add_section(
 	'yith_proteo_forms',
 	array(
-		'title'    => esc_html__( 'Forms', 'yith-proteo' ),
+		'title'    => esc_html_x( 'Forms', 'Customizer section title', 'yith-proteo' ),
 		'priority' => 40,
 		'panel'    => 'yith_proteo_extra',
 	)
@@ -32,7 +32,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_inputs_border_radius',
 		array(
-			'label'   => esc_html__( 'Input and textarea border radius (default: 0px)', 'yith-proteo' ),
+			'label'   => esc_html_x( 'Input and textarea border radius (default: 0px)', 'Customizer option name', 'yith-proteo' ),
 			'min'     => 0,
 			'max'     => 50,
 			'step'    => 1,
@@ -56,7 +56,7 @@ if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
 			$wp_customize,
 			'yith_proteo_use_enanched_selects',
 			array(
-				'label'   => esc_html__( 'Use enhanced select elements', 'yith-proteo' ),
+				'label'   => esc_html_x( 'Use enhanced select elements', 'Customizer option name', 'yith-proteo' ),
 				'section' => 'yith_proteo_forms',
 			)
 		)
@@ -78,7 +78,7 @@ if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
 			$wp_customize,
 			'yith_proteo_use_enhanced_checkbox_and_radio',
 			array(
-				'label'   => esc_html__( 'Use enhanced checkbox and radio button elements', 'yith-proteo' ),
+				'label'   => esc_html_x( 'Use enhanced checkbox and radio button elements', 'Customizer option name', 'yith-proteo' ),
 				'section' => 'yith_proteo_forms',
 			)
 		)

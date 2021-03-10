@@ -11,7 +11,7 @@
 	$wp_customize->add_section(
 		'yith_proteo_footer_credits_management',
 		array(
-			'title'    => esc_html__( 'Footer credits', 'yith-proteo' ),
+			'title'    => esc_html_x( 'Footer credits', 'Customizer section title', 'yith-proteo' ),
 			'priority' => 20,
 			'panel'    => 'yith_proteo_footer_and_credits',
 		)
@@ -27,7 +27,7 @@
 	$wp_customize->add_control(
 		'yith_proteo_footer_credits_content',
 		array(
-			'label'   => esc_html__( 'Enter here the content of the footer credits area', 'yith-proteo' ),
+			'label'   => esc_html_x( 'Enter here the content of the footer credits area', 'Customizer option description', 'yith-proteo' ),
 			'section' => 'yith_proteo_footer_credits_management',
 			'type'    => 'textarea',
 		)
@@ -45,7 +45,7 @@
 			$wp_customize,
 			'yith_proteo_footer_credits_background_color',
 			array(
-				'label'   => esc_html__( 'Footer credits background color', 'yith-proteo' ),
+				'label'   => esc_html_x( 'Footer credits background color', 'Customizer option name', 'yith-proteo' ),
 				'section' => 'yith_proteo_footer_credits_management',
 			)
 		)
@@ -61,7 +61,7 @@
 	$wp_customize->add_control(
 		'yith_proteo_footer_credits_font_size',
 		array(
-			'label'   => esc_html__( 'Font size (default: 16px)', 'yith-proteo' ),
+			'label'   => esc_html_x( 'Font size (default: 16px)', 'Customizer option name', 'yith-proteo' ),
 			'section' => 'yith_proteo_footer_credits_management',
 			'type'    => 'number',
 		)
@@ -79,7 +79,7 @@
 			$wp_customize,
 			'yith_proteo_footer_credits_font_color',
 			array(
-				'label'   => esc_html__( 'Font color', 'yith-proteo' ),
+				'label'   => esc_html_x( 'Font color', 'Customizer option name', 'yith-proteo' ),
 				'section' => 'yith_proteo_footer_credits_management',
 			)
 		)
@@ -97,7 +97,7 @@
 			$wp_customize,
 			'yith_proteo_footer_credits_link_color',
 			array(
-				'label'   => esc_html__( 'Hyperlink color', 'yith-proteo' ),
+				'label'   => esc_html_x( 'Hyperlink color', 'Customizer option name', 'yith-proteo' ),
 				'section' => 'yith_proteo_footer_credits_management',
 			)
 		)
@@ -115,7 +115,7 @@
 			$wp_customize,
 			'yith_proteo_footer_credits_link_hover_color',
 			array(
-				'label'   => esc_html__( 'Hyperlink :hover color', 'yith-proteo' ),
+				'label'   => esc_html_x( 'Hyperlink :hover color', 'Customizer option name', 'yith-proteo' ),
 				'section' => 'yith_proteo_footer_credits_management',
 			)
 		)
@@ -135,20 +135,20 @@
 				$wp_customize,
 				'yith_proteo_footer_credits_align',
 				array(
-					'label'   => esc_html__( 'Elements alignment', 'yith-proteo' ),
+					'label'   => esc_html_x( 'Elements alignment', 'Customizer option name', 'yith-proteo' ),
 					'section' => 'yith_proteo_footer_credits_management',
 					'choices' => array(
 						'left'   => array(
 							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/align-left.svg',
-							'label' => esc_html__( 'Left', 'yith-proteo' ),
+							'label' => esc_html_x( 'Left', 'Customizer option value', 'yith-proteo' ),
 						),
 						'center' => array(
 							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/align-center.svg',
-							'label' => esc_html__( 'Center', 'yith-proteo' ),
+							'label' => esc_html_x( 'Center', 'Customizer option value', 'yith-proteo' ),
 						),
 						'right'  => array(
 							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/align-right.svg',
-							'label' => esc_html__( 'Right', 'yith-proteo' ),
+							'label' => esc_html_x( 'Right', 'Customizer option value', 'yith-proteo' ),
 						),
 					),
 				)

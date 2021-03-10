@@ -11,7 +11,7 @@
 	$wp_customize->add_section(
 		'yith_proteo_sale_badge_management',
 		array(
-			'title'    => esc_html__( 'Sale badge', 'yith-proteo' ),
+			'title'    => esc_html_x( 'Sale badge', 'Customizer section title', 'yith-proteo' ),
 			'priority' => 10,
 			'panel'    => 'woocommerce',
 		)
@@ -30,7 +30,7 @@
 			$wp_customize,
 			'yith_proteo_sale_badge_bg_color',
 			array(
-				'label'   => esc_html__( 'Sale badge background color', 'yith-proteo' ),
+				'label'   => esc_html_x( 'Sale badge background color', 'Customizer option name', 'yith-proteo' ),
 				'section' => 'yith_proteo_sale_badge_management',
 			)
 		)
@@ -48,7 +48,7 @@
 			$wp_customize,
 			'yith_proteo_sale_badge_text_color',
 			array(
-				'label'   => esc_html__( 'Sale badge text color', 'yith-proteo' ),
+				'label'   => esc_html_x( 'Sale badge text color', 'Customizer option name', 'yith-proteo' ),
 				'section' => 'yith_proteo_sale_badge_management',
 			)
 		)
@@ -64,7 +64,7 @@
 	$wp_customize->add_control(
 		'yith_proteo_sale_badge_font_size',
 		array(
-			'label'   => esc_html__( 'Sale badge font size (default: 13px)', 'yith-proteo' ),
+			'label'   => esc_html_x( 'Sale badge font size (default: 13px)', 'Customizer option name', 'yith-proteo' ),
 			'section' => 'yith_proteo_sale_badge_management',
 			'type'    => 'number',
 		)

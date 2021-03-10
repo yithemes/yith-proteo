@@ -27,10 +27,10 @@ class Customizer_Control_Yes_No extends WP_Customize_Control {
 	public function render_content() {
 		$choices = array(
 			'yes' => array(
-				'label' => esc_html__( 'Yes', 'yith-proteo' ),
+				'label' => esc_html_x( 'Yes', 'Customizer option value', 'yith-proteo' ),
 			),
 			'no'  => array(
-				'label' => esc_html__( 'No', 'yith-proteo' ),
+				'label' => esc_html_x( 'No', 'Customizer option value', 'yith-proteo' ),
 			),
 		); ?>
 

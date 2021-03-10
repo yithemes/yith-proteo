@@ -11,7 +11,7 @@
 $wp_customize->add_section(
 	'yith_proteo_block_editor_colors',
 	array(
-		'title'    => esc_html__( 'Block editor colors', 'yith-proteo' ),
+		'title'    => esc_html_x( 'Block editor colors', 'Customizer section title', 'yith-proteo' ),
 		'priority' => 20,
 		'panel'    => 'yith_proteo_extra',
 	)
@@ -30,7 +30,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_block_editor_color_1',
 		array(
-			'label'   => esc_html__( 'Custom color #1', 'yith-proteo' ),
+			'label'   => esc_html_x( 'Custom color #1', 'Customizer option name', 'yith-proteo' ),
 			'section' => 'yith_proteo_block_editor_colors',
 		)
 	)
@@ -49,7 +49,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_block_editor_color_2',
 		array(
-			'label'   => esc_html__( 'Custom color #2', 'yith-proteo' ),
+			'label'   => esc_html_x( 'Custom color #2', 'Customizer option name', 'yith-proteo' ),
 			'section' => 'yith_proteo_block_editor_colors',
 		)
 	)
@@ -68,7 +68,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_block_editor_color_3',
 		array(
-			'label'   => esc_html__( 'Custom color #3', 'yith-proteo' ),
+			'label'   => esc_html_x( 'Custom color #3', 'Customizer option name', 'yith-proteo' ),
 			'section' => 'yith_proteo_block_editor_colors',
 		)
 	)
@@ -87,7 +87,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_block_editor_color_4',
 		array(
-			'label'   => esc_html__( 'Custom color #4', 'yith-proteo' ),
+			'label'   => esc_html_x( 'Custom color #4', 'Customizer option name', 'yith-proteo' ),
 			'section' => 'yith_proteo_block_editor_colors',
 		)
 	)
@@ -106,7 +106,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_block_editor_color_5',
 		array(
-			'label'   => esc_html__( 'Custom color #5', 'yith-proteo' ),
+			'label'   => esc_html_x( 'Custom color #5', 'Customizer option name', 'yith-proteo' ),
 			'section' => 'yith_proteo_block_editor_colors',
 		)
 	)
@@ -125,7 +125,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_block_editor_color_6',
 		array(
-			'label'   => esc_html__( 'Custom color #6', 'yith-proteo' ),
+			'label'   => esc_html_x( 'Custom color #6', 'Customizer option name', 'yith-proteo' ),
 			'section' => 'yith_proteo_block_editor_colors',
 		)
 	)
@@ -144,7 +144,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_block_editor_color_7',
 		array(
-			'label'   => esc_html__( 'Custom color #7', 'yith-proteo' ),
+			'label'   => esc_html_x( 'Custom color #7', 'Customizer option name', 'yith-proteo' ),
 			'section' => 'yith_proteo_block_editor_colors',
 		)
 	)
@@ -163,7 +163,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_block_editor_color_8',
 		array(
-			'label'   => esc_html__( 'Custom color #8', 'yith-proteo' ),
+			'label'   => esc_html_x( 'Custom color #8', 'Customizer option name', 'yith-proteo' ),
 			'section' => 'yith_proteo_block_editor_colors',
 		)
 	)

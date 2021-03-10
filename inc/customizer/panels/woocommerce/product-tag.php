@@ -11,7 +11,7 @@
 	$wp_customize->add_section(
 		'yith_proteo_product_tag_page_management',
 		array(
-			'title'    => esc_html__( 'Product Tag page', 'yith-proteo' ),
+			'title'    => esc_html_x( 'Product Tag page', 'Customizer section title', 'yith-proteo' ),
 			'priority' => 10,
 			'panel'    => 'woocommerce',
 		)
@@ -31,21 +31,21 @@
 				$wp_customize,
 				'yith_proteo_product_tag_page_sidebar_position',
 				array(
-					'label'       => esc_html__( 'Choose the position of the sidebar on product tag pages', 'yith-proteo' ),
+					'label'       => esc_html_x( 'Choose the position of the sidebar on product tag pages', 'Customizer option name', 'yith-proteo' ),
 					'section'     => 'yith_proteo_product_tag_page_management',
-					'description' => esc_html__( 'Select where to display the sidebar.', 'yith-proteo' ),
+					'description' => esc_html_x( 'Select where to display the sidebar.', 'Customizer option description', 'yith-proteo' ),
 					'choices'     => array(
 						'no-sidebar' => array(
 							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/sidebar-no.svg',
-							'label' => esc_html__( 'No sidebar', 'yith-proteo' ),
+							'label' => esc_html_x( 'No sidebar', 'Customizer option value', 'yith-proteo' ),
 						),
 						'left'       => array(
 							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/sidebar-left.svg',
-							'label' => esc_html__( 'Left', 'yith-proteo' ),
+							'label' => esc_html_x( 'Left', 'Customizer option value', 'yith-proteo' ),
 						),
 						'right'      => array(
 							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/sidebar-right.svg',
-							'label' => esc_html__( 'Right', 'yith-proteo' ),
+							'label' => esc_html_x( 'Right', 'Customizer option value', 'yith-proteo' ),
 						),
 					),
 				)
@@ -65,9 +65,9 @@
 		'yith_proteo_product_tag_page_sidebar',
 		array(
 			'type'            => 'select',
-			'label'           => esc_html__( 'Choose the product tag page sidebar', 'yith-proteo' ),
+			'label'           => esc_html_x( 'Choose the product tag page sidebar', 'Customizer option name', 'yith-proteo' ),
 			'section'         => 'yith_proteo_product_tag_page_management',
-			'description'     => esc_html__( 'Select the sidebar to display.', 'yith-proteo' ),
+			'description'     => esc_html_x( 'Select the sidebar to display.', 'Customizer option description', 'yith-proteo' ),
 			'choices'         => wp_list_pluck( $GLOBALS['wp_registered_sidebars'], 'name' ),
 			'active_callback' => 'yith_proteo_product_tag_page_sidebar_is_enabled',
 		)

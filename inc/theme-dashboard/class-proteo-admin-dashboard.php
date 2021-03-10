@@ -108,7 +108,7 @@ if ( ! class_exists( 'Proteo_Admin_Dashboard' ) ) {
 				wp_send_json_error(
 					array(
 						'success' => false,
-						'message' => __( 'No plugin specified', 'yith-proteo' ),
+						'message' => esc_html_x( 'No plugin specified', 'Proteo dashboard debug message', 'yith-proteo' ),
 					)
 				);
 			}
@@ -130,7 +130,7 @@ if ( ! class_exists( 'Proteo_Admin_Dashboard' ) ) {
 			wp_send_json_success(
 				array(
 					'success'               => true,
-					'message'               => __( 'Plugin Successfully Activated', 'yith-proteo' ),
+					'message'               => esc_html_x( 'Plugin Successfully Activated', 'Proteo dashboard debug message', 'yith-proteo' ),
 					'starter_template_slug' => self::$proteo_dashboard_slug,
 				)
 			);
@@ -156,13 +156,13 @@ if ( ! class_exists( 'Proteo_Admin_Dashboard' ) ) {
 
 				$localize = array(
 					'ajaxUrl'                            => admin_url( 'admin-ajax.php' ),
-					'btnActivating'                      => __( 'Activating Importer Plugin ', 'yith-proteo' ) . '&hellip;',
+					'btnActivating'                      => esc_html_x( 'Activating Importer Plugin ', 'Proteo dashboard', 'yith-proteo' ) . '&hellip;',
 					'proteoDashboarLink'                 => admin_url( 'themes.php?page=' ),
-					'recommendedPluiginActivatingText'   => __( 'Activating', 'yith-proteo' ) . '&hellip;',
-					'recommendedPluiginDeactivatingText' => __( 'Deactivating', 'yith-proteo' ) . '&hellip;',
-					'recommendedPluiginActivateText'     => __( 'Activate', 'yith-proteo' ),
-					'recommendedPluiginDeactivateText'   => __( 'Deactivate', 'yith-proteo' ),
-					'recommendedPluiginSettingsText'     => __( 'Settings', 'yith-proteo' ),
+					'recommendedPluiginActivatingText'   => esc_html_x( 'Activating', 'Proteo dashboard', 'yith-proteo' ) . '&hellip;',
+					'recommendedPluiginDeactivatingText' => esc_html_x( 'Deactivating', 'Proteo dashboard', 'yith-proteo' ) . '&hellip;',
+					'recommendedPluiginActivateText'     => esc_html_x( 'Activate', 'Proteo dashboard', 'yith-proteo' ),
+					'recommendedPluiginDeactivateText'   => esc_html_x( 'Deactivate', 'Proteo dashboard', 'yith-proteo' ),
+					'recommendedPluiginSettingsText'     => esc_html_x( 'Settings', 'Proteo dashboard', 'yith-proteo' ),
 					'proteoPluginManagerNonce'           => wp_create_nonce( 'yith-proteo-recommended-plugin-nonce' ),
 					'successChecboxSVG'                  => '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#1a9b9f" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"/></svg>',
 					'proteoToolkitEnabled'               => defined( 'YITH_PROTEO_TOOLKIT' ),

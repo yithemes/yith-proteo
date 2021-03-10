@@ -92,7 +92,7 @@ class YITH_Proteo_Walker_Comment extends Walker_Comment {
 						</time>
 					</a>
 					<?php
-					edit_comment_link( __( '(Edit)', 'yith-proteo' ), '&nbsp;&nbsp;', '' );
+					edit_comment_link( esc_html_x( '(Edit)', 'Edit comment link', 'yith-proteo' ), '&nbsp;&nbsp;', '' );
 					?>
 				</div><!-- .comment-metadata -->
 

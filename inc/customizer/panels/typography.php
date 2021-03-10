@@ -11,7 +11,7 @@
 $wp_customize->add_section(
 	'yith_proteo_typography',
 	array(
-		'title'    => esc_html__( 'Typography', 'yith-proteo' ),
+		'title'    => esc_html_x( 'Typography', 'Customizer section title', 'yith-proteo' ),
 		'priority' => 30,
 	)
 );
@@ -30,7 +30,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_global_typography_group_title',
 		array(
-			'label'   => esc_html__( 'Global typography', 'yith-proteo' ),
+			'label'   => esc_html_x( 'Global typography', 'Customizer options group title', 'yith-proteo' ),
 			'section' => 'yith_proteo_typography',
 		)
 	)
@@ -49,7 +49,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_body_font',
 		array(
-			'label'       => __( 'Body font', 'yith-proteo' ),
+			'label'       => esc_html_x( 'Body font', 'Customizer option name', 'yith-proteo' ),
 			'section'     => 'yith_proteo_typography',
 			'input_attrs' => array(
 				'font_count' => 'all',
@@ -70,7 +70,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
 	'yith_proteo_base_font_size',
 	array(
-		'label'   => esc_html__( 'Font size (default: 16px)', 'yith-proteo' ),
+		'label'   => esc_html_x( 'Font size (default: 16px)', 'Customizer option name', 'yith-proteo' ),
 		'section' => 'yith_proteo_typography',
 		'type'    => 'number',
 	)
@@ -88,7 +88,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_base_font_color',
 		array(
-			'label'   => esc_html__( 'Text color', 'yith-proteo' ),
+			'label'   => esc_html_x( 'Text color', 'Customizer option name', 'yith-proteo' ),
 			'section' => 'yith_proteo_typography',
 		)
 	)
@@ -107,7 +107,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_general_link_color',
 		array(
-			'label'   => esc_html__( 'Links color', 'yith-proteo' ),
+			'label'   => esc_html_x( 'Links color', 'Customizer option name', 'yith-proteo' ),
 			'section' => 'yith_proteo_typography',
 		)
 	)
@@ -126,7 +126,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_general_link_hover_color',
 		array(
-			'label'   => esc_html__( 'Links :hover color', 'yith-proteo' ),
+			'label'   => esc_html_x( 'Links :hover color', 'Customizer option name', 'yith-proteo' ),
 			'section' => 'yith_proteo_typography',
 		)
 	)
@@ -147,7 +147,7 @@ if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
 			$wp_customize,
 			'yith_proteo_general_link_decoration',
 			array(
-				'label'   => esc_html__( 'Show underlined links', 'yith-proteo' ),
+				'label'   => esc_html_x( 'Show underlined links', 'Customizer option name', 'yith-proteo' ),
 				'section' => 'yith_proteo_typography',
 			)
 		)
@@ -168,7 +168,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_h1_typography_group_title',
 		array(
-			'label'   => esc_html__( 'H1', 'yith-proteo' ),
+			'label'   => esc_html_x( 'H1', 'Customizer options group title', 'yith-proteo' ),
 			'section' => 'yith_proteo_typography',
 		)
 	)
@@ -187,7 +187,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_h1_font',
 		array(
-			'label'       => __( 'Font', 'yith-proteo' ),
+			'label'       => esc_html_x( 'Font', 'Customizer option name', 'yith-proteo' ),
 			'section'     => 'yith_proteo_typography',
 			'input_attrs' => array(
 				'font_count' => 'all',
@@ -207,7 +207,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
 	'yith_proteo_h1_font_size',
 	array(
-		'label'   => esc_html__( 'Font size (default: 32px)', 'yith-proteo' ),
+		'label'   => esc_html_x( 'Font size (default: 32px)', 'Customizer option name', 'yith-proteo' ),
 		'section' => 'yith_proteo_typography',
 		'type'    => 'number',
 	)
@@ -225,7 +225,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_h1_font_color',
 		array(
-			'label'   => esc_html__( 'Font color', 'yith-proteo' ),
+			'label'   => esc_html_x( 'Font color', 'Customizer option name', 'yith-proteo' ),
 			'section' => 'yith_proteo_typography',
 		)
 	)
@@ -245,7 +245,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_h2_typography_group_title',
 		array(
-			'label'   => esc_html__( 'H2', 'yith-proteo' ),
+			'label'   => esc_html_x( 'H2', 'Customizer options group title', 'yith-proteo' ),
 			'section' => 'yith_proteo_typography',
 		)
 	)
@@ -264,7 +264,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_h2_font',
 		array(
-			'label'       => __( 'Font', 'yith-proteo' ),
+			'label'       => esc_html_x( 'Font', 'Customizer option name', 'yith-proteo' ),
 			'section'     => 'yith_proteo_typography',
 			'input_attrs' => array(
 				'font_count' => 'all',
@@ -284,7 +284,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
 	'yith_proteo_h2_font_size',
 	array(
-		'label'   => esc_html__( 'Font size (default: 24px)', 'yith-proteo' ),
+		'label'   => esc_html_x( 'Font size (default: 24px)', 'Customizer option name', 'yith-proteo' ),
 		'section' => 'yith_proteo_typography',
 		'type'    => 'number',
 	)
@@ -302,7 +302,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_h2_font_color',
 		array(
-			'label'   => esc_html__( 'Font color', 'yith-proteo' ),
+			'label'   => esc_html_x( 'Font color', 'Customizer option name', 'yith-proteo' ),
 			'section' => 'yith_proteo_typography',
 		)
 	)
@@ -322,7 +322,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_h3_typography_group_title',
 		array(
-			'label'   => esc_html__( 'H3', 'yith-proteo' ),
+			'label'   => esc_html_x( 'H3', 'Customizer options group title', 'yith-proteo' ),
 			'section' => 'yith_proteo_typography',
 		)
 	)
@@ -341,7 +341,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_h3_font',
 		array(
-			'label'       => __( 'Font', 'yith-proteo' ),
+			'label'       => esc_html_x( 'Font', 'Customizer option name', 'yith-proteo' ),
 			'section'     => 'yith_proteo_typography',
 			'input_attrs' => array(
 				'font_count' => 'all',
@@ -361,7 +361,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
 	'yith_proteo_h3_font_size',
 	array(
-		'label'   => esc_html__( 'Font size (default: 19px)', 'yith-proteo' ),
+		'label'   => esc_html_x( 'Font size (default: 19px)', 'Customizer option name', 'yith-proteo' ),
 		'section' => 'yith_proteo_typography',
 		'type'    => 'number',
 	)
@@ -379,7 +379,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_h3_font_color',
 		array(
-			'label'   => esc_html__( 'Font color', 'yith-proteo' ),
+			'label'   => esc_html_x( 'Font color', 'Customizer option name', 'yith-proteo' ),
 			'section' => 'yith_proteo_typography',
 		)
 	)
@@ -399,7 +399,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_h4_typography_group_title',
 		array(
-			'label'   => esc_html__( 'H4', 'yith-proteo' ),
+			'label'   => esc_html_x( 'H4', 'Customizer options group title', 'yith-proteo' ),
 			'section' => 'yith_proteo_typography',
 		)
 	)
@@ -418,7 +418,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_h4_font',
 		array(
-			'label'       => __( 'Font', 'yith-proteo' ),
+			'label'       => esc_html_x( 'Font', 'Customizer option name', 'yith-proteo' ),
 			'section'     => 'yith_proteo_typography',
 			'input_attrs' => array(
 				'font_count' => 'all',
@@ -438,7 +438,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
 	'yith_proteo_h4_font_size',
 	array(
-		'label'   => esc_html__( 'Font size (default: 16px)', 'yith-proteo' ),
+		'label'   => esc_html_x( 'Font size (default: 16px)', 'Customizer option name', 'yith-proteo' ),
 		'section' => 'yith_proteo_typography',
 		'type'    => 'number',
 	)
@@ -456,7 +456,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_h4_font_color',
 		array(
-			'label'   => esc_html__( 'Font color', 'yith-proteo' ),
+			'label'   => esc_html_x( 'Font color', 'Customizer option name', 'yith-proteo' ),
 			'section' => 'yith_proteo_typography',
 		)
 	)
@@ -476,7 +476,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_h5_typography_group_title',
 		array(
-			'label'   => esc_html__( 'H5', 'yith-proteo' ),
+			'label'   => esc_html_x( 'H5', 'Customizer options group title', 'yith-proteo' ),
 			'section' => 'yith_proteo_typography',
 		)
 	)
@@ -495,7 +495,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_h5_font',
 		array(
-			'label'       => __( 'Font', 'yith-proteo' ),
+			'label'       => esc_html_x( 'Font', 'Customizer option name', 'yith-proteo' ),
 			'section'     => 'yith_proteo_typography',
 			'input_attrs' => array(
 				'font_count' => 'all',
@@ -515,7 +515,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
 	'yith_proteo_h5_font_size',
 	array(
-		'label'   => esc_html__( 'Font size (default: 13px)', 'yith-proteo' ),
+		'label'   => esc_html_x( 'Font size (default: 13px)', 'Customizer option name', 'yith-proteo' ),
 		'section' => 'yith_proteo_typography',
 		'type'    => 'number',
 	)
@@ -533,7 +533,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_h5_font_color',
 		array(
-			'label'   => esc_html__( 'Font color', 'yith-proteo' ),
+			'label'   => esc_html_x( 'Font color', 'Customizer option name', 'yith-proteo' ),
 			'section' => 'yith_proteo_typography',
 		)
 	)
@@ -553,7 +553,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_h6_typography_group_title',
 		array(
-			'label'   => esc_html__( 'H6', 'yith-proteo' ),
+			'label'   => esc_html_x( 'H6', 'Customizer options group title', 'yith-proteo' ),
 			'section' => 'yith_proteo_typography',
 		)
 	)
@@ -572,7 +572,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_h6_font',
 		array(
-			'label'       => __( 'Font', 'yith-proteo' ),
+			'label'       => esc_html_x( 'Font', 'Customizer option name', 'yith-proteo' ),
 			'section'     => 'yith_proteo_typography',
 			'input_attrs' => array(
 				'font_count' => 'all',
@@ -592,7 +592,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
 	'yith_proteo_h6_font_size',
 	array(
-		'label'   => esc_html__( 'Font size (default: 11px)', 'yith-proteo' ),
+		'label'   => esc_html_x( 'Font size (default: 11px)', 'Customizer option name', 'yith-proteo' ),
 		'section' => 'yith_proteo_typography',
 		'type'    => 'number',
 	)
@@ -610,7 +610,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_h6_font_color',
 		array(
-			'label'   => esc_html__( 'Font color', 'yith-proteo' ),
+			'label'   => esc_html_x( 'Font color', 'Customizer option name', 'yith-proteo' ),
 			'section' => 'yith_proteo_typography',
 		)
 	)
@@ -630,7 +630,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_additional_typography_group_title',
 		array(
-			'label'   => esc_html__( 'Additional typography options', 'yith-proteo' ),
+			'label'   => esc_html_x( 'Additional typography options', 'Customizer options group title', 'yith-proteo' ),
 			'section' => 'yith_proteo_typography',
 		)
 	)
@@ -647,8 +647,8 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
 	'yith_proteo_google_font',
 	array(
-		'label'       => esc_html__( 'Additional Google Font', 'yith-proteo' ),
-		'description' => esc_html__( 'Enter the URL of a Google Font you want to use within the theme.', 'yith-proteo' ) . ' ' . sprintf( '<a href="%s" target="_blank" rel="noopener nofollow">%s</a>', esc_url( 'https://docs.yithemes.com/yith-proteo/theme-options/typography/' ), esc_html__( 'Read how to retrieve a Google font url', 'yith-proteo' ) ),
+		'label'       => esc_html_x( 'Additional Google Font', 'Customizer option name', 'yith-proteo' ),
+		'description' => esc_html_x( 'Enter the URL of a Google Font you want to use within the theme.', 'Customizer option description', 'yith-proteo' ) . ' ' . sprintf( '<a href="%s" target="_blank" rel="noopener nofollow">%s</a>', esc_url( 'https://docs.yithemes.com/yith-proteo/theme-options/typography/' ), esc_html_x( 'Read how to retrieve a Google font url', 'Customizer option description', 'yith-proteo' ) ),
 		'section'     => 'yith_proteo_typography',
 		'type'        => 'textarea',
 	)

@@ -347,15 +347,15 @@ $is_proteo_toolkit_active    = defined( 'YITH_PROTEO_TOOLKIT' );
 			<div id="main-content">
 				<div class="content">
 					<div id="showcase">
-						<h2><?php esc_html_e( 'Import a demo site', 'yith-proteo' ); ?></h2>
+						<h2><?php echo esc_html_x( 'Import a demo site', 'Proteo dashboard', 'yith-proteo' ); ?></h2>
 						<p>
-							<?php esc_html_e( 'Import any of the demo site below.', 'yith-proteo' ); ?>
+							<?php echo esc_html_x( 'Import any of the demo site below.', 'Proteo dashboard', 'yith-proteo' ); ?>
 						</p>
 						<p>
-							<?php esc_html_e( 'Once done, your site will have the exact same look and content as the demo preview.', 'yith-proteo' ); ?>
+							<?php echo esc_html_x( 'Once done, your site will have the exact same look and content as the demo preview.', 'Proteo dashboard', 'yith-proteo' ); ?>
 						</p>
 						<p>
-							<b><?php esc_html_e( 'We are working very hard to add new demo sites, stay updated!', 'yith-proteo' ); ?></b>
+							<b><?php echo esc_html_x( 'We are working very hard to add new demo sites, stay updated!', 'Proteo dashboard', 'yith-proteo' ); ?></b>
 						</p>
 						<div class="three-cols-set">
 							<?php
@@ -363,19 +363,19 @@ $is_proteo_toolkit_active    = defined( 'YITH_PROTEO_TOOLKIT' );
 								?>
 							<div class="col">
 								<figure class="demo-preview <?php echo esc_attr( $demo['demo_state'] ); ?>">
-									<img src="<?php echo esc_url( $demo['demo_preview_image_url'] ); ?>" alt="<?php echo esc_attr__( 'Preview', 'yith-proteo' ); ?>">
+									<img src="<?php echo esc_url( $demo['demo_preview_image_url'] ); ?>" alt="<?php echo esc_attr_x( 'Preview', 'Proteo dashboard', 'yith-proteo' ); ?>">
 									<div class="demo-actions">
 										<?php if ( '' !== $demo['demo_preview_url'] ) : ?>
 											<?php if ( $is_proteo_toolkit_active ) : ?>
-												<a href="<?php echo esc_url( admin_url( 'themes.php?page=setup-wizard' ) ); ?>"><?php esc_html_e( 'Import', 'yith-proteo' ); ?></a>
+												<a href="<?php echo esc_url( admin_url( 'themes.php?page=setup-wizard' ) ); ?>"><?php echo esc_html_x( 'Import', 'Proteo dashboard', 'yith-proteo' ); ?></a>
 												<?php elseif ( $is_proteo_toolkit_installed ) : ?>
-												<a href="" class="yith-proteo-activate-recommended-plugin yith-proteo-activate-toolkit" data-slug="yith-proteo-toolkit" data-init="yith-proteo-toolkit/yith-proteo-toolkit.php"><?php esc_html_e( 'Import', 'yith-proteo' ); ?></a>
+												<a href="" class="yith-proteo-activate-recommended-plugin yith-proteo-activate-toolkit" data-slug="yith-proteo-toolkit" data-init="yith-proteo-toolkit/yith-proteo-toolkit.php"><?php echo esc_html_x( 'Import', 'Proteo dashboard', 'yith-proteo' ); ?></a>
 											<?php else : ?>
-												<a href="" class="yith-proteo-install-recommended-plugin yith-proteo-install-toolkit" data-slug="yith-proteo-toolkit" data-init="yith-proteo-toolkit/yith-proteo-toolkit.php"><?php esc_html_e( 'Import', 'yith-proteo' ); ?></a>
+												<a href="" class="yith-proteo-install-recommended-plugin yith-proteo-install-toolkit" data-slug="yith-proteo-toolkit" data-init="yith-proteo-toolkit/yith-proteo-toolkit.php"><?php echo esc_html_x( 'Import', 'Proteo dashboard', 'yith-proteo' ); ?></a>
 											<?php endif; ?>
-											<a href="<?php echo esc_url( $demo['demo_preview_url'] ); ?>" target="_blank" rel="nofollow noopener"><?php esc_html_e( 'Preview', 'yith-proteo' ); ?></a>
+											<a href="<?php echo esc_url( $demo['demo_preview_url'] ); ?>" target="_blank" rel="nofollow noopener"><?php echo esc_html_x( 'Preview', 'Proteo dashboard', 'yith-proteo' ); ?></a>
 										<?php else : ?>
-											<div class="coming-soon-badge"><?php esc_html_e( 'Coming soon', 'yith-proteo' ); ?></div>
+											<div class="coming-soon-badge"><?php echo esc_html_x( 'Coming soon', 'Proteo dashboard', 'yith-proteo' ); ?></div>
 										<?php endif; ?>
 									</div>
 								</figure>
@@ -392,7 +392,7 @@ $is_proteo_toolkit_active    = defined( 'YITH_PROTEO_TOOLKIT' );
 			</div><!-- #main-content close -->
 			<div id="aside">
 				<div class="content">
-					<h3><?php esc_html_e( 'Free suggested plugins', 'yith-proteo' ); ?></h3>
+					<h3><?php echo esc_html_x( 'Free suggested plugins', 'Proteo dashboard label', 'yith-proteo' ); ?></h3>
 					<ul id="useful-plugins-list">
 						<?php
 						foreach ( $requested_plugins as $request_plugin ) :
@@ -403,10 +403,10 @@ $is_proteo_toolkit_active    = defined( 'YITH_PROTEO_TOOLKIT' );
 								$message              = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#1a9b9f" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"/></svg>';
 							} elseif ( $is_installed ) {
 								$request_plugin_class = 'yith-proteo-activate-recommended-plugin';
-								$message              = esc_html__( 'Activate', 'yith-proteo' );
+								$message              = esc_html_x( 'Activate', 'Proteo dashboard', 'yith-proteo' );
 							} else {
 								$request_plugin_class = 'yith-proteo-install-recommended-plugin';
-								$message              = esc_html__( 'Install & Activate', 'yith-proteo' );
+								$message              = esc_html_x( 'Install & Activate', 'Proteo dashboard', 'yith-proteo' );
 							}
 							?>
 						<li>
@@ -417,11 +417,11 @@ $is_proteo_toolkit_active    = defined( 'YITH_PROTEO_TOOLKIT' );
 					</ul>
 				</div>
 				<div class="content">
-					<h3><?php esc_html_e( 'How to start', 'yith-proteo' ); ?></h3>
+					<h3><?php echo esc_html_x( 'How to start', 'Proteo dashboard label', 'yith-proteo' ); ?></h3>
 					<ul id="useful-link-list">
-						<li><img src="<?php echo esc_url( get_template_directory_uri() . '/img/theme-documentation-icon.svg' ); ?>" alt="<?php esc_attr_e( 'Read theme documentation', 'yith-proteo' ); ?>"><?php echo sprintf( '%1s <a href="https://docs.yithemes.com/yith-proteo/" target="_blank" rel="noopener nofollow">%2s ></a>', esc_html__( 'Read the', 'yith-proteo' ), esc_html__( 'theme documentation', 'yith-proteo' ) ); ?></li>
-						<li><img src="<?php echo esc_url( get_template_directory_uri() . '/img/ask-help-icon.svg' ); ?>" alt="<?php esc_attr_e( 'Visit theme forum', 'yith-proteo' ); ?>"><?php echo sprintf( '%1s <a href="https://wordpress.org/support/theme/yith-proteo/" target="_blank" rel="noopener nofollow">%2s ></a>', esc_html__( 'Ask help in the', 'yith-proteo' ), esc_html__( 'support forum', 'yith-proteo' ) ); ?></li>
-						<li><img src="<?php echo esc_url( get_template_directory_uri() . '/img/start-customize-icon.svg' ); ?>" alt="<?php esc_attr_e( 'Use theme customizer', 'yith-proteo' ); ?>"><?php echo sprintf( '%1s <a href="' . esc_url( admin_url( 'customize.php' ) ) . '" target="_blank" rel="noopener nofollow">%2s ></a>', esc_html__( 'Start to customize with the', 'yith-proteo' ), esc_html__( 'live customizer', 'yith-proteo' ) ); ?></li>
+						<li><img src="<?php echo esc_url( get_template_directory_uri() . '/img/theme-documentation-icon.svg' ); ?>" alt="<?php echo esc_attr_x( 'Read theme documentation', 'Proteo dashboard', 'yith-proteo' ); ?>"><?php echo sprintf( '%1s <a href="https://docs.yithemes.com/yith-proteo/" target="_blank" rel="noopener nofollow">%2s ></a>', esc_html_x( 'Read the', 'Proteo dashboard', 'yith-proteo' ), esc_html_x( 'theme documentation', 'Proteo dashboard', 'yith-proteo' ) ); ?></li>
+						<li><img src="<?php echo esc_url( get_template_directory_uri() . '/img/ask-help-icon.svg' ); ?>" alt="<?php echo esc_attr_x( 'Visit theme forum', 'Proteo dashboard', 'yith-proteo' ); ?>"><?php echo sprintf( '%1s <a href="https://wordpress.org/support/theme/yith-proteo/" target="_blank" rel="noopener nofollow">%2s ></a>', esc_html_x( 'Ask help in the', 'Proteo dashboard', 'yith-proteo' ), esc_html_x( 'support forum', 'Proteo dashboard', 'yith-proteo' ) ); ?></li>
+						<li><img src="<?php echo esc_url( get_template_directory_uri() . '/img/start-customize-icon.svg' ); ?>" alt="<?php echo esc_attr_x( 'Use theme customizer', 'Proteo dashboard', 'yith-proteo' ); ?>"><?php echo sprintf( '%1s <a href="' . esc_url( admin_url( 'customize.php' ) ) . '" target="_blank" rel="noopener nofollow">%2s ></a>', esc_html_x( 'Start to customize with the', 'Proteo dashboard', 'yith-proteo' ), esc_html_x( 'live customizer', 'Proteo dashboard', 'yith-proteo' ) ); ?></li>
 					</ul>
 				</div>
 			</div><!-- #aside close -->

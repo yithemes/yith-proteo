@@ -129,7 +129,7 @@ class Google_Font_Select_Custom_Control extends WP_Customize_Control {
 						?>
 						</select>
 					</div>
-					<div class="customize-control-title"><?php esc_html_e( 'Font weight & style', 'yith-proteo' ); ?></div>
+					<div class="customize-control-title"><?php echo esc_html_x( 'Font weight & style', 'Customizer option label', 'yith-proteo' ); ?></div>
 					<div class="weight-style">
 						<select class="google-fonts-regularweight-style">
 							<?php

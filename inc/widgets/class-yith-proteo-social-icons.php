@@ -16,9 +16,9 @@ class YITH_Proteo_Social_Icons extends WP_Widget {
 	public function __construct() {
 		parent::__construct(
 			'YITH_Proteo_Social_Icons',
-			__( 'YITH Proteo Social Networks', 'yith-proteo' ), // Name.
+			esc_html_x( 'YITH Proteo Social Networks', 'Widget title', 'yith-proteo' ), // Name.
 			array(
-				'description' => __( 'Links to your social profiles', 'yith-proteo' ),
+				'description' => esc_html_x( 'Links to your social profiles', 'Widget description', 'yith-proteo' ),
 			)
 		);
 	}
@@ -81,10 +81,10 @@ class YITH_Proteo_Social_Icons extends WP_Widget {
 		$linkedin  = isset( $instance['linkedin'] ) ? esc_url( $instance['linkedin'] ) : '#';
 		$youtube   = isset( $instance['youtube'] ) ? esc_url( $instance['youtube'] ) : '#';
 		?>
-		<p><?php esc_html_e( 'To hide a field, just leave it empty', 'yith-proteo' ); ?></p>
+		<p><?php echo esc_html_x( 'To hide a field, just leave it empty', 'Widget option label', 'yith-proteo' ); ?></p>
 		<p>
 			<label
-				for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php esc_html_e( 'Title:', 'yith-proteo' ); ?></label>
+				for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php echo esc_html_x( 'Title:', 'Widget option', 'yith-proteo' ); ?></label>
 			<input
 				class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"
 				name="<?php echo esc_attr( $this->get_field_name( 'title' ) ); ?>" type="text"
@@ -93,7 +93,7 @@ class YITH_Proteo_Social_Icons extends WP_Widget {
 
 		<p>
 			<label
-				for="<?php echo esc_attr( $this->get_field_id( 'facebook' ) ); ?>"><?php esc_html_e( 'Facebook:', 'yith-proteo' ); ?></label>
+				for="<?php echo esc_attr( $this->get_field_id( 'facebook' ) ); ?>"><?php echo esc_html_x( 'Facebook:', 'Widget option', 'yith-proteo' ); ?></label>
 			<input
 				class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'facebook' ) ); ?>"
 				name="<?php echo esc_attr( $this->get_field_name( 'facebook' ) ); ?>" type="text"
@@ -102,7 +102,7 @@ class YITH_Proteo_Social_Icons extends WP_Widget {
 
 		<p>
 			<label
-				for="<?php echo esc_attr( $this->get_field_id( 'twitter' ) ); ?>"><?php esc_html_e( 'Twitter:', 'yith-proteo' ); ?></label>
+				for="<?php echo esc_attr( $this->get_field_id( 'twitter' ) ); ?>"><?php echo esc_html_x( 'Twitter:', 'Widget option', 'yith-proteo' ); ?></label>
 			<input
 				class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'twitter' ) ); ?>"
 				name="<?php echo esc_attr( $this->get_field_name( 'twitter' ) ); ?>" type="text"
@@ -111,7 +111,7 @@ class YITH_Proteo_Social_Icons extends WP_Widget {
 
 		<p>
 			<label
-				for="<?php echo esc_attr( $this->get_field_id( 'instagram' ) ); ?>"><?php esc_html_e( 'Instagram:', 'yith-proteo' ); ?></label>
+				for="<?php echo esc_attr( $this->get_field_id( 'instagram' ) ); ?>"><?php echo esc_html_x( 'Instagram:', 'Widget option', 'yith-proteo' ); ?></label>
 			<input
 				class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'instagram' ) ); ?>"
 				name="<?php echo esc_attr( $this->get_field_name( 'instagram' ) ); ?>" type="text"
@@ -120,7 +120,7 @@ class YITH_Proteo_Social_Icons extends WP_Widget {
 
 		<p>
 			<label
-				for="<?php echo esc_attr( $this->get_field_id( 'linkedin' ) ); ?>"><?php esc_html_e( 'LinkedIn:', 'yith-proteo' ); ?></label>
+				for="<?php echo esc_attr( $this->get_field_id( 'linkedin' ) ); ?>"><?php echo esc_html_x( 'LinkedIn:', 'Widget option', 'yith-proteo' ); ?></label>
 			<input
 				class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'linkedin' ) ); ?>"
 				name="<?php echo esc_attr( $this->get_field_name( 'linkedin' ) ); ?>" type="text"
@@ -129,7 +129,7 @@ class YITH_Proteo_Social_Icons extends WP_Widget {
 
 		<p>
 			<label
-				for="<?php echo esc_attr( $this->get_field_id( 'youtube' ) ); ?>"><?php esc_html_e( 'Youtube:', 'yith-proteo' ); ?></label>
+				for="<?php echo esc_attr( $this->get_field_id( 'youtube' ) ); ?>"><?php echo esc_html_x( 'Youtube:', 'Widget option', 'yith-proteo' ); ?></label>
 			<input
 				class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'youtube' ) ); ?>"
 				name="<?php echo esc_attr( $this->get_field_name( 'youtube' ) ); ?>" type="text"

@@ -11,7 +11,7 @@
 $wp_customize->add_section(
 	'yith_proteo_layout_management',
 	array(
-		'title'    => esc_html__( 'Layout', 'yith-proteo' ),
+		'title'    => esc_html_x( 'Layout', 'Customizer section title', 'yith-proteo' ),
 		'priority' => 100,
 		'panel'    => 'yith_proteo_extra',
 	)
@@ -31,7 +31,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_global_layout_group_title',
 		array(
-			'label'   => esc_html__( 'Global layout options', 'yith-proteo' ),
+			'label'   => esc_html_x( 'Global layout options', 'Customizer options group title', 'yith-proteo' ),
 			'section' => 'yith_proteo_layout_management',
 		)
 	)
@@ -55,20 +55,20 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_site_content_spacing',
 		array(
-			'label'   => __( 'Site content spacing (px)', 'yith-proteo' ),
+			'label'   => esc_html_x( 'Site content spacing (px)', 'Customizer option name', 'yith-proteo' ),
 			'section' => 'yith_proteo_layout_management',
 			'choices' => array(
 				'top'    => array(
-					'name' => esc_html__( 'Top', 'yith-proteo' ),
+					'name' => esc_html_x( 'Top', 'Customizer option value', 'yith-proteo' ),
 				),
 				'right'  => array(
-					'name' => esc_html__( 'Right', 'yith-proteo' ),
+					'name' => esc_html_x( 'Right', 'Customizer option value', 'yith-proteo' ),
 				),
 				'bottom' => array(
-					'name' => esc_html__( 'Bottom', 'yith-proteo' ),
+					'name' => esc_html_x( 'Bottom', 'Customizer option value', 'yith-proteo' ),
 				),
 				'left'   => array(
-					'name' => esc_html__( 'Left', 'yith-proteo' ),
+					'name' => esc_html_x( 'Left', 'Customizer option value', 'yith-proteo' ),
 				),
 			),
 		)
@@ -90,9 +90,9 @@ if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
 			$wp_customize,
 			'yith_proteo_layout_full_width',
 			array(
-				'label'       => esc_html__( 'Use full width layout', 'yith-proteo' ),
+				'label'       => esc_html_x( 'Use full width layout', 'Customizer option name', 'yith-proteo' ),
 				'section'     => 'yith_proteo_layout_management',
-				'description' => esc_html__( 'Choose whether to use a full width layout. No matter which resolution your screen has.', 'yith-proteo' ),
+				'description' => esc_html_x( 'Choose whether to use a full width layout. No matter which resolution your screen has.', 'Customizer option description', 'yith-proteo' ),
 			)
 		)
 	);
@@ -112,7 +112,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_page_title_layout_group_title',
 		array(
-			'label'   => esc_html__( 'Page title options', 'yith-proteo' ),
+			'label'   => esc_html_x( 'Page title options', 'Customizer options group title', 'yith-proteo' ),
 			'section' => 'yith_proteo_layout_management',
 		)
 	)
@@ -133,16 +133,16 @@ if ( class_exists( 'Customizer_Control_Radio_Image' ) ) {
 			$wp_customize,
 			'yith_proteo_page_title_layout',
 			array(
-				'label'   => esc_html__( 'Layout', 'yith-proteo' ),
+				'label'   => esc_html_x( 'Layout', 'Customizer option name', 'yith-proteo' ),
 				'section' => 'yith_proteo_layout_management',
 				'choices' => array(
 					'inside'  => array(
 						'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/title-layout-inside.svg',
-						'label' => esc_html__( 'Inside page content', 'yith-proteo' ),
+						'label' => esc_html_x( 'Inside page content', 'Customizer option value', 'yith-proteo' ),
 					),
 					'outside' => array(
 						'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/title-layout-outside.svg',
-						'label' => esc_html__( 'Outside page content', 'yith-proteo' ),
+						'label' => esc_html_x( 'Outside page content', 'Customizer option value', 'yith-proteo' ),
 					),
 				),
 			)
@@ -165,20 +165,20 @@ if ( class_exists( 'Customizer_Control_Radio_Image' ) ) {
 			$wp_customize,
 			'yith_proteo_page_title_align',
 			array(
-				'label'   => esc_html__( 'Alignment', 'yith-proteo' ),
+				'label'   => esc_html_x( 'Alignment', 'Customizer option name', 'yith-proteo' ),
 				'section' => 'yith_proteo_layout_management',
 				'choices' => array(
 					'left'   => array(
 						'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/align-left.svg',
-						'label' => esc_html__( 'Left', 'yith-proteo' ),
+						'label' => esc_html_x( 'Left', 'Customizer option value', 'yith-proteo' ),
 					),
 					'center' => array(
 						'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/align-center.svg',
-						'label' => esc_html__( 'Center', 'yith-proteo' ),
+						'label' => esc_html_x( 'Center', 'Customizer option value', 'yith-proteo' ),
 					),
 					'right'  => array(
 						'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/align-right.svg',
-						'label' => esc_html__( 'Right', 'yith-proteo' ),
+						'label' => esc_html_x( 'Right', 'Customizer option value', 'yith-proteo' ),
 					),
 				),
 			)
