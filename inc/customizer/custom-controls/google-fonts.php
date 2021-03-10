@@ -70,7 +70,7 @@ function yith_proteo_get_font_category( $font ) {
 }
 
 /**
- * Read all theme_mod google font options
+ * Read all theme_mod Google Font options
  */
 function yith_proteo_read_all_font_options() {
 	$options = array(

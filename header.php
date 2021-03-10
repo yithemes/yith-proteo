@@ -88,7 +88,7 @@ global $post;
 							<p class="site-title"><?php the_custom_logo(); ?></p>
 							<?php
 						}
-						if ( 'yes' === get_theme_mod( 'yith_proteo_display_site_title', yith_proteo_show_site_title_default_value() ) ) { 
+						if ( 'yes' === get_theme_mod( 'yith_proteo_display_site_title', yith_proteo_show_site_title_default_value() ) ) {
 							?>
 							<p class="site-title">
 								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">

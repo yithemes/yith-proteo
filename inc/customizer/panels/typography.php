@@ -648,7 +648,7 @@ $wp_customize->add_control(
 	'yith_proteo_google_font',
 	array(
 		'label'       => esc_html_x( 'Additional Google Font', 'Customizer option name', 'yith-proteo' ),
-		'description' => esc_html_x( 'Enter the URL of a Google Font you want to use within the theme.', 'Customizer option description', 'yith-proteo' ) . ' ' . sprintf( '<a href="%s" target="_blank" rel="noopener nofollow">%s</a>', esc_url( 'https://docs.yithemes.com/yith-proteo/theme-options/typography/' ), esc_html_x( 'Read how to retrieve a Google font url', 'Customizer option description', 'yith-proteo' ) ),
+		'description' => esc_html_x( 'Enter the URL of a Google Font you want to use within the theme.', 'Customizer option description', 'yith-proteo' ) . ' ' . sprintf( '<a href="%s" target="_blank" rel="noopener nofollow">%s</a>', esc_url( 'https://docs.yithemes.com/yith-proteo/theme-options/typography/' ), esc_html_x( 'Read how to retrieve a Google Font url', 'Customizer option description', 'yith-proteo' ) ),
 		'section'     => 'yith_proteo_typography',
 		'type'        => 'textarea',
 	)

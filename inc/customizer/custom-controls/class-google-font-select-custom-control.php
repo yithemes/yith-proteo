@@ -31,7 +31,7 @@ class Google_Font_Select_Custom_Control extends WP_Customize_Control {
 	 */
 	private $font_values = array();
 	/**
-	 * The index of the saved font within the list of Google fonts
+	 * The index of the saved font within the list of Google Fonts
 	 *
 	 * @var int $font_list_index index of the saved font.
 	 */
@@ -62,7 +62,7 @@ class Google_Font_Select_Custom_Control extends WP_Customize_Control {
 		if ( isset( $this->input_attrs['orderby'] ) && strtolower( $this->input_attrs['orderby'] ) === 'popular' ) {
 			$this->font_order_by = 'popular';
 		}
-		// Get the list of Google fonts.
+		// Get the list of Google Fonts.
 		if ( isset( $this->input_attrs['font_count'] ) ) {
 			if ( 'all' !== strtolower( $this->input_attrs['font_count'] ) ) {
 				$this->font_count = ( abs( (int) $this->input_attrs['font_count'] ) > 0 ? abs( (int) $this->input_attrs['font_count'] ) : 'all' );
@@ -71,7 +71,7 @@ class Google_Font_Select_Custom_Control extends WP_Customize_Control {
 		$this->font_list = $this->getGoogleFonts( 'all' );
 		// Decode the default json font value.
 		$this->font_values = json_decode( $this->value() );
-		// Find the index of our default font within our list of Google fonts.
+		// Find the index of our default font within our list of Google Fonts.
 		$this->font_list_index = $this->getFontIndex( $this->font_list, $this->font_values->font );
 	}
 	/**
