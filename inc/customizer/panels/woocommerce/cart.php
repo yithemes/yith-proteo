@@ -68,7 +68,7 @@
 		'yith_proteo_cross_sell_columns',
 		array(
 			'type'        => 'number',
-			'label'       => esc_html_x( 'Cross sell columns', 'Customizer option name', 'yith-proteo' ),
+			'label'       => esc_html_x( 'Columns', 'Customizer option name', 'yith-proteo' ),
 			'section'     => 'yith_proteo_cart_page_management',
 			'description' => esc_html_x( 'Choose how many columns with cross sell products you want to show (default: 4)', 'Customizer option description', 'yith-proteo' ),
 		)

@@ -345,7 +345,7 @@
 				$wp_customize,
 				'yith_proteo_footer_sidebar_1_enable',
 				array(
-					'label'   => esc_html_x( 'Enable footer widget area #1', 'Customizer option name', 'yith-proteo' ),
+					'label'   => esc_html_x( 'Enable widget area #1', 'Customizer option name', 'yith-proteo' ),
 					'section' => 'yith_proteo_footer_management',
 				)
 			)
@@ -366,7 +366,7 @@
 			$wp_customize,
 			'yith_proteo_footer_sidebar_1_width',
 			array(
-				'label'           => esc_html_x( 'Footer widget area #1 width (%).', 'Customizer option name', 'yith-proteo' ),
+				'label'           => esc_html_x( 'Widget area #1 width (%)', 'Customizer option name', 'yith-proteo' ),
 				'min'             => 20,
 				'max'             => 100,
 				'step'            => 5,
@@ -390,7 +390,7 @@
 			$wp_customize,
 			'yith_proteo_footer_sidebar_1_widget_per_row',
 			array(
-				'label'           => esc_html_x( 'Columns in footer widget area #1.', 'Customizer option name', 'yith-proteo' ),
+				'label'           => esc_html_x( 'Columns', 'Customizer option name', 'yith-proteo' ),
 				'min'             => 1,
 				'max'             => 6,
 				'step'            => 1,
@@ -417,7 +417,7 @@
 				$wp_customize,
 				'yith_proteo_footer_sidebar_2_enable',
 				array(
-					'label'   => esc_html_x( 'Enable footer widget area #2', 'Customizer option name', 'yith-proteo' ),
+					'label'   => esc_html_x( 'Enable widget area #2', 'Customizer option name', 'yith-proteo' ),
 					'section' => 'yith_proteo_footer_management',
 				)
 			)
@@ -438,7 +438,7 @@
 			$wp_customize,
 			'yith_proteo_footer_sidebar_2_width',
 			array(
-				'label'           => esc_html_x( 'Footer widget area #2 width (%).', 'Customizer option name', 'yith-proteo' ),
+				'label'           => esc_html_x( 'Widget area #2 width (%)', 'Customizer option name', 'yith-proteo' ),
 				'min'             => 20,
 				'max'             => 100,
 				'step'            => 5,
@@ -462,7 +462,7 @@
 			$wp_customize,
 			'yith_proteo_footer_sidebar_2_widget_per_row',
 			array(
-				'label'           => esc_html_x( 'Columns in footer widget area #2', 'Customizer option name', 'yith-proteo' ),
+				'label'           => esc_html_x( 'Columns', 'Customizer option name', 'yith-proteo' ),
 				'min'             => 1,
 				'max'             => 6,
 				'step'            => 1,

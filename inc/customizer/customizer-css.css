@@ -13,6 +13,7 @@ YITH CUSTOMIZER STYLE
 }
 #customize-controls .customize-control {
 	position: relative;
+	margin-bottom: 15px;
 }
 #customize-controls .customize-control .customize-control-title {
 	padding-right: 20px;
@@ -31,8 +32,11 @@ YITH CUSTOMIZER STYLE
 	border: none;
 }
 
-.customize-section-description-container {
+#customize-controls .customize-info {
 	margin-bottom: 0;
+}
+li.customize-section-description-container.section-meta + li.customize-control[id*="group_title"] {
+    margin-top: -16px
 }
 #customize-controls .control-section .accordion-section-title:focus, 
 #customize-controls .control-section .accordion-section-title:hover, 
@@ -75,13 +79,6 @@ YITH CUSTOMIZER STYLE
 #customize-theme-controls .control-panel-themes > .accordion-section-title, 
 #customize-theme-controls .control-panel-themes > .accordion-section-title:hover {
 	color: #000;
-}
-
-#customize-control-yith_proteo_default_sidebar,
-#customize-control-yith_proteo_blog_sidebar,
-#customize-control-yith_proteo_blog_category_sidebar {
-	border-bottom: 1px solid #ddd;
-	padding-bottom: 1.3rem;
 }
 
 /* Control description */
@@ -263,7 +260,7 @@ body .select2-container--default .select2-selection--single .select2-selection__
 	background: #f3f3f5;
 	border-top: 1px solid #ddd;
 	transition: .15s color ease-in-out,.15s background-color ease-in-out,.15s border-color ease-in-out;
-	padding: 8px 10px 7px 14px;
+	padding: 8px 10px 7px 10px;
 	line-height: 1.55;
 	background: #f3f3f5;
 	font-size: 14px;
@@ -371,6 +368,7 @@ body .select2-container--default .select2-selection--single .select2-selection__
 	padding: 6px 15px;
 	display: inline-block;
 	font-size: 0.7rem;
+	margin-bottom: 10px;
 }
 
 .customize-control-radio-yes-no .ui-buttonset {
@@ -551,4 +549,20 @@ Remove borders where needed
 	border-bottom: none;
 	margin-bottom: 0;
 	padding-bottom: 10px;
+}
+
+/*************************************
+Options separation with a border
+**************************************/
+li#customize-control-yith_proteo_footer_sidebar_2_enable,
+li#customize-control-yith_proteo_footer_sidebars_side_by_side,
+li#customize-control-yith_proteo_cross_sell_max_number,
+li#customize-control-yith_proteo_update_cart_button_style {
+    border-top: 1px solid #e0e0e0;
+    padding-top: 15px;
+    margin-top: 10px;
+}
+
+li#customize-control-yith_proteo_cross_sell_max_number span.description.customize-control-description:before {
+	top: 20px;
 }

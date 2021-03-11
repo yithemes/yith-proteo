@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YITH Proteo\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2021-03-10 16:42+0100\n"
+"POT-Creation-Date: 2021-03-11 12:33+0100\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -176,8 +176,10 @@ msgid "Header background"
 msgstr ""
 
 #: inc/customizer/customizer.php:66 inc/customizer/panels/buttons.php:116
+#: inc/customizer/panels/footer-credits.php:48
 #: inc/customizer/panels/footer.php:52 inc/customizer/panels/header.php:503
 #: inc/customizer/panels/mobile.php:193 inc/customizer/panels/topbar.php:56
+#: inc/customizer/panels/woocommerce/sale-badge.php:33
 msgctxt "Customizer option name"
 msgid "Background color"
 msgstr ""
@@ -426,6 +428,7 @@ msgstr ""
 
 #: inc/customizer/panels/buttons.php:152 inc/customizer/panels/buttons.php:300
 #: inc/customizer/panels/typography.php:91
+#: inc/customizer/panels/woocommerce/sale-badge.php:51
 msgctxt "Customizer option name"
 msgid "Text color"
 msgstr ""
@@ -525,11 +528,6 @@ msgstr ""
 #: inc/customizer/panels/footer-credits.php:30
 msgctxt "Customizer option description"
 msgid "Enter here the content of the footer credits area"
-msgstr ""
-
-#: inc/customizer/panels/footer-credits.php:48
-msgctxt "Customizer option name"
-msgid "Footer credits background color"
 msgstr ""
 
 #: inc/customizer/panels/footer-credits.php:64
@@ -692,32 +690,29 @@ msgstr ""
 
 #: inc/customizer/panels/footer.php:348
 msgctxt "Customizer option name"
-msgid "Enable footer widget area #1"
+msgid "Enable widget area #1"
 msgstr ""
 
 #: inc/customizer/panels/footer.php:369
 msgctxt "Customizer option name"
-msgid "Footer widget area #1 width (%)."
+msgid "Widget area #1 width (%)"
 msgstr ""
 
-#: inc/customizer/panels/footer.php:393
+#: inc/customizer/panels/footer.php:393 inc/customizer/panels/footer.php:465
+#: inc/customizer/panels/woocommerce/cart.php:71
+#: inc/customizer/panels/woocommerce/single-product.php:343
 msgctxt "Customizer option name"
-msgid "Columns in footer widget area #1."
+msgid "Columns"
 msgstr ""
 
 #: inc/customizer/panels/footer.php:420
 msgctxt "Customizer option name"
-msgid "Enable footer widget area #2"
+msgid "Enable widget area #2"
 msgstr ""
 
 #: inc/customizer/panels/footer.php:441
 msgctxt "Customizer option name"
-msgid "Footer widget area #2 width (%)."
-msgstr ""
-
-#: inc/customizer/panels/footer.php:465
-msgctxt "Customizer option name"
-msgid "Columns in footer widget area #2"
+msgid "Widget area #2 width (%)"
 msgstr ""
 
 #: inc/customizer/panels/footer.php:490
@@ -1145,7 +1140,7 @@ msgstr ""
 
 #: inc/customizer/panels/sidebars.php:89
 msgctxt "Customizer option name"
-msgid "Default sidebar for posts and pages"
+msgid "Default sidebar"
 msgstr ""
 
 #: inc/customizer/panels/sidebars.php:91
@@ -1406,6 +1401,7 @@ msgid "H5"
 msgstr ""
 
 #: inc/customizer/panels/typography.php:518
+#: inc/customizer/panels/woocommerce/sale-badge.php:67
 msgctxt "Customizer option name"
 msgid "Font size (default: 13px)"
 msgstr ""
@@ -1490,11 +1486,6 @@ msgctxt "Customizer option description"
 msgid "Choose how many cross sell products you want to show (default: 4)"
 msgstr ""
 
-#: inc/customizer/panels/woocommerce/cart.php:71
-msgctxt "Customizer option name"
-msgid "Cross sell columns"
-msgstr ""
-
 #: inc/customizer/panels/woocommerce/cart.php:73
 msgctxt "Customizer option description"
 msgid ""
@@ -1528,17 +1519,17 @@ msgstr ""
 
 #: inc/customizer/panels/woocommerce/messages.php:50
 msgctxt "Customizer option name"
-msgid "Default messages: accent color"
+msgid "Accent color for default messages"
 msgstr ""
 
 #: inc/customizer/panels/woocommerce/messages.php:69
 msgctxt "Customizer option name"
-msgid "Info messages: accent color"
+msgid "Accent color for info messages"
 msgstr ""
 
 #: inc/customizer/panels/woocommerce/messages.php:88
 msgctxt "Customizer option name"
-msgid "Error messages: accent color"
+msgid "Accent color for error messages"
 msgstr ""
 
 #: inc/customizer/panels/woocommerce/product-catalog.php:20
@@ -1710,21 +1701,6 @@ msgctxt "Customizer section title"
 msgid "Sale badge"
 msgstr ""
 
-#: inc/customizer/panels/woocommerce/sale-badge.php:33
-msgctxt "Customizer option name"
-msgid "Sale badge background color"
-msgstr ""
-
-#: inc/customizer/panels/woocommerce/sale-badge.php:51
-msgctxt "Customizer option name"
-msgid "Sale badge text color"
-msgstr ""
-
-#: inc/customizer/panels/woocommerce/sale-badge.php:67
-msgctxt "Customizer option name"
-msgid "Sale badge font size (default: 13px)"
-msgstr ""
-
 #: inc/customizer/panels/woocommerce/shop-page.php:14
 msgctxt "Customizer section title"
 msgid "Shop page"
@@ -1815,11 +1791,6 @@ msgctxt "Customizer option description"
 msgid "Choose how many related products you want to show (default: 4)"
 msgstr ""
 
-#: inc/customizer/panels/woocommerce/single-product.php:343
-msgctxt "Customizer option name"
-msgid "Related products columns"
-msgstr ""
-
 #: inc/customizer/panels/woocommerce/single-product.php:345
 msgctxt "Customizer option description"
 msgid ""
@@ -1855,7 +1826,7 @@ msgstr ""
 
 #: inc/customizer/panels/woocommerce/single-product.php:440
 msgctxt "Customizer option name"
-msgid "Force all product to use the same sidebar."
+msgid "Force all product to use the same sidebar"
 msgstr ""
 
 #: inc/customizer/panels/woocommerce/single-product.php:462

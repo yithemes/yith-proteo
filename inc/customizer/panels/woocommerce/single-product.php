@@ -340,7 +340,7 @@
 		'yith_proteo_product_page_related_columns',
 		array(
 			'type'        => 'number',
-			'label'       => esc_html_x( 'Related products columns', 'Customizer option name', 'yith-proteo' ),
+			'label'       => esc_html_x( 'Columns', 'Customizer option name', 'yith-proteo' ),
 			'section'     => 'yith_proteo_product_page_management',
 			'description' => esc_html_x( 'Choose how many columns with related products you want to show (default: 4)', 'Customizer option description', 'yith-proteo' ),
 		)
@@ -437,7 +437,7 @@
 				$wp_customize,
 				'yith_proteo_product_page_sidebar_force',
 				array(
-					'label'           => esc_html_x( 'Force all product to use the same sidebar.', 'Customizer option name', 'yith-proteo' ),
+					'label'           => esc_html_x( 'Force all product to use the same sidebar', 'Customizer option name', 'yith-proteo' ),
 					'section'         => 'yith_proteo_product_page_management',
 					'active_callback' => 'yith_proteo_product_page_sidebar_is_enabled',
 				)

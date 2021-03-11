@@ -86,7 +86,7 @@
 		'yith_proteo_default_sidebar',
 		array(
 			'type'            => 'select',
-			'label'           => esc_html_x( 'Default sidebar for posts and pages', 'Customizer option name', 'yith-proteo' ),
+			'label'           => esc_html_x( 'Default sidebar', 'Customizer option name', 'yith-proteo' ),
 			'section'         => 'yith_proteo_sidebar_management',
 			'description'     => esc_html_x( 'Select the sidebar to display. It will be used for archive pages too.', 'Customizer option description', 'yith-proteo' ),
 			'choices'         => wp_list_pluck( $GLOBALS['wp_registered_sidebars'], 'name' ),

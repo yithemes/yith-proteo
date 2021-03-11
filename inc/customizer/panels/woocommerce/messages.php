@@ -47,7 +47,7 @@
 			$wp_customize,
 			'yith_proteo_woo_default_messages_accent_color',
 			array(
-				'label'   => esc_html_x( 'Default messages: accent color', 'Customizer option name', 'yith-proteo' ),
+				'label'   => esc_html_x( 'Accent color for default messages', 'Customizer option name', 'yith-proteo' ),
 				'section' => 'yith_proteo_woo_messages_management',
 			)
 		)
@@ -66,7 +66,7 @@
 			$wp_customize,
 			'yith_proteo_woo_info_messages_accent_color',
 			array(
-				'label'   => esc_html_x( 'Info messages: accent color', 'Customizer option name', 'yith-proteo' ),
+				'label'   => esc_html_x( 'Accent color for info messages', 'Customizer option name', 'yith-proteo' ),
 				'section' => 'yith_proteo_woo_messages_management',
 			)
 		)
@@ -85,7 +85,7 @@
 			$wp_customize,
 			'yith_proteo_woo_error_messages_accent_color',
 			array(
-				'label'   => esc_html_x( 'Error messages: accent color', 'Customizer option name', 'yith-proteo' ),
+				'label'   => esc_html_x( 'Accent color for error messages', 'Customizer option name', 'yith-proteo' ),
 				'section' => 'yith_proteo_woo_messages_management',
 			)
 		)

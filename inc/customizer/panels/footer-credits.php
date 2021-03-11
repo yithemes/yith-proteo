@@ -45,7 +45,7 @@
 			$wp_customize,
 			'yith_proteo_footer_credits_background_color',
 			array(
-				'label'   => esc_html_x( 'Footer credits background color', 'Customizer option name', 'yith-proteo' ),
+				'label'   => esc_html_x( 'Background color', 'Customizer option name', 'yith-proteo' ),
 				'section' => 'yith_proteo_footer_credits_management',
 			)
 		)
