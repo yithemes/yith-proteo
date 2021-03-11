@@ -114,7 +114,7 @@ $wp_customize->add_control(
 		'type'        => 'radio',
 		'label'       => esc_html_x( 'Add to cart style', 'Customizer option name', 'yith-proteo' ),
 		'section'     => 'woocommerce_product_catalog',
-		'description' => esc_html_x( 'How should the add to cart button be displayed in product catalog pages?', 'Customizer option description', 'yith-proteo' ),
+		'description' => esc_html_x( 'Choose the style for the Add to cart button in product catalog pages', 'Customizer option description', 'yith-proteo' ),
 		'choices'     => array(
 			'unstyled_button' => esc_html_x( 'Textual link', 'Customizer option value', 'yith-proteo' ),
 			'button_style_1'  => esc_html_x( 'Button style 1', 'Customizer option value', 'yith-proteo' ),

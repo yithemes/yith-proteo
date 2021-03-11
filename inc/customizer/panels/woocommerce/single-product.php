@@ -173,7 +173,7 @@
 				$wp_customize,
 				'yith_proteo_product_page_gallery_slider',
 				array(
-					'label'   => esc_html_x( 'Enable additional images slider', 'Customizer option name', 'yith-proteo' ),
+					'label'   => esc_html_x( 'Enable slider for products gallery images', 'Customizer option name', 'yith-proteo' ),
 					'section' => 'yith_proteo_product_page_management',
 				)
 			)
@@ -284,7 +284,7 @@
 				$wp_customize,
 				'yith_proteo_product_page_show_clear_variations_link',
 				array(
-					'label'   => esc_html_x( 'Show a reset variations link (only for variable products).', 'Customizer option name', 'yith-proteo' ),
+					'label'   => esc_html_x( 'Show reset variations link in variable products', 'Customizer option name', 'yith-proteo' ),
 					'section' => 'yith_proteo_product_page_management',
 				)
 			)

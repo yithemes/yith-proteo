@@ -345,8 +345,9 @@
 				$wp_customize,
 				'yith_proteo_footer_sidebar_1_enable',
 				array(
-					'label'   => esc_html_x( 'Enable widget area #1', 'Customizer option name', 'yith-proteo' ),
-					'section' => 'yith_proteo_footer_management',
+					'label'       => esc_html_x( 'Enable widget area #1', 'Customizer option name', 'yith-proteo' ),
+					'description' => esc_html_x( 'Widgets will be shown in columns. Columns number can be set in the options below.', 'Customizer option description', 'yith-proteo' ),
+					'section'     => 'yith_proteo_footer_management',
 				)
 			)
 		);
@@ -417,8 +418,9 @@
 				$wp_customize,
 				'yith_proteo_footer_sidebar_2_enable',
 				array(
-					'label'   => esc_html_x( 'Enable widget area #2', 'Customizer option name', 'yith-proteo' ),
-					'section' => 'yith_proteo_footer_management',
+					'label'       => esc_html_x( 'Enable widget area #2', 'Customizer option name', 'yith-proteo' ),
+					'description' => esc_html_x( 'Widgets will be shown in columns. Columns number can be set in the options below.', 'Customizer option description', 'yith-proteo' ),
+					'section'     => 'yith_proteo_footer_management',
 				)
 			)
 		);
