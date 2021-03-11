@@ -202,7 +202,7 @@ $wp_customize->add_control(
 		'type'        => 'radio',
 		'label'       => esc_html_x( '"View details" style', 'Customizer option name', 'yith-proteo' ),
 		'section'     => 'woocommerce_product_catalog',
-		'description' => esc_html_x( 'How should the add to cart button be displayed in product catalog pages?', 'Customizer option description', 'yith-proteo' ),
+		'description' => esc_html_x( 'Choose the style for the "View details" button in product catalog pages', 'Customizer option description', 'yith-proteo' ),
 		'choices'     => array(
 			'unstyled_button' => esc_html_x( 'Textual link', 'Customizer option value', 'yith-proteo' ),
 			'ghost'           => esc_html_x( 'Ghost button', 'Customizer option value', 'yith-proteo' ),

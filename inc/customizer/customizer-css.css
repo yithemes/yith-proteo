@@ -108,7 +108,9 @@ span.description.customize-control-description:before {
 #customize-control-site_icon span.description.customize-control-description:before {
 	display: none;
 }
-
+span.description.customizer-control-description-expanded {
+	margin-bottom: 10px;
+}
 /* RANGE INPUTS*/
 .customize-control-range input[type="range"].range-slider {
 	-webkit-appearance: none;
