@@ -114,9 +114,9 @@ function yith_proteo_customize_register( $wp_customize ) {
 	$wp_customize->add_section(
 		'static_front_page',
 		array(
-			'title'       => esc_html_x( 'Static Front Page', 'Customizer section title', 'yith-proteo' ),
+			'title'       => esc_html_x( 'Homepage Settings', 'Customizer section title', 'yith-proteo' ),
 			'priority'    => 20,
-			'description' => esc_html_x( 'Your theme supports a static front page.', 'Customizer section description', 'yith-proteo' ),
+			'description' => esc_html_x( 'You can choose what&#8217;s displayed on the homepage of your site. It can be posts in reverse chronological order (classic blog), or a fixed/static page. To set a static homepage, you first need to create two Pages. One will become the homepage, and the other will be where your posts are displayed.', 'Customizer section description', 'yith-proteo' ),
 		)
 	);
 
