@@ -46,10 +46,10 @@ if ( class_exists( 'WP_Customize_Control' ) ) {
 				<?php if ( ! empty( $this->label ) ) { ?>
 					<span class="customize-control-title"><?php echo esc_html( $this->label ); ?></span>
 				<?php } ?>
-				<?php if ( ! empty( $this->description ) ) { ?>
-					<span class="customize-control-description"><?php echo wp_kses( $this->description, $allowed_html ); ?></span>
-				<?php } ?>
 			</div>
+			<?php if ( ! empty( $this->description ) ) { ?>
+				<span class="customize-control-description"><?php echo wp_kses( $this->description, $allowed_html ); ?></span>
+			<?php } ?>
 			<?php
 		}
 	}

@@ -82,6 +82,9 @@ li.customize-section-description-container.section-meta + li.customize-control[i
 }
 
 /* Control description */
+span.customize-control-description {
+	clear: both;
+}
 span.description.customize-control-description:not(.customizer-control-description-expanded) {
 	font-size: 0;
 }
@@ -299,6 +302,14 @@ body .select2-container--default .select2-selection--single .select2-selection__
 	color: #555d66;
 }
 
+#customize-controls .customize-control[id*="group_title"].section-closed .customize-control-description,
+#customize-controls .customize-control[id*="group_title"].section-closed + .customize-control-description {
+	display: none;
+}
+
+#customize-controls .customize-control[id*="group_title"] + .customize-control-description {
+    margin-bottom: 10px;
+}
 
 /* RADIO IMAGE */
 .customize-control-radio-image label {

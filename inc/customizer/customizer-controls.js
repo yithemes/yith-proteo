@@ -485,8 +485,10 @@
 
 		function yith_proteo_toggle_button_style_2_controls() {
 			var section_title = $( '#customize-control-yith_proteo_button_style_2_group_title' ),
-			collapsed = section_title.hasClass( 'section-closed' );
+			collapsed = section_title.hasClass( 'section-closed' ),
+			section_description = section_title.find('.customize-control-description');
 			section_title.toggleClass('section-closed');
+			section_description.insertAfter(section_title);
 			wp.customize.control('yith_proteo_buttons_style_2_preview' ).toggle( collapsed );
 			wp.customize.control('yith_proteo_button_style_2_bg_color_1' ).toggle( collapsed );
 			wp.customize.control('yith_proteo_button_style_2_bg_color_2' ).toggle( collapsed );

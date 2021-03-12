@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YITH Proteo\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2021-03-12 13:51+0100\n"
+"POT-Creation-Date: 2021-03-12 14:46+0100\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -175,7 +175,7 @@ msgctxt "Customizer section title"
 msgid "Header background"
 msgstr ""
 
-#: inc/customizer/customizer.php:66 inc/customizer/panels/buttons.php:116
+#: inc/customizer/customizer.php:66 inc/customizer/panels/buttons.php:96
 #: inc/customizer/panels/footer-credits.php:48
 #: inc/customizer/panels/footer.php:52 inc/customizer/panels/header.php:503
 #: inc/customizer/panels/mobile.php:193 inc/customizer/panels/topbar.php:56
@@ -412,17 +412,12 @@ msgctxt "Customizer options group title"
 msgid "Button style 1"
 msgstr ""
 
-#: inc/customizer/panels/buttons.php:98
-msgctxt "Customizer option name"
-msgid "Button style 1"
-msgstr ""
-
-#: inc/customizer/panels/buttons.php:134 inc/customizer/panels/topbar.php:249
+#: inc/customizer/panels/buttons.php:114 inc/customizer/panels/topbar.php:249
 msgctxt "Customizer option name"
 msgid "Border color"
 msgstr ""
 
-#: inc/customizer/panels/buttons.php:152 inc/customizer/panels/buttons.php:301
+#: inc/customizer/panels/buttons.php:132 inc/customizer/panels/buttons.php:281
 #: inc/customizer/panels/typography.php:91
 #: inc/customizer/panels/woocommerce/sale-badge.php:51
 #: inc/customizer/panels/woocommerce/store-notice.php:40
@@ -430,19 +425,24 @@ msgctxt "Customizer option name"
 msgid "Text color"
 msgstr ""
 
-#: inc/customizer/panels/buttons.php:170 inc/customizer/panels/buttons.php:319
+#: inc/customizer/panels/buttons.php:150 inc/customizer/panels/buttons.php:299
 msgctxt "Customizer option name"
 msgid "Background :hover color"
 msgstr ""
 
-#: inc/customizer/panels/buttons.php:188
+#: inc/customizer/panels/buttons.php:168
 msgctxt "Customizer option name"
 msgid "Border :hover color"
 msgstr ""
 
-#: inc/customizer/panels/buttons.php:206 inc/customizer/panels/buttons.php:337
+#: inc/customizer/panels/buttons.php:186 inc/customizer/panels/buttons.php:317
 msgctxt "Customizer option name"
 msgid "Text :hover color"
+msgstr ""
+
+#: inc/customizer/panels/buttons.php:206
+msgctxt "Customizer option name"
+msgid "Button style 1"
 msgstr ""
 
 #: inc/customizer/panels/buttons.php:226
@@ -450,24 +450,24 @@ msgctxt "Customizer options group title"
 msgid "Button style 2"
 msgstr ""
 
-#: inc/customizer/panels/buttons.php:246
-msgctxt "Customizer option name"
-msgid "Button style 2"
-msgstr ""
-
-#: inc/customizer/panels/buttons.php:248
+#: inc/customizer/panels/buttons.php:227
 msgctxt "Customizer option description"
 msgid "In this button you can apply a gradient using two different colors."
 msgstr ""
 
-#: inc/customizer/panels/buttons.php:265
+#: inc/customizer/panels/buttons.php:245
 msgctxt "Customizer option name"
 msgid "Gradient color - Top"
 msgstr ""
 
-#: inc/customizer/panels/buttons.php:283
+#: inc/customizer/panels/buttons.php:263
 msgctxt "Customizer option name"
 msgid "Gradient color - Bottom"
+msgstr ""
+
+#: inc/customizer/panels/buttons.php:337
+msgctxt "Customizer option name"
+msgid "Button style 2"
 msgstr ""
 
 #: inc/customizer/panels/color-shades.php:21
