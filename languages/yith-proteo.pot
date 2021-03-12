@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YITH Proteo\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2021-03-12 14:46+0100\n"
+"POT-Creation-Date: 2021-03-12 16:50+0100\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -149,13 +149,13 @@ msgid "Off"
 msgstr ""
 
 #: inc/customizer/custom-controls/class-customizer-control-yes-no.php:30
-#: inc/customizer/customizer.php:235
+#: inc/customizer/customizer.php:244
 msgctxt "Customizer option value"
 msgid "Yes"
 msgstr ""
 
 #: inc/customizer/custom-controls/class-customizer-control-yes-no.php:33
-#: inc/customizer/customizer.php:236
+#: inc/customizer/customizer.php:245
 msgctxt "Customizer option value"
 msgid "No"
 msgstr ""
@@ -210,7 +210,17 @@ msgctxt "Customizer panel name"
 msgid "WooCommerce"
 msgstr ""
 
-#: inc/customizer/customizer.php:212 inc/customizer/panels/sidebars.php:60
+#: inc/customizer/customizer.php:117
+msgctxt "Customizer section title"
+msgid "Static Front Page"
+msgstr ""
+
+#: inc/customizer/customizer.php:119
+msgctxt "Customizer section description"
+msgid "Your theme supports a static front page."
+msgstr ""
+
+#: inc/customizer/customizer.php:221 inc/customizer/panels/sidebars.php:60
 #: inc/customizer/panels/sidebars.php:138 inc/customizer/panels/sidebars.php:215
 #: inc/customizer/panels/sidebars.php:292
 #: inc/customizer/panels/woocommerce/product-category.php:39
@@ -222,7 +232,7 @@ msgctxt "Customizer option value"
 msgid "No sidebar"
 msgstr ""
 
-#: inc/customizer/customizer.php:213
+#: inc/customizer/customizer.php:222
 #: inc/customizer/panels/footer-credits.php:151
 #: inc/customizer/panels/footer.php:306 inc/customizer/panels/header.php:100
 #: inc/customizer/panels/header.php:435 inc/customizer/panels/header.php:575
@@ -242,7 +252,7 @@ msgctxt "Customizer option value"
 msgid "Right"
 msgstr ""
 
-#: inc/customizer/customizer.php:214
+#: inc/customizer/customizer.php:223
 #: inc/customizer/panels/footer-credits.php:143
 #: inc/customizer/panels/footer.php:298 inc/customizer/panels/header.php:106
 #: inc/customizer/panels/header.php:441 inc/customizer/panels/header.php:581
@@ -734,19 +744,33 @@ msgctxt "Customizer section title"
 msgid "Forms"
 msgstr ""
 
-#: inc/customizer/panels/forms.php:35 inc/customizer/panels/topbar.php:270
+#: inc/customizer/panels/forms.php:35
 msgctxt "Customizer option name"
 msgid "Input and textarea border radius (default: 0px)"
 msgstr ""
 
 #: inc/customizer/panels/forms.php:59
 msgctxt "Customizer option name"
-msgid "Use enhanced select elements"
+msgid "Use customs style select elements"
 msgstr ""
 
-#: inc/customizer/panels/forms.php:81
+#: inc/customizer/panels/forms.php:60
+msgctxt "Customizer option description"
+msgid ""
+"Replace the default browser style of select elements with the custom Proteo "
+"style."
+msgstr ""
+
+#: inc/customizer/panels/forms.php:82
 msgctxt "Customizer option name"
-msgid "Use enhanced checkbox and radio button elements"
+msgid "Use custom style on checkbox and radio button elements"
+msgstr ""
+
+#: inc/customizer/panels/forms.php:83
+msgctxt "Customizer option description"
+msgid ""
+"Replace the default browser style of radio and checkbox elements with the "
+"custom Proteo style."
 msgstr ""
 
 #: inc/customizer/panels/header.php:14
@@ -1147,9 +1171,10 @@ msgid ""
 "the page/post edit view."
 msgstr ""
 
-#: inc/customizer/panels/sidebars.php:89
+#: inc/customizer/panels/sidebars.php:89 inc/customizer/panels/sidebars.php:166
+#: inc/customizer/panels/sidebars.php:243 inc/customizer/panels/sidebars.php:320
 msgctxt "Customizer option name"
-msgid "Default sidebar"
+msgid "Sidebar to show"
 msgstr ""
 
 #: inc/customizer/panels/sidebars.php:91
@@ -1172,12 +1197,6 @@ msgctxt "Customizer option description"
 msgid ""
 "Select where to display the sidebar. You can pick a specific sidebar from the "
 "page edit view."
-msgstr ""
-
-#: inc/customizer/panels/sidebars.php:166 inc/customizer/panels/sidebars.php:243
-#: inc/customizer/panels/sidebars.php:320
-msgctxt "Customizer option name"
-msgid "Sidebar to show"
 msgstr ""
 
 #: inc/customizer/panels/sidebars.php:168
@@ -1289,22 +1308,22 @@ msgctxt "Customizer option name"
 msgid "Tagline"
 msgstr ""
 
-#: inc/customizer/panels/site-identity.php:414
+#: inc/customizer/panels/site-identity.php:417
 msgctxt "Customizer option name"
 msgid "Position"
 msgstr ""
 
-#: inc/customizer/panels/site-identity.php:417
+#: inc/customizer/panels/site-identity.php:422
 msgctxt "Customizer option value"
 msgid "Below the title"
 msgstr ""
 
-#: inc/customizer/panels/site-identity.php:418
+#: inc/customizer/panels/site-identity.php:426
 msgctxt "Customizer option value"
 msgid "Inline with the title"
 msgstr ""
 
-#: inc/customizer/panels/site-identity.php:437
+#: inc/customizer/panels/site-identity.php:448
 msgctxt "Customizer options group title"
 msgid "Favicon"
 msgstr ""
@@ -1327,6 +1346,11 @@ msgstr ""
 #: inc/customizer/panels/topbar.php:228
 msgctxt "Customizer option name"
 msgid "Show bottom border"
+msgstr ""
+
+#: inc/customizer/panels/topbar.php:270
+msgctxt "Customizer option name"
+msgid "Border thickness"
 msgstr ""
 
 #: inc/customizer/panels/typography.php:14
