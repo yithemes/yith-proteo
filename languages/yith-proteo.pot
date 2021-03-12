@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YITH Proteo\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2021-03-12 16:57+0100\n"
+"POT-Creation-Date: 2021-03-12 17:14+0100\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -281,42 +281,50 @@ msgctxt "Customizer section title"
 msgid "Block editor colors"
 msgstr ""
 
-#: inc/customizer/panels/block-editor-colors.php:33
+#: inc/customizer/panels/block-editor-colors.php:15
+msgctxt "Customizer section title"
+msgid ""
+"Replace the default color swatches of the Gutenberg block editor with your "
+"custom colors. In this way when you create a new page using Gutenberg you "
+"will find these colors and you can easily apply them to the page elements."
+msgstr ""
+
+#: inc/customizer/panels/block-editor-colors.php:34
 msgctxt "Customizer option name"
 msgid "Custom color #1"
 msgstr ""
 
-#: inc/customizer/panels/block-editor-colors.php:52
+#: inc/customizer/panels/block-editor-colors.php:53
 msgctxt "Customizer option name"
 msgid "Custom color #2"
 msgstr ""
 
-#: inc/customizer/panels/block-editor-colors.php:71
+#: inc/customizer/panels/block-editor-colors.php:72
 msgctxt "Customizer option name"
 msgid "Custom color #3"
 msgstr ""
 
-#: inc/customizer/panels/block-editor-colors.php:90
+#: inc/customizer/panels/block-editor-colors.php:91
 msgctxt "Customizer option name"
 msgid "Custom color #4"
 msgstr ""
 
-#: inc/customizer/panels/block-editor-colors.php:109
+#: inc/customizer/panels/block-editor-colors.php:110
 msgctxt "Customizer option name"
 msgid "Custom color #5"
 msgstr ""
 
-#: inc/customizer/panels/block-editor-colors.php:128
+#: inc/customizer/panels/block-editor-colors.php:129
 msgctxt "Customizer option name"
 msgid "Custom color #6"
 msgstr ""
 
-#: inc/customizer/panels/block-editor-colors.php:147
+#: inc/customizer/panels/block-editor-colors.php:148
 msgctxt "Customizer option name"
 msgid "Custom color #7"
 msgstr ""
 
-#: inc/customizer/panels/block-editor-colors.php:166
+#: inc/customizer/panels/block-editor-colors.php:167
 msgctxt "Customizer option name"
 msgid "Custom color #8"
 msgstr ""
@@ -755,7 +763,7 @@ msgstr ""
 
 #: inc/customizer/panels/forms.php:59
 msgctxt "Customizer option name"
-msgid "Use customs style select elements"
+msgid "Use custom style on select elements"
 msgstr ""
 
 #: inc/customizer/panels/forms.php:60

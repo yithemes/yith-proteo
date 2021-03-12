@@ -11,9 +11,10 @@
 $wp_customize->add_section(
 	'yith_proteo_block_editor_colors',
 	array(
-		'title'    => esc_html_x( 'Block editor colors', 'Customizer section title', 'yith-proteo' ),
-		'priority' => 20,
-		'panel'    => 'yith_proteo_extra',
+		'title'       => esc_html_x( 'Block editor colors', 'Customizer section title', 'yith-proteo' ),
+		'description' => esc_html_x( 'Replace the default color swatches of the Gutenberg block editor with your custom colors. In this way when you create a new page using Gutenberg you will find these colors and you can easily apply them to the page elements.', 'Customizer section title', 'yith-proteo' ),
+		'priority'    => 20,
+		'panel'       => 'yith_proteo_extra',
 	)
 );
 

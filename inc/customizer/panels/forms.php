@@ -56,7 +56,7 @@ if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
 			$wp_customize,
 			'yith_proteo_use_enanched_selects',
 			array(
-				'label'       => esc_html_x( 'Use customs style select elements', 'Customizer option name', 'yith-proteo' ),
+				'label'       => esc_html_x( 'Use custom style on select elements', 'Customizer option name', 'yith-proteo' ),
 				'description' => esc_html_x( 'Replace the default browser style of select elements with the custom Proteo style.', 'Customizer option description', 'yith-proteo' ),
 				'section'     => 'yith_proteo_forms',
 			)
