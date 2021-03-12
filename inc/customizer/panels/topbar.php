@@ -267,7 +267,7 @@
 			$wp_customize,
 			'yith_proteo_topbar_bottom_border_width',
 			array(
-				'label'           => esc_html_x( 'Input and textarea border radius (default: 0px)', 'Customizer option name', 'yith-proteo' ),
+				'label'           => esc_html_x( 'Border thickness', 'Customizer option name', 'yith-proteo' ),
 				'min'             => 1,
 				'max'             => 50,
 				'step'            => 1,
