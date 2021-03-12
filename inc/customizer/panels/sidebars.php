@@ -163,7 +163,7 @@
 		'yith_proteo_blog_sidebar',
 		array(
 			'type'            => 'select',
-			'label'           => esc_html_x( 'Blog page sidebar', 'Customizer option name', 'yith-proteo' ),
+			'label'           => esc_html_x( 'Sidebar to show', 'Customizer option name', 'yith-proteo' ),
 			'section'         => 'yith_proteo_sidebar_management',
 			'description'     => esc_html_x( 'Select the sidebar to display. You can pick a specific sidebar from the single post edit page.', 'Customizer option description', 'yith-proteo' ),
 			'choices'         => wp_list_pluck( $GLOBALS['wp_registered_sidebars'], 'name' ),
@@ -240,7 +240,7 @@
 		'yith_proteo_blog_category_sidebar',
 		array(
 			'type'            => 'select',
-			'label'           => esc_html_x( 'Blog category pages sidebar', 'Customizer option name', 'yith-proteo' ),
+			'label'           => esc_html_x( 'Sidebar to show', 'Customizer option name', 'yith-proteo' ),
 			'section'         => 'yith_proteo_sidebar_management',
 			'description'     => esc_html_x( 'Select the sidebar to display.', 'Customizer option description', 'yith-proteo' ),
 			'choices'         => wp_list_pluck( $GLOBALS['wp_registered_sidebars'], 'name' ),
@@ -317,7 +317,7 @@
 		'yith_proteo_blog_tag_sidebar',
 		array(
 			'type'            => 'select',
-			'label'           => esc_html_x( 'Blog tag pages sidebar', 'Customizer option name', 'yith-proteo' ),
+			'label'           => esc_html_x( 'Sidebar to show', 'Customizer option name', 'yith-proteo' ),
 			'section'         => 'yith_proteo_sidebar_management',
 			'description'     => esc_html_x( 'Select the sidebar to display.', 'Customizer option description', 'yith-proteo' ),
 			'choices'         => wp_list_pluck( $GLOBALS['wp_registered_sidebars'], 'name' ),

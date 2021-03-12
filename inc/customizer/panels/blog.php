@@ -17,27 +17,40 @@ $wp_customize->add_section(
 );
 
 // Single post layout.
-$wp_customize->add_setting(
-	'yith_proteo_single_post_layout',
-	array(
-		'default'           => 'standard',
-		'sanitize_callback' => 'yith_proteo_sanitize_radio',
-	)
-);
-$wp_customize->add_control(
-	'yith_proteo_single_post_layout',
-	array(
-		'type'        => 'radio',
-		'label'       => esc_html_x( 'Single post layout', 'Customizer option name', 'yith-proteo' ),
-		'section'     => 'yith_proteo_blog_management',
-		'description' => esc_html_x( 'Disable sidebars if you want to use Background picture layout.', 'Customizer option description', 'yith-proteo' ),
-		'choices'     => array(
-			'standard'              => esc_html_x( 'Standard', 'Customizer option value', 'yith-proteo' ),
-			'background_picture'    => esc_html_x( 'Background picture', 'Customizer option value', 'yith-proteo' ),
-			'fullwidth_cover_image' => esc_html_x( 'Fullwidth cover image', 'Customizer option value', 'yith-proteo' ),
-		),
-	)
-);
+if ( class_exists( 'Customizer_Control_Radio_Image' ) ) {
+	$wp_customize->add_setting(
+		'yith_proteo_single_post_layout',
+		array(
+			'default'           => 'standard',
+			'sanitize_callback' => 'yith_proteo_sanitize_select',
+		)
+	);
+
+	$wp_customize->add_control(
+		new Customizer_Control_Radio_Image(
+			$wp_customize,
+			'yith_proteo_single_post_layout',
+			array(
+				'label'   => esc_html_x( 'Single post layout', 'Customizer option name', 'yith-proteo' ),
+				'section' => 'yith_proteo_blog_management',
+				'choices' => array(
+					'standard'              => array(
+						'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/blog-standard.svg',
+						'label' => esc_html_x( 'Standard layout', 'Customizer option value', 'yith-proteo' ),
+					),
+					'background_picture'    => array(
+						'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/blog-background-picture.svg',
+						'label' => esc_html_x( 'Background picture', 'Customizer option value', 'yith-proteo' ),
+					),
+					'fullwidth_cover_image' => array(
+						'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/blog-fullwidth-cover.svg',
+						'label' => esc_html_x( 'Fullwidth cover image', 'Customizer option value', 'yith-proteo' ),
+					),
+				),
+			)
+		)
+	);
+}
 
 $wp_customize->add_setting(
 	'yith_proteo_single_post_fullwidth_cover_cropping_custom_height',

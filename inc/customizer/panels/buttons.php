@@ -243,8 +243,9 @@
 			$wp_customize,
 			'yith_proteo_buttons_style_2_preview',
 			array(
-				'label'   => esc_html_x( 'Button style 2', 'Customizer option name', 'yith-proteo' ),
-				'section' => 'yith_proteo_buttons',
+				'label'       => esc_html_x( 'Button style 2', 'Customizer option name', 'yith-proteo' ),
+				'section'     => 'yith_proteo_buttons',
+				'description' => esc_html_x( 'In this button you can apply a gradient using two different colors.', 'Customizer option description', 'yith-proteo' ),
 			)
 		)
 	);
@@ -261,7 +262,7 @@
 			$wp_customize,
 			'yith_proteo_button_style_2_bg_color_1',
 			array(
-				'label'   => esc_html_x( 'Background color shade 1', 'Customizer option name', 'yith-proteo' ),
+				'label'   => esc_html_x( 'Gradient color - Top', 'Customizer option name', 'yith-proteo' ),
 				'section' => 'yith_proteo_buttons',
 			)
 		)
@@ -279,7 +280,7 @@
 			$wp_customize,
 			'yith_proteo_button_style_2_bg_color_2',
 			array(
-				'label'   => esc_html_x( 'Background color shade 2', 'Customizer option name', 'yith-proteo' ),
+				'label'   => esc_html_x( 'Gradient color - Bottom', 'Customizer option name', 'yith-proteo' ),
 				'section' => 'yith_proteo_buttons',
 			)
 		)

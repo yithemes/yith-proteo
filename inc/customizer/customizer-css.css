@@ -470,6 +470,13 @@ body .select2-container--default .select2-selection--single .select2-selection__
 /**********
 BUTTONS
 **********/
+.yith-proteo-button-preview-box {
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 30px;
+    border: 1px solid #eeeeee;
+	margin-top: 5px;
+}
 .yith-proteo-button-preview {
 	border: 1px solid;
 	line-height: normal;
@@ -481,6 +488,10 @@ BUTTONS
 	font-family: inherit;
 	font-weight: 600;
 	border-radius: var(--proteo-buttons_border_radius, 50px);
+	position: relative;
+}
+.customize-control-description + .yith-proteo-button-preview {
+	margin-top: 15px;
 }
 .button-style-1 {
 	border-color: var(--proteo-button_1_border_color, #448a85);

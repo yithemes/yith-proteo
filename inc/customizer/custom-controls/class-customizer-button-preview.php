@@ -30,7 +30,12 @@ if ( class_exists( 'WP_Customize_Control' ) ) {
 			</style>
 			<div class="button-preview-custom-control">
 				<span class="customize-control-title"><?php echo esc_html_x( 'Preview', 'Customizer button label', 'yith-proteo' ); ?></span>
-				<span class="yith-proteo-button-preview <?php echo esc_attr( $button_type ); ?>"><?php echo esc_html( $this->label ); ?></span>
+				<?php if ( ! empty( $this->description ) ) { ?>
+					<span class="customize-control-description"><?php echo wp_kses( $this->description, $allowed_html ); ?></span>
+				<?php } ?>
+				<div class="yith-proteo-button-preview-box">
+					<span class="yith-proteo-button-preview <?php echo esc_attr( $button_type ); ?>"><?php echo esc_html( $this->label ); ?></span>
+				</div>
 			</div>
 			<?php
 		}

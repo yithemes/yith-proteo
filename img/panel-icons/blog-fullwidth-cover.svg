@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="74px" height="54px" viewBox="0 0 74 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 13</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.556863 0 0 0 0 0.556863 0 0 0 0 0.556863 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Filter-presets" transform="translate(-183.000000, -826.000000)">
+            <g id="Group-13" transform="translate(184.000000, 827.000000)">
+                <g filter="url(#filter-1)" id="Group-8">
+                    <g>
+                        <rect id="Rectangle" stroke="#CBCBCB" fill="#8E8E8E" x="0" y="0" width="72" height="26"></rect>
+                    </g>
+                </g>
+                <text id="IMG" font-family="Jost-Regular_SemiBold, Jost" font-size="6" font-weight="500" letter-spacing="0.664762" fill="#FFFFFF">
+                    <tspan x="31" y="9">IMG</tspan>
+                </text>
+                <rect id="Rectangle" stroke="#CBCBCB" fill="#FFFFFF" x="12.5" y="14" width="48" height="38" rx="2"></rect>
+                <rect id="Rectangle" stroke="#CBCBCB" fill="#E9E9E9" x="43.5" y="17" width="14" height="32" rx="2"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
