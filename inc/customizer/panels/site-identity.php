@@ -400,25 +400,36 @@ $wp_customize->add_control(
 );
 
 // Tagline position.
-$wp_customize->add_setting(
-	'yith_proteo_tagline_position',
-	array(
-		'default'           => 'below',
-		'sanitize_callback' => 'yith_proteo_sanitize_select',
-	)
-);
-$wp_customize->add_control(
-	'yith_proteo_tagline_position',
-	array(
-		'type'    => 'select',
-		'label'   => esc_html_x( 'Position', 'Customizer option name', 'yith-proteo' ),
-		'section' => 'title_tagline',
-		'choices' => array(
-			'below' => esc_html_x( 'Below the title', 'Customizer option value', 'yith-proteo' ),
-			'right' => esc_html_x( 'Inline with the title', 'Customizer option value', 'yith-proteo' ),
-		),
-	)
-);
+if ( class_exists( 'Customizer_Control_Radio_Image' ) ) {
+	$wp_customize->add_setting(
+		'yith_proteo_tagline_position',
+		array(
+			'default'           => 'below',
+			'sanitize_callback' => 'yith_proteo_sanitize_select',
+		)
+	);
+
+	$wp_customize->add_control(
+		new Customizer_Control_Radio_Image(
+			$wp_customize,
+			'yith_proteo_tagline_position',
+			array(
+				'label'   => esc_html_x( 'Position', 'Customizer option name', 'yith-proteo' ),
+				'section' => 'title_tagline',
+				'choices' => array(
+					'below' => array(
+						'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/tagline-under-logo.svg',
+						'label' => esc_html_x( 'Below the title', 'Customizer option value', 'yith-proteo' ),
+					),
+					'right' => array(
+						'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/tagline-inline-logo.svg',
+						'label' => esc_html_x( 'Inline with the title', 'Customizer option value', 'yith-proteo' ),
+					),
+				),
+			)
+		)
+	);
+}
 
 // Site Icon managment.
 $wp_customize->add_setting(

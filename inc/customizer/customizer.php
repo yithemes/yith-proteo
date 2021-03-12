@@ -111,6 +111,15 @@ function yith_proteo_customize_register( $wp_customize ) {
 		)
 	);
 
+	$wp_customize->add_section(
+		'static_front_page',
+		array(
+			'title'       => esc_html_x( 'Static Front Page', 'Customizer section title', 'yith-proteo' ),
+			'priority'    => 20,
+			'description' => esc_html_x( 'Your theme supports a static front page.', 'Customizer section description', 'yith-proteo' ),
+		)
+	);
+
 	include_once get_template_directory() . '/inc/customizer/panels/sidebars.php'; // phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
 
 	include_once get_template_directory() . '/inc/customizer/panels/topbar.php'; // phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
