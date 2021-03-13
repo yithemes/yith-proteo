@@ -625,6 +625,18 @@ if ( ! function_exists( 'yith_proteo_product_tax_page_sidebar_is_enabled' ) ) {
 	}
 }
 
+if ( ! function_exists( 'yith_proteo_is_store_notice_enabled' ) ) {
+	/**
+	 * Callback function to check if product tax page sidebar is enabled
+	 *
+	 * @return bool
+	 */
+	function yith_proteo_is_store_notice_enabled() {
+		update_option( 'woocommerce_demo_store', get_theme_mod( 'woocommerce_demo_store', get_option( 'woocommerce_demo_store', 'no' ) ) );
+		return 'no' !== get_theme_mod( 'woocommerce_demo_store', get_option( 'woocommerce_demo_store', 'no' ) );
+	}
+}
+
 /**
  * Add YITH Customizer CSS
  */
