@@ -40,7 +40,7 @@
 				height: 0;
 				border-style: solid;
 				border-width: 0 10px 10px 10px;
-				border-color: transparent transparent #ffffff transparent;
+				border-color: transparent transparent var(--proteo-header_bg_color, #ffffff) transparent;
 				position: absolute;
 				top: -10px;
 			}
