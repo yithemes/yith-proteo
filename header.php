@@ -49,6 +49,30 @@ global $post;
 			$slider = get_post_meta( $post->ID, 'header_slider', true );
 		}
 	}
+	$custom_spacing = false;
+	if ( function_exists( 'wc' ) && is_shop() ) {
+		if ( 'on' === get_post_meta( wc_get_page_id( 'shop' ), 'yith_proteo_custom_page_content_spacing_enabler', true ) ) {
+			$custom_spacing = 'style="padding:' . implode(
+				'px ',
+				get_post_meta( wc_get_page_id( 'shop' ), 'yith_proteo_custom_page_content_spacing', true )
+			) . 'px"';
+		}
+	} elseif ( is_home() ) {
+		if ( 'on' === get_post_meta( get_option( 'page_for_posts' ), 'yith_proteo_custom_page_content_spacing_enabler', true ) ) {
+			$custom_spacing = 'style="padding:' . implode(
+				'px ',
+				get_post_meta( get_option( 'page_for_posts' ), 'yith_proteo_custom_page_content_spacing', true )
+			) . 'px"';
+		}
+	} elseif ( $post ) {
+		if ( 'on' === get_post_meta( $post->ID, 'yith_proteo_custom_page_content_spacing_enabler', true ) ) {
+			$custom_spacing = 'style="padding:' . implode(
+				'px ',
+				get_post_meta( $post->ID, 'yith_proteo_custom_page_content_spacing', true )
+			) . 'px"';
+		}
+	}
+
 	if ( 'on' !== $hide_header ) {
 		?>
 		<header id="masthead"
@@ -200,14 +224,6 @@ global $post;
 		if ( $slider && '' !== $slider ) {
 			echo do_shortcode( '[yith-slider slider="' . $slider . '"]' );
 		}
-	}
-
-	$custom_spacing = false;
-	if ( 'on' === get_post_meta( $post->ID, 'yith_proteo_custom_page_content_spacing_enabler', true ) ) {
-		$custom_spacing = 'style="padding:' . implode(
-			'px ',
-			get_post_meta( $post->ID, 'yith_proteo_custom_page_content_spacing', true )
-		) . 'px"';
 	}
 	?>
 	<div id="content" class="site-content" <?php echo $custom_spacing ? $custom_spacing : ''; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>>
