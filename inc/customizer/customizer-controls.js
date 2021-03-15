@@ -123,6 +123,14 @@
 		});
 
 		/**
+		 * Control Dependency
+		 */
+		wp.customize('woocommerce_demo_store', function (setting) {
+			wp.customize.control('woocommerce_demo_store_notice', showControlIfhasValues(setting, ['yes']));
+		});
+
+
+		/**
 		 * Footer sidebar width calc
 		 */
 		wp.customize('yith_proteo_footer_sidebar_1_width', function (value) {

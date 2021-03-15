@@ -11,7 +11,6 @@ if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
 		array(
 			'default'           => get_option( 'woocommerce_demo_store', 'no' ),
 			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
-			'priority'          => 5,
 			'transport'         => 'refresh',
 		)
 	);
@@ -21,8 +20,9 @@ if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
 			$wp_customize,
 			'woocommerce_demo_store',
 			array(
-				'label'   => esc_html_x( 'Enable store notice', 'Customizer option name', 'yith-proteo' ),
-				'section' => 'woocommerce_store_notice',
+				'label'    => esc_html_x( 'Enable store notice', 'Customizer option name', 'yith-proteo' ),
+				'priority' => 5,
+				'section'  => 'woocommerce_store_notice',
 			)
 		)
 	);
