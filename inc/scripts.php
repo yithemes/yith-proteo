@@ -51,7 +51,7 @@ if ( ! function_exists( 'yith_proteo_scripts' ) ) :
 			array(
 				'stickyHeader'                         => apply_filters(
 					'yith_proteo_enable_sticky_header',
-					get_theme_mod( 'yith_proteo_header_sticky', 'yes' )
+					get_theme_mod( 'yith_proteo_header_sticky', 'no' )
 				),
 				'select2minimumResultsForSearch'       => apply_filters( 'yith_proteo_select2_minimum_results_for_search', 7 ),
 				'yith_proteo_use_enanched_selects'     => get_theme_mod( 'yith_proteo_use_enanched_selects', 'yes' ),
