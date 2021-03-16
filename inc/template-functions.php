@@ -145,37 +145,58 @@ if ( ! function_exists( 'yith_proteo_print_page_titles' ) ) :
 	function yith_proteo_print_page_titles() {
 		global $post;
 
-		$is_wishlist_page = false;
+		// Initialize variables to use.
+		$yith_proteo_is_frontpage    = is_front_page();
+		$is_wishlist_page            = false;
+		$yith_proteo_is_blog_page    = is_home();
+		$yith_proteo_hide_page_title = false;
+
 		if ( function_exists( 'yith_wcwl_is_wishlist_page' ) ) {
 			$is_wishlist_page = yith_wcwl_is_wishlist_page();
 		}
 
-		$yith_proteo_is_blog_page = is_home();
+		// Retrieve ID of the page to check.
+		$yith_proteo_page_id_to_check = $post->ID;
+		if ( function_exists( 'wc' ) && is_shop() ) {
+			$yith_proteo_page_id_to_check = get_option( 'woocommerce_shop_page_id' );
+		} elseif ( $yith_proteo_is_blog_page ) {
+			$yith_proteo_page_id_to_check = get_option( 'page_for_posts' );
+		}
 
-		if ( $yith_proteo_is_blog_page ) {
-			$yith_proteo_hide_page_title = 'on' === get_post_meta( get_option( 'page_for_posts' ), 'yith_proteo_hide_page_title', true ) ? true : false;
-		} else {
-			$yith_proteo_hide_page_title = 'on' === get_post_meta( $post->ID, 'yith_proteo_hide_page_title', true ) ? true : false;
-
-			if ( class_exists( 'EditorsKit' ) ) {
-				$yith_proteo_hide_page_title = get_post_meta( $post->ID, '_editorskit_title_hidden', true );
+		// Fix missing meta value.
+		if ( $yith_proteo_is_frontpage || $yith_proteo_is_blog_page ) {
+			if ( ! metadata_exists( 'post', $yith_proteo_page_id_to_check, '_editorskit_title_hidden' ) ) {
+				update_post_meta( $yith_proteo_page_id_to_check, '_editorskit_title_hidden', 1 );
+				$yith_proteo_hide_page_title = true;
+			}
+			if ( '' === get_post_meta( $yith_proteo_page_id_to_check, 'yith_proteo_hide_page_title', true ) ) {
+				update_post_meta( $yith_proteo_page_id_to_check, 'yith_proteo_hide_page_title', 'on' );
+				$yith_proteo_hide_page_title = true;
 			}
 		}
 
-		if ( ! $is_wishlist_page && ! $yith_proteo_hide_page_title ) :
+		// Retrieve meta value.
+		$yith_proteo_hide_page_title = 'on' === get_post_meta( $yith_proteo_page_id_to_check, 'yith_proteo_hide_page_title', true ) ? true : false;
+		if ( class_exists( 'EditorsKit' ) && ! $yith_proteo_is_blog_page ) {
+			$yith_proteo_hide_page_title = '1' === get_post_meta( $yith_proteo_page_id_to_check, '_editorskit_title_hidden', true ) ? true : false;
+		}
+
+		if ( ! $is_wishlist_page && ! $yith_proteo_hide_page_title ) {
 
 			// Print breadcrumbs.
 			if ( function_exists( 'woocommerce_breadcrumb' ) && ! ( is_order_received_page() ) && ( 'yes' === get_theme_mod( 'yith_proteo_breadcrumb_enable', 'yes' ) ) ) {
 				woocommerce_breadcrumb();
 			}
 
+			// Print icons.
 			if ( $post instanceof WP_Post && ( 'post' === $post->post_type || 'page' === $post->post_type ) ) {
-				$icon = ! empty( get_post_meta( $post->ID, 'title_icon', true ) ) ? '<div class="entry-title lnr ' . get_post_meta( $post->ID, 'title_icon', true ) . '"></div>' : '';
+				$icon = ! empty( get_post_meta( $yith_proteo_page_id_to_check, 'title_icon', true ) ) ? '<div class="entry-title lnr ' . get_post_meta( $yith_proteo_page_id_to_check, 'title_icon', true ) . '"></div>' : '';
 				if ( ! empty( $icon ) ) {
 					echo $icon; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 				}
 			}
 
+			// Print page title.
 			if ( $yith_proteo_is_blog_page ) {
 				?>
 				<h1 class="page-title"><?php echo esc_html( get_the_title( get_option( 'page_for_posts' ) ) ); ?></h1>
@@ -183,7 +204,7 @@ if ( ! function_exists( 'yith_proteo_print_page_titles' ) ) :
 			} else {
 				the_title( '<h1 class="entry-title">', '</h1>' );
 			}
-		endif;
+		}
 
 	}
 endif;

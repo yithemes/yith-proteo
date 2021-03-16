@@ -848,3 +848,24 @@ if ( ! function_exists( 'yith_proteo_is_shop_filterd' ) ) {
 	}
 }
 
+if ( ! function_exists( 'yith_show_hide_shop_page_title' ) ) {
+	add_action( 'template_redirect', 'yith_show_hide_shop_page_title' );
+
+	/**
+	 * Show/Hide shop page title
+	 *
+	 * @return void
+	 */
+	function yith_show_hide_shop_page_title() {
+		$yith_proteo_page_id_to_check = get_option( 'woocommerce_shop_page_id' );
+		// Retrieve meta value.
+		$yith_proteo_hide_page_title = 'on' === get_post_meta( $yith_proteo_page_id_to_check, 'yith_proteo_hide_page_title', true ) ? true : false;
+		if ( class_exists( 'EditorsKit' ) ) {
+			$yith_proteo_hide_page_title = '1' === get_post_meta( $yith_proteo_page_id_to_check, '_editorskit_title_hidden', true ) ? true : false;
+		}
+		if ( is_shop() && $yith_proteo_hide_page_title ) {
+			add_filter( 'woocommerce_show_page_title', '__return_false' );
+			remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20 );
+		}
+	}
+}
