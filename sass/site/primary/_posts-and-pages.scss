@@ -239,6 +239,7 @@ article:not(.has-post-thumbnail).page header.entry-header {
 	.lnr {
 		font-size: var(--proteo-h1_font_size, 4.375rem);
 		color: var(--proteo-h1_font_color, #404040);
+		text-align: var(--proteo-page_title_align, center);
 	}
 }
 
