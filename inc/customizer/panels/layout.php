@@ -185,3 +185,41 @@ if ( class_exists( 'Customizer_Control_Radio_Image' ) ) {
 		)
 	);
 }
+
+// Site content spacing control.
+$wp_customize->add_setting(
+	'yith_proteo_page_title_spacing',
+	array(
+		'default'           => array(
+			'top'    => 0,
+			'right'  => 0,
+			'bottom' => 35,
+			'left'   => 0,
+		),
+		'sanitize_callback' => 'yith_proteo_sanitize_int_array',
+	)
+);
+$wp_customize->add_control(
+	new Customizer_Control_Spacing(
+		$wp_customize,
+		'yith_proteo_page_title_spacing',
+		array(
+			'label'   => esc_html_x( 'Spacing (px)', 'Customizer option name', 'yith-proteo' ),
+			'section' => 'yith_proteo_layout_management',
+			'choices' => array(
+				'top'    => array(
+					'name' => esc_html_x( 'Top', 'Customizer option value', 'yith-proteo' ),
+				),
+				'right'  => array(
+					'name' => esc_html_x( 'Right', 'Customizer option value', 'yith-proteo' ),
+				),
+				'bottom' => array(
+					'name' => esc_html_x( 'Bottom', 'Customizer option value', 'yith-proteo' ),
+				),
+				'left'   => array(
+					'name' => esc_html_x( 'Left', 'Customizer option value', 'yith-proteo' ),
+				),
+			),
+		)
+	)
+);

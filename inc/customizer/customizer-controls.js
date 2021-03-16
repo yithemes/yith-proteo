@@ -633,11 +633,13 @@
 			section_title.toggleClass('section-closed');
 			wp.customize.control('yith_proteo_page_title_layout' ).toggle( collapsed );
 			wp.customize.control('yith_proteo_page_title_align' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_page_title_spacing' ).toggle( collapsed );
 		}
 
 		function yith_proteo_toggle_page_title_layout_options_controls_list() {
 			wp.customize.control('yith_proteo_page_title_layout' ).toggle( false );
 			wp.customize.control('yith_proteo_page_title_align' ).toggle( false );
+			wp.customize.control('yith_proteo_page_title_spacing' ).toggle( false );
 		}
 
 		/* Global typography options grouping */
