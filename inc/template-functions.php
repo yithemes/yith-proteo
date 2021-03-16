@@ -163,18 +163,6 @@ if ( ! function_exists( 'yith_proteo_print_page_titles' ) ) :
 			$yith_proteo_page_id_to_check = get_option( 'page_for_posts' );
 		}
 
-		// Fix missing meta value.
-		if ( $yith_proteo_is_frontpage || $yith_proteo_is_blog_page ) {
-			if ( ! metadata_exists( 'post', $yith_proteo_page_id_to_check, '_editorskit_title_hidden' ) ) {
-				update_post_meta( $yith_proteo_page_id_to_check, '_editorskit_title_hidden', 1 );
-				$yith_proteo_hide_page_title = true;
-			}
-			if ( '' === get_post_meta( $yith_proteo_page_id_to_check, 'yith_proteo_hide_page_title', true ) ) {
-				update_post_meta( $yith_proteo_page_id_to_check, 'yith_proteo_hide_page_title', 'on' );
-				$yith_proteo_hide_page_title = true;
-			}
-		}
-
 		// Retrieve meta value.
 		$yith_proteo_hide_page_title = 'on' === get_post_meta( $yith_proteo_page_id_to_check, 'yith_proteo_hide_page_title', true ) ? true : false;
 		if ( class_exists( 'EditorsKit' ) && ! $yith_proteo_is_blog_page ) {

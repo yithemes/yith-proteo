@@ -265,3 +265,32 @@ if ( ! function_exists( 'yith_proteo_show_site_title_default_value' ) ) {
 		}
 	}
 }
+
+
+if ( ! function_exists( 'yith_proteo_theme_version_upgrade_1' ) ) {
+
+	/**
+	 * Perform action on version upgrade.
+	 *
+	 * @return void
+	 */
+	function yith_proteo_theme_version_upgrade_1() {
+		$last_saved_version = get_option( 'yith_proteo_version' );
+		$front_page_id      = get_option( 'page_on_front' );
+		$blog_page_id       = get_option( 'page_for_posts' );
+
+		if ( version_compare( '1.5.1.8', $last_saved_version, '>' ) ) {
+			if ( $front_page_id ) {
+				update_post_meta( $front_page_id, '_editorskit_title_hidden', 1 );
+				update_post_meta( $front_page_id, 'yith_proteo_hide_page_title', 'on' );
+			}
+			if ( $blog_page_id ) {
+				update_post_meta( $blog_page_id, '_editorskit_title_hidden', 1 );
+				update_post_meta( $blog_page_id, 'yith_proteo_hide_page_title', 'on' );
+			}
+			update_option( 'yith_proteo_version', YITH_PROTEO_VERSION );
+		}
+	}
+}
+
+add_action( 'init', 'yith_proteo_theme_version_upgrade_1' );
