@@ -21,3 +21,10 @@
 .site-footer:after {
 	@include clearfix-after;
 }
+
+p:empty{
+	display: none;
+}
+p:empty + p:empty {
+	display: block;
+}
