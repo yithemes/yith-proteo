@@ -279,7 +279,7 @@ if ( ! function_exists( 'yith_proteo_theme_version_upgrade_1' ) ) {
 		$front_page_id      = get_option( 'page_on_front' );
 		$blog_page_id       = get_option( 'page_for_posts' );
 
-		if ( version_compare( '1.5.1.8', $last_saved_version, '>' ) ) {
+		if ( ! $last_saved_version || version_compare( '1.5.1.8', $last_saved_version, '>' ) ) {
 			if ( $front_page_id ) {
 				update_post_meta( $front_page_id, '_editorskit_title_hidden', 1 );
 				update_post_meta( $front_page_id, 'yith_proteo_hide_page_title', 'on' );
