@@ -467,6 +467,25 @@ $wp_customize->add_control(
 	)
 );
 
+if ( function_exists( 'wc' ) ) {
+	// Single product page title.
+	$wp_customize->add_setting(
+		'yith_proteo_mobile_single_product_page_title_font_size',
+		array(
+			'sanitize_callback' => 'absint',
+			'default'           => 36,
+		)
+	);
+	$wp_customize->add_control(
+		'yith_proteo_mobile_single_product_page_title_font_size',
+		array(
+			'label'   => esc_html_x( 'Product page title', 'Customizer option name', 'yith-proteo' ),
+			'section' => 'yith_proteo_mobile_typography_management',
+			'type'    => 'number',
+		)
+	);
+}
+
 // Footer font size options.
 $wp_customize->add_setting(
 	'yith_proteo_mobile_footer_font_size',

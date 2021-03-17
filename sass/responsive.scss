@@ -423,6 +423,9 @@ Custom media queries
 	#main-footer .site-info {
 		font-size: var(--proteo-mobile_footer_credits_font_size, 13px);
 	}
+	.single-product div.product .summary.entry-summary .product_title {
+		font-size: var(--proteo-mobile_single_product_page_title_font_size, 36px);
+	}
 	.single-product div.product .summary.entry-summary .woocommerce-product-details__short-description p,
 	.single-product .woocommerce-tabs .panel,
 	.single-product .woocommerce-tabs ul.tabs li a {

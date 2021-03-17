@@ -130,19 +130,20 @@ function yith_proteo_inline_style() {
 	/**
 	 * Mobile typography
 	 */
-	$mobile_site_title_font_size     = get_theme_mod( 'yith_proteo_mobile_site_title_font_size', 38 );
-	$mobile_tagline_font_size        = get_theme_mod( 'yith_proteo_mobile_tagline_font_size', 11 );
-	$mobile_base_font_size           = get_theme_mod( 'yith_proteo_mobile_base_font_size', 13 );
-	$mobile_topbar_font_size         = get_theme_mod( 'yith_proteo_mobile_topbar_font_size', 13 );
-	$mobile_menu_font_size           = get_theme_mod( 'yith_proteo_mobile_menu_font_size', 16 );
-	$mobile_h1_font_size             = get_theme_mod( 'yith_proteo_mobile_h1_font_size', 56 );
-	$mobile_h2_font_size             = get_theme_mod( 'yith_proteo_mobile_h2_font_size', 32 );
-	$mobile_h3_font_size             = get_theme_mod( 'yith_proteo_mobile_h3_font_size', 15 );
-	$mobile_h4_font_size             = get_theme_mod( 'yith_proteo_mobile_h4_font_size', 13 );
-	$mobile_h5_font_size             = get_theme_mod( 'yith_proteo_mobile_h5_font_size', 10 );
-	$mobile_h6_font_size             = get_theme_mod( 'yith_proteo_mobile_h6_font_size', 9 );
-	$mobile_footer_font_size         = get_theme_mod( 'yith_proteo_mobile_footer_font_size', 13 );
-	$mobile_footer_credits_font_size = get_theme_mod( 'yith_proteo_mobile_footer_credits_font_size', 13 );
+	$mobile_site_title_font_size                = get_theme_mod( 'yith_proteo_mobile_site_title_font_size', 38 );
+	$mobile_tagline_font_size                   = get_theme_mod( 'yith_proteo_mobile_tagline_font_size', 11 );
+	$mobile_base_font_size                      = get_theme_mod( 'yith_proteo_mobile_base_font_size', 13 );
+	$mobile_topbar_font_size                    = get_theme_mod( 'yith_proteo_mobile_topbar_font_size', 13 );
+	$mobile_menu_font_size                      = get_theme_mod( 'yith_proteo_mobile_menu_font_size', 16 );
+	$mobile_h1_font_size                        = get_theme_mod( 'yith_proteo_mobile_h1_font_size', 56 );
+	$mobile_h2_font_size                        = get_theme_mod( 'yith_proteo_mobile_h2_font_size', 32 );
+	$mobile_h3_font_size                        = get_theme_mod( 'yith_proteo_mobile_h3_font_size', 15 );
+	$mobile_h4_font_size                        = get_theme_mod( 'yith_proteo_mobile_h4_font_size', 13 );
+	$mobile_h5_font_size                        = get_theme_mod( 'yith_proteo_mobile_h5_font_size', 10 );
+	$mobile_h6_font_size                        = get_theme_mod( 'yith_proteo_mobile_h6_font_size', 9 );
+	$mobile_footer_font_size                    = get_theme_mod( 'yith_proteo_mobile_footer_font_size', 13 );
+	$mobile_footer_credits_font_size            = get_theme_mod( 'yith_proteo_mobile_footer_credits_font_size', 13 );
+	$mobile_single_product_page_title_font_size = get_theme_mod( 'yith_proteo_mobile_single_product_page_title_font_size', 36 );
 
 	/**
 	 * Other options
@@ -369,6 +370,7 @@ function yith_proteo_inline_style() {
 		--proteo-mobile_h4_font_size:{$mobile_h4_font_size}px;
 		--proteo-mobile_h5_font_size:{$mobile_h5_font_size}px;
 		--proteo-mobile_h6_font_size:{$mobile_h6_font_size}px;
+		--proteo-mobile_single_product_page_title_font_size:{$mobile_single_product_page_title_font_size}px;
 		--proteo-mobile_footer_font_size:{$mobile_footer_font_size}px;
 		--proteo-mobile_footer_credits_font_size:{$mobile_footer_credits_font_size}px;
 		--proteo-page_title_align: {$page_title_align};
