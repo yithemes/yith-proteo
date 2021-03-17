@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YITH Proteo\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2021-03-17 12:58+0100\n"
+"POT-Creation-Date: 2021-03-17 15:05+0100\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1173,12 +1173,17 @@ msgctxt "Customizer option name"
 msgid "H6"
 msgstr ""
 
-#: inc/customizer/panels/mobile.php:481
+#: inc/customizer/panels/mobile.php:482
+msgctxt "Customizer option name"
+msgid "Product page title"
+msgstr ""
+
+#: inc/customizer/panels/mobile.php:500
 msgctxt "Customizer option name"
 msgid "Footer"
 msgstr ""
 
-#: inc/customizer/panels/mobile.php:498
+#: inc/customizer/panels/mobile.php:517
 msgctxt "Customizer option name"
 msgid "Footer credits"
 msgstr ""
