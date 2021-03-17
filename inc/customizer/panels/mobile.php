@@ -274,9 +274,10 @@ if ( class_exists( 'Customizer_Control_Radio_Image' ) ) {
 $wp_customize->add_section(
 	'yith_proteo_mobile_typography_management',
 	array(
-		'title'    => esc_html_x( 'Mobile typography', 'Customizer section title', 'yith-proteo' ),
-		'priority' => 30,
-		'panel'    => 'yith_proteo_mobile_options',
+		'title'       => esc_html_x( 'Mobile typography', 'Customizer section title', 'yith-proteo' ),
+		'description' => esc_html_x( 'Set font size in px for all elements in mobile devices', 'Customizer section description', 'yith-proteo' ),
+		'priority'    => 30,
+		'panel'       => 'yith_proteo_mobile_options',
 	)
 );
 
@@ -291,7 +292,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
 	'yith_proteo_mobile_site_title_font_size',
 	array(
-		'label'   => esc_html_x( 'Site Title font size (default: 38px)', 'Customizer option name', 'yith-proteo' ),
+		'label'   => esc_html_x( 'Site Title', 'Customizer option name', 'yith-proteo' ),
 		'section' => 'yith_proteo_mobile_typography_management',
 		'type'    => 'number',
 	)
@@ -308,25 +309,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
 	'yith_proteo_mobile_tagline_font_size',
 	array(
-		'label'   => esc_html_x( 'Tagline font size (default: 11px)', 'Customizer option name', 'yith-proteo' ),
-		'section' => 'yith_proteo_mobile_typography_management',
-		'type'    => 'number',
-	)
-);
-
-
-// Base font size options.
-$wp_customize->add_setting(
-	'yith_proteo_mobile_base_font_size',
-	array(
-		'sanitize_callback' => 'absint',
-		'default'           => 13,
-	)
-);
-$wp_customize->add_control(
-	'yith_proteo_mobile_base_font_size',
-	array(
-		'label'   => esc_html_x( 'Body font size (default: 13px)', 'Customizer option name', 'yith-proteo' ),
+		'label'   => esc_html_x( 'Tagline', 'Customizer option name', 'yith-proteo' ),
 		'section' => 'yith_proteo_mobile_typography_management',
 		'type'    => 'number',
 	)
@@ -343,7 +326,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
 	'yith_proteo_mobile_topbar_font_size',
 	array(
-		'label'   => esc_html_x( 'Topbar font size (default: 13px)', 'Customizer option name', 'yith-proteo' ),
+		'label'   => esc_html_x( 'Topbar', 'Customizer option name', 'yith-proteo' ),
 		'section' => 'yith_proteo_mobile_typography_management',
 		'type'    => 'number',
 	)
@@ -360,7 +343,24 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
 	'yith_proteo_mobile_menu_font_size',
 	array(
-		'label'   => esc_html_x( 'Mobile menu font size (default: 16px)', 'Customizer option name', 'yith-proteo' ),
+		'label'   => esc_html_x( 'Mobile menu', 'Customizer option name', 'yith-proteo' ),
+		'section' => 'yith_proteo_mobile_typography_management',
+		'type'    => 'number',
+	)
+);
+
+// Base font size options.
+$wp_customize->add_setting(
+	'yith_proteo_mobile_base_font_size',
+	array(
+		'sanitize_callback' => 'absint',
+		'default'           => 13,
+	)
+);
+$wp_customize->add_control(
+	'yith_proteo_mobile_base_font_size',
+	array(
+		'label'   => esc_html_x( 'Body', 'Customizer option name', 'yith-proteo' ),
 		'section' => 'yith_proteo_mobile_typography_management',
 		'type'    => 'number',
 	)
@@ -377,7 +377,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
 	'yith_proteo_mobile_h1_font_size',
 	array(
-		'label'   => esc_html_x( 'H1 font size (default: 56px)', 'Customizer option name', 'yith-proteo' ),
+		'label'   => esc_html_x( 'H1', 'Customizer option name', 'yith-proteo' ),
 		'section' => 'yith_proteo_mobile_typography_management',
 		'type'    => 'number',
 	)
@@ -394,7 +394,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
 	'yith_proteo_mobile_h2_font_size',
 	array(
-		'label'   => esc_html_x( 'H2 font size (default: 32px)', 'Customizer option name', 'yith-proteo' ),
+		'label'   => esc_html_x( 'H2', 'Customizer option name', 'yith-proteo' ),
 		'section' => 'yith_proteo_mobile_typography_management',
 		'type'    => 'number',
 	)
@@ -410,7 +410,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
 	'yith_proteo_mobile_h3_font_size',
 	array(
-		'label'   => esc_html_x( 'H3 font size (default: 15px)', 'Customizer option name', 'yith-proteo' ),
+		'label'   => esc_html_x( 'H3', 'Customizer option name', 'yith-proteo' ),
 		'section' => 'yith_proteo_mobile_typography_management',
 		'type'    => 'number',
 	)
@@ -427,7 +427,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
 	'yith_proteo_mobile_h4_font_size',
 	array(
-		'label'   => esc_html_x( 'H4 font size (default: 13px)', 'Customizer option name', 'yith-proteo' ),
+		'label'   => esc_html_x( 'H4', 'Customizer option name', 'yith-proteo' ),
 		'section' => 'yith_proteo_mobile_typography_management',
 		'type'    => 'number',
 	)
@@ -444,7 +444,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
 	'yith_proteo_mobile_h5_font_size',
 	array(
-		'label'   => esc_html_x( 'H5 font size (default: 10px)', 'Customizer option name', 'yith-proteo' ),
+		'label'   => esc_html_x( 'H5', 'Customizer option name', 'yith-proteo' ),
 		'section' => 'yith_proteo_mobile_typography_management',
 		'type'    => 'number',
 	)
@@ -461,7 +461,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
 	'yith_proteo_mobile_h6_font_size',
 	array(
-		'label'   => esc_html_x( 'H6 font size (default: 9px)', 'Customizer option name', 'yith-proteo' ),
+		'label'   => esc_html_x( 'H6', 'Customizer option name', 'yith-proteo' ),
 		'section' => 'yith_proteo_mobile_typography_management',
 		'type'    => 'number',
 	)
@@ -478,7 +478,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
 	'yith_proteo_mobile_footer_font_size',
 	array(
-		'label'   => esc_html_x( 'Footer font size (default: 13px)', 'Customizer option name', 'yith-proteo' ),
+		'label'   => esc_html_x( 'Footer', 'Customizer option name', 'yith-proteo' ),
 		'section' => 'yith_proteo_mobile_typography_management',
 		'type'    => 'number',
 	)
@@ -495,7 +495,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
 	'yith_proteo_mobile_footer_credits_font_size',
 	array(
-		'label'   => esc_html_x( 'Footer credits font size (default: 13px)', 'Customizer option name', 'yith-proteo' ),
+		'label'   => esc_html_x( 'Footer credits', 'Customizer option name', 'yith-proteo' ),
 		'section' => 'yith_proteo_mobile_typography_management',
 		'type'    => 'number',
 	)

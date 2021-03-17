@@ -84,7 +84,7 @@
 			'type'        => 'number',
 			'label'       => esc_html_x( 'Max cross sell products to show', 'Customizer option name', 'yith-proteo' ),
 			'section'     => 'yith_proteo_cart_page_management',
-			'description' => esc_html_x( 'Choose how many cross sell products you want to show (default: 4)', 'Customizer option description', 'yith-proteo' ),
+			'description' => esc_html_x( 'Choose how many cross sell products you want to show', 'Customizer option description', 'yith-proteo' ),
 		)
 	);
 	// Cart page cross sell products columns management.
@@ -101,6 +101,6 @@
 			'type'        => 'number',
 			'label'       => esc_html_x( 'Columns', 'Customizer option name', 'yith-proteo' ),
 			'section'     => 'yith_proteo_cart_page_management',
-			'description' => esc_html_x( 'Choose how many columns with cross sell products you want to show (default: 4)', 'Customizer option description', 'yith-proteo' ),
+			'description' => esc_html_x( 'Choose how many columns with cross sell products you want to show', 'Customizer option description', 'yith-proteo' ),
 		)
 	);

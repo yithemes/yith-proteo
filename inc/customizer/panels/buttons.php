@@ -52,7 +52,7 @@
 			$wp_customize,
 			'yith_proteo_buttons_border_radius',
 			array(
-				'label'   => esc_html_x( 'Border radius (default: 50px)', 'Customizer option name', 'yith-proteo' ),
+				'label'   => esc_html_x( 'Border radius (px)', 'Customizer option name', 'yith-proteo' ),
 				'min'     => 0,
 				'max'     => 50,
 				'step'    => 1,

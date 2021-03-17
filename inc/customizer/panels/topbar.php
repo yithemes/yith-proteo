@@ -110,7 +110,7 @@
 	$wp_customize->add_control(
 		'yith_proteo_topbar_font_size',
 		array(
-			'label'           => esc_html_x( 'Font size (default: 16px)', 'Customizer option name', 'yith-proteo' ),
+			'label'           => esc_html_x( 'Font size', 'Customizer option name', 'yith-proteo' ),
 			'section'         => 'yith_proteo_topbar_management',
 			'type'            => 'number',
 			'active_callback' => 'yith_proteo_topbar_is_enabled',
@@ -267,7 +267,7 @@
 			$wp_customize,
 			'yith_proteo_topbar_bottom_border_width',
 			array(
-				'label'           => esc_html_x( 'Border thickness', 'Customizer option name', 'yith-proteo' ),
+				'label'           => esc_html_x( 'Border thickness (px)', 'Customizer option name', 'yith-proteo' ),
 				'min'             => 1,
 				'max'             => 50,
 				'step'            => 1,

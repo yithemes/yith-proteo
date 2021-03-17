@@ -40,7 +40,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
 	'yith_proteo_product_catalog_title_font_size',
 	array(
-		'label'   => esc_html_x( 'Product title font size (default: 14px)', 'Customizer option name', 'yith-proteo' ),
+		'label'   => esc_html_x( 'Product title Font size', 'Customizer option name', 'yith-proteo' ),
 		'section' => 'woocommerce_product_catalog',
 		'type'    => 'number',
 	)
@@ -75,7 +75,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
 	'yith_proteo_product_catalog_price_font_size',
 	array(
-		'label'   => esc_html_x( 'Product price font size (default: 14px)', 'Customizer option name', 'yith-proteo' ),
+		'label'   => esc_html_x( 'Product price font size', 'Customizer option name', 'yith-proteo' ),
 		'section' => 'woocommerce_product_catalog',
 		'type'    => 'number',
 	)
@@ -134,7 +134,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
 	'yith_proteo_product_catalog_add_to_cart_font_size',
 	array(
-		'label'   => esc_html_x( 'Add to cart font size (default: 14px)', 'Customizer option name', 'yith-proteo' ),
+		'label'   => esc_html_x( 'Add to cart font size', 'Customizer option name', 'yith-proteo' ),
 		'section' => 'woocommerce_product_catalog',
 		'type'    => 'number',
 	)

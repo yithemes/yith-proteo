@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YITH Proteo\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2021-03-12 17:14+0100\n"
+"POT-Creation-Date: 2021-03-17 12:58+0100\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -23,6 +23,12 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-2: bin\n"
 "X-Poedit-SearchPathExcluded-3: third-party/classes/class-tgm-plugin-"
 "activation.php\n"
+"X-Poedit-SearchPathExcluded-4: node_modules\n"
+"X-Poedit-SearchPathExcluded-5: gruntfile.js\n"
+"X-Poedit-SearchPathExcluded-6: package.json\n"
+"X-Poedit-SearchPathExcluded-7: package-lock.json\n"
+"X-Poedit-SearchPathExcluded-8: .gitignore\n"
+"X-Poedit-SearchPathExcluded-9: LICENSE\n"
 
 #: 404.php:21
 msgid "Oops! That page can&rsquo;t be found."
@@ -69,7 +75,7 @@ msgctxt "Screen reader text"
 msgid "Skip to content"
 msgstr ""
 
-#: header.php:112
+#: header.php:136
 msgctxt "Screen reader text"
 msgid "Toggle navigation"
 msgstr ""
@@ -180,7 +186,7 @@ msgstr ""
 #: inc/customizer/panels/footer.php:52 inc/customizer/panels/header.php:503
 #: inc/customizer/panels/mobile.php:193 inc/customizer/panels/topbar.php:56
 #: inc/customizer/panels/woocommerce/sale-badge.php:33
-#: inc/customizer/panels/woocommerce/store-notice.php:21
+#: inc/customizer/panels/woocommerce/store-notice.php:44
 msgctxt "Customizer option name"
 msgid "Background color"
 msgstr ""
@@ -241,9 +247,10 @@ msgstr ""
 #: inc/customizer/panels/footer.php:306 inc/customizer/panels/header.php:100
 #: inc/customizer/panels/header.php:435 inc/customizer/panels/header.php:575
 #: inc/customizer/panels/layout.php:65 inc/customizer/panels/layout.php:181
-#: inc/customizer/panels/mobile.php:76 inc/customizer/panels/mobile.php:265
-#: inc/customizer/panels/sidebars.php:68 inc/customizer/panels/sidebars.php:146
-#: inc/customizer/panels/sidebars.php:223 inc/customizer/panels/sidebars.php:300
+#: inc/customizer/panels/layout.php:214 inc/customizer/panels/mobile.php:76
+#: inc/customizer/panels/mobile.php:265 inc/customizer/panels/sidebars.php:68
+#: inc/customizer/panels/sidebars.php:146 inc/customizer/panels/sidebars.php:223
+#: inc/customizer/panels/sidebars.php:300
 #: inc/customizer/panels/site-identity.php:227
 #: inc/customizer/panels/site-identity.php:389
 #: inc/customizer/panels/topbar.php:89 inc/customizer/panels/topbar.php:205
@@ -261,9 +268,10 @@ msgstr ""
 #: inc/customizer/panels/footer.php:298 inc/customizer/panels/header.php:106
 #: inc/customizer/panels/header.php:441 inc/customizer/panels/header.php:581
 #: inc/customizer/panels/layout.php:71 inc/customizer/panels/layout.php:173
-#: inc/customizer/panels/mobile.php:75 inc/customizer/panels/mobile.php:257
-#: inc/customizer/panels/sidebars.php:64 inc/customizer/panels/sidebars.php:142
-#: inc/customizer/panels/sidebars.php:219 inc/customizer/panels/sidebars.php:296
+#: inc/customizer/panels/layout.php:220 inc/customizer/panels/mobile.php:75
+#: inc/customizer/panels/mobile.php:257 inc/customizer/panels/sidebars.php:64
+#: inc/customizer/panels/sidebars.php:142 inc/customizer/panels/sidebars.php:219
+#: inc/customizer/panels/sidebars.php:296
 #: inc/customizer/panels/site-identity.php:233
 #: inc/customizer/panels/site-identity.php:395
 #: inc/customizer/panels/topbar.php:95 inc/customizer/panels/topbar.php:197
@@ -366,7 +374,7 @@ msgstr ""
 
 #: inc/customizer/panels/blog.php:112
 msgctxt "Customizer option name"
-msgid "Overlay color opacity % (default: 70%)"
+msgid "Overlay color opacity %"
 msgstr ""
 
 #: inc/customizer/panels/blog.php:134
@@ -426,7 +434,7 @@ msgstr ""
 
 #: inc/customizer/panels/buttons.php:55
 msgctxt "Customizer option name"
-msgid "Border radius (default: 50px)"
+msgid "Border radius (px)"
 msgstr ""
 
 #: inc/customizer/panels/buttons.php:78
@@ -442,7 +450,7 @@ msgstr ""
 #: inc/customizer/panels/buttons.php:132 inc/customizer/panels/buttons.php:281
 #: inc/customizer/panels/typography.php:91
 #: inc/customizer/panels/woocommerce/sale-badge.php:51
-#: inc/customizer/panels/woocommerce/store-notice.php:40
+#: inc/customizer/panels/woocommerce/store-notice.php:63
 msgctxt "Customizer option name"
 msgid "Text color"
 msgstr ""
@@ -555,11 +563,21 @@ msgid "Enter here the content of the footer credits area"
 msgstr ""
 
 #: inc/customizer/panels/footer-credits.php:64
-#: inc/customizer/panels/footer.php:183 inc/customizer/panels/topbar.php:113
-#: inc/customizer/panels/typography.php:73
+#: inc/customizer/panels/footer.php:183 inc/customizer/panels/header.php:321
+#: inc/customizer/panels/site-identity.php:176
+#: inc/customizer/panels/site-identity.php:338
+#: inc/customizer/panels/topbar.php:113 inc/customizer/panels/typography.php:73
+#: inc/customizer/panels/typography.php:210
+#: inc/customizer/panels/typography.php:287
+#: inc/customizer/panels/typography.php:364
 #: inc/customizer/panels/typography.php:441
+#: inc/customizer/panels/typography.php:518
+#: inc/customizer/panels/typography.php:595
+#: inc/customizer/panels/woocommerce/sale-badge.php:67
+#: inc/customizer/panels/woocommerce/single-product.php:72
+#: inc/customizer/panels/woocommerce/store-notice.php:81
 msgctxt "Customizer option name"
-msgid "Font size (default: 16px)"
+msgid "Font size"
 msgstr ""
 
 #: inc/customizer/panels/footer-credits.php:82
@@ -699,7 +717,7 @@ msgstr ""
 
 #: inc/customizer/panels/footer.php:254
 msgctxt "Customizer option name"
-msgid "Widgets title font size"
+msgid "Widgets title Font size"
 msgstr ""
 
 #: inc/customizer/panels/footer.php:272
@@ -758,7 +776,7 @@ msgstr ""
 
 #: inc/customizer/panels/forms.php:35
 msgctxt "Customizer option name"
-msgid "Input and textarea border radius (default: 0px)"
+msgid "Input and textarea border radius"
 msgstr ""
 
 #: inc/customizer/panels/forms.php:59
@@ -816,7 +834,7 @@ msgid "Centered logo, navigation below"
 msgstr ""
 
 #: inc/customizer/panels/header.php:93 inc/customizer/panels/header.php:428
-#: inc/customizer/panels/header.php:568
+#: inc/customizer/panels/header.php:568 inc/customizer/panels/layout.php:207
 #: inc/customizer/panels/site-identity.php:220
 #: inc/customizer/panels/site-identity.php:382
 #: inc/customizer/panels/topbar.php:81
@@ -826,6 +844,7 @@ msgstr ""
 
 #: inc/customizer/panels/header.php:97 inc/customizer/panels/header.php:432
 #: inc/customizer/panels/header.php:572 inc/customizer/panels/layout.php:62
+#: inc/customizer/panels/layout.php:211
 #: inc/customizer/panels/site-identity.php:224
 #: inc/customizer/panels/site-identity.php:386
 #: inc/customizer/panels/topbar.php:86
@@ -835,6 +854,7 @@ msgstr ""
 
 #: inc/customizer/panels/header.php:103 inc/customizer/panels/header.php:438
 #: inc/customizer/panels/header.php:578 inc/customizer/panels/layout.php:68
+#: inc/customizer/panels/layout.php:217
 #: inc/customizer/panels/site-identity.php:230
 #: inc/customizer/panels/site-identity.php:392
 #: inc/customizer/panels/topbar.php:92
@@ -923,11 +943,6 @@ msgstr ""
 #: inc/customizer/panels/typography.php:575
 msgctxt "Customizer option name"
 msgid "Font"
-msgstr ""
-
-#: inc/customizer/panels/header.php:321
-msgctxt "Customizer option name"
-msgid "Font size (default: 14px)"
 msgstr ""
 
 #: inc/customizer/panels/header.php:338
@@ -1096,69 +1111,76 @@ msgctxt "Customizer section title"
 msgid "Mobile typography"
 msgstr ""
 
-#: inc/customizer/panels/mobile.php:294
-msgctxt "Customizer option name"
-msgid "Site Title font size (default: 38px)"
+#: inc/customizer/panels/mobile.php:278
+msgctxt "Customizer section description"
+msgid "Set font size in px for all elements in mobile devices"
 msgstr ""
 
-#: inc/customizer/panels/mobile.php:311
+#: inc/customizer/panels/mobile.php:295
+#: inc/customizer/panels/site-identity.php:135
 msgctxt "Customizer option name"
-msgid "Tagline font size (default: 11px)"
+msgid "Site Title"
+msgstr ""
+
+#: inc/customizer/panels/mobile.php:312
+#: inc/customizer/panels/site-identity.php:297
+msgctxt "Customizer option name"
+msgid "Tagline"
 msgstr ""
 
 #: inc/customizer/panels/mobile.php:329
 msgctxt "Customizer option name"
-msgid "Body font size (default: 13px)"
+msgid "Topbar"
 msgstr ""
 
 #: inc/customizer/panels/mobile.php:346
 msgctxt "Customizer option name"
-msgid "Topbar font size (default: 13px)"
+msgid "Mobile menu"
 msgstr ""
 
 #: inc/customizer/panels/mobile.php:363
 msgctxt "Customizer option name"
-msgid "Mobile menu font size (default: 16px)"
+msgid "Body"
 msgstr ""
 
 #: inc/customizer/panels/mobile.php:380
 msgctxt "Customizer option name"
-msgid "H1 font size (default: 56px)"
+msgid "H1"
 msgstr ""
 
 #: inc/customizer/panels/mobile.php:397
 msgctxt "Customizer option name"
-msgid "H2 font size (default: 32px)"
+msgid "H2"
 msgstr ""
 
 #: inc/customizer/panels/mobile.php:413
 msgctxt "Customizer option name"
-msgid "H3 font size (default: 15px)"
+msgid "H3"
 msgstr ""
 
 #: inc/customizer/panels/mobile.php:430
 msgctxt "Customizer option name"
-msgid "H4 font size (default: 13px)"
+msgid "H4"
 msgstr ""
 
 #: inc/customizer/panels/mobile.php:447
 msgctxt "Customizer option name"
-msgid "H5 font size (default: 10px)"
+msgid "H5"
 msgstr ""
 
 #: inc/customizer/panels/mobile.php:464
 msgctxt "Customizer option name"
-msgid "H6 font size (default: 9px)"
+msgid "H6"
 msgstr ""
 
 #: inc/customizer/panels/mobile.php:481
 msgctxt "Customizer option name"
-msgid "Footer font size (default: 13px)"
+msgid "Footer"
 msgstr ""
 
 #: inc/customizer/panels/mobile.php:498
 msgctxt "Customizer option name"
-msgid "Footer credits font size (default: 13px)"
+msgid "Footer credits"
 msgstr ""
 
 #: inc/customizer/panels/sidebars.php:14
@@ -1289,17 +1311,6 @@ msgctxt "Customizer option description"
 msgid "Choose whether to show the site title."
 msgstr ""
 
-#: inc/customizer/panels/site-identity.php:135
-msgctxt "Customizer option name"
-msgid "Site Title"
-msgstr ""
-
-#: inc/customizer/panels/site-identity.php:176
-#: inc/customizer/panels/site-identity.php:338
-msgctxt "Customizer option name"
-msgid "Font size"
-msgstr ""
-
 #: inc/customizer/panels/site-identity.php:254
 msgctxt "Customizer options group title"
 msgid "Tagline"
@@ -1313,11 +1324,6 @@ msgstr ""
 #: inc/customizer/panels/site-identity.php:277
 msgctxt "Customizer option description"
 msgid "Choose whether to show the tagline."
-msgstr ""
-
-#: inc/customizer/panels/site-identity.php:297
-msgctxt "Customizer option name"
-msgid "Tagline"
 msgstr ""
 
 #: inc/customizer/panels/site-identity.php:417
@@ -1362,7 +1368,7 @@ msgstr ""
 
 #: inc/customizer/panels/topbar.php:270
 msgctxt "Customizer option name"
-msgid "Border thickness"
+msgid "Border thickness (px)"
 msgstr ""
 
 #: inc/customizer/panels/typography.php:14
@@ -1400,30 +1406,14 @@ msgctxt "Customizer options group title"
 msgid "H1"
 msgstr ""
 
-#: inc/customizer/panels/typography.php:210
-#: inc/customizer/panels/woocommerce/single-product.php:72
-msgctxt "Customizer option name"
-msgid "Font size (default: 32px)"
-msgstr ""
-
 #: inc/customizer/panels/typography.php:248
 msgctxt "Customizer options group title"
 msgid "H2"
 msgstr ""
 
-#: inc/customizer/panels/typography.php:287
-msgctxt "Customizer option name"
-msgid "Font size (default: 24px)"
-msgstr ""
-
 #: inc/customizer/panels/typography.php:325
 msgctxt "Customizer options group title"
 msgid "H3"
-msgstr ""
-
-#: inc/customizer/panels/typography.php:364
-msgctxt "Customizer option name"
-msgid "Font size (default: 19px)"
 msgstr ""
 
 #: inc/customizer/panels/typography.php:402
@@ -1436,21 +1426,9 @@ msgctxt "Customizer options group title"
 msgid "H5"
 msgstr ""
 
-#: inc/customizer/panels/typography.php:518
-#: inc/customizer/panels/woocommerce/sale-badge.php:67
-#: inc/customizer/panels/woocommerce/store-notice.php:58
-msgctxt "Customizer option name"
-msgid "Font size (default: 13px)"
-msgstr ""
-
 #: inc/customizer/panels/typography.php:556
 msgctxt "Customizer options group title"
 msgid "H6"
-msgstr ""
-
-#: inc/customizer/panels/typography.php:595
-msgctxt "Customizer option name"
-msgid "Font size (default: 11px)"
 msgstr ""
 
 #: inc/customizer/panels/typography.php:633
@@ -1530,13 +1508,12 @@ msgstr ""
 
 #: inc/customizer/panels/woocommerce/cart.php:87
 msgctxt "Customizer option description"
-msgid "Choose how many cross sell products you want to show (default: 4)"
+msgid "Choose how many cross sell products you want to show"
 msgstr ""
 
 #: inc/customizer/panels/woocommerce/cart.php:104
 msgctxt "Customizer option description"
-msgid ""
-"Choose how many columns with cross sell products you want to show (default: 4)"
+msgid "Choose how many columns with cross sell products you want to show"
 msgstr ""
 
 #: inc/customizer/panels/woocommerce/messages.php:14
@@ -1546,7 +1523,7 @@ msgstr ""
 
 #: inc/customizer/panels/woocommerce/messages.php:31
 msgctxt "Customizer option name"
-msgid "WooCommerce messages font size (default: 16px)"
+msgid "WooCommerce messages Font size"
 msgstr ""
 
 #: inc/customizer/panels/woocommerce/messages.php:50
@@ -1591,7 +1568,7 @@ msgstr ""
 
 #: inc/customizer/panels/woocommerce/product-catalog.php:43
 msgctxt "Customizer option name"
-msgid "Product title font size (default: 14px)"
+msgid "Product title Font size"
 msgstr ""
 
 #: inc/customizer/panels/woocommerce/product-catalog.php:61
@@ -1600,8 +1577,9 @@ msgid "Product title font color"
 msgstr ""
 
 #: inc/customizer/panels/woocommerce/product-catalog.php:78
+#: inc/customizer/panels/woocommerce/single-product.php:214
 msgctxt "Customizer option name"
-msgid "Product price font size (default: 14px)"
+msgid "Product price font size"
 msgstr ""
 
 #: inc/customizer/panels/woocommerce/product-catalog.php:96
@@ -1638,7 +1616,7 @@ msgstr ""
 
 #: inc/customizer/panels/woocommerce/product-catalog.php:137
 msgctxt "Customizer option name"
-msgid "Add to cart font size (default: 14px)"
+msgid "Add to cart font size"
 msgstr ""
 
 #: inc/customizer/panels/woocommerce/product-catalog.php:156
@@ -1793,19 +1771,14 @@ msgctxt "Customizer options group title"
 msgid "Product price and Add to cart"
 msgstr ""
 
-#: inc/customizer/panels/woocommerce/single-product.php:214
-msgctxt "Customizer option name"
-msgid "Product price font size (default: 35px)"
-msgstr ""
-
 #: inc/customizer/panels/woocommerce/single-product.php:249
 msgctxt "Customizer option name"
-msgid "Product quantity font size (default: 40px)"
+msgid "Product quantity font size"
 msgstr ""
 
 #: inc/customizer/panels/woocommerce/single-product.php:266
 msgctxt "Customizer option name"
-msgid "Add to cart button font size (default: 20px)"
+msgid "Add to cart button font size"
 msgstr ""
 
 #: inc/customizer/panels/woocommerce/single-product.php:287
@@ -1825,13 +1798,12 @@ msgstr ""
 
 #: inc/customizer/panels/woocommerce/single-product.php:328
 msgctxt "Customizer option description"
-msgid "Choose how many related products you want to show (default: 4)"
+msgid "Choose how many related products you want to show"
 msgstr ""
 
 #: inc/customizer/panels/woocommerce/single-product.php:345
 msgctxt "Customizer option description"
-msgid ""
-"Choose how many columns with related products you want to show (default: 4)"
+msgid "Choose how many columns with related products you want to show"
 msgstr ""
 
 #: inc/customizer/panels/woocommerce/single-product.php:363
@@ -1873,7 +1845,7 @@ msgstr ""
 
 #: inc/customizer/panels/woocommerce/single-product.php:479
 msgctxt "Customizer option name"
-msgid "Tab title font size (default: 30px)"
+msgid "Tab title font size"
 msgstr ""
 
 #: inc/customizer/panels/woocommerce/single-product.php:498
@@ -1883,7 +1855,7 @@ msgstr ""
 
 #: inc/customizer/panels/woocommerce/single-product.php:515
 msgctxt "Customizer option name"
-msgid "Tab content font size (default: 16px)"
+msgid "Tab content font size"
 msgstr ""
 
 #: inc/customizer/panels/woocommerce/single-product.php:535
@@ -1904,6 +1876,11 @@ msgstr ""
 #: inc/customizer/panels/woocommerce/single-product.php:597
 msgctxt "Customizer option name"
 msgid "Show product SKU"
+msgstr ""
+
+#: inc/customizer/panels/woocommerce/store-notice.php:23
+msgctxt "Customizer option name"
+msgid "Enable store notice"
 msgstr ""
 
 #: inc/metaboxes.php:39
@@ -2096,7 +2073,7 @@ msgctxt "Sidebar name"
 msgid "Mobile menu widget area"
 msgstr ""
 
-#: inc/template-functions.php:211
+#: inc/template-functions.php:220
 msgctxt "Search widget input placeholder"
 msgid "Search"
 msgstr ""

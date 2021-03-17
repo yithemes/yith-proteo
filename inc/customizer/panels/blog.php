@@ -109,7 +109,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_single_post_bg_alpha',
 		array(
-			'label'   => esc_html_x( 'Overlay color opacity % (default: 70%)', 'Customizer option name', 'yith-proteo' ),
+			'label'   => esc_html_x( 'Overlay color opacity %', 'Customizer option name', 'yith-proteo' ),
 			'min'     => 0,
 			'max'     => 100,
 			'step'    => 1,

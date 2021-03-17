@@ -69,7 +69,7 @@
 	$wp_customize->add_control(
 		'yith_proteo_product_page_title_font_size',
 		array(
-			'label'   => esc_html_x( 'Font size (default: 32px)', 'Customizer option name', 'yith-proteo' ),
+			'label'   => esc_html_x( 'Font size', 'Customizer option name', 'yith-proteo' ),
 			'section' => 'yith_proteo_product_page_management',
 			'type'    => 'number',
 		)
@@ -211,7 +211,7 @@
 	$wp_customize->add_control(
 		'yith_proteo_product_page_price_font_size',
 		array(
-			'label'   => esc_html_x( 'Product price font size (default: 35px)', 'Customizer option name', 'yith-proteo' ),
+			'label'   => esc_html_x( 'Product price font size', 'Customizer option name', 'yith-proteo' ),
 			'section' => 'yith_proteo_product_page_management',
 			'type'    => 'number',
 		)
@@ -246,7 +246,7 @@
 	$wp_customize->add_control(
 		'yith_proteo_product_page_quantity_font_size',
 		array(
-			'label'   => esc_html_x( 'Product quantity font size (default: 40px)', 'Customizer option name', 'yith-proteo' ),
+			'label'   => esc_html_x( 'Product quantity font size', 'Customizer option name', 'yith-proteo' ),
 			'section' => 'yith_proteo_product_page_management',
 			'type'    => 'number',
 		)
@@ -263,7 +263,7 @@
 	$wp_customize->add_control(
 		'yith_proteo_product_page_add_to_cart_font_size',
 		array(
-			'label'   => esc_html_x( 'Add to cart button font size (default: 20px)', 'Customizer option name', 'yith-proteo' ),
+			'label'   => esc_html_x( 'Add to cart button font size', 'Customizer option name', 'yith-proteo' ),
 			'section' => 'yith_proteo_product_page_management',
 			'type'    => 'number',
 		)
@@ -325,7 +325,7 @@
 			'type'        => 'number',
 			'label'       => esc_html_x( 'Max related products to show', 'Customizer option name', 'yith-proteo' ),
 			'section'     => 'yith_proteo_product_page_management',
-			'description' => esc_html_x( 'Choose how many related products you want to show (default: 4)', 'Customizer option description', 'yith-proteo' ),
+			'description' => esc_html_x( 'Choose how many related products you want to show', 'Customizer option description', 'yith-proteo' ),
 		)
 	);
 	// Single product page related products management.
@@ -342,7 +342,7 @@
 			'type'        => 'number',
 			'label'       => esc_html_x( 'Columns', 'Customizer option name', 'yith-proteo' ),
 			'section'     => 'yith_proteo_product_page_management',
-			'description' => esc_html_x( 'Choose how many columns with related products you want to show (default: 4)', 'Customizer option description', 'yith-proteo' ),
+			'description' => esc_html_x( 'Choose how many columns with related products you want to show', 'Customizer option description', 'yith-proteo' ),
 		)
 	);
 
@@ -476,7 +476,7 @@
 	$wp_customize->add_control(
 		'yith_proteo_product_tabs_title_font_size',
 		array(
-			'label'   => esc_html_x( 'Tab title font size (default: 30px)', 'Customizer option name', 'yith-proteo' ),
+			'label'   => esc_html_x( 'Tab title font size', 'Customizer option name', 'yith-proteo' ),
 			'section' => 'yith_proteo_product_page_management',
 			'type'    => 'number',
 		)
@@ -512,7 +512,7 @@
 	$wp_customize->add_control(
 		'yith_proteo_product_tabs_content_font_size',
 		array(
-			'label'   => esc_html_x( 'Tab content font size (default: 16px)', 'Customizer option name', 'yith-proteo' ),
+			'label'   => esc_html_x( 'Tab content font size', 'Customizer option name', 'yith-proteo' ),
 			'section' => 'yith_proteo_product_page_management',
 			'type'    => 'number',
 		)

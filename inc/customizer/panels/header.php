@@ -318,7 +318,7 @@
 	$wp_customize->add_control(
 		'yith_proteo_header_main_menu_font_size',
 		array(
-			'label'   => esc_html_x( 'Font size (default: 14px)', 'Customizer option name', 'yith-proteo' ),
+			'label'   => esc_html_x( 'Font size', 'Customizer option name', 'yith-proteo' ),
 			'section' => 'yith_proteo_header_management',
 			'type'    => 'number',
 		)

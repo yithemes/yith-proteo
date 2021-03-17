@@ -70,7 +70,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
 	'yith_proteo_base_font_size',
 	array(
-		'label'   => esc_html_x( 'Font size (default: 16px)', 'Customizer option name', 'yith-proteo' ),
+		'label'   => esc_html_x( 'Font size', 'Customizer option name', 'yith-proteo' ),
 		'section' => 'yith_proteo_typography',
 		'type'    => 'number',
 	)
@@ -207,7 +207,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
 	'yith_proteo_h1_font_size',
 	array(
-		'label'   => esc_html_x( 'Font size (default: 32px)', 'Customizer option name', 'yith-proteo' ),
+		'label'   => esc_html_x( 'Font size', 'Customizer option name', 'yith-proteo' ),
 		'section' => 'yith_proteo_typography',
 		'type'    => 'number',
 	)
@@ -284,7 +284,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
 	'yith_proteo_h2_font_size',
 	array(
-		'label'   => esc_html_x( 'Font size (default: 24px)', 'Customizer option name', 'yith-proteo' ),
+		'label'   => esc_html_x( 'Font size', 'Customizer option name', 'yith-proteo' ),
 		'section' => 'yith_proteo_typography',
 		'type'    => 'number',
 	)
@@ -361,7 +361,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
 	'yith_proteo_h3_font_size',
 	array(
-		'label'   => esc_html_x( 'Font size (default: 19px)', 'Customizer option name', 'yith-proteo' ),
+		'label'   => esc_html_x( 'Font size', 'Customizer option name', 'yith-proteo' ),
 		'section' => 'yith_proteo_typography',
 		'type'    => 'number',
 	)
@@ -438,7 +438,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
 	'yith_proteo_h4_font_size',
 	array(
-		'label'   => esc_html_x( 'Font size (default: 16px)', 'Customizer option name', 'yith-proteo' ),
+		'label'   => esc_html_x( 'Font size', 'Customizer option name', 'yith-proteo' ),
 		'section' => 'yith_proteo_typography',
 		'type'    => 'number',
 	)
@@ -515,7 +515,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
 	'yith_proteo_h5_font_size',
 	array(
-		'label'   => esc_html_x( 'Font size (default: 13px)', 'Customizer option name', 'yith-proteo' ),
+		'label'   => esc_html_x( 'Font size', 'Customizer option name', 'yith-proteo' ),
 		'section' => 'yith_proteo_typography',
 		'type'    => 'number',
 	)
@@ -592,7 +592,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
 	'yith_proteo_h6_font_size',
 	array(
-		'label'   => esc_html_x( 'Font size (default: 11px)', 'Customizer option name', 'yith-proteo' ),
+		'label'   => esc_html_x( 'Font size', 'Customizer option name', 'yith-proteo' ),
 		'section' => 'yith_proteo_typography',
 		'type'    => 'number',
 	)

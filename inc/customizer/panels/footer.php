@@ -180,7 +180,7 @@
 	$wp_customize->add_control(
 		'yith_proteo_footer_font_size',
 		array(
-			'label'   => esc_html_x( 'Font size (default: 16px)', 'Customizer option name', 'yith-proteo' ),
+			'label'   => esc_html_x( 'Font size', 'Customizer option name', 'yith-proteo' ),
 			'section' => 'yith_proteo_footer_management',
 			'type'    => 'number',
 		)
@@ -251,7 +251,7 @@
 	$wp_customize->add_control(
 		'yith_proteo_footer_widgets_title_font_size',
 		array(
-			'label'   => esc_html_x( 'Widgets title font size', 'Customizer option name', 'yith-proteo' ),
+			'label'   => esc_html_x( 'Widgets title Font size', 'Customizer option name', 'yith-proteo' ),
 			'section' => 'yith_proteo_footer_management',
 			'type'    => 'number',
 		)

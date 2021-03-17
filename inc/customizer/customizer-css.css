@@ -590,3 +590,23 @@ li#customize-control-yith_proteo_update_cart_button_style {
 li#customize-control-yith_proteo_cross_sell_max_number span.description.customize-control-description:before {
 	top: 20px;
 }
+
+/***********************************
+Font size
+************************************/
+li.customize-control[id*="_size"].customize-control-number input[type="number"] {
+    width: calc(100% - 25px);
+}
+li.customize-control[id*="_size"].customize-control-number:after {
+    content: 'px';
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 0px;
+    padding: 2px 4px;
+    border-radius: 2px;
+    height: 5px;
+}

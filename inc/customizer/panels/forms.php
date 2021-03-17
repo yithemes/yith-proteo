@@ -32,7 +32,7 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_inputs_border_radius',
 		array(
-			'label'   => esc_html_x( 'Input and textarea border radius (default: 0px)', 'Customizer option name', 'yith-proteo' ),
+			'label'   => esc_html_x( 'Input and textarea border radius', 'Customizer option name', 'yith-proteo' ),
 			'min'     => 0,
 			'max'     => 50,
 			'step'    => 1,

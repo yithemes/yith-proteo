@@ -78,7 +78,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
 	'yith_proteo_store_notice_font_size',
 	array(
-		'label'           => esc_html_x( 'Font size (default: 13px)', 'Customizer option name', 'yith-proteo' ),
+		'label'           => esc_html_x( 'Font size', 'Customizer option name', 'yith-proteo' ),
 		'section'         => 'woocommerce_store_notice',
 		'type'            => 'number',
 		'active_callback' => 'yith_proteo_is_store_notice_enabled',

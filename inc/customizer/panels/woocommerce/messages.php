@@ -28,7 +28,7 @@
 	$wp_customize->add_control(
 		'yith_proteo_woo_messages_font_size',
 		array(
-			'label'   => esc_html_x( 'WooCommerce messages font size (default: 16px)', 'Customizer option name', 'yith-proteo' ),
+			'label'   => esc_html_x( 'WooCommerce messages Font size', 'Customizer option name', 'yith-proteo' ),
 			'section' => 'yith_proteo_woo_messages_management',
 			'type'    => 'number',
 		)
