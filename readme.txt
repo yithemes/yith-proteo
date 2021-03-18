@@ -2,9 +2,9 @@
 Contributors: yithemes
 Tags: one-column, two-columns, left-sidebar, right-sidebar, wide-blocks, accessibility-ready, block-styles, buddypress, custom-background, custom-colors, custom-header, custom-logo, custom-menu, editor-style, featured-images, flexible-header, footer-widgets, full-width-template, rtl-language-support, theme-options, threaded-comments, translation-ready, blog, e-commerce, education, entertainment, food-and-drink, holiday, news, photography, portfolio
 Requires at least: 4.9.6
-Tested up to: WordPress 5.6
+Tested up to: WordPress 5.7
 Requires PHP: 5.6
-Stable tag: 1.5.1
+Stable tag: 1.5.2
 YITH Proteo WordPress Theme, Copyright 2020 YITH
 YITH Proteo is distributed under the terms of the GNU GPL
 License: GPLv2 or later
@@ -25,6 +25,34 @@ Proteo is a modern, fast and fully customizable WooCommerce theme. Designed and 
 == Frequently Asked Questions ==
 
 == Changelog ==
+
+= 1.5.2 - March 18 2021 =
+* New site identity options
+* New page title spacing options
+* New design and better naming for all customizer options
+* New options for mobile typography
+* Add description to block editor color options
+* Add context to screen reader strings
+* Add translation context to all admin and customizer strings
+* Add missing escape functions to some admin strings
+* Improve button options preview
+* Fix missing "header and footer" metabox on post/page/product
+* Fix jQuery deprecated shorthands
+* Fix jquery-migrate notices on mobile layout
+* Fix empty <p> tags introduced with WP 5.7
+* Fix page title icon alignment
+* Fix page title conditions to be displayed in homepage with "inside" layout
+* Fix hide page title option on Homepage, Shop and Blog
+* Fix submenu white upper triangle
+* Fix added to cart button style
+* Fix sticky header default value
+* Update .pot file and .po files
+* Dev: fully tested support for WP 5.7
+* Dev: improve code readability of header.php template
+* Dev: new version upgrade procedure
+* Dev: wrap loop product actions into a div
+* Dev: minimize customizer scripts to improve performance
+* Dev: exclude select elements with class "yith-proteo-standard-select" from select2 rendered elements
 
 = 1.5.1 - February 22 2021 =
 * Optimize all bundled images

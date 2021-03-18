@@ -1,148 +1,2078 @@
-# Translation of Themes - YITH Proteo in Spanish (Spain)
-# This file is distributed under the same license as the Themes - YITH Proteo package.
+# Translation of YITH Proteo in Spanish (Spain)
+# This file is distributed under the same license as the YITH Proteo package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Themes - YITH Proteo\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2020-12-09 09:14+0100\n"
-"PO-Revision-Date: 2020-12-09 09:15+0100\n"
-"Last-Translator: \n"
-"Language-Team: \n"
-"Language: es\n"
+"PO-Revision-Date: 2021-03-17 14:10:09+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 2.4.2\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: es\n"
+"Project-Id-Version: YITH Proteo\n"
 
-#: 404.php:21
-msgid "Oops! That page can&rsquo;t be found."
-msgstr "¡Vaya! No se ha podido encontrar esa página."
-
-#: 404.php:26
-msgid "It looks like nothing was found at this location. Maybe try a search?"
+#: inc/customizer/panels/woocommerce/product-catalog.php:78
+#: inc/customizer/panels/woocommerce/single-product.php:214
+msgctxt "Customizer option name"
+msgid "Product price font size"
 msgstr ""
-"Parece que no se ha encontrado nada en esta ubicación. ¿Quieres probar una "
-"búsqueda?"
 
-#: comments.php:35
-#, php-format
-msgid "One thought on &ldquo;%1$s&rdquo;"
-msgstr "Un comentario en «%1$s»"
-
-#: comments.php:42
-#, php-format
-msgctxt "comments title"
-msgid "%1$s comment"
-msgid_plural "%1$s comments"
-msgstr[0] "%1$s comentario"
-msgstr[1] "%1$s comentarios"
-
-#: comments.php:71
-msgid "Comments are closed."
-msgstr "Los comentarios están cerrados."
-
-#: footer.php:47
-msgid ""
-"<a href=\"https://proteo.yithemes.com/\" target=\"_blank\" rel=\"noopener"
-"\">Proteo</a> - A free theme designed with <span class=\"lnr lnr-heart\"></"
-"span> by <a href=\"https://yithemes.com\" rel=\"nofollow\">YITH</a>"
+#: inc/customizer/panels/woocommerce/product-catalog.php:43
+msgctxt "Customizer option name"
+msgid "Product title Font size"
 msgstr ""
-"<a href=\"https://proteo.yithemes.com/\" target=\"_blank\" rel=\"noopener"
-"\">Proteo</a> - Un tema gratuito diseñado con <span class=\"lnr lnr-heart"
-"\"></span> por <a href=\"https://yithemes.com\" rel=\"nofollow\">YITH</a>"
 
-#: functions.php:51
-msgid "Primary"
-msgstr "Principal"
+#: inc/customizer/panels/mobile.php:482
+msgctxt "Customizer option name"
+msgid "Product page title"
+msgstr ""
 
-#: functions.php:52
-msgid "Mobile Menu"
-msgstr "Menú móvil"
+#: inc/customizer/panels/footer.php:254
+msgctxt "Customizer option name"
+msgid "Widgets title Font size"
+msgstr ""
 
-#: header.php:23
-msgid "Skip to content"
-msgstr "Saltar al contenido"
+#: inc/customizer/panels/woocommerce/single-product.php:515
+msgctxt "Customizer option name"
+msgid "Tab content font size"
+msgstr ""
 
-#: header.php:107
-msgid "Toggle navigation"
-msgstr "Alternar la navegación"
+#: inc/customizer/panels/woocommerce/single-product.php:266
+msgctxt "Customizer option name"
+msgid "Add to cart button font size"
+msgstr ""
 
-#: inc/class-yith-proteo-walker-comment.php:75
-#, php-format
-msgid "%s <span class=\"screen-reader-text says\">says:</span>"
-msgstr "%s <span class=\"screen-reader-text says\">dice:</span>"
+#: inc/customizer/panels/woocommerce/single-product.php:249
+msgctxt "Customizer option name"
+msgid "Product quantity font size"
+msgstr ""
 
-#: inc/class-yith-proteo-walker-comment.php:88
-#, php-format
-msgid "%1$s at %2$s"
-msgstr "%1$s a las %2$s"
+#: inc/customizer/panels/woocommerce/product-catalog.php:137
+msgctxt "Customizer option name"
+msgid "Add to cart font size"
+msgstr ""
 
-#: inc/class-yith-proteo-walker-comment.php:95
-msgid "(Edit)"
-msgstr "(Editar)"
+#: inc/customizer/panels/woocommerce/messages.php:31
+msgctxt "Customizer option name"
+msgid "WooCommerce messages Font size"
+msgstr ""
 
-#: inc/class-yith-proteo-walker-comment.php:100
-msgid "Your comment is awaiting moderation."
-msgstr "Tu comentario está pendiente de moderación."
+#: inc/customizer/panels/mobile.php:517
+msgctxt "Customizer option name"
+msgid "Footer credits"
+msgstr ""
 
-#: inc/customizer/custom-controls/class-customizer-button-preview.php:32
-#: inc/theme-dashboard/theme-dashboard.php:360
+#: inc/customizer/panels/mobile.php:500
+msgctxt "Customizer option name"
+msgid "Footer"
+msgstr ""
+
+#: inc/customizer/panels/mobile.php:464
+msgctxt "Customizer option name"
+msgid "H6"
+msgstr ""
+
+#: inc/customizer/panels/mobile.php:447
+msgctxt "Customizer option name"
+msgid "H5"
+msgstr ""
+
+#: inc/customizer/panels/mobile.php:430
+msgctxt "Customizer option name"
+msgid "H4"
+msgstr ""
+
+#: inc/customizer/panels/mobile.php:413
+msgctxt "Customizer option name"
+msgid "H3"
+msgstr ""
+
+#: inc/customizer/panels/mobile.php:397
+msgctxt "Customizer option name"
+msgid "H2"
+msgstr ""
+
+#: inc/customizer/panels/mobile.php:380
+msgctxt "Customizer option name"
+msgid "H1"
+msgstr ""
+
+#: inc/customizer/panels/mobile.php:363
+msgctxt "Customizer option name"
+msgid "Body"
+msgstr ""
+
+#: inc/customizer/panels/mobile.php:346
+msgctxt "Customizer option name"
+msgid "Mobile menu"
+msgstr ""
+
+#: inc/customizer/panels/mobile.php:329
+msgctxt "Customizer option name"
+msgid "Topbar"
+msgstr ""
+
+#: inc/customizer/panels/mobile.php:278
+msgctxt "Customizer section description"
+msgid "Set font size in px for all elements in mobile devices"
+msgstr ""
+
+#: inc/customizer/panels/forms.php:35
+msgctxt "Customizer option name"
+msgid "Input and textarea border radius"
+msgstr ""
+
+#: inc/customizer/panels/buttons.php:55
+msgctxt "Customizer option name"
+msgid "Border radius (px)"
+msgstr ""
+
+#: inc/customizer/panels/blog.php:112
+msgctxt "Customizer option name"
+msgid "Overlay color opacity %"
+msgstr ""
+
+#: inc/customizer/panels/block-editor-colors.php:15
+msgctxt "Customizer section title"
+msgid "Replace the default color swatches of the Gutenberg block editor with your custom colors. In this way when you create a new page using Gutenberg you will find these colors and you can easily apply them to the page elements."
+msgstr ""
+
+#: inc/customizer/customizer.php:119
+msgctxt "Customizer section description"
+msgid "You can choose what&#8217;s displayed on the homepage of your site. It can be posts in reverse chronological order (classic blog), or a fixed/static page. To set a static homepage, you first need to create two Pages. One will become the homepage, and the other will be where your posts are displayed."
+msgstr ""
+
+#: inc/customizer/customizer.php:117
+msgctxt "Customizer section title"
+msgid "Homepage Settings"
+msgstr ""
+
+#: inc/customizer/panels/topbar.php:270
+msgctxt "Customizer option name"
+msgid "Border thickness (px)"
+msgstr ""
+
+#: inc/customizer/panels/forms.php:83
+msgctxt "Customizer option description"
+msgid "Replace the default browser style of radio and checkbox elements with the custom Proteo style."
+msgstr ""
+
+#: inc/customizer/panels/forms.php:60
+msgctxt "Customizer option description"
+msgid "Replace the default browser style of select elements with the custom Proteo style."
+msgstr ""
+
+#: inc/customizer/panels/forms.php:59
+msgctxt "Customizer option name"
+msgid "Use custom style on select elements"
+msgstr ""
+
+#: inc/customizer/panels/woocommerce/cart.php:40
+msgctxt "Customizer option value"
+msgid "Full width"
+msgstr ""
+
+#: inc/customizer/panels/sidebars.php:89 inc/customizer/panels/sidebars.php:166
+#: inc/customizer/panels/sidebars.php:243
+#: inc/customizer/panels/sidebars.php:320
+msgctxt "Customizer option name"
+msgid "Sidebar to show"
+msgstr ""
+
+#: inc/customizer/panels/buttons.php:263
+msgctxt "Customizer option name"
+msgid "Gradient color - Bottom"
+msgstr ""
+
+#: inc/customizer/panels/buttons.php:245
+msgctxt "Customizer option name"
+msgid "Gradient color - Top"
+msgstr ""
+
+#: inc/customizer/panels/buttons.php:227
+msgctxt "Customizer option description"
+msgid "In this button you can apply a gradient using two different colors."
+msgstr ""
+
+#: inc/customizer/panels/woocommerce/store-notice.php:23
+msgctxt "Customizer option name"
+msgid "Enable store notice"
+msgstr ""
+
+#: inc/customizer/panels/woocommerce/product-catalog.php:205
+msgctxt "Customizer option description"
+msgid "Choose the style for the \"View details\" button in product catalog pages"
+msgstr ""
+
+#: inc/customizer/panels/woocommerce/single-product.php:176
+msgctxt "Customizer option name"
+msgid "Enable slider for products gallery images"
+msgstr ""
+
+#: inc/customizer/panels/woocommerce/product-catalog.php:117
+msgctxt "Customizer option description"
+msgid "Choose the style for the Add to cart button in product catalog pages"
+msgstr ""
+
+#: inc/customizer/panels/footer.php:349 inc/customizer/panels/footer.php:422
+msgctxt "Customizer option description"
+msgid "Widgets will be shown in columns. Columns number can be set in the options below."
+msgstr ""
+
+#: inc/customizer/panels/woocommerce/messages.php:88
+msgctxt "Customizer option name"
+msgid "Accent color for error messages"
+msgstr ""
+
+#: inc/customizer/panels/woocommerce/messages.php:69
+msgctxt "Customizer option name"
+msgid "Accent color for info messages"
+msgstr ""
+
+#: inc/customizer/panels/woocommerce/messages.php:50
+msgctxt "Customizer option name"
+msgid "Accent color for default messages"
+msgstr ""
+
+#: inc/customizer/panels/footer.php:394 inc/customizer/panels/footer.php:467
+#: inc/customizer/panels/woocommerce/cart.php:102
+#: inc/customizer/panels/woocommerce/single-product.php:343
+msgctxt "Customizer option name"
+msgid "Columns"
+msgstr ""
+
+#: inc/customizer/panels/woocommerce/single-product.php:384
+msgctxt "Customizer option name"
+msgid "Sidebar position for single product pages"
+msgstr "Posición de barra lateral para páginas de producto individual"
+
+#: inc/customizer/panels/woocommerce/shop-page.php:73
+msgctxt "Customizer option name"
+msgid "Shop page sidebar"
+msgstr "Barra lateral de página de Tienda"
+
+#: inc/customizer/panels/woocommerce/shop-page.php:37
+msgctxt "Customizer option name"
+msgid "Sidebar position for the shop page"
+msgstr "Posición de la barra lateral en la página de Tienda"
+
+#: inc/customizer/panels/woocommerce/product-tax.php:68
+msgctxt "Customizer option name"
+msgid "Product taxonomy page sidebar"
+msgstr "Barra lateral de página de taxonomía de producto"
+
+#: inc/customizer/panels/woocommerce/product-tax.php:34
+msgctxt "Customizer option name"
+msgid "Sidebar position for product taxonomy pages"
+msgstr "Posición de barra lateral para páginas de taxonomía de producto"
+
+#: inc/customizer/panels/woocommerce/product-tag.php:68
+msgctxt "Customizer option name"
+msgid "Product tag page sidebar"
+msgstr "Barra lateral de página de etiqueta de producto"
+
+#: inc/customizer/panels/woocommerce/product-tag.php:34
+msgctxt "Customizer option name"
+msgid "Sidebar position for product tag pages"
+msgstr "Posición de barra lateral para páginas de etiqueta de producto"
+
+#: inc/customizer/panels/woocommerce/product-category.php:33
+msgctxt "Customizer option name"
+msgid "Sidebar position for product category pages"
+msgstr "Posición de la barra lateral para páginas de categoría de producto"
+
+#: inc/customizer/panels/sidebars.php:286
+msgctxt "Customizer option name"
+msgid "Sidebar position for blog tag pages"
+msgstr "Posición de barra lateral para páginas de etiqueta de blog"
+
+#: inc/customizer/panels/sidebars.php:209
+msgctxt "Customizer option name"
+msgid "Sidebar position for blog category pages"
+msgstr "Posición de la barra lateral para páginas de categoría de blog"
+
+#: inc/customizer/panels/sidebars.php:132
+msgctxt "Customizer option name"
+msgid "Sidebar position for the blog page"
+msgstr "Posición de barra lateral para página de blog"
+
+#: inc/customizer/panels/blog.php:34
+msgctxt "Customizer option name"
+msgid "Single post layout"
+msgstr "Diseño de entrada individual"
+
+#: inc/sidebars.php:58
+msgctxt "Sidebar name"
+msgid "Header widget area"
+msgstr "Área de widget de encabezado"
+
+#: inc/sidebars.php:48
+msgctxt "Sidebar name"
+msgid "Topbar widget area"
+msgstr "Área de widget de barra superior"
+
+#: inc/widgets/class-yith-proteo-account-widget.php:167
+msgctxt "Widget option"
+msgid "Reset"
+msgstr "Reastablecer"
+
+#: inc/theme-dashboard/theme-dashboard.php:424
+msgctxt "Proteo dashboard. Full string: Start to customize with the live customizer."
+msgid "Start to customize with the"
+msgstr "Comienza a personalizar el"
+
+#: inc/theme-dashboard/theme-dashboard.php:423
+msgctxt "Proteo dashboard. Full string: Ask help in the translation form."
+msgid "Ask help in the"
+msgstr "Solicita ayuda en el"
+
+#: inc/theme-dashboard/theme-dashboard.php:422
+msgctxt "Proteo dashboard. Full string: Read the theme documentation."
+msgid "Read the"
+msgstr "Lee la"
+
+#: inc/woocommerce.php:561
+msgctxt "Thank you page title"
+msgid "Thank you."
+msgstr "Gracias."
+
+#: inc/woocommerce.php:345
+msgctxt "Account menu item"
+msgid "Account info"
+msgstr "Información de cuenta"
+
+#: inc/woocommerce.php:303
+msgctxt "Account logout link"
+msgid "Logout"
+msgstr "Cerrar sesión"
+
+#: inc/widgets/class-yith-proteo-social-icons.php:132
+msgctxt "Widget option"
+msgid "Youtube:"
+msgstr "Youtube:"
+
+#: inc/widgets/class-yith-proteo-social-icons.php:123
+msgctxt "Widget option"
+msgid "LinkedIn:"
+msgstr "LinkedIn:"
+
+#: inc/widgets/class-yith-proteo-social-icons.php:114
+msgctxt "Widget option"
+msgid "Instagram:"
+msgstr "Instagram:"
+
+#: inc/widgets/class-yith-proteo-social-icons.php:105
+msgctxt "Widget option"
+msgid "Twitter:"
+msgstr "Twitter:"
+
+#: inc/widgets/class-yith-proteo-social-icons.php:96
+msgctxt "Widget option"
+msgid "Facebook:"
+msgstr "Facebook:"
+
+#: inc/widgets/class-yith-proteo-social-icons.php:87
+msgctxt "Widget option"
+msgid "Title:"
+msgstr "Título:"
+
+#: inc/widgets/class-yith-proteo-social-icons.php:84
+msgctxt "Widget option label"
+msgid "To hide a field, just leave it empty"
+msgstr "Para ocultar un campo, simplemente déjalo vacío"
+
+#: inc/widgets/class-yith-proteo-social-icons.php:21
+msgctxt "Widget description"
+msgid "Links to your social profiles"
+msgstr "Enlaces a tus redes sociales"
+
+#: inc/widgets/class-yith-proteo-social-icons.php:19
+msgctxt "Widget title"
+msgid "YITH Proteo Social Networks"
+msgstr "YITH Proteo Redes Sociales"
+
+#: inc/widgets/class-yith-proteo-recent-posts-widget.php:25
+msgctxt "Widget title"
+msgid "Recent Posts"
+msgstr "Entradas recientes"
+
+#: inc/widgets/class-yith-proteo-recent-comments-widget.php:28
+msgctxt "Widget title"
+msgid "Recent Comments"
+msgstr "Comentarios recientes"
+
+#: inc/widgets/class-yith-proteo-account-widget.php:166
+msgctxt "Widget option"
+msgid "Add Media"
+msgstr "Añadir medios"
+
+#: inc/widgets/class-yith-proteo-account-widget.php:140
+#: inc/widgets/class-yith-proteo-account-widget.php:214
+msgctxt "Widget option"
+msgid "My account url"
+msgstr "URL de Mi cuenta"
+
+#: inc/widgets/class-yith-proteo-account-widget.php:132
+#: inc/widgets/class-yith-proteo-account-widget.php:206
+msgctxt "Widget option"
+msgid "Login url"
+msgstr "URL de Inicio de sesión"
+
+#: inc/widgets/class-yith-proteo-account-widget.php:126
+#: inc/widgets/class-yith-proteo-account-widget.php:200
+msgctxt "Widget option"
+msgid "Custom icon"
+msgstr "Icono personalizado"
+
+#: inc/widgets/class-yith-proteo-account-widget.php:65
+msgctxt "YITH_Proteo_Account_Widget greeting message"
+msgid "Hello %s"
+msgstr "Hola %s"
+
+#: inc/widgets/class-yith-proteo-account-widget.php:21
+msgctxt "Widget description"
+msgid "A shortcut to site login page"
+msgstr "Un atajo a la página de Inicio de sesión del sitio"
+
+#: inc/widgets/class-yith-proteo-account-widget.php:20
+msgctxt "Widget title"
+msgid "YITH Proteo Account Widget"
+msgstr "YITH Proteo Widget de Cuenta"
+
+#: inc/theme-dashboard/theme-dashboard.php:424
+msgctxt "Proteo dashboard"
+msgid "live customizer"
+msgstr "personalizador en vivo"
+
+#: inc/theme-dashboard/theme-dashboard.php:424
+msgctxt "Proteo dashboard"
+msgid "Use theme customizer"
+msgstr "Utilizar personalizador del tema"
+
+#: inc/theme-dashboard/theme-dashboard.php:423
+msgctxt "Proteo dashboard"
+msgid "support forum"
+msgstr "foro de soporte"
+
+#: inc/theme-dashboard/theme-dashboard.php:423
+msgctxt "Proteo dashboard"
+msgid "Visit theme forum"
+msgstr "Visita el foro del tema"
+
+#: inc/theme-dashboard/theme-dashboard.php:422
+msgctxt "Proteo dashboard"
+msgid "theme documentation"
+msgstr "documentación del tema"
+
+#: inc/theme-dashboard/theme-dashboard.php:422
+msgctxt "Proteo dashboard"
+msgid "Read theme documentation"
+msgstr "Lee la documentación del tema"
+
+#: inc/theme-dashboard/theme-dashboard.php:420
+msgctxt "Proteo dashboard label"
+msgid "How to start"
+msgstr "Cómo empezar"
+
+#: inc/theme-dashboard/theme-dashboard.php:409
+msgctxt "Proteo dashboard"
+msgid "Install & Activate"
+msgstr "Instalar y activar"
+
+#: inc/theme-dashboard/theme-dashboard.php:395
+msgctxt "Proteo dashboard label"
+msgid "Free suggested plugins"
+msgstr "Plugins gratuitos sugeridos"
+
+#: inc/theme-dashboard/theme-dashboard.php:378
+msgctxt "Proteo dashboard"
+msgid "Coming soon"
+msgstr "Próximamente"
+
 #: inc/theme-dashboard/theme-dashboard.php:370
+#: inc/theme-dashboard/theme-dashboard.php:372
+#: inc/theme-dashboard/theme-dashboard.php:374
+msgctxt "Proteo dashboard"
+msgid "Import"
+msgstr "Importar"
+
+#: inc/theme-dashboard/theme-dashboard.php:366
+#: inc/theme-dashboard/theme-dashboard.php:376
+msgctxt "Proteo dashboard"
 msgid "Preview"
+msgstr "Vista previa"
+
+#: inc/theme-dashboard/theme-dashboard.php:358
+msgctxt "Proteo dashboard"
+msgid "We are working very hard to add new demo sites, stay updated!"
+msgstr "¡Estamos trabajando muy duro para añadir nuevos sitios de demostración, sigue conectado!"
+
+#: inc/theme-dashboard/theme-dashboard.php:352
+msgctxt "Proteo dashboard"
+msgid "Import any of the demo site below."
+msgstr "Importar cualquier sitio de demostración a continuación."
+
+#: inc/theme-dashboard/theme-dashboard.php:350
+msgctxt "Proteo dashboard"
+msgid "Import a demo site"
+msgstr "Importar un sitio de demostración"
+
+#: inc/theme-dashboard/class-proteo-admin-dashboard.php:165
+msgctxt "Proteo dashboard"
+msgid "Settings"
+msgstr "Ajustes"
+
+#: inc/theme-dashboard/class-proteo-admin-dashboard.php:164
+msgctxt "Proteo dashboard"
+msgid "Deactivate"
+msgstr "Desactivar"
+
+#: inc/theme-dashboard/class-proteo-admin-dashboard.php:163
+#: inc/theme-dashboard/theme-dashboard.php:406
+msgctxt "Proteo dashboard"
+msgid "Activate"
+msgstr "Activar"
+
+#: inc/theme-dashboard/class-proteo-admin-dashboard.php:162
+msgctxt "Proteo dashboard"
+msgid "Deactivating"
+msgstr "Desactivando"
+
+#: inc/theme-dashboard/class-proteo-admin-dashboard.php:161
+msgctxt "Proteo dashboard"
+msgid "Activating"
+msgstr "Activando"
+
+#: inc/theme-dashboard/class-proteo-admin-dashboard.php:159
+msgctxt "Proteo dashboard"
+msgid "Activating importer plugin "
+msgstr "Activando plugin importador"
+
+#: inc/theme-dashboard/class-proteo-admin-dashboard.php:133
+msgctxt "Proteo dashboard debug message"
+msgid "Plugin successfully activated"
+msgstr "Plugin activado con éxito"
+
+#: inc/theme-dashboard/class-proteo-admin-dashboard.php:111
+msgctxt "Proteo dashboard debug message"
+msgid "No plugin specified"
+msgstr "No se han especificado plugins"
+
+#: inc/template-functions.php:220
+msgctxt "Search widget input placeholder"
+msgid "Search"
+msgstr "Buscar"
+
+#: inc/sidebars.php:158
+msgctxt "Sidebar name"
+msgid "Mobile menu widget area"
+msgstr "Área de widget de menú en móviles"
+
+#: inc/sidebars.php:148
+msgctxt "Sidebar name"
+msgid "Blog tag sidebar"
+msgstr "Barra lateral de etiqueta de Blog"
+
+#: inc/sidebars.php:138
+msgctxt "Sidebar name"
+msgid "Blog category sidebar"
+msgstr "Barra lateral de categoría de Blog"
+
+#: inc/sidebars.php:128
+msgctxt "Sidebar name"
+msgid "Shop sidebar"
+msgstr "Barra lateral de Tienda"
+
+#: inc/sidebars.php:118
+msgctxt "Sidebar name"
+msgid "Sidebar 5"
+msgstr "Barra lateral 5"
+
+#: inc/sidebars.php:108
+msgctxt "Sidebar name"
+msgid "Sidebar 4"
+msgstr "Barra lateral 4"
+
+#: inc/sidebars.php:98
+msgctxt "Sidebar name"
+msgid "Sidebar 3"
+msgstr "Barra lateral 3"
+
+#: inc/sidebars.php:88
+msgctxt "Sidebar name"
+msgid "Sidebar 2"
+msgstr "Barra lateral 2"
+
+#: inc/sidebars.php:78
+msgctxt "Sidebar name"
+msgid "Footer widget area 2"
+msgstr "Área de widget de Pie de página 2"
+
+#: inc/sidebars.php:68
+msgctxt "Sidebar name"
+msgid "Footer widget area 1"
+msgstr "Área de widget de Pie de página 1"
+
+#: inc/sidebars.php:38
+msgctxt "Sidebar name"
+msgid "Default sidebar"
+msgstr "Barra lateral predeterminada"
+
+#: inc/scripts.php:63 inc/woocommerce.php:827
+msgctxt "Customizer option value"
+msgid "View details"
+msgstr "Ver detalles"
+
+#: inc/metaboxes.php:461
+msgctxt "page option value"
+msgid "Bottom"
+msgstr "Parte inferior"
+
+#: inc/metaboxes.php:449
+msgctxt "page option value"
+msgid "Top"
+msgstr "Parte superior"
+
+#: inc/metaboxes.php:354
+msgctxt "page option value"
+msgid "Slider Revolution: "
+msgstr "Slider Revolution: "
+
+#: inc/metaboxes.php:287 inc/metaboxes.php:455
+msgctxt "page option value"
+msgid "Right"
+msgstr "Derecha"
+
+#: inc/metaboxes.php:283 inc/metaboxes.php:467
+msgctxt "page option value"
+msgid "Left"
+msgstr "Izquierda"
+
+#: inc/metaboxes.php:279
+msgctxt "page option value"
+msgid "No sidebar"
+msgstr "Sin barra lateral"
+
+#: inc/metaboxes.php:275 inc/metaboxes.php:299
+msgctxt "page option value"
+msgid "Inherit"
+msgstr "Heredar"
+
+#: inc/metaboxes.php:227
+msgctxt "page option value"
+msgid "right"
+msgstr "derecha"
+
+#: inc/metaboxes.php:223
+msgctxt "page option value"
+msgid "left"
+msgstr "izquierda"
+
+#: inc/metaboxes.php:219
+msgctxt "page option value"
+msgid "no-sidebar"
+msgstr "sin-barra lateral"
+
+#: inc/metaboxes.php:215 inc/metaboxes.php:247
+msgctxt "page option value"
+msgid "inherit"
+msgstr "heredar"
+
+#: inc/metaboxes.php:187 inc/metaboxes.php:338
+msgctxt "page option value"
+msgid "none"
+msgstr "ninguno"
+
+#: inc/metaboxes.php:165
+msgctxt "page option description"
+msgid "Enable this option to hide site header and footer."
+msgstr "Activa esta opción para ocultar el encabezado y pie de página del sitio."
+
+#: inc/metaboxes.php:146
+msgctxt "page option description"
+msgid "Enable this option to hide page title."
+msgstr "Activa esta opción para ocultar el título de página."
+
+#: inc/metaboxes.php:121
+msgctxt "page option name"
+msgid "Hide page title"
+msgstr "Ocultar título de página"
+
+#: inc/metaboxes.php:102
+msgctxt "page option name"
+msgid "Page content"
+msgstr "Contenido de página"
+
+#: inc/metaboxes.php:87
+msgctxt "page option name"
+msgid "Header and footer"
+msgstr "Encabezado y pie de página"
+
+#: inc/metaboxes.php:73
+msgctxt "page option name"
+msgid "Sidebar management"
+msgstr "Gestión de barra lateral"
+
+#: inc/metaboxes.php:55
+msgctxt "page option name"
+msgid "Header slider"
+msgstr "Deslizante de encabezado"
+
+#: inc/metaboxes.php:39
+msgctxt "page option name"
+msgid "Title icon"
+msgstr "Icono de título"
+
+#: inc/customizer/panels/woocommerce/single-product.php:597
+msgctxt "Customizer option name"
+msgid "Show product SKU"
+msgstr "Mostrar SKU del producto"
+
+#: inc/customizer/panels/woocommerce/single-product.php:576
+msgctxt "Customizer option name"
+msgid "Show product tags"
+msgstr "Mostrar etiquetas de producto"
+
+#: inc/customizer/panels/woocommerce/single-product.php:555
+msgctxt "Customizer option name"
+msgid "Show product categories"
+msgstr "Mostrar categorías de producto"
+
+#: inc/customizer/panels/woocommerce/single-product.php:535
+msgctxt "Customizer options group title"
+msgid "Product categories, tags and SKU"
+msgstr "Categorías de producto, etiquetas y SKU"
+
+#: inc/customizer/panels/woocommerce/single-product.php:498
+msgctxt "Customizer option name"
+msgid "Tab title font color"
+msgstr "Color de fuente de título de la pestaña"
+
+#: inc/customizer/panels/woocommerce/single-product.php:462
+msgctxt "Customizer options group title"
+msgid "Tabs management"
+msgstr "Gestión de pestañas"
+
+#: inc/customizer/panels/woocommerce/single-product.php:440
+msgctxt "Customizer option name"
+msgid "Force all product to use the same sidebar"
+msgstr "Forzar todos los productos a usar la misma barra lateral."
+
+#: inc/customizer/panels/woocommerce/single-product.php:420
+msgctxt "Customizer option description"
+msgid "You can adjust the settings from product edit view."
+msgstr "Puedes modificar los ajustes desde la vista de edición de producto."
+
+#: inc/customizer/panels/woocommerce/single-product.php:418
+msgctxt "Customizer option name"
+msgid "Sidebar to use on single product pages"
+msgstr "Barra lateral a usar en páginas de producto individual"
+
+#: inc/customizer/panels/woocommerce/single-product.php:386
+msgctxt "Customizer option description"
+msgid "Select where to display the sidebar. You can adjust the settings from product edit view."
+msgstr "Selecciona dónde mostrar la barra lateral. Puedes configurar los ajustes desde la vista de edición de producto."
+
+#: inc/customizer/panels/woocommerce/single-product.php:363
+msgctxt "Customizer options group title"
+msgid "Sidebar management"
+msgstr "Gestión de barra lateral"
+
+#: inc/customizer/panels/woocommerce/single-product.php:345
+msgctxt "Customizer option description"
+msgid "Choose how many columns with related products you want to show"
+msgstr "Escoge cuántas columnas con productos relacionados quieres mostrar"
+
+#: inc/customizer/panels/woocommerce/single-product.php:328
+msgctxt "Customizer option description"
+msgid "Choose how many related products you want to show"
+msgstr "Escoge cuántos productos relacionados quieres mostrar"
+
+#: inc/customizer/panels/woocommerce/single-product.php:326
+msgctxt "Customizer option name"
+msgid "Max related products to show"
+msgstr "Máximo de productos relacionados a mostrar"
+
+#: inc/customizer/panels/woocommerce/single-product.php:308
+msgctxt "Customizer options group title"
+msgid "Related products"
+msgstr "Productos relacionados"
+
+#: inc/customizer/panels/woocommerce/single-product.php:287
+msgctxt "Customizer option name"
+msgid "Show reset variations link in variable products"
+msgstr "Mostrar un enlace de restablecimiento en productos variables"
+
+#: inc/customizer/panels/woocommerce/single-product.php:197
+msgctxt "Customizer options group title"
+msgid "Product price and Add to cart"
+msgstr "Precio de producto y Añadir al carrito"
+
+#: inc/customizer/panels/woocommerce/single-product.php:154
+msgctxt "Customizer option name"
+msgid "Enable featured image lightbox"
+msgstr "Activar caja de luz de imagen destacada"
+
+#: inc/customizer/panels/woocommerce/single-product.php:132
+msgctxt "Customizer option name"
+msgid "Enable featured image zoom"
+msgstr "Activar zoom de imagen destacada"
+
+#: inc/customizer/panels/woocommerce/single-product.php:111
+msgctxt "Customizer options group title"
+msgid "Product image"
+msgstr "Imagen de producto"
+
+#: inc/customizer/panels/woocommerce/single-product.php:52
+msgctxt "Customizer option name"
+msgid "Font family"
+msgstr "Familia de fuente"
+
+#: inc/customizer/panels/woocommerce/single-product.php:34
+msgctxt "Customizer options group title"
+msgid "Product title"
+msgstr "Título de producto"
+
+#: inc/customizer/panels/woocommerce/single-product.php:14
+msgctxt "Customizer section title"
+msgid "Single product page"
+msgstr "Página de producto individual"
+
+#: inc/customizer/panels/woocommerce/shop-page.php:14
+msgctxt "Customizer section title"
+msgid "Shop page"
+msgstr "Página de Tienda"
+
+#: inc/customizer/panels/woocommerce/sale-badge.php:14
+msgctxt "Customizer section title"
+msgid "Sale badge"
+msgstr "Insignia de descuento"
+
+#: inc/customizer/panels/woocommerce/product-tax.php:14
+msgctxt "Customizer section title"
+msgid "Product Taxonomy page"
+msgstr "Página de taxonomía de producto"
+
+#: inc/customizer/panels/woocommerce/product-tag.php:14
+msgctxt "Customizer section title"
+msgid "Product Tag page"
+msgstr "Página de etiqueta de producto"
+
+#: inc/customizer/panels/woocommerce/product-category.php:14
+msgctxt "Customizer section title"
+msgid "Product Category page"
+msgstr "Página de categoría de producto"
+
+#: inc/customizer/panels/woocommerce/product-catalog.php:208
+msgctxt "Customizer option value"
+msgid "Ghost button"
+msgstr "Botón fantasma"
+
+#: inc/customizer/panels/woocommerce/product-catalog.php:203
+msgctxt "Customizer option name"
+msgid "\"View details\" style"
+msgstr "Estilo de ''Ver detalles''"
+
+#: inc/customizer/panels/woocommerce/product-catalog.php:184
+msgctxt "Customizer option value"
+msgid "Choose whether to show a \"view details\" link in product catalog pages."
+msgstr "Escoge si mostrar un enlace para ''ver detalles'' en las páginas de catálogo de productos."
+
+#: inc/customizer/panels/woocommerce/product-catalog.php:182
+msgctxt "Customizer option name"
+msgid "Show \"View details\" link"
+msgstr "Mostrar enlace ''Ver detalles''"
+
+#: inc/customizer/panels/woocommerce/product-catalog.php:161
+msgctxt "Customizer option value"
+msgid "On image hover"
+msgstr "Al pasar el cursor por la imagen"
+
+#: inc/customizer/panels/woocommerce/product-catalog.php:160
+msgctxt "Customizer option value"
+msgid "Classic"
+msgstr "Clásico"
+
+#: inc/customizer/panels/woocommerce/product-catalog.php:158
+msgctxt "Customizer option description"
+msgid "Choose where the add to cart button is displayed in product catalog pages."
+msgstr "Escoge dónde mostrar el botón de Añadir al carrito en las páginas de catálogo de productos"
+
+#: inc/customizer/panels/woocommerce/product-catalog.php:156
+msgctxt "Customizer option name"
+msgid "Add to cart position"
+msgstr "Posición de Añadir al carrito"
+
+#: inc/customizer/panels/woocommerce/product-catalog.php:121
+msgctxt "Customizer option value"
+msgid "Button style 2"
+msgstr "Estilo de botón 2"
+
+#: inc/customizer/panels/woocommerce/product-catalog.php:120
+msgctxt "Customizer option value"
+msgid "Button style 1"
+msgstr "Estilo de botón 1"
+
+#: inc/customizer/panels/woocommerce/product-catalog.php:119
+#: inc/customizer/panels/woocommerce/product-catalog.php:207
+msgctxt "Customizer option value"
+msgid "Textual link"
+msgstr "Enlace textual"
+
+#: inc/customizer/panels/woocommerce/product-catalog.php:115
+msgctxt "Customizer option name"
+msgid "Add to cart style"
+msgstr "Estilo de Añadir al carrito"
+
+#: inc/customizer/panels/woocommerce/product-catalog.php:96
+#: inc/customizer/panels/woocommerce/single-product.php:232
+msgctxt "Customizer option name"
+msgid "Product price font color"
+msgstr "Color de fuente de precio de producto"
+
+#: inc/customizer/panels/woocommerce/product-catalog.php:61
+msgctxt "Customizer option name"
+msgid "Product title font color"
+msgstr "Color de fuente de título de producto"
+
+#: inc/customizer/panels/woocommerce/product-catalog.php:27
+msgctxt "Customizer option value"
+msgid "Glow + alternative image"
+msgstr "Brillo + imagen alternativa"
+
+#: inc/customizer/panels/woocommerce/product-catalog.php:26
+msgctxt "Customizer option value"
+msgid "Alternative image"
+msgstr "Imagen alternativa"
+
+#: inc/customizer/panels/woocommerce/product-catalog.php:25
+msgctxt "Customizer option value"
+msgid "Zoom"
+msgstr "Zoom"
+
+#: inc/customizer/panels/woocommerce/product-catalog.php:24
+msgctxt "Customizer option value"
+msgid "Glow"
+msgstr "Brillo"
+
+#: inc/customizer/panels/woocommerce/product-catalog.php:20
+msgctxt "Customizer option name"
+msgid "Product hover effect"
+msgstr "Efecto al pasar el cursor por el producto"
+
+#: inc/customizer/panels/woocommerce/messages.php:14
+msgctxt "Customizer section title"
+msgid "Messages"
+msgstr "Mensajes"
+
+#: inc/customizer/panels/woocommerce/cart.php:68
+msgctxt "Customizer option value"
+msgid "Button"
+msgstr "Botón"
+
+#: inc/customizer/panels/woocommerce/cart.php:67
+msgctxt "Customizer option value"
+msgid "Textual"
+msgstr "Textual"
+
+#: inc/customizer/panels/woocommerce/cart.php:64
+msgctxt "Customizer option name"
+msgid "Update cart button style"
+msgstr "Estilo de botón Actualizar carrito"
+
+#: inc/customizer/panels/woocommerce/cart.php:104
+msgctxt "Customizer option description"
+msgid "Choose how many columns with cross sell products you want to show"
 msgstr ""
 
-#: inc/customizer/custom-controls/class-customizer-control-on-off.php:30
-msgid "On"
-msgstr "Activado"
+#: inc/customizer/panels/woocommerce/cart.php:87
+msgctxt "Customizer option description"
+msgid "Choose how many cross sell products you want to show"
+msgstr ""
 
-#: inc/customizer/custom-controls/class-customizer-control-on-off.php:33
-msgid "Off"
-msgstr "Desactivado"
+#: inc/customizer/panels/woocommerce/cart.php:85
+msgctxt "Customizer option name"
+msgid "Max cross sell products to show"
+msgstr "Máximo de productos de venta cruzada a mostrar"
 
-#: inc/customizer/custom-controls/class-customizer-control-yes-no.php:30
-#: inc/customizer/customizer.php:213
-msgid "Yes"
-msgstr "Sí"
+#: inc/customizer/panels/woocommerce/cart.php:44
+msgctxt "Customizer option value"
+msgid "Two columns"
+msgstr ""
 
-#: inc/customizer/custom-controls/class-customizer-control-yes-no.php:33
-#: inc/customizer/customizer.php:214
-msgid "No"
-msgstr "No"
+#: inc/customizer/panels/woocommerce/cart.php:35
+msgctxt "Customizer option name"
+msgid "Cart layout"
+msgstr "Diseño de Carrito"
 
-#: inc/customizer/custom-controls/class-google-font-select-custom-control.php:131
-msgid "Select font weight & style"
-msgstr "Seleccionar el peso y estilo de la fuente"
+#: inc/customizer/panels/woocommerce/cart.php:14
+msgctxt "Customizer section title"
+msgid "Cart page"
+msgstr "Página de Carrito"
 
-#: inc/customizer/customizer.php:38
-msgid "Header and Topbar"
-msgstr "Cabecera y barra superior"
+#: inc/customizer/panels/woocommerce/breadcrumbs.php:37
+msgctxt "Customizer option description"
+msgid "Choose whether to show breadcrumbs on pages, posts and products."
+msgstr "Escoge si mostrar migas de pan en páginas, entradas y productos."
 
-#: inc/customizer/customizer.php:46
-msgid "Header background image"
-msgstr "Imagen de fondo de la cabecera"
+#: inc/customizer/panels/woocommerce/breadcrumbs.php:35
+msgctxt "Customizer option name"
+msgid "Show breadcrumbs"
+msgstr "Mostrar migas de pan"
 
-#: inc/customizer/customizer.php:55
-msgid "Footer and Credits"
-msgstr "Pie de página y reconocimientos"
+#: inc/customizer/panels/woocommerce/breadcrumbs.php:14
+msgctxt "Customizer section title"
+msgid "Breadcrumbs"
+msgstr "Migas de pan"
 
-#: inc/customizer/customizer.php:63
-msgid "Extra"
-msgstr "Extras"
+#: inc/customizer/panels/typography.php:651
+msgctxt "Customizer option description"
+msgid "Read how to retrieve a Google Font url"
+msgstr "Lee cómo recuperar una URL de una Fuente de Google"
 
-#: inc/customizer/customizer.php:71
-msgid "Site colors"
-msgstr "Colores del sitio"
+#: inc/customizer/panels/typography.php:651
+msgctxt "Customizer option description"
+msgid "Enter the URL of a Google Font you want to use within the theme."
+msgstr "Introduce la URL de una Fuente de Google que quieras usar con este tema."
 
-#: inc/customizer/customizer.php:80
-msgid "Site background image"
-msgstr "Imagen de fondo del sitio"
+#: inc/customizer/panels/typography.php:650
+msgctxt "Customizer option name"
+msgid "Additional Google Font"
+msgstr "Fuente de Google adicional"
 
-#: inc/customizer/customizer.php:89
-msgid "WooCommerce"
-msgstr "WooCommerce"
+#: inc/customizer/panels/typography.php:633
+msgctxt "Customizer options group title"
+msgid "Additional typography options"
+msgstr "Opciones de tipografía adicionales"
 
-#: inc/customizer/customizer.php:190 inc/customizer/panels/sidebars.php:60
+#: inc/customizer/panels/typography.php:556
+msgctxt "Customizer options group title"
+msgid "H6"
+msgstr "H6"
+
+#: inc/customizer/panels/typography.php:479
+msgctxt "Customizer options group title"
+msgid "H5"
+msgstr "H5"
+
+#: inc/customizer/panels/typography.php:402
+msgctxt "Customizer options group title"
+msgid "H4"
+msgstr "H4"
+
+#: inc/customizer/panels/typography.php:325
+msgctxt "Customizer options group title"
+msgid "H3"
+msgstr "H3"
+
+#: inc/customizer/panels/typography.php:248
+msgctxt "Customizer options group title"
+msgid "H2"
+msgstr "H2"
+
+#: inc/customizer/panels/typography.php:171
+msgctxt "Customizer options group title"
+msgid "H1"
+msgstr "H1"
+
+#: inc/customizer/panels/typography.php:150
+msgctxt "Customizer option name"
+msgid "Show underlined links"
+msgstr "Mostrar enlaces subrayados"
+
+#: inc/customizer/panels/typography.php:129
+msgctxt "Customizer option name"
+msgid "Links :hover color"
+msgstr "Color de enlaces al pasar el cursor"
+
+#: inc/customizer/panels/typography.php:110
+msgctxt "Customizer option name"
+msgid "Links color"
+msgstr "Color de enlaces"
+
+#: inc/customizer/panels/typography.php:52
+msgctxt "Customizer option name"
+msgid "Body font"
+msgstr "Fuente de Cuerpo"
+
+#: inc/customizer/panels/typography.php:33
+msgctxt "Customizer options group title"
+msgid "Global typography"
+msgstr "Tipografía global"
+
+#: inc/customizer/panels/typography.php:14
+msgctxt "Customizer section title"
+msgid "Typography"
+msgstr "Tipografía"
+
+#: inc/customizer/panels/topbar.php:228
+msgctxt "Customizer option name"
+msgid "Show bottom border"
+msgstr "Mostrar borde de parte inferior"
+
+#: inc/customizer/panels/topbar.php:37
+msgctxt "Customizer option description"
+msgid "Choose whether to show the site topbar or not"
+msgstr "Escoge si mostrar la barra superior del sitio o no"
+
+#: inc/customizer/panels/topbar.php:35
+msgctxt "Customizer option name"
+msgid "Show topbar"
+msgstr "Mostrar barra superior"
+
+#: inc/customizer/panels/topbar.php:14
+msgctxt "Customizer section title"
+msgid "Topbar"
+msgstr "Barra superior"
+
+#: inc/customizer/panels/site-identity.php:448
+msgctxt "Customizer options group title"
+msgid "Favicon"
+msgstr "Favicon"
+
+#: inc/customizer/panels/site-identity.php:426
+msgctxt "Customizer option value"
+msgid "Inline with the title"
+msgstr "Alineado con el título"
+
+#: inc/customizer/panels/site-identity.php:422
+msgctxt "Customizer option value"
+msgid "Below the title"
+msgstr "Bajo el título"
+
+#: inc/customizer/panels/site-identity.php:417
+msgctxt "Customizer option name"
+msgid "Position"
+msgstr "Posición"
+
+#: inc/customizer/panels/mobile.php:312
+#: inc/customizer/panels/site-identity.php:297
+msgctxt "Customizer option name"
+msgid "Tagline"
+msgstr "Descripción corta"
+
+#: inc/customizer/panels/site-identity.php:277
+msgctxt "Customizer option description"
+msgid "Choose whether to show the tagline."
+msgstr "Escoge si mostrar la descripción corta."
+
+#: inc/customizer/panels/site-identity.php:275
+msgctxt "Customizer option name"
+msgid "Display Tagline"
+msgstr "Mostrar descripción corta"
+
+#: inc/customizer/panels/site-identity.php:254
+msgctxt "Customizer options group title"
+msgid "Tagline"
+msgstr "Descripción corta"
+
+#: inc/customizer/panels/footer-credits.php:64
+#: inc/customizer/panels/footer.php:183 inc/customizer/panels/header.php:321
+#: inc/customizer/panels/site-identity.php:176
+#: inc/customizer/panels/site-identity.php:338
+#: inc/customizer/panels/topbar.php:113 inc/customizer/panels/typography.php:73
+#: inc/customizer/panels/typography.php:210
+#: inc/customizer/panels/typography.php:287
+#: inc/customizer/panels/typography.php:364
+#: inc/customizer/panels/typography.php:441
+#: inc/customizer/panels/typography.php:518
+#: inc/customizer/panels/typography.php:595
+#: inc/customizer/panels/woocommerce/sale-badge.php:67
+#: inc/customizer/panels/woocommerce/single-product.php:72
+#: inc/customizer/panels/woocommerce/store-notice.php:81
+msgctxt "Customizer option name"
+msgid "Font size"
+msgstr "Tamaño de fuente"
+
+#: inc/customizer/panels/mobile.php:295
+#: inc/customizer/panels/site-identity.php:135
+msgctxt "Customizer option name"
+msgid "Site Title"
+msgstr "Título del sitio"
+
+#: inc/customizer/panels/site-identity.php:115
+msgctxt "Customizer option description"
+msgid "Choose whether to show the site title."
+msgstr "Escoge si mostrar el título del sitio."
+
+#: inc/customizer/panels/site-identity.php:113
+msgctxt "Customizer option name"
+msgid "Display site title"
+msgstr "Mostrar título del sitio"
+
+#: inc/customizer/panels/site-identity.php:92
+msgctxt "Customizer options group title"
+msgid "Site title"
+msgstr "Título del sitio"
+
+#: inc/customizer/panels/site-identity.php:69
+msgctxt "Customizer option name"
+msgid "Logo max width (px)"
+msgstr "Ancho máximo del logo (px)"
+
+#: inc/customizer/panels/site-identity.php:46
+msgctxt "Customizer option description"
+msgid "Choose whether to show the site logo."
+msgstr "Escoge si mostrar el logo del sitio."
+
+#: inc/customizer/panels/site-identity.php:44
+msgctxt "Customizer option name"
+msgid "Display logo"
+msgstr "Mostrar logo"
+
+#: inc/customizer/panels/site-identity.php:22
+msgctxt "Customizer options group title"
+msgid "Site logo"
+msgstr "Logo del sitio"
+
+#: inc/customizer/panels/sidebars.php:265
+msgctxt "Customizer options group title"
+msgid "Blog tags sidebar"
+msgstr "Barra lateral de etiquetas de blog"
+
+#: inc/customizer/panels/sidebars.php:245
+#: inc/customizer/panels/sidebars.php:322
+#: inc/customizer/panels/woocommerce/product-category.php:69
+#: inc/customizer/panels/woocommerce/product-tag.php:70
+#: inc/customizer/panels/woocommerce/product-tax.php:70
+msgctxt "Customizer option description"
+msgid "Select the sidebar to display."
+msgstr "Selecciona la barra lateral a mostrar."
+
+#: inc/customizer/panels/woocommerce/product-category.php:67
+msgctxt "Customizer option name"
+msgid "Product category page sidebar"
+msgstr "Barra lateral de páginas de categoría de producto"
+
+#: inc/customizer/panels/sidebars.php:211
+#: inc/customizer/panels/sidebars.php:288
+#: inc/customizer/panels/woocommerce/product-category.php:35
+#: inc/customizer/panels/woocommerce/product-tag.php:36
+#: inc/customizer/panels/woocommerce/product-tax.php:36
+msgctxt "Customizer option description"
+msgid "Select where to display the sidebar."
+msgstr "Selecciona dónde mostrar la barra lateral."
+
+#: inc/customizer/panels/sidebars.php:188
+msgctxt "Customizer options group title"
+msgid "Blog categories sidebar"
+msgstr "Barra lateral de categorías del blog"
+
+#: inc/customizer/panels/sidebars.php:168
+msgctxt "Customizer option description"
+msgid "Select the sidebar to display. You can pick a specific sidebar from the single post edit page."
+msgstr "Selecciona la barra lateral a mostrar. Puedes elegir una barra lateral específica desde la página de edición de entrada individual."
+
+#: inc/customizer/panels/sidebars.php:134
+msgctxt "Customizer option description"
+msgid "Select where to display the sidebar. You can pick a specific sidebar from the page edit view."
+msgstr "Selecciona dónde mostrar la barra lateral. Puedes elegir una barra lateral específica desde la vista de edición de la página."
+
+#: inc/customizer/panels/sidebars.php:111
+msgctxt "Customizer options group title"
+msgid "Blog page sidebar"
+msgstr "Barra lateral de página de blog"
+
+#: inc/customizer/panels/sidebars.php:91
+msgctxt "Customizer option description"
+msgid "Select the sidebar to display. It will be used for archive pages too."
+msgstr "Selecciona la barra lateral a mostrar. Se usará también para páginas de archivo."
+
+#: inc/customizer/panels/sidebars.php:56
+msgctxt "Customizer option description"
+msgid "Select where to display the default sidebar. You can adjust the settings from the page/post edit view."
+msgstr "Selecciona dónde mostrar la barra lateral predeterminada. Puedes configurar los ajustes desde la vista de edición de página/entrada."
+
+#: inc/customizer/panels/sidebars.php:54
+msgctxt "Customizer option name"
+msgid "Sidebar position for posts and pages"
+msgstr "Posición de la barra lateral para entradas y páginas"
+
+#: inc/customizer/panels/sidebars.php:33
+msgctxt "Customizer options group title"
+msgid "Posts and pages sidebar"
+msgstr "Barra lateral de entradas y páginas"
+
+#: inc/customizer/panels/sidebars.php:14
+msgctxt "Customizer section title"
+msgid "Sidebars"
+msgstr "Barras laterales"
+
+#: inc/customizer/panels/mobile.php:277
+msgctxt "Customizer section title"
+msgid "Mobile typography"
+msgstr "Tipografía en móviles"
+
+#: inc/customizer/panels/mobile.php:174
+msgctxt "Customizer section title"
+msgid "Mobile menu"
+msgstr "Menú de móviles"
+
+#: inc/customizer/panels/mobile.php:163
+msgctxt "Customizer option name"
+msgid "Show user account icon in mobile"
+msgstr "Mostrar icono de cuenta del usuario en móviles"
+
+#: inc/customizer/panels/mobile.php:141
+msgctxt "Customizer option name"
+msgid "Show cart icon in mobile"
+msgstr "Mostrar icono de carrito en móviles"
+
+#: inc/customizer/panels/mobile.php:119
+msgctxt "Customizer option name"
+msgid "Show search icon in mobile"
+msgstr "Mostrar icono de búsqueda en móviles"
+
+#: inc/customizer/panels/mobile.php:72
+msgctxt "Customizer option name"
+msgid "Mobile menu opener position"
+msgstr "Posición de desplegable de menú en móviles"
+
+#: inc/customizer/panels/mobile.php:53
+msgctxt "Customizer section title"
+msgid "Mobile header"
+msgstr "Encabezado en móviles"
+
+#: inc/customizer/panels/mobile.php:43
+msgctxt "Customizer option name"
+msgid "Show topbar in mobile"
+msgstr "Mostrar barra superior en móviles"
+
+#: inc/customizer/panels/mobile.php:22
+msgctxt "Customizer section title"
+msgid "Mobile topbar"
+msgstr "Barra superior de dispositivo móvil"
+
+#: inc/customizer/panels/mobile.php:14
+msgctxt "Customizer panel name"
+msgid "Mobile & Responsive"
+msgstr "Móvil y adaptable"
+
+#: inc/customizer/panels/layout.php:168 inc/customizer/panels/mobile.php:252
+msgctxt "Customizer option name"
+msgid "Alignment"
+msgstr "Alineación"
+
+#: inc/customizer/panels/layout.php:145
+msgctxt "Customizer option value"
+msgid "Outside page content"
+msgstr "Fuera del contenido de la página"
+
+#: inc/customizer/panels/layout.php:141
+msgctxt "Customizer option value"
+msgid "Inside page content"
+msgstr "Dentro del contenido de la página"
+
+#: inc/customizer/panels/layout.php:136
+msgctxt "Customizer option name"
+msgid "Layout"
+msgstr "Diseño"
+
+#: inc/customizer/panels/layout.php:115
+msgctxt "Customizer options group title"
+msgid "Page title options"
+msgstr "Opciones de título de página"
+
+#: inc/customizer/panels/layout.php:95
+msgctxt "Customizer option description"
+msgid "Choose whether to use a full width layout. No matter which resolution your screen has."
+msgstr "Escoge si usar el diseño de ancho completo. No importa que resolución tenga tu pantalla."
+
+#: inc/customizer/panels/layout.php:93
+msgctxt "Customizer option name"
+msgid "Use full width layout"
+msgstr "Usar diseño de ancho completo"
+
+#: inc/customizer/panels/layout.php:58
+msgctxt "Customizer option name"
+msgid "Site content spacing (px)"
+msgstr "Espaciado de contenido del sitio (px)"
+
+#: inc/customizer/panels/layout.php:34
+msgctxt "Customizer options group title"
+msgid "Global layout options"
+msgstr "Opciones de diseño globales"
+
+#: inc/customizer/panels/layout.php:14
+msgctxt "Customizer section title"
+msgid "Layout"
+msgstr "Diseño"
+
+#: inc/customizer/panels/header.php:523 inc/customizer/panels/mobile.php:212
+msgctxt "Customizer option name"
+msgid "Menu color"
+msgstr "Color del menú"
+
+#: inc/customizer/panels/header.php:484
+msgctxt "Customizer option description"
+msgid "Choose whether to make the header stick to the page when scrolling down"
+msgstr "Escoge si hacer que el encabezado se quede fijo en la página al deslizar hacia abajo"
+
+#: inc/customizer/panels/header.php:482
+msgctxt "Customizer option name"
+msgid "Enable sticky header"
+msgstr "Activar encabezado fijo"
+
+#: inc/customizer/panels/header.php:461
+msgctxt "Customizer options group title"
+msgid "Sticky header"
+msgstr "Encabezado fijo"
+
+#: inc/customizer/panels/header.php:404 inc/customizer/panels/header.php:543
+#: inc/customizer/panels/mobile.php:231
+msgctxt "Customizer option name"
+msgid "Hover color"
+msgstr "Color al pasar el cursor"
+
+#: inc/customizer/panels/header.php:385
+#: inc/customizer/panels/site-identity.php:196
+#: inc/customizer/panels/site-identity.php:358
+msgctxt "Customizer option name"
+msgid "Color"
+msgstr "Color"
+
+#: inc/customizer/panels/header.php:363
+msgctxt "Customizer option name"
+msgid "Letter spacing (px)"
+msgstr "Espaciado de letras (px)"
+
+#: inc/customizer/panels/header.php:344
+msgctxt "Customizer option value"
+msgid "Capitalize"
+msgstr "Escribir con mayúsculas"
+
+#: inc/customizer/panels/header.php:343
+msgctxt "Customizer option value"
+msgid "Lowercase"
+msgstr "Minúsculas"
+
+#: inc/customizer/panels/header.php:342
+msgctxt "Customizer option value"
+msgid "Uppercase"
+msgstr "Mayúsculas"
+
+#: inc/customizer/panels/header.php:341
+#: inc/customizer/panels/woocommerce/product-catalog.php:23
+msgctxt "Customizer option value"
+msgid "None"
+msgstr "Ninguno"
+
+#: inc/customizer/panels/header.php:338
+msgctxt "Customizer option name"
+msgid "Text transform"
+msgstr "Transformación de texto"
+
+#: inc/customizer/panels/header.php:301
+#: inc/customizer/panels/site-identity.php:152
+#: inc/customizer/panels/site-identity.php:314
+#: inc/customizer/panels/typography.php:190
+#: inc/customizer/panels/typography.php:267
+#: inc/customizer/panels/typography.php:344
+#: inc/customizer/panels/typography.php:421
+#: inc/customizer/panels/typography.php:498
+#: inc/customizer/panels/typography.php:575
+msgctxt "Customizer option name"
+msgid "Font"
+msgstr "Fuente"
+
+#: inc/customizer/panels/header.php:283
+msgctxt "Customizer options group title"
+msgid "Header menu options"
+msgstr "Opciones de menú de encabezado"
+
+#: inc/customizer/panels/header.php:264 inc/customizer/panels/mobile.php:98
+msgctxt "Customizer option description"
+msgid "Choose whether to show or not the header widget area"
+msgstr "Decide si mostrar o no el área de widget de encabezado"
+
+#: inc/customizer/panels/header.php:262 inc/customizer/panels/mobile.php:96
+msgctxt "Customizer option name"
+msgid "Show header widget area"
+msgstr "Mostrar área de widget de encabezado"
+
+#: inc/customizer/panels/header.php:240
+msgctxt "Customizer option name"
+msgid "Show user account icon"
+msgstr "Mostrar icono de cuenta del usuario"
+
+#: inc/customizer/panels/header.php:219
+msgctxt "Customizer option value"
+msgid "Change icon"
+msgstr "Cambiar icono"
+
+#: inc/customizer/panels/header.php:218
+msgctxt "Customizer option value"
+msgid "Use default icon"
+msgstr "Usar icono predeterminado"
+
+#: inc/customizer/panels/header.php:217
+msgctxt "Customizer option value"
+msgid "Select icon"
+msgstr "Seleccionar icono"
+
+#: inc/customizer/panels/header.php:215
+msgctxt "Customizer option description"
+msgid "Use this option to upload your cart icon"
+msgstr "Usa esta opción para subir tu icono de carrito"
+
+#: inc/customizer/panels/header.php:212
+msgctxt "Customizer option name"
+msgid "Cart icon"
+msgstr "Icono de carrito"
+
+#: inc/customizer/panels/header.php:192
+msgctxt "Customizer option name"
+msgid "Show cart icon"
+msgstr "Mostrar icono de carrito"
+
+#: inc/customizer/panels/header.php:170
+msgctxt "Customizer option name"
+msgid "Show search icon"
+msgstr "Mostrar icono de búsqueda"
+
+#: inc/customizer/panels/header.php:149
+msgctxt "Customizer options group title"
+msgid "Header elements"
+msgstr "Elementos de encabezado"
+
+#: inc/customizer/panels/header.php:130
+msgctxt "Customizer option description"
+msgid "Choose whether to make the header full width or not."
+msgstr "Escoge si el encabezado es de ancho completo o no."
+
+#: inc/customizer/panels/header.php:128
+msgctxt "Customizer option name"
+msgid "Enable full width header"
+msgstr "Activar encabezado de ancho completo"
+
+#: inc/customizer/panels/header.php:103 inc/customizer/panels/header.php:438
+#: inc/customizer/panels/header.php:578 inc/customizer/panels/layout.php:68
+#: inc/customizer/panels/layout.php:217
+#: inc/customizer/panels/site-identity.php:230
+#: inc/customizer/panels/site-identity.php:392
+#: inc/customizer/panels/topbar.php:92
+msgctxt "Customizer option value"
+msgid "Bottom"
+msgstr "Parte inferior"
+
+#: inc/customizer/panels/header.php:97 inc/customizer/panels/header.php:432
+#: inc/customizer/panels/header.php:572 inc/customizer/panels/layout.php:62
+#: inc/customizer/panels/layout.php:211
+#: inc/customizer/panels/site-identity.php:224
+#: inc/customizer/panels/site-identity.php:386
+#: inc/customizer/panels/topbar.php:86
+msgctxt "Customizer option value"
+msgid "Top"
+msgstr "Parte superior"
+
+#: inc/customizer/panels/header.php:93 inc/customizer/panels/header.php:428
+#: inc/customizer/panels/header.php:568 inc/customizer/panels/layout.php:207
+#: inc/customizer/panels/site-identity.php:220
+#: inc/customizer/panels/site-identity.php:382
+#: inc/customizer/panels/topbar.php:81
+msgctxt "Customizer option name"
+msgid "Spacing (px)"
+msgstr "Espaciado (px)"
+
+#: inc/customizer/panels/header.php:67
+msgctxt "Customizer option value"
+msgid "Centered logo, navigation below"
+msgstr "Logo centrado, navegación a continuación"
+
+#: inc/customizer/panels/header.php:63
+msgctxt "Customizer option value"
+msgid "Left logo, navigation inline"
+msgstr "Logo a la izquierda, navegación alineada"
+
+#: inc/customizer/panels/header.php:59
+msgctxt "Customizer option value"
+msgid "Left logo, navigation below"
+msgstr "Logo a la izquierda, navegación a continuación"
+
+#: inc/customizer/panels/header.php:54
+msgctxt "Customizer option name"
+msgid "Header layout"
+msgstr "Diseño de encabezado"
+
+#: inc/customizer/panels/header.php:33
+msgctxt "Customizer options group title"
+msgid "Header layout"
+msgstr "Diseño de encabezado"
+
+#: inc/customizer/panels/header.php:14
+msgctxt "Customizer section title"
+msgid "Header layout and style"
+msgstr "Diseño y estilo de encabezado"
+
+#: inc/customizer/panels/forms.php:82
+msgctxt "Customizer option name"
+msgid "Use custom style on checkbox and radio button elements"
+msgstr "Utiliza un estilo personalizado en casillas de verificación y elementos de botón de radio"
+
+#: inc/customizer/panels/forms.php:14
+msgctxt "Customizer section title"
+msgid "Forms"
+msgstr "Formularios"
+
+#: inc/customizer/panels/footer.php:492
+msgctxt "Customizer option name"
+msgid "Put the two widget areas side by side"
+msgstr "Poner dos áreas de widget a cada lado"
+
+#: inc/customizer/panels/footer.php:443
+msgctxt "Customizer option name"
+msgid "Widget area #2 width (%)"
+msgstr "Ancho de área de widget #2 (%)"
+
+#: inc/customizer/panels/footer.php:421
+msgctxt "Customizer option name"
+msgid "Enable widget area #2"
+msgstr ""
+
+#: inc/customizer/panels/footer.php:370
+msgctxt "Customizer option name"
+msgid "Widget area #1 width (%)"
+msgstr ""
+
+#: inc/customizer/panels/footer.php:348
+msgctxt "Customizer option name"
+msgid "Enable widget area #1"
+msgstr "Activar área de widget #1"
+
+#: inc/customizer/panels/footer.php:327
+msgctxt "Customizer options group title"
+msgid "Footer widgets"
+msgstr "Widgets de Pie de página"
+
+#: inc/customizer/panels/footer.php:272
+msgctxt "Customizer option name"
+msgid "Widgets title color"
+msgstr "Color de título de Widgets"
+
+#: inc/customizer/panels/woocommerce/single-product.php:479
+msgctxt "Customizer option name"
+msgid "Tab title font size"
+msgstr "Tamaño de fuente de título de Pestaña"
+
+#: inc/customizer/panels/footer.php:166
+msgctxt "Customizer options group title"
+msgid "Footer typography"
+msgstr "Tipografía de Pie de página"
+
+#: inc/customizer/panels/footer.php:147
+msgctxt "Customizer option value"
+msgid "Center bottom"
+msgstr "Parte inferior centro"
+
+#: inc/customizer/panels/footer.php:145
+msgctxt "Customizer option value"
+msgid "Center top"
+msgstr "Parte superior centro"
+
+#: inc/customizer/panels/footer.php:144
+msgctxt "Customizer option value"
+msgid "Right bottom"
+msgstr "Parte inferior derecha"
+
+#: inc/customizer/panels/footer.php:143
+msgctxt "Customizer option value"
+msgid "Right center"
+msgstr "Parte derecha centro"
+
+#: inc/customizer/panels/footer.php:142
+msgctxt "Customizer option value"
+msgid "Right top"
+msgstr "Parte superior derecha"
+
+#: inc/customizer/panels/footer.php:141
+msgctxt "Customizer option value"
+msgid "Left bottom"
+msgstr "Parte inferior izquierda"
+
+#: inc/customizer/panels/footer.php:140
+msgctxt "Customizer option value"
+msgid "Left center"
+msgstr "Parte izquierda centro"
+
+#: inc/customizer/panels/footer.php:139
+msgctxt "Customizer option value"
+msgid "Left top"
+msgstr "Parte superior izquierda"
+
+#: inc/customizer/panels/footer.php:136
+msgctxt "Customizer option name"
+msgid "Background position"
+msgstr "Posición de fondo"
+
+#: inc/customizer/panels/footer.php:118
+msgctxt "Customizer option value"
+msgid "Repeat vertically"
+msgstr "Repetir verticalmente"
+
+#: inc/customizer/panels/footer.php:117
+msgctxt "Customizer option value"
+msgid "Repeat horizontally"
+msgstr "Repetir horizontalmente"
+
+#: inc/customizer/panels/footer.php:116
+msgctxt "Customizer option value"
+msgid "Repeat horizontally and vertically"
+msgstr "Repetir horizontal y verticalmente"
+
+#: inc/customizer/panels/footer.php:115
+msgctxt "Customizer option value"
+msgid "Don't repeat"
+msgstr "No repetir"
+
+#: inc/customizer/panels/footer.php:112
+msgctxt "Customizer option name"
+msgid "Background repeat"
+msgstr "Repetir fondo"
+
+#: inc/customizer/panels/footer.php:92
+msgctxt "Customizer option name"
+msgid "100% background image"
+msgstr "100% imagen de fondo"
+
+#: inc/customizer/panels/footer.php:71
+msgctxt "Customizer option name"
+msgid "Background image"
+msgstr "Imagen de fondo"
+
+#: inc/customizer/panels/footer.php:33
+msgctxt "Customizer options group title"
+msgid "Footer background"
+msgstr "Fondo de Pie de página"
+
+#: inc/customizer/panels/footer.php:14
+msgctxt "Customizer section title"
+msgid "Footer options"
+msgstr "Opciones de Pie de página"
+
+#: inc/customizer/panels/footer-credits.php:147
+#: inc/customizer/panels/footer.php:146 inc/customizer/panels/footer.php:302
+#: inc/customizer/panels/layout.php:177 inc/customizer/panels/mobile.php:261
+#: inc/customizer/panels/topbar.php:201
+msgctxt "Customizer option value"
+msgid "Center"
+msgstr "Centro"
+
+#: inc/customizer/panels/footer-credits.php:138
+#: inc/customizer/panels/footer.php:293 inc/customizer/panels/topbar.php:191
+msgctxt "Customizer option name"
+msgid "Elements alignment"
+msgstr "Alineación de elementos"
+
+#: inc/customizer/panels/footer-credits.php:118
+#: inc/customizer/panels/footer.php:238 inc/customizer/panels/topbar.php:170
+msgctxt "Customizer option name"
+msgid "Hyperlink :hover color"
+msgstr "Color de hiper enlace al pasar el cursor"
+
+#: inc/customizer/panels/footer-credits.php:100
+#: inc/customizer/panels/footer.php:220 inc/customizer/panels/topbar.php:151
+msgctxt "Customizer option name"
+msgid "Hyperlink color"
+msgstr "Color de hiper enlace"
+
+#: inc/customizer/panels/footer-credits.php:82
+#: inc/customizer/panels/footer.php:202 inc/customizer/panels/topbar.php:132
+#: inc/customizer/panels/typography.php:228
+#: inc/customizer/panels/typography.php:305
+#: inc/customizer/panels/typography.php:382
+#: inc/customizer/panels/typography.php:459
+#: inc/customizer/panels/typography.php:536
+#: inc/customizer/panels/typography.php:613
+#: inc/customizer/panels/woocommerce/single-product.php:90
+msgctxt "Customizer option name"
+msgid "Font color"
+msgstr "Color de fuente"
+
+#: inc/customizer/panels/footer-credits.php:30
+msgctxt "Customizer option description"
+msgid "Enter here the content of the footer credits area"
+msgstr "Introduce aquí el contenido del área de créditos del Pie de página"
+
+#: inc/customizer/panels/footer-credits.php:14
+msgctxt "Customizer section title"
+msgid "Footer credits"
+msgstr "Créditos de Pie de página"
+
+#: inc/customizer/panels/documentation.php:76
+msgctxt "Customizer option description"
+msgid "Install demo content and suggested plugins"
+msgstr "Instalar contenido de la demostración en vivo y plugins sugeridos"
+
+#: inc/customizer/panels/documentation.php:75
+msgctxt "Customizer option name"
+msgid "Setup Wizard"
+msgstr "Configurar Wizard"
+
+#: inc/customizer/panels/documentation.php:54
+msgctxt "Customizer option description"
+msgid "Download child theme"
+msgstr "Descargar el tema inferior"
+
+#: inc/customizer/panels/documentation.php:53
+msgctxt "Customizer option name"
+msgid "Child theme"
+msgstr "Tema inferior"
+
+#: inc/customizer/panels/documentation.php:34
+#: inc/customizer/panels/documentation.php:54
+#: inc/customizer/panels/documentation.php:76
+msgctxt "Customizer option description"
+msgid "here"
+msgstr "aquí"
+
+#: inc/customizer/panels/documentation.php:34
+msgctxt "Customizer option description"
+msgid "Read theme documentation"
+msgstr "Lee la documentación del tema"
+
+#: inc/customizer/panels/documentation.php:33
+msgctxt "Customizer option name"
+msgid "Theme documentation"
+msgstr "Documentación del tema"
+
+#: inc/customizer/panels/documentation.php:14
+msgctxt "Customizer section title"
+msgid "Theme documentation & tools"
+msgstr "Documentación del tema y herramientas"
+
+#: inc/customizer/panels/color-shades.php:23
+msgctxt "Customizer option description"
+msgid "Save your settings and reload the page to let the magic happen"
+msgstr "Guarda tus ajustes y recarga la página para que ocurra la magia"
+
+#: inc/customizer/panels/color-shades.php:21
+msgctxt "Customizer option name"
+msgid "Main color shade"
+msgstr "Tono de color principal"
+
+#: inc/customizer/panels/buttons.php:337
+msgctxt "Customizer option name"
+msgid "Button style 2"
+msgstr "Estilo de botón 2"
+
+#: inc/customizer/panels/buttons.php:226
+msgctxt "Customizer options group title"
+msgid "Button style 2"
+msgstr "Estilo de botón 2"
+
+#: inc/customizer/panels/buttons.php:186 inc/customizer/panels/buttons.php:317
+msgctxt "Customizer option name"
+msgid "Text :hover color"
+msgstr "Color de texto al pasar el cursor"
+
+#: inc/customizer/panels/buttons.php:168
+msgctxt "Customizer option name"
+msgid "Border :hover color"
+msgstr "Color de borde al pasar el cursor"
+
+#: inc/customizer/panels/buttons.php:150 inc/customizer/panels/buttons.php:299
+msgctxt "Customizer option name"
+msgid "Background :hover color"
+msgstr "Color de fondo al pasar el cursor"
+
+#: inc/customizer/panels/buttons.php:132 inc/customizer/panels/buttons.php:281
+#: inc/customizer/panels/typography.php:91
+#: inc/customizer/panels/woocommerce/sale-badge.php:51
+#: inc/customizer/panels/woocommerce/store-notice.php:63
+msgctxt "Customizer option name"
+msgid "Text color"
+msgstr "Color de texto"
+
+#: inc/customizer/panels/buttons.php:114 inc/customizer/panels/topbar.php:249
+msgctxt "Customizer option name"
+msgid "Border color"
+msgstr "Color de borde"
+
+#: inc/customizer/panels/buttons.php:206
+msgctxt "Customizer option name"
+msgid "Button style 1"
+msgstr "Estilo de botón 1"
+
+#: inc/customizer/panels/buttons.php:78
+msgctxt "Customizer options group title"
+msgid "Button style 1"
+msgstr "Estilo de botón 1"
+
+#: inc/customizer/panels/buttons.php:34
+msgctxt "Customizer options group title"
+msgid "General options"
+msgstr "Opciones generales"
+
+#: inc/customizer/panels/buttons.php:14
+msgctxt "Customizer section title"
+msgid "Buttons"
+msgstr "Botones"
+
+#: inc/customizer/panels/blog.php:261
+msgctxt "Customizer option name"
+msgid "Show post date"
+msgstr "Mostrar fecha de Entrada"
+
+#: inc/customizer/panels/blog.php:239
+msgctxt "Customizer option name"
+msgid "Show post categories and tags"
+msgstr "Mostrar categorías de Entrada y etiquetas"
+
+#: inc/customizer/panels/blog.php:217
+msgctxt "Customizer option name"
+msgid "Show post author"
+msgstr "Mostrar autor de Entrada"
+
+#: inc/customizer/panels/blog.php:195
+msgctxt "Customizer option name"
+msgid "Show navigation links"
+msgstr "Mostrar enlaces de navegación"
+
+#: inc/customizer/panels/blog.php:176
+msgctxt "Customizer option name"
+msgid "Read more text"
+msgstr "Texto Leer más"
+
+#: inc/customizer/panels/blog.php:168
+msgctxt "Customizer option default value"
+msgid "Read more  &#10230;"
+msgstr "Leer más &#10230;"
+
+#: inc/customizer/panels/blog.php:157
+msgctxt "Customizer option description"
+msgid "Choose whether to show the post date badge or not."
+msgstr "Escoge si mostrar la insignia de fecha de Entrada o no."
+
+#: inc/customizer/panels/blog.php:155
+msgctxt "Customizer option name"
+msgid "Show date badge"
+msgstr "Mostrar insignia de fecha"
+
+#: inc/customizer/panels/blog.php:134
+msgctxt "Customizer option name"
+msgid "Post thumbnail text color"
+msgstr "Color de texto de miniatura de la Entrada"
+
+#: inc/customizer/panels/blog.php:92
+msgctxt "Customizer option name"
+msgid "Post thumbnail background overlay"
+msgstr "Superposición de fondo de miniatura de Entrada"
+
+#: inc/customizer/panels/blog.php:69
+msgctxt "Customizer option name"
+msgid "Post featured image height"
+msgstr "Altura de imagen destacada de Entrada"
+
+#: inc/customizer/panels/blog.php:47
+msgctxt "Customizer option value"
+msgid "Fullwidth cover image"
+msgstr "Imagen de portada de ancho completo"
+
+#: inc/customizer/panels/blog.php:43
+msgctxt "Customizer option value"
+msgid "Background picture"
+msgstr "Imagen de Fondo"
+
+#: inc/customizer/panels/blog.php:39
+msgctxt "Customizer option value"
+msgid "Standard layout"
+msgstr "Diseño estándar"
+
+#: inc/customizer/panels/blog.php:14
+msgctxt "Customizer section title"
+msgid "Blog"
+msgstr "Blog"
+
+#: inc/customizer/panels/block-editor-colors.php:167
+msgctxt "Customizer option name"
+msgid "Custom color #8"
+msgstr "Color personalizado #8"
+
+#: inc/customizer/panels/block-editor-colors.php:148
+msgctxt "Customizer option name"
+msgid "Custom color #7"
+msgstr "Color personalizado #7"
+
+#: inc/customizer/panels/block-editor-colors.php:129
+msgctxt "Customizer option name"
+msgid "Custom color #6"
+msgstr "Color personalizado #6"
+
+#: inc/customizer/panels/block-editor-colors.php:110
+msgctxt "Customizer option name"
+msgid "Custom color #5"
+msgstr "Color personalizado #5"
+
+#: inc/customizer/panels/block-editor-colors.php:91
+msgctxt "Customizer option name"
+msgid "Custom color #4"
+msgstr "Color personalizado #4"
+
+#: inc/customizer/panels/block-editor-colors.php:72
+msgctxt "Customizer option name"
+msgid "Custom color #3"
+msgstr "Color personalizado #3"
+
+#: inc/customizer/panels/block-editor-colors.php:53
+msgctxt "Customizer option name"
+msgid "Custom color #2"
+msgstr "Color personalizado #2"
+
+#: inc/customizer/panels/block-editor-colors.php:34
+msgctxt "Customizer option name"
+msgid "Custom color #1"
+msgstr "Color personalizado #1"
+
+#: inc/customizer/panels/block-editor-colors.php:14
+msgctxt "Customizer section title"
+msgid "Block editor colors"
+msgstr "Colores de Editor de bloque"
+
+#: inc/customizer/customizer.php:223
+#: inc/customizer/panels/footer-credits.php:143
+#: inc/customizer/panels/footer.php:298 inc/customizer/panels/header.php:106
+#: inc/customizer/panels/header.php:441 inc/customizer/panels/header.php:581
+#: inc/customizer/panels/layout.php:71 inc/customizer/panels/layout.php:173
+#: inc/customizer/panels/layout.php:220 inc/customizer/panels/mobile.php:75
+#: inc/customizer/panels/mobile.php:257 inc/customizer/panels/sidebars.php:64
+#: inc/customizer/panels/sidebars.php:142
+#: inc/customizer/panels/sidebars.php:219
+#: inc/customizer/panels/sidebars.php:296
+#: inc/customizer/panels/site-identity.php:233
+#: inc/customizer/panels/site-identity.php:395
+#: inc/customizer/panels/topbar.php:95 inc/customizer/panels/topbar.php:197
+#: inc/customizer/panels/woocommerce/product-category.php:43
+#: inc/customizer/panels/woocommerce/product-tag.php:44
+#: inc/customizer/panels/woocommerce/product-tax.php:44
+#: inc/customizer/panels/woocommerce/shop-page.php:46
+#: inc/customizer/panels/woocommerce/single-product.php:394
+msgctxt "Customizer option value"
+msgid "Left"
+msgstr "Izquierda"
+
+#: inc/customizer/customizer.php:222
+#: inc/customizer/panels/footer-credits.php:151
+#: inc/customizer/panels/footer.php:306 inc/customizer/panels/header.php:100
+#: inc/customizer/panels/header.php:435 inc/customizer/panels/header.php:575
+#: inc/customizer/panels/layout.php:65 inc/customizer/panels/layout.php:181
+#: inc/customizer/panels/layout.php:214 inc/customizer/panels/mobile.php:76
+#: inc/customizer/panels/mobile.php:265 inc/customizer/panels/sidebars.php:68
+#: inc/customizer/panels/sidebars.php:146
+#: inc/customizer/panels/sidebars.php:223
+#: inc/customizer/panels/sidebars.php:300
+#: inc/customizer/panels/site-identity.php:227
+#: inc/customizer/panels/site-identity.php:389
+#: inc/customizer/panels/topbar.php:89 inc/customizer/panels/topbar.php:205
+#: inc/customizer/panels/woocommerce/product-category.php:47
+#: inc/customizer/panels/woocommerce/product-tag.php:48
+#: inc/customizer/panels/woocommerce/product-tax.php:48
+#: inc/customizer/panels/woocommerce/shop-page.php:50
+#: inc/customizer/panels/woocommerce/single-product.php:398
+msgctxt "Customizer option value"
+msgid "Right"
+msgstr "Derecha"
+
+#: inc/customizer/customizer.php:221 inc/customizer/panels/sidebars.php:60
 #: inc/customizer/panels/sidebars.php:138
 #: inc/customizer/panels/sidebars.php:215
 #: inc/customizer/panels/sidebars.php:292
@@ -150,1745 +2080,142 @@ msgstr "WooCommerce"
 #: inc/customizer/panels/woocommerce/product-tag.php:40
 #: inc/customizer/panels/woocommerce/product-tax.php:40
 #: inc/customizer/panels/woocommerce/shop-page.php:42
-#: inc/customizer/panels/woocommerce/single-product.php:368
+#: inc/customizer/panels/woocommerce/single-product.php:390
+msgctxt "Customizer option value"
 msgid "No sidebar"
 msgstr "Sin barra lateral"
 
-#: inc/customizer/customizer.php:191
-#: inc/customizer/panels/footer-credits.php:151
-#: inc/customizer/panels/footer.php:233 inc/customizer/panels/mobile.php:76
-#: inc/customizer/panels/mobile.php:265 inc/customizer/panels/sidebars.php:68
-#: inc/customizer/panels/sidebars.php:146
-#: inc/customizer/panels/sidebars.php:223
-#: inc/customizer/panels/sidebars.php:300 inc/customizer/panels/topbar.php:165
-#: inc/customizer/panels/woocommerce/product-category.php:47
-#: inc/customizer/panels/woocommerce/product-tag.php:48
-#: inc/customizer/panels/woocommerce/product-tax.php:48
-#: inc/customizer/panels/woocommerce/shop-page.php:50
-#: inc/customizer/panels/woocommerce/single-product.php:376
-msgid "Right"
-msgstr "Derecha"
+#: inc/customizer/customizer.php:109
+msgctxt "Customizer panel name"
+msgid "WooCommerce"
+msgstr "WooCommerce"
 
-#: inc/customizer/customizer.php:192
-#: inc/customizer/panels/footer-credits.php:143
-#: inc/customizer/panels/footer.php:225 inc/customizer/panels/mobile.php:75
-#: inc/customizer/panels/mobile.php:257 inc/customizer/panels/sidebars.php:64
-#: inc/customizer/panels/sidebars.php:142
-#: inc/customizer/panels/sidebars.php:219
-#: inc/customizer/panels/sidebars.php:296 inc/customizer/panels/topbar.php:157
-#: inc/customizer/panels/woocommerce/product-category.php:43
-#: inc/customizer/panels/woocommerce/product-tag.php:44
-#: inc/customizer/panels/woocommerce/product-tax.php:44
-#: inc/customizer/panels/woocommerce/shop-page.php:46
-#: inc/customizer/panels/woocommerce/single-product.php:372
-msgid "Left"
-msgstr "Izquierda"
+#: inc/customizer/customizer.php:100
+msgctxt "Customizer section title"
+msgid "Site background image"
+msgstr "Imagen de fondo del sitio"
 
-#: inc/customizer/panels/blog.php:14
-msgid "Blog"
-msgstr "Blog"
+#: inc/customizer/customizer.php:91
+msgctxt "Customizer section title"
+msgid "Site colors"
+msgstr "Colores del sitio"
 
-#: inc/customizer/panels/blog.php:31
-msgid "Choose the single post layout"
-msgstr "Elige el diseño de la entrada individual"
+#: inc/customizer/customizer.php:83
+msgctxt "Customizer panel name"
+msgid "Miscellaneous"
+msgstr "Diverso"
 
-#: inc/customizer/panels/blog.php:33
-msgid "Disable sidebars if you want to use Background picture layout."
-msgstr ""
-"Desactiva las barras laterales si quieres usar el diseño con imagen de fondo."
+#: inc/customizer/customizer.php:75
+msgctxt "Customizer panel name"
+msgid "Footer and Credits"
+msgstr "Pie de página y Créditos"
 
-#: inc/customizer/panels/blog.php:35
-msgid "Standard"
-msgstr "Estándar"
-
-#: inc/customizer/panels/blog.php:36
-msgid "Background picture"
-msgstr "Imagen de fondo"
-
-#: inc/customizer/panels/blog.php:37
-msgid "Fullwidth cover image"
-msgstr "Imagen de fondo de ancho completo"
-
-#: inc/customizer/panels/blog.php:56
-msgid "Post featured image height"
-msgstr "Altura de la imagen destacada de la publicación"
-
-#: inc/customizer/panels/blog.php:79
-msgid "Post thumbnail background overlay"
-msgstr "Superposición del fondo de la miniatura de la entrada"
-
-#: inc/customizer/panels/blog.php:99
-msgid "Overlay color opacity % (default: 70%)"
-msgstr "Opacidad del color de superposición en % (por defecto: 70%)"
-
-#: inc/customizer/panels/blog.php:121
-msgid "Post thumbnail text color"
-msgstr "Color del texto de la miniatura de la entrada"
-
-#: inc/customizer/panels/blog.php:142
-msgid "Show date badge"
-msgstr "Mostrar la etiqueta de la fecha"
-
-#: inc/customizer/panels/blog.php:144
-msgid "Choose whether to show the post date badge or not."
-msgstr "Elige si mostrar o no la acreditación de fecha de la entrada."
-
-#: inc/customizer/panels/blog.php:155
-msgid "Read more  &#10230;"
-msgstr "Ver más  &#10230;"
-
-#: inc/customizer/panels/blog.php:163
-msgid "Read more text"
-msgstr "Texto «Ver más»"
-
-#: inc/customizer/panels/buttons.php:14
-msgid "Buttons"
-msgstr "Botones"
-
-#: inc/customizer/panels/buttons.php:34
-#, fuzzy
-#| msgid "Footer options"
-msgid "General options"
-msgstr "Opciones del pie de página"
-
-#: inc/customizer/panels/buttons.php:55
-msgid "Border radius (default: 50px)"
-msgstr "Radio del borde (por defecto: 50px)"
-
-#: inc/customizer/panels/buttons.php:78 inc/customizer/panels/buttons.php:98
-#: inc/customizer/panels/woocommerce/product-catalog.php:119
-msgid "Button style 1"
-msgstr "Estilo de botón 1"
-
-#: inc/customizer/panels/buttons.php:116
-#, fuzzy
-#| msgid "Footer background color"
-msgid "Background color"
-msgstr "Color de fondo del pie de página"
-
-#: inc/customizer/panels/buttons.php:134 inc/customizer/panels/topbar.php:209
-msgid "Border color"
-msgstr "Color del borde"
-
-#: inc/customizer/panels/buttons.php:152 inc/customizer/panels/buttons.php:300
-#, fuzzy
-#| msgid "Font color"
-msgid "Text color"
-msgstr "Color de la fuente"
-
-#: inc/customizer/panels/buttons.php:170 inc/customizer/panels/buttons.php:318
-#, fuzzy
-#| msgid "Button Style 2 background :hover color"
-msgid "Background :hover color"
-msgstr "Color al pasar el cursor del fondo del botón estilo 2"
-
-#: inc/customizer/panels/buttons.php:188
-#, fuzzy
-#| msgid "Border color"
-msgid "Border :hover color"
-msgstr "Color del borde"
-
-#: inc/customizer/panels/buttons.php:206 inc/customizer/panels/buttons.php:336
-#, fuzzy
-#| msgid "Hyperlink :hover color"
-msgid "Text :hover color"
-msgstr "Hiperenlace: color al pasar el cursor"
-
-#: inc/customizer/panels/buttons.php:226 inc/customizer/panels/buttons.php:246
-#: inc/customizer/panels/woocommerce/product-catalog.php:120
-msgid "Button style 2"
-msgstr "Estilo de botón 2"
-
-#: inc/customizer/panels/buttons.php:264
-#, fuzzy
-#| msgid "Button Style 2 background color shade 1"
-msgid "Background color shade 1"
-msgstr "Sombra 1 del color de fondo del botón estilo 2"
-
-#: inc/customizer/panels/buttons.php:282
-#, fuzzy
-#| msgid "Button Style 2 background color shade 2"
-msgid "Background color shade 2"
-msgstr "Sombra 2 del color de fondo del botón estilo 2"
-
-#: inc/customizer/panels/color-shades.php:21
-msgid "Main color shade"
-msgstr "Sombra del color principal"
-
-#: inc/customizer/panels/color-shades.php:23
-msgid "Save your settings and reload the page to let the magic happen"
-msgstr ""
-"Guarda tus ajustes y recarga la página  para permitir que ocurra la magia"
-
-#: inc/customizer/panels/documentation.php:14
-msgid "Theme documentation & tools"
-msgstr "Documentación del tema y herramientas"
-
-#: inc/customizer/panels/documentation.php:33
-msgid "Theme documentation"
-msgstr "Documentación del tema"
-
-#: inc/customizer/panels/documentation.php:34
-#: inc/theme-dashboard/theme-dashboard.php:416
-msgid "Read theme documentation"
-msgstr "Leer la documentación del tema"
-
-#: inc/customizer/panels/documentation.php:34
-#: inc/customizer/panels/documentation.php:54
-#: inc/customizer/panels/documentation.php:76
-msgid "here"
-msgstr "aquí"
-
-#: inc/customizer/panels/documentation.php:53
-msgid "Child theme"
-msgstr "Tema hijo"
-
-#: inc/customizer/panels/documentation.php:54
-msgid "Download child theme"
-msgstr "Descargar el tema hijo"
-
-#: inc/customizer/panels/documentation.php:75
-msgid "Setup Wizard"
-msgstr "Asistente de configuración"
-
-#: inc/customizer/panels/documentation.php:76
-msgid "Install demo content and suggested plugins"
-msgstr "Instalar el contenido de demostración y los plugins sugeridos"
-
-#: inc/customizer/panels/footer-credits.php:14
-msgid "Footer credits"
-msgstr "Agradecimientos del pie de página"
-
-#: inc/customizer/panels/footer-credits.php:30
-msgid "Enter here the content of the footer credits area"
-msgstr ""
-"Introduce aquí el contenido del área de agradecimientos del pie de página"
-
+#: inc/customizer/customizer.php:66 inc/customizer/panels/buttons.php:96
 #: inc/customizer/panels/footer-credits.php:48
-msgid "Footer credits background color"
-msgstr "Color de fondo de los agradecimientos del pie de página"
-
-#: inc/customizer/panels/footer-credits.php:64
-#: inc/customizer/panels/footer.php:145 inc/customizer/panels/topbar.php:73
-msgid "Font size (default: 16px)"
-msgstr "Tamaño de la fuente (por defecto: 16px)"
-
-#: inc/customizer/panels/footer-credits.php:82
-#: inc/customizer/panels/footer.php:164 inc/customizer/panels/topbar.php:92
-#: inc/customizer/panels/woocommerce/single-product.php:90
-msgid "Font color"
-msgstr "Color de la fuente"
-
-#: inc/customizer/panels/footer-credits.php:100
-#: inc/customizer/panels/footer.php:182 inc/customizer/panels/topbar.php:111
-msgid "Hyperlink color"
-msgstr "Color del hiperenlace"
-
-#: inc/customizer/panels/footer-credits.php:118
-#: inc/customizer/panels/footer.php:200 inc/customizer/panels/topbar.php:130
-msgid "Hyperlink :hover color"
-msgstr "Hiperenlace: color al pasar el cursor"
-
-#: inc/customizer/panels/footer-credits.php:138
-#: inc/customizer/panels/footer.php:220 inc/customizer/panels/topbar.php:151
-msgid "Elements alignment"
-msgstr "Alineación de los elementos"
-
-#: inc/customizer/panels/footer-credits.php:147
-#: inc/customizer/panels/footer.php:127 inc/customizer/panels/footer.php:229
-#: inc/customizer/panels/mobile.php:261 inc/customizer/panels/topbar.php:161
-msgid "Center"
-msgstr "Centro"
-
-#: inc/customizer/panels/footer.php:14
-msgid "Footer options"
-msgstr "Opciones del pie de página"
-
-#: inc/customizer/panels/footer.php:33
-msgid "Footer background color"
-msgstr "Color de fondo del pie de página"
-
-#: inc/customizer/panels/footer.php:52
-msgid "Footer background image"
-msgstr "Imagen de fondo del pie de página"
-
-#: inc/customizer/panels/footer.php:73
-#, fuzzy, php-format
-#| msgid "100% background image"
-msgid "100% background image"
-msgstr "Imagen de fondo al 100%"
-
-#: inc/customizer/panels/footer.php:93
-msgid "Background repeat"
-msgstr "Repetir fondo"
-
-#: inc/customizer/panels/footer.php:96
-msgid "Don't repeat"
-msgstr "No repetir"
-
-#: inc/customizer/panels/footer.php:97
-msgid "Repeat horizontally and vertically"
-msgstr "Repetir horizontal y verticalmente"
-
-#: inc/customizer/panels/footer.php:98
-msgid "Repeat horizontally"
-msgstr "Repetir horizontalmente"
-
-#: inc/customizer/panels/footer.php:99
-msgid "Repeat vertically"
-msgstr "Repetir verticalmente"
-
-#: inc/customizer/panels/footer.php:117
-msgid "Background position"
-msgstr "Posición del fondo"
-
-#: inc/customizer/panels/footer.php:120
-msgid "Left top"
-msgstr "Arriba a la izquierda"
-
-#: inc/customizer/panels/footer.php:121
-msgid "Left center"
-msgstr "Centrado a la izquierda"
-
-#: inc/customizer/panels/footer.php:122
-msgid "Left bottom"
-msgstr "Abajo a la izquierda"
-
-#: inc/customizer/panels/footer.php:123
-msgid "Right top"
-msgstr "Arriba a la derecha"
-
-#: inc/customizer/panels/footer.php:124
-msgid "Right center"
-msgstr "A la derecha al centro"
-
-#: inc/customizer/panels/footer.php:125
-msgid "Right bottom"
-msgstr "A la derecha abajo"
-
-#: inc/customizer/panels/footer.php:126
-msgid "Center top"
-msgstr "Centrado arriba"
-
-#: inc/customizer/panels/footer.php:128
-msgid "Center bottom"
-msgstr "Centrado abajo"
-
-#: inc/customizer/panels/footer.php:256
-msgid "Enable footer widget area #1"
-msgstr "Activar área de widgets del pie de página #1"
-
-#: inc/customizer/panels/footer.php:277
-msgid "Footer widget area #1 width (%)."
-msgstr "Ancho (%) del área de widgets del pie de página #1"
-
-#: inc/customizer/panels/footer.php:301
-msgid "Columns in footer widget area #1."
-msgstr "Columnas en el área de widgets del pie de página #1"
-
-#: inc/customizer/panels/footer.php:328
-msgid "Enable footer widget area #2"
-msgstr "Activar área de widgets del pie de página #2"
-
-#: inc/customizer/panels/footer.php:349
-msgid "Footer widget area #2 width (%)."
-msgstr "Ancho (%) del área de widgets del pie de página #2"
-
-#: inc/customizer/panels/footer.php:373
-msgid "Columns in footer widget area #2"
-msgstr "Columnas en el área de widgets del pie de página #2"
-
-#: inc/customizer/panels/footer.php:398
-msgid "Put the two widget areas side by side"
-msgstr "Pone los dos áreas de widgets una al lado de la otra"
-
-#: inc/customizer/panels/forms.php:14
-msgid "Forms"
-msgstr "Formularios"
-
-#: inc/customizer/panels/forms.php:35 inc/customizer/panels/topbar.php:230
-msgid "Input and textarea border radius (default: 0px)"
-msgstr "Radio del borde de las cajas de texto y área (por defecto: 0px)"
-
-#: inc/customizer/panels/forms.php:59
-#, fuzzy
-#| msgid "Use enanched select elements"
-msgid "Use enhanced select elements"
-msgstr "Usar elementos de selección mejorados"
-
-#: inc/customizer/panels/header.php:14
-msgid "Header layout and style"
-msgstr "Diseño y estilo de la cabecera"
-
-#: inc/customizer/panels/header.php:33
-msgid "Header background color"
-msgstr "Color de fondo de la cabecera"
-
-#: inc/customizer/panels/header.php:54
-msgid "Header layout"
-msgstr "Diseño de la cabecera"
-
-#: inc/customizer/panels/header.php:59
-msgid "Logo on the left and navigation below"
-msgstr "Logotipo a la izquierda y navegación debajo"
-
-#: inc/customizer/panels/header.php:63
-msgid "Logo on the left and navigation inline"
-msgstr "Logotipo a la izquierda y navegación integrada"
-
-#: inc/customizer/panels/header.php:67
-msgid "Centered logo and navigation below"
-msgstr "Logotipo centrado y navegación debajo"
-
-#: inc/customizer/panels/header.php:90
-msgid "Enable full width header"
-msgstr "Activar la cabecera a ancho completo"
-
-#: inc/customizer/panels/header.php:91
-msgid "Choose whether to make the header full width or not."
-msgstr "Elige si hacer que la cabecera sea de ancho completo o no."
-
-#: inc/customizer/panels/header.php:113
-msgid "Show search icon"
-msgstr "﻿Mostrar el icono de búsqueda"
-
-#: inc/customizer/panels/header.php:135
-msgid "Show cart icon"
-msgstr "Mostrar el icono del carrito"
-
-#: inc/customizer/panels/header.php:157
-msgid "Show user account icon"
-msgstr "Mostrar el icono de la cuenta de usuario"
-
-#: inc/customizer/panels/header.php:179 inc/customizer/panels/mobile.php:96
-msgid "Show header sidebar"
-msgstr "Mostrar la barra lateral de la cabecera"
-
-#: inc/customizer/panels/header.php:181 inc/customizer/panels/mobile.php:98
-msgid "Choose whether to show or not the header widget area"
-msgstr "Elige si mostrar o no el área de widgets de la cabecera"
-
-#: inc/customizer/panels/header.php:199
-msgid "Header menu font"
-msgstr "Fuente del menú de la cabecera"
-
-#: inc/customizer/panels/header.php:219
-msgid "Main menu font size (default: 14px)"
-msgstr "Tamaño de la fuente del menú principal (por defecto: 14px)"
-
-#: inc/customizer/panels/header.php:238
-msgid "Header menu color"
-msgstr "Color del menú de la cabecera"
-
-#: inc/customizer/panels/header.php:257
-msgid "Header menu :hover color"
-msgstr "Color del menú de la cabecera al pasar el cursor"
-
-#: inc/customizer/panels/header.php:278
-msgid "Enable sticky header"
-msgstr "Activar la cabecera fija"
-
-#: inc/customizer/panels/header.php:280
-msgid "Choose whether to make the header stick to the page when scrolling down"
-msgstr ""
-"Elige si quieres que la cabecera se fije a la página cuando se haga scroll "
-"hacia abajo"
-
-#: inc/customizer/panels/header.php:299
-msgid "Sticky header background color"
-msgstr "Color de fondo de la cabecera fija"
-
-#: inc/customizer/panels/header.php:319
-msgid "Sticky header menu color"
-msgstr "Color del menú de la cabecera fija"
-
-#: inc/customizer/panels/header.php:339
-msgid "Sticky header menu :hover color"
-msgstr "Color del menú de la cabecera fija al pasar el cursor "
-
-#: inc/customizer/panels/layout.php:14
-msgid "Layout"
-msgstr ""
-
-#: inc/customizer/panels/layout.php:35
-msgid "Make website layout full width"
-msgstr ""
-
-#: inc/customizer/panels/layout.php:37
-#, fuzzy
-#| msgid "Choose whether to make the header full width or not."
-msgid ""
-"Choose whether to make your site layout full width. No matter which "
-"resolution your screen has."
-msgstr "Elige si hacer que la cabecera sea de ancho completo o no."
-
-#: inc/customizer/panels/mobile.php:14
-#, fuzzy
-#| msgid "Mobile options"
-msgid "Mobile & Responsive"
-msgstr "Opciones en móvil"
-
-#: inc/customizer/panels/mobile.php:22
-msgid "Mobile topbar"
-msgstr "Barra superior móvil"
-
-#: inc/customizer/panels/mobile.php:43
-msgid "Show topbar in mobile"
-msgstr "Mostrar la barra superior en móviles"
-
-#: inc/customizer/panels/mobile.php:53
-msgid "Mobile header"
-msgstr "Cabecera móvil"
-
-#: inc/customizer/panels/mobile.php:72
-msgid "Mobile menu opener position"
-msgstr "Posición del desplegable del menú móvil"
-
-#: inc/customizer/panels/mobile.php:119
-msgid "Show search icon in mobile"
-msgstr "Mostrar el icono de búsqueda en móviles"
-
-#: inc/customizer/panels/mobile.php:141
-msgid "Show cart icon in mobile"
-msgstr "Mostrar el icono del carrito en móviles"
-
-#: inc/customizer/panels/mobile.php:163
-msgid "Show user account icon in mobile"
-msgstr "Mostrar el icono de la cuenta de usuario en móviles"
-
-#: inc/customizer/panels/mobile.php:174
-msgid "Mobile menu"
-msgstr "Menú móvil"
-
-#: inc/customizer/panels/mobile.php:193
-msgid "Mobile menu background color"
-msgstr "Color de fondo del menú móvil"
-
-#: inc/customizer/panels/mobile.php:212
-msgid "Mobile menu color"
-msgstr "Color del menú móvil"
-
-#: inc/customizer/panels/mobile.php:231
-msgid "Mobile menu :hover color"
-msgstr "Color del menú móvil al pasar el cursor"
-
-#: inc/customizer/panels/mobile.php:252
-msgid "Mobile menu alignment"
-msgstr "Alineación del menú móvil"
-
-#: inc/customizer/panels/mobile.php:277
-msgid "Mobile typography"
-msgstr "Tipografía móvil"
-
-#: inc/customizer/panels/mobile.php:294
-msgid "Site Title font size (default: 38px)"
-msgstr "Tamaño de la fuente del título del sitio (por defecto: 38 px)"
-
-#: inc/customizer/panels/mobile.php:311
-msgid "Tagline font size (default: 11px)"
-msgstr "Tamaño de la fuente de la descripción corta (por defecto: 11 px)"
-
-#: inc/customizer/panels/mobile.php:329
-msgid "Body font size (default: 13px)"
-msgstr "Tamaño de la fuente del cuerpo (por defecto: 13 px)"
-
-#: inc/customizer/panels/mobile.php:346
-msgid "Topbar font size (default: 13px)"
-msgstr "Tamaño de la fuente de la barra superior (por defecto: 13 px)"
-
-#: inc/customizer/panels/mobile.php:363
-msgid "Mobile menu font size (default: 16px)"
-msgstr "Tamaño de la fuente del menú móvil (por defecto: 16 px)"
-
-#: inc/customizer/panels/mobile.php:380
-msgid "H1 font size (default: 56px)"
-msgstr "Tamaño de la fuente del H1 (por defecto: 56 px)"
-
-#: inc/customizer/panels/mobile.php:397
-msgid "H2 font size (default: 32px)"
-msgstr "Tamaño de la fuente del H2 (por defecto: 32 px)"
-
-#: inc/customizer/panels/mobile.php:413
-msgid "H3 font size (default: 15px)"
-msgstr "Tamaño de la fuente del H3 (por defecto: 15 px)"
-
-#: inc/customizer/panels/mobile.php:430
-msgid "H4 font size (default: 13px)"
-msgstr "Tamaño de la fuente del H4 (por defecto: 13 px)"
-
-#: inc/customizer/panels/mobile.php:447
-msgid "H5 font size (default: 10px)"
-msgstr "Tamaño de la fuente del H5 (por defecto: 10 px)"
-
-#: inc/customizer/panels/mobile.php:464
-msgid "H6 font size (default: 9px)"
-msgstr "Tamaño de la fuente del H6 (por defecto: 9 px)"
-
-#: inc/customizer/panels/mobile.php:481
-msgid "Footer font size (default: 13px)"
-msgstr "Tamaño de la fuente del pie de página (por defecto: 13 px)"
-
-#: inc/customizer/panels/mobile.php:498
-msgid "Footer credits font size (default: 13px)"
-msgstr ""
-"Tamaño de fuente de las acreditaciones del pie de página (por defecto: 13 px)"
-
-#: inc/customizer/panels/sidebars.php:14
-msgid "Sidebars"
-msgstr "Barras laterales"
-
-#: inc/customizer/panels/sidebars.php:33
-msgid "Posts and pages sidebar"
-msgstr "Barra lateral de entradas y páginas"
-
-#: inc/customizer/panels/sidebars.php:54
-msgid "Choose the sidebar position for posts and pages"
-msgstr "Elige la posición de la barra lateral para las entradas y páginas"
-
-#: inc/customizer/panels/sidebars.php:56
-msgid ""
-"Select where to display the default sidebar. You can adjust the settings "
-"from the page/post edit view."
-msgstr ""
-"Selecciona dónde mostrar la barra lateral por defecto. Puedes afinar los "
-"ajustes al editar la página/entrada."
-
-#: inc/customizer/panels/sidebars.php:89
-msgid "Choose the default sidebar for posts and pages"
-msgstr "Elige la barra lateral por defecto para las entradas y páginas"
-
-#: inc/customizer/panels/sidebars.php:91
-msgid "Select the sidebar to display. It will be used for archive pages too."
-msgstr ""
-"Selecciona la barra lateral a mostrar. También se usará en las páginas de "
-"archivo."
-
-#: inc/customizer/panels/sidebars.php:111
-msgid "Blog page sidebar"
-msgstr "Barra lateral de la página del blog"
-
-#: inc/customizer/panels/sidebars.php:132
-msgid "Choose the position of the blog page sidebar"
-msgstr "Elige la posición de la barra lateral de la página del blog"
-
-#: inc/customizer/panels/sidebars.php:134
-msgid ""
-"Select where to display the sidebar. You can pick up a specific sidebard "
-"from the page edit view."
-msgstr ""
-"Selecciona dónde mostrar la barra lateral. Puedes elegir una barra lateral "
-"específica al editar la página."
-
-#: inc/customizer/panels/sidebars.php:166
-msgid "Choose the blog sidebar"
-msgstr "Elige la barra lateral del blog"
-
-#: inc/customizer/panels/sidebars.php:168
-msgid ""
-"Select the sidebar to display. You can pick a specific sidebar from the "
-"single post edit page."
-msgstr ""
-"Selecciona la barra lateral a mostrar. Puedes elegir una barra lateral "
-"específica al editar la entrada."
-
-#: inc/customizer/panels/sidebars.php:188
-msgid "Blog categories sidebar"
-msgstr "Barra lateral de las categorías del blog"
-
-#: inc/customizer/panels/sidebars.php:209
-msgid "Choose the position of blog category pages sidebar"
-msgstr ""
-"Elige la posición de la barra lateral para las páginas de categorías del blog"
-
-#: inc/customizer/panels/sidebars.php:211
-#: inc/customizer/panels/sidebars.php:288
-#: inc/customizer/panels/woocommerce/product-category.php:35
-#: inc/customizer/panels/woocommerce/product-tag.php:36
-#: inc/customizer/panels/woocommerce/product-tax.php:36
-msgid "Select where to display the sidebar."
-msgstr "Selecciona dónde mostrar la barra lateral."
-
-#: inc/customizer/panels/sidebars.php:243
-msgid "Choose blog category pages sidebar"
-msgstr "Elige la barra lateral para las páginas de las categorías del blog"
-
-#: inc/customizer/panels/sidebars.php:245
-#: inc/customizer/panels/sidebars.php:322
-#: inc/customizer/panels/woocommerce/product-category.php:69
-#: inc/customizer/panels/woocommerce/product-tag.php:70
-#: inc/customizer/panels/woocommerce/product-tax.php:70
-msgid "Select the sidebar to display."
-msgstr "Selecciona la barra lateral a mostrar."
-
-#: inc/customizer/panels/sidebars.php:265
-msgid "Blog tags sidebar"
-msgstr "Barra lateral de las etiquetas del blog"
-
-#: inc/customizer/panels/sidebars.php:286
-msgid "Choose the position of blog tag pages sidebar"
-msgstr ""
-"Elige la posición de la barra lateral para las páginas de las etiquetas del "
-"blog"
-
-#: inc/customizer/panels/sidebars.php:320
-msgid "Choose blog tag pages sidebar"
-msgstr "Elige la barra lateral para las páginas de las etiquetas del blog"
-
-#: inc/customizer/panels/site-identity.php:24
-msgid "Logo image max width (px)"
-msgstr "Ancho máximo de la imagen del logotipo (px)"
-
-#: inc/customizer/panels/site-identity.php:47
-msgid "Site Title"
-msgstr "Título del sitio"
-
-#: inc/customizer/panels/site-identity.php:64
-msgid "Site title font"
-msgstr "Fuente del título del sitio"
-
-#: inc/customizer/panels/site-identity.php:88
-msgid "Site Title font size"
-msgstr "Tamaño de la fuente del título del sitio"
-
-#: inc/customizer/panels/site-identity.php:108
-msgid "Site Title color"
-msgstr "Color del título del sitio"
-
-#: inc/customizer/panels/site-identity.php:128
-msgid "Tagline"
-msgstr "Descripción corta"
-
-#: inc/customizer/panels/site-identity.php:145
-msgid "Tagline font"
-msgstr "Fuente de la descripción corta"
-
-#: inc/customizer/panels/site-identity.php:169
-msgid "Tagline font size"
-msgstr "Tamaño de la fuente de la descripción corta"
-
-#: inc/customizer/panels/site-identity.php:189
-msgid "Tagline color"
-msgstr "Color de la descripción corta"
-
-#: inc/customizer/panels/topbar.php:14
-msgid "Topbar"
-msgstr "Barra superior"
-
-#: inc/customizer/panels/topbar.php:35
-msgid "Enable topbar"
-msgstr "Activar la barra superior"
-
-#: inc/customizer/panels/topbar.php:37
-msgid "Choose whether to show the site topbar or not"
-msgstr "Elige si mostrar o no la barra superior del sitio."
-
-#: inc/customizer/panels/topbar.php:56
-msgid "Topbar background color"
-msgstr "Color de fondo de la barra superior"
-
-#: inc/customizer/panels/topbar.php:188
-msgid "Show bottom border"
-msgstr "Mostrar borde inferior"
-
-#: inc/customizer/panels/typography.php:14
-msgid "Typography"
-msgstr "Tipografía"
-
-#: inc/customizer/panels/typography.php:32
-msgid "Body font"
-msgstr "Fuente del cuerpo"
-
-#: inc/customizer/panels/typography.php:53
-msgid "Body font size (default: 16px)"
-msgstr "Tamaño de la fuente del cuerpo (por defecto 16 px)"
-
-#: inc/customizer/panels/typography.php:71
-msgid "Body font color"
-msgstr "Color de fuente del cuerpo"
-
-#: inc/customizer/panels/typography.php:90
-msgid "General link color"
-msgstr "Color general de los enlaces"
-
-#: inc/customizer/panels/typography.php:109
-msgid "General link :hover color"
-msgstr "Color de los enlaces al pasar el cursor"
-
-#: inc/customizer/panels/typography.php:130
-msgid "Show underlined links"
-msgstr "Mostrar enlaces subrayados"
-
-#: inc/customizer/panels/typography.php:150
-msgid "H1 font"
-msgstr "Fuente H1"
-
-#: inc/customizer/panels/typography.php:170
-msgid "H1 font size (default: 32px)"
-msgstr "Tamaño de la fuente del H1 (por defecto 32 px)"
-
-#: inc/customizer/panels/typography.php:188
-msgid "H1 font color"
-msgstr "Color de fuente del H1"
-
-#: inc/customizer/panels/typography.php:207
-msgid "H2 font"
-msgstr "Fuente H2"
-
-#: inc/customizer/panels/typography.php:227
-msgid "H2 font size (default: 24px)"
-msgstr "Tamaño de la fuente del H2 (por defecto 24 px)"
-
-#: inc/customizer/panels/typography.php:245
-msgid "H2 font color"
-msgstr "Color de fuente del H2"
-
-#: inc/customizer/panels/typography.php:264
-msgid "H3 font"
-msgstr "Fuente H3"
-
-#: inc/customizer/panels/typography.php:284
-msgid "H3 font size (default: 19px)"
-msgstr "Tamaño de la fuente del H3 (por defecto 19 px)"
-
-#: inc/customizer/panels/typography.php:302
-msgid "H3 font color"
-msgstr "Color de fuente del H3"
-
-#: inc/customizer/panels/typography.php:321
-msgid "H4 font"
-msgstr "Fuente H4"
-
-#: inc/customizer/panels/typography.php:341
-msgid "H4 font size (default: 16px)"
-msgstr "Tamaño de la fuente del H4 (por defecto 16 px)"
-
-#: inc/customizer/panels/typography.php:359
-msgid "H4 font color"
-msgstr "Color de fuente del H4"
-
-#: inc/customizer/panels/typography.php:378
-msgid "H5 font"
-msgstr "Fuente H5"
-
-#: inc/customizer/panels/typography.php:398
-msgid "H5 font size (default: 13px)"
-msgstr "Tamaño de la fuente del H5 (por defecto 13 px)"
-
-#: inc/customizer/panels/typography.php:416
-msgid "H5 font color"
-msgstr "Color de fuente del H5"
-
-#: inc/customizer/panels/typography.php:435
-msgid "H6 font"
-msgstr "Fuente H6"
-
-#: inc/customizer/panels/typography.php:455
-msgid "H6 font size (default: 11px)"
-msgstr "Tamaño de la fuente del H6 (por defecto 11 px)"
-
-#: inc/customizer/panels/typography.php:473
-msgid "H6 font color"
-msgstr "Color de fuente del H6"
-
-#: inc/customizer/panels/typography.php:490
-msgid "Additional Google Font"
-msgstr "Fuente adicional de Google"
-
-#: inc/customizer/panels/typography.php:491
-msgid "Enter the URL of a Google Font you want to use within the theme."
-msgstr "Introduce la URL de la fuente de Google que quieres usar en el tema."
-
-#: inc/customizer/panels/typography.php:491
-msgid "Read how to retrieve a Google font url"
-msgstr "Lee cómo obtener la URL de una fuente de Google"
-
-#: inc/customizer/panels/woocommerce/breadcrumbs.php:14
-msgid "Breadcrumbs"
-msgstr "Migas de pan"
-
-#: inc/customizer/panels/woocommerce/breadcrumbs.php:35
-msgid "Show breadcrumbs"
-msgstr "Mostrar las migas de pan"
-
-#: inc/customizer/panels/woocommerce/breadcrumbs.php:37
-msgid "Choose whether to show breadcrumbs on pages, posts and products."
-msgstr ""
-"Elige si quieres mostrar migas de pan en páginas, entradas y productos."
-
-#: inc/customizer/panels/woocommerce/cart.php:14
-msgid "Cart page"
-msgstr "Página del carrito"
-
-#: inc/customizer/panels/woocommerce/cart.php:32
-msgid "Cart layout"
-msgstr "Diseño del carrito"
-
-#: inc/customizer/panels/woocommerce/cart.php:34
-msgid "Choose the cart layout"
-msgstr "Selecciona el diseño del carrito"
-
-#: inc/customizer/panels/woocommerce/cart.php:36
-msgid "Please select"
-msgstr "Por favor, selecciona"
-
-#: inc/customizer/panels/woocommerce/cart.php:37
-msgid "One column layout"
-msgstr "Diseño de una columna"
-
-#: inc/customizer/panels/woocommerce/cart.php:38
-msgid "Two column layout"
-msgstr "Diseño de dos columnas"
-
-#: inc/customizer/panels/woocommerce/cart.php:55
-msgid "Max cross sell products to show"
-msgstr "Máximos productos de venta cruzada a mostrar"
-
-#: inc/customizer/panels/woocommerce/cart.php:57
-msgid "Choose how many cross sell products you want to show (default: 4)"
-msgstr ""
-"Elige cuántos productos de venta cruzada quieres mostrar (por defecto: 4)"
-
-#: inc/customizer/panels/woocommerce/cart.php:72
-msgid "Cross sell columns"
-msgstr "Columnas de venta cruzada"
-
-#: inc/customizer/panels/woocommerce/cart.php:74
-msgid ""
-"Choose how many columns with cross sell products you want to show (default: "
-"4)"
-msgstr ""
-"Elige cuántas columnas con productos de venta cruzada quieres mostrar (por "
-"defecto: 4)"
-
-#: inc/customizer/panels/woocommerce/cart.php:90
-msgid "Update cart button style"
-msgstr "Estilo del botón «Actualizar carrito»"
-
-#: inc/customizer/panels/woocommerce/cart.php:93
-msgid "Textual"
-msgstr "Textual"
-
-#: inc/customizer/panels/woocommerce/cart.php:94
-msgid "Button"
-msgstr "Botón"
-
-#: inc/customizer/panels/woocommerce/messages.php:14
-msgid "Messages"
-msgstr "Mensajes"
-
-#: inc/customizer/panels/woocommerce/messages.php:31
-msgid "WooCommerce messages font size (default: 16px)"
-msgstr "Tamaño de fuente de los mensajes de WooCommerce (por defecto: 16 px)"
-
-#: inc/customizer/panels/woocommerce/messages.php:50
-msgid "Default messages: accent color"
-msgstr "Color de énfasis por defecto de los mensajes"
-
-#: inc/customizer/panels/woocommerce/messages.php:69
-msgid "Info messages: accent color"
-msgstr "Color de énfasis de los mensajes informativos"
-
-#: inc/customizer/panels/woocommerce/messages.php:88
-msgid "Error messages: accent color"
-msgstr "Color de énfasis de los mensajes de error"
-
-#: inc/customizer/panels/woocommerce/product-catalog.php:20
-msgid "Product hover effect"
-msgstr "Efecto al pasar el cursor por el producto"
-
-#: inc/customizer/panels/woocommerce/product-catalog.php:23
-msgid "None"
-msgstr "Ninguno"
-
-#: inc/customizer/panels/woocommerce/product-catalog.php:24
-msgid "Glow"
-msgstr "Brillo"
-
-#: inc/customizer/panels/woocommerce/product-catalog.php:25
-msgid "Zoom"
-msgstr "Zoom"
-
-#: inc/customizer/panels/woocommerce/product-catalog.php:26
-msgid "Alternative image"
-msgstr "Imagen alternativa"
-
-#: inc/customizer/panels/woocommerce/product-catalog.php:27
-msgid "Glow + alternative image"
-msgstr "Brillo e imagen alternativa"
-
-#: inc/customizer/panels/woocommerce/product-catalog.php:43
-msgid "Product title font size (default: 14px)"
-msgstr "Tamaño de la fuente del título del producto (por defecto: 14 px)"
-
-#: inc/customizer/panels/woocommerce/product-catalog.php:61
-msgid "Product title font color"
-msgstr "Color de la fuente del título del producto"
-
-#: inc/customizer/panels/woocommerce/product-catalog.php:78
-msgid "Product price font size (default: 14px)"
-msgstr "Tamaño de la fuente del precio del producto (por defecto: 14 px)"
-
-#: inc/customizer/panels/woocommerce/product-catalog.php:96
-#: inc/customizer/panels/woocommerce/single-product.php:232
-msgid "Product price font color"
-msgstr "Color de la fuente del precio del producto"
-
-#: inc/customizer/panels/woocommerce/product-catalog.php:114
-msgid "Add to cart style"
-msgstr "Estilo de «Añadir al carrito»"
-
-#: inc/customizer/panels/woocommerce/product-catalog.php:116
-msgid ""
-"How should the add to cart button be displayed in product catalog pages?"
-msgstr ""
-"¿Cómo debería mostrarse el botón de añadir al carrito en las páginas del "
-"catálogo de productos?"
-
-#: inc/customizer/panels/woocommerce/product-catalog.php:118
-msgid "Textual link"
-msgstr "Enlace de texto"
-
-#: inc/customizer/panels/woocommerce/product-catalog.php:136
-msgid "Add to cart font size (default: 14px)"
-msgstr "Tamaño de la fuente de añadir al carrito (por defecto: 14 px)"
-
-#: inc/customizer/panels/woocommerce/product-category.php:14
-msgid "Product Category page"
-msgstr "Página de categorías del producto"
-
-#: inc/customizer/panels/woocommerce/product-category.php:33
-msgid "Choose the position of the sidebar on product category pages"
-msgstr ""
-"Elige la posición de la barra lateral en las páginas de categorías del "
-"producto."
-
-#: inc/customizer/panels/woocommerce/product-category.php:67
-msgid "Choose the product category page sidebar"
-msgstr "Elige la barra lateral de la página de categorías del producto"
-
-#: inc/customizer/panels/woocommerce/product-tag.php:14
-msgid "Product Tag page"
-msgstr "Página de etiquetas del producto"
-
-#: inc/customizer/panels/woocommerce/product-tag.php:34
-msgid "Choose the position of the sidebar on product tag pages"
-msgstr ""
-"Elige la posición de la barra lateral de las páginas de etiquetas del "
-"producto"
-
-#: inc/customizer/panels/woocommerce/product-tag.php:68
-msgid "Choose the product tag page sidebar"
-msgstr "Elige la barra lateral de la página de etiquetas del producto "
-
-#: inc/customizer/panels/woocommerce/product-tax.php:14
-msgid "Product Taxonomy page"
-msgstr "Página de taxonomías del producto"
-
-#: inc/customizer/panels/woocommerce/product-tax.php:34
-msgid "Choose the position of the sidebar on product taxonomy pages"
-msgstr ""
-"Elige la posición de la barra lateral en las páginas de taxonomías del "
-"producto."
-
-#: inc/customizer/panels/woocommerce/product-tax.php:68
-msgid "Choose the product taxonomy page sidebar"
-msgstr "Elige la barra lateral de la página de taxonomías del producto"
-
-#: inc/customizer/panels/woocommerce/sale-badge.php:14
-msgid "Sale badge"
-msgstr "Indicador de oferta"
-
+#: inc/customizer/panels/footer.php:52 inc/customizer/panels/header.php:503
+#: inc/customizer/panels/mobile.php:193 inc/customizer/panels/topbar.php:56
 #: inc/customizer/panels/woocommerce/sale-badge.php:33
-msgid "Sale badge background color"
-msgstr "Color de fondo del indicador de oferta"
-
-#: inc/customizer/panels/woocommerce/sale-badge.php:51
-#: inc/customizer/panels/woocommerce/store-notice.php:40
-msgid "Store notice text color"
-msgstr "Color del texto del aviso de la tienda"
-
-#: inc/customizer/panels/woocommerce/sale-badge.php:67
-msgid "Sale badge font size (default: 13px)"
-msgstr "Tamaño de fuente del indicador de oferta (por defecto: 13 px)"
-
-#: inc/customizer/panels/woocommerce/shop-page.php:14
-msgid "Shop page"
-msgstr ""
-
-#: inc/customizer/panels/woocommerce/shop-page.php:37
-#, fuzzy
-#| msgid "Choose the position of the blog page sidebar"
-msgid "Choose the position of the shop page sidebar"
-msgstr "Elige la posición de la barra lateral de la página del blog"
-
-#: inc/customizer/panels/woocommerce/shop-page.php:73
-#, fuzzy
-#| msgid "Choose the blog sidebar"
-msgid "Choose the shop page sidebar"
-msgstr "Elige la barra lateral del blog"
-
-#: inc/customizer/panels/woocommerce/single-product.php:14
-msgid "Single product page"
-msgstr "Página de producto individual"
-
-#: inc/customizer/panels/woocommerce/single-product.php:34
-msgid "Product title"
-msgstr "Título del producto"
-
-#: inc/customizer/panels/woocommerce/single-product.php:52
-msgid "Font family"
-msgstr "Familia de fuentes"
-
-#: inc/customizer/panels/woocommerce/single-product.php:72
-msgid "Font size (default: 32px)"
-msgstr "Tamaño de fuente (por defecto: 32 px)"
-
-#: inc/customizer/panels/woocommerce/single-product.php:111
-msgid "Product image"
-msgstr "Imagen del producto"
-
-#: inc/customizer/panels/woocommerce/single-product.php:132
-msgid "Enable featured image zoom"
-msgstr "Activar la ampliación de la imagen destacada"
-
-#: inc/customizer/panels/woocommerce/single-product.php:154
-msgid "Enable featured image lightbox"
-msgstr "Activar la caja de luz de la imagen destacada"
-
-#: inc/customizer/panels/woocommerce/single-product.php:176
-msgid "Enable additional images slider"
-msgstr "Activar el carrusel de imágenes adicionales"
-
-#: inc/customizer/panels/woocommerce/single-product.php:197
-msgid "Product price and Add to cart"
-msgstr "Precio del producto y añadir al carrito"
-
-#: inc/customizer/panels/woocommerce/single-product.php:214
-msgid "Product price font size (default: 35px)"
-msgstr "Tamaño de la fuente del precio del producto (por defecto: 35 px)"
-
-#: inc/customizer/panels/woocommerce/single-product.php:249
-msgid "Product quantity font size (default: 40px)"
-msgstr "Tamaño de la fuente de la cantidad del producto (por defecto: 40 px)"
-
-#: inc/customizer/panels/woocommerce/single-product.php:266
-msgid "Add to cart button font size (default: 20px)"
-msgstr ""
-"Tamaño de la fuente del botón de añadir al carrito (por defecto: 20 px)"
-
-#: inc/customizer/panels/woocommerce/single-product.php:286
-msgid "Related products"
-msgstr "Productos relacionados"
-
-#: inc/customizer/panels/woocommerce/single-product.php:304
-msgid "Max related products to show"
-msgstr "Máximos productos relacionados a mostrar"
-
-#: inc/customizer/panels/woocommerce/single-product.php:306
-msgid "Choose how many related products you want to show (default: 4)"
-msgstr "Elige cuántos productos relacionados quieres mostrar (por defecto: 4)"
-
-#: inc/customizer/panels/woocommerce/single-product.php:321
-msgid "Related products columns"
-msgstr "Columnas de productos relacionados"
-
-#: inc/customizer/panels/woocommerce/single-product.php:323
-msgid ""
-"Choose how many columns with related products you want to show (default: 4)"
-msgstr ""
-"Elige cuántas columnas con productos relacionados quieres mostrar (por "
-"defecto: 4)"
-
-#: inc/customizer/panels/woocommerce/single-product.php:341
-msgid "Sidebar management"
-msgstr "Gestión de barra lateral"
-
-#: inc/customizer/panels/woocommerce/single-product.php:362
-msgid "Choose the position of the sidebar on single product page"
-msgstr ""
-"Elige la posición de la barra lateral en las páginas de producto individual."
-
-#: inc/customizer/panels/woocommerce/single-product.php:364
-msgid ""
-"Select where to display the sidebar. You can adjust the settings from "
-"product edit view."
-msgstr ""
-"Selecciona dónde mostrar la barra lateral. Puedes afinar los ajustes al "
-"editar la entrada."
-
-#: inc/customizer/panels/woocommerce/single-product.php:396
-msgid "Choose the sidebar to use on single product page"
-msgstr "Elige la barra lateral a usar en la página individual del producto"
-
-#: inc/customizer/panels/woocommerce/single-product.php:398
-msgid "You can adjust the settings from product edit view."
-msgstr "Puedes configurar los ajustes desde la vista de edición del producto."
-
-#: inc/customizer/panels/woocommerce/single-product.php:418
-msgid "Force all product to use the same sidebar."
-msgstr "Fuerza que todos los productos usen la misma barra lateral."
-
-#: inc/customizer/panels/woocommerce/single-product.php:440
-msgid "Tabs management"
-msgstr "Gestión de pestañas"
-
-#: inc/customizer/panels/woocommerce/single-product.php:457
-msgid "Tab title font size (default: 30px)"
-msgstr "Tamaño de fuente del título de la pestaña (por defecto: 30 px)"
-
-#: inc/customizer/panels/woocommerce/single-product.php:476
-msgid "Tab title font color"
-msgstr "Color de fuente del título de la pestaña"
-
-#: inc/customizer/panels/woocommerce/single-product.php:493
-msgid "Tab content font size (default: 16px)"
-msgstr "Tamaño de fuente del contenido de la pestaña (por defecto: 16 px)"
-
-#: inc/customizer/panels/woocommerce/single-product.php:513
-msgid "Product categories, tags and SKU"
-msgstr "Categorías, etiquetas y SKU del producto"
-
-#: inc/customizer/panels/woocommerce/single-product.php:533
-msgid "Show product categories"
-msgstr "Mostrar las categorías del producto"
-
-#: inc/customizer/panels/woocommerce/single-product.php:554
-msgid "Show product tags"
-msgstr "Mostrar las etiquetas del producto"
-
-#: inc/customizer/panels/woocommerce/single-product.php:575
-msgid "Show product SKU"
-msgstr "Mostrar el SKU del producto"
-
-#: inc/customizer/panels/woocommerce/store-notice.php:21
-msgid "Store notice background color"
-msgstr "Color de fondo del aviso de la tienda"
-
-#: inc/customizer/panels/woocommerce/store-notice.php:58
-msgid "Store notice font size (default: 13px)"
-msgstr "Tamaño de fuente del aviso de la tienda (por defecto: 13 px)"
-
-#: inc/metaboxes.php:39
-msgid "Title icon"
-msgstr "Icono del título"
-
-#: inc/metaboxes.php:55
-msgid "Header slider"
-msgstr "Carrusel de la cabecera"
-
-#: inc/metaboxes.php:73
-msgid "Sidebar position"
-msgstr "Posición de la barra lateral"
-
-#: inc/metaboxes.php:88
-msgid "Sidebar Chooser"
-msgstr "Selector de barra lateral"
-
-#: inc/metaboxes.php:104
-msgid "Header and footer"
-msgstr "Cabecera y pie de página"
-
-#: inc/metaboxes.php:127
-msgid "Enable this option to hide site header and footer."
-msgstr ""
-"Activa esta opción para ocultar la cabecera y el pie de página del sitio."
-
-#: inc/metaboxes.php:149 inc/metaboxes.php:246
-msgid "none"
-msgstr "ninguno"
-
-#: inc/metaboxes.php:177 inc/metaboxes.php:209
-msgid "inherit"
-msgstr "heredar"
-
-#: inc/metaboxes.php:181
-msgid "no-sidebar"
-msgstr "sin-barra-lateral"
-
-#: inc/metaboxes.php:185
-msgid "left"
-msgstr "izquierda"
-
-#: inc/metaboxes.php:189
-msgid "right"
-msgstr "derecha"
-
-#: inc/sidebars.php:37
-msgid "Default Sidebar"
-msgstr "Barra lateral por defecto"
-
-#: inc/sidebars.php:39 inc/sidebars.php:50 inc/sidebars.php:61
-#: inc/sidebars.php:72 inc/sidebars.php:83 inc/sidebars.php:94
-#: inc/sidebars.php:105 inc/sidebars.php:116 inc/sidebars.php:127
-#: inc/sidebars.php:138 inc/sidebars.php:149 inc/sidebars.php:160
-msgid "Add widgets here."
-msgstr "Añade widgets aquí."
-
-#: inc/sidebars.php:48
-msgid "Topbar Sidebar"
-msgstr "Barra lateral superior"
-
-#: inc/sidebars.php:59
-msgid "Header Sidebar"
-msgstr "Barra lateral de la cabecera"
-
-#: inc/sidebars.php:70
-msgid "Footer Sidebar 1 (multiple columns can be configured)"
-msgstr ""
-"Barra lateral del pie de página 1 (pueden configurarse varias columnas)"
-
-#: inc/sidebars.php:81
-msgid "Footer Sidebar 2 (multiple columns can be configured)"
-msgstr ""
-"Barra lateral del pie de página 2 (pueden configurarse varias columnas)"
-
-#: inc/sidebars.php:92
-msgid "Sidebar 2"
-msgstr "Barra lateral 2"
-
-#: inc/sidebars.php:103
-msgid "Sidebar 3"
-msgstr "Barra lateral 3"
-
-#: inc/sidebars.php:114
-msgid "Sidebar 4"
-msgstr "Barra lateral 4"
-
-#: inc/sidebars.php:125
-msgid "Sidebar 5"
-msgstr "Barra lateral 5"
-
-#: inc/sidebars.php:136
-msgid "Shop sidebar"
-msgstr "Barra lateral de la tienda"
-
-#: inc/sidebars.php:147
-msgid "Blog category sidebar"
-msgstr "Barra lateral de las categorías del blog"
-
-#: inc/sidebars.php:158
-msgid "Blog tag sidebar"
-msgstr "Barra lateral de las etiquetas del blog"
-
-#: inc/template-functions.php:184
-msgid "Search"
-msgstr "Buscar"
-
-#: inc/template-tags.php:42
-#, php-format
-msgctxt "post author"
-msgid "By %s"
-msgstr "Por %s"
-
-#: inc/template-tags.php:61 template-parts/content-page.php:47
-#, php-format
-msgid "Edit <span class=\"screen-reader-text\">%s</span>"
-msgstr "Editar <span class=\"screen-reader-text\">%s</span>"
-
-#: inc/theme-dashboard/class-proteo-admin-dashboard.php:104
-msgid "WordPress Nonce not validated."
-msgstr ""
-
-#: inc/theme-dashboard/class-proteo-admin-dashboard.php:111
-msgid "No plugin specified"
-msgstr ""
-
-#: inc/theme-dashboard/class-proteo-admin-dashboard.php:133
-#, fuzzy
-#| msgid "Plugin activated successfully."
-msgid "Plugin Successfully Activated"
-msgstr "El plugin se ha activado correctamente."
-
-#: inc/theme-dashboard/class-proteo-admin-dashboard.php:157
-#, fuzzy
-#| msgid "Begin activating plugin"
-#| msgid_plural "Begin activating plugins"
-msgid "Activating Importer Plugin "
-msgstr "Empezar a activar el plugin"
-
-#: inc/theme-dashboard/class-proteo-admin-dashboard.php:159
-#, fuzzy
-#| msgid "Activate"
-msgid "Activating"
-msgstr "Activar"
-
-#: inc/theme-dashboard/class-proteo-admin-dashboard.php:160
-#, fuzzy
-#| msgid "Begin activating plugin"
-#| msgid_plural "Begin activating plugins"
-msgid "Deactivating"
-msgstr "Empezar a activar el plugin"
-
-#: inc/theme-dashboard/class-proteo-admin-dashboard.php:161
-#: inc/theme-dashboard/theme-dashboard.php:400
-msgid "Activate"
-msgstr "Activar"
-
-#: inc/theme-dashboard/class-proteo-admin-dashboard.php:162
-#, fuzzy
-#| msgid "Activate"
-msgid "Deactivate"
-msgstr "Activar"
-
-#: inc/theme-dashboard/class-proteo-admin-dashboard.php:163
-msgid "Settings"
-msgstr ""
-
-#: inc/theme-dashboard/theme-dashboard.php:344
-msgid "Import a demo site"
-msgstr ""
-
-#: inc/theme-dashboard/theme-dashboard.php:346
-msgid "Import any of the demo site below."
-msgstr ""
-
-#: inc/theme-dashboard/theme-dashboard.php:349
-msgid ""
-"Once done, your site will have the exact same look and content as the demo "
-"preview."
-msgstr ""
-
-#: inc/theme-dashboard/theme-dashboard.php:352
-msgid "We are working very hard to add new demo sites, stay updated!"
-msgstr ""
-
-#: inc/theme-dashboard/theme-dashboard.php:364
-#: inc/theme-dashboard/theme-dashboard.php:366
-#: inc/theme-dashboard/theme-dashboard.php:368
-msgid "Import"
-msgstr ""
-
-#: inc/theme-dashboard/theme-dashboard.php:372
-msgid "Coming soon"
-msgstr ""
-
-#: inc/theme-dashboard/theme-dashboard.php:389
-#, fuzzy
-#| msgid "Install demo content and suggested plugins"
-msgid "Free suggested plugins"
-msgstr "Instalar el contenido de demostración y los plugins sugeridos"
-
-#: inc/theme-dashboard/theme-dashboard.php:403
-#, fuzzy
-#| msgid "Installed But Not Activated"
-msgid "Install & Activate"
-msgstr "Instalado, pero no activado"
-
-#: inc/theme-dashboard/theme-dashboard.php:414
-msgid "How to start"
-msgstr ""
-
-#: inc/theme-dashboard/theme-dashboard.php:416
-#, fuzzy
-#| msgid "Read more text"
-msgid "Read the"
-msgstr "Texto «Ver más»"
-
-#: inc/theme-dashboard/theme-dashboard.php:416
-#, fuzzy
-#| msgid "Theme documentation"
-msgid "theme documentation"
-msgstr "Documentación del tema"
-
-#: inc/theme-dashboard/theme-dashboard.php:417
-msgid "Visit theme forum"
-msgstr ""
-
-#: inc/theme-dashboard/theme-dashboard.php:417
-msgid "Ask help in the"
-msgstr ""
-
-#: inc/theme-dashboard/theme-dashboard.php:417
-msgid "support forum"
-msgstr ""
-
-#: inc/theme-dashboard/theme-dashboard.php:418
-msgid "Use theme customizer"
-msgstr ""
-
-#: inc/theme-dashboard/theme-dashboard.php:418
-msgid "Start to customize with the"
-msgstr ""
-
-#: inc/theme-dashboard/theme-dashboard.php:418
-msgid "live customizer"
-msgstr ""
-
-#: inc/widgets/class-yith-proteo-account-widget.php:19
-msgid "YITH Proteo Account Widget"
-msgstr "Widget de cuenta de YITH Proteo"
-
-#: inc/widgets/class-yith-proteo-account-widget.php:20
-msgid "A shortcut to site login page"
-msgstr "Un atajo a la página de acceso al sitio"
-
-#: inc/widgets/class-yith-proteo-account-widget.php:64
-#, php-format
-msgid "Hello %s"
-msgstr "Hola %s"
-
-#: inc/widgets/class-yith-proteo-account-widget.php:125
-#: inc/widgets/class-yith-proteo-account-widget.php:199
-msgid "Custom icon"
-msgstr "Icono personalizado"
-
-#: inc/widgets/class-yith-proteo-account-widget.php:131
-#: inc/widgets/class-yith-proteo-account-widget.php:205
-msgid "Login url"
-msgstr "URL de acceso"
-
-#: inc/widgets/class-yith-proteo-account-widget.php:139
-#: inc/widgets/class-yith-proteo-account-widget.php:213
-msgid "My account url"
-msgstr "URL de «Mi cuenta»"
-
-#: inc/widgets/class-yith-proteo-account-widget.php:165
-msgid "Add Media"
-msgstr "Añadir medios"
-
-#: inc/widgets/class-yith-proteo-account-widget.php:166
-msgid "Clear"
-msgstr "Vaciar"
-
-#: inc/widgets/class-yith-proteo-recent-comments-widget.php:28
-msgid "Recent Comments"
-msgstr "Comentarios recientes"
-
-#: inc/widgets/class-yith-proteo-recent-comments-widget.php:78
-#, php-format
-msgctxt "widgets"
-msgid "%1$s on %2$s"
-msgstr "%1$s en %2$s"
-
-#: inc/widgets/class-yith-proteo-recent-posts-widget.php:25
-msgid "Recent Posts"
-msgstr "Entradas recientes"
-
-#: inc/widgets/class-yith-proteo-recent-posts-widget.php:71
-#, php-format
-msgctxt "comments count on widget"
-msgid "%1$s comment"
-msgid_plural "%1$s comments"
-msgstr[0] "%1$s comentario"
-msgstr[1] "%1$s comentarios"
-
-#: inc/widgets/class-yith-proteo-social-icons.php:19
-msgid "Social Networks"
-msgstr "Redes sociales"
-
-#: inc/widgets/class-yith-proteo-social-icons.php:21
-msgid "Links to your social profiles"
-msgstr "Enlaces a tus perfiles sociales"
-
-#: inc/widgets/class-yith-proteo-social-icons.php:84
-msgid "To hide a field, just leave it empty"
-msgstr "Para ocultar un campo, simplemente déjalo vacío"
-
-#: inc/widgets/class-yith-proteo-social-icons.php:87
-msgid "Title:"
-msgstr "Título:"
-
-#: inc/widgets/class-yith-proteo-social-icons.php:96
-msgid "Facebook:"
-msgstr "Facebook:"
-
-#: inc/widgets/class-yith-proteo-social-icons.php:105
-msgid "Twitter:"
-msgstr "Twitter:"
-
-#: inc/widgets/class-yith-proteo-social-icons.php:114
-msgid "Instagram:"
-msgstr "Instagram:"
-
-#: inc/widgets/class-yith-proteo-social-icons.php:123
-msgid "LinkedIn:"
-msgstr "LinkedIn:"
-
-#: inc/widgets/class-yith-proteo-social-icons.php:132
-msgid "Youtube:"
-msgstr "YouTube:"
-
-#: inc/woocommerce.php:203
-msgid "View your shopping cart"
-msgstr "Ver tu carrito de la compra"
-
-#: inc/woocommerce.php:207
-#, php-format
-msgid "%d item"
-msgid_plural "%d items"
-msgstr[0] "%d artículo"
-msgstr[1] "%d artículos"
-
-#: inc/woocommerce.php:303
-msgid "Logout"
-msgstr "Salir"
-
-#: inc/woocommerce.php:345
-msgid "Account info"
-msgstr "Información de la cuenta"
-
-#: inc/woocommerce.php:397
-#, php-format
-msgid "%d item in cart"
-msgid_plural "%d items in cart"
-msgstr[0] "%d artículo en el carrito"
-msgstr[1] "%d artículos en el carrito"
-
-#: inc/woocommerce.php:555
-msgid "Thank you."
-msgstr "Gracias."
-
-#: search.php:22
-#, php-format
-msgid "Search results for: %s"
-msgstr "Resultados de la búsqueda de: %s"
-
-#: template-parts/content-none.php:14
-msgid "Nothing found"
-msgstr "No se ha encontrado nada"
-
-#: template-parts/content-none.php:24
-#, php-format
-msgid ""
-"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr ""
-"¿Listo para publicar tu primera entrada? <a href=\"%1$s\">Empieza aquí</a>."
-
-#: template-parts/content-none.php:37
-msgid ""
-"Sorry, but nothing matched your search terms. Please try again with some "
-"different keywords."
-msgstr ""
-"Lo siento, pero no hay nada que coincida con tus términos de búsqueda. Por "
-"favor, inténtalo de nuevo con algunas palabras clave diferentes."
-
-#: template-parts/content-none.php:44
-msgid ""
-"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
-"searching can help."
-msgstr ""
-"Parece que no hemos podido encontrar lo que estás buscando. Quizá pueda "
-"ayudarte una búsqueda."
-
-#: template-parts/content-page.php:33 template-parts/content-single.php:174
-#: template-parts/content-sticky.php:122 template-parts/content.php:122
-msgid "Pages:"
-msgstr "Páginas:"
-
-#: template-parts/content-single.php:67 template-parts/content-single.php:116
-#: template-parts/content-sticky.php:61 template-parts/content.php:61
-msgid ", "
-msgstr ", "
-
-#: template-parts/content-single.php:70 template-parts/content-single.php:119
-#: template-parts/content-sticky.php:64 template-parts/content.php:64
-#, php-format
-msgid "Categories: %1$s"
-msgstr "Categorías: %1$s"
-
-#: template-parts/content-single.php:74 template-parts/content-single.php:123
-#: template-parts/content-sticky.php:68 template-parts/content.php:68
-msgctxt "list item separator"
-msgid ", "
-msgstr ", "
-
-#: template-parts/content-single.php:77 template-parts/content-single.php:126
-#: template-parts/content-sticky.php:71 template-parts/content.php:71
-#, php-format
-msgid "Tags: %1$s"
-msgstr "Etiquetas: %1$s"
-
-#: template-parts/content-single.php:87 template-parts/content-single.php:136
-#: template-parts/content-sticky.php:81 template-parts/content.php:81
-#, php-format
-msgid "Leave a comment<span class=\"screen-reader-text\"> on %s</span>"
-msgstr "Deja un comentario<span class=\"screen-reader-text\"> en %s</span>"
-
-#: template-parts/content-single.php:161 template-parts/content-sticky.php:105
-#: template-parts/content.php:105
-#, php-format
-msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
-msgstr "Seguir leyendo<span class=\"screen-reader-text\"> «%s»</span>"
-
-#: woocommerce/checkout/form-checkout.php:26
-msgid "You must be logged in to proceed with the checkout."
-msgstr "Debes acceder para poder finalizar la compra."
-
-#: woocommerce/checkout/form-checkout.php:60
-msgid "Your order"
-msgstr "Tu pedido"
-
-#: woocommerce/myaccount/proteo-account-info.php:22
-msgid "Personal info"
-msgstr "Información personal"
-
-#: woocommerce/myaccount/proteo-account-info.php:24
-#: woocommerce/myaccount/proteo-account-info.php:50
-#: woocommerce/myaccount/proteo-account-info.php:88
-msgid "First name:"
-msgstr "Nombre:"
-
-#: woocommerce/myaccount/proteo-account-info.php:28
-#: woocommerce/myaccount/proteo-account-info.php:54
-#: woocommerce/myaccount/proteo-account-info.php:92
-msgid "Last name:"
-msgstr "Apellidos:"
-
-#: woocommerce/myaccount/proteo-account-info.php:32
-msgid "E-mail:"
-msgstr "Correo electrónico:"
-
-#: woocommerce/myaccount/proteo-account-info.php:36
-msgid "Password:"
-msgstr "Contraseña:"
-
-#: woocommerce/myaccount/proteo-account-info.php:41
-#: woocommerce/myaccount/proteo-account-info.php:78
-#: woocommerce/myaccount/proteo-account-info.php:116
-msgid "Edit info"
-msgstr "Editar la información"
-
-#: woocommerce/myaccount/proteo-account-info.php:48
-msgid "Billing info & address"
-msgstr "Información y dirección de facturación"
-
-#: woocommerce/myaccount/proteo-account-info.php:59
-#: woocommerce/myaccount/proteo-account-info.php:97
-msgid "Company name:"
-msgstr "Nombre de la empresa:"
-
-#: woocommerce/myaccount/proteo-account-info.php:63
-#: woocommerce/myaccount/proteo-account-info.php:101
-msgid "VAT:"
-msgstr "IVA:"
-
-#: woocommerce/myaccount/proteo-account-info.php:68
-#: woocommerce/myaccount/proteo-account-info.php:106
-msgid "CIF/SSN:"
-msgstr "CIF/SSN:"
-
-#: woocommerce/myaccount/proteo-account-info.php:73
-#: woocommerce/myaccount/proteo-account-info.php:111
-msgid "Address:"
-msgstr "Dirección:"
-
-#: woocommerce/myaccount/proteo-account-info.php:86
-msgid "Shipping info & address"
-msgstr "Información y dirección de envío"
-
-#: woocommerce/single-product/meta.php:29
-msgid "SKU:"
-msgstr "SKU:"
-
-#: woocommerce/single-product/meta.php:29
-msgid "N/A"
-msgstr "N/D"
-
-#: woocommerce/single-product/meta.php:35
-msgid "Category:"
-msgid_plural "Categories:"
-msgstr[0] "Categoría:"
-msgstr[1] "Categorías:"
+#: inc/customizer/panels/woocommerce/store-notice.php:44
+msgctxt "Customizer option name"
+msgid "Background color"
+msgstr "Color de fondo"
+
+#: inc/customizer/customizer.php:47
+msgctxt "Customizer section title"
+msgid "Header background"
+msgstr "Fondo de encabezado"
+
+#: inc/customizer/customizer.php:39
+msgctxt "Customizer panel name"
+msgid "Header and Topbar"
+msgstr "Encabezado y Barra superior"
+
+#: inc/customizer/custom-controls/class-google-font-select-custom-control.php:132
+msgctxt "Customizer option label"
+msgid "Font weight & style"
+msgstr "Peso y estilo de fuente"
+
+#: inc/customizer/custom-controls/class-customizer-control-yes-no.php:33
+#: inc/customizer/customizer.php:245
+msgctxt "Customizer option value"
+msgid "No"
+msgstr "No"
+
+#: inc/customizer/custom-controls/class-customizer-control-yes-no.php:30
+#: inc/customizer/customizer.php:244
+msgctxt "Customizer option value"
+msgid "Yes"
+msgstr "Sí"
+
+#: inc/customizer/custom-controls/class-customizer-control-on-off.php:33
+msgctxt "Customizer option value"
+msgid "Off"
+msgstr "Apagado"
+
+#: inc/customizer/custom-controls/class-customizer-control-on-off.php:30
+msgctxt "Customizer option value"
+msgid "On"
+msgstr "Encendido"
+
+#: inc/customizer/custom-controls/class-customizer-button-preview.php:32
+msgctxt "Customizer button label"
+msgid "Preview"
+msgstr "Vista previa"
+
+#: inc/colors-palette.php:54
+msgctxt "Block editor color name"
+msgid "Custom color #8"
+msgstr "Color personalizado #8"
+
+#: inc/colors-palette.php:49
+msgctxt "Block editor color name"
+msgid "Custom color #7"
+msgstr "Color personalizado #7"
+
+#: inc/colors-palette.php:44
+msgctxt "Block editor color name"
+msgid "Custom color #6"
+msgstr "Color personalizado #6"
+
+#: inc/colors-palette.php:39
+msgctxt "Block editor color name"
+msgid "Custom color #5"
+msgstr "Color personalizado #5"
+
+#: inc/colors-palette.php:34
+msgctxt "Block editor color name"
+msgid "Custom color #4"
+msgstr "Color personalizado #4"
+
+#: inc/colors-palette.php:29
+msgctxt "Block editor color name"
+msgid "Custom color #3"
+msgstr "Color personalizado #3"
+
+#: inc/colors-palette.php:24
+msgctxt "Block editor color name"
+msgid "Custom color #2"
+msgstr "Color personalizado #2"
+
+#: inc/colors-palette.php:19
+msgctxt "Block editor color name"
+msgid "Custom color #1"
+msgstr "Color personalizado #1"
+
+#: inc/class-yith-proteo-walker-comment.php:95
+msgctxt "Edit comment link"
+msgid "(Edit)"
+msgstr "(Editar)"
+
+#: header.php:136
+msgctxt "Screen reader text"
+msgid "Toggle navigation"
+msgstr "Alternar navegación"
+
+#: header.php:23
+msgctxt "Screen reader text"
+msgid "Skip to content"
+msgstr "Saltar contenido"
 
 #: woocommerce/single-product/meta.php:41
 msgid "Tag:"
@@ -1896,408 +2223,256 @@ msgid_plural "Tags:"
 msgstr[0] "Etiqueta:"
 msgstr[1] "Etiquetas:"
 
-#~ msgid ""
-#~ "After you import this demo, check WooCommerce settings to get the best "
-#~ "from your store."
-#~ msgstr ""
-#~ "Después de importar esta demostración, revisa los ajustes de WooCommerce "
-#~ "para sacar el mayor partido posible de tu tienda."
-
-#~ msgid ""
-#~ "Proteo is a modern, fast and fully customizable WooCommerce theme. "
-#~ "Designed and developed by YITH - a team of top developers of premium "
-#~ "themes -  with a beautiful UI, a minimal design and an optimized code, is "
-#~ "perfect for each kind of site or shop. With the Proteo Wizard you can "
-#~ "import our demo content with just a few clicks - in less than 2 minutes! "
-#~ "-  and easily customize it using the advanced front-end customizer. "
-#~ "Proteo is the best solution if you want a complete WooCommerce theme that "
-#~ "works perfectly also in mobile devices and start quickly to sell your "
-#~ "products with WooCommerce without technical knowledge. Works perfectly "
-#~ "with page builders like Elementor, Gutenberg & Visual composer. Key "
-#~ "features: # WooCommerce Ready # Responsive with a perfect mobile design # "
-#~ "Compatible with Elementor, Gutenberg, Visual Composer and others page "
-#~ "builders # Translation Ready # Frontend customizer with hundred of "
-#~ "options to customize header, footer, pages, typography, style, ecc.  # "
-#~ "Google fonts support # Regularly updated and improved with new demos and "
-#~ "advanced features # Support to all YITH plugins. Check all our Proteo "
-#~ "demos: https://proteo.yithemes.com/"
-#~ msgstr ""
-#~ "Proteo es un tema para WooCommerce moderno, rápido y totalmente "
-#~ "personalizable. Diseñado y desarrollado por YITH —un equipo de los "
-#~ "principales desarrolladores de temas premium— con una bonita interfaz de "
-#~ "usuario, un diseño minimalista y un código optimizado, es perfecto para "
-#~ "todo tipo de sitio o tienda. Con el asistente de Proteo, puedes importar "
-#~ "nuestro contenido de demostración con solo unos pocos clics —¡en menos de "
-#~ "2 minutos!— y personalizarlo fácilmente usando el avanzado personalizador "
-#~ "de la portada. Proteo es la mejor solución si quieres un completo tema "
-#~ "para WooCommerce que también funcione perfectamente en dispositivos "
-#~ "móviles y empezar a vender rápidamente tus productos con WooCommerce sin "
-#~ "tener conocimientos técnicos. Funciona perfectamente con maquetadores de "
-#~ "páginas, como Elementor, Gutenberg y Visual Composer. Características "
-#~ "clave: # Listo para WooCommerce, # Adaptable con un diseño móvil "
-#~ "perfecto, # Compatible con Elementor, Gutenberg, Visual Composer y otros "
-#~ "maquetadores de páginas, # Listo para traducir, # Personalizador de "
-#~ "portada con cientos de opciones para personalizar la cabecera, el pie de "
-#~ "página, páginas, tipografías, estilos, etc., # Compatible con las fuentes "
-#~ "de Google, # Actualizado con regularidad y mejorado con nuevas "
-#~ "demostraciones y características avanzadas, # Compatible con todos los "
-#~ "plugins de YITH. Echa un vistazo a nuestras demostraciones de Proteo: "
-#~ "https://proteo.yithemes.com/"
-
-#~ msgid "YITH Proteo"
-#~ msgstr "YITH Proteo"
-
-#~ msgid "Installing Plugin %1$s (%2$d/%3$d)"
-#~ msgstr "Instalando el plugin %1$s (%2$d/%3$d)"
-
-#~ msgid "All installations have been completed."
-#~ msgstr "Todas las instalaciones han sido completadas."
-
-#~ msgid "%1$s installed successfully."
-#~ msgstr "%1$s instalado correctamente."
-
-#~ msgid ""
-#~ "The installation process is starting. This process may take a while on "
-#~ "some hosts, so please be patient."
-#~ msgstr ""
-#~ "El proceso de instalación está comenzando. Este proceso puede tardar un "
-#~ "poco en algunos alojamientos, así que, por favor, sé paciente."
-
-#~ msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
-#~ msgstr "Instalando y activando el plugin %1$s (%2$d/%3$d)"
-
-#~ msgid "All installations and activations have been completed."
-#~ msgstr "Todas las instalaciones y activaciones han sido completadas."
-
-#~ msgid "Hide Details"
-#~ msgstr "Ocultar los detalles"
-
-#~ msgid "Show Details"
-#~ msgstr "Mostrar los detalles"
-
-#~ msgid "%1$s installed and activated successfully."
-#~ msgstr "%1$s instalado y activado correctamente."
-
-#~ msgid ""
-#~ "The installation and activation process is starting. This process may "
-#~ "take a while on some hosts, so please be patient."
-#~ msgstr ""
-#~ "El proceso de instalación y activación está comenzando. Este proceso "
-#~ "puede tardar un poco en algunos alojamientos, así que, por favor, sé "
-#~ "paciente."
-
-#~ msgid "The installation of %1$s failed."
-#~ msgstr "Ha fallado la instalación de %1$s."
-
-#~ msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
-#~ msgstr "Ha ocurrido un error al instalar %1$s: <strong>%2$s</strong>."
-
-#~ msgid "Updating Plugin %1$s (%2$d/%3$d)"
-#~ msgstr "Actualizando el plugin %1$s (%2$d/%3$d)"
-
-#~ msgid "Plugin activation failed."
-#~ msgstr "Ha fallado la activación del plugin."
-
-#~ msgid "No plugins are available to be activated at this time."
-#~ msgstr "En este momento no hay plugins disponibles para activar."
-
-#~ msgid "No plugins were selected to be activated. No action taken."
-#~ msgstr ""
-#~ "No se han seleccionado plugins para activar. No se ha realizado ninguna "
-#~ "acción."
-
-#~ msgid "No plugins are available to be updated at this time."
-#~ msgstr "En este momento no hay plugins disponibles para actualizar."
-
-#~ msgid "No plugins are available to be installed at this time."
-#~ msgstr "En este momento no hay plugins disponibles para instalar."
-
-#~ msgid "No plugins were selected to be updated. No action taken."
-#~ msgstr ""
-#~ "No se han seleccionado plugins para actualizar. No se ha realizado "
-#~ "ninguna acción."
-
-#~ msgid "No plugins were selected to be installed. No action taken."
-#~ msgstr ""
-#~ "No se han seleccionado plugins para instalar. No se ha realizado ninguna "
-#~ "acción."
-
-#~ msgid "Update"
-#~ msgstr "Actualizar "
-
-#~ msgid "Install"
-#~ msgstr "Instalar"
-
-#~ msgid "Upgrade message from the plugin author:"
-#~ msgstr "Mensaje de actualización del autor del plugin:"
-
-#~ msgid "Activate %2$s"
-#~ msgstr "Activar %2$s"
-
-#~ msgid "Update %2$s"
-#~ msgstr "Actualizar %2$s"
-
-#~ msgid "Install %2$s"
-#~ msgstr "Instalar %2$s"
-
-#~ msgid "Status"
-#~ msgstr "Estado"
-
-#~ msgid "Version"
-#~ msgstr "Versión"
-
-#~ msgid "Type"
-#~ msgstr "Tipo"
-
-#~ msgid "Source"
-#~ msgstr "Origen"
-
-#~ msgid "Plugin"
-#~ msgstr "Plugin"
-
-#~ msgid "No plugins to install, update or activate."
-#~ msgstr "No hay plugins para instalar, actualizar o activar."
-
-#~ msgid "Available version:"
-#~ msgstr "Versión disponible:"
-
-#~ msgid "Minimum required version:"
-#~ msgstr "Versión mínima necesaria:"
-
-#~ msgid "Installed version:"
-#~ msgstr "Versión instalada:"
-
-#~ msgctxt "as in: \"version nr unknown\""
-#~ msgid "unknown"
-#~ msgstr "desconocida"
-
-#~ msgid "To Activate <span class=\"count\">(%s)</span>"
-#~ msgid_plural "To Activate <span class=\"count\">(%s)</span>"
-#~ msgstr[0] "Para activar <span class=\"count\">(%s)</span>"
-#~ msgstr[1] "Para activar <span class=\"count\">(%s)</span>"
-
-#~ msgid "Update Available <span class=\"count\">(%s)</span>"
-#~ msgid_plural "Update Available <span class=\"count\">(%s)</span>"
-#~ msgstr[0] "Actualización disponible <span class=\"count\">(%s)</span>"
-#~ msgstr[1] "Actualizaciones disponibles <span class=\"count\">(%s)</span>"
-
-#~ msgid "To Install <span class=\"count\">(%s)</span>"
-#~ msgid_plural "To Install <span class=\"count\">(%s)</span>"
-#~ msgstr[0] "Para instalar <span class=\"count\">(%s)</span>"
-#~ msgstr[1] "Para instalar <span class=\"count\">(%s)</span>"
-
-#~ msgctxt "plugins"
-#~ msgid "All <span class=\"count\">(%s)</span>"
-#~ msgid_plural "All <span class=\"count\">(%s)</span>"
-#~ msgstr[0] "Todo <span class=\"count\">(%s)</span>"
-#~ msgstr[1] "Todos <span class=\"count\">(%s)</span>"
-
-#~ msgctxt "Install/Update Status"
-#~ msgid "%1$s, %2$s"
-#~ msgstr "%1$s, %2$s"
-
-#~ msgid "Update recommended"
-#~ msgstr "Actualización recomendada"
-
-#~ msgid "Requires Update"
-#~ msgstr "Necesita actualización"
-
-#~ msgid "Required Update not Available"
-#~ msgstr "No está disponible la actualización necesaria"
-
-#~ msgid "Active"
-#~ msgstr "Activo"
-
-#~ msgid "Not Installed"
-#~ msgstr "No instalado"
-
-#~ msgid "Pre-Packaged"
-#~ msgstr "Preempaquetado"
-
-#~ msgid "External Source"
-#~ msgstr "Origen externo"
-
-#~ msgid "WordPress Repository"
-#~ msgstr "Repositorio de WordPress"
-
-#~ msgid "Recommended"
-#~ msgstr "Recomendado"
-
-#~ msgid "Required"
-#~ msgstr "Obligatorio"
-
-#~ msgid "TGMPA v%s"
-#~ msgstr "TGMPA v%s"
-
-#~ msgctxt "plugin A *and* plugin B"
-#~ msgid "and"
-#~ msgstr "y"
-
-#~ msgid ""
-#~ "The remote plugin package consists of more than one file, but the files "
-#~ "are not packaged in a folder."
-#~ msgstr ""
-#~ "El paquete remoto del plugin está compuesto por más de un archivo, pero "
-#~ "los archivos no están empaquetados dentro de una carpeta."
-
-#~ msgid ""
-#~ "Please contact the plugin provider and ask them to package their plugin "
-#~ "according to the WordPress guidelines."
-#~ msgstr ""
-#~ "Por favor, contacta con el proveedor del plugin y pídele que empaquete su "
-#~ "plugin de acuerdo con las directrices de WordPress."
-
-#~ msgid ""
-#~ "The remote plugin package does not contain a folder with the desired slug "
-#~ "and renaming did not work."
-#~ msgstr ""
-#~ "El paquete remoto del plugin no contiene una carpeta con el slug deseado "
-#~ "y no ha funcionado el renombrado."
-
-#~ msgid "Update Required"
-#~ msgstr "Actualización obligatoria"
-
-#~ msgid "This plugin needs to be updated to be compatible with your theme."
-#~ msgstr "Este plugin debe actualizarse para que sea compatible con tu tema."
-
-#~ msgid "Please contact the administrator of this site for help."
-#~ msgstr ""
-#~ "Por favor, contacta con el administrador de este sitio para obtener ayuda."
-
-#~ msgid ""
-#~ "There are one or more required or recommended plugins to install, update "
-#~ "or activate."
-#~ msgstr ""
-#~ "Hay uno o más plugins obligatorios o recomendados para instalar, "
-#~ "actualizar o activar."
-
-#~ msgid "Dismiss this notice"
-#~ msgstr "Descartar este aviso"
-
-#~ msgid "All plugins installed and activated successfully. %1$s"
-#~ msgstr ""
-#~ "Todos los plugins han sido instalados y activados correctamente. %1$s"
-
-#~ msgid ""
-#~ "Plugin not activated. A higher version of %s is needed for this theme. "
-#~ "Please update the plugin."
-#~ msgstr ""
-#~ "El plugin no se ha activado. Este tema necesita una versión superior de "
-#~ "%s. Por favor, actualiza el plugin."
-
-#~ msgid "No action taken. Plugin %1$s was already active."
-#~ msgstr "No se ha realizado ninguna acción. El plugin %1$s ya está activo."
-
-#~ msgid "The following plugin was activated successfully:"
-#~ msgid_plural "The following plugins were activated successfully:"
-#~ msgstr[0] "El siguiente plugin se ha activado correctamente:"
-#~ msgstr[1] "Los siguientes plugins se han activado correctamente:"
-
-#~ msgid "Return to the Dashboard"
-#~ msgstr "Volver al escritorio"
-
-#~ msgid "Return to Required Plugins Installer"
-#~ msgstr "Volver al instalador de plugins necesarios"
-
-#~ msgid "Begin updating plugin"
-#~ msgid_plural "Begin updating plugins"
-#~ msgstr[0] "Empezar a actualizar el plugin"
-#~ msgstr[1] "Empezar a actualizar los plugins"
-
-#~ msgid "Begin installing plugin"
-#~ msgid_plural "Begin installing plugins"
-#~ msgstr[0] "Empezar a instalar el plugin"
-#~ msgstr[1] "Empezar a instalar los plugins"
-
-#~ msgid "The following recommended plugin is currently inactive: %1$s."
-#~ msgid_plural ""
-#~ "The following recommended plugins are currently inactive: %1$s."
-#~ msgstr[0] "El siguiente plugin recomendado está actualmente inactivo: %1$s."
-#~ msgstr[1] ""
-#~ "Los siguientes plugins recomendados están actualmente inactivos: %1$s."
-
-#~ msgid "The following required plugin is currently inactive: %1$s."
-#~ msgid_plural "The following required plugins are currently inactive: %1$s."
-#~ msgstr[0] "El siguiente plugin obligatorio está actualmente inactivo: %1$s."
-#~ msgstr[1] ""
-#~ "Los siguientes plugins obligatorios están actualmente inactivos: %1$s."
-
-#~ msgid "There is an update available for: %1$s."
-#~ msgid_plural "There are updates available for the following plugins: %1$s."
-#~ msgstr[0] "Hay una actualización disponible para: %1$s."
-#~ msgstr[1] ""
-#~ "Hay actualizaciones disponibles para los siguientes plugins: %1$s."
-
-#~ msgid ""
-#~ "The following plugin needs to be updated to its latest version to ensure "
-#~ "maximum compatibility with this theme: %1$s."
-#~ msgid_plural ""
-#~ "The following plugins need to be updated to their latest version to "
-#~ "ensure maximum compatibility with this theme: %1$s."
-#~ msgstr[0] ""
-#~ "El siguiente plugin debe actualizarse a la versión más reciente para "
-#~ "asegurar la máxima compatibilidad con este tema: %1$s."
-#~ msgstr[1] ""
-#~ "Los siguientes plugins deben actualizarse a la versión más reciente para "
-#~ "asegurar la máxima compatibilidad con este tema: %1$s."
-
-#~ msgid "This theme recommends the following plugin: %1$s."
-#~ msgid_plural "This theme recommends the following plugins: %1$s."
-#~ msgstr[0] "Este tema recomienda el siguiente plugin: %1$s."
-#~ msgstr[1] "Este tema recomienda los siguientes plugins: %1$s."
-
-#~ msgid "This theme requires the following plugin: %1$s."
-#~ msgid_plural "This theme requires the following plugins: %1$s."
-#~ msgstr[0] "Este tema necesita el siguiente plugin: %1$s."
-#~ msgstr[1] "Este tema necesita los siguientes plugins: %1$s."
-
-#~ msgid "Something went wrong with the plugin API."
-#~ msgstr "Algo ha ido mal con la API del plugin."
-
-#~ msgid "Updating Plugin: %s"
-#~ msgstr "Actualizando el plugin: %s"
-
-#~ msgid "Installing Plugin: %s"
-#~ msgstr "Instalando el plugin: %s"
-
-#~ msgid "Install Plugins"
-#~ msgstr "Instalar los plugins"
-
-#~ msgid "Install Required Plugins"
-#~ msgstr "Instalar plugins obligatorios"
-
-#~ msgid "bottom"
-#~ msgstr "inferior"
-
-#~ msgid "Button Style 2 text :hover color"
-#~ msgstr "Color al pasar el cursor del texto del botón estilo 2"
-
-#~ msgid "Button Style 2 text color"
-#~ msgstr "Color de texto del botón estilo 2"
-
-#~ msgid "Button Style 1 text :hover color"
-#~ msgstr "Color al pasar el cursor del texto del botón estilo 1"
-
-#~ msgid "Button Style 1 border :hover color"
-#~ msgstr "Color al pasar el cursor del borde del botón estilo 1"
-
-#~ msgid "Button Style 1 background :hover color"
-#~ msgstr "Color al pasar el cursor del fondo del botón estilo 1"
-
-#~ msgid "Button Style 1 text color"
-#~ msgstr "Color de texto del botón estilo 1"
-
-#~ msgid "Button Style 1 border color"
-#~ msgstr "Color del borde del botón estilo 1"
-
-#~ msgid "Button Style 1 background color"
-#~ msgstr "Color de fondo del botón estilo 1"
-
-#~ msgid "https://yithemes.com"
-#~ msgstr "https://yithemes.com"
-
-#~ msgid "YITH"
-#~ msgstr "YITH"
-
-#~ msgid "https://proteo.yithemes.com/"
-#~ msgstr "https://proteo.yithemes.com/"
+#: woocommerce/single-product/meta.php:35
+msgid "Category:"
+msgid_plural "Categories:"
+msgstr[0] "Categoría:"
+msgstr[1] "Categorías:"
+
+#: woocommerce/single-product/meta.php:29
+msgid "N/A"
+msgstr "N/D"
+
+#: woocommerce/single-product/meta.php:29
+msgid "SKU:"
+msgstr "SKU:"
+
+#: woocommerce/myaccount/proteo-account-info.php:86
+msgid "Shipping info & address"
+msgstr "Información y dirección de envío"
+
+#: woocommerce/myaccount/proteo-account-info.php:73
+#: woocommerce/myaccount/proteo-account-info.php:111
+msgid "Address:"
+msgstr "Dirección:"
+
+#: woocommerce/myaccount/proteo-account-info.php:68
+#: woocommerce/myaccount/proteo-account-info.php:106
+msgid "CIF/SSN:"
+msgstr "CIF/SSN:"
+
+#: woocommerce/myaccount/proteo-account-info.php:63
+#: woocommerce/myaccount/proteo-account-info.php:101
+msgid "VAT:"
+msgstr "IVA:"
+
+#: woocommerce/myaccount/proteo-account-info.php:59
+#: woocommerce/myaccount/proteo-account-info.php:97
+msgid "Company name:"
+msgstr "Nombre de la empresa:"
+
+#: woocommerce/myaccount/proteo-account-info.php:48
+msgid "Billing info & address"
+msgstr "Información y dirección de facturación"
+
+#: woocommerce/myaccount/proteo-account-info.php:41
+#: woocommerce/myaccount/proteo-account-info.php:78
+#: woocommerce/myaccount/proteo-account-info.php:116
+msgid "Edit info"
+msgstr "Editar la información"
+
+#: woocommerce/myaccount/proteo-account-info.php:36
+msgid "Password:"
+msgstr "Contraseña:"
+
+#: woocommerce/myaccount/proteo-account-info.php:32
+msgid "E-mail:"
+msgstr "Correo electrónico:"
+
+#: woocommerce/myaccount/proteo-account-info.php:28
+#: woocommerce/myaccount/proteo-account-info.php:54
+#: woocommerce/myaccount/proteo-account-info.php:92
+msgid "Last name:"
+msgstr "Apellidos:"
+
+#: woocommerce/myaccount/proteo-account-info.php:24
+#: woocommerce/myaccount/proteo-account-info.php:50
+#: woocommerce/myaccount/proteo-account-info.php:88
+msgid "First name:"
+msgstr "Nombre:"
+
+#: woocommerce/myaccount/proteo-account-info.php:22
+msgid "Personal info"
+msgstr "Información personal"
+
+#: woocommerce/checkout/form-checkout.php:60
+msgid "Your order"
+msgstr "Tu pedido"
+
+#: woocommerce/checkout/form-checkout.php:26
+msgid "You must be logged in to proceed with the checkout."
+msgstr "Debes acceder para poder finalizar la compra."
+
+#: template-parts/content-sticky.php:81 template-parts/content.php:81
+#: template-parts/title-post-single.php:79
+#: template-parts/title-post-single.php:128
+msgid "Leave a comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr "Deja un comentario<span class=\"screen-reader-text\"> en %s</span>"
+
+#: template-parts/content-sticky.php:71 template-parts/content.php:71
+#: template-parts/title-post-single.php:69
+#: template-parts/title-post-single.php:118
+msgid "Tags: %1$s"
+msgstr "Etiquetas: %1$s"
+
+#: template-parts/content-sticky.php:68 template-parts/content.php:68
+#: template-parts/title-post-single.php:66
+#: template-parts/title-post-single.php:115
+msgctxt "list item separator"
+msgid ", "
+msgstr ", "
+
+#: template-parts/content-sticky.php:64 template-parts/content.php:64
+#: template-parts/title-post-single.php:62
+#: template-parts/title-post-single.php:111
+msgid "Categories: %1$s"
+msgstr "Categorías: %1$s"
+
+#: template-parts/content-sticky.php:61 template-parts/content.php:61
+#: template-parts/title-post-single.php:59
+#: template-parts/title-post-single.php:108
+msgid ", "
+msgstr ", "
+
+#: template-parts/content-single.php:27 template-parts/content-sticky.php:105
+#: template-parts/content.php:105
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr "Seguir leyendo<span class=\"screen-reader-text\"> «%s»</span>"
+
+#: template-parts/content-page.php:28 template-parts/content-single.php:40
+#: template-parts/content-sticky.php:122 template-parts/content.php:122
+msgid "Pages:"
+msgstr "Páginas:"
+
+#: template-parts/content-none.php:44
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Parece que no hemos podido encontrar lo que estás buscando. Quizá pueda ayudarte una búsqueda."
+
+#: template-parts/content-none.php:37
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "Lo siento, pero no hay nada que coincida con tus términos de búsqueda. Por favor, inténtalo de nuevo con algunas palabras clave diferentes."
+
+#: template-parts/content-none.php:24
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "¿Listo para publicar tu primera entrada? <a href=\"%1$s\">Empieza aquí</a>."
+
+#: template-parts/content-none.php:14
+msgid "Nothing found"
+msgstr "No se ha encontrado nada"
+
+#: search.php:22
+msgid "Search results for: %s"
+msgstr "Resultados de la búsqueda de: %s"
+
+#: inc/woocommerce.php:403
+msgid "%d item in cart"
+msgid_plural "%d items in cart"
+msgstr[0] "%d artículo en el carrito"
+msgstr[1] "%d artículos en el carrito"
+
+#: inc/woocommerce.php:207
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] "%d artículo"
+msgstr[1] "%d artículos"
+
+#: inc/woocommerce.php:203
+msgid "View your shopping cart"
+msgstr "Ver tu carrito de la compra"
+
+#: inc/widgets/class-yith-proteo-recent-posts-widget.php:71
+msgctxt "comments count on widget"
+msgid "%1$s comment"
+msgid_plural "%1$s comments"
+msgstr[0] "%1$s comentario"
+msgstr[1] "%1$s comentarios"
+
+#: inc/widgets/class-yith-proteo-recent-comments-widget.php:78
+msgctxt "widgets"
+msgid "%1$s on %2$s"
+msgstr "%1$s en %2$s"
+
+#: inc/theme-dashboard/theme-dashboard.php:355
+msgctxt "Proteo dashboard"
+msgid "Once done, your site will have the exact same look and content as the demo preview."
+msgstr "Una vez hayas terminado, tu sitio tendrá el mismo aspecto y contenido que la vista previa de la demostración en vivo."
+
+#: inc/theme-dashboard/class-proteo-admin-dashboard.php:104
+msgid "WordPress Nonce not validated."
+msgstr "Nonce de WordPress no validado."
+
+#: inc/template-tags.php:62 template-parts/content-page.php:42
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr "Editar <span class=\"screen-reader-text\">%s</span>"
+
+#: inc/template-tags.php:44
+msgctxt "post author"
+msgid "By %s"
+msgstr "Por %s"
+
+#: inc/metaboxes.php:445
+msgctxt "Page edit metabox label"
+msgid "Set custom content spacing"
+msgstr "Establecer el espacio personalizado del contenido"
+
+#: inc/metaboxes.php:442
+msgctxt "Page edit metabox label"
+msgid "Spacing (px)"
+msgstr "Espaciado (px)"
+
+#: inc/metaboxes.php:295
+msgctxt "metabox description label"
+msgid "Sidebar:"
+msgstr "Barra lateral:"
+
+#: inc/metaboxes.php:270
+msgctxt "metabox description label"
+msgid "Position:"
+msgstr "Posición:"
+
+#: inc/class-yith-proteo-walker-comment.php:100
+msgid "Your comment is awaiting moderation."
+msgstr "Tu comentario está pendiente de moderación."
+
+#: inc/class-yith-proteo-walker-comment.php:88
+msgid "%1$s at %2$s"
+msgstr "%1$s a las %2$s"
+
+#: inc/class-yith-proteo-walker-comment.php:75
+msgid "%s <span class=\"screen-reader-text says\">says:</span>"
+msgstr "%s <span class=\"screen-reader-text says\">dice:</span>"
+
+#: functions.php:52
+msgid "Mobile Menu"
+msgstr "Menú móvil"
+
+#: functions.php:51
+msgid "Primary"
+msgstr "Principal"
+
+#: footer.php:44
+msgid "<a href=\"https://proteo.yithemes.com/\" target=\"_blank\" rel=\"noopener\">Proteo</a> - A free theme designed with <span class=\"lnr lnr-heart\"></span> by <a href=\"https://yithemes.com\" rel=\"nofollow\">YITH</a>"
+msgstr "<a href=\"https://proteo.yithemes.com/\" target=\"_blank\" rel=\"noopener\">Proteo</a> - Un tema gratuito diseñado con <span class=\"lnr lnr-heart\"></span> por <a href=\"https://yithemes.com\" rel=\"nofollow\">YITH</a>"
+
+#: comments.php:71
+msgid "Comments are closed."
+msgstr "Los comentarios están cerrados."
+
+#: comments.php:42
+msgctxt "comments title"
+msgid "%1$s comment"
+msgid_plural "%1$s comments"
+msgstr[0] "%1$s comentario"
+msgstr[1] "%1$s comentarios"
+
+#: comments.php:35
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr "Un comentario en «%1$s»"
+
+#: 404.php:26
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr "Parece que no se ha encontrado nada en esta ubicación. ¿Quieres probar una búsqueda?"
+
+#: 404.php:21
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "¡Vaya! No se ha podido encontrar esa página."
