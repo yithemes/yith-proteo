@@ -88,7 +88,7 @@
 
 
 	if (yith_proteo.yith_proteo_use_enhanced_checkbox_and_radio === 'yes') {
-		$(document).on('change', 'input[type="radio"], input[type="checkbox"]', function () {
+		$(document).on('change', 'input[type="radio"]:not(.yith-proteo-standard-radio), input[type="checkbox"]:not(.yith-proteo-standard-checkbox)', function () {
 			var t = $(this),
 				tname = t.attr('name'),
 				tform = t.closest('form'),
