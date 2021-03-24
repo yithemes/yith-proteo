@@ -616,6 +616,159 @@ $wp_customize->add_control(
 	)
 );
 
+// Widgets title typography options.
+$wp_customize->add_setting(
+	'yith_proteo_widgets_title_typography_group_title',
+	array(
+		'default'           => '',
+		'transport'         => 'postMessage',
+		'sanitize_callback' => 'wp_kses_post',
+	)
+);
+$wp_customize->add_control(
+	new WP_Customize_Notice(
+		$wp_customize,
+		'yith_proteo_widgets_title_typography_group_title',
+		array(
+			'label'   => esc_html_x( 'Widgets title', 'Customizer options group title', 'yith-proteo' ),
+			'section' => 'yith_proteo_typography',
+		)
+	)
+);
+
+// Widget title font.
+$wp_customize->add_setting(
+	'yith_proteo_widget_title_font',
+	array(
+		'sanitize_callback' => 'yith_proteo_google_font_sanitization',
+		'default'           => '{"font":"Montserrat","regularweight":"700","category":"sans-serif"}',
+	)
+);
+$wp_customize->add_control(
+	new Google_Font_Select_Custom_Control(
+		$wp_customize,
+		'yith_proteo_widget_title_font',
+		array(
+			'label'       => esc_html_x( 'Font', 'Customizer option name', 'yith-proteo' ),
+			'section'     => 'yith_proteo_typography',
+			'input_attrs' => array(
+				'font_count' => 'all',
+				'orderby'    => 'alpha',
+			),
+		)
+	)
+);
+// Widget title font size options.
+$wp_customize->add_setting(
+	'yith_proteo_widget_title_font_size',
+	array(
+		'sanitize_callback' => 'absint',
+		'default'           => 1.5 * get_theme_mod( 'yith_proteo_base_font_size', 16 ),
+	)
+);
+$wp_customize->add_control(
+	'yith_proteo_widget_title_font_size',
+	array(
+		'label'   => esc_html_x( 'Font size', 'Customizer option name', 'yith-proteo' ),
+		'section' => 'yith_proteo_typography',
+		'type'    => 'number',
+	)
+);
+// Widget title font color options.
+$wp_customize->add_setting(
+	'yith_proteo_widget_title_font_color',
+	array(
+		'sanitize_callback' => 'yith_proteo_sanitize_alpha_colors',
+		'default'           => '#404040',
+	)
+);
+$wp_customize->add_control(
+	new Customizer_Alpha_Color_Control(
+		$wp_customize,
+		'yith_proteo_widget_title_font_color',
+		array(
+			'label'   => esc_html_x( 'Font color', 'Customizer option name', 'yith-proteo' ),
+			'section' => 'yith_proteo_typography',
+		)
+	)
+);
+
+// Widgets content typography options.
+$wp_customize->add_setting(
+	'yith_proteo_widgets_content_typography_group_title',
+	array(
+		'default'           => '',
+		'transport'         => 'postMessage',
+		'sanitize_callback' => 'wp_kses_post',
+	)
+);
+$wp_customize->add_control(
+	new WP_Customize_Notice(
+		$wp_customize,
+		'yith_proteo_widgets_content_typography_group_title',
+		array(
+			'label'   => esc_html_x( 'Widgets content', 'Customizer options group title', 'yith-proteo' ),
+			'section' => 'yith_proteo_typography',
+		)
+	)
+);
+
+// Widget content font.
+$wp_customize->add_setting(
+	'yith_proteo_widget_content_font',
+	array(
+		'sanitize_callback' => 'yith_proteo_google_font_sanitization',
+		'default'           => '{"font":"Montserrat","regularweight":"700","category":"sans-serif"}',
+	)
+);
+$wp_customize->add_control(
+	new Google_Font_Select_Custom_Control(
+		$wp_customize,
+		'yith_proteo_widget_content_font',
+		array(
+			'label'       => esc_html_x( 'Font', 'Customizer option name', 'yith-proteo' ),
+			'section'     => 'yith_proteo_typography',
+			'input_attrs' => array(
+				'font_count' => 'all',
+				'orderby'    => 'alpha',
+			),
+		)
+	)
+);
+// Widget content font size options.
+$wp_customize->add_setting(
+	'yith_proteo_widget_content_font_size',
+	array(
+		'sanitize_callback' => 'absint',
+		'default'           => 1.125 * get_theme_mod( 'yith_proteo_base_font_size', 16 ),
+	)
+);
+$wp_customize->add_control(
+	'yith_proteo_widget_content_font_size',
+	array(
+		'label'   => esc_html_x( 'Font size', 'Customizer option name', 'yith-proteo' ),
+		'section' => 'yith_proteo_typography',
+		'type'    => 'number',
+	)
+);
+// Widget content font color options.
+$wp_customize->add_setting(
+	'yith_proteo_widget_content_font_color',
+	array(
+		'sanitize_callback' => 'yith_proteo_sanitize_alpha_colors',
+		'default'           => '#404040',
+	)
+);
+$wp_customize->add_control(
+	new Customizer_Alpha_Color_Control(
+		$wp_customize,
+		'yith_proteo_widget_content_font_color',
+		array(
+			'label'   => esc_html_x( 'Font color', 'Customizer option name', 'yith-proteo' ),
+			'section' => 'yith_proteo_typography',
+		)
+	)
+);
 // Additionals typography options.
 $wp_customize->add_setting(
 	'yith_proteo_additional_typography_group_title',

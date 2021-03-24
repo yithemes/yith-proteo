@@ -788,6 +788,46 @@
 			wp.customize.control('yith_proteo_h6_font_color' ).toggle( false );
 		}
 
+		/* widgets title typography options grouping */
+		yith_proteo_toggle_widgets_title_typography_controls_list();
+
+		$( '#customize-control-yith_proteo_widgets_title_typography_group_title' ).addClass('section-closed').on( 'click', yith_proteo_toggle_widgets_title_typography_controls );
+
+		function yith_proteo_toggle_widgets_title_typography_controls() {
+			var section_title = $( '#customize-control-yith_proteo_widgets_title_typography_group_title' ),
+			collapsed = section_title.hasClass( 'section-closed' );
+			section_title.toggleClass('section-closed');
+			wp.customize.control('yith_proteo_widget_title_font' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_widget_title_font_size' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_widget_title_font_color' ).toggle( collapsed );
+		}
+
+		function yith_proteo_toggle_widgets_title_typography_controls_list() {
+			wp.customize.control('yith_proteo_widget_title_font' ).toggle( false );
+			wp.customize.control('yith_proteo_widget_title_font_size' ).toggle( false );
+			wp.customize.control('yith_proteo_widget_title_font_color' ).toggle( false );
+		}
+
+		/* widgets content typography options grouping */
+		yith_proteo_toggle_widgets_content_typography_controls_list();
+
+		$( '#customize-control-yith_proteo_widgets_content_typography_group_title' ).addClass('section-closed').on( 'click', yith_proteo_toggle_widgets_content_typography_controls );
+
+		function yith_proteo_toggle_widgets_content_typography_controls() {
+			var section_title = $( '#customize-control-yith_proteo_widgets_content_typography_group_title' ),
+			collapsed = section_title.hasClass( 'section-closed' );
+			section_title.toggleClass('section-closed');
+			wp.customize.control('yith_proteo_widget_content_font' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_widget_content_font_size' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_widget_content_font_color' ).toggle( collapsed );
+		}
+
+		function yith_proteo_toggle_widgets_content_typography_controls_list() {
+			wp.customize.control('yith_proteo_widget_content_font' ).toggle( false );
+			wp.customize.control('yith_proteo_widget_content_font_size' ).toggle( false );
+			wp.customize.control('yith_proteo_widget_content_font_color' ).toggle( false );
+		}
+
 		/* additional typography options grouping */
 		yith_proteo_toggle_additional_typography_controls_list();
 
