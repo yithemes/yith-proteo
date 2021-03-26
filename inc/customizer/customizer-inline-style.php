@@ -75,20 +75,24 @@ function yith_proteo_inline_style() {
 	$tagline_font_size          = get_theme_mod( 'yith_proteo_tagline_font_size', 14 );
 	$tagline_color              = get_theme_mod( 'yith_proteo_tagline_color', '#404040' );
 
-	$base_font_size  = get_theme_mod( 'yith_proteo_base_font_size', 16 );
-	$base_font_color = get_theme_mod( 'yith_proteo_base_font_color', '#404040' );
-	$h1_font_size    = get_theme_mod( 'yith_proteo_h1_font_size', 70 );
-	$h1_font_color   = get_theme_mod( 'yith_proteo_h1_font_color', '#404040' );
-	$h2_font_size    = get_theme_mod( 'yith_proteo_h2_font_size', 40 );
-	$h2_font_color   = get_theme_mod( 'yith_proteo_h2_font_color', '#404040' );
-	$h3_font_size    = get_theme_mod( 'yith_proteo_h3_font_size', 19 );
-	$h3_font_color   = get_theme_mod( 'yith_proteo_h3_font_color', '#404040' );
-	$h4_font_size    = get_theme_mod( 'yith_proteo_h4_font_size', 16 );
-	$h4_font_color   = get_theme_mod( 'yith_proteo_h4_font_color', '#404040' );
-	$h5_font_size    = get_theme_mod( 'yith_proteo_h5_font_size', 13 );
-	$h5_font_color   = get_theme_mod( 'yith_proteo_h5_font_color', '#404040' );
-	$h6_font_size    = get_theme_mod( 'yith_proteo_h6_font_size', 11 );
-	$h6_font_color   = get_theme_mod( 'yith_proteo_h6_font_color', '#404040' );
+	$base_font_size             = get_theme_mod( 'yith_proteo_base_font_size', 16 );
+	$base_font_color            = get_theme_mod( 'yith_proteo_base_font_color', '#404040' );
+	$h1_font_size               = get_theme_mod( 'yith_proteo_h1_font_size', 70 );
+	$h1_font_color              = get_theme_mod( 'yith_proteo_h1_font_color', '#404040' );
+	$h2_font_size               = get_theme_mod( 'yith_proteo_h2_font_size', 40 );
+	$h2_font_color              = get_theme_mod( 'yith_proteo_h2_font_color', '#404040' );
+	$h3_font_size               = get_theme_mod( 'yith_proteo_h3_font_size', 19 );
+	$h3_font_color              = get_theme_mod( 'yith_proteo_h3_font_color', '#404040' );
+	$h4_font_size               = get_theme_mod( 'yith_proteo_h4_font_size', 16 );
+	$h4_font_color              = get_theme_mod( 'yith_proteo_h4_font_color', '#404040' );
+	$h5_font_size               = get_theme_mod( 'yith_proteo_h5_font_size', 13 );
+	$h5_font_color              = get_theme_mod( 'yith_proteo_h5_font_color', '#404040' );
+	$h6_font_size               = get_theme_mod( 'yith_proteo_h6_font_size', 11 );
+	$h6_font_color              = get_theme_mod( 'yith_proteo_h6_font_color', '#404040' );
+	$widgets_title_font_size    = get_theme_mod( 'yith_proteo_widget_title_font_size', 1.5 * $base_font_size );
+	$widgets_title_font_color   = get_theme_mod( 'yith_proteo_widget_title_font_color', $h2_font_color );
+	$widgets_content_font_size  = get_theme_mod( 'yith_proteo_widget_content_font_size', 1.125 * $base_font_size );
+	$widgets_content_font_color = get_theme_mod( 'yith_proteo_widget_content_font_color', $base_font_color );
 
 	/**
 	 * Page title
@@ -359,6 +363,10 @@ function yith_proteo_inline_style() {
 		--proteo-h5_font_color: {$h5_font_color};
 		--proteo-h6_font_size: {$h6_font_size }px;
 		--proteo-h6_font_color: {$h6_font_color};
+		--proteo-widgets_title_font_size: {$widgets_title_font_size }px;
+		--proteo-widgets_title_font_color: {$widgets_title_font_color};
+		--proteo-widgets_content_font_size: {$widgets_content_font_size }px;
+		--proteo-widgets_content_font_color: {$widgets_content_font_color};
 		--proteo-mobile_site_title_font_size:{$mobile_site_title_font_size }px;
 		--proteo-mobile_tagline_font_size:{$mobile_tagline_font_size}px;
 		--proteo-mobile_base_font_size:{$mobile_base_font_size}px;
