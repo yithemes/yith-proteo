@@ -174,7 +174,7 @@ class Google_Font_Select_Custom_Control extends WP_Customize_Control {
 			$font_file = get_template_directory_uri() . '/inc/customizer/custom-controls/font-selector-assets/google-fonts-popularity.json';
 		}
 
-		$request = wp_remote_get( $font_file );
+		$request = wp_remote_get( $font_file, array( 'sslverify' => false ) );
 		if ( is_wp_error( $request ) ) {
 			return '';
 		}
