@@ -114,6 +114,7 @@
 		if (typeof $.fn.selectWoo !== 'undefined' && yith_proteo.yith_proteo_use_enanched_selects === 'yes') {
 			$('select:not(.yith-proteo-standard-select)').filter(':visible').selectWoo(
 				{
+					'dropdownAutoWidth' : true,
 					'minimumResultsForSearch': yith_proteo.select2minimumResultsForSearch
 				}
 			);
