@@ -118,6 +118,14 @@ function yith_proteo_read_all_font_options() {
 			'default'  => '{"font":"Montserrat","regularweight":"regular","category":"sans-serif"}',
 			'selector' => 'h1.product_title',
 		),
+		'yith_proteo_widget_title_font'       => array(
+			'default'  => '{"font":"Montserrat","regularweight":"regular","category":"sans-serif"}',
+			'selector' => 'h2.widget-title, h3.widget-title',
+		),
+		'yith_proteo_widget_content_font'     => array(
+			'default'  => '{"font":"Montserrat","regularweight":"regular","category":"sans-serif"}',
+			'selector' => '.widget',
+		),
 
 	);
 	return $options;

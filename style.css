@@ -6549,6 +6549,7 @@ body.static-header .site-header {
   margin-bottom: 0;
 }
 #topbar .widget {
+  font-size: inherit;
   text-align: initial;
   display: inline-block;
   z-index: 10;
@@ -8924,6 +8925,14 @@ body.woocommerce-cart .cart-collaterals .cart_totals .wc-proceed-to-checkout a.c
   vertical-align: middle;
   display: block;
   width: 100%;
+}
+body.woocommerce-cart .variation dt {
+  font-weight: 700;
+  font-size: 0.875em;
+}
+body.woocommerce-cart .variation dd {
+  font-size: 0.875em;
+  margin: 0 0 1em;
 }
 
 /**
