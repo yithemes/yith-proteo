@@ -297,7 +297,7 @@ body.yith-proteo-product-loop-add-to-cart-position-hover {
 	}
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 769px) {
 	ul.products {
 		li.product {
 			@include column-width(3);
