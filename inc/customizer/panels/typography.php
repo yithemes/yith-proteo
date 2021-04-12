@@ -641,7 +641,7 @@ $wp_customize->add_setting(
 	'yith_proteo_widget_title_font',
 	array(
 		'sanitize_callback' => 'yith_proteo_google_font_sanitization',
-		'default'           => '{"font":"Montserrat","regularweight":"700","category":"sans-serif"}',
+		'default'           => get_theme_mod( 'yith_proteo_h3_font' ),
 	)
 );
 $wp_customize->add_control(
@@ -718,7 +718,7 @@ $wp_customize->add_setting(
 	'yith_proteo_widget_content_font',
 	array(
 		'sanitize_callback' => 'yith_proteo_google_font_sanitization',
-		'default'           => '{"font":"Montserrat","regularweight":"700","category":"sans-serif"}',
+		'default'           => get_theme_mod( 'yith_proteo_body_font' ),
 	)
 );
 $wp_customize->add_control(
