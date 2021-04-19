@@ -146,6 +146,8 @@ function yith_proteo_customize_register( $wp_customize ) {
 
 	include_once get_template_directory() . '/inc/customizer/panels/mobile.php'; // phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
 
+	include_once get_template_directory() . '/inc/customizer/panels/responsive.php'; // phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
+
 	include_once get_template_directory() . '/inc/customizer/panels/layout.php'; // phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
 
 	include_once get_template_directory() . '/inc/customizer/panels/block-editor-colors.php'; // phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
@@ -637,6 +639,17 @@ if ( ! function_exists( 'yith_proteo_is_store_notice_enabled' ) ) {
 	}
 }
 
+if ( ! function_exists( 'yith_proteo_is_custom_responsive_enabled' ) ) {
+	/**
+	 * Callback function to check if custom responsive css option is enabled
+	 *
+	 * @return bool
+	 */
+	function yith_proteo_is_custom_responsive_enabled() {
+		return 'no' !== get_theme_mod( 'yith_proteo_use_custom_responsive', 'no' );
+	}
+}
+
 /**
  * Add YITH Customizer CSS
  */
@@ -691,3 +704,17 @@ function yith_proteo_customizer_buttons_preview_style() {
 }
 
 add_action( 'customize_controls_enqueue_scripts', 'yith_proteo_customizer_buttons_preview_style' );
+
+add_action( 'customize_save_after', 'yith_proteo_custom_responsive_css_file_save', 99 );
+
+/**
+ * Generate and save custom responsive css file in upload folder
+ *
+ * @return void
+ */
+function yith_proteo_custom_responsive_css_file_save() {
+	if ( 'yes' === get_theme_mod( 'yith_proteo_use_custom_responsive', 'no' ) ) {
+		$yith_proteo_responsive_css = YITH_Proteo_Generate_Responsive_CSS_File::get_instance();
+		$yith_proteo_responsive_css->elaborate_css_file();
+	}
+}

@@ -55,7 +55,9 @@
 				'label'   => esc_html_x( 'Border radius (px)', 'Customizer option name', 'yith-proteo' ),
 				'min'     => 0,
 				'max'     => 50,
+				'default' => 50,
 				'step'    => 1,
+				'unit'    => 'px',
 				'section' => 'yith_proteo_buttons',
 			)
 		)

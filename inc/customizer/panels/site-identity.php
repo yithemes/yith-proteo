@@ -69,7 +69,9 @@ $wp_customize->add_control(
 			'label'   => esc_html_x( 'Logo max width (px)', 'Customizer option name', 'yith-proteo' ),
 			'min'     => 40,
 			'max'     => 500,
+			'default' => 375,
 			'step'    => 1,
+			'unit'    => 'px',
 			'section' => 'title_tagline',
 		)
 	)

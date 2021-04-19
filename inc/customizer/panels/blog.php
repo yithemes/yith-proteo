@@ -70,6 +70,8 @@ $wp_customize->add_control(
 			'min'             => 180,
 			'max'             => 1000,
 			'step'            => 10,
+			'default'         => 400,
+			'unit'            => 'px',
 			'section'         => 'yith_proteo_blog_management',
 			'active_callback' => 'yith_proteo_blog_layout_is_fullwidth_image',
 		)
@@ -113,6 +115,8 @@ $wp_customize->add_control(
 			'min'     => 0,
 			'max'     => 100,
 			'step'    => 1,
+			'default' => 70,
+			'unit'    => '%',
 			'section' => 'yith_proteo_blog_management',
 		)
 	)

@@ -199,6 +199,12 @@ function yith_proteo_inline_style() {
 	$catalog_product_price_color           = get_theme_mod( 'yith_proteo_product_catalog_price_color', '#1f1f1f' );
 	$catalog_product_add_to_cart_font_size = get_theme_mod( 'yith_proteo_product_catalog_add_to_cart_font_size', 14 );
 
+	$responsive_breakpoint_mobile        = get_theme_mod( 'yith_proteo_mobile_device_width', 600 );
+	$responsive_breakpoint_table         = get_theme_mod( 'yith_proteo_tablet_device_width', 768 );
+	$responsive_breakpoint_small_desktop = get_theme_mod( 'yith_proteo_small_desktop_device_width', 992 );
+	$responsive_breakpoint_desktop       = get_theme_mod( 'yith_proteo_desktop_device_width', 1200 );
+	$responsive_breakpoint_large_desktop = get_theme_mod( 'yith_proteo_large_desktop_device_width', 1400 );
+
 	/*
 	 * Spacing options
 	 */
@@ -440,6 +446,11 @@ function yith_proteo_inline_style() {
 		--proteo-sticky_header_spacing: {$sticky_header_spacing};
 		--proteo-site_content_spacing: {$site_content_spacing};
 		--proteo-page_title_spacing: {$page_title_spacing};
+		--proteo-responsive_breakpoint_mobile: {$responsive_breakpoint_mobile}px;
+		--proteo-responsive_breakpoint_table: {$responsive_breakpoint_table}px;
+		--proteo-responsive_breakpoint_small_desktop: {$responsive_breakpoint_small_desktop}px;
+		--proteo-responsive_breakpoint_desktop: {$responsive_breakpoint_desktop}px;
+		--proteo-responsive_breakpoint_large_desktop: {$responsive_breakpoint_large_desktop}px;
 	}";
 
 	if ( ! empty( $custom_css ) ) {

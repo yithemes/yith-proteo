@@ -271,6 +271,8 @@
 				'min'             => 1,
 				'max'             => 50,
 				'step'            => 1,
+				'default'         => 2,
+				'unit'            => 'px',
 				'section'         => 'yith_proteo_topbar_management',
 				'active_callback' => 'yith_proteo_topbar_has_bottom_border',
 			)

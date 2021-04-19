@@ -162,6 +162,112 @@
 		});
 
 		/**
+		 * Responsive screen size checker
+		 */
+		wp.customize('yith_proteo_mobile_device_width', function (value) {
+			var next_rule = wp.customize('yith_proteo_tablet_device_width').get(),
+				warning_message = yith_proteo_customizer_controls.yith_proteo_responsive_option_notice_text,
+				error_code = 'wrong_resolution';
+			value.bind( function ( newval ) {
+				if ( parseInt( newval ) >= parseInt( next_rule ) ) {
+					value.notifications.add( error_code, new wp.customize.Notification(
+						error_code,
+						{
+							type: 'warning',
+							message: warning_message
+						}
+					) );
+				} else {
+					value.notifications.remove( error_code );
+				}
+			});
+		});
+		wp.customize('yith_proteo_tablet_device_width', function (value) {
+			var prev_rule = wp.customize('yith_proteo_mobile_device_width').get(),
+				next_rule = wp.customize('yith_proteo_small_desktop_device_width').get(),
+				warning_message = yith_proteo_customizer_controls.yith_proteo_responsive_option_notice_text,
+				error_code = 'wrong_resolution';
+			value.bind( function ( newval ) {
+				if ( ( parseInt( newval ) >= parseInt( next_rule ) ) || ( parseInt( newval ) <= parseInt( prev_rule ) ) ) {
+					value.notifications.add( error_code, new wp.customize.Notification(
+						error_code,
+						{
+							type: 'warning',
+							message: warning_message
+						}
+					) );
+				} else {
+					value.notifications.remove( error_code );
+				}
+			});
+		});
+		wp.customize('yith_proteo_small_desktop_device_width', function (value) {
+			var prev_rule = wp.customize('yith_proteo_tablet_device_width').get(),
+				next_rule = wp.customize('yith_proteo_desktop_device_width').get(),
+				warning_message = yith_proteo_customizer_controls.yith_proteo_responsive_option_notice_text,
+				error_code = 'wrong_resolution';
+			value.bind( function ( newval ) {
+				if ( ( parseInt( newval ) >= parseInt( next_rule ) ) || ( parseInt( newval ) <= parseInt( prev_rule ) ) ) {
+					value.notifications.add( error_code, new wp.customize.Notification(
+						error_code,
+						{
+							type: 'warning',
+							message: warning_message
+						}
+					) );
+				} else {
+					value.notifications.remove( error_code );
+				}
+			});
+		});
+		wp.customize('yith_proteo_desktop_device_width', function (value) {
+			var prev_rule = wp.customize('yith_proteo_small_desktop_device_width').get(),
+				next_rule = wp.customize('yith_proteo_large_desktop_device_width').get(),
+				warning_message = yith_proteo_customizer_controls.yith_proteo_responsive_option_notice_text,
+				error_code = 'wrong_resolution';
+			value.bind( function ( newval ) {
+				if ( ( parseInt( newval ) >= parseInt( next_rule ) ) || ( parseInt( newval ) <= parseInt( prev_rule ) ) ) {
+					value.notifications.add( error_code, new wp.customize.Notification(
+						error_code,
+						{
+							type: 'warning',
+							message: warning_message
+						}
+					) );
+				} else {
+					value.notifications.remove( error_code );
+				}
+			});
+		});
+		wp.customize('yith_proteo_large_desktop_device_width', function (value) {
+			var prev_rule = wp.customize('yith_proteo_desktop_device_width').get(),
+				warning_message = yith_proteo_customizer_controls.yith_proteo_responsive_option_notice_text,
+				error_code = 'wrong_resolution';
+			value.bind( function ( newval ) {
+				if ( parseInt( newval ) <= parseInt( prev_rule ) ) {
+					value.notifications.add( error_code, new wp.customize.Notification(
+						error_code,
+						{
+							type: 'warning',
+							message: warning_message
+						}
+					) );
+				} else {
+					value.notifications.remove( error_code );
+				}
+			});
+		});
+
+		/**
+		 * Range control reset
+		 */
+		$('.customize-control-range .customize-control-reset').on( 'click', function() {
+			var t           = $(this),
+				reset_value = parseInt(t.html());
+			t.prevAll('input').val(reset_value).change();
+		});
+
+		/**
 		 * Select2 for all select controls
 		 */
 		$('select').each(function (i, obj) {

@@ -363,7 +363,9 @@
 				'label'   => esc_html_x( 'Letter spacing (px)', 'Customizer option name', 'yith-proteo' ),
 				'min'     => -2,
 				'max'     => 30,
+				'default' => 2,
 				'step'    => 1,
+				'unit'    => 'px',
 				'section' => 'yith_proteo_header_management',
 			)
 		)

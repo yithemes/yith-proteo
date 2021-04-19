@@ -455,31 +455,6 @@ span.onsale,
 	right: 7.5px;
 }
 
-@media screen and (min-width: 48em) {
-	/**
-	 * Header cart
-	 */
-	.site-header-cart {
-		.widget_shopping_cart {
-			position: absolute;
-			top: 100%;
-			width: 100%;
-			z-index: 999999;
-			left: -999em;
-			display: block;
-			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-		}
-
-		&:hover,
-		&.focus {
-			.widget_shopping_cart {
-				left: 0;
-				display: block;
-			}
-		}
-	}
-}
-
 /**
 Coupons
 **/

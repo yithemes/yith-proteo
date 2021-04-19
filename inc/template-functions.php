@@ -156,11 +156,12 @@ if ( ! function_exists( 'yith_proteo_print_page_titles' ) ) :
 		}
 
 		// Retrieve ID of the page to check.
-		$yith_proteo_page_id_to_check = $post->ID;
 		if ( function_exists( 'wc' ) && is_shop() ) {
 			$yith_proteo_page_id_to_check = get_option( 'woocommerce_shop_page_id' );
 		} elseif ( $yith_proteo_is_blog_page ) {
 			$yith_proteo_page_id_to_check = get_option( 'page_for_posts' );
+		} else {
+			$yith_proteo_page_id_to_check = $post->ID;
 		}
 
 		// Retrieve meta value.

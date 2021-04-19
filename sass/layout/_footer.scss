@@ -45,7 +45,9 @@
 	div[class^="footer-sidebar"] {
 		padding-bottom: 50px;
 
-		.widget {
+		.widget, .widget.widget_text p {
+			color: var(--proteo-footer_font_color, #404040);
+			font-size: var(--proteo-footer_font_size, 16px);
 			h2, h3, .widget-title {
 				margin-bottom: 2rem;
 				color: var(--proteo-footer_widgets_title_color, var(--proteo-h2_font_color, #404040));

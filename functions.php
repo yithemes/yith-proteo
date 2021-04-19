@@ -165,6 +165,13 @@ if ( ! function_exists( 'yith_proteo_content_width' ) ) :
 	add_action( 'after_setup_theme', 'yith_proteo_content_width', 0 );
 endif;
 
+if ( ! class_exists( 'YITH_Proteo_Generate_Responsive_CSS_File' ) ) {
+	/**
+	 * Load Proteo Responsive CSS generator class
+	 */
+	require get_template_directory() . '/inc/customizer/class-yith-proteo-generate-responsive-css-file.php';
+}
+
 /**
  * Proteo admin dashboard class
  */

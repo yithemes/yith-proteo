@@ -6,14 +6,6 @@
 	display: none;
 }
 
-.page-content,
-.entry-content,
-.entry-summary,
-aside#secondary,
-#primary main {
-	//margin: 1.5em 0 0;
-}
-
 header.entry-header {
 	text-align: initial;
 
@@ -272,18 +264,6 @@ article:not(.has-post-thumbnail) {
 		line-height: 1.8;
 	}
 }
-
-/*
-article.post .entry-content {
-	&:before {
-		content: "";
-		display: block;
-		width: 150px;
-		height: 1px;
-		border-top: 1px solid #707070;
-	}
-}
-*/
 
 .site-content {
 	padding: var(--proteo-site_content_spacing);

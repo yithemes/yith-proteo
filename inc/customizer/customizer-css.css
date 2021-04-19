@@ -117,7 +117,7 @@ span.description.customizer-control-description-expanded {
 /* RANGE INPUTS*/
 .customize-control-range input[type="range"].range-slider {
 	-webkit-appearance: none;
-	width: 70%;
+	width: 60%;
 	padding: 10px 10px 10px 0;
 	background: transparent;
 	box-sizing: border-box;
@@ -209,6 +209,19 @@ span.description.customizer-control-description-expanded {
 .customize-control-range input[type="range"].range-slider:focus::-ms-fill-upper {
 	background: #b7b7b7;
 }
+.customize-control-range .customize-control-unit {
+    display: inline-block;
+    position: static;
+    top: 40px;
+    right: 0px;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 0px;
+    padding: 2px 4px;
+    border-radius: 2px;
+    height: 5px;
+}
+
 /* Fix Select2 */
 body .select2-container {
 	z-index: 99999999;
@@ -609,4 +622,24 @@ li.customize-control[id*="_size"].customize-control-number:after {
     padding: 2px 4px;
     border-radius: 2px;
     height: 5px;
+}
+
+/******************************************
+Undo controls render
+*******************************************/
+.customize-control-reset {
+	background: url( ../../img/panel-icons/undo.svg );
+	background-size: contain;
+	display: inline-block;
+	height: 16px;
+	margin-left: 5px;
+	opacity: 0.5;
+	vertical-align: text-bottom;
+	width: 16px;
+	font-size: 0;
+	color: transparent;
+	white-space: nowrap;
+}
+.customize-control-reset:hover {
+	opacity: 1;
 }

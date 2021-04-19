@@ -367,10 +367,12 @@
 			$wp_customize,
 			'yith_proteo_footer_sidebar_1_width',
 			array(
-				'label'           => esc_html_x( 'Widget area #1 width (%)', 'Customizer option name', 'yith-proteo' ),
+				'label'           => esc_html_x( 'Widget area #1 width', 'Customizer option name', 'yith-proteo' ),
 				'min'             => 20,
 				'max'             => 100,
 				'step'            => 5,
+				'default'         => 100,
+				'unit'            => '%',
 				'section'         => 'yith_proteo_footer_management',
 				'active_callback' => 'yith_proteo_is_footer_sidebar_one_enabled',
 			)
@@ -395,6 +397,7 @@
 				'min'             => 1,
 				'max'             => 6,
 				'step'            => 1,
+				'default'         => 4,
 				'section'         => 'yith_proteo_footer_management',
 				'active_callback' => 'yith_proteo_is_footer_sidebar_one_enabled',
 			)
@@ -440,10 +443,12 @@
 			$wp_customize,
 			'yith_proteo_footer_sidebar_2_width',
 			array(
-				'label'           => esc_html_x( 'Widget area #2 width (%)', 'Customizer option name', 'yith-proteo' ),
+				'label'           => esc_html_x( 'Widget area #2 width', 'Customizer option name', 'yith-proteo' ),
 				'min'             => 20,
 				'max'             => 100,
 				'step'            => 5,
+				'default'         => 100,
+				'unit'            => '%',
 				'section'         => 'yith_proteo_footer_management',
 				'active_callback' => 'yith_proteo_is_footer_sidebar_two_enabled',
 			)
@@ -468,6 +473,7 @@
 				'min'             => 1,
 				'max'             => 6,
 				'step'            => 1,
+				'default'         => 1,
 				'section'         => 'yith_proteo_footer_management',
 				'active_callback' => 'yith_proteo_is_footer_sidebar_two_enabled',
 			)

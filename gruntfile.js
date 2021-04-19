@@ -5,7 +5,9 @@ module.exports = function(grunt) {
 			dist: {
 				files: {
 					'style.css': 'sass/style.scss',
-				}
+					'responsive.css': 'sass/responsive.scss',
+				},
+				sourceComments: true
 			}
 		},
 		uglify: {

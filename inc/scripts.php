@@ -84,6 +84,13 @@ if ( ! function_exists( 'yith_proteo_scripts' ) ) :
 			wp_enqueue_script( 'comment-reply' );
 		}
 
+		wp_enqueue_style( 'yith-proteo-responsive', get_template_directory_uri() . '/responsive.css', array( 'yith-proteo-style' ), YITH_PROTEO_VERSION );
+
+		if ( 'yes' === get_theme_mod( 'yith_proteo_use_custom_responsive', 'no' ) && file_exists( wp_get_upload_dir()['basedir'] . '/yith-proteo-custom-responsive.css' ) ) {
+			wp_dequeue_style( 'yith-proteo-responsive' );
+			wp_enqueue_style( 'yith-proteo-custom-responsive', wp_get_upload_dir()['baseurl'] . '/yith-proteo-custom-responsive.css', array( 'yith-proteo-style' ), YITH_PROTEO_VERSION );
+		}
+
 	}
 endif;
 add_action( 'wp_enqueue_scripts', 'yith_proteo_scripts', 10 );
@@ -137,7 +144,8 @@ function yith_proteo_customize_controls_js() {
 		'yith-proteo-customizer-controls',
 		'yith_proteo_customizer_controls',
 		array(
-			'yith_proteo_customizer_has_woocommerce' => function_exists( 'WC' ),
+			'yith_proteo_customizer_has_woocommerce'    => function_exists( 'WC' ),
+			'yith_proteo_responsive_option_notice_text' => esc_html_x( 'This value is conflicting with other breaking points.', 'Customizer option alert', 'yith-proteo' ),
 		)
 	);
 }

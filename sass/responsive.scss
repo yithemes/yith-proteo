@@ -1,8 +1,18 @@
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-}
+$yith_proteo_mobile_device_width:            '/*<yith_proteo_mobile_device_width>*/600px/*</yith_proteo_mobile_device_width>*/';
+$yith_proteo_mobile_device_width_min:        '/*<yith_proteo_mobile_device_width_min>*/599px/*</yith_proteo_mobile_device_width_min>*/';
+$yith_proteo_tablet_device_width:            '/*<yith_proteo_tablet_device_width>*/768px/*</yith_proteo_tablet_device_width>*/';
+$yith_proteo_tablet_device_width_min:        '/*<yith_proteo_tablet_device_width_min>*/767px/*</yith_proteo_tablet_device_width_min>*/';
+$yith_proteo_tablet_device_width_next:       '/*<yith_proteo_tablet_device_width_next>*/769px/*</yith_proteo_tablet_device_width_next>*/';
+$yith_proteo_small_desktop_device_width:     '/*<yith_proteo_small_desktop_device_width>*/992px/*</yith_proteo_small_desktop_device_width>*/';
+$yith_proteo_small_desktop_device_width_min: '/*<yith_proteo_small_desktop_device_width_min>*/991px/*</yith_proteo_small_desktop_device_width_min>*/';
+$yith_proteo_desktop_device_width:           '/*<yith_proteo_desktop_device_width>*/1200px/*</yith_proteo_desktop_device_width>*/';
+$yith_proteo_desktop_device_width_min:       '/*<yith_proteo_desktop_device_width_min>*/1199px/*</yith_proteo_desktop_device_width_min>*/';
+$yith_proteo_large_desktop_device_width:     '/*<yith_proteo_large_desktop_device_width>*/1400px/*</yith_proteo_large_desktop_device_width>*/';
+$yith_proteo_large_desktop_device_width_min: '/*<yith_proteo_large_desktop_device_width_min>*/1399px/*</yith_proteo_large_desktop_device_width_min>*/';
+@import "mixins/mixins-master";
 
-@media (min-width: 600px) {
+/* Small devices (landscape phones and up) */
+@media (min-width: $yith_proteo_mobile_device_width) {
 	.wp-block-latest-posts.is-grid li {
 		margin: 0 50px 50px 0;
 	}
@@ -12,12 +22,106 @@
 	}
 }
 
-/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media (min-width: 768.1px) {
+/* Tablet devices and up*/
+@media (min-width: $yith_proteo_tablet_device_width) {
+	/**
+	 * Header cart
+	 */
+	.site-header-cart {
+		.widget_shopping_cart {
+			position: absolute;
+			top: 100%;
+			width: 100%;
+			z-index: 999999;
+			left: -999em;
+			display: block;
+			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+		}
+
+		&:hover,
+		&.focus {
+			.widget_shopping_cart {
+				left: 0;
+				display: block;
+			}
+		}
+	}
+
+	/**
+	 * Shop table
+	 */
+	table.shop_table_responsive {
+		thead {
+			display: table-header-group;
+		}
+
+		tbody {
+			th {
+				display: table-cell;
+			}
+		}
+
+		tr {
+			th,
+			td {
+				text-align: left;
+			}
+
+			td {
+				display: table-cell;
+
+				&:before {
+					display: none;
+				}
+			}
+		}
+	}
 }
 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
+/* Just next tablet size (desktops, 769px and up) */
+@media (min-width: $yith_proteo_tablet_device_width_next) {
+	ul.products {
+		li.product {
+			@include column-width(3);
+			float: left;
+
+			&.first {
+				clear: both;
+			}
+
+			&.last {
+				margin-right: 0;
+			}
+		}
+	}
+
+	.columns-1 {
+		ul.products {
+			li.product {
+				float: none;
+				width: 100%;
+			}
+		}
+	}
+
+	@for $i from 2 through 6 {
+		.columns-#{$i} {
+			ul.products {
+				li.product {
+					@include column-width($i);
+				}
+			}
+		}
+		ul.columns-#{$i}.products {
+			li.product {
+				@include column-width($i);
+			}
+		}
+	}
+}
+
+/** Large devices (desktops, 992px and up) **/
+@media (min-width: $yith_proteo_small_desktop_device_width) {
 	.menu-toggle {
 		display: none;
 	}
@@ -33,43 +137,37 @@
 	.main-navigation ul {
 		display: block;
 	}
+	.site-header.left_logo_navigation_inline {
+		.header-contents {
+			display: table;
+		}
+		.site-branding,
+		.main-navigation,
+		.header-sidebar {
+			display: table-cell;
+			width: auto;
+			float: none;
+			vertical-align: middle;
+		}
+	}
+	
 }
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-}
-
-@media (min-width: 1400px) {
-}
-
-@media (min-width: 1600px) {
-}
-
-/*
-::::::::::::::::::::::::::::::::::::::::::::::::::::
-Custom media queries
-*/
 
 // Very large devices
-
 @media (max-width: 1599.98px) {
 	.woocommerce-account .yith-proteo-my-account-user-image .user-photo img {
 		max-width: 80px;
 	}
 }
 
-// Large devices (desktops, less than 1400px)
-@media (max-width: 1399.98px) {
-}
-
 // Large devices (desktops, less than 1200px)
-@media (max-width: 1199.98px) {
+@media (max-width: $yith_proteo_desktop_device_width_min) {
 	body.woocommerce-cart .cart-collaterals .cart_totals {
 		padding: 50px 0 50px 30px;
 	}
 }
 
-@media (min-width: 992px) and (max-width: 1200px) {
+@media (min-width: $yith_proteo_small_desktop_device_width) and (max-width: $yith_proteo_desktop_device_width) {
 	.has-post-thumbnail header.entry-header .date-and-thumbnail .entry-meta {
 		font-size: 0.875rem;
 	}
@@ -87,7 +185,7 @@ Custom media queries
 }
 
 // Medium devices (tablets, less than 992px)
-@media (max-width: 991.98px) {
+@media (max-width: $yith_proteo_small_desktop_device_width_min) {
 	.site-header.sticky {
 		position: absolute;
 	}
@@ -282,7 +380,7 @@ Custom media queries
 }
 
 // Small devices (landscape phones, less than 768px)
-@media (max-width: 768px) {
+@media (max-width: $yith_proteo_tablet_device_width) {
 	.hidden-xs {
 		display: none !important;
 	}
@@ -432,8 +530,8 @@ Custom media queries
 		font-size: 1rem;
 	}
 }
-
-@media (max-width: 600px) {
+/* Mobile device */
+@media (max-width: $yith_proteo_mobile_device_width) {
 	#site-navigation {
 		.menu-toggle {
 			position: absolute;
@@ -503,8 +601,4 @@ Custom media queries
 		margin-bottom: 35px;
 	}
 
-}
-
-// Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) {
 }
