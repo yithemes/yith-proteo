@@ -17,7 +17,7 @@ $wp_customize->add_section(
 	)
 );
 
-// Buttons border radius.
+// Input and textarea border radius.
 $wp_customize->add_setting(
 	'yith_proteo_inputs_border_radius',
 	array(
@@ -40,6 +40,40 @@ $wp_customize->add_control(
 			'unit'    => 'px',
 			'section' => 'yith_proteo_forms',
 		)
+	)
+);
+
+// Input and textarea border tickness.
+$wp_customize->add_setting(
+	'yith_proteo_inputs_border_width_size',
+	array(
+		'sanitize_callback' => 'absint',
+		'default'           => 1,
+	)
+);
+$wp_customize->add_control(
+	'yith_proteo_inputs_border_width_size',
+	array(
+		'label'   => esc_html_x( 'Input and textarea border tickness', 'Customizer option name', 'yith-proteo' ),
+		'section' => 'yith_proteo_forms',
+		'type'    => 'number',
+	)
+);
+
+// Input and textarea font size.
+$wp_customize->add_setting(
+	'yith_proteo_inputs_font_size',
+	array(
+		'sanitize_callback' => 'absint',
+		'default'           => get_theme_mod( 'yith_proteo_base_font_size', 16 ),
+	)
+);
+$wp_customize->add_control(
+	'yith_proteo_inputs_font_size',
+	array(
+		'label'   => esc_html_x( 'Input and textarea font size', 'Customizer option name', 'yith-proteo' ),
+		'section' => 'yith_proteo_forms',
+		'type'    => 'number',
 	)
 );
 

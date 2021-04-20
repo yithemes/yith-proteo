@@ -131,6 +131,8 @@ function yith_proteo_inline_style() {
 	 * Forms
 	 */
 	$forms_input_borde_radius = get_theme_mod( 'yith_proteo_inputs_border_radius', 0 );
+	$forms_input_border_width = get_theme_mod( 'yith_proteo_inputs_border_width_size', 1 );
+	$forms_input_font_size    = get_theme_mod( 'yith_proteo_inputs_font_size', $base_font_size );
 
 	/**
 	 * Mobile typography
@@ -405,6 +407,8 @@ function yith_proteo_inline_style() {
 		--proteo-post_thumbnail_background_color_opacity: {$post_thumbnail_background_color_opacity};
 		--proteo-post_thumbnail_text_color: {$post_thumbnail_text_color};
 		--proteo-forms_input_borde_radius: {$forms_input_borde_radius}px;
+		--proteo-forms_input_border_width: {$forms_input_border_width}px;
+		--proteo-forms_input_font_size: {$forms_input_font_size}px;
 		--proteo-site_background_color: #{$site_background_color};
 		--proteo-yith_proteo_editor_custom_color_1: {$yith_proteo_editor_custom_color_1};
 		--proteo-yith_proteo_editor_custom_color_2: {$yith_proteo_editor_custom_color_2};
