@@ -29,6 +29,7 @@ input[type="file"],
 	max-width: 100%;
 	transition: border-color ease 0.3s;
 	background-color: #ffffff;
+	min-width: 50%;
 
 	&:focus {
 		outline-color: transparent;
