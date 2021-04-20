@@ -169,18 +169,18 @@ class Google_Font_Select_Custom_Control extends WP_Customize_Control {
 	 */
 	public function getGoogleFonts( $count = 30 ) {
 		// Google Fonts json generated from https://www.googleapis.com/webfonts/v1/webfonts?sort=popularity&key=YOUR-API-KEY.
-		$font_file = get_template_directory_uri() . '/inc/customizer/custom-controls/font-selector-assets/google-fonts-alphabetical.json';
+		$font_file = '/inc/customizer/custom-controls/font-selector-assets/google-fonts-alphabetical.json';
 		if ( 'popular' === $this->font_order_by ) {
-			$font_file = get_template_directory_uri() . '/inc/customizer/custom-controls/font-selector-assets/google-fonts-popularity.json';
+			$font_file = '/inc/customizer/custom-controls/font-selector-assets/google-fonts-popularity.json';
 		}
 
-		$request = wp_remote_get( $font_file, array( 'sslverify' => false ) );
+		$request = file_get_contents( wp_normalize_path( get_template_directory() . $font_file ) );
+
 		if ( is_wp_error( $request ) ) {
 			return '';
 		}
 
-		$body    = wp_remote_retrieve_body( $request );
-		$content = json_decode( $body );
+		$content = json_decode( $request );
 
 		if ( 'all' === $count ) {
 			return $content->items;
