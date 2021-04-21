@@ -39,7 +39,7 @@ Proteo is a modern, fast and fully customizable WooCommerce theme. Designed and 
 * Fix cart page variable product display
 * Fix select2 dropdown content typography
 * Dev: new CSS classes to avoid styled radio and checkboxes (.yith-proteo-standard-checkbox - .yith-proteo-standard-radio)
-+ Dev: responsive style moved to independent CSS file responsive.css in theme root folder
+* Dev: responsive style moved to independent CSS file responsive.css in theme root folder
 
 = 1.5.2 - March 18 2021 =
 * New site identity options

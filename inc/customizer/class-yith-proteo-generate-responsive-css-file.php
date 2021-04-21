@@ -44,8 +44,12 @@ class YITH_Proteo_Generate_Responsive_CSS_File {
 	 * @return bool
 	 */
 	public function elaborate_css_file() {
+		// Initialize the WordPress filesystem.
+		$wp_filesystem = yith_proteo_init_filesystem();
+
 		$file_path        = wp_normalize_path( wp_get_upload_dir()['basedir'] . '/yith-proteo-custom-responsive.css' );
-		$css_file_content = file_get_contents( wp_normalize_path( get_template_directory() . '/responsive.css' ) );
+		$css_file_content = $wp_filesystem->get_contents( wp_normalize_path( get_template_directory() . '/responsive.css' ) );
+
 		// exit if the css file don't exists.
 		if ( ! $css_file_content ) {
 			return false;
@@ -68,8 +72,7 @@ class YITH_Proteo_Generate_Responsive_CSS_File {
 			$value            = get_theme_mod( $option, $default );
 			$css_file_content = preg_replace( "/(\/\*<{$option}>\*\/)([^\/]*)(\/\*<\/{$option}>\*\/)/", '${1}' . $value . 'px$3', $css_file_content );
 		}
-		// Initialize the WordPress filesystem.
-		$wp_filesystem = yith_proteo_init_filesystem();
+
 
 		if ( ! defined( 'FS_CHMOD_DIR' ) ) {
 			define( 'FS_CHMOD_DIR', ( 0755 & ~ umask() ) );
@@ -81,10 +84,9 @@ class YITH_Proteo_Generate_Responsive_CSS_File {
 		// Attempt to write the file.
 		if ( ! $wp_filesystem->put_contents( $file_path, $css_file_content, FS_CHMOD_FILE ) ) {
 			// If the attempt to write to the file failed, then fallback to fwrite.
-			unlink( $file_path );
-			$fp      = fopen( $file_path, 'w' ); // phpcs:ignore WordPress.WP.AlternativeFunctions
-			$written = fwrite( $fp, $css_file_content ); // phpcs:ignore WordPress.WP.AlternativeFunctions
-			fclose( $fp ); // phpcs:ignore WordPress.WP.AlternativeFunctions
+			$wp_filesystem->delete( $file_path );
+			$fp      = $wp_filesystem->touch( $file_path, 'w' );
+			$written = $wp_filesystem->put_contents( $fp, $css_file_content );
 			if ( false === $written ) {
 				return false;
 			}
