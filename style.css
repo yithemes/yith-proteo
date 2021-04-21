@@ -7090,6 +7090,9 @@ a.yith-proteo-user-welcome-message span {
   margin-left: 7px;
   color: inherit;
 }
+a.yith-proteo-user-welcome-message span.lnr-user {
+  font-size: 1.6rem;
+}
 
 /*--------------------------------------------------------------
 # Content

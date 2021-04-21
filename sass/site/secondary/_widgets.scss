@@ -248,4 +248,8 @@ a.yith-proteo-user-welcome-message span {
 	text-transform: uppercase;
 	margin-left: 7px;
 	color: inherit;
+
+	&.lnr-user {
+		font-size: 1.6rem;
+	}
 }

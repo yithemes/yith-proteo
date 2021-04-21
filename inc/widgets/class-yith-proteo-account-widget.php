@@ -50,14 +50,16 @@ if ( ! class_exists( 'YITH_Proteo_Account_Widget' ) ) {
 
 			if ( get_template_directory_uri() . '/img/user.svg' !== $icon ) {
 				$icon = wp_get_attachment_image_src( $icon, 'full' );
-				$icon = $icon[0];
+				$icon = '<img src="' . esc_url( apply_filters( 'yith_proteo_account_widget_image_url', $icon[0] ) ) . '" width="25" loading="lazy">';
+			} else {
+				$icon = '<span class="lnr lnr-user"></span>';
 			}
 
 			$output  = '';
 			$output .= $args['before_widget'];
 
 			$output .= '<a class="yith-proteo-user-welcome-message" href="' . esc_url( $url ) . '">';
-			$output .= '<img src="' . esc_url( apply_filters( 'yith_proteo_account_widget_image_url', $icon ) ) . '" width="25" loading="lazy">';
+			$output .= $icon;
 
 			if ( is_user_logged_in() ) {
 				$name = yith_proteo_get_user_username();
