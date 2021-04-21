@@ -12,7 +12,7 @@
 $wp_customize->add_section(
 	'yith_proteo_responsive_management',
 	array(
-		'title'    => esc_html_x( 'Responsive breaking points', 'Customizer section title', 'yith-proteo' ),
+		'title'    => esc_html_x( 'Responsive breakpoints', 'Customizer section title', 'yith-proteo' ),
 		'priority' => 100,
 		'panel'    => 'yith_proteo_mobile_options',
 	)
@@ -33,9 +33,9 @@ if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
 			$wp_customize,
 			'yith_proteo_use_custom_responsive',
 			array(
-				'label'       => esc_html_x( 'Use custom responsive breaking points', 'Customizer option name', 'yith-proteo' ),
+				'label'       => esc_html_x( 'Use custom responsive breakpoints', 'Customizer option name', 'yith-proteo' ),
 				'section'     => 'yith_proteo_responsive_management',
-				'description' => esc_html_x( 'Choose whether to use a custom responsive breaking points or not. This option will generate a custom responsive.css file in your uploads folder.', 'Customizer option description', 'yith-proteo' ),
+				'description' => esc_html_x( 'Choose whether to use a custom responsive breakpoints or not. This option will generate a custom responsive.css file in your uploads folder.', 'Customizer option description', 'yith-proteo' ),
 			)
 		)
 	);

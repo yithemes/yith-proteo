@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YITH Proteo\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2021-03-17 15:05+0100\n"
+"POT-Creation-Date: 2021-04-21 12:59+0200\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -155,13 +155,13 @@ msgid "Off"
 msgstr ""
 
 #: inc/customizer/custom-controls/class-customizer-control-yes-no.php:30
-#: inc/customizer/customizer.php:244
+#: inc/customizer/customizer.php:246
 msgctxt "Customizer option value"
 msgid "Yes"
 msgstr ""
 
 #: inc/customizer/custom-controls/class-customizer-control-yes-no.php:33
-#: inc/customizer/customizer.php:245
+#: inc/customizer/customizer.php:247
 msgctxt "Customizer option value"
 msgid "No"
 msgstr ""
@@ -181,9 +181,9 @@ msgctxt "Customizer section title"
 msgid "Header background"
 msgstr ""
 
-#: inc/customizer/customizer.php:66 inc/customizer/panels/buttons.php:96
+#: inc/customizer/customizer.php:66 inc/customizer/panels/buttons.php:98
 #: inc/customizer/panels/footer-credits.php:48
-#: inc/customizer/panels/footer.php:52 inc/customizer/panels/header.php:503
+#: inc/customizer/panels/footer.php:52 inc/customizer/panels/header.php:505
 #: inc/customizer/panels/mobile.php:193 inc/customizer/panels/topbar.php:56
 #: inc/customizer/panels/woocommerce/sale-badge.php:33
 #: inc/customizer/panels/woocommerce/store-notice.php:44
@@ -230,7 +230,7 @@ msgid ""
 "the homepage, and the other will be where your posts are displayed."
 msgstr ""
 
-#: inc/customizer/customizer.php:221 inc/customizer/panels/sidebars.php:60
+#: inc/customizer/customizer.php:223 inc/customizer/panels/sidebars.php:60
 #: inc/customizer/panels/sidebars.php:138 inc/customizer/panels/sidebars.php:215
 #: inc/customizer/panels/sidebars.php:292
 #: inc/customizer/panels/woocommerce/product-category.php:39
@@ -242,17 +242,17 @@ msgctxt "Customizer option value"
 msgid "No sidebar"
 msgstr ""
 
-#: inc/customizer/customizer.php:222
+#: inc/customizer/customizer.php:224
 #: inc/customizer/panels/footer-credits.php:151
 #: inc/customizer/panels/footer.php:306 inc/customizer/panels/header.php:100
-#: inc/customizer/panels/header.php:435 inc/customizer/panels/header.php:575
+#: inc/customizer/panels/header.php:437 inc/customizer/panels/header.php:577
 #: inc/customizer/panels/layout.php:65 inc/customizer/panels/layout.php:181
 #: inc/customizer/panels/layout.php:214 inc/customizer/panels/mobile.php:76
 #: inc/customizer/panels/mobile.php:265 inc/customizer/panels/sidebars.php:68
 #: inc/customizer/panels/sidebars.php:146 inc/customizer/panels/sidebars.php:223
 #: inc/customizer/panels/sidebars.php:300
-#: inc/customizer/panels/site-identity.php:227
-#: inc/customizer/panels/site-identity.php:389
+#: inc/customizer/panels/site-identity.php:229
+#: inc/customizer/panels/site-identity.php:391
 #: inc/customizer/panels/topbar.php:89 inc/customizer/panels/topbar.php:205
 #: inc/customizer/panels/woocommerce/product-category.php:47
 #: inc/customizer/panels/woocommerce/product-tag.php:48
@@ -263,17 +263,17 @@ msgctxt "Customizer option value"
 msgid "Right"
 msgstr ""
 
-#: inc/customizer/customizer.php:223
+#: inc/customizer/customizer.php:225
 #: inc/customizer/panels/footer-credits.php:143
 #: inc/customizer/panels/footer.php:298 inc/customizer/panels/header.php:106
-#: inc/customizer/panels/header.php:441 inc/customizer/panels/header.php:581
+#: inc/customizer/panels/header.php:443 inc/customizer/panels/header.php:583
 #: inc/customizer/panels/layout.php:71 inc/customizer/panels/layout.php:173
 #: inc/customizer/panels/layout.php:220 inc/customizer/panels/mobile.php:75
 #: inc/customizer/panels/mobile.php:257 inc/customizer/panels/sidebars.php:64
 #: inc/customizer/panels/sidebars.php:142 inc/customizer/panels/sidebars.php:219
 #: inc/customizer/panels/sidebars.php:296
-#: inc/customizer/panels/site-identity.php:233
-#: inc/customizer/panels/site-identity.php:395
+#: inc/customizer/panels/site-identity.php:235
+#: inc/customizer/panels/site-identity.php:397
 #: inc/customizer/panels/topbar.php:95 inc/customizer/panels/topbar.php:197
 #: inc/customizer/panels/woocommerce/product-category.php:43
 #: inc/customizer/panels/woocommerce/product-tag.php:44
@@ -367,57 +367,57 @@ msgctxt "Customizer option name"
 msgid "Post featured image height"
 msgstr ""
 
-#: inc/customizer/panels/blog.php:92
+#: inc/customizer/panels/blog.php:94
 msgctxt "Customizer option name"
 msgid "Post thumbnail background overlay"
 msgstr ""
 
-#: inc/customizer/panels/blog.php:112
+#: inc/customizer/panels/blog.php:114
 msgctxt "Customizer option name"
 msgid "Overlay color opacity %"
 msgstr ""
 
-#: inc/customizer/panels/blog.php:134
+#: inc/customizer/panels/blog.php:138
 msgctxt "Customizer option name"
 msgid "Post thumbnail text color"
 msgstr ""
 
-#: inc/customizer/panels/blog.php:155
+#: inc/customizer/panels/blog.php:159
 msgctxt "Customizer option name"
 msgid "Show date badge"
 msgstr ""
 
-#: inc/customizer/panels/blog.php:157
+#: inc/customizer/panels/blog.php:161
 msgctxt "Customizer option description"
 msgid "Choose whether to show the post date badge or not."
 msgstr ""
 
-#: inc/customizer/panels/blog.php:168
+#: inc/customizer/panels/blog.php:172
 msgctxt "Customizer option default value"
 msgid "Read more  &#10230;"
 msgstr ""
 
-#: inc/customizer/panels/blog.php:176
+#: inc/customizer/panels/blog.php:180
 msgctxt "Customizer option name"
 msgid "Read more text"
 msgstr ""
 
-#: inc/customizer/panels/blog.php:195
+#: inc/customizer/panels/blog.php:199
 msgctxt "Customizer option name"
 msgid "Show navigation links"
 msgstr ""
 
-#: inc/customizer/panels/blog.php:217
+#: inc/customizer/panels/blog.php:221
 msgctxt "Customizer option name"
 msgid "Show post author"
 msgstr ""
 
-#: inc/customizer/panels/blog.php:239
+#: inc/customizer/panels/blog.php:243
 msgctxt "Customizer option name"
 msgid "Show post categories and tags"
 msgstr ""
 
-#: inc/customizer/panels/blog.php:261
+#: inc/customizer/panels/blog.php:265
 msgctxt "Customizer option name"
 msgid "Show post date"
 msgstr ""
@@ -437,17 +437,17 @@ msgctxt "Customizer option name"
 msgid "Border radius (px)"
 msgstr ""
 
-#: inc/customizer/panels/buttons.php:78
+#: inc/customizer/panels/buttons.php:80
 msgctxt "Customizer options group title"
 msgid "Button style 1"
 msgstr ""
 
-#: inc/customizer/panels/buttons.php:114 inc/customizer/panels/topbar.php:249
+#: inc/customizer/panels/buttons.php:116 inc/customizer/panels/topbar.php:249
 msgctxt "Customizer option name"
 msgid "Border color"
 msgstr ""
 
-#: inc/customizer/panels/buttons.php:132 inc/customizer/panels/buttons.php:281
+#: inc/customizer/panels/buttons.php:134 inc/customizer/panels/buttons.php:283
 #: inc/customizer/panels/typography.php:91
 #: inc/customizer/panels/woocommerce/sale-badge.php:51
 #: inc/customizer/panels/woocommerce/store-notice.php:63
@@ -455,47 +455,47 @@ msgctxt "Customizer option name"
 msgid "Text color"
 msgstr ""
 
-#: inc/customizer/panels/buttons.php:150 inc/customizer/panels/buttons.php:299
+#: inc/customizer/panels/buttons.php:152 inc/customizer/panels/buttons.php:301
 msgctxt "Customizer option name"
 msgid "Background :hover color"
 msgstr ""
 
-#: inc/customizer/panels/buttons.php:168
+#: inc/customizer/panels/buttons.php:170
 msgctxt "Customizer option name"
 msgid "Border :hover color"
 msgstr ""
 
-#: inc/customizer/panels/buttons.php:186 inc/customizer/panels/buttons.php:317
+#: inc/customizer/panels/buttons.php:188 inc/customizer/panels/buttons.php:319
 msgctxt "Customizer option name"
 msgid "Text :hover color"
 msgstr ""
 
-#: inc/customizer/panels/buttons.php:206
+#: inc/customizer/panels/buttons.php:208
 msgctxt "Customizer option name"
 msgid "Button style 1"
 msgstr ""
 
-#: inc/customizer/panels/buttons.php:226
+#: inc/customizer/panels/buttons.php:228
 msgctxt "Customizer options group title"
 msgid "Button style 2"
 msgstr ""
 
-#: inc/customizer/panels/buttons.php:227
+#: inc/customizer/panels/buttons.php:229
 msgctxt "Customizer option description"
 msgid "In this button you can apply a gradient using two different colors."
 msgstr ""
 
-#: inc/customizer/panels/buttons.php:245
+#: inc/customizer/panels/buttons.php:247
 msgctxt "Customizer option name"
 msgid "Gradient color - Top"
 msgstr ""
 
-#: inc/customizer/panels/buttons.php:263
+#: inc/customizer/panels/buttons.php:265
 msgctxt "Customizer option name"
 msgid "Gradient color - Bottom"
 msgstr ""
 
-#: inc/customizer/panels/buttons.php:337
+#: inc/customizer/panels/buttons.php:339
 msgctxt "Customizer option name"
 msgid "Button style 2"
 msgstr ""
@@ -564,8 +564,8 @@ msgstr ""
 
 #: inc/customizer/panels/footer-credits.php:64
 #: inc/customizer/panels/footer.php:183 inc/customizer/panels/header.php:321
-#: inc/customizer/panels/site-identity.php:176
-#: inc/customizer/panels/site-identity.php:338
+#: inc/customizer/panels/site-identity.php:178
+#: inc/customizer/panels/site-identity.php:340
 #: inc/customizer/panels/topbar.php:113 inc/customizer/panels/typography.php:73
 #: inc/customizer/panels/typography.php:210
 #: inc/customizer/panels/typography.php:287
@@ -573,6 +573,8 @@ msgstr ""
 #: inc/customizer/panels/typography.php:441
 #: inc/customizer/panels/typography.php:518
 #: inc/customizer/panels/typography.php:595
+#: inc/customizer/panels/typography.php:672
+#: inc/customizer/panels/typography.php:749
 #: inc/customizer/panels/woocommerce/sale-badge.php:67
 #: inc/customizer/panels/woocommerce/single-product.php:72
 #: inc/customizer/panels/woocommerce/store-notice.php:81
@@ -588,6 +590,8 @@ msgstr ""
 #: inc/customizer/panels/typography.php:459
 #: inc/customizer/panels/typography.php:536
 #: inc/customizer/panels/typography.php:613
+#: inc/customizer/panels/typography.php:690
+#: inc/customizer/panels/typography.php:767
 #: inc/customizer/panels/woocommerce/single-product.php:90
 msgctxt "Customizer option name"
 msgid "Font color"
@@ -735,7 +739,7 @@ msgctxt "Customizer option name"
 msgid "Enable widget area #1"
 msgstr ""
 
-#: inc/customizer/panels/footer.php:349 inc/customizer/panels/footer.php:422
+#: inc/customizer/panels/footer.php:349 inc/customizer/panels/footer.php:425
 msgctxt "Customizer option description"
 msgid ""
 "Widgets will be shown in columns. Columns number can be set in the options "
@@ -744,27 +748,27 @@ msgstr ""
 
 #: inc/customizer/panels/footer.php:370
 msgctxt "Customizer option name"
-msgid "Widget area #1 width (%)"
+msgid "Widget area #1 width"
 msgstr ""
 
-#: inc/customizer/panels/footer.php:394 inc/customizer/panels/footer.php:467
+#: inc/customizer/panels/footer.php:396 inc/customizer/panels/footer.php:472
 #: inc/customizer/panels/woocommerce/cart.php:102
 #: inc/customizer/panels/woocommerce/single-product.php:343
 msgctxt "Customizer option name"
 msgid "Columns"
 msgstr ""
 
-#: inc/customizer/panels/footer.php:421
+#: inc/customizer/panels/footer.php:424
 msgctxt "Customizer option name"
 msgid "Enable widget area #2"
 msgstr ""
 
-#: inc/customizer/panels/footer.php:443
+#: inc/customizer/panels/footer.php:446
 msgctxt "Customizer option name"
-msgid "Widget area #2 width (%)"
+msgid "Widget area #2 width"
 msgstr ""
 
-#: inc/customizer/panels/footer.php:492
+#: inc/customizer/panels/footer.php:498
 msgctxt "Customizer option name"
 msgid "Put the two widget areas side by side"
 msgstr ""
@@ -779,24 +783,34 @@ msgctxt "Customizer option name"
 msgid "Input and textarea border radius"
 msgstr ""
 
-#: inc/customizer/panels/forms.php:59
+#: inc/customizer/panels/forms.php:57
+msgctxt "Customizer option name"
+msgid "Input and textarea border tickness"
+msgstr ""
+
+#: inc/customizer/panels/forms.php:74
+msgctxt "Customizer option name"
+msgid "Input and textarea font size"
+msgstr ""
+
+#: inc/customizer/panels/forms.php:95
 msgctxt "Customizer option name"
 msgid "Use custom style on select elements"
 msgstr ""
 
-#: inc/customizer/panels/forms.php:60
+#: inc/customizer/panels/forms.php:96
 msgctxt "Customizer option description"
 msgid ""
 "Replace the default browser style of select elements with the custom Proteo "
 "style."
 msgstr ""
 
-#: inc/customizer/panels/forms.php:82
+#: inc/customizer/panels/forms.php:118
 msgctxt "Customizer option name"
 msgid "Use custom style on checkbox and radio button elements"
 msgstr ""
 
-#: inc/customizer/panels/forms.php:83
+#: inc/customizer/panels/forms.php:119
 msgctxt "Customizer option description"
 msgid ""
 "Replace the default browser style of radio and checkbox elements with the "
@@ -833,30 +847,30 @@ msgctxt "Customizer option value"
 msgid "Centered logo, navigation below"
 msgstr ""
 
-#: inc/customizer/panels/header.php:93 inc/customizer/panels/header.php:428
-#: inc/customizer/panels/header.php:568 inc/customizer/panels/layout.php:207
-#: inc/customizer/panels/site-identity.php:220
-#: inc/customizer/panels/site-identity.php:382
+#: inc/customizer/panels/header.php:93 inc/customizer/panels/header.php:430
+#: inc/customizer/panels/header.php:570 inc/customizer/panels/layout.php:207
+#: inc/customizer/panels/site-identity.php:222
+#: inc/customizer/panels/site-identity.php:384
 #: inc/customizer/panels/topbar.php:81
 msgctxt "Customizer option name"
 msgid "Spacing (px)"
 msgstr ""
 
-#: inc/customizer/panels/header.php:97 inc/customizer/panels/header.php:432
-#: inc/customizer/panels/header.php:572 inc/customizer/panels/layout.php:62
+#: inc/customizer/panels/header.php:97 inc/customizer/panels/header.php:434
+#: inc/customizer/panels/header.php:574 inc/customizer/panels/layout.php:62
 #: inc/customizer/panels/layout.php:211
-#: inc/customizer/panels/site-identity.php:224
-#: inc/customizer/panels/site-identity.php:386
+#: inc/customizer/panels/site-identity.php:226
+#: inc/customizer/panels/site-identity.php:388
 #: inc/customizer/panels/topbar.php:86
 msgctxt "Customizer option value"
 msgid "Top"
 msgstr ""
 
-#: inc/customizer/panels/header.php:103 inc/customizer/panels/header.php:438
-#: inc/customizer/panels/header.php:578 inc/customizer/panels/layout.php:68
+#: inc/customizer/panels/header.php:103 inc/customizer/panels/header.php:440
+#: inc/customizer/panels/header.php:580 inc/customizer/panels/layout.php:68
 #: inc/customizer/panels/layout.php:217
-#: inc/customizer/panels/site-identity.php:230
-#: inc/customizer/panels/site-identity.php:392
+#: inc/customizer/panels/site-identity.php:232
+#: inc/customizer/panels/site-identity.php:394
 #: inc/customizer/panels/topbar.php:92
 msgctxt "Customizer option value"
 msgid "Bottom"
@@ -933,14 +947,16 @@ msgid "Header menu options"
 msgstr ""
 
 #: inc/customizer/panels/header.php:301
-#: inc/customizer/panels/site-identity.php:152
-#: inc/customizer/panels/site-identity.php:314
+#: inc/customizer/panels/site-identity.php:154
+#: inc/customizer/panels/site-identity.php:316
 #: inc/customizer/panels/typography.php:190
 #: inc/customizer/panels/typography.php:267
 #: inc/customizer/panels/typography.php:344
 #: inc/customizer/panels/typography.php:421
 #: inc/customizer/panels/typography.php:498
 #: inc/customizer/panels/typography.php:575
+#: inc/customizer/panels/typography.php:652
+#: inc/customizer/panels/typography.php:729
 msgctxt "Customizer option name"
 msgid "Font"
 msgstr ""
@@ -976,35 +992,35 @@ msgctxt "Customizer option name"
 msgid "Letter spacing (px)"
 msgstr ""
 
-#: inc/customizer/panels/header.php:385
-#: inc/customizer/panels/site-identity.php:196
-#: inc/customizer/panels/site-identity.php:358
+#: inc/customizer/panels/header.php:387
+#: inc/customizer/panels/site-identity.php:198
+#: inc/customizer/panels/site-identity.php:360
 msgctxt "Customizer option name"
 msgid "Color"
 msgstr ""
 
-#: inc/customizer/panels/header.php:404 inc/customizer/panels/header.php:543
+#: inc/customizer/panels/header.php:406 inc/customizer/panels/header.php:545
 #: inc/customizer/panels/mobile.php:231
 msgctxt "Customizer option name"
 msgid "Hover color"
 msgstr ""
 
-#: inc/customizer/panels/header.php:461
+#: inc/customizer/panels/header.php:463
 msgctxt "Customizer options group title"
 msgid "Sticky header"
 msgstr ""
 
-#: inc/customizer/panels/header.php:482
+#: inc/customizer/panels/header.php:484
 msgctxt "Customizer option name"
 msgid "Enable sticky header"
 msgstr ""
 
-#: inc/customizer/panels/header.php:484
+#: inc/customizer/panels/header.php:486
 msgctxt "Customizer option description"
 msgid "Choose whether to make the header stick to the page when scrolling down"
 msgstr ""
 
-#: inc/customizer/panels/header.php:523 inc/customizer/panels/mobile.php:212
+#: inc/customizer/panels/header.php:525 inc/customizer/panels/mobile.php:212
 msgctxt "Customizer option name"
 msgid "Menu color"
 msgstr ""
@@ -1117,13 +1133,13 @@ msgid "Set font size in px for all elements in mobile devices"
 msgstr ""
 
 #: inc/customizer/panels/mobile.php:295
-#: inc/customizer/panels/site-identity.php:135
+#: inc/customizer/panels/site-identity.php:137
 msgctxt "Customizer option name"
 msgid "Site Title"
 msgstr ""
 
 #: inc/customizer/panels/mobile.php:312
-#: inc/customizer/panels/site-identity.php:297
+#: inc/customizer/panels/site-identity.php:299
 msgctxt "Customizer option name"
 msgid "Tagline"
 msgstr ""
@@ -1186,6 +1202,48 @@ msgstr ""
 #: inc/customizer/panels/mobile.php:517
 msgctxt "Customizer option name"
 msgid "Footer credits"
+msgstr ""
+
+#: inc/customizer/panels/responsive.php:15
+msgctxt "Customizer section title"
+msgid "Responsive breakpoints"
+msgstr ""
+
+#: inc/customizer/panels/responsive.php:36
+msgctxt "Customizer option name"
+msgid "Use custom responsive breakpoints"
+msgstr ""
+
+#: inc/customizer/panels/responsive.php:38
+msgctxt "Customizer option description"
+msgid ""
+"Choose whether to use a custom responsive breakpoints or not. This option "
+"will generate a custom responsive.css file in your uploads folder."
+msgstr ""
+
+#: inc/customizer/panels/responsive.php:59
+msgctxt "Customizer option name"
+msgid "Mobile"
+msgstr ""
+
+#: inc/customizer/panels/responsive.php:86
+msgctxt "Customizer option name"
+msgid "Tablet"
+msgstr ""
+
+#: inc/customizer/panels/responsive.php:113
+msgctxt "Customizer option name"
+msgid "Small desktop"
+msgstr ""
+
+#: inc/customizer/panels/responsive.php:140
+msgctxt "Customizer option name"
+msgid "Desktop"
+msgstr ""
+
+#: inc/customizer/panels/responsive.php:167
+msgctxt "Customizer option name"
+msgid "Wide desktop"
 msgstr ""
 
 #: inc/customizer/panels/sidebars.php:14
@@ -1301,52 +1359,52 @@ msgctxt "Customizer option name"
 msgid "Logo max width (px)"
 msgstr ""
 
-#: inc/customizer/panels/site-identity.php:92
+#: inc/customizer/panels/site-identity.php:94
 msgctxt "Customizer options group title"
 msgid "Site title"
 msgstr ""
 
-#: inc/customizer/panels/site-identity.php:113
+#: inc/customizer/panels/site-identity.php:115
 msgctxt "Customizer option name"
 msgid "Display site title"
 msgstr ""
 
-#: inc/customizer/panels/site-identity.php:115
+#: inc/customizer/panels/site-identity.php:117
 msgctxt "Customizer option description"
 msgid "Choose whether to show the site title."
 msgstr ""
 
-#: inc/customizer/panels/site-identity.php:254
+#: inc/customizer/panels/site-identity.php:256
 msgctxt "Customizer options group title"
 msgid "Tagline"
 msgstr ""
 
-#: inc/customizer/panels/site-identity.php:275
+#: inc/customizer/panels/site-identity.php:277
 msgctxt "Customizer option name"
 msgid "Display Tagline"
 msgstr ""
 
-#: inc/customizer/panels/site-identity.php:277
+#: inc/customizer/panels/site-identity.php:279
 msgctxt "Customizer option description"
 msgid "Choose whether to show the tagline."
 msgstr ""
 
-#: inc/customizer/panels/site-identity.php:417
+#: inc/customizer/panels/site-identity.php:419
 msgctxt "Customizer option name"
 msgid "Position"
 msgstr ""
 
-#: inc/customizer/panels/site-identity.php:422
+#: inc/customizer/panels/site-identity.php:424
 msgctxt "Customizer option value"
 msgid "Below the title"
 msgstr ""
 
-#: inc/customizer/panels/site-identity.php:426
+#: inc/customizer/panels/site-identity.php:428
 msgctxt "Customizer option value"
 msgid "Inline with the title"
 msgstr ""
 
-#: inc/customizer/panels/site-identity.php:448
+#: inc/customizer/panels/site-identity.php:450
 msgctxt "Customizer options group title"
 msgid "Favicon"
 msgstr ""
@@ -1438,20 +1496,30 @@ msgstr ""
 
 #: inc/customizer/panels/typography.php:633
 msgctxt "Customizer options group title"
+msgid "Widgets title"
+msgstr ""
+
+#: inc/customizer/panels/typography.php:710
+msgctxt "Customizer options group title"
+msgid "Widgets content"
+msgstr ""
+
+#: inc/customizer/panels/typography.php:786
+msgctxt "Customizer options group title"
 msgid "Additional typography options"
 msgstr ""
 
-#: inc/customizer/panels/typography.php:650
+#: inc/customizer/panels/typography.php:803
 msgctxt "Customizer option name"
 msgid "Additional Google Font"
 msgstr ""
 
-#: inc/customizer/panels/typography.php:651
+#: inc/customizer/panels/typography.php:804
 msgctxt "Customizer option description"
 msgid "Enter the URL of a Google Font you want to use within the theme."
 msgstr ""
 
-#: inc/customizer/panels/typography.php:651
+#: inc/customizer/panels/typography.php:804
 msgctxt "Customizer option description"
 msgid "Read how to retrieve a Google Font url"
 msgstr ""
@@ -2013,6 +2081,11 @@ msgctxt "Customizer option value"
 msgid "View details"
 msgstr ""
 
+#: inc/scripts.php:148
+msgctxt "Customizer option alert"
+msgid "This value is conflicting with other breakpoints."
+msgstr ""
+
 #: inc/sidebars.php:38
 msgctxt "Sidebar name"
 msgid "Default sidebar"
@@ -2078,7 +2151,7 @@ msgctxt "Sidebar name"
 msgid "Mobile menu widget area"
 msgstr ""
 
-#: inc/template-functions.php:220
+#: inc/template-functions.php:221
 msgctxt "Search widget input placeholder"
 msgid "Search"
 msgstr ""
@@ -2318,39 +2391,54 @@ msgctxt "Widget description"
 msgid "Links to your social profiles"
 msgstr ""
 
-#: inc/widgets/class-yith-proteo-social-icons.php:84
+#: inc/widgets/class-yith-proteo-social-icons.php:103
 msgctxt "Widget option label"
 msgid "To hide a field, just leave it empty"
 msgstr ""
 
-#: inc/widgets/class-yith-proteo-social-icons.php:87
+#: inc/widgets/class-yith-proteo-social-icons.php:106
 msgctxt "Widget option"
 msgid "Title:"
 msgstr ""
 
-#: inc/widgets/class-yith-proteo-social-icons.php:96
+#: inc/widgets/class-yith-proteo-social-icons.php:115
 msgctxt "Widget option"
 msgid "Facebook:"
 msgstr ""
 
-#: inc/widgets/class-yith-proteo-social-icons.php:105
+#: inc/widgets/class-yith-proteo-social-icons.php:124
 msgctxt "Widget option"
 msgid "Twitter:"
 msgstr ""
 
-#: inc/widgets/class-yith-proteo-social-icons.php:114
+#: inc/widgets/class-yith-proteo-social-icons.php:133
 msgctxt "Widget option"
 msgid "Instagram:"
 msgstr ""
 
-#: inc/widgets/class-yith-proteo-social-icons.php:123
+#: inc/widgets/class-yith-proteo-social-icons.php:142
 msgctxt "Widget option"
 msgid "LinkedIn:"
 msgstr ""
 
-#: inc/widgets/class-yith-proteo-social-icons.php:132
+#: inc/widgets/class-yith-proteo-social-icons.php:151
 msgctxt "Widget option"
 msgid "Youtube:"
+msgstr ""
+
+#: inc/widgets/class-yith-proteo-social-icons.php:160
+msgctxt "Widget option"
+msgid "Pinterest:"
+msgstr ""
+
+#: inc/widgets/class-yith-proteo-social-icons.php:169
+msgctxt "Widget option"
+msgid "Skype:"
+msgstr ""
+
+#: inc/widgets/class-yith-proteo-social-icons.php:178
+msgctxt "Widget option"
+msgid "Tiktok:"
 msgstr ""
 
 #: inc/woocommerce.php:203

@@ -145,7 +145,7 @@ function yith_proteo_customize_controls_js() {
 		'yith_proteo_customizer_controls',
 		array(
 			'yith_proteo_customizer_has_woocommerce'    => function_exists( 'WC' ),
-			'yith_proteo_responsive_option_notice_text' => esc_html_x( 'This value is conflicting with other breaking points.', 'Customizer option alert', 'yith-proteo' ),
+			'yith_proteo_responsive_option_notice_text' => esc_html_x( 'This value is conflicting with other breakpoints.', 'Customizer option alert', 'yith-proteo' ),
 		)
 	);
 }
