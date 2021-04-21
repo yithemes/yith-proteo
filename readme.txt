@@ -4,7 +4,7 @@ Tags: one-column, two-columns, left-sidebar, right-sidebar, wide-blocks, accessi
 Requires at least: 4.9.6
 Tested up to: WordPress 5.7
 Requires PHP: 5.6
-Stable tag: 1.5.2
+Stable tag: 1.5.3
 YITH Proteo WordPress Theme, Copyright 2020 YITH
 YITH Proteo is distributed under the terms of the GNU GPL
 License: GPLv2 or later
@@ -25,6 +25,21 @@ Proteo is a modern, fast and fully customizable WooCommerce theme. Designed and 
 == Frequently Asked Questions ==
 
 == Changelog ==
+= 1.5.3 - April 21 2021 =
+* New support for WooCommerce 5.2
+* New custom responsive breakpoint options
+* New widget typography options
+* New social network added to the social profile widget (Skype, Pinterest, TikTok)
+* New form element options
+* New translation strings
+* Fix Google Font json file include on local environments
+* Fix select2 and form elements minimum width
+* Fix issue with safari and background image support
+* Fix products column display on iPad and table devices
+* Fix cart page variable product display
+* Fix select2 dropdown content typography
+* Dev: new CSS classes to avoid styled radio and checkboxes (.yith-proteo-standard-checkbox - .yith-proteo-standard-radio)
++ Dev: responsive style moved to independent CSS file responsive.css in theme root folder
 
 = 1.5.2 - March 18 2021 =
 * New site identity options
