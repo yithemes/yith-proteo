@@ -84,6 +84,13 @@ h3.widget-title {
 	}
 }
 
+.header-sidebar {
+	.widget {
+		color: var(--proteo-header_menu_color, #404040);
+		font-size: var(--proteo-header_menu_font_size, 14px);
+	}
+}
+
 /**
 Recent posts
  */

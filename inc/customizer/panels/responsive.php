@@ -35,7 +35,7 @@ if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
 			array(
 				'label'       => esc_html_x( 'Use custom responsive breakpoints', 'Customizer option name', 'yith-proteo' ),
 				'section'     => 'yith_proteo_responsive_management',
-				'description' => esc_html_x( 'Choose whether to use a custom responsive breakpoints or not. This option will generate a custom responsive.css file in your uploads folder.', 'Customizer option description', 'yith-proteo' ),
+				'description' => esc_html_x( 'Choose whether to use custom responsive breakpoints or not. This option will generate a custom responsive.css file in your uploads folder.', 'Customizer option description', 'yith-proteo' ),
 			)
 		)
 	);

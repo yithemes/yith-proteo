@@ -73,7 +73,6 @@ class YITH_Proteo_Generate_Responsive_CSS_File {
 			$css_file_content = preg_replace( "/(\/\*<{$option}>\*\/)([^\/]*)(\/\*<\/{$option}>\*\/)/", '${1}' . $value . 'px$3', $css_file_content );
 		}
 
-
 		if ( ! defined( 'FS_CHMOD_DIR' ) ) {
 			define( 'FS_CHMOD_DIR', ( 0755 & ~ umask() ) );
 		}

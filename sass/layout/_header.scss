@@ -180,11 +180,12 @@ body.static-header {
 	}
 
 	.widget {
-		font-size: inherit;
 		text-align: initial;
 		display: inline-block;
 		z-index: 10;
 		margin: 0 7.5px 5px;
+		color: var(--proteo-topbar_font_color, #404040);
+		font-size: var(--proteo-topbar_font_size, 16px);
 
 		h2.widget-title {
 			display: inline-block;
@@ -192,6 +193,7 @@ body.static-header {
 			font-size: 1.125rem;
 			text-transform: uppercase;
 			font-weight: normal;
+			color: var(--proteo-topbar_font_color, #404040);
 		}
 	}
 	.widget.widget_text p {
@@ -199,6 +201,7 @@ body.static-header {
 		line-height: normal;
 		font-weight: initial;
 		margin: 0;
+		color: inherit;
 	}
 
 	& > .container {
