@@ -89,6 +89,15 @@ h3.widget-title {
 		color: var(--proteo-header_menu_color, #404040);
 		font-size: var(--proteo-header_menu_font_size, 14px);
 	}
+
+	.widget_search {
+		&:before {
+			color: inherit
+		}
+		&:hover::before {
+			color: var(--proteo-header_menu_hover_color, $color__accent); 
+		}
+	}
 }
 
 /**

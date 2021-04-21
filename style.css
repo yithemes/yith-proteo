@@ -6964,6 +6964,12 @@ h3.widget-title {
   color: var(--proteo-header_menu_color, #404040);
   font-size: var(--proteo-header_menu_font_size, 14px);
 }
+.header-sidebar .widget_search:before {
+  color: inherit;
+}
+.header-sidebar .widget_search:hover::before {
+  color: var(--proteo-header_menu_hover_color, #448a85);
+}
 
 /**
 Recent posts
