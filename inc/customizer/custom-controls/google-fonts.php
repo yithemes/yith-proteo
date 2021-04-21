@@ -119,11 +119,11 @@ function yith_proteo_read_all_font_options() {
 			'selector' => 'h1.product_title',
 		),
 		'yith_proteo_widget_title_font'       => array(
-			'default'  => '{"font":"Montserrat","regularweight":"regular","category":"sans-serif"}',
+			'default'  => get_theme_mod( 'yith_proteo_h3_font', '{"font":"Montserrat","regularweight":"700","category":"sans-serif"}' ),
 			'selector' => 'h2.widget-title, h3.widget-title',
 		),
 		'yith_proteo_widget_content_font'     => array(
-			'default'  => '{"font":"Montserrat","regularweight":"regular","category":"sans-serif"}',
+			'default'  => get_theme_mod( 'yith_proteo_body_font', '{"font":"Montserrat","regularweight":"regular","category":"sans-serif"}' ),
 			'selector' => '.widget',
 		),
 
