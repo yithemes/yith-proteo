@@ -246,6 +246,7 @@ p.stars {
 	vertical-align: middle;
 	max-width: 70px;
 	white-space: nowrap;
+	width: 100%;
 
 	input {
 		text-align: center;
@@ -253,7 +254,9 @@ p.stars {
 		color: #1f1f1f;
 		font-family: inherit;
 		vertical-align: middle;
-		padding-right: 20px;
+		padding-right: 30px;
+		display: inline-block;
+		width: 100%;
 	}
 
 	span.product-qty-arrows {
