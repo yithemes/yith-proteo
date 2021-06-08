@@ -39,7 +39,13 @@ if ( function_exists( 'wc' ) ) {
 		if ( is_shop() ) {
 			$sidebar = get_theme_mod( 'yith_proteo_shop_page_default_sidebar', $default_shop_page_sidebar_chooser );
 		} elseif ( is_product_category() ) {
-			$sidebar = get_theme_mod( 'yith_proteo_product_category_page_sidebar', 'shop-sidebar' );
+			$sidebar                  = get_theme_mod( 'yith_proteo_product_category_page_sidebar', 'shop-sidebar' );
+			$category                 = get_queried_object();
+			$category_id              = $category->term_id;
+			$category_sidebar_chooser = get_term_meta( $category_id, 'yith_proteo_product_taxonomy_meta', true );
+			$category_sidebar         = isset( $category_sidebar_chooser['sidebar_chooser'] ) ? $category_sidebar_chooser['sidebar_chooser'] : $sidebar;
+
+			$sidebar = $category_sidebar;
 		} elseif ( is_product_tag() ) {
 			$sidebar = get_theme_mod( 'yith_proteo_product_tag_page_sidebar', 'shop-sidebar' );
 		} elseif ( is_product_taxonomy() ) {

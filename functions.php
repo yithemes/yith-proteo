@@ -208,6 +208,7 @@ require get_template_directory() . '/inc/template-tags.php';
  * Theme metaboxes.
  */
 require get_template_directory() . '/inc/metaboxes.php';
+require get_template_directory() . '/inc/taxonomies-metaboxes.php';
 
 /**
  * Functions which enhance the theme by hooking into WordPress.
