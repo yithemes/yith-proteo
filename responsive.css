@@ -206,6 +206,7 @@ table.shop_table_responsive tr td {
     z-index: 100;
     overflow-y: scroll;
     margin-top: -15px;
+    transition: none;
   }
 
   .main-navigation.toggled #yith-proteo-mobile-menu {
