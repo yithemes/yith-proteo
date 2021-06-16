@@ -129,7 +129,7 @@ function yith_proteo_save_taxonomy_meta( $term_id ) {
 	}
 	// phpcs:disable WordPress.Security.NonceVerification.Missing
 	if ( isset( $_POST['yith_proteo_term_meta'] ) ) {
-		$yith_proteo_term_meta = wc_clean( wp_unslash( $_POST['yith_proteo_term_meta'] ) );
+		$yith_proteo_term_meta = wc_clean( wp_unslash( $_POST['yith_proteo_term_meta'] ) ); // phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized
 
 		update_term_meta( $term_id, 'yith_proteo_product_taxonomy_meta', $yith_proteo_term_meta );
 	}

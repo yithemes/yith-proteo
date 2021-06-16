@@ -194,7 +194,7 @@ table.shop_table_responsive tr td {
     right: 30px;
   }
 
-  .main-navigation > div {
+  .main-navigation #yith-proteo-mobile-menu {
     opacity: 0;
     visibility: hidden;
     position: fixed;
@@ -208,7 +208,7 @@ table.shop_table_responsive tr td {
     margin-top: -15px;
   }
 
-  .main-navigation.toggled > div {
+  .main-navigation.toggled #yith-proteo-mobile-menu {
     opacity: 1;
     visibility: visible;
     left: 0;

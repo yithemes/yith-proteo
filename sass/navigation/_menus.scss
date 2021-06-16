@@ -275,7 +275,7 @@ body.static-header .menu-toggle {
 		}
 	}
 
-	& > div {
+	#yith-proteo-mobile-menu {
 		position: fixed;
 		height: 100vh;
 		background: var(--proteo-mobile_menu_bg_color, var(--proteo-header_bg_color, #ffffff));

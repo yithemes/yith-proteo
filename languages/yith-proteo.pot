@@ -5,14 +5,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YITH Proteo\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2021-04-21 12:59+0200\n"
+"POT-Creation-Date: 2021-06-14 09:46+0200\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "PO-Revision-Date: 2017-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: yithemes\n"
-"X-Generator: Poedit 2.4.2\n"
+"X-Generator: Poedit 3.0\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
 "_n_noop:1,2;_c;_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_ex:1,2c;"
@@ -1217,8 +1217,8 @@ msgstr ""
 #: inc/customizer/panels/responsive.php:38
 msgctxt "Customizer option description"
 msgid ""
-"Choose whether to use a custom responsive breakpoints or not. This option "
-"will generate a custom responsive.css file in your uploads folder."
+"Choose whether to use custom responsive breakpoints or not. This option will "
+"generate a custom responsive.css file in your uploads folder."
 msgstr ""
 
 #: inc/customizer/panels/responsive.php:59
@@ -2001,22 +2001,26 @@ msgctxt "page option value"
 msgid "none"
 msgstr ""
 
-#: inc/metaboxes.php:215 inc/metaboxes.php:247
+#: inc/metaboxes.php:215 inc/metaboxes.php:247 inc/taxonomies-metaboxes.php:19
+#: inc/taxonomies-metaboxes.php:37
 msgctxt "page option value"
 msgid "inherit"
 msgstr ""
 
-#: inc/metaboxes.php:219
+#: inc/metaboxes.php:219 inc/taxonomies-metaboxes.php:22
+#: inc/taxonomies-metaboxes.php:78
 msgctxt "page option value"
 msgid "no-sidebar"
 msgstr ""
 
-#: inc/metaboxes.php:223
+#: inc/metaboxes.php:223 inc/taxonomies-metaboxes.php:25
+#: inc/taxonomies-metaboxes.php:82
 msgctxt "page option value"
 msgid "left"
 msgstr ""
 
-#: inc/metaboxes.php:227
+#: inc/metaboxes.php:227 inc/taxonomies-metaboxes.php:28
+#: inc/taxonomies-metaboxes.php:86
 msgctxt "page option value"
 msgid "right"
 msgstr ""
@@ -2151,7 +2155,25 @@ msgctxt "Sidebar name"
 msgid "Mobile menu widget area"
 msgstr ""
 
-#: inc/template-functions.php:221
+#: inc/taxonomies-metaboxes.php:16 inc/taxonomies-metaboxes.php:68
+msgid "Sidebar position"
+msgstr ""
+
+#: inc/taxonomies-metaboxes.php:34 inc/taxonomies-metaboxes.php:94
+msgid "Sidebar to display"
+msgstr ""
+
+#: inc/taxonomies-metaboxes.php:74
+msgctxt "page option value"
+msgid "inherit default sidebar position"
+msgstr ""
+
+#: inc/taxonomies-metaboxes.php:100
+msgctxt "page option value"
+msgid "inherit default sidebar"
+msgstr ""
+
+#: inc/template-functions.php:225
 msgctxt "Search widget input placeholder"
 msgid "Search"
 msgstr ""
@@ -2323,36 +2345,36 @@ msgctxt "Widget description"
 msgid "A shortcut to site login page"
 msgstr ""
 
-#: inc/widgets/class-yith-proteo-account-widget.php:65
+#: inc/widgets/class-yith-proteo-account-widget.php:67
 #, php-format
 msgctxt "YITH_Proteo_Account_Widget greeting message"
 msgid "Hello %s"
 msgstr ""
 
-#: inc/widgets/class-yith-proteo-account-widget.php:126
-#: inc/widgets/class-yith-proteo-account-widget.php:200
+#: inc/widgets/class-yith-proteo-account-widget.php:128
+#: inc/widgets/class-yith-proteo-account-widget.php:202
 msgctxt "Widget option"
 msgid "Custom icon"
 msgstr ""
 
-#: inc/widgets/class-yith-proteo-account-widget.php:132
-#: inc/widgets/class-yith-proteo-account-widget.php:206
+#: inc/widgets/class-yith-proteo-account-widget.php:134
+#: inc/widgets/class-yith-proteo-account-widget.php:208
 msgctxt "Widget option"
 msgid "Login url"
 msgstr ""
 
-#: inc/widgets/class-yith-proteo-account-widget.php:140
-#: inc/widgets/class-yith-proteo-account-widget.php:214
+#: inc/widgets/class-yith-proteo-account-widget.php:142
+#: inc/widgets/class-yith-proteo-account-widget.php:216
 msgctxt "Widget option"
 msgid "My account url"
 msgstr ""
 
-#: inc/widgets/class-yith-proteo-account-widget.php:166
+#: inc/widgets/class-yith-proteo-account-widget.php:168
 msgctxt "Widget option"
 msgid "Add Media"
 msgstr ""
 
-#: inc/widgets/class-yith-proteo-account-widget.php:167
+#: inc/widgets/class-yith-proteo-account-widget.php:169
 msgctxt "Widget option"
 msgid "Reset"
 msgstr ""

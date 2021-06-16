@@ -208,7 +208,7 @@ $yith_proteo_large_desktop_device_width_min: '/*<yith_proteo_large_desktop_devic
 	body.admin-bar #site-navigation.toggled .menu-toggle {
 		right: 30px;
 	}
-	.main-navigation > div {
+	.main-navigation #yith-proteo-mobile-menu {
 		opacity: 0;
 		visibility: hidden;
 		position: fixed;
@@ -223,7 +223,7 @@ $yith_proteo_large_desktop_device_width_min: '/*<yith_proteo_large_desktop_devic
 	}
 
 	.main-navigation.toggled {
-		& > div {
+		#yith-proteo-mobile-menu {
 			opacity: 1;
 			visibility: visible;
 			left: 0;
