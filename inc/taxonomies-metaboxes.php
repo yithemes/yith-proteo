@@ -14,7 +14,7 @@ function yith_proteo_taxonomy_add_new_meta_field() {
 	?>
 	<div class='form-field'>
 		<label for='yith_proteo_term_meta[sidebar_position]'><?php esc_html_e( 'Sidebar position', 'yith-proteo' ); ?></label>
-		<select name="yith_proteo_term_meta[sidebar_position]" id="yith_proteo_term_meta[sidebar_position]" class="components-text-control__input">
+		<select name="yith_proteo_term_meta[sidebar_position]" id="yith_proteo_term_meta[sidebar_position]" class="components-text-control__input yith_proteo_product_taxonomy_sidebar_position">
 			<option value="inherit" selected>
 				<?php echo esc_html_x( 'inherit', 'page option value', 'yith-proteo' ); ?>
 			</option>
@@ -32,7 +32,7 @@ function yith_proteo_taxonomy_add_new_meta_field() {
 
 	<div class='form-field'>
 		<label for='yith_proteo_term_meta[sidebar_chooser]'><?php esc_html_e( 'Sidebar to display', 'yith-proteo' ); ?></label>
-		<select name="yith_proteo_term_meta[sidebar_chooser]" id="yith_proteo_term_meta[sidebar_chooser]" class="components-text-control__input">
+		<select name="yith_proteo_term_meta[sidebar_chooser]" id="yith_proteo_term_meta[sidebar_chooser]" class="components-text-control__input yith_proteo_product_taxonomy_sidebar">
 			<option value="inherit" selected>
 				<?php echo esc_html_x( 'inherit', 'page option value', 'yith-proteo' ); ?>
 			</option>
@@ -68,7 +68,7 @@ function yith_proteo_taxonomy_edit_meta_field( $term ) {
 			<label for='yith_proteo_term_meta[sidebar_position]'><?php esc_html_e( 'Sidebar position', 'yith-proteo' ); ?></label>
 		</th>
 		<td>
-			<select name="yith_proteo_term_meta[sidebar_position]" id="yith_proteo_term_meta[sidebar_position]" class="components-text-control__input">
+			<select name="yith_proteo_term_meta[sidebar_position]" id="yith_proteo_term_meta[sidebar_position]" class="components-text-control__input yith_proteo_product_taxonomy_sidebar_position">
 				<option
 					value="inherit" <?php echo ( isset( $yith_proteo_term_meta['sidebar_position'] ) && 'inherit' === $yith_proteo_term_meta['sidebar_position'] ) ? 'selected' : ''; ?>>
 					<?php echo esc_html_x( 'inherit default sidebar position', 'page option value', 'yith-proteo' ); ?>
@@ -94,7 +94,7 @@ function yith_proteo_taxonomy_edit_meta_field( $term ) {
 			<label for='yith_proteo_term_meta[sidebar_chooser]'><?php esc_html_e( 'Sidebar to display', 'yith-proteo' ); ?></label>
 		</th>
 		<td>
-			<select name="yith_proteo_term_meta[sidebar_chooser]" id="yith_proteo_term_meta[sidebar_chooser]" class="components-text-control__input">
+			<select name="yith_proteo_term_meta[sidebar_chooser]" id="yith_proteo_term_meta[sidebar_chooser]" class="components-text-control__input yith_proteo_product_taxonomy_sidebar">
 				<option
 					value="inherit" <?php echo ( isset( $yith_proteo_term_meta['sidebar_chooser'] ) && 'inherit' === $yith_proteo_term_meta['sidebar_chooser'] ) ? 'selected' : ''; ?>>
 					<?php echo esc_html_x( 'inherit default sidebar', 'page option value', 'yith-proteo' ); ?>
