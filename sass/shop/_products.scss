@@ -55,6 +55,7 @@ ul.products,
 		.yith-wcqv-button.button:not(.inside-thumb),
 		.add_to_cart_button,
 		.view-details,
+		.product_type_grouped,
 		&.outofstock a {
 			transition: all ease 0.3s;
 			font-size: var(--proteo-catalog_product_add_to_cart_font_size, 0.875rem);
