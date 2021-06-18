@@ -374,12 +374,14 @@ if ( ! function_exists( 'yith_proteo_show_additional_product_loop_image_on_hover
 	 * @author Francesco Grasso <francgrasso@yithemes.com>
 	 */
 	function yith_proteo_show_additional_product_loop_image_on_hover() {
-
-		global $product;
-		$attachment_ids = $product->get_gallery_image_ids();
-		if ( $attachment_ids ) {
-			echo wp_get_attachment_image( $attachment_ids[0], 'woocommerce_thumbnail' );
-		}
+		$hover_effect = get_theme_mod( 'yith_proteo_product_catalog_hover_effect', 'glow' );
+		if ( in_array( $hover_effect, array( 'alt-image', 'glow-alt-image' ), true ) ) {
+			global $product;
+			$attachment_ids = $product->get_gallery_image_ids();
+			if ( $attachment_ids ) {
+				echo wp_get_attachment_image( $attachment_ids[0], 'woocommerce_thumbnail' );
+			}
+		};
 	}
 endif;
 
