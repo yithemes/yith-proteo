@@ -86,6 +86,21 @@ function yith_proteo_woocommerce_active_body_class( $classes ) {
 
 add_filter( 'body_class', 'yith_proteo_woocommerce_active_body_class' );
 
+if ( ! function_exists( 'yith_proteo_woocommerce_manage_single_product_related_products_display' ) ) {
+	/**
+	 * Manage related product display (YES/NO)
+	 *
+	 * @return void
+	 */
+	function yith_proteo_woocommerce_manage_single_product_related_products_display() {
+		if ( 'no' === get_theme_mod( 'yith_proteo_product_page_related_enabler', 'yes' ) ) {
+			remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_upsell_display', 15 );
+			remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
+		}
+	}
+	add_action( 'init', 'yith_proteo_woocommerce_manage_single_product_related_products_display' );
+}
+
 /**
  * Related Products Args.
  *

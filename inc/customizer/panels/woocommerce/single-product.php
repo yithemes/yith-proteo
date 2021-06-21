@@ -312,6 +312,26 @@
 	);
 
 	// Single product page related products management.
+	if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
+		$wp_customize->add_setting(
+			'yith_proteo_product_page_related_enabler',
+			array(
+				'default'           => 'yes',
+				'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+			)
+		);
+
+		$wp_customize->add_control(
+			new Customizer_Control_Yes_No(
+				$wp_customize,
+				'yith_proteo_product_page_related_enabler',
+				array(
+					'label'   => esc_html_x( 'Show related products', 'Customizer option name', 'yith-proteo' ),
+					'section' => 'yith_proteo_product_page_management',
+				)
+			)
+		);
+	}
 	$wp_customize->add_setting(
 		'yith_proteo_product_page_related_max_number',
 		array(
