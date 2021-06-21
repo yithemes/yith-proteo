@@ -45,9 +45,10 @@
 		$('input[type="radio"]:not(.yith-proteo-standard-radio), input[type="checkbox"]:not(.yith-proteo-standard-checkbox)').each(function () {
 
 			var type = $(this).attr('type'),
-				checked = $(this).is(':checked') ? 'checked' : '';
+				checked = $(this).is(':checked') ? 'checked' : '',
+				visible = $(this).is(':visible');
 
-			if (!$(this).closest('span.' + type + 'button').length) {
+			if ( visible && !$(this).closest('span.' + type + 'button').length) {
 				$(this).wrap('<span class="' + type + 'button ' + checked + '"></span>');
 			}
 		});
