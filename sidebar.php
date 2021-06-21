@@ -18,8 +18,15 @@ if ( function_exists( 'wc' ) ) {
 	$default_shop_page_sidebar_chooser  = in_array( $shop_page_sidebar_chooser_meta, array( '', 'inherit' ), true ) ? get_theme_mod( 'yith_proteo_shop_page_default_sidebar', 'sidebar-1' ) : $shop_page_sidebar_chooser_meta;
 
 	// WooCommerce shop page support.
-	if ( is_product_category() && ! yith_proteo_is_shop_filterd() && get_theme_mod( 'yith_proteo_product_category_page_sidebar_position', 'no-sidebar' ) === 'no-sidebar' ) {
-		return;
+	if ( is_product_category() && ! yith_proteo_is_shop_filterd() ) {
+		$product_category                          = get_queried_object();
+		$product_category_id                       = $product_category->term_id;
+		$product_category_sidebar_position         = get_term_meta( $product_category_id, 'yith_proteo_product_taxonomy_meta', true );
+		$product_category_sidebar_position         = isset( $product_category_sidebar_position['sidebar_position'] ) ? $product_category_sidebar_position['sidebar_position'] : 'inherit';
+		$default_product_category_sidebar_position = get_theme_mod( 'yith_proteo_product_category_page_sidebar_position', 'no-sidebar' );
+		if ( 'no-sidebar' === $product_category_sidebar_position || ( 'inherit' === $product_category_sidebar_position && 'no-sidebar' === $default_product_category_sidebar_position ) ) {
+			return;
+		}
 	} elseif ( is_product_tag() && ! yith_proteo_is_shop_filterd() && get_theme_mod( 'yith_proteo_product_tag_page_sidebar_position', 'no-sidebar' ) === 'no-sidebar' ) {
 		return;
 	} elseif ( is_product_taxonomy() && ! is_product_category() && ! yith_proteo_is_shop_filterd() && get_theme_mod( 'yith_proteo_product_tax_page_sidebar_position', 'no-sidebar' ) === 'no-sidebar' ) {
@@ -33,7 +40,6 @@ if ( function_exists( 'wc' ) ) {
 
 <aside id="secondary" class="widget-area <?php echo yith_proteo_get_sidebar_position() ? 'col-lg-3' : ''; ?>">
 	<?php
-
 	$sidebar = yith_proteo_sidebar_get_meta( 'sidebar_chooser' );
 	if ( class_exists( 'WooCommerce' ) ) {
 		if ( is_shop() ) {

@@ -133,7 +133,6 @@ if ( ! function_exists( 'yith_proteo_get_sidebar_position' ) ) :
 		if ( 'sidebar-show' === $info ) {
 			return $sidebar_show;
 		}
-
 		return $sidebar_display;
 
 	}
