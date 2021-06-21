@@ -54,8 +54,8 @@ if ( class_exists( 'WP_Customize_Control' ) ) {
 						max="<?php echo esc_attr( $this->max ); ?>" step="<?php echo esc_attr( $this->step ); ?>"
 						type='range' <?php esc_attr( $this->link() ); ?>
 						value="<?php echo esc_attr( $this->value() ); ?>"
-						oninput="jQuery(this).next('input').val( jQuery(this).val() )">
-				<input class="range-value" oninput="jQuery(this).prev('input').val( jQuery(this).val() )" type='number' min="<?php echo esc_attr( $this->min ); ?>"
+						oninput="jQuery(this).next('input').val( jQuery(this).val());">
+				<input class="range-value" onchange="jQuery(this).prev('input').val( jQuery(this).val() ).change();" type='number' min="<?php echo esc_attr( $this->min ); ?>"
 						max="<?php echo esc_attr( $this->max ); ?>" step="<?php echo esc_attr( $this->step ); ?>" value='<?php echo esc_attr( $this->value() ); ?>'>
 				<span class="customize-control-unit"><?php echo esc_html( $this->unit ); ?></span>
 				<span class="customize-control-reset"><?php echo esc_html( $this->default ); ?></span>
