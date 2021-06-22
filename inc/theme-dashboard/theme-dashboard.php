@@ -8,18 +8,21 @@
 $demos = array(
 	array(
 		'demo_name'              => 'Classic Shop',
+		'slug'                   => 'classic-shop',
 		'demo_preview_image_url' => 'https://update.yithemes.com/proteo-demo-content/classic-shop/screenshot.png',
 		'demo_preview_url'       => 'https://proteo.yithemes.com/classic-shop/',
 		'demo_state'             => 'live',
 	),
 	array(
 		'demo_name'              => 'Food',
+		'slug'                   => 'food',
 		'demo_preview_image_url' => 'https://update.yithemes.com/proteo-demo-content/food/food.jpg',
 		'demo_preview_url'       => 'https://proteo.yithemes.com/food/',
 		'demo_state'             => 'live',
 	),
 	array(
 		'demo_name'              => 'Desire',
+		'slug'                   => 'classic-shop',
 		'demo_preview_image_url' => 'https://update.yithemes.com/proteo-demo-content/desire/desire.jpg',
 		'demo_preview_url'       => 'https://proteo.yithemes.com/desire/',
 		'demo_state'             => 'live',
