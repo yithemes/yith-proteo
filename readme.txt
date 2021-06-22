@@ -30,6 +30,7 @@ Proteo is a modern, fast and fully customizable WooCommerce theme. Designed and 
 * New: options to set woocommerce product category sidebar individually
 * New: support for WPForms plugin
 * New: support for WooCommerce Germanized plugin (fix double checkboxes on checkout page)
+* New: support for WooCommerce 5.4
 * Tweak: improve product category sidebar display
 * Update: style-editor.css file with new Gutenberg blocks markup
 * Fix: product page "Additional Information" attribute's title display
