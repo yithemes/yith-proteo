@@ -359,7 +359,7 @@ $is_proteo_toolkit_active    = defined( 'YITH_PROTEO_TOOLKIT' );
 						</p>
 						<div class="three-cols-set">
 							<?php
-							foreach ( $demos as $demo ) :
+							foreach ( $demos as $demoindex => $demo ) :
 								?>
 							<div class="col">
 								<figure class="demo-preview <?php echo esc_attr( $demo['demo_state'] ); ?>">
@@ -367,7 +367,7 @@ $is_proteo_toolkit_active    = defined( 'YITH_PROTEO_TOOLKIT' );
 									<div class="demo-actions">
 										<?php if ( '' !== $demo['demo_preview_url'] ) : ?>
 											<?php if ( $is_proteo_toolkit_active ) : ?>
-												<a href="<?php echo esc_url( admin_url( 'themes.php?page=setup-wizard' ) ); ?>"><?php echo esc_html_x( 'Import', 'Proteo dashboard', 'yith-proteo' ); ?></a>
+												<a href="<?php echo esc_url( admin_url( 'themes.php?page=setup-wizard&selected_skin=' . $demoindex ) ); ?>"><?php echo esc_html_x( 'Import', 'Proteo dashboard', 'yith-proteo' ); ?></a>
 												<?php elseif ( $is_proteo_toolkit_installed ) : ?>
 												<a href="" class="yith-proteo-activate-recommended-plugin yith-proteo-activate-toolkit" data-slug="yith-proteo-toolkit" data-init="yith-proteo-toolkit/yith-proteo-toolkit.php"><?php echo esc_html_x( 'Import', 'Proteo dashboard', 'yith-proteo' ); ?></a>
 											<?php else : ?>
