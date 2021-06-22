@@ -25,6 +25,24 @@ Proteo is a modern, fast and fully customizable WooCommerce theme. Designed and 
 == Frequently Asked Questions ==
 
 == Changelog ==
+= 1.5.4 - June 22 2021 =
+* New: option to Show/Hide related products on single product page
+* New: options to set woocommerce product category sidebar individually
+* New: support for WPForms plugin
+* New: support for WooCommerce Germanized plugin (fix double checkboxes on checkout page)
+* Tweak: improve product category sidebar display
+* Update: style-editor.css file with new Gutenberg blocks markup
+* Fix: product page "Additional Information" attribute's title display
+* Fix: customizer range options behavior
+* Fix: homepage double title when shop page is used as front page
+* Fix: load additional loop product image only if enabled by option
+* Fix: add dependency check for specific product categories sidebar options
+* Fix: "view details" link style in product loop
+* Fix: max height in single product image
+* Fix: issue on mobile menu opener for iOs devices
+* Fix: quantity input width for stock products
+* Fix: issue on submenu item click
+
 = 1.5.3.1 - April 22 2021 =
 * Fix header search widget hover color
 * Fix proteo-account-widget default icon display
