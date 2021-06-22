@@ -8670,6 +8670,7 @@ body.yith-proteo-product-loop-add-to-cart-position-hover ul.wc-block-grid__produ
   width: 1px;
   vertical-align: top;
   padding-right: 35px;
+  white-space: nowrap;
 }
 .single-product .woocommerce-tabs .panel table.shop_attributes td {
   vertical-align: top;
