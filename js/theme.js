@@ -215,25 +215,7 @@
 				$(this).height($(this).width());
 			});
 		}).trigger('resize');
-	});
-
-	if(window.matchMedia("(pointer: coarse)").matches) {
-		// touchscreen
-		$('.menu-item-has-children > a').on( 'click',function (ev) {
-			var t = $(this);
-			if (t.hasClass('submenu-opened')) {
-				return true;
-			} else {
-				ev.preventDefault();
-				//$('.menu-item-has-children > a').removeClass('submenu-opened');
-				$(this).addClass('submenu-opened');
-			}
-	
-		});
-	} else {
-		// is desktop
-	}
-	
+	});	
 
 	// Modals
 	$('a.open-modal').on( 'click',function (ev) {
@@ -330,14 +312,6 @@
 		document.addEventListener("scroll", lazyLoad);
 		window.addEventListener("resize", lazyLoad);
 		window.addEventListener("orientationchange", lazyLoad);
-	});
-
-	$('#mobile-menu li:not(.menu-item-has-children) > a').on('click', function(){
-		var t = $(this),
-			mobile_menu_container = $('nav#site-navigation');
-			if ( mobile_menu_container.hasClass('toggled') ) {
-				mobile_menu_container.removeClass('toggled');
-			}
 	});
 
 	// Loop add to cart :hover position

@@ -127,6 +127,10 @@
 			opacity: 1;
 			pointer-events: auto;
 		}
+
+		li.focus > ul {
+			display: block !important;
+		}
 	}
 
 	li {
@@ -331,6 +335,7 @@ body.static-header .menu-toggle {
 		&.mobile-menu-align-center li {
 			margin-left: auto;
 			margin-right: auto;
+			text-align: center;
 		}
 		
 	}

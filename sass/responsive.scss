@@ -530,6 +530,10 @@ $yith_proteo_large_desktop_device_width_min: '/*<yith_proteo_large_desktop_devic
 	.single-product .woocommerce-tabs ul.tabs li a {
 		font-size: 1rem;
 	}
+
+	.main-navigation ul ul:before {
+		display: none;
+	}
 }
 /* Mobile device */
 @media (max-width: $yith_proteo_mobile_device_width) {

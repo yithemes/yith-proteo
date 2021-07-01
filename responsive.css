@@ -512,6 +512,10 @@ article:not(.has-post-thumbnail).page header.entry-header h1 {
 .single-product .woocommerce-tabs ul.tabs li a {
     font-size: 1rem;
   }
+
+  .main-navigation ul ul:before {
+    display: none;
+  }
 }
 /* Mobile device */
 @media (max-width: /*<yith_proteo_mobile_device_width>*/600px/*</yith_proteo_mobile_device_width>*/) {
