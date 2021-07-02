@@ -464,6 +464,17 @@ function yith_proteo_inline_style() {
 	yith_proteo_massive_google_font_enqueue();
 }
 
+add_filter('style_loader_tag', 'yith_proteo_preload_gfont', 10, 2);
+
+function yith_proteo_preload_gfont($html, $handle) {
+    if ( $handle === 'yith-proteo-custom-google-fonts' ) {
+        return str_replace("rel='stylesheet'",
+            "rel='preload stylesheet' type='text/css' as='style' crossorigin='anonymous'", $html);
+    }
+    
+    return $html;
+}
+
 add_action( 'wp_enqueue_scripts', 'yith_proteo_inline_style', 10 );
 
 if ( ! function_exists( 'yith_proteo_hex2rgba' ) ) :
