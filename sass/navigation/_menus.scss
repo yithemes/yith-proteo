@@ -219,33 +219,18 @@ header.sticky {
 		height: 2px;
 		width: 20px;
 		border-radius: 1px;
-		-webkit-transform: rotate(0deg);
-		-moz-transform: rotate(0deg);
-		-o-transform: rotate(0deg);
 		transform: rotate(0deg);
-		-webkit-transition: 0.25s ease;
-		-moz-transition: 0.25s ease;
-		-o-transition: 0.25s ease;
 		transition: 0.25s ease;
 
 		&:nth-child(2) {
-			-webkit-transform-origin: left center;
-			-moz-transform-origin: left center;
-			-o-transform-origin: left center;
 			transform-origin: left center;
 		}
 
 		&:nth-child(3) {
-			-webkit-transform-origin: left center;
-			-moz-transform-origin: left center;
-			-o-transform-origin: left center;
 			transform-origin: left center;
 		}
 
 		&:nth-child(4) {
-			-webkit-transform-origin: left center;
-			-moz-transform-origin: left center;
-			-o-transform-origin: left center;
 			transform-origin: left center;
 		}
 	}
@@ -258,9 +243,6 @@ body.static-header .menu-toggle {
 .main-navigation.toggled {
 	.menu-toggle .icon-bar {
 		&:nth-child(2) {
-			-webkit-transform: rotate(45deg);
-			-moz-transform: rotate(45deg);
-			-o-transform: rotate(45deg);
 			transform: rotate(45deg);
 			width: 20px;
 		}
@@ -271,9 +253,6 @@ body.static-header .menu-toggle {
 		}
 
 		&:nth-child(4) {
-			-webkit-transform: rotate(-45deg);
-			-moz-transform: rotate(-45deg);
-			-o-transform: rotate(-45deg);
 			transform: rotate(-45deg);
 			width: 20px;
 		}

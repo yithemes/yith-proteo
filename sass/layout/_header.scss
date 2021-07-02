@@ -109,7 +109,6 @@
 	&.sticky {
 		position: fixed;
 		width: 100vw;
-		-webkit-box-shadow: -2px 2px 81px -27px rgba(0, 0, 0, 0.29);
 		box-shadow: -2px 2px 81px -27px rgba(0, 0, 0, 0.29);
 		z-index: 200;
 		background-color: var(--proteo-sticky_header_bg_color, var(--proteo-header_bg_color));

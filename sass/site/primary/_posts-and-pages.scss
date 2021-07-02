@@ -327,20 +327,14 @@ body.error404 {
 
 		.search-form {
 			display: flex;
-			display: -webkit-flex;
 			flex-flow: row nowrap;
-			-webkit-flex-flow: row nowrap;
 			align-items: stretch;
-			-webkit-align-items: stretch;
 			justify-content: space-between;
-			-webkit-justify-content: space-between;
 			margin-bottom: 100px;
 
 			label {
 				display: flex;
-				display: -webkit-flex;
 				flex-direction: column;
-				-webkit-flex-direction: column;
 				width: 70%;
 				padding: 0 15px 15px;
 
@@ -367,21 +361,15 @@ Search results
 body.search-results {
 	article.type-product {
 		display: flex;
-		display: -webkit-flex;
 		flex-flow: row nowrap;
-		-webkit-flex-flow: row nowrap;
 		align-items: stretch;
-		-webkit-align-items: stretch;
 		justify-content: space-between;
-		-webkit-justify-content: space-between;
 		margin-bottom: 50px;
 
 		.product-image,
 		.product-info {
 			display: flex;
-			display: -webkit-flex;
 			flex-direction: column;
-			-webkit-flex-direction: column;
 			padding: 10px;
 			width: 100%;
 		}
@@ -439,21 +427,15 @@ body.search-results {
 	article:not(.type-product) {
 		&.has-post-thumbnail {
 			display: flex;
-			display: -webkit-flex;
 			flex-flow: row nowrap;
-			-webkit-flex-flow: row nowrap;
 			align-items: stretch;
-			-webkit-align-items: stretch;
 			justify-content: space-between;
-			-webkit-justify-content: space-between;
 			margin-bottom: 50px;
 
 			.search-result-article-image,
 			.search-result-article-content {
 				display: flex;
-				display: -webkit-flex;
 				flex-direction: column;
-				-webkit-flex-direction: column;
 				padding: 10px;
 				width: 100%;
 			}
