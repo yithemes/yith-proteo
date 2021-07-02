@@ -91,7 +91,6 @@
 	
 		});
 	} else {
-		console.log('is desktop');
 		// is desktop
 		$('#yith-proteo-mobile-menu .menu-item-has-children > a').on( 'click',function (ev) {
 			var t = $(this);
@@ -107,7 +106,6 @@
 
 	// Open/close mobile menu on menu item with no children click (go to link)
 	$('#mobile-menu li:not(.menu-item-has-children) > a').on('click', function(){
-		console.log('qua');
 		var t = $(this),
 			mobile_menu_container = $('nav#site-navigation');
 			if ( mobile_menu_container.hasClass('toggled') ) {
