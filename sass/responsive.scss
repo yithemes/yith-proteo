@@ -525,10 +525,31 @@ $yith_proteo_large_desktop_device_width_min: '/*<yith_proteo_large_desktop_devic
 	.single-product div.product .summary.entry-summary .product_title {
 		font-size: var(--proteo-mobile_single_product_page_title_font_size, 36px);
 	}
-	.single-product div.product .summary.entry-summary .woocommerce-product-details__short-description p,
-	.single-product .woocommerce-tabs .panel,
-	.single-product .woocommerce-tabs ul.tabs li a {
-		font-size: 1rem;
+
+	.single-product {
+		div.product .summary.entry-summary .woocommerce-product-details__short-description p,
+		.woocommerce-tabs .panel,
+		.woocommerce-tabs ul.tabs li a {
+			font-size: 1rem;
+		}
+		div.product {
+			.summary.entry-summary form.variations_form table.variations {
+				tr>td .select2-container {
+					max-width: calc(100% - 60px);
+				}
+				tr>td {
+					display: block;
+					width: 100%;
+				}
+				tr>td.label {
+					padding-bottom: 10px;
+				}
+			}
+		}
+	}
+
+	.select2-dropdown.select2-dropdown--below, .selectBox-dropdown-menu.select2-dropdown--below {
+		top: 15px;
 	}
 
 	.main-navigation ul ul:before {

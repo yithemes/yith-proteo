@@ -512,6 +512,20 @@ article:not(.has-post-thumbnail).page header.entry-header h1 {
 .single-product .woocommerce-tabs ul.tabs li a {
     font-size: 1rem;
   }
+  .single-product div.product .summary.entry-summary form.variations_form table.variations tr > td .select2-container {
+    max-width: calc(100% - 60px);
+  }
+  .single-product div.product .summary.entry-summary form.variations_form table.variations tr > td {
+    display: block;
+    width: 100%;
+  }
+  .single-product div.product .summary.entry-summary form.variations_form table.variations tr > td.label {
+    padding-bottom: 10px;
+  }
+
+  .select2-dropdown.select2-dropdown--below, .selectBox-dropdown-menu.select2-dropdown--below {
+    top: 15px;
+  }
 
   .main-navigation ul ul:before {
     display: none;
