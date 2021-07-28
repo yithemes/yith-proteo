@@ -47,6 +47,7 @@ function yith_proteo_taxonomy_add_new_meta_field() {
 }
 
 add_action( 'product_cat_add_form_fields', 'yith_proteo_taxonomy_add_new_meta_field', 10, 2 );
+add_action( 'product_tag_add_form_fields', 'yith_proteo_taxonomy_add_new_meta_field', 10, 2 );
 
 /**
  * Add product category meta to edit taxonomy screen
@@ -112,6 +113,7 @@ function yith_proteo_taxonomy_edit_meta_field( $term ) {
 }
 
 add_action( 'product_cat_edit_form_fields', 'yith_proteo_taxonomy_edit_meta_field', 10, 2 );
+add_action( 'product_tag_edit_form_fields', 'yith_proteo_taxonomy_edit_meta_field', 10, 2 );
 
 /**
  * Save product category metaboxes
@@ -138,3 +140,5 @@ function yith_proteo_save_taxonomy_meta( $term_id ) {
 
 add_action( 'edited_product_cat', 'yith_proteo_save_taxonomy_meta', 10, 2 );
 add_action( 'create_product_cat', 'yith_proteo_save_taxonomy_meta', 10, 2 );
+add_action( 'edited_product_tag', 'yith_proteo_save_taxonomy_meta', 10, 2 );
+add_action( 'create_product_tag', 'yith_proteo_save_taxonomy_meta', 10, 2 );

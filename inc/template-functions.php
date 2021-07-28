@@ -94,8 +94,12 @@ if ( ! function_exists( 'yith_proteo_get_sidebar_position' ) ) :
 				$general_sidebar           = get_theme_mod( 'yith_proteo_product_category_page_sidebar_position', 'no-sidebar' );
 
 			} elseif ( is_product_tag() ) {
-				$local_sidebar   = 'inherit';
-				$general_sidebar = get_theme_mod( 'yith_proteo_product_tag_page_sidebar_position', 'no-sidebar' );
+				$tag                  = get_queried_object();
+				$tag_id               = $tag->term_id;
+				$tag_sidebar_position = get_term_meta( $tag_id, 'yith_proteo_product_taxonomy_meta', true );
+				$local_sidebar        = isset( $tag_sidebar_position['sidebar_position'] ) ? $tag_sidebar_position['sidebar_position'] : 'inherit';
+				$general_sidebar      = get_theme_mod( 'yith_proteo_product_tag_page_sidebar_position', 'no-sidebar' );
+
 			} elseif ( is_product_taxonomy() ) {
 				$local_sidebar   = 'inherit';
 				$general_sidebar = get_theme_mod( 'yith_proteo_product_tax_page_sidebar_position', 'no-sidebar' );
