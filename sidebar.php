@@ -45,7 +45,7 @@ if ( function_exists( 'wc' ) ) {
 
 ?>
 
-<aside id="secondary" class="widget-area <?php echo yith_proteo_get_sidebar_position() ? 'col-lg-3' : ''; ?>">
+<aside id="secondary" class="widget-area <?php echo yith_proteo_get_sidebar_position() ? 'col-lg-3' : 'sidebar-position-top'; ?>">
 	<?php
 	$sidebar = yith_proteo_sidebar_get_meta( 'sidebar_chooser' );
 	if ( class_exists( 'WooCommerce' ) ) {

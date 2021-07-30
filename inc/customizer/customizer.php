@@ -223,6 +223,7 @@ if ( ! function_exists( 'yith_proteo_sanitize_sidebar_position' ) ) :
 			'no-sidebar' => esc_html_x( 'No sidebar', 'Customizer option value', 'yith-proteo' ),
 			'right'      => esc_html_x( 'Right', 'Customizer option value', 'yith-proteo' ),
 			'left'       => esc_html_x( 'Left', 'Customizer option value', 'yith-proteo' ),
+			'top'        => esc_html_x( 'Top', 'Customizer option value', 'yith-proteo' ),
 		);
 
 		if ( array_key_exists( $input, $valid ) ) {

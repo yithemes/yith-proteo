@@ -49,6 +49,10 @@ if ( class_exists( 'Customizer_Control_Radio_Image' ) ) {
 						'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/sidebar-right.svg',
 						'label' => esc_html_x( 'Right', 'Customizer option value', 'yith-proteo' ),
 					),
+					'top'        => array(
+						'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/sidebar-top.svg',
+						'label' => esc_html_x( 'Top', 'Customizer option value', 'yith-proteo' ),
+					),
 				),
 			)
 		)

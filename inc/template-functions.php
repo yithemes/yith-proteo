@@ -112,25 +112,33 @@ if ( ! function_exists( 'yith_proteo_get_sidebar_position' ) ) :
 
 		if ( empty( $local_sidebar ) || 'inherit' === $local_sidebar ) {
 
-			if ( 'no-sidebar' !== $general_sidebar ) {
-				$sidebar_display .= 'col-lg-9';
-			}
-			if ( 'left' === $general_sidebar ) {
-				$sidebar_display .= ' order-last ';
-			}
-			if ( 'no-sidebar' === $general_sidebar ) {
-				$sidebar_show = false;
+			if ( 'top' === $general_sidebar ) {
+				$sidebar_display .= '';
+			} else {
+				if ( 'no-sidebar' !== $general_sidebar ) {
+					$sidebar_display .= 'col-lg-9';
+				}
+				if ( 'left' === $general_sidebar ) {
+					$sidebar_display .= ' order-last ';
+				}
+				if ( 'no-sidebar' === $general_sidebar ) {
+					$sidebar_show = false;
+				}
 			}
 		} else {
 
-			if ( 'no-sidebar' !== $local_sidebar ) {
-				$sidebar_display .= 'col-lg-9';
-			}
-			if ( 'left' === $local_sidebar ) {
-				$sidebar_display .= ' order-last ';
-			}
-			if ( 'no-sidebar' === $local_sidebar ) {
-				$sidebar_show = false;
+			if ( 'top' === $local_sidebar ) {
+				$sidebar_display .= '';
+			} else {
+				if ( 'no-sidebar' !== $local_sidebar ) {
+					$sidebar_display .= 'col-lg-9';
+				}
+				if ( 'left' === $local_sidebar ) {
+					$sidebar_display .= ' order-last ';
+				}
+				if ( 'no-sidebar' === $local_sidebar ) {
+					$sidebar_show = false;
+				}
 			}
 		}
 
