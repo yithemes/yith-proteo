@@ -105,6 +105,49 @@ table.shop_table_responsive tr td {
   ul.columns-6.products li.product {
     width: 16.6666666667%;
   }
+
+  aside#secondary.sidebar-position-top {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+  }
+  aside#secondary.sidebar-position-top.widgets_per_row_1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  aside#secondary.sidebar-position-top.widgets_per_row_2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  aside#secondary.sidebar-position-top.widgets_per_row_3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  aside#secondary.sidebar-position-top.widgets_per_row_4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  aside#secondary.sidebar-position-top.widgets_per_row_5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  aside#secondary.sidebar-position-top.widgets_per_row_6 {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  aside#secondary.sidebar-position-top.widgets_per_row_7 {
+    grid-template-columns: repeat(7, 1fr);
+  }
+  aside#secondary.sidebar-position-top.widgets_per_row_8 {
+    grid-template-columns: repeat(8, 1fr);
+  }
+  aside#secondary.sidebar-position-top.widgets_per_row_9 {
+    grid-template-columns: repeat(9, 1fr);
+  }
+  aside#secondary.sidebar-position-top.widgets_per_row_10 {
+    grid-template-columns: repeat(10, 1fr);
+  }
+  aside#secondary.sidebar-position-top.widgets_per_row_11 {
+    grid-template-columns: repeat(11, 1fr);
+  }
+  aside#secondary.sidebar-position-top.widgets_per_row_12 {
+    grid-template-columns: repeat(12, 1fr);
+  }
 }
 /** Large devices (desktops, 992px and up) **/
 @media (min-width: /*<yith_proteo_small_desktop_device_width>*/992px/*</yith_proteo_small_desktop_device_width>*/) {
