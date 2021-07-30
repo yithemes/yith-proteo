@@ -137,6 +137,34 @@
 			wp.customize.control('yith_proteo_product_page_related_columns', showControlIfhasValues(setting, ['yes']));
 		});
 
+		/**
+		 * Control Dependency
+		 */
+		wp.customize('yith_proteo_product_tag_page_sidebar_position', function (setting) {
+			wp.customize.control('yith_proteo_product_tag_page_sidebar_widgets_per_row', showControlIfhasValues(setting, ['top']));
+		});
+
+		/**
+		 * Control Dependency
+		 */
+		wp.customize('yith_proteo_product_tax_page_sidebar_position', function (setting) {
+			wp.customize.control('yith_proteo_product_tax_page_sidebar_widgets_per_row', showControlIfhasValues(setting, ['top']));
+		});
+
+		/**
+		 * Control Dependency
+		 */
+		wp.customize('yith_proteo_product_category_page_sidebar_position', function (setting) {
+			wp.customize.control('yith_proteo_product_category_page_sidebar_widgets_per_row', showControlIfhasValues(setting, ['top']));
+		});
+
+		/**
+		 * Control Dependency
+		 */
+		wp.customize('yith_proteo_shop_page_sidebar_position', function (setting) {
+			wp.customize.control('yith_proteo_shop_page_sidebar_widgets_per_row', showControlIfhasValues(setting, ['top']));
+		});
+
 
 		/**
 		 * Footer sidebar width calc

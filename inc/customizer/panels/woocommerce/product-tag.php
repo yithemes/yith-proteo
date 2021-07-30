@@ -76,3 +76,27 @@
 			'active_callback' => 'yith_proteo_product_tag_page_sidebar_is_enabled',
 		)
 	);
+
+	// Product tag widgets columns.
+	$wp_customize->add_setting(
+		'yith_proteo_product_tag_page_sidebar_widgets_per_row',
+		array(
+			'default'           => 3,
+			'sanitize_callback' => 'absint',
+			'transport'         => 'postMessage',
+		)
+	);
+	$wp_customize->add_control(
+		new WP_Customize_Range(
+			$wp_customize,
+			'yith_proteo_product_tag_page_sidebar_widgets_per_row',
+			array(
+				'label'   => esc_html_x( 'Widgets per row', 'Customizer option name', 'yith-proteo' ),
+				'min'     => 1,
+				'max'     => 6,
+				'step'    => 1,
+				'default' => 3,
+				'section' => 'yith_proteo_product_tag_page_management',
+			)
+		)
+	);

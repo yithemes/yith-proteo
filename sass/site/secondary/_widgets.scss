@@ -1,3 +1,7 @@
+.sidebar-position-top {
+	width: 100%;
+}
+
 .widget {
 	margin: 0 0 1.5em;
 	font-size: var(--proteo-widgets_content_font_size);
@@ -21,10 +25,6 @@ h3.widget-title {
 }
 
 #secondary {
-	&.sidebar-position-top {
-		width: 100%;
-	}
-
 	.widget {
 		margin-bottom: 50px;
 	}
