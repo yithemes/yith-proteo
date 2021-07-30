@@ -2,6 +2,10 @@
 	width: 100%;
 }
 
+section.widget {
+	position: relative;
+}
+
 .widget {
 	margin: 0 0 1.5em;
 	font-size: var(--proteo-widgets_content_font_size);
@@ -30,29 +34,6 @@ h3.widget-title {
 	}
 }
 
-.widget_search, .widget_product_search {
-	input[type="submit"] {
-		cursor: pointer;
-		font-size: 1rem;
-		font-weight: bold;
-		vertical-align: middle;
-	}
-	input[type="search"] {
-		margin-right: 15px;
-		margin-bottom: 15px;
-	}
-
-	form.search-form {
-		display: table;
-		width: 100%;
-	}
-
-	form.search-form > * {
-		display: table-cell;
-		vertical-align: middle;
-	}
-}
-
 #topbar,
 .header-sidebar {
 	.widget {
@@ -65,29 +46,6 @@ h3.widget-title {
 			margin-right: 0;
 		}
 	}
-
-	.widget_search {
-		& > form {
-			display: none;
-		}
-
-		&:before {
-			content: "\e86f";
-			display: inline-block;
-			font-family: Linearicons-Free;
-			speak: none;
-			font-style: normal;
-			font-weight: 400;
-			font-variant: normal;
-			text-transform: none;
-			line-height: 1;
-			-webkit-font-smoothing: antialiased;
-			-moz-osx-font-smoothing: grayscale;
-			font-size: 1.6rem;
-			cursor: pointer;
-			margin-right: 5px;
-		}
-	}
 }
 
 .header-sidebar {
@@ -95,176 +53,13 @@ h3.widget-title {
 		color: var(--proteo-header_menu_color, #404040);
 		font-size: var(--proteo-header_menu_font_size, 14px);
 	}
-
-	.widget_search {
-		&:before {
-			color: inherit
-		}
-		&:hover::before {
-			color: var(--proteo-header_menu_hover_color, $color__accent); 
-		}
-	}
 }
 
-/**
-Recent posts
- */
-
-.widget_recent_entries {
-	ul {
-		li {
-			display: table;
-			width: 100%;
-			margin-bottom: 45px;
-			font-size: var(--proteo-widgets_content_font_size);
-			color: var(--proteo-widgets_content_font_color);
-
-			a {
-				text-decoration: none;
-				font-size: 0;
-				display: block;
-
-				&:hover {
-					.post-info {
-						text-decoration: underline;
-					}
-				}
-			}
-
-			.post-image,
-			.post-info {
-				display: table-cell;
-				vertical-align: middle;
-			}
-
-			.post-image {
-				width: 40%;
-				padding-right: 25px;
-			}
-
-			.post-info {
-				font-size: 0.875rem;
-				color: #939393;
-
-				h3 {
-					font-size: 1.125rem;
-					line-height: normal;
-					margin-top: 0;
-					margin-bottom: 5px;
-					font-weight: 500;
-				}
-			}
-		}
-	}
-}
-
-/**
-Recent Comments
- */
-.widget_recent_comments {
-	ul#recentcomments {
-		li {
-			margin-bottom: 45px;
-			font-size: var(--proteo-widgets_content_font_size);
-			color: var(--proteo-widgets_content_font_color);
-
-			.comment-excerpt {
-				border: 1px solid #707070;
-				padding: 30px 20px;
-				margin-bottom: 5px;
-			}
-
-			.comment-meta {
-				font-size: 1rem;
-				text-align: right;
-				font-weight: 600;
-
-				a {
-					text-decoration: none;
-
-					&:hover {
-						text-decoration: underline;
-					}
-				}
-			}
-		}
-	}
-}
-
-/**
-Text widget
- */
-
-.widget.widget_text {
-	p,
-	input[type="text"],
-	input[type="email"] {
-		font-size: var(--proteo-widgets_content_font_size);
-		color: var(--proteo-widgets_content_font_color);
-		line-height: 1.8rem;
-	}
-}
-
-/**
-Social Icons
- */
-
-.widget_yith_proteo_social_icons {
-	a.yith-proteo-social-icon {
-		display: inline-block;
-		margin: 0 15px 15px;
-		color: inherit;
-		text-decoration: none;
-		vertical-align: middle;
-		text-decoration: none !important;
-
-		&:hover {
-			color: var(--proteo-general_link_color, $color__accent);
-		}
-
-		span {
-			color: inherit;
-			font-size: 2rem;
-		}
-
-		&.tiktok {
-			svg.tiktok g {
-				fill: var(--proteo-footer_link_color, #448a85);
-			}
-			&:hover {
-				svg.tiktok g {
-					fill: var(--proteo-footer_link_hover_color, $color__link-hover);
-				}
-			}
-		}
-	}
-
-	&.col-lg-12 {
-		text-align: center;
-	}
-}
-
-/**
-YITH Proteo Account Widget
- */
-a.yith-proteo-user-welcome-message:not(:hover) {
-	color: var(--proteo-header_menu_color, #404040);
-}
-a.yith-proteo-user-welcome-message:hover {
-	color: var(--proteo-header_menu_hover_color, $color__accent);
-}
-a.yith-proteo-user-welcome-message img {
-	display: inline-block;
-}
-
-a.yith-proteo-user-welcome-message span {
-	display: inline-block;
-	font-size: 0.7rem;
-	text-transform: uppercase;
-	margin-left: 7px;
-	color: inherit;
-
-	&.lnr-user {
-		font-size: 1.6rem;
-	}
-}
+@import "widget_search";
+@import "widget_recent_posts";
+@import "widget_recent_comments";
+@import "widget_text";
+@import "widget_proteo_social_icons";
+@import "widget_proteo_account_widget";
+@import "widget_nav_menus";
+@import "widget_blocks";

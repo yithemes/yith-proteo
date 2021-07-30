@@ -1,0 +1,38 @@
+/**
+Social Icons
+ */
+
+.widget_yith_proteo_social_icons {
+	a.yith-proteo-social-icon {
+		display: inline-block;
+		margin: 0 15px 15px;
+		color: inherit;
+		text-decoration: none;
+		vertical-align: middle;
+		text-decoration: none !important;
+
+		&:hover {
+			color: var(--proteo-general_link_color, $color__accent);
+		}
+
+		span {
+			color: inherit;
+			font-size: 2rem;
+		}
+
+		&.tiktok {
+			svg.tiktok g {
+				fill: var(--proteo-footer_link_color, #448a85);
+			}
+			&:hover {
+				svg.tiktok g {
+					fill: var(--proteo-footer_link_hover_color, $color__link-hover);
+				}
+			}
+		}
+	}
+
+	&.col-lg-12 {
+		text-align: center;
+	}
+}

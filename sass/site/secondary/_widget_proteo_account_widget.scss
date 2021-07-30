@@ -1,0 +1,24 @@
+/**
+YITH Proteo Account Widget
+ */
+a.yith-proteo-user-welcome-message:not(:hover) {
+	color: var(--proteo-header_menu_color, #404040);
+}
+a.yith-proteo-user-welcome-message:hover {
+	color: var(--proteo-header_menu_hover_color, $color__accent);
+}
+a.yith-proteo-user-welcome-message img {
+	display: inline-block;
+}
+
+a.yith-proteo-user-welcome-message span {
+	display: inline-block;
+	font-size: 0.7rem;
+	text-transform: uppercase;
+	margin-left: 7px;
+	color: inherit;
+
+	&.lnr-user {
+		font-size: 1.6rem;
+	}
+}

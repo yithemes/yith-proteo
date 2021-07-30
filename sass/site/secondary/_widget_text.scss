@@ -1,0 +1,13 @@
+/**
+Text widget
+ */
+
+.widget.widget_text {
+	p,
+	input[type="text"],
+	input[type="email"] {
+		font-size: var(--proteo-widgets_content_font_size);
+		color: var(--proteo-widgets_content_font_color);
+		line-height: 1.8rem;
+	}
+}

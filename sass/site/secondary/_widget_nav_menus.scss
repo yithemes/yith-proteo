@@ -1,0 +1,30 @@
+/**
+Menus
+ */
+.widget_nav_menu {
+	h2 {
+		margin-bottom: 2rem;
+	}
+
+	ul {
+		li {
+			margin-bottom: 10px;
+			font-size: 1.125rem;
+
+			a {
+				color: inherit;
+				text-decoration: none;
+
+				&:hover {
+					color: var(--proteo-general_link_color, $color__accent);
+					text-decoration: underline;
+				}
+			}
+		}
+
+		&.sub-menu {
+			margin-left: 15px;
+			margin-top: 10px;
+		}
+	}
+}

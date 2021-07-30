@@ -1,0 +1,32 @@
+/**
+Recent Comments
+ */
+.widget_recent_comments {
+	ul#recentcomments {
+		li {
+			margin-bottom: 45px;
+			font-size: var(--proteo-widgets_content_font_size);
+			color: var(--proteo-widgets_content_font_color);
+
+			.comment-excerpt {
+				border: 1px solid #707070;
+				padding: 30px 20px;
+				margin-bottom: 5px;
+			}
+
+			.comment-meta {
+				font-size: 1rem;
+				text-align: right;
+				font-weight: 600;
+
+				a {
+					text-decoration: none;
+
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+}

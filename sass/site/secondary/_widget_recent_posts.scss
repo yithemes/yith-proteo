@@ -1,0 +1,51 @@
+/**
+Recent posts
+ */
+
+.widget_recent_entries {
+	ul {
+		li {
+			display: table;
+			width: 100%;
+			margin-bottom: 45px;
+			font-size: var(--proteo-widgets_content_font_size);
+			color: var(--proteo-widgets_content_font_color);
+
+			a {
+				text-decoration: none;
+				font-size: 0;
+				display: block;
+
+				&:hover {
+					.post-info {
+						text-decoration: underline;
+					}
+				}
+			}
+
+			.post-image,
+			.post-info {
+				display: table-cell;
+				vertical-align: middle;
+			}
+
+			.post-image {
+				width: 40%;
+				padding-right: 25px;
+			}
+
+			.post-info {
+				font-size: 0.875rem;
+				color: #939393;
+
+				h3 {
+					font-size: 1.125rem;
+					line-height: normal;
+					margin-top: 0;
+					margin-bottom: 5px;
+					font-weight: 500;
+				}
+			}
+		}
+	}
+}

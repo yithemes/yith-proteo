@@ -1,0 +1,61 @@
+.widget_search, .widget_product_search {
+	input[type="submit"] {
+		cursor: pointer;
+		font-size: 1rem;
+		font-weight: bold;
+		vertical-align: middle;
+	}
+	input[type="search"] {
+		margin-right: 15px;
+		margin-bottom: 15px;
+	}
+
+	form.search-form {
+		display: table;
+		width: 100%;
+	}
+
+	form.search-form > * {
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
+
+#topbar,
+.header-sidebar {
+
+	.widget_search {
+		& > form {
+			display: none;
+		}
+
+		&:before {
+			content: "\e86f";
+			display: inline-block;
+			font-family: Linearicons-Free;
+			speak: none;
+			font-style: normal;
+			font-weight: 400;
+			font-variant: normal;
+			text-transform: none;
+			line-height: 1;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+			font-size: 1.6rem;
+			cursor: pointer;
+			margin-right: 5px;
+		}
+	}
+}
+
+.header-sidebar {
+
+	.widget_search {
+		&:before {
+			color: inherit
+		}
+		&:hover::before {
+			color: var(--proteo-header_menu_hover_color, $color__accent); 
+		}
+	}
+}
