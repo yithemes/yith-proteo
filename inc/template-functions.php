@@ -113,7 +113,7 @@ if ( ! function_exists( 'yith_proteo_get_sidebar_position' ) ) :
 		if ( empty( $local_sidebar ) || 'inherit' === $local_sidebar ) {
 
 			if ( 'top' === $general_sidebar ) {
-				$sidebar_display .= '';
+				$sidebar_display .= 'order-last sidebar-position-top';
 			} else {
 				if ( 'no-sidebar' !== $general_sidebar ) {
 					$sidebar_display .= 'col-lg-9';
@@ -128,7 +128,7 @@ if ( ! function_exists( 'yith_proteo_get_sidebar_position' ) ) :
 		} else {
 
 			if ( 'top' === $local_sidebar ) {
-				$sidebar_display .= '';
+				$sidebar_display .= 'order-last sidebar-position-top';
 			} else {
 				if ( 'no-sidebar' !== $local_sidebar ) {
 					$sidebar_display .= 'col-lg-9';

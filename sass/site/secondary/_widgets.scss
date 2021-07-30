@@ -20,8 +20,14 @@ h3.widget-title {
 	color: var(--proteo-widgets_title_font_color);
 }
 
-#secondary .widget {
-	margin-bottom: 50px;
+#secondary {
+	&.sidebar-position-top {
+		width: 100%;
+	}
+
+	.widget {
+		margin-bottom: 50px;
+	}
 }
 
 .widget_search, .widget_product_search {

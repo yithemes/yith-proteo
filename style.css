@@ -6882,6 +6882,9 @@ h3.widget-title {
   color: var(--proteo-widgets_title_font_color);
 }
 
+#secondary.sidebar-position-top {
+  width: 100%;
+}
 #secondary .widget {
   margin-bottom: 50px;
 }
