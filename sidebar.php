@@ -52,7 +52,7 @@ if ( function_exists( 'wc' ) ) {
 
 ?>
 
-<aside id="secondary" class="widget-area <?php echo strpos( yith_proteo_get_sidebar_position(), 'sidebar-position-top' ) !== false ? 'sidebar-position-top' : 'col-lg-3'; echo ' ' . esc_attr( $widgets_per_row );?>">
+<aside id="secondary" class="widget-area <?php echo strpos( yith_proteo_get_sidebar_position(), 'sidebar-position-top' ) !== false ? 'sidebar-position-top' : 'col-lg-3'; ?> <?php echo esc_attr( $widgets_per_row ); ?>">
 	<?php
 	$sidebar = yith_proteo_sidebar_get_meta( 'sidebar_chooser' );
 	if ( class_exists( 'WooCommerce' ) ) {
