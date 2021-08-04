@@ -419,6 +419,7 @@ $is_proteo_toolkit_active    = defined( 'YITH_PROTEO_TOOLKIT' );
 						<?php endforeach; ?>
 					</ul>
 				</div>
+				<?php do_action( 'yith_proteo_dashboard_additional_sidebar_content' ); ?>
 				<div class="content">
 					<h3><?php echo esc_html_x( 'How to start', 'Proteo dashboard label', 'yith-proteo' ); ?></h3>
 					<ul id="useful-link-list">
