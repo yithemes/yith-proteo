@@ -193,9 +193,12 @@ p.stars {
 		display: block;
 	}
 
-	input:not([type="submit"]),
-	input:not([type="checkbox"]),
-	input:not([type="radio"]),
+	input[type="text"],
+	input[type="email"],
+	input[type="password"],
+	input[type="tel"],
+	input[type="url"],
+	input[type="search"],
 	select,
 	textarea {
 		width: 100%;
