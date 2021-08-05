@@ -194,6 +194,8 @@ p.stars {
 	}
 
 	input:not([type="submit"]),
+	input:not([type="checkbox"]),
+	input:not([type="radio"]),
 	select,
 	textarea {
 		width: 100%;

@@ -9302,6 +9302,8 @@ p.stars.selected a:not(.active):before {
   display: block;
 }
 .form-row input:not([type=submit]),
+.form-row input:not([type=checkbox]),
+.form-row input:not([type=radio]),
 .form-row select,
 .form-row textarea {
   width: 100%;
