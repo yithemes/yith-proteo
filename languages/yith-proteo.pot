@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YITH Proteo\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2021-07-15 12:22+0200\n"
+"POT-Creation-Date: 2021-08-06 12:57+0200\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -155,13 +155,13 @@ msgid "Off"
 msgstr ""
 
 #: inc/customizer/custom-controls/class-customizer-control-yes-no.php:30
-#: inc/customizer/customizer.php:246
+#: inc/customizer/customizer.php:247
 msgctxt "Customizer option value"
 msgid "Yes"
 msgstr ""
 
 #: inc/customizer/custom-controls/class-customizer-control-yes-no.php:33
-#: inc/customizer/customizer.php:247
+#: inc/customizer/customizer.php:248
 msgctxt "Customizer option value"
 msgid "No"
 msgstr ""
@@ -282,6 +282,20 @@ msgstr ""
 #: inc/customizer/panels/woocommerce/single-product.php:414
 msgctxt "Customizer option value"
 msgid "Left"
+msgstr ""
+
+#: inc/customizer/customizer.php:226 inc/customizer/panels/header.php:97
+#: inc/customizer/panels/header.php:434 inc/customizer/panels/header.php:574
+#: inc/customizer/panels/layout.php:62 inc/customizer/panels/layout.php:211
+#: inc/customizer/panels/site-identity.php:226
+#: inc/customizer/panels/site-identity.php:388
+#: inc/customizer/panels/topbar.php:86
+#: inc/customizer/panels/woocommerce/product-category.php:51
+#: inc/customizer/panels/woocommerce/product-tag.php:52
+#: inc/customizer/panels/woocommerce/product-tax.php:52
+#: inc/customizer/panels/woocommerce/shop-page.php:54
+msgctxt "Customizer option value"
+msgid "Top"
 msgstr ""
 
 #: inc/customizer/panels/block-editor-colors.php:14
@@ -856,16 +870,6 @@ msgctxt "Customizer option name"
 msgid "Spacing (px)"
 msgstr ""
 
-#: inc/customizer/panels/header.php:97 inc/customizer/panels/header.php:434
-#: inc/customizer/panels/header.php:574 inc/customizer/panels/layout.php:62
-#: inc/customizer/panels/layout.php:211
-#: inc/customizer/panels/site-identity.php:226
-#: inc/customizer/panels/site-identity.php:388
-#: inc/customizer/panels/topbar.php:86
-msgctxt "Customizer option value"
-msgid "Top"
-msgstr ""
-
 #: inc/customizer/panels/header.php:103 inc/customizer/panels/header.php:440
 #: inc/customizer/panels/header.php:580 inc/customizer/panels/layout.php:68
 #: inc/customizer/panels/layout.php:217
@@ -1322,9 +1326,9 @@ msgid "Select where to display the sidebar."
 msgstr ""
 
 #: inc/customizer/panels/sidebars.php:245 inc/customizer/panels/sidebars.php:322
-#: inc/customizer/panels/woocommerce/product-category.php:69
-#: inc/customizer/panels/woocommerce/product-tag.php:70
-#: inc/customizer/panels/woocommerce/product-tax.php:70
+#: inc/customizer/panels/woocommerce/product-category.php:73
+#: inc/customizer/panels/woocommerce/product-tag.php:74
+#: inc/customizer/panels/woocommerce/product-tax.php:74
 msgctxt "Customizer option description"
 msgid "Select the sidebar to display."
 msgstr ""
@@ -1749,9 +1753,17 @@ msgctxt "Customizer option name"
 msgid "Sidebar position for product category pages"
 msgstr ""
 
-#: inc/customizer/panels/woocommerce/product-category.php:67
+#: inc/customizer/panels/woocommerce/product-category.php:71
 msgctxt "Customizer option name"
 msgid "Product category page sidebar"
+msgstr ""
+
+#: inc/customizer/panels/woocommerce/product-category.php:93
+#: inc/customizer/panels/woocommerce/product-tag.php:94
+#: inc/customizer/panels/woocommerce/product-tax.php:94
+#: inc/customizer/panels/woocommerce/shop-page.php:98
+msgctxt "Customizer option name"
+msgid "Widgets per row"
 msgstr ""
 
 #: inc/customizer/panels/woocommerce/product-tag.php:14
@@ -1764,7 +1776,7 @@ msgctxt "Customizer option name"
 msgid "Sidebar position for product tag pages"
 msgstr ""
 
-#: inc/customizer/panels/woocommerce/product-tag.php:68
+#: inc/customizer/panels/woocommerce/product-tag.php:72
 msgctxt "Customizer option name"
 msgid "Product tag page sidebar"
 msgstr ""
@@ -1779,7 +1791,7 @@ msgctxt "Customizer option name"
 msgid "Sidebar position for product taxonomy pages"
 msgstr ""
 
-#: inc/customizer/panels/woocommerce/product-tax.php:68
+#: inc/customizer/panels/woocommerce/product-tax.php:72
 msgctxt "Customizer option name"
 msgid "Product taxonomy page sidebar"
 msgstr ""
@@ -1799,7 +1811,7 @@ msgctxt "Customizer option name"
 msgid "Sidebar position for the shop page"
 msgstr ""
 
-#: inc/customizer/panels/woocommerce/shop-page.php:73
+#: inc/customizer/panels/woocommerce/shop-page.php:77
 msgctxt "Customizer option name"
 msgid "Shop page sidebar"
 msgstr ""
@@ -2013,19 +2025,19 @@ msgid "inherit"
 msgstr ""
 
 #: inc/metaboxes.php:219 inc/taxonomies-metaboxes.php:22
-#: inc/taxonomies-metaboxes.php:78
+#: inc/taxonomies-metaboxes.php:79
 msgctxt "page option value"
 msgid "no-sidebar"
 msgstr ""
 
 #: inc/metaboxes.php:223 inc/taxonomies-metaboxes.php:25
-#: inc/taxonomies-metaboxes.php:82
+#: inc/taxonomies-metaboxes.php:83
 msgctxt "page option value"
 msgid "left"
 msgstr ""
 
 #: inc/metaboxes.php:227 inc/taxonomies-metaboxes.php:28
-#: inc/taxonomies-metaboxes.php:86
+#: inc/taxonomies-metaboxes.php:87
 msgctxt "page option value"
 msgid "right"
 msgstr ""
@@ -2160,25 +2172,25 @@ msgctxt "Sidebar name"
 msgid "Mobile menu widget area"
 msgstr ""
 
-#: inc/taxonomies-metaboxes.php:16 inc/taxonomies-metaboxes.php:68
+#: inc/taxonomies-metaboxes.php:16 inc/taxonomies-metaboxes.php:69
 msgid "Sidebar position"
 msgstr ""
 
-#: inc/taxonomies-metaboxes.php:34 inc/taxonomies-metaboxes.php:94
+#: inc/taxonomies-metaboxes.php:34 inc/taxonomies-metaboxes.php:95
 msgid "Sidebar to display"
 msgstr ""
 
-#: inc/taxonomies-metaboxes.php:74
+#: inc/taxonomies-metaboxes.php:75
 msgctxt "page option value"
 msgid "inherit default sidebar position"
 msgstr ""
 
-#: inc/taxonomies-metaboxes.php:100
+#: inc/taxonomies-metaboxes.php:101
 msgctxt "page option value"
 msgid "inherit default sidebar"
 msgstr ""
 
-#: inc/template-functions.php:226
+#: inc/template-functions.php:238
 msgctxt "Search widget input placeholder"
 msgid "Search"
 msgstr ""
@@ -2289,53 +2301,53 @@ msgctxt "Proteo dashboard"
 msgid "Install & Activate"
 msgstr ""
 
-#: inc/theme-dashboard/theme-dashboard.php:423
+#: inc/theme-dashboard/theme-dashboard.php:424
 msgctxt "Proteo dashboard label"
 msgid "How to start"
 msgstr ""
 
-#: inc/theme-dashboard/theme-dashboard.php:425
+#: inc/theme-dashboard/theme-dashboard.php:426
 msgctxt "Proteo dashboard"
 msgid "Read theme documentation"
 msgstr ""
 
-#: inc/theme-dashboard/theme-dashboard.php:425
+#: inc/theme-dashboard/theme-dashboard.php:426
 msgctxt "Proteo dashboard. Full string: Read the theme documentation."
 msgid "Read the"
 msgstr ""
 
-#: inc/theme-dashboard/theme-dashboard.php:425
+#: inc/theme-dashboard/theme-dashboard.php:426
 msgctxt "Proteo dashboard"
 msgid "theme documentation"
 msgstr ""
 
-#: inc/theme-dashboard/theme-dashboard.php:426
+#: inc/theme-dashboard/theme-dashboard.php:427
 msgctxt "Proteo dashboard"
 msgid "Visit theme forum"
 msgstr ""
 
-#: inc/theme-dashboard/theme-dashboard.php:426
+#: inc/theme-dashboard/theme-dashboard.php:427
 msgctxt "Proteo dashboard. Full string: Ask help in the translation form."
 msgid "Ask help in the"
 msgstr ""
 
-#: inc/theme-dashboard/theme-dashboard.php:426
+#: inc/theme-dashboard/theme-dashboard.php:427
 msgctxt "Proteo dashboard"
 msgid "support forum"
 msgstr ""
 
-#: inc/theme-dashboard/theme-dashboard.php:427
+#: inc/theme-dashboard/theme-dashboard.php:428
 msgctxt "Proteo dashboard"
 msgid "Use theme customizer"
 msgstr ""
 
-#: inc/theme-dashboard/theme-dashboard.php:427
+#: inc/theme-dashboard/theme-dashboard.php:428
 msgctxt ""
 "Proteo dashboard. Full string: Start to customize with the live customizer."
 msgid "Start to customize with the"
 msgstr ""
 
-#: inc/theme-dashboard/theme-dashboard.php:427
+#: inc/theme-dashboard/theme-dashboard.php:428
 msgctxt "Proteo dashboard"
 msgid "live customizer"
 msgstr ""

@@ -677,16 +677,11 @@ function yith_proteo_remove_page_meta_boxes() {
 
 	if ( isset( $_GET['post'] ) && in_array( $_GET['post'], $no_sidebar_pages, true ) ) { // phpcs:ignore WordPress.Security.NonceVerification.Recommended
 		remove_meta_box(
-			'sidebar_position',
-			array( 'post', 'page', 'product' ),
-			'side'
-		);
-		remove_meta_box(
-			'sidebar_chooser',
+			'yith_proteo_sidebar_management',
 			array( 'post', 'page', 'product' ),
 			'side'
 		);
 	}
 }
 
-add_action( 'add_meta_boxes', 'yith_proteo_remove_page_meta_boxes' );
+add_action( 'do_meta_boxes', 'yith_proteo_remove_page_meta_boxes' );

@@ -2,9 +2,9 @@
 Contributors: yithemes
 Tags: one-column, two-columns, left-sidebar, right-sidebar, wide-blocks, accessibility-ready, block-styles, buddypress, custom-background, custom-colors, custom-header, custom-logo, custom-menu, editor-style, featured-images, flexible-header, footer-widgets, full-width-template, rtl-language-support, theme-options, threaded-comments, translation-ready, blog, e-commerce, education, entertainment, food-and-drink, holiday, news, photography, portfolio
 Requires at least: 4.9.6
-Tested up to: WordPress 5.7
+Tested up to: WordPress 5.8
 Requires PHP: 5.6
-Stable tag: 1.5.3.1
+Stable tag: 1.5.5
 YITH Proteo WordPress Theme, Copyright 2020 YITH
 YITH Proteo is distributed under the terms of the GNU GPL
 License: GPLv2 or later
@@ -25,6 +25,26 @@ Proteo is a modern, fast and fully customizable WooCommerce theme. Designed and 
 == Frequently Asked Questions ==
 
 == Changelog ==
+= 1.5.5 - August 06 2021 =
+* New: support for WooCommerce 5.6
+* New: support for WordPress 5.8
+* New: top sidebar position for WooCommerce pages
+* New: widget per row control for new woocommerce top sidebar position
+* New: custom sidebar management for product taxonomies
+* New: custom sidebar management for product tags
+* Fix: wrong 100% width to radio/checkbox elements
+* Fix: product variations display on small devices
+* Fix: product gallery spacing values
+* Fix: single product gallery images height
+* Fix: sidebar management for blog page, shop page, my-account page, cart page, checkout page
+* Dev: hooks in theme dashboard
+* Dev: split widgtes style in multiple .scss files
+* Dev: improved phpcs
+* Dev: grid layout for widgets in new woocommerce sidebars
+* Dev: refactor navigation scripts
+* Tweak: remove not necessary css prefixes and outdated rules
+* Update: .pot language file
+
 = 1.5.4 - June 22 2021 =
 * New: option to Show/Hide related products on single product page
 * New: options to set woocommerce product category sidebar individually
