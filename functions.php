@@ -141,7 +141,10 @@ if ( ! function_exists( 'yith_proteo_setup' ) ) :
 		 */
 		add_theme_support( 'custom-units' );
 		add_theme_support( 'custom-line-height' );
-		add_theme_support( 'experimental-custom-spacing' );
+		add_theme_support( 'custom-spacing' );
+
+		// Add support for experimental link color control.
+		add_theme_support( 'experimental-link-color' );
 	}
 endif;
 add_action( 'after_setup_theme', 'yith_proteo_setup' );
