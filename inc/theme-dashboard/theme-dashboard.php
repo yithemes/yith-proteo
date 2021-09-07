@@ -12,6 +12,7 @@ $demos = array(
 		'demo_preview_image_url' => 'https://update.yithemes.com/proteo-demo-content/classic-shop/screenshot.png',
 		'demo_preview_url'       => 'https://proteo.yithemes.com/classic-shop/',
 		'demo_state'             => 'live',
+		'category'               => 'gutenberg',
 	),
 	array(
 		'demo_name'              => 'Food',
@@ -19,6 +20,7 @@ $demos = array(
 		'demo_preview_image_url' => 'https://update.yithemes.com/proteo-demo-content/food/food.jpg',
 		'demo_preview_url'       => 'https://proteo.yithemes.com/food/',
 		'demo_state'             => 'live',
+		'category'               => 'gutenberg',
 	),
 	array(
 		'demo_name'              => 'Desire',
@@ -26,6 +28,15 @@ $demos = array(
 		'demo_preview_image_url' => 'https://update.yithemes.com/proteo-demo-content/desire/desire.jpg',
 		'demo_preview_url'       => 'https://proteo.yithemes.com/desire/',
 		'demo_state'             => 'live',
+		'category'               => 'gutenberg',
+	),
+	array(
+		'demo_name'              => 'Classic Shop - Elementor',
+		'slug'                   => 'elementor-classic-shop',
+		'demo_preview_image_url' => 'https://update.yithemes.com/proteo-demo-content/classic-shop-elementor/screenshot.png',
+		'demo_preview_url'       => 'https://proteo.yithemes.com/elementor-classic-shop/',
+		'demo_state'             => 'live',
+		'category'               => 'elementor',
 	),
 );
 
@@ -115,7 +126,7 @@ $is_proteo_toolkit_active    = defined( 'YITH_PROTEO_TOOLKIT' );
 	max-width: 40%;
 }
 .three-cols-set {
-	margin-top: 50px;
+	margin-top: 20px;
 }
 .three-cols-set .col {
 	position: relative;
@@ -313,6 +324,31 @@ $is_proteo_toolkit_active    = defined( 'YITH_PROTEO_TOOLKIT' );
 .plugin-status-actions:not(.yith-proteo-installed-recommended-plugin):hover {
 	text-decoration: underline;
 }
+ul.demo-categories {
+	margin: 50px auto 0;
+	padding: 0;
+	text-align: center;
+}
+
+ul.demo-categories li {
+	display: inline-block;
+}
+
+ul.demo-categories li:not(:last-of-type)::after {
+	content: '|';
+	display: inline-block;
+	margin: 0 5px 0 8px;
+	color: #ebebeb;
+}
+
+ul.demo-categories li a {
+	text-decoration: none;
+	color: #9e9e9e;
+}
+
+ul.demo-categories li.active a {
+	color: rgb(0, 169, 167);
+}+
 /* Safari */
 @-webkit-keyframes spin {
 	0% { -webkit-transform: rotate(0deg); }
@@ -360,11 +396,15 @@ $is_proteo_toolkit_active    = defined( 'YITH_PROTEO_TOOLKIT' );
 						<p>
 							<b><?php echo esc_html_x( 'We are working very hard to add new demo sites, stay updated!', 'Proteo dashboard', 'yith-proteo' ); ?></b>
 						</p>
+						<ul class="demo-categories">
+							<li class="gutenberg active"><a href="#">Gutenberg</a></li>
+							<li class="elementor"><a href="#">Elementor</a></li>
+						</ul>
 						<div class="three-cols-set">
 							<?php
 							foreach ( $demos as $demoindex => $demo ) :
 								?>
-							<div class="col">
+							<div class="col" data-category="<?php echo esc_attr( $demo['category'] ); ?>">
 								<figure class="demo-preview <?php echo esc_attr( $demo['demo_state'] ); ?>">
 									<img src="<?php echo esc_url( $demo['demo_preview_image_url'] ); ?>" alt="<?php echo esc_attr_x( 'Preview', 'Proteo dashboard', 'yith-proteo' ); ?>">
 									<div class="demo-actions">
@@ -432,4 +472,30 @@ $is_proteo_toolkit_active    = defined( 'YITH_PROTEO_TOOLKIT' );
 		</div><!-- .two-cols-set close -->
 	</div><!-- .wrapper close -->
 </div><!-- #yith-proteo-dashboard-pane close -->
+<script>
+	(function ($) {
+		yith_proteo_dashboard_filter_listed_demos('gutenberg');
+		$('ul.demo-categories').find('a').on('click', function(ev) {
+			ev.preventDefault();
+			var category_li_elements = $('ul.demo-categories').find('li'),
+				chosen_category_li_element = $(this).parent(),
+				chosen_category = chosen_category_li_element.attr('class').split(' ')[0];
+			category_li_elements.removeClass('active');
+			chosen_category_li_element.addClass('active');
+			yith_proteo_dashboard_filter_listed_demos(chosen_category);
+		});
+		function yith_proteo_dashboard_filter_listed_demos( chosen_category ) {
+			if ( undefined === chosen_category ) {
+				chosen_category = $('ul.demo-categories').find('li.active').attr('class').split(' ')[0];
+			}
+			$(".three-cols-set .col").each(function () {
+				if ($(this).attr('data-category').search(new RegExp(chosen_category, "i")) < 0) {
+					$(this).fadeOut(0);
+				} else {
+					$(this).fadeIn(0);
+				}
+			})
+		}
+	})(jQuery);
+</script>
 <?php

@@ -346,3 +346,19 @@ if ( ! function_exists( 'yith_proteo_init_filesystem' ) ) {
 		return $wp_filesystem;
 	}
 }
+
+/**
+ * Elementor Exporter fix.
+ */
+add_filter(
+	'wxr_export_skip_postmeta',
+	function( $skip, $meta_key ) {
+		if ( defined( 'ELEMENTOR__FILE__' ) && Elementor\Core\Files\CSS\Post::META_KEY === $meta_key ) {
+			$skip = false;
+		}
+
+		return $skip;
+	},
+	20,
+	2
+);
