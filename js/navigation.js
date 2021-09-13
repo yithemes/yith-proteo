@@ -81,26 +81,15 @@
 		// touchscreen
 		$('.menu-item-has-children > a').on( 'click',function (ev) {
 			var t = $(this);
-			if (t.hasClass('submenu-opened')) {
-				$(this).removeClass('submenu-opened');
-			} else {
-				ev.preventDefault();
-				//$('.menu-item-has-children > a').removeClass('submenu-opened');
-				$(this).addClass('submenu-opened');
-			}
-	
+            t.toggleClass('submenu-opened');
+            ev.preventDefault();
 		});
 	} else {
 		// is desktop
 		$('#yith-proteo-mobile-menu .menu-item-has-children > a').on( 'click',function (ev) {
 			var t = $(this);
-			if (t.hasClass('submenu-opened')) {
-				$(this).removeClass('submenu-opened');
-			} else {
-				ev.preventDefault();
-				$(this).addClass('submenu-opened');
-			}
-	
+            t.toggleClass('submenu-opened');
+            ev.preventDefault();
 		});
 	}
 
