@@ -27,9 +27,7 @@
 	}
 
 	menu.attr( 'aria-expanded', 'false' );
-	if ( ! menu.hasClass( 'nav-menu' ) ) {
-		menu.addClass('nav-menu');
-	}
+    menu.toggleClass('nav-menu');
 
 	button.on('click', function(){
 		if( container.hasClass('toggled') ) {
@@ -65,11 +63,7 @@
 
 			// On li elements toggle the class .focus.
 			if ( self.is('li') ) {
-				if ( self.hasClass( 'focus' ) ) {
-					self.removeClass( 'focus' );
-				} else {
-					self.addClass( 'focus' );
-				}
+                self.toggleClass( 'focus' );
 			}
 
 			self = self.parent();
