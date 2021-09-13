@@ -82,7 +82,7 @@
 		$('.menu-item-has-children > a').on( 'click',function (ev) {
 			var t = $(this);
 			if (t.hasClass('submenu-opened')) {
-				return true;
+				$(this).removeClass('submenu-opened');
 			} else {
 				ev.preventDefault();
 				//$('.menu-item-has-children > a').removeClass('submenu-opened');
@@ -95,7 +95,7 @@
 		$('#yith-proteo-mobile-menu .menu-item-has-children > a').on( 'click',function (ev) {
 			var t = $(this);
 			if (t.hasClass('submenu-opened')) {
-				return true;
+				$(this).removeClass('submenu-opened');
 			} else {
 				ev.preventDefault();
 				$(this).addClass('submenu-opened');
