@@ -79,6 +79,7 @@
 	}
 
     	$(selector).on( 'click',function (ev) {
+    	    $(this).parent().removeClass('focus');
     	    $(this).toggleClass('submenu-opened');
     	    ev.preventDefault();
     	});
