@@ -70,22 +70,18 @@
 		}
 	}
 
+
+	selector = '#yith-proteo-mobile-menu .menu-item-has-children > a';
 	// Handle mobile menu submenu opening and click
 	if(window.matchMedia("(pointer: coarse)").matches) {
 		// touchscreen
-		$('.menu-item-has-children > a').on( 'click',function (ev) {
-			var t = $(this);
-            t.toggleClass('submenu-opened');
-            ev.preventDefault();
-		});
-	} else {
-		// is desktop
-		$('#yith-proteo-mobile-menu .menu-item-has-children > a').on( 'click',function (ev) {
-			var t = $(this);
-            t.toggleClass('submenu-opened');
-            ev.preventDefault();
-		});
+        	selector = '.menu-item-has-children > a';
 	}
+
+    	$(selector).on( 'click',function (ev) {
+    	    $(this).toggleClass('submenu-opened');
+    	    ev.preventDefault();
+    	});
 
 	// Open/close mobile menu on menu item with no children click (go to link)
 	$('#mobile-menu li:not(.menu-item-has-children) > a').on('click', function(){
