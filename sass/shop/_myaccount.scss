@@ -175,55 +175,6 @@ MY ACCOUNT
 		}
 	}
 
-	#customer_login.col2-set.u-columns {
-		margin: 0 -15px;
-
-		&:after {
-			content: "";
-			display: block;
-			clear: both;
-		}
-
-		.col-1,
-		.col-2 {
-			width: 50%;
-			float: left;
-			max-width: initial;
-			position: relative;
-			p {
-				padding-left: 15px;
-				padding-right: 15px;
-			}
-
-			form {
-				padding: 25px 15px 15px;
-				margin-bottom: 35px;
-				border: 1px solid;
-				position: relative;
-
-				.woocommerce-form__label-for-checkbox {
-					margin-bottom: 15px;
-				}
-
-				&.register {
-					border: none;
-					background: #ebebeb;
-
-					&:before {
-						content: "";
-						display: block;
-						right: -4000px;
-						width: 4000px;
-						top: 0;
-						background: #ebebeb;
-						bottom: 0;
-						position: absolute;
-					}
-				}
-			}
-		}
-	}
-
 	ul.yith_proteo_dashboard_links {
 		list-style-type: none;
 		padding: 0;
@@ -256,6 +207,55 @@ MY ACCOUNT
 					&:hover {
 						color: var(--proteo-general_link_color, $color__accent);
 					}
+				}
+			}
+		}
+	}
+}
+
+#customer_login.col2-set.u-columns {
+	margin: 0 -15px;
+
+	&:after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+
+	.col-1,
+	.col-2 {
+		width: 50%;
+		float: left;
+		max-width: initial;
+		position: relative;
+		p {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+
+		form {
+			padding: 25px 15px 15px;
+			margin-bottom: 35px;
+			border: 1px solid;
+			position: relative;
+
+			.woocommerce-form__label-for-checkbox {
+				margin-bottom: 15px;
+			}
+
+			&.register {
+				border: none;
+				background: #ebebeb;
+
+				&:before {
+					content: "";
+					display: block;
+					right: -4000px;
+					width: 4000px;
+					top: 0;
+					background: #ebebeb;
+					bottom: 0;
+					position: absolute;
 				}
 			}
 		}
