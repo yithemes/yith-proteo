@@ -11790,6 +11790,9 @@ Widgets
 .widget_yith-wcwl-items .mini {
   min-width: 40px;
 }
+.widget_yith-wcwl-items .mini a:hover i {
+  color: var(--proteo-main_color_shade, #448a85);
+}
 
 .widget_yith-wcwl-items .items-counter a {
   text-decoration: none;
@@ -11853,7 +11856,7 @@ Widgets
   background: transparent;
   color: #9e9e9e;
   display: inline-block;
-  font-size: 2rem;
+  font-size: 24px;
   font-weight: normal;
   position: absolute;
   left: 0;
@@ -11863,6 +11866,9 @@ Widgets
   margin-bottom: auto;
   height: 2rem;
   line-height: 2rem;
+}
+.widget_yith-wcwl-items div.list ul li > *.remove_from_all_wishlists:hover {
+  color: #000;
 }
 .widget_yith-wcwl-items div.list ul li > *.mini-cart-item-info a {
   font-weight: bold;
