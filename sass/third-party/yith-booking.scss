@@ -279,7 +279,7 @@ body.single-product.yith-proteo-booking-product-layout-enabled {
 
 		&.grid-elements-count-1 {
 			.woocommerce-product-gallery__image {
-				height: 600px;
+				height: var(--proteo-booking_products_image_grid_height);
 			}
 		}
 
@@ -292,7 +292,7 @@ body.single-product.yith-proteo-booking-product-layout-enabled {
 			figure.woocommerce-product-gallery__wrapper {
 				display: grid;
 				grid-template-columns: repeat(2, 1fr);
-				grid-template-rows: 600px;
+				grid-template-rows: var(--proteo-booking_products_image_grid_height);
 				grid-column-gap: 8px;
 				grid-row-gap: 8px;
 
@@ -307,7 +307,7 @@ body.single-product.yith-proteo-booking-product-layout-enabled {
 			figure.woocommerce-product-gallery__wrapper {
 				display: grid;
 				grid-template-columns: repeat(2, 1fr);
-				grid-template-rows: repeat(2, 300px);
+				grid-template-rows: repeat(2, var(--proteo-booking_products_image_grid_height_half));
 				grid-column-gap: 8px;
 				grid-row-gap: 8px;
 
@@ -324,7 +324,7 @@ body.single-product.yith-proteo-booking-product-layout-enabled {
 			figure.woocommerce-product-gallery__wrapper {
 				display: grid;
 				grid-template-columns: repeat(2, 1fr);
-				grid-template-rows: repeat(2, 300px);
+				grid-template-rows: repeat(2, var(--proteo-booking_products_image_grid_height_half));
 				grid-column-gap: 8px;
 				grid-row-gap: 8px;
 				.woocommerce-product-gallery__image:nth-child(1) { grid-area: 1 / 1 / 2 / 2; }
@@ -341,7 +341,7 @@ body.single-product.yith-proteo-booking-product-layout-enabled {
 			figure.woocommerce-product-gallery__wrapper {
 				display: grid;
 				grid-template-columns: 2fr repeat(2, 1fr);
-				grid-template-rows: repeat(2, 300px);
+				grid-template-rows: repeat(2, var(--proteo-booking_products_image_grid_height_half));
 				grid-column-gap: 8px;
 				grid-row-gap: 8px;
 
@@ -360,7 +360,7 @@ body.single-product.yith-proteo-booking-product-layout-enabled {
 			figure.woocommerce-product-gallery__wrapper {
 				display: grid;
 				grid-template-columns: repeat(3, 1fr);
-				grid-template-rows: repeat(2, 300px);
+				grid-template-rows: repeat(2, var(--proteo-booking_products_image_grid_height_half));
 				grid-column-gap: 8px;
 				grid-row-gap: 8px;
 				.woocommerce-product-gallery__image:nth-child(1) { grid-area: 1 / 1 / 2 / 2; }

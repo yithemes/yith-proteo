@@ -63,3 +63,29 @@ $wp_customize->add_control(
 		)
 	)
 );
+
+$wp_customize->add_setting(
+	'yith_proteo_booking_products_image_grid_layout_height',
+	array(
+		'default'              => 600,
+		'sanitize_callback'    => 'absint',
+		'sanitize_js_callback' => 'absint',
+		'transport'            => 'refresh',
+	)
+);
+
+$wp_customize->add_control(
+	new WP_Customize_Range(
+		$wp_customize,
+		'yith_proteo_booking_products_image_grid_layout_height',
+		array(
+			'label'   => esc_html_x( 'Images grid height', 'Customizer option name', 'yith-proteo' ),
+			'min'     => 300,
+			'max'     => 1000,
+			'step'    => 10,
+			'default' => 600,
+			'unit'    => 'px',
+			'section' => 'yith_proteo_booking_product_page_management',
+		)
+	)
+);

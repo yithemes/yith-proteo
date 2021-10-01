@@ -207,6 +207,9 @@ function yith_proteo_inline_style() {
 	$responsive_breakpoint_desktop       = get_theme_mod( 'yith_proteo_desktop_device_width', 1200 );
 	$responsive_breakpoint_large_desktop = get_theme_mod( 'yith_proteo_large_desktop_device_width', 1400 );
 
+	$booking_products_image_grid_height      = get_theme_mod( 'yith_proteo_booking_products_image_grid_layout_height', 600 );
+	$booking_products_image_grid_height_half = $booking_products_image_grid_height / 2;
+
 	/*
 	 * Spacing options
 	 */
@@ -455,6 +458,8 @@ function yith_proteo_inline_style() {
 		--proteo-responsive_breakpoint_small_desktop: {$responsive_breakpoint_small_desktop}px;
 		--proteo-responsive_breakpoint_desktop: {$responsive_breakpoint_desktop}px;
 		--proteo-responsive_breakpoint_large_desktop: {$responsive_breakpoint_large_desktop}px;
+		--proteo-booking_products_image_grid_height: {$booking_products_image_grid_height}px;
+		--proteo-booking_products_image_grid_height_half: {$booking_products_image_grid_height_half}px;
 	}";
 
 	if ( ! empty( $custom_css ) ) {
