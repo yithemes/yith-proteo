@@ -204,6 +204,19 @@ body.single-product.yith-proteo-booking-product-layout-enabled {
 	
 		.woocommerce-product-gallery__image {
 			display: none;
+
+			img {
+				min-height: 250px;
+				min-width: 100%;
+				max-width: 100%;
+				height: auto !important;
+				transition: transform 0.3s ease-in-out;
+			}
+			
+			&:hover img {
+				transform: scale(1.1);
+			}
+
 		}
 	
 		figure {
@@ -211,7 +224,6 @@ body.single-product.yith-proteo-booking-product-layout-enabled {
 		}
 	
 		.woocommerce-product-gallery__image {
-			height: 600px;
 			overflow: hidden;
 			vertical-align: middle;
 			position: relative;
@@ -263,6 +275,101 @@ body.single-product.yith-proteo-booking-product-layout-enabled {
 			line-height: 18px;
 			cursor: pointer;
 			border-radius: 40px;
+		}
+
+		&.grid-elements-count-1 {
+			.woocommerce-product-gallery__image {
+				height: 600px;
+			}
+		}
+
+		&.grid-elements-count-2 {
+
+			.woocommerce-product-gallery__image:nth-child(-n+2) {
+				display: block;
+			}
+
+			figure.woocommerce-product-gallery__wrapper {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				grid-template-rows: 600px;
+				grid-column-gap: 8px;
+				grid-row-gap: 8px;
+
+				.woocommerce-product-gallery__image:nth-child(1) { grid-area: 1 / 1 / 2 / 2; }
+				.woocommerce-product-gallery__image:nth-child(2) { grid-area: 1 / 2 / 2 / 3; }
+			}
+		}
+		&.grid-elements-count-3 {
+			.woocommerce-product-gallery__image:nth-child(-n+3) {
+				display: block;
+			}
+			figure.woocommerce-product-gallery__wrapper {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				grid-template-rows: repeat(2, 300px);
+				grid-column-gap: 8px;
+				grid-row-gap: 8px;
+
+				.woocommerce-product-gallery__image:nth-child(1) { grid-area: 1 / 1 / 3 / 2; }
+				.woocommerce-product-gallery__image:nth-child(2) { grid-area: 1 / 2 / 2 / 3; }
+				.woocommerce-product-gallery__image:nth-child(3) { grid-area: 2 / 2 / 3 / 3; }
+			}
+				
+		}
+		&.grid-elements-count-4 {
+			.woocommerce-product-gallery__image:nth-child(-n+4) {
+				display: block;
+			}
+			figure.woocommerce-product-gallery__wrapper {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				grid-template-rows: repeat(2, 300px);
+				grid-column-gap: 8px;
+				grid-row-gap: 8px;
+				.woocommerce-product-gallery__image:nth-child(1) { grid-area: 1 / 1 / 2 / 2; }
+				.woocommerce-product-gallery__image:nth-child(2) { grid-area: 1 / 2 / 2 / 3; }
+				.woocommerce-product-gallery__image:nth-child(3) { grid-area: 2 / 1 / 3 / 2; }
+				.woocommerce-product-gallery__image:nth-child(4) { grid-area: 2 / 2 / 3 / 3; }
+			}
+				
+		}
+		&.grid-elements-count-5 {
+			.woocommerce-product-gallery__image:nth-child(-n+5) {
+				display: block;
+			}
+			figure.woocommerce-product-gallery__wrapper {
+				display: grid;
+				grid-template-columns: 2fr repeat(2, 1fr);
+				grid-template-rows: repeat(2, 300px);
+				grid-column-gap: 8px;
+				grid-row-gap: 8px;
+
+				.woocommerce-product-gallery__image:nth-child(1) { grid-area: 1 / 1 / 3 / 2; }
+				.woocommerce-product-gallery__image:nth-child(2) { grid-area: 1 / 2 / 2 / 3; }
+				.woocommerce-product-gallery__image:nth-child(3) { grid-area: 2 / 2 / 3 / 3; }
+				.woocommerce-product-gallery__image:nth-child(4) { grid-area: 1 / 3 / 2 / 4; }
+				.woocommerce-product-gallery__image:nth-child(5) { grid-area: 2 / 3 / 3 / 4; }
+			}
+		}
+		&.grid-elements-count-6 {
+			.woocommerce-product-gallery__image:nth-child(-n+6) {
+				display: block;
+			}
+
+			figure.woocommerce-product-gallery__wrapper {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				grid-template-rows: repeat(2, 300px);
+				grid-column-gap: 8px;
+				grid-row-gap: 8px;
+				.woocommerce-product-gallery__image:nth-child(1) { grid-area: 1 / 1 / 2 / 2; }
+				.woocommerce-product-gallery__image:nth-child(2) { grid-area: 2 / 1 / 3 / 2; }
+				.woocommerce-product-gallery__image:nth-child(3) { grid-area: 1 / 2 / 2 / 3; }
+				.woocommerce-product-gallery__image:nth-child(4) { grid-area: 2 / 2 / 3 / 3; }
+				.woocommerce-product-gallery__image:nth-child(5) { grid-area: 1 / 3 / 2 / 4; }
+				.woocommerce-product-gallery__image:nth-child(6) { grid-area: 2 / 3 / 3 / 4; }
+			}
 		}
 	}
 	

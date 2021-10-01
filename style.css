@@ -6,7 +6,7 @@ Author: YITH
 Author URI: https://yithemes.com
 Description: Proteo is a modern, fast and fully customizable WooCommerce theme. Designed and developed by YITH - a team of top developers of premium themes -  with a beautiful UI, a minimal design and an optimized code, is perfect for each kind of site or shop. With the Proteo Wizard you can import our demo content with just a few clicks - in less than 2 minutes! -  and easily customize it using the advanced front-end customizer. Proteo is the best solution if you want a complete WooCommerce theme that works perfectly also in mobile devices and start quickly to sell your products with WooCommerce without technical knowledge. Works perfectly with page builders like Elementor, Gutenberg & Visual composer. Key features: # WooCommerce Ready # Responsive with a perfect mobile design # Compatible with Elementor, Gutenberg, Visual Composer and others page builders # Translation Ready # Frontend customizer with hundred of options to customize header, footer, pages, typography, style, ecc.  # Google fonts support # Regularly updated and improved with new demos and advanced features # Support to all YITH plugins. Check all our Proteo demos: https://proteo.yithemes.com/
 
-Version: 1.6.0.2
+Version: 1.6.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: yith-proteo
@@ -13013,11 +13013,20 @@ body.single-product.yith-proteo-booking-product-layout-enabled .yith-booking-woo
 body.single-product.yith-proteo-booking-product-layout-enabled .yith-booking-woocommerce-images .woocommerce-product-gallery__image {
   display: none;
 }
+body.single-product.yith-proteo-booking-product-layout-enabled .yith-booking-woocommerce-images .woocommerce-product-gallery__image img {
+  min-height: 250px;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto !important;
+  transition: transform 0.3s ease-in-out;
+}
+body.single-product.yith-proteo-booking-product-layout-enabled .yith-booking-woocommerce-images .woocommerce-product-gallery__image:hover img {
+  transform: scale(1.1);
+}
 body.single-product.yith-proteo-booking-product-layout-enabled .yith-booking-woocommerce-images figure {
   margin-top: 0;
 }
 body.single-product.yith-proteo-booking-product-layout-enabled .yith-booking-woocommerce-images .woocommerce-product-gallery__image {
-  height: 600px;
   overflow: hidden;
   vertical-align: middle;
   position: relative;
@@ -13061,6 +13070,119 @@ body.single-product.yith-proteo-booking-product-layout-enabled .yith-booking-woo
   line-height: 18px;
   cursor: pointer;
   border-radius: 40px;
+}
+body.single-product.yith-proteo-booking-product-layout-enabled .yith-booking-woocommerce-images.grid-elements-count-1 .woocommerce-product-gallery__image {
+  height: 600px;
+}
+body.single-product.yith-proteo-booking-product-layout-enabled .yith-booking-woocommerce-images.grid-elements-count-2 .woocommerce-product-gallery__image:nth-child(-n+2) {
+  display: block;
+}
+body.single-product.yith-proteo-booking-product-layout-enabled .yith-booking-woocommerce-images.grid-elements-count-2 figure.woocommerce-product-gallery__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 600px;
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+}
+body.single-product.yith-proteo-booking-product-layout-enabled .yith-booking-woocommerce-images.grid-elements-count-2 figure.woocommerce-product-gallery__wrapper .woocommerce-product-gallery__image:nth-child(1) {
+  grid-area: 1/1/2/2;
+}
+body.single-product.yith-proteo-booking-product-layout-enabled .yith-booking-woocommerce-images.grid-elements-count-2 figure.woocommerce-product-gallery__wrapper .woocommerce-product-gallery__image:nth-child(2) {
+  grid-area: 1/2/2/3;
+}
+body.single-product.yith-proteo-booking-product-layout-enabled .yith-booking-woocommerce-images.grid-elements-count-3 .woocommerce-product-gallery__image:nth-child(-n+3) {
+  display: block;
+}
+body.single-product.yith-proteo-booking-product-layout-enabled .yith-booking-woocommerce-images.grid-elements-count-3 figure.woocommerce-product-gallery__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 300px);
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+}
+body.single-product.yith-proteo-booking-product-layout-enabled .yith-booking-woocommerce-images.grid-elements-count-3 figure.woocommerce-product-gallery__wrapper .woocommerce-product-gallery__image:nth-child(1) {
+  grid-area: 1/1/3/2;
+}
+body.single-product.yith-proteo-booking-product-layout-enabled .yith-booking-woocommerce-images.grid-elements-count-3 figure.woocommerce-product-gallery__wrapper .woocommerce-product-gallery__image:nth-child(2) {
+  grid-area: 1/2/2/3;
+}
+body.single-product.yith-proteo-booking-product-layout-enabled .yith-booking-woocommerce-images.grid-elements-count-3 figure.woocommerce-product-gallery__wrapper .woocommerce-product-gallery__image:nth-child(3) {
+  grid-area: 2/2/3/3;
+}
+body.single-product.yith-proteo-booking-product-layout-enabled .yith-booking-woocommerce-images.grid-elements-count-4 .woocommerce-product-gallery__image:nth-child(-n+4) {
+  display: block;
+}
+body.single-product.yith-proteo-booking-product-layout-enabled .yith-booking-woocommerce-images.grid-elements-count-4 figure.woocommerce-product-gallery__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 300px);
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+}
+body.single-product.yith-proteo-booking-product-layout-enabled .yith-booking-woocommerce-images.grid-elements-count-4 figure.woocommerce-product-gallery__wrapper .woocommerce-product-gallery__image:nth-child(1) {
+  grid-area: 1/1/2/2;
+}
+body.single-product.yith-proteo-booking-product-layout-enabled .yith-booking-woocommerce-images.grid-elements-count-4 figure.woocommerce-product-gallery__wrapper .woocommerce-product-gallery__image:nth-child(2) {
+  grid-area: 1/2/2/3;
+}
+body.single-product.yith-proteo-booking-product-layout-enabled .yith-booking-woocommerce-images.grid-elements-count-4 figure.woocommerce-product-gallery__wrapper .woocommerce-product-gallery__image:nth-child(3) {
+  grid-area: 2/1/3/2;
+}
+body.single-product.yith-proteo-booking-product-layout-enabled .yith-booking-woocommerce-images.grid-elements-count-4 figure.woocommerce-product-gallery__wrapper .woocommerce-product-gallery__image:nth-child(4) {
+  grid-area: 2/2/3/3;
+}
+body.single-product.yith-proteo-booking-product-layout-enabled .yith-booking-woocommerce-images.grid-elements-count-5 .woocommerce-product-gallery__image:nth-child(-n+5) {
+  display: block;
+}
+body.single-product.yith-proteo-booking-product-layout-enabled .yith-booking-woocommerce-images.grid-elements-count-5 figure.woocommerce-product-gallery__wrapper {
+  display: grid;
+  grid-template-columns: 2fr repeat(2, 1fr);
+  grid-template-rows: repeat(2, 300px);
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+}
+body.single-product.yith-proteo-booking-product-layout-enabled .yith-booking-woocommerce-images.grid-elements-count-5 figure.woocommerce-product-gallery__wrapper .woocommerce-product-gallery__image:nth-child(1) {
+  grid-area: 1/1/3/2;
+}
+body.single-product.yith-proteo-booking-product-layout-enabled .yith-booking-woocommerce-images.grid-elements-count-5 figure.woocommerce-product-gallery__wrapper .woocommerce-product-gallery__image:nth-child(2) {
+  grid-area: 1/2/2/3;
+}
+body.single-product.yith-proteo-booking-product-layout-enabled .yith-booking-woocommerce-images.grid-elements-count-5 figure.woocommerce-product-gallery__wrapper .woocommerce-product-gallery__image:nth-child(3) {
+  grid-area: 2/2/3/3;
+}
+body.single-product.yith-proteo-booking-product-layout-enabled .yith-booking-woocommerce-images.grid-elements-count-5 figure.woocommerce-product-gallery__wrapper .woocommerce-product-gallery__image:nth-child(4) {
+  grid-area: 1/3/2/4;
+}
+body.single-product.yith-proteo-booking-product-layout-enabled .yith-booking-woocommerce-images.grid-elements-count-5 figure.woocommerce-product-gallery__wrapper .woocommerce-product-gallery__image:nth-child(5) {
+  grid-area: 2/3/3/4;
+}
+body.single-product.yith-proteo-booking-product-layout-enabled .yith-booking-woocommerce-images.grid-elements-count-6 .woocommerce-product-gallery__image:nth-child(-n+6) {
+  display: block;
+}
+body.single-product.yith-proteo-booking-product-layout-enabled .yith-booking-woocommerce-images.grid-elements-count-6 figure.woocommerce-product-gallery__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 300px);
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+}
+body.single-product.yith-proteo-booking-product-layout-enabled .yith-booking-woocommerce-images.grid-elements-count-6 figure.woocommerce-product-gallery__wrapper .woocommerce-product-gallery__image:nth-child(1) {
+  grid-area: 1/1/2/2;
+}
+body.single-product.yith-proteo-booking-product-layout-enabled .yith-booking-woocommerce-images.grid-elements-count-6 figure.woocommerce-product-gallery__wrapper .woocommerce-product-gallery__image:nth-child(2) {
+  grid-area: 2/1/3/2;
+}
+body.single-product.yith-proteo-booking-product-layout-enabled .yith-booking-woocommerce-images.grid-elements-count-6 figure.woocommerce-product-gallery__wrapper .woocommerce-product-gallery__image:nth-child(3) {
+  grid-area: 1/2/2/3;
+}
+body.single-product.yith-proteo-booking-product-layout-enabled .yith-booking-woocommerce-images.grid-elements-count-6 figure.woocommerce-product-gallery__wrapper .woocommerce-product-gallery__image:nth-child(4) {
+  grid-area: 2/2/3/3;
+}
+body.single-product.yith-proteo-booking-product-layout-enabled .yith-booking-woocommerce-images.grid-elements-count-6 figure.woocommerce-product-gallery__wrapper .woocommerce-product-gallery__image:nth-child(5) {
+  grid-area: 1/3/2/4;
+}
+body.single-product.yith-proteo-booking-product-layout-enabled .yith-booking-woocommerce-images.grid-elements-count-6 figure.woocommerce-product-gallery__wrapper .woocommerce-product-gallery__image:nth-child(6) {
+  grid-area: 2/3/3/4;
 }
 body.single-product.yith-proteo-booking-product-layout-enabled div.product.product-type-booking .summary.entry-summary {
   width: 100%;

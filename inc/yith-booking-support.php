@@ -58,7 +58,31 @@ function yith_proteo_booking_product_page_template_load() {
 		 * @returnstring
 		 */
 		function yith_proteo_booking_full_image_size() {
-			return 'yith_proteo_booking_gallery_1920';
+
+			$images_layout = get_theme_mod( 'yith_proteo_booking_products_image_grid_layout', 1 );
+			$image_size    = 'yith_proteo_booking_gallery_1920';
+
+			switch ( $images_layout ) {
+				case 1:
+					$image_size = 'yith_proteo_booking_gallery_2560';
+					break;
+				case 2:
+					$image_size = 'yith_proteo_booking_gallery_960';
+					break;
+				case 3:
+					$image_size = 'yith_proteo_booking_gallery_960';
+					break;
+				case 4:
+					$image_size = 'yith_proteo_booking_gallery_960';
+					break;
+				case 5:
+					$image_size = 'yith_proteo_booking_gallery_960';
+					break;
+				case 6:
+					$image_size = 'yith_proteo_booking_gallery_640';
+					break;
+			}
+			return $image_size;
 		}
 
 		add_action( 'yith_proteo_before_page_content', 'yith_proteo_booking_product_image_gallery_in_header_content' );
@@ -71,9 +95,11 @@ function yith_proteo_booking_product_page_template_load() {
 		function yith_proteo_booking_product_image_gallery_in_header_content() {
 			if ( is_product() ) {
 				global $product;
-				$product = wc_get_product();
+				$product       = wc_get_product();
+				$images_layout = get_theme_mod( 'yith_proteo_booking_products_image_grid_layout', 1 );
+				$images_layout = 'grid-elements-count-' . $images_layout;
 				woocommerce_show_product_sale_flash();
-				echo "<div class='yith-booking-woocommerce-images'>";
+				echo "<div class='yith-booking-woocommerce-images " . esc_attr( $images_layout ) . "'>";
 				woocommerce_show_product_images();
 				$attachment_ids = $product->get_gallery_image_ids();
 				if ( $attachment_ids ) {
