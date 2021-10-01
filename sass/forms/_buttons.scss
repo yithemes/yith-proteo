@@ -56,7 +56,8 @@ input[type="submit"].alt,
 .yith_wcwl_wishlist_footer input[name="add_all_to_cart"],
 .button-style-2:not(.wp-block-button),
 .button-style-2 a,
-body.yith-proteo-add-to-cart-style-button_style_2 .wc-block-grid__product .add_to_cart_button {
+body.yith-proteo-add-to-cart-style-button_style_2 .wc-block-grid__product .add_to_cart_button,
+.yith_wcbk_booking_product_form_widget .product .yith_wcbk_widget_booking_form_summary button.button.alt.yith-wcbk-add-to-cart-button {
 	text-decoration: none;
 	background-color: var(--proteo-button_2_bg_color_1, #00a79c);
 	background: linear-gradient(180deg, var(--proteo-button_2_bg_color_1, #00a79c) 0%, var(--proteo-button_2_bg_color_2, #01af8d ) 100%);

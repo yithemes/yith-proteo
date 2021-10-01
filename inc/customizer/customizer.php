@@ -191,6 +191,10 @@ if ( function_exists( 'wc' ) ) {
 	add_action( 'customize_register', 'yith_proteo_customize_shop_register' );
 }
 
+if ( defined( 'YITH_WCBK' ) ) {
+	include_once get_template_directory() . '/inc/customizer/panels/yith-plugins/yith-booking.php'; // phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
+}
+
 /**
  * Render the site title for the selective refresh partial.
  *

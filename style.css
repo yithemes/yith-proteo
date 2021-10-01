@@ -6,7 +6,7 @@ Author: YITH
 Author URI: https://yithemes.com
 Description: Proteo is a modern, fast and fully customizable WooCommerce theme. Designed and developed by YITH - a team of top developers of premium themes -  with a beautiful UI, a minimal design and an optimized code, is perfect for each kind of site or shop. With the Proteo Wizard you can import our demo content with just a few clicks - in less than 2 minutes! -  and easily customize it using the advanced front-end customizer. Proteo is the best solution if you want a complete WooCommerce theme that works perfectly also in mobile devices and start quickly to sell your products with WooCommerce without technical knowledge. Works perfectly with page builders like Elementor, Gutenberg & Visual composer. Key features: # WooCommerce Ready # Responsive with a perfect mobile design # Compatible with Elementor, Gutenberg, Visual Composer and others page builders # Translation Ready # Frontend customizer with hundred of options to customize header, footer, pages, typography, style, ecc.  # Google fonts support # Regularly updated and improved with new demos and advanced features # Support to all YITH plugins. Check all our Proteo demos: https://proteo.yithemes.com/
 
-Version: 1.6.0.1
+Version: 1.6.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: yith-proteo
@@ -5314,7 +5314,8 @@ input[type=submit].alt,
 .yith_wcwl_wishlist_footer input[name=add_all_to_cart],
 .button-style-2:not(.wp-block-button),
 .button-style-2 a,
-body.yith-proteo-add-to-cart-style-button_style_2 .wc-block-grid__product .add_to_cart_button {
+body.yith-proteo-add-to-cart-style-button_style_2 .wc-block-grid__product .add_to_cart_button,
+.yith_wcbk_booking_product_form_widget .product .yith_wcbk_widget_booking_form_summary button.button.alt.yith-wcbk-add-to-cart-button {
   text-decoration: none;
   background-color: var(--proteo-button_2_bg_color_1, #00a79c);
   background: linear-gradient(180deg, var(--proteo-button_2_bg_color_1, #00a79c) 0%, var(--proteo-button_2_bg_color_2, #01af8d) 100%);
@@ -5331,7 +5332,8 @@ input[type=submit].alt:hover,
 .yith_wcwl_wishlist_footer input[name=add_all_to_cart]:hover,
 .button-style-2:not(.wp-block-button):hover,
 .button-style-2 a:hover,
-body.yith-proteo-add-to-cart-style-button_style_2 .wc-block-grid__product .add_to_cart_button:hover {
+body.yith-proteo-add-to-cart-style-button_style_2 .wc-block-grid__product .add_to_cart_button:hover,
+.yith_wcbk_booking_product_form_widget .product .yith_wcbk_widget_booking_form_summary button.button.alt.yith-wcbk-add-to-cart-button:hover {
   text-decoration: none;
   color: var(--proteo-button_2_font_hover_color, #ffffff);
   background-color: var(--proteo-button_2_bg_hover_color, #30615e);
@@ -6641,6 +6643,10 @@ body .wp-block-image .alignleft {
 body .wp-block-image .alignright {
   float: right;
   margin-left: 30px;
+}
+
+body .wp-block-image .aligncenter {
+  width: 100%;
 }
 
 .alignfull {
@@ -10477,6 +10483,18 @@ object {
   text-align: center;
 }
 
+.wp-block-image figcaption {
+  margin-bottom: 1em;
+  margin-top: 0.5em;
+  word-break: initial;
+}
+.wp-block-image figure.aligncenter img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+}
+
 /*--------------------------------------------------------------
 ## Galleries
 --------------------------------------------------------------*/
@@ -12823,6 +12841,251 @@ body .ywcps-products .owl-dots .owl-dot:hover span {
   background: var(--proteo-main_color_shade, #869791);
 }
 
+/* Booking Search form shortcode */
+.yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table, .yith-wcbk-booking-search-form form {
+  display: block;
+}
+.yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table tbody, .yith-wcbk-booking-search-form form tbody {
+  display: block;
+}
+.yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table tr,
+.yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table td, .yith-wcbk-booking-search-form form tr,
+.yith-wcbk-booking-search-form form td {
+  display: block;
+  width: 100%;
+}
+.yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table tr, .yith-wcbk-booking-search-form form tr {
+  padding-bottom: 20px;
+}
+.yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table .yith-wcbk-booking-search-form__row, .yith-wcbk-booking-search-form form .yith-wcbk-booking-search-form__row {
+  margin-bottom: 15px;
+}
+.yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table .yith-wcbk-booking-search-form__row .yith-wcbk-booking-search-form__row__content, .yith-wcbk-booking-search-form form .yith-wcbk-booking-search-form__row .yith-wcbk-booking-search-form__row__content {
+  max-width: initial;
+}
+.yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table .yith-wcbk-booking-search-form-label,
+.yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table .yith-wcbk-booking-search-form__row__label, .yith-wcbk-booking-search-form form .yith-wcbk-booking-search-form-label,
+.yith-wcbk-booking-search-form form .yith-wcbk-booking-search-form__row__label {
+  width: 100%;
+  margin-bottom: 10px;
+  font-weight: initial;
+}
+.yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table .yith-wcbk-booking-field, .yith-wcbk-booking-search-form form .yith-wcbk-booking-field {
+  float: none;
+  border: initial;
+  padding: 14px 10px;
+  border-color: #cccccc;
+  border-width: var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width);
+  border-style: solid;
+  border-radius: var(--proteo-forms_input_borde_radius, 0);
+}
+.yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table .yith-wcbk-date-range-picker, .yith-wcbk-booking-search-form form .yith-wcbk-date-range-picker {
+  border: none;
+  border-color: #cccccc;
+  border-width: var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width);
+  border-style: solid;
+  border-radius: var(--proteo-forms_input_borde_radius, 0);
+}
+.yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table .yith-wcbk-date-range-picker.yith-wcbk-date-range-picker--opened, .yith-wcbk-booking-search-form form .yith-wcbk-date-range-picker.yith-wcbk-date-range-picker--opened {
+  border-color: var(--proteo-main_color_shade);
+}
+.yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table .yith-wcbk-date-range-picker .yith-wcbk-date-range-picker__arrow, .yith-wcbk-booking-search-form form .yith-wcbk-date-range-picker .yith-wcbk-date-range-picker__arrow {
+  opacity: 0.5;
+}
+.yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table span.yith-wcbk-booking-date-icon.yith-icon.yith-icon-calendar, .yith-wcbk-booking-search-form form span.yith-wcbk-booking-date-icon.yith-icon.yith-icon-calendar {
+  font-size: 1em;
+}
+.yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table .yith-wcbk-people-selector, .yith-wcbk-booking-search-form form .yith-wcbk-people-selector {
+  color: inherit;
+}
+.yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table .yith-wcbk-people-selector__toggle-handler, .yith-wcbk-booking-search-form form .yith-wcbk-people-selector__toggle-handler {
+  border: none;
+  border-color: #cccccc;
+  border-width: var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width);
+  border-style: solid;
+  border-radius: var(--proteo-forms_input_borde_radius, 0);
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+.yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table .yith-wcbk-people-selector__toggle-handler .yith-wcbk-people-selector__toggle-handler__icon svg, .yith-wcbk-booking-search-form form .yith-wcbk-people-selector__toggle-handler .yith-wcbk-people-selector__toggle-handler__icon svg {
+  width: 12px !important;
+  height: 12px !important;
+}
+.yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table .yith-wcbk-booking-search-form-submit, .yith-wcbk-booking-search-form form .yith-wcbk-booking-search-form-submit {
+  display: block;
+  width: 100%;
+  padding: 20px;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+
+/* Booking product form widget */
+.yith_wcbk_booking_product_form_widget {
+  border-color: #cccccc;
+  border-width: var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width);
+  border-style: solid;
+  border-radius: var(--proteo-forms_input_borde_radius, 0);
+  padding: 35px;
+  color: inherit;
+}
+.yith_wcbk_booking_product_form_widget .product .yith_wcbk_widget_booking_form_head {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #cccccc;
+  margin-bottom: 10px;
+}
+.yith_wcbk_booking_product_form_widget .product .yith_wcbk_widget_booking_form_head .price {
+  font-size: var(--proteo-single_product_price_font_size, 2.1875rem);
+  color: var(--proteo-single_product_price_color);
+}
+.yith_wcbk_booking_product_form_widget .product .yith_wcbk_widget_booking_form_summary {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+.yith_wcbk_booking_product_form_widget .product .yith_wcbk_widget_booking_form_summary .yith-booking-meta {
+  margin-bottom: 15px;
+}
+.yith_wcbk_booking_product_form_widget .product .yith_wcbk_widget_booking_form_summary .yith-booking-meta .yith-booking-checkin,
+.yith_wcbk_booking_product_form_widget .product .yith_wcbk_widget_booking_form_summary .yith-booking-meta .yith-booking-checkout {
+  font-size: 0.813rem;
+  color: inherit;
+  text-align: initial;
+}
+.yith_wcbk_booking_product_form_widget .product .yith_wcbk_widget_booking_form_summary label.yith-wcbk-booking-form__label {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+.yith_wcbk_booking_product_form_widget .product .yith_wcbk_widget_booking_form_summary .yith-wcbk-date-range-picker {
+  border: none;
+  border-color: #cccccc;
+  border-width: var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width);
+  border-style: solid;
+  border-radius: var(--proteo-forms_input_borde_radius, 0);
+}
+.yith_wcbk_booking_product_form_widget .product .yith_wcbk_widget_booking_form_summary .yith-wcbk-date-range-picker.yith-wcbk-date-range-picker--opened {
+  border-color: var(--proteo-main_color_shade);
+}
+.yith_wcbk_booking_product_form_widget .product .yith_wcbk_widget_booking_form_summary .yith-wcbk-date-range-picker .yith-wcbk-date-range-picker__arrow {
+  opacity: 0.5;
+}
+.yith_wcbk_booking_product_form_widget .product .yith_wcbk_widget_booking_form_summary .yith-wcbk-form-section-wrapper {
+  margin-bottom: 15px;
+}
+.yith_wcbk_booking_product_form_widget .product .yith_wcbk_widget_booking_form_summary .yith-wcbk-form-section-wrapper .yith-wcbk-form-section {
+  margin-bottom: 15px;
+}
+.yith_wcbk_booking_product_form_widget .product .yith_wcbk_widget_booking_form_summary .yith-wcbk-people-selector {
+  color: inherit;
+}
+.yith_wcbk_booking_product_form_widget .product .yith_wcbk_widget_booking_form_summary .yith-wcbk-people-selector__toggle-handler {
+  border: none;
+  border-color: #cccccc;
+  border-width: var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width);
+  border-style: solid;
+  border-radius: var(--proteo-forms_input_borde_radius, 0);
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+.yith_wcbk_booking_product_form_widget .product .yith_wcbk_widget_booking_form_summary .yith-wcbk-people-selector__toggle-handler .yith-wcbk-people-selector__toggle-handler__icon svg {
+  width: 12px !important;
+  height: 12px !important;
+}
+.yith_wcbk_booking_product_form_widget .product .yith_wcbk_widget_booking_form_summary .yith-wcbk-form-section-services-wrapper {
+  margin-top: 30px;
+}
+.yith_wcbk_booking_product_form_widget .product .yith_wcbk_widget_booking_form_summary button.button.alt.yith-wcbk-add-to-cart-button,
+.yith_wcbk_booking_product_form_widget .product .yith_wcbk_widget_booking_form_summary button.button.alt.yith-wcbk-add-to-cart-button:disabled,
+.yith_wcbk_booking_product_form_widget .product .yith_wcbk_widget_booking_form_summary button.button.alt.yith-wcbk-add-to-cart-button:disabled:hover,
+.yith_wcbk_booking_product_form_widget .product .yith_wcbk_widget_booking_form_summary button.button.alt.yith-wcbk-add-to-cart-button:hover {
+  border: none;
+  border-radius: var(--proteo-buttons_border_radius);
+  text-transform: uppercase;
+  font-size: var(--proteo-single_product_add_to_cart_button_font_size, 1.25rem);
+  font-weight: initial;
+  padding: 1rem;
+}
+
+body.single-product.yith-proteo-booking-product-layout-enabled .yith-booking-woocommerce-images {
+  margin-bottom: 70px;
+  position: relative;
+  margin-top: -50px;
+}
+body.single-product.yith-proteo-booking-product-layout-enabled .yith-booking-woocommerce-images .woocommerce-product-gallery__image {
+  display: none;
+}
+body.single-product.yith-proteo-booking-product-layout-enabled .yith-booking-woocommerce-images figure {
+  margin-top: 0;
+}
+body.single-product.yith-proteo-booking-product-layout-enabled .yith-booking-woocommerce-images .woocommerce-product-gallery__image {
+  height: 600px;
+  overflow: hidden;
+  vertical-align: middle;
+  position: relative;
+}
+body.single-product.yith-proteo-booking-product-layout-enabled .yith-booking-woocommerce-images .woocommerce-product-gallery__image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  min-height: 250px;
+  min-width: 100%;
+  max-width: none;
+  width: auto !important;
+  transition: transform 0.3s ease-in-out;
+}
+body.single-product.yith-proteo-booking-product-layout-enabled .yith-booking-woocommerce-images .woocommerce-product-gallery__image:first-child {
+  display: block;
+}
+body.single-product.yith-proteo-booking-product-layout-enabled .yith-booking-woocommerce-images .woocommerce-product-gallery__image:hover img {
+  transform: translateY(-50%) translateX(-50%) scale(1.1);
+}
+body.single-product.yith-proteo-booking-product-layout-enabled .yith-booking-woocommerce-images .woocommerce-product-gallery__image--placeholder {
+  display: none;
+}
+body.single-product.yith-proteo-booking-product-layout-enabled .yith-booking-woocommerce-images .woocommerce div.product div.images .flex-control-thumbs li {
+  width: 10%;
+}
+body.single-product.yith-proteo-booking-product-layout-enabled .yith-booking-woocommerce-images .flex-control-nav.flex-control-thumbs {
+  display: none;
+}
+body.single-product.yith-proteo-booking-product-layout-enabled .yith-booking-woocommerce-images .open-gallery {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+  pointer-events: none;
+  background: #ffffff;
+  color: var(--proteo-main_color_shade);
+  padding: 10px 20px;
+  line-height: 18px;
+  cursor: pointer;
+  border-radius: 40px;
+}
+body.single-product.yith-proteo-booking-product-layout-enabled div.product.product-type-booking .summary.entry-summary {
+  width: 100%;
+  float: none;
+  display: block;
+  padding-left: 0;
+  font-size: 1.25rem;
+  line-height: 2.375rem;
+}
+@media (min-width: 15.625em) and (max-width: 58.125em) {
+  body.single-product.yith-proteo-booking-product-layout-enabled .yith-booking-woocommerce-images .woocommerce-product-gallery__image {
+    height: 250px;
+  }
+}
+@media screen and (min-width: 56.875em) {
+  body.single-product.yith-proteo-booking-product-layout-enabled .yith-booking-woocommerce-images .woocommerce-product-gallery__image img {
+    min-height: 350px;
+  }
+}
+@media screen and (min-width: 75em) {
+  body.single-product.yith-proteo-booking-product-layout-enabled .yith-booking-woocommerce-images .woocommerce-product-gallery__image img {
+    min-height: 450px;
+  }
+}
+
 /**
 CF7
  */
@@ -12879,6 +13142,18 @@ body .wpcf7-not-valid {
 .proteo-desire-glow-hover:hover * {
   filter: grayscale(1) brightness(100);
   color: #fff;
+}
+
+/* Booking products skin */
+.with-main-color-shadow {
+  box-shadow: -1px 2px 58px 0 rgba(157, 205, 220, 0.33);
+}
+
+@media screen and (min-width: 769px) {
+  .wp-block-cover.alignfull.half-background .wp-block-cover__image-background {
+    left: 50%;
+    width: -webkit-fill-available;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,15 @@
+/* Booking products skin */
+.with-main-color-shadow {
+    box-shadow: -1px 2px 58px 0 rgba(157, 205, 220, 0.33);
+}
+
+@media screen and (min-width: 769px) {
+    .wp-block-cover.alignfull {
+        &.half-background {
+            .wp-block-cover__image-background {
+                left: 50%;
+                width: -webkit-fill-available;
+            }
+        }
+    }
+}

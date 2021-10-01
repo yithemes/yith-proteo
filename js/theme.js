@@ -338,5 +338,35 @@
 		}
 	} ).trigger( 'yith_proteo_woocommmerce_pages_title_layout' );
 
+	function isMobile() {
+		return window.innerWidth <= 992;
+	}
+
+	// sticky the sidebar if it's fully visible
+	function stickySidebar() {
+		var sidebar = $( '#secondary_content' );
+		if ( sidebar.length && !sidebar.hasClass( '.no-sticky' ) ) {
+			var site_header = $('.site-header'),
+				sidebarTop = site_header.height() + 50;
+
+			if ( !isMobile() && window.innerHeight >= ( sidebar.outerHeight() + sidebarTop ) ) {
+				sidebar.css( { position: 'sticky', top: sidebarTop + 'px' } );
+				sidebar.addClass( 'sticky-sidebar' );
+			} else {
+				sidebar.css( { position: 'static' } );
+				sidebar.removeClass( 'sticky-sidebar' );
+			}
+		}
+	}
+
+	if (typeof yith_proteo != 'undefined' && yith_proteo.yith_proteo_sticky_sidebars == 'yes') {
+		$( window ).on( 'scroll', function () {
+			stickySidebar();
+		} );
+		stickySidebar();
+		$( window ).load( function () {
+			stickySidebar();
+		} );
+	}
 })
-	(jQuery);
+(jQuery);

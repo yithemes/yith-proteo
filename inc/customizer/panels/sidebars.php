@@ -16,6 +16,49 @@
 		)
 	);
 
+	// Sidebar Layout options Group options.
+	$wp_customize->add_setting(
+		'yith_proteo_sidebar_layout_options_group_title',
+		array(
+			'default'           => '',
+			'transport'         => 'postMessage',
+			'sanitize_callback' => 'wp_kses_post',
+		)
+	);
+	$wp_customize->add_control(
+		new WP_Customize_Notice(
+			$wp_customize,
+			'yith_proteo_sidebar_layout_options_group_title',
+			array(
+				'label'   => esc_html_x( 'Layout options', 'Customizer options group title', 'yith-proteo' ),
+				'section' => 'yith_proteo_sidebar_management',
+			)
+		)
+	);
+
+	// Sidebar sticky.
+	if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
+		$wp_customize->add_setting(
+			'yith_proteo_sidebar_sticky',
+			array(
+				'default'           => 'yes',
+				'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+			)
+		);
+
+		$wp_customize->add_control(
+			new Customizer_Control_Yes_No(
+				$wp_customize,
+				'yith_proteo_sidebar_sticky',
+				array(
+					'label'       => esc_html_x( 'Enable sticky sidebar', 'Customizer option name', 'yith-proteo' ),
+					'section'     => 'yith_proteo_sidebar_management',
+					'description' => esc_html_x( 'Choose whether to make the sidebar stick to the page when scrolling down', 'Customizer option description', 'yith-proteo' ),
+				)
+			)
+		);
+	}
+
 	// Default Sidebar Group options.
 	$wp_customize->add_setting(
 		'yith_proteo_default_sidebar_group_title',

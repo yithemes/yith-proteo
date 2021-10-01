@@ -53,47 +53,49 @@ if ( function_exists( 'wc' ) ) {
 ?>
 
 <aside id="secondary" class="widget-area <?php echo strpos( yith_proteo_get_sidebar_position(), 'sidebar-position-top' ) !== false ? 'sidebar-position-top' : 'col-lg-3'; ?> <?php echo esc_attr( $widgets_per_row ); ?>">
-	<?php
-	$sidebar = yith_proteo_sidebar_get_meta( 'sidebar_chooser' );
-	if ( class_exists( 'WooCommerce' ) ) {
-		if ( is_shop() ) {
-			$sidebar = get_theme_mod( 'yith_proteo_shop_page_default_sidebar', $default_shop_page_sidebar_chooser );
-		} elseif ( is_product_category() ) {
-			$sidebar                  = get_theme_mod( 'yith_proteo_product_category_page_sidebar', 'shop-sidebar' );
-			$category                 = get_queried_object();
-			$category_id              = $category->term_id;
-			$category_sidebar_chooser = get_term_meta( $category_id, 'yith_proteo_product_taxonomy_meta', true );
-			$category_sidebar         = isset( $category_sidebar_chooser['sidebar_chooser'] ) && 'inherit' !== $category_sidebar_chooser['sidebar_chooser'] ? $category_sidebar_chooser['sidebar_chooser'] : $sidebar;
+	<div id="secondary_content">
+		<?php
+		$sidebar = yith_proteo_sidebar_get_meta( 'sidebar_chooser' );
+		if ( class_exists( 'WooCommerce' ) ) {
+			if ( is_shop() ) {
+				$sidebar = get_theme_mod( 'yith_proteo_shop_page_default_sidebar', $default_shop_page_sidebar_chooser );
+			} elseif ( is_product_category() ) {
+				$sidebar                  = get_theme_mod( 'yith_proteo_product_category_page_sidebar', 'shop-sidebar' );
+				$category                 = get_queried_object();
+				$category_id              = $category->term_id;
+				$category_sidebar_chooser = get_term_meta( $category_id, 'yith_proteo_product_taxonomy_meta', true );
+				$category_sidebar         = isset( $category_sidebar_chooser['sidebar_chooser'] ) && 'inherit' !== $category_sidebar_chooser['sidebar_chooser'] ? $category_sidebar_chooser['sidebar_chooser'] : $sidebar;
 
-			$sidebar = $category_sidebar;
-		} elseif ( is_product_tag() ) {
-			$sidebar                     = get_theme_mod( 'yith_proteo_product_tag_page_sidebar', 'shop-sidebar' );
-			$product_tag                 = get_queried_object();
-			$product_tag_id              = $product_tag->term_id;
-			$product_tag_sidebar_chooser = get_term_meta( $product_tag_id, 'yith_proteo_product_taxonomy_meta', true );
-			$product_tag_sidebar         = isset( $product_tag_sidebar_chooser['sidebar_chooser'] ) && 'inherit' !== $product_tag_sidebar_chooser['sidebar_chooser'] ? $product_tag_sidebar_chooser['sidebar_chooser'] : $sidebar;
+				$sidebar = $category_sidebar;
+			} elseif ( is_product_tag() ) {
+				$sidebar                     = get_theme_mod( 'yith_proteo_product_tag_page_sidebar', 'shop-sidebar' );
+				$product_tag                 = get_queried_object();
+				$product_tag_id              = $product_tag->term_id;
+				$product_tag_sidebar_chooser = get_term_meta( $product_tag_id, 'yith_proteo_product_taxonomy_meta', true );
+				$product_tag_sidebar         = isset( $product_tag_sidebar_chooser['sidebar_chooser'] ) && 'inherit' !== $product_tag_sidebar_chooser['sidebar_chooser'] ? $product_tag_sidebar_chooser['sidebar_chooser'] : $sidebar;
 
-			$sidebar = $product_tag_sidebar;
-		} elseif ( is_product_taxonomy() ) {
-			$sidebar = get_theme_mod( 'yith_proteo_product_tax_page_sidebar', 'shop-sidebar' );
-		} elseif ( is_product() && 'yes' === get_theme_mod( 'yith_proteo_product_page_sidebar_force', 'no' ) ) {
-			$sidebar = get_theme_mod( 'yith_proteo_single_product_default_sidebar', 'shop-sidebar' );
-		} elseif ( is_product() && 'inherit' === $sidebar ) {
-			$sidebar = get_theme_mod( 'yith_proteo_single_product_default_sidebar', 'shop-sidebar' );
+				$sidebar = $product_tag_sidebar;
+			} elseif ( is_product_taxonomy() ) {
+				$sidebar = get_theme_mod( 'yith_proteo_product_tax_page_sidebar', 'shop-sidebar' );
+			} elseif ( is_product() && 'yes' === get_theme_mod( 'yith_proteo_product_page_sidebar_force', 'no' ) ) {
+				$sidebar = get_theme_mod( 'yith_proteo_single_product_default_sidebar', 'shop-sidebar' );
+			} elseif ( is_product() && 'inherit' === $sidebar ) {
+				$sidebar = get_theme_mod( 'yith_proteo_single_product_default_sidebar', 'shop-sidebar' );
+			}
 		}
-	}
-	if ( is_home() ) {
-		dynamic_sidebar( get_theme_mod( 'yith_proteo_blog_sidebar', 'sidebar-1' ) );
-	} elseif ( ( is_single() || is_page() ) && 'inherit' === $sidebar ) {
-		dynamic_sidebar( get_theme_mod( 'yith_proteo_default_sidebar', 'sidebar-1' ) );
-	} elseif ( is_category() ) {
-		dynamic_sidebar( get_theme_mod( 'yith_proteo_blog_category_sidebar', 'sidebar-1' ) );
-	} elseif ( is_tag() ) {
-		dynamic_sidebar( get_theme_mod( 'yith_proteo_blog_tag_sidebar', 'sidebar-1' ) );
-	} elseif ( ! empty( $sidebar ) ) {
-		dynamic_sidebar( $sidebar );
-	} else {
-		dynamic_sidebar( get_theme_mod( 'yith_proteo_default_sidebar', 'sidebar-1' ) );
-	}
-	?>
+		if ( is_home() ) {
+			dynamic_sidebar( get_theme_mod( 'yith_proteo_blog_sidebar', 'sidebar-1' ) );
+		} elseif ( ( is_single() || is_page() ) && 'inherit' === $sidebar ) {
+			dynamic_sidebar( get_theme_mod( 'yith_proteo_default_sidebar', 'sidebar-1' ) );
+		} elseif ( is_category() ) {
+			dynamic_sidebar( get_theme_mod( 'yith_proteo_blog_category_sidebar', 'sidebar-1' ) );
+		} elseif ( is_tag() ) {
+			dynamic_sidebar( get_theme_mod( 'yith_proteo_blog_tag_sidebar', 'sidebar-1' ) );
+		} elseif ( ! empty( $sidebar ) ) {
+			dynamic_sidebar( $sidebar );
+		} else {
+			dynamic_sidebar( get_theme_mod( 'yith_proteo_default_sidebar', 'sidebar-1' ) );
+		}
+		?>
+	</div>
 </aside><!-- #secondary -->

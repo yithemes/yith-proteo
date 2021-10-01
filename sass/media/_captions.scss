@@ -14,3 +14,19 @@
 .wp-caption-text {
 	text-align: center;
 }
+
+.wp-block-image{
+	figcaption {
+		margin-bottom: 1em;
+		margin-top: .5em;
+		word-break: initial;
+	}
+	figure.aligncenter {
+		img {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 15px;
+		}
+	}
+} 

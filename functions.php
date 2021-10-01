@@ -119,8 +119,27 @@ if ( ! function_exists( 'yith_proteo_setup' ) ) :
 		 */
 		add_image_size( 'proteo-blog-loop-image', 725, 358, true );
 		add_image_size( 'proteo-blog-loop-image-wide', 1480, 745, true );
+		add_image_size( 'proteo_full_width_image', 1920, 0, false );
 		add_image_size( 'proteo_blog_cropped_cover_image_' . get_theme_mod( 'yith_proteo_single_post_fullwidth_cover_cropping_custom_height', 400 ), 2560, get_theme_mod( 'yith_proteo_single_post_fullwidth_cover_cropping_custom_height', 400 ), array( 'center', 'top' ) );
 
+		add_filter( 'image_size_names_choose', 'yith_proteo_list_additional_image_sizes' );
+
+		/**
+		 * Add the additional image sizes to blocks and selects.
+		 *
+		 * @param array $sizes Array of registered image size names.
+		 * @return array
+		 */
+		function yith_proteo_list_additional_image_sizes( $sizes ) {
+			return array_merge(
+				$sizes,
+				array(
+					'proteo-blog-loop-image'      => esc_html__( 'Blog loop image', 'yith-proteo' ),
+					'proteo-blog-loop-image-wide' => esc_html__( 'Blog loop image - wide', 'yith-proteo' ),
+					'proteo_full_width_image'     => esc_html__( 'Full width image', 'yith-proteo' ),
+				)
+			);
+		}
 		/**
 		 * Gutenberg box aligning options
 		 */
@@ -277,6 +296,13 @@ if ( defined( 'JETPACK__VERSION' ) ) {
  */
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
+}
+
+/**
+ * Load YITH Booking compatibility file.
+ */
+if ( defined( 'YITH_WCBK' ) ) {
+	require get_template_directory() . '/inc/yith-booking-support.php';
 }
 
 /**

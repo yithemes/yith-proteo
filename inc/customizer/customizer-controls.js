@@ -165,6 +165,13 @@
 			wp.customize.control('yith_proteo_shop_page_sidebar_widgets_per_row', showControlIfhasValues(setting, ['top']));
 		});
 
+		/**
+		 * Control Dependency
+		 */
+		wp.customize('yith_proteo_booking_products_specific_layout', function (setting) {
+			wp.customize.control('yith_proteo_booking_products_image_grid_layout', showControlIfhasValues(setting, ['yes']));
+		});
+
 
 		/**
 		 * Footer sidebar width calc
@@ -513,6 +520,22 @@
 			var t = $(this);
 			t.toggleClass('customizer-control-description-expanded');
 		});
+
+		/* Sticky sidebar option grouping */
+		yith_proteo_toggle_sticky_sidebar_controls_list();
+
+		$( '#customize-control-yith_proteo_sidebar_layout_options_group_title' ).addClass('section-closed').on( 'click', yith_proteo_toggle_sticky_sidebar_controls );
+
+		function yith_proteo_toggle_sticky_sidebar_controls() {
+			var section_title = $( '#customize-control-yith_proteo_sidebar_layout_options_group_title' ),
+			collapsed = section_title.hasClass( 'section-closed' );
+			section_title.toggleClass('section-closed');
+			wp.customize.control('yith_proteo_sidebar_sticky' ).toggle( collapsed );
+		}
+
+		function yith_proteo_toggle_sticky_sidebar_controls_list() {
+			wp.customize.control('yith_proteo_sidebar_sticky' ).toggle( false );
+		}
 
 		/* General sidebar options toggle */
 		yith_proteo_toggle_general_sidebars_section_controls_list();

@@ -22,12 +22,22 @@ module.exports = function(grunt) {
 					'inc/customizer/custom-controls/font-selector-assets/js/select.min.js': 'inc/customizer/custom-controls/font-selector-assets/js/select.js',
 				}
 			}
-		}
+		},
+		watch: {
+			css: {
+				files: ['sass/**/*.scss'],
+				tasks: ['sass'],
+				options: {
+					livereload: true,
+				},
+			},
+		},
 	});
 	
 	
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
+	grunt.loadNpmTasks('grunt-contrib-watch');
 	
 	grunt.registerTask('default', ['sass', 'uglify']);
 	

@@ -1,10 +1,6 @@
 @charset "UTF-8";
 /* Small devices (landscape phones and up) */
 @media (min-width: /*<yith_proteo_mobile_device_width>*/600px/*</yith_proteo_mobile_device_width>*/) {
-  .wp-block-latest-posts.is-grid li {
-    margin: 0 50px 50px 0;
-  }
-
   .wp-block-latest-posts.columns-2 li {
     width: calc(50% - 50px);
   }
@@ -572,6 +568,10 @@ article:not(.has-post-thumbnail).page header.entry-header h1 {
 
   .main-navigation ul ul:before {
     display: none;
+  }
+
+  .wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column:not(:only-child) {
+    margin-bottom: var(--wp--style--block-gap, 2em);
   }
 }
 /* Mobile device */
