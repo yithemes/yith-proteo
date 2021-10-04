@@ -200,6 +200,7 @@ function yith_proteo_inline_style() {
 	$catalog_product_price_font_size       = get_theme_mod( 'yith_proteo_product_catalog_price_font_size', 14 );
 	$catalog_product_price_color           = get_theme_mod( 'yith_proteo_product_catalog_price_color', '#1f1f1f' );
 	$catalog_product_add_to_cart_font_size = get_theme_mod( 'yith_proteo_product_catalog_add_to_cart_font_size', 14 );
+	$catalog_product_border_color          = get_theme_mod( 'yith_proteo_product_catalog_border_color', '#404040' );
 
 	$responsive_breakpoint_mobile        = get_theme_mod( 'yith_proteo_mobile_device_width', 600 );
 	$responsive_breakpoint_table         = get_theme_mod( 'yith_proteo_tablet_device_width', 768 );
@@ -213,7 +214,7 @@ function yith_proteo_inline_style() {
 	/*
 	 * Spacing options
 	 */
-	$site_title_spacing       = implode(
+	$site_title_spacing            = implode(
 		'px ',
 		get_theme_mod(
 			'yith_proteo_site_title_spacing',
@@ -225,7 +226,7 @@ function yith_proteo_inline_style() {
 			)
 		)
 	) . 'px';
-	$tagline_spacing          = implode(
+	$tagline_spacing               = implode(
 		'px ',
 		get_theme_mod(
 			'yith_proteo_tagline_spacing',
@@ -237,7 +238,7 @@ function yith_proteo_inline_style() {
 			)
 		)
 	) . 'px';
-	$topbar_spacing           = implode(
+	$topbar_spacing                = implode(
 		'px ',
 		get_theme_mod(
 			'yith_proteo_topbar_spacing',
@@ -249,7 +250,7 @@ function yith_proteo_inline_style() {
 			)
 		)
 	) . 'px';
-	$header_manu_menu_spacing = implode(
+	$header_manu_menu_spacing      = implode(
 		'px ',
 		get_theme_mod(
 			'yith_proteo_header_main_menu_spacing',
@@ -261,7 +262,7 @@ function yith_proteo_inline_style() {
 			)
 		)
 	) . 'px';
-	$header_spacing           = implode(
+	$header_spacing                = implode(
 		'px ',
 		get_theme_mod(
 			'yith_proteo_header_spacing',
@@ -273,7 +274,7 @@ function yith_proteo_inline_style() {
 			)
 		)
 	) . 'px';
-	$sticky_header_spacing    = implode(
+	$sticky_header_spacing         = implode(
 		'px ',
 		get_theme_mod(
 			'yith_proteo_sticky_header_spacing',
@@ -285,7 +286,7 @@ function yith_proteo_inline_style() {
 			)
 		)
 	) . 'px';
-	$site_content_spacing     = implode(
+	$site_content_spacing          = implode(
 		'px ',
 		get_theme_mod(
 			'yith_proteo_site_content_spacing',
@@ -297,7 +298,7 @@ function yith_proteo_inline_style() {
 			)
 		)
 	) . 'px';
-	$page_title_spacing       = implode(
+	$page_title_spacing            = implode(
 		'px ',
 		get_theme_mod(
 			'yith_proteo_page_title_spacing',
@@ -306,6 +307,30 @@ function yith_proteo_inline_style() {
 				'right'  => 0,
 				'bottom' => 35,
 				'left'   => 0,
+			)
+		)
+	) . 'px';
+	$catalog_product_border_radius = implode(
+		'px ',
+		get_theme_mod(
+			'yith_proteo_product_catalog_border_radius',
+			array(
+				'top-left'     => 0,
+				'top-right'    => 0,
+				'bottom-right' => 0,
+				'bottom-left'  => 0,
+			)
+		)
+	) . 'px';
+	$catalog_product_border_width  = implode(
+		'px ',
+		get_theme_mod(
+			'yith_proteo_product_catalog_border_width',
+			array(
+				'top'    => 1,
+				'right'  => 1,
+				'bottom' => 1,
+				'left'   => 1,
 			)
 		)
 	) . 'px';
@@ -445,6 +470,9 @@ function yith_proteo_inline_style() {
 		--proteo-catalog_product_price_font_size: {$catalog_product_price_font_size}px;
 		--proteo-catalog_product_price_color: {$catalog_product_price_color};
 		--proteo-catalog_product_add_to_cart_font_size: {$catalog_product_add_to_cart_font_size}px;
+		--proteo-catalog_product_border_radius: {$catalog_product_border_radius};
+		--proteo-catalog_product_border_color: {$catalog_product_border_color};
+		--proteo-catalog_product_border_width: {$catalog_product_border_width};
 		--proteo-site_title_spacing: {$site_title_spacing};
 		--proteo-tagline_spacing: {$tagline_spacing};
 		--proteo-topbar_spacing: {$topbar_spacing};

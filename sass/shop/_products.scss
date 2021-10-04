@@ -24,6 +24,11 @@ ul.products,
 			//background: #ffffff;
 			position: relative;
 			text-align: center;
+			border-style: solid;
+			border-width: var(--proteo-catalog_product_border_width);
+			border-color: var(--proteo-catalog_product_border_color);
+			border-radius: var(--proteo-catalog_product_border_radius);
+			overflow: hidden;
 		}
 
 		a {

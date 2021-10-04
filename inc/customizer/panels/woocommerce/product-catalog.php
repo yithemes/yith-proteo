@@ -47,6 +47,123 @@ $wp_customize->add_control(
 	)
 );
 
+// Product border enabler.
+if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
+	$wp_customize->add_setting(
+		'yith_proteo_product_catalog_with_border',
+		array(
+			'default'           => 'no',
+			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+		)
+	);
+
+	$wp_customize->add_control(
+		new Customizer_Control_Yes_No(
+			$wp_customize,
+			'yith_proteo_product_catalog_with_border',
+			array(
+				'label'   => esc_html_x( 'Enable border', 'Customizer option name', 'yith-proteo' ),
+				'section' => 'woocommerce_product_catalog',
+			)
+		)
+	);
+}
+
+// Product border width.
+$wp_customize->add_setting(
+	'yith_proteo_product_catalog_border_width',
+	array(
+		'default'           => array(
+			'top'    => 1,
+			'right'  => 1,
+			'bottom' => 1,
+			'left'   => 1,
+		),
+		'sanitize_callback' => 'yith_proteo_sanitize_int_array',
+	)
+);
+$wp_customize->add_control(
+	new Customizer_Control_Spacing(
+		$wp_customize,
+		'yith_proteo_product_catalog_border_width',
+		array(
+			'label'   => esc_html_x( 'Border width (px)', 'Customizer option name', 'yith-proteo' ),
+			'section' => 'woocommerce_product_catalog',
+			'choices' => array(
+				'top'    => array(
+					'name' => esc_html_x( 'Top', 'Customizer option value', 'yith-proteo' ),
+				),
+				'right'  => array(
+					'name' => esc_html_x( 'Right', 'Customizer option value', 'yith-proteo' ),
+				),
+				'bottom' => array(
+					'name' => esc_html_x( 'Bottom', 'Customizer option value', 'yith-proteo' ),
+				),
+				'left'   => array(
+					'name' => esc_html_x( 'Left', 'Customizer option value', 'yith-proteo' ),
+				),
+			),
+		)
+	)
+);
+
+// Product border width.
+$wp_customize->add_setting(
+	'yith_proteo_product_catalog_border_radius',
+	array(
+		'default'           => array(
+			'top-left'     => 0,
+			'top-right'    => 0,
+			'bottom-right' => 0,
+			'bottom-left'  => 0,
+		),
+		'sanitize_callback' => 'yith_proteo_sanitize_int_array',
+	)
+);
+$wp_customize->add_control(
+	new Customizer_Control_Spacing(
+		$wp_customize,
+		'yith_proteo_product_catalog_border_radius',
+		array(
+			'label'   => esc_html_x( 'Border radius (px)', 'Customizer option name', 'yith-proteo' ),
+			'section' => 'woocommerce_product_catalog',
+			'choices' => array(
+				'top-left'     => array(
+					'name' => esc_html_x( 'Top Left', 'Customizer option value', 'yith-proteo' ),
+				),
+				'top-right'    => array(
+					'name' => esc_html_x( 'Top Right', 'Customizer option value', 'yith-proteo' ),
+				),
+				'bottom-right' => array(
+					'name' => esc_html_x( 'Bottom Right', 'Customizer option value', 'yith-proteo' ),
+				),
+				'bottom-left'  => array(
+					'name' => esc_html_x( 'Bottom Left', 'Customizer option value', 'yith-proteo' ),
+				),
+			),
+		)
+	)
+);
+
+// Product border color.
+$wp_customize->add_setting(
+	'yith_proteo_product_catalog_border_color',
+	array(
+		'sanitize_callback' => 'yith_proteo_sanitize_alpha_colors',
+		'default'           => '#ebebeb',
+	)
+);
+$wp_customize->add_control(
+	new Customizer_Alpha_Color_Control(
+		$wp_customize,
+		'yith_proteo_product_catalog_border_color',
+		array(
+			'label'   => esc_html_x( 'Border color', 'Customizer option name', 'yith-proteo' ),
+			'section' => 'woocommerce_product_catalog',
+		)
+	)
+);
+
 // Header Layout options.
 $wp_customize->add_setting(
 	'yith_proteo_product_catalog_hover_effect',

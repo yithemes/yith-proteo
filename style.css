@@ -8011,6 +8011,11 @@ ul.products li.wc-block-grid__product .product-content,
 .wc-block-grid ul.wc-block-grid__products li.wc-block-grid__product .product-content {
   position: relative;
   text-align: center;
+  border-style: solid;
+  border-width: var(--proteo-catalog_product_border_width);
+  border-color: var(--proteo-catalog_product_border_color);
+  border-radius: var(--proteo-catalog_product_border_radius);
+  overflow: hidden;
 }
 ul.products li.product a,
 ul.products li.wc-block-grid__product a,
