@@ -5,6 +5,10 @@ ul.products,
 .wc-block-grid ul.wc-block-grid__products {
 	margin: 0 -7.5px;
 	padding: 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 15px;
 
 	&:after {
 		content: "";
@@ -17,18 +21,19 @@ ul.products,
 		list-style: none;
 		position: relative;
 		margin-bottom: 35px;
-		padding: 0 7.5px;
+		padding: 0;
 		text-align: center;
+		max-width: none;
+		border-style: solid;
+		border-width: var(--proteo-catalog_product_border_width);
+		border-color: var(--proteo-catalog_product_border_color);
+		border-radius: var(--proteo-catalog_product_border_radius);
+		overflow: hidden;
 
 		.product-content {
 			//background: #ffffff;
 			position: relative;
 			text-align: center;
-			border-style: solid;
-			border-width: var(--proteo-catalog_product_border_width);
-			border-color: var(--proteo-catalog_product_border_color);
-			border-radius: var(--proteo-catalog_product_border_radius);
-			overflow: hidden;
 		}
 
 		a {
@@ -168,6 +173,14 @@ ul.products,
 			}
 		}
 	}
+}
+
+ul.products.columns-1, .wc-block-grid.has-1-columns ul.wc-block-grid__products {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+ul.products.columns-2, .wc-block-grid.has-2-columns ul.wc-block-grid__products {
+    grid-template-columns: repeat(2, 1fr);
 }
 
 body {
