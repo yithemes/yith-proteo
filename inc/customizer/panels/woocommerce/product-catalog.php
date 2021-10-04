@@ -5,6 +5,48 @@
  * @package yith-proteo
  */
 
+// General options group title.
+$wp_customize->add_setting(
+	'yith_proteo_product_catalog_general_options_group_title',
+	array(
+		'default'           => '',
+		'transport'         => 'postMessage',
+		'sanitize_callback' => 'wp_kses_post',
+	)
+);
+$wp_customize->add_control(
+	new WP_Customize_Notice(
+		$wp_customize,
+		'yith_proteo_product_catalog_general_options_group_title',
+		array(
+			'label'    => esc_html_x( 'General options', 'Customizer options group title', 'yith-proteo' ),
+			'section'  => 'woocommerce_product_catalog',
+			'priority' => 5,
+		)
+	)
+);
+
+// Style options group title.
+$wp_customize->add_setting(
+	'yith_proteo_product_catalog_style_options_group_title',
+	array(
+		'default'           => '',
+		'transport'         => 'postMessage',
+		'sanitize_callback' => 'wp_kses_post',
+	)
+);
+$wp_customize->add_control(
+	new WP_Customize_Notice(
+		$wp_customize,
+		'yith_proteo_product_catalog_style_options_group_title',
+		array(
+			'label'    => esc_html_x( 'Display options', 'Customizer options group title', 'yith-proteo' ),
+			'section'  => 'woocommerce_product_catalog',
+			'priority' => 10,
+		)
+	)
+);
+
 // Header Layout options.
 $wp_customize->add_setting(
 	'yith_proteo_product_catalog_hover_effect',
@@ -99,6 +141,27 @@ $wp_customize->add_control(
 	)
 );
 
+// Add to cart options group title.
+$wp_customize->add_setting(
+	'yith_proteo_product_catalog_add_to_cart_options_group_title',
+	array(
+		'default'           => '',
+		'transport'         => 'postMessage',
+		'sanitize_callback' => 'wp_kses_post',
+	)
+);
+$wp_customize->add_control(
+	new WP_Customize_Notice(
+		$wp_customize,
+		'yith_proteo_product_catalog_add_to_cart_options_group_title',
+		array(
+			'label'    => esc_html_x( 'Add to cart options', 'Customizer options group title', 'yith-proteo' ),
+			'section'  => 'woocommerce_product_catalog',
+			'priority' => 20,
+		)
+	)
+);
+
 // Add to cart loop style.
 $wp_customize->add_setting(
 	'yith_proteo_products_loop_add_to_cart_style',
@@ -120,6 +183,7 @@ $wp_customize->add_control(
 			'button_style_1'  => esc_html_x( 'Button style 1', 'Customizer option value', 'yith-proteo' ),
 			'button_style_2'  => esc_html_x( 'Button style 2', 'Customizer option value', 'yith-proteo' ),
 		),
+		'priority'    => 20,
 	)
 );
 
@@ -134,9 +198,10 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
 	'yith_proteo_product_catalog_add_to_cart_font_size',
 	array(
-		'label'   => esc_html_x( 'Add to cart font size', 'Customizer option name', 'yith-proteo' ),
-		'section' => 'woocommerce_product_catalog',
-		'type'    => 'number',
+		'label'    => esc_html_x( 'Add to cart font size', 'Customizer option name', 'yith-proteo' ),
+		'section'  => 'woocommerce_product_catalog',
+		'type'     => 'number',
+		'priority' => 20,
 	)
 );
 
@@ -160,6 +225,7 @@ $wp_customize->add_control(
 			'classic' => esc_html_x( 'Classic', 'Customizer option value', 'yith-proteo' ),
 			'hover'   => esc_html_x( 'On image hover', 'Customizer option value', 'yith-proteo' ),
 		),
+		'priority'    => 20,
 	)
 );
 
@@ -182,6 +248,7 @@ if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
 				'label'       => esc_html_x( 'Show "View details" link', 'Customizer option name', 'yith-proteo' ),
 				'section'     => 'woocommerce_product_catalog',
 				'description' => esc_html_x( 'Choose whether to show a "view details" link in product catalog pages.', 'Customizer option value', 'yith-proteo' ),
+				'priority'    => 20,
 			)
 		)
 	);
@@ -207,5 +274,6 @@ $wp_customize->add_control(
 			'unstyled_button' => esc_html_x( 'Textual link', 'Customizer option value', 'yith-proteo' ),
 			'ghost'           => esc_html_x( 'Ghost button', 'Customizer option value', 'yith-proteo' ),
 		),
+		'priority'    => 20,
 	)
 );
