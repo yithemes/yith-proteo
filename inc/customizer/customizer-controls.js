@@ -173,6 +173,15 @@
 			wp.customize.control('yith_proteo_booking_products_image_grid_layout_height', showControlIfhasValues(setting, ['yes']));
 		});
 
+		/**
+		 * Control Dependency
+		 */
+		wp.customize('yith_proteo_product_catalog_with_border', function (setting) {
+			wp.customize.control('yith_proteo_product_catalog_border_width', showControlIfhasValues(setting, ['yes']));
+			wp.customize.control('yith_proteo_product_catalog_border_radius', showControlIfhasValues(setting, ['yes']));
+			wp.customize.control('yith_proteo_product_catalog_border_color', showControlIfhasValues(setting, ['yes']));
+		});
+
 
 		/**
 		 * Footer sidebar width calc

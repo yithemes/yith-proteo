@@ -24,10 +24,6 @@ ul.products,
 		padding: 0;
 		text-align: center;
 		max-width: none;
-		border-style: solid;
-		border-width: var(--proteo-catalog_product_border_width);
-		border-color: var(--proteo-catalog_product_border_color);
-		border-radius: var(--proteo-catalog_product_border_radius);
 		overflow: hidden;
 
 		.product-content {
@@ -301,6 +297,19 @@ body {
 			&:hover .view-details {
 				opacity: 1;
 				bottom: initial;
+			}
+		}
+	}
+
+	&.yith-proteo-products-with-border {
+		ul.products,
+		.wc-block-grid ul.wc-block-grid__products {
+			li.product,
+			li.wc-block-grid__product {
+				border-style: solid;
+				border-width: var(--proteo-catalog_product_border_width);
+				border-color: var(--proteo-catalog_product_border_color);
+				border-radius: var(--proteo-catalog_product_border_radius);
 			}
 		}
 	}
