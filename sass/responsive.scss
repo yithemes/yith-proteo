@@ -17,6 +17,11 @@ $yith_proteo_large_desktop_device_width_min: '/*<yith_proteo_large_desktop_devic
 	.wp-block-latest-posts.columns-2 li {
 		width: calc(50% - 50px);
 	}
+
+	ul.products,
+	.wc-block-grid ul.wc-block-grid__products {
+		grid-template-columns: repeat(2, 1fr);
+	}
 }
 
 /* Tablet devices and up*/
@@ -73,48 +78,17 @@ $yith_proteo_large_desktop_device_width_min: '/*<yith_proteo_large_desktop_devic
 			}
 		}
 	}
+	ul.products, .wc-block-grid ul.wc-block-grid__products {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	ul.products.columns-3, .wc-block-grid.has-3-columns ul.wc-block-grid__products {
+		grid-template-columns: repeat(3, 1fr);
+	}
 }
 
 /* Just next tablet size (desktops, 769px and up) */
 @media (min-width: $yith_proteo_tablet_device_width_next) {
-	ul.products {
-		li.product {
-			@include column-width(3);
-			float: left;
 
-			&.first {
-				clear: both;
-			}
-
-			&.last {
-				margin-right: 0;
-			}
-		}
-	}
-
-	.columns-1 {
-		ul.products {
-			li.product {
-				float: none;
-				width: 100%;
-			}
-		}
-	}
-
-	@for $i from 2 through 6 {
-		.columns-#{$i} {
-			ul.products {
-				li.product {
-					@include column-width($i);
-				}
-			}
-		}
-		ul.columns-#{$i}.products {
-			li.product {
-				@include column-width($i);
-			}
-		}
-	}
 
 	aside#secondary.sidebar-position-top {
 		display: grid;
@@ -190,6 +164,27 @@ $yith_proteo_large_desktop_device_width_min: '/*<yith_proteo_large_desktop_devic
 			float: none;
 			vertical-align: middle;
 		}
+	}
+	ul.products, .wc-block-grid ul.wc-block-grid__products {
+		grid-template-columns: repeat(4, 1fr);
+	}
+	ul.products.columns-4, .wc-block-grid.has-4-columns ul.wc-block-grid__products {
+		grid-template-columns: repeat(4, 1fr);
+	}
+	
+	ul.products.columns-5, .wc-block-grid.has-5-columns ul.wc-block-grid__products {
+		grid-template-columns: repeat(5, 1fr);
+	}
+	
+	ul.products.columns-6, .wc-block-grid.has-6-columns ul.wc-block-grid__products {
+		grid-template-columns: repeat(6, 1fr);
+	}
+	ul.products.columns-7, .wc-block-grid.has-7-columns ul.wc-block-grid__products {
+		grid-template-columns: repeat(7, 1fr);
+	}
+	
+	ul.products.columns-8, .wc-block-grid.has-8-columns ul.wc-block-grid__products {
+		grid-template-columns: repeat(8, 1fr);
 	}
 	
 }
@@ -443,18 +438,6 @@ $yith_proteo_large_desktop_device_width_min: '/*<yith_proteo_large_desktop_devic
 		margin-right: 0;
 		padding-left: 0;
 		padding-right: 0;
-	}
-
-	ul.products li.product,
-	ul.products li.wc-block-grid__product,
-	.wc-block-grid ul.wc-block-grid__products li.product,
-	.wc-block-grid ul.wc-block-grid__products li.wc-block-grid__product {
-		width: 50%;
-		float: left;
-
-		&:nth-child(2n + 1) {
-			clear: both;
-		}
 	}
 
 	table.shop_table_responsive tbody tr td,
