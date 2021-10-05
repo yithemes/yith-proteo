@@ -539,6 +539,7 @@
 				wp.customize.control('woocommerce_default_catalog_orderby' ).toggle( collapsed );
 				wp.customize.control('woocommerce_catalog_columns' ).toggle( collapsed );
 				wp.customize.control('woocommerce_catalog_rows' ).toggle( collapsed );
+				wp.customize.control('yith_proteo_product_catalog_spacing' ).toggle( collapsed );
 			}
 
 			function yith_proteo_product_catalog_general_options_controls_list() {
@@ -547,6 +548,7 @@
 				wp.customize.control('woocommerce_default_catalog_orderby' ).toggle( false );
 				wp.customize.control('woocommerce_catalog_columns' ).toggle( false );
 				wp.customize.control('woocommerce_catalog_rows' ).toggle( false );
+				wp.customize.control('yith_proteo_product_catalog_spacing' ).toggle( false );
 			}
 
 			// Product Catalog Display options group

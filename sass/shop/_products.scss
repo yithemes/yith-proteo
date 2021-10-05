@@ -8,7 +8,8 @@ ul.products,
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 1fr;
-    grid-column-gap: 15px;
+    grid-column-gap: var(--proteo-catalog_product_horizontal_spacing);
+    grid-row-gap: var(--proteo-catalog_product_vertical_spacing);
 
 	&:after {
 		content: "";
@@ -20,7 +21,6 @@ ul.products,
 	li.wc-block-grid__product {
 		list-style: none;
 		position: relative;
-		margin-bottom: 35px;
 		padding: 0;
 		text-align: center;
 		max-width: none;
@@ -139,7 +139,7 @@ ul.products,
 		.price {
 			color: var(--proteo-catalog_product_price_color, #1f1f1f);
 			font-size: var(--proteo-catalog_product_price_font_size, 0.875rem);
-			font-weight: bold;
+			font-weight: 500;
 			margin-bottom: 10px;
 			display: block;
 

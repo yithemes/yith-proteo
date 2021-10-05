@@ -26,6 +26,37 @@ $wp_customize->add_control(
 	)
 );
 
+// Product spacing.
+$wp_customize->add_setting(
+	'yith_proteo_product_catalog_spacing',
+	array(
+		'default'           => array(
+			'horizontal' => 15,
+			'vertical'   => 35,
+		),
+		'sanitize_callback' => 'yith_proteo_sanitize_int_array',
+	)
+);
+$wp_customize->add_control(
+	new Customizer_Control_Spacing(
+		$wp_customize,
+		'yith_proteo_product_catalog_spacing',
+		array(
+			'label'    => esc_html_x( 'Space between products (px)', 'Customizer option name', 'yith-proteo' ),
+			'section'  => 'woocommerce_product_catalog',
+			'choices'  => array(
+				'horizontal' => array(
+					'name' => esc_html_x( 'Horizontal', 'Customizer option value', 'yith-proteo' ),
+				),
+				'vertical'   => array(
+					'name' => esc_html_x( 'Vertical', 'Customizer option value', 'yith-proteo' ),
+				),
+			),
+			'priority' => 10,
+		),
+	),
+);
+
 // Style options group title.
 $wp_customize->add_setting(
 	'yith_proteo_product_catalog_style_options_group_title',
