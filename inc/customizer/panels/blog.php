@@ -16,6 +16,174 @@ $wp_customize->add_section(
 	)
 );
 
+// Blog general options group.
+$wp_customize->add_setting(
+	'yith_proteo_blog_general_options_group_title',
+	array(
+		'default'           => '',
+		'transport'         => 'postMessage',
+		'sanitize_callback' => 'wp_kses_post',
+	)
+);
+$wp_customize->add_control(
+	new WP_Customize_Notice(
+		$wp_customize,
+		'yith_proteo_blog_general_options_group_title',
+		array(
+			'label'   => esc_html_x( 'General options', 'Customizer options group title', 'yith-proteo' ),
+			'section' => 'yith_proteo_blog_management',
+		)
+	)
+);
+
+// Read more text.
+$wp_customize->add_setting(
+	'yith_proteo_blog_read_more_text',
+	array(
+		'sanitize_callback' => 'sanitize_text_field',
+		'default'           => esc_html_x( 'Read more  &#10230;', 'Customizer option default value', 'yith-proteo' ),
+	)
+);
+$wp_customize->add_control(
+	'yith_proteo_blog_read_more_text',
+	array(
+		'type'    => 'text',
+		'section' => 'yith_proteo_blog_management',
+		'label'   => esc_html_x( 'Read more text', 'Customizer option name', 'yith-proteo' ),
+	)
+);
+
+// Date hover image enable.
+if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
+	$wp_customize->add_setting(
+		'yith_proteo_blog_date_on_image_enable',
+		array(
+			'default'           => 'yes',
+			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+		)
+	);
+
+	$wp_customize->add_control(
+		new Customizer_Control_Yes_No(
+			$wp_customize,
+			'yith_proteo_blog_date_on_image_enable',
+			array(
+				'label'       => esc_html_x( 'Show date badge', 'Customizer option name', 'yith-proteo' ),
+				'section'     => 'yith_proteo_blog_management',
+				'description' => esc_html_x( 'Choose whether to show the post date badge or not.', 'Customizer option description', 'yith-proteo' ),
+			)
+		)
+	);
+}
+
+// Navigation enable.
+if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
+	$wp_customize->add_setting(
+		'yith_proteo_blog_show_post_navigation',
+		array(
+			'default'           => 'yes',
+			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+		)
+	);
+
+	$wp_customize->add_control(
+		new Customizer_Control_Yes_No(
+			$wp_customize,
+			'yith_proteo_blog_show_post_navigation',
+			array(
+				'label'   => esc_html_x( 'Show navigation links', 'Customizer option name', 'yith-proteo' ),
+				'section' => 'yith_proteo_blog_management',
+			)
+		)
+	);
+}
+
+// Post author enable.
+if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
+	$wp_customize->add_setting(
+		'yith_proteo_blog_show_post_author',
+		array(
+			'default'           => 'yes',
+			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+		)
+	);
+
+	$wp_customize->add_control(
+		new Customizer_Control_Yes_No(
+			$wp_customize,
+			'yith_proteo_blog_show_post_author',
+			array(
+				'label'   => esc_html_x( 'Show post author', 'Customizer option name', 'yith-proteo' ),
+				'section' => 'yith_proteo_blog_management',
+			)
+		)
+	);
+}
+
+// Post categories enable.
+if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
+	$wp_customize->add_setting(
+		'yith_proteo_blog_show_post_categories_and_tags',
+		array(
+			'default'           => 'yes',
+			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+		)
+	);
+
+	$wp_customize->add_control(
+		new Customizer_Control_Yes_No(
+			$wp_customize,
+			'yith_proteo_blog_show_post_categories_and_tags',
+			array(
+				'label'   => esc_html_x( 'Show post categories and tags', 'Customizer option name', 'yith-proteo' ),
+				'section' => 'yith_proteo_blog_management',
+			)
+		)
+	);
+}
+
+// Post date enable.
+if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
+	$wp_customize->add_setting(
+		'yith_proteo_blog_show_post_date',
+		array(
+			'default'           => 'yes',
+			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+		)
+	);
+
+	$wp_customize->add_control(
+		new Customizer_Control_Yes_No(
+			$wp_customize,
+			'yith_proteo_blog_show_post_date',
+			array(
+				'label'   => esc_html_x( 'Show post date', 'Customizer option name', 'yith-proteo' ),
+				'section' => 'yith_proteo_blog_management',
+			)
+		)
+	);
+}
+
+// Single post options group.
+$wp_customize->add_setting(
+	'yith_proteo_single_post_options_group_title',
+	array(
+		'default'           => '',
+		'transport'         => 'postMessage',
+		'sanitize_callback' => 'wp_kses_post',
+	)
+);
+$wp_customize->add_control(
+	new WP_Customize_Notice(
+		$wp_customize,
+		'yith_proteo_single_post_options_group_title',
+		array(
+			'label'   => esc_html_x( 'Post page options', 'Customizer options group title', 'yith-proteo' ),
+			'section' => 'yith_proteo_blog_management',
+		)
+	)
+);
+
 // Single post layout.
 if ( class_exists( 'Customizer_Control_Radio_Image' ) ) {
 	$wp_customize->add_setting(
@@ -140,131 +308,3 @@ $wp_customize->add_control(
 		)
 	)
 );
-
-// Date hover image enable.
-if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
-	$wp_customize->add_setting(
-		'yith_proteo_blog_date_on_image_enable',
-		array(
-			'default'           => 'yes',
-			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
-		)
-	);
-
-	$wp_customize->add_control(
-		new Customizer_Control_Yes_No(
-			$wp_customize,
-			'yith_proteo_blog_date_on_image_enable',
-			array(
-				'label'       => esc_html_x( 'Show date badge', 'Customizer option name', 'yith-proteo' ),
-				'section'     => 'yith_proteo_blog_management',
-				'description' => esc_html_x( 'Choose whether to show the post date badge or not.', 'Customizer option description', 'yith-proteo' ),
-			)
-		)
-	);
-}
-
-// Read more text.
-$wp_customize->add_setting(
-	'yith_proteo_blog_read_more_text',
-	array(
-		'sanitize_callback' => 'sanitize_text_field',
-		'default'           => esc_html_x( 'Read more  &#10230;', 'Customizer option default value', 'yith-proteo' ),
-	)
-);
-$wp_customize->add_control(
-	'yith_proteo_blog_read_more_text',
-	array(
-		'type'    => 'text',
-		'section' => 'yith_proteo_blog_management',
-		'label'   => esc_html_x( 'Read more text', 'Customizer option name', 'yith-proteo' ),
-	)
-);
-
-// Navigation enable.
-if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
-	$wp_customize->add_setting(
-		'yith_proteo_blog_show_post_navigation',
-		array(
-			'default'           => 'yes',
-			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
-		)
-	);
-
-	$wp_customize->add_control(
-		new Customizer_Control_Yes_No(
-			$wp_customize,
-			'yith_proteo_blog_show_post_navigation',
-			array(
-				'label'   => esc_html_x( 'Show navigation links', 'Customizer option name', 'yith-proteo' ),
-				'section' => 'yith_proteo_blog_management',
-			)
-		)
-	);
-}
-
-// Post author enable.
-if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
-	$wp_customize->add_setting(
-		'yith_proteo_blog_show_post_author',
-		array(
-			'default'           => 'yes',
-			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
-		)
-	);
-
-	$wp_customize->add_control(
-		new Customizer_Control_Yes_No(
-			$wp_customize,
-			'yith_proteo_blog_show_post_author',
-			array(
-				'label'   => esc_html_x( 'Show post author', 'Customizer option name', 'yith-proteo' ),
-				'section' => 'yith_proteo_blog_management',
-			)
-		)
-	);
-}
-
-// Post categories enable.
-if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
-	$wp_customize->add_setting(
-		'yith_proteo_blog_show_post_categories_and_tags',
-		array(
-			'default'           => 'yes',
-			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
-		)
-	);
-
-	$wp_customize->add_control(
-		new Customizer_Control_Yes_No(
-			$wp_customize,
-			'yith_proteo_blog_show_post_categories_and_tags',
-			array(
-				'label'   => esc_html_x( 'Show post categories and tags', 'Customizer option name', 'yith-proteo' ),
-				'section' => 'yith_proteo_blog_management',
-			)
-		)
-	);
-}
-
-// Post date enable.
-if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
-	$wp_customize->add_setting(
-		'yith_proteo_blog_show_post_date',
-		array(
-			'default'           => 'yes',
-			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
-		)
-	);
-
-	$wp_customize->add_control(
-		new Customizer_Control_Yes_No(
-			$wp_customize,
-			'yith_proteo_blog_show_post_date',
-			array(
-				'label'   => esc_html_x( 'Show post date', 'Customizer option name', 'yith-proteo' ),
-				'section' => 'yith_proteo_blog_management',
-			)
-		)
-	);
-}

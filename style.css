@@ -7157,6 +7157,7 @@ header.entry-header .date-and-thumbnail:after {
 }
 header.entry-header .date-and-thumbnail .post-thumbnail {
   text-align: inherit;
+  margin-bottom: 15px;
 }
 header.entry-header .date-and-thumbnail time.published {
   word-spacing: 100px;
