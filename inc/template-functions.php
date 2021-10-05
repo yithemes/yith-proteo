@@ -189,6 +189,10 @@ if ( ! function_exists( 'yith_proteo_print_page_titles' ) ) :
 
 			// Print breadcrumbs.
 			if ( function_exists( 'woocommerce_breadcrumb' ) && ! ( is_order_received_page() ) && ( 'yes' === get_theme_mod( 'yith_proteo_breadcrumb_enable', 'yes' ) ) ) {
+				// Fix breadcrumb double entries on my-account page.
+				if ( is_account_page() ) {
+					remove_all_filters( 'the_title' );
+				}
 				woocommerce_breadcrumb();
 			}
 
