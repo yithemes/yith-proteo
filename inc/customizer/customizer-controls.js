@@ -31,157 +31,6 @@
 			};
 		}
 
-		/**
-		 * Control Dependency
-		 */
-		wp.customize('yith_proteo_single_post_layout', function (setting) {
-
-			//  Show control 'yith_proteo_single_post_background_color' if control 'yith_proteo_single_post_layout' value has 'background_picture'.
-			wp.customize.control('yith_proteo_single_post_background_color', showControlIfhasValues(setting, ['background_picture']));
-
-			//  Show control 'yith_proteo_single_post_bg_alpha' if control 'yith_proteo_single_post_layout' value has 'background_picture'.
-			wp.customize.control('yith_proteo_single_post_bg_alpha', showControlIfhasValues(setting, ['background_picture']));
-
-			//  Show control 'yith_proteo_single_post_thumbnail_text_color' if control 'yith_proteo_single_post_layout' value has 'background_picture'.
-			wp.customize.control('yith_proteo_single_post_thumbnail_text_color', showControlIfhasValues(setting, ['background_picture']));
-
-		});
-
-		/**
-		 * Control Dependency
-		 */
-		wp.customize('yith_proteo_display_header_text', function (setting) {
-
-			//  Show control 'custom_logo' if control 'yith_proteo_display_header_text' value has 'yes'.
-			wp.customize.control('custom_logo', showControlIfhasValues(setting, ['yes']));
-
-			//  Show control 'yith_proteo_custom_logo_max_width' if control 'yith_proteo_display_header_text' value has 'yes'.
-			wp.customize.control('yith_proteo_custom_logo_max_width', showControlIfhasValues(setting, ['yes']));
-
-			//  Show control 'blogname' if control 'yith_proteo_display_header_text' value has 'yes'.
-			wp.customize.control('blogname', showControlIfhasValues(setting, ['yes']));
-
-			//  Show control 'site_title_font' if control 'yith_proteo_display_header_text' value has 'yes'.
-			wp.customize.control('site_title_font', showControlIfhasValues(setting, ['yes']));
-
-			//  Show control 'yith_proteo_site_title_font_size' if control 'yith_proteo_display_header_text' value has 'yes'.
-			wp.customize.control('yith_proteo_site_title_font_size', showControlIfhasValues(setting, ['yes']));
-
-			//  Show control 'yith_proteo_site_title_color' if control 'yith_proteo_display_header_text' value has 'yes'.
-			wp.customize.control('yith_proteo_site_title_color', showControlIfhasValues(setting, ['yes']));
-
-			//  Show control 'blogdescription' if control 'yith_proteo_display_header_text' value has 'yes'.
-			wp.customize.control('blogdescription', showControlIfhasValues(setting, ['yes']));
-
-			//  Show control 'tagline_font' if control 'yith_proteo_display_header_text' value has 'yes'.
-			wp.customize.control('tagline_font', showControlIfhasValues(setting, ['yes']));
-
-			//  Show control 'yith_proteo_tagline_font_size' if control 'yith_proteo_display_header_text' value has 'yes'.
-			wp.customize.control('yith_proteo_tagline_font_size', showControlIfhasValues(setting, ['yes']));
-
-			//  Show control 'yith_proteo_tagline_color' if control 'yith_proteo_display_header_text' value has 'yes'.
-			wp.customize.control('yith_proteo_tagline_color', showControlIfhasValues(setting, ['yes']));
-
-			//  Show control 'yith_proteo_tagline_position' if control 'yith_proteo_display_header_text' value has 'yes'.
-			wp.customize.control('yith_proteo_tagline_position', showControlIfhasValues(setting, ['yes']));
-
-		});
-
-		/**
-		 * Control Dependency
-		 */
-		wp.customize('yith_proteo_default_sidebar_position', function (setting) {
-			wp.customize.control('yith_proteo_default_sidebar', showControlIfhasValues(setting, ['left', 'right']));
-		});
-
-		/**
-		 * Control Dependency
-		 */
-		wp.customize('yith_proteo_blog_page_sidebar_position', function (setting) {
-			wp.customize.control('yith_proteo_blog_sidebar', showControlIfhasValues(setting, ['left', 'right']));
-		});
-
-		/**
-		 * Control Dependency
-		 */
-		wp.customize('yith_proteo_blog_category_sidebar_position', function (setting) {
-			wp.customize.control('yith_proteo_blog_category_sidebar', showControlIfhasValues(setting, ['left', 'right']));
-		});
-
-		/**
-		 * Control Dependency
-		 */
-		wp.customize('yith_proteo_blog_tag_sidebar_position', function (setting) {
-			wp.customize.control('yith_proteo_blog_tag_sidebar', showControlIfhasValues(setting, ['left', 'right']));
-		});
-
-		/**
-		 * Control Dependency
-		 */
-		wp.customize('yith_proteo_product_loop_view_details_enable', function (setting) {
-			wp.customize.control('yith_proteo_products_loop_view_details_style', showControlIfhasValues(setting, ['yes']));
-		});
-
-		/**
-		 * Control Dependency
-		 */
-		wp.customize('woocommerce_demo_store', function (setting) {
-			wp.customize.control('woocommerce_demo_store_notice', showControlIfhasValues(setting, ['yes']));
-		});
-
-		/**
-		 * Control Dependency
-		 */
-		wp.customize('yith_proteo_product_page_related_enabler', function (setting) {
-			wp.customize.control('yith_proteo_product_page_related_max_number', showControlIfhasValues(setting, ['yes']));
-			wp.customize.control('yith_proteo_product_page_related_columns', showControlIfhasValues(setting, ['yes']));
-		});
-
-		/**
-		 * Control Dependency
-		 */
-		wp.customize('yith_proteo_product_tag_page_sidebar_position', function (setting) {
-			wp.customize.control('yith_proteo_product_tag_page_sidebar_widgets_per_row', showControlIfhasValues(setting, ['top']));
-		});
-
-		/**
-		 * Control Dependency
-		 */
-		wp.customize('yith_proteo_product_tax_page_sidebar_position', function (setting) {
-			wp.customize.control('yith_proteo_product_tax_page_sidebar_widgets_per_row', showControlIfhasValues(setting, ['top']));
-		});
-
-		/**
-		 * Control Dependency
-		 */
-		wp.customize('yith_proteo_product_category_page_sidebar_position', function (setting) {
-			wp.customize.control('yith_proteo_product_category_page_sidebar_widgets_per_row', showControlIfhasValues(setting, ['top']));
-		});
-
-		/**
-		 * Control Dependency
-		 */
-		wp.customize('yith_proteo_shop_page_sidebar_position', function (setting) {
-			wp.customize.control('yith_proteo_shop_page_sidebar_widgets_per_row', showControlIfhasValues(setting, ['top']));
-		});
-
-		/**
-		 * Control Dependency
-		 */
-		wp.customize('yith_proteo_booking_products_specific_layout', function (setting) {
-			wp.customize.control('yith_proteo_booking_products_image_grid_layout', showControlIfhasValues(setting, ['yes']));
-			wp.customize.control('yith_proteo_booking_products_image_grid_layout_height', showControlIfhasValues(setting, ['yes']));
-		});
-
-		/**
-		 * Control Dependency
-		 */
-		wp.customize('yith_proteo_product_catalog_with_border', function (setting) {
-			wp.customize.control('yith_proteo_product_catalog_border_width', showControlIfhasValues(setting, ['yes']));
-			wp.customize.control('yith_proteo_product_catalog_border_radius', showControlIfhasValues(setting, ['yes']));
-			wp.customize.control('yith_proteo_product_catalog_border_color', showControlIfhasValues(setting, ['yes']));
-		});
-
 
 		/**
 		 * Footer sidebar width calc
@@ -1424,6 +1273,157 @@
 				var style = $('<style>.yith-proteo-button-preview.button-style-1, .yith-proteo-button-preview.button-style-1 { border-radius: ' + newval + 'px; }</style>');
 				$('html > head').append(style);
 			});
+		});
+
+		/**
+		 * Control Dependency
+		 */
+		 wp.customize('yith_proteo_single_post_layout', function (setting) {
+
+			//  Show control 'yith_proteo_single_post_background_color' if control 'yith_proteo_single_post_layout' value has 'background_picture'.
+			wp.customize.control('yith_proteo_single_post_background_color', showControlIfhasValues(setting, ['background_picture']));
+
+			//  Show control 'yith_proteo_single_post_bg_alpha' if control 'yith_proteo_single_post_layout' value has 'background_picture'.
+			wp.customize.control('yith_proteo_single_post_bg_alpha', showControlIfhasValues(setting, ['background_picture']));
+
+			//  Show control 'yith_proteo_single_post_thumbnail_text_color' if control 'yith_proteo_single_post_layout' value has 'background_picture'.
+			wp.customize.control('yith_proteo_single_post_thumbnail_text_color', showControlIfhasValues(setting, ['background_picture']));
+
+		});
+
+		/**
+		 * Control Dependency
+		 */
+		wp.customize('yith_proteo_display_header_text', function (setting) {
+
+			//  Show control 'custom_logo' if control 'yith_proteo_display_header_text' value has 'yes'.
+			wp.customize.control('custom_logo', showControlIfhasValues(setting, ['yes']));
+
+			//  Show control 'yith_proteo_custom_logo_max_width' if control 'yith_proteo_display_header_text' value has 'yes'.
+			wp.customize.control('yith_proteo_custom_logo_max_width', showControlIfhasValues(setting, ['yes']));
+
+			//  Show control 'blogname' if control 'yith_proteo_display_header_text' value has 'yes'.
+			wp.customize.control('blogname', showControlIfhasValues(setting, ['yes']));
+
+			//  Show control 'site_title_font' if control 'yith_proteo_display_header_text' value has 'yes'.
+			wp.customize.control('site_title_font', showControlIfhasValues(setting, ['yes']));
+
+			//  Show control 'yith_proteo_site_title_font_size' if control 'yith_proteo_display_header_text' value has 'yes'.
+			wp.customize.control('yith_proteo_site_title_font_size', showControlIfhasValues(setting, ['yes']));
+
+			//  Show control 'yith_proteo_site_title_color' if control 'yith_proteo_display_header_text' value has 'yes'.
+			wp.customize.control('yith_proteo_site_title_color', showControlIfhasValues(setting, ['yes']));
+
+			//  Show control 'blogdescription' if control 'yith_proteo_display_header_text' value has 'yes'.
+			wp.customize.control('blogdescription', showControlIfhasValues(setting, ['yes']));
+
+			//  Show control 'tagline_font' if control 'yith_proteo_display_header_text' value has 'yes'.
+			wp.customize.control('tagline_font', showControlIfhasValues(setting, ['yes']));
+
+			//  Show control 'yith_proteo_tagline_font_size' if control 'yith_proteo_display_header_text' value has 'yes'.
+			wp.customize.control('yith_proteo_tagline_font_size', showControlIfhasValues(setting, ['yes']));
+
+			//  Show control 'yith_proteo_tagline_color' if control 'yith_proteo_display_header_text' value has 'yes'.
+			wp.customize.control('yith_proteo_tagline_color', showControlIfhasValues(setting, ['yes']));
+
+			//  Show control 'yith_proteo_tagline_position' if control 'yith_proteo_display_header_text' value has 'yes'.
+			wp.customize.control('yith_proteo_tagline_position', showControlIfhasValues(setting, ['yes']));
+
+		});
+
+		/**
+		 * Control Dependency
+		 */
+		wp.customize('yith_proteo_default_sidebar_position', function (setting) {
+			wp.customize.control('yith_proteo_default_sidebar', showControlIfhasValues(setting, ['left', 'right']));
+		});
+
+		/**
+		 * Control Dependency
+		 */
+		wp.customize('yith_proteo_blog_page_sidebar_position', function (setting) {
+			wp.customize.control('yith_proteo_blog_sidebar', showControlIfhasValues(setting, ['left', 'right']));
+		});
+
+		/**
+		 * Control Dependency
+		 */
+		wp.customize('yith_proteo_blog_category_sidebar_position', function (setting) {
+			wp.customize.control('yith_proteo_blog_category_sidebar', showControlIfhasValues(setting, ['left', 'right']));
+		});
+
+		/**
+		 * Control Dependency
+		 */
+		wp.customize('yith_proteo_blog_tag_sidebar_position', function (setting) {
+			wp.customize.control('yith_proteo_blog_tag_sidebar', showControlIfhasValues(setting, ['left', 'right']));
+		});
+
+		/**
+		 * Control Dependency
+		 */
+		wp.customize('yith_proteo_product_loop_view_details_enable', function (setting) {
+			wp.customize.control('yith_proteo_products_loop_view_details_style', showControlIfhasValues(setting, ['yes']));
+		});
+
+		/**
+		 * Control Dependency
+		 */
+		wp.customize('woocommerce_demo_store', function (setting) {
+			wp.customize.control('woocommerce_demo_store_notice', showControlIfhasValues(setting, ['yes']));
+		});
+
+		/**
+		 * Control Dependency
+		 */
+		wp.customize('yith_proteo_product_page_related_enabler', function (setting) {
+			wp.customize.control('yith_proteo_product_page_related_max_number', showControlIfhasValues(setting, ['yes']));
+			wp.customize.control('yith_proteo_product_page_related_columns', showControlIfhasValues(setting, ['yes']));
+		});
+
+		/**
+		 * Control Dependency
+		 */
+		wp.customize('yith_proteo_product_tag_page_sidebar_position', function (setting) {
+			wp.customize.control('yith_proteo_product_tag_page_sidebar_widgets_per_row', showControlIfhasValues(setting, ['top']));
+		});
+
+		/**
+		 * Control Dependency
+		 */
+		wp.customize('yith_proteo_product_tax_page_sidebar_position', function (setting) {
+			wp.customize.control('yith_proteo_product_tax_page_sidebar_widgets_per_row', showControlIfhasValues(setting, ['top']));
+		});
+
+		/**
+		 * Control Dependency
+		 */
+		wp.customize('yith_proteo_product_category_page_sidebar_position', function (setting) {
+			wp.customize.control('yith_proteo_product_category_page_sidebar_widgets_per_row', showControlIfhasValues(setting, ['top']));
+		});
+
+		/**
+		 * Control Dependency
+		 */
+		wp.customize('yith_proteo_shop_page_sidebar_position', function (setting) {
+			wp.customize.control('yith_proteo_shop_page_sidebar_widgets_per_row', showControlIfhasValues(setting, ['top']));
+		});
+
+		/**
+		 * Control Dependency
+		 */
+		wp.customize('yith_proteo_booking_products_specific_layout', function (setting) {
+			wp.customize.control('yith_proteo_booking_products_image_grid_layout', showControlIfhasValues(setting, ['yes']));
+			wp.customize.control('yith_proteo_booking_products_image_grid_layout_height', showControlIfhasValues(setting, ['yes']));
+		});
+
+		/**
+		 * Control Dependency
+		 */
+		wp.customize('yith_proteo_product_catalog_with_border', function (setting) {
+			wp.customize.control('yith_proteo_product_catalog_border_width', showControlIfhasValues(setting, ['yes']));
+			wp.customize.control('yith_proteo_product_catalog_border_radius', showControlIfhasValues(setting, ['yes']));
+			wp.customize.control('yith_proteo_product_catalog_border_color', showControlIfhasValues(setting, ['yes']));
 		});
 
 	});
