@@ -112,7 +112,7 @@ $is_company     = ! empty( $logged_in_user->billing_company );
 				<?php echo esc_html( $logged_in_user->shipping_address_1 ) . ' ' . esc_html( $logged_in_user->shipping_address_2 ) . ' ' . esc_html( $logged_in_user->shipping_postcode ) . ' ' . esc_html( $logged_in_user->shipping_city ) . ' ' . esc_html( $logged_in_user->shipping_state ) . ' ' . esc_html( $logged_in_user->shipping_country ); ?>
 			</p>
 			<div class="actions">
-				<a href="<?php echo esc_url( wc_get_endpoint_url( 'edit-address', 'billing' ) ); ?>" class="button">
+				<a href="<?php echo esc_url( wc_get_endpoint_url( 'edit-address', 'shipping' ) ); ?>" class="button">
 					<?php esc_html_e( 'Edit info', 'yith-proteo' ); ?>
 				</a>
 			</div>
