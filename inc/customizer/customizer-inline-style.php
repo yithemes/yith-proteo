@@ -206,14 +206,14 @@ function yith_proteo_inline_style() {
 		array(
 			'horizontal' => 15,
 			'vertical'   => 35,
-		),
+		)
 	);
 	$catalog_product_vertical_spacing      = get_theme_mod(
 		'yith_proteo_product_catalog_spacing',
 		array(
 			'horizontal' => 15,
 			'vertical'   => 35,
-		),
+		)
 	);
 
 	$responsive_breakpoint_mobile        = get_theme_mod( 'yith_proteo_mobile_device_width', 600 );
