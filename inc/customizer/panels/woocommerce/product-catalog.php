@@ -53,7 +53,7 @@ $wp_customize->add_control(
 				),
 			),
 			'priority' => 10,
-		),
+		)
 	),
 );
 
