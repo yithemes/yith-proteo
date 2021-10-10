@@ -121,6 +121,9 @@ table.shop_table_responsive tr td {
 
   .main-navigation ul {
     display: block;
+  }
+
+  .left_logo_navigation_inline .main-navigation ul {
     text-align: right;
   }
 
