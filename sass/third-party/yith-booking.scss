@@ -275,6 +275,16 @@ body.single-product.yith-proteo-booking-product-layout-enabled {
 			line-height: 18px;
 			cursor: pointer;
 			border-radius: 40px;
+
+			&:before {
+				content: '';
+				background: url(img/view-photos.svg) center no-repeat;
+				display: inline-block;
+				width: 20px;
+				height: 20px;
+				vertical-align: middle;
+				margin: -4px 10px 0 0;
+			}
 		}
 
 		&.grid-elements-count-1 {

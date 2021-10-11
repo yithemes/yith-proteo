@@ -13096,6 +13096,15 @@ body.single-product.yith-proteo-booking-product-layout-enabled .yith-booking-woo
   cursor: pointer;
   border-radius: 40px;
 }
+body.single-product.yith-proteo-booking-product-layout-enabled .yith-booking-woocommerce-images .open-gallery:before {
+  content: "";
+  background: url(img/view-photos.svg) center no-repeat;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin: -4px 10px 0 0;
+}
 body.single-product.yith-proteo-booking-product-layout-enabled .yith-booking-woocommerce-images.grid-elements-count-1 .woocommerce-product-gallery__image {
   height: 600px;
 }
