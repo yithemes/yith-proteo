@@ -409,6 +409,7 @@ body.single-product.yith-proteo-booking-product-layout-enabled {
 			min-height: 300px;
 		}
 		.yith-booking-woocommerce-images {
+			&.grid-elements-count-1,
 			&.grid-elements-count-2,
 			&.grid-elements-count-3,
 			&.grid-elements-count-4,
@@ -418,6 +419,18 @@ body.single-product.yith-proteo-booking-product-layout-enabled {
 					grid-template-columns: 1fr;
 					grid-column-gap: 0;
 					grid-row-gap: 0;
+					grid-template-rows: 0px;
+
+					.woocommerce-product-gallery__image {
+						height: 300px;
+					}
+					.woocommerce-product-gallery__image img {
+						min-height: 300px;
+					}
+				}
+			}
+			&.grid-elements-count-2{
+				figure.woocommerce-product-gallery__wrapper {
 					grid-template-rows: 300px;
 				}
 			}
