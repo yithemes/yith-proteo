@@ -5844,7 +5844,6 @@ input.hasDatepicker {
 #ui-datepicker-div .ui-datepicker-header a[data-handler=prev]:before {
   content: "";
   font-family: Linearicons-Free;
-  speak: none;
   font-style: normal;
   font-variant: normal;
   text-transform: none;
@@ -5861,7 +5860,6 @@ input.hasDatepicker {
 #ui-datepicker-div .ui-datepicker-header a[data-handler=next]:before {
   content: "";
   font-family: Linearicons-Free;
-  speak: none;
   font-style: normal;
   font-variant: normal;
   text-transform: none;
@@ -6077,7 +6075,6 @@ a:hover, a:active {
 .main-navigation li[class*=has-children] > a:after {
   content: "";
   font-family: Linearicons-Free;
-  speak: none;
   font-style: normal;
   font-weight: 800;
   font-variant: normal;
@@ -6811,7 +6808,6 @@ p:empty + p:empty {
   content: "";
   display: inline-block;
   font-family: Linearicons-Free;
-  speak: none;
   font-style: normal;
   font-weight: 400;
   font-variant: normal;
@@ -9692,7 +9688,6 @@ SELECT2
 .select2-container--default .select2-selection--single .select2-selection__arrow b:before {
   content: "";
   font-family: Linearicons-Free;
-  speak: none;
   font-style: normal;
   font-weight: 400;
   font-variant: normal;
@@ -10033,7 +10028,6 @@ Mini Cart Widget
   display: inline;
   font-size: 0.8em;
   font-family: Linearicons-Free;
-  speak: none;
   font-style: normal;
   font-weight: 800;
   font-variant: normal;

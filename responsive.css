@@ -347,7 +347,6 @@ table.shop_table_responsive tr td {
   .woocommerce-account .woocommerce-MyAccount-navigation-link:not(.is-active) > a:after {
     content: "";
     font-family: Linearicons-Free;
-    speak: none;
     font-style: normal;
     font-variant: normal;
     text-transform: none;
