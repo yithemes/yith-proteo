@@ -298,6 +298,9 @@ body.single-product.yith-proteo-booking-product-layout-enabled {
 
 				.woocommerce-product-gallery__image:nth-child(1) { grid-area: 1 / 1 / 2 / 2; }
 				.woocommerce-product-gallery__image:nth-child(2) { grid-area: 1 / 2 / 2 / 3; }
+				img {
+					min-height: 600px;
+				}
 			}
 		}
 		&.grid-elements-count-3 {
@@ -311,7 +314,12 @@ body.single-product.yith-proteo-booking-product-layout-enabled {
 				grid-column-gap: 8px;
 				grid-row-gap: 8px;
 
-				.woocommerce-product-gallery__image:nth-child(1) { grid-area: 1 / 1 / 3 / 2; }
+				.woocommerce-product-gallery__image:nth-child(1) {
+					grid-area: 1 / 1 / 3 / 2; 
+					img {
+						min-height: 600px;
+					}
+				}
 				.woocommerce-product-gallery__image:nth-child(2) { grid-area: 1 / 2 / 2 / 3; }
 				.woocommerce-product-gallery__image:nth-child(3) { grid-area: 2 / 2 / 3 / 3; }
 			}
@@ -331,6 +339,10 @@ body.single-product.yith-proteo-booking-product-layout-enabled {
 				.woocommerce-product-gallery__image:nth-child(2) { grid-area: 1 / 2 / 2 / 3; }
 				.woocommerce-product-gallery__image:nth-child(3) { grid-area: 2 / 1 / 3 / 2; }
 				.woocommerce-product-gallery__image:nth-child(4) { grid-area: 2 / 2 / 3 / 3; }
+
+				img {
+					min-height: 300px;
+				}
 			}
 				
 		}
@@ -345,7 +357,12 @@ body.single-product.yith-proteo-booking-product-layout-enabled {
 				grid-column-gap: 8px;
 				grid-row-gap: 8px;
 
-				.woocommerce-product-gallery__image:nth-child(1) { grid-area: 1 / 1 / 3 / 2; }
+				.woocommerce-product-gallery__image:nth-child(1) {
+					grid-area: 1 / 1 / 3 / 2;
+					img {
+						min-height: 600px;
+					}
+				}
 				.woocommerce-product-gallery__image:nth-child(2) { grid-area: 1 / 2 / 2 / 3; }
 				.woocommerce-product-gallery__image:nth-child(3) { grid-area: 2 / 2 / 3 / 3; }
 				.woocommerce-product-gallery__image:nth-child(4) { grid-area: 1 / 3 / 2 / 4; }

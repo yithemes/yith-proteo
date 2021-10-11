@@ -1414,7 +1414,6 @@
 		 */
 		wp.customize('yith_proteo_booking_products_specific_layout', function (setting) {
 			wp.customize.control('yith_proteo_booking_products_image_grid_layout', showControlIfhasValues(setting, ['yes']));
-			wp.customize.control('yith_proteo_booking_products_image_grid_layout_height', showControlIfhasValues(setting, ['yes']));
 		});
 
 		/**
