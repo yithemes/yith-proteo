@@ -6,7 +6,7 @@ Author: YITH
 Author URI: https://yithemes.com
 Description: Proteo is a modern, fast and fully customizable WooCommerce theme. Designed and developed by YITH - a team of top developers of premium themes -  with a beautiful UI, a minimal design and an optimized code, is perfect for each kind of site or shop. With the Proteo Wizard you can import our demo content with just a few clicks - in less than 2 minutes! -  and easily customize it using the advanced front-end customizer. Proteo is the best solution if you want a complete WooCommerce theme that works perfectly also in mobile devices and start quickly to sell your products with WooCommerce without technical knowledge. Works perfectly with page builders like Elementor, Gutenberg & Visual composer. Key features: # WooCommerce Ready # Responsive with a perfect mobile design # Compatible with Elementor, Gutenberg, Visual Composer and others page builders # Translation Ready # Frontend customizer with hundred of options to customize header, footer, pages, typography, style, ecc.  # Google fonts support # Regularly updated and improved with new demos and advanced features # Support to all YITH plugins. Check all our Proteo demos: https://proteo.yithemes.com/
 
-Version: 1.6.0.15
+Version: 1.6.0.17
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: yith-proteo
@@ -5576,22 +5576,18 @@ select:focus + .separator,
 
 input::-webkit-input-placeholder {
   color: rgba(204, 204, 204, 0.8);
-  font-size: 0.8em;
 }
 
 input:-moz-placeholder {
   color: rgba(204, 204, 204, 0.8);
-  font-size: 0.8em;
 }
 
 input::-moz-placeholder {
   color: rgba(204, 204, 204, 0.8);
-  font-size: 0.8em;
 }
 
 input:-ms-input-placeholder {
   color: rgba(204, 204, 204, 0.8);
-  font-size: 0.8em;
 }
 
 .woocommerce-invalid input[type=text]:focus,
@@ -6866,6 +6862,7 @@ p:empty + p:empty {
 --------------------------------------------------------------*/
 .sidebar-position-top {
   width: 100%;
+  z-index: 1;
 }
 
 section.widget {
@@ -11273,9 +11270,6 @@ table.wishlist_table {
 }
 
 /**
-Checkboxes
- */
-/**
 Wishlist View Modern
  */
 .wishlist_table .product-stock-status span.wishlist-in-stock {
@@ -12867,35 +12861,50 @@ body .ywcps-products .owl-dots .owl-dot:hover span {
 }
 
 /* Booking Search form shortcode */
-.yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table, .yith-wcbk-booking-search-form form {
+body .yith-wcbk-booking-search-form.yith-wcbk-booking-search-form--horizontal-layout .yith-wcbk-booking-field,
+body .yith-wcbk-booking-search-form.yith-wcbk-booking-search-form--horizontal-layout .yith-wcbk-date-picker-wrapper,
+body .yith-wcbk-booking-search-form.yith-wcbk-booking-search-form--horizontal-layout select,
+body .yith-wcbk-booking-search-form.yith-wcbk-booking-search-form--horizontal-layout .yith-wcbk-date-range-picker,
+body .yith-wcbk-booking-search-form.yith-wcbk-booking-search-form--horizontal-layout .yith-wcbk-people-selector__toggle-handler,
+body .yith-wcbk-booking-search-form.yith-wcbk-booking-search-form--horizontal-layout button.yith-wcbk-booking-search-form-submit {
+  min-height: 48px;
+}
+body .yith-wcbk-booking-search-form.yith-wcbk-booking-search-form--horizontal-layout button.yith-wcbk-booking-search-form-submit {
+  padding: 0 25px;
+  line-height: initial;
+}
+body .yith-wcbk-booking-search-form input::-webkit-input-placeholder {
+  font-size: inherit;
+}
+body .yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table, body .yith-wcbk-booking-search-form form {
   display: block;
 }
-.yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table tbody, .yith-wcbk-booking-search-form form tbody {
+body .yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table tbody, body .yith-wcbk-booking-search-form form tbody {
   display: block;
 }
-.yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table tr,
-.yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table td, .yith-wcbk-booking-search-form form tr,
-.yith-wcbk-booking-search-form form td {
+body .yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table tr,
+body .yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table td, body .yith-wcbk-booking-search-form form tr,
+body .yith-wcbk-booking-search-form form td {
   display: block;
   width: 100%;
 }
-.yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table tr, .yith-wcbk-booking-search-form form tr {
+body .yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table tr, body .yith-wcbk-booking-search-form form tr {
   padding-bottom: 20px;
 }
-.yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table .yith-wcbk-booking-search-form__row, .yith-wcbk-booking-search-form form .yith-wcbk-booking-search-form__row {
+body .yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table .yith-wcbk-booking-search-form__row, body .yith-wcbk-booking-search-form form .yith-wcbk-booking-search-form__row {
   margin-bottom: 15px;
 }
-.yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table .yith-wcbk-booking-search-form__row .yith-wcbk-booking-search-form__row__content, .yith-wcbk-booking-search-form form .yith-wcbk-booking-search-form__row .yith-wcbk-booking-search-form__row__content {
+body .yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table .yith-wcbk-booking-search-form__row .yith-wcbk-booking-search-form__row__content, body .yith-wcbk-booking-search-form form .yith-wcbk-booking-search-form__row .yith-wcbk-booking-search-form__row__content {
   max-width: initial;
 }
-.yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table .yith-wcbk-booking-search-form-label,
-.yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table .yith-wcbk-booking-search-form__row__label, .yith-wcbk-booking-search-form form .yith-wcbk-booking-search-form-label,
-.yith-wcbk-booking-search-form form .yith-wcbk-booking-search-form__row__label {
+body .yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table .yith-wcbk-booking-search-form-label,
+body .yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table .yith-wcbk-booking-search-form__row__label, body .yith-wcbk-booking-search-form form .yith-wcbk-booking-search-form-label,
+body .yith-wcbk-booking-search-form form .yith-wcbk-booking-search-form__row__label {
   width: 100%;
   margin-bottom: 10px;
   font-weight: initial;
 }
-.yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table .yith-wcbk-booking-field, .yith-wcbk-booking-search-form form .yith-wcbk-booking-field {
+body .yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table .yith-wcbk-booking-field, body .yith-wcbk-booking-search-form form .yith-wcbk-booking-field {
   float: none;
   border: initial;
   padding: 14px 10px;
@@ -12904,26 +12913,26 @@ body .ywcps-products .owl-dots .owl-dot:hover span {
   border-style: solid;
   border-radius: var(--proteo-forms_input_borde_radius, 0);
 }
-.yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table .yith-wcbk-date-range-picker, .yith-wcbk-booking-search-form form .yith-wcbk-date-range-picker {
+body .yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table .yith-wcbk-date-range-picker, body .yith-wcbk-booking-search-form form .yith-wcbk-date-range-picker {
   border: none;
   border-color: #cccccc;
   border-width: var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width);
   border-style: solid;
   border-radius: var(--proteo-forms_input_borde_radius, 0);
 }
-.yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table .yith-wcbk-date-range-picker.yith-wcbk-date-range-picker--opened, .yith-wcbk-booking-search-form form .yith-wcbk-date-range-picker.yith-wcbk-date-range-picker--opened {
+body .yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table .yith-wcbk-date-range-picker.yith-wcbk-date-range-picker--opened, body .yith-wcbk-booking-search-form form .yith-wcbk-date-range-picker.yith-wcbk-date-range-picker--opened {
   border-color: var(--proteo-main_color_shade);
 }
-.yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table .yith-wcbk-date-range-picker .yith-wcbk-date-range-picker__arrow, .yith-wcbk-booking-search-form form .yith-wcbk-date-range-picker .yith-wcbk-date-range-picker__arrow {
+body .yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table .yith-wcbk-date-range-picker .yith-wcbk-date-range-picker__arrow, body .yith-wcbk-booking-search-form form .yith-wcbk-date-range-picker .yith-wcbk-date-range-picker__arrow {
   opacity: 0.5;
 }
-.yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table span.yith-wcbk-booking-date-icon.yith-icon.yith-icon-calendar, .yith-wcbk-booking-search-form form span.yith-wcbk-booking-date-icon.yith-icon.yith-icon-calendar {
+body .yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table span.yith-wcbk-booking-date-icon.yith-icon.yith-icon-calendar, body .yith-wcbk-booking-search-form form span.yith-wcbk-booking-date-icon.yith-icon.yith-icon-calendar {
   font-size: 1em;
 }
-.yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table .yith-wcbk-people-selector, .yith-wcbk-booking-search-form form .yith-wcbk-people-selector {
+body .yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table .yith-wcbk-people-selector, body .yith-wcbk-booking-search-form form .yith-wcbk-people-selector {
   color: inherit;
 }
-.yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table .yith-wcbk-people-selector__toggle-handler, .yith-wcbk-booking-search-form form .yith-wcbk-people-selector__toggle-handler {
+body .yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table .yith-wcbk-people-selector__toggle-handler, body .yith-wcbk-booking-search-form form .yith-wcbk-people-selector__toggle-handler {
   border: none;
   border-color: #cccccc;
   border-width: var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width);
@@ -12931,17 +12940,20 @@ body .ywcps-products .owl-dots .owl-dot:hover span {
   border-radius: var(--proteo-forms_input_borde_radius, 0);
   padding-top: 3px;
   padding-bottom: 3px;
+  min-height: 48px;
 }
-.yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table .yith-wcbk-people-selector__toggle-handler .yith-wcbk-people-selector__toggle-handler__icon svg, .yith-wcbk-booking-search-form form .yith-wcbk-people-selector__toggle-handler .yith-wcbk-people-selector__toggle-handler__icon svg {
+body .yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table .yith-wcbk-people-selector__toggle-handler .yith-wcbk-people-selector__toggle-handler__icon svg, body .yith-wcbk-booking-search-form form .yith-wcbk-people-selector__toggle-handler .yith-wcbk-people-selector__toggle-handler__icon svg {
   width: 12px !important;
   height: 12px !important;
 }
-.yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table .yith-wcbk-booking-search-form-submit, .yith-wcbk-booking-search-form form .yith-wcbk-booking-search-form-submit {
+body .yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table .yith-wcbk-booking-search-form-submit, body .yith-wcbk-booking-search-form form .yith-wcbk-booking-search-form-submit {
   display: block;
   width: 100%;
-  padding: 20px;
   text-transform: uppercase;
   margin-top: 30px;
+  padding: 0 25px;
+  line-height: initial;
+  min-height: 48px;
 }
 
 /* Booking product form widget */
