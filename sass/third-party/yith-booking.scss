@@ -7,6 +7,7 @@ body .yith-wcbk-booking-search-form {
 		select, 
 		.yith-wcbk-date-range-picker, 
 		.yith-wcbk-people-selector__toggle-handler,
+		.yith-wcbk-services-selector__toggle-handler,
 		button.yith-wcbk-booking-search-form-submit {
 			min-height: 48px;
 		}
@@ -85,8 +86,12 @@ body .yith-wcbk-booking-search-form {
 		.yith-wcbk-people-selector {
 			color: inherit;
 		}
+		.yith-wcbk-services-selector {
+			color: inherit;
+		}
 
-		.yith-wcbk-people-selector__toggle-handler {
+		.yith-wcbk-people-selector__toggle-handler,
+		.yith-wcbk-services-selector__toggle-handler {
 			border: none;
 			border-color: $color__border-input;
 			border-width: var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width);
@@ -96,7 +101,8 @@ body .yith-wcbk-booking-search-form {
 			padding-bottom: 3px;
 			min-height: 48px;
 
-			.yith-wcbk-people-selector__toggle-handler__icon svg {
+			.yith-wcbk-people-selector__toggle-handler__icon svg,
+				.yith-wcbk-services-selector__toggle-handler__icon svg {
 				width: 12px !important;
 				height: 12px !important;
 			}
@@ -179,11 +185,13 @@ body .yith-wcbk-booking-search-form {
 				}
 			}
 
-			.yith-wcbk-people-selector {
+			.yith-wcbk-people-selector,
+			.yith-wcbk-services-selector {
 				color: inherit;
 			}
 
-			.yith-wcbk-people-selector__toggle-handler {
+			.yith-wcbk-people-selector__toggle-handler,
+			.yith-wcbk-services-selector__toggle-handler {
 				border: none;
 				border-color: $color__border-input;
 				border-width: var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width);
@@ -192,7 +200,8 @@ body .yith-wcbk-booking-search-form {
 				padding-top: 3px;
 				padding-bottom: 3px;
 
-				.yith-wcbk-people-selector__toggle-handler__icon svg {
+				.yith-wcbk-people-selector__toggle-handler__icon svg,
+				.yith-wcbk-services-selector__toggle-handler__icon svg {
 					width: 12px !important;
 					height: 12px !important;
 				}
