@@ -53,6 +53,65 @@ $wp_customize->add_control(
 	)
 );
 
+// Post title font size.
+$wp_customize->add_setting(
+	'yith_proteo_blog_loop_post_title_font_size',
+	array(
+		'sanitize_callback' => 'absint',
+		'default'           => get_theme_mod( 'yith_proteo_h2_font_size', 40 ),
+	)
+);
+$wp_customize->add_control(
+	'yith_proteo_blog_loop_post_title_font_size',
+	array(
+		'label'   => esc_html_x( 'Titles font size', 'Customizer option name', 'yith-proteo' ),
+		'section' => 'yith_proteo_blog_management',
+		'type'    => 'number',
+	)
+);
+
+// Post title color options.
+$wp_customize->add_setting(
+	'yith_proteo_blog_loop_post_title_color',
+	array(
+		'sanitize_callback' => 'yith_proteo_sanitize_alpha_colors',
+		'default'           => get_theme_mod( 'yith_proteo_h2_font_color', '#404040' ),
+	)
+);
+$wp_customize->add_control(
+	new Customizer_Alpha_Color_Control(
+		$wp_customize,
+		'yith_proteo_blog_loop_post_title_color',
+		array(
+			'label'   => esc_html_x( 'Titles font color', 'Customizer option name', 'yith-proteo' ),
+			'section' => 'yith_proteo_blog_management',
+		)
+	)
+);
+
+// Post title text transform.
+$wp_customize->add_setting(
+	'yith_proteo_blog_loop_post_title_text_transform',
+	array(
+		'default'           => 'none',
+		'sanitize_callback' => 'yith_proteo_sanitize_select',
+	)
+);
+$wp_customize->add_control(
+	'yith_proteo_blog_loop_post_title_text_transform',
+	array(
+		'type'    => 'select',
+		'label'   => esc_html_x( 'Titles text transform', 'Customizer option name', 'yith-proteo' ),
+		'section' => 'yith_proteo_blog_management',
+		'choices' => array(
+			'none'       => esc_html_x( 'None', 'Customizer option value', 'yith-proteo' ),
+			'uppercase'  => esc_html_x( 'Uppercase', 'Customizer option value', 'yith-proteo' ),
+			'lowercase'  => esc_html_x( 'Lowercase', 'Customizer option value', 'yith-proteo' ),
+			'capitalize' => esc_html_x( 'Capitalize', 'Customizer option value', 'yith-proteo' ),
+		),
+	)
+);
+
 // Date hover image enable.
 if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
 	$wp_customize->add_setting(

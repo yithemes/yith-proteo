@@ -561,6 +561,9 @@
 			collapsed = section_title.hasClass( 'section-closed' );
 			section_title.toggleClass('section-closed');
 			wp.customize.control('yith_proteo_blog_read_more_text' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_blog_loop_post_title_font_size' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_blog_loop_post_title_color' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_blog_loop_post_title_text_transform' ).toggle( collapsed );
 			wp.customize.control('yith_proteo_blog_date_on_image_enable' ).toggle( collapsed );
 			wp.customize.control('yith_proteo_blog_show_post_navigation' ).toggle( collapsed );
 			wp.customize.control('yith_proteo_blog_show_post_author' ).toggle( collapsed );
@@ -570,6 +573,9 @@
 
 		function yith_proteo_toggle_blog_general_options_controls_list() {
 			wp.customize.control('yith_proteo_blog_read_more_text' ).toggle( false );
+			wp.customize.control('yith_proteo_blog_loop_post_title_font_size' ).toggle( false );
+			wp.customize.control('yith_proteo_blog_loop_post_title_color' ).toggle( false );
+			wp.customize.control('yith_proteo_blog_loop_post_title_text_transform' ).toggle( false );
 			wp.customize.control('yith_proteo_blog_date_on_image_enable' ).toggle( false );
 			wp.customize.control('yith_proteo_blog_show_post_navigation' ).toggle( false );
 			wp.customize.control('yith_proteo_blog_show_post_author' ).toggle( false );

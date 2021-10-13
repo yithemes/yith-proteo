@@ -45,8 +45,10 @@ header.entry-header {
 	}
 
 	.entry-title {
-		font-size: 1.875rem;
+		font-size: var(--proteo-post_loop_title_font_size);
 		text-align: initial;
+		color: var(--proteo-post_loop_title_color);
+		text-transform: var(--proteo-post_loop_title_text_transform);
 
 		a {
 			text-decoration: none;
@@ -456,11 +458,12 @@ body.search-results {
 .wp-block-latest-posts li > a {
 	display: block;
 	text-align: initial;
-	font-size: var(--proteo-h2_font_size, 2.5rem);
+	font-size: var(--proteo-post_loop_title_font_size);
 	font-weight: bold;
-    color: var(--proteo-h2_font_color, #404040);
+    color: var(--proteo-post_loop_title_color);
     margin-top: 0;
     margin-bottom: 1rem;
+	text-transform: var(--proteo-post_loop_title_text_transform);
 }
 
 .wp-block-latest-posts__post-author,
