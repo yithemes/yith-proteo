@@ -117,6 +117,19 @@ body .yith-wcbk-booking-search-form {
 			line-height: initial;
 			min-height: 48px;
 		}
+
+		input.yith-wcbk-number-minifield,
+		select,
+		textarea {
+			border: none;
+			border-color: $color__border-input;
+			border-width: var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width);
+			border-style: solid;
+			border-radius: var(--proteo-forms_input_borde_radius, 0);
+			padding-top: 3px;
+			padding-bottom: 3px;
+			min-height: 48px;
+		}
 	}
 }
 
@@ -221,6 +234,19 @@ body .yith-wcbk-booking-search-form {
 				font-size: var(--proteo-single_product_add_to_cart_button_font_size, 1.25rem);
 				font-weight: initial;
 				padding: 1rem;
+			}
+
+			input.yith-wcbk-number-minifield,
+			select,
+			textarea {
+				border: none;
+				border-color: $color__border-input;
+				border-width: var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width);
+				border-style: solid;
+				border-radius: var(--proteo-forms_input_borde_radius, 0);
+				padding-top: 3px;
+				padding-bottom: 3px;
+				min-height: 48px;
 			}
 			
 		}
