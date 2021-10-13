@@ -128,7 +128,7 @@ function yith_proteo_inline_style() {
 	$post_thumbnail_text_color               = get_theme_mod( 'yith_proteo_single_post_thumbnail_text_color', '#ffffff' );
 	$post_loop_title_font_size               = get_theme_mod( 'yith_proteo_blog_loop_post_title_font_size', get_theme_mod( 'yith_proteo_h2_font_size', 40 ) );
 	$post_loop_title_color                   = get_theme_mod( 'yith_proteo_blog_loop_post_title_color', get_theme_mod( 'yith_proteo_h2_font_color', '#404040' ) );
-	$post_loop_title_text_transform          = get_theme_mod( 'yith_proteo_blog_loop_post_title_text_transform', none );
+	$post_loop_title_text_transform          = get_theme_mod( 'yith_proteo_blog_loop_post_title_text_transform', 'none' );
 
 	/**
 	 * Forms
