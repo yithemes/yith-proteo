@@ -49,6 +49,7 @@ header.entry-header {
 		text-align: initial;
 		color: var(--proteo-post_loop_title_color);
 		text-transform: var(--proteo-post_loop_title_text_transform);
+		margin-bottom: 5px;
 
 		a {
 			text-decoration: none;
@@ -464,6 +465,7 @@ body.search-results {
     margin-top: 0;
     margin-bottom: 1rem;
 	text-transform: var(--proteo-post_loop_title_text_transform);
+	margin-bottom: 5px;
 }
 
 .wp-block-latest-posts__post-author,
