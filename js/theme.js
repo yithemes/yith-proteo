@@ -347,7 +347,11 @@
 		var sidebar = $( '#secondary_content' );
 		if ( sidebar.length && !sidebar.hasClass( '.no-sticky' ) ) {
 			var site_header = $('.site-header'),
-				sidebarTop = site_header.height() + 50;
+				sidebarTop = 80;
+
+			if ( site_header.hasClass( 'sticky' ) ) {
+				sidebarTop = site_header.height() + 80;
+			}
 
 			if ( !isMobile() && window.innerHeight >= ( sidebar.outerHeight() + sidebarTop ) ) {
 				sidebar.css( { position: 'sticky', top: sidebarTop + 'px' } );
