@@ -117,7 +117,7 @@ if ( ! function_exists( 'yith_proteo_setup' ) ) :
 		/**
 		 * Register additional image size
 		 */
-		add_image_size( 'proteo-blog-loop-image', 725, 358, true );
+		add_image_size( 'proteo-blog-loop-image', 725, 500, true );
 		add_image_size( 'proteo-blog-loop-image-wide', 1480, 745, true );
 		add_image_size( 'proteo_full_width_image', 1920, 0, false );
 		add_image_size( 'proteo_blog_cropped_cover_image_' . get_theme_mod( 'yith_proteo_single_post_fullwidth_cover_cropping_custom_height', 400 ), 2560, get_theme_mod( 'yith_proteo_single_post_fullwidth_cover_cropping_custom_height', 400 ), array( 'center', 'top' ) );
