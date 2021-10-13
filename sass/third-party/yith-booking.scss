@@ -307,15 +307,10 @@ body.single-product.yith-proteo-booking-product-layout-enabled {
 			line-height: 18px;
 			cursor: pointer;
 			border-radius: 40px;
-
-			&:before {
-				content: '';
-				background: url(img/view-photos.svg) center no-repeat;
-				display: inline-block;
-				width: 20px;
-				height: 20px;
-				vertical-align: middle;
-				margin: -4px 10px 0 0;
+			svg {
+				fill: var(--proteo-main_color_shade);
+				vertical-align: bottom;
+				margin: 0 8px 0 0;
 			}
 		}
 
