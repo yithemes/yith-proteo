@@ -92,7 +92,7 @@ function yith_proteo_read_all_font_options() {
 		),
 		'yith_proteo_h2_font'                 => array(
 			'default'  => '{"font":"Montserrat","regularweight":"700","category":"sans-serif"}',
-			'selector' => 'h2',
+			'selector' => 'h2, .wp-block-latest-posts li > a',
 		),
 		'yith_proteo_h3_font'                 => array(
 			'default'  => '{"font":"Montserrat","regularweight":"700","category":"sans-serif"}',

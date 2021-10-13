@@ -455,11 +455,21 @@ body.search-results {
 
 .wp-block-latest-posts li > a {
 	display: block;
+	text-align: initial;
+	font-size: var(--proteo-h2_font_size, 2.5rem);
+	font-weight: bold;
+    color: var(--proteo-h2_font_color, #404040);
+    margin-top: 0;
+    margin-bottom: 1rem;
 }
 
 .wp-block-latest-posts__post-author,
 .wp-block-latest-posts__post-date {
 	display: inline-block;
+	text-align: initial;
+    font-size: 0.875rem;
+    color: #939393;
+    font-weight: 500;
 }
 
 .wp-block-latest-posts__post-author + .wp-block-latest-posts__post-date {
