@@ -58,6 +58,10 @@ select,
 	}
 }
 
+.select2-container {
+	max-width: 100%;
+}
+
 input::-webkit-input-placeholder {
 	color: rgba(204, 204, 204, 0.8);
 	//font-size: 0.8em;
