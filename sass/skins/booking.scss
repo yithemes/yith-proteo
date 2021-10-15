@@ -2,6 +2,9 @@
 .with-main-color-shadow {
     box-shadow: -1px 2px 58px 0 rgba(157, 205, 220, 0.33);
 }
+.with-black-color-shadow {
+    box-shadow: -1px 2px 58px 0 rgba(0, 0, 0, 0.10);
+}
 
 @media screen and (min-width: 769px) {
     .wp-block-cover.alignfull {
