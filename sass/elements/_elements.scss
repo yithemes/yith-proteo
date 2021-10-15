@@ -16,7 +16,6 @@ html {
 
 body {
 	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
-	width: 100vw;
 
 	&.page,
 	&.post {
