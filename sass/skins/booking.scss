@@ -5,6 +5,9 @@
 .with-black-color-shadow {
     box-shadow: -1px 2px 58px 0 rgba(0, 0, 0, 0.10);
 }
+.hero-text-shadow {
+    text-shadow: 0 2px 13px rgba(0, 0, 0, 0.6);
+}
 
 @media screen and (min-width: 769px) {
     .wp-block-cover.alignfull {
