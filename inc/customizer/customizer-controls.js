@@ -497,6 +497,24 @@
 			wp.customize.control('yith_proteo_default_sidebar' ).toggle( false );
 		}
 
+		/* Posts sidebar options toggle */
+		yith_proteo_toggle_general_posts_sidebars_section_controls_list();
+
+		$( '#customize-control-yith_proteo_default_posts_sidebar_group_title' ).addClass('section-closed').on( 'click', yith_proteo_toggle_general_posts_sidebars_section_controls );
+
+		function yith_proteo_toggle_general_posts_sidebars_section_controls() {
+			var section_title = $( '#customize-control-yith_proteo_default_posts_sidebar_group_title' ),
+			collapsed = section_title.hasClass( 'section-closed' );
+			section_title.toggleClass('section-closed');
+			wp.customize.control('yith_proteo_default_posts_sidebar_position' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_default_posts_sidebar' ).toggle( collapsed );
+		}
+
+		function yith_proteo_toggle_general_posts_sidebars_section_controls_list() {
+			wp.customize.control('yith_proteo_default_posts_sidebar_position' ).toggle( false );
+			wp.customize.control('yith_proteo_default_posts_sidebar' ).toggle( false );
+		}
+
 		/* Blog page sidebar options toggle */
 		yith_proteo_toggle_blog_page_sidebars_section_controls_list();
 

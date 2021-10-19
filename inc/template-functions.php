@@ -69,6 +69,11 @@ if ( ! function_exists( 'yith_proteo_get_sidebar_position' ) ) :
 		$local_sidebar   = yith_proteo_sidebar_get_meta( 'sidebar_position' );
 		$general_sidebar = get_theme_mod( 'yith_proteo_default_sidebar_position', 'right' );
 
+		// Check single post sidebar position from theme mods.
+		if ( is_singular( 'post' ) ) {
+			$general_sidebar = get_theme_mod( 'yith_proteo_default_posts_sidebar_position', get_theme_mod( 'yith_proteo_default_sidebar_position', 'right' ) );
+		}
+
 		// Check Blog page settings from customizer.
 		if ( is_home() ) {
 			$general_sidebar = get_theme_mod( 'yith_proteo_blog_page_sidebar_position', 'right' );

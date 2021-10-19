@@ -7234,6 +7234,7 @@ body.single-post.proteo_post_layout_background_picture header.alignfull {
   background-size: cover;
   position: relative;
   margin-top: -50px;
+  margin-bottom: 35px;
 }
 body.single-post.proteo_post_layout_background_picture header.alignfull:before {
   position: absolute;
