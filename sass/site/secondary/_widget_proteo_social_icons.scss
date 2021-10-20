@@ -11,6 +11,13 @@ Social Icons
 		vertical-align: middle;
 		text-decoration: none !important;
 
+		&:first-child {
+			margin-left: 0;
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+
 		&:hover {
 			color: var(--proteo-general_link_color, $color__accent);
 		}
