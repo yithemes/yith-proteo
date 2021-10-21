@@ -248,6 +248,27 @@ body .yith-wcbk-booking-search-form {
 				padding-bottom: 3px;
 				min-height: 48px;
 			}
+
+			.yith-wcbk-date-picker-wrapper .yith-wcbk-booking-date {
+				border: none;
+				border-color: $color__border-input;
+				border-width: var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width);
+				border-style: solid;
+				border-radius: var(--proteo-forms_input_borde_radius, 0);
+				min-height: 48px;
+	
+				&.yith-wcbk-date-range-picker--opened {
+					border-color: var(--proteo-main_color_shade);
+				}
+	
+				.yith-wcbk-date-range-picker__arrow {
+					opacity: 0.5;
+				}
+			}
+
+			.yith-wcbk-select-alt__arrow {
+				display: none;
+			}
 			
 		}
 	}
