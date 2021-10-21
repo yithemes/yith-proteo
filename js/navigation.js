@@ -19,11 +19,11 @@
 
 
 	menu = container.find( '#mobile-menu' );
-
+	console.log(button);
 	// Hide menu toggle button if menu is empty and return early.
 	if ( menu.length == 0 ) {
-		button.style.display = 'none';
-		return;
+		button.remove();
+		$('.site-branding').css('margin-left', 0);
 	}
 
 	menu.attr( 'aria-expanded', 'false' );
