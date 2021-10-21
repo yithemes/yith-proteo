@@ -3,7 +3,7 @@
  */
 ul.products,
 .wc-block-grid ul.wc-block-grid__products {
-	margin: 0 -7.5px;
+	margin: 0 0 var(--proteo-catalog_product_vertical_spacing);
 	padding: 0;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
