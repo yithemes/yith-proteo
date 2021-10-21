@@ -23,7 +23,7 @@
 	// Hide menu toggle button if menu is empty and return early.
 	if ( menu.length == 0 ) {
 		button.remove();
-		$('.site-branding').css('margin-left', 0);
+		$('.left-toggle .site-branding').css('margin-left', 0);
 	}
 
 	menu.attr( 'aria-expanded', 'false' );
