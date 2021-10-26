@@ -5,56 +5,7 @@
  * @package yith-proteo
  */
 
-$demos = array(
-	array(
-		'demo_name'              => 'Classic Shop',
-		'slug'                   => 'classic-shop',
-		'demo_preview_image_url' => 'https://update.yithemes.com/proteo-demo-content/classic-shop/screenshot.png',
-		'demo_preview_url'       => 'https://proteo.yithemes.com/classic-shop/',
-		'demo_state'             => 'live',
-		'category'               => 'gutenberg',
-	),
-	array(
-		'demo_name'              => 'Food',
-		'slug'                   => 'food',
-		'demo_preview_image_url' => 'https://update.yithemes.com/proteo-demo-content/food/food.jpg',
-		'demo_preview_url'       => 'https://proteo.yithemes.com/food/',
-		'demo_state'             => 'live',
-		'category'               => 'gutenberg',
-	),
-	array(
-		'demo_name'              => 'Desire',
-		'slug'                   => 'desire',
-		'demo_preview_image_url' => 'https://update.yithemes.com/proteo-demo-content/desire/desire.jpg',
-		'demo_preview_url'       => 'https://proteo.yithemes.com/desire/',
-		'demo_state'             => 'live',
-		'category'               => 'gutenberg',
-	),
-	array(
-		'demo_name'              => 'Classic Shop - Elementor',
-		'slug'                   => 'elementor-classic-shop',
-		'demo_preview_image_url' => 'https://update.yithemes.com/proteo-demo-content/classic-shop-elementor/screenshot.png',
-		'demo_preview_url'       => 'https://proteo.yithemes.com/elementor-classic-shop/',
-		'demo_state'             => 'live',
-		'category'               => 'elementor',
-	),
-	array(
-		'demo_name'              => 'Food - Elementor',
-		'slug'                   => 'elementor-food',
-		'demo_preview_image_url' => 'https://update.yithemes.com/proteo-demo-content/food-elementor/food.jpg',
-		'demo_preview_url'       => 'https://proteo.yithemes.com/elementor-food/',
-		'demo_state'             => 'live',
-		'category'               => 'elementor',
-	),
-	array(
-		'demo_name'              => 'Desire - Elementor',
-		'slug'                   => 'elementor-desire',
-		'demo_preview_image_url' => 'https://update.yithemes.com/proteo-demo-content/desire-elementor/desire.jpg',
-		'demo_preview_url'       => 'https://proteo.yithemes.com/elementor-desire/',
-		'demo_state'             => 'live',
-		'category'               => 'elementor',
-	),
-);
+$demos = yith_proteo_skins_array();
 
 $requested_plugins = array(
 	array(
@@ -418,28 +369,28 @@ ul.demo-categories li.active a {
 						</ul>
 						<div class="three-cols-set">
 							<?php
-							foreach ( $demos as $demoindex => $demo ) :
+							foreach ( $demos as $demo ) :
 								?>
 							<div class="col" data-category="<?php echo esc_attr( $demo['category'] ); ?>">
-								<figure class="demo-preview <?php echo esc_attr( $demo['demo_state'] ); ?>">
-									<img src="<?php echo esc_url( $demo['demo_preview_image_url'] ); ?>" alt="<?php echo esc_attr_x( 'Preview', 'Proteo dashboard', 'yith-proteo' ); ?>">
+								<figure class="demo-preview <?php echo esc_attr( $demo['state'] ); ?>">
+									<img src="<?php echo esc_url( $demo['import_preview_image_url'] ); ?>" alt="<?php echo esc_attr_x( 'Preview', 'Proteo dashboard', 'yith-proteo' ); ?>">
 									<div class="demo-actions">
-										<?php if ( '' !== $demo['demo_preview_url'] ) : ?>
+										<?php if ( '' !== $demo['preview_url'] ) : ?>
 											<?php if ( $is_proteo_toolkit_active ) : ?>
-												<a href="<?php echo esc_url( admin_url( 'themes.php?page=setup-wizard&selected_skin=' . $demoindex ) ); ?>"><?php echo esc_html_x( 'Import', 'Proteo dashboard', 'yith-proteo' ); ?></a>
+												<a href="<?php echo esc_url( admin_url( 'themes.php?page=setup-wizard&selected_skin=' . $demo['slug'] ) ); ?>"><?php echo esc_html_x( 'Import', 'Proteo dashboard', 'yith-proteo' ); ?></a>
 												<?php elseif ( $is_proteo_toolkit_installed ) : ?>
 												<a href="" class="yith-proteo-activate-recommended-plugin yith-proteo-activate-toolkit" data-slug="yith-proteo-toolkit" data-init="yith-proteo-toolkit/yith-proteo-toolkit.php"><?php echo esc_html_x( 'Import', 'Proteo dashboard', 'yith-proteo' ); ?></a>
 											<?php else : ?>
 												<a href="" class="yith-proteo-install-recommended-plugin yith-proteo-install-toolkit" data-slug="yith-proteo-toolkit" data-init="yith-proteo-toolkit/yith-proteo-toolkit.php"><?php echo esc_html_x( 'Import', 'Proteo dashboard', 'yith-proteo' ); ?></a>
 											<?php endif; ?>
-											<a href="<?php echo esc_url( $demo['demo_preview_url'] ); ?>" target="_blank" rel="nofollow noopener"><?php echo esc_html_x( 'Preview', 'Proteo dashboard', 'yith-proteo' ); ?></a>
+											<a href="<?php echo esc_url( $demo['preview_url'] ); ?>" target="_blank" rel="nofollow noopener"><?php echo esc_html_x( 'Preview', 'Proteo dashboard', 'yith-proteo' ); ?></a>
 										<?php else : ?>
 											<div class="coming-soon-badge"><?php echo esc_html_x( 'Coming soon', 'Proteo dashboard', 'yith-proteo' ); ?></div>
 										<?php endif; ?>
 									</div>
 								</figure>
 								<div class="demo-title">
-									<?php echo esc_html( $demo['demo_name'] ); ?>
+									<?php echo esc_html( $demo['import_file_name'] ); ?>
 								</div>
 							</div>
 								<?php

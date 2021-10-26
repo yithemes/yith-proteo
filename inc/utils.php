@@ -362,3 +362,106 @@ add_filter(
 	20,
 	2
 );
+
+/**
+ * Retrieve array of Proteo skins.
+ *
+ * @return array()
+ */
+function yith_proteo_skins_array() {
+	return apply_filters(
+		'yith_proteo_skins_array',
+		array(
+			'classic-shop'           => array(
+				'import_file_name'           => 'Classic Shop - Gutenberg',
+				'slug'                       => 'classic-shop',
+				'import_file_url'            => 'https://update.yithemes.com/proteo-demo-content/classic-shop/proteo-wordpress-export.xml',
+				'import_widget_file_url'     => 'https://update.yithemes.com/proteo-demo-content/classic-shop/proteo.yithemes.com-classic-shop-widgets.wie',
+				'import_customizer_file_url' => 'https://update.yithemes.com/proteo-demo-content/classic-shop/yith-proteo-export.json',
+				'import_preview_image_url'   => 'https://update.yithemes.com/proteo-demo-content/classic-shop/screenshot.png',
+				'import_notice'              => __( 'This demo uses the following plugins: WooCommerce, YITH Slider for page builders, CF7, Wishlist, YITH Product slider carousel. Please be sure to enable these plugins prior to proceed.', 'yith-proteo' ),
+				'preview_url'                => 'https://proteo.yithemes.com/classic-shop/',
+				'state'                      => 'live',
+				'front_page_title'           => 'Front Page',
+				'blog_page_title'            => 'Blog',
+				'primary_menu_name'          => 'Primary',
+				'category'                   => 'gutenberg',
+			),
+			'food'                   => array(
+				'import_file_name'           => 'Food - Gutenberg',
+				'slug'                       => 'food',
+				'import_file_url'            => 'https://update.yithemes.com/proteo-demo-content/food/proteo-food-wordpress-export.xml',
+				'import_widget_file_url'     => 'https://update.yithemes.com/proteo-demo-content/food/proteo.yithemes.com-food-widgets.wie',
+				'import_customizer_file_url' => 'https://update.yithemes.com/proteo-demo-content/food/yith-proteo-export.json',
+				'import_preview_image_url'   => 'https://update.yithemes.com/proteo-demo-content/food/food.jpg',
+				'import_notice'              => __( 'This demo uses the following plugins: WooCommerce, YITH Slider for page builders, CF7, EditorsKit, YITH Wishlist, YITH Product slider carousel. Please be sure to enable these plugins prior to proceed.', 'yith-proteo' ),
+				'preview_url'                => 'https://proteo.yithemes.com/food/',
+				'state'                      => 'live',
+				'front_page_title'           => 'Food Home 1',
+				'blog_page_title'            => 'Blog',
+				'primary_menu_name'          => 'Food Main Menu',
+				'category'                   => 'gutenberg',
+			),
+			'desire'                 => array(
+				'import_file_name'           => 'Desire - Gutenberg',
+				'slug'                       => 'desire',
+				'import_file_url'            => 'https://update.yithemes.com/proteo-demo-content/desire/proteo-desire-wordpress-export.xml',
+				'import_widget_file_url'     => 'https://update.yithemes.com/proteo-demo-content/desire/proteo.yithemes.com-desire-widgets.wie',
+				'import_customizer_file_url' => 'https://update.yithemes.com/proteo-demo-content/desire/yith-proteo-desire.json',
+				'import_preview_image_url'   => 'https://update.yithemes.com/proteo-demo-content/desire/desire.jpg',
+				'import_notice'              => __( 'This demo uses the following plugins: WooCommerce, YITH Slider for page builders, CF7, EditorsKit, YITH Wishlist, YITH Product slider carousel. Please be sure to enable these plugins prior to proceed.', 'yith-proteo' ),
+				'preview_url'                => 'https://proteo.yithemes.com/desire/',
+				'state'                      => 'live',
+				'front_page_title'           => 'Desire home page',
+				'blog_page_title'            => 'SEXY NEWS',
+				'primary_menu_name'          => 'Desire Main Menu',
+				'category'                   => 'gutenberg',
+			),
+			'elementor-classic-shop' => array(
+				'import_file_name'           => 'Classic Shop - Elementor',
+				'slug'                       => 'elementor-classic-shop',
+				'import_file_url'            => 'https://update.yithemes.com/proteo-demo-content/classic-shop-elementor/elementor-classic-shop-export.xml',
+				'import_widget_file_url'     => 'https://update.yithemes.com/proteo-demo-content/classic-shop-elementor/elementor-classic-shop-widgets.wie',
+				'import_customizer_file_url' => 'https://update.yithemes.com/proteo-demo-content/classic-shop-elementor/elementor-classic-shop-customizer.json',
+				'import_preview_image_url'   => 'https://update.yithemes.com/proteo-demo-content/classic-shop-elementor/screenshot.png',
+				'import_notice'              => __( 'This demo uses the following plugins: Elementor, WooCommerce, YITH Slider for page builders, CF7, Wishlist, YITH Product slider carousel. Please be sure to enable these plugins prior to proceed.', 'yith-proteo' ),
+				'preview_url'                => 'https://proteo.yithemes.com/elementor-classic-shop/',
+				'state'                      => 'live',
+				'front_page_title'           => 'Homepage elementor',
+				'blog_page_title'            => 'Blog',
+				'primary_menu_name'          => 'Primary',
+				'category'                   => 'elementor',
+			),
+			'elementor-food'         => array(
+				'import_file_name'           => 'Food - Elementor',
+				'slug'                       => 'elementor-food',
+				'import_file_url'            => 'https://update.yithemes.com/proteo-demo-content/food-elementor/proteo-food-elementor-export.xml',
+				'import_widget_file_url'     => 'https://update.yithemes.com/proteo-demo-content/food-elementor/proteo-food-elementor-widgets.wie',
+				'import_customizer_file_url' => 'https://update.yithemes.com/proteo-demo-content/food-elementor/proteo-food-elementor-customizer.json',
+				'import_preview_image_url'   => 'https://update.yithemes.com/proteo-demo-content/food-elementor/food.jpg',
+				'import_notice'              => __( 'This demo uses the following plugins: WooCommerce, YITH Slider for page builders, CF7, Elementor, YITH Wishlist, YITH Product slider carousel. Please be sure to enable these plugins prior to proceed.', 'yith-proteo' ),
+				'preview_url'                => 'https://proteo.yithemes.com/elementor-food/',
+				'state'                      => 'live',
+				'front_page_title'           => 'Food home 1',
+				'blog_page_title'            => 'Blog',
+				'primary_menu_name'          => 'Food Main Menu',
+				'category'                   => 'elementor',
+			),
+			'elementor-desire'       => array(
+				'import_file_name'           => 'Desire - Elementor',
+				'slug'                       => 'elementor-desire',
+				'import_file_url'            => 'https://update.yithemes.com/proteo-demo-content/desire-elementor/proteo-desire-elementor-export.xml',
+				'import_widget_file_url'     => 'https://update.yithemes.com/proteo-demo-content/desire-elementor/proteo-desire-elementor-widgets.wie',
+				'import_customizer_file_url' => 'https://update.yithemes.com/proteo-demo-content/desire-elementor/proteo-desire-elementor-customizer.json',
+				'import_preview_image_url'   => 'https://update.yithemes.com/proteo-demo-content/desire-elementor/desire.jpg',
+				'import_notice'              => __( 'This demo uses the following plugins: WooCommerce, YITH Slider for page builders, CF7, Elementor, YITH Wishlist, YITH Product slider carousel. Please be sure to enable these plugins prior to proceed.', 'yith-proteo' ),
+				'preview_url'                => 'https://proteo.yithemes.com/elementor-desire/',
+				'state'                      => 'live',
+				'front_page_title'           => 'Desire home page',
+				'blog_page_title'            => 'SEXY NEWS',
+				'primary_menu_name'          => 'Desire Main Menu',
+				'category'                   => 'elementor',
+			),
+		)
+	);
+}

@@ -60,7 +60,7 @@ if ( ! class_exists( 'Proteo_Admin_Dashboard' ) ) {
 
 			add_action( 'wp_ajax_yith-proteo-plugin-activate', __CLASS__ . '::required_plugin_activate' );
 
-			add_action( 'admin_menu', __CLASS__ . '::add_test_theme_page' );
+			add_action( 'admin_menu', __CLASS__ . '::add_proteo_theme_page' );
 
 		}
 
@@ -69,7 +69,7 @@ if ( ! class_exists( 'Proteo_Admin_Dashboard' ) ) {
 		 *
 		 * @return void
 		 */
-		public static function add_test_theme_page() {
+		public static function add_proteo_theme_page() {
 			add_theme_page( 'Proteo theme', 'Proteo theme', 'edit_theme_options', 'yith-proteo-dashboard', __CLASS__ . '::yith_proteo_dashboard_callback', 10 );
 		}
 
