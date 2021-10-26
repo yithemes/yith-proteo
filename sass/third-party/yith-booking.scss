@@ -57,7 +57,7 @@ body .yith-wcbk-booking-search-form {
 			float: none;
 			border: initial;
 			padding: 14px 10px;
-			border-color: #cccccc;
+			border-color: var(--proteo-forms_input_border_color, #cccccc);
 			border-width: var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width);
 			border-style: solid;
 			border-radius: var(--proteo-forms_input_borde_radius, 0);
@@ -65,7 +65,7 @@ body .yith-wcbk-booking-search-form {
 
 		.yith-wcbk-date-range-picker {
 			border: none;
-			border-color: $color__border-input;
+			border-color: var(--proteo-forms_input_border_color, #cccccc);
 			border-width: var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width);
 			border-style: solid;
 			border-radius: var(--proteo-forms_input_borde_radius, 0);
@@ -93,7 +93,7 @@ body .yith-wcbk-booking-search-form {
 		.yith-wcbk-people-selector__toggle-handler,
 		.yith-wcbk-services-selector__toggle-handler {
 			border: none;
-			border-color: $color__border-input;
+			border-color: var(--proteo-forms_input_border_color, #cccccc);
 			border-width: var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width);
 			border-style: solid;
 			border-radius: var(--proteo-forms_input_borde_radius, 0);
@@ -122,7 +122,7 @@ body .yith-wcbk-booking-search-form {
 		select,
 		textarea {
 			border: none;
-			border-color: $color__border-input;
+			border-color: var(--proteo-forms_input_border_color, #cccccc);
 			border-width: var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width);
 			border-style: solid;
 			border-radius: var(--proteo-forms_input_borde_radius, 0);
@@ -135,7 +135,7 @@ body .yith-wcbk-booking-search-form {
 
 /* Booking product form widget */
 .yith_wcbk_booking_product_form_widget {
-	border-color: $color__border-input;
+	border-color: var(--proteo-forms_input_border_color, #cccccc);
 	border-width: var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width);
 	border-style: solid;
 	border-radius: var(--proteo-forms_input_borde_radius, 0);
@@ -145,7 +145,7 @@ body .yith-wcbk-booking-search-form {
 	.product {
 		.yith_wcbk_widget_booking_form_head {
 			padding-bottom: 5px;
-			border-bottom: 1px solid $color__border-input;
+			border-bottom: 1px solid #cccccc;
 			margin-bottom: 10px;
 
 			.price {
@@ -176,7 +176,7 @@ body .yith-wcbk-booking-search-form {
 
 			.yith-wcbk-date-range-picker {
 				border: none;
-				border-color: $color__border-input;
+				border-color: var(--proteo-forms_input_border_color, #cccccc);
 				border-width: var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width);
 				border-style: solid;
 				border-radius: var(--proteo-forms_input_borde_radius, 0);
@@ -206,7 +206,7 @@ body .yith-wcbk-booking-search-form {
 			.yith-wcbk-people-selector__toggle-handler,
 			.yith-wcbk-services-selector__toggle-handler {
 				border: none;
-				border-color: $color__border-input;
+				border-color: var(--proteo-forms_input_border_color, #cccccc);
 				border-width: var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width);
 				border-style: solid;
 				border-radius: var(--proteo-forms_input_borde_radius, 0);
@@ -240,7 +240,7 @@ body .yith-wcbk-booking-search-form {
 			select,
 			textarea {
 				border: none;
-				border-color: $color__border-input;
+				border-color: var(--proteo-forms_input_border_color, #cccccc);
 				border-width: var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width);
 				border-style: solid;
 				border-radius: var(--proteo-forms_input_borde_radius, 0);
@@ -251,7 +251,7 @@ body .yith-wcbk-booking-search-form {
 
 			.yith-wcbk-date-picker-wrapper .yith-wcbk-booking-date {
 				border: none;
-				border-color: $color__border-input;
+				border-color: var(--proteo-forms_input_border_color, #cccccc);
 				border-width: var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width);
 				border-style: solid;
 				border-radius: var(--proteo-forms_input_borde_radius, 0);

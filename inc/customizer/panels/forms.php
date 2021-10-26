@@ -60,6 +60,25 @@ $wp_customize->add_control(
 	)
 );
 
+// Input and textarea border tickness.
+$wp_customize->add_setting(
+	'yith_proteo_inputs_border_color',
+	array(
+		'sanitize_callback' => 'yith_proteo_sanitize_alpha_colors',
+		'default'           => '#cccccc',
+	)
+);
+$wp_customize->add_control(
+	new Customizer_Alpha_Color_Control(
+		$wp_customize,
+		'yith_proteo_inputs_border_color',
+		array(
+			'label'   => esc_html_x( 'Input and textarea border color', 'Customizer option name', 'yith-proteo' ),
+			'section' => 'yith_proteo_forms',
+		)
+	)
+);
+
 // Input and textarea font size.
 $wp_customize->add_setting(
 	'yith_proteo_inputs_font_size',

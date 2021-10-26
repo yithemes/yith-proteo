@@ -19,7 +19,7 @@ select,
 .select2-container .select2-selection,
 .woocommerce a.selectBox.selectBox-dropdown {
 	color: $color__text-input;
-	border-color: $color__border-input;
+	border-color: var(--proteo-forms_input_border_color, #cccccc);
 	border-width: var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width);
 	border-style: solid;
 	border-radius: var(--proteo-forms_input_borde_radius, 0);
@@ -124,7 +124,7 @@ input:-ms-input-placeholder {
 }
 
 select {
-	border-color: $color__border-input;
+	border-color: var(--proteo-forms_input_border_color, #cccccc);
 	border-width: 0 0 1px 0;
 	border-style: solid;
 	border-radius: 0;
@@ -137,7 +137,7 @@ body .select2-container--default.select2-container--open.select2-container--belo
 }
 
 textarea {
-	border-color: $color__border-input;
+	border-color: var(--proteo-forms_input_border_color, #cccccc);
 	border-width: 1px 1px 1px 1px;
 	border-style: solid;
 	width: 100%;

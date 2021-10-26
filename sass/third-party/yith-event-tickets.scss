@@ -40,8 +40,8 @@ table.shop_table tbody tr td.product-name ._view_and_pdf_row a.button {
 
 		.make_checkin_button,
 		.make_checkout_button:hover {
-			background: $color__border-input;
-			border-color: $color__border-input;
+			background: var(--proteo-forms_input_border_color, #cccccc);
+			border-color: var(--proteo-forms_input_border_color, #cccccc);
 		}
 
 		.make_checkin_button:hover {

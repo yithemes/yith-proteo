@@ -4,6 +4,6 @@
 		background: transparent;
 		padding: 7px 5px;
 		border-radius: 0;
-		border: 1px solid $color__border-input;
+		border: 1px solid var(--proteo-forms_input_border_color, #cccccc);
 	}
 }
