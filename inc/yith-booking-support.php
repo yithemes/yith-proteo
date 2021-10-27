@@ -93,7 +93,7 @@ function yith_proteo_booking_product_page_template_load() {
 		 * @returnvoid
 		 */
 		function yith_proteo_booking_product_image_gallery_in_header_content() {
-			if ( is_product() ) {
+			if ( is_product() && has_post_thumbnail() ) {
 				global $product;
 				$product       = wc_get_product();
 				$images_layout = get_theme_mod( 'yith_proteo_booking_products_image_grid_layout', 1 );
