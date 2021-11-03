@@ -19,7 +19,6 @@
 
 
 	menu = container.find( '#mobile-menu' );
-	console.log(button);
 	// Hide menu toggle button if menu is empty and return early.
 	if ( menu.length == 0 ) {
 		button.remove();
