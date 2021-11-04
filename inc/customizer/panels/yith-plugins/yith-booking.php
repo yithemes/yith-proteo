@@ -11,7 +11,7 @@
 $wp_customize->add_section(
 	'yith_proteo_booking_product_page_management',
 	array(
-		'title'    => esc_html_x( 'Booking products', 'Customizer section title', 'yith-proteo' ),
+		'title'    => esc_html_x( 'Bookable products', 'Customizer section title', 'yith-proteo' ),
 		'priority' => 15,
 		'panel'    => 'woocommerce',
 	)
@@ -32,7 +32,7 @@ if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
 			$wp_customize,
 			'yith_proteo_booking_products_specific_layout',
 			array(
-				'label'    => esc_html_x( 'Enable booking products layout', 'Customizer option name', 'yith-proteo' ),
+				'label'    => esc_html_x( 'Enable bookable products layout', 'Customizer option name', 'yith-proteo' ),
 				'priority' => 5,
 				'section'  => 'yith_proteo_booking_product_page_management',
 			)

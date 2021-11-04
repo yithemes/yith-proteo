@@ -28,7 +28,7 @@ Proteo is a modern, fast and fully customizable WooCommerce theme. Designed and 
 
 = 1.7.0 - November 04 2021 =
 New: support to YITH Booking plugin
-New: options to manage layout for booking products
+New: options to manage layout for bookable products
 New: options to manage form elements border color
 New: options to manage post sidebars and page sidebars
 New: options to manage blog titles typography
@@ -40,7 +40,7 @@ Tweak: improve display of social icons widget
 Tweak: reduce bottom margin on blog posts titles
 Tweak: uniform style of blog block items and blog loop items
 Tweak: improve cf7 forms label appearance
-Tweak: improve booking services form widget display
+Tweak: improve bookable services form widget display
 Tweak: improve input placeholder typografy
 Tweak: remove unnecessary options
 Tweak: remove unnecessary css rules
@@ -64,8 +64,9 @@ Fix: header menu letter spacing not working with negative values
 Fix: missing sub menu letter spacing property
 Fix: menu items alignment according to header layout
 Fix: submenu items alingment
+Fix: third level menu position
 Fix: z-index issues on horizontal sidebars
-Fix: mobile issues in booking products with 2 cols grid layout
+Fix: mobile issues in bookable products with 2 cols grid layout
 Fix: woocommerce product reviews display issue
 Fix: my-account pages breadcrumb doubled crumbs
 Fix: my-account link that leads to edit shipping address (pull request #19 from zikziko/patch-1)
