@@ -54,7 +54,7 @@ $wp_customize->add_control(
 			),
 			'priority' => 10,
 		)
-	),
+	)
 );
 
 // Style options group title.
