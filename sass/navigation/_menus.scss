@@ -63,7 +63,7 @@
 				&:hover > ul,
 				&.focus > ul {
 					pointer-events: auto;
-					left: calc(100% + 0px);
+					left: calc(100% + 45px);
 					top: -45px;
 
 					&:before {

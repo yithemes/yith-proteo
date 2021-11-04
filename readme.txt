@@ -25,6 +25,54 @@ Proteo is a modern, fast and fully customizable WooCommerce theme. Designed and 
 == Frequently Asked Questions ==
 
 == Changelog ==
+
+= 1.7.0 - November 04 2021 =
+New: support to YITH Booking plugin
+New: options to manage layout for booking products
+New: options to manage form elements border color
+New: options to manage post sidebars and page sidebars
+New: options to manage blog titles typography
+New: options to manage product borders in catalog pages
+New: options to modify space between products
+New: sticky sidebars feature
+Tweak: migrate css products list layout from float and flex to grid
+Tweak: improve display of social icons widget
+Tweak: reduce bottom margin on blog posts titles
+Tweak: uniform style of blog block items and blog loop items
+Tweak: improve cf7 forms label appearance
+Tweak: improve booking services form widget display
+Tweak: improve input placeholder typografy
+Tweak: remove unnecessary options
+Tweak: remove unnecessary css rules
+Tweak: improve style of header search element to mitigate CLS
+Tweak: group Blog options in dropdowns
+Tweak: group WooCommece > Product Catalog options in dropdowns
+Tweak: improved appearance for the wishlist widget
+Tweak: optimize my-account css
+Tweak: improve style for some default WP blocks
+Tweak: reset <dd> element margins
+Fix: blog loop image size proportions
+Fix: js error when no mobile menu is configured
+Fix: remove unnecessary negative margin in product list
+Fix: body width issue on responsive layouts
+Fix: page horizontal scroll
+Fix: loop products read more link hover color
+Fix: select2 fields max-width to avoid field overlapping
+Fix: webkit-appearance for input number fields
+Fix: wrong get_theme_mod default param
+Fix: header menu letter spacing not working with negative values
+Fix: missing sub menu letter spacing property
+Fix: menu items alignment according to header layout
+Fix: submenu items alingment
+Fix: z-index issues on horizontal sidebars
+Fix: mobile issues in booking products with 2 cols grid layout
+Fix: woocommerce product reviews display issue
+Fix: my-account pages breadcrumb doubled crumbs
+Fix: my-account link that leads to edit shipping address (pull request #19 from zikziko/patch-1)
+Fix: my-account link that leads to edit billing address (pull request #19 from zikziko/patch-1)
+Fix: missing customizer controls dependencies
+Dev: move skins configuration to utils.php file
+
 = 1.6.0 - September 08 2021 =
 * New: Elementor Classic Shop demo skin
 * New: Elementor Food demo skin
