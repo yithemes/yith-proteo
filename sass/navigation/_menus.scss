@@ -63,7 +63,7 @@
 				&:hover > ul,
 				&.focus > ul {
 					pointer-events: auto;
-					left: calc(100% + 45px);
+					left: 100%;
 					top: -45px;
 
 					&:before {
@@ -87,7 +87,7 @@
 
 					& > a:after {
 						transform: rotate(-90deg);
-						right: -25px;
+						right: 30px;
 						position: absolute;
 						top: 4px;
 					}
@@ -116,6 +116,17 @@
 				& + ul {
 					display: block !important;
 				}
+			}
+
+			li {
+				margin-right: 0;
+				&.menu-item-has-children a {
+					width: 235px;
+					padding-right: 35px;
+					position: relative;
+					margin-right: -35px;
+				}
+				
 			}
 		}
 
