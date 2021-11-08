@@ -108,5 +108,10 @@ function yith_proteo_booking_product_page_template_load() {
 				echo '</div>';
 			}
 		}
+
+		// Fix product image display for Bookable products.
+		remove_theme_support( 'wc-product-gallery-zoom' );
+		add_theme_support( 'wc-product-gallery-lightbox' );
+		remove_theme_support( 'wc-product-gallery-slider' );
 	}
 }
