@@ -17,7 +17,9 @@ textarea,
 input[type="file"],
 select,
 .select2-container .select2-selection,
-.woocommerce a.selectBox.selectBox-dropdown {
+.woocommerce a.selectBox.selectBox-dropdown,
+#yith-stripe-card-elements,
+#wc-yith-stripe-cc-form .yith-stripe-elements-field {
 	color: $color__text-input;
 	border-color: var(--proteo-forms_input_border_color, #cccccc);
 	border-width: var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width);

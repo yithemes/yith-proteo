@@ -5479,7 +5479,9 @@ textarea,
 input[type=file],
 select,
 .select2-container .select2-selection,
-.woocommerce a.selectBox.selectBox-dropdown {
+.woocommerce a.selectBox.selectBox-dropdown,
+#yith-stripe-card-elements,
+#wc-yith-stripe-cc-form .yith-stripe-elements-field {
   color: #666;
   border-color: var(--proteo-forms_input_border_color, #cccccc);
   border-width: var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width);
@@ -5514,7 +5516,9 @@ textarea:focus,
 input[type=file]:focus,
 select:focus,
 .select2-container .select2-selection:focus,
-.woocommerce a.selectBox.selectBox-dropdown:focus {
+.woocommerce a.selectBox.selectBox-dropdown:focus,
+#yith-stripe-card-elements:focus,
+#wc-yith-stripe-cc-form .yith-stripe-elements-field:focus {
   outline-color: transparent;
   color: #111;
   border-color: var(--proteo-main_color_shade, #448a85);
@@ -5540,7 +5544,9 @@ textarea + .separator,
 input[type=file] + .separator,
 select + .separator,
 .select2-container .select2-selection + .separator,
-.woocommerce a.selectBox.selectBox-dropdown + .separator {
+.woocommerce a.selectBox.selectBox-dropdown + .separator,
+#yith-stripe-card-elements + .separator,
+#wc-yith-stripe-cc-form .yith-stripe-elements-field + .separator {
   height: 2px;
   width: 100%;
   background: #448a85;
@@ -5569,7 +5575,9 @@ textarea:focus + .separator,
 input[type=file]:focus + .separator,
 select:focus + .separator,
 .select2-container .select2-selection:focus + .separator,
-.woocommerce a.selectBox.selectBox-dropdown:focus + .separator {
+.woocommerce a.selectBox.selectBox-dropdown:focus + .separator,
+#yith-stripe-card-elements:focus + .separator,
+#wc-yith-stripe-cc-form .yith-stripe-elements-field:focus + .separator {
   transform: scaleX(1) translateY(-2px);
   opacity: 1;
 }
@@ -12575,12 +12583,22 @@ header.woocommerce-products-header .yith-cart-message {
   padding: 12px 15px 12px 15px;
 }
 
-#wc-yith-stripe-cc-form #yith-stripe-card-elements,
-#wc-yith-stripe-cc-form .yith-stripe-elements-field {
-  background: transparent;
-  padding: 7px 5px;
-  border-radius: 0;
-  border: 1px solid var(--proteo-forms_input_border_color, #cccccc);
+ul.payment_methods {
+  list-style-type: none;
+  padding: 0;
+}
+
+#wc-yith-stripe-cc-form {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+#wc-yith-stripe-cc-form .yith-stripe-form-container {
+  margin: 0 -15px;
+}
+
+.woocommerce-PaymentMethod--actions a:last-child {
+  margin-right: 0;
 }
 
 /* SHORTCODES */
