@@ -11,6 +11,10 @@ ul.products,
     grid-column-gap: var(--proteo-catalog_product_horizontal_spacing);
     grid-row-gap: var(--proteo-catalog_product_vertical_spacing);
 
+	&.list_products_layout {
+		display: block;
+	}
+
 	&:after {
 		content: "";
 		display: block;

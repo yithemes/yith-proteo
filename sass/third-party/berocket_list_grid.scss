@@ -1,0 +1,6 @@
+.woocommerce ul.products .product.berocket_lgv_list:nth-child(n),
+.woocommerce-page ul.products .product.berocket_lgv_list:nth-child(n) {
+    margin-right: 30px;
+    max-width: calc(40% - 30px);
+}
+

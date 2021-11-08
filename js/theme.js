@@ -371,5 +371,18 @@
 			stickySidebar();
 		} );
 	}
+
+	// Support to plugin named "Grid/List View for WooCommerce"
+	$(document).on('berocket_lgv_after_style_set', yith_proteo_berocket_grid_list_products_layout_fixer);
+
+	function yith_proteo_berocket_grid_list_products_layout_fixer() {
+		var first_product = $( 'li.product.berocket_lgv_list_grid' ).first(),
+			products_list = first_product.parent('ul.products');
+		if( first_product.hasClass('berocket_lgv_list') ){
+			products_list.addClass('list_products_layout');
+		} else {
+			products_list.removeClass('list_products_layout');
+		}
+	}
 })
 (jQuery);
