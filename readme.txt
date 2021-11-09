@@ -4,7 +4,7 @@ Tags: one-column, two-columns, left-sidebar, right-sidebar, wide-blocks, accessi
 Requires at least: 4.9.6
 Tested up to: WordPress 5.8
 Requires PHP: 5.6
-Stable tag: 1.7.0
+Stable tag: 1.7.1
 YITH Proteo WordPress Theme, Copyright 2020 YITH
 YITH Proteo is distributed under the terms of the GNU GPL
 License: GPLv2 or later
@@ -25,6 +25,15 @@ Proteo is a modern, fast and fully customizable WooCommerce theme. Designed and 
 == Frequently Asked Questions ==
 
 == Changelog ==
+
+= 1.7.1 - November 09 2021 =
+New: support to plugin "Grid/List View for WooCommerce"
+Tweak: improved checkout table style
+Tweak: improved support to YITH Stripe forms
+Tweak: improved support for Bookable products gallery layout
+Tweak: improved support to YITH Added to Cart Popup plugin
+Fix: submenu children items opening issues
+Fix: sidebar widget z-index value
 
 = 1.7.0 - November 04 2021 =
 New: support to YITH Booking plugin
