@@ -76,7 +76,7 @@
 						height: 0;
 						border-style: solid;
 						border-width: 10px 10px 10px 0;
-						border-color: transparent #ffffff transparent transparent;
+						border-color: transparent var(--proteo-header_bg_color, #ffffff) transparent transparent;
 					}
 				}
 
@@ -180,6 +180,43 @@
 		}
 	}
 }
+
+.main-navigation ul li.edge-menu-element ul {
+	left: auto;
+	right: -45px;
+
+	&:before {
+		left: auto;
+		right: 45px;
+	}
+
+	li.menu-item-has-children a {
+		padding-right: 0;
+		padding-left: 35px;
+		margin-right: 0;
+		margin-left: -35px;
+
+		&:after {
+			transform: rotate(90deg);
+			right: auto;
+			left: 0px;
+			top: 5px;
+		}
+	}
+
+	li:hover > ul {
+		left: auto;
+		right: calc(100% + 35px);
+
+		&:before {
+			left: auto;
+			right: -10px ;
+			transform: rotate( 180deg);
+		}
+		
+	}
+}
+
 
 header.sticky {
 	.main-navigation a {

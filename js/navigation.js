@@ -111,5 +111,22 @@
 				mobile_menu_container.removeClass('toggled');
 			}
 	});
+
+	$(".menu-item-has-children").on('hover click mouseenter mouseleave', function() {
+		var parent_li = $(this);
+        if ( ! parent_li.hasClass('edge-menu-element') && parent_li.find( 'ul.sub-menu' ).length ) {
+            var submenu = $( 'ul:first', this );
+            var off = submenu.offset();
+            var left_position = off.left;
+            var submenu_width = submenu.outerWidth();
+            var document_width = $( window ).width();
+
+            var isEntirelyVisible = ( left_position + submenu_width <= document_width );
+
+            if ( ! isEntirelyVisible ) {
+                parent_li.addClass( 'edge-menu-element' );
+            }
+        }
+    });
 })
 (jQuery);
