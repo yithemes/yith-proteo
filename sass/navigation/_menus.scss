@@ -184,6 +184,10 @@
 #primary-menu > .edge-menu-element:hover > .sub-menu {
     left: auto;
     right: -45px;
+
+	&:before {
+		right: 40px;
+	}
 }
 
 #primary-menu ul.sub-menu li.edge-menu-element > a {
@@ -199,7 +203,7 @@
 	}
 }
 
-#primary-menu ul.sub-menu li.edge-menu-element:hover > ul {
+#primary-menu ul.sub-menu li.edge-menu-element > ul {
 	left: auto;
 	right: calc(100% + 35px);
 
