@@ -907,3 +907,32 @@ if ( ! function_exists( 'yith_show_hide_shop_page_title' ) ) {
 		}
 	}
 }
+
+add_action( 'woocommerce_cart_actions', 'yith_proteo_woocommerce_empty_cart_button' );
+/**
+ * Add empty cart button to cart
+ *
+ * @return void
+ */
+function yith_proteo_woocommerce_empty_cart_button() {
+	?>
+	<button type="submit" class="empty-cart" name="empty_cart" value="<?php esc_attr_e( 'Empty cart', 'yith-proteo' ); ?>">
+		<span class="lnr lnr-trash"></span> <?php esc_html_e( 'Empty cart', 'yith-proteo' ); ?>
+	</button>
+	<?php
+}
+
+add_action( 'wp_loaded', 'yith_proteo_woocommerce_clear_cart_url' );
+
+/**
+ * Check for empty_cart to clear the cart.
+ *
+ * @return void
+ */
+function yith_proteo_woocommerce_clear_cart_url() {
+	$nonce_value = wc_get_var( $_REQUEST['woocommerce-cart-nonce'], wc_get_var( $_REQUEST['_wpnonce'], '' ) ); // @codingStandardsIgnoreLine.
+
+	if ( ( ! empty( $_POST['empty_cart'] ) ) && wp_verify_nonce( $nonce_value, 'woocommerce-cart' ) ) {
+		WC()->cart->empty_cart();
+	}
+}
