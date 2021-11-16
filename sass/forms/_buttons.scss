@@ -9,6 +9,7 @@ input[type="submit"],
 .button-style-1 a,
 input[type="file"]::-webkit-file-upload-button,
 body.update-cart-button-style table.cart tbody tr td.actions button[name="update_cart"],
+body.update-cart-button-style td.actions .empty-cart,
 body.yith-proteo-add-to-cart-style-button_style_1 .wc-block-grid__product .add_to_cart_button,
 body.yith-proteo-add-to-cart-style-button_style_1 .added_to_cart.wc-forward,
 body .wpforms-form button[type=submit].wpforms-submit {
@@ -133,12 +134,13 @@ body.yith-proteo-add-to-cart-style-button_style_2 .wc-block-grid__product .add_t
 .wpcf7-form-control.ghost,
 .button.ywgc_apply_gift_card_button,
 .checkout_coupon button[name="apply_coupon"],
+body.update-cart-button-style td.actions .empty-cart,
 .wc-block-grid__products .wc-block-grid__product-image a.button.ghost {
 	margin-bottom: 15px;
 	border: 2px solid;
 	border-color: var(--proteo-main_color_shade, $color__accent);
 	text-align: center;
-	padding: 0.65em 1.5em 0.5em;
+	padding: 0.65em 1.5em 0.6em;
 	vertical-align: middle;
 	background-color: transparent;
 	color: var(--proteo-main_color_shade, $color__accent);
@@ -157,6 +159,7 @@ body.yith-proteo-add-to-cart-style-button_style_2 .wc-block-grid__product .add_t
 .unstyled-button,
 .button.unstyled_button,
 body:not(.update-cart-button-style) table.cart tbody tr td.actions button[name="update_cart"],
+body:not(.update-cart-button-style) td.actions .empty-cart,
 body.yith-proteo-add-to-cart-style-unstyled_button .wc-block-grid__product .add_to_cart_button {
 	background: none;
 	background-color: transparent;
@@ -183,6 +186,7 @@ input[type="submit"],
 .widget a.button,
 .wishlist-submit.popup_button,
 body.update-cart-button-style table.cart tbody tr td.actions button[name="update_cart"],
+body.update-cart-button-style td.actions .empty-cart,
 .wc-block-grid__product .add_to_cart_button {
 	border-radius: var(--proteo-buttons_border_radius);
 }

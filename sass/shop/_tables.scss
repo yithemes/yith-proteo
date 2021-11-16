@@ -136,7 +136,6 @@ table.shop_table {
 					}
 
 					input {
-						font-size: 0.875rem;
 						font-family: inherit;
 						min-width: 230px;
 						outline: none;
@@ -174,6 +173,13 @@ table.shop_table {
 						margin-right: 5px;
 						line-height: 0;
 					}
+				}
+
+				.empty-cart {
+					float: right;
+					margin-right: 15px;
+					margin-bottom: 15px;
+					line-height: 1;
 				}
 			}
 
