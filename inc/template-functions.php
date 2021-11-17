@@ -267,7 +267,14 @@ add_action( 'wp_footer', 'yith_proteo_output_full_screen_search' );
  * @author Francesco Grasso <francgrasso@yithemes.com>
  */
 function yith_proteo_modify_read_more_link() {
-	return '<a class="more-link" href="' . get_permalink() . '">' . esc_html( get_theme_mod( 'yith_proteo_blog_read_more_text', 'Read more  &#10230;' ) ) . '</a>';
+
+	$read_more_value = get_theme_mod( 'yith_proteo_blog_read_more_text', _x( 'Read more  &#10230;', 'Customizer option default value', 'yith-proteo' ) );
+
+	if ( '' === $read_more_value ) {
+		$read_more_value = _x( 'Read more  &#10230;', 'Customizer option default value', 'yith-proteo' );
+	}
+
+	return '<a class="more-link" href="' . get_permalink() . '">' . esc_html( $read_more_value ) . '</a>';
 }
 
 add_filter( 'the_content_more_link', 'yith_proteo_modify_read_more_link' );
@@ -276,16 +283,20 @@ add_filter( 'the_content_more_link', 'yith_proteo_modify_read_more_link' );
 /**
  * Modify the_excerpt read_more text with a link
  *
- * @param string $more More string.
- *
  * @return string
  *
  * @author Francesco Grasso <francgrasso@yithemes.com>
  */
-function yith_proteo_modify_excerpt_more( $more ) {
+function yith_proteo_modify_excerpt_more() {
 	global $post;
 
-	return '<a class="more-link" href="' . get_permalink( $post->ID ) . '">' . esc_html( get_theme_mod( 'yith_proteo_blog_read_more_text', 'Read more  &#10230;' ) ) . '</a>';
+	$read_more_value = get_theme_mod( 'yith_proteo_blog_read_more_text', _x( 'Read more  &#10230;', 'Customizer option default value', 'yith-proteo' ) );
+
+	if ( '' === $read_more_value ) {
+		$read_more_value = _x( 'Read more  &#10230;', 'Customizer option default value', 'yith-proteo' );
+	}
+
+	return '<a class="more-link" href="' . get_permalink( $post->ID ) . '">' . esc_html( $read_more_value ) . '</a>';
 }
 
 add_filter( 'excerpt_more', 'yith_proteo_modify_excerpt_more' );
