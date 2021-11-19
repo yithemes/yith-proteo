@@ -26,9 +26,7 @@
 	}
 
 	menu.attr( 'aria-expanded', 'false' );
-	if ( ! menu.hasClass( 'nav-menu' ) ) {
-		menu.addClass('nav-menu');
-	}
+	menu.toggleClass('nav-menu');
 
 	button.on('click', function(){
 		if( container.hasClass('toggled') ) {
@@ -64,46 +62,23 @@
 
 			// On li elements toggle the class .focus.
 			if ( self.is('li') ) {
-				if ( self.hasClass( 'focus' ) ) {
-					self.removeClass( 'focus' );
-				} else {
-					self.addClass( 'focus' );
-				}
+				self.toggleClass( 'focus' );
 			}
 
 			self = self.parent();
 		}
 	}
 
+	selector = '#yith-proteo-mobile-menu .menu-item-has-children > a';
 	// Handle mobile menu submenu opening and click
 	if(window.matchMedia("(pointer: coarse)").matches) {
-		// touchscreen
-		var menu_items = $('.menu-item-has-children > a');
-		menu_items.on( 'click',function (ev) {
-			var t = $(this);
-			if (t.hasClass('submenu-opened')) {
-				return true;
-			} else {
-				ev.preventDefault();
-				t.parent().siblings().find('a').removeClass('submenu-opened');
-				t.addClass('submenu-opened');
-			}
-	
-		});
-	} else {
-		// is desktop
-		$('#yith-proteo-mobile-menu .menu-item-has-children > a').on( 'click',function (ev) {
-			var t = $(this);
-			if (t.hasClass('submenu-opened')) {
-				return true;
-			} else {
-				ev.preventDefault();
-				t.parent().siblings().find('a').removeClass('submenu-opened');
-				t.addClass('submenu-opened');
-			}
-	
-		});
+		selector = '.menu-item-has-children > a';
 	}
+									     
+	$(selector).on( 'click',function (ev) {
+    	    $(this).toggleClass('submenu-opened');
+    	    ev.preventDefault();
+    	});
 
 	// Open/close mobile menu on menu item with no children click (go to link)
 	$('#mobile-menu li:not(.menu-item-has-children) > a').on('click', function(){
