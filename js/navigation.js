@@ -78,14 +78,15 @@
 	// Handle mobile menu submenu opening and click
 	if(window.matchMedia("(pointer: coarse)").matches) {
 		// touchscreen
-		$('.menu-item-has-children > a').on( 'click',function (ev) {
+		var menu_items = $('.menu-item-has-children > a');
+		menu_items.on( 'click',function (ev) {
 			var t = $(this);
 			if (t.hasClass('submenu-opened')) {
 				return true;
 			} else {
 				ev.preventDefault();
-				//$('.menu-item-has-children > a').removeClass('submenu-opened');
-				$(this).addClass('submenu-opened');
+				t.parent().siblings().find('a').removeClass('submenu-opened');
+				t.addClass('submenu-opened');
 			}
 	
 		});
@@ -97,7 +98,8 @@
 				return true;
 			} else {
 				ev.preventDefault();
-				$(this).addClass('submenu-opened');
+				t.parent().siblings().find('a').removeClass('submenu-opened');
+				t.addClass('submenu-opened');
 			}
 	
 		});
