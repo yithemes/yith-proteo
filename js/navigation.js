@@ -76,8 +76,9 @@
 	}
 									     
 	$(selector).on( 'click',function (ev) {
-    	    $(this).toggleClass('submenu-opened');
-    	    ev.preventDefault();
+		$(this).parent().siblings().find('a').removeClass('submenu-opened');
+    		$(this).addClass('submenu-opened');
+    		ev.preventDefault();
     	});
 
 	// Open/close mobile menu on menu item with no children click (go to link)
