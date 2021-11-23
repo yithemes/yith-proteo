@@ -10,7 +10,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<?php if ( 'inside' === get_theme_mod( 'yith_proteo_page_title_layout', 'inside' ) ) : ?>
+	<?php if ( 'inside' === get_theme_mod( 'yith_proteo_page_title_layout', 'inside' ) || function_exists( 'wc' ) && is_account_page() ) : ?>
 		<header class="entry-header">
 			<?php
 			yith_proteo_print_page_titles();

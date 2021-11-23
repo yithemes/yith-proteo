@@ -229,7 +229,7 @@ global $post;
 	<div id="content" class="site-content" <?php echo $custom_spacing ? $custom_spacing : ''; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>>
 		<?php do_action( 'yith_proteo_before_page_content' ); ?>
 		<div class="container">
-			<?php if ( ( is_page() || is_home() ) && 'outside' === $yith_proteo_page_title_layout ) { ?>
+			<?php if ( ( is_page() || is_home() ) && 'outside' === $yith_proteo_page_title_layout && function_exists( 'wc' ) && ! is_account_page() ) { ?>
 				<header class="entry-header page-header">
 					<?php
 					yith_proteo_print_page_titles();
