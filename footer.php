@@ -9,14 +9,9 @@
  * @package yith-proteo
  */
 
-global $post;
-?>
-<?php echo yith_proteo_get_sidebar_position() ? '</div>' : ''; ?>
-</div><!-- .container -->
-</div><!-- #content -->
-</div><!-- #page -->
+do_action( 'yith_proteo_content_end' );
 
-<?php
+global $post;
 // hide site footer if meta value enabled.
 if ( function_exists( 'wc' ) && is_shop() ) {
 	$hide_footer = get_post_meta( wc_get_page_id( 'shop' ), 'yith_proteo_remove_header_and_footer', true );

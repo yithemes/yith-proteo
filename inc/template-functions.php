@@ -383,3 +383,31 @@ if ( ! function_exists( 'yith_proteo_get_content_spacing' ) ) {
 		return $custom_spacing;
 	}
 }
+
+if ( ! function_exists( 'yith_proteo_content_start' ) ) {
+	/**
+	 * Include the content-start.php template parts
+	 *
+	 * @return void
+	 */
+	function yith_proteo_content_start() {
+		get_template_part( 'template-parts/content-start' );
+	}
+}
+add_action( 'yith_proteo_content_start', 'yith_proteo_content_start', 10 );
+
+if ( ! function_exists( 'yith_proteo_content_end' ) ) {
+	/**
+	 * Include the content-end.php template parts
+	 *
+	 * @return void
+	 */
+	function yith_proteo_content_end() {
+		get_template_part( 'template-parts/content-end' );
+	}
+}
+add_action( 'yith_proteo_content_end', 'yith_proteo_content_end', 10 );
+
+// Elementor integration.
+add_action( 'elementor/theme/after_do_header', 'yith_proteo_content_start' );
+add_action( 'elementor/theme/before_do_footer', 'yith_proteo_content_end' );
