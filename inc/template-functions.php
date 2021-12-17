@@ -16,6 +16,9 @@ if ( ! function_exists( 'yith_proteo_body_classes' ) ) :
 	 * @author Francesco Grasso <francgrasso@yithemes.com>
 	 */
 	function yith_proteo_body_classes( $classes ) {
+
+		$classes[] = 'animatedParent';
+
 		// Adds a class of hfeed to non-singular pages.
 		if ( ! is_singular() ) {
 			$classes[] = 'hfeed';
@@ -342,5 +345,41 @@ if ( ! function_exists( 'yith_proteo_display_header_text' ) ) {
 	 */
 	function yith_proteo_display_header_text() {
 		return get_theme_mod( 'yith_proteo_display_header_text', 'yes' ) === 'yes' ? true : false;
+	}
+}
+
+if ( ! function_exists( 'yith_proteo_get_content_spacing' ) ) {
+	/**
+	 * Get custom content spacing from page/post option
+	 *
+	 * @return bool|string
+	 */
+	function yith_proteo_get_content_spacing() {
+		global $post;
+		$custom_spacing = false;
+		if ( function_exists( 'wc' ) && is_shop() ) {
+			if ( 'on' === get_post_meta( wc_get_page_id( 'shop' ), 'yith_proteo_custom_page_content_spacing_enabler', true ) ) {
+				$custom_spacing = 'style="padding:' . implode(
+					'px ',
+					get_post_meta( wc_get_page_id( 'shop' ), 'yith_proteo_custom_page_content_spacing', true )
+				) . 'px"';
+			}
+		} elseif ( is_home() ) {
+			if ( 'on' === get_post_meta( get_option( 'page_for_posts' ), 'yith_proteo_custom_page_content_spacing_enabler', true ) ) {
+				$custom_spacing = 'style="padding:' . implode(
+					'px ',
+					get_post_meta( get_option( 'page_for_posts' ), 'yith_proteo_custom_page_content_spacing', true )
+				) . 'px"';
+			}
+		} elseif ( $post ) {
+			if ( 'on' === get_post_meta( $post->ID, 'yith_proteo_custom_page_content_spacing_enabler', true ) ) {
+				$custom_spacing = 'style="padding:' . implode(
+					'px ',
+					get_post_meta( $post->ID, 'yith_proteo_custom_page_content_spacing', true )
+				) . 'px"';
+			}
+		}
+
+		return $custom_spacing;
 	}
 }
