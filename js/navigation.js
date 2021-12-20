@@ -76,9 +76,13 @@
 	}
 									     
 	$(selector).on( 'click',function (ev) {
-		$(this).parent().siblings().find('a').removeClass('submenu-opened');
-    		$(this).addClass('submenu-opened');
-    		ev.preventDefault();
+		if ($(this).hasClass('submenu-opened')) {
+			return true;
+		} else {
+			ev.preventDefault();
+			$(this).parent().siblings().find('a').removeClass('submenu-opened');
+			$(this).addClass('submenu-opened');
+		}
     	});
 
 	// Open/close mobile menu on menu item with no children click (go to link)
