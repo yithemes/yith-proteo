@@ -7,6 +7,7 @@ input[type="submit"],
 .wishlist-submit.popup_button,
 .button-style-1:not(.wp-block-button),
 .button-style-1 a,
+a.wp-block-button__link:not(.has-background):not(.has-text-color),
 input[type="file"]::-webkit-file-upload-button,
 body.update-cart-button-style table.cart tbody tr td.actions button[name="update_cart"],
 body.update-cart-button-style td.actions .empty-cart,
@@ -18,8 +19,7 @@ body .wpforms-form button[type=submit].wpforms-submit {
 	background: var(--proteo-button_1_bg_color, $color__background-button);
 	background-color: var(--proteo-button_1_bg_color, $color__background-button);
 	color: var(--proteo-button_1_font_color, #ffffff);
-	line-height: 1;
-	padding: 0.8em 1.5em 0.7em;
+	padding: calc(0.667em + 2px) calc(1.333em + 2px);
 	text-decoration: none;
 	cursor: pointer;
 	display: inline-block;
