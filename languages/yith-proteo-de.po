@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YITH Proteo\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2021-11-04 14:15+0100\n"
-"PO-Revision-Date: 2021-11-04 14:15+0100\n"
+"POT-Creation-Date: 2021-12-20 15:30+0100\n"
+"PO-Revision-Date: 2021-12-20 15:32+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 3.0\n"
+"X-Generator: Poedit 3.0.1\n"
 
 #: 404.php:21
 msgid "Oops! That page can&rsquo;t be found."
@@ -42,7 +42,7 @@ msgstr[1] "%1$s Kommentare"
 msgid "Comments are closed."
 msgstr "Kommentare sind deaktiviert."
 
-#: footer.php:44
+#: footer.php:39
 msgid ""
 "<a href=\"https://proteo.yithemes.com/\" target=\"_blank\" rel=\"noopener"
 "\">Proteo</a> - A free theme designed with <span class=\"lnr lnr-heart\"></"
@@ -72,14 +72,9 @@ msgstr ""
 msgid "Full width image"
 msgstr ""
 
-#: header.php:23
+#: header.php:24
 msgctxt "Screen reader text"
 msgid "Skip to content"
-msgstr ""
-
-#: header.php:136
-msgctxt "Screen reader text"
-msgid "Toggle navigation"
 msgstr ""
 
 #: inc/class-yith-proteo-walker-comment.php:75
@@ -373,7 +368,9 @@ msgctxt "Customizer options group title"
 msgid "General options"
 msgstr ""
 
-#: inc/customizer/panels/blog.php:44
+#: inc/customizer/panels/blog.php:44 inc/template-functions.php:277
+#: inc/template-functions.php:280 inc/template-functions.php:299
+#: inc/template-functions.php:302
 msgctxt "Customizer option default value"
 msgid "Read more  &#10230;"
 msgstr ""
@@ -2342,7 +2339,7 @@ msgctxt "page option value"
 msgid "inherit default sidebar"
 msgstr ""
 
-#: inc/template-functions.php:247
+#: inc/template-functions.php:253
 msgctxt "Search widget input placeholder"
 msgid "Search"
 msgstr ""
@@ -2693,6 +2690,10 @@ msgctxt "Thank you page title"
 msgid "Thank you."
 msgstr ""
 
+#: inc/woocommerce.php:919 inc/woocommerce.php:920
+msgid "Empty cart"
+msgstr ""
+
 #: inc/yith-booking-support.php:106
 msgid "Show images"
 msgstr ""
@@ -2775,6 +2776,11 @@ msgstr "Schlagwörter: %1$s"
 msgid "Leave a comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr ""
 "Schreibe einen Kommentar <span class=\"screen-reader-text\">zu %s</span>"
+
+#: template-parts/header/site-nav.php:11
+msgctxt "Screen reader text"
+msgid "Toggle navigation"
+msgstr ""
 
 #: woocommerce/checkout/form-checkout.php:26
 msgid "You must be logged in to proceed with the checkout."
