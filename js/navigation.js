@@ -74,7 +74,7 @@
 	if(window.matchMedia("(pointer: coarse)").matches) {
 		selector = '.menu-item-has-children > a';
 	}
-									     
+
 	$(selector).on( 'click',function (ev) {
 		if ($(this).hasClass('submenu-opened')) {
 			return true;
@@ -83,7 +83,7 @@
 			$(this).parent().siblings().find('a').removeClass('submenu-opened');
 			$(this).addClass('submenu-opened');
 		}
-    	});
+    });
 
 	// Open/close mobile menu on menu item with no children click (go to link)
 	$('#mobile-menu li:not(.menu-item-has-children) > a').on('click', function(){
