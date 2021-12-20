@@ -71,48 +71,45 @@ if ( ! function_exists( 'yith_proteo_setup' ) ) :
 			set_theme_mod( 'nav_menu_locations', $menu_locations );
 		}
 
+		$html5_args = array(
+			'search-form',
+			'comment-form',
+			'comment-list',
+			'gallery',
+			'caption',
+		);
+
 		/*
 		 * Switch default core markup for search form, comment form, and comments
 		 * to output valid HTML5.
 		 */
-		add_theme_support(
-			'html5',
+		add_theme_support( 'html5', $html5_args );
+
+		$custom_background_args = apply_filters(
+			'yith_proteo_custom_background_args',
 			array(
-				'search-form',
-				'comment-form',
-				'comment-list',
-				'gallery',
-				'caption',
+				'default-color' => 'ffffff',
+				'default-image' => '',
 			)
 		);
 
 		// Set up the WordPress core custom background feature.
-		add_theme_support(
-			'custom-background',
-			apply_filters(
-				'yith_proteo_custom_background_args',
-				array(
-					'default-color' => 'ffffff',
-					'default-image' => '',
-				)
-			)
-		);
+		add_theme_support( 'custom-background', $custom_background_args );
 
 		// Add theme support for selective refresh for widgets.
 		add_theme_support( 'customize-selective-refresh-widgets' );
 
+		$custom_logo_args = array(
+			'height'      => 250,
+			'width'       => 250,
+			'flex-width'  => true,
+			'flex-height' => true,
+		);
+
 		/**
 		 * Add support for core custom logo.
 		 */
-		add_theme_support(
-			'custom-logo',
-			array(
-				'height'      => 250,
-				'width'       => 250,
-				'flex-width'  => true,
-				'flex-height' => true,
-			)
-		);
+		add_theme_support( 'custom-logo', $custom_logo_args );
 
 		/**
 		 * Register additional image size
@@ -161,6 +158,7 @@ if ( ! function_exists( 'yith_proteo_setup' ) ) :
 		add_theme_support( 'custom-units' );
 		add_theme_support( 'custom-line-height' );
 		add_theme_support( 'custom-spacing' );
+		add_theme_support( 'wp-block-styles' );
 
 		// Add support for experimental link color control.
 		add_theme_support( 'experimental-link-color' );
