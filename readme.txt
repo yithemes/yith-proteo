@@ -4,8 +4,8 @@ Tags: one-column, two-columns, left-sidebar, right-sidebar, wide-blocks, accessi
 Requires at least: 4.9.6
 Tested up to: WordPress 5.8
 Requires PHP: 5.6
-Stable tag: 1.7.1
-YITH Proteo WordPress Theme, Copyright 2020 YITH
+Stable tag: 1.8.0
+YITH Proteo WordPress Theme, Copyright 2021 YITH
 YITH Proteo is distributed under the terms of the GNU GPL
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -25,6 +25,24 @@ Proteo is a modern, fast and fully customizable WooCommerce theme. Designed and 
 == Frequently Asked Questions ==
 
 == Changelog ==
+
+= 1.8.0 - December 21 2021 =
+New: support to Elementor PRO custom header and footer templates
+New: move sub-menu to the left when there is not enough space on the right
+New: support to the new booking form gutenberg block
+New: empty cart button in cart page
+New: header template structure splitted into template-parts
+Tweak: navigation.js optimization. Merge pull request #33 from Mte90
+Tweak: improve default block editor buttons style
+Tweak: optimize header template files structure
+Tweak: improve mobile navigation dropdown opening/closing behaviour
+Tweak: improve localization of read_more link. Github issue #28
+Tweak: improved support to YITH Ajax Product filter
+Tweak: improved add_theme_support declaration to avoid warnings in theme_check
+Fix: my-account page titles missing filters
+Fix: css select2 dropdown position
+Fix: updated coupon field style in cart page
+Update: language files
 
 = 1.7.1 - November 09 2021 =
 New: support to plugin "Grid/List View for WooCommerce"
