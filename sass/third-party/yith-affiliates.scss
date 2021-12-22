@@ -38,23 +38,6 @@
 
 	/* LINK GENERATOR */
 	&.yith-wcaf-link-generator {
-		.copy-trigger {
-			background: none;
-			border: 1px solid $color__accent;
-			color: $color__accent;
-			border-radius: 50px;
-			padding: 0 10px;
-			margin: 0 3px;
-			text-transform: uppercase;
-			font-size: 0.7rem;
-			line-height: 1.5rem;
-
-			&:hover {
-				color: #fff;
-				background: $color__accent;
-			}
-		}
-
 		.yith-wcaf-share {
 			ul {
 				margin: 0 -5px;
@@ -75,104 +58,28 @@
 		}
 	}
 
-	/* DASHBOARD NAVIGATION MENU */
-	.yith-wcaf-navigation-menu {
-		background: #f9f9f9;
-		padding: 25px 30px 15px;
-		position: relative;
-
-		ul.dashboard-links {
-			list-style: none;
-			padding: 0;
-
-			&:before {
-				content: "";
-				display: block;
-				right: -4000px;
-				width: 4000px;
-				top: 0;
-				background: #f9f9f9;
-				bottom: 0;
-				position: absolute;
-			}
-
-			li {
-				&.active {
-					color: $color__accent;
-				}
-
-				a {
-					display: block;
-					padding: 15px 0;
-					color: inherit;
-					font-size: 1rem;
-					font-weight: 600;
-					text-decoration: none;
-
-					&:hover {
-						color: $color__accent;
-					}
-				}
-			}
-		}
-	}
-
-	/* DASHBOARD TABLES */
-	table.shop_table {
-		thead tr {
-			th {
-				text-align: left;
-
-				a {
-					color: inherit;
-					text-decoration: none;
-
-					&:hover {
-						color: $color__accent;
-					}
-				}
-			}
-		}
-		tbody tr {
-			th {
-				text-align: left;
-			}
-
-			&:nth-child(2n + 1) {
-				background: #f9f9f9;
-			}
+	&.yith-wcaf-link-generator,
+	&.yith-wcaf-dashboard .yith-wcaf-dashboard-payments #withdraw_modal,
+	&.yith-wcaf-dashboard .yith-wcaf-dashboard-settings {
+		p.form-row {
+			padding-left: 0;
+			padding-right: 0;
 		}
 
-		&.stat_table {
-			tbody tr {
-				td {
-					padding: 15px;
-				}
-
-				th {
-					border-bottom: 1px solid #ccc;
-				}
-
-				&:first-child {
-					td {
-						border-top: none;
-					}
-				}
-
-				&:last-child {
-					td,
-					th {
-						border: none;
-					}
-				}
-			}
+		p.form-row-first {
+			padding-right: 15px;
 		}
-	}
 
-	/* DASHBOARD FILTERS */
-	.filters-row {
-		.select2-selection {
-			min-width: 200px;
+		p.form-row-last {
+			padding-left: 15px;
+		}
+
+		p.form-row.woocommerce-invalid {
+			color: $woocommerce__color-error;
+		}
+
+		small {
+			line-height: 1.5;
 		}
 	}
 
@@ -213,24 +120,6 @@
 
 		button:last-child {
 			margin-right: 0;
-		}
-	}
-
-	table {
-		margin: 10px 0;
-		border-spacing: 3px;
-
-		th {
-			padding: 7px 5px;
-		}
-
-		td {
-			&:not(.ui-datepicker-other-month) {
-				border: none;
-			}
-			a {
-				padding: 2px 7px;
-			}
 		}
 	}
 }

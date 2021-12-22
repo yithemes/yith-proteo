@@ -42,16 +42,17 @@
 
 
 	function initCheckbox() {
-		$('input[type="radio"]:not(.yith-proteo-standard-radio), input[type="checkbox"]:not(.yith-proteo-standard-checkbox)').each(function () {
+		$('input[type="radio"]:not(.yith-proteo-standard-radio), input[type="checkbox"]:not(.yith-proteo-standard-checkbox)')
+			.not( '.yith-wcaf-toggle' )
+			.each(function () {
+				var type = $(this).attr('type'),
+					checked = $(this).is(':checked') ? 'checked' : '',
+					visible = $(this).is(':visible');
 
-			var type = $(this).attr('type'),
-				checked = $(this).is(':checked') ? 'checked' : '',
-				visible = $(this).is(':visible');
-
-			if ( visible && !$(this).closest('span.' + type + 'button').length) {
-				$(this).wrap('<span class="' + type + 'button ' + checked + '"></span>');
-			}
-		});
+				if ( visible && !$(this).closest('span.' + type + 'button').length) {
+					$(this).wrap('<span class="' + type + 'button ' + checked + '"></span>');
+				}
+			});
 	}
 
 	function initFields() {
