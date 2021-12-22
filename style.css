@@ -12657,9 +12657,6 @@ ul.payment_methods {
 .yith-wcaf {
   /* REGISTRATION FORM */
   /* LINK GENERATOR */
-  /* DASHBOARD NAVIGATION MENU */
-  /* DASHBOARD TABLES */
-  /* DASHBOARD FILTERS */
 }
 .yith-wcaf.yith-wcaf-registration-form .col2-set.u-columns .col-1,
 .yith-wcaf.yith-wcaf-registration-form .col2-set.u-columns .col-2 {
@@ -12688,21 +12685,6 @@ ul.payment_methods {
   bottom: 0;
   position: absolute;
 }
-.yith-wcaf.yith-wcaf-link-generator .copy-trigger {
-  background: none;
-  border: 1px solid #448a85;
-  color: #448a85;
-  border-radius: 50px;
-  padding: 0 10px;
-  margin: 0 3px;
-  text-transform: uppercase;
-  font-size: 0.7rem;
-  line-height: 1.5rem;
-}
-.yith-wcaf.yith-wcaf-link-generator .copy-trigger:hover {
-  color: #fff;
-  background: #448a85;
-}
 .yith-wcaf.yith-wcaf-link-generator .yith-wcaf-share ul {
   margin: 0 -5px;
 }
@@ -12716,70 +12698,21 @@ ul.payment_methods {
 .yith-wcaf.yith-wcaf-link-generator .yith-wcaf-share ul li a:hover {
   color: #448a85;
 }
-.yith-wcaf .yith-wcaf-navigation-menu {
-  background: #f9f9f9;
-  padding: 25px 30px 15px;
-  position: relative;
+.yith-wcaf.yith-wcaf-link-generator p.form-row, .yith-wcaf.yith-wcaf-dashboard .yith-wcaf-dashboard-payments #withdraw_modal p.form-row, .yith-wcaf.yith-wcaf-dashboard .yith-wcaf-dashboard-settings p.form-row {
+  padding-left: 0;
+  padding-right: 0;
 }
-.yith-wcaf .yith-wcaf-navigation-menu ul.dashboard-links {
-  list-style: none;
-  padding: 0;
+.yith-wcaf.yith-wcaf-link-generator p.form-row-first, .yith-wcaf.yith-wcaf-dashboard .yith-wcaf-dashboard-payments #withdraw_modal p.form-row-first, .yith-wcaf.yith-wcaf-dashboard .yith-wcaf-dashboard-settings p.form-row-first {
+  padding-right: 15px;
 }
-.yith-wcaf .yith-wcaf-navigation-menu ul.dashboard-links:before {
-  content: "";
-  display: block;
-  right: -4000px;
-  width: 4000px;
-  top: 0;
-  background: #f9f9f9;
-  bottom: 0;
-  position: absolute;
+.yith-wcaf.yith-wcaf-link-generator p.form-row-last, .yith-wcaf.yith-wcaf-dashboard .yith-wcaf-dashboard-payments #withdraw_modal p.form-row-last, .yith-wcaf.yith-wcaf-dashboard .yith-wcaf-dashboard-settings p.form-row-last {
+  padding-left: 15px;
 }
-.yith-wcaf .yith-wcaf-navigation-menu ul.dashboard-links li.active {
-  color: #448a85;
+.yith-wcaf.yith-wcaf-link-generator p.form-row.woocommerce-invalid, .yith-wcaf.yith-wcaf-dashboard .yith-wcaf-dashboard-payments #withdraw_modal p.form-row.woocommerce-invalid, .yith-wcaf.yith-wcaf-dashboard .yith-wcaf-dashboard-settings p.form-row.woocommerce-invalid {
+  color: #f44336;
 }
-.yith-wcaf .yith-wcaf-navigation-menu ul.dashboard-links li a {
-  display: block;
-  padding: 15px 0;
-  color: inherit;
-  font-size: 1rem;
-  font-weight: 600;
-  text-decoration: none;
-}
-.yith-wcaf .yith-wcaf-navigation-menu ul.dashboard-links li a:hover {
-  color: #448a85;
-}
-.yith-wcaf table.shop_table thead tr th {
-  text-align: left;
-}
-.yith-wcaf table.shop_table thead tr th a {
-  color: inherit;
-  text-decoration: none;
-}
-.yith-wcaf table.shop_table thead tr th a:hover {
-  color: #448a85;
-}
-.yith-wcaf table.shop_table tbody tr th {
-  text-align: left;
-}
-.yith-wcaf table.shop_table tbody tr:nth-child(2n+1) {
-  background: #f9f9f9;
-}
-.yith-wcaf table.shop_table.stat_table tbody tr td {
-  padding: 15px;
-}
-.yith-wcaf table.shop_table.stat_table tbody tr th {
-  border-bottom: 1px solid #ccc;
-}
-.yith-wcaf table.shop_table.stat_table tbody tr:first-child td {
-  border-top: none;
-}
-.yith-wcaf table.shop_table.stat_table tbody tr:last-child td,
-.yith-wcaf table.shop_table.stat_table tbody tr:last-child th {
-  border: none;
-}
-.yith-wcaf .filters-row .select2-selection {
-  min-width: 200px;
+.yith-wcaf.yith-wcaf-link-generator small, .yith-wcaf.yith-wcaf-dashboard .yith-wcaf-dashboard-payments #withdraw_modal small, .yith-wcaf.yith-wcaf-dashboard .yith-wcaf-dashboard-settings small {
+  line-height: 1.5;
 }
 
 /* DATEPICKER */
@@ -12803,19 +12736,6 @@ ul.payment_methods {
 }
 .yith-wcaf-datepicker.ui-datepicker .ui-datepicker-buttonpane button:last-child {
   margin-right: 0;
-}
-.yith-wcaf-datepicker.ui-datepicker table {
-  margin: 10px 0;
-  border-spacing: 3px;
-}
-.yith-wcaf-datepicker.ui-datepicker table th {
-  padding: 7px 5px;
-}
-.yith-wcaf-datepicker.ui-datepicker table td:not(.ui-datepicker-other-month) {
-  border: none;
-}
-.yith-wcaf-datepicker.ui-datepicker table td a {
-  padding: 2px 7px;
 }
 
 .woocommerce .products .yith-wcdp-loop-add-to-cart-fields {
