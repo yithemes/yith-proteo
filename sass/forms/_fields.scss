@@ -34,7 +34,7 @@ select,
 	transition: border-color ease 0.3s;
 	background-color: #ffffff;
 	min-width: 50%;
-
+	
 	&:focus {
 		outline-color: transparent;
 		color: $color__text-input-focus;
@@ -42,7 +42,7 @@ select,
 		outline: none;
 		box-shadow: 0 0 2px var(--proteo-main_color_shade, $color__accent);
 	}
-
+	
 	& + .separator {
 		height: 2px;
 		width: 100%;
@@ -53,7 +53,7 @@ select,
 		opacity: 0;
 		transition: all 0.15s ease;
 	}
-
+	
 	&:focus + .separator {
 		transform: scaleX(1) translateY(-2px);
 		opacity: 1;
@@ -84,6 +84,26 @@ input:-ms-input-placeholder {
 	opacity: 0.4;
 }
 
+textarea:-moz-placeholder { /* Firefox 18- */
+	color: inherit;
+	opacity: 0.4;
+}
+
+textarea::-moz-placeholder {  /* Firefox 19+ */
+	color: inherit;
+	opacity: 0.4;
+}
+
+textarea:-ms-input-placeholder {
+	color: inherit;
+	opacity: 0.4;
+}
+
+textarea::placeholder {
+	color: inherit;
+	opacity: 0.4;
+}
+
 .woocommerce-invalid {
 	input[type="text"],
 	input[type="email"],
@@ -107,19 +127,19 @@ input:-ms-input-placeholder {
 			outline: none;
 		}
 	}
-
+	
 	input::-webkit-input-placeholder {
 		color: rgba(244, 67, 54, 0.5);
 	}
-
+	
 	input:-moz-placeholder {
 		color: rgba(244, 67, 54, 0.5);
 	}
-
+	
 	input::-moz-placeholder {
 		color: rgba(244, 67, 54, 0.5);
 	}
-
+	
 	input:-ms-input-placeholder {
 		color: rgba(244, 67, 54, 0.5);
 	}
@@ -134,8 +154,8 @@ select {
 
 body .select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple, 
 body .select2-container--default.select2-container--open.select2-container--below .select2-selection--single {
-    border-bottom-left-radius: var(--proteo-forms_input_borde_radius, 0);
-    border-bottom-right-radius: var(--proteo-forms_input_borde_radius, 0);
+	border-bottom-left-radius: var(--proteo-forms_input_borde_radius, 0);
+	border-bottom-right-radius: var(--proteo-forms_input_borde_radius, 0);
 }
 
 textarea {
@@ -155,17 +175,17 @@ textarea {
 
 /* default checkbox when enhanced are disabled */
 label.checkbox input[type="checkbox"] {
-    display: inline-block;
-    width: auto;
-    margin-right: 5px;
+	display: inline-block;
+	width: auto;
+	margin-right: 5px;
 }
 
 /**
 Enanched Checkboxes
- */
+*/
 span.checkboxbutton {
 	position: relative;
-
+	
 	input[type="checkbox"] {
 		opacity: 0;
 		//top: 5px;
@@ -177,7 +197,7 @@ span.checkboxbutton {
 		cursor: pointer;
 		width: 23px;
 	}
-
+	
 	&:before {
 		content: "";
 		display: inline-block;
@@ -195,7 +215,7 @@ span.checkboxbutton {
 		margin-bottom: 5px;
 		transition: background-color ease 0.3s;
 	}
-
+	
 	&.checked:before {
 		content: "";
 		background: var(--proteo-main_color_shade, $color__accent);
@@ -209,17 +229,17 @@ span.checkboxbutton {
 
 /* Default radio buttons */
 input[type="radio"] {
-    margin-top: 6px;
+	margin-top: 6px;
 }
 .methods input[type=radio] {
-    position: absolute;
+	position: absolute;
 }
 /**
 Radio buttons
- */
+*/
 span.radiobutton {
 	position: relative;
-
+	
 	input[type="radio"] {
 		opacity: 0;
 		//top: 5px;
@@ -231,7 +251,7 @@ span.radiobutton {
 		cursor: pointer;
 		width: 23px;
 	}
-
+	
 	&:before {
 		content: "";
 		display: inline-block;
@@ -250,7 +270,7 @@ span.radiobutton {
 		background-clip: content-box;
 		margin-bottom: 5px;
 	}
-
+	
 	&.checked:before {
 		background: var(--proteo-main_color_shade, $color__accent);
 		background-clip: content-box !important;
@@ -259,7 +279,7 @@ span.radiobutton {
 
 /**
 File inputs
- */
+*/
 input[type="file"] {
 	padding: 2px;
 	font-size: 0.75em;
@@ -302,7 +322,7 @@ input[type="file"]:hover::-webkit-file-upload-button {
 
 /**
 Date fields
- */
+*/
 input.hasDatepicker {
 	background-image: url(img/calendar.svg);
 	background-position: calc(100% - 15px) 50%;
@@ -317,40 +337,40 @@ input.hasDatepicker {
 	font-family: inherit;
 	box-shadow: 3px 0 15px rgba(0, 0, 0, 0.15);
 	border: none;
-
+	
 	.ui-datepicker-header {
 		border: none;
 		background: none;
 		color: inherit;
 		padding: 0;
 		margin: 10px 0;
-
+		
 		a {
 			color: inherit;
 			text-align: center;
 			opacity: 0.8;
 			top: 2px;
 			text-decoration: none;
-
+			
 			&.ui-state-hover,
 			&.ui-state-focus {
 				border: none;
 				background: none;
 				opacity: 1;
 			}
-
+			
 			&:hover {
 				color: $color__link-hover;
 				opacity: 1;
 			}
-
+			
 			&.ui-state-disabled {
 				display: none;
 			}
-
+			
 			&[data-handler="prev"] {
 				left: 2px;
-
+				
 				&:before {
 					content: "\e875";
 					font-family: Linearicons-Free;
@@ -361,15 +381,15 @@ input.hasDatepicker {
 					cursor: pointer;
 					font-size: 12px;
 				}
-
+				
 				span {
 					display: none;
 				}
 			}
-
+			
 			&[data-handler="next"] {
 				right: 2px;
-
+				
 				&:before {
 					content: "\e876";
 					font-family: Linearicons-Free;
@@ -380,14 +400,14 @@ input.hasDatepicker {
 					cursor: pointer;
 					font-size: 12px;
 				}
-
+				
 				span {
 					display: none;
 				}
 			}
 		}
 	}
-
+	
 	.ui-datepicker-calendar {
 		tbody {
 			td {
@@ -399,13 +419,13 @@ input.hasDatepicker {
 					color: #616161;
 					font-weight: 600;
 					font-size: 14px;
-
+					
 					&.ui-datepicker-unselectable {
 						background: #f7f7f7;
 						border: 1px solid #efefef;
 						color: #c5c5c5;
 					}
-
+					
 					&.ui-state-hover {
 						color: var(--proteo-main_color_shade, $color__accent);
 						background: #ffffff;
@@ -414,24 +434,24 @@ input.hasDatepicker {
 							color: var(--proteo-main_color_shade, $color__accent);
 						}
 					}
-
+					
 					&.ui-state-active {
 						color: #ffffff;
 						background: var(--proteo-main_color_shade, $color__accent);
 						border: 1px solid var(--proteo-main_color_shade, $color__accent);
-
+						
 						&:hover {
 							color: #ffffff;
 						}
 					}
-
+					
 					&.ui-state-highlight {
 						color: var(--proteo-main_color_shade, $color__accent);
 						background: #ffffff;
 						border: 1px solid var(--proteo-main_color_shade, $color__accent);
 					}
 				}
-
+				
 				&.ui-state-disabled {
 					opacity: 0.5;
 				}
@@ -447,7 +467,7 @@ input.hasDatepicker {
 		-webkit-appearance: none;
 		margin: 0;
 	}
-
+	
 	/* Firefox */
 	input[type="number"] {
 		-moz-appearance: textfield;
