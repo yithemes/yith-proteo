@@ -65,23 +65,23 @@ select,
 }
 
 input::-webkit-input-placeholder {
-	color: rgba(204, 204, 204, 0.8);
-	//font-size: 0.8em;
+	color: inherit;
+	opacity: 0.4;
 }
 
 input:-moz-placeholder {
-	color: rgba(204, 204, 204, 0.8);
-	//font-size: 0.8em;
+	color: inherit;
+	opacity: 0.4;
 }
 
 input::-moz-placeholder {
-	color: rgba(204, 204, 204, 0.8);
-	//font-size: 0.8em;
+	color: inherit;
+	opacity: 0.4;
 }
 
 input:-ms-input-placeholder {
-	color: rgba(204, 204, 204, 0.8);
-	//font-size: 0.8em;
+	color: inherit;
+	opacity: 0.4;
 }
 
 .woocommerce-invalid {
