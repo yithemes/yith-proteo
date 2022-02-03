@@ -44,11 +44,14 @@ if ( ! class_exists( 'YITH_Proteo_Account_Widget' ) ) {
 			$url = apply_filters( 'yith_proteo_account_widget_url', $url, $instance );
 
 			$icon = $instance['custom-icon'];
+
 			if ( ! $icon ) {
 				$icon = get_template_directory_uri() . '/img/user.svg';
 			}
 
-			if ( get_template_directory_uri() . '/img/user.svg' !== $icon ) {
+			$icon = str_replace( array( 'http://', 'https://' ), '//', $icon );
+
+			if ( str_replace( array( 'http://', 'https://' ), '//', get_template_directory_uri() ) . '/img/user.svg' !== $icon ) {
 				$icon = wp_get_attachment_image_src( $icon, 'full' );
 				$icon = '<img src="' . esc_url( apply_filters( 'yith_proteo_account_widget_image_url', $icon[0] ) ) . '" width="25" loading="lazy">';
 			} else {
