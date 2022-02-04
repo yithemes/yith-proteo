@@ -523,11 +523,13 @@ article:not(.has-post-thumbnail).page header.entry-header h1 {
   .single-product div.product .summary.entry-summary form.variations_form table.variations tr > td .select2-container {
     max-width: calc(100% - 60px);
   }
-  .single-product div.product .summary.entry-summary form.variations_form table.variations tr > td {
+  .single-product div.product .summary.entry-summary form.variations_form table.variations tr > td,
+.single-product div.product .summary.entry-summary form.variations_form table.variations tr > th {
     display: block;
     width: 100%;
   }
-  .single-product div.product .summary.entry-summary form.variations_form table.variations tr > td.label {
+  .single-product div.product .summary.entry-summary form.variations_form table.variations tr > td.label,
+.single-product div.product .summary.entry-summary form.variations_form table.variations tr > th.label {
     padding-bottom: 10px;
   }
 
