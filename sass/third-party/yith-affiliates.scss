@@ -175,6 +175,16 @@
 			min-width: 200px;
 		}
 	}
+
+	.yith-wcaf-table-top-bar {
+		.table-filters,
+		.table-options {
+			input[type="text"],
+			input[type="number"] {
+				padding: 13px 10px;
+			}
+		}
+	}
 }
 
 /* DATEPICKER */
