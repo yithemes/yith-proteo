@@ -12,26 +12,8 @@
 			}
 
 			form {
-				padding: 25px 15px 15px;
 				margin-bottom: 35px;
-				border: 1px solid;
 				position: relative;
-
-				&.register {
-					border: none;
-					background: #ebebeb;
-
-					&:before {
-						content: "";
-						display: block;
-						right: -4000px;
-						width: 4000px;
-						top: 0;
-						background: #ebebeb;
-						bottom: 0;
-						position: absolute;
-					}
-				}
 			}
 		}
 	}
