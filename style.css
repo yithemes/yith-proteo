@@ -12759,24 +12759,8 @@ ul.payment_methods {
   position: relative;
 }
 .yith-wcaf.yith-wcaf-registration-form .col2-set.u-columns form {
-  padding: 25px 15px 15px;
   margin-bottom: 35px;
-  border: 1px solid;
   position: relative;
-}
-.yith-wcaf.yith-wcaf-registration-form .col2-set.u-columns form.register {
-  border: none;
-  background: #ebebeb;
-}
-.yith-wcaf.yith-wcaf-registration-form .col2-set.u-columns form.register:before {
-  content: "";
-  display: block;
-  right: -4000px;
-  width: 4000px;
-  top: 0;
-  background: #ebebeb;
-  bottom: 0;
-  position: absolute;
 }
 .yith-wcaf.yith-wcaf-link-generator .yith-wcaf-share ul {
   margin: 0 -5px;
