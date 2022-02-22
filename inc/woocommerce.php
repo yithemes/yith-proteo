@@ -936,3 +936,33 @@ function yith_proteo_woocommerce_clear_cart_url() {
 		WC()->cart->empty_cart();
 	}
 }
+
+add_filter( 'yith_wcwl_loop_positions', 'yith_proteo_change_add_to_wishlist_on_top_hook_priority' );
+
+/**
+ * Undocumented function
+ *
+ * @param array $positions_array Add to wishlist available positions array.
+ * @return array
+ */
+function yith_proteo_change_add_to_wishlist_on_top_hook_priority( $positions_array ) {
+	$positions_array['before_image']['priority'] = 1;
+	return $positions_array;
+}
+
+add_action( 'woocommerce_before_shop_loop_item', 'yith_proteo_open_product_content_loop_div', 2 );
+add_action( 'woocommerce_after_shop_loop_item', 'yith_proteo_close_product_content_loop_div', 999 );
+
+/**
+ * Print product div content opener
+ */
+function yith_proteo_open_product_content_loop_div() {
+	echo '<div class="product-content">';
+}
+
+/**
+ * Print product div content opener
+ */
+function yith_proteo_close_product_content_loop_div() {
+	echo '</div>';
+}

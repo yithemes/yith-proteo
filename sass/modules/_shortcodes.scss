@@ -44,9 +44,12 @@
 		overflow: hidden;
 		margin: 0 auto 35px;
 
-		.owl-item li.product {
-			width: 100%;
+		.owl-item {
 			padding: 0 7.5px;
+			li.product {
+				width: 100%;
+				padding: 0;
+			}
 		}
 	}
 

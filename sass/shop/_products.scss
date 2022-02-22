@@ -28,12 +28,16 @@ ul.products,
 		padding: 0;
 		text-align: center;
 		max-width: none;
-		overflow: hidden;
 
 		.product-content {
-			//background: #ffffff;
 			position: relative;
 			text-align: center;
+
+			&::after {
+				content: '';
+				display: block;
+				clear: both;
+			}
 		}
 
 		a {
@@ -308,13 +312,17 @@ body {
 	&.yith-proteo-products-with-border {
 		ul.products,
 		.wc-block-grid ul.wc-block-grid__products {
-			li.product,
+			li.product .product-content,
 			li.wc-block-grid__product {
 				border-style: solid;
 				border-width: var(--proteo-catalog_product_border_width);
 				border-color: var(--proteo-catalog_product_border_color);
 				border-radius: var(--proteo-catalog_product_border_radius);
 				background-color: #ffffff;
+				overflow: hidden;
+			}
+			li.wc-block-grid__product {
+				overflow: hidden;
 			}
 		}
 	}
