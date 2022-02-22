@@ -6,7 +6,7 @@ Author: YITH
 Author URI: https://yithemes.com
 Description: Proteo is a modern, fast and fully customizable WooCommerce theme. Designed and developed by YITH - a team of top developers of premium themes -  with a beautiful UI, a minimal design and an optimized code, is perfect for each kind of site or shop. With the Proteo Wizard you can import our demo content with just a few clicks - in less than 2 minutes! -  and easily customize it using the advanced front-end customizer. Proteo is the best solution if you want a complete WooCommerce theme that works perfectly also in mobile devices and start quickly to sell your products with WooCommerce without technical knowledge. Works perfectly with page builders like Elementor, Gutenberg & Visual composer. Key features: # WooCommerce Ready # Responsive with a perfect mobile design # Compatible with Elementor, Gutenberg, Visual Composer and others page builders # Translation Ready # Frontend customizer with hundred of options to customize header, footer, pages, typography, style, ecc.  # Google fonts support # Regularly updated and improved with new demos and advanced features # Support to all YITH plugins. Check all our Proteo demos: https://proteo.yithemes.com/
 
-Version: 1.8.0.4
+Version: 1.8.0.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: yith-proteo
@@ -5884,7 +5884,7 @@ input.hasDatepicker {
   left: 2px;
 }
 #ui-datepicker-div .ui-datepicker-header a[data-handler=prev]:before {
-  content: "";
+  content: "\e875";
   font-family: Linearicons-Free;
   font-style: normal;
   font-variant: normal;
@@ -5900,7 +5900,7 @@ input.hasDatepicker {
   right: 2px;
 }
 #ui-datepicker-div .ui-datepicker-header a[data-handler=next]:before {
-  content: "";
+  content: "\e876";
   font-family: Linearicons-Free;
   font-style: normal;
   font-variant: normal;
@@ -6124,7 +6124,7 @@ a:hover, a:active {
 }
 .main-navigation li[class*=has_children] > a:after,
 .main-navigation li[class*=has-children] > a:after {
-  content: "";
+  content: "\e874";
   font-family: Linearicons-Free;
   font-style: normal;
   font-weight: 800;
@@ -6363,7 +6363,7 @@ header.center_logo_navigation_below .menu-toggle {
 }
 #topbar .widget_nav_menu ul.sub-menu li[class*=has_children] > a:after,
 #topbar .widget_nav_menu ul.sub-menu li[class*=has-children] > a:after {
-  content: "";
+  content: "\f107";
   font-weight: 900;
   font-family: "Font Awesome 5 Free";
   -moz-osx-font-smoothing: grayscale;
@@ -6391,7 +6391,7 @@ header.center_logo_navigation_below .menu-toggle {
 }
 #topbar .widget_nav_menu li[class*=has_children] > a:after,
 #topbar .widget_nav_menu li[class*=has-children] > a:after {
-  content: "";
+  content: "\f107";
   font-weight: 900;
   font-family: "Font Awesome 5 Free";
   -moz-osx-font-smoothing: grayscale;
@@ -6887,7 +6887,7 @@ p:empty + p:empty {
   margin: 0;
 }
 #full-screen-search form#yith-ajaxsearchform > div:after {
-  content: "";
+  content: "\e86f";
   display: inline-block;
   font-family: Linearicons-Free;
   font-style: normal;
@@ -7024,7 +7024,7 @@ h3.widget-title {
 }
 #topbar .widget_search:before,
 .header-sidebar .widget_search:before {
-  content: "";
+  content: "\e86f";
   display: inline-block;
   font-family: Linearicons-Free;
   font-style: normal;
@@ -8050,7 +8050,7 @@ table.cart tfoot tr td.actions button[name=update_cart]:before,
 table.shop_table tbody tr td.actions button[name=update_cart]:before,
 table.shop_table tfoot tr td.actions button[name=update_cart]:before {
   font: normal 1.2em Linearicons-Free;
-  content: "";
+  content: "\e862";
   top: 3px;
   position: relative;
   margin-right: 5px;
@@ -8608,7 +8608,7 @@ body.yith-proteo-product-loop-add-to-cart-position-hover ul.wc-block-grid__produ
   opacity: 1;
 }
 .single-product div.product .woocommerce-product-gallery.woocommerce-product-gallery--columns-2 .flex-control-thumbs li {
-  width: calc(100% / $numberColumns);
+  width: 50%;
 }
 .single-product div.product .woocommerce-product-gallery.woocommerce-product-gallery--columns-2 .flex-control-thumbs li:nth-child(2n) {
   margin-right: 0;
@@ -8617,7 +8617,7 @@ body.yith-proteo-product-loop-add-to-cart-position-hover ul.wc-block-grid__produ
   clear: both;
 }
 .single-product div.product .woocommerce-product-gallery.woocommerce-product-gallery--columns-3 .flex-control-thumbs li {
-  width: calc(100% / $numberColumns);
+  width: 33.3333333333%;
 }
 .single-product div.product .woocommerce-product-gallery.woocommerce-product-gallery--columns-3 .flex-control-thumbs li:nth-child(3n) {
   margin-right: 0;
@@ -8626,7 +8626,7 @@ body.yith-proteo-product-loop-add-to-cart-position-hover ul.wc-block-grid__produ
   clear: both;
 }
 .single-product div.product .woocommerce-product-gallery.woocommerce-product-gallery--columns-4 .flex-control-thumbs li {
-  width: calc(100% / $numberColumns);
+  width: 25%;
 }
 .single-product div.product .woocommerce-product-gallery.woocommerce-product-gallery--columns-4 .flex-control-thumbs li:nth-child(4n) {
   margin-right: 0;
@@ -8635,7 +8635,7 @@ body.yith-proteo-product-loop-add-to-cart-position-hover ul.wc-block-grid__produ
   clear: both;
 }
 .single-product div.product .woocommerce-product-gallery.woocommerce-product-gallery--columns-5 .flex-control-thumbs li {
-  width: calc(100% / $numberColumns);
+  width: 20%;
 }
 .single-product div.product .woocommerce-product-gallery.woocommerce-product-gallery--columns-5 .flex-control-thumbs li:nth-child(5n) {
   margin-right: 0;
@@ -9808,7 +9808,7 @@ SELECT2
   display: contents;
 }
 .select2-container--default .select2-selection--single .select2-selection__arrow b:before {
-  content: "";
+  content: "\e874";
   font-family: Linearicons-Free;
   font-style: normal;
   font-weight: 400;
@@ -9820,7 +9820,7 @@ SELECT2
 }
 
 .select2-container--default.select2-container--open .select2-selection__arrow b:before {
-  content: "";
+  content: "\e873";
 }
 
 .select2-dropdown,
@@ -10038,7 +10038,7 @@ Mini Cart Widget
   padding: 15px;
   background: var(--proteo-header_bg_color, #ffffff);
   border-radius: 5px;
-  top: calc(100%);
+  top: 100%;
   opacity: 0;
   visibility: hidden;
   transition: all ease 0.3s;
@@ -10145,7 +10145,7 @@ Mini Cart Widget
   color: var(--proteo-general_link_color, #448a85);
 }
 .widget_shopping_cart .yith-proteo-mini-cart-content .woocommerce-mini-cart__buttons a.wc-forward:after {
-  content: "";
+  content: "\e876";
   margin-left: 5px;
   display: inline;
   font-size: 0.8em;
@@ -11356,7 +11356,7 @@ Wishlist footer
   text-transform: uppercase;
 }
 .yith_wcwl_wishlist_footer .ask-an-estimate-button:before {
-  content: "";
+  content: "\e818";
   display: inline-block;
   color: inherit;
   font-family: Linearicons-Free;
@@ -11470,7 +11470,7 @@ Wishlist View Modern
 }
 .wishlist_table.modern_grid li .product-remove i:before,
 .wishlist_table.images_grid li .product-remove i:before {
-  content: "";
+  content: "\e811";
   display: block;
   font-family: Linearicons-Free;
   font-size: 1rem;
@@ -11508,7 +11508,7 @@ table.wishlist_table.wishlist_view td.product-remove a {
   text-decoration: none;
 }
 table.wishlist_table.wishlist_view td.product-remove a:before {
-  content: "";
+  content: "\e811";
   display: block;
   font-family: Linearicons-Free;
   font-size: 1.5rem;
@@ -11713,7 +11713,7 @@ table.wishlist_table.wishlist_manage_table td.wishlist-download a:hover {
   color: var(--proteo-general_link_color, #448a85);
 }
 table.wishlist_table.wishlist_manage_table td.wishlist-download a:before {
-  content: "";
+  content: "\e865";
   display: block;
   font-family: Linearicons-Free;
   font-size: 1.8rem;
@@ -11735,7 +11735,7 @@ table.wishlist_table.wishlist_manage_table td.wishlist-delete a:hover {
   color: var(--proteo-general_link_color, #448a85);
 }
 table.wishlist_table.wishlist_manage_table td.wishlist-delete a:before {
-  content: "";
+  content: "\e811";
   display: block;
   font-family: Linearicons-Free;
   font-size: 1.5rem;
@@ -11768,7 +11768,7 @@ table.wishlist_table.wishlist_manage_table td.wishlist-delete a:before {
   top: 10px;
 }
 .wishlist_manage_table.modern_grid li .wishlist-title .show-title-form .fa-pencil:before {
-  content: "";
+  content: "\e802";
   display: block;
   font-family: Linearicons-Free;
   color: inherit;
@@ -11787,13 +11787,13 @@ table.wishlist_table.wishlist_manage_table td.wishlist-delete a:before {
   color: var(--proteo-general_link_color, #448a85);
 }
 .wishlist_manage_table.modern_grid li .item-details table.item-details-table td .fa-download:before {
-  content: "";
+  content: "\e865";
   display: block;
   font-family: Linearicons-Free;
   font-size: 1.5rem;
 }
 .wishlist_manage_table.modern_grid li .item-details table.item-details-table td .fa-trash:before {
-  content: "";
+  content: "\e811";
   display: block;
   font-family: Linearicons-Free;
   font-size: 1.5rem;
@@ -11850,14 +11850,14 @@ form.yith-wcwl-popup-form {
   text-decoration: none;
 }
 .yith-wcwl-remove-button i:before {
-  content: "";
+  content: "\e811";
   display: block;
   font-family: Linearicons-Free;
   font-size: 1.5rem;
 }
 
 div.yith-wcwl-popup-feedback i.fa.fa-check.heading-icon:before {
-  content: "";
+  content: "\e87f";
   display: block;
   font-family: Linearicons-Free;
 }
@@ -11892,7 +11892,7 @@ Dropdowns
 ASK FOR AN ESTIMATE MODAL AND LINK
  */
 .wishlist-ask-an-estimate-popup i.heading-icon.fa-envelope-open-o:before {
-  content: "";
+  content: "\e818";
   display: block;
   font-family: Linearicons-Free;
 }
@@ -11912,7 +11912,7 @@ ASK FOR AN ESTIMATE MODAL AND LINK
   padding-top: 10px;
 }
 .yith-wcwl-popup-content i.heading-icon.fa-envelope-o:before {
-  content: "";
+  content: "\e86d";
   display: block;
   font-family: Linearicons-Free;
 }
@@ -11946,7 +11946,7 @@ Wishlist Search
   padding: 0;
 }
 .yith-wcwl-wishlist-search-form button.wishlist-search-button i:before {
-  content: "";
+  content: "\e86f";
   display: block;
   font-family: Linearicons-Free;
   font-size: 1.8rem;
@@ -11973,7 +11973,7 @@ Widgets
   padding: 15px;
   background: #ffffff;
   border-radius: 5px;
-  top: calc(100%);
+  top: 100%;
   opacity: 0;
   visibility: hidden;
   transition: all ease 0.3s;
@@ -12134,7 +12134,7 @@ WISHLIST MOBILE LAYOUT
   font-size: inherit;
 }
 .wishlist_table.mobile li .remove_from_wishlist i:before {
-  content: "";
+  content: "\e811";
   display: block;
   font-family: Linearicons-Free;
   transition: all ease 0.3s;
@@ -12264,7 +12264,7 @@ a.compare.button {
   border-bottom: 1px solid #cccccc;
 }
 .single-product div.product .summary.entry-summary a.compare:not(.button):before {
-  content: "";
+  content: "\e88e";
   font-family: Linearicons-Free;
   display: inline-block;
   margin-right: 15px;
@@ -12475,7 +12475,7 @@ ul.products li.product a.compare:not(.button) {
   right: 0;
   padding: 15px 15px 25px 15px;
   background: #ffffff;
-  top: calc(100%);
+  top: 100%;
   transition: all ease 0.3s;
 }
 .theme-yith-proteo .widget_ywraq_list_quote .items-count,
@@ -13061,17 +13061,23 @@ body .yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table .y
   border-style: solid;
   border-radius: var(--proteo-forms_input_borde_radius, 0);
 }
-body .yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table .yith-wcbk-date-range-picker, body .yith-wcbk-booking-search-form form .yith-wcbk-date-range-picker {
+body .yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table .yith-wcbk-date-range-picker,
+body .yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table .select2-container--default .select2-selection--multiple, body .yith-wcbk-booking-search-form form .yith-wcbk-date-range-picker,
+body .yith-wcbk-booking-search-form form .select2-container--default .select2-selection--multiple {
   border: none;
   border-color: var(--proteo-forms_input_border_color, #cccccc);
   border-width: var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width);
   border-style: solid;
   border-radius: var(--proteo-forms_input_borde_radius, 0);
 }
-body .yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table .yith-wcbk-date-range-picker.yith-wcbk-date-range-picker--opened, body .yith-wcbk-booking-search-form form .yith-wcbk-date-range-picker.yith-wcbk-date-range-picker--opened {
+body .yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table .yith-wcbk-date-range-picker.yith-wcbk-date-range-picker--opened,
+body .yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table .select2-container--default .select2-selection--multiple.yith-wcbk-date-range-picker--opened, body .yith-wcbk-booking-search-form form .yith-wcbk-date-range-picker.yith-wcbk-date-range-picker--opened,
+body .yith-wcbk-booking-search-form form .select2-container--default .select2-selection--multiple.yith-wcbk-date-range-picker--opened {
   border-color: var(--proteo-main_color_shade);
 }
-body .yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table .yith-wcbk-date-range-picker .yith-wcbk-date-range-picker__arrow, body .yith-wcbk-booking-search-form form .yith-wcbk-date-range-picker .yith-wcbk-date-range-picker__arrow {
+body .yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table .yith-wcbk-date-range-picker .yith-wcbk-date-range-picker__arrow,
+body .yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table .select2-container--default .select2-selection--multiple .yith-wcbk-date-range-picker__arrow, body .yith-wcbk-booking-search-form form .yith-wcbk-date-range-picker .yith-wcbk-date-range-picker__arrow,
+body .yith-wcbk-booking-search-form form .select2-container--default .select2-selection--multiple .yith-wcbk-date-range-picker__arrow {
   opacity: 0.5;
 }
 body .yith-wcbk-booking-search-form table.yith-wcbk-booking-search-form-table span.yith-wcbk-booking-date-icon.yith-icon.yith-icon-calendar, body .yith-wcbk-booking-search-form form span.yith-wcbk-booking-date-icon.yith-icon.yith-icon-calendar {
@@ -13126,6 +13132,10 @@ body .yith-wcbk-booking-search-form form textarea {
   border-radius: var(--proteo-forms_input_borde_radius, 0);
   padding-top: 3px;
   padding-bottom: 3px;
+  min-height: 48px;
+}
+body .yith-wcbk-booking-search-form .select2-container--default .select2-selection--multiple {
+  margin-top: 0;
   min-height: 48px;
 }
 

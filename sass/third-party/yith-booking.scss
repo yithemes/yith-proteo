@@ -63,7 +63,8 @@ body .yith-wcbk-booking-search-form {
 			border-radius: var(--proteo-forms_input_borde_radius, 0);
 		}
 
-		.yith-wcbk-date-range-picker {
+		.yith-wcbk-date-range-picker,
+		.select2-container--default .select2-selection--multiple  {
 			border: none;
 			border-color: var(--proteo-forms_input_border_color, #cccccc);
 			border-width: var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width);
@@ -130,6 +131,11 @@ body .yith-wcbk-booking-search-form {
 			padding-bottom: 3px;
 			min-height: 48px;
 		}
+	}
+
+	.select2-container--default .select2-selection--multiple {
+		margin-top: 0;
+		min-height: 48px;
 	}
 }
 
