@@ -367,7 +367,7 @@
 			stickySidebar();
 		} );
 		stickySidebar();
-		$( window ).load( function () {
+		$( window ).on( 'load', function(){
 			stickySidebar();
 		} );
 	}
