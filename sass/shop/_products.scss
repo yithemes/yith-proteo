@@ -262,14 +262,31 @@ body {
 				opacity: 1;
 			}
 
+			.yith-proteo-product-loop-actions {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				align-content: center;
+
+				a {
+					position: static !important;
+				}
+			}
+
 			a:not(.woocommerce-loop-product__link),
 			.wc-block-grid__product-add-to-cart,
-			.view-details, 
-			.added_to_cart.wc-forward {
+			.view-details {
 				position: absolute;
 				z-index: 101;
 				opacity: 0;
 				bottom: initial;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				align-content: center;
+				margin: 0 auto 15px !important;
 
 				&.added {
 					display: none;
@@ -277,7 +294,6 @@ body {
 			}
 
 			.view-details {
-				margin-top: 100px;
 
 				color: #ffffff;
 				border-color: #ffffff;
@@ -290,10 +306,6 @@ body {
 				&.unstyled_button:hover {
 					background-color: transparent;
 				}
-			}
-
-			.wc-block-grid__product-add-to-cart .view-details {
-				margin-top: 15px;
 			}
 
 			.wc-block-grid__product-add-to-cart a {
