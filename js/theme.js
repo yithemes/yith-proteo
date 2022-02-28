@@ -330,7 +330,7 @@
 	}
 
 	// Shop page title layout fix
-	$( document ).on( 'yith_proteo_woocommmerce_pages_title_layout', function() {
+	$( document ).on( 'yith_proteo_woocommmerce_pages_title_layout yith-wcan-ajax-filtered', function() {
 		if (typeof yith_proteo != 'undefined' && yith_proteo.yith_proteo_page_title_layout == 'outside') {
 			$( 'body.woocommerce.archive' ).find( 'header.woocommerce-products-header' ).prependTo($('#content > .container'));
 			$( 'body.woocommerce.archive' ).find( '.woocommerce-breadcrumb' ).prependTo($('#content > .container'));
