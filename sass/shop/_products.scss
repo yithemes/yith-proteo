@@ -21,6 +21,10 @@ ul.products,
 		clear: both;
 	}
 
+	.yith-quick-view.yith-inline {
+		grid-column: 1 / span 1;
+	}
+
 	li.product,
 	li.wc-block-grid__product {
 		list-style: none;

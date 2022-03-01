@@ -8,6 +8,10 @@
 .wc-block-grid ul.wc-block-grid__products {
     grid-template-columns: repeat(2, 1fr);
   }
+  ul.products .yith-quick-view.yith-inline,
+.wc-block-grid ul.wc-block-grid__products .yith-quick-view.yith-inline {
+    grid-column: 1/span 2;
+  }
 }
 /* Tablet devices and up*/
 @media (min-width: /*<yith_proteo_tablet_device_width>*/768px/*</yith_proteo_tablet_device_width>*/) {
@@ -51,9 +55,15 @@ table.shop_table_responsive tr td {
   ul.products, .wc-block-grid ul.wc-block-grid__products {
     grid-template-columns: repeat(3, 1fr);
   }
+  ul.products .yith-quick-view.yith-inline, .wc-block-grid ul.wc-block-grid__products .yith-quick-view.yith-inline {
+    grid-column: 1/span 3;
+  }
 
   ul.products.columns-3, .wc-block-grid.has-3-columns ul.wc-block-grid__products {
     grid-template-columns: repeat(3, 1fr);
+  }
+  ul.products.columns-3 .yith-quick-view.yith-inline, .wc-block-grid.has-3-columns ul.wc-block-grid__products .yith-quick-view.yith-inline {
+    grid-column: 1/span 3;
   }
 }
 /* Just next tablet size (desktops, 769px and up) */
@@ -141,25 +151,43 @@ table.shop_table_responsive tr td {
   ul.products, .wc-block-grid ul.wc-block-grid__products {
     grid-template-columns: repeat(4, 1fr);
   }
+  ul.products .yith-quick-view.yith-inline, .wc-block-grid ul.wc-block-grid__products .yith-quick-view.yith-inline {
+    grid-column: 1/span 4;
+  }
 
   ul.products.columns-4, .wc-block-grid.has-4-columns ul.wc-block-grid__products {
     grid-template-columns: repeat(4, 1fr);
+  }
+  ul.products.columns-4 .yith-quick-view.yith-inline, .wc-block-grid.has-4-columns ul.wc-block-grid__products .yith-quick-view.yith-inline {
+    grid-column: 1/span 4;
   }
 
   ul.products.columns-5, .wc-block-grid.has-5-columns ul.wc-block-grid__products {
     grid-template-columns: repeat(5, 1fr);
   }
+  ul.products.columns-5 .yith-quick-view.yith-inline, .wc-block-grid.has-5-columns ul.wc-block-grid__products .yith-quick-view.yith-inline {
+    grid-column: 1/span 5;
+  }
 
   ul.products.columns-6, .wc-block-grid.has-6-columns ul.wc-block-grid__products {
     grid-template-columns: repeat(6, 1fr);
+  }
+  ul.products.columns-6 .yith-quick-view.yith-inline, .wc-block-grid.has-6-columns ul.wc-block-grid__products .yith-quick-view.yith-inline {
+    grid-column: 1/span 6;
   }
 
   ul.products.columns-7, .wc-block-grid.has-7-columns ul.wc-block-grid__products {
     grid-template-columns: repeat(7, 1fr);
   }
+  ul.products.columns-7 .yith-quick-view.yith-inline, .wc-block-grid.has-7-columns ul.wc-block-grid__products .yith-quick-view.yith-inline {
+    grid-column: 1/span 7;
+  }
 
   ul.products.columns-8, .wc-block-grid.has-8-columns ul.wc-block-grid__products {
     grid-template-columns: repeat(8, 1fr);
+  }
+  ul.products.columns-8 .yith-quick-view.yith-inline, .wc-block-grid.has-8-columns ul.wc-block-grid__products .yith-quick-view.yith-inline {
+    grid-column: 1/span 8;
   }
 }
 @media (max-width: 1599.98px) {
