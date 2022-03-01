@@ -240,6 +240,30 @@
 			)
 		)
 	);
+
+	// Footer widget title font family.
+	$wp_customize->add_setting(
+		'yith_proteo_footer_widgets_title_font_family',
+		array(
+			'sanitize_callback' => 'yith_proteo_google_font_sanitization',
+			'default'           => get_theme_mod( 'yith_proteo_widget_title_font', '{"font":"Montserrat","regularweight":"700","category":"sans-serif"}' ),
+		)
+	);
+	$wp_customize->add_control(
+		new Google_Font_Select_Custom_Control(
+			$wp_customize,
+			'yith_proteo_footer_widgets_title_font_family',
+			array(
+				'label'       => esc_html_x( 'Widgets title font', 'Customizer option name', 'yith-proteo' ),
+				'section'     => 'yith_proteo_footer_management',
+				'input_attrs' => array(
+					'font_count' => 'all',
+					'orderby'    => 'alpha',
+				),
+			)
+		)
+	);
+
 	// Footer widget title font size options.
 	$wp_customize->add_setting(
 		'yith_proteo_footer_widgets_title_font_size',
@@ -251,7 +275,7 @@
 	$wp_customize->add_control(
 		'yith_proteo_footer_widgets_title_font_size',
 		array(
-			'label'   => esc_html_x( 'Widgets title Font size', 'Customizer option name', 'yith-proteo' ),
+			'label'   => esc_html_x( 'Widgets title font size', 'Customizer option name', 'yith-proteo' ),
 			'section' => 'yith_proteo_footer_management',
 			'type'    => 'number',
 		)

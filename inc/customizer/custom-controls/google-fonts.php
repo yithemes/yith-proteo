@@ -10,7 +10,7 @@ define( 'YITH_PROTEO_GFONT_VERSION', '1.0.0' );
 /**
  * Get the font family
  *
- * @param object $font Json containing the font.
+ * @param string $font Json containing the font.
  */
 function yith_proteo_get_font_family( $font ) {
 	$decoded = json_decode( $font );
@@ -20,7 +20,7 @@ function yith_proteo_get_font_family( $font ) {
 /**
  * Get the font weight
  *
- * @param object $font Json containing the font.
+ * @param string $font Json containing the font.
  */
 function yith_proteo_get_font_weight( $font ) {
 	$decoded           = json_decode( $font );
@@ -35,7 +35,7 @@ function yith_proteo_get_font_weight( $font ) {
 /**
  * Get the font weight raw
  *
- * @param object $font Json containing the font.
+ * @param string $font Json containing the font.
  */
 function yith_proteo_get_font_weight_raw( $font ) {
 	$decoded = json_decode( $font );
@@ -45,7 +45,7 @@ function yith_proteo_get_font_weight_raw( $font ) {
 /**
  * Get the font style
  *
- * @param object $font Json containing the font.
+ * @param string $font Json containing the font.
  */
 function yith_proteo_get_font_style( $font ) {
 	$decoded = json_decode( $font );
@@ -56,7 +56,7 @@ function yith_proteo_get_font_style( $font ) {
 /**
  * Get the font category
  *
- * @param object $font Json containing the font.
+ * @param string $font Json containing the font.
  */
 function yith_proteo_get_font_category( $font ) {
 	$decoded = json_decode( $font );
@@ -74,57 +74,61 @@ function yith_proteo_get_font_category( $font ) {
  */
 function yith_proteo_read_all_font_options() {
 	$options = array(
-		'site_title_font'                     => array(
+		'site_title_font'                              => array(
 			'default'  => '{"font":"Jost","regularweight":"600","category":"sans-serif"}',
 			'selector' => '.site-branding .site-title',
 		),
-		'tagline_font'                        => array(
+		'tagline_font'                                 => array(
 			'default'  => '{"font":"Jost","regularweight":"regular","category":"sans-serif"}',
 			'selector' => '.site-branding .site-description',
 		),
-		'yith_proteo_body_font'               => array(
+		'yith_proteo_body_font'                        => array(
 			'default'  => '{"font":"Montserrat","regularweight":"regular","category":"sans-serif"}',
 			'selector' => 'body, body.yith-woocompare-popup',
 		),
-		'yith_proteo_h1_font'                 => array(
+		'yith_proteo_h1_font'                          => array(
 			'default'  => '{"font":"Montserrat","regularweight":"700","category":"sans-serif"}',
 			'selector' => 'h1, body.page header.entry-header h1, article:not(.has-post-thumbnail).page header.entry-header h1',
 		),
-		'yith_proteo_h2_font'                 => array(
+		'yith_proteo_h2_font'                          => array(
 			'default'  => '{"font":"Montserrat","regularweight":"700","category":"sans-serif"}',
 			'selector' => 'h2, .wp-block-latest-posts li > a',
 		),
-		'yith_proteo_h3_font'                 => array(
+		'yith_proteo_h3_font'                          => array(
 			'default'  => '{"font":"Montserrat","regularweight":"700","category":"sans-serif"}',
 			'selector' => 'h3',
 		),
-		'yith_proteo_h4_font'                 => array(
+		'yith_proteo_h4_font'                          => array(
 			'default'  => '{"font":"Montserrat","regularweight":"700","category":"sans-serif"}',
 			'selector' => 'h4',
 		),
-		'yith_proteo_h5_font'                 => array(
+		'yith_proteo_h5_font'                          => array(
 			'default'  => '{"font":"Montserrat","regularweight":"700","category":"sans-serif"}',
 			'selector' => 'h5',
 		),
-		'yith_proteo_h6_font'                 => array(
+		'yith_proteo_h6_font'                          => array(
 			'default'  => '{"font":"Montserrat","regularweight":"700","category":"sans-serif"}',
 			'selector' => 'h6',
 		),
-		'yith_proteo_header_main_menu_font'   => array(
+		'yith_proteo_header_main_menu_font'            => array(
 			'default'  => '{"font":"Montserrat","regularweight":"regular","category":"sans-serif"}',
 			'selector' => '.main-navigation ul',
 		),
-		'yith_proteo_product_page_title_font' => array(
+		'yith_proteo_product_page_title_font'          => array(
 			'default'  => '{"font":"Montserrat","regularweight":"regular","category":"sans-serif"}',
 			'selector' => 'h1.product_title',
 		),
-		'yith_proteo_widget_title_font'       => array(
+		'yith_proteo_widget_title_font'                => array(
 			'default'  => get_theme_mod( 'yith_proteo_h3_font', '{"font":"Montserrat","regularweight":"700","category":"sans-serif"}' ),
 			'selector' => 'h2.widget-title, h3.widget-title',
 		),
-		'yith_proteo_widget_content_font'     => array(
+		'yith_proteo_widget_content_font'              => array(
 			'default'  => get_theme_mod( 'yith_proteo_body_font', '{"font":"Montserrat","regularweight":"regular","category":"sans-serif"}' ),
 			'selector' => '.widget',
+		),
+		'yith_proteo_footer_widgets_title_font_family' => array(
+			'default'  => get_theme_mod( 'yith_proteo_widget_title_font', '{"font":"Montserrat","regularweight":"700","category":"sans-serif"}' ),
+			'selector' => '#main-footer .widget-title',
 		),
 
 	);

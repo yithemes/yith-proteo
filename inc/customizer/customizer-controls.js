@@ -1160,6 +1160,7 @@
 			wp.customize.control('yith_proteo_footer_font_color' ).toggle( collapsed );
 			wp.customize.control('yith_proteo_footer_link_color' ).toggle( collapsed );
 			wp.customize.control('yith_proteo_footer_link_hover_color' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_footer_widgets_title_font_family' ).toggle( collapsed );
 			wp.customize.control('yith_proteo_footer_widgets_title_font_size' ).toggle( collapsed );
 			wp.customize.control('yith_proteo_footer_widgets_title_color' ).toggle( collapsed );
 			wp.customize.control('yith_proteo_footer_align' ).toggle( collapsed );
@@ -1170,6 +1171,7 @@
 			wp.customize.control('yith_proteo_footer_font_color' ).toggle( false );
 			wp.customize.control('yith_proteo_footer_link_color' ).toggle( false );
 			wp.customize.control('yith_proteo_footer_link_hover_color' ).toggle( false );
+			wp.customize.control('yith_proteo_footer_widgets_title_font_family' ).toggle( false );
 			wp.customize.control('yith_proteo_footer_widgets_title_font_size' ).toggle( false );
 			wp.customize.control('yith_proteo_footer_widgets_title_color' ).toggle( false );
 			wp.customize.control('yith_proteo_footer_align' ).toggle( false );
