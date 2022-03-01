@@ -127,7 +127,7 @@ function yith_proteo_read_all_font_options() {
 			'selector' => '.widget',
 		),
 		'yith_proteo_footer_widgets_title_font_family' => array(
-			'default'  => get_theme_mod( 'yith_proteo_widget_title_font', '{"font":"Montserrat","regularweight":"700","category":"sans-serif"}' ),
+			'default'  => get_theme_mod( 'yith_proteo_widget_title_font', get_theme_mod( 'yith_proteo_h3_font', '{"font":"Montserrat","regularweight":"700","category":"sans-serif"}' ) ),
 			'selector' => '#main-footer .widget-title',
 		),
 
