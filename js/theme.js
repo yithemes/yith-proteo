@@ -392,14 +392,15 @@
 			}
 		}
 	}
-
-	$( window ).on( 'scroll', function () {
+	if (typeof yith_proteo != 'undefined' && yith_proteo.yith_proteo_sticky_product_image == 'yes') {
+		$( window ).on( 'scroll', function () {
+			stickySingleProductImage();
+		} );
 		stickySingleProductImage();
-	} );
-	stickySingleProductImage();
-	$( window ).on( 'load', function(){
-		stickySingleProductImage();
-	} );
+		$( window ).on( 'load', function(){
+			stickySingleProductImage();
+		} );
+	}
 
 	// Support to plugin named "Grid/List View for WooCommerce"
 	$(document).on('berocket_lgv_after_style_set', yith_proteo_berocket_grid_list_products_layout_fixer);

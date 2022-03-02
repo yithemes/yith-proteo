@@ -180,6 +180,28 @@
 		);
 	}
 
+	// Enable sticky product image.
+	if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
+		$wp_customize->add_setting(
+			'yith_proteo_product_page_sticky_image',
+			array(
+				'default'           => 'yes',
+				'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+			)
+		);
+
+		$wp_customize->add_control(
+			new Customizer_Control_Yes_No(
+				$wp_customize,
+				'yith_proteo_product_page_sticky_image',
+				array(
+					'label'   => esc_html_x( 'Make product image sticky when scrolling', 'Customizer option name', 'yith-proteo' ),
+					'section' => 'yith_proteo_product_page_management',
+				)
+			)
+		);
+	}
+
 	// Price and add to cart management.
 	$wp_customize->add_setting(
 		'yith_proteo_product_page_price_and_add_to_cart_group_title',

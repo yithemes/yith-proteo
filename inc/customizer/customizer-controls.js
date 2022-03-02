@@ -261,12 +261,14 @@
 				wp.customize.control('yith_proteo_product_page_image_zoom' ).toggle( collapsed );
 				wp.customize.control('yith_proteo_product_page_image_lightbox' ).toggle( collapsed );
 				wp.customize.control('yith_proteo_product_page_gallery_slider' ).toggle( collapsed );
+				wp.customize.control('yith_proteo_product_page_sticky_image' ).toggle( collapsed );
 			}
 
 			function yith_proteo_toggle_product_image_section_controls_list() {
 				wp.customize.control('yith_proteo_product_page_image_zoom' ).toggle( false );
 				wp.customize.control('yith_proteo_product_page_image_lightbox' ).toggle( false );
 				wp.customize.control('yith_proteo_product_page_gallery_slider' ).toggle( false );
+				wp.customize.control('yith_proteo_product_page_sticky_image' ).toggle( false );
 			}
 
 			// PRODUCT PRICE AND ADD TO CART MANAGEMENT
