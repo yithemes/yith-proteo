@@ -372,6 +372,35 @@
 		} );
 	}
 
+	// sticky the single product image if it's fully visible
+	function stickySingleProductImage() {
+		var sidebar = $( '.woocommerce-product-gallery' );
+		if ( sidebar.length ) {
+			var site_header = $('.site-header'),
+				sidebarTop = 80;
+
+			if ( site_header.hasClass( 'sticky' ) ) {
+				sidebarTop = site_header.height() + 80;
+			}
+
+			if ( !isMobile() && window.innerHeight >= ( sidebar.outerHeight() + sidebarTop ) ) {
+				sidebar.css( { position: 'sticky', top: sidebarTop + 'px' } );
+				sidebar.addClass( 'sticky-sidebar' );
+			} else {
+				sidebar.css( { position: 'static' } );
+				sidebar.removeClass( 'sticky-sidebar' );
+			}
+		}
+	}
+
+	$( window ).on( 'scroll', function () {
+		stickySingleProductImage();
+	} );
+	stickySingleProductImage();
+	$( window ).on( 'load', function(){
+		stickySingleProductImage();
+	} );
+
 	// Support to plugin named "Grid/List View for WooCommerce"
 	$(document).on('berocket_lgv_after_style_set', yith_proteo_berocket_grid_list_products_layout_fixer);
 
