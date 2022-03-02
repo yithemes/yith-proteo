@@ -33,9 +33,10 @@ body .wpforms-form button[type=submit].wpforms-submit {
 		border-color: var(--proteo-button_1_border_hover_color, $color__border-button-hover);
 		background: var(--proteo-button_1_bg_hover_color, $color__link-hover);
 		background-color: var(--proteo-button_1_bg_hover_color, $color__link-hover);
-	}
-	&:hover {
 		color: var(--proteo-button_1_font_hover_color, #ffffff);
+	}
+	&:visited {
+		color: var(--proteo-button_1_font_color, #ffffff);
 	}
 }
 
