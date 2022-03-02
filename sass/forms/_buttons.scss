@@ -29,7 +29,7 @@ body .wpforms-form button[type=submit].wpforms-submit {
 	margin-bottom: 15px;
 	font-weight: 600;
 
-	&:hover {
+	&:hover, &:visited {
 		border-color: var(--proteo-button_1_border_hover_color, $color__border-button-hover);
 		background: var(--proteo-button_1_bg_hover_color, $color__link-hover);
 		background-color: var(--proteo-button_1_bg_hover_color, $color__link-hover);
@@ -42,7 +42,7 @@ body .wpforms-form button[type=submit].wpforms-submit {
 	a.wp-block-button__link {
 		transition: all ease 0.3s;
 
-		&:hover {
+		&:hover, &:visited {
 			border-color: var(--proteo-button_1_border_hover_color, $color__border-button-hover);
 			background: var(--proteo-button_1_bg_hover_color, $color__link-hover);
 			background-color: var(--proteo-button_1_bg_hover_color, $color__link-hover);
@@ -161,12 +161,13 @@ body.update-cart-button-style td.actions .empty-cart,
 	/** Gutenberg buttons inheritance **/
 	a.wp-block-button__link {
 		transition: all ease 0.3s;
-	}
-	a.wp-block-button__link:hover {
-		border-color: var(--proteo-button_1_border_hover_color, $color__border-button-hover);
-		background: var(--proteo-button_1_bg_hover_color, $color__link-hover);
-		background-color: var(--proteo-button_1_bg_hover_color, $color__link-hover);
-		color: var(--proteo-button_1_font_hover_color, #ffffff);
+		&:hover,
+		&:visited {
+			border-color: var(--proteo-button_1_border_hover_color, $color__border-button-hover);
+			background: var(--proteo-button_1_bg_hover_color, $color__link-hover);
+			background-color: var(--proteo-button_1_bg_hover_color, $color__link-hover);
+			color: var(--proteo-button_1_font_hover_color, #ffffff);
+		}
 	}
 }
 
