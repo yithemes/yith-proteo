@@ -2,13 +2,22 @@ module.exports = function(grunt) {
 	
 	grunt.initConfig({
 		sass: {
-			dist: {
+			dev: {
 				files: {
 					'style.css': 'sass/style.scss',
 					'responsive.css': 'sass/responsive.scss',
 				},
 				sourceComments: true
-			}
+			},
+			dist: {
+				files: {
+					'style.css': 'sass/style.scss',
+					'responsive.css': 'sass/responsive.scss',
+				},
+				sourceComments: true,
+				options: { 'no-source-map': '' }
+			},
+
 		},
 		uglify: {
 			my_target: {
@@ -21,7 +30,7 @@ module.exports = function(grunt) {
 					'inc/customizer/custom-controls/spacing-control.min.js': 'inc/customizer/custom-controls/spacing-control.js',
 					'inc/customizer/custom-controls/font-selector-assets/js/select.min.js': 'inc/customizer/custom-controls/font-selector-assets/js/select.js',
 				}
-			}
+			},
 		},
 		watch: {
 			css: {
@@ -39,6 +48,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	
-	grunt.registerTask('default', ['sass', 'uglify']);
+	grunt.registerTask('default', ['sass:dev', 'uglify']);
+	grunt.registerTask('dist', ['sass', 'uglify']);
 	
 };
