@@ -1,3 +1,11 @@
+<p align="center">
+<img src="https://img.shields.io/github/v/release/yithemes/yith-proteo?label=stable" alt="Latest release">
+<img src="https://img.shields.io/github/license/yithemes/yith-proteo" alt="License">
+<img src="https://img.shields.io/github/last-commit/yithemes/yith-proteo" alt="Last commit">
+<img src="https://img.shields.io/github/languages/code-size/yithemes/yith-proteo" alt="Code size">
+</p>
+
+
 YITH Proteo
 ===
 
