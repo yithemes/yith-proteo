@@ -13,8 +13,10 @@
     "url": "https://github.com/yithemes/yith-proteo/issues"
   },
   "devDependencies": {
+    "sass": "^1.49.9",
     "dir-archiver": "^1.1.1",
     "grunt": "^1.3.0",
+    "grunt-cli": "^1.4.3",
     "grunt-contrib-sass": "^2.0.0",
     "grunt-contrib-uglify": "^5.0.0",
     "grunt-contrib-watch": "^1.1.0"
