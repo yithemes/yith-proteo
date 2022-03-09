@@ -34,7 +34,7 @@ Screenshot
 
 ![Theme screenshot](https://proteo.yithemes.com/wp-content/uploads/2020/09/group-6.jpg)
 
-Installation
+Installation & Development
 ---------------
 
 ### Requirements
@@ -52,8 +52,6 @@ $ npm install
 ```
 
 
-Development
----------------
 ### Available CLI commands
 
 `YITH Proteo` comes packed with CLI commands tailored for theme development :
@@ -71,3 +69,28 @@ If you run into problems while using grunt tasks, it may be necessary to do, onl
 - open the Git Bash console with Administrative permissions
 - `npm install -g sass`
 - `npm install -g grunt-cli`
+
+Documentation
+-------------
+
+You can view detailed YITH Proteo documentation on the [YITH documentations website](https://docs.yithemes.com/yith-proteo/).
+
+Translations
+--------------
+
+YITH Proteo translations can be downloaded from [WordPress.org](https://translate.wordpress.org/projects/wp-themes/yith-proteo).
+
+To use one of these translations it is recommended that you upload it to the folder `wp-content/languages/themes/`. 
+
+Adding .mo files to this location means the file will not be lost when you update the theme.
+
+### Contribute to localize YITH Proteo
+
+Localization is a very important part of every WordPress theme.  
+
+We have a project on [translate.wordpress.org](https://translate.wordpress.org/projects/wp-themes/yith-proteo). You can join the localization team of your language and help by translating YITH Proteo.
+
+Help & support
+---------------
+
+You can post help requests on the [WordPress support forums](https://wordpress.org/support/theme/yith-proteo/). Please remember, GitHub is for bug reports and contributions, _not_ support.
