@@ -5,7 +5,7 @@ Requires at least: 4.9.6
 Tested up to: WordPress 5.8
 Requires PHP: 5.6
 Stable tag: 1.8.0
-YITH Proteo WordPress Theme, Copyright 2021 YITH
+YITH Proteo WordPress Theme, Copyright 2022 YITH
 YITH Proteo is distributed under the terms of the GNU GPL
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
