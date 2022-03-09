@@ -223,6 +223,26 @@ if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
 	);
 }
 
+// Blog page options group.
+$wp_customize->add_setting(
+	'yith_proteo_blog_page_options_group_title',
+	array(
+		'default'           => '',
+		'transport'         => 'postMessage',
+		'sanitize_callback' => 'wp_kses_post',
+	)
+);
+$wp_customize->add_control(
+	new WP_Customize_Notice(
+		$wp_customize,
+		'yith_proteo_blog_page_options_group_title',
+		array(
+			'label'   => esc_html_x( 'Blog page options', 'Customizer options group title', 'yith-proteo' ),
+			'section' => 'yith_proteo_blog_management',
+		)
+	)
+);
+
 // Single post options group.
 $wp_customize->add_setting(
 	'yith_proteo_single_post_options_group_title',
