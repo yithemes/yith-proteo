@@ -4,13 +4,15 @@
 
 	.modal {
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-		border-radius: 0;
+		border-radius: 30px;
+		padding: 50px;
+		max-width: 650px;
 
 		a.close-modal {
 			background: none;
 			display: block;
-			top: 10px;
-			right: 10px;
+			top: 20px;
+			right: 20px;
 			font-size: 0;
 			text-indent: 0;
 			text-decoration: none;
@@ -22,6 +24,13 @@
 				display: block;
 				font-size: 2rem;
 				color: rgba(0, 0, 0, 0.3);
+				transition: all ease 0.3s;
+			}
+
+			&:hover{
+				&:before {
+					color: rgba(0, 0, 0, 0.7);
+				}
 			}
 		}
 
