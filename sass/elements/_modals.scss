@@ -1,12 +1,12 @@
 .jquery-modal.blocker {
-	background-color: rgba(7, 90, 93, 0.6);
-	z-index: 100;
+	background-color: rgba(0, 0, 0, 0.8);
+	z-index: 1000;
 
 	.modal {
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 		border-radius: 30px;
 		padding: 50px;
-		max-width: 650px;
+		max-width: 690px;
 
 		a.close-modal {
 			background: none;
