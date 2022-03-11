@@ -265,9 +265,9 @@ if ( ! function_exists( 'yith_proteo_sanitize_select' ) ) :
 	/**
 	 * Select sanitization function
 	 *
-	 * @param string $input input must be a slug: lowercase alphanumeric characters, dashes and underscores are allowed only.
+	 * @param string       $input input must be a slug: lowercase alphanumeric characters, dashes and underscores are allowed only.
 	 *
-	 * @param array  $setting select value to check.
+	 * @param array|object $setting select value to check.
 	 *
 	 * @return string
 	 */
@@ -288,9 +288,9 @@ if ( ! function_exists( 'yith_proteo_sanitize_radio' ) ) :
 	/**
 	 * Radio sanitization function
 	 *
-	 * @param string $input input must be a slug: lowercase alphanumeric characters, dashes and underscores are allowed only.
+	 * @param string       $input input must be a slug: lowercase alphanumeric characters, dashes and underscores are allowed only.
 	 *
-	 * @param array  $setting select value to check.
+	 * @param array|object $setting select value to check.
 	 *
 	 * @return string
 	 */
@@ -312,9 +312,9 @@ if ( ! function_exists( 'yith_proteo_sanitize_int_array' ) ) :
 	/**
 	 * Int Array sanitization function
 	 *
-	 * @param string $input input must be a slug: lowercase alphanumeric characters, dashes and underscores are allowed only.
+	 * @param string|array $input input must be a slug: lowercase alphanumeric characters, dashes and underscores are allowed only.
 	 *
-	 * @param array  $setting select value to check.
+	 * @param array        $setting select value to check.
 	 *
 	 * @return string
 	 */
@@ -652,6 +652,17 @@ if ( ! function_exists( 'yith_proteo_is_custom_responsive_enabled' ) ) {
 	 */
 	function yith_proteo_is_custom_responsive_enabled() {
 		return 'no' !== get_theme_mod( 'yith_proteo_use_custom_responsive', 'no' );
+	}
+}
+
+if ( ! function_exists( 'yith_proteo_blog_posts_with_borders_enabled' ) ) {
+	/**
+	 * Callback function to check if posts with border option is enabled
+	 *
+	 * @return bool
+	 */
+	function yith_proteo_blog_posts_with_borders_enabled() {
+		return 'no' !== get_theme_mod( 'yith_proteo_blog_page_posts_with_border', 'no' );
 	}
 }
 
