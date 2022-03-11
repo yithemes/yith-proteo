@@ -249,7 +249,7 @@ $wp_customize->add_setting(
 	array(
 		'default'           => 2,
 		'sanitize_callback' => 'absint',
-		'transport'         => 'postMessage',
+		'transport'         => 'refresh',
 	)
 );
 $wp_customize->add_control(
@@ -267,7 +267,7 @@ $wp_customize->add_control(
 	)
 );
 
-// Post date enable.
+// First post full width.
 if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
 	$wp_customize->add_setting(
 		'yith_proteo_blog_page_first_post_wide',
@@ -289,13 +289,35 @@ if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
 	);
 }
 
+// Sticky posts full width.
+if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
+	$wp_customize->add_setting(
+		'yith_proteo_blog_page_sticky_posts_wide',
+		array(
+			'default'           => 'yes',
+			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+		)
+	);
+
+	$wp_customize->add_control(
+		new Customizer_Control_Yes_No(
+			$wp_customize,
+			'yith_proteo_blog_page_sticky_posts_wide',
+			array(
+				'label'   => esc_html_x( 'Show sticky posts full width', 'Customizer option name', 'yith-proteo' ),
+				'section' => 'yith_proteo_blog_management',
+			)
+		)
+	);
+}
+
 // Posts spacing.
 $wp_customize->add_setting(
-	'yith_proteo_blog_page_posts_page',
+	'yith_proteo_blog_page_posts_spacing',
 	array(
 		'default'           => array(
-			'horizontal' => 15,
-			'vertical'   => 35,
+			'horizontal' => 30,
+			'vertical'   => 50,
 		),
 		'sanitize_callback' => 'yith_proteo_sanitize_int_array',
 	)
@@ -303,7 +325,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
 	new Customizer_Control_Spacing(
 		$wp_customize,
-		'yith_proteo_blog_page_posts_page',
+		'yith_proteo_blog_page_posts_spacing',
 		array(
 			'label'    => esc_html_x( 'Space between posts (px)', 'Customizer option name', 'yith-proteo' ),
 			'section'  => 'yith_proteo_blog_management',

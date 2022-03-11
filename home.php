@@ -27,15 +27,14 @@ get_header();
 
 					$post_count = 0;
 					?>
-					<div class="row">
+					<div class="blog-posts columns-<?php echo esc_attr( yith_proteo_get_blog_grid_columns() ); ?>">
 						<?php
 						/* Start the Loop */
 						while ( have_posts() ) :
 							$post_count ++;
 							the_post();
 
-							if ( 1 === $post_count ) {
-								echo '<div class="col-md-12">';
+							if ( ( 1 === $post_count && yith_proteo_show_first_post_as_sticky() ) || ( is_sticky() && yith_proteo_show_sticky_posts_wide() ) || 1 === yith_proteo_get_blog_grid_columns() ) {
 								/**
 								* Include the Post-Type-specific template for the content.
 								* If you want to override this in a child theme, then include a file
@@ -43,7 +42,6 @@ get_header();
 								*/
 								get_template_part( 'template-parts/content', 'sticky' );
 							} else {
-								echo '<div class="col-lg-6">';
 								/**
 								* Include the Post-Type-specific template for the content.
 								* If you want to override this in a child theme, then include a file
@@ -51,9 +49,6 @@ get_header();
 								*/
 								get_template_part( 'template-parts/content', get_post_type() );
 							}
-
-							echo '</div>';
-
 						endwhile;
 
 						the_posts_navigation();

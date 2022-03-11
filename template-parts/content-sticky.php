@@ -9,7 +9,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'sticky-wide' ); ?>>
 	<header class="entry-header">
 		<?php
 		if ( is_single() && function_exists( 'woocommerce_breadcrumb' ) && ( 'yes' === get_theme_mod( 'yith_proteo_breadcrumb_enable', 'yes' ) ) ) {

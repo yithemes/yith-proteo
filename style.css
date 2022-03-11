@@ -5094,13 +5094,6 @@ html {
   overflow-x: hidden;
 }
 
-*,
-*:before,
-*:after {
-  /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
-  box-sizing: inherit;
-}
-
 * {
   outline-color: var(--proteo-main_color_shade, #448a85);
 }
@@ -7316,6 +7309,26 @@ header.entry-header .entry-title a:hover {
 
 body.blog header.page-header {
   text-align: var(--proteo-page_title_align);
+}
+body.blog .blog-posts {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: var(--proteo-blog_page_posts_horizontal_spacing);
+  grid-row-gap: var(--proteo-blog_page_posts_vertical_spacing);
+}
+body.blog .blog-posts article.post {
+  padding: 15px;
+  border: 1px solid #ebebeb;
+  border-radius: 15px;
+  overflow: hidden;
+  background: #fff;
+}
+body.blog .blog-posts .sticky-wide {
+  grid-column: 1/-1;
+}
+body.blog .blog-posts.columns-2 {
+  grid-template-columns: repeat(2, 1fr);
 }
 
 header .entry-meta {
@@ -13722,5 +13735,3 @@ body .wpcf7-not-valid {
     width: -webkit-fill-available;
   }
 }
-
-/*# sourceMappingURL=style.css.map */

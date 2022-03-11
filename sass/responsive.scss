@@ -96,6 +96,9 @@ $yith_proteo_large_desktop_device_width_min: '/*<yith_proteo_large_desktop_devic
 			grid-column: 1 / span 3;
 		}
 	}
+	body.blog .blog-posts.columns-3 {
+		grid-template-columns: repeat(3, 1fr);
+	}
 }
 
 /* Just next tablet size (desktops, 769px and up) */
@@ -193,6 +196,10 @@ $yith_proteo_large_desktop_device_width_min: '/*<yith_proteo_large_desktop_devic
 		.yith-quick-view.yith-inline {
 			grid-column: 1 / span 4;
 		}
+	}
+
+	body.blog .blog-posts.columns-4 {
+		grid-template-columns: repeat(4, 1fr);
 	}
 	
 	ul.products.columns-5, .wc-block-grid.has-5-columns ul.wc-block-grid__products {

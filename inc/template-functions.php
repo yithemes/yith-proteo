@@ -411,3 +411,39 @@ add_action( 'yith_proteo_content_end', 'yith_proteo_content_end', 10 );
 // Elementor integration.
 add_action( 'elementor/theme/after_do_header', 'yith_proteo_content_start' );
 add_action( 'elementor/theme/before_do_footer', 'yith_proteo_content_end' );
+
+/**
+ * Get blog page number of posts per row.
+ *
+ * @return int
+ */
+function yith_proteo_get_blog_grid_columns() {
+
+	$columns = get_theme_mod( 'yith_proteo_blog_page_posts_per_row', 2 );
+
+	return $columns;
+}
+
+/**
+ * Get layout for blog page first post
+ *
+ * @return bool
+ */
+function yith_proteo_show_first_post_as_sticky() {
+
+	$layout = 'yes' === get_theme_mod( 'yith_proteo_blog_page_first_post_wide', 'yes' ) ? true : false;
+
+	return $layout;
+}
+
+/**
+ * Get layout for blog page sticky posts
+ *
+ * @return bool
+ */
+function yith_proteo_show_sticky_posts_wide() {
+
+	$layout = 'yes' === get_theme_mod( 'yith_proteo_blog_page_sticky_posts_wide', 'yes' ) ? true : false;
+
+	return $layout;
+}

@@ -550,6 +550,7 @@ SPACING CONTROLS
 	display: -moz-box;
 	display: -ms-flexbox;
 	display: flex;
+	white-space: nowrap;
 }	
 .customize-control-spacing_control li {
 	display: inline-block;

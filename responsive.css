@@ -65,6 +65,10 @@ table.shop_table_responsive tr td {
   ul.products.columns-3 .yith-quick-view.yith-inline, .wc-block-grid.has-3-columns ul.wc-block-grid__products .yith-quick-view.yith-inline {
     grid-column: 1/span 3;
   }
+
+  body.blog .blog-posts.columns-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 /* Just next tablet size (desktops, 769px and up) */
 @media (min-width: /*<yith_proteo_tablet_device_width_next>*/769px/*</yith_proteo_tablet_device_width_next>*/) {
@@ -160,6 +164,10 @@ table.shop_table_responsive tr td {
   }
   ul.products.columns-4 .yith-quick-view.yith-inline, .wc-block-grid.has-4-columns ul.wc-block-grid__products .yith-quick-view.yith-inline {
     grid-column: 1/span 4;
+  }
+
+  body.blog .blog-posts.columns-4 {
+    grid-template-columns: repeat(4, 1fr);
   }
 
   ul.products.columns-5, .wc-block-grid.has-5-columns ul.wc-block-grid__products {
@@ -637,5 +645,3 @@ table.shop_table {
     margin-bottom: 35px;
   }
 }
-
-/*# sourceMappingURL=responsive.css.map */
