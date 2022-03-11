@@ -74,13 +74,18 @@ body.blog {
 		grid-column-gap: var(--proteo-blog_page_posts_horizontal_spacing);
 		grid-row-gap: var(--proteo-blog_page_posts_vertical_spacing);
 
-		article.post {
-			padding: 15px;
-			border: 1px solid #ebebeb;
-			border-radius: 15px;
-			overflow: hidden;
-			background: #fff; 
+		&.posts-with-border {
+			article.post {
+				padding: 15px;
+				border-style: solid;
+				border-width: var(--proteo-blog_page_posts_border_width);
+				border-radius: var(--proteo-blog_page_posts_border_radius);
+				border-color: var(--proteo-blog_page_posts_border_color);
+				overflow: hidden;
+				background: #fff; 
+			}
 		}
+	
 	}
 	.blog-posts .sticky-wide {
 		grid-column: 1 / -1;
@@ -89,7 +94,6 @@ body.blog {
 	.blog-posts.columns-2 {
 		grid-template-columns: repeat(2, 1fr);
 	}
-
 }
 
 header .entry-meta {

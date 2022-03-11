@@ -349,6 +349,7 @@ if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
 		array(
 			'default'           => 'no',
 			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+			'transport'         => 'refresh',
 		)
 	);
 

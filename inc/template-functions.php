@@ -447,3 +447,15 @@ function yith_proteo_show_sticky_posts_wide() {
 
 	return $layout;
 }
+
+/**
+ * Get border layout for blog posts
+ *
+ * @return bool
+ */
+function yith_proteo_show_blog_posts_with_borders() {
+
+	$layout = 'yes' === get_theme_mod( 'yith_proteo_blog_page_posts_with_border', 'yes' ) ? 'posts-with-border' : '';
+
+	return $layout;
+}

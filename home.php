@@ -27,7 +27,7 @@ get_header();
 
 					$post_count = 0;
 					?>
-					<div class="blog-posts columns-<?php echo esc_attr( yith_proteo_get_blog_grid_columns() ); ?>">
+					<div class="blog-posts columns-<?php echo esc_attr( yith_proteo_get_blog_grid_columns() ); ?> <?php echo esc_attr( yith_proteo_show_blog_posts_with_borders() ); ?>">
 						<?php
 						/* Start the Loop */
 						while ( have_posts() ) :
