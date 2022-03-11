@@ -443,7 +443,7 @@ function yith_proteo_show_first_post_as_sticky() {
  */
 function yith_proteo_show_sticky_posts_wide() {
 
-	$layout = 'yes' === get_theme_mod( 'yith_proteo_blog_page_sticky_posts_wide', 'yes' ) ? true : false;
+	$layout = 'yes' === get_theme_mod( 'yith_proteo_blog_page_sticky_posts_wide', 'no' ) ? true : false;
 
 	return $layout;
 }
@@ -455,7 +455,24 @@ function yith_proteo_show_sticky_posts_wide() {
  */
 function yith_proteo_show_blog_posts_with_borders() {
 
-	$layout = 'yes' === get_theme_mod( 'yith_proteo_blog_page_posts_with_border', 'yes' ) ? 'posts-with-border' : '';
+	$layout = 'yes' === get_theme_mod( 'yith_proteo_blog_page_posts_with_border', 'no' ) ? 'posts-with-border' : '';
 
 	return $layout;
+}
+
+add_filter( 'body_class', 'yith_proteo_block_blog_posts_with_borders' );
+
+/**
+ * Set border layout for block posts.
+ *
+ * @param array $classes Body classes.
+ * @return array
+ */
+function yith_proteo_block_blog_posts_with_borders( $classes ) {
+
+	$layout = 'yes' === get_theme_mod( 'yith_proteo_blog_page_posts_with_border', 'no' ) ? 'posts-with-border' : '';
+
+	$classes[] = $layout;
+
+	return $classes;
 }

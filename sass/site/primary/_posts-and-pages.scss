@@ -96,6 +96,37 @@ body.blog {
 	}
 }
 
+.wp-block-latest-posts__list.is-grid {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: 1fr;
+	grid-column-gap: var(--proteo-blog_page_posts_horizontal_spacing);
+	grid-row-gap: var(--proteo-blog_page_posts_vertical_spacing);
+
+	& > li {
+		width: 100%;
+		margin: 0;
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	&.columns-2 {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+body.posts-with-border {
+
+	.wp-block-latest-posts__list.is-grid  > li {
+		padding: 15px;
+		border-style: solid;
+		border-width: var(--proteo-blog_page_posts_border_width);
+		border-radius: var(--proteo-blog_page_posts_border_radius);
+		border-color: var(--proteo-blog_page_posts_border_color);
+		overflow: hidden;
+		background: #fff;
+	}
+}
+
 header .entry-meta {
 	text-align: initial;
 	font-size: 0.875rem;

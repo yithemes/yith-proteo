@@ -1,9 +1,5 @@
 /* Small devices (landscape phones and up) */
 @media (min-width: /*<yith_proteo_mobile_device_width>*/600px/*</yith_proteo_mobile_device_width>*/) {
-  .wp-block-latest-posts.columns-2 li {
-    width: calc(50% - 50px);
-  }
-
   ul.products,
 .wc-block-grid ul.wc-block-grid__products {
     grid-template-columns: repeat(2, 1fr);
@@ -66,7 +62,8 @@ table.shop_table_responsive tr td {
     grid-column: 1/span 3;
   }
 
-  body.blog .blog-posts.columns-3 {
+  body.blog .blog-posts.columns-3,
+.wp-block-latest-posts__list.is-grid.columns-3 {
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -166,7 +163,8 @@ table.shop_table_responsive tr td {
     grid-column: 1/span 4;
   }
 
-  body.blog .blog-posts.columns-4 {
+  body.blog .blog-posts.columns-4,
+.wp-block-latest-posts__list.is-grid.columns-4 {
     grid-template-columns: repeat(4, 1fr);
   }
 
@@ -402,6 +400,15 @@ table.shop_table_responsive tr td {
   .site-content {
     padding-left: 0 !important;
     padding-right: 0 !important;
+  }
+
+  body.blog .blog-posts.columns-2,
+body.blog .blog-posts.columns-3,
+body.blog .blog-posts.columns-4,
+.wp-block-latest-posts__list.is-grid.columns-2,
+.wp-block-latest-posts__list.is-grid.columns-3,
+.wp-block-latest-posts__list.is-grid.columns-4 {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (max-width: /*<yith_proteo_tablet_device_width>*/768px/*</yith_proteo_tablet_device_width>*/) {
@@ -643,6 +650,15 @@ table.shop_table {
 
   .wp-block-column {
     margin-bottom: 35px;
+  }
+
+  body.blog .blog-posts.columns-2,
+body.blog .blog-posts.columns-3,
+body.blog .blog-posts.columns-4,
+.wp-block-latest-posts__list.is-grid.columns-2,
+.wp-block-latest-posts__list.is-grid.columns-3,
+.wp-block-latest-posts__list.is-grid.columns-4 {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 

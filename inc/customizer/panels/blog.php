@@ -294,7 +294,7 @@ if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
 	$wp_customize->add_setting(
 		'yith_proteo_blog_page_sticky_posts_wide',
 		array(
-			'default'           => 'yes',
+			'default'           => 'no',
 			'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
 		)
 	);

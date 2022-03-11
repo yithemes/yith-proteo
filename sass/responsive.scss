@@ -14,10 +14,6 @@ $yith_proteo_large_desktop_device_width_min: '/*<yith_proteo_large_desktop_devic
 /* Small devices (landscape phones and up) */
 @media (min-width: $yith_proteo_mobile_device_width) {
 
-	.wp-block-latest-posts.columns-2 li {
-		width: calc(50% - 50px);
-	}
-
 	ul.products,
 	.wc-block-grid ul.wc-block-grid__products {
 		grid-template-columns: repeat(2, 1fr);
@@ -96,7 +92,8 @@ $yith_proteo_large_desktop_device_width_min: '/*<yith_proteo_large_desktop_devic
 			grid-column: 1 / span 3;
 		}
 	}
-	body.blog .blog-posts.columns-3 {
+	body.blog .blog-posts.columns-3,
+	.wp-block-latest-posts__list.is-grid.columns-3 {
 		grid-template-columns: repeat(3, 1fr);
 	}
 }
@@ -198,7 +195,8 @@ $yith_proteo_large_desktop_device_width_min: '/*<yith_proteo_large_desktop_devic
 		}
 	}
 
-	body.blog .blog-posts.columns-4 {
+	body.blog .blog-posts.columns-4,
+	.wp-block-latest-posts__list.is-grid.columns-4 {
 		grid-template-columns: repeat(4, 1fr);
 	}
 	
@@ -459,6 +457,16 @@ $yith_proteo_large_desktop_device_width_min: '/*<yith_proteo_large_desktop_devic
         padding-left: 0 !important;
         padding-right: 0 !important;
     }
+
+	body.blog .blog-posts.columns-2,
+	body.blog .blog-posts.columns-3,
+	body.blog .blog-posts.columns-4,
+	.wp-block-latest-posts__list.is-grid.columns-2,
+	.wp-block-latest-posts__list.is-grid.columns-3,
+	.wp-block-latest-posts__list.is-grid.columns-4 {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
 }
 
 // Small devices (landscape phones, less than 768px)
@@ -702,4 +710,12 @@ $yith_proteo_large_desktop_device_width_min: '/*<yith_proteo_large_desktop_devic
 		margin-bottom: 35px;
 	}
 
+	body.blog .blog-posts.columns-2,
+	body.blog .blog-posts.columns-3,
+	body.blog .blog-posts.columns-4,
+	.wp-block-latest-posts__list.is-grid.columns-2,
+	.wp-block-latest-posts__list.is-grid.columns-3,
+	.wp-block-latest-posts__list.is-grid.columns-4 {
+		grid-template-columns: repeat(1, 1fr);
+	}
 }
