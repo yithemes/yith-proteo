@@ -9179,6 +9179,9 @@ body.woocommerce-checkout #payment ul li label {
   cursor: pointer;
   padding-left: 30px;
 }
+body.woocommerce-checkout #payment ul li:only-child label {
+  padding-left: 0;
+}
 body.woocommerce-checkout #payment ul li.payment_method_paypal label img {
   float: right;
   margin-top: -3px;
