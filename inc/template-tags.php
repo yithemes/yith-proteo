@@ -38,7 +38,7 @@ if ( ! function_exists( 'yith_proteo_posted_by' ) ) :
 	 * Prints HTML with meta information for the current author.
 	 */
 	function yith_proteo_posted_by() {
-		if ( 'yes' === get_theme_mod( 'yith_proteo_blog_show_post_author', 'yes' ) ) {
+		if ( 'yes' === get_theme_mod( 'yith_proteo_blog_show_post_author', 'yes' ) && '' !== get_the_author() ) {
 			$byline = sprintf(
 				/* translators: %s: post author. */
 				esc_html_x( 'By %s', 'post author', 'yith-proteo' ),
