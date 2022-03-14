@@ -589,6 +589,14 @@
 			wp.customize.control('yith_proteo_blog_show_post_author' ).toggle( collapsed );
 			wp.customize.control('yith_proteo_blog_show_post_categories_and_tags' ).toggle( collapsed );
 			wp.customize.control('yith_proteo_blog_show_post_date' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_blog_page_posts_per_row' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_blog_page_first_post_wide' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_blog_page_sticky_posts_wide' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_blog_page_posts_spacing' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_blog_page_posts_with_border' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_blog_page_posts_border_width' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_blog_page_posts_border_radius' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_blog_page_posts_border_color' ).toggle( collapsed );
 		}
 
 		function yith_proteo_toggle_blog_general_options_controls_list() {
@@ -601,6 +609,14 @@
 			wp.customize.control('yith_proteo_blog_show_post_author' ).toggle( false );
 			wp.customize.control('yith_proteo_blog_show_post_categories_and_tags' ).toggle( false );
 			wp.customize.control('yith_proteo_blog_show_post_date' ).toggle( false );
+			wp.customize.control('yith_proteo_blog_page_posts_per_row' ).toggle( false );
+			wp.customize.control('yith_proteo_blog_page_first_post_wide' ).toggle( false );
+			wp.customize.control('yith_proteo_blog_page_sticky_posts_wide' ).toggle( false );
+			wp.customize.control('yith_proteo_blog_page_posts_spacing' ).toggle( false );
+			wp.customize.control('yith_proteo_blog_page_posts_with_border' ).toggle( false );
+			wp.customize.control('yith_proteo_blog_page_posts_border_width' ).toggle( false );
+			wp.customize.control('yith_proteo_blog_page_posts_border_radius' ).toggle( false );
+			wp.customize.control('yith_proteo_blog_page_posts_border_color' ).toggle( false );
 		}
 
 		/* Blog single post options toggle */
