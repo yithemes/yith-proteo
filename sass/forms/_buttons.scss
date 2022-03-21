@@ -193,6 +193,17 @@ body.yith-proteo-add-to-cart-style-unstyled_button .wc-block-grid__product .add_
 		color: var(--proteo-general_link_hover_color, $color__accent);
 	}
 }
+body.yith-proteo-add-to-cart-style-unstyled_button .wc-block-grid__product .add_to_cart_button {
+	background: none !important;
+	padding: 0 !important;
+	border: none !important;
+	color: var(--proteo-general_link_color, $color__accent) !important;
+	text-transform: none;
+
+	&:hover {
+		color: var(--proteo-general_link_hover_color, $color__accent) !important;
+	}
+}
 
 button,
 input[type="button"],
