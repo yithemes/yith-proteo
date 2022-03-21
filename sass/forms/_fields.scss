@@ -196,6 +196,10 @@ span.checkboxbutton {
 		height: 23px;
 		cursor: pointer;
 		width: 23px;
+		border-width: var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width);
+		border-style: solid;
+		border-color: var(--proteo-forms_input_border_color, #707070);
+		border-radius: var(--proteo-forms_input_borde_radius, 0);
 	}
 	
 	&:before {
@@ -203,7 +207,10 @@ span.checkboxbutton {
 		display: inline-block;
 		width: 23px;
 		height: 23px;
-		border: 1px solid #707070;
+		border-width: var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width) var(--proteo-forms_input_border_width);
+		border-style: solid;
+		border-color: var(--proteo-forms_input_border_color, #707070);
+		border-radius: var(--proteo-forms_input_borde_radius, 0);
 		background: #ffffff;
 		margin-right: 10px;
 		text-align: center;
