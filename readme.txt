@@ -4,7 +4,7 @@ Tags: one-column, two-columns, left-sidebar, right-sidebar, wide-blocks, accessi
 Requires at least: 4.9.6
 Tested up to: WordPress 5.8
 Requires PHP: 5.6
-Stable tag: 1.8.0
+Stable tag: 1.9.0
 YITH Proteo WordPress Theme, Copyright 2022 YITH
 YITH Proteo is distributed under the terms of the GNU GPL
 License: GPLv2 or later
@@ -25,6 +25,44 @@ Proteo is a modern, fast and fully customizable WooCommerce theme. Designed and 
 == Frequently Asked Questions ==
 
 == Changelog ==
+
+= 1.9.0 - March 22 2022 =
+* New: blog page options to manage posts per row, first post full width, space between posts, border, border width, border color, border radius
+* New: option to enable/disable sticky product image while scrolling
+* New: option to customize footer widget titles
+* New: support to YITH Affiliates 2.0
+* New: support to YITH Quick View inline style
+* New: tested support to WP 5.9 
+* Tweak: remove empty css rules
+* Tweak: remove CSS doubled code
+* Tweak: extend blog options to posts block
+* Tweak: update modals style with bigger paddings and border-radius
+* Tweak: increase modals blocker z-index and make background-color dark
+* Tweak: update google fonts list
+* Tweak: improve style of input placeholders
+* Fix: align product variation attributes according to writing direction
+* Fix: update block buttons behaviour to latest block editor style
+* Fix: read more button text align in product loops
+* Fix: loop add to cart buttons position
+* Fix: make products with border same height
+* Fix: remove unnecessary woocommerce templates
+* Fix: deprecated JQuery events
+* Fix: add to wishlist "on top" position
+* Fix: multiselect element for YITH Booking search forms
+* Fix: variable products add to cart label display
+* Fix: php notice in Proteo My Account widget image
+* Fix: placeholder style in textarea fields
+* Fix: add to cart button style for WC Products block
+* Fix: missing style for checkboxes
+* Fix: checkout payment methods appearance when there's only one method available
+* Fix: missing post author in single blog entry
+* Dev: added README.md file with development instructions
+* Dev: updated package.json dependencies
+* Dev: added grunt tasks to build CSS without sourceMaps
+* Dev: added npm tasks to create clean .zip package
+* Dev: add support to YITH Ajax Product Filter reload event
+* Dev: added field initialization after YITH WooCommerce Affiliates event
+* Dev: added new trigger for HTML elements init
 
 = 1.8.0 - December 21 2021 =
 New: support to Elementor PRO custom header and footer templates
