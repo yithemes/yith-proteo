@@ -27,6 +27,8 @@ function yith_proteo_get_font_weight( $font ) {
 	$decoded_substring = substr( $decoded->regularweight, 0, 3 );
 	if ( is_numeric( $decoded_substring ) ) {
 		return $decoded_substring;
+	} elseif ( 'regular' === $decoded->regularweight ) {
+		return str_replace( 'regular', 'normal', $decoded->regularweight );
 	} else {
 		return preg_replace( '/[0-9]/', '', $decoded->regularweight );
 	}
