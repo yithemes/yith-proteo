@@ -31,6 +31,12 @@
 		});
 	});
 
+	wp.customize('yith_proteo_inputs_min_height', function (value) {
+		value.bind(function (newval) {
+			$('input[type=text], input[type=email], input[type=url], input[type=password], input[type=search], input[type=number], input[type=tel], input[type=range], input[type=date], input[type=month], input[type=week], input[type=time], input[type=datetime], input[type=datetime-local], input[type=color], textarea, input[type=file], .select2-container .select2-selection, .woocommerce a.selectBox.selectBox-dropdown').css("min-height", newval + 'px');
+		});
+	});
+
 	wp.customize('yith_proteo_single_post_bg_alpha', function (value) {
 		value.bind(function (newval) {
 			$("<style>article.proteo_post_layout_background_picture header.alignfull:before { opacity: " + newval / 100 + "; }</style>").appendTo("head");

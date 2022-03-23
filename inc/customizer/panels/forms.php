@@ -17,6 +17,32 @@ $wp_customize->add_section(
 	)
 );
 
+// Input and textarea min height.
+$wp_customize->add_setting(
+	'yith_proteo_inputs_min_height',
+	array(
+		'default'           => 35,
+		'transport'         => 'postMessage',
+		'sanitize_callback' => 'absint',
+	)
+);
+
+$wp_customize->add_control(
+	new WP_Customize_Range(
+		$wp_customize,
+		'yith_proteo_inputs_min_height',
+		array(
+			'label'   => esc_html_x( 'Input and textarea minimum height', 'Customizer option name', 'yith-proteo' ),
+			'min'     => 10,
+			'max'     => 70,
+			'default' => 0,
+			'step'    => 1,
+			'unit'    => 'px',
+			'section' => 'yith_proteo_forms',
+		)
+	)
+);
+
 // Input and textarea border radius.
 $wp_customize->add_setting(
 	'yith_proteo_inputs_border_radius',

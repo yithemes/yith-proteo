@@ -165,6 +165,7 @@ function yith_proteo_inline_style() {
 	/**
 	 * Forms
 	 */
+	$forms_input_min_height   = get_theme_mod( 'yith_proteo_inputs_min_height', 35 );
 	$forms_input_borde_radius = get_theme_mod( 'yith_proteo_inputs_border_radius', 0 );
 	$forms_input_border_width = get_theme_mod( 'yith_proteo_inputs_border_width_size', 1 );
 	$forms_input_border_color = get_theme_mod( 'yith_proteo_inputs_border_color', '#cccccc' );
@@ -489,6 +490,7 @@ function yith_proteo_inline_style() {
 		--proteo-blog_page_posts_border_width: {$blog_page_posts_border_width};
 		--proteo-blog_page_posts_border_radius: {$blog_page_posts_border_radius};
 		--proteo-blog_page_posts_border_color: {$blog_page_posts_border_color};
+		--proteo-forms_input_min_height: {$forms_input_min_height}px;
 		--proteo-forms_input_borde_radius: {$forms_input_borde_radius}px;
 		--proteo-forms_input_border_width: {$forms_input_border_width}px;
 		--proteo-forms_input_border_color: {$forms_input_border_color};

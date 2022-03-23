@@ -28,7 +28,7 @@ select,
 	padding: 10px;
 	font-family: inherit;
 	font-size: var(--proteo-forms_input_font_size);
-	min-height: 35px;
+	min-height: var(--proteo-forms_input_min_height);
 	height: auto;
 	max-width: 100%;
 	transition: border-color ease 0.3s;
