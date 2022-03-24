@@ -552,10 +552,13 @@ function yith_proteo_inline_style() {
 		wp_add_inline_style( 'yith-proteo-custom-style', $custom_css );
 	}
 
-	yith_proteo_massive_google_font_enqueue();
+	if ( ! is_admin() ) {
+		yith_proteo_massive_google_font_enqueue();
+	}
 }
 
 add_action( 'wp_enqueue_scripts', 'yith_proteo_inline_style', 10 );
+add_action( 'enqueue_block_editor_assets', 'yith_proteo_inline_style', 5 );
 
 if ( ! function_exists( 'yith_proteo_hex2rgba' ) ) :
 	/**

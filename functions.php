@@ -307,3 +307,8 @@ if ( defined( 'YITH_WCBK' ) ) {
  * Block editor colors
  */
 require get_template_directory() . '/inc/colors-palette.php';
+
+/**
+ * Block styles
+ */
+require get_template_directory() . '/inc/block-styles.php';

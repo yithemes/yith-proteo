@@ -15,6 +15,41 @@
     max-width: none;
 }
 
+/* YITH Proteo Buttons */
+.is-style-fill .wp-block-button__link:not(.has-background),
+.is-style-button-style-1 .wp-block-button__link:not(.has-background){
+    border: 1px solid;
+	border-color: var(--proteo-button_1_border_color);
+	background: var(--proteo-button_1_bg_color);
+	background-color: var(--proteo-button_1_bg_color);
+	color: var(--proteo-button_1_font_color);
+	font-weight: 600;
+}
+
+.is-style-button-style-2 .wp-block-button__link:not(.has-background) {
+	background-color: var(--proteo-button_2_bg_color_1);
+	background: linear-gradient(180deg, var(--proteo-button_2_bg_color_1) 0%, var(--proteo-button_2_bg_color_2 ) 100%);
+	color: var(--proteo-button_2_font_color);
+	border: none;
+	font-weight: 600;
+}
+
+.is-style-button-ghost .wp-block-button__link:not(.has-background) {
+	border: 2px solid;
+	border-color: var(--proteo-main_color_shade);
+	background-color: transparent;
+	color: var(--proteo-main_color_shade);
+	font-weight: 600;
+}
+
+.is-style-button-unstyled .wp-block-button__link:not(.has-background) {
+	background: none;
+	background-color: transparent;
+	border: none;
+	color: var(--proteo-general_link_color);
+	font-weight: 600;
+}
+
 @media (min-width: 1440px) {
     /* Main column width */
     .wp-block {
