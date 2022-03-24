@@ -1,9 +1,11 @@
 <p align="center">
-<img src="https://img.shields.io/github/v/release/yithemes/yith-proteo?label=stable" alt="Latest release">
-<img src="https://img.shields.io/github/license/yithemes/yith-proteo" alt="License">
-<img src="https://img.shields.io/github/last-commit/yithemes/yith-proteo" alt="Last commit">
-<img src="https://img.shields.io/github/languages/code-size/yithemes/yith-proteo" alt="Code size">
-<img alt="WordPress Theme Rating" src="https://img.shields.io/wordpress/theme/rating/yith-proteo">
+  <img src="https://img.shields.io/github/v/release/yithemes/yith-proteo?label=stable&logo=wordpress" alt="Latest release">
+  <img alt="WordPress Theme Rating" src="https://img.shields.io/wordpress/theme/stars/yith-proteo?logo=wordpress">
+  <img alt="GitHub Release Date" src="https://img.shields.io/github/release-date/yithemes/yith-proteo?color=%231283c3&logo=wordpress">
+  <img src="https://img.shields.io/github/license/yithemes/yith-proteo" alt="License">
+  <img src="https://img.shields.io/github/last-commit/yithemes/yith-proteo" alt="Last commit">
+  <img src="https://img.shields.io/github/languages/code-size/yithemes/yith-proteo" alt="Code size">
+  <img alt="WordPress Theme Required PHP Version" src="https://img.shields.io/wordpress/theme/required-php/yith-proteo?label=PHP">
 </p>
 
 
