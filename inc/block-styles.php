@@ -18,8 +18,9 @@ if ( function_exists( 'register_block_style' ) ) {
 		register_block_style(
 			'core/button',
 			array(
-				'name'  => 'button-style-1',
-				'label' => esc_html__( 'Button Style 1', 'yith-proteo' ),
+				'name'         => 'button-style-1',
+				'label'        => esc_html__( 'Button Style 1', 'yith-proteo' ),
+				'inline_style' => yith_proteo_generate_style_variables(),
 			)
 		);
 
