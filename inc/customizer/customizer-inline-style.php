@@ -37,7 +37,12 @@ if ( ! function_exists( 'yith_proteo_generate_style_variables' ) ) {
 	 * @return string
 	 */
 	function yith_proteo_generate_style_variables() {
-		$custom_css = '';
+		$theme      = get_option( 'stylesheet' );
+		$custom_css = get_transient( $theme . '-css-variables' );
+
+		if ( ! $custom_css ) {
+			$custom_css = '';
+		}
 
 		$main_color_shade         = get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' );
 		$general_link_color       = get_theme_mod( 'yith_proteo_general_link_color', get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ) );
@@ -570,6 +575,8 @@ if ( ! function_exists( 'yith_proteo_generate_style_variables' ) ) {
 			--proteo-responsive_breakpoint_large_desktop: {$responsive_breakpoint_large_desktop}px;
 		}";
 
+		set_transient( $theme . '-css-variables', $custom_css, DAY_IN_SECONDS );
+
 		return $custom_css;
 	}
 }
@@ -623,3 +630,13 @@ if ( ! function_exists( 'yith_proteo_hex2rgba' ) ) :
 		return $output;
 	}
 endif;
+
+add_action( 'customize_save_after', 'yith_proteo_css_variable_transient_update' );
+
+/**
+ * Delete CSS Variables transient on customizer save
+ */
+function yith_proteo_css_variable_transient_update() {
+	$used_theme = get_option( 'stylesheet' );
+	delete_transient( get_option( 'stylesheet' ) . '-css-variables' );
+}
