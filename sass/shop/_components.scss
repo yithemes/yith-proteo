@@ -442,8 +442,7 @@ span.onsale,
 	z-index: 10;
 	display: inline-block;
 	padding: 5px;
-	top: 0;
-	right: 0;
+	top: 7.5px;
 	line-height: normal;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -455,12 +454,6 @@ span.onsale,
 	background-color: var(--proteo-sale_badge_bg_color, $color__accent);
 	color: var(--proteo-sale_badge_text_color, #ffffff);
 	font-size: var(--proteo-sale_badge_font_size, 13px);
-}
-
-.wc-block-grid .wc-block-grid__products .wc-block-grid__product .wc-block-grid__product-onsale {
-	left: auto;
-	right: 7.5px;
-	top: 7.5px;
 }
 
 /**
