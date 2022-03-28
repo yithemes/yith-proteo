@@ -28,7 +28,7 @@ function yith_proteo_inline_style() {
 }
 
 add_action( 'wp_enqueue_scripts', 'yith_proteo_inline_style', 10 );
-add_action( 'admin_enqueue_scripts', 'yith_proteo_inline_style', 5 );
+add_action( 'enqueue_block_editor_assets', 'yith_proteo_inline_style', 5 );
 
 if ( ! function_exists( 'yith_proteo_generate_style_variables' ) ) {
 	/**
