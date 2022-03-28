@@ -637,6 +637,5 @@ add_action( 'customize_save_after', 'yith_proteo_css_variable_transient_update' 
  * Delete CSS Variables transient on customizer save
  */
 function yith_proteo_css_variable_transient_update() {
-	$used_theme = get_option( 'stylesheet' );
 	delete_transient( get_option( 'stylesheet' ) . '-css-variables' );
 }
