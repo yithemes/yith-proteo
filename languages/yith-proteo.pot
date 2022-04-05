@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YITH Proteo\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2022-03-22 10:39+0100\n"
+"POT-Creation-Date: 2022-04-05 12:04+0200\n"
 "PO-Revision-Date: 2017-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: yithemes\n"
@@ -85,6 +85,22 @@ msgstr ""
 #: header.php:24
 msgctxt "Screen reader text"
 msgid "Skip to content"
+msgstr ""
+
+#: inc/block-styles.php:22
+msgid "Button Style 1"
+msgstr ""
+
+#: inc/block-styles.php:32
+msgid "Button Style 2"
+msgstr ""
+
+#: inc/block-styles.php:41
+msgid "Ghost"
+msgstr ""
+
+#: inc/block-styles.php:50
+msgid "Unstyled"
 msgstr ""
 
 #: inc/class-yith-proteo-walker-comment.php:75
@@ -936,42 +952,47 @@ msgstr ""
 
 #: inc/customizer/panels/forms.php:35
 msgctxt "Customizer option name"
+msgid "Input and textarea minimum height"
+msgstr ""
+
+#: inc/customizer/panels/forms.php:61
+msgctxt "Customizer option name"
 msgid "Input and textarea border radius"
 msgstr ""
 
-#: inc/customizer/panels/forms.php:57
+#: inc/customizer/panels/forms.php:83
 msgctxt "Customizer option name"
 msgid "Input and textarea border tickness"
 msgstr ""
 
-#: inc/customizer/panels/forms.php:76
+#: inc/customizer/panels/forms.php:102
 msgctxt "Customizer option name"
 msgid "Input and textarea border color"
 msgstr ""
 
-#: inc/customizer/panels/forms.php:93
+#: inc/customizer/panels/forms.php:119
 msgctxt "Customizer option name"
 msgid "Input and textarea font size"
 msgstr ""
 
-#: inc/customizer/panels/forms.php:114
+#: inc/customizer/panels/forms.php:140
 msgctxt "Customizer option name"
 msgid "Use custom style on select elements"
 msgstr ""
 
-#: inc/customizer/panels/forms.php:115
+#: inc/customizer/panels/forms.php:141
 msgctxt "Customizer option description"
 msgid ""
 "Replace the default browser style of select elements with the custom Proteo "
 "style."
 msgstr ""
 
-#: inc/customizer/panels/forms.php:137
+#: inc/customizer/panels/forms.php:163
 msgctxt "Customizer option name"
 msgid "Use custom style on checkbox and radio button elements"
 msgstr ""
 
-#: inc/customizer/panels/forms.php:138
+#: inc/customizer/panels/forms.php:164
 msgctxt "Customizer option description"
 msgid ""
 "Replace the default browser style of radio and checkbox elements with the "
