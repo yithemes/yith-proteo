@@ -15,7 +15,7 @@ if ( function_exists( 'register_block_style' ) ) {
 	 */
 	function yith_proteo_register_block_styles() {
 		// Button: Style 1.
-		register_block_style(
+		register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
 			'core/button',
 			array(
 				'name'         => 'button-style-1',
@@ -25,7 +25,7 @@ if ( function_exists( 'register_block_style' ) ) {
 		);
 
 		// Button: Style 2.
-		register_block_style(
+		register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
 			'core/button',
 			array(
 				'name'  => 'button-style-2',
@@ -34,7 +34,7 @@ if ( function_exists( 'register_block_style' ) ) {
 		);
 
 		// Button: Ghost.
-		register_block_style(
+		register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
 			'core/button',
 			array(
 				'name'  => 'button-ghost',
@@ -43,7 +43,7 @@ if ( function_exists( 'register_block_style' ) ) {
 		);
 
 		// Button: Unstyled.
-		register_block_style(
+		register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
 			'core/button',
 			array(
 				'name'  => 'button-unstyled',
