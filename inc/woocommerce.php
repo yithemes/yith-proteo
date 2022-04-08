@@ -846,6 +846,27 @@ if ( ! function_exists( 'yith_proteo_products_products_border_css_class' ) ) {
 	}
 }
 
+add_filter( 'body_class', 'yith_proteo_product_page_background_css_class' );
+
+if ( ! function_exists( 'yith_proteo_product_page_background_css_class' ) ) {
+	/**
+	 * Set the product page background body class according to customizer option
+	 *
+	 * @param array $classes body CSS classes.
+	 *
+	 * @return array
+	 *
+	 * @author Francesco Grasso <francgrasso@yithemes.com>
+	 */
+	function yith_proteo_product_page_background_css_class( $classes ) {
+		$background_enabled = 'yes' === get_theme_mod( 'yith_proteo_product_page_background_enabled', 'no' ) ? true : false;
+		if ( $background_enabled ) {
+			$classes[] = 'yith-proteo-product-page-with-background';
+		}
+		return $classes;
+	}
+}
+
 if ( 'yes' === get_theme_mod( 'yith_proteo_product_loop_view_details_enable', 'no' ) ) {
 	if ( 'hover' === get_theme_mod( 'yith_proteo_products_loop_add_to_cart_position', 'classic' ) ) {
 		add_action( 'yith_proteo_products_loop_add_to_cart_actions', 'yith_proteo_add_view_product_button', 60 );

@@ -358,6 +358,30 @@
 			margin-bottom: 50px;
 		}
 	}
+
+	&.yith-proteo-product-page-with-background {
+		.single-product-layout-cols {
+			padding-top: 50px;
+			padding-bottom: 50px;
+
+			&::before {
+				width: 110vw;
+				position: absolute;
+				margin-left: -50vw;
+				left: 50%;
+				background-color: var(--proteo-single_product_background_color);
+				content: '';
+				top: 0;
+				bottom: 0;
+				z-index: -1;
+				pointer-events: none;
+			}
+		}
+
+		#secondary {
+			background-color: #ffffff;
+		}
+	}
 }
 
 .stock {

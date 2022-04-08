@@ -8912,6 +8912,25 @@ body.yith-proteo-product-loop-add-to-cart-position-hover ul.wc-block-grid__produ
   text-align: center;
   margin-bottom: 50px;
 }
+.single-product.yith-proteo-product-page-with-background .single-product-layout-cols {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.single-product.yith-proteo-product-page-with-background .single-product-layout-cols::before {
+  width: 110vw;
+  position: absolute;
+  margin-left: -50vw;
+  left: 50%;
+  background-color: var(--proteo-single_product_background_color);
+  content: "";
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+.single-product.yith-proteo-product-page-with-background #secondary {
+  background-color: #ffffff;
+}
 
 .stock:empty:before {
   display: none;

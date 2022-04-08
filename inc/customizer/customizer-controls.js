@@ -228,8 +228,27 @@
 			$element.find('.customize-control-google-font-selection').val(JSON.stringify(selectedFont)).trigger('change');
 		}
 
-		// PRODUCT TITLE MANAGEMENT
 		if( typeof yith_proteo_customizer_controls != 'undefined' && yith_proteo_customizer_controls.yith_proteo_customizer_has_woocommerce ) {
+
+			// PRODUCT BACKGROUND MANAGEMENT
+			yith_proteo_toggle_product_page_background_section_controls_list();
+
+			$( '#customize-control-yith_proteo_product_page_background_group_title' ).addClass('section-closed').on( 'click', yith_proteo_toggle_product_page_background_controls );
+
+			function yith_proteo_toggle_product_page_background_controls() {
+				var section_title = $( '#customize-control-yith_proteo_product_page_background_group_title' ),
+				collapsed = section_title.hasClass( 'section-closed' );
+				section_title.toggleClass('section-closed');
+				wp.customize.control('yith_proteo_product_page_background_enabled' ).toggle( collapsed );
+				wp.customize.control('yith_proteo_product_page_background_color' ).toggle( collapsed );
+			}
+
+			function yith_proteo_toggle_product_page_background_section_controls_list() {
+				wp.customize.control('yith_proteo_product_page_background_enabled' ).toggle( false );
+				wp.customize.control('yith_proteo_product_page_background_color' ).toggle( false );
+			}
+
+			// PRODUCT TITLE MANAGEMENT
 			yith_proteo_toggle_product_page_title_section_controls_list();
 
 			$( '#customize-control-yith_proteo_product_page_title_group_title' ).addClass('section-closed').on( 'click', yith_proteo_toggle_product_page_title_controls );
