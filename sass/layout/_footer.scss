@@ -25,6 +25,10 @@
 		display: none;
 	}
 
+	.widget_nav_menu ul li {
+		font-size: inherit;
+	}
+
 	.site-info {
 		padding: 15px 0;
 		background-color: var(--proteo-footer_credits_bg_color, #f0f0f0);

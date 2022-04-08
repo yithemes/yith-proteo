@@ -434,7 +434,7 @@ function yith_proteo_after_mini_cart() {
  * Move single product sale badge inside gallery box
  */
 remove_action( 'woocommerce_before_single_product_summary', 'woocommerce_show_product_sale_flash', 10 );
-add_action( 'woocommerce_product_thumbnails', 'woocommerce_show_product_sale_flash', 5 );
+add_action( 'woocommerce_single_product_summary', 'woocommerce_show_product_sale_flash', 1 );
 
 
 if ( class_exists( 'YITH_WCWL_Frontend_Premium' ) ) {

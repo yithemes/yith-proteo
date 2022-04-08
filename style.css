@@ -7844,6 +7844,9 @@ div#respond #submit {
 #main-footer .footer-sidebars:empty {
   display: none;
 }
+#main-footer .widget_nav_menu ul li {
+  font-size: inherit;
+}
 #main-footer .site-info {
   padding: 15px 0;
   background-color: var(--proteo-footer_credits_bg_color, #f0f0f0);
@@ -8624,6 +8627,7 @@ body.yith-proteo-product-loop-add-to-cart-position-hover ul.wc-block-grid__produ
 }
 .single-product div.product .woocommerce-breadcrumb {
   text-align: initial;
+  margin-bottom: 10px;
 }
 .single-product div.product .woocommerce-breadcrumb + h1 {
   margin-top: 0;
@@ -8633,7 +8637,7 @@ body.yith-proteo-product-loop-add-to-cart-position-hover ul.wc-block-grid__produ
   width: 40%;
   float: left;
   display: inline-block;
-  margin: 1.5em 0 0;
+  margin: 0;
 }
 .single-product div.product .woocommerce-product-gallery .woocommerce-product-gallery__trigger {
   position: absolute;
@@ -8676,6 +8680,11 @@ body.yith-proteo-product-loop-add-to-cart-position-hover ul.wc-block-grid__produ
 }
 .single-product div.product .woocommerce-product-gallery .flex-control-thumbs li:hover img {
   opacity: 1;
+}
+.single-product div.product .woocommerce-product-gallery .flex-control-thumbs:after {
+  content: "";
+  display: block;
+  clear: both;
 }
 .single-product div.product .woocommerce-product-gallery.woocommerce-product-gallery--columns-2 .flex-control-thumbs li {
   width: 50%;
@@ -8722,8 +8731,11 @@ body.yith-proteo-product-loop-add-to-cart-position-hover ul.wc-block-grid__produ
   display: inline-block;
   padding-left: 90px;
 }
+.single-product div.product .summary.entry-summary .onsale {
+  position: static;
+}
 .single-product div.product .summary.entry-summary .product_title {
-  margin-bottom: 0.4em;
+  margin: 0 0 0.4em;
   font-size: var(--proteo-single_product_title_font_size, 70px);
   color: var(--proteo-single_product_title_font_color, #404040);
 }

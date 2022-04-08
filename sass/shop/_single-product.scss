@@ -16,6 +16,7 @@
 		}
 		.woocommerce-breadcrumb {
 			text-align: initial;
+			margin-bottom: 10px;
 		}
 
 		.woocommerce-breadcrumb + h1 {
@@ -27,7 +28,7 @@
 			width: 40%;
 			float: left;
 			display: inline-block;
-			margin: 1.5em 0 0;
+			margin: 0;
 
 			.woocommerce-product-gallery__trigger {
 				position: absolute;
@@ -79,6 +80,12 @@
 						}
 					}
 				}
+
+				&:after {
+					content: '';
+					display: block;
+					clear: both;
+				}
 			}
 
 			@for $i from 2 through 5 {
@@ -110,8 +117,11 @@
 			display: inline-block;
 			padding-left: 90px;
 
+			.onsale {
+				position: static;
+			}
 			.product_title {
-				margin-bottom: 0.4em;
+				margin: 0 0 0.4em;
 				font-size: var(--proteo-single_product_title_font_size, 70px);
 				color: var(--proteo-single_product_title_font_color, #404040);
 			}

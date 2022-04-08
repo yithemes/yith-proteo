@@ -375,21 +375,21 @@
 
 	// sticky the single product image if it's fully visible
 	function stickySingleProductImage() {
-		var sidebar = $( '.woocommerce-product-gallery' );
-		if ( sidebar.length ) {
+		var productImage = $( '.woocommerce-product-gallery' );
+		if ( productImage.length ) {
 			var site_header = $('.site-header'),
-				sidebarTop = 80;
+				productImageTop = 80;
 
 			if ( site_header.hasClass( 'sticky' ) ) {
-				sidebarTop = site_header.height() + 80;
+				productImageTop = site_header.height() + 80;
 			}
 
-			if ( !isMobile() && window.innerHeight >= ( sidebar.outerHeight() + sidebarTop ) ) {
-				sidebar.css( { position: 'sticky', top: sidebarTop + 'px' } );
-				sidebar.addClass( 'sticky-sidebar' );
+			if ( !isMobile() && window.innerHeight >= ( productImage.outerHeight() + productImageTop ) ) {
+				productImage.css( { position: 'sticky', top: productImageTop + 'px' } );
+				productImage.addClass( 'sticky-product-image' );
 			} else {
-				sidebar.css( { position: 'static' } );
-				sidebar.removeClass( 'sticky-sidebar' );
+				productImage.css( { position: 'relative' } );
+				productImage.removeClass( 'sticky-product-image' );
 			}
 		}
 	}
