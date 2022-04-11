@@ -30,6 +30,7 @@ body .wpforms-form button[type=submit].wpforms-submit,
 	margin-right: 15px;
 	margin-bottom: 15px;
 	font-weight: 600;
+	border-radius: var(--proteo-buttons_border_radius);
 
 	&:hover {
 		border-color: var(--proteo-button_1_border_hover_color, $color__border-button-hover);
@@ -44,6 +45,7 @@ body .wpforms-form button[type=submit].wpforms-submit,
 	a.wp-block-button__link,
 	.wp-block-button__link:not(.has-background):not(.has-text-color) {
 		transition: background-color ease 0.3s, background ease 0.3s;
+		border-radius: var(--proteo-buttons_border_radius);
 
 		&:hover {
 			border-color: var(--proteo-button_1_border_hover_color, $color__border-button-hover);
@@ -73,6 +75,7 @@ body.yith-proteo-add-to-cart-style-button_style_2 .wc-block-grid__product .add_t
 	color: var(--proteo-button_2_font_color, #ffffff);
 	border: none;
 	font-weight: 600;
+	border-radius: var(--proteo-buttons_border_radius);
 
 	&:hover {
 		text-decoration: none;
@@ -116,6 +119,7 @@ body.yith-proteo-add-to-cart-style-button_style_2 .wc-block-grid__product .add_t
 	text-decoration: none;
 	margin-right: 15px;
 	font-weight: 600;
+	border-radius: var(--proteo-buttons_border_radius);
 
 	&:hover {
 		text-decoration: none;
@@ -149,6 +153,7 @@ body.update-cart-button-style td.actions .empty-cart,
 	margin-bottom: 15px;
 	border: 2px solid;
 	border-color: var(--proteo-main_color_shade, $color__accent);
+	border-radius: var(--proteo-buttons_border_radius);
 	text-align: center;
 	padding: 0.65em 1.5em 0.6em;
 	vertical-align: middle;

@@ -5273,6 +5273,7 @@ body .wpforms-form button[type=submit].wpforms-submit,
   margin-right: 15px;
   margin-bottom: 15px;
   font-weight: 600;
+  border-radius: var(--proteo-buttons_border_radius);
 }
 button:hover,
 input[type=button]:hover,
@@ -5304,6 +5305,7 @@ body .wpforms-form button[type=submit].wpforms-submit:hover,
 .wp-block-button a.wp-block-button__link,
 .wp-block-button .wp-block-button__link:not(.has-background):not(.has-text-color) {
   transition: background-color ease 0.3s, background ease 0.3s;
+  border-radius: var(--proteo-buttons_border_radius);
 }
 .wp-block-button a.wp-block-button__link:hover,
 .wp-block-button .wp-block-button__link:not(.has-background):not(.has-text-color):hover {
@@ -5332,6 +5334,7 @@ body.yith-proteo-add-to-cart-style-button_style_2 .wc-block-grid__product .add_t
   color: var(--proteo-button_2_font_color, #ffffff);
   border: none;
   font-weight: 600;
+  border-radius: var(--proteo-buttons_border_radius);
 }
 .button.alt:hover,
 button.alt:hover,
@@ -5380,6 +5383,7 @@ body.yith-proteo-add-to-cart-style-button_style_2 .wc-block-grid__product .add_t
   text-decoration: none;
   margin-right: 15px;
   font-weight: 600;
+  border-radius: var(--proteo-buttons_border_radius);
 }
 .button.flat:hover,
 .yith_wcwl_footer_additional_action .ask-an-estimate-button:hover {
@@ -5413,6 +5417,7 @@ body.update-cart-button-style td.actions .empty-cart,
   margin-bottom: 15px;
   border: 2px solid;
   border-color: var(--proteo-main_color_shade, #448a85);
+  border-radius: var(--proteo-buttons_border_radius);
   text-align: center;
   padding: 0.65em 1.5em 0.6em;
   vertical-align: middle;
