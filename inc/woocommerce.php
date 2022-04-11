@@ -778,7 +778,7 @@ if ( ! function_exists( 'yith_proteo_loop_product_image_wrap_end' ) ) {
 /**
  * Move loop add to cart inside the new .yith-proteo-product-loop-image container
  */
-if ( 'hover' === get_theme_mod( 'yith_proteo_products_loop_add_to_cart_position', 'classic' ) ) {
+if ( in_array( get_theme_mod( 'yith_proteo_products_loop_add_to_cart_position', 'classic' ), array( 'hover', 'hover-light' ), true ) ) {
 	remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10 );
 	add_action( 'woocommerce_before_shop_loop_item_title', 'yith_proteo_products_loop_add_to_cart_hover_position', 50 );
 
@@ -868,7 +868,7 @@ if ( ! function_exists( 'yith_proteo_product_page_background_css_class' ) ) {
 }
 
 if ( 'yes' === get_theme_mod( 'yith_proteo_product_loop_view_details_enable', 'no' ) ) {
-	if ( 'hover' === get_theme_mod( 'yith_proteo_products_loop_add_to_cart_position', 'classic' ) ) {
+	if ( in_array( get_theme_mod( 'yith_proteo_products_loop_add_to_cart_position', 'classic' ), array( 'hover', 'hover-light' ), true ) ) {
 		add_action( 'yith_proteo_products_loop_add_to_cart_actions', 'yith_proteo_add_view_product_button', 60 );
 	} else {
 		add_action( 'woocommerce_after_shop_loop_item', 'yith_proteo_add_view_product_button', 10 );

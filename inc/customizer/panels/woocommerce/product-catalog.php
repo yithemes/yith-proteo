@@ -370,8 +370,9 @@ $wp_customize->add_control(
 		'section'     => 'woocommerce_product_catalog',
 		'description' => esc_html_x( 'Choose where the add to cart button is displayed in product catalog pages.', 'Customizer option description', 'yith-proteo' ),
 		'choices'     => array(
-			'classic' => esc_html_x( 'Classic', 'Customizer option value', 'yith-proteo' ),
-			'hover'   => esc_html_x( 'On image hover', 'Customizer option value', 'yith-proteo' ),
+			'classic'     => esc_html_x( 'Classic', 'Customizer option value', 'yith-proteo' ),
+			'hover'       => esc_html_x( 'On image hover (dark)', 'Customizer option value', 'yith-proteo' ),
+			'hover-light' => esc_html_x( 'On image hover (light)', 'Customizer option value', 'yith-proteo' ),
 		),
 		'priority'    => 20,
 	)
