@@ -8559,6 +8559,7 @@ body.yith-proteo-product-loop-add-to-cart-position-hover-light ul.wc-block-grid_
   align-items: center;
   align-content: center;
   margin: 0 auto 15px !important;
+  min-width: 80%;
 }
 body.yith-proteo-product-loop-add-to-cart-position-hover ul.products li.product .yith-proteo-product-loop-image a:not(.woocommerce-loop-product__link).added,
 body.yith-proteo-product-loop-add-to-cart-position-hover ul.products li.product .yith-proteo-product-loop-image .wc-block-grid__product-add-to-cart.added,
