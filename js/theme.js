@@ -315,7 +315,7 @@
 	});
 
 	// Loop add to cart :hover position
-	if (typeof yith_proteo != 'undefined' && jQuery.inArray( yith_proteo.yith_proteo_products_loop_add_to_cart_position, ['hover','hover-light'] ) ) {
+	if (typeof yith_proteo != 'undefined' && -1 != jQuery.inArray( yith_proteo.yith_proteo_products_loop_add_to_cart_position, ['hover','hover-light'] ) ) {
 		$('.wc-block-grid__product').each(function() {
 			var t = $(this),
 			product_link_tag_opener = t.find('.wc-block-grid__product-link'),
