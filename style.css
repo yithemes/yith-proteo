@@ -6447,7 +6447,7 @@ body.static-header .menu-toggle {
 }
 
 header.left_logo_navigation_below .menu-toggle {
-  top: 60px;
+  top: 15px;
 }
 
 header.center_logo_navigation_below .menu-toggle {
@@ -13816,5 +13816,3 @@ body .wpcf7-not-valid {
     width: -webkit-fill-available;
   }
 }
-
-/*# sourceMappingURL=style.css.map */

@@ -49,6 +49,25 @@ $yith_proteo_large_desktop_device_width_min: '/*<yith_proteo_large_desktop_devic
 		}
 	}
 
+	.site-header.left_logo_navigation_below {
+		.header-contents {
+			display: grid;
+			grid-template-columns: 75% 25%;
+			grid-template-rows: repeat(2);
+	
+			.site-branding {
+				grid-area: 1 / 1 / 2 / 2;
+			}
+			.site-navigation {
+				grid-area: 2 / 1 / 3 / 2;
+			}
+			.header-sidebar {
+				grid-area: 1 / 2 / 3 / 3;
+				padding: 0 0 0 30px;
+			}
+		}
+	}
+
 	/**
 	 * Shop table
 	 */
@@ -144,7 +163,6 @@ $yith_proteo_large_desktop_device_width_min: '/*<yith_proteo_large_desktop_devic
 			grid-template-columns: repeat(12, 1fr);
 		}
 	}
-	
 }
 
 /** Large devices (desktops, 992px and up) **/
@@ -206,6 +224,7 @@ $yith_proteo_large_desktop_device_width_min: '/*<yith_proteo_large_desktop_devic
 
 		}
 	}
+
 	ul.products, .wc-block-grid ul.wc-block-grid__products {
 		grid-template-columns: repeat(4, 1fr);
 
