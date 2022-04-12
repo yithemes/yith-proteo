@@ -8923,7 +8923,6 @@ body.yith-proteo-product-loop-add-to-cart-position-hover-light ul.wc-block-grid_
 }
 .single-product div.product .summary.entry-summary .product_meta > span {
   margin-bottom: 30px;
-  color: #9d9d9d;
   font-size: 0.8125rem;
   display: block;
   text-transform: uppercase;
@@ -12583,6 +12582,10 @@ ul.products li.product a.compare:not(.button) {
   width: auto;
 }
 
+.product-type-gift-card .woocommerce-product-gallery__wrapper {
+  background: #ffffff;
+}
+
 .theme-yith-proteo.woocommerce .products .add-request-quote-button.button,
 .theme-yith-proteo.woocommerce .products .add-request-quote-button-addons.button {
   background: none;
@@ -13816,3 +13819,5 @@ body .wpcf7-not-valid {
     width: -webkit-fill-available;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
