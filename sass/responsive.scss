@@ -161,7 +161,9 @@ $yith_proteo_large_desktop_device_width_min: '/*<yith_proteo_large_desktop_devic
 	#mobile-menu-sidebar {
 		display: none;
 	}
-	.main-navigation ul {
+	.main-navigation ul,
+	.header-sidebar .widget_nav_menu ul.menu,
+	.header-sidebar-left .widget_nav_menu ul.menu {
 		display: block;
 	}
 	.left_logo_navigation_inline #primary-menu {

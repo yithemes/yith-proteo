@@ -101,7 +101,7 @@
 	}
 
 	.header-sidebar {
-		white-space: nowrap;
+		//white-space: nowrap;
 		text-align: right;
 		clear: both;
 	}
@@ -145,7 +145,7 @@
 
 body.static-header {
 	.site-header {
-		position: static;
+		position: relative;
 	}
 }
 

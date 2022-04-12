@@ -129,7 +129,9 @@ table.shop_table_responsive tr td {
     display: none;
   }
 
-  .main-navigation ul {
+  .main-navigation ul,
+.header-sidebar .widget_nav_menu ul.menu,
+.header-sidebar-left .widget_nav_menu ul.menu {
     display: block;
   }
 

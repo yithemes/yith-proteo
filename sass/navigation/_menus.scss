@@ -1,4 +1,6 @@
-.main-navigation {
+.main-navigation,
+.header-sidebar .widget_nav_menu,
+.header-sidebar-left .widget_nav_menu {
 	clear: both;
 	display: block;
 	float: left;
@@ -148,6 +150,8 @@
 		position: relative;
 		margin-right: 35px;
 		padding-bottom: 15px;
+		font-size: inherit;
+		margin-bottom: 0;
 	}
 
 	a {
