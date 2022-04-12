@@ -7051,18 +7051,21 @@ h3.widget-title {
 }
 
 #topbar .widget,
-.header-sidebar .widget {
+.header-sidebar .widget,
+.header-sidebar-left .widget {
   text-align: initial;
   display: inline-block;
   z-index: 10;
   margin: 0 15px 5px 0;
 }
 #topbar .widget:last-of-type,
-.header-sidebar .widget:last-of-type {
+.header-sidebar .widget:last-of-type,
+.header-sidebar-left .widget:last-of-type {
   margin-right: 0;
 }
 
-.header-sidebar .widget {
+.header-sidebar .widget,
+.header-sidebar-left .widget {
   color: var(--proteo-header_menu_color, #404040);
   font-size: var(--proteo-header_menu_font_size, 14px);
 }
@@ -13744,5 +13747,3 @@ body .wpcf7-not-valid {
     width: -webkit-fill-available;
   }
 }
-
-/*# sourceMappingURL=style.css.map */

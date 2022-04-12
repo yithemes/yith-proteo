@@ -38,6 +38,9 @@ if ( 'on' !== $hide_header ) {
 				<?php get_template_part( 'template-parts/header/site-branding' ); ?>
 			<?php } ?>
 			<?php get_template_part( 'template-parts/header/site-nav' ); ?>
+			<?php if ( 'center_logo_navigation_below' === get_theme_mod( 'yith_proteo_header_layout', 'left_logo_navigation_inline' ) ) {
+				get_template_part( 'template-parts/header/header-sidebar-left' );
+			} ?>
 			<?php get_template_part( 'template-parts/header/header-sidebar' ); ?>
 		</div>
 	</header><!-- #masthead -->

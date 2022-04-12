@@ -55,8 +55,19 @@ if ( ! function_exists( 'yith_proteo_widgets_init' ) ) :
 		);
 		register_sidebar(
 			array(
-				'name'          => esc_html_x( 'Header widget area', 'Sidebar name', 'yith-proteo' ),
+				'name'          => esc_html_x( 'Header widget area (right)', 'Sidebar name', 'yith-proteo' ),
 				'id'            => 'header-sidebar',
+				'before_widget' => '<section id="%1$s" class="widget ' . $show_on_mobile . ' %2$s">',
+				'after_widget'  => '</section>',
+				'before_title'  => '<h2 class="widget-title">',
+				'after_title'   => '</h2>',
+			)
+		);
+		register_sidebar(
+			array(
+				'name'          => esc_html_x( 'Header widget area (left)', 'Sidebar name', 'yith-proteo' ),
+				'description'   => esc_html_x( 'Available only in centered header layout', 'Sidebar description', 'yith-proteo' ),
+				'id'            => 'header-sidebar-left',
 				'before_widget' => '<section id="%1$s" class="widget ' . $show_on_mobile . ' %2$s">',
 				'after_widget'  => '</section>',
 				'before_title'  => '<h2 class="widget-title">',

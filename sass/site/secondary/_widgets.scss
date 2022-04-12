@@ -37,7 +37,8 @@ h3.widget-title {
 }
 
 #topbar,
-.header-sidebar {
+.header-sidebar,
+.header-sidebar-left {
 	.widget {
 		text-align: initial;
 		display: inline-block;
@@ -50,7 +51,8 @@ h3.widget-title {
 	}
 }
 
-.header-sidebar {
+.header-sidebar,
+.header-sidebar-left {
 	.widget {
 		color: var(--proteo-header_menu_color, #404040);
 		font-size: var(--proteo-header_menu_font_size, 14px);
