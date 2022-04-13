@@ -249,6 +249,8 @@ if ( ! function_exists( 'yith_proteo_generate_style_variables' ) ) {
 		$woo_messages_error_accent_color   = get_theme_mod( 'yith_proteo_woo_error_messages_accent_color', '#ffab91' );
 
 		$single_product_background_color             = get_theme_mod( 'yith_proteo_product_page_background_color', '#ffffff' );
+		$single_product_description_font_size        = get_theme_mod( 'yith_proteo_product_page_description_font_size', 1.25 * get_theme_mod( 'yith_proteo_base_font_size', 16 ) );
+		$single_product_description_font_color       = get_theme_mod( 'yith_proteo_product_page_description_color', get_theme_mod( 'yith_proteo_base_font_color', '#404040' ) );
 		$single_product_price_font_size              = get_theme_mod( 'yith_proteo_product_page_price_font_size', 35 );
 		$single_product_price_color                  = get_theme_mod( 'yith_proteo_product_page_price_color', get_theme_mod( 'yith_proteo_main_color_shade', '#448a85' ) );
 		$single_product_quantity_input_font_size     = get_theme_mod( 'yith_proteo_product_page_quantity_font_size', 40 );
@@ -543,6 +545,8 @@ if ( ! function_exists( 'yith_proteo_generate_style_variables' ) ) {
 			--proteo-woo_messages_info_accent_color: {$woo_messages_info_accent_color};
 			--proteo-woo_messages_error_accent_color: {$woo_messages_error_accent_color};
 			--proteo-single_product_background_color: {$single_product_background_color};
+			--proteo-single_product_description_font_size: {$single_product_description_font_size}px;
+			--proteo-single_product_description_font_color: {$single_product_description_font_color};
 			--proteo-single_product_price_font_size: {$single_product_price_font_size}px;
 			--proteo-single_product_price_color: {$single_product_price_color};
 			--proteo-single_product_quantity_input_font_size: {$single_product_quantity_input_font_size}px;

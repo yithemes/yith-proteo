@@ -263,6 +263,40 @@
 		)
 	);
 
+	// Product description font size options.
+	$wp_customize->add_setting(
+		'yith_proteo_product_page_description_font_size',
+		array(
+			'sanitize_callback' => 'absint',
+			'default'           => 1.25 * get_theme_mod( 'yith_proteo_base_font_size', 16 ),
+		)
+	);
+	$wp_customize->add_control(
+		'yith_proteo_product_page_description_font_size',
+		array(
+			'label'   => esc_html_x( 'Product description font size', 'Customizer option name', 'yith-proteo' ),
+			'section' => 'yith_proteo_product_page_management',
+			'type'    => 'number',
+		)
+	);
+	// Product description font color options.
+	$wp_customize->add_setting(
+		'yith_proteo_product_page_description_color',
+		array(
+			'sanitize_callback' => 'yith_proteo_sanitize_alpha_colors',
+			'default'           => get_theme_mod( 'yith_proteo_base_font_color', '#404040' ),
+		)
+	);
+	$wp_customize->add_control(
+		new Customizer_Alpha_Color_Control(
+			$wp_customize,
+			'yith_proteo_product_page_description_color',
+			array(
+				'label'   => esc_html_x( 'Product description font color', 'Customizer option name', 'yith-proteo' ),
+				'section' => 'yith_proteo_product_page_management',
+			)
+		)
+	);
 
 	// Price font size options.
 	$wp_customize->add_setting(

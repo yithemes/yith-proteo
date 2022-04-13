@@ -154,9 +154,11 @@
 			}
 
 			.woocommerce-product-details__short-description {
+				font-size: var(--proteo-single_product_description_font_size, 1.25rem);
+				color: var(--proteo-single_product_description_font_color);
 				p {
 					margin-top: 0;
-					font-size: 1.25rem;
+					font-size: inherit;
 					line-height: 1.8;
 				}
 			}
