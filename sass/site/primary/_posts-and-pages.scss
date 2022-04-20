@@ -284,6 +284,12 @@ body.single-post.proteo_post_layout_fullwidth_cover_image {
 			margin-right: auto;
 		}
 
+		& + #primary {
+			max-width: 70%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
 	}
 	.entry-content:before {
 		display: none;
