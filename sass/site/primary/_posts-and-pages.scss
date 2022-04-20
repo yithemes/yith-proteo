@@ -93,6 +93,13 @@ body.blog {
 
 	.blog-posts.columns-2 {
 		grid-template-columns: repeat(2, 1fr);
+
+		.comment-navigation,
+		.posts-navigation,
+		.post-navigation {
+			// fix for new grid layout
+			grid-column: span 2;
+		}
 	}
 }
 
@@ -111,6 +118,13 @@ body.blog {
 
 	&.columns-2 {
 		grid-template-columns: repeat(2, 1fr);
+
+		.comment-navigation,
+		.posts-navigation,
+		.post-navigation {
+			// fix for new grid layout
+			grid-column: span 2;
+		}
 	}
 }
 
