@@ -154,6 +154,7 @@ if ( ! function_exists( 'yith_proteo_generate_style_variables' ) ) {
 		$post_thumbnail_background_color_opacity = get_theme_mod( 'yith_proteo_single_post_bg_alpha', 70 ) / 100;
 		$post_thumbnail_text_color               = get_theme_mod( 'yith_proteo_single_post_thumbnail_text_color', '#ffffff' );
 		$post_loop_title_font_size               = get_theme_mod( 'yith_proteo_blog_loop_post_title_font_size', get_theme_mod( 'yith_proteo_h2_font_size', 40 ) );
+		$post_loop_widget_title_font_size        = 0.8 * get_theme_mod( 'yith_proteo_blog_loop_post_title_font_size', get_theme_mod( 'yith_proteo_h2_font_size', 40 ) );
 		$post_loop_title_color                   = get_theme_mod( 'yith_proteo_blog_loop_post_title_color', get_theme_mod( 'yith_proteo_h2_font_color', '#404040' ) );
 		$post_loop_title_text_transform          = get_theme_mod( 'yith_proteo_blog_loop_post_title_text_transform', 'none' );
 		$blog_page_posts_spacing                 = get_theme_mod(
@@ -513,6 +514,7 @@ if ( ! function_exists( 'yith_proteo_generate_style_variables' ) ) {
 			--proteo-post_thumbnail_background_color_opacity: {$post_thumbnail_background_color_opacity};
 			--proteo-post_thumbnail_text_color: {$post_thumbnail_text_color};
 			--proteo-post_loop_title_font_size: {$post_loop_title_font_size}px;
+			--proteo-post_loop_widget_title_font_size: {$post_loop_widget_title_font_size}px;
 			--proteo-post_loop_title_color: {$post_loop_title_color};
 			--proteo-post_loop_title_text_transform: {$post_loop_title_text_transform};
 			--proteo-blog_page_posts_horizontal_spacing: {$blog_page_posts_spacing['horizontal']}px;
