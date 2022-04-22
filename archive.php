@@ -37,7 +37,14 @@ get_header();
 					 */
 					get_template_part( 'template-parts/content', get_post_type() );
 				endwhile;
-				the_posts_navigation();
+
+				$pagination_args = array(
+					'mid_size'  => 1,
+					'prev_text' => '‹',
+					'next_text' => '›',
+				);
+				echo '<div class="navigation posts-navigation">' . wp_kses_post( paginate_links( $pagination_args ) ) . '</div>';
+
 				else :
 					get_template_part( 'template-parts/content', 'none' );
 				endif;

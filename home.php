@@ -51,7 +51,12 @@ get_header();
 							}
 						endwhile;
 
-						the_posts_navigation();
+						$pagination_args = array(
+							'mid_size'  => 1,
+							'prev_text' => '‹',
+							'next_text' => '›',
+						);
+						echo '<div class="navigation posts-navigation">' . wp_kses_post( paginate_links( $pagination_args ) ) . '</div>';
 						?>
 					</div>
 					<?php
