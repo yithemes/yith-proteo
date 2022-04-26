@@ -154,7 +154,7 @@ Mini Cart Widget
 				position: relative;
 				display: table;
 				width: 100%;
-				margin-bottom: 10px;
+				margin-bottom: 15px;
 				padding-left: 30px;
 
 				& > a:not(.remove) {
@@ -164,6 +164,7 @@ Mini Cart Widget
 					max-width: 50px;
 					vertical-align: top;
 					margin-right: 10px;
+					float: left;
 				}
 				& > * {
 					display: inline-block;
@@ -171,8 +172,8 @@ Mini Cart Widget
 					font-weight: bold;
 					color: var(--proteo-header_menu_color, #404040);
 					text-decoration: none;
-
-					
+					line-height: normal;
+					position: relative;
 
 					&:hover {
 						color: var(--proteo-general_link_color, $color__accent);
@@ -204,7 +205,7 @@ Mini Cart Widget
 						float: none;
 						text-align: right;
 						position: absolute;
-						bottom: 10px;
+						bottom: 2px;
 						left: 90px;
 						margin: 0;
 						font-weight: normal;
