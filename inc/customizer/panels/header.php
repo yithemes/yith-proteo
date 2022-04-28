@@ -318,6 +318,65 @@
 		)
 	);
 
+	// Header bottom separator image alignment.
+	if ( class_exists( 'Customizer_Control_Radio_Image' ) ) {
+		$wp_customize->add_setting(
+			'yith_proteo_header_bottom_image_alignment',
+			array(
+				'default'           => 'center',
+				'sanitize_callback' => 'yith_proteo_sanitize_radio',
+			)
+		);
+
+		$wp_customize->add_control(
+			new Customizer_Control_Radio_Image(
+				$wp_customize,
+				'yith_proteo_header_bottom_image_alignment',
+				array(
+					'label'   => esc_html_x( 'Image alignment', 'Customizer option name', 'yith-proteo' ),
+					'section' => 'yith_proteo_header_management',
+					'choices' => array(
+						'left'   => array(
+							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/align-left.svg',
+							'label' => esc_html_x( 'Left', 'Customizer option value', 'yith-proteo' ),
+						),
+						'center' => array(
+							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/align-center.svg',
+							'label' => esc_html_x( 'Center', 'Customizer option value', 'yith-proteo' ),
+						),
+						'right'  => array(
+							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/align-right.svg',
+							'label' => esc_html_x( 'Right', 'Customizer option value', 'yith-proteo' ),
+						),
+					),
+				)
+			)
+		);
+	}
+
+	// Header bottom separator image repeat.
+	if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
+		$wp_customize->add_setting(
+			'yith_proteo_header_bottom_separator_repeat',
+			array(
+				'default'           => 'no',
+				'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+			)
+		);
+
+		$wp_customize->add_control(
+			new Customizer_Control_Yes_No(
+				$wp_customize,
+				'yith_proteo_header_bottom_separator_repeat',
+				array(
+					'label'       => esc_html_x( 'Repeat the image horizontally', 'Customizer option name', 'yith-proteo' ),
+					'section'     => 'yith_proteo_header_management',
+					'description' => esc_html_x( 'Choose whether to repeat the image horiontally or not.', 'Customizer option description', 'yith-proteo' ),
+				)
+			)
+		);
+	}
+
 	// ---------------------------- //
 
 	// Header elements group.
