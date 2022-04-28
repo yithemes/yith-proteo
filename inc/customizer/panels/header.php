@@ -133,6 +133,84 @@
 		);
 	}
 
+	// Header bottom separator group.
+	$wp_customize->add_setting(
+		'yith_proteo_header_bottom_separator_group_title',
+		array(
+			'default'           => '',
+			'sanitize_callback' => 'wp_kses_post',
+		)
+	);
+	$wp_customize->add_control(
+		new WP_Customize_Notice(
+			$wp_customize,
+			'yith_proteo_header_bottom_separator_group_title',
+			array(
+				'label'   => esc_html_x( 'Header bottom separator', 'Customizer options group title', 'yith-proteo' ),
+				'section' => 'yith_proteo_header_management',
+			)
+		)
+	);
+
+	// Enable header bottom separator.
+	if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
+		$wp_customize->add_setting(
+			'yith_proteo_header_bottom_separator_enabled',
+			array(
+				'default'           => 'no',
+				'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
+			)
+		);
+
+		$wp_customize->add_control(
+			new Customizer_Control_Yes_No(
+				$wp_customize,
+				'yith_proteo_header_bottom_separator_enabled',
+				array(
+					'label'       => esc_html_x( 'Enable bottom separator', 'Customizer option name', 'yith-proteo' ),
+					'section'     => 'yith_proteo_header_management',
+					'description' => esc_html_x( 'Choose whether to make the header bottom separator or not.', 'Customizer option description', 'yith-proteo' ),
+				)
+			)
+		);
+	}
+
+	// Header Layout options.
+	if ( class_exists( 'Customizer_Control_Radio_Image' ) ) {
+		$wp_customize->add_setting(
+			'yith_proteo_header_bottom_separator_style',
+			array(
+				'default'           => 'line',
+				'sanitize_callback' => 'yith_proteo_sanitize_radio',
+			)
+		);
+
+		$wp_customize->add_control(
+			new Customizer_Control_Radio_Image(
+				$wp_customize,
+				'yith_proteo_header_bottom_separator_style',
+				array(
+					'label'   => esc_html_x( 'Separator style', 'Customizer option name', 'yith-proteo' ),
+					'section' => 'yith_proteo_header_management',
+					'choices' => array(
+						'line'   => array(
+							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/left-logo.svg',
+							'label' => esc_html_x( 'Simple line', 'Customizer option value', 'yith-proteo' ),
+						),
+						'image'  => array(
+							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/left-logo-inline.svg',
+							'label' => esc_html_x( 'Image', 'Customizer option value', 'yith-proteo' ),
+						),
+						'shadow' => array(
+							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/center-logo.svg',
+							'label' => esc_html_x( 'Shadow', 'Customizer option value', 'yith-proteo' ),
+						),
+					),
+				)
+			)
+		);
+	}
+
 	// Header elements group.
 	$wp_customize->add_setting(
 		'yith_proteo_header_elements_group_title',
