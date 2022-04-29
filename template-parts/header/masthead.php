@@ -14,20 +14,15 @@ if ( function_exists( 'wc' ) && is_shop() ) {
 } else {
 	$hide_header = $post ? get_post_meta( $post->ID, 'yith_proteo_remove_header_and_footer', true ) : 'off';
 }
-$slider = '';
-if ( defined( 'YITH_SLIDER_FOR_PAGE_BUILDERS' ) ) {
-	if ( function_exists( 'wc' ) && is_shop() ) {
-		$slider = get_post_meta( wc_get_page_id( 'shop' ), 'header_slider', true );
-	} elseif ( is_home() ) {
-		$slider = get_post_meta( get_option( 'page_for_posts' ), 'header_slider', true );
-	} elseif ( $post ) {
-		$slider = get_post_meta( $post->ID, 'header_slider', true );
-	}
-}
+
+// Get header slider to use if any.
+$slider = yith_proteo_get_header_slider();
+
+$yith_proteo_header_classes = array();
+
 if ( 'on' !== $hide_header ) {
 	?>
-	<header id="masthead"
-			class="site-header <?php echo esc_attr( get_theme_mod( 'yith_proteo_header_layout', 'left_logo_navigation_inline' ) ); ?> <?php echo esc_attr( get_theme_mod( 'yith_proteo_header_fullwidth', 'no' ) === 'yes' ? 'fullwidth-header' : '' ); ?> <?php echo esc_attr( $slider && '' !== $slider ? 'with-header-slider' : '' ); ?>" <?php yith_proteo_custom_header_style(); ?>>
+	<header id="masthead" class="site-header <?php echo esc_attr( yith_proteo_get_header_classes() ); ?>" <?php yith_proteo_custom_header_style(); ?>>
 		<?php
 		if ( get_theme_mod( 'yith_proteo_topbar_enable', 'no' ) === 'yes' ) {
 			get_template_part( 'template-parts/header/topbar' );
@@ -38,9 +33,11 @@ if ( 'on' !== $hide_header ) {
 				<?php get_template_part( 'template-parts/header/site-branding' ); ?>
 			<?php } ?>
 			<?php get_template_part( 'template-parts/header/site-nav' ); ?>
-			<?php if ( 'center_logo_navigation_below' === get_theme_mod( 'yith_proteo_header_layout', 'left_logo_navigation_inline' ) ) {
+			<?php
+			if ( 'center_logo_navigation_below' === get_theme_mod( 'yith_proteo_header_layout', 'left_logo_navigation_inline' ) ) {
 				get_template_part( 'template-parts/header/header-sidebar-left' );
-			} ?>
+			}
+			?>
 			<?php get_template_part( 'template-parts/header/header-sidebar' ); ?>
 		</div>
 	</header><!-- #masthead -->

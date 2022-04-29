@@ -476,3 +476,40 @@ function yith_proteo_block_blog_posts_with_borders( $classes ) {
 
 	return $classes;
 }
+
+/**
+ * Get masthead classes
+ *
+ * @return string
+ */
+function yith_proteo_get_header_classes() {
+	$slider = yith_proteo_get_header_slider();
+
+	$classes[] = get_theme_mod( 'yith_proteo_header_layout', 'left_logo_navigation_inline' );
+	$classes[] = get_theme_mod( 'yith_proteo_header_fullwidth', 'no' ) === 'yes' ? 'fullwidth-header' : '';
+	$classes[] = $slider && '' !== $slider ? 'with-header-slider' : '';
+
+	return preg_replace( '!\s+!', ' ', implode( ' ', apply_filters( 'yith_proteo_header_classes', $classes ) ) );
+}
+
+/**
+ * Get header slider element
+ *
+ * @return void|int
+ */
+function yith_proteo_get_header_slider() {
+	global $post;
+
+	$slider = '';
+	if ( defined( 'YITH_SLIDER_FOR_PAGE_BUILDERS' ) ) {
+		if ( function_exists( 'wc' ) && is_shop() ) {
+			$slider = get_post_meta( wc_get_page_id( 'shop' ), 'header_slider', true );
+		} elseif ( is_home() ) {
+			$slider = get_post_meta( get_option( 'page_for_posts' ), 'header_slider', true );
+		} elseif ( $post ) {
+			$slider = get_post_meta( $post->ID, 'header_slider', true );
+		}
+	}
+
+	return $slider;
+}

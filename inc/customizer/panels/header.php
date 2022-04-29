@@ -169,7 +169,7 @@
 				array(
 					'label'       => esc_html_x( 'Enable bottom separator', 'Customizer option name', 'yith-proteo' ),
 					'section'     => 'yith_proteo_header_management',
-					'description' => esc_html_x( 'Choose whether to make the header bottom separator or not.', 'Customizer option description', 'yith-proteo' ),
+					'description' => esc_html_x( 'Choose whether to use a header bottom separator or not.', 'Customizer option description', 'yith-proteo' ),
 				)
 			)
 		);
