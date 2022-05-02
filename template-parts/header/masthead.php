@@ -40,6 +40,15 @@ if ( 'on' !== $hide_header ) {
 			?>
 			<?php get_template_part( 'template-parts/header/header-sidebar' ); ?>
 		</div>
+		<?php
+		if ( 'image' === get_theme_mod( 'yith_proteo_header_bottom_separator_style', 'none' ) && get_theme_mod( 'yith_proteo_header_bottom_image' ) ) {
+			?>
+			<div class="header-bottom-image alignfull">
+				<img src="<?php echo esc_url( get_theme_mod( 'yith_proteo_header_bottom_image' ) ); ?>" loading="lazy" class="align<?php echo esc_attr( get_theme_mod( 'yith_proteo_header_bottom_image_alignment', 'center' ) ); ?>" alt="<?php esc_html_e( 'Header separator image', 'yith-proteo' ); ?>">
+			</div>
+			<?php
+		}
+		?>
 	</header><!-- #masthead -->
 	<?php
 }

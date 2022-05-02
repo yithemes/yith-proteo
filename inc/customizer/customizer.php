@@ -666,6 +666,42 @@ if ( ! function_exists( 'yith_proteo_blog_posts_with_borders_enabled' ) ) {
 	}
 }
 
+if ( ! function_exists( 'yith_proteo_header_separator_line_enabled' ) ) {
+	/**
+	 *
+	 * Callback function to check if header bottom line separator is enabled.
+	 *
+	 * @return bool
+	 */
+	function yith_proteo_header_separator_line_enabled() {
+		return 'line' === get_theme_mod( 'yith_proteo_header_bottom_separator_style', 'none' );
+	}
+}
+
+if ( ! function_exists( 'yith_proteo_header_separator_shadow_enabled' ) ) {
+	/**
+	 *
+	 * Callback function to check if header bottom shadow separator is enabled.
+	 *
+	 * @return bool
+	 */
+	function yith_proteo_header_separator_shadow_enabled() {
+		return 'shadow' === get_theme_mod( 'yith_proteo_header_bottom_separator_style', 'none' );
+	}
+}
+
+if ( ! function_exists( 'yith_proteo_header_separator_image_enabled' ) ) {
+	/**
+	 *
+	 * Callback function to check if header bottom image separator is enabled.
+	 *
+	 * @return bool
+	 */
+	function yith_proteo_header_separator_image_enabled() {
+		return 'image' === get_theme_mod( 'yith_proteo_header_bottom_separator_style', 'none' );
+	}
+}
+
 /**
  * Add YITH Customizer CSS
  */

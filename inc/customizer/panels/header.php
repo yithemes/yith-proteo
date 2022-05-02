@@ -205,8 +205,9 @@
 			$wp_customize,
 			'yith_proteo_header_bottom_line_color',
 			array(
-				'label'   => esc_html_x( 'Border color', 'Customizer option name', 'yith-proteo' ),
-				'section' => 'yith_proteo_header_management',
+				'label'           => esc_html_x( 'Border color', 'Customizer option name', 'yith-proteo' ),
+				'section'         => 'yith_proteo_header_management',
+				'active_callback' => 'yith_proteo_header_separator_line_enabled',
 			)
 		)
 	);
@@ -225,13 +226,14 @@
 			$wp_customize,
 			'yith_proteo_header_bottom_line_thickness',
 			array(
-				'label'   => esc_html_x( 'Border thickness (px)', 'Customizer option name', 'yith-proteo' ),
-				'min'     => 1,
-				'max'     => 50,
-				'step'    => 1,
-				'default' => 2,
-				'unit'    => 'px',
-				'section' => 'yith_proteo_header_management',
+				'label'           => esc_html_x( 'Border thickness (px)', 'Customizer option name', 'yith-proteo' ),
+				'min'             => 1,
+				'max'             => 50,
+				'step'            => 1,
+				'default'         => 2,
+				'unit'            => 'px',
+				'section'         => 'yith_proteo_header_management',
+				'active_callback' => 'yith_proteo_header_separator_line_enabled',
 			)
 		)
 	);
@@ -250,13 +252,14 @@
 			$wp_customize,
 			'yith_proteo_header_bottom_line_width',
 			array(
-				'label'   => esc_html_x( 'Border width (%)', 'Customizer option name', 'yith-proteo' ),
-				'min'     => 10,
-				'max'     => 100,
-				'step'    => 10,
-				'default' => 100,
-				'unit'    => '%',
-				'section' => 'yith_proteo_header_management',
+				'label'           => esc_html_x( 'Border width (%)', 'Customizer option name', 'yith-proteo' ),
+				'min'             => 10,
+				'max'             => 100,
+				'step'            => 10,
+				'default'         => 100,
+				'unit'            => '%',
+				'section'         => 'yith_proteo_header_management',
+				'active_callback' => 'yith_proteo_header_separator_line_enabled',
 			)
 		)
 	);
@@ -276,9 +279,9 @@
 				$wp_customize,
 				'yith_proteo_header_bottom_line_alignment',
 				array(
-					'label'   => esc_html_x( 'Border alignment', 'Customizer option name', 'yith-proteo' ),
-					'section' => 'yith_proteo_header_management',
-					'choices' => array(
+					'label'           => esc_html_x( 'Border alignment', 'Customizer option name', 'yith-proteo' ),
+					'section'         => 'yith_proteo_header_management',
+					'choices'         => array(
 						'left'   => array(
 							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/align-left.svg',
 							'label' => esc_html_x( 'Left', 'Customizer option value', 'yith-proteo' ),
@@ -292,6 +295,7 @@
 							'label' => esc_html_x( 'Right', 'Customizer option value', 'yith-proteo' ),
 						),
 					),
+					'active_callback' => 'yith_proteo_header_separator_line_enabled',
 				)
 			)
 		);
@@ -310,8 +314,9 @@
 			$wp_customize,
 			'yith_proteo_header_bottom_shadow_color',
 			array(
-				'label'   => esc_html_x( 'Shadow color', 'Customizer option name', 'yith-proteo' ),
-				'section' => 'yith_proteo_header_management',
+				'label'           => esc_html_x( 'Shadow color', 'Customizer option name', 'yith-proteo' ),
+				'section'         => 'yith_proteo_header_management',
+				'active_callback' => 'yith_proteo_header_separator_shadow_enabled',
 			)
 		)
 	);
@@ -330,13 +335,14 @@
 			$wp_customize,
 			'yith_proteo_header_bottom_shadow_hoffset',
 			array(
-				'label'   => esc_html_x( 'Shadow h-offset (px)', 'Customizer option name', 'yith-proteo' ),
-				'min'     => -30,
-				'max'     => 30,
-				'step'    => 1,
-				'default' => -2,
-				'unit'    => 'px',
-				'section' => 'yith_proteo_header_management',
+				'label'           => esc_html_x( 'Shadow h-offset (px)', 'Customizer option name', 'yith-proteo' ),
+				'min'             => -30,
+				'max'             => 30,
+				'step'            => 1,
+				'default'         => -2,
+				'unit'            => 'px',
+				'section'         => 'yith_proteo_header_management',
+				'active_callback' => 'yith_proteo_header_separator_shadow_enabled',
 			)
 		)
 	);
@@ -355,13 +361,14 @@
 			$wp_customize,
 			'yith_proteo_header_bottom_shadow_voffset',
 			array(
-				'label'   => esc_html_x( 'Shadow v-offset (px)', 'Customizer option name', 'yith-proteo' ),
-				'min'     => -30,
-				'max'     => 30,
-				'step'    => 1,
-				'default' => 2,
-				'unit'    => 'px',
-				'section' => 'yith_proteo_header_management',
+				'label'           => esc_html_x( 'Shadow v-offset (px)', 'Customizer option name', 'yith-proteo' ),
+				'min'             => -30,
+				'max'             => 30,
+				'step'            => 1,
+				'default'         => 2,
+				'unit'            => 'px',
+				'section'         => 'yith_proteo_header_management',
+				'active_callback' => 'yith_proteo_header_separator_shadow_enabled',
 			)
 		)
 	);
@@ -380,13 +387,14 @@
 			$wp_customize,
 			'yith_proteo_header_bottom_shadow_blur',
 			array(
-				'label'   => esc_html_x( 'Shadow blur (px)', 'Customizer option name', 'yith-proteo' ),
-				'min'     => 0,
-				'max'     => 100,
-				'step'    => 1,
-				'default' => 80,
-				'unit'    => 'px',
-				'section' => 'yith_proteo_header_management',
+				'label'           => esc_html_x( 'Shadow blur (px)', 'Customizer option name', 'yith-proteo' ),
+				'min'             => 0,
+				'max'             => 100,
+				'step'            => 1,
+				'default'         => 80,
+				'unit'            => 'px',
+				'section'         => 'yith_proteo_header_management',
+				'active_callback' => 'yith_proteo_header_separator_shadow_enabled',
 			)
 		)
 	);
@@ -405,13 +413,14 @@
 			$wp_customize,
 			'yith_proteo_header_bottom_shadow_spread',
 			array(
-				'label'   => esc_html_x( 'Shadow spread (px)', 'Customizer option name', 'yith-proteo' ),
-				'min'     => -30,
-				'max'     => 30,
-				'step'    => 1,
-				'default' => -30,
-				'unit'    => 'px',
-				'section' => 'yith_proteo_header_management',
+				'label'           => esc_html_x( 'Shadow spread (px)', 'Customizer option name', 'yith-proteo' ),
+				'min'             => -30,
+				'max'             => 30,
+				'step'            => 1,
+				'default'         => -30,
+				'unit'            => 'px',
+				'section'         => 'yith_proteo_header_management',
+				'active_callback' => 'yith_proteo_header_separator_shadow_enabled',
 			)
 		)
 	);
@@ -429,8 +438,9 @@
 			$wp_customize,
 			'yith_proteo_header_bottom_image',
 			array(
-				'label'   => esc_html_x( 'Image to use as separator', 'Customizer option name', 'yith-proteo' ),
-				'section' => 'yith_proteo_header_management',
+				'label'           => esc_html_x( 'Image to use as separator', 'Customizer option name', 'yith-proteo' ),
+				'section'         => 'yith_proteo_header_management',
+				'active_callback' => 'yith_proteo_header_separator_image_enabled',
 			)
 		)
 	);
@@ -450,9 +460,9 @@
 				$wp_customize,
 				'yith_proteo_header_bottom_image_alignment',
 				array(
-					'label'   => esc_html_x( 'Image alignment', 'Customizer option name', 'yith-proteo' ),
-					'section' => 'yith_proteo_header_management',
-					'choices' => array(
+					'label'           => esc_html_x( 'Image alignment', 'Customizer option name', 'yith-proteo' ),
+					'section'         => 'yith_proteo_header_management',
+					'choices'         => array(
 						'left'   => array(
 							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/align-left.svg',
 							'label' => esc_html_x( 'Left', 'Customizer option value', 'yith-proteo' ),
@@ -466,29 +476,7 @@
 							'label' => esc_html_x( 'Right', 'Customizer option value', 'yith-proteo' ),
 						),
 					),
-				)
-			)
-		);
-	}
-
-	// Header bottom separator image repeat.
-	if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
-		$wp_customize->add_setting(
-			'yith_proteo_header_bottom_separator_repeat',
-			array(
-				'default'           => 'no',
-				'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
-			)
-		);
-
-		$wp_customize->add_control(
-			new Customizer_Control_Yes_No(
-				$wp_customize,
-				'yith_proteo_header_bottom_separator_repeat',
-				array(
-					'label'       => esc_html_x( 'Repeat the image horizontally', 'Customizer option name', 'yith-proteo' ),
-					'section'     => 'yith_proteo_header_management',
-					'description' => esc_html_x( 'Choose whether to repeat the image horiontally or not.', 'Customizer option description', 'yith-proteo' ),
+					'active_callback' => 'yith_proteo_header_separator_image_enabled',
 				)
 			)
 		);
