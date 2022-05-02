@@ -488,7 +488,7 @@ function yith_proteo_get_header_classes() {
 	$classes[] = get_theme_mod( 'yith_proteo_header_layout', 'left_logo_navigation_inline' );
 	$classes[] = get_theme_mod( 'yith_proteo_header_fullwidth', 'no' ) === 'yes' ? 'fullwidth-header' : '';
 	$classes[] = $slider && '' !== $slider ? 'with-header-slider' : '';
-	$classes[] = 'header-bottom-separator-' . get_theme_mod( 'yith_proteo_header_bottom_separator_style', 'line' );
+	$classes[] = 'header-bottom-separator-' . get_theme_mod( 'yith_proteo_header_bottom_separator_style', 'none' );
 
 	return preg_replace( '!\s+!', ' ', implode( ' ', apply_filters( 'yith_proteo_header_classes', $classes ) ) );
 }
