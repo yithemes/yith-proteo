@@ -918,9 +918,9 @@
 			$wp_customize,
 			'yith_proteo_sticky_header_spacing',
 			array(
-				'label'   => esc_html_x( 'Spacing (px)', 'Customizer option name', 'yith-proteo' ),
-				'section' => 'yith_proteo_header_management',
-				'choices' => array(
+				'label'           => esc_html_x( 'Spacing (px)', 'Customizer option name', 'yith-proteo' ),
+				'section'         => 'yith_proteo_header_management',
+				'choices'         => array(
 					'top'    => array(
 						'name' => esc_html_x( 'Top', 'Customizer option value', 'yith-proteo' ),
 					),
@@ -934,6 +934,7 @@
 						'name' => esc_html_x( 'Left', 'Customizer option value', 'yith-proteo' ),
 					),
 				),
+				'active_callback' => 'yith_proteo_sticky_header_is_enabled',
 			)
 		)
 	);
