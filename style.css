@@ -6697,6 +6697,9 @@ header.center_logo_navigation_below .menu-toggle {
   margin: 0 auto;
   float: var(--proteo-header_bottom_border_alignment);
 }
+.site-header.header-bottom-separator-shadow {
+  box-shadow: var(--proteo-header_bottom_shadow_h_offset) var(--proteo-header_bottom_shadow_v_offset) var(--proteo-header_bottom_shadow_blur) var(--proteo-header_bottom_shadow_spread) var(--proteo-header_bottom_shadow_color);
+}
 .site-header .header-contents {
   position: relative;
   transition: all ease 0.3s;

@@ -302,7 +302,7 @@
 		'yith_proteo_header_bottom_shadow_color',
 		array(
 			'sanitize_callback' => 'yith_proteo_sanitize_alpha_colors',
-			'default'           => '#000000',
+			'default'           => '#0000004D',
 		)
 	);
 	$wp_customize->add_control(
@@ -316,11 +316,11 @@
 		)
 	);
 
-	// Header bottom border thickness.
+	// Header bottom shadow h-offset.
 	$wp_customize->add_setting(
-		'yith_proteo_header_bottom_shadow_dimension',
+		'yith_proteo_header_bottom_shadow_hoffset',
 		array(
-			'default'           => 20,
+			'default'           => -2,
 			'sanitize_callback' => 'absint',
 		)
 	);
@@ -328,13 +328,88 @@
 	$wp_customize->add_control(
 		new WP_Customize_Range(
 			$wp_customize,
-			'yith_proteo_header_bottom_shadow_dimension',
+			'yith_proteo_header_bottom_shadow_hoffset',
 			array(
-				'label'   => esc_html_x( 'Shadow dimension (px)', 'Customizer option name', 'yith-proteo' ),
-				'min'     => 1,
-				'max'     => 50,
+				'label'   => esc_html_x( 'Shadow h-offset (px)', 'Customizer option name', 'yith-proteo' ),
+				'min'     => -30,
+				'max'     => 30,
+				'step'    => 1,
+				'default' => -2,
+				'unit'    => 'px',
+				'section' => 'yith_proteo_header_management',
+			)
+		)
+	);
+
+	// Header bottom shadow v-offset.
+	$wp_customize->add_setting(
+		'yith_proteo_header_bottom_shadow_voffset',
+		array(
+			'default'           => 2,
+			'sanitize_callback' => 'absint',
+		)
+	);
+
+	$wp_customize->add_control(
+		new WP_Customize_Range(
+			$wp_customize,
+			'yith_proteo_header_bottom_shadow_voffset',
+			array(
+				'label'   => esc_html_x( 'Shadow v-offset (px)', 'Customizer option name', 'yith-proteo' ),
+				'min'     => -30,
+				'max'     => 30,
 				'step'    => 1,
 				'default' => 2,
+				'unit'    => 'px',
+				'section' => 'yith_proteo_header_management',
+			)
+		)
+	);
+
+	// Header bottom shadow blur.
+	$wp_customize->add_setting(
+		'yith_proteo_header_bottom_shadow_blur',
+		array(
+			'default'           => 80,
+			'sanitize_callback' => 'absint',
+		)
+	);
+
+	$wp_customize->add_control(
+		new WP_Customize_Range(
+			$wp_customize,
+			'yith_proteo_header_bottom_shadow_blur',
+			array(
+				'label'   => esc_html_x( 'Shadow blur (px)', 'Customizer option name', 'yith-proteo' ),
+				'min'     => 0,
+				'max'     => 100,
+				'step'    => 1,
+				'default' => 80,
+				'unit'    => 'px',
+				'section' => 'yith_proteo_header_management',
+			)
+		)
+	);
+
+	// Header bottom shadow spread.
+	$wp_customize->add_setting(
+		'yith_proteo_header_bottom_shadow_spread',
+		array(
+			'default'           => -30,
+			'sanitize_callback' => 'absint',
+		)
+	);
+
+	$wp_customize->add_control(
+		new WP_Customize_Range(
+			$wp_customize,
+			'yith_proteo_header_bottom_shadow_spread',
+			array(
+				'label'   => esc_html_x( 'Shadow spread (px)', 'Customizer option name', 'yith-proteo' ),
+				'min'     => -30,
+				'max'     => 30,
+				'step'    => 1,
+				'default' => -30,
 				'unit'    => 'px',
 				'section' => 'yith_proteo_header_management',
 			)
