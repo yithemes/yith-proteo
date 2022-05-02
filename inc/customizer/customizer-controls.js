@@ -1074,6 +1074,45 @@
 			wp.customize.control('yith_proteo_header_fullwidth' ).toggle( false );
 		}
 
+		/* Header bottom separator option grouping */
+		yith_proteo_toggle_header_bottom_separator_controls_list();
+
+		$( '#customize-control-yith_proteo_header_bottom_separator_group_title' ).addClass('section-closed').on( 'click', yith_proteo_toggle_header_bottom_separator_controls );
+
+		function yith_proteo_toggle_header_bottom_separator_controls() {
+			var section_title = $( '#customize-control-yith_proteo_header_bottom_separator_group_title' ),
+			collapsed = section_title.hasClass( 'section-closed' );
+			section_title.toggleClass('section-closed');
+			wp.customize.control('yith_proteo_header_bottom_separator_style' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_header_bottom_line_color' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_header_bottom_line_thickness' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_header_bottom_line_width' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_header_bottom_line_alignment' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_header_bottom_shadow_color' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_header_bottom_shadow_hoffset' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_header_bottom_shadow_voffset' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_header_bottom_shadow_blur' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_header_bottom_shadow_spread' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_header_bottom_image' ).toggle( collapsed );
+			wp.customize.control('yith_proteo_header_bottom_image_alignment' ).toggle( collapsed );
+			$(document).trigger('proteo_option_dependancies_check');
+		}
+
+		function yith_proteo_toggle_header_bottom_separator_controls_list() {
+			wp.customize.control('yith_proteo_header_bottom_separator_style' ).toggle( false );
+			wp.customize.control('yith_proteo_header_bottom_line_color' ).toggle( false );
+			wp.customize.control('yith_proteo_header_bottom_line_thickness' ).toggle( false );
+			wp.customize.control('yith_proteo_header_bottom_line_width' ).toggle( false );
+			wp.customize.control('yith_proteo_header_bottom_line_alignment' ).toggle( false );
+			wp.customize.control('yith_proteo_header_bottom_shadow_color' ).toggle( false );
+			wp.customize.control('yith_proteo_header_bottom_shadow_hoffset' ).toggle( false );
+			wp.customize.control('yith_proteo_header_bottom_shadow_voffset' ).toggle( false );
+			wp.customize.control('yith_proteo_header_bottom_shadow_blur' ).toggle( false );
+			wp.customize.control('yith_proteo_header_bottom_shadow_spread' ).toggle( false );
+			wp.customize.control('yith_proteo_header_bottom_image' ).toggle( false );
+			wp.customize.control('yith_proteo_header_bottom_image_alignment' ).toggle( false );
+		}
+
 		/* Header elements option grouping */
 		yith_proteo_toggle_header_elements_controls_list();
 
