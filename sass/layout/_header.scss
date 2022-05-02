@@ -93,6 +93,18 @@
 		}
 	}
 
+	&.header-bottom-separator-line {
+		&:after {
+			content: '';
+			display: block;
+			height: var(--proteo-header_bottom_border_thickness);
+			background-color: var(--proteo-header_bottom_border_color);
+			width: var(--proteo-header_bottom_border_width);
+			margin: 0 auto;
+			float: var(--proteo-header_bottom_border_alignment);
+		}
+	}
+
 	.header-contents {
 		position: relative;
 		transition: all ease 0.3s;

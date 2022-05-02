@@ -52,6 +52,11 @@ if ( ! function_exists( 'yith_proteo_generate_style_variables' ) ) {
 		$header_bg_color        = get_theme_mod( 'yith_proteo_header_background_color', '#ffffff' );
 		$sticky_header_bg_color = get_theme_mod( 'yith_proteo_sticky_header_background_color', get_theme_mod( 'yith_proteo_header_background_color', '#ffffff' ) );
 
+		$header_bottom_border_color     = get_theme_mod( 'yith_proteo_header_bottom_line_color', '#000000' );
+		$header_bottom_border_thickness = get_theme_mod( 'yith_proteo_header_bottom_line_thickness', 2 );
+		$header_bottom_border_width     = get_theme_mod( 'yith_proteo_header_bottom_line_width', 100 );
+		$header_bottom_border_alignment = 'center' === get_theme_mod( 'yith_proteo_header_bottom_line_alignment', 'center' ) ? 'initial' : get_theme_mod( 'yith_proteo_header_bottom_line_alignment', 'center' );
+
 		$topbar_bg_color            = get_theme_mod( 'yith_proteo_topbar_background_color', '#ebebeb' );
 		$topbar_font_size           = get_theme_mod( 'yith_proteo_topbar_font_size', 16 );
 		$topbar_font_color          = get_theme_mod( 'yith_proteo_topbar_font_color', '#404040' );
@@ -581,6 +586,10 @@ if ( ! function_exists( 'yith_proteo_generate_style_variables' ) ) {
 			--proteo-responsive_breakpoint_small_desktop: {$responsive_breakpoint_small_desktop}px;
 			--proteo-responsive_breakpoint_desktop: {$responsive_breakpoint_desktop}px;
 			--proteo-responsive_breakpoint_large_desktop: {$responsive_breakpoint_large_desktop}px;
+			--proteo-header_bottom_border_color: {$header_bottom_border_color};
+			--proteo-header_bottom_border_thickness: {$header_bottom_border_thickness}px;
+			--proteo-header_bottom_border_width: {$header_bottom_border_width}%;
+			--proteo-header_bottom_border_alignment: {$header_bottom_border_alignment};
 		}";
 
 		set_transient( $theme . '-css-variables', $custom_css, DAY_IN_SECONDS );

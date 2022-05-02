@@ -152,35 +152,12 @@
 		)
 	);
 
-	// Enable header bottom separator.
-	if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
-		$wp_customize->add_setting(
-			'yith_proteo_header_bottom_separator_enabled',
-			array(
-				'default'           => 'no',
-				'sanitize_callback' => 'yith_proteo_sanitize_yes_no',
-			)
-		);
-
-		$wp_customize->add_control(
-			new Customizer_Control_Yes_No(
-				$wp_customize,
-				'yith_proteo_header_bottom_separator_enabled',
-				array(
-					'label'       => esc_html_x( 'Enable bottom separator', 'Customizer option name', 'yith-proteo' ),
-					'section'     => 'yith_proteo_header_management',
-					'description' => esc_html_x( 'Choose whether to use a header bottom separator or not.', 'Customizer option description', 'yith-proteo' ),
-				)
-			)
-		);
-	}
-
 	// Header Layout options.
 	if ( class_exists( 'Customizer_Control_Radio_Image' ) ) {
 		$wp_customize->add_setting(
 			'yith_proteo_header_bottom_separator_style',
 			array(
-				'default'           => 'line',
+				'default'           => 'none',
 				'sanitize_callback' => 'yith_proteo_sanitize_radio',
 			)
 		);
@@ -193,17 +170,21 @@
 					'label'   => esc_html_x( 'Separator style', 'Customizer option name', 'yith-proteo' ),
 					'section' => 'yith_proteo_header_management',
 					'choices' => array(
+						'none'   => array(
+							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/left-logo.svg',
+							'label' => esc_html_x( 'None', 'Customizer option value', 'yith-proteo' ),
+						),
 						'line'   => array(
 							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/left-logo.svg',
 							'label' => esc_html_x( 'Simple line', 'Customizer option value', 'yith-proteo' ),
 						),
-						'image'  => array(
-							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/left-logo-inline.svg',
-							'label' => esc_html_x( 'Image', 'Customizer option value', 'yith-proteo' ),
-						),
 						'shadow' => array(
 							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/center-logo.svg',
 							'label' => esc_html_x( 'Shadow', 'Customizer option value', 'yith-proteo' ),
+						),
+						'image'  => array(
+							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/left-logo-inline.svg',
+							'label' => esc_html_x( 'Image', 'Customizer option value', 'yith-proteo' ),
 						),
 					),
 				)
@@ -254,6 +235,67 @@
 			)
 		)
 	);
+
+	// Header bottom border width.
+	$wp_customize->add_setting(
+		'yith_proteo_header_bottom_line_width',
+		array(
+			'default'           => 100,
+			'sanitize_callback' => 'absint',
+		)
+	);
+
+	$wp_customize->add_control(
+		new WP_Customize_Range(
+			$wp_customize,
+			'yith_proteo_header_bottom_line_width',
+			array(
+				'label'   => esc_html_x( 'Border width (%)', 'Customizer option name', 'yith-proteo' ),
+				'min'     => 10,
+				'max'     => 100,
+				'step'    => 10,
+				'default' => 100,
+				'unit'    => '%',
+				'section' => 'yith_proteo_header_management',
+			)
+		)
+	);
+
+	// Header bottom border alignment.
+	if ( class_exists( 'Customizer_Control_Radio_Image' ) ) {
+		$wp_customize->add_setting(
+			'yith_proteo_header_bottom_line_alignment',
+			array(
+				'default'           => 'center',
+				'sanitize_callback' => 'yith_proteo_sanitize_radio',
+			)
+		);
+
+		$wp_customize->add_control(
+			new Customizer_Control_Radio_Image(
+				$wp_customize,
+				'yith_proteo_header_bottom_line_alignment',
+				array(
+					'label'   => esc_html_x( 'Border alignment', 'Customizer option name', 'yith-proteo' ),
+					'section' => 'yith_proteo_header_management',
+					'choices' => array(
+						'left'   => array(
+							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/align-left.svg',
+							'label' => esc_html_x( 'Left', 'Customizer option value', 'yith-proteo' ),
+						),
+						'center' => array(
+							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/align-center.svg',
+							'label' => esc_html_x( 'Center', 'Customizer option value', 'yith-proteo' ),
+						),
+						'right'  => array(
+							'url'   => trailingslashit( get_template_directory_uri() ) . '/img/panel-icons/align-right.svg',
+							'label' => esc_html_x( 'Right', 'Customizer option value', 'yith-proteo' ),
+						),
+					),
+				)
+			)
+		);
+	}
 
 		// Header bottom shadow color.
 	$wp_customize->add_setting(

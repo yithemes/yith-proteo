@@ -6688,6 +6688,15 @@ header.center_logo_navigation_below .menu-toggle {
 .site-header.center_logo_navigation_below .site-branding .site-description {
   display: block;
 }
+.site-header.header-bottom-separator-line:after {
+  content: "";
+  display: block;
+  height: var(--proteo-header_bottom_border_thickness);
+  background-color: var(--proteo-header_bottom_border_color);
+  width: var(--proteo-header_bottom_border_width);
+  margin: 0 auto;
+  float: var(--proteo-header_bottom_border_alignment);
+}
 .site-header .header-contents {
   position: relative;
   transition: all ease 0.3s;
