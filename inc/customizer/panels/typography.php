@@ -30,8 +30,16 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_global_typography_group_title',
 		array(
-			'label'   => esc_html_x( 'Global typography', 'Customizer options group title', 'yith-proteo' ),
-			'section' => 'yith_proteo_typography',
+			'label'    => esc_html_x( 'Global typography', 'Customizer options group title', 'yith-proteo' ),
+			'section'  => 'yith_proteo_typography',
+			'children' => array(
+				'yith_proteo_body_font',
+				'yith_proteo_base_font_size',
+				'yith_proteo_base_font_color',
+				'yith_proteo_general_link_color',
+				'yith_proteo_general_link_hover_color',
+				'yith_proteo_general_link_decoration',
+			),
 		)
 	)
 );
@@ -168,8 +176,13 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_h1_typography_group_title',
 		array(
-			'label'   => esc_html_x( 'H1', 'Customizer options group title', 'yith-proteo' ),
-			'section' => 'yith_proteo_typography',
+			'label'    => esc_html_x( 'H1', 'Customizer options group title', 'yith-proteo' ),
+			'section'  => 'yith_proteo_typography',
+			'children' => array(
+				'yith_proteo_h1_font',
+				'yith_proteo_h1_font_size',
+				'yith_proteo_h1_font_color',
+			),
 		)
 	)
 );
@@ -245,8 +258,13 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_h2_typography_group_title',
 		array(
-			'label'   => esc_html_x( 'H2', 'Customizer options group title', 'yith-proteo' ),
-			'section' => 'yith_proteo_typography',
+			'label'    => esc_html_x( 'H2', 'Customizer options group title', 'yith-proteo' ),
+			'section'  => 'yith_proteo_typography',
+			'children' => array(
+				'yith_proteo_h2_font',
+				'yith_proteo_h2_font_size',
+				'yith_proteo_h2_font_color',
+			),
 		)
 	)
 );
@@ -322,8 +340,13 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_h3_typography_group_title',
 		array(
-			'label'   => esc_html_x( 'H3', 'Customizer options group title', 'yith-proteo' ),
-			'section' => 'yith_proteo_typography',
+			'label'    => esc_html_x( 'H3', 'Customizer options group title', 'yith-proteo' ),
+			'section'  => 'yith_proteo_typography',
+			'children' => array(
+				'yith_proteo_h3_font',
+				'yith_proteo_h3_font_size',
+				'yith_proteo_h3_font_color',
+			),
 		)
 	)
 );
@@ -399,8 +422,13 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_h4_typography_group_title',
 		array(
-			'label'   => esc_html_x( 'H4', 'Customizer options group title', 'yith-proteo' ),
-			'section' => 'yith_proteo_typography',
+			'label'    => esc_html_x( 'H4', 'Customizer options group title', 'yith-proteo' ),
+			'section'  => 'yith_proteo_typography',
+			'children' => array(
+				'yith_proteo_h4_font',
+				'yith_proteo_h4_font_size',
+				'yith_proteo_h4_font_color',
+			),
 		)
 	)
 );
@@ -476,8 +504,13 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_h5_typography_group_title',
 		array(
-			'label'   => esc_html_x( 'H5', 'Customizer options group title', 'yith-proteo' ),
-			'section' => 'yith_proteo_typography',
+			'label'    => esc_html_x( 'H5', 'Customizer options group title', 'yith-proteo' ),
+			'section'  => 'yith_proteo_typography',
+			'children' => array(
+				'yith_proteo_h5_font',
+				'yith_proteo_h5_font_size',
+				'yith_proteo_h5_font_color',
+			),
 		)
 	)
 );
@@ -553,8 +586,13 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_h6_typography_group_title',
 		array(
-			'label'   => esc_html_x( 'H6', 'Customizer options group title', 'yith-proteo' ),
-			'section' => 'yith_proteo_typography',
+			'label'    => esc_html_x( 'H6', 'Customizer options group title', 'yith-proteo' ),
+			'section'  => 'yith_proteo_typography',
+			'children' => array(
+				'yith_proteo_h6_font',
+				'yith_proteo_h6_font_size',
+				'yith_proteo_h6_font_color',
+			),
 		)
 	)
 );
@@ -630,8 +668,13 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_widgets_title_typography_group_title',
 		array(
-			'label'   => esc_html_x( 'Widgets title', 'Customizer options group title', 'yith-proteo' ),
-			'section' => 'yith_proteo_typography',
+			'label'    => esc_html_x( 'Widgets title', 'Customizer options group title', 'yith-proteo' ),
+			'section'  => 'yith_proteo_typography',
+			'children' => array(
+				'yith_proteo_widget_title_font',
+				'yith_proteo_widget_title_font_size',
+				'yith_proteo_widget_title_font_color',
+			),
 		)
 	)
 );
@@ -707,8 +750,13 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_widgets_content_typography_group_title',
 		array(
-			'label'   => esc_html_x( 'Widgets content', 'Customizer options group title', 'yith-proteo' ),
-			'section' => 'yith_proteo_typography',
+			'label'    => esc_html_x( 'Widgets content', 'Customizer options group title', 'yith-proteo' ),
+			'section'  => 'yith_proteo_typography',
+			'children' => array(
+				'yith_proteo_widget_content_font',
+				'yith_proteo_widget_content_font_size',
+				'yith_proteo_widget_content_font_color',
+			),
 		)
 	)
 );
@@ -783,8 +831,11 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_additional_typography_group_title',
 		array(
-			'label'   => esc_html_x( 'Additional typography options', 'Customizer options group title', 'yith-proteo' ),
-			'section' => 'yith_proteo_typography',
+			'label'    => esc_html_x( 'Additional typography options', 'Customizer options group title', 'yith-proteo' ),
+			'section'  => 'yith_proteo_typography',
+			'children' => array(
+				'yith_proteo_google_font',
+			),
 		)
 	)
 );
