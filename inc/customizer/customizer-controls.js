@@ -9,6 +9,45 @@
 (function($) {
 
 	wp.customize.bind( 'ready', function() {
+
+		const dependencies = {
+			'yith_proteo_header_bottom_line_color': {
+				'yith_proteo_header_bottom_separator_style': 'line'
+			},
+			'yith_proteo_header_bottom_line_thickness': {
+				'yith_proteo_header_bottom_separator_style': 'line'
+			},
+			'yith_proteo_header_bottom_line_width': {
+				'yith_proteo_header_bottom_separator_style': 'line'
+			},
+			'yith_proteo_header_bottom_line_alignment': {
+				'yith_proteo_header_bottom_separator_style': 'line'
+			},
+
+			'yith_proteo_header_bottom_shadow_color': {
+				'yith_proteo_header_bottom_separator_style': 'shadow'
+			},
+			'yith_proteo_header_bottom_shadow_hoffset': {
+				'yith_proteo_header_bottom_separator_style': 'shadow'
+			},
+			'yith_proteo_header_bottom_shadow_voffset': {
+				'yith_proteo_header_bottom_separator_style': 'shadow'
+			},
+			'yith_proteo_header_bottom_shadow_blur': {
+				'yith_proteo_header_bottom_separator_style': 'shadow'
+			},
+			'yith_proteo_header_bottom_shadow_spread': {
+				'yith_proteo_header_bottom_separator_style': 'shadow'
+			},
+
+			'yith_proteo_header_bottom_image': {
+				'yith_proteo_header_bottom_separator_style': 'image'
+			},
+			'yith_proteo_header_bottom_image_alignment': {
+				'yith_proteo_header_bottom_separator_style': 'image'
+			},
+		};
+
 		/**
 		 * Helper showControlIfhasValues()
 		 */
@@ -31,6 +70,77 @@
 			};
 		}
 
+		function proteoHandleParentGroups(){
+			$('.customize-control-simple_notice .has-children')
+				.each( function () {
+					const children = $(this),
+						parent_element = children.parent();
+
+					parent_element.addClass('section-closed')
+					
+					for ( const child_option_name of children.data('children') ) {
+						wp.customize.control( child_option_name ).toggle( false );
+					}
+				} )
+				.on( 'click', function() {
+					var t = $(this),
+						nested = t.data( 'children' ),
+						parent_element = t.parent(),
+						closed = parent_element.hasClass( 'section-closed' );
+
+					if ( ! nested ) {
+						return;
+					}
+
+					parent_element.toggleClass( 'section-closed' );
+					
+					for ( var child_option_name of nested ) {
+						if ( ! proteoCheckControlDependencies( child_option_name ) ) {
+							continue;
+						}
+
+						wp.customize.control( child_option_name ).toggle( closed );
+					}
+				} );
+		}
+		proteoHandleParentGroups();
+
+		function proteoCheckControlDependencies( controlId ) {
+			if ( ! dependencies[ controlId ] )  {
+				return true;
+			}
+
+			for ( depControlId in dependencies[ controlId ] ) {
+				const expValue = dependencies[ controlId ][ depControlId ],
+					currentValue = wp.customize( depControlId ).get();
+		
+				//console.log(depControlId, controlId, expValue, currentValue);
+
+				if( expValue != currentValue ) {
+					return false;
+				}
+			}
+
+			return true;
+		}
+
+		function proteoCheckControlsDependencies() {
+			for ( let controlId in dependencies ) {
+				console.log(controlId);
+
+				const control = wp.customize.control( controlId );
+
+				for ( let depControlId in dependencies[ controlId ] ) {
+					const depControl = wp.customize( depControlId );
+
+					depControl.bind( () => {
+						control.toggle( proteoCheckControlDependencies( controlId ) );
+					} );
+				}
+			}
+		};
+
+		proteoCheckControlsDependencies();
 
 		/**
 		 * Footer sidebar width calc
@@ -724,96 +834,6 @@
 			wp.customize.control('yith_proteo_button_style_2_text_color_hover' ).toggle( false );
 		}
 
-		/* Site logo options */
-		yith_proteo_toggle_site_logo_options_controls_list();
-
-		$( '#customize-control-yith_proteo_site_logo_group_title' ).addClass('section-closed').on( 'click', yith_proteo_toggle_site_logo_options_controls );
-
-		function yith_proteo_toggle_site_logo_options_controls() {
-			var section_title = $( '#customize-control-yith_proteo_site_logo_group_title' ),
-			collapsed = section_title.hasClass( 'section-closed' );
-			section_title.toggleClass('section-closed');
-			wp.customize.control('yith_proteo_display_site_logo' ).toggle( collapsed );
-			wp.customize.control('custom_logo' ).toggle( collapsed );
-			wp.customize.control('yith_proteo_custom_logo_max_width' ).toggle( collapsed );
-		}
-
-		function yith_proteo_toggle_site_logo_options_controls_list() {
-			wp.customize.control('yith_proteo_display_site_logo' ).toggle( false );
-			wp.customize.control('custom_logo' ).toggle( false );
-			wp.customize.control('yith_proteo_custom_logo_max_width' ).toggle( false );
-		}
-
-		/* Site title options */
-		yith_proteo_toggle_site_title_options_controls_list();
-
-		$( '#customize-control-yith_proteo_site_title_group_title' ).addClass('section-closed').on( 'click', yith_proteo_toggle_site_title_options_controls );
-
-		function yith_proteo_toggle_site_title_options_controls() {
-			var section_title = $( '#customize-control-yith_proteo_site_title_group_title' ),
-			collapsed = section_title.hasClass( 'section-closed' );
-			section_title.toggleClass('section-closed');
-			wp.customize.control('yith_proteo_display_site_title' ).toggle( collapsed );
-			wp.customize.control('blogname' ).toggle( collapsed );
-			wp.customize.control('site_title_font' ).toggle( collapsed );
-			wp.customize.control('yith_proteo_site_title_font_size' ).toggle( collapsed );
-			wp.customize.control('yith_proteo_site_title_color' ).toggle( collapsed );
-			wp.customize.control('yith_proteo_site_title_spacing' ).toggle( collapsed );
-		}
-
-		function yith_proteo_toggle_site_title_options_controls_list() {
-			wp.customize.control('yith_proteo_display_site_title' ).toggle( false );
-			wp.customize.control('blogname' ).toggle( false );
-			wp.customize.control('site_title_font' ).toggle( false );
-			wp.customize.control('yith_proteo_site_title_font_size' ).toggle( false );
-			wp.customize.control('yith_proteo_site_title_color' ).toggle( false );
-			wp.customize.control('yith_proteo_site_title_spacing' ).toggle( false );
-		}
-
-		/* Tagline options */
-		yith_proteo_toggle_tagline_options_controls_list();
-
-		$( '#customize-control-yith_proteo_tagline_group_title' ).addClass('section-closed').on( 'click', yith_proteo_toggle_tagline_options_controls );
-
-		function yith_proteo_toggle_tagline_options_controls() {
-			var section_title = $( '#customize-control-yith_proteo_tagline_group_title' ),
-			collapsed = section_title.hasClass( 'section-closed' );
-			section_title.toggleClass('section-closed');
-			wp.customize.control('yith_proteo_display_tagline' ).toggle( collapsed );
-			wp.customize.control('blogdescription' ).toggle( collapsed );
-			wp.customize.control('tagline_font' ).toggle( collapsed );
-			wp.customize.control('yith_proteo_tagline_font_size' ).toggle( collapsed );
-			wp.customize.control('yith_proteo_tagline_color' ).toggle( collapsed );
-			wp.customize.control('yith_proteo_tagline_spacing' ).toggle( collapsed );
-			wp.customize.control('yith_proteo_tagline_position' ).toggle( collapsed );
-		}
-
-		function yith_proteo_toggle_tagline_options_controls_list() {
-			wp.customize.control('yith_proteo_display_tagline' ).toggle( false );
-			wp.customize.control('blogdescription' ).toggle( false );
-			wp.customize.control('tagline_font' ).toggle( false );
-			wp.customize.control('yith_proteo_tagline_font_size' ).toggle( false );
-			wp.customize.control('yith_proteo_tagline_color' ).toggle( false );
-			wp.customize.control('yith_proteo_tagline_spacing' ).toggle( false );
-			wp.customize.control('yith_proteo_tagline_position' ).toggle( false );
-		}
-
-		/* Site icon */
-		yith_proteo_toggle_favicon_options_controls_list();
-
-		$( '#customize-control-yith_proteo_favicon_group_title' ).addClass('section-closed').on( 'click', yith_proteo_toggle_favicon_options_controls );
-
-		function yith_proteo_toggle_favicon_options_controls() {
-			var section_title = $( '#customize-control-yith_proteo_favicon_group_title' ),
-			collapsed = section_title.hasClass( 'section-closed' );
-			section_title.toggleClass('section-closed');
-			wp.customize.control('site_icon' ).toggle( collapsed );
-		}
-
-		function yith_proteo_toggle_favicon_options_controls_list() {
-			wp.customize.control('site_icon' ).toggle( false );
-		}
-
 		/* Global layout options grouping */
 		yith_proteo_toggle_global_layout_options_controls_list();
 
@@ -1072,45 +1092,6 @@
 			wp.customize.control('yith_proteo_header_layout' ).toggle( false );
 			wp.customize.control('yith_proteo_header_spacing' ).toggle( false );
 			wp.customize.control('yith_proteo_header_fullwidth' ).toggle( false );
-		}
-
-		/* Header bottom separator option grouping */
-		yith_proteo_toggle_header_bottom_separator_controls_list();
-
-		$( '#customize-control-yith_proteo_header_bottom_separator_group_title' ).addClass('section-closed').on( 'click', yith_proteo_toggle_header_bottom_separator_controls );
-
-		function yith_proteo_toggle_header_bottom_separator_controls() {
-			var section_title = $( '#customize-control-yith_proteo_header_bottom_separator_group_title' ),
-			collapsed = section_title.hasClass( 'section-closed' );
-			section_title.toggleClass('section-closed');
-			wp.customize.control('yith_proteo_header_bottom_separator_style' ).toggle( collapsed );
-			wp.customize.control('yith_proteo_header_bottom_line_color' ).toggle( collapsed );
-			wp.customize.control('yith_proteo_header_bottom_line_thickness' ).toggle( collapsed );
-			wp.customize.control('yith_proteo_header_bottom_line_width' ).toggle( collapsed );
-			wp.customize.control('yith_proteo_header_bottom_line_alignment' ).toggle( collapsed );
-			wp.customize.control('yith_proteo_header_bottom_shadow_color' ).toggle( collapsed );
-			wp.customize.control('yith_proteo_header_bottom_shadow_hoffset' ).toggle( collapsed );
-			wp.customize.control('yith_proteo_header_bottom_shadow_voffset' ).toggle( collapsed );
-			wp.customize.control('yith_proteo_header_bottom_shadow_blur' ).toggle( collapsed );
-			wp.customize.control('yith_proteo_header_bottom_shadow_spread' ).toggle( collapsed );
-			wp.customize.control('yith_proteo_header_bottom_image' ).toggle( collapsed );
-			wp.customize.control('yith_proteo_header_bottom_image_alignment' ).toggle( collapsed );
-			$(document).trigger('proteo_option_dependancies_check');
-		}
-
-		function yith_proteo_toggle_header_bottom_separator_controls_list() {
-			wp.customize.control('yith_proteo_header_bottom_separator_style' ).toggle( false );
-			wp.customize.control('yith_proteo_header_bottom_line_color' ).toggle( false );
-			wp.customize.control('yith_proteo_header_bottom_line_thickness' ).toggle( false );
-			wp.customize.control('yith_proteo_header_bottom_line_width' ).toggle( false );
-			wp.customize.control('yith_proteo_header_bottom_line_alignment' ).toggle( false );
-			wp.customize.control('yith_proteo_header_bottom_shadow_color' ).toggle( false );
-			wp.customize.control('yith_proteo_header_bottom_shadow_hoffset' ).toggle( false );
-			wp.customize.control('yith_proteo_header_bottom_shadow_voffset' ).toggle( false );
-			wp.customize.control('yith_proteo_header_bottom_shadow_blur' ).toggle( false );
-			wp.customize.control('yith_proteo_header_bottom_shadow_spread' ).toggle( false );
-			wp.customize.control('yith_proteo_header_bottom_image' ).toggle( false );
-			wp.customize.control('yith_proteo_header_bottom_image_alignment' ).toggle( false );
 		}
 
 		/* Header elements option grouping */
@@ -1517,24 +1498,6 @@
 			wp.customize.control('yith_proteo_product_catalog_border_color', showControlIfhasValues(setting, ['yes']));
 		});
 
-		/**
-		 * Control Dependency
-		 */
-		wp.customize('yith_proteo_header_bottom_separator_style', function (setting) {
-			wp.customize.control('yith_proteo_header_bottom_line_color', showControlIfhasValues(setting, ['line']));
-			wp.customize.control('yith_proteo_header_bottom_line_thickness', showControlIfhasValues(setting, ['line']));
-			wp.customize.control('yith_proteo_header_bottom_line_width', showControlIfhasValues(setting, ['line']));
-			wp.customize.control('yith_proteo_header_bottom_line_alignment', showControlIfhasValues(setting, ['line']));
-
-			wp.customize.control('yith_proteo_header_bottom_shadow_color', showControlIfhasValues(setting, ['shadow']));
-			wp.customize.control('yith_proteo_header_bottom_shadow_hoffset', showControlIfhasValues(setting, ['shadow']));
-			wp.customize.control('yith_proteo_header_bottom_shadow_voffset', showControlIfhasValues(setting, ['shadow']));
-			wp.customize.control('yith_proteo_header_bottom_shadow_blur', showControlIfhasValues(setting, ['shadow']));
-			wp.customize.control('yith_proteo_header_bottom_shadow_spread', showControlIfhasValues(setting, ['shadow']));
-
-			wp.customize.control('yith_proteo_header_bottom_image', showControlIfhasValues(setting, ['image']));
-			wp.customize.control('yith_proteo_header_bottom_image_alignment', showControlIfhasValues(setting, ['image']));
-		});
 	});
 
 })(jQuery);

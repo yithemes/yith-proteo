@@ -19,6 +19,13 @@ if ( class_exists( 'WP_Customize_Control' ) ) {
 		public $type = 'simple_notice';
 
 		/**
+		 * Children controls array
+		 *
+		 * @var array $children Children controls to group
+		 */
+		public $children;
+
+		/**
 		 * Render controls
 		 */
 		public function render_content() {
@@ -41,8 +48,17 @@ if ( class_exists( 'WP_Customize_Control' ) ) {
 				),
 				'code'   => array(),
 			);
+
+			$nested       = '';
+			$has_children = '';
+
+			if ( ! empty( $this->children ) ) {
+				$nested       = wp_json_encode( $this->children );
+				$nested       = 'data-children=' . $nested . '';
+				$has_children = 'has-children';
+			}
 			?>
-			<div class="simple-notice-custom-control">
+			<div class="simple-notice-custom-control <?php echo esc_attr( $has_children ); ?>" <?php echo esc_attr( $nested ); ?>>
 				<?php if ( ! empty( $this->label ) ) { ?>
 					<span class="customize-control-title"><?php echo esc_html( $this->label ); ?></span>
 				<?php } ?>
