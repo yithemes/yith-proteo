@@ -96,6 +96,17 @@
 			'yith_proteo_store_notice_font_size' : {
 				'woocommerce_demo_store' : 'yes'
 			},
+			'woocommerce_demo_store_notice' : {
+				'woocommerce_demo_store' : 'yes'
+			},
+
+			'yith_proteo_products_loop_view_details_style' : {
+				'yith_proteo_product_loop_view_details_enable' : 'yes'
+			},
+
+			'yith_proteo_booking_products_image_grid_layout' : {
+				'yith_proteo_booking_products_specific_layout' : 'yes'
+			},
 
 		};
 
@@ -560,30 +571,9 @@
 		/**
 		 * Control Dependency
 		 */
-		wp.customize('yith_proteo_product_loop_view_details_enable', function (setting) {
-			wp.customize.control('yith_proteo_products_loop_view_details_style', showControlIfhasValues(setting, ['yes']));
-		});
-
-		/**
-		 * Control Dependency
-		 */
-		wp.customize('woocommerce_demo_store', function (setting) {
-			wp.customize.control('woocommerce_demo_store_notice', showControlIfhasValues(setting, ['yes']));
-		});
-
-		/**
-		 * Control Dependency
-		 */
 		wp.customize('yith_proteo_product_page_related_enabler', function (setting) {
 			wp.customize.control('yith_proteo_product_page_related_max_number', showControlIfhasValues(setting, ['yes']));
 			wp.customize.control('yith_proteo_product_page_related_columns', showControlIfhasValues(setting, ['yes']));
-		});
-
-		/**
-		 * Control Dependency
-		 */
-		wp.customize('yith_proteo_booking_products_specific_layout', function (setting) {
-			wp.customize.control('yith_proteo_booking_products_image_grid_layout', showControlIfhasValues(setting, ['yes']));
 		});
 
 		/**
