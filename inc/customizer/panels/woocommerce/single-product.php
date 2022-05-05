@@ -31,8 +31,13 @@
 			$wp_customize,
 			'yith_proteo_product_page_title_group_title',
 			array(
-				'label'   => esc_html_x( 'Product title', 'Customizer options group title', 'yith-proteo' ),
-				'section' => 'yith_proteo_product_page_management',
+				'label'    => esc_html_x( 'Product title', 'Customizer options group title', 'yith-proteo' ),
+				'section'  => 'yith_proteo_product_page_management',
+				'children' => array(
+					'yith_proteo_product_page_title_font',
+					'yith_proteo_product_page_title_font_size',
+					'yith_proteo_product_page_title_font_color',
+				),
 			)
 		)
 	);
@@ -108,8 +113,14 @@
 			$wp_customize,
 			'yith_proteo_product_page_image_group_title',
 			array(
-				'label'   => esc_html_x( 'Product image', 'Customizer options group title', 'yith-proteo' ),
-				'section' => 'yith_proteo_product_page_management',
+				'label'    => esc_html_x( 'Product image', 'Customizer options group title', 'yith-proteo' ),
+				'section'  => 'yith_proteo_product_page_management',
+				'children' => array(
+					'yith_proteo_product_page_image_zoom',
+					'yith_proteo_product_page_image_lightbox',
+					'yith_proteo_product_page_gallery_slider',
+					'yith_proteo_product_page_sticky_image',
+				),
 			)
 		)
 	);
@@ -216,8 +227,19 @@
 			$wp_customize,
 			'yith_proteo_product_page_price_and_add_to_cart_group_title',
 			array(
-				'label'   => esc_html_x( 'Product summary', 'Customizer options group title', 'yith-proteo' ),
-				'section' => 'yith_proteo_product_page_management',
+				'label'    => esc_html_x( 'Product summary', 'Customizer options group title', 'yith-proteo' ),
+				'section'  => 'yith_proteo_product_page_management',
+				'children' => array(
+					'yith_proteo_product_page_background_enabled',
+					'yith_proteo_product_page_background_color',
+					'yith_proteo_product_page_description_font_size',
+					'yith_proteo_product_page_description_color',
+					'yith_proteo_product_page_price_font_size',
+					'yith_proteo_product_page_price_color',
+					'yith_proteo_product_page_quantity_font_size',
+					'yith_proteo_product_page_add_to_cart_font_size',
+					'yith_proteo_product_page_show_clear_variations_link',
+				),
 			)
 		)
 	);
@@ -403,8 +425,13 @@
 			$wp_customize,
 			'yith_proteo_product_related_products_group_title',
 			array(
-				'label'   => esc_html_x( 'Related products', 'Customizer options group title', 'yith-proteo' ),
-				'section' => 'yith_proteo_product_page_management',
+				'label'    => esc_html_x( 'Related products', 'Customizer options group title', 'yith-proteo' ),
+				'section'  => 'yith_proteo_product_page_management',
+				'children' => array(
+					'yith_proteo_product_page_related_enabler',
+					'yith_proteo_product_page_related_max_number',
+					'yith_proteo_product_page_related_columns',
+				),
 			)
 		)
 	);
@@ -478,8 +505,13 @@
 			$wp_customize,
 			'yith_proteo_product_sidebar_group_title',
 			array(
-				'label'   => esc_html_x( 'Sidebar management', 'Customizer options group title', 'yith-proteo' ),
-				'section' => 'yith_proteo_product_page_management',
+				'label'    => esc_html_x( 'Sidebar management', 'Customizer options group title', 'yith-proteo' ),
+				'section'  => 'yith_proteo_product_page_management',
+				'children' => array(
+					'yith_proteo_product_page_sidebar_position',
+					'yith_proteo_single_product_default_sidebar',
+					'yith_proteo_product_page_sidebar_force',
+				),
 			)
 		)
 	);
@@ -577,8 +609,13 @@
 			$wp_customize,
 			'yith_proteo_product_tabs_group_title',
 			array(
-				'label'   => esc_html_x( 'Tabs management', 'Customizer options group title', 'yith-proteo' ),
-				'section' => 'yith_proteo_product_page_management',
+				'label'    => esc_html_x( 'Tabs management', 'Customizer options group title', 'yith-proteo' ),
+				'section'  => 'yith_proteo_product_page_management',
+				'children' => array(
+					'yith_proteo_product_tabs_title_font_size',
+					'yith_proteo_product_tabs_title_font_color',
+					'yith_proteo_product_tabs_content_font_size',
+				),
 			)
 		)
 	);
@@ -650,8 +687,13 @@
 			$wp_customize,
 			'yith_proteo_product_page_category_and_sku_group_title',
 			array(
-				'label'   => esc_html_x( 'Product categories, tags and SKU', 'Customizer options group title', 'yith-proteo' ),
-				'section' => 'yith_proteo_product_page_management',
+				'label'    => esc_html_x( 'Product categories, tags and SKU', 'Customizer options group title', 'yith-proteo' ),
+				'section'  => 'yith_proteo_product_page_management',
+				'children' => array(
+					'yith_proteo_product_page_show_categories',
+					'yith_proteo_product_page_show_tags',
+					'yith_proteo_product_page_show_sku',
+				),
 			)
 		)
 	);
