@@ -30,8 +30,11 @@
 			$wp_customize,
 			'yith_proteo_sidebar_layout_options_group_title',
 			array(
-				'label'   => esc_html_x( 'Layout options', 'Customizer options group title', 'yith-proteo' ),
-				'section' => 'yith_proteo_sidebar_management',
+				'label'    => esc_html_x( 'Layout options', 'Customizer options group title', 'yith-proteo' ),
+				'section'  => 'yith_proteo_sidebar_management',
+				'children' => array(
+					'yith_proteo_sidebar_sticky',
+				),
 			)
 		)
 	);
@@ -73,8 +76,12 @@
 			$wp_customize,
 			'yith_proteo_default_sidebar_group_title',
 			array(
-				'label'   => esc_html_x( 'Pages sidebar', 'Customizer options group title', 'yith-proteo' ),
-				'section' => 'yith_proteo_sidebar_management',
+				'label'    => esc_html_x( 'Pages sidebar', 'Customizer options group title', 'yith-proteo' ),
+				'section'  => 'yith_proteo_sidebar_management',
+				'children' => array(
+					'yith_proteo_default_sidebar_position',
+					'yith_proteo_default_sidebar',
+				),
 			)
 		)
 	);
@@ -151,8 +158,12 @@
 			$wp_customize,
 			'yith_proteo_blog_page_sidebar_group_title',
 			array(
-				'label'   => esc_html_x( 'Blog page sidebar', 'Customizer options group title', 'yith-proteo' ),
-				'section' => 'yith_proteo_sidebar_management',
+				'label'    => esc_html_x( 'Blog page sidebar', 'Customizer options group title', 'yith-proteo' ),
+				'section'  => 'yith_proteo_sidebar_management',
+				'children' => array(
+					'yith_proteo_blog_page_sidebar_position',
+					'yith_proteo_blog_sidebar',
+				),
 			)
 		)
 	);
@@ -228,8 +239,12 @@
 			$wp_customize,
 			'yith_proteo_default_posts_sidebar_group_title',
 			array(
-				'label'   => esc_html_x( 'Posts sidebar', 'Customizer options group title', 'yith-proteo' ),
-				'section' => 'yith_proteo_sidebar_management',
+				'label'    => esc_html_x( 'Posts sidebar', 'Customizer options group title', 'yith-proteo' ),
+				'section'  => 'yith_proteo_sidebar_management',
+				'children' => array(
+					'yith_proteo_default_posts_sidebar_position',
+					'yith_proteo_default_posts_sidebar',
+				),
 			)
 		)
 	);
@@ -305,8 +320,12 @@
 			$wp_customize,
 			'yith_proteo_blog_category_sidebar_group_title',
 			array(
-				'label'   => esc_html_x( 'Blog categories sidebar', 'Customizer options group title', 'yith-proteo' ),
-				'section' => 'yith_proteo_sidebar_management',
+				'label'    => esc_html_x( 'Blog categories sidebar', 'Customizer options group title', 'yith-proteo' ),
+				'section'  => 'yith_proteo_sidebar_management',
+				'children' => array(
+					'yith_proteo_blog_category_sidebar_position',
+					'yith_proteo_blog_category_sidebar',
+				),
 			)
 		)
 	);
@@ -382,8 +401,12 @@
 			$wp_customize,
 			'yith_proteo_blog_tag_sidebar_group_title',
 			array(
-				'label'   => esc_html_x( 'Blog tags sidebar', 'Customizer options group title', 'yith-proteo' ),
-				'section' => 'yith_proteo_sidebar_management',
+				'label'    => esc_html_x( 'Blog tags sidebar', 'Customizer options group title', 'yith-proteo' ),
+				'section'  => 'yith_proteo_sidebar_management',
+				'children' => array(
+					'yith_proteo_blog_tag_sidebar_position',
+					'yith_proteo_blog_tag_sidebar',
+				),
 			)
 		)
 	);
