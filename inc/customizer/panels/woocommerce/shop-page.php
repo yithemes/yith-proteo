@@ -73,11 +73,10 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
 	'yith_proteo_shop_page_default_sidebar',
 	array(
-		'type'            => 'select',
-		'label'           => esc_html_x( 'Shop page sidebar', 'Customizer option name', 'yith-proteo' ),
-		'section'         => 'yith_proteo_shop_page_management',
-		'choices'         => wp_list_pluck( $GLOBALS['wp_registered_sidebars'], 'name' ),
-		'active_callback' => 'yith_proteo_shop_page_sidebar_is_enabled',
+		'type'    => 'select',
+		'label'   => esc_html_x( 'Shop page sidebar', 'Customizer option name', 'yith-proteo' ),
+		'section' => 'yith_proteo_shop_page_management',
+		'choices' => wp_list_pluck( $GLOBALS['wp_registered_sidebars'], 'name' ),
 	)
 );
 

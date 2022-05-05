@@ -382,9 +382,9 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_blog_page_posts_border_width',
 		array(
-			'label'           => esc_html_x( 'Border width (px)', 'Customizer option name', 'yith-proteo' ),
-			'section'         => 'yith_proteo_blog_management',
-			'choices'         => array(
+			'label'   => esc_html_x( 'Border width (px)', 'Customizer option name', 'yith-proteo' ),
+			'section' => 'yith_proteo_blog_management',
+			'choices' => array(
 				'top'    => array(
 					'name' => esc_html_x( 'Top', 'Customizer option value', 'yith-proteo' ),
 				),
@@ -398,7 +398,6 @@ $wp_customize->add_control(
 					'name' => esc_html_x( 'Left', 'Customizer option value', 'yith-proteo' ),
 				),
 			),
-			'active_callback' => 'yith_proteo_blog_posts_with_borders_enabled',
 		)
 	)
 );
@@ -421,9 +420,9 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_blog_page_posts_border_radius',
 		array(
-			'label'           => esc_html_x( 'Border radius (px)', 'Customizer option name', 'yith-proteo' ),
-			'section'         => 'yith_proteo_blog_management',
-			'choices'         => array(
+			'label'   => esc_html_x( 'Border radius (px)', 'Customizer option name', 'yith-proteo' ),
+			'section' => 'yith_proteo_blog_management',
+			'choices' => array(
 				'top-left'     => array(
 					'name' => esc_html_x( 'Top Left', 'Customizer option value', 'yith-proteo' ),
 				),
@@ -437,7 +436,6 @@ $wp_customize->add_control(
 					'name' => esc_html_x( 'Bottom Left', 'Customizer option value', 'yith-proteo' ),
 				),
 			),
-			'active_callback' => 'yith_proteo_blog_posts_with_borders_enabled',
 		)
 	)
 );
@@ -455,9 +453,8 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_blog_page_posts_border_color',
 		array(
-			'label'           => esc_html_x( 'Border color', 'Customizer option name', 'yith-proteo' ),
-			'section'         => 'yith_proteo_blog_management',
-			'active_callback' => 'yith_proteo_blog_posts_with_borders_enabled',
+			'label'   => esc_html_x( 'Border color', 'Customizer option name', 'yith-proteo' ),
+			'section' => 'yith_proteo_blog_management',
 		)
 	)
 );
@@ -539,14 +536,13 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_single_post_fullwidth_cover_cropping_custom_height',
 		array(
-			'label'           => esc_html_x( 'Post featured image height', 'Customizer option name', 'yith-proteo' ),
-			'min'             => 180,
-			'max'             => 1000,
-			'step'            => 10,
-			'default'         => 400,
-			'unit'            => 'px',
-			'section'         => 'yith_proteo_blog_management',
-			'active_callback' => 'yith_proteo_blog_layout_is_fullwidth_image',
+			'label'   => esc_html_x( 'Post featured image height', 'Customizer option name', 'yith-proteo' ),
+			'min'     => 180,
+			'max'     => 1000,
+			'step'    => 10,
+			'default' => 400,
+			'unit'    => 'px',
+			'section' => 'yith_proteo_blog_management',
 		)
 	)
 );
