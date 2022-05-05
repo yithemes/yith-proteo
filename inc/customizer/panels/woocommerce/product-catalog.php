@@ -22,6 +22,14 @@ $wp_customize->add_control(
 			'label'    => esc_html_x( 'General options', 'Customizer options group title', 'yith-proteo' ),
 			'section'  => 'woocommerce_product_catalog',
 			'priority' => 5,
+			'children' => array(
+				'woocommerce_shop_page_display',
+				'woocommerce_category_archive_display',
+				'woocommerce_default_catalog_orderby',
+				'woocommerce_catalog_columns',
+				'woocommerce_catalog_rows',
+				'yith_proteo_product_catalog_spacing',
+			),
 		)
 	)
 );
@@ -74,6 +82,17 @@ $wp_customize->add_control(
 			'label'    => esc_html_x( 'Display options', 'Customizer options group title', 'yith-proteo' ),
 			'section'  => 'woocommerce_product_catalog',
 			'priority' => 10,
+			'children' => array(
+				'yith_proteo_product_catalog_with_border',
+				'yith_proteo_product_catalog_border_width',
+				'yith_proteo_product_catalog_border_radius',
+				'yith_proteo_product_catalog_border_color',
+				'yith_proteo_product_catalog_hover_effect',
+				'yith_proteo_product_catalog_title_font_size',
+				'yith_proteo_product_catalog_title_color',
+				'yith_proteo_product_catalog_price_font_size',
+				'yith_proteo_product_catalog_price_color',
+			),
 		)
 	)
 );
@@ -306,6 +325,13 @@ $wp_customize->add_control(
 			'label'    => esc_html_x( 'Add to cart options', 'Customizer options group title', 'yith-proteo' ),
 			'section'  => 'woocommerce_product_catalog',
 			'priority' => 20,
+			'children' => array(
+				'yith_proteo_products_loop_add_to_cart_style',
+				'yith_proteo_product_catalog_add_to_cart_font_size',
+				'yith_proteo_products_loop_add_to_cart_position',
+				'yith_proteo_product_loop_view_details_enable',
+				'yith_proteo_products_loop_view_details_style',
+			),
 		)
 	)
 );
