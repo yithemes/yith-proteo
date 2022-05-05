@@ -30,8 +30,27 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_blog_general_options_group_title',
 		array(
-			'label'   => esc_html_x( 'General options', 'Customizer options group title', 'yith-proteo' ),
-			'section' => 'yith_proteo_blog_management',
+			'label'    => esc_html_x( 'General options', 'Customizer options group title', 'yith-proteo' ),
+			'section'  => 'yith_proteo_blog_management',
+			'children' => array(
+				'yith_proteo_blog_read_more_text',
+				'yith_proteo_blog_loop_post_title_font_size',
+				'yith_proteo_blog_loop_post_title_color',
+				'yith_proteo_blog_loop_post_title_text_transform',
+				'yith_proteo_blog_date_on_image_enable',
+				'yith_proteo_blog_show_post_navigation',
+				'yith_proteo_blog_show_post_author',
+				'yith_proteo_blog_show_post_categories_and_tags',
+				'yith_proteo_blog_show_post_date',
+				'yith_proteo_blog_page_posts_per_row',
+				'yith_proteo_blog_page_first_post_wide',
+				'yith_proteo_blog_page_sticky_posts_wide',
+				'yith_proteo_blog_page_posts_spacing',
+				'yith_proteo_blog_page_posts_with_border',
+				'yith_proteo_blog_page_posts_border_width',
+				'yith_proteo_blog_page_posts_border_radius',
+				'yith_proteo_blog_page_posts_border_color',
+			),
 		)
 	)
 );
@@ -345,7 +364,7 @@ if ( class_exists( 'Customizer_Control_Yes_No' ) ) {
 	);
 }
 
-// Product border width.
+// Posts border width.
 $wp_customize->add_setting(
 	'yith_proteo_blog_page_posts_border_width',
 	array(
@@ -384,7 +403,7 @@ $wp_customize->add_control(
 	)
 );
 
-// Product border width.
+// Posts border width.
 $wp_customize->add_setting(
 	'yith_proteo_blog_page_posts_border_radius',
 	array(
@@ -423,7 +442,7 @@ $wp_customize->add_control(
 	)
 );
 
-// Product border color.
+// Posts border color.
 $wp_customize->add_setting(
 	'yith_proteo_blog_page_posts_border_color',
 	array(
@@ -457,8 +476,15 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_single_post_options_group_title',
 		array(
-			'label'   => esc_html_x( 'Post page options', 'Customizer options group title', 'yith-proteo' ),
-			'section' => 'yith_proteo_blog_management',
+			'label'    => esc_html_x( 'Post page options', 'Customizer options group title', 'yith-proteo' ),
+			'section'  => 'yith_proteo_blog_management',
+			'children' => array(
+				'yith_proteo_single_post_layout',
+				'yith_proteo_single_post_fullwidth_cover_cropping_custom_height',
+				'yith_proteo_single_post_background_color',
+				'yith_proteo_single_post_bg_alpha',
+				'yith_proteo_single_post_thumbnail_text_color',
+			),
 		)
 	)
 );

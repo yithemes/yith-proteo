@@ -31,8 +31,12 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_global_layout_group_title',
 		array(
-			'label'   => esc_html_x( 'Global layout options', 'Customizer options group title', 'yith-proteo' ),
-			'section' => 'yith_proteo_layout_management',
+			'label'    => esc_html_x( 'Global layout options', 'Customizer options group title', 'yith-proteo' ),
+			'section'  => 'yith_proteo_layout_management',
+			'children' => array(
+				'yith_proteo_site_content_spacing',
+				'yith_proteo_layout_full_width',
+			),
 		)
 	)
 );
@@ -112,8 +116,13 @@ $wp_customize->add_control(
 		$wp_customize,
 		'yith_proteo_page_title_layout_group_title',
 		array(
-			'label'   => esc_html_x( 'Page title options', 'Customizer options group title', 'yith-proteo' ),
-			'section' => 'yith_proteo_layout_management',
+			'label'    => esc_html_x( 'Page title options', 'Customizer options group title', 'yith-proteo' ),
+			'section'  => 'yith_proteo_layout_management',
+			'children' => array(
+				'yith_proteo_page_title_layout',
+				'yith_proteo_page_title_align',
+				'yith_proteo_page_title_spacing',
+			),
 		)
 	)
 );

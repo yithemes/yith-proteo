@@ -31,8 +31,11 @@
 			$wp_customize,
 			'yith_proteo_buttons_general_options_group_title',
 			array(
-				'label'   => esc_html_x( 'General options', 'Customizer options group title', 'yith-proteo' ),
-				'section' => 'yith_proteo_buttons',
+				'label'    => esc_html_x( 'General options', 'Customizer options group title', 'yith-proteo' ),
+				'section'  => 'yith_proteo_buttons',
+				'children' => array(
+					'yith_proteo_buttons_border_radius',
+				),
 			)
 		)
 	);
@@ -77,8 +80,17 @@
 			$wp_customize,
 			'yith_proteo_button_style_1_group_title',
 			array(
-				'label'   => esc_html_x( 'Button style 1', 'Customizer options group title', 'yith-proteo' ),
-				'section' => 'yith_proteo_buttons',
+				'label'    => esc_html_x( 'Button style 1', 'Customizer options group title', 'yith-proteo' ),
+				'section'  => 'yith_proteo_buttons',
+				'children' => array(
+					'yith_proteo_buttons_style_1_preview',
+					'yith_proteo_button_style_1_bg_color',
+					'yith_proteo_button_style_1_border_color',
+					'yith_proteo_button_style_1_text_color',
+					'yith_proteo_button_style_1_bg_color_hover',
+					'yith_proteo_button_style_1_border_color_hover',
+					'yith_proteo_button_style_1_text_color_hover',
+				),
 			)
 		)
 	);
@@ -228,6 +240,14 @@
 				'label'       => esc_html_x( 'Button style 2', 'Customizer options group title', 'yith-proteo' ),
 				'description' => esc_html_x( 'In this button you can apply a gradient using two different colors.', 'Customizer option description', 'yith-proteo' ),
 				'section'     => 'yith_proteo_buttons',
+				'children'    => array(
+					'yith_proteo_buttons_style_2_preview',
+					'yith_proteo_button_style_2_bg_color_1',
+					'yith_proteo_button_style_2_bg_color_2',
+					'yith_proteo_button_style_2_text_color',
+					'yith_proteo_button_style_2_bg_color_hover',
+					'yith_proteo_button_style_2_text_color_hover',
+				),
 			)
 		)
 	);
