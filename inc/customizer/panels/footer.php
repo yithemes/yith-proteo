@@ -30,8 +30,15 @@
 			$wp_customize,
 			'yith_proteo_footer_background_group_title',
 			array(
-				'label'   => esc_html_x( 'Footer background', 'Customizer options group title', 'yith-proteo' ),
-				'section' => 'yith_proteo_footer_management',
+				'label'    => esc_html_x( 'Footer background', 'Customizer options group title', 'yith-proteo' ),
+				'section'  => 'yith_proteo_footer_management',
+				'children' => array(
+					'yith_proteo_footer_background_color',
+					'yith_proteo_footer_background_image',
+					'yith_proteo_footer_background_size_full',
+					'yith_proteo_footer_background_repeat',
+					'yith_proteo_footer_background_position',
+				),
 			)
 		)
 	);
@@ -163,8 +170,18 @@
 			$wp_customize,
 			'yith_proteo_footer_typography_group_title',
 			array(
-				'label'   => esc_html_x( 'Footer typography', 'Customizer options group title', 'yith-proteo' ),
-				'section' => 'yith_proteo_footer_management',
+				'label'    => esc_html_x( 'Footer typography', 'Customizer options group title', 'yith-proteo' ),
+				'section'  => 'yith_proteo_footer_management',
+				'children' => array(
+					'yith_proteo_footer_font_size',
+					'yith_proteo_footer_font_color',
+					'yith_proteo_footer_link_color',
+					'yith_proteo_footer_link_hover_color',
+					'yith_proteo_footer_widgets_title_font_family',
+					'yith_proteo_footer_widgets_title_font_size',
+					'yith_proteo_footer_widgets_title_color',
+					'yith_proteo_footer_align',
+				),
 			)
 		)
 	);
@@ -348,8 +365,17 @@
 			$wp_customize,
 			'yith_proteo_footer_widgets_group_title',
 			array(
-				'label'   => esc_html_x( 'Footer widgets', 'Customizer options group title', 'yith-proteo' ),
-				'section' => 'yith_proteo_footer_management',
+				'label'    => esc_html_x( 'Footer widgets', 'Customizer options group title', 'yith-proteo' ),
+				'section'  => 'yith_proteo_footer_management',
+				'children' => array(
+					'yith_proteo_footer_sidebar_1_enable',
+					'yith_proteo_footer_sidebar_1_width',
+					'yith_proteo_footer_sidebar_1_widget_per_row',
+					'yith_proteo_footer_sidebar_2_enable',
+					'yith_proteo_footer_sidebar_2_width',
+					'yith_proteo_footer_sidebar_2_widget_per_row',
+					'yith_proteo_footer_sidebars_side_by_side',
+				),
 			)
 		)
 	);
