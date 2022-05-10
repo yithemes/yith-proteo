@@ -94,6 +94,7 @@ function yith_proteo_booking_product_page_template_load() {
 		 */
 		function yith_proteo_booking_product_image_gallery_in_header_content() {
 			if ( is_product() && has_post_thumbnail() ) {
+				do_action( 'yith_proteo_before_booking_product_image_gallery_in_header' );
 				global $product;
 				$product       = wc_get_product();
 				$images_layout = get_theme_mod( 'yith_proteo_booking_products_image_grid_layout', 1 );
@@ -106,6 +107,7 @@ function yith_proteo_booking_product_page_template_load() {
 					echo "<span class='open-gallery'><svg width='20px' height='20px' viewBox='0 0 20 20'><path d='M20 14L20 2C20 0.9 19.1 0 18 0L6 0C4.9 0 4 0.9 4 2L4 14C4 15.1 4.9 16 6 16L18 16C19.1 16 20 15.1 20 14ZM0 18L0 4L2 4L2 18L16 18L16 20L2 20C0.9 20 0 19.1 0 18ZM9 10L11.03 12.71L14 9L18 14L6 14L9 10Z' id='Shape' fill='inherit' fill-rule='evenodd' stroke='none' /></svg>" . esc_html__( 'Show images', 'yith-proteo' ) . '</span>';
 				}
 				echo '</div>';
+				do_action( 'yith_proteo_after_booking_product_image_gallery_in_header' );
 			}
 		}
 
