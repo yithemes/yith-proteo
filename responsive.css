@@ -688,6 +688,9 @@ table.shop_table {
     float: left;
     display: table;
   }
+  table.shop_table_responsive tbody tr.cart-subtotal th {
+    display: none;
+  }
 
   .wp-block-column {
     margin-bottom: 35px;

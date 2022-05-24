@@ -753,6 +753,12 @@ $yith_proteo_large_desktop_device_width_min: '/*<yith_proteo_large_desktop_devic
 			float: left;
 			display: table;
 		}
+
+		&.cart-subtotal {
+			th {
+				display: none;
+			}
+		}
 	}
 	.wp-block-column {
 		margin-bottom: 35px;
