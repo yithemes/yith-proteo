@@ -9391,9 +9391,6 @@ body.woocommerce-checkout #payment ul li label {
   cursor: pointer;
   padding-left: 30px;
 }
-body.woocommerce-checkout #payment ul li:only-child label {
-  padding-left: 0;
-}
 body.woocommerce-checkout #payment ul li.payment_method_paypal label img {
   float: right;
   margin-top: -3px;
@@ -9414,6 +9411,9 @@ body.woocommerce-checkout #payment #place_order {
   font-weight: bold;
   padding: 22px 35px 21px;
   outline: none;
+}
+body.woocommerce-checkout #payment > ul.wc_payment_methods > li:first-child:last-child > label {
+  padding-left: 0;
 }
 body.woocommerce-checkout .woocommerce-terms-and-conditions-wrapper p {
   padding: 0;

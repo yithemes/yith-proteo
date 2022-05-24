@@ -126,10 +126,6 @@ body.woocommerce-checkout {
 					padding-left: 30px;
 				}
 
-				&:only-child label {
-					padding-left: 0;
-				}
-
 				&.payment_method_paypal {
 					label {
 						img {
@@ -162,6 +158,10 @@ body.woocommerce-checkout {
 			padding: 22px 35px 21px;
 			outline: none;
 		}
+	}
+
+	#payment > ul.wc_payment_methods > li:first-child:last-child > label {
+		padding-left: 0;
 	}
 
 	.woocommerce-terms-and-conditions-wrapper {
