@@ -349,6 +349,19 @@ Single product page wishlist style
 			position: relative;
 		}
 
+		&.no-icon {
+			a,
+			.feedback {
+				padding-left: 0;
+			}
+		}
+
+		&.with-count {
+			.yith-wcwl-icon {
+				top: 5px;
+			}
+		}
+
 		a.view-wishlist,
 		a.move_to_another_wishlist {
 			padding-left: 0;
@@ -366,10 +379,6 @@ Single product page wishlist style
 		.feedback {
 			text-transform: uppercase;
 			margin-right: 15px;
-
-			.yith-wcwl-icon {
-				top: 3px;
-			}
 
 			& + a {
 				padding-left: 0 !important;
