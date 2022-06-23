@@ -106,12 +106,13 @@ body.woocommerce-checkout {
 		ul {
 			list-style-type: none;
 			padding: 0;
-			margin: 0 -30px 35px;
+			//margin: 0 -30px 35px;
+			margin: 0 -30px;
 			background: #f7f7f7;
 
 			li {
 				padding: 15px 30px 15px 30px;
-				margin-bottom: 15px;
+				//margin-bottom: 15px;
 				position: relative;
 
 				.radiobutton {

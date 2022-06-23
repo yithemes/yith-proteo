@@ -13,6 +13,16 @@ ul.payment_methods {
 	}
 }
 
-.woocommerce-PaymentMethod--actions a:last-child {
-	margin-right: 0;
+.woocommerce-PaymentMethod--actions {
+	padding: 15px 0 !important;
+	font-size: 0;
+	a {
+		font-size: 1rem;
+		text-align: center;
+		margin: 0 7.5px 10px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
 }
