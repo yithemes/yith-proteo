@@ -1,6 +1,12 @@
-ul.payment_methods {
+body.woocommerce-checkout #payment ul.payment_methods {
 	list-style-type: none;
 	padding: 0;
+
+	.payment_method_yith-stripe {
+		li {
+			padding: 5px 30px;
+		}
+	}
 }
 
 #wc-yith-stripe-cc-form {
