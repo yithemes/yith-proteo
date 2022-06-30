@@ -22,13 +22,16 @@ body.woocommerce-checkout #payment ul.payment_methods {
 .woocommerce-PaymentMethod--actions {
 	padding: 15px 0 !important;
 	font-size: 0;
+	white-space: nowrap;
 	a {
-		font-size: 1rem;
 		text-align: center;
 		margin: 0 7.5px 10px;
+		padding: 5px 15px;
+		font-size: 0.8rem;
 
 		&:last-child {
 			margin-bottom: 0;
 		}
 	}
 }
+
