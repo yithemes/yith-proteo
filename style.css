@@ -5952,7 +5952,7 @@ input.hasDatepicker {
   left: 2px;
 }
 #ui-datepicker-div .ui-datepicker-header a[data-handler=prev]:before {
-  content: "\e875";
+  content: "";
   font-family: Linearicons-Free;
   font-style: normal;
   font-variant: normal;
@@ -5968,7 +5968,7 @@ input.hasDatepicker {
   right: 2px;
 }
 #ui-datepicker-div .ui-datepicker-header a[data-handler=next]:before {
-  content: "\e876";
+  content: "";
   font-family: Linearicons-Free;
   font-style: normal;
   font-variant: normal;
@@ -6262,7 +6262,7 @@ a:hover, a:active {
 .header-sidebar .widget_nav_menu li[class*=has-children] > a:after,
 .header-sidebar-left .widget_nav_menu li[class*=has_children] > a:after,
 .header-sidebar-left .widget_nav_menu li[class*=has-children] > a:after {
-  content: "\e874";
+  content: "";
   font-family: Linearicons-Free;
   font-style: normal;
   font-weight: 800;
@@ -6495,7 +6495,7 @@ header.center_logo_navigation_below .menu-toggle {
 }
 #topbar .widget_nav_menu ul.sub-menu li[class*=has_children] > a:after,
 #topbar .widget_nav_menu ul.sub-menu li[class*=has-children] > a:after {
-  content: "\f107";
+  content: "";
   font-weight: 900;
   font-family: "Font Awesome 5 Free";
   -moz-osx-font-smoothing: grayscale;
@@ -6523,7 +6523,7 @@ header.center_logo_navigation_below .menu-toggle {
 }
 #topbar .widget_nav_menu li[class*=has_children] > a:after,
 #topbar .widget_nav_menu li[class*=has-children] > a:after {
-  content: "\f107";
+  content: "";
   font-weight: 900;
   font-family: "Font Awesome 5 Free";
   -moz-osx-font-smoothing: grayscale;
@@ -7055,7 +7055,7 @@ p:empty + p:empty {
   margin: 0;
 }
 #full-screen-search form#yith-ajaxsearchform > div:after {
-  content: "\e86f";
+  content: "";
   display: inline-block;
   font-family: Linearicons-Free;
   font-style: normal;
@@ -7195,7 +7195,7 @@ h3.widget-title {
 }
 #topbar .widget_search:before,
 .header-sidebar .widget_search:before {
-  content: "\e86f";
+  content: "";
   display: inline-block;
   font-family: Linearicons-Free;
   font-style: normal;
@@ -8231,7 +8231,7 @@ table.cart tfoot tr td.actions button[name=update_cart]:before,
 table.shop_table tbody tr td.actions button[name=update_cart]:before,
 table.shop_table tfoot tr td.actions button[name=update_cart]:before {
   font: normal 1.2em Linearicons-Free;
-  content: "\e862";
+  content: "";
   top: 3px;
   position: relative;
   margin-right: 5px;
@@ -8836,7 +8836,7 @@ body.yith-proteo-product-loop-add-to-cart-position-hover-light ul.wc-block-grid_
   clear: both;
 }
 .single-product div.product .woocommerce-product-gallery.woocommerce-product-gallery--columns-2 .flex-control-thumbs li {
-  width: 50%;
+  width: calc(100% / $numberColumns);
 }
 .single-product div.product .woocommerce-product-gallery.woocommerce-product-gallery--columns-2 .flex-control-thumbs li:nth-child(2n) {
   margin-right: 0;
@@ -8845,7 +8845,7 @@ body.yith-proteo-product-loop-add-to-cart-position-hover-light ul.wc-block-grid_
   clear: both;
 }
 .single-product div.product .woocommerce-product-gallery.woocommerce-product-gallery--columns-3 .flex-control-thumbs li {
-  width: 33.3333333333%;
+  width: calc(100% / $numberColumns);
 }
 .single-product div.product .woocommerce-product-gallery.woocommerce-product-gallery--columns-3 .flex-control-thumbs li:nth-child(3n) {
   margin-right: 0;
@@ -8854,7 +8854,7 @@ body.yith-proteo-product-loop-add-to-cart-position-hover-light ul.wc-block-grid_
   clear: both;
 }
 .single-product div.product .woocommerce-product-gallery.woocommerce-product-gallery--columns-4 .flex-control-thumbs li {
-  width: 25%;
+  width: calc(100% / $numberColumns);
 }
 .single-product div.product .woocommerce-product-gallery.woocommerce-product-gallery--columns-4 .flex-control-thumbs li:nth-child(4n) {
   margin-right: 0;
@@ -8863,7 +8863,7 @@ body.yith-proteo-product-loop-add-to-cart-position-hover-light ul.wc-block-grid_
   clear: both;
 }
 .single-product div.product .woocommerce-product-gallery.woocommerce-product-gallery--columns-5 .flex-control-thumbs li {
-  width: 20%;
+  width: calc(100% / $numberColumns);
 }
 .single-product div.product .woocommerce-product-gallery.woocommerce-product-gallery--columns-5 .flex-control-thumbs li:nth-child(5n) {
   margin-right: 0;
@@ -10058,7 +10058,7 @@ SELECT2
   display: contents;
 }
 .select2-container--default .select2-selection--single .select2-selection__arrow b:before {
-  content: "\e874";
+  content: "";
   font-family: Linearicons-Free;
   font-style: normal;
   font-weight: 400;
@@ -10070,7 +10070,7 @@ SELECT2
 }
 
 .select2-container--default.select2-container--open .select2-selection__arrow b:before {
-  content: "\e873";
+  content: "";
 }
 
 .select2-dropdown,
@@ -10288,7 +10288,7 @@ Mini Cart Widget
   padding: 15px;
   background: var(--proteo-header_bg_color, #ffffff);
   border-radius: 5px;
-  top: 100%;
+  top: calc(100%);
   opacity: 0;
   visibility: hidden;
   transition: all ease 0.3s;
@@ -10398,7 +10398,7 @@ Mini Cart Widget
   color: var(--proteo-general_link_color, #448a85);
 }
 .widget_shopping_cart .yith-proteo-mini-cart-content .woocommerce-mini-cart__buttons a.wc-forward:after {
-  content: "\e876";
+  content: "";
   margin-left: 5px;
   display: inline;
   font-size: 0.8em;
@@ -11616,7 +11616,7 @@ Wishlist footer
   text-transform: uppercase;
 }
 .yith_wcwl_wishlist_footer .ask-an-estimate-button:before {
-  content: "\e818";
+  content: "";
   display: inline-block;
   color: inherit;
   font-family: Linearicons-Free;
@@ -11730,7 +11730,7 @@ Wishlist View Modern
 }
 .wishlist_table.modern_grid li .product-remove i:before,
 .wishlist_table.images_grid li .product-remove i:before {
-  content: "\e811";
+  content: "";
   display: block;
   font-family: Linearicons-Free;
   font-size: 1rem;
@@ -11768,7 +11768,7 @@ table.wishlist_table.wishlist_view td.product-remove a {
   text-decoration: none;
 }
 table.wishlist_table.wishlist_view td.product-remove a:before {
-  content: "\e811";
+  content: "";
   display: block;
   font-family: Linearicons-Free;
   font-size: 1.5rem;
@@ -11979,7 +11979,7 @@ table.wishlist_table.wishlist_manage_table td.wishlist-download a:hover {
   color: var(--proteo-general_link_color, #448a85);
 }
 table.wishlist_table.wishlist_manage_table td.wishlist-download a:before {
-  content: "\e865";
+  content: "";
   display: block;
   font-family: Linearicons-Free;
   font-size: 1.8rem;
@@ -12001,7 +12001,7 @@ table.wishlist_table.wishlist_manage_table td.wishlist-delete a:hover {
   color: var(--proteo-general_link_color, #448a85);
 }
 table.wishlist_table.wishlist_manage_table td.wishlist-delete a:before {
-  content: "\e811";
+  content: "";
   display: block;
   font-family: Linearicons-Free;
   font-size: 1.5rem;
@@ -12034,7 +12034,7 @@ table.wishlist_table.wishlist_manage_table td.wishlist-delete a:before {
   top: 10px;
 }
 .wishlist_manage_table.modern_grid li .wishlist-title .show-title-form .fa-pencil:before {
-  content: "\e802";
+  content: "";
   display: block;
   font-family: Linearicons-Free;
   color: inherit;
@@ -12053,13 +12053,13 @@ table.wishlist_table.wishlist_manage_table td.wishlist-delete a:before {
   color: var(--proteo-general_link_color, #448a85);
 }
 .wishlist_manage_table.modern_grid li .item-details table.item-details-table td .fa-download:before {
-  content: "\e865";
+  content: "";
   display: block;
   font-family: Linearicons-Free;
   font-size: 1.5rem;
 }
 .wishlist_manage_table.modern_grid li .item-details table.item-details-table td .fa-trash:before {
-  content: "\e811";
+  content: "";
   display: block;
   font-family: Linearicons-Free;
   font-size: 1.5rem;
@@ -12116,14 +12116,14 @@ form.yith-wcwl-popup-form {
   text-decoration: none;
 }
 .yith-wcwl-remove-button i:before {
-  content: "\e811";
+  content: "";
   display: block;
   font-family: Linearicons-Free;
   font-size: 1.5rem;
 }
 
 div.yith-wcwl-popup-feedback i.fa.fa-check.heading-icon:before {
-  content: "\e87f";
+  content: "";
   display: block;
   font-family: Linearicons-Free;
 }
@@ -12158,7 +12158,7 @@ Dropdowns
 ASK FOR AN ESTIMATE MODAL AND LINK
  */
 .wishlist-ask-an-estimate-popup i.heading-icon.fa-envelope-open-o:before {
-  content: "\e818";
+  content: "";
   display: block;
   font-family: Linearicons-Free;
 }
@@ -12178,7 +12178,7 @@ ASK FOR AN ESTIMATE MODAL AND LINK
   padding-top: 10px;
 }
 .yith-wcwl-popup-content i.heading-icon.fa-envelope-o:before {
-  content: "\e86d";
+  content: "";
   display: block;
   font-family: Linearicons-Free;
 }
@@ -12212,7 +12212,7 @@ Wishlist Search
   padding: 0;
 }
 .yith-wcwl-wishlist-search-form button.wishlist-search-button i:before {
-  content: "\e86f";
+  content: "";
   display: block;
   font-family: Linearicons-Free;
   font-size: 1.8rem;
@@ -12239,7 +12239,7 @@ Widgets
   padding: 15px;
   background: #ffffff;
   border-radius: 5px;
-  top: 100%;
+  top: calc(100%);
   opacity: 0;
   visibility: hidden;
   transition: all ease 0.3s;
@@ -12400,7 +12400,7 @@ WISHLIST MOBILE LAYOUT
   font-size: inherit;
 }
 .wishlist_table.mobile li .remove_from_wishlist i:before {
-  content: "\e811";
+  content: "";
   display: block;
   font-family: Linearicons-Free;
   transition: all ease 0.3s;
@@ -12530,7 +12530,7 @@ a.compare.button {
   border-bottom: 1px solid #cccccc;
 }
 .single-product div.product .summary.entry-summary a.compare:not(.button):before {
-  content: "\e88e";
+  content: "";
   font-family: Linearicons-Free;
   display: inline-block;
   margin-right: 15px;
@@ -12745,7 +12745,7 @@ ul.products li.product a.compare:not(.button) {
   right: 0;
   padding: 15px 15px 25px 15px;
   background: #ffffff;
-  top: 100%;
+  top: calc(100%);
   transition: all ease 0.3s;
 }
 .theme-yith-proteo .widget_ywraq_list_quote .items-count,
@@ -13062,26 +13062,6 @@ body.woocommerce-checkout #payment ul.payment_methods .payment_method_yith-strip
   margin: 15px 0;
 }
 
-.single-product div.product .yith-wcdp-deposit-shipping {
-  margin: 15px 0;
-}
-.single-product div.product .yith-wcdp-deposit-shipping .yith-wcdp-shipping-form > table {
-  margin: 15px 0;
-}
-.single-product div.product .yith-wcdp-deposit-shipping .yith-wcdp-shipping-form > table td {
-  padding: 5px;
-}
-.single-product div.product .yith-wcdp-deposit-shipping .yith-wcdp-shipping-form #shipping_method {
-  list-style: none;
-  margin-bottom: 0;
-}
-.single-product div.product .yith-wcdp-deposit-shipping .yith-wcdp-shipping-form .shipping-calculator-form button {
-  background: none;
-  border: 1px solid #448a85;
-  font-size: 14px;
-  color: #448a85;
-  padding: 0.8em 1.5em 0.7em;
-}
 .single-product div.product .yith-wcdp-product-note {
   margin: 15px 0;
 }
@@ -13095,10 +13075,10 @@ body.woocommerce-checkout #payment ul.payment_methods .payment_method_yith-strip
   text-decoration: none;
 }
 
-#yith_wcdp_deposits_details .shop_table .order-actions a.button {
-  font-size: 0.8em;
-  padding: 8px 12px;
-  margin: 5px 2px;
+#yith_wcdp_deposits_details {
+  background-color: #f7f7f7;
+  padding: 30px;
+  margin: 70px -30px;
 }
 
 #yith-sl-gmap .gm-style .gm-style-iw,
@@ -13906,5 +13886,3 @@ body .wpcf7-not-valid {
     width: -webkit-fill-available;
   }
 }
-
-/*# sourceMappingURL=style.css.map */

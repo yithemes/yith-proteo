@@ -27,33 +27,6 @@
 }
 
 .single-product div.product {
-	.yith-wcdp-deposit-shipping {
-		margin: 15px 0;
-
-		.yith-wcdp-shipping-form {
-			& > table {
-				margin: 15px 0;
-
-				td {
-					padding: 5px;
-				}
-			}
-
-			#shipping_method {
-				list-style: none;
-				margin-bottom: 0;
-			}
-
-			.shipping-calculator-form button {
-				background: none;
-				border: 1px solid $color__accent;
-				font-size: 14px;
-				color: $color__accent;
-				padding: 0.8em 1.5em 0.7em;
-			}
-		}
-	}
-
 	.yith-wcdp-product-note {
 		margin: 15px 0;
 	}
@@ -71,10 +44,8 @@
 	}
 }
 
-#yith_wcdp_deposits_details .shop_table .order-actions {
-	a.button {
-		font-size: 0.8em;
-		padding: 8px 12px;
-		margin: 5px 2px;
-	}
+#yith_wcdp_deposits_details {
+	background-color: #f7f7f7;
+	padding: 30px;
+	margin: 70px -30px;
 }
