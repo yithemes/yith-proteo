@@ -266,16 +266,20 @@ Mini Cart Widget
 				text-align: center;
 				padding: 0.9375rem 2.8125rem;
 				vertical-align: middle;
-				background-color: var(--proteo-main_color_shade, $color__accent);
-				color: #ffffff;
+				border-style: solid;
+				border-width: 2px;
+				border-color: var(--proteo-main_color_shade, $color__accent);
+				background-color: transparent;
+				color: var(--proteo-main_color_shade, $color__accent);
 
 				&:after {
 					display: none;
 				}
 
 				&:hover {
+					background-color: var(--proteo-main_color_shade, $color__accent);
+					border-color: var(--proteo-main_color_shade, $color__accent);
 					color: #ffffff;
-					background-color: var(--proteo-button_1_bg_hover_color, $color__link-hover);
 					text-decoration: none;
 				}
 			}

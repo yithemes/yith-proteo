@@ -15,7 +15,8 @@ body.yith-proteo-add-to-cart-style-button_style_1 .wc-block-grid__product .add_t
 body.yith-proteo-add-to-cart-style-button_style_1 .added_to_cart.wc-forward,
 body .wpforms-form button[type=submit].wpforms-submit,
 .wp-block-button.is-style-button-style-1 .wp-block-button__link:not(.has-background):not(.has-text-color),
-.wc-block-grid__product-add-to-cart.wp-block-button .wp-block-button__link {
+.wc-block-grid__product-add-to-cart.wp-block-button .wp-block-button__link,
+.widget_shopping_cart .yith-proteo-mini-cart-content .woocommerce-mini-cart__buttons a.checkout {
 	border: 1px solid;
 	border-color: var(--proteo-button_1_border_color, $color__border-button);
 	background: var(--proteo-button_1_bg_color, $color__background-button);
