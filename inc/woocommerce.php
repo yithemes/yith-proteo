@@ -987,3 +987,38 @@ function yith_proteo_open_product_content_loop_div() {
 function yith_proteo_close_product_content_loop_div() {
 	echo '</div>';
 }
+
+
+add_filter( 'woocommerce_order_item_name', 'yith_proteo_product_image_on_thankyou', 10, 2 );
+
+/**
+ * Add product image to thank you page order recap.
+ *
+ * @param string $name Item name.
+ * @param object $item Order line item.
+ * @return string
+ */
+function yith_proteo_product_image_on_thankyou( $name, $item ) {
+
+	/* Return if not thankyou/order-received page */
+	if ( ! is_order_received_page() ) {
+		return $name;
+	}
+
+	/* Get product id */
+	$product_id = $item->get_product_id();
+
+	/* Get product object */
+	$_product = wc_get_product( $product_id );
+
+	/* Get product thumbnail */
+	$thumbnail = $_product->get_image( 'thumbnail' );
+
+	/* Add wrapper to image and add some css */
+	$image = '<span class="product-image">'
+				. $thumbnail .
+			'</span>';
+
+	/* Prepend image to name and return it */
+	return $image . $name;
+}

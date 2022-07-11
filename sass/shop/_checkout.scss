@@ -317,5 +317,14 @@ body.woocommerce-order-received {
 				}
 			}
 		}
+
+		.product-image {
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 10px;
+			img {
+				max-width: 80px;
+			}
+		}
 	}
 }
