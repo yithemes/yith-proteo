@@ -15,7 +15,7 @@ module.exports = function(grunt) {
 					'responsive.css': 'sass/responsive.scss',
 				},
 				sourceComments: true,
-				options: { 'no-source-map': '' }
+				options: { 'sourcemap': 'none' }
 			},
 
 		},
