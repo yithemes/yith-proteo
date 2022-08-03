@@ -1011,6 +1011,11 @@ function yith_proteo_product_image_on_thankyou( $name, $item ) {
 	/* Get product object */
 	$_product = wc_get_product( $product_id );
 
+	/* If product object is empty return */
+	if ( ! ( $_product instanceof WC_Product ) ) {
+		return $name;
+	}
+
 	/* Get product thumbnail */
 	$thumbnail = $_product->get_image( 'thumbnail' );
 
