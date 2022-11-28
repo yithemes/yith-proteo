@@ -226,7 +226,8 @@
 	});
 
 	// Quantity Inputs
-	$(document).on('click', '.quantity .product-qty-arrows span', function () {
+	$(document).on('click', '.quantity .product-qty-arrows span', function (ev) {
+		ev.stopPropagation();
 		var t = $(this),
 			input_selector = t.parents('.quantity').find('input[type="number"]'),
 			input_val = parseFloat(input_selector.val()),
