@@ -102,11 +102,7 @@
 
 			'yith_proteo_products_loop_view_details_style' : {
 				'yith_proteo_product_loop_view_details_enable' : 'yes'
-			},
-
-			'yith_proteo_booking_products_image_grid_layout' : {
-				'yith_proteo_booking_products_specific_layout' : 'yes'
-			},
+			}
 
 		};
 
