@@ -67,21 +67,25 @@ select,
 input::-webkit-input-placeholder {
 	color: inherit;
 	opacity: 0.4;
+	font-size: inherit;
 }
 
 input:-moz-placeholder {
 	color: inherit;
 	opacity: 0.4;
+	font-size: inherit;
 }
 
 input::-moz-placeholder {
 	color: inherit;
 	opacity: 0.4;
+	font-size: inherit;
 }
 
 input:-ms-input-placeholder {
 	color: inherit;
 	opacity: 0.4;
+	font-size: inherit;
 }
 
 textarea:-moz-placeholder { /* Firefox 18- */
@@ -92,16 +96,19 @@ textarea:-moz-placeholder { /* Firefox 18- */
 textarea::-moz-placeholder {  /* Firefox 19+ */
 	color: inherit;
 	opacity: 0.4;
+	font-size: inherit;
 }
 
 textarea:-ms-input-placeholder {
 	color: inherit;
 	opacity: 0.4;
+	font-size: inherit;
 }
 
 textarea::placeholder {
 	color: inherit;
 	opacity: 0.4;
+	font-size: inherit;
 }
 
 .woocommerce-invalid {
