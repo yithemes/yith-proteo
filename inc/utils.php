@@ -232,7 +232,7 @@ if ( ! function_exists( 'yith_proteo_get_user_username' ) ) {
 		$current_user = wp_get_current_user();
 		$username     = ( isset( $current_user->billing_first_name ) && '' !== $current_user->billing_first_name ) ? $current_user->billing_first_name : $current_user->display_name;
 
-		return $username;
+		return apply_filters( 'yith_proteo_current_user_display_name', $username );
 	}
 }
 
