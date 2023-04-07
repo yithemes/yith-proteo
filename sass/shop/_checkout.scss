@@ -197,8 +197,24 @@ body.woocommerce-checkout {
 			font-weight: 500;
 		}
 
+		.form-row-first, 
+		.form-row-last {
+			display: inline-block;
+			width: auto;
+			float: none;
+		}
+
+		button {
+			line-height: normal;
+			font-size: 0.875rem;
+			margin: 0;
+			min-height: var(--proteo-forms_input_min_height);
+			text-transform: uppercase;
+		}
+
 		input[type="text"] {
 			outline: none;
+			min-width: 230px;
 		}
 	}
 }
