@@ -8721,25 +8721,31 @@ body.woocommerce-checkout .checkout_coupon {
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
   background-color: #ffffff;
 }
-body.woocommerce-checkout .checkout_coupon p {
+
+body.woocommerce-checkout .checkout_coupon p,
+body.woocommerce-cart .ywgc_enter_code p {
   font-size: 1rem;
   line-height: normal;
   font-weight: 500;
 }
 body.woocommerce-checkout .checkout_coupon .form-row-first,
-body.woocommerce-checkout .checkout_coupon .form-row-last {
+body.woocommerce-checkout .checkout_coupon .form-row-last,
+body.woocommerce-cart .ywgc_enter_code .form-row-first,
+body.woocommerce-cart .ywgc_enter_code .form-row-last {
   display: inline-block;
   width: auto;
   float: none;
 }
-body.woocommerce-checkout .checkout_coupon button {
+body.woocommerce-checkout .checkout_coupon button,
+body.woocommerce-cart .ywgc_enter_code button {
   line-height: normal;
   font-size: 0.875rem;
   margin: 0;
   min-height: var(--proteo-forms_input_min_height);
   text-transform: uppercase;
 }
-body.woocommerce-checkout .checkout_coupon input[type=text] {
+body.woocommerce-checkout .checkout_coupon input[type=text],
+body.woocommerce-cart .ywgc_enter_code input[type=text] {
   outline: none;
   min-width: 230px;
 }

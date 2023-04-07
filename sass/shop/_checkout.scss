@@ -191,31 +191,35 @@ body.woocommerce-checkout {
 		box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
 		background-color: #ffffff;
 
-		p {
-			font-size: 1rem;
-			line-height: normal;
-			font-weight: 500;
-		}
+	}
+}
 
-		.form-row-first, 
-		.form-row-last {
-			display: inline-block;
-			width: auto;
-			float: none;
-		}
+body.woocommerce-checkout .checkout_coupon,
+body.woocommerce-cart .ywgc_enter_code {
+	p {
+		font-size: 1rem;
+		line-height: normal;
+		font-weight: 500;
+	}
 
-		button {
-			line-height: normal;
-			font-size: 0.875rem;
-			margin: 0;
-			min-height: var(--proteo-forms_input_min_height);
-			text-transform: uppercase;
-		}
+	.form-row-first, 
+	.form-row-last {
+		display: inline-block;
+		width: auto;
+		float: none;
+	}
 
-		input[type="text"] {
-			outline: none;
-			min-width: 230px;
-		}
+	button {
+		line-height: normal;
+		font-size: 0.875rem;
+		margin: 0;
+		min-height: var(--proteo-forms_input_min_height);
+		text-transform: uppercase;
+	}
+
+	input[type="text"] {
+		outline: none;
+		min-width: 230px;
 	}
 }
 
