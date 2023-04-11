@@ -2,9 +2,9 @@
 Contributors: yithemes
 Tags: one-column, two-columns, left-sidebar, right-sidebar, wide-blocks, accessibility-ready, block-styles, buddypress, custom-background, custom-colors, custom-header, custom-logo, custom-menu, editor-style, featured-images, flexible-header, footer-widgets, full-width-template, rtl-language-support, theme-options, threaded-comments, translation-ready, blog, e-commerce, education, entertainment, food-and-drink, holiday, news, photography, portfolio
 Requires at least: 4.9.6
-Tested up to: WordPress 5.9
+Tested up to: WordPress 6.2
 Requires PHP: 5.6
-Stable tag: 1.9.1
+Stable tag: 1.9.2
 YITH Proteo WordPress Theme, Copyright 2022 YITH
 YITH Proteo is distributed under the terms of the GNU GPL
 License: GPLv2 or later
@@ -25,6 +25,42 @@ Proteo is a modern, fast and fully customizable WooCommerce theme. Designed and 
 == Frequently Asked Questions ==
 
 == Changelog ==
+
+= 1.9.2 - April 11 2023 =
+* New: blog pagination with numbers
+* New: options to manage header bottom border - shadow - image
+* New: options to manage product description font size and color
+* New: style for "add to cart hover position" (dark/light)
+* New: option to manage product page background color
+* New: add product image to thank you page order recap.
+* New: support to menu widgets in header
+* New: new header widget area (left) and rename old header widget area to header widget are (right)
+* Tweak: improve checkout page coupon field style
+* Tweak: improve booking sidebar add to cart form button positioning
+* Tweak: improve stripe my-account saved cards display
+* Tweak: improve latest posts widget style
+* Tweak: improve left_logo_navigation_below header layout
+* Tweak: improve JS and CSS for product loop add to cart button
+* Tweak: move SALE bage to new position in single product page
+* Tweak: optimize sticky product image JS
+* Fix: force placeholder font size to match parent input
+* Fix: customizer notice when YITH Booking plugin is not active
+* Fix: call get_image on boolean in function yith_proteo_product_image_on_thankyou
+* Fix: compatibility with YITH Easy Login Register Popup
+* Fix: double subtotal label in mobile cart page
+* Fix: payment methods label display on checkout page
+* Fix: improve minicart widget style with long named products
+* Fix: full-width featured image single post layout
+* Fix: blog pagination position with 2 columns layout
+* Fix: gift card product page preview box style.
+* Fix: move product page background options to new Product Summary group
+* Fix: missing add to cart button border-radius
+* Fix: "hover image" add to cart button width
+* Fix: WC Products block add to cart button paddings
+* Fix: footer menus font size
+* Dev: add stopPropagation ev on quantity inputs js
+* Dev: before/after actions to booking product gallery
+* Dev: filter yith_proteo_current_user_display_name in function yith_proteo_get_user_username
 
 = 1.9.1 - April 05 2022 =
 * New: editor buttons Block Styles
