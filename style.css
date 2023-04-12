@@ -6,7 +6,7 @@ Author: YITH
 Author URI: https://yithemes.com
 Description: Proteo is a modern, fast and fully customizable WooCommerce theme. Designed and developed by YITH - a team of top developers of premium themes -  with a beautiful UI, a minimal design and an optimized code, is perfect for each kind of site or shop. With the Proteo Wizard you can import our demo content with just a few clicks - in less than 2 minutes! -  and easily customize it using the advanced front-end customizer. Proteo is the best solution if you want a complete WooCommerce theme that works perfectly also in mobile devices and start quickly to sell your products with WooCommerce without technical knowledge. Works perfectly with page builders like Elementor, Gutenberg & Visual composer. Key features: # WooCommerce Ready # Responsive with a perfect mobile design # Compatible with Elementor, Gutenberg, Visual Composer and others page builders # Translation Ready # Frontend customizer with hundred of options to customize header, footer, pages, typography, style, ecc.  # Google fonts support # Regularly updated and improved with new demos and advanced features # Support to all YITH plugins. Check all our Proteo demos: https://proteo.yithemes.com/
 
-Version: 1.9.2
+Version: 1.9.2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: yith-proteo
@@ -7858,15 +7858,6 @@ ul.products li.wc-block-grid__product .variations_form .select_box,
 .wc-block-grid ul.wc-block-grid__products li.wc-block-grid__product .variations_form .select_box {
   display: inline-block;
 }
-ul.products li.product .variations_form .select_box .yith_wccl_value,
-ul.products li.wc-block-grid__product .variations_form .select_box .yith_wccl_value,
-.wc-block-grid ul.wc-block-grid__products li.product .variations_form .select_box .yith_wccl_value,
-.wc-block-grid ul.wc-block-grid__products li.wc-block-grid__product .variations_form .select_box .yith_wccl_value {
-  min-width: 25px;
-  height: 25px;
-  line-height: 22px;
-  width: auto;
-}
 
 ul.products.columns-1, .wc-block-grid.has-1-columns ul.wc-block-grid__products {
   grid-template-columns: repeat(1, 1fr);
@@ -8234,7 +8225,6 @@ body.yith-proteo-product-loop-add-to-cart-position-hover-light ul.wc-block-grid_
 }
 .single-product div.product .summary.entry-summary form.variations_form table.variations tr > td, .single-product div.product .summary.entry-summary form.variations_form table.variations tr > th {
   padding-bottom: 45px;
-  text-transform: uppercase;
   font-size: 0.9375rem;
   font-weight: 500;
   position: relative;
