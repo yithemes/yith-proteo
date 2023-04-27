@@ -276,6 +276,10 @@ p.stars {
 			padding: 3px 0;
 		}
 	}
+
+	input[type="hidden"] + span.product-qty-arrows {
+		display: none;
+	}
 }
 
 /**
