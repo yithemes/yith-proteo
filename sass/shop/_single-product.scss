@@ -258,6 +258,14 @@
 		}
 	}
 
+	.sold-individually {
+		form.cart {
+			.quantity {
+				display: none;
+			}
+		}
+	}
+
 	/**
  * Tabs
  */
