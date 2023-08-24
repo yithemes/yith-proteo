@@ -17,6 +17,7 @@ $user_id        = get_current_user_id();
 $is_company     = ! empty( $logged_in_user->billing_company );
 ?>
 <div class="row">
+	<?php do_action( 'yith_proteo_before_account_info_boxes' ); ?>
 	<div class="col-md-6">
 		<div class="account-info-box">
 			<h3><?php esc_html_e( 'Personal info', 'yith-proteo' ); ?></h3>
@@ -118,4 +119,5 @@ $is_company     = ! empty( $logged_in_user->billing_company );
 			</div>
 		</div>
 	</div>
+	<?php do_action( 'yith_proteo_after_account_info_boxes' ); ?>
 </div>
