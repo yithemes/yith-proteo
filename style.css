@@ -7529,7 +7529,6 @@ table.shop_table tfoot tr td.actions .empty-cart {
   float: right;
   margin-right: 15px;
   margin-bottom: 15px;
-  line-height: 1;
 }
 table.cart tbody tr:first-child td,
 table.cart tfoot tr:first-child td,
