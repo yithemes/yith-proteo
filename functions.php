@@ -161,7 +161,7 @@ if ( ! function_exists( 'yith_proteo_setup' ) ) :
 		add_theme_support( 'wp-block-styles' );
 
 		// Add support for experimental link color control.
-		add_theme_support( 'experimental-link-color' );
+		add_theme_support( 'link-color' );
 	}
 endif;
 add_action( 'after_setup_theme', 'yith_proteo_setup' );
