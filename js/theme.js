@@ -113,12 +113,12 @@
 	$(document).on('yith_proteo_inizialize_html_elements found_variation ywcp_inizialized yith_wfbt_form_updated yith_wfbt_modal_opened yith_wcwl_popup_opened yith_wcwl_tab_selected updated_checkout updated_cart_totals yith_quick_view_loaded yith_wcwl_fragments_loaded yith_wcwl_init_after_ajax yith_welrp_popup_template_loaded yith_wcdp_updated_deposit_form yith-wcan-ajax-filtered yith_wcan_dropdown_updated yith_wcaf_init_fields', yith_proteo_inizialize_html_elements);
 	function yith_proteo_inizialize_html_elements(){
 		if (typeof $.fn.selectWoo !== 'undefined' && yith_proteo.yith_proteo_use_enanched_selects === 'yes') {
-			$('select:not(.yith-proteo-standard-select)').filter(':visible').selectWoo(
+			$('select:not(.yith-proteo-standard-select, enhanced)').filter(':visible').selectWoo(
 				{
 					'dropdownAutoWidth' : true,
 					'minimumResultsForSearch': yith_proteo.select2minimumResultsForSearch
 				}
-			);
+			).addClass('enhanced');
 		}
 
 		if (yith_proteo.yith_proteo_use_enhanced_checkbox_and_radio === 'yes') {
