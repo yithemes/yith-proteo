@@ -8561,13 +8561,14 @@ BLOCK LAYOUT
 .wp-block-woocommerce-cart-totals-block {
   position: relative;
   padding-block: 30px;
+  height: fit-content;
 }
 
 .wp-block-woocommerce-cart-totals-block:before {
   content: "";
   display: block;
   position: absolute;
-  top: -15px;
+  top: 0;
   bottom: 0;
   left: -30px;
   width: 3000px;
