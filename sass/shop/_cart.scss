@@ -154,3 +154,23 @@ body.woocommerce-cart {
 		margin: 0 0 1em;
 	}
 }
+
+
+/*************
+BLOCK LAYOUT
+*************/
+.wp-block-woocommerce-cart-totals-block {
+    position:relative;
+	padding-block: 30px;
+}
+.wp-block-woocommerce-cart-totals-block:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -15px;
+    bottom: 0;
+    left: -30px;
+    width: 3000px;
+    background: #ebebeb;
+    z-index: -1;
+}

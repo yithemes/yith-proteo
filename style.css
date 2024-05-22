@@ -4539,7 +4539,8 @@ body.yith-proteo-add-to-cart-style-button_style_1 .added_to_cart.wc-forward,
 body .wpforms-form button[type=submit].wpforms-submit,
 .wp-block-button.is-style-button-style-1 .wp-block-button__link:not(.has-background):not(.has-text-color),
 .wc-block-grid__product-add-to-cart.wp-block-button .wp-block-button__link,
-.widget_shopping_cart .yith-proteo-mini-cart-content .woocommerce-mini-cart__buttons a.checkout {
+.widget_shopping_cart .yith-proteo-mini-cart-content .woocommerce-mini-cart__buttons a.checkout,
+.wc-block-cart__submit-button {
   border: 1px solid;
   border-color: var(--proteo-button_1_border_color, #448a85);
   background: var(--proteo-button_1_bg_color, #448a85);
@@ -4574,7 +4575,8 @@ body.yith-proteo-add-to-cart-style-button_style_1 .added_to_cart.wc-forward:hove
 body .wpforms-form button[type=submit].wpforms-submit:hover,
 .wp-block-button.is-style-button-style-1 .wp-block-button__link:not(.has-background):not(.has-text-color):hover,
 .wc-block-grid__product-add-to-cart.wp-block-button .wp-block-button__link:hover,
-.widget_shopping_cart .yith-proteo-mini-cart-content .woocommerce-mini-cart__buttons a.checkout:hover {
+.widget_shopping_cart .yith-proteo-mini-cart-content .woocommerce-mini-cart__buttons a.checkout:hover,
+.wc-block-cart__submit-button:hover {
   border-color: var(--proteo-button_1_border_hover_color, #4ac4aa);
   background: var(--proteo-button_1_bg_hover_color, #1a4e43);
   background-color: var(--proteo-button_1_bg_hover_color, #1a4e43);
@@ -8551,6 +8553,26 @@ body.woocommerce-cart .variation dt {
 body.woocommerce-cart .variation dd {
   font-size: 0.875em;
   margin: 0 0 1em;
+}
+
+/*************
+BLOCK LAYOUT
+*************/
+.wp-block-woocommerce-cart-totals-block {
+  position: relative;
+  padding-block: 30px;
+}
+
+.wp-block-woocommerce-cart-totals-block:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -15px;
+  bottom: 0;
+  left: -30px;
+  width: 3000px;
+  background: #ebebeb;
+  z-index: -1;
 }
 
 /**
