@@ -43,7 +43,11 @@ get_header();
 					'prev_text' => '‹',
 					'next_text' => '›',
 				);
-				echo '<div class="navigation posts-navigation">' . wp_kses_post( paginate_links( $pagination_args ) ) . '</div>';
+                $paginate_links = paginate_links( $pagination_args );
+
+                if( isset( $paginate_links ) && '' !== $paginate_links ):
+				    echo '<div class="navigation posts-navigation">' . wp_kses_post( $paginate_links ) . '</div>';
+                endif;
 
 				else :
 					get_template_part( 'template-parts/content', 'none' );
