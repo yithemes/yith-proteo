@@ -36,8 +36,8 @@ p.woocommerce-result-count {
  * Star rating
  */
 .star-rating,
-.wc-block-grid__product-rating .star-rating, 
-.wc-block-grid__product-rating .wc-block-grid__product-rating__stars {
+body .wc-block-grid__product-rating .star-rating, 
+body .wc-block-grid__product-rating .wc-block-grid__product-rating__stars {
 	overflow: hidden;
 	position: relative;
 	height: 1.618em;
