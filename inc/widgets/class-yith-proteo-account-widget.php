@@ -34,10 +34,12 @@ if ( ! class_exists( 'YITH_Proteo_Account_Widget' ) ) {
 		 * @return void
 		 */
 		public function widget( $args, $instance ) {
+			$login_url   = $instance['login-url'] ? $instance['login-url'] : wp_login_url();
+			$account_url = $instance['myaccount-url'] ? $instance['myaccount-url'] : get_permalink( wc_get_page_id( 'myaccount' ) );
 			if ( class_exists( 'woocommerce' ) ) {
-				$url = ! is_user_logged_in() ? $instance['login-url'] : $instance['myaccount-url'];
+				$url = ! is_user_logged_in() ? $login_url : $account_url;
 			} else {
-				$url = ! is_user_logged_in() ? $instance['login-url'] : get_admin_url();
+				$url = ! is_user_logged_in() ? $login_url : get_admin_url();
 			}
 
 			// Let's filter widget link url.
