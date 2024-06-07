@@ -34,8 +34,8 @@ if ( ! class_exists( 'YITH_Proteo_Account_Widget' ) ) {
 		 * @return void
 		 */
 		public function widget( $args, $instance ) {
-			$login_url   = $instance['login-url'] ? $instance['login-url'] : wp_login_url();
-			$account_url = $instance['myaccount-url'] ? $instance['myaccount-url'] : get_permalink( wc_get_page_id( 'myaccount' ) );
+			$login_url   = isset( $instance['login-url'] ) ? $instance['login-url'] : wp_login_url();
+			$account_url = isset( $instance['myaccount-url'] ) ? $instance['myaccount-url'] : get_permalink( wc_get_page_id( 'myaccount' ) );
 			if ( class_exists( 'woocommerce' ) ) {
 				$url = ! is_user_logged_in() ? $login_url : $account_url;
 			} else {
@@ -45,7 +45,7 @@ if ( ! class_exists( 'YITH_Proteo_Account_Widget' ) ) {
 			// Let's filter widget link url.
 			$url = apply_filters( 'yith_proteo_account_widget_url', $url, $instance );
 
-			$icon = $instance['custom-icon'];
+			$icon = isset( $instance['custom-icon'] ) ? $instance['custom-icon'] : false;
 
 			if ( ! $icon ) {
 				$icon = get_template_directory_uri() . '/img/user.svg';
