@@ -53,7 +53,9 @@ if ( ! class_exists( 'YITH_Proteo_Account_Widget' ) ) {
 
 			if ( str_replace( array( 'http://', 'https://' ), '//', get_template_directory_uri() ) . '/img/user.svg' !== $icon ) {
 				$icon = wp_get_attachment_image_src( $icon, 'full' );
-				$icon = '<img src="' . esc_url( apply_filters( 'yith_proteo_account_widget_image_url', $icon[0] ) ) . '" width="25" loading="lazy">';
+				if ( $icon ) {
+					$icon = '<img src="' . esc_url( apply_filters( 'yith_proteo_account_widget_image_url', $icon[0] ) ) . '" width="25" loading="lazy">';
+				}
 			} else {
 				$icon = '<span class="lnr lnr-user"></span>';
 			}
