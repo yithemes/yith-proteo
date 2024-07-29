@@ -11889,6 +11889,10 @@ WISHLIST MOBILE LAYOUT
   width: 25px !important;
 }
 
+.yith-proteo-product-loop-image:has(.yith-wcwl-add-to-wishlist-button) {
+  position: relative;
+}
+
 #payment ul li #yith_wcauthnet_credit_card_form .woocommerce-SavedPaymentMethods-saveNew {
   padding: 0;
 }
