@@ -547,6 +547,7 @@ SELECT2
 
 .select2-container--default .select2-selection--single .select2-selection__arrow {
 	top: 5px;
+	right: 5px;
 }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow b {
@@ -560,23 +561,14 @@ SELECT2
 	margin: 0;
 	display: contents;
 	&:before {
-		content: "\e874";
-		font-family: Linearicons-Free;
-		font-style: normal;
-		font-weight: 400;
-		font-variant: normal;
-		text-transform: none;
-		line-height: 1;
-		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale;
-	}
-}
-
-.select2-container--default.select2-container--open {
-	.select2-selection__arrow b {
-		&:before {
-			content: "\e873";
-		}
+		content: "";
+		display: block;
+		background-image: url(img/sort-icon.svg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 15px;
+		width: 20px;
+		height: 26px;
 	}
 }
 
