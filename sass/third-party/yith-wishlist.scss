@@ -43,7 +43,7 @@
 	.hidden-title-form {
 		margin-top    : -5px;
 		margin-bottom : 40px;
-		max-width     : 450px;
+		max-width     : 500px;
 
 		input {
 			font-weight : 700;
@@ -67,7 +67,7 @@ Wishlist footer
 		text-transform : uppercase;
 	}
 
-	.ask-an-estimate-button:before {
+	.ask-an-estimate-button:not(.yith-wcwl-ask-an-estimate-button):before {
 		content        : "\e818";
 		display        : inline-block;
 		color          : inherit;

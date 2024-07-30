@@ -4669,16 +4669,24 @@ body.yith-proteo-add-to-cart-style-button_style_2 .wc-block-grid__product .add_t
   font-weight: 600;
   border-radius: var(--proteo-buttons_border_radius);
 }
+.button.flat.yith-wcwl-ask-an-estimate-button,
+.yith_wcwl_footer_additional_action .ask-an-estimate-button.yith-wcwl-ask-an-estimate-button {
+  padding: 0.7em 1.5em;
+}
 .button.flat:hover,
 .yith_wcwl_footer_additional_action .ask-an-estimate-button:hover {
   text-decoration: none;
-  background-color: var(--proteo-button_1_bg_hover_color, #1a4e43);
-  color: var(--proteo-button_1_font_hover_color, #ffffff);
+  background-color: #e0e0e0;
+  color: #393839;
 }
 
 .yith_wcwl_footer_additional_action .ask-an-estimate-button {
   display: inline-block;
   line-height: 1;
+}
+.yith_wcwl_footer_additional_action .ask-an-estimate-button.yith-wcwl-ask-an-estimate-button {
+  display: inline-flex;
+  margin-bottom: 0;
 }
 
 .comment-respond #submit {
@@ -10934,7 +10942,7 @@ table.shop_table tbody tr td.product-name ._view_and_pdf_row a.button {
 .wishlist-title-container .hidden-title-form {
   margin-top: -5px;
   margin-bottom: 40px;
-  max-width: 450px;
+  max-width: 500px;
 }
 .wishlist-title-container .hidden-title-form input {
   font-weight: 700;
@@ -10954,7 +10962,7 @@ Wishlist footer
 .yith_wcwl_wishlist_footer input[type=submit] {
   text-transform: uppercase;
 }
-.yith_wcwl_wishlist_footer .ask-an-estimate-button:before {
+.yith_wcwl_wishlist_footer .ask-an-estimate-button:not(.yith-wcwl-ask-an-estimate-button):before {
   content: "\e818";
   display: inline-block;
   color: inherit;
