@@ -445,14 +445,14 @@ if ( class_exists( 'YITH_WCWL_Frontend_Premium' ) ) {
 	remove_action(
 		'yith_wcwl_wishlist_after_wishlist_content',
 		array(
-			YITH_WCWL_Frontend_Premium(),
+			defined('YITH_WCWL_VERSION') && version_compare(YITH_WCWL_VERSION, '4.0.0', '>=')? yith_wcwl_frontend() : YITH_WCWL_Frontend_Premium(),
 			'add_wishlist_links',
 		)
 	);
 	add_action(
 		'yith_wcwl_wishlist_before_wishlist_content',
 		array(
-			YITH_WCWL_Frontend_Premium(),
+			defined('YITH_WCWL_VERSION') && version_compare(YITH_WCWL_VERSION, '4.0.0', '>=')? yith_wcwl_frontend() : YITH_WCWL_Frontend_Premium(),
 			'add_wishlist_links',
 		),
 		15

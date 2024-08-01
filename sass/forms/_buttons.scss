@@ -123,16 +123,25 @@ body.yith-proteo-add-to-cart-style-button_style_2 .wc-block-grid__product .add_t
 	font-weight: 600;
 	border-radius: var(--proteo-buttons_border_radius);
 
+	&.yith-wcwl-ask-an-estimate-button {
+		padding : 0.7em 1.5em;
+	}
+
 	&:hover {
 		text-decoration: none;
-		background-color: var(--proteo-button_1_bg_hover_color, $color__link-hover);
-		color: var(--proteo-button_1_font_hover_color, #ffffff);
+		background-color: #e0e0e0;
+		color: #393839;
 	}
 }
 
 .yith_wcwl_footer_additional_action .ask-an-estimate-button {
-	display: inline-block;
-	line-height: 1;
+	display     : inline-block;
+	line-height : 1;
+
+	&.yith-wcwl-ask-an-estimate-button {
+		display       : inline-flex;
+		margin-bottom : 0;
+	}
 }
 
 .comment-respond #submit {
