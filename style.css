@@ -11564,6 +11564,11 @@ Widgets
 .widget_yith-wcwl-items .mini {
   min-width: 40px;
 }
+.widget_yith-wcwl-items .mini .heading-icon .yith-wcwl-icon-svg,
+.widget_yith-wcwl-items .mini .heading-icon img {
+  width: 1.9rem;
+  height: 1.9rem;
+}
 .widget_yith-wcwl-items .mini a:hover i {
   color: var(--proteo-main_color_shade, #448a85);
 }
@@ -11669,7 +11674,7 @@ Widgets
   padding: 5px 0;
   margin-bottom: 20px;
   border: none;
-  font-size: 0.75em;
+  font-size: 1em;
   margin-right: 0;
   background: none;
   color: var(--proteo-general_link_color, #448a85);
@@ -11683,7 +11688,7 @@ Widgets
   margin-right: 0;
   text-transform: uppercase;
   text-align: center;
-  font-size: 0.75em;
+  font-size: 0.9em;
   padding: 0.9375rem 2.8125rem;
 }
 .widget_yith-wcwl-items:hover div.content.mini .list {
@@ -11846,6 +11851,7 @@ WISHLIST MOBILE LAYOUT
   flex-direction: row;
   align-items: center;
   white-space: nowrap;
+  gap: 5px;
 }
 
 .yith-wcwl-add-to-wishlist.yith-wcwl-add-to-wishlist--link-style .yith-wcwl-add-button .add_to_wishlist {
