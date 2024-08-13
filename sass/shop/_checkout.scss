@@ -106,13 +106,11 @@ body.woocommerce-checkout {
 		ul {
 			list-style-type: none;
 			padding: 0;
-			//margin: 0 -30px 35px;
-			margin: 0 -30px;
+			margin: 0;
 			background: #f7f7f7;
 
 			li {
 				padding: 15px 30px 15px 30px;
-				//margin-bottom: 15px;
 				position: relative;
 
 				.radiobutton {
@@ -161,10 +159,6 @@ body.woocommerce-checkout {
 		}
 	}
 
-	#payment > ul.wc_payment_methods > li:first-child:last-child > label {
-		padding-left: 0;
-	}
-
 	.woocommerce-terms-and-conditions-wrapper {
 		p {
 			padding: 0;
@@ -191,6 +185,19 @@ body.woocommerce-checkout {
 		box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
 		background-color: #ffffff;
 
+	}
+
+
+	&:not( .woocommerce-order-pay ) {
+		#payment {
+			> ul {
+				margin: 0 -30px;
+
+				> li:first-child:last-child > label {
+					padding-left: 0;
+				}
+			}
+		}
 	}
 }
 
