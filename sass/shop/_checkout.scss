@@ -106,7 +106,6 @@ body.woocommerce-checkout {
 		ul {
 			list-style-type: none;
 			padding: 0;
-			margin: 0;
 			background: #f7f7f7;
 
 			li {
@@ -191,7 +190,8 @@ body.woocommerce-checkout {
 	&:not( .woocommerce-order-pay ) {
 		#payment {
 			> ul {
-				margin: 0 -30px;
+				margin-left: -30px;
+				margin-right: -30px;
 
 				> li:first-child:last-child > label {
 					padding-left: 0;
