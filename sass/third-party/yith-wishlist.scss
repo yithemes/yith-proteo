@@ -942,15 +942,20 @@ Widgets
 		}
 	}
 
-	.yith-wcw-items-widget{
-		padding: 20px 30px;
-		border-radius: 10px;
+	.yith-wcw-items-widget {
+		&.mini.content {
+			.list {
+				padding       : 20px 30px;
+				border-radius : 10px;
 
-		p.items-count{
-			margin-block: 10px 20px;
-		}
-		a.add_all_to_cart{
-			margin-bottom: 10px;
+				p.items-count {
+					margin-block : 10px 20px;
+				}
+
+				a.add_all_to_cart {
+					margin-bottom : 10px;
+				}
+			}
 		}
 	}
 }

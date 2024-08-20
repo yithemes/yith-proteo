@@ -11699,14 +11699,14 @@ Widgets
   opacity: 1;
   visibility: visible;
 }
-.widget_yith-wcwl-items .yith-wcw-items-widget {
+.widget_yith-wcwl-items .yith-wcw-items-widget.mini.content .list {
   padding: 20px 30px;
   border-radius: 10px;
 }
-.widget_yith-wcwl-items .yith-wcw-items-widget p.items-count {
+.widget_yith-wcwl-items .yith-wcw-items-widget.mini.content .list p.items-count {
   margin-block: 10px 20px;
 }
-.widget_yith-wcwl-items .yith-wcw-items-widget a.add_all_to_cart {
+.widget_yith-wcwl-items .yith-wcw-items-widget.mini.content .list a.add_all_to_cart {
   margin-bottom: 10px;
 }
 
