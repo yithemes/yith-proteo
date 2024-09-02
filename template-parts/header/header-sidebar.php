@@ -7,6 +7,7 @@
 
 ?>
 <div class="header-sidebar">
+	<div class="header-sidebar-inner-widgets">
 	<?php
 	if ( get_theme_mod( 'yith_proteo_header_search_widget', 'no' ) === 'yes' ) {
 		the_widget(
@@ -52,4 +53,5 @@
 <?php if ( 'yes' === get_theme_mod( 'yith_proteo_show_header_sidebar', 'yes' ) ) { ?>
 	<?php dynamic_sidebar( 'header-sidebar' ); ?>
 <?php } ?>
+</div>
 </div>

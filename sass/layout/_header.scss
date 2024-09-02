@@ -120,6 +120,19 @@
 		//white-space: nowrap;
 		text-align: right;
 		clear: both;
+
+		.header-sidebar-inner-widgets {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: flex-end;
+			align-items: flex-end;
+			gap: 15px;
+
+			& > .widget {
+				margin: 0;
+			}
+		}
 	}
 
 	&.sticky {
