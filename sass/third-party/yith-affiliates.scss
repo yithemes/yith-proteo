@@ -18,6 +18,26 @@
 		}
 	}
 
+	/* DASHBOARD */
+	&.yith-wcaf-dashboard {
+		.yith-wcaf-dashboard-summary {
+			.stat-item {
+				.stat-label {
+					font-size: .9em;
+					white-space: nowrap;
+
+					.tooltip {
+						white-space: normal;
+					}
+				}
+
+				.button {
+					margin: 0;
+				}
+			}
+		}
+	}
+
 	/* LINK GENERATOR */
 	&.yith-wcaf-link-generator {
 		.yith-wcaf-share {
@@ -41,7 +61,7 @@
 	}
 
 	&.yith-wcaf-link-generator,
-	&.yith-wcaf-dashboard .yith-wcaf-dashboard-payments #withdraw_modal,
+	&.yith-wcaf-dashboard #withdraw_modal,
 	&.yith-wcaf-dashboard .yith-wcaf-dashboard-settings {
 		p.form-row {
 			padding-left: 0;
@@ -65,12 +85,36 @@
 		}
 	}
 
+	/* WITHDRAW MODAL */
+	&.yith-wcaf-dashboard #withdraw_modal {
+		.billing-info {
+			p.form-row {
+				padding-inline: 0;
+			}
+		}
+
+		.invoice-info {
+			p:not(.form-row) {
+				font-size: .9em;
+			}
+		}
+
+		.invoice-modes .invoice-mode-content {
+			padding-left: 0;
+		}
+	}
+
+	/* TABLES */
 	.yith-wcaf-table-top-bar {
 		.table-filters,
 		.table-options {
 			input[type="text"],
 			input[type="number"] {
 				padding: 13px 10px;
+			}
+
+			.button {
+				margin-block: 0;
 			}
 		}
 	}
