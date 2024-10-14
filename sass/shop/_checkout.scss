@@ -44,11 +44,36 @@ body.woocommerce-checkout {
 		}
 	}
 
-	&.woocommerce-order-pay #order_review {
-		float: none;
-		margin: 0 auto;
-		padding: 0;
-		width: 70%;
+	&.woocommerce-order-pay {
+		#order_review {
+			float: none;
+			margin: 0 auto;
+			padding: 0;
+			width: 60%;
+
+			.shop_table {
+				th.product-name, td.product-name {
+					text-align: left;
+				}
+
+				th.product-total, td.product-total, td.product-subtotal {
+					text-align: right;
+					padding-right: 15px;
+				}
+
+				th.product-quantity, td.product-quantity {
+					text-align: center;
+				}
+
+				tfoot tr:first-child td {
+					border-top: none;
+				}
+			}
+
+			.form-row {
+				padding: 0;
+			}
+		}
 	}
 
 	.order_review_inner {

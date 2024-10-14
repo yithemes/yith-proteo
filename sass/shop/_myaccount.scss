@@ -133,17 +133,48 @@ MY ACCOUNT
 			margin-bottom: 35px;
 		}
 
+		.my_account_orders {
+			tbody {
+				tr:first-child {
+					th {
+						border-top: 1px solid #cccccc;
+					}
+				}
+
+				th {
+					vertical-align: middle;
+					border-bottom: 1px solid #cccccc;
+				}
+
+				.woocommerce-button {
+					margin: 7px 15px 7px 0;
+				}
+			}
+		}
+
 		.order_details {
 			th {
 				text-align: left;
 				padding: 15px;
 			}
 
+			.product-total, .product-subtotal {
+				text-align: right;
+			}
+
 			tfoot {
 				th {
 					background: none;
 					text-align: right;
-					border-right: 1px solid #ebebeb;
+					vertical-align: middle;
+				}
+
+				td {
+					text-align: right;
+				}
+
+				tr:first-child td {
+					border-top: none;
 				}
 			}
 		}
