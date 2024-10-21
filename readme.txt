@@ -2,9 +2,9 @@
 Contributors: yithemes
 Tags: one-column, two-columns, left-sidebar, right-sidebar, wide-blocks, accessibility-ready, block-styles, buddypress, custom-background, custom-colors, custom-header, custom-logo, custom-menu, editor-style, featured-images, flexible-header, footer-widgets, full-width-template, rtl-language-support, theme-options, threaded-comments, translation-ready, blog, e-commerce, education, entertainment, food-and-drink, holiday, news, photography, portfolio
 Requires at least: 4.9.6
-Tested up to: WordPress 6.2
-Requires PHP: 5.6
-Stable tag: 1.9.3
+Tested up to: WordPress 6.6
+Requires PHP: 7.0
+Stable tag: 1.9.4
 YITH Proteo WordPress Theme, Copyright 2022 YITH
 YITH Proteo is distributed under the terms of the GNU GPL
 License: GPLv2 or later
@@ -25,6 +25,29 @@ Proteo is a modern, fast and fully customizable WooCommerce theme. Designed and 
 == Frequently Asked Questions ==
 
 == Changelog ==
+
+= 1.9.4 - Oct 21 2024 =
+* New: hooks in account-info page
+* New: improved support to YITH Subscription elements
+* Fix: hide quantity input in sold individually products
+* Fix: empty cart button alignment
+* Remove: experimental-link-color feature as part of WP Core now
+* Add 'enhanced' class to processed selectWoo elements
+* Make block cart similar to legacy template
+* Improve cart block additional grey box appearance
+* Fix: preg_replace(): Passing null to parameter
+* Fix star rating display
+* Check wp_get_attachment_image_src return value in YITH_Proteo_account_widget
+* Fix Undefined array key "myaccount-url" in yith-proteo-account-widget class
+* New: integration style for YITH Wishlist 4.0
+* Tweak: improved add to wishlist button positioning when over a product image
+* New select dropdown sort icon
+* Fix: replaced deprecated functions to retrieve YITH Wishlist frontend class instance
+* Improved wc order pay style
+* Improved checkout payment methods box style
+* Tweak: minor improvements to the appearance of YITH WooCommerce Affiliate plugin
+* Fix buttons in add to cart notices
+* Improved order tables style
 
 = 1.9.3 - June 21 2023 =
 * Fix: booking style not applied on YITH Booking products
