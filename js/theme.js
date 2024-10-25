@@ -263,13 +263,17 @@
 		}
 	});
 
+	let is_mobile = false;
+
 	$(window).on('resize', function () {
 		var viewport = window.innerWidth;
 		//change my-account layout on mobile
-		if (viewport <= 992) {
+		if (viewport <= 992 && ! is_mobile ) {
+			is_mobile = true;
 			$('.woocommerce-MyAccount-navigation-link.is-active').append($('.woocommerce-MyAccount-content'));
 
-		} else {
+		} else if ( viewport > 992 && is_mobile ) {
+			is_mobile = false;
 			$('.yith-proteo-my-account-sidebar').after($('.woocommerce-MyAccount-content'));
 		}
 	}).trigger('resize');
