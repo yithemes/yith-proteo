@@ -37,7 +37,7 @@ if ( ! class_exists( 'YITH_Proteo_Account_Widget' ) ) {
 			$login_url   = isset( $instance['login-url'] ) ? $instance['login-url'] : wp_login_url();
 			$account_url = isset( $instance['myaccount-url'] ) ? $instance['myaccount-url'] : get_permalink( wc_get_page_id( 'myaccount' ) );
 			if ( class_exists( 'woocommerce' ) ) {
-				$url = ! is_user_logged_in() ? $login_url : $account_url;
+				$url = ! is_user_logged_in() ? $account_url : $account_url;
 			} else {
 				$url = ! is_user_logged_in() ? $login_url : get_admin_url();
 			}

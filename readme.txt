@@ -2,9 +2,9 @@
 Contributors: yithemes
 Tags: one-column, two-columns, left-sidebar, right-sidebar, wide-blocks, accessibility-ready, block-styles, buddypress, custom-background, custom-colors, custom-header, custom-logo, custom-menu, editor-style, featured-images, flexible-header, footer-widgets, full-width-template, rtl-language-support, theme-options, threaded-comments, translation-ready, blog, e-commerce, education, entertainment, food-and-drink, holiday, news, photography, portfolio
 Requires at least: 4.9.6
-Tested up to: WordPress 6.6
+Tested up to: WordPress 6.7
 Requires PHP: 7.0
-Stable tag: 1.9.5
+Stable tag: 1.9.6
 YITH Proteo WordPress Theme, Copyright 2022 YITH
 YITH Proteo is distributed under the terms of the GNU GPL
 License: GPLv2 or later
@@ -25,6 +25,9 @@ Proteo is a modern, fast and fully customizable WooCommerce theme. Designed and 
 == Frequently Asked Questions ==
 
 == Changelog ==
+
+= 1.9.5 - Dec 2 2024 =
+* Fix header login link when WooCommerce is active
 
 = 1.9.5 - Nov 21 2024 =
 * New: support to WooCommece 9.4
