@@ -12,7 +12,7 @@ a.compare.button {
 		position: relative;
 		display: inline-block;
 
-		&:not(.button) {
+		&:not(.button,.checkbox) {
 			padding-bottom: 40px;
 			text-transform: uppercase;
 			font-weight: 500;
@@ -55,6 +55,9 @@ ul.products li.product {
 
 #yith-woocompare,
 .yith-woocompare-widget {
+	h2 {
+		line-height: 1.2;
+	}
 	.button,
 	a.added_to_cart,
 	a.compare-widget,
@@ -71,7 +74,6 @@ ul.products li.product {
 	.product-price,
 	tr.price td {
 		color: #1f1f1f;
-		font-size: 0.875rem;
 		line-height: normal;
 		font-weight: bold;
 		margin-bottom: 5px;
@@ -83,6 +85,10 @@ ul.products li.product {
 		ins {
 			background: none;
 		}
+	}
+
+	a.button.yith_woocompare_clear {
+		color: #fff;
 	}
 }
 
@@ -125,5 +131,12 @@ ul.products li.product {
 				}
 			}
 		}
+	}
+}
+
+#yith-woocompare-preview-bar {
+	.button {
+		margin: 0;
+		text-align: center;
 	}
 }

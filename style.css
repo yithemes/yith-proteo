@@ -12042,7 +12042,7 @@ a.compare.button {
   position: relative;
   display: inline-block;
 }
-.single-product div.product .summary.entry-summary a.compare:not(.button) {
+.single-product div.product .summary.entry-summary a.compare:not(.button, .checkbox) {
   padding-bottom: 40px;
   text-transform: uppercase;
   font-weight: 500;
@@ -12051,7 +12051,7 @@ a.compare.button {
   color: inherit;
   border-bottom: 1px solid #cccccc;
 }
-.single-product div.product .summary.entry-summary a.compare:not(.button):before {
+.single-product div.product .summary.entry-summary a.compare:not(.button, .checkbox):before {
   content: "\e88e";
   font-family: Linearicons-Free;
   display: inline-block;
@@ -12059,7 +12059,7 @@ a.compare.button {
   font-size: 2em;
   vertical-align: middle;
 }
-.single-product div.product .summary.entry-summary a.compare:not(.button):hover {
+.single-product div.product .summary.entry-summary a.compare:not(.button, .checkbox):hover {
   text-decoration: underline;
   color: var(--proteo-general_link_color, #448a85);
 }
@@ -12076,6 +12076,10 @@ ul.products li.product a.compare:not(.button) {
   font-weight: 600;
 }
 
+#yith-woocompare h2,
+.yith-woocompare-widget h2 {
+  line-height: 1.2;
+}
 #yith-woocompare .button,
 #yith-woocompare a.added_to_cart,
 #yith-woocompare a.compare-widget,
@@ -12097,7 +12101,6 @@ ul.products li.product a.compare:not(.button) {
 .yith-woocompare-widget .product-price,
 .yith-woocompare-widget tr.price td {
   color: #1f1f1f;
-  font-size: 0.875rem;
   line-height: normal;
   font-weight: bold;
   margin-bottom: 5px;
@@ -12115,6 +12118,10 @@ ul.products li.product a.compare:not(.button) {
 .yith-woocompare-widget .product-price ins,
 .yith-woocompare-widget tr.price td ins {
   background: none;
+}
+#yith-woocompare a.button.yith_woocompare_clear,
+.yith-woocompare-widget a.button.yith_woocompare_clear {
+  color: #fff;
 }
 
 #yith-woocompare-related .related-products li {
@@ -12149,6 +12156,11 @@ ul.products li.product a.compare:not(.button) {
   padding: 0;
   display: block;
   color: var(--proteo-general_link_color, #448a85);
+}
+
+#yith-woocompare-preview-bar .button {
+  margin: 0;
+  text-align: center;
 }
 
 .entry-content .ywgc_enter_code {
@@ -13432,3 +13444,5 @@ body .wpcf7-not-valid {
     width: -webkit-fill-available;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
