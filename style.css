@@ -12088,13 +12088,9 @@ ul.products li.product a.compare:not(.button) {
 .yith-woocompare-widget a.added_to_cart,
 .yith-woocompare-widget a.compare-widget,
 .yith-woocompare-widget a.compare {
-  border-radius: 50px;
-  font-size: 0.875rem;
-  text-transform: uppercase;
   padding: 7px 14px;
   display: inline-block;
   margin-right: 0;
-  font-weight: 600;
 }
 #yith-woocompare .product-price,
 #yith-woocompare tr.price td,
@@ -12122,6 +12118,12 @@ ul.products li.product a.compare:not(.button) {
 #yith-woocompare a.button.yith_woocompare_clear,
 .yith-woocompare-widget a.button.yith_woocompare_clear {
   color: #fff;
+}
+#yith-woocompare #yith-woocompare-cat-nav h3,
+.yith-woocompare-widget #yith-woocompare-cat-nav h3 {
+  font-size: 22px;
+  margin-bottom: 35px;
+  color: #434343;
 }
 
 #yith-woocompare-related .related-products li {

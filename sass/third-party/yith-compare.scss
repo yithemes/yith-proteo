@@ -58,17 +58,14 @@ ul.products li.product {
 	h2 {
 		line-height: 1.2;
 	}
+
 	.button,
 	a.added_to_cart,
 	a.compare-widget,
 	a.compare {
-		border-radius: 50px;
-		font-size: 0.875rem;
-		text-transform: uppercase;
 		padding: 7px 14px;
 		display: inline-block;
 		margin-right: 0;
-		font-weight: 600;
 	}
 
 	.product-price,
@@ -89,6 +86,12 @@ ul.products li.product {
 
 	a.button.yith_woocompare_clear {
 		color: #fff;
+	}
+
+	#yith-woocompare-cat-nav h3 {
+		font-size: 22px;
+		margin-bottom: 35px;
+		color: #434343;
 	}
 }
 
