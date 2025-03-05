@@ -4,8 +4,8 @@ Tags: one-column, two-columns, left-sidebar, right-sidebar, wide-blocks, accessi
 Requires at least: 4.9.6
 Tested up to: WordPress 6.7
 Requires PHP: 7.0
-Stable tag: 1.9.6
-YITH Proteo WordPress Theme, Copyright 2022 YITH
+Stable tag: 1.9.7
+YITH Proteo WordPress Theme, Copyright 2025 YITH
 YITH Proteo is distributed under the terms of the GNU GPL
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -26,7 +26,11 @@ Proteo is a modern, fast and fully customizable WooCommerce theme. Designed and 
 
 == Changelog ==
 
-= 1.9.5 - Dec 2 2024 =
+= 1.9.7 - Mar 5 2025 =
+* Update woocommerce/single-product/meta.php template
+* Dev: from grunt-contrib-sass to grunt-sass npm package
+
+= 1.9.6 - Dec 2 2024 =
 * Fix header login link when WooCommerce is active
 
 = 1.9.5 - Nov 21 2024 =
