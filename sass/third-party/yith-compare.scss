@@ -38,7 +38,8 @@ a.compare.button {
 	}
 }
 
-ul.products li.product {
+ul.products li.product,
+ul.wc-block-grid__products li.wc-block-grid__product {
 	a.compare {
 		display: inline-block;
 		margin-right: 0;
