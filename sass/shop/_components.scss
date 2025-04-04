@@ -693,3 +693,54 @@ Prices
 		background: none;
 	}
 }
+
+/**
+Show Password input
+**/
+.woocommerce form .password-input, .woocommerce-page form .password-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.woocommerce form .show-password-input, .woocommerce-page form .show-password-input {
+    background-color: transparent;
+    border-radius: 0;
+    border: 0;
+    color: var(--proteo-base_font_color, #404040);
+    cursor: pointer;
+    font-size: inherit;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: .7em;
+    text-decoration: none;
+    top: 50%;
+    transform: translateY(-50%);
+    -moz-osx-font-smoothing: inherit;
+    -webkit-appearance: none;
+    -webkit-font-smoothing: inherit;
+
+	&::after {
+		font-family: 'simple-line-icons';
+		speak: never;
+		font-weight: 400;
+		font-variant: normal;
+		text-transform: none;
+		line-height: 1;
+		-webkit-font-smoothing: antialiased;
+		margin-left: .618em;
+		content: "\e087";
+		text-decoration: none;
+		margin-left: 0;
+		margin-top: -2px;
+		vertical-align: middle;
+		display: inline-block
+	}
+
+	&.display-password::after {
+		opacity: 0.5;
+	}
+}
