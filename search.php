@@ -43,7 +43,7 @@ get_header();
 					'prev_text' => '‹',
 					'next_text' => '›',
 				);
-				echo '<div class="navigation posts-navigation">' . wp_kses_post( paginate_links( $pagination_args ) ) . '</div>';
+				echo '<div class="navigation posts-navigation">' . wp_kses_post( paginate_links( $pagination_args ) ?? '' ) . '</div>';
 
 				else :
 
