@@ -101,7 +101,7 @@ if ( ! class_exists( 'Proteo_Admin_Dashboard' ) ) {
 			$nonce = ( isset( $_POST['nonce'] ) ) ? sanitize_key( $_POST['nonce'] ) : '';
 
 			if ( false === wp_verify_nonce( $nonce, 'yith-proteo-recommended-plugin-nonce' ) ) {
-				wp_send_json_error( esc_html_e( 'WordPress Nonce not validated.', 'yith-proteo' ) );
+				wp_send_json_error( esc_html__( 'WordPress Nonce not validated.', 'yith-proteo' ) );
 			}
 
 			if ( ! current_user_can( 'install_plugins' ) || ! isset( $_POST['init'] ) || ! sanitize_text_field( wp_unslash( $_POST['init'] ) ) ) {
