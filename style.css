@@ -12490,7 +12490,7 @@ ul.wc-block-grid__products li.wc-block-grid__product a.compare:not(.button) {
   display: none;
 }
 
-#yith-ywraq-default-form input[type=text],
+#yith-ywraq-default-form input[type=text].input-text,
 #yith-ywraq-default-form input[type=email],
 #yith-ywraq-default-form input[type=password],
 #yith-ywraq-default-form select,
